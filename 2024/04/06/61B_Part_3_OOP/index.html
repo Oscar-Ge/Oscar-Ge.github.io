@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61B Part 3 OOP in java | Oscar-Ge</title>
+  <title>CS 61B Part 3  Inheritance, Implements, Iterators | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -19,13 +19,13 @@
   
   <meta name="description" content="Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61B Part 3 OOP in java">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/06/Part_3_OOP/index.html">
+<meta property="og:title" content="CS 61B Part 3  Inheritance, Implements, Iterators">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
 <meta property="og:description" content="Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string i">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-06T01:38:03.000Z">
-<meta property="article:modified_time" content="2024-04-06T09:56:22.634Z">
+<meta property="article:modified_time" content="2024-04-06T10:05:38.251Z">
 <meta property="article:author" content="Oscar">
 <meta name="twitter:card" content="summary">
   
@@ -160,11 +160,11 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/06/Part_3_OOP/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61B Part 3 OOP in java</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61B Part 3  Inheritance, Implements, Iterators</h1>
             
             
             <ul class="kratos-post-meta text-center">
@@ -189,7 +189,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712397382634"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712397938251"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -268,7 +268,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/06/Part_3_OOP/",
+                text: "https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -280,8 +280,8 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/06/Part_3_OOP/";
-            const title         = "「CS 61B Part 3 OOP in java」";
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/";
+            const title         = "「CS 61B Part 3  Inheritance, Implements, Iterators」";
             const excerpt       = `Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we...`;
             let _URL;
             switch (dest) {
@@ -304,7 +304,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-06T09:56:22.634Z" itemprop="dateModified">最后编辑：2024-04-06</time>
+                    <time datetime="2024-04-06T10:05:38.251Z" itemprop="dateModified">最后编辑：2024-04-06</time>
                 </div>
             </div>
         </footer>
@@ -313,7 +313,7 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61B Part 2 Linked List" href="/2024/04/06/Part_2_LinkList/">&lt; 上一篇</a>
+                <a title=" CS 61B Part 2 Linked List" href="/2024/04/06/61B_Part_2_LinkList/">&lt; 上一篇</a>
             </div>
             
             
@@ -327,8 +327,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/06/Part_3_OOP/',
-                path: '/2024/04/06/Part_3_OOP/'
+                id: '/2024/04/06/61B_Part_3_OOP/',
+                path: '/2024/04/06/61B_Part_3_OOP/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -374,7 +374,7 @@
                 文章
             </span>
             <span class="count">
-                4
+                16
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -412,19 +412,19 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/06/Part_3_OOP/"><i class="fa  fa-book"></i> CS 61B Part 3 OOP in java</a>
+            <a class="list-group-item" href="/2024/04/06/61B_Part_3_OOP/"><i class="fa  fa-book"></i> CS 61B Part 3  Inheritance, Implements, Iterators</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/06/Part_2_LinkList/"><i class="fa  fa-book"></i> CS 61B Part 2 Linked List</a>
+            <a class="list-group-item" href="/2024/04/06/61B_Part_2_LinkList/"><i class="fa  fa-book"></i> CS 61B Part 2 Linked List</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/06/Part_1_Java/"><i class="fa  fa-book"></i> CS 61B Part 1 Java</a>
+            <a class="list-group-item" href="/2024/04/06/61B_Part_1_Java/"><i class="fa  fa-book"></i> CS 61B Part 1 Java</a>
             
           
         
@@ -434,6 +434,34 @@
             
           
         
+          
+          
+            <a class="list-group-item" href="/2024/04/05/CS61A%20lect11/"><i class="fa  fa-book"></i> CS 61A lect11</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
       </ul>
   </div>
   </aside>
