@@ -26,7 +26,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://joshhug.gitbooks.io/hug61b/content/assets/dynamic_selection.png">
 <meta property="article:published_time" content="2024-04-06T01:38:03.000Z">
-<meta property="article:modified_time" content="2024-04-07T12:49:35.828Z">
+<meta property="article:modified_time" content="2024-04-08T02:47:46.264Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61B">
 <meta property="article:tag" content="Java">
@@ -182,7 +182,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            7.99K
+                            10.08K
                         
                         字
                     </li>
@@ -194,7 +194,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712494175828"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712544466264"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -313,7 +313,34 @@
 <p>when calling:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(do_twice(<span class="keyword">new</span> <span class="title class_">TenX</span>(), <span class="number">2</span>));</span><br></pre></td></tr></table></figure>
 
-<h2 id="Subtype-Polymorphism"><a href="#Subtype-Polymorphism" class="headerlink" title="Subtype Polymorphism"></a>Subtype Polymorphism</h2></div>
+<p>The new feature was added after Java8.</p>
+<p><strong>To notice</strong>: Java is mainly an OOP language, so that its implementation of Functional Programming is much limited!</p>
+<h2 id="Subtype-Polymorphism"><a href="#Subtype-Polymorphism" class="headerlink" title="Subtype Polymorphism"></a>Subtype Polymorphism</h2><p>Java: how objects can have many forms or types</p>
+<p>OOP: how an object can be regarded as an instance of its own class, an instance of its superclass, an instance of its superclass’s superclass, and so on.</p>
+<p>for python comparison:</p>
+<p>Explicit HoF Approach</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_larger</span>(<span class="params">x, y, compare, stringify</span>):</span><br><span class="line"><span class="keyword">if</span> compare(x, y):</span><br><span class="line"><span class="keyword">return</span> stringify(x)</span><br><span class="line"><span class="keyword">return</span> stringify(y)</span><br></pre></td></tr></table></figure>
+
+<p>Subtype Polymorphism Approach</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_larger</span>(<span class="params">x, y</span>):</span><br><span class="line"><span class="keyword">if</span> x.largerThan(y):</span><br><span class="line"><span class="keyword">return</span> x.<span class="built_in">str</span>()</span><br><span class="line"><span class="keyword">return</span> y.<span class="built_in">str</span>()</span><br></pre></td></tr></table></figure>
+
+<h3 id="An-example-Max-function"><a href="#An-example-Max-function" class="headerlink" title="An example: Max function"></a>An example: Max function</h3><p>debug the following program:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title function_">max</span><span class="params">(Object[] items)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">maxDex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; items.length; i += <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (items[i] &gt; items[maxDex]) &#123;</span><br><span class="line">            maxDex = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> items[maxDex];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    Dog[] dogs = &#123;<span class="keyword">new</span> <span class="title class_">Dog</span>(<span class="string">&quot;Elyse&quot;</span>, <span class="number">3</span>), <span class="keyword">new</span> <span class="title class_">Dog</span>(<span class="string">&quot;Sture&quot;</span>, <span class="number">9</span>), <span class="keyword">new</span> <span class="title class_">Dog</span>(<span class="string">&quot;Benjamin&quot;</span>, <span class="number">15</span>)&#125;;</span><br><span class="line">    <span class="type">Dog</span> <span class="variable">maxDog</span> <span class="operator">=</span> (Dog) max(dogs);</span><br><span class="line">    maxDog.bark();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>the error was <code>items[i] &gt; items[maxDex]</code>, in which the <code>Object</code> cannot be compared.</p>
+<p>In python or C++, <code>&gt;</code> operator can refer to different meanings when applied to different types of parameters.</p>
+<p>In Java, however, the operator cannot be done like this.</p>
+<p>Therefore, we can add a function like this:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> Dog <span class="title function_">maxDog</span><span class="params">(Dog[] dogs)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (dogs == <span class="literal">null</span> || dogs.length == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">Dog</span> <span class="variable">maxDog</span> <span class="operator">=</span> dogs[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span> (Dog d : dogs) &#123;</span><br><span class="line">        <span class="keyword">if</span> (d.size &gt; maxDog.size) &#123;</span><br><span class="line">            maxDog = d;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> maxDog;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>However, we have to rewrite the method for many other programs. Therefore, Instead, we turn to interface inheritance to help us out.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">OurComparable</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compareTo</span><span class="params">(Object o)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>We will define its behavior like so:</p>
+<p>Return -1 if this &lt; o.</p>
+<p>Return 0 if this equals o.</p>
+<p>Return 1 if this &gt; o.</p>
+</div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -398,7 +425,7 @@
                     <a class="tag-none-link" href="/tags/CS-61B/" rel="tag">CS 61B</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/OOP/" rel="tag">OOP</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T12:49:35.828Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-08T02:47:46.264Z" itemprop="dateModified">最后编辑：2024-04-08</time>
                 </div>
             </div>
         </footer>
@@ -472,7 +499,7 @@
                 文章
             </span>
             <span class="count">
-                17
+                18
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -480,7 +507,7 @@
                 分类
             </span>
             <span class="count">
-                3
+                4
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -488,7 +515,7 @@
                 标签
             </span>
             <span class="count">
-                8
+                11
             </span>
         </a>
     </div>
@@ -499,7 +526,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">4</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JI/">JI</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -508,7 +535,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.7em;">CS 61B</a> <a href="/tags/Java/" style="font-size: 0.7em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/python/" style="font-size: 0.6em;">python</a>
+        <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.7em;">CS 61B</a> <a href="/tags/Chinese-philosophy/" style="font-size: 0.6em;">Chinese philosophy</a> <a href="/tags/JI/" style="font-size: 0.6em;">JI</a> <a href="/tags/Java/" style="font-size: 0.7em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/PHIL2650J/" style="font-size: 0.6em;">PHIL2650J</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/python/" style="font-size: 0.6em;">python</a>
       </div>
   </aside>
 
@@ -519,6 +546,12 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/08/PHIL2650quiz/"><i class="fa  fa-book"></i> PHIL2650quiz</a>
+            
+          
         
           
           
@@ -545,11 +578,7 @@
           
         
           
-          
-            <a class="list-group-item" href="/2024/04/06/Basic_Java/"><i class="fa  fa-book"></i> CS 61B Part 0 Basic Java</a>
             
-          
-        
           
             
           
