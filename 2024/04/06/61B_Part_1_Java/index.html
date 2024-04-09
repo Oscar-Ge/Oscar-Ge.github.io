@@ -25,7 +25,7 @@
 <meta property="og:description" content="prev: [[Basic_Java]]next: [[61B_Part_2_LinkList]] Compiling systemJava source code –&gt; (compiler) .class –&gt; (interpreter) running file why .class?  no need to open sourcecode  easier for computer">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-05T16:00:01.000Z">
-<meta property="article:modified_time" content="2024-04-09T07:19:09.649Z">
+<meta property="article:modified_time" content="2024-04-09T14:00:56.668Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61B">
 <meta property="article:tag" content="Java">
@@ -179,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            4.81K
+                            6.66K
                         
                         字
                     </li>
@@ -191,7 +191,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712647149649"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712671256668"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -250,27 +250,23 @@
 <p>In computer, data stored in memory. 8 java primary data types are 8 ways to interpret them.(byte, short, int, long, float, double, boolean, char)</p>
 <h4 id="varible-declearation"><a href="#varible-declearation" class="headerlink" title="varible declearation"></a>varible declearation</h4><p>declear a varible: 先申请一个box,然后 create a interal table that match each value into the location</p>
 <p>for this primary datatypes: varibles just match a box with sth. in it.</p>
-<h4 id="golden-rule-of-equals"><a href="#golden-rule-of-equals" class="headerlink" title="golden rule of equals"></a>golden rule of equals</h4><p><code>x = y</code> is to copy all of the bits in y into x!!!</p>
-<h4 id="class-instantitations"><a href="#class-instantitations" class="headerlink" title="class instantitations"></a>class instantitations</h4><p>(the 9th basic type in Java: arrow)</p>
-<p>when we first call a expression:</p>
-<p>Java first allocates a box of bits for each instance variable of the class and fills them with a default value (e.g. 0, null).</p>
-<p>The constructor then usually fills every such box with some other value.</p>
-<p>Example(实例): record the address(64bit in java) of the classes (<code>new</code> return the address)</p>
-<table>
-<thead>
-<tr>
-<th>weight</th>
-<th>1000</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>tuskSize</td>
-<td>8.3</td>
-</tr>
-</tbody></table>
-<p><code>Walrus a;</code> just define a box with 64 bits</p>
-<p><code>b = a;</code> make the arrow in the box b the same as a. (just pass the bits into the new scope)</p>
-<p>Arrays are also objects!</p>
+<h4 id="golden-rule-of-equals"><a href="#golden-rule-of-equals" class="headerlink" title="golden rule of equals"></a>golden rule of equals</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### class instantitations</span><br><span class="line"></span><br><span class="line">(the 9th basic type in Java: arrow)</span><br><span class="line"></span><br><span class="line">when we first call a expression:</span><br><span class="line"></span><br><span class="line">Java first allocates a box of bits for each instance variable of the class and fills them with a default value (e.g. 0, null).</span><br><span class="line"></span><br><span class="line">The constructor then usually fills every such box with some other value.</span><br><span class="line"></span><br><span class="line">Example(实例): record the address(64bit in java) of the classes (```new``` return the address)</span><br><span class="line"></span><br><span class="line">| weight      | 1000           |</span><br><span class="line">|-------------|----------------|</span><br><span class="line">| tuskSize    | 8.3            |</span><br><span class="line"></span><br><span class="line">```Walrus a;``` just define a box with 64 bits</span><br><span class="line"></span><br><span class="line">```b = a;``` make the arrow in the box b the same as a. (just pass the bits into the new scope)</span><br><span class="line"></span><br><span class="line">Arrays are also objects!</span><br><span class="line"></span><br><span class="line">## Lab6: File systems in Java</span><br><span class="line">### Current working dictionary</span><br><span class="line"> the directory from where you execute that Java program</span><br><span class="line">use `System.getProperty(&quot;user.dir&quot;)` to access</span><br><span class="line">in Bash or the terminal, `cwd` would give you the CWD.</span><br><span class="line">### Absolute &amp; Relative Paths</span><br><span class="line">`.` refers to CWD.</span><br><span class="line">`..` refers to the parent of CWD.</span><br><span class="line">parent&#x27;s parent dictionary: `cd ../..`</span><br><span class="line">### File &amp; Directory Manipulation in Java</span><br><span class="line">#### files</span><br><span class="line">DO NOT create the new file. Just say: when we changed `f`, we refers to the `dummy.txt`.</span><br><span class="line">```java</span><br><span class="line">File f = new File(&quot;dummy.txt&quot;);</span><br></pre></td></tr></table></figure>
+<p>create the new file:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f.createNewFile();</span><br></pre></td></tr></table></figure>
+<p>check if <code>dummy.txt</code> exists:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f.exists()</span><br></pre></td></tr></table></figure>
+<p>Writing the file in java is pretty ugly, so the class <code>Utils.java</code> was applied in this lab and Gitlet.<br>For example, write a string to the file:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Utils.writeContents(f, <span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="Directories"><a href="#Directories" class="headerlink" title="Directories"></a>Directories</h4><p>it also represents as File objects.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">File</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(<span class="string">&quot;dummy&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>to create:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d.mkdir();</span><br></pre></td></tr></table></figure>
+<h3 id="Serializable"><a href="#Serializable" class="headerlink" title="Serializable"></a>Serializable</h3><p>How to save more complicated state in our program? such as the <code>Model</code> object in our 2048 program?<br>we can use <code>java.io.Serializable</code> interface to translate an object to a series of bytes that can then be stored in the file.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Model</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">Model</span> <span class="variable">m</span> <span class="operator">=</span> ....;</span><br><span class="line"><span class="type">File</span> <span class="variable">outFile</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(saveFileName);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="type">ObjectOutputStream</span> <span class="variable">out</span> <span class="operator">=</span></span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">ObjectOutputStream</span>(<span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(outFile));</span><br><span class="line">    out.writeObject(m);</span><br><span class="line">    out.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException excp) &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>serialize:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Model m;</span><br><span class="line"><span class="type">File</span> <span class="variable">outFile</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(saveFileName);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Serializing the Model object</span></span><br><span class="line">writeObject(outFile, m);</span><br></pre></td></tr></table></figure>
+<p>deserialize:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Model m;</span><br><span class="line"><span class="type">File</span> <span class="variable">inFile</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(saveFileName);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Deserializing the Model object</span></span><br><span class="line">m = readObject(inFile, Model.class);</span><br></pre></td></tr></table></figure>
 </div>
         </div>
         
@@ -357,7 +353,7 @@ Compiling systemJava source code –&gt; (compiler) .class –&gt; (int...`;
                     <a class="tag-none-link" href="/tags/CS-61B/" rel="tag">CS 61B</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-09T07:19:09.649Z" itemprop="dateModified">最后编辑：2024-04-09</time>
+                    <time datetime="2024-04-09T14:00:56.668Z" itemprop="dateModified">最后编辑：2024-04-09</time>
                 </div>
             </div>
         </footer>
@@ -431,7 +427,7 @@ Compiling systemJava source code –&gt; (compiler) .class –&gt; (int...`;
                 文章
             </span>
             <span class="count">
-                20
+                21
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -478,6 +474,9 @@ Compiling systemJava source code –&gt; (compiler) .class –&gt; (int...`;
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
         
           
           
