@@ -17,16 +17,19 @@
   
     <meta name="keywords" content="CS 61B, Java, OOP" />
   
-  <meta name="description" content="Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string i">
+  <meta name="description" content="prev:[[61B_Part_2_LinkList]]next:[[part4-Iterators]]Hug61B chapter4 Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CS 61B Part 3  Inheritance, Implements, Iterators">
 <meta property="og:url" content="https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string i">
+<meta property="og:description" content="prev:[[61B_Part_2_LinkList]]next:[[part4-Iterators]]Hug61B chapter4 Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we can run on lis">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://joshhug.gitbooks.io/hug61b/content/assets/dynamic_selection.png">
+<meta property="og:image" content="https://joshhug.gitbooks.io/hug61b/content/assets/comparable_interface.png">
+<meta property="og:image" content="https://joshhug.gitbooks.io/hug61b/content/assets/comparable.png">
+<meta property="og:image" content="https://joshhug.gitbooks.io/hug61b/content/assets/comparator.png">
 <meta property="article:published_time" content="2024-04-06T01:38:03.000Z">
-<meta property="article:modified_time" content="2024-04-08T02:47:46.264Z">
+<meta property="article:modified_time" content="2024-04-09T07:19:49.296Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61B">
 <meta property="article:tag" content="Java">
@@ -182,7 +185,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            10.08K
+                            12.36K
                         
                         字
                     </li>
@@ -194,13 +197,14 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712544466264"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712647189296"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="Part-3-Inheritance-Implements-Iterators"><a href="#Part-3-Inheritance-Implements-Iterators" class="headerlink" title="Part 3 Inheritance, Implements, Iterators"></a>Part 3 Inheritance, Implements, Iterators</h1><h2 id="overload"><a href="#overload" class="headerlink" title="overload"></a>overload</h2><p>Suppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string in an SLList.</p>
+            <div itemprop="articleBody"><p>prev:[[61B_Part_2_LinkList]]<br>next:[[part4-Iterators]]<br>Hug61B chapter4</p>
+<h1 id="Part-3-Inheritance-Implements-Iterators"><a href="#Part-3-Inheritance-Implements-Iterators" class="headerlink" title="Part 3 Inheritance, Implements, Iterators"></a>Part 3 Inheritance, Implements, Iterators</h1><h2 id="overload"><a href="#overload" class="headerlink" title="overload"></a>overload</h2><p>Suppose we want to write a class WordUtilsthat includes functions we can run on lists of words, including a method that calculates the longest string in an SLList.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">longest</span><span class="params">(SLList&lt;String&gt; list)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">maxDex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; list.size(); i += <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">longestString</span> <span class="operator">=</span> list.get(maxDex);</span><br><span class="line">        <span class="type">String</span> <span class="variable">thisString</span> <span class="operator">=</span> list.get(i);</span><br><span class="line">        <span class="keyword">if</span> (thisString.length() &gt; longestString.length()) &#123;</span><br><span class="line">            maxDex = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> list.get(maxDex);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>make it suitable for AList?</p>
@@ -340,6 +344,38 @@
 <p>Return -1 if this &lt; o.</p>
 <p>Return 0 if this equals o.</p>
 <p>Return 1 if this &gt; o.</p>
+<p>The implementation of it in class of Dog:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compareTo</span><span class="params">(Object o)</span> &#123;</span><br><span class="line">        <span class="type">Dog</span> <span class="variable">uddaDog</span> <span class="operator">=</span> (Dog) o;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">this</span>.size &lt; uddaDog.size) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">this</span>.size == uddaDog.size) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>then, we can generalize the function in previous:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> OurComparable <span class="title function_">max</span><span class="params">(OurComparable[] items)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">maxDex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; items.length; i += <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">cmp</span> <span class="operator">=</span> items[i].compareTo(items[maxDex]);</span><br><span class="line">        <span class="keyword">if</span> (cmp &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            maxDex = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> items[maxDex];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Benefits for it:</p>
+<p>No need for maximization code in every class(i.e. no Dog.maxDog(Dog[]) function required</p>
+<p>We have code that operates on multiple types (mostly) gracefully</p>
+<h3 id="Comparables"><a href="#Comparables" class="headerlink" title="Comparables"></a>Comparables</h3><p>The interface <code>OurComparable</code> have some issues:</p>
+<ul>
+<li>Awkward casting to&#x2F;from Objects</li>
+<li>No existing classes implement OurComparable (e.g. String, etc.)</li>
+<li>No existing classes use OurComparable (e.g. no built-in max function that uses OurComparable)</li>
+</ul>
+<p>to fix them, we used the <code>comparable</code> interface that have been defined by Java.</p>
+<p><img src="https://joshhug.gitbooks.io/hug61b/content/assets/comparable_interface.png" alt="comparable interface"></p>
+<p><img src="https://joshhug.gitbooks.io/hug61b/content/assets/comparable.png" alt="comparable diagrams"></p>
+<h3 id="comparator"><a href="#comparator" class="headerlink" title="comparator"></a>comparator</h3><p>an interface that looks very similar</p>
+<p>inside:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Comparator</span>&lt;T&gt; &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">compare</span><span class="params">(T o1, T o2)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The rule for compare is just like compareTo.</p>
+<p>let’s give Dog class a NameComparator.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Comparator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">implements</span> <span class="title class_">Comparable</span>&lt;Dog&gt; &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compareTo</span><span class="params">(Dog uddaDog)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.size - uddaDog.size;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">NameComparator</span> <span class="keyword">implements</span> <span class="title class_">Comparator</span>&lt;Dog&gt; &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(Dog a, Dog b)</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> a.name.compareTo(b.name);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Comparator&lt;Dog&gt; <span class="title function_">getNameComparator</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">NameComparator</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The structure is:</p>
+<p><img src="https://joshhug.gitbooks.io/hug61b/content/assets/comparator.png" alt="comparator structure"></p>
+<h3 id="summarize"><a href="#summarize" class="headerlink" title="summarize"></a>summarize</h3><p>Interfaces in Java give us the ability to make <strong>callbacks</strong>.</p>
+<p>comparable: defines the natural ordering of a type (only one compareTo method can exist!)</p>
+<p>comparator: a third-party machine that compares two objects to each other.</p>
+<p>Multiple ways to compare –&gt; comparator</p>
 </div>
         </div>
         
@@ -403,7 +439,8 @@
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "https://oscar-ge.github.io/2024/04/06/61B_Part_3_OOP/";
             const title         = "「CS 61B Part 3  Inheritance, Implements, Iterators」";
-            const excerpt       = `Part 3 Inheritance, Implements, IteratorsoverloadSuppose we want to write a class WordUtilsthat includes functions we...`;
+            const excerpt       = `prev:[[61B_Part_2_LinkList]]next:[[part4-Iterators]]Hug61B chapter4
+Part 3 Inheritance, Implements, Iteratorsoverload...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -425,7 +462,7 @@
                     <a class="tag-none-link" href="/tags/CS-61B/" rel="tag">CS 61B</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/OOP/" rel="tag">OOP</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-08T02:47:46.264Z" itemprop="dateModified">最后编辑：2024-04-08</time>
+                    <time datetime="2024-04-09T07:19:49.296Z" itemprop="dateModified">最后编辑：2024-04-09</time>
                 </div>
             </div>
         </footer>
@@ -499,7 +536,7 @@
                 文章
             </span>
             <span class="count">
-                18
+                20
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -515,7 +552,7 @@
                 标签
             </span>
             <span class="count">
-                11
+                15
             </span>
         </a>
     </div>
@@ -526,7 +563,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JI/">JI</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JI/">JI</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -535,7 +572,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.7em;">CS 61B</a> <a href="/tags/Chinese-philosophy/" style="font-size: 0.6em;">Chinese philosophy</a> <a href="/tags/JI/" style="font-size: 0.6em;">JI</a> <a href="/tags/Java/" style="font-size: 0.7em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/PHIL2650J/" style="font-size: 0.6em;">PHIL2650J</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/python/" style="font-size: 0.6em;">python</a>
+        <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.73em;">CS 61B</a> <a href="/tags/Chinese-philosophy/" style="font-size: 0.6em;">Chinese philosophy</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/JI/" style="font-size: 0.6em;">JI</a> <a href="/tags/Java/" style="font-size: 0.67em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/PHIL2650J/" style="font-size: 0.6em;">PHIL2650J</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/python/" style="font-size: 0.6em;">python</a> <a href="/tags/tools/" style="font-size: 0.6em;">tools</a>
       </div>
   </aside>
 
@@ -546,6 +583,18 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/08/Git-intro/"><i class="fa  fa-book"></i> intro to Git</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/08/part4-Iterators/"><i class="fa  fa-book"></i> CS 61B part4 Iterators, Exceptions</a>
+            
+          
         
           
           
@@ -566,17 +615,9 @@
           
         
           
-          
-            <a class="list-group-item" href="/2024/04/06/61B_Part_2_LinkList/"><i class="fa  fa-book"></i> CS 61B Part 2 Linked List</a>
             
           
-        
-          
-          
-            <a class="list-group-item" href="/2024/04/06/61B_Part_1_Java/"><i class="fa  fa-book"></i> CS 61B Part 1 Java</a>
             
-          
-        
           
             
           
