@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A lect2 | Oscar-Ge</title>
+  <title>Prin Algs Part 1 Union-Find | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,19 +15,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="CS 61A" />
+    <meta name="keywords" content="Algs, Java" />
   
-  <meta name="description" content="CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 ) Operator Operand Operand Operators and operands are also expressions Evaluation procedure for call expressions:  Evaluate the ope">
+  <meta name="description" content="Union and Finddynamic connectivitygiven a set of N objectsunion: connect 2 objectsfind&#x2F;connected: is there a path connecting the two objects?Today’s problem: is there any paths? (the exact path t">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A lect2">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A_lect2/index.html">
+<meta property="og:title" content="Prin Algs Part 1 Union-Find">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/14/Algs1.5_UnionFind/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 ) Operator Operand Operand Operators and operands are also expressions Evaluation procedure for call expressions:  Evaluate the ope">
+<meta property="og:description" content="Union and Finddynamic connectivitygiven a set of N objectsunion: connect 2 objectsfind&#x2F;connected: is there a path connecting the two objects?Today’s problem: is there any paths? (the exact path t">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:02.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:46:01.809Z">
+<meta property="article:published_time" content="2024-04-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-04-17T02:42:53.393Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="CS 61A">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Algs">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -161,15 +162,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A_lect2/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/14/Algs1.5_UnionFind/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect2</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Prin Algs Part 1 Union-Find</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:02.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-13T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-14</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1400
+                            3.58K
                         
                         字
                     </li>
@@ -190,53 +191,33 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454361809"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713321773393"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h3 id="CS61A-lect2"><a href="#CS61A-lect2" class="headerlink" title="CS61A lect2"></a>CS61A lect2</h3><p>Anatomy of a Call Expression：operator, operand<br>add ( 2 , 3 )</p>
-<p>Operator Operand Operand</p>
-<p>Operators and operands are also expressions</p>
-<p><strong>Evaluation procedure for call expressions:</strong></p>
-<ol>
-<li>Evaluate the operator and then the operand subexpressions</li>
-<li>Apply the function that is the value of the operator</li>
-</ol>
-<p>to the arguments that are the values of the operands</p>
-<p><strong>Execution rule for assignment statements:</strong></p>
-<ol>
-<li>Evaluate all expressions to the right of &#x3D; from left to right.</li>
-<li>Bind all names to the left of &#x3D; to those resulting values in the current frame.</li>
-</ol>
-<p><strong>Execution procedure for def statements:</strong></p>
-<ol>
-<li>Create a function with signature <code>&lt;name&gt;(&lt;formal parameters&gt;)</code></li>
-<li>Set the body of that function to be everything indented after the first line</li>
-<li><ol start="3">
-<li>Bind <code>&lt;name&gt;</code> to that function in the current frame</li>
-</ol>
-</li>
-</ol>
-<p><strong>Procedure for calling&#x2F;applying user-defined functions (version 1):</strong></p>
-<ol>
-<li>Add a local frame, forming a new environment</li>
-<li>Bind the function’s formal parameters to its arguments in that frame</li>
-<li>Execute the body of the function in that new environment</li>
-</ol>
-<p><strong>Most important two things I’ll say all day:</strong></p>
-<ol>
-<li>An environment is a sequence of frames.</li>
-<li>A name evaluates to the value bound to that name in the earliest frame of the current environment in which that name is found.</li>
-</ol>
-<p>Exercise:</p>
-<p>What is the value of the final expression in this sequence? </p>
-<p><code>f = min </code></p>
-<p> <code>f = max </code></p>
-<p> <code>g, h = min, max </code></p>
-<p><code>max = g </code></p>
-<p><code>max(f(2, g(h(1, 5), 3)), 4)</code></p>
+            <div itemprop="articleBody"><h2 id="Union-and-Find"><a href="#Union-and-Find" class="headerlink" title="Union and Find"></a>Union and Find</h2><h3 id="dynamic-connectivity"><a href="#dynamic-connectivity" class="headerlink" title="dynamic connectivity"></a>dynamic connectivity</h3><p>given a set of N objects<br><strong>union</strong>: connect 2 objects<br><strong>find&#x2F;connected</strong>: is there a path connecting the two objects?<br>Today’s problem: is there any paths? (the exact path to find will be discussed later)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UF</span></span><br><span class="line">UF(<span class="type">int</span> N)  <span class="comment">//initialize union-find data structure with N objects (0 to N – 1)</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">union</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span> <span class="comment">//add connection between p and q</span></span><br><span class="line"><span class="type">boolean</span> <span class="title function_">connected</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span> <span class="comment">//are p and q in the same component?</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">find</span><span class="params">(<span class="type">int</span> p)</span> <span class="comment">//component identifier for p (0 to N – 1)</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">count</span><span class="params">()</span> <span class="comment">//number of components</span></span><br></pre></td></tr></table></figure>
+<h3 id="eager-approach-quick-find"><a href="#eager-approach-quick-find" class="headerlink" title="eager-approach: quick-find"></a>eager-approach: quick-find</h3><p>Integer array <code>id[]</code> of size N.<br>Interpretation: <code>p</code> and <code>q</code> are connected iff they have the same id.<br>check: check if <code>p</code> and <code>q</code> have the same id.<br>the code:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">QuickFindUF</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="type">int</span>[] id;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">QuickFindUF</span><span class="params">(<span class="type">int</span> N)</span></span><br><span class="line">	&#123;</span><br><span class="line">		id = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; N;i++)</span><br><span class="line">		&#123;</span><br><span class="line">		id[i] = i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">connected</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> id[p] == id[q];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">union</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">pid</span> <span class="operator">=</span> id[p];</span><br><span class="line">		<span class="type">int</span> <span class="variable">qid</span> <span class="operator">=</span> id[q];</span><br><span class="line">		id[p] = qid;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> drawbacks: Too slow<br> Union too expansive (Take N^2^ array accesses to process sequences of N union commands on N objects.)<br> (quadratic 二次的 time is too slow)<br> For example:</p>
+<ul>
+<li>prev: 1000 times per second –&gt; 1000 boxes of memorys </li>
+<li>now:10^9^ times per second –&gt; 10^9^ boxes of memorys<br> for union-find operations: </li>
+<li>prev: 10^6^ operations</li>
+<li>now: 10^18^ operations<br> as the data grow bigger, it is much slower<br> quadratic algorithm –&gt; many times slower when problems goes bigger</li>
+</ul>
+<h3 id="lazy-approach-quick-union"><a href="#lazy-approach-quick-union" class="headerlink" title="lazy approach: quick-union"></a>lazy approach: quick-union</h3><p>Integer array <code>id[]</code> of size N.<br><code>id[i]</code> is parent of <code>i</code>.<br>Root of <code>i</code> is id[id[id[…id[i]…]]] (keep going until is doesn’t change)<br><code>Find</code>: check if the <code>p</code>and <code>q</code> have the same root<br><code>Union</code>: merge components containing <code>p</code> and <code>q</code>. set the id of <code>p</code>‘s root to the id of <code>q</code>‘s root.<br>code: </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">QuickFindUF</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="type">int</span>[] id;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">QuickFindUF</span><span class="params">(<span class="type">int</span> N)</span></span><br><span class="line">	&#123;</span><br><span class="line">		id = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; N;i++)</span><br><span class="line">		&#123;</span><br><span class="line">		id[i] = i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="type">int</span> <span class="title function_">root</span><span class="params">(<span class="type">int</span> i)</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span> (i != id[i]) i = id[i];</span><br><span class="line">		<span class="keyword">return</span> i;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">connected</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> root(p) == root(q);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">union</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> root(p);</span><br><span class="line">		<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> root(q);</span><br><span class="line">		id[i] = j;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Too slow – the tree can be too tall.<br>Find can be expansive.</p>
+<h3 id="Improvement"><a href="#Improvement" class="headerlink" title="Improvement"></a>Improvement</h3><h4 id="weighting"><a href="#weighting" class="headerlink" title="weighting"></a>weighting</h4><ul>
+<li>keep track of all the trees</li>
+<li>avoid tall trees to be lower (connect the root of smaller trees to the taller trees)<br>code:<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">QuickFindUF</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="type">int</span>[] id;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">QuickFindUF</span><span class="params">(<span class="type">int</span> N)</span></span><br><span class="line">	&#123;</span><br><span class="line">		id = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">		sz = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; N;i++)</span><br><span class="line">		&#123;</span><br><span class="line">		id[i] = i;</span><br><span class="line">		sz[i] = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="type">int</span> <span class="title function_">root</span><span class="params">(<span class="type">int</span> i)</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span> (i != id[i]) i = id[i];</span><br><span class="line">		<span class="keyword">return</span> i;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">connected</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> root(p) == root(q);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">union</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> root(p);</span><br><span class="line">		<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> root(q);</span><br><span class="line">		<span class="keyword">if</span> (i == j) <span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">if</span> (sz[i] &lt; sz[j]) &#123;</span><br><span class="line">			id[i] = j;</span><br><span class="line">			sz[j] += sz[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			id[j] = i;</span><br><span class="line">			sz[i] += sz[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D; log<del>2</del>)<br>acceptable performance: great (when the data bigger, the programs also faster)</li>
+</ul>
+<h4 id="path-compression"><a href="#path-compression" class="headerlink" title="path compression"></a>path compression</h4><p>Just after computing the root of p, set the id of each examined node to point to that root.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="type">int</span> <span class="title function_">root</span><span class="params">(<span class="type">int</span> i)</span> &#123; </span><br><span class="line">	<span class="keyword">while</span> (i != id[i]) </span><br><span class="line">	&#123; </span><br><span class="line">		id[i] = id[id[i]]; <span class="comment">// code added</span></span><br><span class="line">		i = id[i]; </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> i; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </div>
         </div>
         
@@ -286,7 +267,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A_lect2/",
+                text: "https://oscar-ge.github.io/2024/04/14/Algs1.5_UnionFind/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -298,11 +279,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A_lect2/";
-            const title         = "「CS 61A lect2」";
-            const excerpt       = `CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 )
-Operator Operand Operand
-Operators and operand...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/14/Algs1.5_UnionFind/";
+            const title         = "「Prin Algs Part 1 Union-Find」";
+            const excerpt       = `Union and Finddynamic connectivitygiven a set of N objectsunion: connect 2 objectsfind&#x2F;connected: is there a pat...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -321,10 +300,10 @@ Operators and operand...`;
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
+                    <a class="tag-none-link" href="/tags/Algs/" rel="tag">Algs</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:46:01.809Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-17T02:42:53.393Z" itemprop="dateModified">最后编辑：2024-04-17</time>
                 </div>
             </div>
         </footer>
@@ -332,10 +311,10 @@ Operators and operand...`;
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
-            
-            <div class="nav-next clearfix">
-                <a title=" CS 61A lect3" href="/2024/04/05/CS61A_lect3/">下一篇 &gt;</a>
+            <div class="nav-previous clearfix">
+                <a title=" CS 61B Intro to Gitlet" href="/2024/04/09/start gitlet/">&lt; 上一篇</a>
             </div>
+            
             
         </nav>
     
@@ -347,8 +326,8 @@ Operators and operand...`;
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A_lect2/',
-                path: '/2024/04/05/CS61A_lect2/'
+                id: '/2024/04/14/Algs1.5_UnionFind/',
+                path: '/2024/04/14/Algs1.5_UnionFind/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
