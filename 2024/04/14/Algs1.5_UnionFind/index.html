@@ -25,7 +25,7 @@
 <meta property="og:description" content="Union and Finddynamic connectivitygiven a set of N objectsunion: connect 2 objectsfind&#x2F;connected: is there a path connecting the two objects?Today’s problem: is there any paths? (the exact path t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-04-17T02:42:53.393Z">
+<meta property="article:modified_time" content="2024-04-17T12:48:47.992Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="Algs">
@@ -179,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            3.58K
+                            3.60K
                         
                         字
                     </li>
@@ -191,7 +191,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1713321773393"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713358127992"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -218,7 +218,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
 </ul>
 <h4 id="path-compression"><a href="#path-compression" class="headerlink" title="path compression"></a>path compression</h4><p>Just after computing the root of p, set the id of each examined node to point to that root.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="type">int</span> <span class="title function_">root</span><span class="params">(<span class="type">int</span> i)</span> &#123; </span><br><span class="line">	<span class="keyword">while</span> (i != id[i]) </span><br><span class="line">	&#123; </span><br><span class="line">		id[i] = id[id[i]]; <span class="comment">// code added</span></span><br><span class="line">		i = id[i]; </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> i; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</div>
+<h3 id="Application-Percolation"><a href="#Application-Percolation" class="headerlink" title="Application: Percolation"></a>Application: Percolation</h3></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -303,7 +303,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
                     <a class="tag-none-link" href="/tags/Algs/" rel="tag">Algs</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-17T02:42:53.393Z" itemprop="dateModified">最后编辑：2024-04-17</time>
+                    <time datetime="2024-04-17T12:48:47.992Z" itemprop="dateModified">最后编辑：2024-04-17</time>
                 </div>
             </div>
         </footer>
@@ -315,6 +315,10 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
                 <a title=" CS 61B Intro to Gitlet" href="/2024/04/09/start gitlet/">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" 61B_part_4_DataSturct" href="/2024/04/20/61B-part-4-DataSturct/">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
@@ -373,7 +377,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
                 文章
             </span>
             <span class="count">
-                22
+                23
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -389,7 +393,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
                 标签
             </span>
             <span class="count">
-                17
+                20
             </span>
         </a>
     </div>
@@ -400,7 +404,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">8</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">9</span></li></ul>
   </aside>
 
 
@@ -409,7 +413,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.65em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.65em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.7em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.75em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.65em;">project2</a> <a href="/tags/python/" style="font-size: 0.6em;">python</a> <a href="/tags/tools/" style="font-size: 0.6em;">tools</a>
+        <a href="/tags/61B/" style="font-size: 0.68em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.64em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.72em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
       </div>
   </aside>
 
@@ -420,6 +424,12 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B_part_4_DataSturct</a>
+            
+          
         
           
           
@@ -446,11 +456,7 @@ running time: Depth of any node x is at most log<del>2</del>N. (for CS, lg &#x3D
           
         
           
-          
-            <a class="list-group-item" href="/2024/04/07/part1_search/"><i class="fa  fa-book"></i> part 1 search</a>
             
-          
-        
           
             
           
