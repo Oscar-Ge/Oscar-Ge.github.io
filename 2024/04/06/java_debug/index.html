@@ -15,21 +15,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="CS 61B, Java, debugging" />
+    <meta name="keywords" content="61B, CS, Java, debugging" />
   
-  <meta name="description" content="prev: [[Basic_Java]]next: [[61B_Part_1_Java]]">
+  <meta name="description" content="prev: [[Basic_Java]]next: [[61B_Part_1_Java]] Breakpointsprevious debugging experience (Print statements):  They require you to modify your code (to add print statements). They require you to explicit">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CS 61B Part 0.5 Java Debugging">
 <meta property="og:url" content="https://oscar-ge.github.io/2024/04/06/java_debug/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="prev: [[Basic_Java]]next: [[61B_Part_1_Java]]">
+<meta property="og:description" content="prev: [[Basic_Java]]next: [[61B_Part_1_Java]] Breakpointsprevious debugging experience (Print statements):  They require you to modify your code (to add print statements). They require you to explicit">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-04-10T02:29:15.141Z">
+<meta property="article:published_time" content="2024-04-05T16:00:10.000Z">
+<meta property="article:modified_time" content="2024-04-21T01:30:33.062Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="CS 61B">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="debugging">
+<meta property="article:tag" content="CS">
+<meta property="article:tag" content="61B">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -171,7 +172,7 @@
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-05T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-06</time></li>
+                <li><time datetime="2024-04-05T16:00:10.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-06</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -180,7 +181,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            46
+                            419
                         
                         字
                     </li>
@@ -192,13 +193,19 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712716155141"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713663033062"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
             <div itemprop="articleBody"><p>prev: [[Basic_Java]]<br>next: [[61B_Part_1_Java]]</p>
+<h1 id="Breakpoints"><a href="#Breakpoints" class="headerlink" title="Breakpoints"></a>Breakpoints</h1><p>previous debugging experience (Print statements):</p>
+<ol>
+<li>They require you to modify your code (to add print statements).</li>
+<li>They require you to explicitly state what you want to know (since you have to say precisely what you want to print).</li>
+<li>And they provide their results in a format that can be hard to read, since it’s just a big blob of text in the execution window.</li>
+</ol>
 </div>
         </div>
         
@@ -263,7 +270,9 @@
             const hostUrl       = "https://oscar-ge.github.io/2024/04/06/java_debug/";
             const title         = "「CS 61B Part 0.5 Java Debugging」";
             const excerpt       = `prev: [[Basic_Java]]next: [[61B_Part_1_Java]]
-`;
+Breakpointsprevious debugging experience (Print statements):
+
+They requ...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -282,10 +291,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/CS-61B/" rel="tag">CS 61B</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/debugging/" rel="tag">debugging</a>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/CS/" rel="tag">CS</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/debugging/" rel="tag">debugging</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-10T02:29:15.141Z" itemprop="dateModified">最后编辑：2024-04-10</time>
+                    <time datetime="2024-04-21T01:30:33.062Z" itemprop="dateModified">最后编辑：2024-04-21</time>
                 </div>
             </div>
         </footer>
@@ -294,12 +303,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A calculators" href="/2024/04/05/CS61A_calculators/">&lt; 上一篇</a>
+                <a title=" CS 61B Part 1 Java" href="/2024/04/06/61B_Part_1_Java/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61B Part 0 Basic Java" href="/2024/04/06/Basic_Java/">下一篇 &gt;</a>
+                <a title=" CS 61B Part 2 Linked List" href="/2024/04/06/61B_Part_2_LinkList/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -359,7 +368,7 @@
                 文章
             </span>
             <span class="count">
-                23
+                22
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -386,7 +395,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">9</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">9</span></li></ul>
   </aside>
 
 
@@ -395,7 +404,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.68em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.64em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.72em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
       </div>
   </aside>
 
@@ -409,7 +418,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B_part_4_DataSturct</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
             
           
         
@@ -437,8 +446,6 @@
             
           
         
-          
-            
           
             
           
