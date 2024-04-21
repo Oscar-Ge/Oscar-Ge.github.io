@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>part 1 search | Oscar-Ge</title>
+  <title>61B part 5.2 hashing | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,21 +15,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="Basic AI, CS 188, python" />
+    <meta name="keywords" content="61B, Hashing, Java" />
   
-  <meta name="description" content="searchA search problem consists of: ▪ A state space ▪ A successor function(with actions, costs) ▪ A start state and a goal test A solution is a sequence of actions (a plan) whichtransforms the start s">
-<meta property="og:type" content="article">
-<meta property="og:title" content="part 1 search">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/07/part1_search/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="61B part 5.2 hashing">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="searchA search problem consists of: ▪ A state space ▪ A successor function(with actions, costs) ▪ A start state and a goal test A solution is a sequence of actions (a plan) whichtransforms the start s">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-07T09:30:10.000Z">
-<meta property="article:modified_time" content="2024-04-07T09:33:35.829Z">
+<meta property="article:published_time" content="2024-04-21T03:22:24.000Z">
+<meta property="article:modified_time" content="2024-04-21T03:23:27.833Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="CS 188">
-<meta property="article:tag" content="Basic AI">
-<meta property="article:tag" content="python">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="61B">
+<meta property="article:tag" content="Hashing">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -163,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/07/part1_search/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">part 1 search</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">61B part 5.2 hashing</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-07T09:30:10.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-07</time></li>
+                <li><time datetime="2024-04-21T03:22:24.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-21</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -180,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1.90K
+                            0
                         
                         字
                     </li>
@@ -192,63 +190,13 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712482415829"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713669807833"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="search"><a href="#search" class="headerlink" title="search"></a>search</h1><p>A <strong>search problem</strong> consists of:</p>
-<p>▪ A state space</p>
-<p>▪ A successor function<br>(with actions, costs)</p>
-<p>▪ A start state and a goal test</p>
-<p>A <strong>solution</strong> is a sequence of actions (a plan) which<br>transforms the start state to a goal state</p>
-<h2 id="State-Space-Graphs-vs-Search-Trees"><a href="#State-Space-Graphs-vs-Search-Trees" class="headerlink" title="State Space Graphs vs. Search Trees"></a>State Space Graphs vs. Search Trees</h2><p>State space graph: A mathematical<br>representation of a search problem</p>
-<p>▪ Nodes are (abstracted) world configurations</p>
-<p>▪ Arcs represent successors (action results)</p>
-<p>▪ The goal test is a set of goal nodes (maybe only one)</p>
-<p>▪ A search tree:</p>
-<p>Possible futures</p>
-<p>▪ A “what if” tree of plans and their outcomes</p>
-<p>▪ The start state is the root node</p>
-<p>▪ Children correspond to successors</p>
-<p>▪ Nodes show states, but correspond to PLANS that achieve those states</p>
-<p>▪ For most problems, we can never actually build the whole tree</p>
-<p>Search: (by the search tree)</p>
-<p>▪ Expand out potential plans (tree nodes)</p>
-<p>▪ Maintain a fringe of partial plans under consideration</p>
-<p>▪ Try to expand as few tree nodes as possible</p>
-<p>tree search: DFS and BFS</p>
-<h2 id="Depth-First-Search-DFS-Properties"><a href="#Depth-First-Search-DFS-Properties" class="headerlink" title="Depth-First Search (DFS) Properties"></a>Depth-First Search (DFS) Properties</h2><p>What nodes DFS expand?</p>
-<p>▪ Some left prefix of the tree.</p>
-<p>▪ Could process the whole tree!</p>
-<p>▪ If m is finite, takes time O(bm)</p>
-<p>How much space does the fringe take?</p>
-<p>▪ Only has siblings on path to root, so O(bm)</p>
-<p>Is it complete?</p>
-<p>▪ m could be infinite, so only if we prevent<br>cycles (more later)</p>
-<p>Is it optimal?</p>
-<p>▪ No, it finds the “leftmost” solution,<br>regardless of depth or cost</p>
-<h2 id="Breadth-First-Search-BFS"><a href="#Breadth-First-Search-BFS" class="headerlink" title="Breadth-First Search (BFS)"></a>Breadth-First Search (BFS)</h2><p>dig the breadth first</p>
-<p>Below: For map search</p>
-<h2 id="Heuristic"><a href="#Heuristic" class="headerlink" title="Heuristic"></a>Heuristic</h2><p>A heuristic is:</p>
-<p>▪ A function that estimates how close a state is to a goal</p>
-<p>▪ Designed for a particular search problem</p>
-<p>▪ Examples: Manhattan distance, Euclidean distance for<br>pathing</p>
-<h2 id="Greedy-Search"><a href="#Greedy-Search" class="headerlink" title="Greedy Search"></a>Greedy Search</h2><p>find the one seems to be the closest</p>
-<p>Strategy: expand a node that you think is</p>
-<p>closest to a goal state</p>
-<ul>
-<li>Heuristic: estimate of distance to nearest goal for<br>each state</li>
-</ul>
-<p>A common case:</p>
-<ul>
-<li><p>Best-first takes you straight to the (wrong) goal</p>
-</li>
-<li><p>Worst-case: like a badly-guided DFS</p>
-</li>
-</ul>
-</div>
+            <div itemprop="articleBody"></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -297,7 +245,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/07/part1_search/",
+                text: "https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -309,12 +257,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/07/part1_search/";
-            const title         = "「part 1 search」";
-            const excerpt       = `searchA search problem consists of:
-▪ A state space
-▪ A successor function(with actions, costs)
-▪ A start state and a...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/";
+            const title         = "「61B part 5.2 hashing」";
+            const excerpt       = ``;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -333,10 +278,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/Basic-AI/" rel="tag">Basic AI</a>, <a class="tag-none-link" href="/tags/CS-188/" rel="tag">CS 188</a>, <a class="tag-none-link" href="/tags/python/" rel="tag">python</a>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/Hashing/" rel="tag">Hashing</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T09:33:35.829Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-21T03:23:27.833Z" itemprop="dateModified">最后编辑：2024-04-21</time>
                 </div>
             </div>
         </footer>
@@ -345,13 +290,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61B Part 3  Inheritance, Implements, Iterators" href="/2024/04/06/61B_Part_3_OOP/">&lt; 上一篇</a>
+                <a title=" 61B part 5.1 BSTs, B trees, red black trees" href="/2024/04/20/61B/61B-part-5-BST/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" CS 61B part4 Iterators, Exceptions" href="/2024/04/08/part4-Iterators/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -363,8 +304,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/07/part1_search/',
-                path: '/2024/04/07/part1_search/'
+                id: '/2024/04/21/61B/61B-part5-2-hashing/',
+                path: '/2024/04/21/61B/61B-part5-2-hashing/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -410,7 +351,7 @@
                 文章
             </span>
             <span class="count">
-                22
+                23
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -437,7 +378,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">9</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">10</span></li></ul>
   </aside>
 
 
@@ -460,7 +401,13 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/21/61B/61B-part5-2-hashing/"><i class="fa  fa-book"></i> 61B part 5.2 hashing</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/20/61B/61B-part-5-BST/"><i class="fa  fa-book"></i> 61B part 5.1 BSTs, B trees, red black trees</a>
             
           
         
@@ -472,22 +419,18 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/09/start%20gitlet/"><i class="fa  fa-book"></i> CS 61B Intro to Gitlet</a>
+            <a class="list-group-item" href="/2024/04/09/61B/start%20gitlet/"><i class="fa  fa-book"></i> CS 61B Intro to Gitlet</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/08/Git-intro/"><i class="fa  fa-book"></i> intro to Git</a>
+            <a class="list-group-item" href="/2024/04/08/61B/Git-intro/"><i class="fa  fa-book"></i> intro to Git</a>
             
           
         
           
-          
-            <a class="list-group-item" href="/2024/04/08/part4-Iterators/"><i class="fa  fa-book"></i> CS 61B part4 Iterators, Exceptions</a>
             
-          
-        
           
             
           

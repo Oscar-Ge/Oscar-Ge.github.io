@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A Scheme | Oscar-Ge</title>
+  <title>intro to Git | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,21 +15,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="CS 61A, Scheme" />
+    <meta name="keywords" content="61B, CS, Git, project2, tools" />
   
-  <meta name="description" content="Schemesymbolsbooleanst truef falsestrings‘hello world! numbersno need to say calculations(+ 1 2) 3 (the same: +-*&#x2F;&lt;&gt;&#x3D;) (modulo 35 4) 3 logic (if   [if-false])  Scheme: 123(if (&gt; x 3">
+  <meta name="description" content="prev: [[part4-Iterators]]next:  Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system V0.0复制整个项目目录–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异  Most popular: RCS (在硬盘上保存补丁集) V2.0 不同开发者协同">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A Scheme">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A_Scheme/index.html">
+<meta property="og:title" content="intro to Git">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/08/61B/Git-intro/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="Schemesymbolsbooleanst truef falsestrings‘hello world! numbersno need to say calculations(+ 1 2) 3 (the same: +-*&#x2F;&lt;&gt;&#x3D;) (modulo 35 4) 3 logic (if   [if-false])  Scheme: 123(if (&gt; x 3">
+<meta property="og:description" content="prev: [[part4-Iterators]]next:  Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system V0.0复制整个项目目录–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异  Most popular: RCS (在硬盘上保存补丁集) V2.0 不同开发者协同">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:18.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:44:32.322Z">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/local.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/centralized.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/distributed.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/deltas.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/snapshots.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/areas.png">
+<meta property="article:published_time" content="2024-04-08T13:13:14.000Z">
+<meta property="article:modified_time" content="2024-04-10T02:25:01.921Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="CS 61A">
-<meta property="article:tag" content="Scheme">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="tools">
+<meta property="article:tag" content="CS">
+<meta property="article:tag" content="61B">
+<meta property="article:tag" content="project2">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://git-scm.com/book/en/v2/images/local.png">
   
   <!-- 站点验证相关 -->
   
@@ -162,15 +172,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A_Scheme/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/08/61B/Git-intro/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A Scheme</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">intro to Git</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:18.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-08T13:13:14.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-08</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -179,7 +189,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            2.03K
+                            2.30K
                         
                         字
                     </li>
@@ -191,85 +201,73 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454272322"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712715901921"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a>Scheme</h1><h2 id="symbols"><a href="#symbols" class="headerlink" title="symbols"></a>symbols</h2><h3 id="booleans"><a href="#booleans" class="headerlink" title="booleans"></a>booleans</h3><h1 id="t-true"><a href="#t-true" class="headerlink" title="t true"></a>t true</h1><h1 id="f-false"><a href="#f-false" class="headerlink" title="f false"></a>f false</h1><h3 id="strings"><a href="#strings" class="headerlink" title="strings"></a>strings</h3><p>‘hello world!</p>
-<h3 id="numbers"><a href="#numbers" class="headerlink" title="numbers"></a>numbers</h3><p>no need to say</p>
-<h2 id="calculations"><a href="#calculations" class="headerlink" title="calculations"></a>calculations</h2><p>(+ 1 2) 3 (the same: +-*&#x2F;&lt;&gt;&#x3D;)</p>
-<p>(modulo 35 4) 3</p>
-<h2 id="logic"><a href="#logic" class="headerlink" title="logic"></a>logic</h2><ol>
-<li>(if <predicate> <if-true> [if-false])</li>
-</ol>
-<p>Scheme:</p>
-<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="built_in">if</span></span> (<span class="name"><span class="built_in">&gt;</span></span> x <span class="number">3</span>)</span><br><span class="line">         <span class="number">1</span></span><br><span class="line">         <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<p>python:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> x &gt; <span class="number">3</span>:</span><br><span class="line">    <span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>cond</li>
-</ol>
-<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="built_in">cond</span></span></span><br><span class="line">((<span class="name"><span class="built_in">&gt;</span></span> x <span class="number">0</span>) <span class="symbol">&#x27;positive</span>)</span><br><span class="line">((<span class="name"><span class="built_in">&lt;</span></span> x <span class="number">0</span>) <span class="symbol">&#x27;negative</span>)</span><br><span class="line">(<span class="name"><span class="built_in">else</span></span> <span class="symbol">&#x27;zero</span>))</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>and &amp; or</li>
-</ol>
-<p>and (and x1 x2 …)</p>
-<p>or (or x1 x2 …)</p>
-<h2 id="symbols-1"><a href="#symbols-1" class="headerlink" title="symbols"></a>symbols</h2><h3 id="booleans-1"><a href="#booleans-1" class="headerlink" title="booleans"></a>booleans</h3><h1 id="t-true-1"><a href="#t-true-1" class="headerlink" title="t true"></a>t true</h1><h1 id="f-false-1"><a href="#f-false-1" class="headerlink" title="f false"></a>f false</h1><h3 id="strings-1"><a href="#strings-1" class="headerlink" title="strings"></a>strings</h3><p>‘hello world!</p>
-<h3 id="numbers-1"><a href="#numbers-1" class="headerlink" title="numbers"></a>numbers</h3><p>no need to say</p>
-<h2 id="calculations-1"><a href="#calculations-1" class="headerlink" title="calculations"></a>calculations</h2><p>(+ 1 2) 3 (the same: +-*&#x2F;&lt;&gt;&#x3D;)</p>
-<p>(modulo 35 4) 3</p>
-<h2 id="logic-1"><a href="#logic-1" class="headerlink" title="logic"></a>logic</h2><ol>
-<li>(if <predicate> <if-true> [if-false])</li>
-</ol>
-<p>Scheme:</p>
+            <div itemprop="articleBody"><p>prev: [[part4-Iterators]]<br>next: </p>
+<h1 id="Intro-to-Git"><a href="#Intro-to-Git" class="headerlink" title="Intro to Git"></a>Intro to Git</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Version-control"><a href="#Version-control" class="headerlink" title="Version control"></a>Version control</h3><p>V1.0本地版本控制系统 local version control system</p>
+<p>V0.0复制整个项目目录<br>–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异</p>
+<p><img src="https://git-scm.com/book/en/v2/images/local.png" alt="local"></p>
+<p>Most popular: RCS (在硬盘上保存补丁集)</p>
+<p>V2.0 不同开发者协同工作需求–集中化的版本控制系统（Centralized Version Control Systems，简称 CVCS）</p>
+<p>单一的集中管理的服务器，保存所有文件的修订版本</p>
+<p><img src="https://git-scm.com/book/en/v2/images/centralized.png" alt="CVCS"></p>
+<p>例子： CVS…</p>
+<p>缺点：过于依靠服务器，服务器宕机就寄</p>
+<p>V3.0 分布式版本控制系统（Distributed Version Control System，简称 DVCS）</p>
+<p>客户端并不只提取最新版本的文件快照， 而是把代码仓库完整地镜像下来，包括完整的历史记录。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/distributed.png" alt="DVCS"></p>
+<p>例子：git</p>
+<h3 id="Git-feature"><a href="#Git-feature" class="headerlink" title="Git feature"></a>Git feature</h3><h4 id="Snapshots"><a href="#Snapshots" class="headerlink" title="Snapshots"></a>Snapshots</h4><p>The other version control system are delta-based.</p>
+<p><img src="https://git-scm.com/book/en/v2/images/deltas.png" alt="delta"></p>
+<p>However, the <code>git</code> system are snapshot-based.</p>
+<p><img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="snapshot"></p>
+<p>几乎所有操作都在本地进行</p>
+<p>保证数据完整性(Hash表)，一般只添加数据</p>
+<h4 id="status"><a href="#status" class="headerlink" title="status"></a>status</h4><p>commited, modified, and staged</p>
+<ul>
+<li>已修改表示修改了文件，但还没保存到数据库中。</li>
+<li>已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。</li>
+<li>已提交表示数据已经安全地保存在本地数据库中。<br>These made the Git have three areas.<br><img src="https://git-scm.com/book/en/v2/images/areas.png" alt="areas"><br>基本的 Git 工作流程如下：</li>
+</ul>
 <ol>
-<li>begin: bring few expressions together</li>
+<li>在工作区中修改文件。</li>
+<li>将你想要下次提交的更改选择性地暂存，这样只会将更改的部分添加到暂存区。</li>
+<li>提交更新，找到暂存区的文件，将快照永久性存储到 Git 目录。<br>get some help of <code>Git</code>:<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git help &lt;verb&gt;</span><br><span class="line">git &lt;verb&gt; --help</span><br><span class="line">man git-&lt;verb&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="built_in">cond</span></span> ((<span class="name"><span class="built_in">&gt;</span></span> x <span class="number">10</span>) (<span class="name"><span class="built_in">begin</span></span> (<span class="name">print</span> <span class="symbol">&#x27;big</span>)   (<span class="name">print</span> <span class="symbol">&#x27;guy</span>))) </span><br><span class="line">     (<span class="name"><span class="built_in">else</span></span></span><br><span class="line">    (<span class="name"><span class="built_in">begin</span></span> (<span class="name">print</span> <span class="symbol">&#x27;small</span>) (<span class="name">print</span> <span class="symbol">&#x27;fry</span>)))</span><br></pre></td></tr></table></figure>
-
-<h2 id="defination"><a href="#defination" class="headerlink" title="defination"></a>defination</h2><p>parameter:</p>
-<ol>
-<li>(define <symbol> <expression>)</li>
-</ol>
-<p>(define x 2)</p>
-<p>functions(precedure in Scheme):</p>
-<p> (define (<symbol> <formal parameters>) <body>)</p>
-<p>(define (add_four x) x+4)</p>
-<ol>
-<li><p>(lambda (<formal-parameters>) <body>)</p>
-</li>
-<li><p>(temporate binding) let() expression</p>
-</li>
-</ol>
-<p>(define c (let (a 3) (b (+ 2 2)))(sqrt (+ (<em>a a) (</em> b b))))</p>
-<h2 id="link-lists"><a href="#link-lists" class="headerlink" title="link lists"></a>link lists</h2><p> • cons: Two-argument procedure that creates a linked list</p>
-<p> • car:  Procedure that returns the first element of a list</p>
-<p> • cdr:  Procedure that returns the rest of a list</p>
-<p> • nil:  The empty list</p>
-<p>list: join the lists&#x2F;elements together</p>
-<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;(<span class="name"><span class="built_in">cons</span></span> <span class="number">1</span> (<span class="name"><span class="built_in">cons</span></span> <span class="number">2</span> nil))</span><br><span class="line">(<span class="name">1</span> <span class="number">2</span>) </span><br><span class="line">&gt; (<span class="name"><span class="built_in">define</span></span> x (<span class="name"><span class="built_in">cons</span></span> <span class="number">1</span> (<span class="name"><span class="built_in">cons</span></span> <span class="number">2</span> nil))</span><br><span class="line">&gt; x</span><br><span class="line">(<span class="name">1</span> <span class="number">2</span>)</span><br><span class="line">&gt; (<span class="name"><span class="built_in">car</span></span> x)</span><br><span class="line"><span class="number">1</span></span><br><span class="line">&gt; (<span class="name"><span class="built_in">cdr</span></span> x)</span><br><span class="line">(<span class="name">2</span>)</span><br><span class="line">&gt; (<span class="name"><span class="built_in">cons</span></span> <span class="number">1</span> (<span class="name"><span class="built_in">cons</span></span> <span class="number">2</span> (<span class="name"><span class="built_in">cons</span></span> <span class="number">3</span> (<span class="name"><span class="built_in">cons</span></span> <span class="number">4</span> nil))))</span><br><span class="line">(<span class="name">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="quotation-marks"><a href="#quotation-marks" class="headerlink" title="quotation marks"></a>quotation marks</h2><h3 id="quotations-‘a"><a href="#quotations-‘a" class="headerlink" title="quotations (‘a)"></a>quotations (‘a)</h3><p>cons(1, a) error!</p>
-<p>cons(1, ‘a) (1, a)</p>
-<h3 id="quasiquotations-a"><a href="#quasiquotations-a" class="headerlink" title="quasiquotations (&#96;a)"></a>quasiquotations (&#96;a)</h3><p>‘(a ,(+ b 1))  &#x3D;&gt;   (a (unquote (+ b 1))</p>
-<p>&#96;(a ,(+ b 1))  &#x3D;&gt;   (a 5)</p>
-<p>for generating scheme programs</p>
-<h3 id="unquote-a"><a href="#unquote-a" class="headerlink" title="unquote (,a)"></a>unquote (,a)</h3><h2 id="programs-are-languages"><a href="#programs-are-languages" class="headerlink" title="programs are languages"></a>programs are languages</h2><h3 id="scheme-sentences-are-lists"><a href="#scheme-sentences-are-lists" class="headerlink" title="scheme sentences are lists"></a>scheme sentences are lists</h3><p>scm&gt; (list ‘quotient 10 2)</p>
-<p> (quotient 10 2)</p>
-<p> scm&gt; (eval (list ‘quotient 10 2))</p>
-<p> 5</p>
-<p>for example:to generate while statement for scheme</p>
-<p>python:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> x = <span class="number">2</span> </span><br><span class="line">total = <span class="number">0</span> </span><br><span class="line"><span class="keyword">while</span> x &lt; <span class="number">10</span>: </span><br><span class="line">    total = total + x * x </span><br><span class="line">    x = x + <span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>scheme:</p>
-<figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="built_in">begin</span></span> </span><br><span class="line">  (<span class="name"><span class="built_in">define</span></span> (<span class="name">f</span> x total) </span><br><span class="line">    (<span class="name"><span class="built_in">if</span></span> (<span class="name"><span class="built_in">&lt;</span></span> x <span class="number">10</span>) </span><br><span class="line">      (<span class="name">f</span> (<span class="name"><span class="built_in">+</span></span> x <span class="number">2</span>) (<span class="name"><span class="built_in">+</span></span> total (<span class="name"><span class="built_in">*</span></span> x x))) </span><br><span class="line">      total)) </span><br><span class="line">          ) </span><br></pre></td></tr></table></figure>
+<h2 id="Basic-Git"><a href="#Basic-Git" class="headerlink" title="Basic Git"></a>Basic Git</h2><h3 id="initialize"><a href="#initialize" class="headerlink" title="initialize"></a>initialize</h3><p>a. <code>init</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>b. clone</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/libgit2/libgit2</span><br></pre></td></tr></table></figure>
+<h3 id="recording"><a href="#recording" class="headerlink" title="recording"></a>recording</h3><p>The status of the file in repo: tracked and untracked.<br>To get the file tracked: <code>git add .</code> or <code>git add README</code><br>To check the status of the file:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git status</span></span><br></pre></td></tr></table></figure>
+<p>More simple: <code>git status -s</code></p>
+<p>To summarize: </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . # modified --&gt; staged</span><br><span class="line">git commit -m &quot;initial commit&quot; # staged --&gt; commited</span><br><span class="line">git push origin master # push the commited repo to the remote origin</span><br></pre></td></tr></table></figure>
+<h3 id="ignoring"><a href="#ignoring" class="headerlink" title="ignoring"></a>ignoring</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> .gitignore <span class="comment"># create a file named .gitinore</span></span></span><br><span class="line">*.[oa] # ignore the file ended with .o or .a</span><br><span class="line">*~ # ignore the file ended with ~</span><br></pre></td></tr></table></figure>
+<h3 id="difference"><a href="#difference" class="headerlink" title="difference"></a>difference</h3><p>查看当前文件和暂存区域快照之间的差异。 也就是修改之后还没有暂存起来的变化内容。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure>
+<p>查看已暂存的变化：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff --cached</span><br></pre></td></tr></table></figure>
+<h3 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h3><p>先用<code>git status</code> 确认文件都已经暂存，然后提交</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
+<p>如果没有暂存文件，可以用<code>-a</code>命令跳过暂存空间直接commit</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a</span><br></pre></td></tr></table></figure>
+<h3 id="remove"><a href="#remove" class="headerlink" title="remove"></a>remove</h3><p>先删除这个文件，再取消git的跟踪</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm README.md</span><br><span class="line">git rm README.md</span><br></pre></td></tr></table></figure>
+<h3 id="move"><a href="#move" class="headerlink" title="move"></a>move</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">mv</span> file_from file_to</span></span><br></pre></td></tr></table></figure>
+<h3 id="checking-history"><a href="#checking-history" class="headerlink" title="checking history"></a>checking history</h3><p>default <code>git log</code>: return all the commit history</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+<p><code>-p</code>: show the difference of each commit<br><code>-2</code>: just show the latest 2 commit<br><code>--stat</code>: show the simplified version</p>
+<h3 id="amend"><a href="#amend" class="headerlink" title="amend"></a>amend</h3><p>有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行带有 <code>--amend</code> 选项的提交命令来重新提交：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+<h4 id="cancel-the-file-that-have-been-staged"><a href="#cancel-the-file-that-have-been-staged" class="headerlink" title="cancel the file that have been staged"></a>cancel the file that have been staged</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<h4 id="cancel-the-file-that-have-been-commited"><a href="#cancel-the-file-that-have-been-commited" class="headerlink" title="cancel the file that have been commited"></a>cancel the file that have been commited</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<p>TO NOTICE: Usually, the behaviors are dangerous. Take attention when using them.</p>
+<p>TO BE CONTINUED</p>
 </div>
         </div>
         
@@ -319,7 +317,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A_Scheme/",
+                text: "https://oscar-ge.github.io/2024/04/08/61B/Git-intro/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -331,11 +329,11 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A_Scheme/";
-            const title         = "「CS 61A Scheme」";
-            const excerpt       = `Schemesymbolsbooleanst truef falsestrings‘hello world!
-numbersno need to say
-calculations(+ 1 2) 3 (the same: +-*&#x2...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/08/61B/Git-intro/";
+            const title         = "「intro to Git」";
+            const excerpt       = `prev: [[part4-Iterators]]next: 
+Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system
+V0.0...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -354,10 +352,10 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>, <a class="tag-none-link" href="/tags/Scheme/" rel="tag">Scheme</a>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/CS/" rel="tag">CS</a>, <a class="tag-none-link" href="/tags/Git/" rel="tag">Git</a>, <a class="tag-none-link" href="/tags/project2/" rel="tag">project2</a>, <a class="tag-none-link" href="/tags/tools/" rel="tag">tools</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:44:32.322Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-10T02:25:01.921Z" itemprop="dateModified">最后编辑：2024-04-10</time>
                 </div>
             </div>
         </footer>
@@ -366,12 +364,12 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A lect11" href="/2024/04/05/CS61A/CS61A lect11/">&lt; 上一篇</a>
+                <a title=" CS 61B part4 Iterators, Exceptions" href="/2024/04/08/61B/part4-Iterators/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61A errors" href="/2024/04/05/CS61A/CS61A_errors/">下一篇 &gt;</a>
+                <a title=" CS 61B Intro to Gitlet" href="/2024/04/09/61B/start gitlet/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -384,8 +382,8 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A_Scheme/',
-                path: '/2024/04/05/CS61A_Scheme/'
+                id: '/2024/04/08/61B/Git-intro/',
+                path: '/2024/04/08/61B/Git-intro/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -431,7 +429,7 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
                 文章
             </span>
             <span class="count">
-                22
+                23
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -458,7 +456,7 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">9</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">10</span></li></ul>
   </aside>
 
 
@@ -481,7 +479,13 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/21/61B/61B-part5-2-hashing/"><i class="fa  fa-book"></i> 61B part 5.2 hashing</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/04/20/61B/61B-part-5-BST/"><i class="fa  fa-book"></i> 61B part 5.1 BSTs, B trees, red black trees</a>
             
           
         
@@ -493,22 +497,18 @@ calculations(+ 1 2) 3 (the same: +-*&#x2...`;
         
           
           
-            <a class="list-group-item" href="/2024/04/09/start%20gitlet/"><i class="fa  fa-book"></i> CS 61B Intro to Gitlet</a>
+            <a class="list-group-item" href="/2024/04/09/61B/start%20gitlet/"><i class="fa  fa-book"></i> CS 61B Intro to Gitlet</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/08/Git-intro/"><i class="fa  fa-book"></i> intro to Git</a>
+            <a class="list-group-item" href="/2024/04/08/61B/Git-intro/"><i class="fa  fa-book"></i> intro to Git</a>
             
           
         
           
-          
-            <a class="list-group-item" href="/2024/04/08/part4-Iterators/"><i class="fa  fa-book"></i> CS 61B part4 Iterators, Exceptions</a>
             
-          
-        
           
             
           
