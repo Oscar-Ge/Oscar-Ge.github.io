@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>61B part 4 DataSturcture | Oscar-Ge</title>
+  <title>CS 61A lect8 recursion | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,23 +15,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="61B, BST, Hashing, Java, Tree" />
+    <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="disjoint sets: see [[Algs1.5_UnionFind]] Abstract Data Typesit is defined only by its operations, not by its implementation.for example: stack is defined by its operation: push(int x) and int pop(), n">
+  <meta name="description" content="CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Conditional statements check for base cases• Base cases are evaluated without recursive">
 <meta property="og:type" content="article">
-<meta property="og:title" content="61B part 4 DataSturcture">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/20/61B-part-4-DataSturct/index.html">
+<meta property="og:title" content="CS 61A lect8 recursion">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect8/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="disjoint sets: see [[Algs1.5_UnionFind]] Abstract Data Typesit is defined only by its operations, not by its implementation.for example: stack is defined by its operation: push(int x) and int pop(), n">
+<meta property="og:description" content="CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Conditional statements check for base cases• Base cases are evaluated without recursive">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-20T05:49:21.000Z">
-<meta property="article:modified_time" content="2024-04-21T02:00:23.849Z">
+<meta property="article:published_time" content="2024-04-04T16:00:08.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:45:24.366Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="61B">
-<meta property="article:tag" content="BST">
-<meta property="article:tag" content="Tree">
-<meta property="article:tag" content="Hashing">
+<meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -165,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/20/61B-part-4-DataSturct/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect8/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">61B part 4 DataSturcture</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect8 recursion</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-20T05:49:21.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-20</time></li>
+                <li><time datetime="2024-04-04T16:00:08.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -182,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            4.46K
+                            300
                         
                         字
                     </li>
@@ -194,82 +190,13 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1713664823849"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454324366"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>disjoint sets: see [[Algs1.5_UnionFind]]</p>
-<h1 id="Abstract-Data-Types"><a href="#Abstract-Data-Types" class="headerlink" title="Abstract Data Types"></a>Abstract Data Types</h1><p>it is defined only by its operations, not by its implementation.<br>for example: <strong>stack</strong> is defined by its operation: <code>push(int x)</code> and <code>int pop()</code>, not by its implementation (Array or LinkedList)</p>
-<h1 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h1><p>One of the most important interfaces in Java.<br>Maps, Lists, Sets are inherianted from it.</p>
-<h2 id="Maps"><a href="#Maps" class="headerlink" title="Maps"></a>Maps</h2><p>example:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, Integer&gt; m = <span class="keyword">new</span> <span class="title class_">TreeMap</span>&lt;&gt;();</span><br><span class="line">String[] text = &#123;<span class="string">&quot;sumomo&quot;</span>, <span class="string">&quot;mo&quot;</span>, <span class="string">&quot;momo&quot;</span>, <span class="string">&quot;mo&quot;</span>,</span><br><span class="line">                 <span class="string">&quot;momo&quot;</span>, <span class="string">&quot;no&quot;</span>, <span class="string">&quot;uchi&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (String s : text) &#123;</span><br><span class="line">   <span class="type">int</span> <span class="variable">currentCount</span> <span class="operator">=</span> m.getOrDefault(s, <span class="number">0</span>);</span><br><span class="line">   m.put(s, currentCount + <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>the contents:</p>
-<table>
-<thead>
-<tr>
-<th>sumomo</th>
-<th>1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>mo</td>
-<td>2</td>
-</tr>
-<tr>
-<td>momo</td>
-<td>2</td>
-</tr>
-<tr>
-<td>no</td>
-<td>1</td>
-</tr>
-<tr>
-<td>uchi</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Basic ideas behind the TreeMaps and TreeSets: BST (Binary Search Tree)</td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="BSTs-Binary-Search-Trees"><a href="#BSTs-Binary-Search-Trees" class="headerlink" title="BSTs (Binary Search Trees)"></a>BSTs (Binary Search Trees)</h1><p>The search in single linked list is very slow in Java.<br>![[LinkedList.png]]<br>To optimize it:</p>
-<ul>
-<li>Skip list (won’t be discussed): <strong>Add (random) express lanes</strong><br>![[SkipList.png]]</li>
-<li><strong>Move pointer to middle and flip left links.</strong> It is faster!<br>![[BST0.png]]<br>How to make it even faster? – think of the recursion!<br>![[BST1.png]]<br>just do the middle search recursively, and then get the result.</li>
-</ul>
-<h2 id="definitions"><a href="#definitions" class="headerlink" title="definitions"></a>definitions</h2><h3 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h3><p>consists of:</p>
-<ul>
-<li>A set of nodes.</li>
-<li>A set of edges that connect those nodes.</li>
-<li>Constraint: There is exactly one path between any two nodes.</li>
-</ul>
-<h3 id="Binary-tree"><a href="#Binary-tree" class="headerlink" title="Binary tree"></a>Binary tree</h3><p>a tree that a parent have 0&#x2F;1&#x2F;2 kids</p>
-<h3 id="BST"><a href="#BST" class="headerlink" title="BST"></a>BST</h3><p>Ordering must be complete, transitive, and antisymmetric. Given keys p and q:</p>
-<ul>
-<li>Exactly one of p ≺ q and q ≺ p are true.</li>
-<li>p ≺ q and q ≺ r imply p ≺ r.</li>
-</ul>
-<h2 id="Operations"><a href="#Operations" class="headerlink" title="Operations"></a>Operations</h2><h3 id="Finding"><a href="#Finding" class="headerlink" title="Finding"></a>Finding</h3><p>If searchKey equals T.key, return.</p>
-<ul>
-<li>If searchKey ≺ T.key, search T.left.</li>
-<li>If searchKey ≻ T.key, search T.right.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> BST <span class="title function_">find</span><span class="params">(BST T, Key sk)</span> &#123;</span><br><span class="line">   <span class="keyword">if</span> (T == <span class="literal">null</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">   <span class="keyword">if</span> (sk.equals(T.key))</span><br><span class="line">      <span class="keyword">return</span> T;</span><br><span class="line">   <span class="keyword">else</span> <span class="keyword">if</span> (sk ≺ T.key)</span><br><span class="line">      <span class="keyword">return</span> find(T.left, sk);</span><br><span class="line">   <span class="keyword">else</span></span><br><span class="line">      <span class="keyword">return</span> find(T.right, sk);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><ul>
-<li>find: do nothing</li>
-<li>didn’t find: create the key with appropriate link.</li>
-<li>Never implement like this:<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// right code</span></span><br><span class="line"><span class="keyword">static</span> BST <span class="title function_">insert</span><span class="params">(BST T, Key ik)</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (T == <span class="literal">null</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">BST</span>(ik);</span><br><span class="line">  <span class="keyword">if</span> (ik ≺ T.key)</span><br><span class="line">    T.left = insert(T.left, ik);</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (ik ≻ T.key)</span><br><span class="line">    T.right = insert(T.right, ik);</span><br><span class="line">  <span class="keyword">return</span> T;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//wrong code </span></span><br><span class="line"><span class="keyword">static</span> BST <span class="title function_">insert</span><span class="params">(BST T, Key ik)</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (T.left == <span class="literal">null</span>)</span><br><span class="line">		T.left = <span class="keyword">new</span> <span class="title class_">BST</span>(ik);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (T.right == <span class="literal">null</span>)</span><br><span class="line">		T.right = <span class="keyword">new</span> <span class="title class_">BST</span>(ik);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><p>Just remember the ultimate goal: maintain BST ability!</p>
-<h1 id="B-Trees-Balanced-search-trees"><a href="#B-Trees-Balanced-search-trees" class="headerlink" title="B Trees (Balanced search trees)"></a>B Trees (Balanced search trees)</h1><p>Some basic terms in trees:</p>
-<ul>
-<li><strong>depth</strong>: the number of links between a node and the root.</li>
-<li><strong>height</strong>: the lowest depth of a tree.</li>
-<li><strong>average depth</strong>: average of the total depths in the tree. You calculate this by taking $$∑𝑖&#x3D;0𝐷𝑑𝑖𝑛𝑖𝑁​N​​∑​i&#x3D;0​D​​d​i​​n​i​​​​$$ where d​i​​ is depth and n​i​​ is number of nodes at that depth.<br>The worst case of BSTs are O(N). (exactly the same case as linked lists!)<br>(In most case, the complexity of a algorithm is represented by its worst one.)<br>However, it have been proven that when inserting data randomly, the tree are intended to be grow to the better case (~O(logN)).<br>But in real world, the data didn’t come in a time usually. They always comes in different times.</li>
-</ul>
-<h2 id="Avoiding-imbalance"><a href="#Avoiding-imbalance" class="headerlink" title="Avoiding imbalance"></a>Avoiding imbalance</h2><p>So, a crazy idea is that we <strong>never add leaves on our bottom!</strong><br>![B- tree] (<a target="_blank" rel="noopener" href="https://oi-wiki.org/ds/images/b-tree-1.svg">oi-wiki.org&#x2F;ds&#x2F;images&#x2F;b-tree-1.svg</a>) The Problem: if you end with the idea, multiple linked lists will come again!<br>Solution: set limit to the leaves, and move the elements onto their parents when the limit is reached.<br>![insert 1](23tree-insert3b.png (283×363) (princeton.edu)](<a target="_blank" rel="noopener" href="https://algs4.cs.princeton.edu/33balanced/images/23tree-insert3b.png">https://algs4.cs.princeton.edu/33balanced/images/23tree-insert3b.png</a>))<br>![23tree-split](23tree-split.png (210×436) (princeton.edu)](<a target="_blank" rel="noopener" href="https://algs4.cs.princeton.edu/33balanced/images/23tree-split.png">https://algs4.cs.princeton.edu/33balanced/images/23tree-split.png</a>))<br>But, what if it is no longer a BST when the number have been moved?<br>split it into left and right part!<br>If anyone is longer than the certain limit, the number in the middle left or the center will be push up!<br>we can see that through the operation, the tree have reached perfect balance.<br>B Trees of L&#x3D;3 is also called “2-3-4 trees”<br>To simulate the B Trees, you can look at this <a target="_blank" rel="noopener" href="https://tinyurl.com/balanceYD">website</a><br>We can garantee that our trees are bushy!<br>Overall height: $$log_(L+1)N-log_2N$$<br>So, the complexity: logN</p>
-<h1 id="Red-black-BSTs"><a href="#Red-black-BSTs" class="headerlink" title="Red-black BSTs"></a>Red-black BSTs</h1><p>disadvantage of the B trees: it is complex to implement<br>tree rotation<br>![[Tree_rotation.png]]<br><code>rotateLeft(G)</code>: let x be the right child of G, and make G the new left child of x.</p>
+            <div itemprop="articleBody"><h1 id="CS61A-lect8-recusion"><a href="#CS61A-lect8-recusion" class="headerlink" title="CS61A lect8: recusion"></a>CS61A lect8: recusion</h1><h3 id="The-Anatomy-of-a-Recursive-Function"><a href="#The-Anatomy-of-a-Recursive-Function" class="headerlink" title="The Anatomy of a Recursive Function"></a>The Anatomy of a Recursive Function</h3><p>The def statement header is similar to other functions<br>• Conditional statements check for base cases<br>• Base cases are evaluated without recursive calls<br>• Recursive cases are evaluated with recursive calls<br> Iteration is a special case of recursion.</p>
 </div>
         </div>
         
@@ -319,7 +246,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/20/61B-part-4-DataSturct/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect8/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -331,10 +258,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/20/61B-part-4-DataSturct/";
-            const title         = "「61B part 4 DataSturcture」";
-            const excerpt       = `disjoint sets: see [[Algs1.5_UnionFind]]
-Abstract Data Typesit is defined only by its operations, not by its implemen...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect8/";
+            const title         = "「CS 61A lect8 recursion」";
+            const excerpt       = `CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Condi...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -353,10 +279,10 @@ Abstract Data Typesit is defined only by its operations, not by its implemen...`
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/BST/" rel="tag">BST</a>, <a class="tag-none-link" href="/tags/Hashing/" rel="tag">Hashing</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/Tree/" rel="tag">Tree</a>
+                    <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-21T02:00:23.849Z" itemprop="dateModified">最后编辑：2024-04-21</time>
+                    <time datetime="2024-04-07T01:45:24.366Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -365,9 +291,13 @@ Abstract Data Typesit is defined only by its operations, not by its implemen...`
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" Prin Algs Part 1 Union-Find" href="/2024/04/14/Algs1.5_UnionFind/">&lt; 上一篇</a>
+                <a title=" CS 61A lect6 code standards" href="/2024/04/05/CS61A/CS61A lect6/">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" CS 61A lect9 tree recusion" href="/2024/04/05/CS61A/CS61A lect9/">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
@@ -379,8 +309,8 @@ Abstract Data Typesit is defined only by its operations, not by its implemen...`
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/20/61B-part-4-DataSturct/',
-                path: '/2024/04/20/61B-part-4-DataSturct/'
+                id: '/2024/04/05/CS61A/CS61A%20lect8/',
+                path: '/2024/04/05/CS61A/CS61A%20lect8/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -462,7 +392,7 @@ Abstract Data Typesit is defined only by its operations, not by its implemen...`
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -476,7 +406,7 @@ Abstract Data Typesit is defined only by its operations, not by its implemen...`
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         

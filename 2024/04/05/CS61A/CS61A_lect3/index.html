@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A calculators | Oscar-Ge</title>
+  <title>CS 61A lect3 | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="parsingtext &#x3D;&gt; lextical analysis &#x3D;&gt; tokens &#x3D;&gt; syntactic analysis &#x3D;&gt; expression 123&amp;#x27;(+ 1&amp;#x27;  &amp;#x27;   (- 23)&amp;#x27; &amp;#x27;   (* 4 5.6))&amp;#x27;   123 &amp;#x27;(&amp;#x27;,">
+  <meta name="description" content="CS61A lect3None Indicates that Nothing is Returned:The special value None represents nothing in PythonA function that does not explicitly return a value will return NoneCareful: None is not displayed">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A calculators">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A_calculators/index.html">
+<meta property="og:title" content="CS 61A lect3">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect3/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="parsingtext &#x3D;&gt; lextical analysis &#x3D;&gt; tokens &#x3D;&gt; syntactic analysis &#x3D;&gt; expression 123&amp;#x27;(+ 1&amp;#x27;  &amp;#x27;   (- 23)&amp;#x27; &amp;#x27;   (* 4 5.6))&amp;#x27;   123 &amp;#x27;(&amp;#x27;,">
+<meta property="og:description" content="CS61A lect3None Indicates that Nothing is Returned:The special value None represents nothing in PythonA function that does not explicitly return a value will return NoneCareful: None is not displayed">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:20.000Z">
-<meta property="article:modified_time" content="2024-04-20T07:12:34.101Z">
+<meta property="article:published_time" content="2024-04-04T16:00:03.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:45:33.786Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
@@ -161,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A_calculators/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect3/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A calculators</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect3</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:20.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-04T16:00:03.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            472
+                            1262
                         
                         字
                     </li>
@@ -190,21 +190,26 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1713597154101"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454333786"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="parsing"><a href="#parsing" class="headerlink" title="parsing"></a>parsing</h1><p>text &#x3D;&gt; lextical analysis &#x3D;&gt; tokens &#x3D;&gt; syntactic analysis &#x3D;&gt; expression</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x27;(+ 1&#x27;  </span><br><span class="line">&#x27;   (- 23)&#x27; </span><br><span class="line">&#x27;   (* 4 5.6))&#x27;</span><br></pre></td></tr></table></figure>
-
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &#x27;(&#x27;, &#x27;+&#x27;, 1</span><br><span class="line">&#x27;(&#x27;, &#x27;-&#x27;, 23, &#x27;)&#x27;</span><br><span class="line">&#x27;(&#x27;, &#x27;*&#x27;, 4, 5.6, &#x27;)&#x27;, &#x27;)&#x27;</span><br></pre></td></tr></table></figure>
-
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Pair(&#x27;+&#x27;, Pair(1, ...))</span><br></pre></td></tr></table></figure>
-
-<h1 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h1><p>reduce(<function>, <parameter1>, <parameter2>…)</p>
-<p>pass in the parameters(maybe in the form of a list) and apply them to the function</p>
+            <div itemprop="articleBody"><h3 id="CS61A-lect3"><a href="#CS61A-lect3" class="headerlink" title="CS61A lect3"></a>CS61A lect3</h3><p><strong>None Indicates that Nothing is Returned:</strong><br>The special value None represents nothing in Python<br>A function that does not explicitly return a value will return None<br>Careful: None is not displayed by the interpreter as the value of an expression<br>example:<code>print(print(1), print(2))</code><br>1<br>2<br>None None</p>
+<p><strong>Miscellaneous Python Features</strong><br>interept：python3 -i xx.py<br>multiple return values<br>doctests:<br>write inputs in the 注释！<br>for example:<br><code>&quot;&quot;&quot;&gt;&gt;&gt;q, r=divide_exact(5, 3)</code><br><code>&gt;&gt;&gt;q</code><br><code>201</code><br><code>&gt;&gt;&gt;r</code><br><code>3</code><br><code>&quot;&quot;&quot;</code><br>python3 -m doctest -v xx.py<br><strong>Compound Statements</strong><br>Execution Rule for a sequence of statements:<br>• Execute the first statement<br>• Unless directed otherwise, execute the rest<br><strong>Conditional Statements</strong><br>Execution Rule for Conditional Statements:<br>Each clause is considered in order. </p>
+<ol>
+<li>Evaluate the header’s expression. </li>
+<li>If it is a true value, execute the suite &amp; skip the remaining clauses.</li>
+</ol>
+<p>Syntax Tips:</p>
+<ol>
+<li>Always starts with “if” clause. </li>
+<li>Zero or more “elif” clauses. </li>
+<li>Zero or one “else” clause, always at the end.<br><strong>Boolean Contexts</strong><br>False values in Python: False, 0, ‘’, None<br>True values in Python: Others<br><strong>While Statements</strong><br>Execution Rule for While Statements:</li>
+<li>Evaluate the header’s expression. </li>
+<li>If it is a true value, execute the (whole) suite, then return to step 1.</li>
+</ol>
 </div>
         </div>
         
@@ -254,7 +259,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A_calculators/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect3/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -266,10 +271,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A_calculators/";
-            const title         = "「CS 61A calculators」";
-            const excerpt       = `parsingtext &#x3D;&gt; lextical analysis &#x3D;&gt; tokens &#x3D;&gt; syntactic analysis &#x3D;&gt; expression
-123&#x...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect3/";
+            const title         = "「CS 61A lect3」";
+            const excerpt       = `CS61A lect3None Indicates that Nothing is Returned:The special value None represents nothing in PythonA function that...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -291,7 +295,7 @@
                     <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-20T07:12:34.101Z" itemprop="dateModified">最后编辑：2024-04-20</time>
+                    <time datetime="2024-04-07T01:45:33.786Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -300,12 +304,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A errors" href="/2024/04/05/CS61A_errors/">&lt; 上一篇</a>
+                <a title=" CS 61A lect2" href="/2024/04/05/CS61A/CS61A_lect2/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61B Part 0 Basic Java" href="/2024/04/06/Basic_Java/">下一篇 &gt;</a>
+                <a title=" CS 61A lect4" href="/2024/04/05/CS61A/CS61A_lect4/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -318,8 +322,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A_calculators/',
-                path: '/2024/04/05/CS61A_calculators/'
+                id: '/2024/04/05/CS61A/CS61A_lect3/',
+                path: '/2024/04/05/CS61A/CS61A_lect3/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -401,7 +405,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -415,7 +419,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         

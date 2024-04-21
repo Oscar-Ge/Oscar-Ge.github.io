@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A lect8 recursion | Oscar-Ge</title>
+  <title>CS 61A lect5 | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Conditional statements check for base cases• Base cases are evaluated without recursive">
+  <meta name="description" content="CS61A lect5Environments for Higher-Order Functions 12345def apply_twice(f, x):	return f(f(x))def square(x):	return x * xresult &#x3D; apply_twice(square, 2) Applying a user-defined function:• Create a new">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A lect8 recursion">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A%20lect8/index.html">
+<meta property="og:title" content="CS 61A lect5">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect5/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Conditional statements check for base cases• Base cases are evaluated without recursive">
+<meta property="og:description" content="CS61A lect5Environments for Higher-Order Functions 12345def apply_twice(f, x):	return f(f(x))def square(x):	return x * xresult &#x3D; apply_twice(square, 2) Applying a user-defined function:• Create a new">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:08.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:45:24.366Z">
+<meta property="article:published_time" content="2024-04-04T16:00:05.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:45:27.263Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
@@ -161,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A%20lect8/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect5/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect8 recursion</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect5</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:08.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-04T16:00:05.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            300
+                            1.60K
                         
                         字
                     </li>
@@ -190,13 +190,25 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454324366"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454327263"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="CS61A-lect8-recusion"><a href="#CS61A-lect8-recusion" class="headerlink" title="CS61A lect8: recusion"></a>CS61A lect8: recusion</h1><h3 id="The-Anatomy-of-a-Recursive-Function"><a href="#The-Anatomy-of-a-Recursive-Function" class="headerlink" title="The Anatomy of a Recursive Function"></a>The Anatomy of a Recursive Function</h3><p>The def statement header is similar to other functions<br>• Conditional statements check for base cases<br>• Base cases are evaluated without recursive calls<br>• Recursive cases are evaluated with recursive calls<br> Iteration is a special case of recursion.</p>
+            <div itemprop="articleBody"><h1 id="CS61A-lect5"><a href="#CS61A-lect5" class="headerlink" title="CS61A lect5"></a>CS61A lect5</h1><p><strong>Environments for Higher-Order Functions</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def apply_twice(f, x):</span><br><span class="line">	return f(f(x))</span><br><span class="line">def square(x):</span><br><span class="line">	return x * x</span><br><span class="line">result = apply_twice(square, 2)</span><br></pre></td></tr></table></figure>
+<p>Applying a user-defined function:<br>• Create a new frame<br>• Bind formal parameters (f &amp; x) to arguments<br>• Execute the body: return f(f(x))<br><strong>Nested Def Statements</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def make_adder(n):</span><br><span class="line">    def adder(k):</span><br><span class="line">        return k+n</span><br><span class="line">    return adder</span><br><span class="line">add_three=make_adder(3)</span><br></pre></td></tr></table></figure>
+<p>Every user-defined function has a parent frame (often global)<br>• The parent of a function is the frame in which it was defined<br>• Every local frame has a parent frame (often global)<br>• The parent of a frame is the parent of the function called<br><strong>How to Draw an Environment Diagram</strong><br>When a function is defined:<br>Create a function value: func <name>(<formalparameters>) [parent&#x3D;<label>]<br>Its parent is the current frame.<br>    Bind <name> to the function value in the current frame<br>When a function is called:</p>
+<ol>
+<li>Add a local frame, titled with the <name> of the function being called.<br><strong>2. Copy the parent of the function to the local frame: [parent&#x3D;<label>]</strong></li>
+<li>Bind the <formal parameters> to the arguments in the local frame.</li>
+<li>Execute the body of the function in the environment that starts with the local frame.<br><strong>Local Names are not Visible to Other (Non-Nested) Functions</strong><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def composel(f,g):</span><br><span class="line">    def h(x):</span><br><span class="line">        return f(g(x))</span><br><span class="line">    return h</span><br></pre></td></tr></table></figure>
+<strong>Self-Reference:Returning a Function Using Its Own Name</strong><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def print_all(x):</span><br><span class="line">    print(x)</span><br><span class="line">    return print_all</span><br><span class="line">print_all(1)(2)(3)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def print_sum(x)</span><br><span class="line">    print(x)</span><br><span class="line">    def nect_sum(y):</span><br><span class="line">        return print_sum(x+y)</span><br><span class="line">    return next_sum</span><br></pre></td></tr></table></figure>
+<strong>Function Currying</strong><br>Curry: Transform a multi-argument function into a single-argument, higher-order function</li>
+</ol>
 </div>
         </div>
         
@@ -246,7 +258,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A%20lect8/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect5/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -258,9 +270,10 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A%20lect8/";
-            const title         = "「CS 61A lect8 recursion」";
-            const excerpt       = `CS61A lect8: recusionThe Anatomy of a Recursive FunctionThe def statement header is similar to other functions• Condi...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect5/";
+            const title         = "「CS 61A lect5」";
+            const excerpt       = `CS61A lect5Environments for Higher-Order Functions
+12345def apply_twice(f, x):	return f(f(x))def square(x):	return x ...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -282,7 +295,7 @@
                     <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:45:24.366Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-07T01:45:27.263Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -291,12 +304,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A lect6 code standards" href="/2024/04/05/CS61A lect6/">&lt; 上一篇</a>
+                <a title=" CS 61A lect4" href="/2024/04/05/CS61A/CS61A_lect4/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61A lect9 tree recusion" href="/2024/04/05/CS61A lect9/">下一篇 &gt;</a>
+                <a title=" CS 61A lect6 code standards" href="/2024/04/05/CS61A/CS61A lect6/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -309,8 +322,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A%20lect8/',
-                path: '/2024/04/05/CS61A%20lect8/'
+                id: '/2024/04/05/CS61A/CS61A%20lect5/',
+                path: '/2024/04/05/CS61A/CS61A%20lect5/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -392,7 +405,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -406,7 +419,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         

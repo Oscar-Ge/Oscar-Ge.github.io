@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A lect4 | Oscar-Ge</title>
+  <title>CS 61A errors | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="CS61A lect412345678def fib(n):  &quot;&quot;&quot;Compute the nth Fibonacci number, for N &gt;&#x3D; 1.&quot;&quot;&quot; pred, curr &#x3D; 0, 1 # 0th and 1st Fibonacci numbers k &#x3D; 1 # curr is the kth Fibonacci">
+  <meta name="description" content="errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error” raisetrigger errorsan example: 1234x &#x3D; -1if x &lt; 0:  raise Exception(&quot;Sorry, no num">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A lect4">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A_lect4/index.html">
+<meta property="og:title" content="CS 61A errors">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_errors/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="CS61A lect412345678def fib(n):  &quot;&quot;&quot;Compute the nth Fibonacci number, for N &gt;&#x3D; 1.&quot;&quot;&quot; pred, curr &#x3D; 0, 1 # 0th and 1st Fibonacci numbers k &#x3D; 1 # curr is the kth Fibonacci">
+<meta property="og:description" content="errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error” raisetrigger errorsan example: 1234x &#x3D; -1if x &lt; 0:  raise Exception(&quot;Sorry, no num">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:04.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:45:30.778Z">
+<meta property="article:published_time" content="2024-04-04T16:00:19.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:45:14.954Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
@@ -161,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A_lect4/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_errors/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect4</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A errors</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:04.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-04T16:00:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            3.31K
+                            1293
                         
                         字
                     </li>
@@ -190,40 +190,17 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454330778"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454314954"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h3 id="CS61A-lect4"><a href="#CS61A-lect4" class="headerlink" title="CS61A lect4"></a>CS61A lect4</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def fib(n): </span><br><span class="line"> &quot;&quot;&quot;Compute the nth Fibonacci number, for N &gt;= 1.&quot;&quot;&quot;</span><br><span class="line"> pred, curr = 0, 1 # 0th and 1st Fibonacci numbers</span><br><span class="line"> k = 1 # curr is the kth Fibonacci number</span><br><span class="line"> while k &lt; n: </span><br><span class="line"> pred, curr = curr, pred + curr </span><br><span class="line"> k = k + 1</span><br><span class="line"> return curr</span><br></pre></td></tr></table></figure>
-<p><strong>Describing Functions</strong><br>A function’s domain is the set of all inputs it might possibly take as arguments.<br>A function’s range is the set of output values it might possibly return.<br>A pure function’s behavior is the relationship it creates between input and output<br>Give each function exactly one job, but make it apply to many related situations!<br>Don’t repeat yourself (DRY): Implement a process just once, but execute it many times<br><strong>Generalizing Over Computational Processes</strong><br>Summation Example:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">def cube(k): return pow(k, 3)</span><br><span class="line">def summation(n, term):</span><br><span class="line"> &quot;&quot;&quot;Sum the first n terms of a sequence.</span><br><span class="line"> </span><br><span class="line"> &gt;&gt;&gt; summation(5, cube)</span><br><span class="line"> 225</span><br><span class="line"> &quot;&quot;&quot;</span><br><span class="line"> total, k = 0, 1</span><br><span class="line"> while k &lt;= n:</span><br><span class="line"> total, k = total + term(k), k + 1</span><br><span class="line"> return total</span><br></pre></td></tr></table></figure>
-<p> <strong>Functions as Return Values</strong><br> Functions defined within other function bodies are bound to names in a local frame<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def make_adder(n):</span><br><span class="line">&quot;&quot;&quot;Return a function that takes one argument k and returns k + n.</span><br><span class="line">&gt;&gt;&gt; add_three = make_adder(3)</span><br><span class="line">&gt;&gt;&gt; add_three(4)</span><br><span class="line">7</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">def adder(k): </span><br><span class="line">    return k + n </span><br><span class="line">return adder</span><br></pre></td></tr></table></figure><br>make_adder(3)(4)<br>oprater operand<br><strong>Lambda Expressions</strong><br><code>square = lambda x: x * x</code><br>an expression: evaluates to a function<br>unimportant in Python but important in other languages<br><strong>Lambda Expressions Versus Def Statements</strong><br>Only the def statement gives the function an intrinsic name, which shows up in environment diagrams but doesn’t affect execution (unless the function is printed)<br><strong>return</strong><br>return statements:<br>A return statement completes the evaluation of a call expression and provides its value:<br>f(x) for user-defined function f: switch to a new environment; execute f’s body<br>Only one return statement is ever executed while executing the body of a function<br><code>return None</code>—-End the function directly<br><strong>control</strong><br>difference:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if __________: </span><br><span class="line"> _________ </span><br><span class="line">else: </span><br><span class="line"> _________</span><br></pre></td></tr></table></figure>
-<p>and<br><code>if_(________, ________, ________)</code><br>Execution Rule for Conditional Statements:<br>Each clause is considered in order.</p>
-<ol>
-<li>Evaluate the header’s expression (if present).</li>
-<li>If it is a true value (or an else header), execute the suite &amp; skip the remaining clauses.<br>Evaluation Rule for Call Expressions:</li>
-<li>Evaluate the operator and then the operand subexpressions</li>
-<li>Apply the function that is the value of the operator to the arguments that are the values of the operands</li>
-</ol>
-<p><strong>Logical Operators</strong><br>To evaluate the expression <left> and <right>:</p>
-<ol>
-<li>Evaluate the subexpression <left>.</li>
-<li>If the result is a false value v, then the expression evaluates to v.</li>
-<li>Otherwise, the expression evaluates to the value of the subexpression <right>.<br>To evaluate the expression <left> or <right>:</li>
-<li>Evaluate the subexpression <left>.</li>
-<li>If the result is a true value v, then the expression evaluates to v.</li>
-<li>Otherwise, the expression evaluates to the value of the subexpression <right>.</li>
-</ol>
-<p><strong>Conditional Expressions</strong><br>A conditional expression has the form<br><consequent> if <predicate> else <alternative><br>Evaluation rule:</p>
-<ol>
-<li>Evaluate the <predicate> expression.</li>
-<li>If it’s a true value, the value of the whole expression is the value of the <consequent>.</li>
-<li>Otherwise, the value of the whole expression is the value of the <alternative>.<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; x = 0</span><br><span class="line">&gt;&gt;&gt; abs(1/x if x != 0 else 0) </span><br></pre></td></tr></table></figure></li>
-</ol>
-</div>
+            <div itemprop="articleBody"><h1 id="errors"><a href="#errors" class="headerlink" title="errors"></a>errors</h1><h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><p>assert <body>, <reaction><br>if body &#x3D; False, end the program and print “reaction”<br>    e.g.:<br>assert False, “Error”</p>
+<h2 id="raise"><a href="#raise" class="headerlink" title="raise"></a>raise</h2><p>trigger errors<br>an example:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = -1</span><br><span class="line"></span><br><span class="line">if x &lt; 0:</span><br><span class="line">  raise Exception(&quot;Sorry, no numbers below zero&quot;)</span><br></pre></td></tr></table></figure>
+<h2 id="try-statement"><a href="#try-statement" class="headerlink" title="try statement"></a>try statement</h2><p>try:<br>    …<br>except <ErrorStatement> as <name>:<br>    …<br>example:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">from operator import add, mul, truediv</span><br><span class="line">def reduce(f, s, initial):</span><br><span class="line">    &quot;&quot;&quot;Combine elements of s pairwise using f, starting with initial.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; reduce(mul, [2, 4, 8], 1)</span><br><span class="line">    64</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    if not s:</span><br><span class="line">        return initial</span><br><span class="line">    else:</span><br><span class="line">        first, rest = s[0], s[1:]</span><br><span class="line">        return reduce(f, rest, f(initial, first))</span><br><span class="line"></span><br><span class="line">def reduce2(f, s, initial):</span><br><span class="line">    &quot;&quot;&quot;Combine elements of s pairwise using f, starting with initial.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; reduce2(mul, [2, 4, 8], 1)</span><br><span class="line">    64</span><br><span class="line">    &gt;&gt;&gt; reduce2(pow, [1, 2, 3, 4], 2)</span><br><span class="line">    16777216</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    for x in s:</span><br><span class="line">        initial = f(initial, x)</span><br><span class="line">    return initial</span><br><span class="line"></span><br><span class="line">def divide_all(n, ds):</span><br><span class="line">    &quot;&quot;&quot;Divide n by every d in ds.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; divide_all(1024, [2, 4, 8])</span><br><span class="line">    16.0</span><br><span class="line">    &gt;&gt;&gt; divide_all(1024, [2, 4, 0, 8])</span><br><span class="line">    inf</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    try:</span><br><span class="line">        return reduce(truediv, ds, n)</span><br><span class="line">    except ZeroDivisionError:</span><br><span class="line">        return float(&#x27;inf&#x27;)</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -272,7 +249,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A_lect4/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_errors/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -284,9 +261,10 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A_lect4/";
-            const title         = "「CS 61A lect4」";
-            const excerpt       = `CS61A lect412345678def fib(n):  &quot;&quot;&quot;Compute the nth Fibonacci number, for N &gt;= 1.&quot;&quot;&quot; ...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_errors/";
+            const title         = "「CS 61A errors」";
+            const excerpt       = `errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error”
+raisetr...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -308,7 +286,7 @@
                     <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:45:30.778Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-07T01:45:14.954Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -317,12 +295,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A lect3" href="/2024/04/05/CS61A_lect3/">&lt; 上一篇</a>
+                <a title=" CS 61A Scheme" href="/2024/04/05/CS61A_Scheme/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61A lect5" href="/2024/04/05/CS61A lect5/">下一篇 &gt;</a>
+                <a title=" CS 61A calculators" href="/2024/04/05/CS61A/CS61A_calculators/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -335,8 +313,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A_lect4/',
-                path: '/2024/04/05/CS61A_lect4/'
+                id: '/2024/04/05/CS61A/CS61A_errors/',
+                path: '/2024/04/05/CS61A/CS61A_errors/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -418,7 +396,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -432,7 +410,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A lect6 code standards | Oscar-Ge</title>
+  <title>CS 61A lect2 | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="CS61A lect6 code standardsChoosing NamesNames typically don’t matter for correctnessbut they matter a lot for compositionNames should convey the meaning or purpose of the values to which they are boun">
+  <meta name="description" content="CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 ) Operator Operand Operand Operators and operands are also expressions Evaluation procedure for call expressions:  Evaluate the ope">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A lect6 code standards">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A%20lect6/index.html">
+<meta property="og:title" content="CS 61A lect2">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect2/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="CS61A lect6 code standardsChoosing NamesNames typically don’t matter for correctnessbut they matter a lot for compositionNames should convey the meaning or purpose of the values to which they are boun">
+<meta property="og:description" content="CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 ) Operator Operand Operand Operators and operands are also expressions Evaluation procedure for call expressions:  Evaluate the ope">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:06.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:45:24.371Z">
+<meta property="article:published_time" content="2024-04-04T16:00:02.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:46:01.809Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
@@ -161,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A%20lect6/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect2/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect6 code standards</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect2</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:06.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-04T16:00:02.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            868
+                            1400
                         
                         字
                     </li>
@@ -190,15 +190,53 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454324371"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454361809"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="CS61A-lect6-code-standards"><a href="#CS61A-lect6-code-standards" class="headerlink" title="CS61A lect6 code standards"></a>CS61A lect6 code standards</h1><p><strong>Choosing Names</strong><br>Names typically don’t matter for correctness<br>but they matter a lot for composition<br>Names should convey the meaning or purpose of the values to which they are bound.<br>The type of value bound to the name is best documented in a function’s docstring.<br>Function names typically convey their effect (print), their behavior (triple), or the value returned (abs)<br><strong>Which Values Deserve a Name</strong><br>Repeated compound expressions<br>Meaningful parts of complex expressions<br>More Naming Tips<br>• Names can be long if they help<br>document your code:<br><code>average_age = average(age, students) </code><br>is preferable to </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#Compute average age of students </span><br><span class="line">aa = avg(a, st)</span><br></pre></td></tr></table></figure>
-<p>• Names can be short if they represent<br>generic quantities: counts,<br>arbitrary functions, arguments to<br>mathematical operations, etc.<br>n, k, i - Usually integers<br>x, y, z - Usually real numbers<br>f, g, h - Usually functions</p>
+            <div itemprop="articleBody"><h3 id="CS61A-lect2"><a href="#CS61A-lect2" class="headerlink" title="CS61A lect2"></a>CS61A lect2</h3><p>Anatomy of a Call Expression：operator, operand<br>add ( 2 , 3 )</p>
+<p>Operator Operand Operand</p>
+<p>Operators and operands are also expressions</p>
+<p><strong>Evaluation procedure for call expressions:</strong></p>
+<ol>
+<li>Evaluate the operator and then the operand subexpressions</li>
+<li>Apply the function that is the value of the operator</li>
+</ol>
+<p>to the arguments that are the values of the operands</p>
+<p><strong>Execution rule for assignment statements:</strong></p>
+<ol>
+<li>Evaluate all expressions to the right of &#x3D; from left to right.</li>
+<li>Bind all names to the left of &#x3D; to those resulting values in the current frame.</li>
+</ol>
+<p><strong>Execution procedure for def statements:</strong></p>
+<ol>
+<li>Create a function with signature <code>&lt;name&gt;(&lt;formal parameters&gt;)</code></li>
+<li>Set the body of that function to be everything indented after the first line</li>
+<li><ol start="3">
+<li>Bind <code>&lt;name&gt;</code> to that function in the current frame</li>
+</ol>
+</li>
+</ol>
+<p><strong>Procedure for calling&#x2F;applying user-defined functions (version 1):</strong></p>
+<ol>
+<li>Add a local frame, forming a new environment</li>
+<li>Bind the function’s formal parameters to its arguments in that frame</li>
+<li>Execute the body of the function in that new environment</li>
+</ol>
+<p><strong>Most important two things I’ll say all day:</strong></p>
+<ol>
+<li>An environment is a sequence of frames.</li>
+<li>A name evaluates to the value bound to that name in the earliest frame of the current environment in which that name is found.</li>
+</ol>
+<p>Exercise:</p>
+<p>What is the value of the final expression in this sequence? </p>
+<p><code>f = min </code></p>
+<p> <code>f = max </code></p>
+<p> <code>g, h = min, max </code></p>
+<p><code>max = g </code></p>
+<p><code>max(f(2, g(h(1, 5), 3)), 4)</code></p>
 </div>
         </div>
         
@@ -248,7 +286,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A%20lect6/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect2/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -260,9 +298,11 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A%20lect6/";
-            const title         = "「CS 61A lect6 code standards」";
-            const excerpt       = `CS61A lect6 code standardsChoosing NamesNames typically don’t matter for correctnessbut they matter a lot for composi...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A_lect2/";
+            const title         = "「CS 61A lect2」";
+            const excerpt       = `CS61A lect2Anatomy of a Call Expression：operator, operandadd ( 2 , 3 )
+Operator Operand Operand
+Operators and operand...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -284,7 +324,7 @@
                     <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:45:24.371Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-07T01:46:01.809Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -292,13 +332,9 @@
     
         <nav class="navigation post-navigation clearfix" role="navigation">
             
-            <div class="nav-previous clearfix">
-                <a title=" CS 61A lect5" href="/2024/04/05/CS61A lect5/">&lt; 上一篇</a>
-            </div>
-            
             
             <div class="nav-next clearfix">
-                <a title=" CS 61A lect8 recursion" href="/2024/04/05/CS61A lect8/">下一篇 &gt;</a>
+                <a title=" CS 61A lect3" href="/2024/04/05/CS61A/CS61A_lect3/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -311,8 +347,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A%20lect6/',
-                path: '/2024/04/05/CS61A%20lect6/'
+                id: '/2024/04/05/CS61A/CS61A_lect2/',
+                path: '/2024/04/05/CS61A/CS61A_lect2/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -394,7 +430,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -408,7 +444,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>CS 61A errors | Oscar-Ge</title>
+  <title>CS 61A lect11 | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,15 +17,15 @@
   
     <meta name="keywords" content="CS 61A" />
   
-  <meta name="description" content="errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error” raisetrigger errorsan example: 1234x &#x3D; -1if x &lt; 0:  raise Exception(&quot;Sorry, no num">
+  <meta name="description" content="CS61A lect11 data abstraction•rational(n, d) returns a rational number x•numer(x) returns the numerator of x•denom(x) returns the denominator of x(These functions implement an abstract representation">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CS 61A errors">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A_errors/index.html">
+<meta property="og:title" content="CS 61A lect11">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect11/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error” raisetrigger errorsan example: 1234x &#x3D; -1if x &lt; 0:  raise Exception(&quot;Sorry, no num">
+<meta property="og:description" content="CS61A lect11 data abstraction•rational(n, d) returns a rational number x•numer(x) returns the numerator of x•denom(x) returns the denominator of x(These functions implement an abstract representation">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-04T16:00:19.000Z">
-<meta property="article:modified_time" content="2024-04-07T01:45:14.954Z">
+<meta property="article:published_time" content="2024-04-04T16:00:11.000Z">
+<meta property="article:modified_time" content="2024-04-07T01:45:14.950Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="CS 61A">
 <meta name="twitter:card" content="summary">
@@ -161,15 +161,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A_errors/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect11/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A errors</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CS 61A lect11</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-04T16:00:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
+                <li><time datetime="2024-04-04T16:00:11.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -178,7 +178,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1293
+                            1.90K
                         
                         字
                     </li>
@@ -190,17 +190,19 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1712454314954"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712454314950"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="errors"><a href="#errors" class="headerlink" title="errors"></a>errors</h1><h2 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h2><p>assert <body>, <reaction><br>if body &#x3D; False, end the program and print “reaction”<br>    e.g.:<br>assert False, “Error”</p>
-<h2 id="raise"><a href="#raise" class="headerlink" title="raise"></a>raise</h2><p>trigger errors<br>an example:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = -1</span><br><span class="line"></span><br><span class="line">if x &lt; 0:</span><br><span class="line">  raise Exception(&quot;Sorry, no numbers below zero&quot;)</span><br></pre></td></tr></table></figure>
-<h2 id="try-statement"><a href="#try-statement" class="headerlink" title="try statement"></a>try statement</h2><p>try:<br>    …<br>except <ErrorStatement> as <name>:<br>    …<br>example:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">from operator import add, mul, truediv</span><br><span class="line">def reduce(f, s, initial):</span><br><span class="line">    &quot;&quot;&quot;Combine elements of s pairwise using f, starting with initial.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; reduce(mul, [2, 4, 8], 1)</span><br><span class="line">    64</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    if not s:</span><br><span class="line">        return initial</span><br><span class="line">    else:</span><br><span class="line">        first, rest = s[0], s[1:]</span><br><span class="line">        return reduce(f, rest, f(initial, first))</span><br><span class="line"></span><br><span class="line">def reduce2(f, s, initial):</span><br><span class="line">    &quot;&quot;&quot;Combine elements of s pairwise using f, starting with initial.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; reduce2(mul, [2, 4, 8], 1)</span><br><span class="line">    64</span><br><span class="line">    &gt;&gt;&gt; reduce2(pow, [1, 2, 3, 4], 2)</span><br><span class="line">    16777216</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    for x in s:</span><br><span class="line">        initial = f(initial, x)</span><br><span class="line">    return initial</span><br><span class="line"></span><br><span class="line">def divide_all(n, ds):</span><br><span class="line">    &quot;&quot;&quot;Divide n by every d in ds.</span><br><span class="line"></span><br><span class="line">    &gt;&gt;&gt; divide_all(1024, [2, 4, 8])</span><br><span class="line">    16.0</span><br><span class="line">    &gt;&gt;&gt; divide_all(1024, [2, 4, 0, 8])</span><br><span class="line">    inf</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    try:</span><br><span class="line">        return reduce(truediv, ds, n)</span><br><span class="line">    except ZeroDivisionError:</span><br><span class="line">        return float(&#x27;inf&#x27;)</span><br></pre></td></tr></table></figure></div>
+            <div itemprop="articleBody"><h1 id="CS61A-lect11-data-abstraction"><a href="#CS61A-lect11-data-abstraction" class="headerlink" title="CS61A lect11 data abstraction"></a>CS61A lect11 data abstraction</h1><p>•rational(n, d) returns a rational number x<br>•numer(x) returns the numerator of x<br>•denom(x) returns the denominator of x<br>(These functions implement an abstract representation for rational numbers)<br>for whole data:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">def mul_rational(x, y): </span><br><span class="line"> return rational(numer(x) * numer(y), </span><br><span class="line"> denom(x) * denom(y))</span><br><span class="line">def add_rational(x, y):</span><br><span class="line"> nx, dx = numer(x), denom(x)</span><br><span class="line"> ny, dy = numer(y), denom(y)</span><br><span class="line"> return rational(nx * dy + ny * dx, dx * dy)</span><br><span class="line">def print_rational(x):</span><br><span class="line"> print(numer(x), &#x27;/&#x27;, denom(x))</span><br><span class="line"> def rational(n, d): </span><br><span class="line"> &quot;&quot;&quot;Construct a rational number that represents N/D.&quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
+<p> for a part of data:(do not combine these with above)<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> return [n, d]</span><br><span class="line">def numer(x):</span><br><span class="line"> &quot;&quot;&quot;Return the numerator of rational number X.&quot;&quot;&quot;</span><br><span class="line"> return x[0]</span><br><span class="line">def denom(x):</span><br><span class="line"> &quot;&quot;&quot;Return the denominator of rational number X.&quot;&quot;&quot;</span><br><span class="line"> return x[1]</span><br><span class="line"> &#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure><br>实际操作：尽量不要用直接赋值， 要用constructor和dominator！！！<br>another approach: use dictionary-like functions</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">def rational(n, d): </span><br><span class="line"> def select(name): </span><br><span class="line"> if name == &#x27;n&#x27;: </span><br><span class="line"> return n </span><br><span class="line"> elif name == &#x27;d&#x27;: </span><br><span class="line"> return d </span><br><span class="line"> return select </span><br><span class="line">def numer(x): </span><br><span class="line"> return x(&#x27;n&#x27;) </span><br><span class="line">def denom(x): </span><br><span class="line"> return x(&#x27;d&#x27;)</span><br></pre></td></tr></table></figure>
+<p> dictionary(taught in high school)<br> different:<br> dic.keys()—list of all the keys<br> dic.values()—list of all the values<br> dic.items()—list of all the items<br> dict(items)—from list to dict</p>
+<p> Dictionaries are unordered collections of key-value pairs<br>Dictionary keys do have two restrictions:<br>•A key of a dictionary cannot be a list or a dictionary (or any mutable type)<br>•Two keys cannot be equal; There can be at most one value for a given key<br>This first restriction is tied to Python’s underlying implementation of dictionaries<br>The second restriction is part of the dictionary abstraction<br>If you want to associate multiple values with a key, store them all in a sequence value</p>
+</div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -249,7 +251,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/05/CS61A_errors/",
+                text: "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect11/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -261,10 +263,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A_errors/";
-            const title         = "「CS 61A errors」";
-            const excerpt       = `errorsassertassert , if body &#x3D; False, end the program and print “reaction”    e.g.:assert False, “Error”
-raisetr...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/05/CS61A/CS61A%20lect11/";
+            const title         = "「CS 61A lect11」";
+            const excerpt       = `CS61A lect11 data abstraction•rational(n, d) returns a rational number x•numer(x) returns the numerator of x•denom(x)...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -286,7 +287,7 @@ raisetr...`;
                     <a class="tag-none-link" href="/tags/CS-61A/" rel="tag">CS 61A</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-07T01:45:14.954Z" itemprop="dateModified">最后编辑：2024-04-07</time>
+                    <time datetime="2024-04-07T01:45:14.950Z" itemprop="dateModified">最后编辑：2024-04-07</time>
                 </div>
             </div>
         </footer>
@@ -295,12 +296,12 @@ raisetr...`;
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" CS 61A Scheme" href="/2024/04/05/CS61A_Scheme/">&lt; 上一篇</a>
+                <a title=" CS 61A lect9 tree recusion" href="/2024/04/05/CS61A/CS61A lect9/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CS 61A calculators" href="/2024/04/05/CS61A_calculators/">下一篇 &gt;</a>
+                <a title=" CS 61A Scheme" href="/2024/04/05/CS61A_Scheme/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -313,8 +314,8 @@ raisetr...`;
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/05/CS61A_errors/',
-                path: '/2024/04/05/CS61A_errors/'
+                id: '/2024/04/05/CS61A/CS61A%20lect11/',
+                path: '/2024/04/05/CS61A/CS61A%20lect11/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -396,7 +397,7 @@ raisetr...`;
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.72em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.68em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.76em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.64em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
@@ -410,7 +411,7 @@ raisetr...`;
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B-part-4-DataSturct/"><i class="fa  fa-book"></i> 61B part 4 DataSturcture</a>
+            <a class="list-group-item" href="/2024/04/20/61B-part-5-DataSturct/"><i class="fa  fa-book"></i> 61B part 5 DataSturcture</a>
             
           
         
