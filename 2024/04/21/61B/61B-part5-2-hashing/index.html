@@ -15,19 +15,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="61B, Hashing, Java" />
+    <meta name="keywords" content="61B, HashMap, Java" />
   
-  <meta property="og:type" content="article">
+  <meta name="description" content="prev:[[61B-part-5-BST]]next: prev: BSTsdisadvantages:  comparable: need to be able to ask “X&lt;Y”questions O(logN) can be better  extreme approach: using data as the index initial all values as false">
+<meta property="og:type" content="article">
 <meta property="og:title" content="61B part 5.2 hashing">
 <meta property="og:url" content="https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="prev:[[61B-part-5-BST]]next: prev: BSTsdisadvantages:  comparable: need to be able to ask “X&lt;Y”questions O(logN) can be better  extreme approach: using data as the index initial all values as false">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-21T03:22:24.000Z">
-<meta property="article:modified_time" content="2024-04-21T03:23:27.833Z">
+<meta property="article:modified_time" content="2024-04-24T07:27:06.630Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="61B">
-<meta property="article:tag" content="Hashing">
+<meta property="article:tag" content="HashMap">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -178,7 +180,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            0
+                            2.83K
                         
                         字
                     </li>
@@ -190,13 +192,57 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1713669807833"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713943626630"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"></div>
+            <div itemprop="articleBody"><p>prev:[[61B-part-5-BST]]<br>next:</p>
+<h1 id="prev-BSTs"><a href="#prev-BSTs" class="headerlink" title="prev: BSTs"></a>prev: BSTs</h1><p>disadvantages:</p>
+<ol>
+<li>comparable: need to be able to ask “X&lt;Y”questions</li>
+<li>O(logN) can be better</li>
+</ol>
+<h2 id="extreme-approach-using-data-as-the-index"><a href="#extreme-approach-using-data-as-the-index" class="headerlink" title="extreme approach: using data as the index"></a>extreme approach: using data as the index</h2><ul>
+<li>initial all values as false</li>
+<li>when an item is added, the index is set to be true.<br>drawback: extreme waste of memory<br>suppose we want to add “cat”<br>problems:</li>
+<li>what is the <code>cat</code>th element of the list? –use <code>c</code>as the index</li>
+<li>other words started with c collides with <code>cat</code>, and cannot store words like <code>=equals()</code>…<br>solution: use the “power of 27”<br>$$cat_{27} &#x3D; 3<em>27^2+1</em>27^1+20*27^0&#x3D;2234_{10}$$<br>the algs will give each lowercase English word a unique number!<br>ASCII Characters: &gt;&#x3D;127进制<br>Chinese characters: &gt;&#x3D;40959进制<br>However, the problem: integer overflow<br>if biggest number in int, it +1 &#x3D; smallest number!<br>the code: Hashcode<br>challenges:</li>
+<li>how to handle hashcoode collisions?(<strong>collision handling</strong>_)</li>
+<li>how can we compute a hash code for arbitrary objects? (<strong>computing a hashCode</strong>)<br>solution: instead of storing <code>true</code> in position h, store a “bucket” oif these N items at the position h.<br>The bucket implementation: linked list, arraylist,arrayset…</li>
+</ul>
+<h2 id="separate-chaining-data-indexed-array"><a href="#separate-chaining-data-indexed-array" class="headerlink" title="separate chaining data indexed array"></a>separate chaining data indexed array</h2><p>![[Pasted image 20240421132226.png]]</p>
+<p>the bucket <code>h</code> is empty –&gt; create a new list containing x, store it at index h.<br>the bucket <code>h</code> is already a list –&gt; add x to this list if it is not already present.<br>we can use the modulus of hashcode to reduce bucket count! (downside: lists will be longer)</p>
+<h3 id="improvement"><a href="#improvement" class="headerlink" title="improvement"></a>improvement</h3><p>suppose:</p>
+<ul>
+<li>fixed number of buckets M</li>
+<li>increasing number of N<br>problem: even if the items are spread out evenly, the lists are of length Q&#x3D;N&#x2F;M, therefore the complexity is O(N).</li>
+</ul>
+<h4 id="example-strategy"><a href="#example-strategy" class="headerlink" title="example strategy"></a>example strategy</h4><p>when N&#x2F;M &gt;&#x3D; 1.5, double M<br>(N&#x2F;M: “load factor”) how full the hast tabhle is.<br>Therefore, now we have:</p>
+<ul>
+<li>increasing number of buckets M</li>
+<li>increasing number of items N<br>O(N&#x2F;M) &#x3D;O(1)</li>
+</ul>
+<h4 id="Runtime"><a href="#Runtime" class="headerlink" title="Runtime"></a>Runtime</h4><p>One important thing to consider: resizing operation.</p>
+<ul>
+<li>resizing takes O(N) time</li>
+<li>add takes O(1)+ time (O(N) when resizing)</li>
+<li>contains takes O(1)+ time on average.</li>
+</ul>
+<h3 id="Ubiquity"><a href="#Ubiquity" class="headerlink" title="Ubiquity"></a>Ubiquity</h3><ul>
+<li>great performance in practice</li>
+<li>implementations are simple</li>
+<li>python dictionary are just hash tables.</li>
+<li>used in <code>HashMap</code> and <code>HashSet</code>, not <code>implements Hashable</code> (all objects in Java must implement a <code>.hashcode()</code> method)</li>
+</ul>
+<h3 id="Negative-hash-codes"><a href="#Negative-hash-codes" class="headerlink" title="Negative hash codes"></a>Negative hash codes</h3><p>unfortunately, -1%4&#x3D;-1 will result in index errors.<br>Therefore, use <code>Math.floorMod</code> instead.</p>
+<h3 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h3><ul>
+<li>never store objects that can change in <code>HashSet</code> or <code>HashMap</code>!</li>
+<li>never override <code>equals</code> without override <code>hashCode</code>!</li>
+</ul>
+<h1 id="HashCode"><a href="#HashCode" class="headerlink" title="HashCode"></a>HashCode</h1><p>goal: make the table bushy<br>java’s <code>HashCode()</code> for strings: 31-based<br>It seemed like that 126 is better. However, the overflow is a bad problem for base 126!<br>major collision problem for base 126: Any string that ends in the same last 32 characters has the same hash code!<br>$$126^{32}&#x3D;126^{33}&#x3D;126^{34}&#x3D;…0$$<br>See 61C for more.<br>Typical hash code: a small prime.</p>
+</div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -259,7 +305,11 @@
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "https://oscar-ge.github.io/2024/04/21/61B/61B-part5-2-hashing/";
             const title         = "「61B part 5.2 hashing」";
-            const excerpt       = ``;
+            const excerpt       = `prev:[[61B-part-5-BST]]next:
+prev: BSTsdisadvantages:
+
+comparable: need to be able to ask “X&lt;Y”questions
+O(logN) c...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -278,10 +328,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/Hashing/" rel="tag">Hashing</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/HashMap/" rel="tag">HashMap</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-21T03:23:27.833Z" itemprop="dateModified">最后编辑：2024-04-21</time>
+                    <time datetime="2024-04-24T07:27:06.630Z" itemprop="dateModified">最后编辑：2024-04-24</time>
                 </div>
             </div>
         </footer>
@@ -387,7 +437,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic-AI/" style="font-size: 0.6em;">Basic AI</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-188/" style="font-size: 0.6em;">CS 188</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Hashing/" style="font-size: 0.6em;">Hashing</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
+        <a href="/tags/61B/" style="font-size: 0.73em;">61B</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic/" style="font-size: 0.6em;">Basic</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.77em;">Java</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a> <a href="/tags/Tree/" style="font-size: 0.6em;">Tree</a> <a href="/tags/debugging/" style="font-size: 0.6em;">debugging</a> <a href="/tags/project2/" style="font-size: 0.63em;">project2</a>
       </div>
   </aside>
 
