@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="61B, Graph, Java" />
+    <meta name="keywords" content="61B, Graph, Java, MST, Shortest_path" />
   
   <meta name="description" content="Trees A set of connected nodes (or vertices). We use both terms interchangeably. A set of edges that connect those nodes. No edges can form a cycle. Constraint: There is exactly one path between any t">
 <meta property="og:type" content="article">
@@ -28,11 +28,13 @@
 <meta property="og:image" content="https://cs61b-2.gitbook.io/~gitbook/image?url=https://2316889115-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%252FCLYj7ccqvV6l4Pt9R0w5%252Fuploads%252FkFi0NSV7P1V55xHZP1oq%252FScreen%2520Shot%25202023-02-26%2520at%25202.03.21%2520PM.png?alt=media&token=0fb24066-ef8d-47fa-9822-82fc7d82dadc&width=768&dpr=4&quality=100&sign=a4f16dad8533615a1f07c8ce54f15e3778548a766eef1c85ccd64f337e69bdec">
 <meta property="og:image" content="https://cs61b-2.gitbook.io/~gitbook/image?url=https://2316889115-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%252FCLYj7ccqvV6l4Pt9R0w5%252Fuploads%252FgqtlS7TmIYJ2SGZBF7to%252FScreen%2520Shot%25202023-02-26%2520at%25202.04.26%2520PM.png?alt=media&token=f4c10a65-f481-42f5-86c8-11cab59470e2&width=768&dpr=4&quality=100&sign=f4f267c225f94df5deee665c48d5ef72bfbd904b4f80345275a2ca85d684077f">
 <meta property="article:published_time" content="2024-04-26T12:01:29.000Z">
-<meta property="article:modified_time" content="2024-04-30T08:37:28.561Z">
+<meta property="article:modified_time" content="2024-05-15T07:14:58.437Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="61B">
 <meta property="article:tag" content="Graph">
+<meta property="article:tag" content="Shortest_path">
+<meta property="article:tag" content="MST">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cs61b-2.gitbook.io/~gitbook/image?url=https://2316889115-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%252FCLYj7ccqvV6l4Pt9R0w5%252Fuploads%252FP17PH3N4x75Nyr89oZBQ%252FScreen%2520Shot%25202023-02-26%2520at%25202.02.16%2520PM.png?alt=media&token=747b7e3f-3885-4193-8639-41ce9fe4247f&width=768&dpr=4&quality=100&sign=16babcacad89030997729b1f61e88ce80bde581dff1d74b9d23a0ac366ae3870">
   
@@ -184,7 +186,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1.98K
+                            12.27K
                         
                         字
                     </li>
@@ -196,7 +198,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1714466248561"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1715757298437"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -233,12 +235,70 @@
 <li><strong>Biconnectivity</strong>: Is there a vertex whose removal disconnects the graph?</li>
 <li><strong>Shortest s-t Path</strong>: What is the shortest path between vertices s and t?</li>
 <li><strong>Cycle Detection</strong>: Does the graph contain any cycles?</li>
-<li><strong>Euler Tour</strong>: Is there a cycle that uses every edge exactly once?</li>
+<li><strong>Euler Tour</strong>: Is there a cycle that uses every edge exactly once? </li>
 <li><strong>Hamilton Tour</strong>: Is there a cycle that uses every vertex exactly once?</li>
 <li><strong>Planarity</strong>: Can you draw the graph on paper with no crossing edges?</li>
-<li><strong>Isomorphism</strong>: Are two graphs isomorphic (the same graph in disguise)? &#x2F;&#x2F; a million-dollar problem!<br>…</li>
+<li><strong>Isomorphism</strong>: Are two graphs isomorphic (the same graph in disguise)? &#x2F;&#x2F; a million-dollar problem!<br>…<br>let’s solve the first problem: if s and t connected?</li>
 </ul>
-</div>
+<h2 id="triversal"><a href="#triversal" class="headerlink" title="triversal"></a>triversal</h2><h3 id="BFS"><a href="#BFS" class="headerlink" title="BFS"></a>BFS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Initialize the fringe, an empty queue </span><br><span class="line">    add the starting vertex to the fringe</span><br><span class="line">    mark the starting vertex</span><br><span class="line">    while fringe is not empty:</span><br><span class="line">        remove vertex v from the fringe</span><br><span class="line">        for each neighbor n of vertex v:</span><br><span class="line">            if n is not marked:</span><br><span class="line">                add n to fringe</span><br><span class="line">                mark n</span><br><span class="line">                set edgeTo[n] = v</span><br><span class="line">                set distTo[n] = distTo[v] + 1</span><br></pre></td></tr></table></figure>
+<p><code>fringe</code>: the data structure we are using to store the nodes on the frontier of our traversal’s discovery process<br><code>edgeTo[...]</code>: a map that helps us track how we got to node <code>n</code>; we got to it by following the edge from <code>v</code> to to <code>n</code>.<br><code>distTo[...]</code>: helps us track how far <code>n</code> is from the starting vertex</p>
+<h3 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mark s  // i.e., remember that you visited s already</span><br><span class="line">if (s == t):</span><br><span class="line">    return true;</span><br><span class="line"></span><br><span class="line">for child in unmarked_neighbors(s): // if a neighbor is marked, ignore!</span><br><span class="line">    if isconnected(child, t):</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">return false;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Initialize the fringe, an empty stack</span><br><span class="line">    push the starting vertex on the fringe</span><br><span class="line">    while fringe is not empty:</span><br><span class="line">        pop a vertex off the fringe</span><br><span class="line">        if vertex is not marked:</span><br><span class="line">            mark the vertex</span><br><span class="line">            visit vertex</span><br><span class="line">            for each neighbor of vertex:</span><br><span class="line">                if neighbor not marked:</span><br><span class="line">                    push neighbor to fringe</span><br></pre></td></tr></table></figure>
+
+<h2 id="graphs-API"><a href="#graphs-API" class="headerlink" title="graphs API"></a>graphs API</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Graph</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">Graph</span><span class="params">(<span class="type">int</span> V)</span>:               <span class="comment">// Create empty graph with v vertices</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">addEdge</span><span class="params">(<span class="type">int</span> v, <span class="type">int</span> w)</span>: <span class="comment">// add an edge v-w</span></span><br><span class="line">  Iterable&lt;Integer&gt; <span class="title function_">adj</span><span class="params">(<span class="type">int</span> v)</span>:      <span class="comment">// vertices adjacent to v</span></span><br><span class="line">  <span class="type">int</span> <span class="title function_">V</span><span class="params">()</span>:                           <span class="comment">// number of vertices</span></span><br><span class="line">  <span class="type">int</span> <span class="title function_">E</span><span class="params">()</span>:                           <span class="comment">// number of edges</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>we want to get quick answers to these questions:</p>
+<ul>
+<li>Are given vertices <code>u</code> and <code>v</code> adjacent?</li>
+<li>Is vertex <code>v</code> incident to a particular edge <code>e</code>?</li>
+<li>What vertices are adjacent to <code>v</code>?</li>
+<li>What edges are incident to <code>v</code>?<br>so we use adjacency list for the data structure.</li>
+</ul>
+<h2 id="Adjacency-List"><a href="#Adjacency-List" class="headerlink" title="Adjacency List"></a>Adjacency List</h2><p>![[Pasted image 20240514103306.png]]<br>An array is created with each vertice in graph, each of them points to a list that including all of the edges of the vertice</p>
+<h2 id="Shortest-path"><a href="#Shortest-path" class="headerlink" title="Shortest path"></a>Shortest path</h2><p>BFS or DFS will never have the ability to get the shortest path in the least time always, so some algs are developed.</p>
+<h3 id="Dijkstra’s-Algorithm"><a href="#Dijkstra’s-Algorithm" class="headerlink" title="Dijkstra’s Algorithm"></a>Dijkstra’s Algorithm</h3><p>You are on campus and playing a game with your friends around Hearst Memorial Mining Building. You start at the location <code>s</code> and you want to go to the location <code>t</code>.<br>![[Pasted image 20240514110735.png]]<br>BFS will yield a route of length 330m.<br>![[Pasted image 20240514110800.png]]<br>Goal: minimize the sum of the weights of the edges on the selected path.<br>the shortest paths tree from a source <code>s</code> can be created in the following way:</p>
+<ul>
+<li>For every vertex <code>v</code> (which is not <code>s</code>) in the graph, find the shortest path from <code>s</code> to <code>v</code>.</li>
+<li>“Combine”&#x2F;“Union” all the edges that you found above.<br>the “Shortest Path Tree” will <strong>always be a tree</strong>. Why? For every node, there was exactly one “parent” in the edgeToedgeTo array that we have maintained in our original solution.</li>
+</ul>
+<h4 id="working"><a href="#working" class="headerlink" title="working"></a>working</h4><p>How does it work?</p>
+<ol>
+<li>Create a priority queue.</li>
+<li>Add <code>s</code> to the priority queue with priority 00. Add all other vertices to the priority queue with priority ∞∞.</li>
+<li>While the priority queue is not empty: pop a vertex out of the priority queue, and <strong>relax</strong> all of the edges going out from the vertex.</li>
+</ol>
+<h4 id="relax"><a href="#relax" class="headerlink" title="relax"></a>relax</h4><p>vertex: <code>v</code><br>Look at your current best distance to <code>w</code> from the source, call it <strong>curBestDistToW</strong>. Now, look at your <strong>curBestDistToV</strong>+weight(<code>v</code>,<code>w</code>) (let’s call it <strong>potentialDistToWUsing</strong>).<br>Is <strong>potentialDistToWUsing</strong> <strong>better, i.e., smaller</strong> than <strong>curBestDistToW</strong>? In that case, set <strong>curBestDistToW&#x3D;potentialDistToWUsingV</strong>, and update the <strong>edgeToW</strong> to be <code>v</code></p>
+<h3 id="implementation"><a href="#implementation" class="headerlink" title="implementation"></a>implementation</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dijkstra</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] dijkstra(<span class="type">int</span>[][] graph,<span class="type">int</span> startVertex)&#123;</span><br><span class="line">        <span class="comment">//初始化 以求出最短路径的点 result[]</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> graph.length;</span><br><span class="line">        <span class="type">int</span>[] result = <span class="keyword">new</span> <span class="title class_">int</span>[length];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">            result[i] = -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        result[startVertex] = <span class="number">0</span> ;</span><br><span class="line">        <span class="comment">// 初始化 未求出最短路径的点 notFound[]</span></span><br><span class="line">        <span class="type">int</span>[] notFound = <span class="keyword">new</span> <span class="title class_">int</span>[length];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">            notFound[i] = graph[startVertex][i];</span><br><span class="line">        &#125;</span><br><span class="line">        notFound[startVertex] = -<span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 开始 Dijkstra 算法</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; length; i++) &#123;</span><br><span class="line">            <span class="comment">//1. 从「未求出最短路径的点」notFound 中取出 最短路径的点</span></span><br><span class="line">            <span class="comment">//1.1 找到最短距离的点</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">min</span> <span class="operator">=</span> Integer.MAX_VALUE;</span><br><span class="line">            <span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (notFound[j] &gt; <span class="number">0</span> &amp;&amp; notFound[j] &lt; min)&#123;</span><br><span class="line">                    min = notFound[j];</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//1.2 将最短距离的点 取出 放入结果中</span></span><br><span class="line">            result[minIndex] = min;</span><br><span class="line">            notFound[minIndex] = -<span class="number">1</span>;</span><br><span class="line">            <span class="comment">//2. 刷新 「未求出最短距离的点」 notFound[] 中的距离</span></span><br><span class="line">            <span class="comment">//2.1 遍历刚刚找到最短距离的点 (B) 的出度 (BA、BB、BC、BD)</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; length; j++) &#123;</span><br><span class="line">                <span class="comment">// 出度可通行(例如 BD:graph[1][3]  &gt; 0)</span></span><br><span class="line">                <span class="comment">// 出度点不能已经在结果集 result中(例如 D: result[3] == -1)</span></span><br><span class="line">                <span class="keyword">if</span> (graph[minIndex][j] &gt; <span class="number">0</span></span><br><span class="line">                &amp;&amp; result[j] == -<span class="number">1</span>)&#123;</span><br><span class="line">                    <span class="type">int</span> <span class="variable">newDistance</span> <span class="operator">=</span> result[minIndex] + graph[minIndex][j];</span><br><span class="line">                    <span class="comment">//通过 B 为桥梁，刷新距离</span></span><br><span class="line">                    <span class="comment">//（比如`AD = 6 &lt; AB + BD = 4` 就刷新距离）（ -1 代表无限大）</span></span><br><span class="line">                    <span class="keyword">if</span> (newDistance &lt; notFound[j] || notFound[j]==-<span class="number">1</span>)&#123;</span><br><span class="line">                        notFound[j] = newDistance;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/** 测试案例 */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">char</span>[] vertices = <span class="keyword">new</span> <span class="title class_">char</span>[]&#123;<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>&#125;;</span><br><span class="line">        <span class="type">int</span>[][] graph = <span class="keyword">new</span> <span class="title class_">int</span>[][]&#123;</span><br><span class="line">                &#123;<span class="number">0</span>, <span class="number">2</span>, -<span class="number">1</span>, <span class="number">6</span>&#125;</span><br><span class="line">                , &#123;<span class="number">2</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">2</span>&#125;</span><br><span class="line">                , &#123;-<span class="number">1</span>, <span class="number">3</span>, <span class="number">0</span>, <span class="number">2</span>&#125;</span><br><span class="line">                , &#123;<span class="number">6</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">0</span>&#125;&#125;;</span><br><span class="line">        <span class="type">int</span>[] dijkstra = dijkstra(graph, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i : dijkstra) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="disadvantages"><a href="#disadvantages" class="headerlink" title="disadvantages"></a>disadvantages</h4><p>![[Pasted image 20240514113547.png]]<br>Suppose you’re at that vertex labeled 34. Now you’re going to try to relax all your edges. You have only one outgoing edge from yourself to 33 with weight −67. Ah, but note: vertex 33 is already visited (it’s marked with white.) So… we don’t relax it. (Recall the pseudocode for the relax method.)<br>Now we go home thinking that the shortest distance to 33 is 82 (marked in pink.) But really, we should have taken the path <strong>through</strong> 34 because that would have given us a distance of 101−67&#x3D;34.<br><strong>Dijkstra’s algorithm is not guaranteed to be correct for negative edges. It might work… but it isn’t guaranteed to work.</strong></p>
+<h4 id="short-circuit"><a href="#short-circuit" class="headerlink" title="short-circuit"></a>short-circuit</h4><p>if a vertice is popped out from the queue, the algs is stopped (short-circuited).</p>
+<h3 id="A-algs"><a href="#A-algs" class="headerlink" title="A* algs"></a>A* algs</h3><p>let’s consider the drawbacks of Dijkstra’s algorithm: if you want to seek a road from the middle of the US to the east, you will must have to make a circle first, lowering the effeciency. How can we let computer know that it is better to move towards east then west?</p>
+<h3 id="The-A-star"><a href="#The-A-star" class="headerlink" title="The A-star"></a>The A-star</h3><p>![[Pasted image 20240514221630.png]]<br>f(n)&#x3D;g(n)+h(n)<br><code>f(n)</code>: the priority of node <code>n</code><br><code>g(n)</code>: the cost of node <code>n</code> from the start<br><code>h(n)</code>: the estimated cost of <code>n</code> to final ones</p>
+<h3 id="implementation-1"><a href="#implementation-1" class="headerlink" title="implementation"></a>implementation</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">* 初始化open_set和close_set；</span><br><span class="line">* 将起点加入open_set中，并设置优先级为0（优先级最高）；</span><br><span class="line">* 如果open_set不为空，则从open_set中选取优先级最高的节点n：</span><br><span class="line">    * 如果节点n为终点，则：</span><br><span class="line">        * 从终点开始逐步追踪parent节点，一直达到起点；</span><br><span class="line">        * 返回找到的结果路径，算法结束；</span><br><span class="line">    * 如果节点n不是终点，则：</span><br><span class="line">        * 将节点n从open_set中删除，并加入close_set中；</span><br><span class="line">        * 遍历节点n所有的邻近节点：</span><br><span class="line">            * 如果邻近节点m在close_set中，则：</span><br><span class="line">                * 跳过，选取下一个邻近节点</span><br><span class="line">            * 如果邻近节点m也不在open_set中，则：</span><br><span class="line">                * 设置节点m的parent为节点n</span><br><span class="line">                * 计算节点m的优先级</span><br><span class="line">                * 将节点m加入open_set中</span><br></pre></td></tr></table></figure>
+<p>The priority of nodes are usually computed by the specific algs for specific cases.</p>
+<h2 id="minimum-spanning-trees"><a href="#minimum-spanning-trees" class="headerlink" title="minimum spanning trees"></a>minimum spanning trees</h2><p>how to find a circle in a graph?</p>
+<h3 id="spanning-trees"><a href="#spanning-trees" class="headerlink" title="spanning trees"></a>spanning trees</h3><p>an undirected graph, a spanning tree T is a subgraph of G, where T :</p>
+<ul>
+<li>is connected</li>
+<li>is acyclic (not circled)</li>
+<li>includes all of the vertices</li>
+</ul>
+<h3 id="MST"><a href="#MST" class="headerlink" title="MST"></a>MST</h3><p>the spanning trees that its sum of priority is the least ones.</p>
+<h3 id="cut-property"><a href="#cut-property" class="headerlink" title="cut property"></a>cut property</h3><p><code>cut</code>: an assignment of a graph’s node to 2 sets<br><code>corssing edge</code>: an edge which connects the 2 node from 2 different sets<br>![[Pasted image 20240515103058.png]]<br>given any cut, minimum weight crossing edge is in the MST. (can be easily proved.)</p>
+<h3 id="Prim’s-algs"><a href="#Prim’s-algs" class="headerlink" title="Prim’s algs"></a>Prim’s algs</h3><ul>
+<li>Start from one node</li>
+<li>add shortest edge that has one node inside the MST under construction and repeat the process</li>
+</ul>
+<h4 id="implementation-2"><a href="#implementation-2" class="headerlink" title="implementation"></a>implementation</h4><p>using priority heap queues, storing vertices in order of distance from tree<br>repeat(remove closest vertex v from PQ, and relax all edges pointing from v)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PrimMST</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">PrimMST</span><span class="params">(EdgeWeightedGraph G)</span> &#123;</span><br><span class="line">    edgeTo = <span class="keyword">new</span> <span class="title class_">Edge</span>[G.V()];</span><br><span class="line">    distTo = <span class="keyword">new</span> <span class="title class_">double</span>[G.V()];</span><br><span class="line">    marked = <span class="keyword">new</span> <span class="title class_">boolean</span>[G.V()];</span><br><span class="line">    fringe = <span class="keyword">new</span> <span class="title class_">SpecialPQ</span>&lt;Double&gt;(G.V());</span><br><span class="line">    distTo[s] = <span class="number">0.0</span>;</span><br><span class="line">    setDistancesToInfinityExceptS(s);</span><br><span class="line">    insertAllVertices(fringe);</span><br><span class="line">    <span class="comment">/* Get vertices in order of distance from tree. */</span></span><br><span class="line">    <span class="keyword">while</span> (!fringe.isEmpty()) &#123;</span><br><span class="line">      <span class="type">int</span> <span class="variable">v</span> <span class="operator">=</span> fringe.delMin();</span><br><span class="line">      scan(G, v);</span><br><span class="line">    &#125; </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="VS-Dijkstra’s-algs"><a href="#VS-Dijkstra’s-algs" class="headerlink" title="VS Dijkstra’s algs"></a>VS Dijkstra’s algs</h4><p>the same except: </p>
+<ul>
+<li>visiting order: Prim’s in order of distance from the MST, while D’s in order of distance from source<br>relaxation:</li>
+<li>Dijkstra’s considers an edge better based on distance to source</li>
+<li>Prim’s a dege better based on distance to tree</li>
+</ul>
+<h4 id="complexity"><a href="#complexity" class="headerlink" title="complexity"></a>complexity</h4><p>O(ElogV)</p>
+<h3 id="Kruskal’s-algs"><a href="#Kruskal’s-algs" class="headerlink" title="Kruskal’s algs"></a>Kruskal’s algs</h3><p>ordering the edges by their priorities, and add the edge from smallest to biggest <em>without circle</em> (using union-find datastructure).</p>
+<h4 id="implementation-3"><a href="#implementation-3" class="headerlink" title="implementation"></a>implementation</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">KruskalMST</span> &#123;</span><br><span class="line">  <span class="keyword">private</span> List&lt;Edge&gt; mst = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Edge&gt;();</span><br><span class="line">  <span class="keyword">public</span> <span class="title function_">KruskalMST</span><span class="params">(EdgeWeightedGraph G)</span> &#123;</span><br><span class="line">    MinPQ&lt;Edge&gt; pq = <span class="keyword">new</span> <span class="title class_">MinPQ</span>&lt;Edge&gt;();</span><br><span class="line">    <span class="keyword">for</span> (Edge e : G.edges()) &#123;</span><br><span class="line">      pq.insert(e);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">WeightedQuickUnionPC</span> <span class="variable">uf</span> <span class="operator">=</span> </span><br><span class="line">             <span class="keyword">new</span> <span class="title class_">WeightedQuickUnionPC</span>(G.V());</span><br><span class="line">    <span class="keyword">while</span> (!pq.isEmpty() &amp;&amp; mst.size() &lt; G.V() - <span class="number">1</span>) &#123;</span><br><span class="line">      <span class="type">Edge</span> <span class="variable">e</span> <span class="operator">=</span> pq.delMin();</span><br><span class="line">      <span class="type">int</span> <span class="variable">v</span> <span class="operator">=</span> e.from();</span><br><span class="line">      <span class="type">int</span> <span class="variable">w</span> <span class="operator">=</span> e.to();</span><br><span class="line">      <span class="keyword">if</span> (!uf.connected(v, w)) &#123;</span><br><span class="line">        uf.union(v, w);</span><br><span class="line">        mst.add(e); </span><br><span class="line">&#125; &#125; &#125; &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -322,10 +382,10 @@ A set of edges that connect those no...`;
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/Graph/" rel="tag">Graph</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/Graph/" rel="tag">Graph</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/MST/" rel="tag">MST</a>, <a class="tag-none-link" href="/tags/Shortest-path/" rel="tag">Shortest_path</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-30T08:37:28.561Z" itemprop="dateModified">最后编辑：2024-04-30</time>
+                    <time datetime="2024-05-15T07:14:58.437Z" itemprop="dateModified">最后编辑：2024-05-15</time>
                 </div>
             </div>
         </footer>
@@ -399,7 +459,7 @@ A set of edges that connect those no...`;
                 文章
             </span>
             <span class="count">
-                26
+                31
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -407,7 +467,7 @@ A set of edges that connect those no...`;
                 分类
             </span>
             <span class="count">
-                5
+                6
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -415,7 +475,7 @@ A set of edges that connect those no...`;
                 标签
             </span>
             <span class="count">
-                23
+                31
             </span>
         </a>
     </div>
@@ -426,7 +486,7 @@ A set of edges that connect those no...`;
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -435,7 +495,7 @@ A set of edges that connect those no...`;
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.75em;">61B</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/Basic/" style="font-size: 0.6em;">Basic</a> <a href="/tags/CS/" style="font-size: 0.7em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.65em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.8em;">Java</a> <a href="/tags/Linear-Algebra/" style="font-size: 0.6em;">Linear Algebra</a> <a href="/tags/Math/" style="font-size: 0.6em;">Math</a> <a href="/tags/OOP/" style="font-size: 0.6em;">OOP</a> <a href="/tags/Scheme/" style="font-size: 0.6em;">Scheme</a>
+        <a href="/tags/61B/" style="font-size: 0.77em;">61B</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.7em;">Basic</a> <a href="/tags/CPP/" style="font-size: 0.63em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.73em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.77em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.8em;">Java</a> <a href="/tags/Linear-Algebra/" style="font-size: 0.6em;">Linear Algebra</a> <a href="/tags/MST/" style="font-size: 0.6em;">MST</a>
       </div>
   </aside>
 
@@ -449,34 +509,44 @@ A set of edges that connect those no...`;
         
           
           
-            <a class="list-group-item" href="/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/"><i class="fa  fa-book"></i> 线性代数八大常见类型的行列式及其解法</a>
+            <a class="list-group-item" href="/2024/05/15/61B/61B-P5-6-sort/"><i class="fa  fa-book"></i> 61B-P5-6-sort</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/26/61B/61B-P5-4-Graph/"><i class="fa  fa-book"></i> 61B part 5..4 Graph</a>
+            <a class="list-group-item" href="/2024/05/15/61B/61B-P5-5-QuadTree/"><i class="fa  fa-book"></i> 61B-P5-5-QuadTree</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/26/61B/61B-P5-3-PQ/"><i class="fa  fa-book"></i> 61B part 5.3 Prior Queues&heap</a>
+            <a class="list-group-item" href="/2024/05/10/Cpp-intro/"><i class="fa  fa-book"></i> C++-intro</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/21/61B/61B-part5-2-hashing/"><i class="fa  fa-book"></i> 61B part 5.2 hashing</a>
+            <a class="list-group-item" href="/2024/05/10/C-intro/"><i class="fa  fa-book"></i> C-intro</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2024/04/20/61B/61B-part-5-BST/"><i class="fa  fa-book"></i> 61B part 5.1 BSTs, B trees, red black trees</a>
+            <a class="list-group-item" href="/2024/05/10/matlab-intro/"><i class="fa  fa-book"></i> matlab-intro</a>
             
           
         
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
           
             
           

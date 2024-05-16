@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>61B-P5-6-sort | Oscar-Ge</title>
+  
+  <meta name="author" content="Oscar" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="61B, Java, sorting" />
+  
+  <meta name="description" content="definitionsAn ordering relation &lt;&lt; for keys a, b, and c has the following properties:  Law of Trichotomy: Exactly one of a &lt;&lt; b, a &#x3D; b, b &lt;&lt; a is true. Law of Transitivity: If a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="61B-P5-6-sort">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/05/15/61B/61B-P5-6-sort/index.html">
+<meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="definitionsAn ordering relation &lt;&lt; for keys a, b, and c has the following properties:  Law of Trichotomy: Exactly one of a &lt;&lt; b, a &#x3D; b, b &lt;&lt; a is true. Law of Transitivity: If a">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-15T15:19:17.000Z">
+<meta property="article:modified_time" content="2024-05-16T06:27:40.975Z">
+<meta property="article:author" content="Oscar">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="61B">
+<meta property="article:tag" content="sorting">
+<meta name="twitter:card" content="summary">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/hq_dark.webp');
+      }
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Oscar-Ge</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Oscar-Ge</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/05/15/61B/61B-P5-6-sort/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">61B-P5-6-sort</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2024-05-15T15:19:17.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-05-15</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            2.81K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1715840860975"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="definitions"><a href="#definitions" class="headerlink" title="definitions"></a>definitions</h1><p>An <strong>ordering relation</strong> &lt;&lt; for keys a, b, and c has the following properties:</p>
+<ul>
+<li><em>Law of Trichotomy</em>: Exactly one of a &lt;&lt; b, a &#x3D; b, b &lt;&lt; a is true.</li>
+<li><em>Law of Transitivity</em>: If a &lt;&lt; b, and b &lt;&lt; c, then a &lt;&lt; c.</li>
+</ul>
+<h2 id="Java-Comparable"><a href="#Java-Comparable" class="headerlink" title="Java: Comparable"></a>Java: Comparable</h2><p>In java, <code>compare</code> or <code>compareTo</code> methods are used.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Comparator;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LengthComparator</span> <span class="keyword">implements</span> <span class="title class_">Comparator</span>&lt;String&gt; &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(String x, String b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> x.length() - b.length();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="basic-sorts"><a href="#basic-sorts" class="headerlink" title="basic sorts"></a>basic sorts</h1><h2 id="selection-sort"><a href="#selection-sort" class="headerlink" title="selection sort"></a>selection sort</h2><ol>
+<li>Find the smallest item.</li>
+<li>Swap that item to the front.</li>
+<li>Repeat until all items are fixed (there are no inversions).<br>runs in Θ(N^2) time</li>
+</ol>
+<h2 id="heapsort"><a href="#heapsort" class="headerlink" title="heapsort"></a>heapsort</h2><ol>
+<li>insert all the items into a max heap and create and output array. </li>
+<li>Then, we repeatedly delete the largest item from the max heap and put the largest item at the end part of the output array.<br>overall running time: Θ(𝑁log⁡𝑁)</li>
+</ol>
+<ul>
+<li>Inserting N items into the heap: 𝑂(𝑁log⁡𝑁).</li>
+<li>Selecting the largest item: Θ(1).</li>
+<li>Removing the largest item: 𝑂(log⁡𝑁).</li>
+</ul>
+<h3 id="in-place-heapsort"><a href="#in-place-heapsort" class="headerlink" title="in-place heapsort"></a>in-place heapsort</h3><p>instead of constructing a totally new heap, exchange the array to make them in order of the heap.<br>we can use a process known as <em>bottom-up heapification</em> to convert the input array into a heap. Bottom-up heapification involves moving in reverse level order up the heap, sinking nodes to their appropriate location as you move up.</p>
+<ul>
+<li>Bottom-up heapify input array:<ul>
+<li>Sink nodes in reverse level order: sink(k)</li>
+<li>After sinking, guaranteed that tree rooted at position k is a heap.</li>
+</ul>
+</li>
+<li>Repeat N times:<ul>
+<li>Delete largest item from the max heap, swapping root with last item in the heap.</li>
+</ul>
+</li>
+</ul>
+<p>![[Pasted image 20240516104440.png]]</p>
+<h2 id="merge-sort"><a href="#merge-sort" class="headerlink" title="merge sort"></a>merge sort</h2><ol>
+<li>Split the items into half.</li>
+<li>Mergesort each half.</li>
+<li>Merge the two sorted halves to form the final result.</li>
+</ol>
+<h2 id="insertion-sort"><a href="#insertion-sort" class="headerlink" title="insertion sort"></a>insertion sort</h2><ol>
+<li>divide the “sorted” part, and the “unsorted” part</li>
+<li>find a element in unsorted part, and then insert it into the sorted part.</li>
+</ol>
+<h1 id="quicksort"><a href="#quicksort" class="headerlink" title="quicksort"></a>quicksort</h1><h2 id="simple-quicksort"><a href="#simple-quicksort" class="headerlink" title="simple quicksort"></a>simple quicksort</h2><p>The core idea behind Quicksort involves <strong>partitioning.</strong><br>Partitioning on that pivot element (x) involves rearrange a[] such that:</p>
+<ol>
+<li>x moves to some position j (can be the original position of i)</li>
+<li>All array elements to the left of x are less than or equal to x (&lt;&#x3D; x)</li>
+<li>All array elements to the right of x are greater than or equal to x (&gt;&#x3D; x)<br>then, call quicksort recursively, and the quicksort have been done.<br>Coincidentally, quicksort is empirically the fastest sort for most common situations.</li>
+</ol>
+<h3 id="complexity"><a href="#complexity" class="headerlink" title="complexity"></a>complexity</h3><p>best: O(nlogn)<br>worst: O(n^2)</p>
+<h3 id="drawbacks"><a href="#drawbacks" class="headerlink" title="drawbacks"></a>drawbacks</h3><p>the choosing of the split point is more than important!</p>
+<h2 id="improvement"><a href="#improvement" class="headerlink" title="improvement"></a>improvement</h2><h3 id="randomness"><a href="#randomness" class="headerlink" title="randomness"></a>randomness</h3><ul>
+<li>pick pivots randomly</li>
+<li>shuffle items before sort</li>
+</ul>
+<h3 id="Smarter-Pivot-Selection"><a href="#Smarter-Pivot-Selection" class="headerlink" title="Smarter Pivot Selection"></a>Smarter Pivot Selection</h3><p>to choose a “good” pivot</p>
+<ul>
+<li>constant time pivot pick: pick up a few items and then choose the “best” one among them</li>
+<li>linear time pivot pick: always select the “median”</li>
+</ul>
+</div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://oscar-ge.github.io/2024/05/15/61B/61B-P5-6-sort/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://oscar-ge.github.io/2024/05/15/61B/61B-P5-6-sort/";
+            const title         = "「61B-P5-6-sort」";
+            const excerpt       = `definitionsAn ordering relation &lt;&lt; for keys a, b, and c has the following properties:
+
+Law of Trichotomy: Exact...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/Java/" rel="tag">Java</a>, <a class="tag-none-link" href="/tags/sorting/" rel="tag">sorting</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-05-16T06:27:40.975Z" itemprop="dateModified">最后编辑：2024-05-16</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 61B-P5-5-QuadTree" href="/2024/05/15/61B/61B-P5-5-QuadTree/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load bg-image" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2024/05/15/61B/61B-P5-6-sort/',
+                path: '/2024/05/15/61B/61B-P5-6-sort/'
+            }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                31
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                6
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                31
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/61B/" style="font-size: 0.77em;">61B</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.7em;">Basic</a> <a href="/tags/CPP/" style="font-size: 0.63em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.73em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.77em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.67em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a> <a href="/tags/Iterators/" style="font-size: 0.6em;">Iterators</a> <a href="/tags/Java/" style="font-size: 0.8em;">Java</a> <a href="/tags/Linear-Algebra/" style="font-size: 0.6em;">Linear Algebra</a> <a href="/tags/MST/" style="font-size: 0.6em;">MST</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/05/15/61B/61B-P5-6-sort/"><i class="fa  fa-book"></i> 61B-P5-6-sort</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/05/15/61B/61B-P5-5-QuadTree/"><i class="fa  fa-book"></i> 61B-P5-5-QuadTree</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/05/10/Cpp-intro/"><i class="fa  fa-book"></i> C++-intro</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/05/10/C-intro/"><i class="fa  fa-book"></i> C-intro</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/05/10/matlab-intro/"><i class="fa  fa-book"></i> matlab-intro</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/Oscar-Ge">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 Oscar-Ge 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Oscar.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="2262932696"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
