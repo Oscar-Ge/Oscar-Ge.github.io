@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>线性代数八大常见类型的行列式及其解法 | Oscar-Ge</title>
+  <title>61C-P1-C | Oscar-Ge</title>
   
   <meta name="author" content="Oscar" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,20 +15,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="Linear Algebra, Math" />
+    <meta name="keywords" content="61C, BasicC" />
   
-  <meta name="description" content="cited from 八大类型行列式及其解法 - 知乎 (zhihu.com)    本文记录了八大常见类型的行列式及其解法，解法从一般性到特殊性都有，分享给大家，例子都特别经典好用，希望对线代、高代初学者以及考研党有用。  类型总览：  箭型行列式 两三角型行列式 两条线型行列式 范德蒙德型行列式 $$Hessenberg$$型行列式 三对角型行列式 各行元素和相等型行列式 相邻两行对应元素相差">
+  <meta name="description" content="Compilegcc hello.ccreates machine language codea.out loads andexecutes programgreat idea in C:![[Pasted image 20240519124500.png]] basic grammarsinput12345#include &lt;stdio.h&gt;int main(int argc, ch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="线性代数八大常见类型的行列式及其解法">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/index.html">
+<meta property="og:title" content="61C-P1-C">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/05/17/61C-P1-C/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
-<meta property="og:description" content="cited from 八大类型行列式及其解法 - 知乎 (zhihu.com)    本文记录了八大常见类型的行列式及其解法，解法从一般性到特殊性都有，分享给大家，例子都特别经典好用，希望对线代、高代初学者以及考研党有用。  类型总览：  箭型行列式 两三角型行列式 两条线型行列式 范德蒙德型行列式 $$Hessenberg$$型行列式 三对角型行列式 各行元素和相等型行列式 相邻两行对应元素相差">
+<meta property="og:description" content="Compilegcc hello.ccreates machine language codea.out loads andexecutes programgreat idea in C:![[Pasted image 20240519124500.png]] basic grammarsinput12345#include &lt;stdio.h&gt;int main(int argc, ch">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-26T12:21:29.000Z">
-<meta property="article:modified_time" content="2024-04-26T12:37:11.009Z">
+<meta property="article:published_time" content="2024-05-17T03:10:54.000Z">
+<meta property="article:modified_time" content="2024-05-20T03:02:00.207Z">
 <meta property="article:author" content="Oscar">
-<meta property="article:tag" content="Math">
-<meta property="article:tag" content="Linear Algebra">
+<meta property="article:tag" content="61C">
+<meta property="article:tag" content="BasicC">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -162,15 +162,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/05/17/61C-P1-C/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">线性代数八大常见类型的行列式及其解法</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">61C-P1-C</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-04-26T12:21:29.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-26</time></li>
+                <li><time datetime="2024-05-17T03:10:54.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-05-17</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
                 </li>
@@ -179,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            10.24K
+                            5.00K
                         
                         字
                     </li>
@@ -191,132 +191,124 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1714135031009"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1716174120207"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>cited from <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/34685081">八大类型行列式及其解法 - 知乎 (zhihu.com)</a></p>
-<blockquote>
-<p>  本文记录了八大常见类型的行列式及其解法，解法从一般性到特殊性都有，分享给大家，例子都特别经典好用，希望对线代、高代初学者以及考研党有用。</p>
-</blockquote>
-<p><strong>类型总览：</strong></p>
-<ol>
-<li>箭型行列式</li>
-<li>两三角型行列式</li>
-<li>两条线型行列式</li>
-<li>范德蒙德型行列式</li>
-<li>$$Hessenberg$$型行列式</li>
-<li>三对角型行列式</li>
-<li>各行元素和相等型行列式</li>
-<li>相邻两行对应元素相差K倍型行列式</li>
-</ol>
-<p><strong>方法总览：</strong></p>
-<ol>
-<li>拆行法</li>
-<li>升阶法</li>
-<li>方程组法</li>
-<li>累加消点法</li>
-<li>累加法</li>
-<li>递推法（特征方程法）</li>
-<li>步步差法</li>
-</ol>
-<h4 id="一：箭型行列式"><a href="#一：箭型行列式" class="headerlink" title="一：箭型行列式"></a>一：箭型行列式</h4><p>最常见最常用的行列式，特征很好辨识，必须掌握，请看下例：</p>
-<p>$$<br>eg:D_n&#x3D; \left|\begin{array}{cccc} x_1&amp;1&amp;1 &amp;… &amp;1\ 1&amp;x_2&amp;&amp;&amp;\ 1&amp;&amp;x_3\ …&amp;&amp;&amp;…\ 1&amp;&amp;&amp;…&amp;x_n \end{array}\right|(空白处都为0)<br>$$</p>
-<p>$$Solution$$: 将第一列元素依次减去第$$ i$$ 列的$$\frac{1}{x_i},i&#x3D;2…n $$</p>
-<p>得：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} x_1-\frac{1}{x_2}-…-\frac{1}{x_n}&amp;1&amp;1 &amp;… &amp;1\ 0&amp;x_2&amp;&amp;&amp;\ 0&amp;&amp;x_3\ …&amp;&amp;&amp;…\ 0&amp;&amp;&amp;…&amp;x_n \end{array}\right|<br>$$</p>
-<p>所以：</p>
-<p>$$<br>D_n&#x3D;\prod_{i&#x3D;2}^{n}x_i(x_1-\sum_{i&#x3D;2}^{n}\frac{1}{x_i})<br>$$</p>
-<h4 id="二：两三角型行列式"><a href="#二：两三角型行列式" class="headerlink" title="二：两三角型行列式"></a>二：两三角型行列式</h4><ol>
-<li>特征为对角线上方元素均为$$a$$ ,下方元素均为$$b$$</li>
-</ol>
+            <div itemprop="articleBody"><h1 id="Compile"><a href="#Compile" class="headerlink" title="Compile"></a>Compile</h1><p><code>gcc hello.c</code>creates machine language code<br><code>a.out</code> loads andexecutes program<br>great idea in C:<br>![[Pasted image 20240519124500.png]]</p>
+<h1 id="basic-grammars"><a href="#basic-grammars" class="headerlink" title="basic grammars"></a>basic grammars</h1><h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> &#123; <span class="comment">// </span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Combined, argc and argv get the main function to accept arguments.</p>
 <ul>
-<li>当 $$a&#x3D;b$$  时可化为箭型行列式计算，当 $$a\not&#x3D;b$$ 时采用<strong>拆行法</strong>计算，请看下面两例</li>
+<li>argc will contain the number of strings on the command line (the executable counts as one, plus one for each argument). Here argc is 2:</li>
+<li><code>./a.out myFile</code></li>
+<li>argv is a pointer to an array  containing the arguments as strings (more later re: pointers and strings).</li>
 </ul>
-<p>$$<br>eg1(a&#x3D;b):D_n&#x3D;\left|\begin{array}{cccc} x_1&amp;b&amp;b &amp;… &amp;b\ b&amp;x_2&amp;b&amp;…&amp;b\ b&amp;b&amp;x_3&amp;…&amp;b\ …&amp;…&amp;…&amp;…&amp;…\ b&amp;b&amp;b&amp;…&amp;x_n \end{array}\right|<br>$$</p>
-<p>$$Solution$$: 将第$$i，i&#x3D;2…n$$ 行都减去第一行</p>
-<p>得：<br>$$<br>D_n&#x3D;\left|\begin{array}{cccc} x_1&amp;b&amp;b &amp;… &amp;b\ b-x_1&amp;x_2-b&amp;0&amp;…&amp;0\ b-x_1&amp;0&amp;x_3-b&amp;…&amp;0\ …&amp;…&amp;…&amp;…&amp;…\ b-x_1&amp;0&amp;0&amp;…&amp;x_n-b \end{array}\right|<br>$$</p>
-<p>即化成了箭型行列式，所以：</p>
-<p>$$<br>D_n&#x3D;[\prod_{i&#x3D;2}^{n}(x_i-b)]\times[x_1-b(b-x_1)\sum_{i&#x3D;2}^{n}\frac{1}{x_i-b}]<br>$$</p>
-<hr>
-<p>$$<br>eg2(a\not&#x3D;b):D_n&#x3D;\left|\begin{array}{cccc} x_1&amp;a&amp;a &amp;… &amp;a\ b&amp;x_2&amp;a&amp;…&amp;a\ b&amp;b&amp;x_3&amp;…&amp;a\ …&amp;…&amp;…&amp;…&amp;…\ b&amp;b&amp;b&amp;…&amp;x_n \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  采用拆行法，目的是为了降阶</p>
-<p>$$<br>D_n&#x3D;\left|\begin{array}{cccc} x_1&amp;a&amp;a &amp;… &amp;a+0\ b&amp;x_2&amp;a&amp;…&amp;a+0\ b&amp;b&amp;x_3&amp;…&amp;a+0\ …&amp;…&amp;…&amp;…&amp;…\ b&amp;b&amp;b&amp;…&amp;x_n+b-b \end{array}\right|<br>$$</p>
-<p>$$<br>D_n&#x3D;\left|\begin{array}{cccc} x_1&amp;a&amp;a &amp;… &amp;a\ b&amp;x_2&amp;a&amp;…&amp;a\ b&amp;b&amp;x_3&amp;…&amp;a\ …&amp;…&amp;…&amp;…&amp;…\ b&amp;b&amp;b&amp;…&amp;b \end{array}\right|_{(*)}+\left|\begin{array}{cccc} x_1&amp;a&amp;a &amp;… &amp;0\ b&amp;x_2&amp;a&amp;…&amp;0\ b&amp;b&amp;x_3&amp;…&amp;0\ …&amp;…&amp;…&amp;…&amp;…\ b&amp;b&amp;b&amp;…&amp;x_n-b \end{array}\right|<br>$$</p>
-<p>将第 $$i,i&#x3D;1…n-1$$ 列都减去最后一列，得：</p>
-<p>$$<br>D_n&#x3D;\left|\begin{array}{cccc} x_1-a&amp;0&amp;0 &amp;… &amp;a\ b-a&amp;x_2-a&amp;0&amp;…&amp;a\ b-a&amp;b-a&amp;x_3-a&amp;…&amp;a\ …&amp;…&amp;…&amp;…&amp;…\ 0&amp;0&amp;0&amp;…&amp;b \end{array}\right|+(x_n-b)D_{n-1}<br>$$</p>
-<p>所以：<br>$$<br>D_n&#x3D;b\prod_{i&#x3D;1}^{n-1}(x_i-a)+(x_n-b)D_{n-1}<br>$$</p>
-<p>再由行列式转置不变性得到：</p>
-<p>$$<br>D_n&#x3D;a\prod_{i&#x3D;1}^{n-1}(x_i-b)+(x_n-a)D_{n-1}<br>$$</p>
-<p>联立$$(11)(12)$$ ,得通式：</p>
-<p>$$<br>D_n&#x3D;\frac{1}{a-b}[a\prod_{i&#x3D;1}^{n}(x_i-b)-b\prod_{j&#x3D;1}^{n}(x_j-a)]<br>$$</p>
-<ol start="2">
-<li>通过适当变换可以化为两三角型行列式的，描述不如大家自己看例子揣摩，也很容易理解的，请看下例</li>
-</ol>
-<p>$$<br>eg3:D_n&#x3D;\left|\begin{array}{cccc} d&amp;b&amp;b &amp;… &amp;b\ c&amp;x&amp;a&amp;…&amp;a\ c&amp;a&amp;x&amp;…&amp;a\ …&amp;…&amp;…&amp;…&amp;…\ c&amp;a&amp;a&amp;…&amp;x \end{array}\right|<br>$$</p>
-<p>$$Solution$$: 将第一行乘上 $$\frac{a}{b}$$ ，第一列乘上 $$\frac{a}{c}$$ ，得：</p>
-<p>$$<br>D_n&#x3D;\frac{bc}{a^2}\left|\begin{array}{cccc} \frac{a^2d}{bc}&amp;a&amp;a &amp;… &amp;a\ a&amp;x&amp;a&amp;…&amp;a\ a&amp;a&amp;x&amp;…&amp;a\ …&amp;…&amp;…&amp;…&amp;…\ a&amp;a&amp;a&amp;…&amp;x \end{array}\right|<br>$$</p>
-<p>即化成了两三角型行列式</p>
-<ol start="3">
-<li>一些每行上有公因子但是无法向上式那样在保持行列式不变得基础上能提出公因子的，采用<strong>升阶法，</strong>请看下例</li>
-</ol>
-<p>$$<br>eg4:D_n&#x3D;\left|\begin{array}{cccc} 1+x_{1}^2&amp;x_1x_2&amp;x_1x_3 &amp;… &amp;x_1x_n\ x_2x_1&amp;1+x_{2}^2&amp;x_2x_3&amp;…&amp;x_2x_n\ x_3x_1&amp;x_3x_2&amp;1+x_{3}^2&amp;…&amp;x_3x_n\ …&amp;…&amp;…&amp;…&amp;…\ x_nx_1&amp;x_nx_2&amp;x_nx_3&amp;…&amp;1+x_{n}^2 \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  加边升阶，得：</p>
-<p>$$<br>D_n&#x3D;\left|\begin{array}{cccc} 1&amp;x_1&amp;x_2&amp;x_3&amp;…&amp;x_n\ 0&amp;1+x_{1}^2&amp;x_1x_2&amp;x_1x_3 &amp;… &amp;x_1x_n\ 0&amp;x_2x_1&amp;1+x_{2}^2&amp;x_2x_3&amp;…&amp;x_2x_n\ 0&amp;x_3x_1&amp;x_3x_2&amp;1+x_{3}^2&amp;…&amp;x_3x_n\ 0&amp;…&amp;…&amp;…&amp;…&amp;…\ 0&amp;x_nx_1&amp;x_nx_2&amp;x_nx_3&amp;…&amp;1+x_{n}^2 \end{array}\right|<br>$$</p>
-<p>再将第 $$i,i&#x3D;2…n+1$$ 都减去第一行的$$x_i，i&#x3D;1…n$$ 倍，得：</p>
-<p>$$<br>D_n&#x3D;\left|\begin{array}{cccc} 1&amp;x_1&amp;x_2&amp;x_3&amp;…&amp;x_n\ -x_1&amp;1&amp;0&amp;0 &amp;… &amp;0\ -x_2&amp;0&amp;1&amp;0&amp;…&amp;0\ -x_3&amp;0&amp;0&amp;1&amp;…&amp;0\ 0&amp;…&amp;…&amp;…&amp;…&amp;…\ -x_n&amp;0&amp;0&amp;0&amp;…&amp;1 \end{array}\right|<br>$$</p>
-<p>即又化成了箭型行列式，可得通式：</p>
-<p>$$<br>D_n&#x3D;1+\sum_{i&#x3D;1}^{n}x_{i}^{2}<br>$$</p>
-<h4 id="三：两条线型行列式"><a href="#三：两条线型行列式" class="headerlink" title="三：两条线型行列式"></a>三：两条线型行列式</h4><p>特征是除了主(次)对角线或与其相邻得一条斜线所组成的任意一条线加四个顶点中的某个顶点外，其他元素均为$$0$$，这类行列式可以直接展开降阶。这段描述有点繁琐，但其实也并不复杂，请看下例理解</p>
-<p>$$<br>eg3:D_n&#x3D;\left|\begin{array}{cccc} a_1&amp;b_1&amp; &amp;… &amp;\ &amp;a_2&amp;b_2&amp;…&amp;\ &amp;&amp;a_3&amp;…&amp;\ &amp;&amp;&amp;\ &amp;&amp;…&amp;a_{n-1}&amp;b_{n-1} \ b_n&amp;&amp;…&amp;&amp;a_n \end{array}\right| (空白处都为0)<br>$$</p>
-<p>$$Solution$$: 按照第一列两个非$$0$$元素拉普拉斯展开即可</p>
-<p>$$<br>D_n&#x3D;\prod_{i&#x3D;1}^{n}a_i+(-1)^{n+1}\prod_{i&#x3D;1}^{n}b_i<br>$$</p>
-<h4 id="四：范德蒙德型行列式"><a href="#四：范德蒙德型行列式" class="headerlink" title="四：范德蒙德型行列式"></a>四：范德蒙德型行列式</h4><p>范德蒙德行列式大家应该熟悉，而范德蒙德型行列式的特征就是有逐行(列)元素按幂递增(减)，可以将其转化为范德蒙德行列式来计算，请看下例</p>
-<p>$$<br>eg:D_n&#x3D;\left|\begin{array}{cccc} a_{1}^n&amp; a_{1}^{n-1}b_1&amp;… &amp;a_1b_1^{n-1}&amp;b_1^n\ a_{2}^n&amp;a_{2}^{n-1}b_2&amp;…&amp;a_2b_2^{n-1}&amp;b_2^n\ …&amp;…&amp;…&amp;…&amp;…\ a_{n}^n&amp;a_{n}^{n-1}b_n&amp;…&amp;a_nb_n^{n-1}&amp;b_n^n\ a_{n+1}^n&amp;a_{n+1}^{n-1}b_{n+1}&amp;…&amp;a_{n+1}b_{n+1}^{n-1}&amp;b_{n+1}^n \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  将每行都提出 $$a_i^{n},i&#x3D;1…n+1 $$倍，得：</p>
-<p>$$<br>D_n&#x3D;\prod_{i&#x3D;1}^{n+1}a_i^n\left|\begin{array}{cccc} 1&amp; \frac{b_1}{a_1}&amp;… &amp;(\frac{b_1}{a_1})^{n-1}&amp;(\frac{b_1}{a_1})^{n}\ 1&amp;\frac{b_2}{a_2}&amp;…&amp;(\frac{b_2}{a_2})^{n-1}&amp;(\frac{b_2}{a_2})^{n}\ …&amp;…&amp;…&amp;…&amp;…\ 1&amp;\frac{b_n}{a_n}&amp;…&amp;(\frac{b_n}{a_n})^{n-1}&amp;(\frac{b_n}{a_n})^{n}\ 1&amp;\frac{b_{n+1}}{a_{n+1}}&amp;…&amp;(\frac{b_{n+1}}{a_{n+1}})^{n-1}&amp;(\frac{b_{n+1}}{a_{n+1}})^{n} \end{array}\right|<br>$$</p>
-<p>上式即为范德蒙德行列式，所以通式为：</p>
-<p>$$<br>D_n&#x3D;\prod_{1\le i&lt;j\le n+1}(a_ib_j-b_ia_j)<br>$$</p>
-<h4 id="五：-Hessenberg-型行列式"><a href="#五：-Hessenberg-型行列式" class="headerlink" title="五：$$Hessenberg$$型行列式"></a>五：$$Hessenberg$$型行列式</h4><p>特征为除了主(次)对角线及与其相邻的斜线，再加上第一行(列)或第$$n$$行(列)外，其余元素均为$$0$$。这类行列式有点像前面说的两条线型行列式，但是还是有一点区别的。这类行列式都用<strong>累加消点法</strong>，即通常将某一行(列)都化简到只有一个非$$0$$元素，以便于降阶计算，请看下例</p>
-<p>$$<br>eg:D_n&#x3D; \left|\begin{array}{cccc} 1&amp;2&amp;3 &amp;… &amp;n-1&amp;n\ 1&amp;-1&amp;&amp;&amp;&amp;\ &amp;2&amp;-2&amp;…\ …&amp;…&amp;…&amp;…&amp;…&amp;…\ &amp;&amp;&amp;n-2&amp;2-n&amp;\ &amp;&amp;&amp;…&amp;n-1&amp;1-n \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  将各列都加到第一列，得到：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} \frac{n(n+1)}{2}&amp;2&amp;3 &amp;… &amp;n-1&amp;n\ 0&amp;-1&amp;&amp;&amp;&amp;\ 0&amp;2&amp;-2&amp;…\ …&amp;…&amp;…&amp;…&amp;…&amp;…\ 0&amp;&amp;&amp;n-2&amp;2-n&amp;\ 0&amp;&amp;&amp;…&amp;n-1&amp;1-n \end{array}\right|<br>$$</p>
-<p>降阶之后再重复上述步骤即可得到通式：</p>
-<p>$$<br>D_n&#x3D;(-1)^{n-1}\frac{(n+1)!}{2}<br>$$</p>
-<p>注：需要说明的是，上面举的例子比较容易看出如何实施<strong>累加消点法</strong>就可以实现将某一行(列)都化简到只有一个非$$0$$元素从而达到降阶的目的，但是还有很多$$Hessenberg$$型行列式并不这么容易就做到，还需要大家找找技巧稍微变换一下，只要始终记得你要用<strong>累加消点法</strong>来消元来降阶就可以了 </p>
-<h4 id="六：三对角型行列式"><a href="#六：三对角型行列式" class="headerlink" title="六：三对角型行列式"></a>六：三对角型行列式</h4><p>这是一种递推结构的行列式，特征为所有主子式都有相同的结构，从而以最后一列展开，将所得的$$(n-1)$$ 阶行列式再展开即得递推公式，即**递推法(特征方程法)**，请看下例</p>
-<p>$$<br>eg:D_n&#x3D; \left|\begin{array}{cccc} a&amp;b&amp; &amp;&amp;… &amp;&amp;&amp;\ c&amp;a&amp;b&amp;&amp;…&amp;&amp;&amp;\ &amp;c&amp;a&amp;b&amp;…&amp;&amp;\ …&amp;…&amp;…&amp;…&amp;…&amp;\ &amp;&amp;&amp;&amp;…&amp;a&amp;b\ &amp;&amp;&amp;&amp;…&amp;c&amp;a \end{array}\right|<br>$$</p>
-<p>$$Solution$$: 按第一列拉普拉斯展开，得：</p>
-<p>$$<br>D_n&#x3D;aD_{n-1}-bcD_{n-2}<br>$$</p>
-<p>解特征方程： $$x^2&#x3D;ax-bc$$ ，得：</p>
-<p>$$<br>x_1&#x3D;\frac{a+\sqrt{a^2-4bc}}{2}<br>$$</p>
-<p>$$<br>x_2&#x3D;\frac{a-\sqrt{a^2-4bc}}{2}<br>$$</p>
-<p>即可得通式：</p>
-<p>$$<br>D_n &#x3D; \frac{x_1^{n+1}-x_2^{n+1}}{x_1-x_2}<br>$$</p>
-<p>注：特征方程法我没记错的话，应该是在高中将数列的时候用到的。</p>
-<h4 id="七：各行元素和相等型行列式"><a href="#七：各行元素和相等型行列式" class="headerlink" title="七：各行元素和相等型行列式"></a>七：各行元素和相等型行列式</h4><p>这个特征已经很清楚了吧，方法就是<strong>累加法</strong>，很简单，直接看下例</p>
-<p>$$<br>eg:D_n&#x3D; \left|\begin{array}{cccc} 1+x_1&amp;x_1 &amp;… &amp;x_1\ x_2&amp;1+x_2&amp;…&amp;x_2\ …&amp;…&amp;…&amp;…\ x_n&amp;x_n&amp;…&amp;1+x_n \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  将第$$i,i&#x3D;2…n$$ 行都加到第一行去，得：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} 1+\sum_{i&#x3D;1}^{n}x_i&amp;1+\sum_{i&#x3D;1}^{n}x_i &amp;… &amp;1+\sum_{i&#x3D;1}^{n}x_i\ x_2&amp;1+x_2&amp;…&amp;x_2\ …&amp;…&amp;…&amp;…\ x_n&amp;x_n&amp;…&amp;1+x_n \end{array}\right|<br>$$</p>
-<p>所以：</p>
-<p>$$<br>D_n&#x3D; (1+\sum_{i&#x3D;1}^{n}x_i)\left|\begin{array}{cccc} 1&amp;1 &amp;… &amp;1\ x_2&amp;1+x_2&amp;…&amp;x_2\ …&amp;…&amp;…&amp;…\ x_n&amp;x_n&amp;…&amp;1+x_n \end{array}\right|&#x3D; (1+\sum_{i&#x3D;1}^{n}x_i)\left|\begin{array}{cccc} 1&amp;0&amp;… &amp;0\ x_2&amp;1&amp;…&amp;0\ …&amp;…&amp;…&amp;…\ x_n&amp;0&amp;…&amp;1 \end{array}\right|&#x3D;1+\sum_{i&#x3D;1}^{n}x_i<br>$$</p>
-<h4 id="八：相邻两行对应元素相差K倍型行列式"><a href="#八：相邻两行对应元素相差K倍型行列式" class="headerlink" title="八：相邻两行对应元素相差K倍型行列式"></a>八：相邻两行对应元素相差K倍型行列式</h4><p>这个要用<strong>步步差法</strong></p>
-<p>(1)大部分元素为数字，且相邻两行对应元素相差为$$1$$，采用逐步作差的方法，即可出现大量 $$\pm1$$ 元素，进而出现大量$$0$$元素</p>
-<p>(2)若相邻两行相差$$K$$倍，采用逐步作$$k$$倍差得方法，即可出现大量$$0$$元素</p>
-<p>请看下面两个例子</p>
-<p>$$<br>eg1:D_n&#x3D; \left|\begin{array}{cccc} 0&amp;1&amp;2 &amp;…&amp;n-2 &amp;n-1\ 1&amp;0&amp;1&amp;…&amp;n-3&amp;n-2\ 2&amp;1&amp;0&amp;…&amp;n-4&amp;n-3\ …&amp;…&amp;…&amp;…&amp;…&amp;…\ n-2&amp;n-3&amp;n-4&amp;…&amp;0&amp;1\ n-1&amp;n-2&amp;n-3&amp;…&amp;1&amp;0 \end{array}\right|<br>$$</p>
-<p>$$Solution$$: 从第一行开始，依次用前一行减去后一行，得：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} -1&amp;1&amp;1 &amp;…&amp;1 &amp;1\ -1&amp;-1&amp;1&amp;…&amp;1&amp;1\ -1&amp;-1&amp;-1&amp;…&amp;1&amp;1\ …&amp;…&amp;…&amp;…&amp;…&amp;…\ -1&amp;-1&amp;-1&amp;…&amp;-1&amp;1\ n-1&amp;n-2&amp;n-3&amp;…&amp;1&amp;0 \end{array}\right|<br>$$</p>
-<p>再将第一列加到第$$i,i&#x3D;2…n$$ 列，得：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} -1&amp;0&amp;0&amp;…&amp;0&amp;0\ -1&amp;-2&amp;0&amp;…&amp;0&amp;0\ -1&amp;-2&amp;-2&amp;…&amp;0&amp;0\ …&amp;…&amp;…&amp;…&amp;…&amp;…\ -1&amp;-2&amp;-2&amp;…&amp;-2&amp;0\ n-1&amp;2n-3&amp;2n-4&amp;…&amp;n&amp;n-1 \end{array}\right|&#x3D;(-1)^{n-1}(-2)^{n-2}(n-1)<br>$$</p>
-<hr>
-<p>$$<br>eg2:D_n&#x3D; \left|\begin{array}{cccc} 1&amp;a&amp;a^2 &amp;…&amp;a^{n-2} &amp;a^{n-1}\ a^{n-1}&amp;1&amp;a&amp;…&amp;a^{n-3} &amp;a^{n-2} \ a^{n-2} &amp;a^{n-1} &amp;1&amp;…&amp;a^{n-4} &amp;a^{n-3} \ …&amp;…&amp;…&amp;…&amp;…&amp;…\ a^2&amp;a^3&amp;a^4&amp;…&amp;1&amp;a\ a&amp;a^2&amp;a^3&amp;…&amp;a^{n-1}&amp;1 \end{array}\right|<br>$$</p>
-<p>$$Solution$$:  从第一行开始，依次用前一行加上后一行的$$(-a)$$ 倍，得：</p>
-<p>$$<br>D_n&#x3D; \left|\begin{array}{cccc} 1-a^n&amp;0&amp;0&amp;…&amp;0&amp;0\ a^{n-1}&amp;1-a^n&amp;0&amp;…&amp;0 &amp;0\ 0 &amp;0 &amp;1-a^n&amp;…&amp;0&amp;0 \ …&amp;…&amp;…&amp;…&amp;…&amp;…\ 0&amp;0&amp;0&amp;…&amp;1-a^n&amp;0\ a&amp;a^2&amp;a^3&amp;…&amp;a^{n-1}&amp;1 \end{array}\right|<br>$$</p>
-<p>所以：</p>
-<p>$$<br>D_n&#x3D;(1-a^n)^{n-1}<br>$$</p>
+<h2 id="output"><a href="#output" class="headerlink" title="output"></a>output</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> &#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Hello %s!\n&quot;</span>, <span class="string">&quot;Numbers!&quot;</span>); <span class="comment">// %s: placeholder for the first string</span></span><br><span class="line"><span class="type">int</span> num = <span class="number">1234</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Decimal: %d\n&quot;</span>, num); <span class="comment">// %d: for decimal numeral (十进制整数)</span></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>%X</code>  is for hexadecimal (16-dimension) numeral<br>Everything on your computer is bits.</p>
+<h2 id="basic-types"><a href="#basic-types" class="headerlink" title="basic types"></a>basic types</h2><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>Integer Numbers (including negatives)</td>
+<td>0, 78, -217, 0x7337</td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td>Unsigned Integers (i.e., non-negatives)</td>
+<td>0, 6, 35102</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Floating point decimal</td>
+<td>0.0, 3.14159, 6.02e23</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Equal or higher precision floating point</td>
+<td>0.0, 3.14159, 6.02e23</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Single character</td>
+<td>‘a’, ‘D’, ‘\n’</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Longer int, Size &gt;&#x3D; sizeof(int), at least 32b</td>
+<td>0, 78, -217, 301720971</td>
+</tr>
+<tr>
+<td>long long</td>
+<td>Even longer int, size &gt;&#x3D; sizeof(long), at least 64b</td>
+<td>3170519272109251</td>
+</tr>
+<tr>
+<td>boolean: true&amp;false</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>false:</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>0 (for ints, all varibles are 0)</li>
+<li>NULL(pointers)</li>
+</ul>
+<h2 id="more-features"><a href="#more-features" class="headerlink" title="more features"></a>more features</h2><h3 id="constants-in-C"><a href="#constants-in-C" class="headerlink" title="constants in C"></a>constants in C</h3><p><code>const int a = 1;</code> assigned the 1 to a in the declaration and never change it throughout the program<br><code>#define a 1</code> give 1 to a prior to all of the compilation process</p>
+<h3 id="typedef"><a href="#typedef" class="headerlink" title="typedef"></a><code>typedef</code></h3><p>defining new types are allowed.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="type">uint8_t</span> BYTE;</span><br><span class="line">BYTE b1, b2;</span><br></pre></td></tr></table></figure>
+<h3 id="struct"><a href="#struct" class="headerlink" title="struct"></a><code>struct</code></h3><p>strurcted objects</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line"><span class="type">int</span> length_in_seconds;</span><br><span class="line"><span class="type">int</span> year_recorded;</span><br><span class="line">&#125; SONG;</span><br><span class="line">SONG song1;</span><br><span class="line">song1.length_in_seconds = <span class="number">213</span>;</span><br><span class="line">song1.year_recorded = <span class="number">1994</span>;</span><br><span class="line">SONG song2;</span><br><span class="line">song2.length_in_seconds = <span class="number">248</span>;</span><br><span class="line">song2.year_recorded = <span class="number">1988</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="control-flow"><a href="#control-flow" class="headerlink" title="control flow"></a>control flow</h3><p>the same as that in Java!</p>
+<h1 id="pointers"><a href="#pointers" class="headerlink" title="pointers"></a>pointers</h1><h2 id="memory"><a href="#memory" class="headerlink" title="memory"></a>memory</h2><p>memory is basically a big single-array.<br>A pointer refer to the location of the memory.</p>
+<h2 id="pointers-1"><a href="#pointers-1" class="headerlink" title="pointers"></a>pointers</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> *p; <span class="comment">// tell that the p refer to a pointer to a int memory box</span></span><br><span class="line"><span class="type">int</span> x = <span class="number">3</span>; </span><br><span class="line">p = &amp;x; <span class="comment">// p = the address of x. &amp; is “address operator” in this context</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;p points to %d\n&quot;</span>, *p); <span class="comment">// print the value in the address</span></span><br><span class="line">*p = <span class="number">5</span>; <span class="comment">// a.k.a. x = 5</span></span><br></pre></td></tr></table></figure>
+<h2 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h2><p>Pointers are useful when passing parameters.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">addOne</span> <span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">x = x + <span class="number">1</span>;&#125;  </span><br><span class="line"><span class="type">int</span> y = <span class="number">3</span>; </span><br><span class="line">addOne(y); <span class="comment">// y is still 3!</span></span><br></pre></td></tr></table></figure>
+<p>good ones:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">addOne</span> <span class="params">(<span class="type">int</span> *p)</span> </span><br><span class="line">&#123; </span><br><span class="line">*p = *p + <span class="number">1</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="type">int</span> y = <span class="number">3</span>; </span><br><span class="line">addOne(&amp;y);</span><br></pre></td></tr></table></figure>
+<h2 id="common-bugs-garbage-address"><a href="#common-bugs-garbage-address" class="headerlink" title="common bugs: garbage address"></a>common bugs: garbage address</h2><p>Local variables in C are not inialized!<br>Therefore, they can be anything.</p>
+<h2 id="structs"><a href="#structs" class="headerlink" title="structs"></a>structs</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">	<span class="type">int</span> x;</span><br><span class="line">	<span class="type">int</span> y;</span><br><span class="line">&#125; Coord;</span><br><span class="line"><span class="comment">/* dot notation */</span> </span><br><span class="line"><span class="type">int</span> h = coord1.x; </span><br><span class="line">coord2.y = coord1.y; </span><br><span class="line"><span class="type">int</span> k; </span><br><span class="line">k = (*ptr1).x; </span><br><span class="line">k = ptr1-&gt;x; <span class="comment">// equivalent </span></span><br><span class="line"><span class="comment">/* This compiles, but what does it do? */</span> </span><br><span class="line">ptr1 = ptr2</span><br></pre></td></tr></table></figure>
+<h1 id="arrays"><a href="#arrays" class="headerlink" title="arrays"></a>arrays</h1><p>just a big block of memory!<br>declaration and ini: the same as that of java</p>
+<h2 id="pointers-for-arrays"><a href="#pointers-for-arrays" class="headerlink" title="pointers for arrays"></a>pointers for arrays</h2><p><code>a[i]</code> ⟺ <code>*(a+i)</code> they are equal!</p>
+<h2 id="pointer-changing"><a href="#pointer-changing" class="headerlink" title="pointer changing"></a>pointer changing</h2><p>wrong code:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">increment_ptr</span><span class="params">(<span class="type">int32_t</span> *p)</span> </span><br><span class="line">&#123; p = p + <span class="number">1</span>; &#125; </span><br><span class="line"><span class="type">int32_t</span> arr[<span class="number">3</span>] = &#123;<span class="number">50</span>, <span class="number">60</span>, <span class="number">70</span>&#125;; </span><br><span class="line"><span class="type">int32_t</span> *q = arr; </span><br><span class="line">increment_ptr(q); </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;*q is %d\n&quot;</span>, *q)</span><br></pre></td></tr></table></figure>
+<p>printed: q &#x3D; 50!<br>remember: C is pass by value!<br>Instead, pass a pointer to a pointer (“handle”).: Declared as data_type <code>**h</code>.<br>right code:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">increment_ptr</span><span class="params">(<span class="type">int32_t</span> **h)</span> </span><br><span class="line">&#123; *h = *h + <span class="number">1</span>; &#125; </span><br><span class="line"><span class="type">int32_t</span> arr[<span class="number">3</span>] = &#123;<span class="number">50</span>, <span class="number">60</span>, <span class="number">70</span>&#125;; </span><br><span class="line"><span class="type">int32_t</span> *q = arr; </span><br><span class="line">increment_ptr(&amp;q); </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;*q is %d\n&quot;</span>, *q);</span><br></pre></td></tr></table></figure>
+<h2 id="common-pitfalls"><a href="#common-pitfalls" class="headerlink" title="common pitfalls"></a>common pitfalls</h2><h3 id="constant-using-of-an-number"><a href="#constant-using-of-an-number" class="headerlink" title="constant using of an number"></a>constant using of an number</h3><p>Wrong </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i, ar[<span class="number">10</span>]; </span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">&#123; ... &#125; </span><br></pre></td></tr></table></figure>
+<p>Strongly encouraged </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ARRAY_SIZE = <span class="number">10</span>; </span><br><span class="line"><span class="type">int</span> i, a[ARRAY_SIZE];</span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; ARRAY_SIZE; i++)&#123; ...</span><br></pre></td></tr></table></figure>
+<h3 id="arrays-VS-pointers"><a href="#arrays-VS-pointers" class="headerlink" title="arrays VS pointers"></a>arrays VS pointers</h3><p><code>char *string</code> &#x3D; <code>char string[]</code><br>accessing array elements:<br><code>arr[0]</code> is equal to <code>*arr</code><br><code>arr[2]</code> is equal to <code>*(arr+2)</code></p>
+<h3 id="other-features"><a href="#other-features" class="headerlink" title="other features"></a>other features</h3><ul>
+<li>array bounds are not checked during the element access!</li>
+<li>An array is passed into functions as a pointer</li>
+<li>declared arrays are only allocated while the scope is valid.</li>
+</ul>
+<h1 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h1><p>An array of characters,followed by a null terminator. aka <code>\0</code><br>C have a branch of functions for string: </p>
+<ul>
+<li><code>strlen</code>: computes the length of a string</li>
+<li><code>strcpy</code>: copy a string from one to another</li>
+</ul>
+<h1 id="endianness"><a href="#endianness" class="headerlink" title="endianness"></a>endianness</h1><p>“little endian”: the least significant byte of a value is stored first<br>“big endian”: contradict to little ones</p>
+<h1 id="memory-1"><a href="#memory-1" class="headerlink" title="memory"></a>memory</h1><p><code>sizeof()</code>: gives size in bytes of types of varible</p>
+<h2 id="address-space"><a href="#address-space" class="headerlink" title="address space"></a>address space</h2><ul>
+<li>Stack: local variables inside functions, grows downward</li>
+<li>Heap: space requested via malloc(); resizes dynamically, grows upward</li>
+<li>Data (Static Data): variables declared outside main, does not grow or shrink</li>
+<li>Text (aka code): program executable loaded when program starts, does not change</li>
+<li>chunk is unwriteable&#x2F;unreadable so you that crash on NULL pointer access<br>![[Pasted image 20240520110032.png]]</li>
+</ul>
 </div>
         </div>
         
@@ -366,7 +358,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/",
+                text: "https://oscar-ge.github.io/2024/05/17/61C-P1-C/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -378,13 +370,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/";
-            const title         = "「线性代数八大常见类型的行列式及其解法」";
-            const excerpt       = `cited from 八大类型行列式及其解法 - 知乎 (zhihu.com)
-
-  本文记录了八大常见类型的行列式及其解法，解法从一般性到特殊性都有，分享给大家，例子都特别经典好用，希望对线代、高代初学者以及考研党有用。
-
-类型总览...`;
+            const hostUrl       = "https://oscar-ge.github.io/2024/05/17/61C-P1-C/";
+            const title         = "「61C-P1-C」";
+            const excerpt       = `Compilegcc hello.ccreates machine language codea.out loads andexecutes programgreat idea in C:![[Pasted image 2024051...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -403,10 +391,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/Linear-Algebra/" rel="tag">Linear Algebra</a>, <a class="tag-none-link" href="/tags/Math/" rel="tag">Math</a>
+                    <a class="tag-none-link" href="/tags/61C/" rel="tag">61C</a>, <a class="tag-none-link" href="/tags/BasicC/" rel="tag">BasicC</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-26T12:37:11.009Z" itemprop="dateModified">最后编辑：2024-04-26</time>
+                    <time datetime="2024-05-20T03:02:00.207Z" itemprop="dateModified">最后编辑：2024-05-20</time>
                 </div>
             </div>
         </footer>
@@ -415,13 +403,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 61B part 5..4 Graph" href="/2024/04/26/61B/61B-P5-4-Graph/">&lt; 上一篇</a>
+                <a title=" 61B-P5-6-sort" href="/2024/05/15/61B/61B-P5-6-sort/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" matlab-intro" href="/2024/05/10/matlab-intro/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -433,8 +417,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/',
-                path: '/2024/04/26/%E5%85%AB%E5%A4%A7%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%B3%95/'
+                id: '/2024/05/17/61C-P1-C/',
+                path: '/2024/05/17/61C-P1-C/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
