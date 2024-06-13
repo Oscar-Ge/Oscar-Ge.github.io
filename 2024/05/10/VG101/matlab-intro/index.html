@@ -25,7 +25,7 @@
 <meta property="og:description" content="basics: numberbinary systems, difference between MB and Mb, GB, TB, ASCII, unicode… (stupid definitions)how to represent the signed format?8 bits: 1 for sign and 7 for numbersTwo’s complement: invert">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-10T07:06:24.000Z">
-<meta property="article:modified_time" content="2024-06-06T08:49:45.410Z">
+<meta property="article:modified_time" content="2024-06-13T02:39:17.999Z">
 <meta property="article:author" content="Oscar">
 <meta property="article:tag" content="Basic">
 <meta property="article:tag" content="matlab">
@@ -179,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            7.70K
+                            8.24K
                         
                         字
                     </li>
@@ -191,7 +191,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1717663785410"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1718246357999"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -300,7 +300,8 @@
 </li>
 <li>partial indexing: colon operator</li>
 </ul>
-<h2 id="cell"><a href="#cell" class="headerlink" title="cell"></a>cell</h2><p>To be done</p>
+<h2 id="Advanced-data-type-cell-array"><a href="#Advanced-data-type-cell-array" class="headerlink" title="Advanced data type: cell array"></a>Advanced data type: cell array</h2><p>Acell array is a composite data type that groups related data using data containers called cells. Each cell can contain any type of data.</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a&#123;<span class="number">1</span>,<span class="number">1</span>&#125; =[<span class="number">13</span>−<span class="number">7</span>;<span class="number">206</span>;<span class="number">051</span>]; </span><br><span class="line">a&#123;<span class="number">1</span>,<span class="number">2</span>&#125; =’This is a text string’; </span><br><span class="line">a&#123;<span class="number">2</span>,<span class="number">1</span>&#125; =[<span class="number">3</span>+<span class="number">4</span>*<span class="built_in">i</span> −<span class="number">5</span>; −<span class="number">10</span>*<span class="built_in">i</span> <span class="number">3</span> − <span class="number">4</span>*<span class="built_in">i</span>]; </span><br><span class="line">a&#123;<span class="number">2</span>,<span class="number">2</span>&#125; =[]; <span class="number">5</span> a=cell(<span class="number">2</span>,<span class="number">2</span>); <span class="comment">% preallocating first and assignment then </span></span><br><span class="line">b=&#123;[<span class="number">1</span>,<span class="number">2</span>], <span class="number">17</span>, [<span class="number">2</span>;<span class="number">4</span>]; <span class="number">3</span> − <span class="number">4</span>*<span class="built_in">i</span>, ’Hello’, <span class="built_in">zeros</span>(<span class="number">3</span>)&#125;; </span><br><span class="line">c=b&#123;<span class="number">1</span>,<span class="number">1</span>&#125;<span class="comment">%addressing content inside cell (1,1) </span></span><br><span class="line">c=b&#123;<span class="number">1</span>,<span class="number">1</span>&#125;(<span class="number">1</span>) <span class="comment">% addressing subsets of a cell’s content</span></span><br></pre></td></tr></table></figure>
 <h2 id="logic-operator"><a href="#logic-operator" class="headerlink" title="logic operator"></a>logic operator</h2><h3 id="normal-operator"><a href="#normal-operator" class="headerlink" title="normal operator"></a>normal operator</h3><table>
 <thead>
 <tr>
@@ -488,7 +489,7 @@
                     <a class="tag-none-link" href="/tags/Basic/" rel="tag">Basic</a>, <a class="tag-none-link" href="/tags/matlab/" rel="tag">matlab</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-06-06T08:49:45.410Z" itemprop="dateModified">最后编辑：2024-06-06</time>
+                    <time datetime="2024-06-13T02:39:17.999Z" itemprop="dateModified">最后编辑：2024-06-13</time>
                 </div>
             </div>
         </footer>
@@ -589,7 +590,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -598,7 +599,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.68em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.72em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.64em;">BasicC</a> <a href="/tags/CPP/" style="font-size: 0.64em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.76em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.64em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/GDB/" style="font-size: 0.6em;">GDB</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a>
+        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.7em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.75em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.65em;">BasicC</a> <a href="/tags/CPP/" style="font-size: 0.7em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.75em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.65em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/GDB/" style="font-size: 0.6em;">GDB</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a>
       </div>
   </aside>
 
@@ -612,7 +613,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/06/12/cpp-containers-iterators/"><i class="fa  fa-book"></i> cpp-containers-iterators</a>
+            <a class="list-group-item" href="/2024/06/12/CS106L/cpp-containers-iterators/"><i class="fa  fa-book"></i> cpp-containers-iterators</a>
             
           
         

@@ -15,16 +15,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="Basic, CPP" />
   
-  <meta property="og:type" content="article">
+  <meta name="description" content="containerAn object that allows us to collect other objects together and interact with them in some way. (vectors, stacks, queues!)why containers?  organization standardization abstractionwe have used">
+<meta property="og:type" content="article">
 <meta property="og:title" content="cpp-containers-iterators">
-<meta property="og:url" content="https://oscar-ge.github.io/2024/06/12/cpp-containers-iterators/index.html">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/06/12/CS106L/cpp-containers-iterators/index.html">
 <meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="containerAn object that allows us to collect other objects together and interact with them in some way. (vectors, stacks, queues!)why containers?  organization standardization abstractionwe have used">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-12T10:33:14.000Z">
-<meta property="article:modified_time" content="2024-06-12T10:33:14.632Z">
+<meta property="article:modified_time" content="2024-06-13T09:08:41.955Z">
 <meta property="article:author" content="Oscar">
+<meta property="article:tag" content="Basic">
+<meta property="article:tag" content="CPP">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -158,7 +162,7 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/06/12/cpp-containers-iterators/">
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/06/12/CS106L/cpp-containers-iterators/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
@@ -175,7 +179,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            0
+                            3.37K
                         
                         字
                     </li>
@@ -187,13 +191,75 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1718188394632"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1718269721955"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"></div>
+            <div itemprop="articleBody"><h1 id="container"><a href="#container" class="headerlink" title="container"></a>container</h1><p>An object that allows us to collect other objects together and interact with them in some way. (vectors, stacks, queues!)<br>why containers?</p>
+<ul>
+<li>organization</li>
+<li>standardization</li>
+<li>abstraction<br>we have used the idea for structs:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">string name; <span class="comment">// these are called fields</span></span><br><span class="line">string state; <span class="comment">// separate these by semicolons</span></span><br><span class="line"><span class="type">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Student s;</span><br><span class="line">s.name = <span class="string">&quot;Fabio&quot;</span>;</span><br><span class="line">s.state = <span class="string">&quot;FL&quot;</span>;</span><br><span class="line">s.age = <span class="number">21</span>; <span class="comment">// use . to access fields</span></span><br></pre></td></tr></table></figure>
+what if there are a whole class of students?<br>Typically, containers export some standard, basic functionality.</li>
+<li>Allow you to store multiple objects (though all of the same type)</li>
+<li>Allow access to the collection through some (perhaps limited) way<ul>
+<li>Maybe allow iteration through all of the objects</li>
+</ul>
+</li>
+<li>May allow editing&#x2F;deletion</li>
+</ul>
+<h2 id="STL-containers"><a href="#STL-containers" class="headerlink" title="STL containers"></a>STL containers</h2><ul>
+<li>vector</li>
+<li>stack</li>
+<li>queue</li>
+<li>set</li>
+<li>map</li>
+<li>array (fixed size of a vector)</li>
+<li>deque (double ended queue)</li>
+<li>list (DLList)</li>
+<li>unordered set</li>
+<li>unordered map</li>
+</ul>
+<h3 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h3><p>![[Pasted image 20240612185423.png]]<br>additionally: why C++ is fast?</p>
+<ul>
+<li>Only provide the checks&#x2F;safety nets that are necessary</li>
+<li>the programmers knows best!</li>
+</ul>
+<h4 id="implementation"><a href="#implementation" class="headerlink" title="implementation"></a>implementation</h4><p>keep track of a few member values:</p>
+<ul>
+<li>size &#x3D; number of elements in the vector</li>
+<li>capacity &#x3D; space allocated for elements</li>
+</ul>
+<h3 id="unordered-maps-sets"><a href="#unordered-maps-sets" class="headerlink" title="unordered maps&#x2F;sets"></a>unordered maps&#x2F;sets</h3><p>need a hash function to be defined<br>faster thant ordered maps&#x2F;sets(needs a comparison operator)</p>
+<h3 id="hashing"><a href="#hashing" class="headerlink" title="hashing"></a>hashing</h3><p>as mentioned in 61B</p>
+<h2 id="2-types-of-containers"><a href="#2-types-of-containers" class="headerlink" title="2 types of containers"></a>2 types of containers</h2><h3 id="sequence"><a href="#sequence" class="headerlink" title="sequence"></a>sequence</h3><p>anything with a inherent order<br>containers can be accessed sequentially</p>
+<h3 id="associative"><a href="#associative" class="headerlink" title="associative"></a>associative</h3><ul>
+<li>don’t necessarily have a sequence</li>
+<li>more easily searched</li>
+<li>maps and sets!</li>
+</ul>
+<h2 id="how-to-choose-containers"><a href="#how-to-choose-containers" class="headerlink" title="how to choose containers"></a>how to choose containers</h2><p>![[Pasted image 20240612190037.png]]<br>Sequence containers are for when you need to enforce some order on your information!</p>
+<ul>
+<li><code>vector</code> for most anything</li>
+<li>fast inserts in the front: <code>std::deque</code></li>
+<li>joining&#x2F;working with multiple lists: <code>std::list</code> (rare)</li>
+</ul>
+<h2 id="container-adaptors"><a href="#container-adaptors" class="headerlink" title="container adaptors"></a>container adaptors</h2><p>Container adaptors are “wrappers” to existing containers!<br>modify the interface to sequence containers and change what the client is allowed to do&#x2F;how they can interact with the container<br>e.g.: wrap the queue from a deque<br>Why? abstraction!</p>
+<h1 id="iterator"><a href="#iterator" class="headerlink" title="iterator"></a>iterator</h1><p>similar to what have been taught in 61B<br>in the STL: </p>
+<ul>
+<li>initializing –&gt; <code>iter = s.begin();</code></li>
+<li>invermenting –&gt; <code>++iter;</code> (<code>iter++</code> will return the previous value!)</li>
+<li>dereferencing –&gt;<code>*iter;</code></li>
+<li>comparing –&gt; iter !&#x3D; s.end();</li>
+<li>copying  –&gt;new_iter &#x3D; iter;<br>![[Pasted image 20240613113558.png]]<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; map&#123;&#123;<span class="number">1</span>, <span class="number">6</span>&#125;, &#123;<span class="number">2</span>, <span class="number">8</span>&#125;, &#123;<span class="number">0</span>, <span class="number">3</span>&#125;, &#123;<span class="number">3</span>,<span class="number">9</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> iter = map.<span class="built_in">begin</span>(); iter != map.<span class="built_in">end</span>(); iter++) &#123;</span><br><span class="line"><span class="type">const</span> <span class="keyword">auto</span>&amp; [key, value] = *iter; <span class="comment">// structured binding!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+![[Pasted image 20240613170004.png]]<br>forward iterator: </li>
+<li>Input iterators can appear on the RHS (right hand side) of an &#x3D; operator like <code>auto elem = *it;</code></li>
+<li>output iterators can appear on the LHS like <code>*elem = value;</code><br>bidirectional iterator: can go backward, like <code>--iter;</code><br>random access iterator: directly access values without visiting all of the elements, like <code>iter += 5;</code><br>All iteration time in the iterator is constant!</li>
+</ul>
+<h1 id="pointer"><a href="#pointer" class="headerlink" title="pointer"></a>pointer</h1><p>actually, iterator is a particular type of container!<br>‘point’ at the particular elements in the container<br>Pointers are marked by the asterisk <code>*</code> next to the type ofthe object they’re pointing at when they’re declared.<br>The address of a variable can be accessed by using <code>&amp;</code> before its name, same as when passing by reference!</p>
+</div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -242,7 +308,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://oscar-ge.github.io/2024/06/12/cpp-containers-iterators/",
+                text: "https://oscar-ge.github.io/2024/06/12/CS106L/cpp-containers-iterators/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -254,9 +320,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://oscar-ge.github.io/2024/06/12/cpp-containers-iterators/";
+            const hostUrl       = "https://oscar-ge.github.io/2024/06/12/CS106L/cpp-containers-iterators/";
             const title         = "「cpp-containers-iterators」";
-            const excerpt       = ``;
+            const excerpt       = `containerAn object that allows us to collect other objects together and interact with them in some way. (vectors, sta...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -275,10 +341,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    
+                    <a class="tag-none-link" href="/tags/Basic/" rel="tag">Basic</a>, <a class="tag-none-link" href="/tags/CPP/" rel="tag">CPP</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-06-12T10:33:14.632Z" itemprop="dateModified">最后编辑：2024-06-12</time>
+                    <time datetime="2024-06-13T09:08:41.955Z" itemprop="dateModified">最后编辑：2024-06-13</time>
                 </div>
             </div>
         </footer>
@@ -301,8 +367,8 @@
         const init = () => {
             console.log('Gitalk loading...');
             const gitalk = new Gitalk(Object.assign({
-                id: '/2024/06/12/cpp-containers-iterators/',
-                path: '/2024/06/12/cpp-containers-iterators/'
+                id: '/2024/06/12/CS106L/cpp-containers-iterators/',
+                path: '/2024/06/12/CS106L/cpp-containers-iterators/'
             }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
 
             gitalk.render('gitalk-container');
@@ -375,7 +441,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -384,7 +450,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.68em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.72em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.64em;">BasicC</a> <a href="/tags/CPP/" style="font-size: 0.64em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.76em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.64em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/GDB/" style="font-size: 0.6em;">GDB</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a>
+        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.7em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.75em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.65em;">BasicC</a> <a href="/tags/CPP/" style="font-size: 0.7em;">CPP</a> <a href="/tags/CS/" style="font-size: 0.75em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.65em;">CS 61B</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a> <a href="/tags/GDB/" style="font-size: 0.6em;">GDB</a> <a href="/tags/Git/" style="font-size: 0.6em;">Git</a> <a href="/tags/Graph/" style="font-size: 0.6em;">Graph</a> <a href="/tags/HashMap/" style="font-size: 0.6em;">HashMap</a>
       </div>
   </aside>
 
@@ -398,7 +464,7 @@
         
           
           
-            <a class="list-group-item" href="/2024/06/12/cpp-containers-iterators/"><i class="fa  fa-book"></i> cpp-containers-iterators</a>
+            <a class="list-group-item" href="/2024/06/12/CS106L/cpp-containers-iterators/"><i class="fa  fa-book"></i> cpp-containers-iterators</a>
             
           
         
