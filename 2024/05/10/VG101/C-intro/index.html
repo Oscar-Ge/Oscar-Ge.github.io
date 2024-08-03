@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>C-intro | Oscar-Ge</title>
+  
+  <meta name="author" content="Oscar" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="Basic, CPP" />
+  
+  <meta name="description" content="Basic Linux tar usagetar -xvf xxx.tar unziptar -cf xxx.tar ... xxx.c zip basic data typesInteger: intCharacter: charValueless type: voidFractional numbers: Singleprecision: floatDouble precision: doub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C-intro">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/05/10/VG101/C-intro/index.html">
+<meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="Basic Linux tar usagetar -xvf xxx.tar unziptar -cf xxx.tar ... xxx.c zip basic data typesInteger: intCharacter: charValueless type: voidFractional numbers: Singleprecision: floatDouble precision: doub">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-10T07:06:34.000Z">
+<meta property="article:modified_time" content="2024-07-30T01:39:39.716Z">
+<meta property="article:author" content="Oscar">
+<meta property="article:tag" content="Basic">
+<meta property="article:tag" content="CPP">
+<meta name="twitter:card" content="summary">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/hq_dark.webp');
+      }
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Oscar-Ge</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Oscar-Ge</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/05/10/VG101/C-intro/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">C-intro</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2024-05-10T07:06:34.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-05-10</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            17.19K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1722303579716"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="Basic-Linux-tar-usage"><a href="#Basic-Linux-tar-usage" class="headerlink" title="Basic Linux tar usage"></a>Basic Linux <code>tar</code> usage</h1><p><code>tar -xvf xxx.tar</code> unzip<br><code>tar -cf xxx.tar ... xxx.c</code> zip</p>
+<h1 id="basic-data-types"><a href="#basic-data-types" class="headerlink" title="basic data types"></a>basic data types</h1><p>Integer: <code>int</code><br>Character: <code>char</code><br>Valueless type: <code>void</code><br>Fractional numbers: <code>Single</code><br>precision: <code>float</code><br>Double precision: <code>double</code><br>Various types variations:<br>char: signed char, unsigned char<br>int: short int, signed short int, unsigned short int, signed int, unsigned int, long int, signed long int, unsigned long int, long long int, signed long long int, unsigned long long int<br>double: long double</p>
+<h2 id="Basic-number-types"><a href="#Basic-number-types" class="headerlink" title="Basic number types"></a>Basic number types</h2><p>float: 7 digits of precision, from 1 10^-38 to 3 10^38<br>double: 13 digits of precision, from 2 10 ^-308 to 1 10^308</p>
+<h2 id="Characters"><a href="#Characters" class="headerlink" title="Characters"></a>Characters</h2><p>Characters are enclosed in single quotes,e.g.<code>char a=’a’;</code><br>Character are encoded using the American Standard Codes for Information Interchange(ASCII)<br>C do not have a string type, instead strings are viewed as arrays of characters(explanation later)<br>Strings are enclosed in double quotes</p>
+<h2 id="Arithmetic-operator"><a href="#Arithmetic-operator" class="headerlink" title="Arithmetic operator"></a>Arithmetic operator</h2><p>+,-, <code>*</code>, &#x2F;<br>except %, all arithmetic operator acceptes floating number!<br>Difference between <code>i += j; </code>and <code>i =+ j;</code>?<br>first &#x3D;&#x3D; <code>i = i + j;</code> second &#x3D;&#x3D; <code>i = j;</code></p>
+<h1 id="logic-statement"><a href="#logic-statement" class="headerlink" title="logic statement"></a>logic statement</h1><h2 id="if…else"><a href="#if…else" class="headerlink" title="if…else"></a>if…else</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(expression)&#123; </span><br><span class="line">statements </span><br><span class="line">&#125; </span><br><span class="line">elseif (expresssion2)&#123;</span><br><span class="line">statements&#125;  </span><br><span class="line"><span class="keyword">else</span>&#123; </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (variable) &#123; </span><br><span class="line"><span class="keyword">case</span> label1: statement1 <span class="comment">// use break to skip to end 4 </span></span><br><span class="line"><span class="keyword">case</span> label2: statemment2; </span><br><span class="line">			<span class="keyword">break</span>; </span><br><span class="line"><span class="keyword">default</span>: statement3  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="loop"><a href="#loop" class="headerlink" title="loop"></a>loop</h1><h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(init;test;step)&#123;  </span><br><span class="line">statements; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (expression)&#123;</span><br><span class="line">statements</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">statements</span><br><span class="line">&#125; <span class="keyword">while</span>(expression);</span><br></pre></td></tr></table></figure>
+<p>do will execute the statements at least once.<br><code>break</code>, <code>continue</code> are also useful</p>
+<h2 id="getchar-and-putchar"><a href="#getchar-and-putchar" class="headerlink" title="getchar() and putchar"></a><code>getchar()</code> and <code>putchar</code></h2><p>Character specific I&#x2F;O<br><code>getchar()</code>: reads one character (in the input zone) and return this character<br><code>putchar(cha)</code>: prints one character <code>cha</code></p>
+<h1 id="conditional-operator"><a href="#conditional-operator" class="headerlink" title="conditional operator"></a>conditional operator</h1><p>The only ternary operator in C: <code>condition ? expression1 : expression2</code></p>
+<h1 id="array"><a href="#array" class="headerlink" title="array"></a>array</h1><p>is series of values following the same data type, and stored sequentially<br>In C an array is defined by three parameters: </p>
+<ul>
+<li>The data type of its elements </li>
+<li>A name </li>
+<li>A size, i.e. the number of elements compositing it<br>Array index starts from 0!!!<br><code>sizeof</code> can be used to calculate the size of an array <strong>by byte</strong>.</li>
+</ul>
+<h3 id="multidimensional-arrays"><a href="#multidimensional-arrays" class="headerlink" title="multidimensional arrays"></a>multidimensional arrays</h3><p>Initializing: <code>int m[5][9] = &#123;&#123;1,1,1,1,1&#125;, &#123;1,1,1,1,1&#125;&#125;;</code><br>Not large enough to fill in the array, remaining will be zero<br>Designated initializers: <code>double indent[2][2] = &#123;[0][0]= 1.0, [1][1]= 1.0&#125;; </code><br>row-major order to store element in C<br>nested for loops for accessing</p>
+<h3 id="char-array"><a href="#char-array" class="headerlink" title="char array"></a>char array</h3><p>size of it is actual size <code>*4</code>(4 bytes per char)<br>example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> <span class="type">const</span> »argv[])</span> </span><br><span class="line">&#123; </span><br><span class="line"><span class="type">int</span> x[<span class="number">12</span>]; </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;$zu\n&quot;</span>, <span class="keyword">sizeof</span>(x)); <span class="comment">// 48 </span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;$zu\n!&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">int</span>)); <span class="comment">//4 bytes </span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;$zu\n&quot;</span>, <span class="keyword">sizeof</span>(x)/<span class="keyword">sizeof</span>(<span class="type">int</span>)); </span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>another example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span> <span class="comment">//Provides strlen() protetype </span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PRAISE <span class="string">&quot;You are doing great!&quot;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> <span class="type">const</span> ::argv[])</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="type">char</span> fName[<span class="number">40</span>]; </span><br><span class="line">	<span class="type">char</span> IName[<span class="number">40</span>]; </span><br><span class="line">	<span class="type">char</span> name[<span class="number">40</span>]; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;What is your name? &quot;</span>); </span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s, %s&quot;</span>, fName, IName); </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Hello, %s %s. %s\n&quot;</span>,fName, IName, PRAISE ); </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Your name has %zd letters occupies %zd memory </span></span><br><span class="line"><span class="string">	&quot;</span>, <span class="built_in">strlen</span>(name), </span><br><span class="line">	<span class="keyword">sizeof</span> name); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="function"><a href="#function" class="headerlink" title="function"></a>function</h1><ul>
+<li>function prototype </li>
+<li>function calling </li>
+<li>function definition<br>example:<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="title function_">average</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span>&#123; </span><br><span class="line">	<span class="keyword">return</span> (a+b)/<span class="number">2</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+When a one-dimensional array is used a function parameter, the length of the array needs to be specified.<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">sum_array</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> n)</span>&#123; </span><br><span class="line"><span class="type">int</span> i, sum = <span class="number">0</span>; </span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; <span class="number">1</span> &lt;n; i++) </span><br><span class="line">	sum += a[i]; </span><br><span class="line"><span class="keyword">return</span> sum; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+Notice:</li>
+</ul>
+<ol>
+<li><code>sizeof</code> operator no longer gives the right answer: 必须在数组定义处的函数才能用<code>sizeof</code>!</li>
+<li>The change to the element of the array within a function is reflected in the corresponding arugment.</li>
+</ol>
+<h3 id="function-prototype"><a href="#function-prototype" class="headerlink" title="function prototype"></a>function prototype</h3><p>Definition before calling. Or using prototypes<br>Function prototypes provides the compiler with a brief glimpse of the function.<br><code>return-type function-name (parameters); </code><br>function prototype can be placed within main(), as long as it is declared before usage. (But not recommended)<br>variable name is not a must in function prototyping (dummy name)</p>
+<h3 id="recursion"><a href="#recursion" class="headerlink" title="recursion"></a>recursion</h3><p>like what mentioned in MATLAB</p>
+<h1 id="pointer"><a href="#pointer" class="headerlink" title="pointer"></a>pointer</h1><p>Pointer: </p>
+<ul>
+<li>Something that directs, indicates, or points </li>
+<li>Low level but powerful facility available in<br>C Pointer vs. variable:<br>Variable: area of the memory that has been given a name<br>Pointer: variable that stores the address of another variable</li>
+</ul>
+<h2 id="declaration"><a href="#declaration" class="headerlink" title="declaration"></a>declaration</h2><p>Defining a pointer: <code>type * variable;</code><br>Handling pointers:<br>The address of a variable x is &amp;x<br>The value stored at address y is <code>*y</code><br>The operator “<code>*</code>” is called dereferencing operator<br>example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">intx =<span class="number">1</span>, y =<span class="number">2</span>, z[<span class="number">10</span>]; </span><br><span class="line"><span class="type">int</span> *ip; </span><br><span class="line"></span><br><span class="line">ip = &amp;x; </span><br><span class="line">y = *ip; </span><br><span class="line">xip = <span class="number">0</span>; </span><br><span class="line">ip = &amp;z[<span class="number">0</span>]; </span><br><span class="line"></span><br><span class="line"><span class="comment">//Other pointer arithmatic </span></span><br><span class="line">sip += <span class="number">1</span>; </span><br><span class="line">t++xip; </span><br><span class="line">(«ip)++; <span class="comment">//otherwise, the expression would increment ip instead of what it points to</span></span><br></pre></td></tr></table></figure>
+<h3 id="pointers-and-array"><a href="#pointers-and-array" class="headerlink" title="pointers and array"></a>pointers and array</h3><p>Array name is also the address of the first element of the array.<br><code>name == &amp;name[0]</code> returns true!<br>example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> SIZE 4 </span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123; </span><br><span class="line">	<span class="type">int</span> dates[SIZE]; </span><br><span class="line">	<span class="type">int</span> * pti; </span><br><span class="line">	pti = dates; </span><br><span class="line">	<span class="type">double</span> bills[SIZE]; </span><br><span class="line">	<span class="type">double</span> ptf = bills; </span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;S23s %15s\n&quot;</span>, <span class="string">&quot;int&quot;</span>, <span class="string">&quot;double&quot;</span>); </span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; SIZE; i++) </span><br><span class="line">	&#123; </span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Pointers + %d: %10p %10p \n&quot;</span>,i, ptiti, ptf+i); </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="comment">//adding one to the pointer moves to the next item of that type directly after it in memory </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Pointer notation and array notation are the same: <code>date[i]</code> is the same as <code>*(date+i)</code></p>
+<h3 id="pointer-and-function"><a href="#pointer-and-function" class="headerlink" title="pointer and function"></a>pointer and function</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span>, <span class="type">int</span>)</span>; </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> </span><br><span class="line">&#123; </span><br><span class="line">inta=<span class="number">2</span>,b=<span class="number">5</span>; </span><br><span class="line">swap(a,b); </span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Address of a: %p, </span></span><br><span class="line"><span class="string">value of a:%d\n&quot;</span>, &amp;a, a); </span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Address of b: %p, </span></span><br><span class="line"><span class="string">value of b:%d\n&quot;</span>, &amp;b, b); </span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">	<span class="type">int</span> temp = a; a = b;  b = temp;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Address of a in swap: %p, value of a in swap :%d\n&quot;</span>, &amp;a, a); </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Address of b in swap: %p, value of b in swap :%d\n&quot;</span>, &amp;b, b);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>we introduced pointer as an arguments.<br>Pointer can also serve as the return value</p>
+<h2 id="limitation-of-C"><a href="#limitation-of-C" class="headerlink" title="limitation of C"></a>limitation of C</h2><p>No limit on the number of input<br>Only one output<br>Output cannot be an array</p>
+<h1 id="Dynamic-memory-allocation"><a href="#Dynamic-memory-allocation" class="headerlink" title="Dynamic memory allocation"></a>Dynamic memory allocation</h1><p>Functions to manage memory: </p>
+<ul>
+<li>Allocate n bytes of memory, and get a pointer on the first chunk: <code>malloc(n) </code></li>
+<li>Allocate n blocks of size s each, set the memory to 0, and get a pointer on the first chunk: <code>calloc(n,s)</code>&#x2F;&#x2F; e.g., <code>s-&gt;sizeof(int)</code> </li>
+<li>Adjust the size of the memory block pointed to by ptr to s bytes, and get a pointer on the first chunk: <code>realloc(ptr,s)</code> </li>
+<li>Frees the memory space pointed to by <code>ptr: free(ptr)</code><br>Variable Length Array after C99, Array size can be determined during the runing of a program<br>But still, malloc and pointer are the fundamental tools to achieve complex data structures</li>
+</ul>
+<h1 id="character-strings"><a href="#character-strings" class="headerlink" title="character strings"></a>character strings</h1><p>a char array terminated with a null character <code>&#39;\0&#39;</code>， <strong>cannot be changed!!!</strong><br><code>string.h</code> can be used for a char array</p>
+<ul>
+<li><code>strcpy</code> :  The function takes two arguments: a destination buffer where the copied string will be stored, and a source string that will be copied. The function copies the entire source string, including the null terminator, into the destination buffer.<ul>
+<li><code>char* strcpy(char* destination, const char* source);</code></li>
+</ul>
+</li>
+<li><code>strcat</code>: accepts two pointer variable as parameters(say <strong>dest</strong>, <strong>src</strong>) and, appends the string pointed to by src to the end of the string pointed to by dest. <ul>
+<li><code>char *strcat(char *dest_str, const char *src_str)</code></li>
+</ul>
+</li>
+<li><code>strcmp</code>: This function takes two strings (array of characters) as arguments, <strong>compares these two strings lexicographically</strong>, and then returns 0,1, or -1 as the result.<ul>
+<li><code>strcmp(_first_str_, _second_str_ );</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="struct"><a href="#struct" class="headerlink" title="struct"></a>struct</h1><p>Structures: better way to represent data with hidden relationship</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> &#123;</span> </span><br><span class="line">	<span class="type">int</span> id; </span><br><span class="line">	<span class="type">char</span> name[NAME_LEN +<span class="number">1</span>]; </span><br><span class="line">	<span class="type">int</span> remaining_num; </span><br><span class="line">&#125; bookl=&#123;l,<span class="string">&quot;C Primer Plus&quot;</span>, <span class="number">10</span>&#125;, </span><br><span class="line">book2=&#123;<span class="number">2</span>,<span class="string">&quot;C Modern Approach&quot;</span>, </span><br><span class="line"><span class="number">10</span>&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="accessing-field"><a href="#accessing-field" class="headerlink" title="accessing field"></a>accessing field</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Book ID is %d \n&quot;</span>,bookl.id); </span><br><span class="line">bookl.remaining_num--; </span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;bookl.remaining_num);</span><br></pre></td></tr></table></figure>
+<h2 id="Naming-a-structure-for-reusability"><a href="#Naming-a-structure-for-reusability" class="headerlink" title="Naming a structure for reusability"></a>Naming a structure for reusability</h2><p>wrong def:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">book</span> &#123;</span> </span><br><span class="line"><span class="type">int</span> id; </span><br><span class="line"><span class="type">char</span> name[NAME_LEN +<span class="number">1</span>]; </span><br><span class="line"><span class="type">int</span> remaining_num; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">book</span> <span class="title">bookl1</span>, <span class="title">book2</span>;</span> <span class="comment">// Cannot omit struct</span></span><br></pre></td></tr></table></figure>
+<p>good example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> </span><br><span class="line">	<span class="type">int</span> id; </span><br><span class="line">	<span class="type">char</span> name[NAME_LEN +<span class="number">1</span>]; </span><br><span class="line">	<span class="type">int</span> remaining_num; </span><br><span class="line">&#125; Book; </span><br><span class="line">Book bookl, book2;</span><br></pre></td></tr></table></figure>
+<h2 id="pointer-to-a-struct"><a href="#pointer-to-a-struct" class="headerlink" title="pointer to a struct"></a>pointer to a struct</h2><p>Why we need pointers to the struct? </p>
+<ul>
+<li>Easier to manipulate </li>
+<li>Passing as input argument </li>
+<li>Complex data structures<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123; </span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">book</span> <span class="title">book</span>[2] =</span> &#123; </span><br><span class="line">		&#123;&#123;<span class="string">&quot;Joanne&quot;</span>, <span class="string">&quot;Rowling&quot;</span>&#125;, <span class="string">&quot;Harry Potter&quot;</span>, <span class="number">50.0</span> </span><br><span class="line">		 &#125;, </span><br><span class="line">		&#123; &#123;<span class="string">&quot;Cixin&quot;</span>, <span class="string">&quot;Liu &quot;</span>&#125;,<span class="string">&quot;The Three Body Problem&quot;</span> , <span class="number">30.0</span> </span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">book</span> * <span class="title">ptrBook</span>;</span> </span><br><span class="line">	ptrBook = &amp;book[<span class="number">0</span>]; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;ptr-&gt;price: %f, lastName%s&quot;</span>, ptr—&gt;price, ptr—-&gt;handle.lastName);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="adding-malloc"><a href="#adding-malloc" class="headerlink" title="adding malloc"></a>adding <code>malloc</code></h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>&#123; </span><br><span class="line">	<span class="type">int</span> registerNum; </span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">book</span> * <span class="title">books</span>;</span> <span class="comment">//pointer to a structure </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;How many books you wanna register\n&quot;</span>); </span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;registerNum); </span><br><span class="line">	books = (<span class="keyword">struct</span> book *) <span class="built_in">malloc</span>(registerNum * <span class="keyword">sizeof</span>(<span class="keyword">struct</span> book)); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Advanced-Pointer-file-IO"><a href="#Advanced-Pointer-file-IO" class="headerlink" title="Advanced Pointer &amp; file IO"></a>Advanced Pointer &amp; file IO</h1><h2 id="advanced-use-of-pointer"><a href="#advanced-use-of-pointer" class="headerlink" title="advanced use of pointer"></a>advanced use of pointer</h2><p>telling the functions about the structures:</p>
+<ul>
+<li>just pass over the address of the function </li>
+<li>save more space than either passing structure members or structures!<br>example:<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NAME_LENGTH 50 </span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">patient</span>&#123;</span> </span><br><span class="line">	<span class="type">char</span> name[NAME_LENGTH]; </span><br><span class="line">	<span class="type">double</span> weight; </span><br><span class="line">	<span class="type">double</span> height; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">double</span> <span class="title function_">calculate_BMlI</span><span class="params">(<span class="type">const</span> <span class="keyword">struct</span> patient «)</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">patient</span> <span class="title">patient</span>! =</span> &#123; </span><br><span class="line">	<span class="string">&quot;Alpha&quot;</span>, <span class="number">70</span>, <span class="number">180</span> </span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;This patient’s BMI is %f&quot;</span>, calculate_BMI(&amp;patient1)); </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="type">double</span> <span class="title function_">calculate_BMI</span><span class="params">(<span class="type">const</span> <span class="keyword">struct</span> patient « patient_id)</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="keyword">return</span>(patient_id—&gt;weight/(patient_id—&gt;height « patient_id—&gt;height)); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="linked-list"><a href="#linked-list" class="headerlink" title="linked list"></a>linked list</h2><h3 id="why-linked-list-instead-of-the-array"><a href="#why-linked-list-instead-of-the-array" class="headerlink" title="why linked list instead of the array"></a>why linked list instead of the array</h3><p>Array supports random access but insertion and deletion takes more time. Array are of fixed size.</p>
+<h3 id="implementation"><a href="#implementation" class="headerlink" title="implementation"></a>implementation</h3><h4 id="declaration-1"><a href="#declaration-1" class="headerlink" title="declaration"></a>declaration</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">	<span class="type">int</span> value;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="initialization"><a href="#initialization" class="headerlink" title="initialization"></a>initialization</h4><p><code>struct node *first = NULL;</code></p>
+<h4 id="node-creation"><a href="#node-creation" class="headerlink" title="node creation"></a>node creation</h4><ol>
+<li>Assigning memory to the node</li>
+<li>Storing value into the field; </li>
+<li>Inserting node into a list<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">new_node</span>;</span> </span><br><span class="line">new_node = (<span class="keyword">struct</span> node «)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node)); </span><br><span class="line">(new_node).value = <span class="number">10</span>;<span class="comment">// Or rather </span></span><br><span class="line">new_node—&gt;value = <span class="number">10</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="insert-at-the-beginning"><a href="#insert-at-the-beginning" class="headerlink" title="insert at the beginning"></a>insert at the beginning</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> node *<span class="title function_">add_to_list</span><span class="params">(<span class="keyword">struct</span> node «<span class="built_in">list</span>, <span class="type">int</span> n)</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">new_node</span>;</span> </span><br><span class="line">	new_node = <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node)); </span><br><span class="line">	<span class="keyword">if</span> (new_node == <span class="literal">NULL</span>) </span><br><span class="line">	&#123; </span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;Failed to allocate mem&quot;</span>); </span><br><span class="line">		<span class="built_in">exit</span>(EXIT_FAILURE); </span><br><span class="line">	&#125; </span><br><span class="line">	new_node-—&gt;value = n; </span><br><span class="line">	new_node—&gt;next = <span class="built_in">list</span>; </span><br><span class="line">	<span class="keyword">return</span> new_node;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="search"><a href="#search" class="headerlink" title="search"></a>search</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> node *<span class="title function_">search_list</span><span class="params">(<span class="keyword">struct</span> node *<span class="built_in">list</span>, </span></span><br><span class="line"><span class="params"><span class="type">int</span> n)</span> &#123;</span><br><span class="line">	<span class="keyword">for</span> (; <span class="built_in">list</span>!= <span class="literal">NULL</span> &amp;&amp; <span class="built_in">list</span>-&gt;value !=n; <span class="built_in">list</span> = <span class="built_in">list</span>-&gt;next);</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">list</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="deletion"><a href="#deletion" class="headerlink" title="deletion"></a>deletion</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> node *<span class="title function_">delete_from_list</span><span class="params">(<span class="keyword">struct</span> node *<span class="built_in">list</span>, <span class="type">int</span> n)</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">cur</span>, *<span class="title">prev</span>;</span> 	</span><br><span class="line">	<span class="keyword">for</span> (cur = <span class="built_in">list</span>, prey = <span class="literal">NULL</span>; cur != <span class="literal">NULL</span> &amp;&amp; cur—&gt;value != n; prev = cur, cur = cur—&gt;next) </span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span> (cur == <span class="literal">NULL</span>) </span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">list</span>;<span class="comment">// n was not found </span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span> (prev == <span class="literal">NULL</span>) </span><br><span class="line">	<span class="built_in">list</span> = <span class="built_in">list</span>—&gt;next; <span class="comment">// n is in the first </span></span><br><span class="line">	node </span><br><span class="line">	</span><br><span class="line">	<span class="keyword">else</span> </span><br><span class="line">	prev—&gt;next = cur—&gt;next; <span class="comment">// n is in </span></span><br><span class="line">	middle of <span class="built_in">list</span> </span><br><span class="line">	</span><br><span class="line">	<span class="title function_">free</span><span class="params">(cur)</span>; </span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">list</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="double-pointers"><a href="#double-pointers" class="headerlink" title="double pointers"></a>double pointers</h2><h3 id="arrays-of-strings"><a href="#arrays-of-strings" class="headerlink" title="arrays of strings"></a>arrays of strings</h3><p><code>charJICSProfs[][11]=&#123;&quot;YifeiZhu&quot;,&quot;PaulWeng&quot;,&quot;YutongBan&quot;,&quot;Yibo Pi&quot;&#125;;</code></p>
+<h4 id="its-principle-double-pointers"><a href="#its-principle-double-pointers" class="headerlink" title="its principle: double pointers"></a>its principle: double pointers</h4><p>A pointer to a pointer is a form of multiple indirection. A pointer that is a pointer to a pointer must be defined by introducing additional asterisk in front of its name.<br>The basis of 2D arrays!<br>example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> <span class="comment">//doublePtrSimple.c </span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> <span class="type">const</span> »argv[])</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="type">int</span> var; </span><br><span class="line">	<span class="type">int</span> »ptr; </span><br><span class="line">	<span class="type">int</span> **pptr; </span><br><span class="line">	var = <span class="number">3000</span>; </span><br><span class="line">	ptr = &amp;var; <span class="comment">/* take the address of var */</span> </span><br><span class="line">	pptr = &amp;ptr; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Value of var = %d, address of var = %p\n&quot;</span>, var, &amp;var); </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Value available at »ptr = %d, value of ptr = %p, address of ptr = %p \n&quot;</span>, »ptr, ptr, &amp;ptr);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Valueavailableat **pptr=%d,valueof *pptr=%p,valueofpptr=%p,addressofpptr=%p\n&quot;</span>,**pptr,*pptr,pptr ,&amp;pptr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>If we want to manipulate or dereference to any of its levels, we have to use Asterisk ( * ) operator the number of times down the level we want to go.</p>
+<h3 id="Why-we-need-double-pointers"><a href="#Why-we-need-double-pointers" class="headerlink" title="Why we need double pointers"></a>Why we need double pointers</h3><ul>
+<li>main function parameter </li>
+<li>used as function arguments to manipulate the address stored in the local pointer (demo) </li>
+<li>dynamic memory allocation of multidimensional arrays </li>
+<li>used in data structures to directly manipulate the address of the nodes without copying.<br>example: OPTIMIZATION for add_to_list:<br>Suppose we want to assign new_node to list, instead of returning new_node<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">add_to_list</span><span class="params">(<span class="keyword">struct</span> node **<span class="built_in">list</span>, </span></span><br><span class="line"><span class="params"><span class="type">int</span> n)</span> </span><br><span class="line">&#123; </span><br><span class="line">		<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">new_node</span>;</span> </span><br><span class="line">		new_node = <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> node)); </span><br><span class="line">		<span class="keyword">if</span> (new_node == <span class="literal">NULL</span>) </span><br><span class="line">		&#123; </span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;Failed to allocate mem&quot;</span>); </span><br><span class="line">			<span class="built_in">exit</span>(EXIT_FAILURE); </span><br><span class="line">		&#125; </span><br><span class="line">		new_node—&gt;value = n; </span><br><span class="line">		new_node—&gt;next = *<span class="built_in">list</span>; </span><br><span class="line">		*<span class="built_in">list</span> = new_node;</span><br><span class="line">	   &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="algs-Algorithms"><a href="#algs-Algorithms" class="headerlink" title="algs (Algorithms)"></a>algs (Algorithms)</h2><p>Most common types of algorithms: </p>
+<ul>
+<li>Brute force: often obvious, rarely best </li>
+<li>Greedy: most common used heuristic </li>
+<li>Divide and conquer: often recursive </li>
+<li>Dynamic programming: memorization </li>
+<li>Search and enumeration: model problem using a graph </li>
+<li>Randomized algorithms: feature random choices </li>
+<li>Complexity reduction: rewrite a problem into an easier one</li>
+</ul>
+<h3 id="complexity"><a href="#complexity" class="headerlink" title="complexity"></a>complexity</h3><p>time&amp;space complexity</p>
+<h4 id="time-complexity"><a href="#time-complexity" class="headerlink" title="time complexity"></a>time complexity</h4><p>Approximate description of the relationship between running time and problem size</p>
+<h3 id="search-1"><a href="#search-1" class="headerlink" title="search"></a>search</h3><h4 id="linear-search"><a href="#linear-search" class="headerlink" title="linear search"></a>linear search</h4><p>as mentioned as the name</p>
+<h4 id="Binary-search"><a href="#Binary-search" class="headerlink" title="Binary search"></a>Binary search</h4><p>example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;time.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> SIZE 200 </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> </span><br><span class="line">&#123; </span><br><span class="line">	<span class="type">int</span> i, n, mid; </span><br><span class="line">	<span class="type">int</span> k=<span class="number">0</span>, low=<span class="number">0</span>, high=SIZE<span class="number">-1</span>; </span><br><span class="line">	<span class="type">int</span> *data = <span class="built_in">malloc</span>(SIZE*<span class="keyword">sizeof</span>(<span class="type">int</span>)); </span><br><span class="line">	srand(time(<span class="literal">NULL</span>)); </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;SIZE;i++) </span><br><span class="line">		*(data+i)=<span class="number">2</span>*i; </span><br><span class="line">	n=rand() % *(data+i—<span class="number">1</span>); </span><br><span class="line">	<span class="keyword">while</span>(high &gt;= low) </span><br><span class="line">	&#123; </span><br><span class="line">		mid=(low + high)/<span class="number">2</span>; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(n &lt; *(data+mid)) </span><br><span class="line">		high = mid — <span class="number">1</span>; </span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(n&gt; *(data+mid)) </span><br><span class="line">		low = mid + <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="sorting"><a href="#sorting" class="headerlink" title="sorting"></a>sorting</h3><h4 id="selection-sort"><a href="#selection-sort" class="headerlink" title="selection sort"></a>selection sort</h4><ul>
+<li>Sorts an array by repeately finding the smallest element </li>
+<li>Maintain a sorted array </li>
+<li>Maintain an unsorted one<br>example:<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;time.h&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> SIZE 200 </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX 1000 </span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span> &#123; </span><br><span class="line">	<span class="type">int</span> data[SIZE]; </span><br><span class="line">	srand(time(<span class="literal">NULL</span>)); </span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; <span class="number">1</span>&lt;SIZE; i++) data[i]=randQ%MAX; </span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; <span class="number">1</span>&lt;SIZE; i++) &#123; </span><br><span class="line">		<span class="type">int</span> t, min_idx =<span class="number">1</span>; </span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>; j&lt;SIZE; j++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(data[min_idx]&gt;data|[j]) </span><br><span class="line">			min_idx =j; </span><br><span class="line">		t = data[i]; </span><br><span class="line">		data[i] = data[min_idx]; </span><br><span class="line">		data[min_idx] = t; </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Sorted array: &quot;</span>); </span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;SIZE; i++) <span class="built_in">printf</span>(<span class="string">&quot;sd_ &quot;</span>,data[i]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="merge-sort-O-n-2"><a href="#merge-sort-O-n-2" class="headerlink" title="merge sort(O(n^2))"></a>merge sort(O(n^2))</h4><p>![[Pasted image 20240711212642.png]]</p>
+<h1 id="I-O"><a href="#I-O" class="headerlink" title="I&#x2F;O"></a>I&#x2F;O</h1><h2 id="standard-I-O"><a href="#standard-I-O" class="headerlink" title="standard I&#x2F;O"></a>standard I&#x2F;O</h2><h3 id="stream"><a href="#stream" class="headerlink" title="stream"></a>stream</h3><p>a a abstract, high-level concept representing a communication channel to a file, device, or process</p>
+<h3 id="single-character-I-O"><a href="#single-character-I-O" class="headerlink" title="single character I&#x2F;O"></a>single character I&#x2F;O</h3><p><code>getchar()</code> and <code>putchar()</code><br>the end of the file:<br><code>#define EOF -1</code> in <code>stdio.h</code></p>
+<h2 id="file-I-O"><a href="#file-I-O" class="headerlink" title="file I&#x2F;O"></a>file I&#x2F;O</h2><h3 id="open"><a href="#open" class="headerlink" title="open"></a>open</h3><p><code>FILE *fopen(const char *path, const char *mode)</code></p>
+<ul>
+<li><code>mode</code>: one of the <code>r</code>, <code>r+</code>, <code>w</code>, <code>w+</code>, <code>a</code>, <code>a+</code></li>
+<li><code>NULL</code>: error</li>
+</ul>
+<h3 id="close"><a href="#close" class="headerlink" title="close"></a>close</h3><p><code>int fclose(FILE *fp)</code></p>
+<ul>
+<li>return <code>0</code> as success</li>
+</ul>
+<h3 id="stream-1"><a href="#stream-1" class="headerlink" title="stream"></a>stream</h3><ul>
+<li>standard output: <code>FILE *stdout</code></li>
+<li>standard input <code>FILE * stdin</code></li>
+<li>standard error output: <code>FILE * stderr</code></li>
+</ul>
+<h3 id="reading-writing"><a href="#reading-writing" class="headerlink" title="reading &amp; writing"></a>reading &amp; writing</h3><ul>
+<li>writing: <code>int fprintf(FILE *stream, const char *format, ...);</code></li>
+<li>reading: <code>int scanf(FILE *stream, const char *format, ...);</code></li>
+<li>read <code>size - 1</code> characters: <code>char _fgets(char *s, int size, FILE *stream)</code></li>
+<li>write characters to a stream: <code>char *fputs(char *s, FILE *stream)</code></li>
+</ul>
+<h1 id="other-head-files"><a href="#other-head-files" class="headerlink" title="other head files"></a>other head files</h1><h2 id="string-h"><a href="#string-h" class="headerlink" title="string.h"></a><code>string.h</code></h2><ul>
+<li>length: <code>strlen(const char *s)</code></li>
+<li>copy a string: <code>char *strcpy(char *dest, const char *src)</code> </li>
+<li>Copy at most n bytes of src: <code>char *strncpy(char *dest, const char *src, size_t n)</code></li>
+<li>Compare two strings: <code>int strcmp(const char *s1, const char *s2)</code> return value is <code>&lt; 0 0 &gt; 0</code>, if <code>s1 &lt; s2 s1 = s2 s1 &gt; s2</code></li>
+<li>Compare the first n bytes of two strings: <code>int strncmp(const char *s1, const char *s2, size_t n);</code></li>
+<li>Locate a character is a string: &#96;char *strchr(const char *s, int c);</li>
+</ul>
+<h2 id="time-h"><a href="#time-h" class="headerlink" title="time.h"></a><code>time.h</code></h2><p>Getting time:<code>time_t time(time_t *t);</code></p>
+<ul>
+<li>calculating the time difference: <code>double difftime(time_t time1, time_t time0);</code></li>
+</ul>
+<h2 id="ctype-h"><a href="#ctype-h" class="headerlink" title="ctype.h"></a><code>ctype.h</code></h2><p>various types of C:<br>![[Pasted image 20240718165252.png]]</p>
+<h2 id="math-h"><a href="#math-h" class="headerlink" title="math.h"></a><code>math.h</code></h2><p>![[Pasted image 20240718165316.png]]</p>
+<h2 id="stdlib-h"><a href="#stdlib-h" class="headerlink" title="stdlib.h"></a><code>stdlib.h</code></h2><p>![[Pasted image 20240718165337.png]]</p>
+<h2 id="getopt"><a href="#getopt" class="headerlink" title="getopt()"></a><code>getopt()</code></h2><p><code>getopt(int argc, char * const argv[], const char *optstring)</code>：解析命令行参数。</p>
+<ul>
+<li><code>argc</code> 表示参数个数</li>
+<li><code>argv</code> 表示参数列表</li>
+<li><code>optstring</code> 表示选项字符串，选项字符串中的字母表示选项，冒号表示选项后面需要参数（必填）,两个冒号表示选项后面参数选填。返回值为当前选项字母，如果没有选项了则返回 -1。</li>
+</ul>
+<blockquote>
+<p>在本例中，选项字符串为 <code>hvs:E:b:t:</code>，表示有 5 个选项，其中 <code>s</code>、<code>E</code>、<code>b</code>、<code>t</code> 后面需要参数。<code>h</code>、<code>v</code> 后面不需要参数。</p>
+<p>关于 <code>optarg</code>，可以理解为是用来保存选项的参数的，而且虽然你没有定义它，但是因为你引入了 <code>getopt.h</code> 头文件，所以它是一个外部变量，你可以直接使用它。</p>
+<p>本次测评不要求 <code>h</code> 和 <code>v</code> 选项，所以你也可以用 <code>s:E:b:t:</code> 作为选项字符串（当然后面的逻辑也要对应修改）。</p>
+</blockquote>
+</div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://oscar-ge.github.io/2024/05/10/VG101/C-intro/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://oscar-ge.github.io/2024/05/10/VG101/C-intro/";
+            const title         = "「C-intro」";
+            const excerpt       = `Basic Linux tar usagetar -xvf xxx.tar unziptar -cf xxx.tar ... xxx.c zip
+basic data typesInteger: intCharacter: charV...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/Basic/" rel="tag">Basic</a>, <a class="tag-none-link" href="/tags/CPP/" rel="tag">CPP</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-07-30T01:39:39.716Z" itemprop="dateModified">最后编辑：2024-07-30</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" matlab-intro" href="/2024/05/10/VG101/matlab-intro/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" C++-intro" href="/2024/05/10/VG101/Cpp-intro/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load bg-image" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2024/05/10/VG101/C-intro/',
+                path: '/2024/05/10/VG101/C-intro/'
+            }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                47
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                46
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSAPP/">CSAPP</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/NJU-PA/">NJU PA</a><span class="category-list-count">2</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.72em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.76em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.68em;">BasicC</a> <a href="/tags/C/" style="font-size: 0.64em;">C</a> <a href="/tags/CPP/" style="font-size: 0.72em;">CPP</a> <a href="/tags/CPU/" style="font-size: 0.6em;">CPU</a> <a href="/tags/CS/" style="font-size: 0.76em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/CSAPP/" style="font-size: 0.68em;">CSAPP</a> <a href="/tags/EE/" style="font-size: 0.6em;">EE</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/30/CS188/p1-search/"><i class="fa  fa-book"></i> p1-search</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/09/CSAPP/CSAPP-Chap8/"><i class="fa  fa-book"></i> CSAPP-Chap8-Exceptional Control Flow</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap3/"><i class="fa  fa-book"></i> CSAPP-Chap3 程序的机器级表示</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap2/"><i class="fa  fa-book"></i> CSAPP-Chap2 信息的表示和处理</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/25/CS61C/61C-P5-CPU/"><i class="fa  fa-book"></i> 61C-P5-CPU</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/Oscar-Ge">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 Oscar-Ge 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Oscar.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="2262932696"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

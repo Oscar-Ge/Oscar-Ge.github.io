@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>intro to Git | Oscar-Ge</title>
+  
+  <meta name="author" content="Oscar" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="61B, CS, Git, project2, tools" />
+  
+  <meta name="description" content="prev: [[part4-Iterators]]next:  Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system V0.0复制整个项目目录–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异  Most popular: RCS (在硬盘上保存补丁集) V2.0 不同开发者协同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="intro to Git">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/04/08/61B/Git-intro/index.html">
+<meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="prev: [[part4-Iterators]]next:  Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system V0.0复制整个项目目录–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异  Most popular: RCS (在硬盘上保存补丁集) V2.0 不同开发者协同">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/local.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/centralized.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/distributed.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/deltas.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/snapshots.png">
+<meta property="og:image" content="https://git-scm.com/book/en/v2/images/areas.png">
+<meta property="article:published_time" content="2024-04-08T13:13:14.000Z">
+<meta property="article:modified_time" content="2024-04-10T02:25:01.921Z">
+<meta property="article:author" content="Oscar">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="tools">
+<meta property="article:tag" content="CS">
+<meta property="article:tag" content="61B">
+<meta property="article:tag" content="project2">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://git-scm.com/book/en/v2/images/local.png">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/hq_dark.webp');
+      }
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Oscar-Ge</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Oscar-Ge</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/04/08/61B/Git-intro/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">intro to Git</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2024-04-08T13:13:14.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-08</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            2.30K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1712715901921"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p>prev: [[part4-Iterators]]<br>next: </p>
+<h1 id="Intro-to-Git"><a href="#Intro-to-Git" class="headerlink" title="Intro to Git"></a>Intro to Git</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Version-control"><a href="#Version-control" class="headerlink" title="Version control"></a>Version control</h3><p>V1.0本地版本控制系统 local version control system</p>
+<p>V0.0复制整个项目目录<br>–&gt; V1.0用某种简单的数据库来记录文件的历次更新差异</p>
+<p><img src="https://git-scm.com/book/en/v2/images/local.png" alt="local"></p>
+<p>Most popular: RCS (在硬盘上保存补丁集)</p>
+<p>V2.0 不同开发者协同工作需求–集中化的版本控制系统（Centralized Version Control Systems，简称 CVCS）</p>
+<p>单一的集中管理的服务器，保存所有文件的修订版本</p>
+<p><img src="https://git-scm.com/book/en/v2/images/centralized.png" alt="CVCS"></p>
+<p>例子： CVS…</p>
+<p>缺点：过于依靠服务器，服务器宕机就寄</p>
+<p>V3.0 分布式版本控制系统（Distributed Version Control System，简称 DVCS）</p>
+<p>客户端并不只提取最新版本的文件快照， 而是把代码仓库完整地镜像下来，包括完整的历史记录。</p>
+<p><img src="https://git-scm.com/book/en/v2/images/distributed.png" alt="DVCS"></p>
+<p>例子：git</p>
+<h3 id="Git-feature"><a href="#Git-feature" class="headerlink" title="Git feature"></a>Git feature</h3><h4 id="Snapshots"><a href="#Snapshots" class="headerlink" title="Snapshots"></a>Snapshots</h4><p>The other version control system are delta-based.</p>
+<p><img src="https://git-scm.com/book/en/v2/images/deltas.png" alt="delta"></p>
+<p>However, the <code>git</code> system are snapshot-based.</p>
+<p><img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="snapshot"></p>
+<p>几乎所有操作都在本地进行</p>
+<p>保证数据完整性(Hash表)，一般只添加数据</p>
+<h4 id="status"><a href="#status" class="headerlink" title="status"></a>status</h4><p>commited, modified, and staged</p>
+<ul>
+<li>已修改表示修改了文件，但还没保存到数据库中。</li>
+<li>已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。</li>
+<li>已提交表示数据已经安全地保存在本地数据库中。<br>These made the Git have three areas.<br><img src="https://git-scm.com/book/en/v2/images/areas.png" alt="areas"><br>基本的 Git 工作流程如下：</li>
+</ul>
+<ol>
+<li>在工作区中修改文件。</li>
+<li>将你想要下次提交的更改选择性地暂存，这样只会将更改的部分添加到暂存区。</li>
+<li>提交更新，找到暂存区的文件，将快照永久性存储到 Git 目录。<br>get some help of <code>Git</code>:<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git help &lt;verb&gt;</span><br><span class="line">git &lt;verb&gt; --help</span><br><span class="line">man git-&lt;verb&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Basic-Git"><a href="#Basic-Git" class="headerlink" title="Basic Git"></a>Basic Git</h2><h3 id="initialize"><a href="#initialize" class="headerlink" title="initialize"></a>initialize</h3><p>a. <code>init</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>b. clone</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/libgit2/libgit2</span><br></pre></td></tr></table></figure>
+<h3 id="recording"><a href="#recording" class="headerlink" title="recording"></a>recording</h3><p>The status of the file in repo: tracked and untracked.<br>To get the file tracked: <code>git add .</code> or <code>git add README</code><br>To check the status of the file:</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git status</span></span><br></pre></td></tr></table></figure>
+<p>More simple: <code>git status -s</code></p>
+<p>To summarize: </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . # modified --&gt; staged</span><br><span class="line">git commit -m &quot;initial commit&quot; # staged --&gt; commited</span><br><span class="line">git push origin master # push the commited repo to the remote origin</span><br></pre></td></tr></table></figure>
+<h3 id="ignoring"><a href="#ignoring" class="headerlink" title="ignoring"></a>ignoring</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> .gitignore <span class="comment"># create a file named .gitinore</span></span></span><br><span class="line">*.[oa] # ignore the file ended with .o or .a</span><br><span class="line">*~ # ignore the file ended with ~</span><br></pre></td></tr></table></figure>
+<h3 id="difference"><a href="#difference" class="headerlink" title="difference"></a>difference</h3><p>查看当前文件和暂存区域快照之间的差异。 也就是修改之后还没有暂存起来的变化内容。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure>
+<p>查看已暂存的变化：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff --cached</span><br></pre></td></tr></table></figure>
+<h3 id="commit"><a href="#commit" class="headerlink" title="commit"></a>commit</h3><p>先用<code>git status</code> 确认文件都已经暂存，然后提交</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
+<p>如果没有暂存文件，可以用<code>-a</code>命令跳过暂存空间直接commit</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a</span><br></pre></td></tr></table></figure>
+<h3 id="remove"><a href="#remove" class="headerlink" title="remove"></a>remove</h3><p>先删除这个文件，再取消git的跟踪</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm README.md</span><br><span class="line">git rm README.md</span><br></pre></td></tr></table></figure>
+<h3 id="move"><a href="#move" class="headerlink" title="move"></a>move</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">mv</span> file_from file_to</span></span><br></pre></td></tr></table></figure>
+<h3 id="checking-history"><a href="#checking-history" class="headerlink" title="checking history"></a>checking history</h3><p>default <code>git log</code>: return all the commit history</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+<p><code>-p</code>: show the difference of each commit<br><code>-2</code>: just show the latest 2 commit<br><code>--stat</code>: show the simplified version</p>
+<h3 id="amend"><a href="#amend" class="headerlink" title="amend"></a>amend</h3><p>有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行带有 <code>--amend</code> 选项的提交命令来重新提交：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+<h4 id="cancel-the-file-that-have-been-staged"><a href="#cancel-the-file-that-have-been-staged" class="headerlink" title="cancel the file that have been staged"></a>cancel the file that have been staged</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<h4 id="cancel-the-file-that-have-been-commited"><a href="#cancel-the-file-that-have-been-commited" class="headerlink" title="cancel the file that have been commited"></a>cancel the file that have been commited</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<p>TO NOTICE: Usually, the behaviors are dangerous. Take attention when using them.</p>
+<p>TO BE CONTINUED</p>
+</div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://oscar-ge.github.io/2024/04/08/61B/Git-intro/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://oscar-ge.github.io/2024/04/08/61B/Git-intro/";
+            const title         = "「intro to Git」";
+            const excerpt       = `prev: [[part4-Iterators]]next: 
+Intro to GitIntroductionVersion controlV1.0本地版本控制系统 local version control system
+V0.0...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/61B/" rel="tag">61B</a>, <a class="tag-none-link" href="/tags/CS/" rel="tag">CS</a>, <a class="tag-none-link" href="/tags/Git/" rel="tag">Git</a>, <a class="tag-none-link" href="/tags/project2/" rel="tag">project2</a>, <a class="tag-none-link" href="/tags/tools/" rel="tag">tools</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-04-10T02:25:01.921Z" itemprop="dateModified">最后编辑：2024-04-10</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" CS 61B part4 Iterators, Exceptions" href="/2024/04/08/61B/part4-Iterators/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" CS 61B Intro to Gitlet" href="/2024/04/09/61B/start gitlet/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load bg-image" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2024/04/08/61B/Git-intro/',
+                path: '/2024/04/08/61B/Git-intro/'
+            }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                47
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                46
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSAPP/">CSAPP</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/NJU-PA/">NJU PA</a><span class="category-list-count">2</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.72em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.76em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.68em;">BasicC</a> <a href="/tags/C/" style="font-size: 0.64em;">C</a> <a href="/tags/CPP/" style="font-size: 0.72em;">CPP</a> <a href="/tags/CPU/" style="font-size: 0.6em;">CPU</a> <a href="/tags/CS/" style="font-size: 0.76em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/CSAPP/" style="font-size: 0.68em;">CSAPP</a> <a href="/tags/EE/" style="font-size: 0.6em;">EE</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/30/CS188/p1-search/"><i class="fa  fa-book"></i> p1-search</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/09/CSAPP/CSAPP-Chap8/"><i class="fa  fa-book"></i> CSAPP-Chap8-Exceptional Control Flow</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap3/"><i class="fa  fa-book"></i> CSAPP-Chap3 程序的机器级表示</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap2/"><i class="fa  fa-book"></i> CSAPP-Chap2 信息的表示和处理</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/25/CS61C/61C-P5-CPU/"><i class="fa  fa-book"></i> 61C-P5-CPU</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/Oscar-Ge">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 Oscar-Ge 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Oscar.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="2262932696"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

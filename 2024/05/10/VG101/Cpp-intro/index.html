@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>C++-intro | Oscar-Ge</title>
+  
+  <meta name="author" content="Oscar" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="Basic, CPP" />
+  
+  <meta name="description" content="C BasicsWhat C++ brings:  Almost all the aspects of C are preserved New features are added, e.g., templates, references Sophisticated programs are easier to code, thanks to OOP C++ is almost a superse">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++-intro">
+<meta property="og:url" content="https://oscar-ge.github.io/2024/05/10/VG101/Cpp-intro/index.html">
+<meta property="og:site_name" content="Oscar-Ge">
+<meta property="og:description" content="C BasicsWhat C++ brings:  Almost all the aspects of C are preserved New features are added, e.g., templates, references Sophisticated programs are easier to code, thanks to OOP C++ is almost a superse">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-10T07:06:45.000Z">
+<meta property="article:modified_time" content="2024-08-01T06:21:23.969Z">
+<meta property="article:author" content="Oscar">
+<meta property="article:tag" content="Basic">
+<meta property="article:tag" content="CPP">
+<meta name="twitter:card" content="summary">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/hq_dark.webp');
+      }
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Oscar-Ge</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Oscar-Ge</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://oscar-ge.github.io/2024/05/10/VG101/Cpp-intro/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">C++-intro</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2024-05-10T07:06:45.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-05-10</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Oscar</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            5.45K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1722493283969"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="C-Basics"><a href="#C-Basics" class="headerlink" title="C Basics"></a>C Basics</h1><p>What C++ brings:</p>
+<ul>
+<li>Almost all the aspects of C are preserved</li>
+<li>New features are added, e.g., templates, references</li>
+<li>Sophisticated programs are easier to code, thanks to OOP</li>
+<li>C++ is almost a superset of C<br>new data types: <code>bool a = false, b = true;</code><br>new headers: <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br></pre></td></tr></table></figure>
+new I&#x2F;O style:</li>
+<li>input: <code>cin &gt;&gt; x</code></li>
+<li>output: <code>cout &lt;&lt; &#39;string&#39;</code></li>
+<li>formatting output: <ul>
+<li><code>setw(int width)</code>: set the width of the output</li>
+<li><code>setfill(z)</code>: set up the prefix (前缀) of the output</li>
+<li><code>setprecision(2)</code>: set up the precision of the output</li>
+</ul>
+</li>
+</ul>
+<h2 id="pointers-for-C"><a href="#pointers-for-C" class="headerlink" title="pointers for C++"></a>pointers for C++</h2><p>No more malloc, calloc and free:</p>
+<ul>
+<li>Memory for a variable: <code>int *p = new int;</code></li>
+<li>Memory for an array: <code>int *p = new int[10];</code></li>
+<li>Array size can be a variable (not recommended in C)</li>
+<li>Return<code> NULL</code> on failure (<code>nullptr</code> in mordern C++)</li>
+<li>Release the memory: <code>delete p</code> or <code>delete[] p</code></li>
+<li>pass-by-reference is an additional way to pass an address into a function</li>
+</ul>
+<h2 id="strings"><a href="#strings" class="headerlink" title="strings"></a>strings</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line">string g=<span class="string">&quot;good &quot;</span>; string m=<span class="string">&quot;morning&quot;</span>; <span class="comment">//Assisgning to a string</span></span><br><span class="line">string a = g + <span class="string">&quot; &quot;</span> + m;<span class="comment">//combining strings</span></span><br><span class="line">a += <span class="string">&quot;VG101&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>other string operations:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string demo = <span class="string">&quot;VG101&quot;</span>;</span><br><span class="line">cout &lt;&lt; demo.<span class="built_in">append</span>(<span class="string">&quot;C++&quot;</span>) &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<p>String operations (insert, erase, repllace, swap, copy, finnd, substr)</p>
+<h2 id="File-I-O"><a href="#File-I-O" class="headerlink" title="File I&#x2F;O"></a>File I&#x2F;O</h2><p>Requires header: <code>#include &lt;fstream&gt;</code></p>
+<ul>
+<li>Open file for reading: <code>ifstream in; in.open(&quot;file.txt&quot;);</code></li>
+<li>Open file for reading in short: <code>ifstream in(&quot;file.txt&quot;)</code></li>
+<li>Read from a file: <code>in</code> used in the same way as <code>cin</code></li>
+<li>Open a file for writing: <code>ofstream out(&quot;file.txt&quot;)</code></li>
+<li>Write in a file: out used in the same way as cout</li>
+<li>Read from a file, line by line, into a string s: <code>getline(in,s)</code></li>
+</ul>
+<h1 id="OOP"><a href="#OOP" class="headerlink" title="OOP"></a>OOP</h1><p>object-oriented programming<br>A new approach:</p>
+<ul>
+<li>Everything is an object</li>
+<li>Objects communicate between them by sending messages</li>
+<li>Each object has its own type</li>
+<li>Object of a same type can receive the same message</li>
+</ul>
+<h2 id="object"><a href="#object" class="headerlink" title="object"></a>object</h2><p>two main components:</p>
+<ul>
+<li>Its behavior, what can be done with it, its methods</li>
+<li>The data it contains, what it knows, its attributes</li>
+</ul>
+<h2 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h2><p>Defines the family, type or nature of an object<br>Equivalent of the type in “traditional programming”</p>
+<h3 id="visibility"><a href="#visibility" class="headerlink" title="visibility"></a>visibility</h3><p>Private or public:</p>
+<ul>
+<li>Private members can only be accessed by member functions within the class</li>
+<li>Users can only access public members<br>example:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> &#123; </span><br><span class="line"><span class="comment">/* user methods (and attributes) */</span> </span><br><span class="line"><span class="keyword">public</span>: </span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">move</span><span class="params">(<span class="type">float</span> dx, <span class="type">float</span> dy)</span></span>; </span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">zoom</span><span class="params">(<span class="type">float</span> scale)</span></span>; </span><br><span class="line">	<span class="function"><span class="type">float</span> <span class="title">area</span><span class="params">()</span></span>; </span><br><span class="line"><span class="comment">/* implementation attributes (and methods) *+*/</span> </span><br><span class="line"><span class="keyword">private</span>: </span><br><span class="line">	<span class="type">float</span> x, y, r; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="implementation"><a href="#implementation" class="headerlink" title="implementation"></a>implementation</h3><p>Getting things ready:</p>
+<ul>
+<li>Class interface is ready</li>
+<li>Instantiation is possible</li>
+<li>Does not compile: no implementation of the class yet</li>
+<li>Syntax: classname::methodname<br>example:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;circle_v0.h&quot;</span> </span></span><br><span class="line"><span class="type">const</span> <span class="type">float</span> PI=<span class="number">3.1415926535</span>; </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Circle::move</span><span class="params">(<span class="type">float</span> dx, <span class="type">float</span> dy)</span> </span>&#123; </span><br><span class="line">	x += dx;</span><br><span class="line">	y += dy;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Circle::zoom</span><span class="params">(<span class="type">float</span> scale)</span> </span>&#123; </span><br><span class="line">	r *= scale; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">float</span> <span class="title">Circle::area</span><span class="params">()</span> </span>&#123; </span><br><span class="line">	<span class="keyword">return</span> PI <span class="meta"># rr; </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h4><p>A constructor is a member function&#x2F;method with the following properties:</p>
+<ul>
+<li>If a class has a constructor, a constructor is called automatically whenever an instance of the class is declared.</li>
+<li>The name of a constructor must be the same as the name of the class.</li>
+<li>A constructor does not have any return value. void or other return type all not allowed.<br>example:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="type">int</span> x, y;</span><br><span class="line">	<span class="built_in">Circle</span>()&#123;</span><br><span class="line">	x = <span class="number">1</span>;</span><br><span class="line">	y = <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="this"><a href="#this" class="headerlink" title="this"></a><code>this</code></h4><p>Methods access the object on which they were called through an extra, implict parameter named this, which is initialized with the address of the object on which the method was invoked</p>
+<h2 id="Instance"><a href="#Instance" class="headerlink" title="Instance"></a>Instance</h2><p>Realisation of an object from a given class<br>Equivalent of a variable in “traditional programming”</p>
+<h2 id="overload"><a href="#overload" class="headerlink" title="overload"></a>overload</h2><p>definitions: </p>
+<ul>
+<li>Two constructor defined: circle() and circle(float) </li>
+<li>Proper one automatically selected</li>
+</ul>
+<h2 id="inheritance"><a href="#inheritance" class="headerlink" title="inheritance"></a>inheritance</h2><p>Private inheritance: </p>
+<ul>
+<li>Default type of class inheritance </li>
+<li>Any public member from the base class becomes private </li>
+<li>Allows to hide “low level” details to other classes<br>Therefore, <code>protected</code> burn.<br>Protected members: </li>
+<li>Compromise between public and private - They are available to any derived class </li>
+<li>No other class can access them<br><code>friend</code>: bypass all this security of the class<br>avoid using it!!</li>
+</ul>
+<h3 id="virtual"><a href="#virtual" class="headerlink" title="virtual"></a><code>virtual</code></h3><p>Sometimes we have to create a pointer to the base class that refers to all the derived objects. When the base class pointer contains the derived class address, the object always executes the base class function. </p>
+<p>Therefore, <code>virtual</code> born to address the drawback.</p>
+<ul>
+<li>Virtual function in the base class </li>
+<li>Function can be redefined in derived class </li>
+<li>Preserves calling properties<br>example:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Cow</span> &#123; </span><br><span class="line"><span class="keyword">public</span>: <span class="built_in">Cow</span>(<span class="type">int</span> f=<span class="number">0</span>)&#123;grass=f;&#125; </span><br><span class="line"><span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">Speak</span> <span class="params">()</span> </span>&#123; cout &lt;&lt; <span class="string">&quot;Moo.\n&quot;</span>;&#125; </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Eat</span><span class="params">()</span> </span>&#123; <span class="keyword">if</span>(grass &gt; <span class="number">0</span>) &#123; grass—— ; cout&lt;&lt; <span class="string">&quot;Thanks I’m full\n&quot;</span>;&#125; </span><br><span class="line"><span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;I’m hungry\n&quot;</span>;&#125; </span><br><span class="line"><span class="keyword">protected</span>: <span class="type">int</span> grass; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SickCow</span> : <span class="keyword">public</span> Cow &#123; </span><br><span class="line"><span class="keyword">public</span>: <span class="built_in">SickCow</span>(<span class="type">int</span> f=<span class="number">0</span>,<span class="type">int</span> m=<span class="number">0</span>) &#123;grass=f; med=m;&#125; </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Speak</span> <span class="params">()</span> </span>&#123; cout&lt;&lt; <span class="string">&quot;Ahem... Moo.\n&quot;</span>;&#125; </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">TakeMed</span><span class="params">()</span> </span>&#123; <span class="keyword">if</span>(med &gt; <span class="number">0</span>) &#123; med--; cout&lt;&lt; <span class="string">&quot;I feel better\n&quot;</span>;&#125; </span><br><span class="line"><span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;I’m dying\n&quot;</span>;&#125; </span><br><span class="line"><span class="keyword">private</span>: <span class="type">int</span> med; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123; </span><br><span class="line">Cow cl; <span class="function">SickCow <span class="title">c2</span><span class="params">(<span class="number">1</span>)</span></span>; Cow »c3=&amp;c2; </span><br><span class="line">c1.<span class="built_in">Speak</span>();c1.<span class="built_in">Eat</span>();c2.<span class="built_in">Speak</span>();c2.<span class="built_in">TakeMed</span>();c3-&gt;<span class="built_in">Speak</span>(); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://oscar-ge.github.io/2024/05/10/VG101/Cpp-intro/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://oscar-ge.github.io/2024/05/10/VG101/Cpp-intro/";
+            const title         = "「C++-intro」";
+            const excerpt       = `C BasicsWhat C++ brings:
+
+Almost all the aspects of C are preserved
+New features are added, e.g., templates, referenc...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/Basic/" rel="tag">Basic</a>, <a class="tag-none-link" href="/tags/CPP/" rel="tag">CPP</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-08-01T06:21:23.969Z" itemprop="dateModified">最后编辑：2024-08-01</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" C-intro" href="/2024/05/10/VG101/C-intro/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 61B-P5-5-QuadTree" href="/2024/05/15/61B/61B-P5-5-QuadTree/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load bg-image" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2024/05/10/VG101/Cpp-intro/',
+                path: '/2024/05/10/VG101/Cpp-intro/'
+            }, JSON.parse('{"clientID":"6b3b171cf9bd84026a37","clientSecret":"c29d8727a04cb5ea4d5c796fa065314ed2a11569","repo":"Oscar-Ge.github.io","owner":"Oscar-Ge","admin":["Oscar-Ge"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                47
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                46
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algs/">Algs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-188/">CS 188</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61A/">CS 61A</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61B/">CS 61B</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS-61C/">CS 61C</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CS106L/">CS106L</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSAPP/">CSAPP</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Engineering-101/">Engineering 101</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/NJU-PA/">NJU PA</a><span class="category-list-count">2</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/61B/" style="font-size: 0.8em;">61B</a> <a href="/tags/61C/" style="font-size: 0.72em;">61C</a> <a href="/tags/AI/" style="font-size: 0.6em;">AI</a> <a href="/tags/Algs/" style="font-size: 0.6em;">Algs</a> <a href="/tags/Assembly/" style="font-size: 0.6em;">Assembly</a> <a href="/tags/BST/" style="font-size: 0.6em;">BST</a> <a href="/tags/BTree/" style="font-size: 0.6em;">BTree</a> <a href="/tags/Basic/" style="font-size: 0.76em;">Basic</a> <a href="/tags/BasicC/" style="font-size: 0.68em;">BasicC</a> <a href="/tags/C/" style="font-size: 0.64em;">C</a> <a href="/tags/CPP/" style="font-size: 0.72em;">CPP</a> <a href="/tags/CPU/" style="font-size: 0.6em;">CPU</a> <a href="/tags/CS/" style="font-size: 0.76em;">CS</a> <a href="/tags/CS-61A/" style="font-size: 0.8em;">CS 61A</a> <a href="/tags/CS-61B/" style="font-size: 0.68em;">CS 61B</a> <a href="/tags/CSAPP/" style="font-size: 0.68em;">CSAPP</a> <a href="/tags/EE/" style="font-size: 0.6em;">EE</a> <a href="/tags/Exceptions/" style="font-size: 0.6em;">Exceptions</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/30/CS188/p1-search/"><i class="fa  fa-book"></i> p1-search</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/07/09/CSAPP/CSAPP-Chap8/"><i class="fa  fa-book"></i> CSAPP-Chap8-Exceptional Control Flow</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap3/"><i class="fa  fa-book"></i> CSAPP-Chap3 程序的机器级表示</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/27/CSAPP/CSAPP-Chap2/"><i class="fa  fa-book"></i> CSAPP-Chap2 信息的表示和处理</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2024/06/25/CS61C/61C-P5-CPU/"><i class="fa  fa-book"></i> 61C-P5-CPU</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/Oscar-Ge">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 Oscar-Ge 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Oscar.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="2262932696"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
