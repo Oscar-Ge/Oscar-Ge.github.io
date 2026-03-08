@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.6in,top=0.4in,right=0.7in,bottom=0.5in]{geometry} % Document margins
+\linespread{0.92}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+
+%----------------------------------------------------------------------------------------
+%   DOCUMENT START
+%----------------------------------------------------------------------------------------
+\name{Chenming Ge} % Your name
+\address{gecm@umich.edu \enspace\textbullet\enspace (734) 358-2718
+\enspace\textbullet\enspace oscar-ge.github.io}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{University of Michigan, Ann Arbor}{Ann Arbor, USA}{B.S.E. in Computer Science}{Aug 2025 - Present} 
+\item \textbf{GPA:} 3.88/4.00
+\item \textbf{Relevant Coursework:} \textbf{Machine Learning}, Intro to Algorithmic Robotics (A),  Operating Systems, Applied Parallel Programming with GPUs
+\end{rSubsection}
+
+\begin{rSubsection}{Shanghai Jiao Tong University}{Shanghai, China}{B.Eng. in Mechanical Engineering}{Aug 2023 - Present}
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Research Interests}
+Robot Learning (VLA, VAM), Agentic Systems, and Efficient Machine Learning.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   RESEARCH EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}
+
+% Highlight your current independent research first
+\begin{rSubsection}{Efficient Inference for Embodied Foundation Models}{Ann Arbor, USA}{Research Assistant, Advisor: Dr. Jiachen Liu}{Nov 2025 -- Present}
+\item Profiled \textbf{COSMOS-Policy} across denoising steps; identified that block-level residual skipping is infeasible while cross-attention outputs remain highly stable (cosine $>$ 0.999).
+\item Validated \textbf{cross-attention KV caching} on \textbf{24 RoboCasa tasks}: achieved  identical task success rate of 68.06\% to the baseline across 3,600 rollout trials with consistent denoising speedup across \textbf{all 24 tasks}.
+\item Designing \textbf{task-aware token compression} that exploits the model's latent-frame slot structure to selectively prune image tokens via self-attention reduction, targeting further denoising acceleration on top of the validated caching strategy.
+\end{rSubsection}
+
+\begin{rSubsection}{Gravitational Effect on Swarming Behavior of Microorganisms}{Shanghai, China}{Research Assistant, Advisor: Prof. Zijie Qu}{Sep 2024 - Aug 2025}
+\item Trained a \textbf{U-Net} model for colony boundary segmentation; diagnosed systematic failure modes, then adopted a \textbf{SAM}-based pipeline that achieved reliable automated detection, replacing manual annotation.
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+\begin{rSubsection}{Web Agent Version-Robust Benchmark}{Jan 2026 - Present}{EECS 545 (Machine Learning) Course Project, Advisor: Prof. Honglak Lee}{}
+\item Built a reproducible testing pipeline using \textbf{Docker} to deploy baseline agents like \textbf{QWen3-VL-30B} across historical snapshots of open-source websites like SimpleWiki.
+\item Formulated a taxonomy for web version variations and designed controlled experiments to isolate version-induced failure modes in \textbf{LLM-based web agents}.
+\item Implementing a Knowledge Graph-based method to automate benchmark task generation across website versions.
+\end{rSubsection}
+
+\begin{rSubsection}{Probabilistic Motion Planning for Redundant Robots}{Nov 2025 - Dec 2025}{EECS 465 (Intro to Algorithmic Robotics) Course Project, Advisor: Prof. Dmitry Berenson}{}
+\item Reproduced and benchmarked \textbf{sampling-based motion planning algorithms} (RRT-Connect, PRM) for a \textbf{7-DOF Franka Panda} robot in simulation; implemented a hybrid sampling strategy that reduced trajectory generation latency by $\sim$75\%.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Mandarin (native), English (fluent, TOEFL 100) \\
+Programming Languages & Python, C/C++, MATLAB, Java, LaTeX, Typst \\ 
+Technical Skills & Hugging Face, PyTorch, Git, Claude Code. Linux, Docker, ssh, SolidWorks \\
+\end{tabular}
+
+\end{rSection}
+
+\end{document}

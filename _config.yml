@@ -23,10 +23,10 @@ repository               : "Oscar-Ge/Oscar-Ge.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Chenming Ge"
-  pronouns         : # example: "she/her"  
-  bio              : ""
+  pronouns         : "he/him"  
+  bio              : "Undergraduate researcher at the University of Michigan and Shanghai Jiao Tong University. Passionate about Robot Learning (VLA, VAM), Agentic Systems, and Efficient Machine Learning."
   location         : "Ann Arbor"
   employer         : "University of Michigan"
   uri              : # URL
