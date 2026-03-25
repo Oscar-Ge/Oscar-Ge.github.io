@@ -15,45 +15,39 @@ Education
   * University of Michigan, Ann Arbor
   * Aug 2025 - Present
   * GPA: 3.88/4.00
-  * Relevant Coursework: Machine Learning, Intro to Algorithmic Robotics (A), Operating Systems, Applied Parallel Programming with GPUs
+  * Selected Coursework: Machine Learning, Operating Systems, GPU Parallel Programming, Database Management Systems.
 * **B.Eng. in Mechanical Engineering**
   * Shanghai Jiao Tong University
   * Aug 2023 - Present
 
 Research Interests
 ======
-Robot Learning (VLA, VAM), Agentic Systems, and Efficient Machine Learning.
+Web Agents.
 
-Research Experience
+Selected Research Projects
 ======
-* **Research Assistant** (Nov 2025 – Present)
-  * Efficient Inference for Embodied Foundation Models
-  * Advisor: Dr. Jiachen Liu (University of Michigan)
-  * Profiled COSMOS-Policy across denoising steps; identified that block-level residual skipping is infeasible while cross-attention outputs remain highly stable (cosine > 0.999).
-  * Validated cross-attention KV caching on 24 RoboCasa tasks: achieved identical task success rate of 68.06% to the baseline across 3,600 rollout trials with consistent denoising speedup across all 24 tasks.
-  * Designing task-aware token compression that exploits the model's latent-frame slot structure to selectively prune image tokens via self-attention reduction, targeting further denoising acceleration on top of the validated caching strategy.
+* **WebEvolve: Robustness Benchmarking for Web Agents** (Jan 2026 – Present)
+  * Advisor: Prof. Honglak Lee (Ann Arbor, MI)
+  * Developed WebEvolve, a version-aware benchmark framework that evaluates MLLM-based web agent robustness under natural website version shift.
+  * Designed a knowledge graph based representation pipeline with component interfaces, producing multi-view state nodes carrying structural, functional, and grounding information.
+  * Built a cross-version alignment and structured diff engine using multi-signal scoring, with a 7-category drift taxonomy that maps each change to specific agent capability breakdowns.
+  * Implemented an end-to-end task maintenance pipeline: template mining -> affected-task detection -> retrieval-ranked realization, automatically deciding whether to reuse, refresh, or regenerate tasks when a website version changes.
+  * Designed a grounding-aware evaluation protocol requiring trajectory verification through key evidence nodes, preventing success via hallucinated shortcuts.
 
-* **Research Assistant** (Sep 2024 - Aug 2025)
-  * Gravitational Effect on Swarming Behavior of Microorganisms
-  * Advisor: Prof. Zijie Qu (Shanghai Jiao Tong University)
+* **Efficient Inference for Embodied Foundation Models** (Nov 2025 – Present)
+  * Advisor: Dr. Jiachen Liu (Ann Arbor, MI)
+  * Profiled Video Action Models (VAM) for robotic policy, implementing cross-attention KV caching and token compression to accelerate inference in dynamic environments.
+  * Explored quantization (dynamic precision) and speculative decoding on VLA models, optimizing the computational backbone required for real-time agentic decision-making.
+
+* **Gravitational Effect on Swarming Behavior of Microorganisms** (Sep 2024 - Aug 2025)
+  * Advisor: Prof. Zijie Qu (Shanghai, China)
   * Trained a U-Net model for colony boundary segmentation; diagnosed systematic failure modes, then adopted a SAM-based pipeline that achieved reliable automated detection, replacing manual annotation.
 
-Projects
-======
-* **Web Agent Version-Robust Benchmark** (Jan 2026 - Present)
-  * EECS 545 (Machine Learning) Course Project
-  * Advisor: Prof. Honglak Lee
-  * Built a reproducible testing pipeline using Docker to deploy baseline agents like QWen3-VL-30B across historical snapshots of open-source websites like SimpleWiki.
-  * Formulated a taxonomy for web version variations and designed controlled experiments to isolate version-induced failure modes in LLM-based web agents.
-  * Implementing a Knowledge Graph-based method to automate benchmark task generation across website versions.
-
-* **Probabilistic Motion Planning for Redundant Robots** (Nov 2025 - Dec 2025)
-  * EECS 465 (Intro to Algorithmic Robotics) Course Project
-  * Advisor: Prof. Dmitry Berenson
-  * Reproduced and benchmarked sampling-based motion planning algorithms (RRT-Connect, PRM) for a 7-DOF Franka Panda robot in simulation; implemented a hybrid sampling strategy that reduced trajectory generation latency by ~75%.
+* **Probabilistic Motion Planning for Redundant Robots** (Nov 2025 – Dec 2025)
+  * EECS 465 (Intro to Algorithmic Robotics) course project (Ann Arbor, MI)
+  * Evaluated RRT-Connect and PRM on a 7-DOF Franka Panda; optimized sampling strategies in high-dimensional state spaces, achieving a 75% reduction in planning latency.
 
 Skills
 ======
-* **Languages**: Mandarin (native), English (fluent, TOEFL 100)
-* **Programming Languages**: Python, C/C++, MATLAB, Java, LaTeX, Typst
-* **Technical Skills**: Hugging Face, PyTorch, Git, Claude Code, Linux, Docker, ssh, SolidWorks
+* **Frameworks**: PyTorch, Hugging Face, CUDA, Docker, Linux
+* **Languages**: Python, C/C++, Java, SQL, LaTeX, Typst
