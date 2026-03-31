@@ -13,7 +13,7 @@ My primary research interest is in **AI Agents**, with a particular focus on **W
 
 ## Research Experience
 
-*   **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present)  
+*   **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present) [[Progress Report]](/files/webEvolve_progress_report.pdf)  
     *Advisor: Prof. Honglak Lee (University of Michigan)*  
     Investigating how test-time agent memory (insights vs. workflows) degrades when website UIs change. Developed an evaluation framework measuring Experience Transfer Gap (ETG) and Decay Rate (EDR) across 6 controlled drift variants (e.g., surface, structural, content). Comparing the robustness of different memory abstraction levels under version shift to uncover critical failure modes and inform adaptive agent architectures.    
 

@@ -7,6 +7,7 @@ collection: portfolio
 * **Duration:** Jan 2026 - Present
 * **Context:** EECS 545 (Machine Learning) Course Project
 * **Advisor:** Prof. Honglak Lee
+* **Link:** [Progress Report](/files/webEvolve_progress_report.pdf)
 
 ## Project Overview
 

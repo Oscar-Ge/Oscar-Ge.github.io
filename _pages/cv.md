@@ -26,7 +26,7 @@ AI Agents, with a focus on Web Agents and their memory.
 
 Selected Research Projects
 ======
-* **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present)
+* **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present) [[Progress Report]](/files/webEvolve_progress_report.pdf)
   * Advisor: Prof. Honglak Lee (Ann Arbor, MI)
   * Investigating the robustness of test-time agent memory systems under controlled website GUI evolution.
   * Designed a reproducible evaluation testbed injecting 6 distinct drift variants (surface, structural, content, runtime, access, functional) into open-source web applications.
