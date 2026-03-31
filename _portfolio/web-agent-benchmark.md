@@ -1,6 +1,6 @@
 ---
-title: "Web Agent Version-Robust Benchmark"
-excerpt: "A reproducible testing pipeline for modern LLM-based web agents."
+title: "Agent Memory Decay Under Controlled Web Drift"
+excerpt: "Measuring experience decay for LLM-based web agents under controlled UI drift."
 collection: portfolio
 ---
 
@@ -10,10 +10,11 @@ collection: portfolio
 
 ## Project Overview
 
-Modern web agents often break when websites update their layouts or DOM structures. This project aims to benchmark the resilience of LLM-based web agents against historical website variations.
+While agentic memory is a rapidly growing area, existing methods primarily focus on static environments or cross-task generalization. This project investigates a critical unanswered question: how does test-time agent memory (e.g., semantic insights vs. procedural workflows) degrade when the underlying website environment evolves?
 
 ## Key Contributions
 
-* Built a reproducible testing pipeline using **Docker** to deploy baseline agents like **QWen3-VL-30B** across historical snapshots of open-source websites (such as SimpleWiki).
-* Formulated a taxonomy for web version variations and designed controlled experiments to isolate version-induced failure modes in **LLM-based web agents**.
-* Implementing a **Knowledge Graph-based method** to automate benchmark task generation across different website versions dynamically.
+* Developed a fully reproducible testbed using **Docker**, injecting 6 controlled drift types (surface, structural, access, content, process, runtime) into a self-hosted open-source web application.
+* Extracted and implemented different abstraction levels of agent memory, comparing semantic insights (ExpeL) with procedural workflows (AWM) injected into LLM contexts.
+* Formulated an evaluation framework measuring **Experience Transfer Gap (ETG)** and **Experience Decay Rate (EDR)**.
+* Evaluated agent robustness under varying drift settings, uncovering critical empirical correlations between environment coupling and memory vulnerability.

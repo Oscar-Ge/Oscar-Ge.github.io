@@ -13,9 +13,9 @@ My primary research interest is in **Web Agents**. My goal is to develop highly 
 
 ## Research Experience
 
-*   **WebEvolve: Robustness Benchmarking for Web Agents** (Jan 2026 – Present)  
+*   **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present)  
     *Advisor: Prof. Honglak Lee (University of Michigan)*  
-    Developed **WebEvolve**, a version-aware benchmark framework that evaluates MLLM-based web agent robustness under natural website version shift. Designed a knowledge graph based representation pipeline and built a cross-version alignment mapping capability breakdowns. Implemented an end-to-end task maintenance pipeline mapping out tasks for reuse, refresh, or regeneration.    
+    Investigating how test-time agent memory (insights vs. workflows) degrades when website UIs change. Developed an evaluation framework measuring Experience Transfer Gap (ETG) and Decay Rate (EDR) across 6 controlled drift variants (e.g., surface, structural, content). Comparing the robustness of different memory abstraction levels under version shift to uncover critical failure modes and inform adaptive agent architectures.    
 
 *   **Efficient Inference for Embodied Foundation Models** (Nov 2025 – Present)  
     *Advisor: Dr. Jiachen Liu (University of Michigan)*  

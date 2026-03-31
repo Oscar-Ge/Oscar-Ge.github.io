@@ -26,13 +26,13 @@ Web Agents.
 
 Selected Research Projects
 ======
-* **WebEvolve: Robustness Benchmarking for Web Agents** (Jan 2026 – Present)
+* **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present)
   * Advisor: Prof. Honglak Lee (Ann Arbor, MI)
-  * Developed WebEvolve, a version-aware benchmark framework that evaluates MLLM-based web agent robustness under natural website version shift.
-  * Designed a knowledge graph based representation pipeline with component interfaces, producing multi-view state nodes carrying structural, functional, and grounding information.
-  * Built a cross-version alignment and structured diff engine using multi-signal scoring, with a 7-category drift taxonomy that maps each change to specific agent capability breakdowns.
-  * Implemented an end-to-end task maintenance pipeline: template mining -> affected-task detection -> retrieval-ranked realization, automatically deciding whether to reuse, refresh, or regenerate tasks when a website version changes.
-  * Designed a grounding-aware evaluation protocol requiring trajectory verification through key evidence nodes, preventing success via hallucinated shortcuts.
+  * Investigating the robustness of test-time agent memory systems under controlled website GUI evolution.
+  * Designed a reproducible evaluation testbed injecting 6 distinct drift variants (surface, structural, content, runtime, access, functional) into open-source web applications.
+  * Extracted and implemented varying abstraction levels of agent memory—from raw trajectories (ExpRAG) and semantic insights (ExpeL) to procedural workflows (AWM).
+  * Evaluated memory decay by measuring Experience Transfer Gap (ETG) and Decay Rate (EDR) to systematically demonstrate the vulnerability of fixed test-time experiences against DOM structure and UI visual changes.
+  * Pioneering the systematic study of environmental coupling in agent memory, providing empirical guidelines for self-evolving integration.
 
 * **Efficient Inference for Embodied Foundation Models** (Nov 2025 – Present)
   * Advisor: Dr. Jiachen Liu (Ann Arbor, MI)
