@@ -22,7 +22,7 @@ Education
 
 Research Interests
 ======
-Web Agents.
+AI Agents, with a focus on Web Agents and their memory.
 
 Selected Research Projects
 ======
