@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive AP-NAV-05 counterexample trace on a controlled Cookpad GenUI site.">
+  <link rel="icon" href="data:,">
+  <title>AP-NAV-05 — Duplicate Tab Stop</title>
+  <style>
+    :root {
+      --paper: #f5f4ef;
+      --surface: #fff;
+      --soft: #efede6;
+      --ink: #20201e;
+      --muted: #706f69;
+      --line: #d4d1c8;
+      --line-dark: #8e8b83;
+      --blue: #1769aa;
+      --blue-soft: #e8f2fa;
+      --amber: #a96510;
+      --amber-soft: #fbedd8;
+      --red: #c7322b;
+      --red-soft: #fce9e7;
+      --green: #147252;
+      --green-soft: #e4f3ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", system-ui, sans-serif;
+      line-height: 1.4;
+    }
+
+    button { font: inherit; }
+
+    .page {
+      width: min(1240px, calc(100% - 32px));
+      margin: 24px auto 44px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .12em;
+    }
+
+    h1 {
+      margin: 5px 0 7px;
+      font-size: clamp(32px, 4.2vw, 52px);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    .lede {
+      max-width: 820px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+
+    .badge {
+      padding: 5px 8px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      font: 750 10px / 1.2 "Courier New", monospace;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--line-dark);
+      background: var(--surface);
+    }
+
+    .formula-bar {
+      min-height: 54px;
+      padding: 11px 16px;
+      display: grid;
+      grid-template-columns: 112px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      background: #242421;
+      color: #fff;
+    }
+
+    .formula-label,
+    .code-label {
+      color: #c9c7bf;
+      font-size: 9px;
+      font-weight: 850;
+      letter-spacing: .1em;
+    }
+
+    .formula {
+      font: 15px / 1.35 "SFMono-Regular", Consolas, monospace;
+    }
+
+    .formula-result {
+      padding: 5px 8px;
+      background: rgba(255,255,255,.13);
+      font-size: 10px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .code-bar {
+      padding: 8px 16px;
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 14px;
+      border-bottom: 1px solid var(--line);
+      background: #33332f;
+      color: #dddcd6;
+    }
+
+    .code-bar code {
+      overflow-wrap: anywhere;
+      font: 10px / 1.35 "SFMono-Regular", Consolas, monospace;
+    }
+
+    .trace-wrap {
+      padding: 18px 22px 15px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfaf7;
+    }
+
+    .trace-context {
+      margin-bottom: 13px;
+      color: var(--muted);
+      text-align: center;
+      font: 11px / 1.3 "SFMono-Regular", Consolas, monospace;
+    }
+
+    .trace {
+      display: grid;
+      grid-template-columns: 1fr 74px 1fr 74px 1fr 74px 1fr;
+      align-items: center;
+    }
+
+    .trace-state {
+      min-height: 84px;
+      padding: 11px 9px;
+      border: 1px solid var(--line-dark);
+      background: var(--soft);
+      color: var(--muted);
+      text-align: center;
+      cursor: pointer;
+      transition: opacity .18s ease;
+    }
+
+    .trace-state span {
+      display: block;
+      margin-bottom: 4px;
+      font: 800 13px / 1.2 "Courier New", monospace;
+    }
+
+    .trace-state strong {
+      display: block;
+      color: inherit;
+      font-size: 13px;
+    }
+
+    .trace-state small {
+      display: block;
+      margin-top: 4px;
+      font: 10px / 1.2 "Courier New", monospace;
+    }
+
+    .trace-state:not(.active),
+    .trace-edge:not(.active) { opacity: .2; }
+
+    .trace-state.active {
+      border-width: 2px;
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .trace-state.violation.active {
+      border-color: var(--red);
+      background: var(--red-soft);
+      color: var(--red);
+    }
+
+    .trace-edge {
+      color: var(--amber);
+      text-align: center;
+      font: 800 10px / 1.2 "Courier New", monospace;
+      transition: opacity .18s ease;
+    }
+
+    .trace-edge i {
+      position: relative;
+      display: block;
+      height: 1px;
+      margin: 7px 8px 0;
+      background: currentColor;
+    }
+
+    .trace-edge i::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: -1px;
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: rotate(45deg);
+    }
+
+    .evidence {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(290px, .72fr);
+    }
+
+    .shot-panel {
+      padding: 16px;
+      border-right: 1px solid var(--line);
+    }
+
+    .shot-head,
+    .facts-head {
+      margin-bottom: 9px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: baseline;
+    }
+
+    .section-label {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: .09em;
+    }
+
+    #step-title { font-size: 13px; font-weight: 800; }
+
+    .shot {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      border: 1px solid var(--line-dark);
+      background: #111;
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .focus-box,
+    .expected-box {
+      position: absolute;
+      z-index: 2;
+      pointer-events: none;
+      transition: all .2s ease;
+    }
+
+    .focus-box {
+      border: 4px solid var(--blue);
+      box-shadow: 0 0 0 3px rgba(255,255,255,.88), 0 0 0 7px rgba(23,105,170,.22);
+    }
+
+    .focus-box.warning {
+      border-color: var(--amber);
+      box-shadow: inset 0 0 0 2px #fff, 0 0 0 4px rgba(169,101,16,.25);
+    }
+
+    .focus-box.actual {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(255,255,255,.88), 0 0 0 7px rgba(199,50,43,.22);
+    }
+
+    .expected-box {
+      display: none;
+      border: 4px dashed var(--green);
+      box-shadow: 0 0 0 3px rgba(255,255,255,.88);
+    }
+
+    .expected-box.visible { display: block; }
+
+    .focus-tag,
+    .expected-tag {
+      position: absolute;
+      z-index: 3;
+      padding: 5px 7px;
+      color: #fff;
+      font: 800 10px / 1.2 "Courier New", monospace;
+      pointer-events: none;
+    }
+
+    .focus-tag { background: var(--blue); }
+    .focus-tag.warning { background: var(--amber); }
+    .focus-tag.actual { background: var(--red); }
+    .expected-tag { display: none; background: var(--green); }
+    .expected-tag.visible { display: block; }
+
+    .caption {
+      min-height: 38px;
+      margin: 8px 2px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .facts {
+      min-width: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-count { color: var(--muted); font-size: 11px; }
+
+    .action {
+      align-self: start;
+      margin: 3px 0 13px;
+      padding: 6px 8px;
+      background: var(--soft);
+      font: 750 11px / 1.2 "Courier New", monospace;
+    }
+
+    .action span { margin-right: 7px; color: var(--muted); }
+
+    .predicate-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 7px 12px;
+      margin-bottom: 13px;
+      font: 11px / 1.25 "Courier New", monospace;
+    }
+
+    .predicate-grid .value { font-weight: 850; text-align: right; }
+    .true { color: var(--green); }
+    .false { color: var(--red); }
+    .na { color: var(--muted); }
+
+    .explain {
+      flex: 1;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: #4e4d49;
+      font-size: 12px;
+    }
+
+    .verdict {
+      margin-top: 13px;
+      padding: 9px 10px;
+      border: 1px solid #dfb170;
+      background: var(--amber-soft);
+      color: #75470c;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .verdict.violation {
+      border-color: #df918c;
+      background: var(--red-soft);
+      color: #8f211b;
+    }
+
+    .controls {
+      padding: 12px 16px;
+      display: grid;
+      grid-template-columns: 110px 1fr 110px;
+      gap: 12px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      background: #fbfaf7;
+    }
+
+    .controls button {
+      padding: 8px 10px;
+      border: 1px solid var(--line-dark);
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .controls button:disabled { opacity: .3; cursor: default; }
+
+    .dots { display: flex; justify-content: center; gap: 7px; }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      padding: 0 !important;
+      border: 0 !important;
+      border-radius: 50%;
+      background: #c4c1b8 !important;
+    }
+
+    .dot.active { background: var(--red) !important; }
+
+    .footnote {
+      margin: 10px 2px 0;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    @media (max-width: 820px) {
+      .hero { display: block; }
+      .badges { justify-content: start; margin-top: 12px; }
+      .formula-bar, .code-bar { grid-template-columns: 1fr; gap: 5px; }
+      .formula-result { justify-self: start; }
+      .trace { grid-template-columns: 1fr; gap: 7px; }
+      .trace-edge { transform: rotate(90deg); height: 24px; }
+      .evidence { grid-template-columns: 1fr; }
+      .shot-panel { border-right: 0; border-bottom: 1px solid var(--line); }
+      .controls { grid-template-columns: 92px 1fr 92px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">REAL COUNTEREXAMPLE · AP-NAV-05</div>
+        <h1>Tab moves. Focus does not.</h1>
+        <p class="lede">On Cookpad, pressing Tab on <strong>Recipes</strong> briefly removes focus and returns it to the same link. The keyboard user makes no navigation progress.</p>
+      </div>
+      <div class="badges"><span class="badge">COOKPAD</span><span class="badge">/search</span><span class="badge">CONTROLLED GENUI</span></div>
+    </header>
+
+    <section class="card" aria-label="Interactive LTL counterexample trace">
+      <div class="formula-bar">
+        <span class="formula-label">LTL OBLIGATION</span>
+        <span class="formula">G(tab → ¬duplicate_stop_without_progress)</span>
+        <span class="formula-result" id="formula-result">TRACE IN PROGRESS</span>
+      </div>
+      <div class="code-bar"><span class="code-label">BOMBADIL</span><code>always(() =&gt; atomicVerdictHolds("AP-NAV-05"))</code></div>
+
+      <div class="trace-wrap">
+        <div class="trace-context">one trusted forward-Tab transaction</div>
+        <div class="trace" aria-label="Four-state duplicate focus trace">
+          <button class="trace-state" data-step="0"><span>s0</span><strong>Recipes focused</strong><small>before Tab</small></button>
+          <div class="trace-edge" data-step="1">Tab<i></i></div>
+          <button class="trace-state" data-step="1"><span>s1</span><strong>focus leaves</strong><small>blur()</small></button>
+          <div class="trace-edge" data-step="2">handler<i></i></div>
+          <button class="trace-state" data-step="2"><span>s2</span><strong>Recipes again</strong><small>focus()</small></button>
+          <div class="trace-edge" data-step="3">check<i></i></div>
+          <button class="trace-state violation" data-step="3"><span>s3</span><strong>duplicate stop</strong><small>progress = false ✕</small></button>
+        </div>
+      </div>
+
+      <div class="evidence">
+        <div class="shot-panel">
+          <div class="shot-head"><span class="section-label">SAME WEBSITE · SAME ROUTE</span><span id="step-title">s0 · Start on Recipes</span></div>
+          <div class="shot">
+            <img src="assets/cookpad-search-clean.png" alt="Cookpad search page used by the AP-NAV-05 controlled GenUI case">
+            <div class="focus-box" id="focus-box"></div>
+            <div class="expected-box" id="expected-box"></div>
+            <div class="focus-tag" id="focus-tag"></div>
+            <div class="expected-tag" id="expected-tag">EXPECTED · Cooking tips</div>
+          </div>
+          <p class="caption" id="caption"></p>
+        </div>
+
+        <aside class="facts" aria-live="polite">
+          <div class="facts-head"><span class="section-label">STATE PREDICATES</span><span class="step-count" id="step-count">1 / 4</span></div>
+          <div class="action" id="action"></div>
+          <div class="predicate-grid" id="predicates"></div>
+          <div class="explain" id="explain"></div>
+          <div class="verdict" id="verdict"></div>
+        </aside>
+      </div>
+
+      <div class="controls">
+        <button id="previous" type="button">← Previous</button>
+        <div class="dots" id="dots" aria-label="Trace position"></div>
+        <button id="next" type="button">Next →</button>
+      </div>
+    </section>
+
+    <p class="footnote">The screenshot is captured from the injected Cookpad GenUI build used for AP-NAV-05. Focus boxes are presentation overlays derived from the injected <code>blur(); focus();</code> sequence and the checker verdict.</p>
+  </main>
+
+  <script>
+    const recipes = [19.55, 5.2, 6.2, 4.6];
+    const cookingTips = [26.55, 5.2, 7.8, 4.6];
+    const steps = [
+      {
+        id: 's0', title: 'Start on Recipes', action: 'focus Recipes', box: recipes, tag: [19.55, 10.4, 'FOCUS · Recipes'], boxClass: '',
+        caption: 'The first visit to Recipes is a valid keyboard stop.',
+        predicates: [['focus = Recipes', 'true', 'true'], ['Tab pressed', 'false', 'false'], ['navigation progress', 'not checked', 'na']],
+        explain: 'This is the baseline focus target saved for the next forward-Tab transaction.',
+        verdict: 'WAITING FOR TAB'
+      },
+      {
+        id: 's1', title: 'The handler removes focus', action: 'Tab → blur()', box: [0.7, 0.8, 98.6, 98.2], tag: [66, 4.2, 'TRANSIENT FOCUS · document.body'], boxClass: 'warning',
+        caption: 'The injected key handler prevents the native Tab move and calls blur().',
+        predicates: [['Tab pressed', 'true', 'true'], ['default prevented', 'true', 'true'], ['focus = Recipes', 'false', 'false']],
+        explain: 'The browser never performs its normal move to the next navigation item.',
+        verdict: 'TRANSACTION IN PROGRESS'
+      },
+      {
+        id: 's2', title: 'Focus returns to Recipes', action: 'focus()', box: recipes, tag: [19.55, 10.4, 'ACTUAL · Recipes again'], boxClass: 'actual',
+        caption: 'The same handler immediately focuses Recipes again.',
+        predicates: [['focus = Recipes', 'true', 'true'], ['same DOM target', 'true', 'true'], ['navigation progress', 'false', 'false']],
+        explain: 'Before and after the Tab transaction, the accessible name, href, and DOM target are unchanged.',
+        verdict: 'DUPLICATE STOP OBSERVED'
+      },
+      {
+        id: 's3', title: 'The checker reports the violation', action: 'compare states', box: recipes, tag: [19.55, 10.4, 'ACTUAL · Recipes'], boxClass: 'actual', expected: true,
+        caption: 'Expected: Cooking tips. Actual: Recipes again. The user did not advance.',
+        predicates: [['Tab pressed', 'true', 'true'], ['same logical stop', 'true', 'true'], ['navigation progress', 'false', 'false']],
+        explain: '<code>tab</code> is true while <code>duplicate_stop_without_progress</code> is also true. The LTL obligation is false in this state.',
+        verdict: 'VIOLATED: TAB DID NOT ADVANCE', violation: true
+      }
+    ];
+
+    const byId = id => document.getElementById(id);
+    const requested = Number(new URLSearchParams(location.search).get('step'));
+    let current = Number.isInteger(requested) && requested >= 0 && requested < steps.length ? requested : 0;
+
+    function render() {
+      const step = steps[current];
+      document.querySelectorAll('.trace-state').forEach(node => node.classList.toggle('active', Number(node.dataset.step) === current));
+      document.querySelectorAll('.trace-edge').forEach(node => node.classList.toggle('active', Number(node.dataset.step) === current));
+      byId('step-title').textContent = `${step.id} · ${step.title}`;
+      byId('caption').textContent = step.caption;
+      byId('step-count').textContent = `${current + 1} / ${steps.length}`;
+      byId('action').innerHTML = `<span>ACTION</span>${step.action}`;
+      byId('predicates').innerHTML = step.predicates.map(([name, value, state]) => `<span>${name}</span><span class="value ${state}">${value}</span>`).join('');
+      byId('explain').innerHTML = step.explain;
+
+      const verdict = byId('verdict');
+      verdict.textContent = step.verdict;
+      verdict.className = `verdict ${step.violation ? 'violation' : ''}`;
+      const result = byId('formula-result');
+      result.textContent = step.violation ? 'VIOLATED AT s3' : 'TRACE IN PROGRESS';
+      result.style.background = step.violation ? 'var(--red)' : 'rgba(255,255,255,.13)';
+
+      const [left, top, width, height] = step.box;
+      const focusBox = byId('focus-box');
+      focusBox.style.cssText = `left:${left}%;top:${top}%;width:${width}%;height:${height}%`;
+      focusBox.className = `focus-box ${step.boxClass}`;
+      const [tagLeft, tagTop, tagText] = step.tag;
+      const focusTag = byId('focus-tag');
+      focusTag.style.left = `${tagLeft}%`;
+      focusTag.style.top = `${tagTop}%`;
+      focusTag.textContent = tagText;
+      focusTag.className = `focus-tag ${step.boxClass}`;
+
+      const [expectedLeft, expectedTop, expectedWidth, expectedHeight] = cookingTips;
+      const expectedBox = byId('expected-box');
+      expectedBox.style.cssText = `left:${expectedLeft}%;top:${expectedTop}%;width:${expectedWidth}%;height:${expectedHeight}%`;
+      expectedBox.className = `expected-box ${step.expected ? 'visible' : ''}`;
+      const expectedTag = byId('expected-tag');
+      expectedTag.style.left = `${expectedLeft}%`;
+      expectedTag.style.top = '10.4%';
+      expectedTag.className = `expected-tag ${step.expected ? 'visible' : ''}`;
+
+      byId('previous').disabled = current === 0;
+      byId('next').disabled = current === steps.length - 1;
+      document.querySelectorAll('.dot').forEach((dot, index) => dot.classList.toggle('active', index === current));
+    }
+
+    function go(index) {
+      current = Math.max(0, Math.min(steps.length - 1, index));
+      render();
+    }
+
+    document.querySelectorAll('.trace-state').forEach(node => {
+      node.addEventListener('click', () => go(Number(node.dataset.step)));
+      node.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') go(Number(node.dataset.step));
+      });
+    });
+    byId('previous').addEventListener('click', () => go(current - 1));
+    byId('next').addEventListener('click', () => go(current + 1));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft') go(current - 1);
+      if (event.key === 'ArrowRight') go(current + 1);
+    });
+    steps.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'dot';
+      dot.setAttribute('aria-label', `Go to state ${index}`);
+      dot.addEventListener('click', () => go(index));
+      byId('dots').appendChild(dot);
+    });
+    render();
+  </script>
+</body>
+</html>
