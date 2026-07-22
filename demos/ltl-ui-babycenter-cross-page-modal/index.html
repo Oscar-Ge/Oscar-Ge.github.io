@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive BabyCenter GenUI cross-page modal focus counterexample.">
+  <link rel="icon" href="data:,">
+  <title>Cross-page modal focus escape — LTL-UI</title>
+  <style>
+    :root {
+      --paper:#f3f1eb; --surface:#fff; --ink:#1d211f; --muted:#686d69; --line:#c9c8c1;
+      --dark:#202825; --teal:#0f7169; --teal-soft:#e1f1ed; --red:#c9322c; --red-soft:#fce8e6;
+      --green:#187154; --green-soft:#e5f2ec; --amber:#9b6112; --amber-soft:#f8ecd9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,"Segoe UI",system-ui,sans-serif; line-height:1.4; }
+    button { font:inherit; }
+    .page { width:min(1260px,calc(100% - 32px)); margin:24px auto 42px; }
+    .hero { display:flex; justify-content:space-between; align-items:start; gap:28px; margin-bottom:16px; }
+    .eyebrow { color:var(--red); font-size:11px; font-weight:850; letter-spacing:.12em; }
+    h1 { margin:5px 0 7px; font-size:clamp(32px,4.1vw,52px); line-height:.98; letter-spacing:-.045em; }
+    .lede { max-width:820px; margin:0; color:var(--muted); font-size:14px; }
+    .badges { display:flex; gap:6px; flex-wrap:wrap; justify-content:end; }
+    .badge { padding:5px 8px; border:1px solid var(--line); background:var(--surface); font:750 10px/1.2 "Courier New",monospace; }
+    .card { overflow:hidden; border:1px solid #858983; background:var(--surface); }
+    .formula-bar { min-height:56px; padding:11px 16px; display:grid; grid-template-columns:118px 1fr auto; gap:14px; align-items:center; background:var(--dark); color:#fff; }
+    .formula-label,.code-label { color:#bdc7c2; font-size:9px; font-weight:850; letter-spacing:.1em; }
+    .formula { font:15px/1.35 "SFMono-Regular",Consolas,monospace; }
+    .formula-result { padding:5px 8px; background:rgba(255,255,255,.13); font-size:10px; font-weight:850; white-space:nowrap; }
+    .code-bar { padding:8px 16px; display:grid; grid-template-columns:118px 1fr; gap:14px; border-bottom:1px solid var(--line); background:#303b37; color:#e0e5e2; }
+    .code-bar code { overflow-wrap:anywhere; font:10px/1.4 "SFMono-Regular",Consolas,monospace; }
+    .trace-wrap { padding:17px 22px 15px; border-bottom:1px solid var(--line); background:#faf9f5; }
+    .trace-context { margin-bottom:12px; color:var(--muted); text-align:center; font:11px/1.3 "SFMono-Regular",Consolas,monospace; }
+    .trace { display:grid; grid-template-columns:1fr 70px 1fr 70px 1fr 70px 1fr; align-items:center; }
+    .trace-state { min-height:82px; padding:10px 8px; border:1px solid #888c87; background:#eeede7; color:var(--muted); text-align:center; cursor:pointer; }
+    .trace-state span { display:block; margin-bottom:4px; font:800 13px/1.2 "Courier New",monospace; }
+    .trace-state strong { display:block; color:inherit; font-size:13px; }
+    .trace-state small { display:block; margin-top:4px; font:10px/1.2 "Courier New",monospace; }
+    .trace-state:not(.active),.trace-edge:not(.active) { opacity:.2; }
+    .trace-state.active { border:2px solid var(--teal); background:var(--teal-soft); color:var(--teal); }
+    .trace-state.violation.active { border-color:var(--red); background:var(--red-soft); color:var(--red); }
+    .trace-edge { color:var(--amber); text-align:center; font:800 10px/1.2 "Courier New",monospace; }
+    .trace-edge i { position:relative; display:block; height:1px; margin:7px 8px 0; background:currentColor; }
+    .trace-edge i::after { content:""; position:absolute; top:-4px; right:-1px; width:7px; height:7px; border-top:1px solid; border-right:1px solid; transform:rotate(45deg); }
+    .evidence { display:grid; grid-template-columns:minmax(0,1.75fr) minmax(300px,.72fr); }
+    .shot-panel { padding:16px; border-right:1px solid var(--line); }
+    .shot-head,.facts-head { margin-bottom:9px; display:flex; justify-content:space-between; gap:14px; align-items:baseline; }
+    .section-label { color:var(--muted); font-size:10px; font-weight:850; letter-spacing:.09em; }
+    #step-title { font-size:13px; font-weight:800; }
+    .shot { position:relative; overflow:hidden; aspect-ratio:16/10; border:1px solid #858983; background:#111; }
+    .shot img { display:block; width:100%; height:100%; object-fit:contain; }
+    .focus-box,.expected-box { position:absolute; z-index:2; pointer-events:none; }
+    .focus-box { border:4px solid var(--teal); box-shadow:0 0 0 3px #fff,0 0 0 7px rgba(15,113,105,.25); }
+    .focus-box.actual { border-color:var(--red); box-shadow:0 0 0 3px #fff,0 0 0 7px rgba(201,50,44,.26); }
+    .expected-box { display:none; border:4px dashed var(--green); box-shadow:0 0 0 3px #fff; }
+    .expected-box.visible { display:block; }
+    .focus-tag,.expected-tag { position:absolute; z-index:3; padding:5px 7px; color:#fff; font:800 10px/1.2 "Courier New",monospace; pointer-events:none; }
+    .focus-tag { background:var(--teal); }
+    .focus-tag.actual { background:var(--red); }
+    .expected-tag { display:none; background:var(--green); }
+    .expected-tag.visible { display:block; }
+    .caption { min-height:38px; margin:8px 2px 0; color:var(--muted); font-size:12px; }
+    .facts { min-width:0; padding:16px; display:flex; flex-direction:column; }
+    .step-count { color:var(--muted); font-size:11px; }
+    .action { align-self:start; margin:3px 0 13px; padding:6px 8px; background:#ecebe5; font:750 11px/1.2 "Courier New",monospace; }
+    .action span { margin-right:7px; color:var(--muted); }
+    .predicate-grid { display:grid; grid-template-columns:1fr auto; gap:7px 12px; margin-bottom:13px; font:11px/1.25 "Courier New",monospace; }
+    .predicate-grid .value { font-weight:850; text-align:right; }
+    .true { color:var(--green); } .false { color:var(--red); } .na { color:var(--muted); }
+    .explain { flex:1; padding-top:12px; border-top:1px solid var(--line); color:#4b504d; font-size:12px; }
+    .verdict { margin-top:13px; padding:9px 10px; border:1px solid #d7a964; background:var(--amber-soft); color:#70450d; font-size:11px; font-weight:800; }
+    .verdict.violation { border-color:#dc8d88; background:var(--red-soft); color:#8a211c; }
+    .controls { padding:12px 16px; display:grid; grid-template-columns:110px 1fr 110px; gap:12px; align-items:center; border-top:1px solid var(--line); background:#faf9f5; }
+    .controls button { padding:8px 10px; border:1px solid #858983; background:#fff; color:var(--ink); font-size:12px; font-weight:750; cursor:pointer; }
+    .controls button:disabled { opacity:.3; cursor:default; }
+    .dots { display:flex; justify-content:center; gap:7px; }
+    .dot { width:9px; height:9px; padding:0!important; border:0!important; border-radius:50%; background:#c1c2bc!important; }
+    .dot.active { background:var(--red)!important; }
+    .notes { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+    .note { margin:0; padding:9px 11px; border-left:3px solid var(--teal); background:#e8efec; color:#4d5652; font-size:10px; }
+    .note.caution { border-color:var(--amber); background:#f6eee2; }
+    @media(max-width:820px) {
+      .hero { display:block; } .badges { justify-content:start; margin-top:12px; }
+      .formula-bar,.code-bar { grid-template-columns:1fr; gap:5px; } .formula-result { justify-self:start; }
+      .trace { grid-template-columns:1fr; gap:7px; } .trace-edge { transform:rotate(90deg); height:24px; }
+      .evidence { grid-template-columns:1fr; } .shot-panel { border-right:0; border-bottom:1px solid var(--line); }
+      .controls { grid-template-columns:92px 1fr 92px; } .notes { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">MULTI-PAGE COUNTEREXAMPLE · FM3 / FOC07</div>
+        <h1>The page changes behind the modal.</h1>
+        <p class="lede">In the BabyCenter GenUI build, keyboard focus escapes an open search modal, Escape does not close it, and a background link changes the route while the same modal remains.</p>
+      </div>
+      <div class="badges"><span class="badge">BABYCENTER</span><span class="badge">/community → /courses</span><span class="badge">REAL EXPLORATION TRACE</span></div>
+    </header>
+
+    <section class="card" aria-label="Interactive cross-page modal counterexample">
+      <div class="formula-bar">
+        <span class="formula-label">LTL OBLIGATION</span>
+        <span class="formula">G(modal_open ∧ keyboard_txn → focus_in_modal)</span>
+        <span class="formula-result" id="formula-result">TRACE IN PROGRESS</span>
+      </div>
+      <div class="code-bar"><span class="code-label">BOMBADIL</span><code>always(() =&gt; post.modalCount === 0 || post.activeModalSignature !== "none")</code></div>
+
+      <div class="trace-wrap">
+        <div class="trace-context">one modal episode · two routes · same modal context</div>
+        <div class="trace" aria-label="Four-state modal focus trace">
+          <button class="trace-state" data-step="0"><span>s0</span><strong>modal opens</strong><small>/community</small></button>
+          <div class="trace-edge" data-step="1">Tab × n<i></i></div>
+          <button class="trace-state violation" data-step="1"><span>s1</span><strong>focus escapes</strong><small>background tab</small></button>
+          <div class="trace-edge" data-step="2">Escape<i></i></div>
+          <button class="trace-state violation" data-step="2"><span>s2</span><strong>modal remains</strong><small>close = false</small></button>
+          <div class="trace-edge" data-step="3">Enter<i></i></div>
+          <button class="trace-state violation" data-step="3"><span>s3</span><strong>route changes</strong><small>/courses ✕</small></button>
+        </div>
+      </div>
+
+      <div class="evidence">
+        <div class="shot-panel">
+          <div class="shot-head"><span class="section-label">CAPTURED GENUI STATE</span><span id="step-title">s0 · Search receives focus</span></div>
+          <div class="shot">
+            <img id="state-image" src="assets/state-0-modal-open.png" alt="BabyCenter GenUI page with search modal open">
+            <div class="focus-box" id="focus-box"></div>
+            <div class="expected-box" id="expected-box"></div>
+            <div class="focus-tag" id="focus-tag"></div>
+            <div class="expected-tag" id="expected-tag"></div>
+          </div>
+          <p class="caption" id="caption"></p>
+        </div>
+
+        <aside class="facts" aria-live="polite">
+          <div class="facts-head"><span class="section-label">TRUSTED STATE FACTS</span><span class="step-count" id="step-count">1 / 4</span></div>
+          <div class="action" id="action"></div>
+          <div class="predicate-grid" id="predicates"></div>
+          <div class="explain" id="explain"></div>
+          <div class="verdict" id="verdict"></div>
+        </aside>
+      </div>
+
+      <div class="controls">
+        <button id="previous" type="button">← Previous</button>
+        <div class="dots" id="dots" aria-label="Trace position"></div>
+        <button id="next" type="button">Next →</button>
+      </div>
+    </section>
+
+    <div class="notes">
+      <p class="note"><strong>Why it generalizes:</strong> the rule reads semantic modal and focus signatures, not BabyCenter selectors or page names.</p>
+      <p class="note caution"><strong>Evidence status:</strong> verified engineering trace; the campaign result remains inconclusive until targeted replay. The old “dismiss” label is excluded because the target was not a dismiss control.</p>
+    </div>
+  </main>
+
+  <script>
+    const modal = [25.0,13.2,50.0,29.0];
+    const steps = [
+      {
+        id:'s0', title:'Search receives focus', action:'Open site search', image:'assets/state-0-modal-open.png',
+        box:[27.7,28.0,35.2,5.4], tag:[27.7,34.5,'FOCUS · search input'], boxClass:'',
+        caption:'Expected start: the newly opened modal moves focus into its search field.',
+        predicates:[['route','/community','na'],['modal_open','true','true'],['focus_in_modal','true','true']],
+        explain:'The checker records the modal signature and the focused element after the opening transaction.',
+        verdict:'OBLIGATION HOLDS'
+      },
+      {
+        id:'s1', title:'Focus escapes to the page', action:'Tab × n', image:'assets/state-1-focus-escaped.png',
+        box:[10.8,50.7,10.7,4.7], tag:[10.8,56.5,'ACTUAL · background tab'], boxClass:'actual', expected:true,
+        caption:'Actual: Recent posts is focused behind the still-open modal. Expected: focus remains inside the modal.',
+        predicates:[['modal_open','true','true'],['activeModalSignature','none','false'],['focus_in_modal','false','false']],
+        explain:'This is the generalized failure: a modal exists, but the active focus signature belongs to no modal.',
+        verdict:'VIOLATED: FOCUS LEFT MODAL', violation:true
+      },
+      {
+        id:'s2', title:'Escape does not close it', action:'Press Escape', image:'assets/state-2-escape-failed.png',
+        box:[10.8,50.7,10.7,4.7], tag:[10.8,56.5,'ACTUAL · still outside'], boxClass:'actual', expected:true,
+        caption:'Escape is attempted. The dialog count stays at one and focus remains on the background tab.',
+        predicates:[['escapeAttempted','true','true'],['dialogCount','1 → 1','false'],['focus_in_modal','false','false']],
+        explain:'A second obligation can check that Escape closes or collapses the active dismissible context.',
+        verdict:'ESCAPE FAILED; MODAL STILL OPEN', violation:true
+      },
+      {
+        id:'s3', title:'Background navigation succeeds', action:'Enter on Parenting courses', image:'assets/state-3-route-changed.png',
+        box:[55.1,83.3,17.3,3.7], tag:[55.1,77.4,'ACTUAL · background link'], boxClass:'actual', expected:true,
+        caption:'Actual: the route changes to /courses while the same search modal persists. Expected: background activation is unreachable.',
+        predicates:[['route','/community → /courses','false'],['modal_open','true','true'],['focus_in_modal','false','false']],
+        explain:'The modal episode crosses a route boundary. The UI now combines a stale search context with a new page behind it.',
+        verdict:'COMPLEX COUNTEREXAMPLE REACHED', violation:true
+      }
+    ];
+
+    const byId = (id) => document.getElementById(id);
+    const requested = Number(new URLSearchParams(location.search).get('step'));
+    let current = Number.isInteger(requested) && requested >= 0 && requested < steps.length ? requested : 0;
+
+    function place(node, box) {
+      const [left,top,width,height] = box;
+      node.style.cssText = `left:${left}%;top:${top}%;width:${width}%;height:${height}%`;
+    }
+
+    function render() {
+      const step = steps[current];
+      document.querySelectorAll('.trace-state').forEach((node) => node.classList.toggle('active', Number(node.dataset.step) === current));
+      document.querySelectorAll('.trace-edge').forEach((node) => node.classList.toggle('active', Number(node.dataset.step) === current));
+      byId('step-title').textContent = `${step.id} · ${step.title}`;
+      byId('state-image').src = step.image;
+      byId('caption').textContent = step.caption;
+      byId('step-count').textContent = `${current + 1} / ${steps.length}`;
+      byId('action').innerHTML = `<span>ACTION</span>${step.action}`;
+      byId('predicates').innerHTML = step.predicates.map(([name,value,state]) => `<span>${name}</span><span class="value ${state}">${value}</span>`).join('');
+      byId('explain').textContent = step.explain;
+      const verdict = byId('verdict');
+      verdict.textContent = step.verdict;
+      verdict.className = `verdict ${step.violation ? 'violation' : ''}`;
+      const result = byId('formula-result');
+      result.textContent = step.violation ? `VIOLATED AT ${step.id}` : 'TRACE IN PROGRESS';
+      result.style.background = step.violation ? 'var(--red)' : 'rgba(255,255,255,.13)';
+
+      const focusBox = byId('focus-box');
+      place(focusBox,step.box);
+      focusBox.className = `focus-box ${step.boxClass}`;
+      const focusTag = byId('focus-tag');
+      focusTag.style.left = `${step.tag[0]}%`;
+      focusTag.style.top = `${step.tag[1]}%`;
+      focusTag.textContent = step.tag[2];
+      focusTag.className = `focus-tag ${step.boxClass}`;
+      const expectedBox = byId('expected-box');
+      place(expectedBox,modal);
+      expectedBox.className = `expected-box ${step.expected ? 'visible' : ''}`;
+      const expectedTag = byId('expected-tag');
+      expectedTag.style.left = '58%';
+      expectedTag.style.top = '15%';
+      expectedTag.textContent = 'EXPECTED · focus stays here';
+      expectedTag.className = `expected-tag ${step.expected ? 'visible' : ''}`;
+
+      byId('previous').disabled = current === 0;
+      byId('next').disabled = current === steps.length - 1;
+      document.querySelectorAll('.dot').forEach((dot,index) => dot.classList.toggle('active', index === current));
+    }
+
+    function go(index) { current = Math.max(0,Math.min(steps.length - 1,index)); history.replaceState(null,'',`?step=${current}`); render(); }
+    document.querySelectorAll('.trace-state').forEach((node) => node.addEventListener('click',() => go(Number(node.dataset.step))));
+    byId('previous').addEventListener('click',() => go(current - 1));
+    byId('next').addEventListener('click',() => go(current + 1));
+    document.addEventListener('keydown',(event) => { if(event.key === 'ArrowLeft') go(current - 1); if(event.key === 'ArrowRight') go(current + 1); });
+    steps.forEach((_,index) => {
+      const dot = document.createElement('button'); dot.type='button'; dot.className='dot'; dot.setAttribute('aria-label',`Go to state ${index}`);
+      dot.addEventListener('click',() => go(index)); byId('dots').appendChild(dot);
+    });
+    render();
+  </script>
+</body>
+</html>
