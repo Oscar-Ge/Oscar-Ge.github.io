@@ -165,11 +165,11 @@
   <script>
     const cases = [
       {
-        id:'babycenter-modal', ap:'COMPOSITE MODAL TRACE', site:'BABYCENTER · G2', status:'RECORDED COUNTEREXAMPLE',
+        id:'babycenter-modal', ap:'AP-M1-03 · MODAL LIFECYCLE', site:'BABYCENTER · G2', status:'RECORDED COUNTEREXAMPLE',
         title:'The modal stays. The page moves behind it.',
         lede:'Focus escapes an open search modal; Escape fails, then a background link changes the route.',
-        formula:'G(modal_open(d) → focus_inside(d)) ∧ G(Escape(d) → F_[0,500ms] ¬visible(d))',
-        code:'always(() =>\n  modalFocusIsContained(modalEpisode.current)\n  && escapeClosesExactModal(escapeObservation.current))',
+        formula:'G(escape_in_visible_dialog(d) → F_[0,500ms] ¬visible(d))',
+        code:'always(() =>\n  m1EscapeDialogContractHolds(\n    m1EscapeDialogObservation.current))',
         context:'one modal episode · focus containment · Escape dismissal · background navigation',
         steps:[
           {id:'s0',name:'Modal owns focus',small:'/community',action:'Open site search',image:'assets/babycenter-modal/state-0-modal-open.png',
