@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Four generated-site temporal navigation counterexamples found by the LTL-UI checker.">
+  <link rel="icon" href="data:,">
+  <title>Temporal navigation failures — LTL-UI</title>
+  <style>
+    :root {
+      --paper:#f1efe9; --surface:#fff; --ink:#17201d; --muted:#646b67; --line:#c8c8c0;
+      --dark:#1f2925; --teal:#08776d; --teal-soft:#e0f2ee; --red:#c6332c; --red-soft:#fce9e7;
+      --green:#167153; --green-soft:#e4f2eb; --amber:#9a6115; --amber-soft:#f8ecd9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,"Segoe UI",system-ui,sans-serif; line-height:1.35; }
+    button { font:inherit; }
+    .page { width:min(1280px,calc(100% - 28px)); margin:20px auto 36px; }
+    .hero { display:flex; justify-content:space-between; align-items:start; gap:24px; margin-bottom:14px; }
+    .eyebrow { color:var(--red); font:850 10px/1.2 "Courier New",monospace; letter-spacing:.12em; }
+    h1 { max-width:820px; margin:5px 0 7px; font-size:clamp(31px,4.2vw,54px); line-height:.96; letter-spacing:-.045em; }
+    .lede { max-width:820px; margin:0; color:var(--muted); font-size:13px; }
+    .method-note { max-width:310px; margin:0; padding:9px 11px; border-left:3px solid var(--amber); background:var(--amber-soft); color:#6e4a17; font-size:10px; }
+    .case-tabs { display:flex; gap:5px; overflow-x:auto; margin:0 0 8px; padding:0 0 3px; }
+    .case-tab { min-width:184px; padding:9px 11px; border:1px solid var(--line); background:#e8e6df; color:var(--muted); text-align:left; cursor:pointer; }
+    .case-tab span,.case-tab small { display:block; }
+    .case-tab span { margin-bottom:3px; font:850 10px/1.2 "Courier New",monospace; }
+    .case-tab strong { display:block; color:var(--ink); font-size:12px; line-height:1.15; }
+    .case-tab small { margin-top:5px; font-size:9px; }
+    .case-tab[aria-selected="true"] { border-color:var(--dark); background:var(--dark); color:#cbd3cf; }
+    .case-tab[aria-selected="true"] strong { color:#fff; }
+    .card { overflow:hidden; border:1px solid #858983; background:var(--surface); }
+    .formula-bar { min-height:56px; padding:10px 15px; display:grid; grid-template-columns:118px 1fr auto; gap:13px; align-items:center; background:var(--dark); color:#fff; }
+    .formula-label,.code-label { color:#bdc7c2; font-size:9px; font-weight:850; letter-spacing:.1em; }
+    .formula { overflow-wrap:anywhere; font:14px/1.35 "SFMono-Regular",Consolas,monospace; }
+    .formula-result { padding:5px 8px; background:rgba(255,255,255,.13); font-size:9px; font-weight:850; white-space:nowrap; }
+    .formula-result.violation { background:var(--red); }
+    .code-bar { padding:8px 15px; display:grid; grid-template-columns:118px 1fr; gap:13px; border-bottom:1px solid var(--line); background:#303b37; color:#e0e5e2; }
+    .code-bar code { overflow-wrap:anywhere; font:10px/1.4 "SFMono-Regular",Consolas,monospace; }
+    .trace-wrap { padding:14px 20px 13px; border-bottom:1px solid var(--line); background:#faf9f5; }
+    .trace-context { margin-bottom:10px; color:var(--muted); text-align:center; font:10px/1.3 "SFMono-Regular",Consolas,monospace; }
+    .trace { display:flex; align-items:center; justify-content:center; }
+    .trace-state { flex:1 1 0; min-width:128px; min-height:76px; padding:9px 7px; border:1px solid #888c87; background:#eeede7; color:var(--muted); text-align:center; cursor:pointer; }
+    .trace-state span { display:block; margin-bottom:3px; font:800 12px/1.2 "Courier New",monospace; }
+    .trace-state strong { display:block; color:inherit; font-size:12px; line-height:1.15; }
+    .trace-state small { display:block; margin-top:4px; font:9px/1.2 "Courier New",monospace; }
+    .trace-state:not(.active),.trace-edge:not(.active) { opacity:.25; }
+    .trace-state.active { border:2px solid var(--teal); background:var(--teal-soft); color:var(--teal); }
+    .trace-state.violation.active { border-color:var(--red); background:var(--red-soft); color:var(--red); }
+    .trace-edge { flex:0 0 68px; color:var(--amber); text-align:center; font:800 9px/1.2 "Courier New",monospace; }
+    .trace-edge i { position:relative; display:block; height:1px; margin:7px 8px 0; background:currentColor; }
+    .trace-edge i::after { content:""; position:absolute; top:-4px; right:-1px; width:7px; height:7px; border-top:1px solid; border-right:1px solid; transform:rotate(45deg); }
+    .evidence { display:grid; grid-template-columns:minmax(0,1.75fr) minmax(300px,.72fr); }
+    .shot-panel { padding:15px; border-right:1px solid var(--line); }
+    .shot-head,.facts-head { margin-bottom:8px; display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+    .section-label { color:var(--muted); font-size:9px; font-weight:850; letter-spacing:.09em; }
+    #step-title { font-size:12px; font-weight:800; }
+    .shot { position:relative; overflow:hidden; aspect-ratio:4/3; border:1px solid #858983; background:#111; }
+    .shot img { display:block; width:100%; height:100%; object-fit:contain; }
+    .focus-box,.expected-box,.context-box { position:absolute; z-index:2; pointer-events:none; }
+    .focus-box { border:4px solid var(--teal); box-shadow:0 0 0 3px #fff,0 0 0 7px rgba(8,119,109,.24); }
+    .focus-box.actual { border-color:var(--red); box-shadow:inset 0 0 0 2px #fff,0 0 0 4px rgba(198,51,44,.28); }
+    .focus-box.body { border-style:dashed; }
+    .expected-box { display:none; border:4px dashed var(--green); box-shadow:0 0 0 3px #fff; }
+    .expected-box.visible { display:block; }
+    .context-box { display:none; border:4px dashed var(--red); box-shadow:0 0 0 3px #fff; }
+    .context-box.visible { display:block; }
+    .focus-tag,.expected-tag,.context-tag { position:absolute; z-index:3; max-width:72%; padding:5px 7px; color:#fff; font:800 9px/1.2 "Courier New",monospace; pointer-events:none; }
+    .focus-tag { background:var(--teal); }
+    .focus-tag.actual { background:var(--red); }
+    .expected-tag { display:none; background:var(--green); }
+    .expected-tag.visible,.context-tag.visible { display:block; }
+    .context-tag { display:none; background:var(--red); }
+    .caption { min-height:34px; margin:7px 2px 0; color:var(--muted); font-size:11px; }
+    .facts { min-width:0; padding:15px; display:flex; flex-direction:column; }
+    .step-count { color:var(--muted); font-size:10px; }
+    .action { align-self:start; margin:3px 0 12px; padding:6px 8px; background:#ecebe5; font:750 10px/1.2 "Courier New",monospace; }
+    .action span { margin-right:7px; color:var(--muted); }
+    .predicate-grid { display:grid; grid-template-columns:1fr auto; gap:7px 11px; margin-bottom:12px; font:10px/1.25 "Courier New",monospace; }
+    .predicate-grid .value { font-weight:850; text-align:right; }
+    .true { color:var(--green); } .false { color:var(--red); } .na { color:var(--muted); }
+    .explain { flex:1; padding-top:11px; border-top:1px solid var(--line); color:#4b504d; font-size:11px; }
+    .verdict { margin-top:12px; padding:8px 9px; border:1px solid #d7a964; background:var(--amber-soft); color:#70450d; font-size:10px; font-weight:800; }
+    .verdict.violation { border-color:#dc8d88; background:var(--red-soft); color:#8a211c; }
+    .controls { padding:11px 15px; display:grid; grid-template-columns:104px 1fr 104px; gap:11px; align-items:center; border-top:1px solid var(--line); background:#faf9f5; }
+    .controls button { padding:7px 9px; border:1px solid #858983; background:#fff; color:var(--ink); font-size:11px; font-weight:750; cursor:pointer; }
+    .controls button:disabled { opacity:.3; cursor:default; }
+    .dots { display:flex; justify-content:center; gap:7px; }
+    .dot { width:9px; height:9px; padding:0!important; border:0!important; border-radius:50%; background:#c1c2bc!important; }
+    .dot.active { background:var(--red)!important; }
+    .foot { display:flex; justify-content:space-between; gap:18px; margin-top:9px; color:var(--muted); font-size:9px; }
+    .foot strong { color:var(--ink); }
+    @media(max-width:850px) {
+      .hero { display:block; } .method-note { max-width:none; margin-top:11px; }
+      .formula-bar,.code-bar { grid-template-columns:1fr; gap:5px; } .formula-result { justify-self:start; }
+      .trace { display:grid; grid-template-columns:1fr; gap:6px; } .trace-edge { transform:rotate(90deg); height:24px; }
+      .evidence { grid-template-columns:1fr; } .shot-panel { border-right:0; border-bottom:1px solid var(--line); }
+      .controls { grid-template-columns:86px 1fr 86px; } .foot { display:block; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="eyebrow" id="eyebrow">TEMPORAL NAVIGATION COUNTEREXAMPLE</div>
+        <h1 id="case-title">The task succeeds. Focus does not.</h1>
+        <p class="lede" id="case-lede"></p>
+      </div>
+      <p class="method-note"><strong>Claim boundary:</strong> generated-site checker evidence, not user-study ground truth. Static baselines have not yet been run on these exact builds.</p>
+    </header>
+
+    <nav class="case-tabs" id="case-tabs" aria-label="Temporal navigation cases"></nav>
+
+    <section class="card" aria-label="Interactive temporal navigation counterexample">
+      <div class="formula-bar">
+        <span class="formula-label">TEMPORAL CONTRACT</span>
+        <span class="formula" id="formula"></span>
+        <span class="formula-result" id="formula-result">TRACE IN PROGRESS</span>
+      </div>
+      <div class="code-bar"><span class="code-label">BOMBADIL</span><code id="bombadil-code"></code></div>
+
+      <div class="trace-wrap">
+        <div class="trace-context" id="trace-context"></div>
+        <div class="trace" id="trace" aria-label="Counterexample state transition"></div>
+      </div>
+
+      <div class="evidence">
+        <div class="shot-panel">
+          <div class="shot-head"><span class="section-label">CAPTURED GENUI STATE</span><span id="step-title"></span></div>
+          <div class="shot">
+            <img id="state-image" alt="">
+            <div class="focus-box" id="focus-box"></div>
+            <div class="expected-box" id="expected-box"></div>
+            <div class="context-box" id="context-box"></div>
+            <div class="focus-tag" id="focus-tag"></div>
+            <div class="expected-tag" id="expected-tag"></div>
+            <div class="context-tag" id="context-tag"></div>
+          </div>
+          <p class="caption" id="caption"></p>
+        </div>
+
+        <aside class="facts" aria-live="polite">
+          <div class="facts-head"><span class="section-label">RECORDER SNAPSHOT</span><span class="step-count" id="step-count"></span></div>
+          <div class="action" id="action"></div>
+          <div class="predicate-grid" id="predicates"></div>
+          <div class="explain" id="explain"></div>
+          <div class="verdict" id="verdict"></div>
+        </aside>
+      </div>
+
+      <div class="controls">
+        <button id="previous" type="button">← Previous</button>
+        <div class="dots" id="dots" aria-label="Trace position"></div>
+        <button id="next" type="button">Next →</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span><strong>Red</strong> = observed failure state · <strong>Green dashed</strong> = required target/region</span>
+      <span>Recorder facts are authoritative; images show the selected pre/post trace window.</span>
+    </footer>
+  </main>
+
+  <script>
+    const cases = [
+      {
+        id:'amazon-fm1', ap:'AP-FM1-01', site:'AMAZON · G0', status:'9 / 9 CHECKER REPLAYS',
+        title:'The search succeeds. Focus does not.',
+        lede:'Results render normally, but keyboard focus silently resets to the document body.',
+        formula:'G(search_submit → F_[0,500ms] safe_element_focus)',
+        code:'always(() => fm1SameDocumentFocusContractHolds(fm1ActivationObservation.current))',
+        context:'same document · Search activation · 500 ms focus settlement',
+        steps:[
+          {id:'s0',name:'Search focused',small:'/',action:'Tab to Search',image:'assets/amazon-fm1/0-search-focus.jpeg',
+            box:[67.6,1.2,5.7,6.4],tag:[59.5,8.4,'FOCUS · Search button'],caption:'The Search button is the concrete pre-action focus.',
+            predicates:[['activeTag','BUTTON','true'],['route','/','na'],['safe_focus','true','true']],
+            explain:'The recorder binds the next trusted Enter to this same-document control.',verdict:'PRECONDITION CAPTURED'},
+          {id:'s1',name:'Results render',small:'/search',edge:'Enter',action:'Press Enter',image:'assets/amazon-fm1/1-results-body.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            caption:'The visible task transition succeeds, but no concrete element owns focus.',
+            predicates:[['route','/ → /search','true'],['activeTag','BODY','false'],['sameDocument','true','true']],
+            explain:'A single results-page screenshot looks successful; the preceding focused activation supplies the missing causal context.',verdict:'FOCUS LOST DURING SUCCESS',violation:true},
+          {id:'s2',name:'Deadline',small:'+500 ms',edge:'Wait',action:'Wait 500 ms',image:'assets/amazon-fm1/2-deadline-body.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            caption:'At the observation deadline, focus is still the document rather than a usable element.',
+            predicates:[['complete','true','true'],['settledFocus.kind','document','false'],['programmaticallyVisible','false','false']],
+            explain:'The temporal obligation closes at this deadline. The search result itself is not the failure; the settled focus transition is.',verdict:'VIOLATION OBSERVED',violation:true},
+          {id:'s3',name:'Navigation restarts',small:'header',edge:'Next Tab',action:'Press Tab',image:'assets/amazon-fm1/3-next-tab-header.jpeg',
+            box:[1.7,1.7,13.2,5.8],tag:[2.0,8.4,'FOCUS · first header link'],boxClass:'actual',
+            caption:'The next Tab starts again in the header instead of continuing from the results context.',
+            predicates:[['activeTag','A','true'],['position','header start','false'],['task result','still visible','true']],
+            explain:'This is the user-facing consequence: a successful action silently resets the keyboard navigation position.',verdict:'CONTEXT RESTART',violation:true}
+        ]
+      },
+      {
+        id:'airbnb-m104', ap:'AP-M1-04', site:'AIRBNB · G0', status:'2 VIOLATIONS · 1 INCOMPLETE',
+        title:'The modal closes. The exact opener is forgotten.',
+        lede:'A wishlist opened from one heart button closes successfully, but focus does not return to that same button.',
+        formula:'G(bound_modal_escape_closes(d,i) → F_[0,500ms] focus_is_exact_invoker(i))',
+        code:'always(() => m1ExactInvokerReturnContractHolds(m1FocusReturnObservation.current))',
+        context:'one exact heart invoker · one exact wishlist modal · open / close lifecycle',
+        steps:[
+          {id:'s0',name:'Invoker captured',small:'Saltwater Cottage',action:'Focus heart',image:'assets/airbnb-m104/0-heart-focus.jpeg',
+            box:[27.4,58.0,5.3,6.3],tag:[23.2,51.3,'FOCUS · exact heart invoker'],
+            caption:'The monitor stores this exact Element object, not only its role or label.',
+            predicates:[['invokerEligible','true','true'],['exact identity','captured','true'],['modal visible','false','true']],
+            explain:'Many heart buttons are interchangeable in a static graph. The temporal contract remembers which one caused this modal episode.',verdict:'EXACT INVOKER CAPTURED'},
+          {id:'s1',name:'Modal owns focus',small:'Save to wishlist',edge:'Space',action:'Press Space',image:'assets/airbnb-m104/1-modal-focus.jpeg',
+            box:[24.2,44.1,50.4,8.2],tag:[24.2,53.4,'FOCUS · wishlist name'],
+            caption:'One new exact modal appears and focus enters it.',
+            predicates:[['newModalCount','1','true'],['focusInside','true','true'],['invoker stored','true','true']],
+            explain:'This establishes a valid open/use/close lifecycle before focus restoration is evaluated.',verdict:'MODAL BOUND TO INVOKER'},
+          {id:'s2',name:'Modal closes',small:'focus = body',edge:'Escape',action:'Press Escape',image:'assets/airbnb-m104/2-closed-body.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            expected:[27.4,58.0,5.3,6.3],expectedTag:[22.5,51.1,'EXPECTED · same heart'],
+            caption:'The modal disappears, but focus does not return to its exact opener.',
+            predicates:[['originalDialogClosed','true','true'],['invokerEligible','true','true'],['focusIsExactInvoker','false','false']],
+            explain:'The final page is usable and the heart still exists. Only the stored opener identity tells us where focus had to return.',verdict:'EXACT RETURN FAILED',violation:true},
+          {id:'s3',name:'Deadline',small:'+500 ms',edge:'Wait',action:'Wait 500 ms',image:'assets/airbnb-m104/3-witness.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            expected:[27.4,58.0,5.3,6.3],expectedTag:[22.5,51.1,'EXPECTED · same heart'],
+            caption:'At the deadline, the original heart remains eligible and focus is still elsewhere.',
+            predicates:[['complete','true','true'],['replacementModalCount','0','true'],['focusIsExactInvoker','false','false']],
+            explain:'This is the most history-dependent current case. Its campaign cell has two violations and one insufficient-evidence replay, so targeted 3/3 replay remains pending.',verdict:'VIOLATION OBSERVED',violation:true}
+        ]
+      },
+      {
+        id:'airbnb-m105', ap:'AP-M1-05 + AP-FM1-01', site:'AIRBNB · G0', status:'EXACT COMPOUND · 4 / 6',
+        title:'The modal appears. Focus stays behind.',
+        lede:'Login is visually ready, while the keyboard remains at document level until the user presses Tab again.',
+        formula:'G(open_exact_modal(d) → F_[0,500ms] focus_inside(d))',
+        code:'always(() => m1NewModalFocusContractHolds(m1NewModalFocusObservation.current))',
+        context:'account-menu activation · exact new modal · 500 ms focus-entry deadline',
+        steps:[
+          {id:'s0',name:'Login focused',small:'account menu',action:'Focus login',image:'assets/airbnb-m105/0-login-focus.jpeg',
+            box:[71.0,10.0,22.7,6.7],tag:[71.0,17.8,'FOCUS · Log in or sign up'],
+            caption:'The trusted Enter starts with focus on the login invoker.',
+            predicates:[['controlTag','BUTTON','true'],['new modal','not visible','true'],['trusted action','pending','na']],
+            explain:'The property captures the pre-action modal inventory before Enter.',verdict:'PRECONDITION CAPTURED'},
+          {id:'s1',name:'Modal appears',small:'focus = body',edge:'Enter',action:'Press Enter',image:'assets/airbnb-m105/1-modal-body.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            expected:[21.7,19.6,55.0,59.0],expectedTag:[55.0,15.2,'EXPECTED · inside new modal'],
+            caption:'The visual state changes correctly, but focus is outside the new modal.',
+            predicates:[['newModalCount','1','true'],['exact modal','identified','true'],['focusInside','false','false']],
+            explain:'A structural scan can see a named modal with controls. It does not establish that opening transferred focus.',verdict:'OPENING FOCUS FAILED',violation:true},
+          {id:'s2',name:'Deadline',small:'+500 ms',edge:'Wait',action:'Wait 500 ms',image:'assets/airbnb-m105/2-deadline-body.jpeg',
+            box:[.8,.8,98.4,98.4],tag:[2.0,2.0,'ACTUAL FOCUS · document.body'],boxClass:'actual body',
+            expected:[21.7,19.6,55.0,59.0],expectedTag:[55.0,15.2,'EXPECTED · inside new modal'],
+            caption:'Focus remains at the document when the opening-focus obligation closes.',
+            predicates:[['complete','true','true'],['sameDocument','true','true'],['focusInsideExactNewModal','false','false']],
+            explain:'The exact login + body-focus compound occurs in four of six 300/600-second traces. A fixed workflow is still required for a joint 3/3 claim.',verdict:'VIOLATION OBSERVED',violation:true},
+          {id:'s3',name:'Manual recovery',small:'extra Tab',edge:'Tab',action:'Press Tab',image:'assets/airbnb-m105/3-tab-recovers.jpeg',
+            box:[24.2,44.6,50.4,7.8],tag:[24.2,53.5,'FOCUS · email input'],boxClass:'actual',
+            caption:'Only an extra Tab finally places focus inside the modal.',
+            predicates:[['activeTag','INPUT','true'],['focusInside','true','true'],['met deadline','false','false']],
+            explain:'Later recovery does not erase the failed bounded transition: the modal opened without moving the keyboard context.',verdict:'LATE RECOVERY',violation:true}
+        ]
+      },
+      {
+        id:'aa-m103', ap:'AP-M1-03', site:'AA · G1', status:'6 / 6 CHECKER REPLAYS',
+        title:'Escape is delivered. The dialog remains.',
+        lede:'The login dialog has a close button, but the standard Escape interaction has no effect.',
+        formula:'G(escape_in_visible_dialog(d) → F_[0,500ms] ¬visible(d))',
+        code:'always(() => m1EscapeDialogContractHolds(m1EscapeDialogObservation.current))',
+        context:'one exact active dialog · trusted Escape · 500 ms visibility deadline',
+        steps:[
+          {id:'s0',name:'Dialog active',small:'focus inside',action:'Focus in dialog',image:'assets/aa-m103/0-dialog-focus.jpeg',
+            box:[31.0,55.8,3.5,4.5],tag:[34.7,55.3,'FOCUS · Remember me'],
+            caption:'Focus is inside one visible, named login dialog.',
+            predicates:[['dialogCount','1','true'],['focus inside','true','true'],['dialog identity','captured','true']],
+            explain:'The monitor binds the next trusted Escape to this exact dialog node.',verdict:'EXACT DIALOG CAPTURED'},
+          {id:'s1',name:'Escape delivered',small:'dialog unchanged',edge:'Escape',action:'Press Escape',image:'assets/aa-m103/1-escape.jpeg',
+            box:[31.0,55.8,3.5,4.5],tag:[34.7,55.3,'FOCUS · still inside'],
+            contextBox:[27.8,19.8,43.0,60.2],contextTag:[28.2,14.7,'SAME DIALOG · still visible'],
+            caption:'Escape is trusted and delivered; the same modal remains onscreen.',
+            predicates:[['Escape trusted','true','true'],['observation complete','false','na'],['same dialog visible','true','false']],
+            explain:'The existence of a visible Close button does not establish the Escape interaction contract.',verdict:'NO DISMISSAL',violation:true},
+          {id:'s2',name:'Deadline',small:'+500 ms',edge:'Wait',action:'Wait 500 ms',image:'assets/aa-m103/2-deadline.jpeg',
+            box:[31.0,55.8,3.5,4.5],tag:[34.7,55.3,'FOCUS · unchanged'],
+            contextBox:[27.8,19.8,43.0,60.2],contextTag:[28.2,14.7,'VIOLATION · same dialog'],
+            caption:'At 500 ms, the exact node is still connected and visible.',
+            predicates:[['complete','true','true'],['sameDialogConnected','true','false'],['sameDialogVisible','true','false']],
+            explain:'This is stable checker evidence in all three 300-second and all three 600-second replays.',verdict:'VIOLATION OBSERVED',violation:true}
+        ]
+      }
+    ];
+
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+    const byId = (id) => document.getElementById(id);
+    let caseIndex = Math.max(0,cases.findIndex((item) => item.id === new URLSearchParams(location.search).get('case')));
+    let current = 0;
+
+    function place(node,box) {
+      if (!box) { node.removeAttribute('style'); return; }
+      const [left,top,width,height] = box;
+      node.style.cssText = `left:${left}%;top:${top}%;width:${width}%;height:${height}%`;
+    }
+
+    function placeTag(node,tag) {
+      if (!tag) { node.removeAttribute('style'); node.textContent=''; return; }
+      node.style.left = `${tag[0]}%`;
+      node.style.top = `${tag[1]}%`;
+      node.textContent = tag[2];
+    }
+
+    function renderTabs() {
+      byId('case-tabs').innerHTML = cases.map((item,index) => `
+        <button class="case-tab" data-index="${index}" aria-selected="${index === caseIndex}">
+          <span>${item.ap}</span><strong>${item.site}</strong><small>${item.status}</small>
+        </button>
+      `).join('');
+      byId('case-tabs').querySelectorAll('button').forEach((button) => button.addEventListener('click',() => {
+        caseIndex = Number(button.dataset.index);
+        current = 0;
+        history.replaceState(null,'',`?case=${cases[caseIndex].id}&step=0`);
+        renderCase();
+      }));
+    }
+
+    function renderTrace(item) {
+      const nodes = [];
+      item.steps.forEach((step,index) => {
+        if (index > 0) nodes.push(`<div class="trace-edge" data-step="${index}">${step.edge || 'Next'}<i></i></div>`);
+        nodes.push(`<button class="trace-state ${step.violation ? 'violation' : ''}" data-step="${index}"><span>${step.id}</span><strong>${step.name}</strong><small>${step.small}</small></button>`);
+      });
+      byId('trace').innerHTML = nodes.join('');
+      byId('trace').querySelectorAll('.trace-state').forEach((node) => node.addEventListener('click',() => go(Number(node.dataset.step))));
+    }
+
+    function renderCase() {
+      const item = cases[caseIndex];
+      byId('case-title').textContent = item.title;
+      byId('case-lede').textContent = item.lede;
+      byId('eyebrow').textContent = `TEMPORAL NAVIGATION COUNTEREXAMPLE · ${item.ap}`;
+      byId('formula').textContent = item.formula;
+      byId('bombadil-code').textContent = item.code;
+      byId('trace-context').textContent = item.context;
+      renderTabs();
+      renderTrace(item);
+      renderDots(item);
+      renderStep();
+    }
+
+    function renderDots(item) {
+      byId('dots').innerHTML = '';
+      item.steps.forEach((_,index) => {
+        const dot = document.createElement('button');
+        dot.type='button'; dot.className='dot'; dot.setAttribute('aria-label',`Go to state ${index + 1}`);
+        dot.addEventListener('click',() => go(index));
+        byId('dots').appendChild(dot);
+      });
+    }
+
+    function renderStep() {
+      const item = cases[caseIndex];
+      const step = item.steps[current];
+      document.querySelectorAll('.trace-state').forEach((node) => node.classList.toggle('active',Number(node.dataset.step) === current));
+      document.querySelectorAll('.trace-edge').forEach((node) => node.classList.toggle('active',Number(node.dataset.step) === current));
+      byId('step-title').textContent = `${step.id} · ${step.name}`;
+      byId('state-image').src = step.image;
+      byId('state-image').alt = `${item.site} ${step.name} captured state`;
+      byId('caption').textContent = step.caption;
+      byId('step-count').textContent = `${current + 1} / ${item.steps.length}`;
+      byId('action').innerHTML = `<span>ACTION</span>${step.action}`;
+      byId('predicates').innerHTML = step.predicates.map(([name,value,state]) => `<span>${name}</span><span class="value ${state}">${value}</span>`).join('');
+      byId('explain').textContent = step.explain;
+      const verdict = byId('verdict');
+      verdict.textContent = step.verdict;
+      verdict.className = `verdict ${step.violation ? 'violation' : ''}`;
+      const result = byId('formula-result');
+      result.textContent = step.violation ? `VIOLATED AT ${step.id}` : item.status;
+      result.className = `formula-result ${step.violation ? 'violation' : ''}`;
+
+      const focusBox = byId('focus-box');
+      place(focusBox,step.box);
+      focusBox.className = `focus-box ${step.boxClass || ''}`;
+      const focusTag = byId('focus-tag');
+      placeTag(focusTag,step.tag);
+      focusTag.className = `focus-tag ${step.boxClass?.includes('actual') ? 'actual' : ''}`;
+
+      const expectedBox = byId('expected-box');
+      place(expectedBox,step.expected);
+      expectedBox.className = `expected-box ${step.expected ? 'visible' : ''}`;
+      const expectedTag = byId('expected-tag');
+      placeTag(expectedTag,step.expectedTag);
+      expectedTag.className = `expected-tag ${step.expectedTag ? 'visible' : ''}`;
+
+      const contextBox = byId('context-box');
+      place(contextBox,step.contextBox);
+      contextBox.className = `context-box ${step.contextBox ? 'visible' : ''}`;
+      const contextTag = byId('context-tag');
+      placeTag(contextTag,step.contextTag);
+      contextTag.className = `context-tag ${step.contextTag ? 'visible' : ''}`;
+
+      byId('previous').disabled = current === 0;
+      byId('next').disabled = current === item.steps.length - 1;
+      document.querySelectorAll('.dot').forEach((dot,index) => dot.classList.toggle('active',index === current));
+    }
+
+    function go(index) {
+      const item = cases[caseIndex];
+      current = Math.max(0,Math.min(item.steps.length - 1,index));
+      history.replaceState(null,'',`?case=${item.id}&step=${current}`);
+      renderStep();
+    }
+
+    const requestedStep = Number(new URLSearchParams(location.search).get('step'));
+    if (Number.isInteger(requestedStep) && requestedStep >= 0 && requestedStep < cases[caseIndex].steps.length) current = requestedStep;
+    byId('previous').addEventListener('click',() => go(current - 1));
+    byId('next').addEventListener('click',() => go(current + 1));
+    document.addEventListener('keydown',(event) => {
+      if (event.key === 'ArrowLeft') go(current - 1);
+      if (event.key === 'ArrowRight') go(current + 1);
+    });
+    renderCase();
+    requestAnimationFrame(() => window.scrollTo(0,0));
+  </script>
+</body>
+</html>
