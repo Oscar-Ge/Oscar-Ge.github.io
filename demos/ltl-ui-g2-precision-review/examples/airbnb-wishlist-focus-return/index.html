@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>AP-M1-04 · Three-state focus-return example</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#trace">Skip to trace</a>
+    <main class="page-shell">
+      <nav class="top-nav" aria-label="Demo navigation">
+        <a href="../../">← 26-finding review</a>
+        <a href="./evidence.json">Evidence JSON</a>
+      </nav>
+
+      <header class="hero">
+        <div class="badge-row">
+          <span class="badge archive">Archived worked example</span>
+          <span class="badge ap">AP-M1-04</span>
+          <span class="badge violation">Violation observed</span>
+        </div>
+        <p class="eyebrow">Modal focus return</p>
+        <h1>Wishlist closes, focus does not return</h1>
+        <p class="lede">
+          The same heart button can still receive focus. Escape closes the
+          modal, but focus settles on <code>BODY</code>.
+        </p>
+      </header>
+
+      <section class="contract" aria-labelledby="contract-title">
+        <div>
+          <p class="section-label">Temporal contract</p>
+          <h2 id="contract-title">What the checker requires</h2>
+        </div>
+        <code class="formula">G(bound_modal_escape_closes(d,i) -&gt; F_[0,500ms] focus_is_exact_invoker(i))</code>
+        <pre class="bombadil"><code>always(() =&gt;
+  m1ExactInvokerReturnContractHolds(
+    m1FocusReturnObservation.current));</code></pre>
+      </section>
+
+      <section id="trace" class="trace-section" aria-labelledby="trace-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Three evidence-bound states</p>
+            <h2 id="trace-title">Open → interact → lose position</h2>
+          </div>
+          <p>No added focus box; the legacy trace does not carry focus geometry.</p>
+        </div>
+
+        <div class="state-flow">
+          <article class="state-card">
+            <div class="state-heading">
+              <span>State 1</span>
+              <strong>Heart button focused</strong>
+            </div>
+            <img
+              src="./assets/state-1-heart-focused.jpeg"
+              alt="Airbnb stays page with the Saltwater Cottage heart button carrying the browser's native focus outline."
+              width="1024"
+              height="768"
+            >
+            <p><code>activeTag = BUTTON</code> · no dialog</p>
+            <small>Trace line 521 · t = 1785196065273875 µs</small>
+          </article>
+
+          <div class="flow-action" aria-label="Transition: press Space">
+            <kbd>Space</kbd>
+            <span aria-hidden="true">→</span>
+          </div>
+
+          <article class="state-card">
+            <div class="state-heading">
+              <span>State 2</span>
+              <strong>Wishlist input focused</strong>
+            </div>
+            <img
+              src="./assets/state-2-modal-input-focused.jpeg"
+              alt="Save to wishlist modal open with its text input carrying the browser's native focus outline."
+              width="1024"
+              height="768"
+            >
+            <p><code>activeTag = INPUT</code> · dialog present</p>
+            <small>Trace line 522 · t = 1785196065438963 µs</small>
+          </article>
+
+          <div class="flow-action" aria-label="Transition: Escape, then settle for 500 milliseconds">
+            <kbd>Escape</kbd>
+            <span>+ 500 ms</span>
+            <span aria-hidden="true">→</span>
+          </div>
+
+          <article class="state-card violated">
+            <div class="state-heading">
+              <span>State 3</span>
+              <strong>BODY focused</strong>
+            </div>
+            <img
+              src="./assets/state-3-body-focused.jpeg"
+              alt="Airbnb stays page after the modal closed, with no focused control visible because document body has focus."
+              width="1024"
+              height="768"
+            >
+            <p><code>activeTag = BODY</code> · dialog closed</p>
+            <small>Formal witness · trace line 525 · t = 1785196066227871 µs</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="verdict-grid" aria-label="Expected and observed behavior">
+        <article>
+          <p class="section-label">Expected</p>
+          <h2>Return to the same heart</h2>
+          <p>Focus goes back to the exact eligible button that opened the modal.</p>
+        </article>
+        <article class="observed">
+          <p class="section-label">Observed</p>
+          <h2>Focus settles on BODY</h2>
+          <p>The modal is closed and no replacement modal exists, but the exact invoker is not focused.</p>
+        </article>
+      </section>
+
+      <section class="review-card" aria-labelledby="review-title">
+        <div>
+          <p class="section-label">Mentor check</p>
+          <h2 id="review-title">Does this interpretation make sense?</h2>
+        </div>
+        <div class="review-actions">
+          <button type="button" data-decision="make-sense">Make sense</button>
+          <button type="button" data-decision="unsure">Unsure</button>
+          <button type="button" data-decision="reject">Reject</button>
+        </div>
+        <p id="review-status" role="status">Stored only in this browser.</p>
+      </section>
+
+      <footer class="evidence-footer">
+        <p>
+          <strong>Claim boundary.</strong>
+          This is an Archived worked example from an earlier 600-second replay;
+          it is not part of the current 137-site / 26-finding dataset.
+        </p>
+        <p>
+          Verify:
+          <a href="./evidence.json">evidence manifest</a>,
+          <a href="./evidence/trace.jsonl.gz">full Bombadil trace</a>,
+          <a href="./evidence/result.json.gz">attempt result</a>, or
+          <a href="https://github.com/Oscar-Ge/LTL-UI/blob/b9056ef3266c2adcc1476d5e7dbcacada35a63f2/online-v2/specs/atomic/properties/dialog/ap-m1-04.ts">checker source</a>.
+        </p>
+      </footer>
+    </main>
+    <script src="./review.js"></script>
+  </body>
+</html>

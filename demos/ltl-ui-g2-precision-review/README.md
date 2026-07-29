@@ -137,3 +137,22 @@ the summary reports observed agreement and Cohen's kappa as a diagnostic only,
 not as a population reliability or ground-truth estimate.
 The UI intentionally starts with no selected user decisions; preliminary agent
 judgments do not pre-populate or bias the browser annotation controls.
+
+## Archived three-state worked example
+
+`examples/airbnb-wishlist-focus-return/` presents one earlier AP-M1-04
+counterexample as three consecutive screenshot-backed states:
+
+```text
+heart button focused
+→ Space
+wishlist input focused
+→ Escape + 500 ms
+modal closed, BODY focused
+```
+
+This example is deliberately separate from the 137-site, 26-finding dataset.
+Its `evidence.json` binds every screenshot to a trace line and timestamp and
+publishes the compressed full trace and attempt result with hashes of their
+uncompressed bytes. Because the legacy recorder did not retain DOM event IDs or
+focus geometry, the page does not draw a synthetic focus box.

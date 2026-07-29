@@ -280,6 +280,11 @@ function mastheadHtml() {
           Preliminary agent triage
         </a>
       </span>
+      <span>
+        <a href="${root}examples/airbnb-wishlist-focus-return/">
+          Three-state worked example
+        </a>
+      </span>
     </div>
     <p id="status" class="status${notice?.isError ? " error" : ""}" role="status">
       ${notice ? escapeHtml(notice.message) : ""}

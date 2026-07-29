@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "ltl-ui-multistate-example/1",
+  "id": "archived-airbnb-wishlist-ap-m1-04",
+  "atomicId": "AP-M1-04",
+  "taxonomyClass": "M1",
+  "outcome": "VIOLATION_OBSERVED",
+  "title": "Wishlist closes, focus does not return",
+  "temporalFormula": "G(bound_modal_escape_closes(d,i) -> F_[0,500ms] focus_is_exact_invoker(i))",
+  "bombadilAssertion": "always(() =>\n  m1ExactInvokerReturnContractHolds(m1FocusReturnObservation.current));",
+  "expected": "After Escape closes the wishlist modal, focus returns to the exact heart button that opened it.",
+  "observed": "The modal closed, the same heart button remained eligible, but settled focus was BODY.",
+  "claimBoundary": "Archived worked example from an earlier 600-second replay. It is not part of the 137-site / 26-finding dataset and is presented separately to demonstrate an evidence-bound three-state explanation.",
+  "captureLimitations": "The legacy trace has no DOM event IDs and no focus geometry. Each screenshot is bound by trace line and timestamp; the page does not add a synthetic focus box.",
+  "source": {
+    "commit": "b9056ef3266c2adcc1476d5e7dbcacada35a63f2",
+    "attemptId": "033__airbnb__g0-none__600s__replay-1",
+    "site": "airbnb",
+    "condition": "g0-none",
+    "budgetSeconds": 600,
+    "propertySourceUrl": "https://github.com/Oscar-Ge/LTL-UI/blob/b9056ef3266c2adcc1476d5e7dbcacada35a63f2/online-v2/specs/atomic/properties/dialog/ap-m1-04.ts",
+    "artifacts": [
+      {
+        "kind": "bombadil-trace",
+        "path": "evidence/trace.jsonl.gz",
+        "uncompressedSha256": "sha256:5f2741c0e95d30195097a0e6636fd6753e0cee5fe6d0010b8f94511b7019ab04",
+        "uncompressedByteCount": 15435560
+      },
+      {
+        "kind": "attempt-result",
+        "path": "evidence/result.json.gz",
+        "uncompressedSha256": "sha256:38cc47be96b950e6cc4e70a8ea15a92532b46a03e5a9b90f67321dbfef32f0a8",
+        "uncompressedByteCount": 15252
+      }
+    ]
+  },
+  "states": [
+    {
+      "id": "invoker-focused",
+      "label": "Heart button focused",
+      "traceLine": 521,
+      "timestamp": 1785196065273875,
+      "triggeringAction": "Tab",
+      "focus": {
+        "tag": "BUTTON",
+        "role": "",
+        "evidencePath": "snapshots[0].value.activeTag"
+      },
+      "dialogPresent": false,
+      "screenshot": {
+        "path": "assets/state-1-heart-focused.jpeg",
+        "sha256": "sha256:41cdaf578dd3efaaf274dcef87934f7659f8299c4d9197860f142e9c7fa842c1",
+        "byteCount": 33939,
+        "focusGeometry": null
+      }
+    },
+    {
+      "id": "modal-focused",
+      "label": "Wishlist input focused",
+      "traceLine": 522,
+      "timestamp": 1785196065438963,
+      "triggeringAction": "Space",
+      "focus": {
+        "tag": "INPUT",
+        "role": "",
+        "evidencePath": "snapshots[0].value.activeTag"
+      },
+      "dialogPresent": true,
+      "screenshot": {
+        "path": "assets/state-2-modal-input-focused.jpeg",
+        "sha256": "sha256:59287968c2b22984a877641fc515ecc119b33e159d67f4a74cda596478a699f6",
+        "byteCount": 31739,
+        "focusGeometry": null
+      }
+    },
+    {
+      "id": "deadline-violation",
+      "label": "BODY focused",
+      "traceLine": 525,
+      "traceEntryIndex": 524,
+      "timestamp": 1785196066227871,
+      "triggeringAction": "Wait",
+      "focus": {
+        "tag": "BODY",
+        "role": "",
+        "evidencePath": "snapshots[0].value.activeTag"
+      },
+      "dialogPresent": false,
+      "screenshot": {
+        "path": "assets/state-3-body-focused.jpeg",
+        "sha256": "sha256:2acc20523a02804abf0ee2cc1f6f9e0e39d773ce7b02efbe2dd6c3fe2abe7cc3",
+        "byteCount": 33826,
+        "focusGeometry": null
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "invoker-focused",
+      "to": "modal-focused",
+      "action": "Space"
+    },
+    {
+      "from": "modal-focused",
+      "to": "deadline-violation",
+      "action": "Escape + 500 ms settlement"
+    }
+  ],
+  "violation": {
+    "originalDialogClosed": true,
+    "replacementModalCount": 0,
+    "invokerEligible": true,
+    "focusIsExactInvoker": false
+  }
+}
