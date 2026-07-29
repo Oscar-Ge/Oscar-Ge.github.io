@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "ltl-ui-agent-review-summary/1",
+  "datasetId": "g2-formal-4bf9ed002f7c75f0",
+  "datasetIdentity": "sha256:587e8ab8d5e1dbee38b2e8178187edf9b3e1a58acbc8971eb3597b0fb3d29307",
+  "reviewedFindingCount": 26,
+  "counts": {
+    "make-sense": 19,
+    "unsure": 6,
+    "reject": 1
+  },
+  "reports": [
+    {
+      "reviewer": "A",
+      "relativePath": "reviewer-a.json",
+      "sha256": "sha256:0350e8edb4e06542cba611af92757845dab5cf958c0d830baf428f9bb7d5fda1",
+      "byteCount": 15246
+    },
+    {
+      "reviewer": "B",
+      "relativePath": "reviewer-b.json",
+      "sha256": "sha256:bf3c6120053b58497006194205a5253e2cd49f83e0090125180f8232f7386ef0",
+      "byteCount": 17350
+    },
+    {
+      "reviewer": "C",
+      "relativePath": "reviewer-c.json",
+      "sha256": "sha256:2ff57513d22a0977a7b522a5ff8bd2e3b18672f18516f71d291632e46b0ec2ad",
+      "byteCount": 13706
+    }
+  ],
+  "overlap": {
+    "report": {
+      "relativePath": "reviewer-overlap.json",
+      "sha256": "sha256:5cf6f1ba168e3a496e675ee33dbcc0818b832fadd014b552b77b8cf1569f4327",
+      "byteCount": 4271
+    },
+    "sampleSize": 8,
+    "agreementCount": 5,
+    "observedAgreement": 0.625,
+    "expectedAgreement": 0.453125,
+    "cohenKappa": 0.3142857142857143,
+    "samplingBoundary": "The overlap set was a small purposive sample spanning properties and initial decisions; this is diagnostic agreement, not a population reliability estimate."
+  },
+  "method": "Three reviewers triaged disjoint finding ranges; a fourth independently reviewed a small purposive overlap sample. This is preliminary case screening, not ground-truth annotation.",
+  "agreementBoundary": "Kappa describes only the purposive overlap sample and is not a population reliability estimate.",
+  "claimBoundary": "A make-sense decision supports the checker interpretation for demo triage; it is not BLV ground truth or a task-effectiveness claim.",
+  "reviews": [
+    {
+      "reviewer": "A",
+      "line": 1,
+      "findingId": "F::004__airbnb__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 2,
+      "findingId": "F::004__airbnb__g2-taxonomy-informed__120s__replay-1:AP-W3-01:first-counterexample",
+      "atomicId": "AP-W3-01",
+      "decision": "reject"
+    },
+    {
+      "reviewer": "A",
+      "line": 3,
+      "findingId": "F::010__apartments__g2-taxonomy-informed__120s__replay-1:AP-M1-05:first-counterexample",
+      "atomicId": "AP-M1-05",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 4,
+      "findingId": "F::012__babycenter__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+      "atomicId": "AP-M1-03",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 5,
+      "findingId": "F::019__ca-gov__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 6,
+      "findingId": "F::023__carmax__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+      "atomicId": "AP-M1-03",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 7,
+      "findingId": "F::026__coinmarketcap__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+      "atomicId": "AP-M1-04",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 8,
+      "findingId": "F::037__epicurious__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "A",
+      "line": 9,
+      "findingId": "F::041__exploretock__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    },
+    {
+      "reviewer": "B",
+      "line": 10,
+      "findingId": "F::044__finance-google__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+      "atomicId": "AP-M1-04",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "B",
+      "line": 11,
+      "findingId": "F::051__health-usnews__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+      "atomicId": "AP-M1-04",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "B",
+      "line": 12,
+      "findingId": "F::054__hiring-amazon__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    },
+    {
+      "reviewer": "B",
+      "line": 13,
+      "findingId": "F::055__ign__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "B",
+      "line": 14,
+      "findingId": "F::063__kbb__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    },
+    {
+      "reviewer": "B",
+      "line": 15,
+      "findingId": "F::063__kbb__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+      "atomicId": "AP-M1-03",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "B",
+      "line": 16,
+      "findingId": "F::065__kohls__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    },
+    {
+      "reviewer": "B",
+      "line": 17,
+      "findingId": "F::074__movoto__g2-taxonomy-informed__120s__replay-1:AP-M1-05:first-counterexample",
+      "atomicId": "AP-M1-05",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "B",
+      "line": 18,
+      "findingId": "F::078__nfl__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    },
+    {
+      "reviewer": "C",
+      "line": 19,
+      "findingId": "F::099__shopping-google__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 20,
+      "findingId": "F::102__sports-yahoo__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 21,
+      "findingId": "F::102__sports-yahoo__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+      "atomicId": "AP-M1-04",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 22,
+      "findingId": "F::104__stocktwits__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 23,
+      "findingId": "F::114__tiktok-music__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 24,
+      "findingId": "F::115__travelzoo__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 25,
+      "findingId": "F::119__twitter__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+      "atomicId": "AP-M1-04",
+      "decision": "make-sense"
+    },
+    {
+      "reviewer": "C",
+      "line": 26,
+      "findingId": "F::136__zocdoc__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+      "atomicId": "AP-FM1-01",
+      "decision": "unsure"
+    }
+  ]
+}

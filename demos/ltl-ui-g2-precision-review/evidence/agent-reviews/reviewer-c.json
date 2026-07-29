@@ -1,0 +1,218 @@
+[
+  {
+    "lineNumber": 19,
+    "findingId": "F::099__shopping-google__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "shopping-google",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "A trusted Space keydown removed the focused rating-filter button; after the 500 ms uncontaminated same-view observation, settled focus was the unexposed document."
+    },
+    "trigger": {
+      "eventId": 112,
+      "action": "Space",
+      "control": "BUTTON named \"4\" (active 4-stars filter)"
+    },
+    "historyDependency": "The violation requires linking the earlier focusin on node-15, its activation/removal, and the later document focus; the final DOM alone only shows that the active filter disappeared.",
+    "taskConsequence": {
+      "support": "partial",
+      "evidence": "The next Tab starts at the first result's Save button rather than retaining a stable location in the filter controls. This supports position loss and extra reorientation, but not task failure."
+    },
+    "staticOrAgentDetectability": "A static snapshot may see neither the removed focused incarnation nor the transient document focus. A code agent could flag missing post-removal focus management if it traces the state update, but that capability is not established by this trace.",
+    "demoValue": {
+      "rating": "medium",
+      "rationale": "Clear same-route focus invalidation, although the control name \"4\" is terse and recovery reaches results after one Tab."
+    },
+    "officialScreenshot": "attempts/099__shopping-google__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279900256012.jpeg"
+  },
+  {
+    "lineNumber": 20,
+    "findingId": "F::102__sports-yahoo__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "sports-yahoo",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "Enter on the focused Remove button deleted that saved-story card; the complete, stable 500 ms observation found document focus with no exposed element."
+    },
+    "trigger": {
+      "eventId": 671,
+      "action": "Enter",
+      "control": "BUTTON \"Remove LeBron James injury update: Lakers star progressing after foot issue\""
+    },
+    "historyDependency": "The remaining-page screenshot cannot show that the removed story's button held focus. Events 668-673 establish focus, activation, removal, and loss to BODY.",
+    "taskConsequence": {
+      "support": "partial",
+      "evidence": "The next Tab reaches the remaining MLB story link, so the task is recoverable, but the user receives no retained focus target after deletion. The screenshot also shows the story removed and a confirmation toast."
+    },
+    "staticOrAgentDetectability": "A static DOM checker cannot reconstruct focus on the deleted card. A code agent might detect a list-item deletion without a focus fallback, but only if it reasons across the handler and rerender.",
+    "demoValue": {
+      "rating": "high",
+      "rationale": "The before-action identity, deletion, body-focus state, remaining-list screenshot, and next-Tab recovery form a compact history-dependent example."
+    },
+    "officialScreenshot": "attempts/102__sports-yahoo__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279960747102.jpeg"
+  },
+  {
+    "lineNumber": 21,
+    "findingId": "F::102__sports-yahoo__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "site": "sports-yahoo",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "The Share dialog closed after a trusted Escape, the original Share invoker remained eligible, no replacement modal appeared, and focus did not return to that exact invoker by the 500 ms deadline."
+    },
+    "trigger": {
+      "eventId": 261,
+      "action": "Escape",
+      "control": "TEXTAREA #share-copy inside the Share dialog; invoker was BUTTON \"Share\" activated at event 257"
+    },
+    "historyDependency": "The final article page does not identify which control opened the dismissed dialog. Events 257-263 bind Share activation, focus in the dialog textarea, Escape dismissal, and focus loss to BODY.",
+    "taskConsequence": {
+      "support": "strong",
+      "evidence": "After dismissal, the next Tab reaches the site logo near the page chrome instead of Share, showing a navigation-position reset. The trace supports extra traversal, not ultimate task failure."
+    },
+    "staticOrAgentDetectability": "A static snapshot after dismissal contains no modal or opener relationship history. An agent reviewing the dialog handler could notice omitted focus restoration, but this is not guaranteed and was not tested here.",
+    "demoValue": {
+      "rating": "high",
+      "rationale": "Canonical dialog history: open from Share, interact inside, Escape, dialog closes, focus fails to return, and subsequent Tab jumps far away."
+    },
+    "officialScreenshot": "attempts/102__sports-yahoo__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279916616230.jpeg"
+  },
+  {
+    "lineNumber": 22,
+    "findingId": "F::104__stocktwits__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "stocktwits",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "Space on the focused Cancel button removed the inline composer; the same-view, uncontaminated 500 ms observation found only document focus."
+    },
+    "trigger": {
+      "eventId": 22,
+      "action": "Space",
+      "control": "BUTTON \"Cancel\" in the inline post composer"
+    },
+    "historyDependency": "The post-dismissal screenshot omits the composer, so only the earlier focus and activation records show that Cancel was the invalidated focused control.",
+    "taskConsequence": {
+      "support": "partial",
+      "evidence": "The next Tab reaches the For You tab rather than the composer trigger or another explicit recovery target. This supports lost local position, while task blockage is not shown."
+    },
+    "staticOrAgentDetectability": "A static final-state checker sees a valid feed. A source agent could potentially infer the missing focus fallback across composer cancellation, but the runtime focus transition is the direct evidence.",
+    "demoValue": {
+      "rating": "medium",
+      "rationale": "Understandable same-page cancellation failure, but the next Tab recovers to a nearby major tab after one keystroke."
+    },
+    "officialScreenshot": "attempts/104__stocktwits__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785280021843247.jpeg"
+  },
+  {
+    "lineNumber": 23,
+    "findingId": "F::114__tiktok-music__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "tiktok-music",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "The focused Close button was removed when the NovaBook performance detail closed; after a complete 500 ms same-route observation, focus was the document rather than an exposed element."
+    },
+    "trigger": {
+      "eventId": 363,
+      "action": "Space",
+      "control": "BUTTON \"Close NovaBook Air 14 performance\""
+    },
+    "historyDependency": "Events 359-365 show that View performance analytics opened the detail and moved focus to Close before the later close action invalidated it. The final products screenshot alone cannot recover that opener relationship.",
+    "taskConsequence": {
+      "support": "strong",
+      "evidence": "The next Tab goes to Skip to main content, resetting keyboard navigation to the page start rather than the View performance analytics invoker. Completion impact beyond the reset was not measured."
+    },
+    "staticOrAgentDetectability": "A static post-close snapshot cannot observe the opener, removed Close button, or document-focus interval. A code agent may detect absent invoker restoration if it follows both open and close handlers.",
+    "demoValue": {
+      "rating": "high",
+      "rationale": "Multi-step open/close history with a concrete navigation reset to the page-start skip link."
+    },
+    "officialScreenshot": "attempts/114__tiktok-music__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785280193709530.jpeg"
+  },
+  {
+    "lineNumber": 24,
+    "findingId": "F::115__travelzoo__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "travelzoo",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "Space on focused Clear filters caused that exact control incarnation to be removed during a same-URL results rerender; the complete observation found document focus."
+    },
+    "trigger": {
+      "eventId": 228,
+      "action": "Space",
+      "control": "BUTTON \"Clear filters\""
+    },
+    "historyDependency": "The transition from zero matches to 20 deals and loss of the exact focused button requires the pre/post observation; the final screenshot still shows equivalent filter UI and cannot expose the replaced node identity.",
+    "taskConsequence": {
+      "support": "partial",
+      "evidence": "The next Tab lands on Save for the first deal, leaving the filter location without an explicit focus or announcement target. This may aid result browsing, so the evidence supports position loss but not that the user's task was blocked."
+    },
+    "staticOrAgentDetectability": "A static snapshot may consider the rerendered filter/results UI valid and cannot see incarnation loss. A code agent might flag unstable keys or missing focus preservation if those implementation details are evident.",
+    "demoValue": {
+      "rating": "high",
+      "rationale": "Shows why node identity and temporal history matter: visually similar controls remain, but the focused incarnation is destroyed during a meaningful results update."
+    },
+    "officialScreenshot": "attempts/115__travelzoo__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785280175119664.jpeg"
+  },
+  {
+    "lineNumber": 25,
+    "findingId": "F::119__twitter__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "site": "twitter",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "Escape closed the Edit profile dialog, its exact Edit profile invoker remained eligible, no replacement modal appeared, and focus was not restored to the invoker by the 500 ms deadline."
+    },
+    "trigger": {
+      "eventId": 447,
+      "action": "Escape",
+      "control": "BUTTON \"Close\" inside Edit profile; invoker was BUTTON \"Edit profile\" activated at event 443"
+    },
+    "historyDependency": "Events 443-449 bind opener activation, modal Close focus, Escape, dismissal, and BODY focus. None of that opener/dismissal history is recoverable from the final profile DOM alone.",
+    "taskConsequence": {
+      "support": "strong",
+      "evidence": "The next Tab moves to the global search input, not Edit profile, so the user loses the profile-editing position and enters unrelated page chrome. The trace does not show ultimate task abandonment."
+    },
+    "staticOrAgentDetectability": "A post-dismissal static checker cannot determine the required return target. A source agent could catch omitted dialog focus restoration if it understands the opener lifecycle, but this trace does not benchmark that.",
+    "demoValue": {
+      "rating": "high",
+      "rationale": "Clear, canonical and easily explainable opener-dialog-dismissal counterexample with an unrelated next focus target."
+    },
+    "officialScreenshot": "attempts/119__twitter__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785280189447145.jpeg"
+  },
+  {
+    "lineNumber": 26,
+    "findingId": "F::136__zocdoc__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "zocdoc",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "assessment": "correct",
+      "evidence": "Enter on Continue to your details replaced the focused step-one control while URL, navigation entry and heading context remained stable; after 500 ms the only focus was the unexposed document."
+    },
+    "trigger": {
+      "eventId": 770,
+      "action": "Enter",
+      "control": "BUTTON \"Continue to your details\""
+    },
+    "historyDependency": "The pre/post observation is required to show an in-place wizard transition from appointment details to personal details and the invalidation of the focused Continue button.",
+    "taskConsequence": {
+      "support": "weak",
+      "evidence": "The next Tab reaches the first-name input, which is a plausible next task target after one keystroke. The trace has no screen-reader announcement evidence, so it does not establish that the user failed to discover the new step."
+    },
+    "staticOrAgentDetectability": "A static final snapshot sees a coherent details form and cannot prove the preceding focus loss. A source agent may infer that the wizard should focus the new heading or first field, but actual nonvisual feedback is not measured.",
+    "demoValue": {
+      "rating": "medium",
+      "rationale": "Good checker-contract example, but weaker BLV-barrier evidence because one Tab reaches the expected first field and no AT output is available."
+    },
+    "officialScreenshot": "attempts/136__zocdoc__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785280634548838.jpeg"
+  }
+]

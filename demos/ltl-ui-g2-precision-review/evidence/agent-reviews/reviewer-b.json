@@ -1,0 +1,317 @@
+[
+  {
+    "line": 10,
+    "findingId": "F::044__finance-google__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "site": "finance-google",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Enter on Add to portfolio (event 526) opened one dialog and focused Close dialog (event 527). Trusted Escape on Close dialog (event 530) closed the original dialog, but settled focus became BODY (event 532), not the still-eligible exact invoker."
+    },
+    "userLevelBarrier": {
+      "status": "supported",
+      "evidence": "The interaction loses the modal opener position: the next Tab starts at Skip to main content (event 534) rather than Add to portfolio. The official screenshot shows the closed dialog and intact Add to portfolio control, but no restored focus."
+    },
+    "eventEvidence": {
+      "triggerEventId": 530,
+      "action": "Escape",
+      "control": "Close dialog",
+      "priorInvokerEventId": 526,
+      "priorInvoker": "Add to portfolio",
+      "settledEventId": 532,
+      "settledFocus": "BODY"
+    },
+    "historyDependency": "Requires binding the opener at event 526 to the exact modal, then comparing focus after the later Escape; the final BODY state alone cannot identify the missing destination.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "The campaign used undeclared exploration, so no task completion consequence was observed."
+    },
+    "staticOrAgentDetectability": "A static snapshot cannot establish the opener-to-close focus-return relation. An interaction agent that records exact focus identity before opening and after Escape could detect it; this is not claimed to require LTL exclusively.",
+    "demoValue": {
+      "rating": "high",
+      "evidence": "Short, reproducible open-dialog-close trace with an exact expected focus destination and visible surviving invoker."
+    },
+    "officialScreenshot": "attempts/044__finance-google__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279039857739.jpeg"
+  },
+  {
+    "line": 11,
+    "findingId": "F::051__health-usnews__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "site": "health-usnews",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Space on Request appointment (event 799) opened the appointment dialog and focused Close appointment form (event 801). After Tab into an input, trusted Escape (event 807) closed the dialog but settled focus became BODY (event 809), not the eligible Request appointment invoker."
+    },
+    "userLevelBarrier": {
+      "status": "supported",
+      "evidence": "The next Tab went to the U.S. HEALTHGUIDE header link (event 811), confirming loss of the appointment-card position. The screenshot shows the closed form and doctor cards without restored focus."
+    },
+    "eventEvidence": {
+      "triggerEventId": 807,
+      "action": "Escape",
+      "control": "Unnamed input inside appointment dialog",
+      "priorInvokerEventId": 799,
+      "priorInvoker": "Request appointment",
+      "settledEventId": 809,
+      "settledFocus": "BODY"
+    },
+    "historyDependency": "Requires remembering which Request appointment button opened the dialog and verifying that focus did not return there after Escape.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No appointment task or completion criterion was declared in this exploration."
+    },
+    "staticOrAgentDetectability": "The failure is temporal and absent from a single post-close DOM snapshot. A focus-tracking interaction agent could detect the wrong return target.",
+    "demoValue": {
+      "rating": "high",
+      "evidence": "The trace directly shows modal entry, Escape close, BODY fallback, and a subsequent jump to header navigation."
+    },
+    "officialScreenshot": "attempts/051__health-usnews__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279202378492.jpeg"
+  },
+  {
+    "line": 12,
+    "findingId": "F::054__hiring-amazon__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "hiring-amazon",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Space on Sign up for alerts (event 175) removed the exact focused button and settled focus on BODY (event 177) in the same stable /jobs view. This matches the narrow FM1 contract."
+    },
+    "userLevelBarrier": {
+      "status": "uncertain",
+      "evidence": "One later Tab moved directly to the newly revealed email input (event 179). The BODY fallback is real, but this trace does not show a sustained navigation detour."
+    },
+    "eventEvidence": {
+      "triggerEventId": 175,
+      "action": "Space",
+      "control": "Sign up for alerts",
+      "settledEventId": 177,
+      "settledFocus": "BODY",
+      "recoveryEventId": 179,
+      "recoveryFocus": "Unnamed email input"
+    },
+    "historyDependency": "Requires comparing the removed activation control with focus at the 500 ms deadline; the later form alone does not expose the transient BODY fallback.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No alert-signup task was declared, and the trace does not show whether form completion was impeded."
+    },
+    "staticOrAgentDetectability": "A static checker may see the resulting form but not the focus fallback. A scripted interaction agent with focus logging could detect it.",
+    "demoValue": {
+      "rating": "low",
+      "evidence": "Useful contract example, but the next Tab reaches the relevant new field, weakening the user-level barrier interpretation."
+    },
+    "officialScreenshot": "attempts/054__hiring-amazon__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279129859305.jpeg"
+  },
+  {
+    "line": 13,
+    "findingId": "F::055__ign__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "ign",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Enter on Save story (event 349) changed the exact control to natively disabled Saved and settled focus on BODY (event 351) while URL, main view, and heading remained stable."
+    },
+    "userLevelBarrier": {
+      "status": "supported",
+      "evidence": "The next Tab jumped to the top IGN logo (event 353), away from the saved story near the bottom of the page. The screenshot shows the disabled Saved control at the prior location with no focus."
+    },
+    "eventEvidence": {
+      "triggerEventId": 349,
+      "action": "Enter",
+      "control": "Save story",
+      "settledEventId": 351,
+      "settledFocus": "BODY",
+      "recoveryEventId": 353,
+      "recoveryFocus": "IGN logo link"
+    },
+    "historyDependency": "Requires knowing the story control's prior focus and page position, its disabled replacement state, and the subsequent reset to header navigation.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "The save action succeeded visually, but no continuing user task was declared or evaluated."
+    },
+    "staticOrAgentDetectability": "A post-state static checker could see a disabled Saved control but not prove focus reset. An interaction agent that records focus before and after activation could detect the transition.",
+    "demoValue": {
+      "rating": "high",
+      "evidence": "Compact local-state change with a clearly evidenced jump from an article control to top-level navigation."
+    },
+    "officialScreenshot": "attempts/055__ign__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279150922755.jpeg"
+  },
+  {
+    "line": 14,
+    "findingId": "F::063__kbb__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "kbb",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Enter on Continue (event 83) removed the step-one control and settled focus on BODY (event 85) while the same /car-values view advanced from step one to step two."
+    },
+    "userLevelBarrier": {
+      "status": "uncertain",
+      "evidence": "The next Tab reached the first step-two mileage input (event 87). The checker correctly identifies the 500 ms BODY fallback, but the trace does not show an extended loss of navigation position."
+    },
+    "eventEvidence": {
+      "triggerEventId": 83,
+      "action": "Enter",
+      "control": "Continue",
+      "settledEventId": 85,
+      "settledFocus": "BODY",
+      "recoveryEventId": 87,
+      "recoveryFocus": "Current mileage input"
+    },
+    "historyDependency": "Requires observing the exact Continue control disappear during an in-place step change and measuring focus before the later Tab recovery.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No vehicle-valuation task completion outcome was declared or observed."
+    },
+    "staticOrAgentDetectability": "A static snapshot can identify step two but not how focus arrived there. A focus-instrumented agent can detect the transient fallback.",
+    "demoValue": {
+      "rating": "low",
+      "evidence": "The narrow contract violation is clean, but one Tab reaches the expected next input and the task-level impact is unresolved."
+    },
+    "officialScreenshot": "attempts/063__kbb__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279251020307.jpeg"
+  },
+  {
+    "line": 15,
+    "findingId": "F::063__kbb__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+    "site": "kbb",
+    "atomicId": "AP-M1-03",
+    "decision": "make-sense",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Escape while focus was inside the visible Confirm availability dialog did not close the exact dialog within 500 ms. The property observation records sameDialogConnected=true and sameDialogVisible=true."
+    },
+    "userLevelBarrier": {
+      "status": "supported",
+      "evidence": "Escape attempts at events 512, 515, and 518 all left focus on the same dialog input; the official screenshot still shows the modal. A further Escape at event 521 also left it open, strengthening reproducibility within the same run."
+    },
+    "eventEvidence": {
+      "triggerEventId": 518,
+      "action": "Escape",
+      "control": "Unnamed email input in Confirm availability dialog",
+      "priorDialogOpenerEventId": 460,
+      "priorDialogOpener": "Confirm availability",
+      "settledEventId": 520,
+      "settledFocus": "Same dialog input"
+    },
+    "historyDependency": "Requires establishing that focus is inside the same visible modal before Escape and that the exact modal remains visible after the deadline; the screenshot alone does not prove Escape was attempted.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "The trace establishes ineffective dismissal but does not declare a vehicle-shopping task or measure completion."
+    },
+    "staticOrAgentDetectability": "A static checker can see the open dialog but cannot know that Escape failed. A keyboard interaction agent can detect this with an Escape-and-observe test.",
+    "demoValue": {
+      "rating": "high",
+      "evidence": "Visually clear modal, repeated trusted Escape evidence, stable same-document state, and an exact temporal failure."
+    },
+    "officialScreenshot": "attempts/063__kbb__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279293901042.jpeg"
+  },
+  {
+    "line": 16,
+    "findingId": "F::065__kohls__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "kohls",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Enter on Clear filters (event 516) removed the exact control and settled focus on BODY (event 518) while the URL, history entry, heading, and main view identity remained stable."
+    },
+    "userLevelBarrier": {
+      "status": "uncertain",
+      "evidence": "The result set changed from zero to two products, and the next Tab reached a control for the first resulting product (event 520). The trace confirms transient focus loss but not a sustained navigation barrier."
+    },
+    "eventEvidence": {
+      "triggerEventId": 516,
+      "action": "Enter",
+      "control": "Clear filters",
+      "settledEventId": 518,
+      "settledFocus": "BODY",
+      "recoveryEventId": 520,
+      "recoveryFocus": "Remove Nine West Ribbed Crewneck Sweater"
+    },
+    "historyDependency": "Requires comparing the pre-clear empty-result view, disappearance of the activated control, and focus at the settled deadline before the later result navigation.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No shopping target or filter-clearing task was declared."
+    },
+    "staticOrAgentDetectability": "Static analysis can inspect the resulting controls but not the activation-to-focus transition. A dynamic agent with exact focus logging could detect it.",
+    "demoValue": {
+      "rating": "low",
+      "evidence": "The contract evidence is valid, but immediate Tab recovery into new results makes user-level significance uncertain."
+    },
+    "officialScreenshot": "attempts/065__kohls__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279435155128.jpeg"
+  },
+  {
+    "line": 17,
+    "findingId": "F::074__movoto__g2-taxonomy-informed__120s__replay-1:AP-M1-05:first-counterexample",
+    "site": "movoto",
+    "atomicId": "AP-M1-05",
+    "decision": "make-sense",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Enter on Get a quote (event 499) opened exactly one same-document modal, but settled focus remained on the underlying Get a quote button (event 501) rather than entering the new modal."
+    },
+    "userLevelBarrier": {
+      "status": "supported",
+      "evidence": "The next Tab moved to an underlying telephone link (event 503), still outside the modal. The official screenshot visibly shows the modal while the focus ring remains on the obscured page behind it."
+    },
+    "eventEvidence": {
+      "triggerEventId": 499,
+      "action": "Enter",
+      "control": "Get a quote",
+      "settledEventId": 501,
+      "settledFocus": "Underlying Get a quote button",
+      "recoveryEventId": 503,
+      "recoveryFocus": "Underlying (443) 555-0191 link"
+    },
+    "historyDependency": "Requires comparing the pre-activation modal inventory with the exact newly visible modal and checking whether post-activation focus belongs to that node.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No quote-request task or completion consequence was declared."
+    },
+    "staticOrAgentDetectability": "A static checker may notice modal markup but cannot establish that focus stayed behind after this activation. A focus-aware interaction agent could detect it.",
+    "demoValue": {
+      "rating": "high",
+      "evidence": "The screenshot and trace agree on a visually open modal with keyboard focus continuing through obscured background controls."
+    },
+    "officialScreenshot": "attempts/074__movoto__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279558251449.jpeg"
+  },
+  {
+    "line": 18,
+    "findingId": "F::078__nfl__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "site": "nfl",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "status": "supported",
+      "evidence": "Trusted Space on Show 49ers schedule (event 696) removed the exact control and settled focus on BODY (event 698) while the same /schedule view replaced the prompt with the 49ers schedule."
+    },
+    "userLevelBarrier": {
+      "status": "uncertain",
+      "evidence": "The next Tab reached Set alert for 49ers at Seahawks (event 700), a control in the newly shown schedule. The screenshot was captured after that recovery and shows its focus ring, so it does not visually demonstrate the earlier BODY fallback."
+    },
+    "eventEvidence": {
+      "triggerEventId": 696,
+      "action": "Space",
+      "control": "Show 49ers schedule",
+      "settledEventId": 698,
+      "settledFocus": "BODY",
+      "recoveryEventId": 700,
+      "recoveryFocus": "Set alert for 49ers at Seahawks"
+    },
+    "historyDependency": "Requires preserving the exact activation and deadline focus state; the later screenshot alone could incorrectly suggest that focus management was already correct.",
+    "taskConsequence": {
+      "status": "unsupported",
+      "evidence": "No schedule-browsing target or completion criterion was declared."
+    },
+    "staticOrAgentDetectability": "A static checker cannot reconstruct the transient BODY fallback. A dynamic focus-tracking agent could detect it, while a screenshot-only review may miss it.",
+    "demoValue": {
+      "rating": "low",
+      "evidence": "Good illustration of why history matters, but the user-level barrier is weak because one Tab reaches relevant new content and the witness screenshot shows the recovered state."
+    },
+    "officialScreenshot": "attempts/078__nfl__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279578938617.jpeg"
+  }
+]

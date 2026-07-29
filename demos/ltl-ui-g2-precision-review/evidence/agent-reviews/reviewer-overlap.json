@@ -1,0 +1,58 @@
+[
+  {
+    "lineNumber": 2,
+    "findingId": "F::004__airbnb__g2-taxonomy-informed__120s__replay-1:AP-W3-01:first-counterexample",
+    "atomicId": "AP-W3-01",
+    "decision": "reject",
+    "conciseReason": "The checker contract fired because Space did not immediately change the wishlist button from aria-pressed=false to pressed. The trusted history and witness instead show a Save-to-wishlist modal opening and focus moving to its Close button, so the available evidence shows a functioning multi-step activation rather than a user-level activation failure."
+  },
+  {
+    "lineNumber": 9,
+    "findingId": "F::041__exploretock__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "conciseReason": "Enter on Reserve now replaced the local reservation controls with a confirmation while the URL and page context stayed stable; the activated button disappeared and settled focus became BODY/document. The next Tab moved to the site logo, supporting a real loss of keyboard position after the local task transition."
+  },
+  {
+    "lineNumber": 10,
+    "findingId": "F::044__finance-google__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "conciseReason": "Enter on Add to portfolio opened a dialog and moved focus to its Close button; trusted Escape closed that exact dialog but settled focus became BODY instead of the still-eligible Add to portfolio invoker. The next Tab restarted at Skip to main content, confirming loss of the pre-dialog position."
+  },
+  {
+    "lineNumber": 12,
+    "findingId": "F::054__hiring-amazon__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "conciseReason": "Space on Sign up for alerts replaced the opener with an inline email-alert form on the same stable page, but settled focus became BODY/document rather than an exposed control in the new state. The trusted history therefore supports a local focus-management failure, independent of any unobserved screen-reader announcement."
+  },
+  {
+    "lineNumber": 15,
+    "findingId": "F::063__kbb__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+    "atomicId": "AP-M1-03",
+    "decision": "make-sense",
+    "conciseReason": "The witness shows the same modal still visible with focus in an input after trusted Escape. The interaction history records four separate Escape key pairs while the modal and focused input remain, strongly supporting the checker contract and a keyboard dismissal barrier."
+  },
+  {
+    "lineNumber": 17,
+    "findingId": "F::074__movoto__g2-taxonomy-informed__120s__replay-1:AP-M1-05:first-counterexample",
+    "atomicId": "AP-M1-05",
+    "decision": "make-sense",
+    "conciseReason": "Enter on Get a quote created one identifiable same-document modal but left focus on the underlying invoker; the following trusted Tab moved to an underlying phone link rather than into the modal. The screenshot confirms the modal overlay while that background link is focused, making the focus-entry failure directly supported."
+  },
+  {
+    "lineNumber": 21,
+    "findingId": "F::102__sports-yahoo__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "conciseReason": "Space on Share opened a dialog and moved focus from the invoker to the dialog textarea. Trusted Escape closed the dialog but settled focus became BODY instead of the still-eligible Share button, and the next Tab moved to the site header, supporting a genuine focus-return failure."
+  },
+  {
+    "lineNumber": 26,
+    "findingId": "F::136__zocdoc__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "conciseReason": "Enter on Continue to your details replaced the appointment-step controls with the details form on the same stable URL and removed the activated button, but settled focus became BODY/document. A later Tab was needed to reach the first form field, so the trace supports loss of exposed focus at the step transition without claiming broader BLV ground truth."
+  }
+]

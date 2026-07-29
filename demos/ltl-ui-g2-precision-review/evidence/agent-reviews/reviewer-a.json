@@ -1,0 +1,245 @@
+[
+  {
+    "reviewer": "A",
+    "line": 1,
+    "findingId": "F::004__airbnb__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "attemptId": "004__airbnb__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Event 837 is a trusted Enter on the focused Done button. The button is then removed on the same stable route, and the completed 500 ms observation records document focus with no connected or accessibility-exposed element."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "Closing the guest picker loses the user's exact keyboard position. Event 840 is a new Tab and event 841 then reaches Search stays, so recovery is possible but only through another navigation step."
+    },
+    "evidence": {
+      "triggerEventId": 837,
+      "action": "Enter",
+      "control": "BUTTON \"Done\"",
+      "propertyObservation": "The activated control was removed; settled focus was document/unexposed after 500 ms on the unchanged route.",
+      "screenshot": "attempts/004__airbnb__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278426750712.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static snapshot cannot establish that focus was lost because Done disappeared after activation. An interaction agent could detect it if it executes this exact action and inspects post-action focus; no agent baseline result is available.",
+    "demoValue": "medium"
+  },
+  {
+    "reviewer": "A",
+    "line": 2,
+    "findingId": "F::004__airbnb__g2-taxonomy-informed__120s__replay-1:AP-W3-01:first-counterexample",
+    "attemptId": "004__airbnb__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-W3-01",
+    "decision": "reject",
+    "checkerContract": {
+      "decision": "oracle-mismatch",
+      "reason": "Event 389 is Space on \"Save The Seashell House to wishlist\". The checker demands inactive_toggle_becomes_pressed, but event 391 moves focus to \"Close Save to wishlist\" and the formal screenshot shows a Save to wishlist dialog. The activation produced a concrete modal response rather than silently failing."
+    },
+    "userLevelBarrier": {
+      "decision": "not-supported",
+      "reason": "The evidence shows the control opening a wishlist-selection dialog. Failure to set aria-pressed on the launcher is not sufficient to call this activation a user-level failure because the launcher's declared behavior is not established as a toggle."
+    },
+    "evidence": {
+      "triggerEventId": 389,
+      "action": "Space",
+      "control": "role=button \"Save The Seashell House to wishlist\"",
+      "propertyObservation": "The inferred pressed state stayed false, but the interaction history and screenshot show that a wishlist dialog opened and received focus.",
+      "screenshot": "attempts/004__airbnb__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278373222513.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static checker might flag a questionable toggle model only if it first makes the same unsupported role/effect assumption. An interaction agent would likely observe the opened dialog and avoid treating the activation as no response.",
+    "demoValue": "low"
+  },
+  {
+    "reviewer": "A",
+    "line": 3,
+    "findingId": "F::010__apartments__g2-taxonomy-informed__120s__replay-1:AP-M1-05:first-counterexample",
+    "attemptId": "010__apartments__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-M1-05",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Event 305 is Enter while Request a tour is focused. A single exact new modal appears on the same document, but the complete 500 ms observation reports that focus is not inside it; the first recorded focus inside is only after the later Tab at event 308."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "The Request a tour dialog visually opens without moving keyboard focus into its interaction context. This can leave a nonvisual user positioned behind the modal, although no declared task trace establishes the downstream consequence."
+    },
+    "evidence": {
+      "triggerEventId": 305,
+      "action": "Enter",
+      "control": "BUTTON \"Request a tour\"",
+      "propertyObservation": "One exact new modal was identified, but focusInsideExactNewModal was false after the completed 500 ms observation.",
+      "screenshot": "attempts/010__apartments__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278492197475.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A final static DOM snapshot can see a modal but cannot show whether focus moved when it opened. An interaction agent can detect this by opening the dialog and checking focus containment; this is not demonstrated as LTL-only.",
+    "demoValue": "high"
+  },
+  {
+    "reviewer": "A",
+    "line": 4,
+    "findingId": "F::012__babycenter__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+    "attemptId": "012__babycenter__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-M1-03",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "The search dialog is opened from Open site search at events 949–952. Event 964 is a trusted Escape while focus is in #site-search, and the completed observation records the exact same dialog still connected and visible."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "Escape does not dismiss the active search dialog, so the conventional keyboard exit fails. The screenshot also shows an explicit close control, so this evidence does not establish that the user is completely trapped."
+    },
+    "evidence": {
+      "triggerEventId": 964,
+      "action": "Escape",
+      "control": "INPUT #site-search inside the search dialog",
+      "propertyObservation": "The same dialog remained connected and visible after the complete 500 ms Escape transaction.",
+      "screenshot": "attempts/012__babycenter__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278566204888.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static snapshot cannot determine whether Escape was handled. A keyboard agent that opens the dialog, sends Escape, and compares dialog identity could detect it; no comparison run is provided.",
+    "demoValue": "medium"
+  },
+  {
+    "reviewer": "A",
+    "line": 5,
+    "findingId": "F::019__ca-gov__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "attemptId": "019__ca-gov__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Event 816 is a trusted Enter on Start application. The intro control is removed and the page changes locally to Step 1 of 3 without a route change, while the completed 500 ms observation records document focus with no exposed element."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "The multi-step form appears but focus is not placed on its heading or first field. Event 819 requires a subsequent Tab before event 820 reaches the Full name input, which can make the transition context unclear to a nonvisual user."
+    },
+    "evidence": {
+      "triggerEventId": 816,
+      "action": "Enter",
+      "control": "BUTTON \"Start application\"",
+      "propertyObservation": "The control was removed; settled focus was document/unexposed while the same-route main content changed to Step 1 of 3.",
+      "screenshot": "attempts/019__ca-gov__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278686020520.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static checker can see the resulting form but cannot reconstruct the lost focus transition. An interaction agent could test Start application and inspect the resulting focus; the evidence does not show that only LTL can find it.",
+    "demoValue": "high"
+  },
+  {
+    "reviewer": "A",
+    "line": 6,
+    "findingId": "F::023__carmax__g2-taxonomy-informed__120s__replay-1:AP-M1-03:first-counterexample",
+    "attemptId": "023__carmax__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-M1-03",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Space at event 157 opens Save this search and moves focus to its input at event 159. Escape attempts at events 161 and 164 do not close it; after focus advances within the same dialog, event 175 is another Escape and the exact dialog remains connected and visible after 500 ms."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "The modal repeatedly ignores the standard Escape exit. A visible close button may provide another route, so the evidence supports a keyboard convention failure but not a complete task block."
+    },
+    "evidence": {
+      "triggerEventId": 175,
+      "action": "Escape",
+      "control": "BUTTON \"Save search\" inside the Save this search dialog",
+      "propertyObservation": "The same dialog remained connected and visible after a complete, uncontaminated Escape transaction.",
+      "screenshot": "attempts/023__carmax__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278609361331.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static checker cannot show that three Escape attempts left the modal open. An interaction agent that exercises the modal could detect the behavior, so this is a temporal test advantage rather than an established LTL-exclusive error.",
+    "demoValue": "high"
+  },
+  {
+    "reviewer": "A",
+    "line": 7,
+    "findingId": "F::026__coinmarketcap__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+    "attemptId": "026__coinmarketcap__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-M1-04",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Enter at event 397 opens search from the Search/ button and moves focus into #global-search. Escape at event 405 closes the original dialog with no replacement modal, but focus is not restored to the eligible exact invoker; the next Tab at event 408 starts at Skip to main content."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "After closing search, the keyboard user loses the opener position and restarts at the beginning of the document's tab order. This is a clear navigation-position loss, though no task specifies its downstream cost."
+    },
+    "evidence": {
+      "triggerEventId": 405,
+      "action": "Escape",
+      "control": "BUTTON \"Close search\"; exact invoker was BUTTON \"Search/\"",
+      "propertyObservation": "The original dialog closed, the invoker remained eligible, no replacement modal appeared, and focusIsExactInvoker was false.",
+      "screenshot": "attempts/026__coinmarketcap__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278762595617.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static snapshot after closure cannot identify the prior invoker. A stateful interaction agent could remember the opener and check focus return, so the evidence supports history dependence but not LTL exclusivity.",
+    "demoValue": "high"
+  },
+  {
+    "reviewer": "A",
+    "line": 8,
+    "findingId": "F::037__epicurious__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "attemptId": "037__epicurious__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-FM1-01",
+    "decision": "make-sense",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Event 558 is trusted Space on Remove Rice & Millet Skillet Bread from favorites. The only saved-recipe card and its control are removed on the same /saved route, but settled focus becomes document/unexposed; only a later Tab at event 561 reaches Find recipes."
+    },
+    "userLevelBarrier": {
+      "decision": "plausible",
+      "reason": "Removing the currently focused item discards the user's navigation position instead of moving focus to a meaningful surviving control or status. The page state change is stable and directly tied to the activation."
+    },
+    "evidence": {
+      "triggerEventId": 558,
+      "action": "Space",
+      "control": "BUTTON \"Remove Rice & Millet Skillet Bread from favorites\"",
+      "propertyObservation": "The control was removed and the saved list became empty; settled focus was document/unexposed after 500 ms.",
+      "screenshot": "attempts/037__epicurious__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785278918103819.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static checker can see the empty state but not that deleting the focused card caused focus loss. An interaction agent could detect this if it removes the item and checks focus recovery; no tool comparison is available.",
+    "demoValue": "high"
+  },
+  {
+    "reviewer": "A",
+    "line": 9,
+    "findingId": "F::041__exploretock__g2-taxonomy-informed__120s__replay-1:AP-FM1-01:first-counterexample",
+    "attemptId": "041__exploretock__g2-taxonomy-informed__120s__replay-1",
+    "atomicId": "AP-FM1-01",
+    "decision": "unsure",
+    "checkerContract": {
+      "decision": "correct",
+      "reason": "Event 172 is a trusted Enter on Reserve now. The same-route booking form is replaced by a confirmation panel and the activated button is removed, while settled focus becomes document/unexposed after 500 ms."
+    },
+    "userLevelBarrier": {
+      "decision": "uncertain",
+      "reason": "Focus is not moved to the new confirmation content, which may prevent immediate nonvisual discovery. However, the reservation visibly succeeds, the route is unchanged, and there is no declared next task or user observation proving that document focus causes a consequential barrier here."
+    },
+    "evidence": {
+      "triggerEventId": 172,
+      "action": "Enter",
+      "control": "BUTTON \"Reserve now\"",
+      "propertyObservation": "The form/control was removed and Reservation confirmed appeared on the same URL; settled focus was document/unexposed.",
+      "screenshot": "attempts/041__exploretock__g2-taxonomy-informed__120s__replay-1/bombadil/screenshots/1785279000628324.jpeg"
+    },
+    "historyDependency": "yes",
+    "taskConsequence": "unsupported",
+    "staticOrAgentDetectability": "A static snapshot cannot establish the activation-to-focus transition. An interaction agent could observe document focus after confirmation, but deciding whether it is a meaningful failure requires a task or announcement oracle not present here.",
+    "demoValue": "medium"
+  }
+]
