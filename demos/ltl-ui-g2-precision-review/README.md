@@ -138,6 +138,26 @@ not as a population reliability or ground-truth estimate.
 The UI intentionally starts with no selected user decisions; preliminary agent
 judgments do not pre-populate or bias the browser annotation controls.
 
+## Current-campaign three-state demo
+
+`examples/coinmarketcap-search-focus-return/` presents AP-M1-04 from the
+current 137-site, 120-second campaign:
+
+```text
+exact Search button focused
+→ Enter
+search dialog input focused
+→ Tab → Escape → 500 ms
+dialog closed, BODY focused
+```
+
+The first two focus rectangles come from exact interaction-history event
+geometry. The third state is the official `VIOLATION_OBSERVED` witness. Its
+manifest binds all three screenshots, event/document identities, the execution
+lock, full trace, attempt result, campaign dataset, and formal occurrence ID.
+The preliminary agent review said `make-sense`; user impact and task consequence
+remain pending mentor review.
+
 ## Archived three-state worked example
 
 `examples/airbnb-wishlist-focus-return/` presents one earlier AP-M1-04
@@ -155,4 +175,7 @@ This example is deliberately separate from the 137-site, 26-finding dataset.
 Its `evidence.json` binds every screenshot to a trace line and timestamp and
 publishes the compressed full trace and attempt result with hashes of their
 uncompressed bytes. Because the legacy recorder did not retain DOM event IDs or
-focus geometry, the page does not draw a synthetic focus box.
+focus geometry, the page does not draw a synthetic focus box. The page keeps
+exactly one screenshot in the DOM and switches states through the trace buttons,
+Previous/Next, Left/Right, or a shareable `?step=0`, `?step=1`, or `?step=2`
+URL.

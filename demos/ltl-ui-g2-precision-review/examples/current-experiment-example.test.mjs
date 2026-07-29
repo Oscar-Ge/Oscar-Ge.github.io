@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import test from "node:test";
 
 const examplesDir = dirname(fileURLToPath(import.meta.url));
-const exampleDir = join(examplesDir, "airbnb-wishlist-focus-return");
+const exampleDir = join(examplesDir, "coinmarketcap-search-focus-return");
 
 function readJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
@@ -17,32 +17,41 @@ function sha256(bytes) {
   return `sha256:${createHash("sha256").update(bytes).digest("hex")}`;
 }
 
-test("the Airbnb AP-M1-04 example is an evidence-bound three-state trace", () => {
+test("the current-campaign CoinMarketCap demo binds three states to real evidence", () => {
   const evidence = readJson(join(exampleDir, "evidence.json"));
 
-  assert.equal(evidence.schemaVersion, "ltl-ui-multistate-example/1");
+  assert.equal(evidence.schemaVersion, "ltl-ui-current-campaign-example/1");
   assert.equal(evidence.atomicId, "AP-M1-04");
   assert.equal(evidence.outcome, "VIOLATION_OBSERVED");
   assert.equal(
-    evidence.temporalFormula,
-    "G(bound_modal_escape_closes(d,i) -> F_[0,500ms] focus_is_exact_invoker(i))",
+    evidence.findingId,
+    "F::026__coinmarketcap__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
   );
   assert.equal(
     evidence.source.commit,
-    "b9056ef3266c2adcc1476d5e7dbcacada35a63f2",
+    "1bba7afd98e2d198911c2bdf48ea4213d2c3eaca",
   );
   assert.equal(
-    evidence.source.attemptId,
-    "033__airbnb__g0-none__600s__replay-1",
+    evidence.source.datasetIdentity,
+    "sha256:587e8ab8d5e1dbee38b2e8178187edf9b3e1a58acbc8971eb3597b0fb3d29307",
   );
+  assert.equal(
+    evidence.source.executionLockIdentity,
+    "sha256:3cc5b39086e453285ca94bfd737d28a9f973d2822d698d47b5a2e68f39853120",
+  );
+  assert.equal(evidence.source.dirty, true);
 
   assert.deepEqual(
     evidence.states.map((state) => state.id),
-    ["invoker-focused", "modal-focused", "deadline-violation"],
+    ["invoker-focused", "dialog-focused", "deadline-violation"],
   );
   assert.deepEqual(
     evidence.states.map((state) => state.traceLine),
-    [521, 522, 525],
+    [158, 159, 163],
+  );
+  assert.deepEqual(
+    evidence.states.map((state) => state.timestamp),
+    [1785278761364810, 1785278761631546, 1785278762595617],
   );
   assert.deepEqual(
     evidence.states.map((state) => state.focus.tag),
@@ -50,21 +59,23 @@ test("the Airbnb AP-M1-04 example is an evidence-bound three-state trace", () =>
   );
   assert.deepEqual(
     evidence.transitions.map((transition) => transition.action),
-    ["Space", "Escape + 500 ms settlement"],
+    ["Enter", "Tab → Escape → settle 500 ms"],
   );
-  assert.ok(
-    evidence.states.every(
-      (state, index) =>
-        index === 0 || state.timestamp > evidence.states[index - 1].timestamp,
-    ),
-    "state timestamps must increase",
-  );
+  assert.equal(evidence.states[0].focus.eventId, 394);
+  assert.equal(evidence.states[1].focus.eventId, 398);
+  assert.equal(evidence.states[2].triggerEventId, 405);
+  assert.equal(evidence.states[2].traceEntryIndex, 161);
+  assert.deepEqual(evidence.recovery, {
+    keydownEventId: 408,
+    focusEventId: 409,
+    focusTag: "A",
+    focusName: "Skip to main content",
+  });
 
   for (const state of evidence.states) {
     const bytes = readFileSync(join(exampleDir, state.screenshot.path));
     assert.equal(sha256(bytes), state.screenshot.sha256);
     assert.equal(bytes.byteLength, state.screenshot.byteCount);
-    assert.equal(state.screenshot.focusGeometry, null);
   }
 
   assert.deepEqual(evidence.violation, {
@@ -73,13 +84,11 @@ test("the Airbnb AP-M1-04 example is an evidence-bound three-state trace", () =>
     invokerEligible: true,
     focusIsExactInvoker: false,
   });
-  assert.match(evidence.claimBoundary, /archived/i);
-  assert.match(evidence.claimBoundary, /not part of the 137-site/i);
-  assert.match(evidence.captureLimitations, /no DOM event IDs/i);
-  assert.match(evidence.captureLimitations, /no focus geometry/i);
+  assert.match(evidence.claimBoundary, /current 137-site/i);
+  assert.match(evidence.claimBoundary, /pending mentor review/i);
 });
 
-test("published compressed artifacts match their uncompressed identities", () => {
+test("the current-campaign demo publishes identity-bound trace and result bytes", () => {
   const evidence = readJson(join(exampleDir, "evidence.json"));
 
   for (const artifact of evidence.source.artifacts) {
@@ -90,38 +99,27 @@ test("published compressed artifacts match their uncompressed identities", () =>
   }
 });
 
-test("the page exposes one screenshot at a time through a shareable stepper", () => {
+test("the current-campaign page is a one-screenshot shareable stepper", () => {
   const page = readFileSync(join(exampleDir, "index.html"), "utf8");
   const stepper = readFileSync(join(exampleDir, "stepper.js"), "utf8");
 
+  assert.equal((page.match(/<img\b/g) ?? []).length, 1);
   for (const requiredText of [
-    "Wishlist closes, focus does not return",
-    "G(bound_modal_escape_closes(d,i) -&gt; F_[0,500ms] focus_is_exact_invoker(i))",
-    "always(() =&gt;",
-    "m1ExactInvokerReturnContractHolds",
-    "Archived worked example",
-    "not part of the current 137-site / 26-finding dataset",
+    "Search closes, keyboard position resets",
+    "Current 137-site experiment",
     'id="state-image"',
-    'id="previous"',
-    'id="next"',
     'data-step="0"',
     'data-step="1"',
     'data-step="2"',
-    'src="./stepper.js"',
+    'id="previous"',
+    'id="next"',
+    "AP-M1-04",
   ]) {
     assert.match(page, new RegExp(requiredText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
-
-  assert.equal(
-    (page.match(/<img\b/g) ?? []).length,
-    1,
-    "the page must render exactly one screenshot element",
-  );
   assert.match(
     stepper,
     /new URLSearchParams\(window\.location\.search\)\.get\("step"\)/,
   );
   assert.match(stepper, /history\.replaceState/);
-  assert.match(stepper, /event\.key === "ArrowLeft"/);
-  assert.match(stepper, /event\.key === "ArrowRight"/);
 });

@@ -281,8 +281,13 @@ function mastheadHtml() {
         </a>
       </span>
       <span>
-        <a href="${root}examples/airbnb-wishlist-focus-return/">
-          Three-state worked example
+        <a href="${root}examples/coinmarketcap-search-focus-return/?step=0">
+          Current three-state demo
+        </a>
+      </span>
+      <span>
+        <a href="${root}examples/airbnb-wishlist-focus-return/?step=0">
+          Archived three-state demo
         </a>
       </span>
     </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <title>AP-M1-04 · Three-state focus-return example</title>
+    <title>CoinMarketCap search focus return · AP-M1-04</title>
     <link rel="stylesheet" href="../stepper.css">
   </head>
   <body>
@@ -17,15 +17,15 @@
 
       <header class="hero">
         <div class="badge-row">
-          <span class="badge archive">Archived worked example</span>
+          <span class="badge archive">Current 137-site experiment</span>
           <span class="badge ap">AP-M1-04</span>
           <span class="badge violation">Violation observed</span>
         </div>
-        <p class="eyebrow">Modal focus return</p>
-        <h1>Wishlist closes, focus does not return</h1>
+        <p class="eyebrow">CoinMarketCap · modal focus return</p>
+        <h1>Search closes, keyboard position resets</h1>
         <p class="lede">
-          The same heart button can still receive focus. Escape closes the
-          modal, but focus settles on <code>BODY</code>.
+          Escape closes search. The exact Search button is still eligible, but
+          focus settles on <code>BODY</code>.
         </p>
       </header>
 
@@ -43,36 +43,36 @@
       <section id="trace" class="trace-section" aria-labelledby="trace-title">
         <div class="section-heading">
           <div>
-            <p class="section-label">Three evidence-bound states</p>
-            <h2 id="trace-title">Open → interact → lose position</h2>
+            <p class="section-label">One screenshot at a time</p>
+            <h2 id="trace-title">Open search → dismiss → lose position</h2>
           </div>
-          <p>No added focus box; the legacy trace does not carry focus geometry.</p>
+          <p>Focus boxes in s0 and s1 come from the recorded event rectangles.</p>
         </div>
 
         <div class="trace-card">
-          <div class="trace-map" aria-label="Three-state focus-return trace">
+          <div class="trace-map" aria-label="Three-state search focus-return trace">
             <button class="trace-state" type="button" data-step="0">
               <span>s0</span>
-              <strong>heart focused</strong>
+              <strong>Search focused</strong>
               <small>BUTTON</small>
             </button>
             <div class="trace-edge" data-step="1">
-              <kbd>Space</kbd>
+              <kbd>Enter</kbd>
               <i aria-hidden="true"></i>
             </div>
             <button class="trace-state" type="button" data-step="1">
               <span>s1</span>
-              <strong>modal input</strong>
+              <strong>dialog focused</strong>
               <small>INPUT</small>
             </button>
             <div class="trace-edge" data-step="2">
-              <kbd>Escape</kbd>
+              <kbd>Tab · Escape</kbd>
               <small>+ 500 ms</small>
               <i aria-hidden="true"></i>
             </div>
             <button class="trace-state violation" type="button" data-step="2">
               <span>s2</span>
-              <strong>focus lost</strong>
+              <strong>position lost</strong>
               <small>BODY</small>
             </button>
           </div>
@@ -81,19 +81,22 @@
             <div class="shot-panel">
               <div class="shot-heading">
                 <span class="section-label">Captured GenUI state</span>
-                <strong id="step-title">s0 · Heart button focused</strong>
+                <strong id="step-title">s0 · Search button focused</strong>
               </div>
               <div class="shot">
                 <img
                   id="state-image"
-                  src="./assets/state-1-heart-focused.jpeg"
-                  alt="Airbnb stays page with the Saltwater Cottage heart button carrying the browser's native focus outline."
+                  src="./assets/state-0-search-button.jpeg"
+                  alt="CoinMarketCap-inspired watchlist page with the Search button focused."
                   width="1024"
                   height="768"
                 >
+                <div class="evidence-focus" id="evidence-focus" aria-hidden="true">
+                  <span id="focus-label">Focus · Search</span>
+                </div>
               </div>
               <p class="caption" id="caption">
-                The exact wishlist invoker has keyboard focus before activation.
+                The exact Search button is captured as the modal invoker.
               </p>
             </div>
 
@@ -102,10 +105,10 @@
                 <span class="section-label">Recorded facts</span>
                 <span id="step-count">1 / 3</span>
               </div>
-              <p class="action" id="action"><span>Action</span>Tab to exact invoker</p>
+              <p class="action" id="action"><span>Action</span>Tab to Search</p>
               <dl class="predicate-grid" id="predicates"></dl>
               <p class="explain" id="explain"></p>
-              <p class="step-verdict" id="step-verdict">Precondition captured</p>
+              <p class="step-verdict" id="step-verdict">Invoker captured</p>
             </aside>
           </div>
 
@@ -120,13 +123,13 @@
       <section class="verdict-grid" aria-label="Expected and observed behavior">
         <article>
           <p class="section-label">Expected</p>
-          <h2>Return to the same heart</h2>
-          <p>Focus goes back to the exact eligible button that opened the modal.</p>
+          <h2>Return to Search</h2>
+          <p>Focus returns to the exact button that opened the search dialog.</p>
         </article>
         <article class="observed">
           <p class="section-label">Observed</p>
           <h2>Focus settles on BODY</h2>
-          <p>The modal is closed and no replacement modal exists, but the exact invoker is not focused.</p>
+          <p>The next Tab restarts at “Skip to main content,” not the Search button.</p>
         </article>
       </section>
 
@@ -146,15 +149,16 @@
       <footer class="evidence-footer">
         <p>
           <strong>Claim boundary.</strong>
-          This is an Archived worked example from an earlier 600-second replay;
-          it is not part of the current 137-site / 26-finding dataset.
+          This is a formal checker counterexample from the current 137-site
+          experiment. User impact and task consequence remain pending mentor review.
         </p>
         <p>
           Verify:
           <a href="./evidence.json">evidence manifest</a>,
           <a href="./evidence/trace.jsonl.gz">full Bombadil trace</a>,
-          <a href="./evidence/result.json.gz">attempt result</a>, or
-          <a href="https://github.com/Oscar-Ge/LTL-UI/blob/b9056ef3266c2adcc1476d5e7dbcacada35a63f2/online-v2/specs/atomic/properties/dialog/ap-m1-04.ts">checker source</a>.
+          <a href="./evidence/result.json.gz">attempt result</a>,
+          <a href="../../formal-7-coinmarketcap-ap-m1-04-bf6c5975fced/?step=0">original finding</a>, or
+          <a href="https://github.com/Oscar-Ge/LTL-UI/blob/1bba7afd98e2d198911c2bdf48ea4213d2c3eaca/online-v2/specs/atomic/properties/dialog/ap-m1-04.ts">checker source</a>.
         </p>
       </footer>
     </main>

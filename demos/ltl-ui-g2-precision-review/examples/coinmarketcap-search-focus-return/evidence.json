@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "ltl-ui-current-campaign-example/1",
+  "id": "current-coinmarketcap-search-ap-m1-04",
+  "findingId": "F::026__coinmarketcap__g2-taxonomy-informed__120s__replay-1:AP-M1-04:first-counterexample",
+  "atomicId": "AP-M1-04",
+  "taxonomyClass": "M1",
+  "outcome": "VIOLATION_OBSERVED",
+  "title": "Search closes, keyboard position resets",
+  "temporalFormula": "G(bound_modal_escape_closes(d,i) -> F_[0,500ms] focus_is_exact_invoker(i))",
+  "bombadilAssertion": "always(() =>\n  m1ExactInvokerReturnContractHolds(m1FocusReturnObservation.current));",
+  "expected": "Escape closes search and returns focus to the exact Search button that opened it.",
+  "observed": "Search closed with no replacement modal, but settled focus was BODY instead of the still-eligible Search button.",
+  "claimBoundary": "Formal checker counterexample from the current 137-site, 120-second experiment. Preliminary agent review marked the checker interpretation make-sense; user impact and task consequence remain pending mentor review.",
+  "source": {
+    "datasetId": "g2-formal-4bf9ed002f7c75f0",
+    "datasetIdentity": "sha256:587e8ab8d5e1dbee38b2e8178187edf9b3e1a58acbc8971eb3597b0fb3d29307",
+    "campaignReportIdentity": "sha256:4bf9ed002f7c75f0df4bfc5e7b4ecf22f810cefed148afb273ae616f7500d00f",
+    "commit": "1bba7afd98e2d198911c2bdf48ea4213d2c3eaca",
+    "tree": "0b0be237ce31e685ecdaba5996fad2898b6431e7",
+    "dirty": true,
+    "executionLockIdentity": "sha256:3cc5b39086e453285ca94bfd737d28a9f973d2822d698d47b5a2e68f39853120",
+    "verificationLockIdentity": "sha256:92c53269a4ef3dcfeac1fd6ce1cd03cc8b83644eda9eaec3a12b4014f189c3ef",
+    "attemptId": "026__coinmarketcap__g2-taxonomy-informed__120s__replay-1",
+    "site": "coinmarketcap",
+    "condition": "g2-taxonomy-informed",
+    "budgetSeconds": 120,
+    "propertySourceUrl": "https://github.com/Oscar-Ge/LTL-UI/blob/1bba7afd98e2d198911c2bdf48ea4213d2c3eaca/online-v2/specs/atomic/properties/dialog/ap-m1-04.ts",
+    "artifacts": [
+      {
+        "kind": "bombadil-trace",
+        "path": "evidence/trace.jsonl.gz",
+        "uncompressedSha256": "sha256:24d4b6ef36fe6df088d7ba006d7f7e3f06d0a8d715a647d33205c497aaf0fbe2",
+        "uncompressedByteCount": 4406851
+      },
+      {
+        "kind": "attempt-result",
+        "path": "evidence/result.json.gz",
+        "uncompressedSha256": "sha256:bda7256c9a4e83e70a115dc51f3e6c11aab90d19909477fd487d1f20af5f000d",
+        "uncompressedByteCount": 2454391
+      }
+    ]
+  },
+  "states": [
+    {
+      "id": "invoker-focused",
+      "label": "Search button focused",
+      "traceLine": 158,
+      "timestamp": 1785278761364810,
+      "documentId": "document:6992e466-926a-452b-8166-e11471584b7c",
+      "focus": {
+        "eventId": 394,
+        "incarnation": "node-50",
+        "tag": "BUTTON",
+        "name": "Search/",
+        "rect": {
+          "x": 840.234375,
+          "y": 16,
+          "width": 135,
+          "height": 39
+        }
+      },
+      "dialogPresent": false,
+      "screenshot": {
+        "path": "assets/state-0-search-button.jpeg",
+        "sha256": "sha256:6c2bbc224bfe61c4937694e95a2f361e66876ad14cc7cd3a1761ce91c925fe48",
+        "byteCount": 29404
+      }
+    },
+    {
+      "id": "dialog-focused",
+      "label": "Search dialog focused",
+      "traceLine": 159,
+      "timestamp": 1785278761631546,
+      "documentId": "document:6992e466-926a-452b-8166-e11471584b7c",
+      "focus": {
+        "eventId": 398,
+        "incarnation": "node-51",
+        "tag": "INPUT",
+        "id": "global-search",
+        "name": null,
+        "rect": {
+          "x": 250.5,
+          "y": 131,
+          "width": 496,
+          "height": 22
+        }
+      },
+      "dialogPresent": true,
+      "screenshot": {
+        "path": "assets/state-1-search-dialog.jpeg",
+        "sha256": "sha256:d265129bb0daee3a2d19ed5c44c9a040964907d03e44d0e7ef1f1d0742b55f06",
+        "byteCount": 23640
+      }
+    },
+    {
+      "id": "deadline-violation",
+      "label": "BODY focused after close",
+      "traceLine": 163,
+      "traceEntryIndex": 161,
+      "timestamp": 1785278762595617,
+      "triggerEventId": 405,
+      "settledEventId": 407,
+      "documentId": "document:6992e466-926a-452b-8166-e11471584b7c",
+      "focus": {
+        "eventId": 407,
+        "incarnation": "node-1",
+        "tag": "BODY",
+        "name": null,
+        "rect": null
+      },
+      "dialogPresent": false,
+      "screenshot": {
+        "path": "assets/state-2-body-focus.jpeg",
+        "sha256": "sha256:e5d8188d63e0d0f308d86276e63b4183db4265ac55761350b55d097a3e71e477",
+        "byteCount": 28860
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "invoker-focused",
+      "to": "dialog-focused",
+      "action": "Enter"
+    },
+    {
+      "from": "dialog-focused",
+      "to": "deadline-violation",
+      "action": "Tab → Escape → settle 500 ms"
+    }
+  ],
+  "violation": {
+    "originalDialogClosed": true,
+    "replacementModalCount": 0,
+    "invokerEligible": true,
+    "focusIsExactInvoker": false
+  },
+  "recovery": {
+    "keydownEventId": 408,
+    "focusEventId": 409,
+    "focusTag": "A",
+    "focusName": "Skip to main content"
+  },
+  "preliminaryReview": {
+    "reviewer": "A",
+    "line": 7,
+    "decision": "make-sense",
+    "historyDependency": true,
+    "taskConsequence": "unsupported",
+    "demoValue": "high"
+  }
+}
