@@ -2,6 +2,9 @@
 
 Static, dependency-free review UI for compact checker trajectories.
 
+Public review page:
+<https://oscar-ge.github.io/demos/ltl-ui-mentor-examples/>
+
 The published dataset contains 85 review cases:
 
 - 69 controlled demonstrations, covering all 21 implemented Atomic
