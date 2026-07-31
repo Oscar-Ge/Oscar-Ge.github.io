@@ -1,5 +1,6 @@
 const SCHEMA_VERSION = "ltl-ui-mentor-review-manifest/1";
 const STORAGE_SCHEMA = "ltl-ui-mentor-review-annotations/1";
+const MANIFEST_URL = new URL("./data/manifest.json", import.meta.url);
 const DECISIONS = Object.freeze({
   "make-sense": "Make sense",
   unsure: "Unsure",
@@ -44,6 +45,11 @@ function safeAssetPath(value) {
     return "";
   }
   return path;
+}
+
+function manifestAssetUrl(value) {
+  const path = safeAssetPath(value);
+  return path ? new URL(path, MANIFEST_URL).href : "";
 }
 
 function safeLink(value) {
@@ -346,7 +352,7 @@ function screenshotsHtml(screenshots) {
     return `
       <figure class="shot">
         <div class="shot-frame">
-          <img src="${escapeHtml(safeAssetPath(shot.src))}" alt="${escapeHtml(shot.alt)}" loading="lazy">
+          <img src="${escapeHtml(manifestAssetUrl(shot.src))}" alt="${escapeHtml(shot.alt)}" loading="lazy">
           ${focusBoxHtml(shot.focusBox)}
         </div>
         <figcaption>
@@ -597,7 +603,7 @@ app.addEventListener("input", (event) => {
 });
 
 try {
-  const response = await fetch("./data/manifest.json", { cache: "no-store" });
+  const response = await fetch(MANIFEST_URL, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Manifest request failed (${response.status}).`);
   }
