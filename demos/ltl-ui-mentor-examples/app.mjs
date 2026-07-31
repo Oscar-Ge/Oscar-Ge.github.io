@@ -1,3 +1,9 @@
+import {
+  caseHasDrawableFocus,
+  focusPresentation,
+  preferredScreenshotIndex,
+} from "./focus-view.mjs";
+
 const SCHEMA_VERSION = "ltl-ui-mentor-review-manifest/1";
 const STORAGE_SCHEMA = "ltl-ui-mentor-review-annotations/1";
 const MANIFEST_URL = new URL("./data/manifest.json", import.meta.url);
@@ -132,9 +138,20 @@ function validateManifest(value) {
       requireText(shot?.src, `${item.id}.screenshots[${index}].src`);
       requireText(shot?.alt, `${item.id}.screenshots[${index}].alt`);
       requireText(shot?.focus, `${item.id}.screenshots[${index}].focus`);
+      requireText(
+        shot?.focusKind,
+        `${item.id}.screenshots[${index}].focusKind`,
+      );
+      requireText(
+        shot?.focusEvidence,
+        `${item.id}.screenshots[${index}].focusEvidence`,
+      );
       if (!safeAssetPath(shot.src)) {
         throw new Error(`${item.id} has an unsafe screenshot path.`);
       }
+    }
+    if (!caseHasDrawableFocus(item)) {
+      throw new Error(`${item.id} has no exact drawable focus frame.`);
     }
     if (!Array.isArray(item.lineage) || item.lineage.length === 0) {
       throw new Error(`${item.id} has no evidence lineage.`);
@@ -302,23 +319,25 @@ function filteredCases() {
   });
 }
 
-function focusBoxHtml(box) {
-  if (!box) return "";
-  const values = ["x", "y", "width", "height"].map((field) => Number(box[field]));
-  if (values.some((value) => !Number.isFinite(value) || value < 0 || value > 100)) {
-    return "";
+function focusOverlayHtml(presentation) {
+  if (presentation.overlay === "viewport") {
+    return '<span class="focus-viewport" aria-hidden="true"></span>';
   }
+  if (presentation.overlay !== "element" || !presentation.box) return "";
+  const box = presentation.box;
   return `
     <span
       class="focus-box"
       aria-hidden="true"
-      style="left:${values[0]}%;top:${values[1]}%;width:${values[2]}%;height:${values[3]}%"
+      style="left:${box.x}%;top:${box.y}%;width:${box.width}%;height:${box.height}%"
     ></span>
   `;
 }
 
 function screenshotIndexFor(item) {
-  const saved = Number(screenshotIndexByCase.get(item.id) ?? 0);
+  const saved = screenshotIndexByCase.has(item.id)
+    ? Number(screenshotIndexByCase.get(item.id))
+    : preferredScreenshotIndex(item.screenshots);
   const lastIndex = item.screenshots.length - 1;
   if (!Number.isInteger(saved)) return 0;
   return Math.max(0, Math.min(saved, lastIndex));
@@ -336,16 +355,17 @@ function statesHtml(states) {
 }
 
 function screenshotFigureHtml(shot, index, selectedIndex) {
-  const focusUnavailable = shot.focus === "not captured";
+  const presentation = focusPresentation(shot);
+  const focusValue = presentation.label.replace(/^Focus:\s*/u, "");
   return `
     <figure class="shot" data-shot-index="${index}"${index === selectedIndex ? "" : " hidden"}>
       <div class="shot-frame">
         <img src="${escapeHtml(manifestAssetUrl(shot.src))}" alt="${escapeHtml(shot.alt)}" loading="lazy">
-        <div class="focus-readout${focusUnavailable ? " unavailable" : ""}" aria-hidden="true">
+        <div class="focus-readout${presentation.drawable ? "" : " unavailable"}" aria-hidden="true">
           <span>Focus</span>
-          <strong>${escapeHtml(shot.focus)}</strong>
+          <strong>${escapeHtml(focusValue)}</strong>
         </div>
-        ${focusBoxHtml(shot.focusBox)}
+        ${focusOverlayHtml(presentation)}
       </div>
       <figcaption>
         <strong>${escapeHtml(shot.role)}</strong>
@@ -358,6 +378,7 @@ function screenshotFigureHtml(shot, index, selectedIndex) {
 function screenshotsHtml(item) {
   const selectedIndex = screenshotIndexFor(item);
   const selected = item.screenshots[selectedIndex];
+  const selectedFocus = focusPresentation(selected);
   const stageId = `screenshot-stage-${item.id}`;
   const lastIndex = item.screenshots.length - 1;
   return `
@@ -374,7 +395,7 @@ function screenshotsHtml(item) {
         <p class="screenshot-status" aria-live="polite" aria-atomic="true">
           <span data-frame-count>Frame ${selectedIndex + 1} / ${item.screenshots.length}</span>
           <strong data-frame-role>${escapeHtml(selected.role)}</strong>
-          <span data-frame-focus>Focus: ${escapeHtml(selected.focus)}</span>
+          <span data-frame-focus>${escapeHtml(selectedFocus.label)}</span>
         </p>
         <button
           class="screenshot-nav"
@@ -409,7 +430,8 @@ function updateScreenshotCarousel(caseElement, item, requestedIndex) {
   carousel.querySelector("[data-frame-count]").textContent =
     `Frame ${nextIndex + 1} / ${item.screenshots.length}`;
   carousel.querySelector("[data-frame-role]").textContent = selected.role;
-  carousel.querySelector("[data-frame-focus]").textContent = `Focus: ${selected.focus}`;
+  carousel.querySelector("[data-frame-focus]").textContent =
+    focusPresentation(selected).label;
 
   for (const button of carousel.querySelectorAll(".screenshot-nav")) {
     const direction = Number(button.dataset.direction);
