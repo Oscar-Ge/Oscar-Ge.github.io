@@ -16,6 +16,7 @@ let manifest;
 let reviews = {};
 let notice = "";
 let noticeIsError = false;
+const screenshotIndexByCase = new Map();
 const filters = {
   query: "",
   atomicId: "all",
@@ -316,6 +317,13 @@ function focusBoxHtml(box) {
   `;
 }
 
+function screenshotIndexFor(item) {
+  const saved = Number(screenshotIndexByCase.get(item.id) ?? 0);
+  const lastIndex = item.screenshots.length - 1;
+  if (!Number.isInteger(saved)) return 0;
+  return Math.max(0, Math.min(saved, lastIndex));
+}
+
 function statesHtml(states) {
   return states.map((state, index) => `
     ${index === 0 ? "" : '<span class="arrow" aria-hidden="true">→</span>'}
@@ -327,48 +335,94 @@ function statesHtml(states) {
   `).join("");
 }
 
-function screenshotsHtml(screenshots) {
-  const slots = [
-    ...screenshots,
-    ...Array.from({ length: 3 - screenshots.length }, () => null),
-  ];
-  return slots.map((shot) => {
-    if (!shot) {
-      return `
-        <figure class="shot unavailable">
-          <div class="shot-frame">
-            <div class="unavailable-message">
-              <strong>Unavailable</strong>
-              <span>No distinct evidence frame was captured.</span>
-            </div>
-          </div>
-          <figcaption>
-            <strong>unavailable</strong>
-            <span>not synthesized</span>
-          </figcaption>
-        </figure>
-      `;
-    }
-    return `
-      <figure class="shot">
-        <div class="shot-frame">
-          <img src="${escapeHtml(manifestAssetUrl(shot.src))}" alt="${escapeHtml(shot.alt)}" loading="lazy">
-          ${focusBoxHtml(shot.focusBox)}
+function screenshotFigureHtml(shot, index, selectedIndex) {
+  const focusUnavailable = shot.focus === "not captured";
+  return `
+    <figure class="shot" data-shot-index="${index}"${index === selectedIndex ? "" : " hidden"}>
+      <div class="shot-frame">
+        <img src="${escapeHtml(manifestAssetUrl(shot.src))}" alt="${escapeHtml(shot.alt)}" loading="lazy">
+        <div class="focus-readout${focusUnavailable ? " unavailable" : ""}" aria-hidden="true">
+          <span>Focus</span>
+          <strong>${escapeHtml(shot.focus)}</strong>
         </div>
-        <figcaption>
-          <strong>${escapeHtml(shot.role)}</strong>
-          <span>focus: ${escapeHtml(shot.focus)}</span>
-        </figcaption>
-      </figure>
-    `;
-  }).join("");
+        ${focusBoxHtml(shot.focusBox)}
+      </div>
+      <figcaption>
+        <strong>${escapeHtml(shot.role)}</strong>
+        <span>Recorded evidence frame</span>
+      </figcaption>
+    </figure>
+  `;
+}
+
+function screenshotsHtml(item) {
+  const selectedIndex = screenshotIndexFor(item);
+  const selected = item.screenshots[selectedIndex];
+  const stageId = `screenshot-stage-${item.id}`;
+  const lastIndex = item.screenshots.length - 1;
+  return `
+    <div class="screenshot-carousel" data-screenshot-index="${selectedIndex}">
+      <div class="screenshot-controls">
+        <button
+          class="screenshot-nav"
+          type="button"
+          data-direction="-1"
+          aria-label="Previous screenshot for ${escapeHtml(item.atomicId)}"
+          aria-controls="${escapeHtml(stageId)}"
+          ${selectedIndex === 0 ? "disabled" : ""}
+        >← Previous</button>
+        <p class="screenshot-status" aria-live="polite" aria-atomic="true">
+          <span data-frame-count>Frame ${selectedIndex + 1} / ${item.screenshots.length}</span>
+          <strong data-frame-role>${escapeHtml(selected.role)}</strong>
+          <span data-frame-focus>Focus: ${escapeHtml(selected.focus)}</span>
+        </p>
+        <button
+          class="screenshot-nav"
+          type="button"
+          data-direction="1"
+          aria-label="Next screenshot for ${escapeHtml(item.atomicId)}"
+          aria-controls="${escapeHtml(stageId)}"
+          ${selectedIndex === lastIndex ? "disabled" : ""}
+        >Next →</button>
+      </div>
+      <div class="shot-stage" id="${escapeHtml(stageId)}">
+        ${item.screenshots.map((shot, index) =>
+          screenshotFigureHtml(shot, index, selectedIndex)).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function updateScreenshotCarousel(caseElement, item, requestedIndex) {
+  const carousel = caseElement.querySelector(".screenshot-carousel");
+  if (!carousel) return;
+
+  const lastIndex = item.screenshots.length - 1;
+  const nextIndex = Math.max(0, Math.min(requestedIndex, lastIndex));
+  const selected = item.screenshots[nextIndex];
+  screenshotIndexByCase.set(item.id, nextIndex);
+  carousel.dataset.screenshotIndex = String(nextIndex);
+
+  for (const shot of carousel.querySelectorAll("[data-shot-index]")) {
+    shot.hidden = Number(shot.dataset.shotIndex) !== nextIndex;
+  }
+  carousel.querySelector("[data-frame-count]").textContent =
+    `Frame ${nextIndex + 1} / ${item.screenshots.length}`;
+  carousel.querySelector("[data-frame-role]").textContent = selected.role;
+  carousel.querySelector("[data-frame-focus]").textContent = `Focus: ${selected.focus}`;
+
+  for (const button of carousel.querySelectorAll(".screenshot-nav")) {
+    const direction = Number(button.dataset.direction);
+    button.disabled = direction < 0 ? nextIndex === 0 : nextIndex === lastIndex;
+  }
 }
 
 function trajectoryHtml(trajectory) {
-  return trajectory.map((step) => `
+  return trajectory.map((step, index) => `
     <li>
+      <span class="trajectory-step">Step ${index + 1}</span>
       <kbd>${escapeHtml(step.key ?? step.action)}</kbd>
-      <span>${escapeHtml(step.target ?? "")}</span>
+      <span class="trajectory-target">target: ${escapeHtml(step.target ?? "not captured")}</span>
     </li>
   `).join("");
 }
@@ -419,21 +473,20 @@ function caseHtml(item, index) {
           <div class="state-flow">${statesHtml(item.states)}</div>
         </section>
 
-        <section aria-label="Screenshot evidence">
-          <p class="section-label">Captured frames · unavailable means no distinct evidence was recorded</p>
-          <div class="screenshots">${screenshotsHtml(item.screenshots)}</div>
+        <section class="keyboard-panel" aria-label="Keyboard action sequence">
+          <p class="section-label">Keyboard actions</p>
+          <ol class="trajectory">${trajectoryHtml(item.trajectory)}</ol>
         </section>
 
-        <div class="lower-grid">
-          <section class="panel">
-            <p class="section-label">Keyboard trajectory</p>
-            <ol class="trajectory">${trajectoryHtml(item.trajectory)}</ol>
-          </section>
-          <section class="panel">
-            <p class="section-label">Evidence lineage</p>
-            <dl class="lineage">${lineageHtml(item.lineage)}</dl>
-          </section>
-        </div>
+        <section aria-label="Screenshot evidence">
+          <p class="section-label">Captured frames · one frame at a time</p>
+          ${screenshotsHtml(item)}
+        </section>
+
+        <section class="panel lineage-panel">
+          <p class="section-label">Evidence lineage</p>
+          <dl class="lineage">${lineageHtml(item.lineage)}</dl>
+        </section>
 
         <section class="review" aria-label="Mentor review">
           <div class="review-top">
@@ -559,6 +612,26 @@ app.addEventListener("click", (event) => {
   }
   if (event.target.closest("#export-csv")) {
     exportCsv();
+    return;
+  }
+  const screenshotButton = event.target.closest(".screenshot-nav");
+  if (screenshotButton) {
+    const caseElement = screenshotButton.closest(".case");
+    const caseId = caseElement?.dataset.caseId;
+    const item = manifest.cases.find((candidate) => candidate.id === caseId);
+    if (!caseElement || !item) return;
+    const currentIndex = screenshotIndexFor(item);
+    const direction = Number(screenshotButton.dataset.direction);
+    updateScreenshotCarousel(
+      caseElement,
+      item,
+      currentIndex + direction,
+    );
+    if (screenshotButton.disabled) {
+      caseElement
+        .querySelector(`.screenshot-nav[data-direction="${-direction}"]`)
+        ?.focus();
+    }
     return;
   }
   const button = event.target.closest(".decision");
