@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LTL-UI Demo — NFL Agent Mode Comparison</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --ink: #111827;
+      --muted: #5b6472;
+      --card: #ffffff;
+      --line: #d8dee9;
+      --red: #c1121f;
+      --green: #166534;
+      --blue: #174ea6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: min(1280px, calc(100vw - 36px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+    .hero, .panel, .fact {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+    }
+    .hero { padding: 28px; }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+    }
+    h2 { margin: 0 0 8px; font-size: 20px; }
+    h3 { margin: 0 0 8px; font-size: 17px; }
+    p { margin: 0; color: var(--muted); }
+    code {
+      display: block;
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 15px;
+      overflow-x: auto;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .fact { padding: 14px; }
+    .fact strong { display: block; margin-bottom: 4px; }
+    .fact span { color: var(--muted); font-size: 14px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .panel {
+      overflow: hidden;
+    }
+    .panel header {
+      padding: 15px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .status {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .success { background: #dcfce7; color: var(--green); }
+    .error { background: #fee2e2; color: var(--red); }
+    video {
+      display: block;
+      width: 100%;
+      background: #000;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .panel .body {
+      padding: 15px 16px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .grid, .facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>NFL News task: vision agent vs a11y-tree navigation</h1>
+    <p>
+      Same generated website, same keyboard-only user task. The vision agent
+      finishes. The a11y-tree navigation agent reports a navigation-related
+      blocker.
+    </p>
+    <code>G(open_email_dialog(i,d) → F_[0,500ms] focus_inside(d))</code>
+    <code>G(close_completed_dialog(d,i) → F_[0,500ms] focus_returns_to_context(i))</code>
+  </section>
+
+  <section class="facts" aria-label="case summary">
+    <div class="fact">
+      <strong>Task</strong>
+      <span>Email the latest story, close the dialog, then search for Chiefs.</span>
+    </div>
+    <div class="fact">
+      <strong>Vision mode</strong>
+      <span>keyboard_vision_assisted; screenshot-based context.</span>
+    </div>
+    <div class="fact">
+      <strong>A11y-nav mode</strong>
+      <span>a11y_tree_navigation_only; compact a11y tree + Orca actions.</span>
+    </div>
+  </section>
+
+  <nav class="links" aria-label="related demos">
+    <a href="../ltl-ui-nfl-email-focus-demo/">single-case temporal focus demo</a>
+  </nav>
+
+  <section class="grid" aria-label="agent comparison">
+    <article class="panel">
+      <header>
+        <span class="status success">Agent reports success</span>
+        <h2>Vision agent</h2>
+        <p>30 steps. Prepared email, closed dialog, searched Chiefs.</p>
+      </header>
+      <video controls preload="metadata" src="assets/vision-agent-vscode-h264.mp4"></video>
+      <div class="body">
+        <h3>Why this is useful</h3>
+        <p>
+          The user-level task can appear complete even when the trace contains
+          modal/focus transitions that require temporal checking.
+        </p>
+        <nav class="links" aria-label="vision evidence links">
+          <a href="assets/vision-summary.json">summary</a>
+          <a href="assets/vision-keyboard-trace.jsonl">keyboard trace</a>
+          <a href="assets/vision-visual-trace.jsonl">visual trace</a>
+          <a href="assets/vision-matrix-run.json">run config</a>
+        </nav>
+      </div>
+    </article>
+
+    <article class="panel">
+      <header>
+        <span class="status error">Agent reports navigation blocker</span>
+        <h2>A11y-tree navigation agent</h2>
+        <p>39 steps. Email/Search controls were reachable but not verifiably operable.</p>
+      </header>
+      <video controls preload="metadata" src="assets/a11y-nav-agent-vscode-h264.mp4"></video>
+      <div class="body">
+        <h3>Why this is useful</h3>
+        <p>
+          The a11y-tree-only agent exposes a different failure surface: controls
+          are present in the accessibility navigation path, but activation does
+          not produce the expected dialog/search workflow.
+        </p>
+        <nav class="links" aria-label="a11y navigation evidence links">
+          <a href="assets/a11y-nav-summary.json">summary</a>
+          <a href="assets/a11y-nav-keyboard-trace.jsonl">keyboard trace</a>
+          <a href="assets/a11y-nav-visual-trace.jsonl">visual trace</a>
+          <a href="assets/a11y-nav-matrix-run.json">run config</a>
+        </nav>
+      </div>
+    </article>
+  </section>
+</main>
+</body>
+</html>

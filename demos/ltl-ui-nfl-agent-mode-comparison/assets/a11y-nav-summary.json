@@ -1,0 +1,516 @@
+{
+  "task": "Use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only. Starting on the News page, email the latest story to friend@example.com, prepare the email if the page asks for confirmation, close any completed email dialog, then use the global Search control to search for Chiefs. If a Skip to main content link receives focus, activate it to get to the page content faster. Finish when the email has been prepared and the Chiefs search has been performed. Do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.",
+  "start_url": "http://127.0.0.1:49671/news",
+  "app_dir": "/scratch/general/vast/u6076945/generator-runs/mind2web-three-prompt-sol-v1-20260719T0640Z/output-v3/nfl/replicate-01/g1-generic-a11y/app",
+  "serve_dir": "/scratch/general/vast/u6076945/generator-runs/mind2web-three-prompt-sol-v1-20260719T0640Z/output-v3/nfl/replicate-01/g1-generic-a11y/app/dist",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "agent_mode": "a11y_tree_navigation_only",
+  "orca_action_profile": "heading_first",
+  "base_url_configured": true,
+  "duration_seconds": 611.471,
+  "steps": 39,
+  "completed": true,
+  "agent_reported_success": false,
+  "is_done": true,
+  "is_successful": false,
+  "final_result": "NAVIGATION_RELATED_ERROR: I could not complete the requested workflows. I reached the latest story\u2019s \u201cEmail article: Training camp notebook: Young playmakers turning heads\u201d button and activated it with both Enter and Space, but no email confirmation, recipient field, or completed-email dialog appeared. I also reached the global \u201cSearch /\u201d button and activated it with Enter and Space, but no search interface appeared; Tab moved directly to \u201cUse dark theme,\u201d and Orca entry navigation found no editable search field. Therefore, no email preparation or confirmed Chiefs search could be completed using the permitted keyboard and Orca actions.",
+  "errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "urls": [
+    "http://127.0.0.1:49671/news",
+    "http://127.0.0.1:49671/news",
+    "http://127.0.0.1:49671/news",
+    "http://127.0.0.1:49671/news",
+    "http://127.0.0.1:49671/news",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content",
+    "http://127.0.0.1:49671/news#main-content"
+  ],
+  "actions": [
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_heading_first_scan": {
+        "target": "Top stories",
+        "max_headings": 8,
+        "start_from_top": true,
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_heading_first_scan": {
+        "target": "Training camp notebook",
+        "max_headings": 12,
+        "start_from_top": true,
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "wait": {
+        "seconds": 1.0
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Space"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Ctrl+Home"
+      },
+      "interacted_element": null
+    },
+    {
+      "repeat_key": {
+        "key": "Shift+Tab",
+        "repetitions": 12,
+        "stop_at": "Search",
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "type_text": {
+        "text": "Chiefs"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "repeat_key": {
+        "key": "Tab",
+        "repetitions": 8,
+        "stop_at": "Search",
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "repeat_key": {
+        "key": "Tab",
+        "repetitions": 6,
+        "stop_at": "Search",
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Space"
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_next_entry": {},
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Shift+Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_toggle_browse_focus_mode": {},
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_where_am_i": {},
+      "interacted_element": null
+    },
+    {
+      "repeat_key": {
+        "key": "Tab",
+        "repetitions": 12,
+        "stop_at": "Email article",
+        "delay_seconds": 0.25
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Shift+Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "wait": {
+        "seconds": 2.0
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Space"
+      },
+      "interacted_element": null
+    },
+    {
+      "repeat_key": {
+        "key": "Shift+Tab",
+        "repetitions": 12,
+        "stop_at": "Search",
+        "delay_seconds": 0.2
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Space"
+      },
+      "interacted_element": null
+    },
+    {
+      "orca_next_entry": {},
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Shift+Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "done": {
+        "text": "NAVIGATION_RELATED_ERROR: I could not complete the requested workflows. I reached the latest story\u2019s \u201cEmail article: Training camp notebook: Young playmakers turning heads\u201d button and activated it with both Enter and Space, but no email confirmation, recipient field, or completed-email dialog appeared. I also reached the global \u201cSearch /\u201d button and activated it with Enter and Space, but no search interface appeared; Tab moved directly to \u201cUse dark theme,\u201d and Orca entry navigation found no editable search field. Therefore, no email preparation or confirmed Chiefs search could be completed using the permitted keyboard and Orca actions.",
+        "success": false,
+        "files_to_display": []
+      },
+      "interacted_element": null
+    }
+  ],
+  "x11_focus_attempt": {
+    "focused": true,
+    "fallback": "largest_viewable_window",
+    "window": 1294,
+    "title": null,
+    "width": 1440,
+    "height": 1000,
+    "searched_titles": [
+      "google chrome",
+      "google-chrome",
+      "chromium",
+      "chrome"
+    ],
+    "visible_titles": [
+      "metacity",
+      "orca",
+      "Chromium clipboard",
+      "google-chrome",
+      "metacity",
+      "xdg-desktop-portal-gtk",
+      "Qt Selection Owner for xdg-desktop-portal-kde"
+    ]
+  },
+  "dom_body_focus_attempt": {
+    "focused": true,
+    "activeTag": "BODY",
+    "activeText": "Skip to main content\nNFL\nScores\nSchedule\nStandings\nStats\nPlayers\nNews\nVideos\nSearch\n/\nSign in\nTEAMS\nSF\nKC\nB\nD\nE\nG\nB\nS\nNEWS\nLATEST NFL NEWS\n\nBreaking stories, expert analysis, and updates from around the league.\n\nLATEST\nTop stories\nCAMP\nLATEST\n18 MIN AGO\nTraining camp notebook: Young playmakers turni",
+    "addedTabindex": true,
+    "previousTabindex": null
+  },
+  "x11_initial_keys": [],
+  "keyboard_trace_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/keyboard_trace.jsonl",
+  "keyboard_findings_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/keyboard_findings.json",
+  "keyboard_navigation_error_count": 10,
+  "screen_reader_trace_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/screen_reader_trace.jsonl",
+  "screen_reader_summary_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/screen_reader_summary.json",
+  "screen_reader_environment_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/screen_reader_environment.json",
+  "screen_reader_speech_event_count": 0,
+  "screen_reader_capture_status_counts": {
+    "speech_log_ready": 78
+  },
+  "screen_reader_model_context_injection_enabled": true,
+  "screen_reader_model_context_injected_count": 39,
+  "screen_reader_model_context_injection_error": null,
+  "screen_reader_model_context_include_browser_hints": false,
+  "managed_orca": {
+    "managed": true,
+    "started": true,
+    "start_error": null,
+    "pid": 316795,
+    "returncode": -9,
+    "command": [
+      "/usr/bin/orca",
+      "--replace",
+      "--debug-file",
+      "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/orca_debug.out"
+    ],
+    "debug_file": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/orca_debug.out",
+    "stdout_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/orca_stdout.log",
+    "stderr_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/orca_stderr.log"
+  },
+  "visual_trace_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_trace.jsonl",
+  "visual_trace_summary_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_trace_summary.json",
+  "visual_screenshot_count": 78,
+  "visual_screenshot_paths": [
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_001_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_001_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_002_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_002_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_003_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_003_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_004_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_004_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_005_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_005_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_006_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_006_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_007_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_007_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_008_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_008_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_009_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_009_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_010_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_010_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_011_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_011_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_012_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_012_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_013_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_013_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_014_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_014_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_015_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_015_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_016_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_016_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_017_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_017_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_018_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_018_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_019_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_019_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_020_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_020_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_021_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_021_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_022_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_022_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_023_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_023_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_024_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_024_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_025_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_025_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_026_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_026_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_027_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_027_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_028_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_028_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_029_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_029_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_030_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_030_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_031_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_031_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_032_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_032_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_033_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_033_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_034_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_034_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_035_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_035_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_036_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_036_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_037_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_037_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_038_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_038_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_039_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_frames/step_039_after.png"
+  ],
+  "visual_video_requested": true,
+  "visual_video_dir": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_video",
+  "visual_video_paths": [
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_video/visual_replay.mp4"
+  ],
+  "visual_video_recording_error": null,
+  "visual_replay_mp4_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_video/visual_replay.mp4",
+  "visual_replay_mp4_error": null,
+  "visual_replay_gif_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/visual_replay.gif",
+  "visual_replay_gif_error": null,
+  "visual_trace_error_count": 0,
+  "visual_trace_errors": [],
+  "llm_input_audit_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/llm_input_audit.jsonl",
+  "llm_input_audit_summary_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/llm_input_audit_summary.json",
+  "llm_input_audit_call_count": 39,
+  "llm_input_sanitized_leak_free": true,
+  "llm_input_sanitized_leak_marker_counts": {},
+  "orca_only_action_schema_valid": true,
+  "orca_only_action_schema_audit_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-a11y-nav-agent-u6076945-20260806T060917Z/nfl-news-email-search-a11y-nav-agent/orca_only_action_schema_audit.json",
+  "orca_only_action_schema_disallowed_actions": [],
+  "orca_only_action_schema_unexpected_actions": []
+}

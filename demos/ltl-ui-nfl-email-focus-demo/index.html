@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LTL-UI Demo — NFL Email Dialog Focus Failure</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --ink: #111827;
+      --muted: #5b6472;
+      --card: #ffffff;
+      --line: #d8dee9;
+      --red: #c1121f;
+      --blue: #174ea6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: min(1180px, calc(100vw - 36px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+    .hero, .fact, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+    }
+    .hero {
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 24px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+    }
+    h2 { margin: 0 0 8px; font-size: 19px; }
+    p { margin: 0; color: var(--muted); }
+    code {
+      display: block;
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 15px;
+      overflow-x: auto;
+    }
+    video {
+      display: block;
+      width: 100%;
+      background: #000;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 18px 0;
+    }
+    .fact { padding: 14px; }
+    .fact strong { display: block; margin-bottom: 4px; }
+    .fact span { color: var(--muted); font-size: 14px; }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card { overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .card div { padding: 13px; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 7px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .ok { background: #dbeafe; color: var(--blue); }
+    .links {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .hero, .timeline, .facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div>
+      <h1>NFL email dialog loses keyboard context</h1>
+      <p>
+        A keyboard-only agent finished the task and reported success, but the
+        temporal trace shows that the dialog did not preserve focus context.
+      </p>
+      <code>G(open_email_dialog(i,d) → F_[0,500ms] focus_inside(d))</code>
+      <code>G(close_completed_dialog(d,i) → F_[0,500ms] focus_returns_to_context(i))</code>
+    </div>
+    <video controls preload="metadata">
+      <source src="assets/nfl-news-email-search-normal-agent-vscode-h264.mp4" type="video/mp4" />
+      <source src="assets/nfl-news-email-search-normal-agent-vscode-vp9.webm" type="video/webm" />
+    </video>
+  </section>
+
+  <section class="facts" aria-label="case summary">
+    <div class="fact">
+      <strong>User task</strong>
+      <span>Email the latest story, close the dialog, then search for Chiefs.</span>
+    </div>
+    <div class="fact">
+      <strong>Agent-only result</strong>
+      <span>Success; no navigation error reported.</span>
+    </div>
+    <div class="fact">
+      <strong>LTL-relevant failure</strong>
+      <span>Modal focus entry and restoration depend on interaction history.</span>
+    </div>
+  </section>
+
+  <section class="timeline" aria-label="state transition evidence">
+    <article class="card">
+      <img src="assets/01-email-focused.png" alt="Email control focused before opening the dialog" />
+      <div>
+        <span class="tag ok">State 1</span>
+        <h2>Invoker focused</h2>
+        <p>Email button is the dialog invoker.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/02-dialog-open-focus-outside.png" alt="Dialog open while focus remains outside it" />
+      <div>
+        <span class="tag">Violation</span>
+        <h2>Dialog opens</h2>
+        <p>Focus remains outside the modal.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/03-submit-focus-body.png" alt="After Prepare email focus falls to body" />
+      <div>
+        <span class="tag">Violation</span>
+        <h2>Email prepared</h2>
+        <p>Focus falls to document/body.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/04-done-focus-body.png" alt="After Done focus remains at document body" />
+      <div>
+        <span class="tag">Violation</span>
+        <h2>Dialog done</h2>
+        <p>Focus does not return to the invoker context.</p>
+      </div>
+    </article>
+  </section>
+
+  <nav class="links" aria-label="evidence links">
+    <a href="../ltl-ui-nfl-agent-mode-comparison/">agent-mode comparison</a>
+    <a href="standalone.html">scrubbable standalone replay</a>
+    <a href="assets/nfl-news-email-search-normal-agent-vscode-h264.mp4">H.264 MP4</a>
+    <a href="assets/summary.json">summary.json</a>
+    <a href="assets/keyboard_trace.jsonl">keyboard trace</a>
+    <a href="assets/visual_trace.jsonl">visual trace</a>
+  </nav>
+</main>
+</body>
+</html>

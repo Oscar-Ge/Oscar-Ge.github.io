@@ -1,0 +1,337 @@
+{
+  "task": "Use only keyboard actions. Starting on the News page, email the latest story to friend@example.com, prepare the email if the page asks for confirmation, close any completed email dialog, then use the global Search control to search for Chiefs. If a Skip to main content link receives focus, activate it to get to the page content faster. Finish when the email has been prepared and the Chiefs search has been performed. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.",
+  "start_url": "http://127.0.0.1:40979/news",
+  "app_dir": "/scratch/general/vast/u6076945/generator-runs/mind2web-three-prompt-sol-v1-20260719T0640Z/output-v3/nfl/replicate-01/g1-generic-a11y/app",
+  "serve_dir": "/scratch/general/vast/u6076945/generator-runs/mind2web-three-prompt-sol-v1-20260719T0640Z/output-v3/nfl/replicate-01/g1-generic-a11y/app/dist",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "agent_mode": "keyboard_vision_assisted",
+  "orca_action_profile": "baseline",
+  "base_url_configured": true,
+  "duration_seconds": 302.259,
+  "steps": 29,
+  "completed": true,
+  "agent_reported_success": true,
+  "is_done": true,
+  "is_successful": true,
+  "final_result": "Prepared the latest story, \u201cTraining camp notebook: Young playmakers turning heads,\u201d for friend@example.com and closed the completed email dialog. Performed a global search for \u201cChiefs\u201d; the page displayed \u201cNo results.\u201d",
+  "errors": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "urls": [
+    "http://127.0.0.1:40979/news",
+    "http://127.0.0.1:40979/news",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content",
+    "http://127.0.0.1:40979/news#main-content"
+  ],
+  "actions": [
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Home"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Delete"
+      },
+      "interacted_element": null
+    },
+    {
+      "type_text": {
+        "text": "friend@example.com"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "type_text": {
+        "text": "friend@example.com"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Escape"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Ctrl+Home"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Tab"
+      },
+      "interacted_element": null
+    },
+    {
+      "type_text": {
+        "text": "/"
+      },
+      "interacted_element": null
+    },
+    {
+      "type_text": {
+        "text": "Chiefs"
+      },
+      "interacted_element": null
+    },
+    {
+      "press_key": {
+        "key": "Enter"
+      },
+      "interacted_element": null
+    },
+    {
+      "done": {
+        "text": "Prepared the latest story, \u201cTraining camp notebook: Young playmakers turning heads,\u201d for friend@example.com and closed the completed email dialog. Performed a global search for \u201cChiefs\u201d; the page displayed \u201cNo results.\u201d",
+        "success": true,
+        "files_to_display": []
+      },
+      "interacted_element": null
+    }
+  ],
+  "x11_initial_keys": [],
+  "keyboard_trace_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/keyboard_trace.jsonl",
+  "keyboard_findings_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/keyboard_findings.json",
+  "keyboard_navigation_error_count": 6,
+  "visual_trace_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_trace.jsonl",
+  "visual_trace_summary_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_trace_summary.json",
+  "visual_screenshot_count": 58,
+  "visual_screenshot_paths": [
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_001_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_001_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_002_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_002_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_003_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_003_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_004_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_004_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_005_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_005_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_006_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_006_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_007_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_007_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_008_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_008_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_009_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_009_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_010_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_010_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_011_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_011_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_012_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_012_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_013_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_013_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_014_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_014_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_015_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_015_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_016_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_016_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_017_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_017_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_018_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_018_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_019_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_019_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_020_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_020_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_021_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_021_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_022_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_022_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_023_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_023_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_024_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_024_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_025_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_025_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_026_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_026_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_027_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_027_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_028_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_028_after.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_029_before.png",
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_frames/step_029_after.png"
+  ],
+  "visual_video_requested": false,
+  "visual_video_dir": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_video",
+  "visual_video_paths": [
+    "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_video/visual_replay.mp4"
+  ],
+  "visual_video_recording_error": null,
+  "visual_replay_mp4_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_video/visual_replay.mp4",
+  "visual_replay_mp4_error": null,
+  "visual_replay_gif_path": "/scratch/general/vast/u6076945/blv-simulator/keyboard-matrix/ltl-task-demo-nfl-g1-news-email-search-normal-agent-keyboard-vision-1724381/nfl-g1-news-email-search-normal-agent-keyboard-vision/visual_replay.gif",
+  "visual_replay_gif_error": null,
+  "visual_trace_error_count": 0,
+  "visual_trace_errors": []
+}
