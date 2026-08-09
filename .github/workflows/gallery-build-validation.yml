@@ -1,0 +1,29 @@
+name: Gallery build validation
+
+on:
+  push:
+    branches:
+      - ci/blv-ap-gallery-20260809-e416f4d
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
