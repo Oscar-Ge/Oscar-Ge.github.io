@@ -7,5 +7,6 @@ author_profile: true
 
 Reviewer-facing LTL-UI temporal navigation demos:
 
+- [BLV AP task gallery](/demos/blv-ap-task-gallery/)
 - [NFL email dialog focus demo](/demos/ltl-ui-nfl-email-focus-demo/)
 - [NFL agent-mode comparison](/demos/ltl-ui-nfl-agent-mode-comparison/)

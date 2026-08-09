@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLV AP Task Gallery</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --ink: #111827;
+      --muted: #5b6472;
+      --card: #ffffff;
+      --line: #d8dee9;
+      --green: #166534;
+      --red: #b42318;
+      --blue: #174ea6;
+    }
+    * { box-sizing: border-box; letter-spacing: 0; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main { width: min(1240px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 48px; }
+    .page-head { padding-bottom: 20px; border-bottom: 3px solid var(--green); }
+    .page-head h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.15; }
+    .page-head p { max-width: 78ch; margin: 0; color: var(--muted); }
+    .summary { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px; font-size: 14px; }
+    .summary strong { color: var(--ink); }
+    .ap-section { margin-top: 32px; }
+    .ap-section > h2 { margin: 0 0 12px; font-size: 21px; line-height: 1.3; }
+    .run-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+    .run-card { overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 6px; }
+    .run-head { display: flex; align-items: start; justify-content: space-between; gap: 12px; padding: 14px 16px; }
+    .mode { margin: 0 0 3px; color: var(--green); font-size: 12px; font-weight: 750; text-transform: uppercase; }
+    h3 { margin: 0; font-size: 17px; overflow-wrap: anywhere; }
+    h4 { margin: 16px 16px 8px; font-size: 14px; }
+    a { color: var(--blue); font-weight: 700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .media-link { flex: none; font-size: 13px; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; border-block: 1px solid var(--line); object-fit: contain; }
+    .outcomes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
+    .outcomes div { min-width: 0; padding: 10px 16px; }
+    .outcomes div + div { border-left: 1px solid var(--line); }
+    .outcomes span { display: block; color: var(--muted); font-size: 12px; }
+    .outcomes strong { display: block; margin-top: 2px; overflow-wrap: anywhere; }
+    .completed { color: var(--green); }
+    .failed { color: var(--red); }
+    dl { margin: 0; }
+    .metrics { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 9px 16px; border-bottom: 1px solid var(--line); }
+    .metrics div { min-width: 0; padding-right: 8px; }
+    dt { color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+    dd { margin: 2px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+    .provenance { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 12px; padding: 0 16px 14px; }
+    .provenance div { display: contents; }
+    details { border-top: 1px solid var(--line); }
+    summary { padding: 11px 16px; color: var(--blue); font-size: 13px; font-weight: 700; cursor: pointer; }
+    pre { margin: 0 16px 16px; padding: 10px 12px; overflow-wrap: anywhere; white-space: pre-wrap; background: #f3f4f6; border-left: 3px solid #9ca3af; font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    @media (max-width: 880px) {
+      .run-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      main { width: min(100% - 20px, 1240px); padding-top: 18px; }
+      .page-head h1 { font-size: 27px; }
+      .ap-section > h2 { font-size: 18px; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .provenance { grid-template-columns: 1fr; gap: 2px; }
+      .provenance div { display: block; }
+      .provenance dd { margin-bottom: 7px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="page-head">
+    <h1>BLV AP task gallery</h1>
+    <p>Keyboard-only reproductions of accessibility-property tasks, shown in paired agent modes with task, flow, outcome, and usage provenance.</p>
+    <div class="summary" aria-label="Gallery summary">
+      <span><strong>10</strong> accessibility properties</span>
+      <span><strong>20</strong> runs</span>
+      <span><strong>2</strong> modes per property</span>
+      <span>Batch: <strong>ap-gallery-full20-flow-grounded-20260808</strong></span>
+    </div>
+  </header>
+  <section class="ap-section">
+    <h2>AP-FM1-01: Focused control invalidated; focus loses meaningful continuation</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-fm1-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-fm1-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-fm1-01-a11y-nav-poster.png" aria-label="Replay for ap-fm1-01-a11y-nav">
+          <source src="assets/ap-fm1-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-fm1-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="failed">failed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>14</dd></div><div><dt>prompt_tokens</dt><dd>140853</dd></div><div><dt>prompt_cached_tokens</dt><dd>41472</dd></div><div><dt>completion_tokens</dt><dd>3456</dd></div><div><dt>total_tokens</dt><dd>144309</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/expedia/replicate-01/g0-none/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>3</dd></div><div><dt>flow_title</dt><dd>Complete a realistic mock booking.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-FM1-01 - Focused control invalidated; focus loses meaningful continuation.
+
+Complete a realistic mock booking.
+
+Source workflow steps: Search any travel category and choose Select, Reserve, or Choose on a result. Review the item, enter traveler name and confirmation email, and click Confirm booking. A unique `EXP-` confirmation notification appears, and the booking is then listed under Upcoming trips on `/trips`.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>NAVIGATION_RELATED_ERROR: The booking could not be completed. The focused Reserve button was reachable, but neither Enter nor Space produced an observable result after waiting. Pressing Tab afterward moved focus to the Expedia footer link, so focus lost meaningful continuation instead of reaching the booking review form. No EXP- confirmation or Upcoming trips listing was observed.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-fm1-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-fm1-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-fm1-01-vision-poster.png" aria-label="Replay for ap-fm1-01-vision">
+          <source src="assets/ap-fm1-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-fm1-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>49</dd></div><div><dt>prompt_tokens</dt><dd>334453</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>9097</dd></div><div><dt>total_tokens</dt><dd>343550</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/expedia/replicate-01/g0-none/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>3</dd></div><div><dt>flow_title</dt><dd>Complete a realistic mock booking.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-FM1-01 - Focused control invalidated; focus loses meaningful continuation.
+
+Complete a realistic mock booking.
+
+Source workflow steps: Search any travel category and choose Select, Reserve, or Choose on a result. Review the item, enter traveler name and confirmation email, and click Confirm booking. A unique `EXP-` confirmation notification appears, and the booking is then listed under Upcoming trips on `/trips`.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Booking workflow completed successfully using keyboard actions only.
+
+- Item: Sunlit Orlando Villa with Private Pool
+- Traveler: Jordan Lee
+- Confirmation email: jordan.lee@example.com
+- Total: $1716
+- Confirmation: EXP-004821
+- Result: Listed as Confirmed under Upcoming trips on /trips
+
+AP-FM1-01 was reproduced: when the Review and book modal opened, focus remained on a background result control instead of moving into the dialog. Keyboard focus then traversed the remaining background results and footer links before finally reaching the modal’s Close control and traveler fields, so focus lost meaningful continuation.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-M1-01: Dialog lacks usable accessible name</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-m1-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-01-a11y-nav-poster.png" aria-label="Replay for ap-m1-01-a11y-nav">
+          <source src="assets/ap-m1-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>14</dd></div><div><dt>prompt_tokens</dt><dd>135570</dd></div><div><dt>prompt_cached_tokens</dt><dd>48384</dd></div><div><dt>completion_tokens</dt><dd>3009</dd></div><div><dt>total_tokens</dt><dd>138579</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/imdb/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>21</dd></div><div><dt>flow_title</dt><dd>Give Terminator 2: Judgment Day a rating of 10.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-01 - Dialog lacks usable accessible name.
+
+Give Terminator 2: Judgment Day a rating of 10.
+
+Source workflow steps: Search “Terminator 2,” open the title, select Rate, and choose 10 in the rating dialog. The title page updates Your Rating to 10/10 and shows a confirmation status.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed using keyboard and Orca navigation only. Terminator 2: Judgment Day now shows Your Rating as 10/10. The rating dialog was announced without a usable accessible name, consistent with AP-M1-01.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-m1-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-01-vision-poster.png" aria-label="Replay for ap-m1-01-vision">
+          <source src="assets/ap-m1-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>22</dd></div><div><dt>prompt_tokens</dt><dd>124122</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>4011</dd></div><div><dt>total_tokens</dt><dd>128133</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/imdb/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>21</dd></div><div><dt>flow_title</dt><dd>Give Terminator 2: Judgment Day a rating of 10.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-01 - Dialog lacks usable accessible name.
+
+Give Terminator 2: Judgment Day a rating of 10.
+
+Source workflow steps: Search “Terminator 2,” open the title, select Rate, and choose 10 in the rating dialog. The title page updates Your Rating to 10/10 and shows a confirmation status.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed using keyboard-only actions. Terminator 2: Judgment Day now shows Your Rating: 10/10, with the confirmation status: “Your rating for Terminator 2: Judgment Day: 10/10.”</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-M1-03: Escape does not close exact active dialog</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-m1-03-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-03-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-03-a11y-nav-poster.png" aria-label="Replay for ap-m1-03-a11y-nav">
+          <source src="assets/ap-m1-03-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-03-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>8</dd></div><div><dt>prompt_tokens</dt><dd>78039</dd></div><div><dt>prompt_cached_tokens</dt><dd>27648</dd></div><div><dt>completion_tokens</dt><dd>2221</dd></div><div><dt>total_tokens</dt><dd>80260</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Watch the halftime show from the most recent Super Bowl</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-03 - Escape does not close exact active dialog.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed the keyboard-only workflow. The full-screen mock player for “Super Bowl LVIII Halftime Show: Usher’s full performance” is open and reports “NOW PLAYING.” The dialog also exposes “Close video” and “Pause video” controls.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-m1-03-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-03-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-03-vision-poster.png" aria-label="Replay for ap-m1-03-vision">
+          <source src="assets/ap-m1-03-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-03-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>17</dd></div><div><dt>prompt_tokens</dt><dd>91709</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>3388</dd></div><div><dt>total_tokens</dt><dd>95097</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Watch the halftime show from the most recent Super Bowl</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-03 - Escape does not close exact active dialog.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Workflow completed using keyboard only. Selected “Halftime Show,” opened “Super Bowl LVIII Halftime Show: Usher’s full performance,” and verified the full-screen mock player displayed “NOW PLAYING.” Confirmed AP-M1-03: Escape did not close the active dialog. The pause control changed the player to “PAUSED” with “Resume video,” resume restored playback, and the “Close video” control successfully closed the player.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-M1-04: Dialog closes but focus is not restored to the invoker</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-m1-04-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-04-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-04-a11y-nav-poster.png" aria-label="Replay for ap-m1-04-a11y-nav">
+          <source src="assets/ap-m1-04-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-04-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>8</dd></div><div><dt>prompt_tokens</dt><dd>79007</dd></div><div><dt>prompt_cached_tokens</dt><dd>41472</dd></div><div><dt>completion_tokens</dt><dd>1859</dd></div><div><dt>total_tokens</dt><dd>80866</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>8</dd></div><div><dt>flow_title</dt><dd>Use global search</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-04 - Dialog closes but focus is not restored to the invoker.
+
+Use global search
+
+Source workflow steps: - Activate Search in the header (or press `/`), type a team, player, game, or video query, and choose a matching result. The app navigates directly to the appropriate working route.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Workflow completed and AP-M1-04 was reproduced. I opened global Search from the header, entered “Chiefs,” and activated “Super Bowl LIV 2020 · Chiefs 31, 49ers 20.” The app navigated to `/scores?season=2020`, showing Super Bowl LIV with Chiefs 31 and 49ers 20. After the search dialog closed, focus was on the document body rather than restored to the Search invoker.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-m1-04-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-04-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-04-vision-poster.png" aria-label="Replay for ap-m1-04-vision">
+          <source src="assets/ap-m1-04-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-04-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>15</dd></div><div><dt>prompt_tokens</dt><dd>77990</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>2360</dd></div><div><dt>total_tokens</dt><dd>80350</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>8</dd></div><div><dt>flow_title</dt><dd>Use global search</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-04 - Dialog closes but focus is not restored to the invoker.
+
+Use global search
+
+Source workflow steps: - Activate Search in the header (or press `/`), type a team, player, game, or video query, and choose a matching result. The app navigates directly to the appropriate working route.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed the global search workflow using only keyboard actions. Selected “Tom Brady — Career passing statistics,” which navigated to `/players?q=Tom%20Brady`; the Tom Brady player profile is visible. AP-M1-04 was confirmed: after the search dialog closed, focus was on the page body rather than restored to the Search invoker.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-M1-05: New modal does not receive focus</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-m1-05-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-05-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-05-a11y-nav-poster.png" aria-label="Replay for ap-m1-05-a11y-nav">
+          <source src="assets/ap-m1-05-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-05-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="failed">failed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>8</dd></div><div><dt>prompt_tokens</dt><dd>77952</dd></div><div><dt>prompt_cached_tokens</dt><dd>34560</dd></div><div><dt>completion_tokens</dt><dd>2073</dd></div><div><dt>total_tokens</dt><dd>80025</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Watch the halftime show from the most recent Super Bowl</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-05 - New modal does not receive focus.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>NAVIGATION_RELATED_ERROR: The Super Bowl LVIII Halftime Show mock player opened and visibly reports “NOW PLAYING,” but the new dialog did not receive focus. Focus remained on the underlying “Play Super Bowl LVIII halftime show” button, confirmed by focused-element metadata and Orca’s announcement. The dialog exposes “Close video” and “Pause video” controls in the accessibility tree, but focus was not moved into the modal, so their keyboard operation could not be reliably verified.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-m1-05-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-m1-05-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-m1-05-vision-poster.png" aria-label="Replay for ap-m1-05-vision">
+          <source src="assets/ap-m1-05-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-m1-05-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="failed">failed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>16</dd></div><div><dt>prompt_tokens</dt><dd>62414</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>3050</dd></div><div><dt>total_tokens</dt><dd>65464</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/nfl/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Watch the halftime show from the most recent Super Bowl</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-05 - New modal does not receive focus.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Opened the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” player using only the keyboard and confirmed the visible “NOW PLAYING” state. AP-M1-05 was reproduced: focus remained on the background “Play Super Bowl LVIII halftime show” control instead of moving into the modal. Tab and Shift+Tab did not reach the visible Pause or Close controls, and Escape did not close the player. Therefore, pause/resume and close could not be operated by keyboard.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-N1-01: Navigation structure lacks usable anchors</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-n1-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n1-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n1-01-a11y-nav-poster.png" aria-label="Replay for ap-n1-01-a11y-nav">
+          <source src="assets/ap-n1-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-n1-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>11</dd></div><div><dt>prompt_tokens</dt><dd>106091</dd></div><div><dt>prompt_cached_tokens</dt><dd>48384</dd></div><div><dt>completion_tokens</dt><dd>2367</dd></div><div><dt>total_tokens</dt><dd>108458</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/allrecipes/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Mock account login and logout.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N1-01 - Navigation structure lacks usable anchors.
+
+Mock account login and logout.
+
+Source workflow steps: Visit `/account`, enter any valid email and a password of at least four characters, then select Log in. The Alex Cook profile is shown. Select Log out to return to the login form.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed the mock account workflow using keyboard and Orca navigation only. Logged in with alex@example.com and an eight-character password, verified the Alex Cook profile, activated Log out, and verified the login form returned with the status “You are now logged out.” Diagnostic observation: Orca heading navigation produced no speech for the login/profile headings, so the controls had to be reached through the Tab order.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-n1-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n1-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n1-01-vision-poster.png" aria-label="Replay for ap-n1-01-vision">
+          <source src="assets/ap-n1-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-n1-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>12</dd></div><div><dt>prompt_tokens</dt><dd>62023</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>1883</dd></div><div><dt>total_tokens</dt><dd>63906</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/allrecipes/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>1</dd></div><div><dt>flow_title</dt><dd>Mock account login and logout.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N1-01 - Navigation structure lacks usable anchors.
+
+Mock account login and logout.
+
+Source workflow steps: Visit `/account`, enter any valid email and a password of at least four characters, then select Log in. The Alex Cook profile is shown. Select Log out to return to the login form.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Workflow completed using keyboard actions only. Logged in successfully, verified the Alex Cook profile, then activated Log out. The login form returned and the confirmation “You are now logged out” is visible.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-N2-01: Long page lacks a usable bypass</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-n2-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n2-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n2-01-a11y-nav-poster.png" aria-label="Replay for ap-n2-01-a11y-nav">
+          <source src="assets/ap-n2-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-n2-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>32</dd></div><div><dt>prompt_tokens</dt><dd>319024</dd></div><div><dt>prompt_cached_tokens</dt><dd>152064</dd></div><div><dt>completion_tokens</dt><dd>7399</dd></div><div><dt>total_tokens</dt><dd>326423</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/bestbuy/replicate-01/g0-none/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>2</dd></div><div><dt>flow_title</dt><dd>View Bluetooth and wireless speakers on sale under $50.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N2-01 - Long page lacks a usable bypass.
+
+View Bluetooth and wireless speakers on sale under $50.
+
+Source workflow steps: Search “speaker.” In Filters, enable Bluetooth, Wireless, and On Sale, then enter 50 as Maximum price. The results update to the qualifying Insignia and JBL speakers, both below $50.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed the workflow using keyboard and Orca navigation only.
+
+Verified:
+- Search: “speaker”
+- On Sale: checked
+- Bluetooth: checked
+- Wireless: checked
+- Maximum price: 50
+- Results: 2 items
+  - Insignia™ - Mini Bluetooth Wireless Speaker - Black
+  - JBL - Go Essential Portable Bluetooth Wireless Speaker
+
+The individual displayed prices were not announced by Orca during the available reading attempts, but both products are present in the results with the Maximum price filter set to 50.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-n2-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n2-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n2-01-vision-poster.png" aria-label="Replay for ap-n2-01-vision">
+          <source src="assets/ap-n2-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-n2-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>29</dd></div><div><dt>prompt_tokens</dt><dd>190383</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>5170</dd></div><div><dt>total_tokens</dt><dd>195553</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/bestbuy/replicate-01/g0-none/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>2</dd></div><div><dt>flow_title</dt><dd>View Bluetooth and wireless speakers on sale under $50.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N2-01 - Long page lacks a usable bypass.
+
+View Bluetooth and wireless speakers on sale under $50.
+
+Source workflow steps: Search “speaker.” In Filters, enable Bluetooth, Wireless, and On Sale, then enter 50 as Maximum price. The results update to the qualifying Insignia and JBL speakers, both below $50.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Workflow completed using keyboard actions only. Applied On Sale, Bluetooth, and Wireless filters and set Maximum price to 50. Two qualifying results are visible: Insignia™ Mini Bluetooth Wireless Speaker — $24.99; JBL Go Essential Portable Bluetooth Wireless Speaker — $39.99.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-N2-02: Bypass target does not preserve main-content continuation</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-n2-02-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n2-02-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n2-02-a11y-nav-poster.png" aria-label="Replay for ap-n2-02-a11y-nav">
+          <source src="assets/ap-n2-02-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-n2-02-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>13</dd></div><div><dt>prompt_tokens</dt><dd>88126</dd></div><div><dt>prompt_cached_tokens</dt><dd>55296</dd></div><div><dt>completion_tokens</dt><dd>1726</dd></div><div><dt>total_tokens</dt><dd>89852</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/adoptapet/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>7</dd></div><div><dt>flow_title</dt><dd>Complete a safe mock donation</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N2-02 - Bypass target does not preserve main-content continuation.
+
+Complete a safe mock donation
+
+Source workflow steps: Open `/donate`, choose an amount, provide an email and name, and submit. A confirmation is shown and explicitly states that no charge was made.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Safe mock donation completed successfully. The confirmation says: “Your mock $25 gift confirmation is ready. No charge was made.”</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-n2-02-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-n2-02-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-n2-02-vision-poster.png" aria-label="Replay for ap-n2-02-vision">
+          <source src="assets/ap-n2-02-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-n2-02-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>11</dd></div><div><dt>prompt_tokens</dt><dd>54588</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>1988</dd></div><div><dt>total_tokens</dt><dd>56576</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/adoptapet/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>additional</dd></div><div><dt>flow_index</dt><dd>7</dd></div><div><dt>flow_title</dt><dd>Complete a safe mock donation</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-N2-02 - Bypass target does not preserve main-content continuation.
+
+Complete a safe mock donation
+
+Source workflow steps: Open `/donate`, choose an amount, provide an email and name, and submit. A confirmation is shown and explicitly states that no charge was made.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Completed the safe mock donation using keyboard-only actions. Selected $50, entered test@example.com and Test Donor, and submitted. Confirmation shown: “Your mock $50 gift confirmation is ready. No charge was made.” Also observed AP-N2-02: activating “Skip to main content” left focus on the body instead of continuing at a main-content control.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-PS1-01: Focusable element is hidden from the accessibility tree</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-ps1-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-ps1-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-ps1-01-a11y-nav-poster.png" aria-label="Replay for ap-ps1-01-a11y-nav">
+          <source src="assets/ap-ps1-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-ps1-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>21</dd></div><div><dt>prompt_tokens</dt><dd>210028</dd></div><div><dt>prompt_cached_tokens</dt><dd>86016</dd></div><div><dt>completion_tokens</dt><dd>5780</dd></div><div><dt>total_tokens</dt><dd>215808</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/stubhub/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>14</dd></div><div><dt>flow_title</dt><dd>Find out how to transfer NFL tickets to a friend.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-PS1-01 - Focusable element is hidden from the accessibility tree.
+
+Find out how to transfer NFL tickets to a friend.
+
+Source workflow steps: Open Help, search “transfer NFL tickets,” and press Search, or choose Transfer NFL tickets under Popular topics. The article explains how to open an order, transfer selected tickets, confirm through the team partner, and have the friend accept them.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>To transfer NFL tickets to a friend:
+
+1. Sign in to StubHub, open **Orders**, and select the NFL game.
+2. Choose **Transfer tickets**, select the seats, and enter your friend’s name and email address.
+3. Follow the link to the team’s ticket partner and confirm the transfer. StubHub will show **“Transfer sent”** in the order.
+4. Your friend opens the email, creates or signs in to the team account, accepts the tickets, and adds them to their mobile wallet.
+
+Transfers are free. The article recommends accepting the tickets before game day and using the team or venue app to scan in.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-ps1-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-ps1-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-ps1-01-vision-poster.png" aria-label="Replay for ap-ps1-01-vision">
+          <source src="assets/ap-ps1-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-ps1-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>1</dd></div><div><dt>prompt_tokens</dt><dd>4784</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>333</dd></div><div><dt>total_tokens</dt><dd>5117</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/stubhub/replicate-01/g1-generic-a11y/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>14</dd></div><div><dt>flow_title</dt><dd>Find out how to transfer NFL tickets to a friend.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-PS1-01 - Focusable element is hidden from the accessibility tree.
+
+Find out how to transfer NFL tickets to a friend.
+
+Source workflow steps: Open Help, search “transfer NFL tickets,” and press Search, or choose Transfer NFL tickets under Popular topics. The article explains how to open an order, transfer selected tickets, confirm through the team partner, and have the friend accept them.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>To transfer NFL tickets to a friend:
+1. Sign in to StubHub, open **Orders**, and select the NFL game.
+2. Choose **Transfer tickets**, select the seats, and enter your friend’s name and email address.
+3. Follow the link to the team’s ticketing partner and confirm the transfer. StubHub will show **“Transfer sent”** in the order.
+4. Your friend opens the invitation email, creates or signs in to the team’s account, accepts the tickets, and adds them to their mobile wallet.
+
+The article also notes that transfers are free and tickets should be accepted before game day.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+  <section class="ap-section">
+    <h2>AP-W3-01: Supported activation has no relevant response</h2>
+    <div class="run-grid">
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">A11y-tree navigation only</p>
+            <h3>ap-w3-01-a11y-nav</h3>
+          </div>
+          <a class="media-link" href="assets/ap-w3-01-a11y-nav.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-w3-01-a11y-nav-poster.png" aria-label="Replay for ap-w3-01-a11y-nav">
+          <source src="assets/ap-w3-01-a11y-nav.mp4" type="video/mp4" />
+          <a href="assets/ap-w3-01-a11y-nav.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="completed">completed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>48</dd></div><div><dt>prompt_tokens</dt><dd>489001</dd></div><div><dt>prompt_cached_tokens</dt><dd>248832</dd></div><div><dt>completion_tokens</dt><dd>12202</dd></div><div><dt>total_tokens</dt><dd>501203</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/airbnb/replicate-01/g2-taxonomy-informed/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>4</dd></div><div><dt>flow_title</dt><dd>Favorite a shared room in Belo Horizonte costing up to $100 for a weekend in May.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard and Orca navigation actions. Use the compact accessibility tree as a semantic map only; do not use mouse, click, coordinate, selector, direct accessibility-node activation, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-W3-01 - Supported activation has no relevant response.
+
+Favorite a shared room in Belo Horizonte costing up to $100 for a weekend in May.
+
+Source workflow steps: Visit `/stays`, select “Shared rooms,” type “Belo Horizonte,” choose a Friday-to-Sunday range in May, open “Filters,” set Maximum price to 100, choose “Shared room,” and select “Show stays.” On “Sunny room in creative townhouse,” select the heart button and choose “Favorites.” A screen-reader-perceivable “Saved to Favorites” confirmation appears.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Favorited “Sunny room in creative townhouse” in Belo Horizonte for the May 7–9, 2027 weekend. The applied filters were Shared rooms, maximum price $100, and Shared room type; the stay costs $64/night. Success is reflected by the pressed “Remove Sunny room in creative townhouse from wishlist” toggle and “Wishlists 1.” The exact transient “Saved to Favorites” confirmation was not directly captured by Orca after activation and waiting.</pre>
+        </details>
+      </article>
+      <article class="run-card">
+        <header class="run-head">
+          <div>
+            <p class="mode">Keyboard + vision assisted</p>
+            <h3>ap-w3-01-vision</h3>
+          </div>
+          <a class="media-link" href="assets/ap-w3-01-vision.mp4">MP4</a>
+        </header>
+        <video controls preload="metadata" poster="assets/ap-w3-01-vision-poster.png" aria-label="Replay for ap-w3-01-vision">
+          <source src="assets/ap-w3-01-vision.mp4" type="video/mp4" />
+          <a href="assets/ap-w3-01-vision.mp4">Open the H.264 MP4 replay</a>
+        </video>
+        <div class="outcomes" aria-label="Run outcomes">
+          <div><span>Harness completed</span><strong>true</strong></div>
+          <div><span>Task outcome (agent-reported)</span><strong class="failed">failed</strong></div>
+        </div>
+        <dl class="metrics"><div><dt>steps</dt><dd>59</dd></div><div><dt>prompt_tokens</dt><dd>468386</dd></div><div><dt>prompt_cached_tokens</dt><dd>0</dd></div><div><dt>completion_tokens</dt><dd>14195</dd></div><div><dt>total_tokens</dt><dd>482581</dd></div></dl>
+        <h4>flows.txt provenance</h4>
+        <dl class="provenance"><div><dt>flow_file</dt><dd>${BLV_GENERATED_APPS_ROOT}/airbnb/replicate-01/g2-taxonomy-informed/app/flows.txt</dd></div><div><dt>flow_section</dt><dd>required</dd></div><div><dt>flow_index</dt><dd>4</dd></div><div><dt>flow_title</dt><dd>Favorite a shared room in Belo Horizonte costing up to $100 for a weekend in May.</dd></div></dl>
+        <details>
+          <summary>Exact task</summary>
+          <pre>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-W3-01 - Supported activation has no relevant response.
+
+Favorite a shared room in Belo Horizonte costing up to $100 for a weekend in May.
+
+Source workflow steps: Visit `/stays`, select “Shared rooms,” type “Belo Horizonte,” choose a Friday-to-Sunday range in May, open “Filters,” set Maximum price to 100, choose “Shared room,” and select “Show stays.” On “Sunny room in creative townhouse,” select the heart button and choose “Favorites.” A screen-reader-perceivable “Saved to Favorites” confirmation appears.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</pre>
+        </details>
+        <details>
+          <summary>Agent-reported final result</summary>
+          <pre>Partially completed using keyboard only. I set Belo Horizonte, selected the Friday–Sunday range May 7–9, 2027, selected Shared rooms, applied a maximum price of $100 plus the Shared room filter, and showed the matching stay “Sunny room in creative townhouse” at $64/night. The heart remains unselected, and I did not observe a “Saved to Favorites” confirmation before the step limit.</pre>
+        </details>
+      </article>
+    </div>
+  </section>
+</main>
+</body>
+</html>
