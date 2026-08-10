@@ -16,7 +16,7 @@ Education
   * Aug 2025 - Present
   * GPA: 3.88/4.00
   * Selected Coursework: Machine Learning, Operating Systems, GPU Parallel Programming, Database Management Systems.
-* **B.Eng. in Mechanical Engineering**
+* **B.Eng. in Electrical and Computer Engineering**
   * Shanghai Jiao Tong University
   * Aug 2023 - Present
 

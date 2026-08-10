@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my academic page! I am an undergraduate student currently pursuing a B.S.E in Computer Science at the University of Michigan, Ann Arbor, and a B.Eng. in Mechanical Engineering at Shanghai Jiao Tong University.
+Welcome to my academic page! I am an undergraduate student currently pursuing a B.S.E in Computer Science at the University of Michigan, Ann Arbor, and a B.Eng. in Electrical and Computer Engineering at Shanghai Jiao Tong University.
 
 My primary research interest is in **AI Agents**, with a particular focus on **Web Agents and their memory**. My goal is to develop highly capable and intelligent systems that can reliably perceive, reason, and act in complex web environments. I am particularly interested in evaluating, benchmarking, and developing robust MLLM-based agentic systems.
 
