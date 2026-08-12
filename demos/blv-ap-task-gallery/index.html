@@ -39,6 +39,11 @@
     .comparison-section > h2.agent-only-heading { margin-top: 30px; }
     .section-intro { max-width: 92ch; margin: 0; color: var(--muted); }
     .scope-note { margin: 16px 0 0; padding: 12px 14px; background: var(--amber-bg); border-left: 4px solid var(--amber-line); font-size: 14px; }
+    .method-flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; margin-top: 16px; }
+    .method-flow div { position: relative; min-width: 0; padding: 11px 12px 12px 38px; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+    .method-flow span { position: absolute; top: 11px; left: 11px; display: grid; width: 19px; height: 19px; place-items: center; color: #fff; background: var(--blue); border-radius: 50%; font-size: 11px; font-weight: 800; }
+    .method-flow strong { display: block; font-size: 13px; }
+    .method-flow p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
     .comparison-demo { margin-top: 22px; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
     .comparison-head { display: flex; align-items: start; justify-content: space-between; gap: 18px; padding: 17px 18px; border-bottom: 1px solid var(--line); }
     .comparison-head h3 { font-size: 20px; }
@@ -114,7 +119,7 @@
     summary { padding: 11px 16px; color: var(--blue); font-size: 13px; font-weight: 700; cursor: pointer; }
     pre { margin: 0 16px 16px; padding: 10px 12px; overflow-wrap: anywhere; white-space: pre-wrap; background: #f3f4f6; border-left: 3px solid #9ca3af; font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
     @media (max-width: 880px) {
-      .run-grid, .comparison-video-grid, .method-summary-grid { grid-template-columns: 1fr; }
+      .run-grid, .comparison-video-grid, .method-summary-grid, .method-flow { grid-template-columns: 1fr; }
       .comparison-video + .comparison-video { border-left: 0; border-top: 1px solid var(--line); }
     }
     @media (max-width: 560px) {
@@ -150,15 +155,21 @@
     </div>
     <nav class="jump-nav" aria-label="Page sections">
       <a href="#agent-ltl-comparisons">Agent vs. LTL demos</a>
-      <a href="#strict-agent-only">Strict Agent-only demos</a>
+      <a href="#strict-agent-only">Agent-only findings + LTL-only replays</a>
       <a href="#paired-agent-gallery">Paired-agent gallery</a>
     </nav>
   </header>
   <section class="comparison-section" id="agent-ltl-comparisons" aria-labelledby="comparison-title">
     <h2 id="comparison-title">Representative Agent vs. LTL demos</h2>
-    <p class="section-intro">The first three examples compare matched Agent and LTL reproductions. The next three are strict Agent-only cases from the 485-run evaluation: the Agent reports a concrete failure while passive LTL on the same trajectory emits no relevant violation. Use the timestamp buttons to jump to the evidence; explanatory callouts appear over the video during playback.</p>
+    <p class="section-intro">All six examples use two columns. The first three compare matched Agent and LTL reproductions. The next three compare an Agent task run from the 485-run evaluation with an independent 30-minute LTL-only exploration of the same website and generation condition. Use the timestamp buttons to jump to the evidence; explanatory callouts appear over the video during playback.</p>
+    <div class="method-flow" aria-label="How to read an Agent and LTL comparison">
+      <div><span>1</span><strong>Execution Agent acts</strong><p>It performs a keyboard task and saves each action and resulting focus/page state.</p></div>
+      <div><span>2</span><strong>History is saved</strong><p>The replay shows those steps. A video frame by itself is not yet an analyzer verdict.</p></div>
+      <div><span>3</span><strong>Agent analyzer labels afterward</strong><p>It reads the saved history, applies a taxonomy rule, and returns an error type such as N2, W3, or FD1.</p></div>
+      <div><span>4</span><strong>LTL checks registered rules</strong><p>Passive LTL watches Agent actions; LTL-only chooses its own exploration. Both can report only a formal AP whose trigger and outcome are provable.</p></div>
+    </div>
     <p class="scope-note"><strong>Pairing scope for the first three demos:</strong> the two replays share the same AP, website, and task seed, but they are separate trajectories from separate batches. They are paired for behavioral comparison, not presented as two views of one synchronized episode. Agent replays come from <code>ap-gallery-full20-flow-grounded-20260808</code>; LTL replays come from the 30-minute targeted campaign.</p>
-    <p class="analyzer-note"><strong>How to read the first three “Agent analyzer” audits:</strong> in the main evaluation pipeline, a post-hoc analyzer receives the task/final summary and up to 60 saved keyboard-trace steps—each reduced to action, action result, URL, and focus before/after—but not LTL output. Raw helper fields such as <code>modal_count</code> and automatic signals are retained in the artifact for audit but are not included in the current analyzer prompt. The analyzer may emit only a configured taxonomy ID backed by exact steps, controls, evidence, confidence, and website attribution. These targeted gallery runs did not persist a post-hoc analyzer output, and their tasks explicitly name the AP being reproduced. Therefore, the audits apply the analyzer’s actual trace-to-taxonomy template to saved history; they are transparent rule audits, not new blind-analyzer benchmark results. The strict Agent-only demos below instead use the real persisted blind-analyzer outputs from the 485-run cohort.</p>
+    <p class="analyzer-note"><strong>What an “Agent error” video label means:</strong> the execution Agent did not diagnose the bug in real time. The post-hoc analyzer later read the task/final summary and up to 60 reduced history steps—action, result, URL, and focus before/after—without seeing LTL output. For presentation, this page pins the analyzer’s error type back onto the step that supplied its evidence. The first three targeted gallery runs did not persist a blind-analyzer output, so their labels are transparent applications of the same trace-to-taxonomy template; the last three use real persisted blind-analyzer results from Vision-485.</p>
 
     <article class="comparison-demo" id="comparison-ap-fm1-01">
       <header class="comparison-head">
@@ -359,9 +370,9 @@
       </section>
     </article>
 
-    <h2 class="agent-only-heading" id="strict-agent-only">Strict Agent-only demos from Vision-485</h2>
-    <p class="section-intro">These are ordinary task runs, not AP-targeted reproductions. The post-hoc Agent analyzer produced the saved finding without seeing LTL output. Passive LTL watched the same browser trajectory, so each card uses one shared replay: duplicating it as separate “Agent” and “LTL” videos would show the same frames twice.</p>
-    <p class="scope-note"><strong>What “LTL cannot detect” means here:</strong> N2 and W3 have related formal APs, but their exact antecedents were not admitted on these trajectories, so the result is <code>NOT_APPLICABLE</code> rather than “the page passed.” FD1 is a direct scope gap: the current 21-property registry has no FD1 AP.</p>
+    <h2 class="agent-only-heading" id="strict-agent-only">Agent-only findings from Vision-485, with LTL-only comparison</h2>
+    <p class="section-intro">These left-hand videos are ordinary task runs, not AP-targeted reproductions. Their post-hoc Agent analyzer findings are real persisted outputs. Each right-hand video is a separate 30-minute LTL-only exploration of the same website and generation condition. The two columns are intentionally not synchronized: one follows a user task, while the other explores independently.</p>
+    <p class="scope-note"><strong>What “LTL-only did not find this Agent bug” means:</strong> we compare the specific control and behavior, not whether LTL reported anything else on the website. For N2 the formal rule measures the wrong navigation segment; for W3 the formal run finds a different checkbox bug but cannot judge the Agent’s Explore button; for FD1 the checker sees the same dead-link controls but has no registered FD1 rule.</p>
 
     <article class="comparison-demo" id="comparison-agent-only-n2">
       <header class="comparison-head">
@@ -369,13 +380,13 @@
           <h3>N2 · Thirty Tabs to the first Compare control</h3>
           <p>The Agent analyzer follows the task target across many history steps. LTL’s AP-N2-01 instead counts only DOM keyboard stops before the page’s main region, so it never evaluates this long path inside main content.</p>
         </div>
-        <span class="relation agent-only">Agent positive · LTL NOT_APPLICABLE</span>
+        <span class="relation agent-only">Agent N2 · LTL-only misses this path</span>
       </header>
-      <div class="comparison-video-grid single">
+      <div class="comparison-video-grid">
         <section class="comparison-video agent" aria-labelledby="agent-only-n2-title">
           <header>
             <div>
-              <p class="mode">Shared Agent trajectory + passive LTL observation</p>
+              <p class="mode">Agent task run · analyzed afterward</p>
               <h4 id="agent-only-n2-title">Apartments · Compare homes side by side</h4>
             </div>
             <a class="media-link" href="assets/agent-only-n2-shared-trajectory.mp4">MP4</a>
@@ -387,7 +398,7 @@
             </video>
             <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
           </div>
-          <p class="replay-meta">Complete 43-step condensed replay · 01:10 · one end-state frame for every saved Agent step · same run used by both analyzers</p>
+          <p class="replay-meta">Complete 43-step condensed replay · 01:10 · one end-state frame for every saved Agent step</p>
           <ol class="key-moments">
             <li><button class="time-jump" data-video="agent-only-n2-video" data-time="9.6">00:10</button> Step 7 begins the uninterrupted Tab sequence through header controls.</li>
             <li><button class="time-jump" data-video="agent-only-n2-video" data-time="17.6">00:18</button> Step 12 reaches the Location textbox at <code>y=-2017</code>, an off-screen stop on the way to the task target.</li>
@@ -395,15 +406,37 @@
             <li><button class="time-jump" data-video="agent-only-n2-video" data-time="56">00:56</button> Step 36 finally reaches the first home’s comparison checkbox after 30 consecutive Tabs.</li>
           </ol>
         </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-only-n2-title">
+          <header>
+            <div>
+              <p class="mode">Independent LTL-only exploration</p>
+              <h4 id="ltl-only-n2-title">Apartments G0 · same generated condition</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-only-apartments-g0-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-only-n2-video" data-cue-track="ltl-only-n2" controls preload="metadata" poster="assets/ltl-only-apartments-g0-full-replay-poster.jpeg" aria-label="Complete independent Apartments LTL-only replay compared with the Agent-only N2 finding">
+              <source src="assets/ltl-only-apartments-g0-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-only-apartments-g0-full-replay.mp4">Open the complete Apartments LTL-only replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 30-minute LTL-only exploration · original timing · all 4,056 screenshots</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-only-n2-video" data-time="1">00:01</button> <code>AP-N2-01</code> sees only 7 keyboard stops before <code>&lt;main&gt;</code>; its required threshold is 20.</li>
+            <li><button class="time-jump" data-video="ltl-only-n2-video" data-time="1795">29:55</button> After independent exploration, <code>AP-N2-01</code> ends <code>NOT_APPLICABLE</code>. It never measures the long in-main route to the task’s Compare checkbox.</li>
+            <li>LTL reports other APs on Apartments, but no witness for this N2 task-path failure.</li>
+          </ol>
+        </section>
       </div>
       <section class="analyzer-audit" aria-labelledby="agent-only-n2-audit-title">
-        <h4 id="agent-only-n2-audit-title">How the Agent finds it, and why LTL does not</h4>
+        <h4 id="agent-only-n2-audit-title">How the Agent analyzer finds N2, and what LTL-only measures instead</h4>
         <p>Persisted blind-analyzer result: <code>N2 · Verbose linear traversal</code>, website attribution, high confidence.</p>
         <dl>
           <div><dt>Trigger and rule</dt><dd>Steps 7–36 contain 30 consecutive <code>Tab</code> actions while the task is trying to reach a Compare checkbox.<span class="rule-quote"><code>N2</code>: “User reaches target via brute-force Tab/Down across 100s of elements due to missing shortcuts.”</span></dd></div>
           <div><dt>History evidence read by Agent</dt><dd>The saved focus path crosses header links, Location and Search, the full filter sidebar, breadcrumb, Save search, Sort results, image/favorite/title controls, and only then the first Compare checkbox. No skip or direct results-navigation control appears in that path.</dd></div>
           <div><dt>Why the Agent classifies N2</dt><dd>The analyzer uses the task target and the whole action sequence: the user had to brute-force nearly the entire interface to reach the first relevant control. It can call this a broad N2 usability failure even though the taxonomy description is not implemented as a fixed numeric threshold.</dd></div>
-          <div><dt>LTL rule and result</dt><dd><code>AP-N2-01</code> is narrower: it applies only when at least 20 visible enabled keyboard stops occur <em>before</em> <code>&lt;main&gt;</code>, then checks for a named exact fragment bypass. The completed LTL observation was <code>preMainKeyboardStopCount=7</code> and <code>exactBypassControls=[]</code>; the antecedent was false, so the result was <code>NOT_APPLICABLE</code> with no witness.</dd></div>
+          <div><dt>LTL rule and result</dt><dd><code>AP-N2-01</code> is narrower: it applies only when at least 20 visible enabled keyboard stops occur <em>before</em> <code>&lt;main&gt;</code>, then checks for a named exact fragment bypass. The task trajectory’s passive observation was <code>preMainKeyboardStopCount=7</code> and <code>exactBypassControls=[]</code>. The independent 30-minute LTL-only run reaches the same formal outcome: <code>AP-N2-01 = NOT_APPLICABLE</code>. Neither run measures the in-main route to Compare.</dd></div>
           <div><dt>Coverage gap</dt><dd><strong>Task-target gap.</strong> Agent measures the actual route to “Compare” inside main content; LTL measures a structural pre-main proxy. Both results are internally consistent, but only the Agent represents the failure seen in this video.</dd></div>
         </dl>
       </section>
@@ -415,13 +448,13 @@
           <h3>W3 · Enter expands Explore, Space does nothing</h3>
           <p>The Agent analyzer compares two adjacent actions on the same control. LTL observes the control but refuses to judge it because the generic button has no admitted exact-effect oracle.</p>
         </div>
-        <span class="relation agent-only">Agent positive · LTL NOT_APPLICABLE</span>
+        <span class="relation agent-only">Agent Explore bug · LTL-only misses it</span>
       </header>
-      <div class="comparison-video-grid single">
+      <div class="comparison-video-grid">
         <section class="comparison-video agent" aria-labelledby="agent-only-w3-title">
           <header>
             <div>
-              <p class="mode">Shared Agent trajectory + passive LTL observation</p>
+              <p class="mode">Agent task run · analyzed afterward</p>
               <h4 id="agent-only-w3-title">Udemy · Unreal Engine course search</h4>
             </div>
             <a class="media-link" href="assets/agent-only-w3-shared-trajectory.mp4">MP4</a>
@@ -433,22 +466,45 @@
             </video>
             <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
           </div>
-          <p class="replay-meta">Complete 37-step condensed replay · 01:01 · one end-state frame for every saved Agent step · same run used by both analyzers</p>
+          <p class="replay-meta">Complete 37-step condensed replay · 01:01 · one end-state frame for every saved Agent step</p>
           <ol class="key-moments">
             <li><button class="time-jump" data-video="agent-only-w3-video" data-time="38.4">00:38</button> Step 25: Enter on Explore changes <code>expanded=false → expanded=true</code>.</li>
             <li><button class="time-jump" data-video="agent-only-w3-video" data-time="40">00:40</button> Step 26: Space on the same focused Explore button leaves <code>expanded=true</code>; URL, focus, and control-state hash do not change.</li>
           </ol>
         </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-only-w3-title">
+          <header>
+            <div>
+              <p class="mode">Independent LTL-only exploration</p>
+              <h4 id="ltl-only-w3-title">Udemy G0 · same generated condition</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-only-udemy-g0-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-only-w3-video" data-cue-track="ltl-only-w3" controls preload="metadata" poster="assets/ltl-only-udemy-g0-full-replay-poster.jpeg" aria-label="Complete independent Udemy LTL-only replay compared with the Agent-only W3 finding">
+              <source src="assets/ltl-only-udemy-g0-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-only-udemy-g0-full-replay.mp4">Open the complete Udemy LTL-only replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 30-minute LTL-only exploration · original timing · all 4,083 screenshots</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-only-w3-video" data-time="4">00:04</button> LTL-only reaches Explore, but records <code>generic_button_effect_undeclared</code>; the transaction is excluded from a violation claim.</li>
+            <li><button class="time-jump" data-video="ltl-only-w3-video" data-time="61.5">01:02</button> Space on Explore is again observed but not admitted because no exact expected effect can be proved.</li>
+            <li><button class="time-jump" data-video="ltl-only-w3-video" data-time="889.5">14:50</button> LTL later fires <code>AP-W3-01</code> on a different control—“Beginner favorites,” a checkbox whose checked state fails to change.</li>
+            <li><strong>Comparison result:</strong> same formal family, different bug. The Explore Enter/Space mismatch found by Agent is still absent from LTL’s reported witnesses.</li>
+          </ol>
+        </section>
       </div>
       <section class="analyzer-audit" aria-labelledby="agent-only-w3-audit-title">
-        <h4 id="agent-only-w3-audit-title">How the Agent finds it, and why LTL does not</h4>
+        <h4 id="agent-only-w3-audit-title">How the Agent analyzer finds W3, and why LTL-only misses Explore</h4>
         <p>Persisted blind-analyzer result: <code>W3 · Activation-mode mismatch</code>, website attribution, high confidence.</p>
         <dl>
           <div><dt>Trigger and rule</dt><dd>The Agent tests two standard activation keys on the same focused Explore button.<span class="rule-quote"><code>W3</code>: “A widget expects Space but the screen reader sends Enter, or vice versa, so the control appears non-responsive.”</span></dd></div>
           <div><dt>History evidence read by Agent</dt><dd>Step 25 records Enter and focus state <code>Explore expanded=false → expanded=true</code>. Step 26 records Space on the same control and <code>expanded=true → expanded=true</code>. This within-control contrast isolates the mismatch from a general page failure.</dd></div>
           <div><dt>Why the Agent classifies W3</dt><dd>One supported activation mode visibly changes the widget while the other has no result. Because the comparison is adjacent and uses the same named control, the analyzer can make a high-confidence behavioral judgment from history.</dd></div>
-          <div><dt>LTL rule and result</dt><dd><code>AP-W3-01</code> requires an admitted role/key transaction with a provable exact postcondition within 500 ms. The LTL trace records Explore as <code>role=button</code> but <code>admitted=false</code>, <code>admissionReason=generic_button_effect_undeclared</code>, <code>effectKind=null</code>, and <code>response=null</code>. Without an <code>aria-controls</code>, exposed native state, or declared custom oracle, it cannot formally call the non-response a violation; the run result is <code>NOT_APPLICABLE</code>.</dd></div>
-          <div><dt>Coverage gap</dt><dd><strong>Oracle-admission gap.</strong> Agent can infer a mismatch by comparing observed behavior across two actions. LTL intentionally declines because it cannot prove what exact effect this generic button was supposed to have.</dd></div>
+          <div><dt>LTL rule and result</dt><dd><code>AP-W3-01</code> requires an admitted role/key transaction with a provable exact postcondition within 500 ms. On Explore, both the task trajectory and the independent LTL-only run record <code>role=button</code>, <code>admitted=false</code>, <code>admissionReason=generic_button_effect_undeclared</code>, and <code>effectKind=null</code>. The independent run later emits <code>AP-W3-01</code> for a different “Beginner favorites” checkbox whose checked state fails to change. Thus LTL finds a W3-family bug on Udemy, but not the Explore activation mismatch shown at left.</dd></div>
+          <div><dt>Coverage gap</dt><dd><strong>Oracle-admission gap for this control.</strong> Agent infers Explore’s expected behavior by comparing Enter and Space in adjacent history steps. LTL can prove the checkbox transition elsewhere, but intentionally declines to guess what exact effect the generic Explore button should have.</dd></div>
         </dl>
       </section>
     </article>
@@ -459,13 +515,13 @@
           <h3>FD1 · Four links accept Enter but provide no feedback</h3>
           <p>The Agent analyzer uses repeated failed activations plus successful neighboring links as a control comparison. Current LTL has no direct FD1 property, so this behavior is outside its reported scope.</p>
         </div>
-        <span class="relation agent-only">Agent positive · no LTL AP</span>
+        <span class="relation agent-only">Agent FD1 · LTL-only has no FD1 rule</span>
       </header>
-      <div class="comparison-video-grid single">
+      <div class="comparison-video-grid">
         <section class="comparison-video agent" aria-labelledby="agent-only-fd1-title">
           <header>
             <div>
-              <p class="mode">Shared Agent trajectory + passive LTL observation</p>
+              <p class="mode">Agent task run · analyzed afterward</p>
               <h4 id="agent-only-fd1-title">Agoda · Responsive discovery navigation</h4>
             </div>
             <a class="media-link" href="assets/agent-only-fd1-shared-trajectory.mp4">MP4</a>
@@ -477,7 +533,7 @@
             </video>
             <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
           </div>
-          <p class="replay-meta">Complete 44-step condensed replay · 01:12 · one end-state frame for every saved Agent step · same run used by both analyzers</p>
+          <p class="replay-meta">Complete 44-step condensed replay · 01:12 · one end-state frame for every saved Agent step</p>
           <ol class="key-moments">
             <li><button class="time-jump" data-video="agent-only-fd1-video" data-time="48">00:48</button> Step 31: Enter on Help center leaves URL <code>/deals</code> and focus on Help center.</li>
             <li><button class="time-jump" data-video="agent-only-fd1-video" data-time="51.2">00:51</button> Step 33: Manage bookings behaves the same way.</li>
@@ -486,15 +542,38 @@
             <li><button class="time-jump" data-video="agent-only-fd1-video" data-time="67.2">01:07</button> Step 43 confirms the browser is still functional: Sign in or register changes <code>/deals → /account</code>.</li>
           </ol>
         </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-only-fd1-title">
+          <header>
+            <div>
+              <p class="mode">Independent LTL-only exploration</p>
+              <h4 id="ltl-only-fd1-title">Agoda G0.5 · same generated condition</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-only-agoda-g05-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-only-fd1-video" data-cue-track="ltl-only-fd1" controls preload="metadata" poster="assets/ltl-only-agoda-g05-full-replay-poster.jpeg" aria-label="Complete independent Agoda LTL-only replay compared with the Agent-only FD1 finding">
+              <source src="assets/ltl-only-agoda-g05-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-only-agoda-g05-full-replay.mp4">Open the complete Agoda LTL-only replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 30-minute LTL-only exploration · original timing · all 4,131 screenshots</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-only-fd1-video" data-time="16.5">00:17</button> LTL-only activates Help center and Airport car rentals, but records only excluded <code>link_destination_not_narrowly_comparable</code> candidates.</li>
+            <li><button class="time-jump" data-video="ltl-only-fd1-video" data-time="43.5">00:44</button> It also reaches Manage bookings; again the checker cannot prove the application-specific destination or feedback contract.</li>
+            <li><button class="time-jump" data-video="ltl-only-fd1-video" data-time="69.8">01:10</button> Things to do produces the same excluded candidate. These are observations, not LTL violations.</li>
+            <li><strong>Comparison result:</strong> LTL-only encounters the same named controls, but the 21-property registry has no FD1 obligation, so it cannot emit the Agent’s “no action feedback” finding.</li>
+          </ol>
+        </section>
       </div>
       <section class="analyzer-audit" aria-labelledby="agent-only-fd1-audit-title">
-        <h4 id="agent-only-fd1-audit-title">How the Agent finds it, and why LTL does not</h4>
+        <h4 id="agent-only-fd1-audit-title">How the Agent analyzer finds FD1, and why LTL-only cannot report it</h4>
         <p>Persisted blind-analyzer result: <code>FD1 · No action feedback</code>, website attribution, high confidence.</p>
         <dl>
           <div><dt>Trigger and rule</dt><dd>Enter is pressed on four focused controls exposed as links: Help center, Manage bookings, Things to do, and Airport car rentals.<span class="rule-quote"><code>FD1</code>: “No textual or programmatic feedback confirms an action outcome, so the user must re-traverse the page to verify it.”</span></dd></div>
           <div><dt>History evidence read by Agent</dt><dd>At steps 31, 33, 39, and 41, both URL and focus remain unchanged after Enter. The same trace also contains successful neighboring activations: Cancellation options changes <code>/deals → /help</code>, Limited Time Offers returns to <code>/deals</code>, and Sign in or register changes <code>/deals → /account</code>.</dd></div>
           <div><dt>Why the Agent classifies FD1</dt><dd>The repeated no-result pattern is not inferred from one quiet frame. Successful adjacent links establish what observable feedback normally looks like in this workflow, while four named links consistently provide none. Raw trace fields corroborate the analyzer-visible evidence with an unchanged control-state hash and <code>activation_no_observed_effect</code>.</dd></div>
-          <div><dt>LTL rule and result</dt><dd>The current 21-property registry has no direct FD1 AP, so there is no formal rule that can emit an FD1 witness. The related <code>AP-W3-01</code> covers only controls with an admitted exact role-specific effect; the checker’s own admission inventory explicitly defers generic action feedback because it needs application-level action/outcome identity and legitimate-no-op exceptions. This run therefore has zero relevant LTL violations.</dd></div>
+          <div><dt>LTL rule and result</dt><dd>The current 21-property registry has no direct FD1 AP, so no formal rule can emit an FD1 witness. In the independent 30-minute replay, LTL-only actually reaches Help center, Manage bookings, Things to do, and Airport car rentals. It records <code>AP-W3-01</code> candidates with <code>link_destination_not_narrowly_comparable</code>, then excludes them from claims because the expected application destination or feedback is not provable. Seeing the same controls is therefore not the same as detecting FD1.</dd></div>
           <div><dt>Coverage gap</dt><dd><strong>Missing-property gap.</strong> Agent can use task context and contrastive history to judge whether feedback was expected. LTL currently has no registered obligation representing that generic expectation.</dd></div>
         </dl>
       </section>
@@ -1328,57 +1407,76 @@ Use only keyboard actions. When the source workflow says click, choose, open, se
   (() => {
     const cueTracks = {
       "agent-fm1": [
-        { start: 0, end: 5, label: "Agent replay", text: "The Agent performs the complete booking workflow using only keyboard actions." },
-        { start: 37.2, end: 40, label: "Bug trigger", text: "Enter opens “Review and book,” but focus stays on the background Reserve button." },
-        { start: 40, end: 56.8, label: "User-visible impact", text: "Tab walks through background results and footer links while the dialog remains open." },
-        { start: 56.8, end: 61, label: "Delayed recovery", text: "Only after traversing the background does focus finally enter the dialog at Close." },
-        { start: 66.4, end: 72, label: "Raw-trace evidence", text: "Later, the notification disappears and the trace records focus on the document—a symptom closer to LTL’s witness." }
+        { start: 0, end: 5, label: "Analyzer map · FM2 / FM1", text: "These error labels are assigned after the run, then pinned to the history steps that support them." },
+        { start: 37.2, end: 40, label: "Agent evidence · FM2", text: "Step 24: Enter opens the dialog, but focus stays on background Reserve. FM2 means focus lands in unrelated page content." },
+        { start: 40, end: 56.8, label: "History pattern · FM2", text: "Steps 25–35 keep Tab focus behind the visible dialog. The analyzer reads the whole path, not one screenshot." },
+        { start: 56.8, end: 61, label: "FM2 consequence", text: "Focus reaches Close only after traversing background controls, confirming off-target focus drift." },
+        { start: 66.4, end: 72, label: "Agent evidence · FM1", text: "Step 42 records focus becoming the document after an action. FM1 means an action resets focus to page top or an unrelated place." }
       ],
       "ltl-fm1": [
-        { start: 0, end: 6, label: "LTL replay", text: "The checker monitors the AP continuously throughout this complete 30-minute exploration." },
-        { start: 269.5, end: 274, label: "Qualifying transaction", text: "Trusted Space activates the focused “Dismiss notification” control." },
-        { start: 274, end: 281, label: "Formal violation", text: "The control is removed; after 500 ms, settled focus is the document, not an exposed element. AP-FM1-01 fires." }
+        { start: 0, end: 6, label: "LTL rule · AP-FM1-01", text: "If keyboard activation removes the focused control, focus must settle on a connected, visible, accessibility-exposed element." },
+        { start: 269.5, end: 274, label: "Rule trigger · AP-FM1-01", text: "Trusted Space activates the focused Dismiss notification control, so the formal obligation starts." },
+        { start: 274, end: 281, label: "LTL finding · AP-FM1-01", text: "The control is removed; after 500 ms focus is the document, not an exposed element. The checker emits the violation." }
       ],
       "agent-m103": [
-        { start: 0, end: 4, label: "Agent replay", text: "The Agent follows the complete halftime-show task and tests dialog behavior." },
-        { start: 12, end: 13.6, label: "Dialog opens", text: "The full-screen player appears and visibly reports NOW PLAYING." },
-        { start: 13.6, end: 17.6, label: "Bug confirmed", text: "Escape is pressed, but modal_count remains 1 and the same player stays visible." },
-        { start: 17.6, end: 24.8, label: "Isolation test", text: "Pause, Resume, and explicit Close work; the defect is specifically Escape handling." }
+        { start: 0, end: 4, label: "Analyzer taxonomy · M1", text: "After the run, the analyzer checks history for modal-dismissal struggle: the normal exit action fails or is unclear." },
+        { start: 12, end: 13.6, label: "M1 precondition", text: "Step 8 opens the NFL player; the visible dialog establishes what Escape should dismiss." },
+        { start: 13.6, end: 17.6, label: "Agent error · M1", text: "Step 9 presses Escape, but the same player remains. History records focus unchanged; raw audit data keeps modal count at 1." },
+        { start: 17.6, end: 24.8, label: "Why M1, not a dead page", text: "Pause, Resume, and explicit Close work. The analyzer isolates the failure to the modal’s standard Escape dismissal." }
       ],
       "ltl-m103": [
-        { start: 0, end: 6, label: "LTL replay", text: "This is the complete NFL exploration; the checker evaluates multiple APs on every relevant action." },
-        { start: 102, end: 106.5, label: "Escape transaction", text: "A trusted Escape begins while the exact NFL player dialog is active." },
-        { start: 106.5, end: 113, label: "Formal violation", text: "After 500 ms, that same dialog is still connected and visible. AP-M1-03 fires." }
+        { start: 0, end: 6, label: "LTL rule · AP-M1-03", text: "After trusted Escape, the exact active dialog—not merely any dialog—must be disconnected or hidden within 500 ms." },
+        { start: 102, end: 106.5, label: "Rule trigger · AP-M1-03", text: "Escape begins while the exact NFL player dialog is active; LTL saves that dialog’s identity." },
+        { start: 106.5, end: 113, label: "LTL finding · AP-M1-03", text: "After 500 ms the same dialog is still connected and visible, so the checker emits the Escape-close violation." }
       ],
       "agent-m105": [
-        { start: 0, end: 4, label: "Agent replay", text: "The Agent navigates to the halftime-show player with keyboard actions." },
-        { start: 18.4, end: 20, label: "Bug trigger", text: "The modal opens, but focus remains on the background Play button." },
-        { start: 20, end: 21.6, label: "Wrong focus path", text: "Tab reaches another background control instead of Pause or Close inside the player." },
-        { start: 21.6, end: 25.6, label: "User-visible impact", text: "Escape fails and Shift+Tab returns to the background Play button; modal controls remain unreachable." }
+        { start: 0, end: 4, label: "Analyzer taxonomy · FM2", text: "The Agent taxonomy has no exact new-modal-focus class; the analyzer maps this history to off-target focus drift, FM2." },
+        { start: 18.4, end: 20, label: "Agent error · FM2", text: "Step 12 opens the player, but focus remains on the background Play button instead of entering the modal." },
+        { start: 20, end: 21.6, label: "History evidence · FM2", text: "Step 13 Tabs to another background Watch now control, proving focus is moving behind the visible player." },
+        { start: 21.6, end: 25.6, label: "Related error · M1", text: "Escape also fails and Shift+Tab returns to Play. M1 describes the dismissal symptom; FM2 describes the opening-focus failure." }
       ],
       "ltl-m105": [
-        { start: 0, end: 3.1, label: "Opening transaction", text: "Trusted Enter activates Play; the checker records that no modal existed before the action." },
-        { start: 3.1, end: 10, label: "Formal violation", text: "One exact new modal exists, but focus is not inside it after 500 ms. AP-M1-05 fires immediately." }
+        { start: 0, end: 3.1, label: "LTL rule · AP-M1-05", text: "If keyboard activation opens exactly one new modal, focus must enter that exact modal within 500 ms." },
+        { start: 3.1, end: 10, label: "LTL finding · AP-M1-05", text: "One exact new modal exists, but focus remains outside it after 500 ms. The checker emits the violation immediately." }
       ],
       "agent-only-n2": [
-        { start: 0, end: 4, label: "Strict Agent-only replay", text: "Every saved Agent step is shown; passive LTL observed this same browser trajectory." },
-        { start: 9.6, end: 14.4, label: "Long traversal begins", text: "The Agent starts an uninterrupted Tab path toward the first Compare checkbox." },
-        { start: 17.6, end: 21, label: "Off-screen stop", text: "Focus reaches Location at y=-2017, still far from the task target." },
-        { start: 35.2, end: 40, label: "Cross-step evidence", text: "After many Tabs, focus is still moving through filters rather than reaching Compare." },
-        { start: 56, end: 61, label: "Agent finding", text: "The first Compare checkbox is finally reached after 30 consecutive Tabs. Agent reports N2; LTL remains not applicable." }
+        { start: 0, end: 4, label: "Analyzer timing · post-hoc", text: "N2 is assigned after the run. The label below is pinned to the history steps that supplied the evidence." },
+        { start: 9.6, end: 14.4, label: "Evidence begins · N2", text: "Step 7 starts an uninterrupted Tab route toward Compare. N2 means verbose brute-force traversal caused by missing shortcuts." },
+        { start: 17.6, end: 21, label: "Agent error evidence · N2", text: "Step 12 reaches an off-screen Location field at y=-2017; the task target is still far away." },
+        { start: 35.2, end: 40, label: "History pattern · N2", text: "By step 23, history still shows filter controls. The analyzer links these steps to the task target, not just page structure." },
+        { start: 56, end: 61, label: "Analyzer output · N2", text: "Step 36 finally reaches the first Compare checkbox after 30 Tabs. The persisted analyzer labels N2 with high confidence." }
+      ],
+      "ltl-only-n2": [
+        { start: 0, end: 7, label: "LTL rule · AP-N2-01", text: "This rule asks a narrower question: are there at least 20 keyboard stops before main, with no exact bypass? It does not follow a task target inside main." },
+        { start: 895, end: 903, label: "Scope mismatch · AP-N2-01", text: "Independent exploration continues, but the formal counter remains 7 pre-main stops. The Agent’s 30-step route to Compare is outside this rule." },
+        { start: 1795, end: 1803, label: "LTL-only result · N2 not found", text: "AP-N2-01 ends NOT_APPLICABLE. LTL finds other Apartments APs, but no witness for this task-path N2 failure." }
       ],
       "agent-only-w3": [
-        { start: 0, end: 4, label: "Strict Agent-only replay", text: "The saved task history and passive-LTL observation come from this same run." },
-        { start: 38.4, end: 40, label: "Enter works", text: "Enter changes Explore from expanded=false to expanded=true." },
-        { start: 40, end: 43.2, label: "Space does nothing", text: "Space on the same focused button leaves expanded=true and produces no state change." },
-        { start: 43.2, end: 47, label: "Why only Agent", text: "Agent compares the two actions and reports W3. LTL rejects the generic button because its exact effect is undeclared." }
+        { start: 0, end: 4, label: "Analyzer timing · post-hoc", text: "W3 is assigned after the run by comparing adjacent history steps on the same named control." },
+        { start: 38.4, end: 40, label: "W3 baseline · Enter works", text: "Step 25: Enter changes Explore from expanded=false to expanded=true. This supplies the working activation mode." },
+        { start: 40, end: 43.2, label: "Agent error · W3", text: "Step 26: Space on the same Explore button leaves expanded=true and changes nothing. W3 means one standard activation mode fails." },
+        { start: 43.2, end: 47, label: "Analyzer output · W3", text: "The within-control contrast rules out a dead page. The persisted analyzer reports activation-mode mismatch with high confidence." }
+      ],
+      "ltl-only-w3": [
+        { start: 0, end: 4, label: "LTL rule · AP-W3-01", text: "LTL can judge an activation only when it can name the exact expected state change, such as a checkbox becoming checked." },
+        { start: 4, end: 9, label: "LTL exclusion · Explore", text: "Enter on Explore is seen, but its expected effect is undeclared. The candidate is excluded, so no Explore violation can be emitted." },
+        { start: 60.8, end: 66, label: "LTL exclusion · Explore", text: "Space on Explore is also seen and excluded for the same reason: no exact application effect is provable." },
+        { start: 887, end: 895, label: "LTL finding · AP-W3-01", text: "A different control fails: Space leaves the Beginner favorites checkbox checked. This exact checkbox transition is admitted and reported." },
+        { start: 1795, end: 1803, label: "Comparison · different W3 bug", text: "LTL found a checkbox W3 violation, not the Agent’s Explore Enter/Space mismatch. The specific Agent finding remains unmatched." }
       ],
       "agent-only-fd1": [
-        { start: 0, end: 4, label: "Strict Agent-only replay", text: "The Agent and passive LTL share this exact task trajectory." },
-        { start: 48, end: 53.6, label: "No feedback", text: "Help center and Manage bookings accept Enter, but URL and focus remain unchanged." },
-        { start: 54.4, end: 58, label: "Control comparison", text: "Cancellation options works and changes /deals to /help, showing what expected feedback looks like." },
-        { start: 60.8, end: 66.4, label: "Pattern repeats", text: "Things to do and Airport car rentals reproduce the same no-result behavior." },
-        { start: 67.2, end: 71.2, label: "Agent finding", text: "Sign in or register works, strengthening FD1 attribution. Current LTL has no direct FD1 property." }
+        { start: 0, end: 4, label: "Analyzer timing · post-hoc", text: "FD1 is assigned after the run by comparing repeated failed links with neighboring links that visibly work." },
+        { start: 48, end: 53.6, label: "Agent error · FD1", text: "Steps 31 and 33: Enter on Help center and Manage bookings leaves URL and focus unchanged. FD1 means no perceivable action feedback." },
+        { start: 54.4, end: 58, label: "Control case · not an error", text: "Step 35: Cancellation options changes /deals to /help. This shows what successful feedback looks like in the same history." },
+        { start: 60.8, end: 66.4, label: "Agent error · FD1", text: "Steps 39 and 41 repeat the no-result behavior on Things to do and Airport car rentals, strengthening the pattern." },
+        { start: 67.2, end: 71.2, label: "Analyzer output · FD1", text: "Step 43 Sign in works, ruling out a dead browser. The persisted analyzer labels the four failed links FD1 with high confidence." }
+      ],
+      "ltl-only-fd1": [
+        { start: 0, end: 6, label: "No LTL rule · FD1", text: "The 21-property registry has no generic no-action-feedback obligation. Without a rule, LTL cannot emit an FD1 violation." },
+        { start: 16, end: 23, label: "Seen but excluded · FD1 gap", text: "LTL-only reaches Help center and Airport car rentals, but cannot prove their application-specific destinations; they remain excluded candidates." },
+        { start: 40, end: 47, label: "Seen but excluded · FD1 gap", text: "Manage bookings is reached too. Observation is not a finding: no admitted postcondition means no violation witness." },
+        { start: 69, end: 75, label: "Seen but excluded · FD1 gap", text: "Things to do produces the same excluded candidate. LTL has now seen the controls but still lacks an FD1 rule." },
+        { start: 1795, end: 1803, label: "LTL-only result · FD1 impossible", text: "The run finishes with no FD1 witness because FD1 is absent from the registry—not because these links were proven accessible." }
       ]
     };
 
