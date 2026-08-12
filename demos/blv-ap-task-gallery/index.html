@@ -73,6 +73,9 @@
     .ltl-rule-code p { margin: 10px 12px; color: #374151; font-size: 12px; }
     .ltl-rule-code pre { margin: 0; padding: 12px; overflow: auto; color: #e5e7eb; background: #111827; border-left: 0; font-size: 11px; line-height: 1.45; }
     .ltl-rule-code .rule-source { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
+    .agent-task-prompt { margin: 0 16px 16px; overflow: hidden; background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 6px; }
+    .agent-task-prompt summary { padding: 10px 12px; color: var(--green); background: #ecfdf5; font-size: 13px; font-weight: 800; }
+    .agent-task-prompt pre { margin: 0; padding: 12px; overflow: auto; color: #e5e7eb; background: #111827; border-left: 0; font-size: 11px; line-height: 1.5; }
     .time-jump { margin-right: 4px; padding: 1px 6px; color: var(--blue); background: #eef4ff; border: 1px solid #b9cdf4; border-radius: 4px; font: 700 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; cursor: pointer; }
     .time-jump:hover, .time-jump:focus-visible { background: #dce9ff; }
     .analyzer-note { margin: 18px 0 0; padding: 12px 14px; background: #eff6ff; border-left: 4px solid var(--blue); font-size: 14px; }
@@ -207,6 +210,18 @@
             <li><button class="time-jump" data-video="agent-fm1-video" data-time="56.8">00:57</button> Focus finally reaches the dialog’s Close button after traversing the background.</li>
             <li><button class="time-jump" data-video="agent-fm1-video" data-time="69.6">01:10</button> The raw Agent trace later records document focus when the notification control disappears—closer to LTL’s witness, although the Agent’s final explanation emphasizes modal entry.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-FM1-01 - Focused control invalidated; focus loses meaningful continuation.
+
+Complete a realistic mock booking.
+
+Source workflow steps: Search any travel category and choose Select, Reserve, or Choose on a result. Review the item, enter traveler name and confirmation email, and click Confirm booking. A unique `EXP-` confirmation notification appears, and the booking is then listed under Upcoming trips on `/trips`.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-fm1-title">
           <header>
@@ -302,6 +317,18 @@ export const AP_FM1_01_LOCAL_CONTROL_INVALIDATION_RETAINS_EXPOSED_FOCUS =
             <li><button class="time-jump" data-video="agent-m103-video" data-time="13.6">00:14</button> Escape is pressed, but <code>modal_count</code> stays 1 and the player remains visible.</li>
             <li><button class="time-jump" data-video="agent-m103-video" data-time="17.6">00:18</button> The Agent continues testing: Pause, Resume, and the explicit Close control work, isolating the defect to Escape handling.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-03 - Escape does not close exact active dialog.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-m103-title">
           <header>
@@ -389,6 +416,18 @@ export const AP_M1_03_ESCAPE_CLOSES_EXACT_ACTIVE_DIALOG =
             <li><button class="time-jump" data-video="agent-m105-video" data-time="20">00:20</button> Tab moves to another background “Watch now” button instead of Pause or Close in the modal.</li>
             <li><button class="time-jump" data-video="agent-m105-video" data-time="21.6">00:22</button> Escape also fails; Shift+Tab returns to the original background Play control. The Agent reports that the player cannot be operated by keyboard.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Mode rule: use only keyboard actions. Do not use mouse, click, coordinate, DOM-query, browser navigation buttons, extraction, or hidden implementation details.
+
+Property under demo: AP-M1-05 - New modal does not receive focus.
+
+Watch the halftime show from the most recent Super Bowl
+
+Source workflow steps: - Visit `/videos` from the Videos navigation item. - Select the “Halftime Show” category, then choose the featured “Super Bowl LVIII Halftime Show: Usher’s full performance” play control. - A full-screen mock player opens and visibly reports “NOW PLAYING”; its pause/resume and close controls work.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-m105-title">
           <header>
@@ -482,6 +521,14 @@ export const AP_M1_05_NEW_EXACT_MODAL_RECEIVES_FOCUS =
             <li><button class="time-jump" data-video="agent-only-n2-video" data-time="35.2">00:35</button> Step 23 is still traversing filter controls; the target is not yet reachable.</li>
             <li><button class="time-jump" data-video="agent-only-n2-video" data-time="56">00:56</button> Step 36 finally reaches the first home’s comparison checkbox after 30 consecutive Tabs.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Compare homes side by side.
+
+Source workflow steps: On Rent results, check Compare on up to three homes and choose Compare homes in the floating bar. The comparison page shows monthly rent, bedrooms, bathrooms, type, rating, and virtual-tour availability; homes can be removed or opened.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-only-n2-title">
           <header>
@@ -548,6 +595,14 @@ export const AP_M1_05_NEW_EXACT_MODAL_RECEIVES_FOCUS =
             <li><button class="time-jump" data-video="agent-only-w3-video" data-time="38.4">00:38</button> Step 25: Enter on Explore changes <code>expanded=false → expanded=true</code>.</li>
             <li><button class="time-jump" data-video="agent-only-w3-video" data-time="40">00:40</button> Step 26: Space on the same focused Explore button leaves <code>expanded=true</code>; URL, focus, and control-state hash do not change.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Find Unreal Engine game development courses with 17+ hours.
+
+Source workflow steps: Search “Unreal Engine game development” and choose Duration “17+ hours.” Expected result: the 24.5-hour Complete Game Development Bootcamp and the 19-hour Blueprints RPG course are shown.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-only-w3-title">
           <header>
@@ -618,6 +673,14 @@ export const AP_M1_05_NEW_EXACT_MODAL_RECEIVES_FOCUS =
             <li><button class="time-jump" data-video="agent-only-fd1-video" data-time="60.8">01:01</button> Steps 39 and 41 repeat the no-result pattern on Things to do and Airport car rentals.</li>
             <li><button class="time-jump" data-video="agent-only-fd1-video" data-time="67.2">01:07</button> Step 43 confirms the browser is still functional: Sign in or register changes <code>/deals → /account</code>.</li>
           </ol>
+          <details class="agent-task-prompt">
+            <summary>Original Agent task prompt · expand</summary>
+            <pre><code>Responsive discovery navigation
+
+Source workflow steps: Use trending destination cards, product tabs, feature cards, header navigation, or footer navigation to move between every product and support route. The mobile menu exposes the same destinations at narrow screen widths.
+
+Use only keyboard actions. When the source workflow says click, choose, open, select, or activate, perform the equivalent keyboard action with Tab, Shift+Tab, Enter, Space, arrow keys, typing, or waiting. Do not use mouse, click, coordinate, or hidden browser-inspection actions. Finish when the workflow is completed or the specified confirmation/result is visible.</code></pre>
+          </details>
         </section>
         <section class="comparison-video ltl" aria-labelledby="ltl-only-fd1-title">
           <header>
