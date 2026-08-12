@@ -15,6 +15,9 @@
       --green: #166534;
       --red: #b42318;
       --blue: #174ea6;
+      --purple: #6d28d9;
+      --amber-bg: #fffbeb;
+      --amber-line: #f59e0b;
     }
     * { box-sizing: border-box; letter-spacing: 0; }
     body {
@@ -30,6 +33,50 @@
     .page-head p { max-width: 78ch; margin: 0; color: var(--muted); }
     .summary { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px; font-size: 14px; }
     .summary strong { color: var(--ink); }
+    .jump-nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 14px; }
+    .comparison-section { margin-top: 30px; padding-bottom: 30px; border-bottom: 3px solid var(--green); }
+    .comparison-section > h2 { margin: 0 0 6px; font-size: 25px; }
+    .section-intro { max-width: 92ch; margin: 0; color: var(--muted); }
+    .scope-note { margin: 16px 0 0; padding: 12px 14px; background: var(--amber-bg); border-left: 4px solid var(--amber-line); font-size: 14px; }
+    .comparison-demo { margin-top: 22px; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+    .comparison-head { display: flex; align-items: start; justify-content: space-between; gap: 18px; padding: 17px 18px; border-bottom: 1px solid var(--line); }
+    .comparison-head h3 { font-size: 20px; }
+    .comparison-head p { max-width: 78ch; margin: 5px 0 0; color: var(--muted); font-size: 14px; }
+    .relation { flex: none; padding: 4px 9px; color: #fff; background: var(--green); border-radius: 999px; font-size: 12px; font-weight: 800; }
+    .relation.different { background: #92400e; }
+    .comparison-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
+    .comparison-video { min-width: 0; }
+    .comparison-video + .comparison-video { border-left: 1px solid var(--line); }
+    .comparison-video header { display: flex; align-items: start; justify-content: space-between; gap: 10px; padding: 13px 16px 10px; }
+    .comparison-video h4 { margin: 0; font-size: 16px; }
+    .comparison-video .mode { margin-bottom: 2px; }
+    .comparison-video.ltl .mode { color: var(--purple); }
+    .video-stage { position: relative; background: #000; }
+    .video-stage video { border-block: 0; }
+    .video-callout { position: absolute; z-index: 2; left: 4%; right: 4%; bottom: 12%; padding: 9px 12px; color: #fff; background: rgba(9, 14, 26, .9); border-left: 4px solid #34d399; border-radius: 4px; box-shadow: 0 3px 14px rgba(0, 0, 0, .35); pointer-events: none; }
+    .video-callout[hidden] { display: none; }
+    .video-callout strong { display: block; margin-bottom: 2px; color: #a7f3d0; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+    .video-callout span { display: block; font-size: 13px; line-height: 1.35; }
+    .replay-meta { margin: 0; padding: 8px 16px; color: var(--muted); background: #f8fafc; border-bottom: 1px solid var(--line); font-size: 12px; }
+    .key-moments { margin: 0; padding: 12px 16px 15px 34px; font-size: 13px; }
+    .key-moments li + li { margin-top: 7px; }
+    .time-jump { margin-right: 4px; padding: 1px 6px; color: var(--blue); background: #eef4ff; border: 1px solid #b9cdf4; border-radius: 4px; font: 700 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; cursor: pointer; }
+    .time-jump:hover, .time-jump:focus-visible { background: #dce9ff; }
+    .comparison-table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
+    .comparison-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .comparison-table caption { padding: 13px 16px 7px; text-align: left; font-size: 15px; font-weight: 800; }
+    .comparison-table th, .comparison-table td { padding: 9px 12px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .comparison-table thead th { color: var(--muted); background: #f8fafc; font-size: 12px; }
+    .comparison-table tbody th { width: 15%; color: var(--muted); font-size: 12px; }
+    .comparison-table td { width: 28%; }
+    .comparison-table td:last-child { width: 29%; }
+    .method-summary { margin-top: 22px; padding: 17px 18px; background: #eef6f1; border: 1px solid #b8d6c2; border-radius: 8px; }
+    .method-summary h3 { margin: 0 0 10px; font-size: 18px; }
+    .method-summary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .method-summary-grid div { padding: 12px; background: #fff; border: 1px solid #cfe1d5; border-radius: 6px; }
+    .method-summary-grid h4 { margin: 0 0 5px; font-size: 14px; }
+    .method-summary-grid p { margin: 0; color: var(--muted); font-size: 13px; }
+    .gallery-start { scroll-margin-top: 12px; }
     .ap-section { margin-top: 32px; }
     .ap-section > h2 { margin: 0 0 12px; font-size: 21px; line-height: 1.3; }
     .run-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
@@ -60,11 +107,15 @@
     summary { padding: 11px 16px; color: var(--blue); font-size: 13px; font-weight: 700; cursor: pointer; }
     pre { margin: 0 16px 16px; padding: 10px 12px; overflow-wrap: anywhere; white-space: pre-wrap; background: #f3f4f6; border-left: 3px solid #9ca3af; font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
     @media (max-width: 880px) {
-      .run-grid { grid-template-columns: 1fr; }
+      .run-grid, .comparison-video-grid, .method-summary-grid { grid-template-columns: 1fr; }
+      .comparison-video + .comparison-video { border-left: 0; border-top: 1px solid var(--line); }
     }
     @media (max-width: 560px) {
       main { width: min(100% - 20px, 1240px); padding-top: 18px; }
       .page-head h1 { font-size: 27px; }
+      .comparison-section > h2 { font-size: 21px; }
+      .comparison-head { display: block; }
+      .relation { display: inline-block; margin-top: 10px; }
       .ap-section > h2 { font-size: 18px; }
       .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
       .provenance { grid-template-columns: 1fr; gap: 2px; }
@@ -77,15 +128,248 @@
 <main>
   <header class="page-head">
     <h1>BLV AP task gallery</h1>
-    <p>Keyboard-only reproductions of accessibility-property tasks, shown in paired agent modes with task, flow, outcome, and usage provenance.</p>
+    <p>Keyboard-only reproductions of accessibility-property tasks, with representative Agent–LTL comparisons followed by the original paired-agent run gallery.</p>
     <div class="summary" aria-label="Gallery summary">
+      <span><strong>3</strong> Agent–LTL comparison demos</span>
       <span><strong>10</strong> accessibility properties</span>
       <span><strong>20</strong> runs</span>
       <span><strong>2</strong> modes per property</span>
       <span>Batch: <strong>ap-gallery-full20-flow-grounded-20260808</strong></span>
     </div>
+    <nav class="jump-nav" aria-label="Page sections">
+      <a href="#agent-ltl-comparisons">Agent vs. LTL demos</a>
+      <a href="#paired-agent-gallery">Paired-agent gallery</a>
+    </nav>
   </header>
-  <section class="ap-section">
+  <section class="comparison-section" id="agent-ltl-comparisons" aria-labelledby="comparison-title">
+    <h2 id="comparison-title">Representative Agent vs. LTL demos</h2>
+    <p class="section-intro">Each example pairs a complete vision-agent task replay with the complete LTL exploration replay, then compares the trigger, evidence, and conclusion. Use the timestamp buttons to jump directly to the decisive moment; explanatory callouts appear over the video during playback.</p>
+    <p class="scope-note"><strong>Pairing scope:</strong> the two replays share the same AP, website, and task seed, but they are separate trajectories from separate batches. They are paired for behavioral comparison, not presented as two views of one synchronized episode. Agent replays come from <code>ap-gallery-full20-flow-grounded-20260808</code>; LTL replays come from the 30-minute targeted campaign.</p>
+
+    <article class="comparison-demo" id="comparison-ap-fm1-01">
+      <header class="comparison-head">
+        <div>
+          <h3>AP-FM1-01 · Focus loses meaningful continuation</h3>
+          <p>The methods agree that focus handling is broken, but their primary evidence is different: the Agent explains the modal-opening experience, while LTL proves a later control-invalidation contract violation.</p>
+        </div>
+        <span class="relation different">Same AP label · different evidence</span>
+      </header>
+      <div class="comparison-video-grid">
+        <section class="comparison-video agent" aria-labelledby="agent-fm1-title">
+          <header>
+            <div>
+              <p class="mode">Vision Agent</p>
+              <h4 id="agent-fm1-title">Complete task replay</h4>
+            </div>
+            <a class="media-link" href="assets/ap-fm1-01-vision.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="agent-fm1-video" data-cue-track="agent-fm1" controls preload="metadata" poster="assets/ap-fm1-01-vision-poster.png" aria-label="Complete vision Agent replay for AP-FM1-01">
+              <source src="assets/ap-fm1-01-vision.mp4" type="video/mp4" />
+              <a href="assets/ap-fm1-01-vision.mp4">Open the complete Agent MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 49-step replay · 01:19 · before/after frame for every Agent step</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="agent-fm1-video" data-time="37.6">00:38</button> Enter opens “Review and book,” but focus remains on the background Reserve button.</li>
+            <li><button class="time-jump" data-video="agent-fm1-video" data-time="40">00:40</button> Repeated Tab moves through other results and footer links behind the visible dialog.</li>
+            <li><button class="time-jump" data-video="agent-fm1-video" data-time="56.8">00:57</button> Focus finally reaches the dialog’s Close button after traversing the background.</li>
+            <li><button class="time-jump" data-video="agent-fm1-video" data-time="69.6">01:10</button> The raw Agent trace later records document focus when the notification control disappears—closer to LTL’s witness, although the Agent’s final explanation emphasizes modal entry.</li>
+          </ol>
+        </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-fm1-title">
+          <header>
+            <div>
+              <p class="mode">LTL checker</p>
+              <h4 id="ltl-fm1-title">Complete exploration replay</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-expedia-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-fm1-video" data-cue-track="ltl-fm1" controls preload="metadata" poster="assets/ltl-ap-fm1-01-witness.jpeg" aria-label="Complete LTL exploration replay for AP-FM1-01">
+              <source src="assets/ltl-expedia-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-expedia-full-replay.mp4">Open the complete LTL MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 30-minute exploration · original-timing reconstruction from all 3,935 screenshots</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-fm1-video" data-time="270">04:30</button> LTL has continuously monitored the formal AP; it now observes keyboard activation of “Dismiss notification.”</li>
+            <li><button class="time-jump" data-video="ltl-fm1-video" data-time="274.04">04:34</button> The activated control is removed and, after the 500 ms settle window, focus is the document rather than a connected, rendered, accessibility-exposed element.</li>
+            <li>The checker emits <code>AP_FM1_01_LOCAL_CONTROL_INVALIDATION_RETAINS_EXPOSED_FOCUS</code> with the action, removed-control reason, settled focus, and screenshot in one witness.</li>
+          </ol>
+        </section>
+      </div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <caption>Detailed comparison</caption>
+          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Trigger</th><td>Opening the booking dialog with Enter.</td><td>Activating “Dismiss notification” with Space; the control is then removed.</td><td>Different concrete events within the same broad focus-continuation family.</td></tr>
+            <tr><th scope="row">Evidence</th><td>Visible dialog plus focus remaining on Reserve, followed by a long Tab path through background content. The raw trace also later records document focus after notification invalidation.</td><td>Formal before/after transaction: <code>invalidated=true</code>, reason <code>removed</code>, and <code>settledFocus.kind=document</code> after 500 ms.</td><td>Both expose broken focus continuity; LTL’s primary witness is narrower and directly satisfies the AP definition.</td></tr>
+            <tr><th scope="row">How it is found</th><td>The Agent completes a realistic booking and interprets the user-visible keyboard path.</td><td>The checker evaluates the temporal obligation after every qualifying trusted activation.</td><td>Agent supplies workflow impact; LTL supplies an exact machine-checkable transaction.</td></tr>
+            <tr><th scope="row">Bottom line</th><td>Bug found, but the final narrative names modal-entry behavior as AP-FM1-01.</td><td>Bug found with exact AP-FM1-01 control-invalidation evidence.</td><td><strong>Partial semantic agreement:</strong> same failure family, different primary witness and boundary.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="comparison-demo" id="comparison-ap-m1-03">
+      <header class="comparison-head">
+        <div>
+          <h3>AP-M1-03 · Escape does not close the active dialog</h3>
+          <p>This is the cleanest agreement case: both methods exercise Escape on the NFL player and observe that the same dialog remains open.</p>
+        </div>
+        <span class="relation">Exact behavioral agreement</span>
+      </header>
+      <div class="comparison-video-grid">
+        <section class="comparison-video agent" aria-labelledby="agent-m103-title">
+          <header>
+            <div>
+              <p class="mode">Vision Agent</p>
+              <h4 id="agent-m103-title">Complete task replay</h4>
+            </div>
+            <a class="media-link" href="assets/ap-m1-03-vision.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="agent-m103-video" data-cue-track="agent-m103" controls preload="metadata" poster="assets/ap-m1-03-vision-poster.png" aria-label="Complete vision Agent replay for AP-M1-03">
+              <source src="assets/ap-m1-03-vision.mp4" type="video/mp4" />
+              <a href="assets/ap-m1-03-vision.mp4">Open the complete Agent MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 17-step replay · 00:28 · before/after frame for every Agent step</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="agent-m103-video" data-time="12">00:12</button> Enter opens the full-screen player; “NOW PLAYING” is visible.</li>
+            <li><button class="time-jump" data-video="agent-m103-video" data-time="13.6">00:14</button> Escape is pressed, but <code>modal_count</code> stays 1 and the player remains visible.</li>
+            <li><button class="time-jump" data-video="agent-m103-video" data-time="17.6">00:18</button> The Agent continues testing: Pause, Resume, and the explicit Close control work, isolating the defect to Escape handling.</li>
+          </ol>
+        </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-m103-title">
+          <header>
+            <div>
+              <p class="mode">LTL checker</p>
+              <h4 id="ltl-m103-title">Complete exploration replay</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-nfl-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-m103-video" data-cue-track="ltl-m103" controls preload="metadata" poster="assets/ltl-ap-m1-03-witness.jpeg" aria-label="Complete LTL exploration replay for AP-M1-03">
+              <source src="assets/ltl-nfl-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-nfl-full-replay.mp4">Open the complete LTL MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 30-minute exploration · original-timing reconstruction from all 3,790 screenshots</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-m103-video" data-time="102">01:42</button> A trusted Escape transaction begins while the NFL player dialog is active.</li>
+            <li><button class="time-jump" data-video="ltl-m103-video" data-time="106.57">01:47</button> At the 500 ms deadline, <code>sameDialogConnected=true</code> and <code>sameDialogVisible=true</code>.</li>
+            <li>The checker emits <code>AP_M1_03_ESCAPE_CLOSES_EXACT_ACTIVE_DIALOG</code>; “exact” matters because it tracks the original dialog, not merely whether some modal exists.</li>
+          </ol>
+        </section>
+      </div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <caption>Detailed comparison</caption>
+          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Trigger</th><td>Escape after opening the NFL “NOW PLAYING” dialog.</td><td>Trusted Escape while the same NFL dialog is the active exact modal.</td><td>Same keyboard action, UI state, and intended behavior.</td></tr>
+            <tr><th scope="row">Evidence</th><td>The player remains visible and <code>modal_count</code> remains 1; later explicit controls demonstrate that the player is otherwise operable.</td><td>After 500 ms, the exact pre-Escape dialog is still connected and visible.</td><td>Same core observation; Agent adds broader functional context.</td></tr>
+            <tr><th scope="row">How it is found</th><td>The Agent follows the viewing task, intentionally probes Escape, then tests alternative controls.</td><td>The checker records a bounded Escape transaction and evaluates the exact-dialog close obligation.</td><td>Different search strategy, same decisive test.</td></tr>
+            <tr><th scope="row">Bottom line</th><td>AP-M1-03 reproduced.</td><td>AP-M1-03 violation emitted.</td><td><strong>Exact agreement</strong> at the behavioral and AP-name levels.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="comparison-demo" id="comparison-ap-m1-05">
+      <header class="comparison-head">
+        <div>
+          <h3>AP-M1-05 · A newly opened modal does not receive focus</h3>
+          <p>Both methods identify the same opening transition. The Agent then demonstrates the keyboard consequence, while LTL captures the minimal formal witness immediately.</p>
+        </div>
+        <span class="relation">Core agreement · Agent adds impact</span>
+      </header>
+      <div class="comparison-video-grid">
+        <section class="comparison-video agent" aria-labelledby="agent-m105-title">
+          <header>
+            <div>
+              <p class="mode">Vision Agent</p>
+              <h4 id="agent-m105-title">Complete task replay</h4>
+            </div>
+            <a class="media-link" href="assets/ap-m1-05-vision.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="agent-m105-video" data-cue-track="agent-m105" controls preload="metadata" poster="assets/ap-m1-05-vision-poster.png" aria-label="Complete vision Agent replay for AP-M1-05">
+              <source src="assets/ap-m1-05-vision.mp4" type="video/mp4" />
+              <a href="assets/ap-m1-05-vision.mp4">Open the complete Agent MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Complete 16-step replay · 00:26 · before/after frame for every Agent step</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="agent-m105-video" data-time="18.4">00:18</button> The player opens, but focus remains on the background “Play Super Bowl LVIII halftime show” button.</li>
+            <li><button class="time-jump" data-video="agent-m105-video" data-time="20">00:20</button> Tab moves to another background “Watch now” button instead of Pause or Close in the modal.</li>
+            <li><button class="time-jump" data-video="agent-m105-video" data-time="21.6">00:22</button> Escape also fails; Shift+Tab returns to the original background Play control. The Agent reports that the player cannot be operated by keyboard.</li>
+          </ol>
+        </section>
+        <section class="comparison-video ltl" aria-labelledby="ltl-m105-title">
+          <header>
+            <div>
+              <p class="mode">LTL checker</p>
+              <h4 id="ltl-m105-title">Complete exploration replay</h4>
+            </div>
+            <a class="media-link" href="assets/ltl-nfl-full-replay.mp4">MP4</a>
+          </header>
+          <div class="video-stage">
+            <video id="ltl-m105-video" data-cue-track="ltl-m105" controls preload="metadata" poster="assets/ltl-ap-m1-05-witness.jpeg" aria-label="Complete LTL exploration replay for AP-M1-05">
+              <source src="assets/ltl-nfl-full-replay.mp4" type="video/mp4" />
+              <a href="assets/ltl-nfl-full-replay.mp4">Open the complete LTL MP4 replay</a>
+            </video>
+            <div class="video-callout" hidden aria-live="polite"><strong></strong><span></span></div>
+          </div>
+          <p class="replay-meta">Same complete NFL LTL exploration as AP-M1-03 · one run can yield multiple AP witnesses</p>
+          <ol class="key-moments">
+            <li><button class="time-jump" data-video="ltl-m105-video" data-time="1">00:01</button> LTL observes trusted Enter on the halftime-show Play button and records that zero modals existed before activation.</li>
+            <li><button class="time-jump" data-video="ltl-m105-video" data-time="3.10">00:03</button> One exact new modal is identified, but <code>focusInsideExactNewModal=false</code> after the 500 ms deadline.</li>
+            <li>The checker immediately emits <code>AP_M1_05_NEW_EXACT_MODAL_RECEIVES_FOCUS</code>, without needing a long Tab traversal to establish the violation.</li>
+          </ol>
+        </section>
+      </div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <caption>Detailed comparison</caption>
+          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Trigger</th><td>Enter on “Play Super Bowl LVIII halftime show.”</td><td>The same trusted Enter activation on the same named control.</td><td>Same control, action, and modal-opening transition.</td></tr>
+            <tr><th scope="row">Evidence</th><td>Focus remains on the background Play control; Tab, Shift+Tab, and Escape do not provide access to the visible modal controls.</td><td><code>newModalCount=1</code>, <code>exactNewModalIdentified=true</code>, <code>focusInsideExactNewModal=false</code>.</td><td>Same core focus failure; Agent additionally demonstrates user impact.</td></tr>
+            <tr><th scope="row">How it is found</th><td>The Agent observes focus position visually and probes the reachable keyboard path.</td><td>The checker compares the exact modal set before and after activation, then evaluates focus after 500 ms.</td><td>Agent needs several actions to explain severity; LTL can decide at the opening boundary.</td></tr>
+            <tr><th scope="row">Bottom line</th><td>AP-M1-05 reproduced; task reported failed because player controls were unreachable.</td><td>AP-M1-05 violation emitted at 00:03.</td><td><strong>Exact core agreement</strong>; the Agent provides the clearer impact narrative, and LTL provides the shorter proof.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+    <aside class="method-summary" aria-labelledby="method-summary-title">
+      <h3 id="method-summary-title">What each method contributes across these demos</h3>
+      <div class="method-summary-grid">
+        <div>
+          <h4>Agent is easier to use for impact</h4>
+          <p>It is strongest when the evidence is a long user journey: focus walking through background content, controls becoming practically unreachable, or a bug preventing task completion.</p>
+        </div>
+        <div>
+          <h4>LTL is easier to use for exact covered boundaries</h4>
+          <p>It is strongest when the AP already has a precise temporal contract: after activation or Escape, it identifies the exact element or modal, waits a bounded interval, and emits a compact witness.</p>
+        </div>
+        <div>
+          <h4>Together they answer different questions</h4>
+          <p>LTL answers “did this formal obligation fail, exactly where?” The Agent answers “what does that failure do to a keyboard user in the complete workflow?”</p>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="ap-section gallery-start" id="paired-agent-gallery">
     <h2>AP-FM1-01: Focused control invalidated; focus loses meaningful continuation</h2>
     <div class="run-grid">
       <article class="run-card">
@@ -890,5 +1174,84 @@ Use only keyboard actions. When the source workflow says click, choose, open, se
     </div>
   </section>
 </main>
+<script>
+  (() => {
+    const cueTracks = {
+      "agent-fm1": [
+        { start: 0, end: 5, label: "Agent replay", text: "The Agent performs the complete booking workflow using only keyboard actions." },
+        { start: 37.2, end: 40, label: "Bug trigger", text: "Enter opens “Review and book,” but focus stays on the background Reserve button." },
+        { start: 40, end: 56.8, label: "User-visible impact", text: "Tab walks through background results and footer links while the dialog remains open." },
+        { start: 56.8, end: 61, label: "Delayed recovery", text: "Only after traversing the background does focus finally enter the dialog at Close." },
+        { start: 66.4, end: 72, label: "Raw-trace evidence", text: "Later, the notification disappears and the trace records focus on the document—a symptom closer to LTL’s witness." }
+      ],
+      "ltl-fm1": [
+        { start: 0, end: 6, label: "LTL replay", text: "The checker monitors the AP continuously throughout this complete 30-minute exploration." },
+        { start: 269.5, end: 274, label: "Qualifying transaction", text: "Trusted Space activates the focused “Dismiss notification” control." },
+        { start: 274, end: 281, label: "Formal violation", text: "The control is removed; after 500 ms, settled focus is the document, not an exposed element. AP-FM1-01 fires." }
+      ],
+      "agent-m103": [
+        { start: 0, end: 4, label: "Agent replay", text: "The Agent follows the complete halftime-show task and tests dialog behavior." },
+        { start: 12, end: 13.6, label: "Dialog opens", text: "The full-screen player appears and visibly reports NOW PLAYING." },
+        { start: 13.6, end: 17.6, label: "Bug confirmed", text: "Escape is pressed, but modal_count remains 1 and the same player stays visible." },
+        { start: 17.6, end: 24.8, label: "Isolation test", text: "Pause, Resume, and explicit Close work; the defect is specifically Escape handling." }
+      ],
+      "ltl-m103": [
+        { start: 0, end: 6, label: "LTL replay", text: "This is the complete NFL exploration; the checker evaluates multiple APs on every relevant action." },
+        { start: 102, end: 106.5, label: "Escape transaction", text: "A trusted Escape begins while the exact NFL player dialog is active." },
+        { start: 106.5, end: 113, label: "Formal violation", text: "After 500 ms, that same dialog is still connected and visible. AP-M1-03 fires." }
+      ],
+      "agent-m105": [
+        { start: 0, end: 4, label: "Agent replay", text: "The Agent navigates to the halftime-show player with keyboard actions." },
+        { start: 18.4, end: 20, label: "Bug trigger", text: "The modal opens, but focus remains on the background Play button." },
+        { start: 20, end: 21.6, label: "Wrong focus path", text: "Tab reaches another background control instead of Pause or Close inside the player." },
+        { start: 21.6, end: 25.6, label: "User-visible impact", text: "Escape fails and Shift+Tab returns to the background Play button; modal controls remain unreachable." }
+      ],
+      "ltl-m105": [
+        { start: 0, end: 3.1, label: "Opening transaction", text: "Trusted Enter activates Play; the checker records that no modal existed before the action." },
+        { start: 3.1, end: 10, label: "Formal violation", text: "One exact new modal exists, but focus is not inside it after 500 ms. AP-M1-05 fires immediately." }
+      ]
+    };
+
+    document.querySelectorAll("video[data-cue-track]").forEach((video) => {
+      const stage = video.closest(".video-stage");
+      const callout = stage && stage.querySelector(".video-callout");
+      const label = callout && callout.querySelector("strong");
+      const text = callout && callout.querySelector("span");
+      const cues = cueTracks[video.dataset.cueTrack] || [];
+      let activeCue = null;
+
+      const renderCue = () => {
+        const cue = cues.find((item) => video.currentTime >= item.start && video.currentTime < item.end) || null;
+        if (cue === activeCue || !callout) return;
+        activeCue = cue;
+        if (!cue) {
+          callout.hidden = true;
+          return;
+        }
+        label.textContent = cue.label;
+        text.textContent = cue.text;
+        callout.hidden = false;
+      };
+
+      video.addEventListener("loadedmetadata", renderCue);
+      video.addEventListener("timeupdate", renderCue);
+      video.addEventListener("seeking", renderCue);
+    });
+
+    document.querySelectorAll(".time-jump[data-video][data-time]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const video = document.getElementById(button.dataset.video);
+        if (!video) return;
+        try {
+          video.currentTime = Number(button.dataset.time);
+          video.scrollIntoView({ behavior: "smooth", block: "center" });
+          video.focus({ preventScroll: true });
+        } catch (_) {
+          // The fallback MP4 link remains available if media metadata cannot load.
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>
