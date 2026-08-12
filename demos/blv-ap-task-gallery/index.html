@@ -62,14 +62,17 @@
     .key-moments li + li { margin-top: 7px; }
     .time-jump { margin-right: 4px; padding: 1px 6px; color: var(--blue); background: #eef4ff; border: 1px solid #b9cdf4; border-radius: 4px; font: 700 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; cursor: pointer; }
     .time-jump:hover, .time-jump:focus-visible { background: #dce9ff; }
-    .comparison-table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
-    .comparison-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    .comparison-table caption { padding: 13px 16px 7px; text-align: left; font-size: 15px; font-weight: 800; }
-    .comparison-table th, .comparison-table td { padding: 9px 12px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
-    .comparison-table thead th { color: var(--muted); background: #f8fafc; font-size: 12px; }
-    .comparison-table tbody th { width: 15%; color: var(--muted); font-size: 12px; }
-    .comparison-table td { width: 28%; }
-    .comparison-table td:last-child { width: 29%; }
+    .analyzer-note { margin: 18px 0 0; padding: 12px 14px; background: #eff6ff; border-left: 4px solid var(--blue); font-size: 14px; }
+    .analyzer-audit { padding: 16px 18px 18px; border-top: 1px solid var(--line); }
+    .analyzer-audit h4 { margin: 0 0 5px; font-size: 16px; }
+    .analyzer-audit > p { margin: 0 0 11px; color: var(--muted); font-size: 13px; }
+    .analyzer-audit dl { display: grid; grid-template-columns: minmax(150px, .32fr) minmax(0, 1.68fr); border: 1px solid var(--line); border-radius: 6px; }
+    .analyzer-audit dl div { display: contents; }
+    .analyzer-audit dt, .analyzer-audit dd { padding: 10px 12px; border-top: 1px solid var(--line); }
+    .analyzer-audit div:first-child dt, .analyzer-audit div:first-child dd { border-top: 0; }
+    .analyzer-audit dt { color: var(--ink); background: #f8fafc; font-size: 12px; font-weight: 800; }
+    .analyzer-audit dd { font-size: 13px; }
+    .rule-quote { display: block; margin-top: 4px; color: #374151; }
     .method-summary { margin-top: 22px; padding: 17px 18px; background: #eef6f1; border: 1px solid #b8d6c2; border-radius: 8px; }
     .method-summary h3 { margin: 0 0 10px; font-size: 18px; }
     .method-summary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
@@ -116,6 +119,11 @@
       .comparison-section > h2 { font-size: 21px; }
       .comparison-head { display: block; }
       .relation { display: inline-block; margin-top: 10px; }
+      .analyzer-audit dl { grid-template-columns: 1fr; }
+      .analyzer-audit dl div { display: block; }
+      .analyzer-audit dt, .analyzer-audit dd { border-top: 0; }
+      .analyzer-audit dt { border-top: 1px solid var(--line); }
+      .analyzer-audit div:first-child dt { border-top: 0; }
       .ap-section > h2 { font-size: 18px; }
       .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
       .provenance { grid-template-columns: 1fr; gap: 2px; }
@@ -145,6 +153,7 @@
     <h2 id="comparison-title">Representative Agent vs. LTL demos</h2>
     <p class="section-intro">Each example pairs a complete vision-agent task replay with the complete LTL exploration replay, then compares the trigger, evidence, and conclusion. Use the timestamp buttons to jump directly to the decisive moment; explanatory callouts appear over the video during playback.</p>
     <p class="scope-note"><strong>Pairing scope:</strong> the two replays share the same AP, website, and task seed, but they are separate trajectories from separate batches. They are paired for behavioral comparison, not presented as two views of one synchronized episode. Agent replays come from <code>ap-gallery-full20-flow-grounded-20260808</code>; LTL replays come from the 30-minute targeted campaign.</p>
+    <p class="analyzer-note"><strong>How to read “Agent analyzer” below:</strong> in the main evaluation pipeline, a post-hoc analyzer receives the task/final summary and up to 60 saved keyboard-trace steps—each reduced to action, action result, URL, and focus before/after—but not LTL output. Raw helper fields such as <code>modal_count</code> and automatic signals are retained in the artifact for audit but are not included in the current analyzer prompt. The analyzer may emit only a configured taxonomy ID backed by exact steps, controls, evidence, confidence, and website attribution. These targeted gallery runs did not persist a post-hoc analyzer output, and their tasks explicitly name the AP being reproduced. Therefore, the audits below apply the analyzer’s actual trace-to-taxonomy template to the saved history; they are transparent rule audits, not new blind-analyzer benchmark results.</p>
 
     <article class="comparison-demo" id="comparison-ap-fm1-01">
       <header class="comparison-head">
@@ -158,7 +167,7 @@
         <section class="comparison-video agent" aria-labelledby="agent-fm1-title">
           <header>
             <div>
-              <p class="mode">Vision Agent</p>
+              <p class="mode">Execution Agent replay</p>
               <h4 id="agent-fm1-title">Complete task replay</h4>
             </div>
             <a class="media-link" href="assets/ap-fm1-01-vision.mp4">MP4</a>
@@ -201,18 +210,16 @@
           </ol>
         </section>
       </div>
-      <div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <caption>Detailed comparison</caption>
-          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Trigger</th><td>Opening the booking dialog with Enter.</td><td>Activating “Dismiss notification” with Space; the control is then removed.</td><td>Different concrete events within the same broad focus-continuation family.</td></tr>
-            <tr><th scope="row">Evidence</th><td>Visible dialog plus focus remaining on Reserve, followed by a long Tab path through background content. The raw trace also later records document focus after notification invalidation.</td><td>Formal before/after transaction: <code>invalidated=true</code>, reason <code>removed</code>, and <code>settledFocus.kind=document</code> after 500 ms.</td><td>Both expose broken focus continuity; LTL’s primary witness is narrower and directly satisfies the AP definition.</td></tr>
-            <tr><th scope="row">How it is found</th><td>The Agent completes a realistic booking and interprets the user-visible keyboard path.</td><td>The checker evaluates the temporal obligation after every qualifying trusted activation.</td><td>Agent supplies workflow impact; LTL supplies an exact machine-checkable transaction.</td></tr>
-            <tr><th scope="row">Bottom line</th><td>Bug found, but the final narrative names modal-entry behavior as AP-FM1-01.</td><td>Bug found with exact AP-FM1-01 control-invalidation evidence.</td><td><strong>Partial semantic agreement:</strong> same failure family, different primary witness and boundary.</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <section class="analyzer-audit" aria-labelledby="agent-fm1-audit-title">
+        <h4 id="agent-fm1-audit-title">How the Agent analyzer reaches the finding</h4>
+        <p>The analyzer would separate two focus events that the execution Agent’s final narrative grouped under AP-FM1-01.</p>
+        <dl>
+          <div><dt>Trace evidence</dt><dd><strong>Modal-entry trigger:</strong> step 24 Enter keeps focus <code>Reserve → Reserve</code>; steps 25–35 move through other result and footer controls before step 36 reaches <code>Close booking</code>. <strong>Strict FM1 trigger:</strong> step 42 Enter moves <code>Confirm booking → body/document</code>. The final summary describes the background traversal. Raw-trace-only corroboration records modal changes <code>0→1</code> and <code>1→0</code>, plus <code>focus_on_document_after_keyboard_action</code> at step 42.</dd></div>
+          <div><dt>Taxonomy rule</dt><dd><code>FM1 · Focus reset after action</code><span class="rule-quote">“After an action such as submit or close, focus jumps back to page top or an unrelated element.”</span>The earlier modal-entry path is closer to <code>FM2 · Off-target focus drift</code>.</dd></div>
+          <div><dt>Analyzer decision</dt><dd>Step 42 directly satisfies FM1 because a submit/close transition leaves focus on the document. Steps 24–36 are also a website focus failure, but fit FM2 more precisely: focus drifts through background content rather than resetting after submit/close.</dd></div>
+          <div><dt>Relation to LTL</dt><dd>The crosswalk maps <code>AP-FM1-01 → FM1</code>. LTL is narrower: trusted activation invalidates the focused control, then settled focus must remain on a connected, rendered, exposed element. Its witness is a different action—Space on <code>Dismiss notification</code>, followed by removal and document focus. <strong>Same broad FM1 family, different primary event; not exact event agreement.</strong></dd></div>
+        </dl>
+      </section>
     </article>
 
     <article class="comparison-demo" id="comparison-ap-m1-03">
@@ -227,7 +234,7 @@
         <section class="comparison-video agent" aria-labelledby="agent-m103-title">
           <header>
             <div>
-              <p class="mode">Vision Agent</p>
+              <p class="mode">Execution Agent replay</p>
               <h4 id="agent-m103-title">Complete task replay</h4>
             </div>
             <a class="media-link" href="assets/ap-m1-03-vision.mp4">MP4</a>
@@ -269,18 +276,16 @@
           </ol>
         </section>
       </div>
-      <div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <caption>Detailed comparison</caption>
-          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Trigger</th><td>Escape after opening the NFL “NOW PLAYING” dialog.</td><td>Trusted Escape while the same NFL dialog is the active exact modal.</td><td>Same keyboard action, UI state, and intended behavior.</td></tr>
-            <tr><th scope="row">Evidence</th><td>The player remains visible and <code>modal_count</code> remains 1; later explicit controls demonstrate that the player is otherwise operable.</td><td>After 500 ms, the exact pre-Escape dialog is still connected and visible.</td><td>Same core observation; Agent adds broader functional context.</td></tr>
-            <tr><th scope="row">How it is found</th><td>The Agent follows the viewing task, intentionally probes Escape, then tests alternative controls.</td><td>The checker records a bounded Escape transaction and evaluates the exact-dialog close obligation.</td><td>Different search strategy, same decisive test.</td></tr>
-            <tr><th scope="row">Bottom line</th><td>AP-M1-03 reproduced.</td><td>AP-M1-03 violation emitted.</td><td><strong>Exact agreement</strong> at the behavioral and AP-name levels.</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <section class="analyzer-audit" aria-labelledby="agent-m103-audit-title">
+        <h4 id="agent-m103-audit-title">How the Agent analyzer reaches the finding</h4>
+        <p>Here the broad taxonomy rule and the exact LTL property point to the same Escape event.</p>
+        <dl>
+          <div><dt>Trace evidence</dt><dd>Step 8 Enter on <code>Play Super Bowl LVIII halftime show</code> keeps focus on the Play control; step 9 Escape again leaves focus there. Steps 10–12 Tab to <code>Watch now</code>, <code>Close video</code>, and <code>Pause video</code>; step 16 Enter on Close moves focus to the document. The final summary says Escape failed while Pause, Resume, and Close worked. Raw-trace-only corroboration records modal count <code>1→1</code> and <code>modal_still_present_after_escape</code>.</dd></div>
+          <div><dt>Taxonomy rule</dt><dd><code>M1 · Modal-dismissal struggle</code><span class="rule-quote">“An unexpected modal intercepts focus and its dismiss sequence is unclear.”</span></dd></div>
+          <div><dt>Analyzer decision</dt><dd>The normal dismissal key does not close the modal, so the user must find a separate Close control. The later successful explicit close attributes the problem to website Escape handling rather than a dead browser session or an entirely inoperable dialog.</dd></div>
+          <div><dt>Relation to LTL</dt><dd>The crosswalk maps <code>AP-M1-03 → M1</code>. LTL formalizes one exact slice: after trusted Escape on the exact active dialog, that same dialog must no longer be connected and visible after 500 ms. Both methods point to the same Escape and player event. <strong>Exact behavioral agreement; Agent taxonomy is broader, while LTL supplies the bounded proof.</strong></dd></div>
+        </dl>
+      </section>
     </article>
 
     <article class="comparison-demo" id="comparison-ap-m1-05">
@@ -289,13 +294,13 @@
           <h3>AP-M1-05 · A newly opened modal does not receive focus</h3>
           <p>Both methods identify the same opening transition. The Agent then demonstrates the keyboard consequence, while LTL captures the minimal formal witness immediately.</p>
         </div>
-        <span class="relation">Core agreement · Agent adds impact</span>
+        <span class="relation different">Semantic agreement · taxonomy mismatch</span>
       </header>
       <div class="comparison-video-grid">
         <section class="comparison-video agent" aria-labelledby="agent-m105-title">
           <header>
             <div>
-              <p class="mode">Vision Agent</p>
+              <p class="mode">Execution Agent replay</p>
               <h4 id="agent-m105-title">Complete task replay</h4>
             </div>
             <a class="media-link" href="assets/ap-m1-05-vision.mp4">MP4</a>
@@ -337,18 +342,16 @@
           </ol>
         </section>
       </div>
-      <div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <caption>Detailed comparison</caption>
-          <thead><tr><th>Dimension</th><th>Agent result</th><th>LTL result</th><th>Agreement / difference</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Trigger</th><td>Enter on “Play Super Bowl LVIII halftime show.”</td><td>The same trusted Enter activation on the same named control.</td><td>Same control, action, and modal-opening transition.</td></tr>
-            <tr><th scope="row">Evidence</th><td>Focus remains on the background Play control; Tab, Shift+Tab, and Escape do not provide access to the visible modal controls.</td><td><code>newModalCount=1</code>, <code>exactNewModalIdentified=true</code>, <code>focusInsideExactNewModal=false</code>.</td><td>Same core focus failure; Agent additionally demonstrates user impact.</td></tr>
-            <tr><th scope="row">How it is found</th><td>The Agent observes focus position visually and probes the reachable keyboard path.</td><td>The checker compares the exact modal set before and after activation, then evaluates focus after 500 ms.</td><td>Agent needs several actions to explain severity; LTL can decide at the opening boundary.</td></tr>
-            <tr><th scope="row">Bottom line</th><td>AP-M1-05 reproduced; task reported failed because player controls were unreachable.</td><td>AP-M1-05 violation emitted at 00:03.</td><td><strong>Exact core agreement</strong>; the Agent provides the clearer impact narrative, and LTL provides the shorter proof.</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <section class="analyzer-audit" aria-labelledby="agent-m105-audit-title">
+        <h4 id="agent-m105-audit-title">How the Agent analyzer reaches the finding</h4>
+        <p>The history clearly supports the LTL event, but the broad Agent taxonomy has no exact “new modal must receive focus” class.</p>
+        <dl>
+          <div><dt>Trace evidence</dt><dd>Step 12 Enter on <code>Play Super Bowl LVIII halftime show</code> leaves focus <code>Play → Play</code>; step 13 Tab moves to background <code>Watch now · 13:08</code>, not Pause or Close; step 14 Escape keeps focus on Watch now; step 15 Shift+Tab returns to Play. The final summary says the player is visible but its controls remain unreachable. Raw-trace-only corroboration records modal count <code>0→1</code> at step 12 and 1 after Escape.</dd></div>
+          <div><dt>Taxonomy rule</dt><dd><code>FM2 · Off-target focus drift</code><span class="rule-quote">“Tab or heading navigation overshoots the intended element and focus lands in an adjacent unrelated section.”</span>The failed Escape can additionally support broad <code>M1 · Modal-dismissal struggle</code>, but M1 does not encode the modal-entry focus obligation.</dd></div>
+          <div><dt>Analyzer decision</dt><dd>The new modal never takes focus and forward/backward navigation remains in the page behind it, satisfying FM2 and explaining why visible player controls are unreachable. Escape failure is a second M1-like symptom, not the proof of modal-entry failure.</dd></div>
+          <div><dt>Relation to LTL</dt><dd>The fixed crosswalk maps <code>AP-M1-05 → M1</code>, but the Agent evidence naturally maps to FM2. LTL checks the exact opening transaction: <code>newModalCount=1</code>, <code>exactNewModalIdentified=true</code>, and after 500 ms <code>focusInsideExactNewModal=false</code>. <strong>Same concrete focus event, but semantic agreement is hidden by the AP-to-taxonomy mismatch.</strong></dd></div>
+        </dl>
+      </section>
     </article>
     <aside class="method-summary" aria-labelledby="method-summary-title">
       <h3 id="method-summary-title">What each method contributes across these demos</h3>
