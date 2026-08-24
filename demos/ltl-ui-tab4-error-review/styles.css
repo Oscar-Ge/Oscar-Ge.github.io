@@ -47,6 +47,9 @@ button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-
 .chips { display: flex; gap: 7px; flex-wrap: wrap; }
 .chip { border-radius: 99px; background: #edf1f7; padding: 3px 9px; font-size: 12px; }
 .identity { margin: 10px 0 0; font: 12px/1.45 ui-monospace, monospace; overflow-wrap: anywhere; color: #42506a; }
+.property-definition { margin-top: 11px; border-left: 4px solid var(--blue); background: #f1f5ff; padding: 9px 12px; }
+.property-definition strong { display: block; color: #183c99; }
+.property-definition p { margin: 3px 0 0; }
 .evidence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .evidence-card { padding: 12px; min-width: 0; }
 .evidence-card h3 { margin: 0 0 9px; }
