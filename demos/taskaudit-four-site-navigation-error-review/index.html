@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review TaskAudit navigation errors from Airbnb, ESPN, IMDb, and Steam with recorded screenshots, focus evidence, and analyzer explanations.">
+  <link rel="icon" href="data:,">
+  <title>TaskAudit · Four-site navigation error review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">TaskAudit · task-only · Airbnb + ESPN + IMDb + Steam</p>
+      <h1>Four-site navigation error review</h1>
+      <p>Runtime-recorded step-level events from 73 tasks</p>
+      <p class="provenance">Before/after screenshots and focus rectangles come directly from the original agent runs; no browser replay was used. Red boxes show the focus recorded for that action. Cases without a positive runtime visual-stability signal are explicitly labeled for timing review.</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import</button>
+      <button type="button" data-action="export">Export JSONL</button>
+      <input class="sr-only" type="file" accept="application/json,.json,.jsonl" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
