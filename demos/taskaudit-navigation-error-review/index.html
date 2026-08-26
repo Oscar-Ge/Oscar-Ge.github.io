@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review 89 TaskAudit navigation-error events with before/after screenshots, focus evidence, and analyzer explanations.">
+  <link rel="icon" href="data:,">
+  <title>TaskAudit · Navigation error review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">TaskAudit · Luna high + DeepSeek V4 Flash</p>
+      <h1>Navigation error review</h1>
+      <p>89 step-level events · 57 tasks · four websites</p>
+      <p class="provenance">Screenshots are checkpoint-resynchronized replays of the recorded actions. Red boxes show live focus. Evidence is captured only after dialogs, layout, DOM updates, and finite animations stabilize; any timeout is labeled on the case.</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import</button>
+      <button type="button" data-action="export">Export JSONL</button>
+      <input class="sr-only" type="file" accept="application/json,.json,.jsonl" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
