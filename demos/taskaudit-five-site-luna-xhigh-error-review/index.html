@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review five-site TaskAudit accessibility-error events with recorded screenshots, focus evidence, agent reasoning, and Analyzer explanations.">
+  <link rel="icon" href="data:,">
+  <title>TaskAudit · Five-site Luna-xhigh error review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">TaskAudit · Luna xhigh · IMDb + ESPN + Airbnb + Steam + Cargurus</p>
+      <h1>Five-site accessibility finding review</h1>
+      <p id="dataset-summary">Loading recorded Analyzer findings…</p>
+      <p id="baseline-comparison" class="scope-note"></p>
+      <p id="review-summary" class="review-summary">No reviewer decisions yet.</p>
+      <p class="scope-note">Counts are raw action-level Analyzer labels, not unique website bugs. “Duplicate” means the event is valid but repeats a root cause. Unmapped findings are Analyzer-positive errors for which the supplied taxonomy had no matching category.</p>
+      <p class="provenance">Before/after screenshots, focus rectangles, screen-reader speech, and reasoning come from the recorded runs; no browser replay was used. Cases without a positive visual-stability signal are labeled for timing review.</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import</button>
+      <button type="button" data-action="export">Export JSONL</button>
+      <input class="sr-only" type="file" accept="application/json,.json,.jsonl" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
