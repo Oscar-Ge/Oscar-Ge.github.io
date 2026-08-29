@@ -1,0 +1,967 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - form
+      - entry "Search location" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - LabelText
+      - text "Minimum price"
+        - text "Minimum price"
+      - combobox "Minimum price" value="No min price" [focusable=True]
+        - MenuListPopup
+          - option "No min price" [focusable=True, selected=True]
+          - option "$1,000" [focusable=True]
+          - option "$1,500" [focusable=True]
+          - option "$1,750" [focusable=True]
+          - option "$2,000" [focusable=True]
+          - option "$2,500" [focusable=True]
+          - option "$3,000" [focusable=True]
+          - option "$4,000" [focusable=True]
+    - LabelText
+      - text "Maximum price"
+        - text "Maximum price"
+      - combobox "Maximum price" value="No max price" [focusable=True]
+        - MenuListPopup
+          - option "No max price" [focusable=True, selected=True]
+          - option "$1,750" [focusable=True]
+          - option "$2,000" [focusable=True]
+          - option "$2,500" [focusable=True]
+          - option "$2,750" [focusable=True]
+          - option "$3,000" [focusable=True]
+          - option "$4,000" [focusable=True]
+          - option "$6,000" [focusable=True]
+          - option "$8,000" [focusable=True]
+    - LabelText
+      - text "Minimum bedrooms"
+        - text "Minimum bedrooms"
+      - combobox "Minimum bedrooms" value="Beds" [focusable=True]
+        - MenuListPopup
+          - option "Beds" [focusable=True, selected=True]
+          - option "1+ beds" [focusable=True]
+          - option "2+ beds" [focusable=True]
+          - option "3+ beds" [focusable=True]
+          - option "4+ beds" [focusable=True]
+          - option "5+ beds" [focusable=True]
+    - LabelText
+      - text "Minimum bathrooms"
+        - text "Minimum bathrooms"
+      - combobox "Minimum bathrooms" value="Baths" [focusable=True]
+        - MenuListPopup
+          - option "Baths" [focusable=True, selected=True]
+          - option "1+ baths" [focusable=True]
+          - option "1.5+ baths" [focusable=True]
+          - option "2+ baths" [focusable=True]
+          - option "2.5+ baths" [focusable=True]
+          - option "3+ baths" [focusable=True]
+    - button "More filters" [focusable=True]
+      - text "More filters"
+        - text "More filters"
+    - text "Home /"
+      - text "Home /"
+    - text "Rent"
+      - text "Rent"
+    - heading "Homes for rent" [level=1]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - paragraph
+      - strong
+        - text "17"
+          - text "17"
+      - text "matching"
+        - text "matching"
+      - text "properties"
+        - text "properties"
+      - text "from synthetic listing data"
+        - text "from synthetic listing data"
+    - LabelText
+      - combobox "Sort listings" value="Recommended" [focusable=True]
+        - MenuListPopup
+          - option "Recommended" [focusable=True, selected=True]
+          - option "Price: low to high" [focusable=True]
+          - option "Price: high to low" [focusable=True]
+          - option "Newest listings" [focusable=True]
+          - option "Square feet: low to high" [focusable=True]
+          - option "Square feet: high to low" [focusable=True]
+    - group "Results view"
+      - button "Card view" [focusable=True, pressed=true]
+      - button "Table view" [focusable=True]
+    - article
+      - image "Apartment at 318 W 47th St #5D"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 318 W 47th St #5D" [focusable=True]
+      - strong
+        - text "$4,250"
+          - text "$4,250"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "1.5"
+        - text "1.5"
+      - text "ba"
+        - text "ba"
+      - text "890"
+        - text "890"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "318 W 47th St #5D" [level=3]
+        - text "318 W 47th St #5D"
+          - text "318 W 47th St #5D"
+      - paragraph
+        - text "Hell’s Kitchen"
+          - text "Hell’s Kitchen"
+        - text "·"
+          - text "·"
+        - text "New York"
+          - text "New York"
+        - text ","
+          - text ","
+        - text "NY"
+          - text "NY"
+        - text
+          - text
+        - text "10036"
+          - text "10036"
+      - text "Listed 1 day ago"
+        - text "Listed 1 day ago"
+      - text "Roof deck"
+        - text "Roof deck"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 430 S Alexandria Ave #12"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 430 S Alexandria Ave #12" [focusable=True]
+      - strong
+        - text "$1,850"
+          - text "$1,850"
+        - text "/mo"
+          - text "/mo"
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "620"
+        - text "620"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "430 S Alexandria Ave #12" [level=3]
+        - text "430 S Alexandria Ave #12"
+          - text "430 S Alexandria Ave #12"
+      - paragraph
+        - text "Koreatown"
+          - text "Koreatown"
+        - text "·"
+          - text "·"
+        - text "Los Angeles"
+          - text "Los Angeles"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "90020"
+          - text "90020"
+      - text "One bedroom"
+        - text "One bedroom"
+      - text "Courtyard"
+        - text "Courtyard"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 88 Amber Dr"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 88 Amber Dr" [focusable=True]
+      - strong
+        - text "$5,950"
+          - text "$5,950"
+        - text "/mo"
+          - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "1,815"
+        - text "1,815"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "88 Amber Dr" [level=3]
+        - text "88 Amber Dr"
+          - text "88 Amber Dr"
+      - paragraph
+        - text "Diamond Heights"
+          - text "Diamond Heights"
+        - text "·"
+          - text "·"
+        - text "San Francisco"
+          - text "San Francisco"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "94131"
+          - text "94131"
+      - text "Pool access"
+        - text "Pool access"
+      - text "Bay view"
+        - text "Bay view"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 1414 Texas Ave #412"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 1414 Texas Ave #412" [focusable=True]
+      - strong
+        - text "$1,795"
+          - text "$1,795"
+        - text "/mo"
+          - text "/mo"
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "650"
+        - text "650"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "1414 Texas Ave #412" [level=3]
+        - text "1414 Texas Ave #412"
+          - text "1414 Texas Ave #412"
+      - paragraph
+        - text "Downtown"
+          - text "Downtown"
+        - text "·"
+          - text "·"
+        - text "Houston"
+          - text "Houston"
+        - text ","
+          - text ","
+        - text "TX"
+          - text "TX"
+        - text
+          - text
+        - text "77002"
+          - text "77002"
+      - text "650 sq ft"
+        - text "650 sq ft"
+      - text "Fitness center"
+        - text "Fitness center"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 9122 S Via Del Forjador"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 9122 S Via Del Forjador" [focusable=True]
+      - strong
+        - text "$1,995"
+          - text "$1,995"
+        - text "/mo"
+          - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "2,110"
+        - text "2,110"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "9122 S Via Del Forjador" [level=3]
+        - text "9122 S Via Del Forjador"
+          - text "9122 S Via Del Forjador"
+      - paragraph
+        - text "Civano"
+          - text "Civano"
+        - text "·"
+          - text "·"
+        - text "Tucson"
+          - text "Tucson"
+        - text ","
+          - text ","
+        - text "AZ"
+          - text "AZ"
+        - text
+          - text
+        - text "85747"
+          - text "85747"
+      - text "Community pool"
+        - text "Community pool"
+      - text "Solar"
+        - text "Solar"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 611 S Catalina St #204"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 611 S Catalina St #204" [focusable=True]
+      - strong
+        - text "$2,195"
+          - text "$2,195"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "820"
+        - text "820"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "611 S Catalina St #204" [level=3]
+        - text "611 S Catalina St #204"
+          - text "611 S Catalina St #204"
+      - paragraph
+        - text "Koreatown"
+          - text "Koreatown"
+        - text "·"
+          - text "·"
+        - text "Los Angeles"
+          - text "Los Angeles"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "90005"
+          - text "90005"
+      - text "Best price"
+        - text "Best price"
+      - text "Gated parking"
+        - text "Gated parking"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 730 S Clark St #814"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 730 S Clark St #814" [focusable=True]
+      - strong
+        - text "$2,495"
+          - text "$2,495"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,040"
+        - text "1,040"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "730 S Clark St #814" [level=3]
+        - text "730 S Clark St #814"
+          - text "730 S Clark St #814"
+      - paragraph
+        - text "South Loop"
+          - text "South Loop"
+        - text "·"
+          - text "·"
+        - text "Chicago"
+          - text "Chicago"
+        - text ","
+          - text ","
+        - text "IL"
+          - text "IL"
+        - text
+          - text
+        - text "60605"
+          - text "60605"
+      - text "Within budget"
+        - text "Within budget"
+      - text "Pool deck"
+        - text "Pool deck"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 2727 Kirby Dr #608"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 2727 Kirby Dr #608" [focusable=True]
+      - strong
+        - text "$2,150"
+          - text "$2,150"
+        - text "/mo"
+          - text "/mo"
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "805"
+        - text "805"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "2727 Kirby Dr #608" [level=3]
+        - text "2727 Kirby Dr #608"
+          - text "2727 Kirby Dr #608"
+      - paragraph
+        - text "Upper Kirby"
+          - text "Upper Kirby"
+        - text "·"
+          - text "·"
+        - text "Houston"
+          - text "Houston"
+        - text ","
+          - text ","
+        - text "TX"
+          - text "TX"
+        - text
+          - text
+        - text "77098"
+          - text "77098"
+      - text "805 sq ft"
+        - text "805 sq ft"
+      - text "Concierge"
+        - text "Concierge"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 845 S Kingsley Dr #7"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 845 S Kingsley Dr #7" [focusable=True]
+      - strong
+        - text "$2,550"
+          - text "$2,550"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "960"
+        - text "960"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "845 S Kingsley Dr #7" [level=3]
+        - text "845 S Kingsley Dr #7"
+          - text "845 S Kingsley Dr #7"
+      - paragraph
+        - text "Koreatown"
+          - text "Koreatown"
+        - text "·"
+          - text "·"
+        - text "Los Angeles"
+          - text "Los Angeles"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "90005"
+          - text "90005"
+      - text "Two baths"
+        - text "Two baths"
+      - text "Balcony"
+        - text "Balcony"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 210 E 29th St #8A"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 210 E 29th St #8A" [focusable=True]
+      - strong
+        - text "$3,995"
+          - text "$3,995"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "1.5"
+        - text "1.5"
+      - text "ba"
+        - text "ba"
+      - text "845"
+        - text "845"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "210 E 29th St #8A" [level=3]
+        - text "210 E 29th St #8A"
+          - text "210 E 29th St #8A"
+      - paragraph
+        - text "Kips Bay"
+          - text "Kips Bay"
+        - text "·"
+          - text "·"
+        - text "New York"
+          - text "New York"
+        - text ","
+          - text ","
+        - text "NY"
+          - text "NY"
+        - text
+          - text
+        - text "10016"
+          - text "10016"
+      - text "Doorman"
+        - text "Doorman"
+      - text "Elevator"
+        - text "Elevator"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 32940 Alvarado Niles Rd #16"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 32940 Alvarado Niles Rd #16" [focusable=True]
+      - strong
+        - text "$2,350"
+          - text "$2,350"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "910"
+        - text "910"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "32940 Alvarado Niles Rd #16" [level=3]
+        - text "32940 Alvarado Niles Rd #16"
+          - text "32940 Alvarado Niles Rd #16"
+      - paragraph
+        - text "Alvarado"
+          - text "Alvarado"
+        - text "·"
+          - text "·"
+        - text "Union City"
+          - text "Union City"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "94587"
+          - text "94587"
+      - text "Within budget"
+        - text "Within budget"
+      - text "Near BART"
+        - text "Near BART"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 1701 Hermann Dr #1204"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 1701 Hermann Dr #1204" [focusable=True]
+      - strong
+        - text "$2,895"
+          - text "$2,895"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,175"
+        - text "1,175"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "1701 Hermann Dr #1204" [level=3]
+        - text "1701 Hermann Dr #1204"
+          - text "1701 Hermann Dr #1204"
+      - paragraph
+        - text "Museum District"
+          - text "Museum District"
+        - text "·"
+          - text "·"
+        - text "Houston"
+          - text "Houston"
+        - text ","
+          - text ","
+        - text "TX"
+          - text "TX"
+        - text
+          - text
+        - text "77004"
+          - text "77004"
+      - text "Museum views"
+        - text "Museum views"
+      - text "Pool"
+        - text "Pool"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 10418 E Saguaro Sunset Pl"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 10418 E Saguaro Sunset Pl" [focusable=True]
+      - strong
+        - text "$1,695"
+          - text "$1,695"
+        - text "/mo"
+          - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,480"
+        - text "1,480"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "10418 E Saguaro Sunset Pl" [level=3]
+        - text "10418 E Saguaro Sunset Pl"
+          - text "10418 E Saguaro Sunset Pl"
+      - paragraph
+        - text "Rita Ranch"
+          - text "Rita Ranch"
+        - text "·"
+          - text "·"
+        - text "Tucson"
+          - text "Tucson"
+        - text ","
+          - text ","
+        - text "AZ"
+          - text "AZ"
+        - text
+          - text
+        - text "85747"
+          - text "85747"
+      - text "Pet friendly"
+        - text "Pet friendly"
+      - text "Fenced yard"
+        - text "Fenced yard"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 3900 Wilshire Blvd #1106"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 3900 Wilshire Blvd #1106" [focusable=True]
+      - strong
+        - text "$2,895"
+          - text "$2,895"
+        - text "/mo"
+          - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,120"
+        - text "1,120"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "3900 Wilshire Blvd #1106" [level=3]
+        - text "3900 Wilshire Blvd #1106"
+          - text "3900 Wilshire Blvd #1106"
+      - paragraph
+        - text "Koreatown"
+          - text "Koreatown"
+        - text "·"
+          - text "·"
+        - text "Los Angeles"
+          - text "Los Angeles"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "90010"
+          - text "90010"
+      - text "Three bedrooms"
+        - text "Three bedrooms"
+      - text "Roof pool"
+        - text "Roof pool"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Apartment at 5050 Woodway Dr #902"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 5050 Woodway Dr #902" [focusable=True]
+      - strong
+        - text "$2,675"
+          - text "$2,675"
+        - text "/mo"
+          - text "/mo"
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,050"
+        - text "1,050"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "5050 Woodway Dr #902" [level=3]
+        - text "5050 Woodway Dr #902"
+          - text "5050 Woodway Dr #902"
+      - paragraph
+        - text "Galleria"
+          - text "Galleria"
+        - text "·"
+          - text "·"
+        - text "Houston"
+          - text "Houston"
+        - text ","
+          - text ","
+        - text "TX"
+          - text "TX"
+        - text
+          - text
+        - text "77056"
+          - text "77056"
+      - text "1,050 sq ft"
+        - text "1,050 sq ft"
+      - text "Two parking spaces"
+        - text "Two parking spaces"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 145 Yerba Buena Ave"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 145 Yerba Buena Ave" [focusable=True]
+      - strong
+        - text "$7,850"
+          - text "$7,850"
+        - text "/mo"
+          - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "3"
+        - text "3"
+      - text "ba"
+        - text "ba"
+      - text "2,640"
+        - text "2,640"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "145 Yerba Buena Ave" [level=3]
+        - text "145 Yerba Buena Ave"
+          - text "145 Yerba Buena Ave"
+      - paragraph
+        - text "St. Francis Wood"
+          - text "St. Francis Wood"
+        - text "·"
+          - text "·"
+        - text "San Francisco"
+          - text "San Francisco"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "94127"
+          - text "94127"
+      - text "Private pool"
+        - text "Private pool"
+      - text "Garden"
+        - text "Garden"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 11027 E Tiwa St"
+      - text "FOR RENT"
+        - text "FOR RENT"
+      - button "Save 11027 E Tiwa St" [focusable=True]
+      - strong
+        - text "$2,280"
+          - text "$2,280"
+        - text "/mo"
+          - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "2,265"
+        - text "2,265"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "11027 E Tiwa St" [level=3]
+        - text "11027 E Tiwa St"
+          - text "11027 E Tiwa St"
+      - paragraph
+        - text "Rancho del Lago"
+          - text "Rancho del Lago"
+        - text "·"
+          - text "·"
+        - text "Tucson"
+          - text "Tucson"
+        - text ","
+          - text ","
+        - text "AZ"
+          - text "AZ"
+        - text
+          - text
+        - text "85747"
+          - text "85747"
+      - text "Three-car garage"
+        - text "Three-car garage"
+      - text "Office"
+        - text "Office"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

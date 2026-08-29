@@ -1,0 +1,233 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Expedia home" [focusable=True]
+      - text "expedia"
+        - text "expedia"
+    - button "Shop travel" [focusable=True]
+      - text "Shop travel"
+        - text "Shop travel"
+    - navigation "Utility navigation"
+      - button "Get the app" [focusable=True]
+        - text "Get the app"
+          - text "Get the app"
+      - button "Language and currency" [focusable=True]
+        - text "English"
+          - text "English"
+      - button "Trips" [focusable=True]
+        - text "Trips"
+          - text "Trips"
+      - button "Sign in" [focusable=True]
+        - text "Sign in"
+          - text "Sign in"
+  - main
+    - text "MADE TO TRAVEL"
+      - text "MADE TO TRAVEL"
+    - heading "It matters who you travel with" [level=1]
+      - text "It matters who you travel with"
+        - text "It matters who you"
+        - text "travel with"
+    - paragraph
+      - text "One place to plan every part of your trip, with member prices and flexible options."
+        - text "One place to plan every part of your trip, with member prices and"
+        - text "flexible options."
+    - tablist "Travel search type"
+      - tab "Stays" [focusable=True, selected=True]
+        - text "Stays"
+          - text "Stays"
+      - tab "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - tab "Cars" [focusable=True]
+        - text "Cars"
+          - text "Cars"
+      - tab "Things to do" [focusable=True]
+        - text "Things to do"
+          - text "Things to do"
+      - tab "Vacation rentals" [focused=True, focusable=True]
+        - text "Vacation rentals"
+          - text "Vacation rentals"
+    - LabelText
+      - text "Where to?"
+        - text "Where to?"
+      - entry "Going to" value="B" [focusable=True]
+        - text "B"
+          - text "B"
+    - LabelText
+      - text "Check-in"
+        - text "Check-in"
+      - Date "Check-in date" value="2027-04-03" [focusable=True]
+        - spinbutton "Month Month" value="4" [focusable=True]
+          - text "04"
+            - text "04"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="3" [focusable=True]
+          - text "03"
+            - text "03"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - LabelText
+      - text "Check-out"
+        - text "Check-out"
+      - Date "Check-out date" value="2027-04-06" [focusable=True]
+        - spinbutton "Month Month" value="4" [focusable=True]
+          - text "04"
+            - text "04"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="6" [focusable=True]
+          - text "06"
+            - text "06"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - button "Travelers 1 traveler, 1 room" [focusable=True]
+      - text "Travelers"
+        - text "Travelers"
+      - text "1"
+        - text "1"
+      - text "traveler,"
+        - text "traveler,"
+      - text "1"
+        - text "1"
+      - text "room"
+        - text "room"
+    - button "Search" [focusable=True]
+      - text "Search"
+        - text "Search"
+    - text "Searching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance."
+      - text "Searching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance."
+    - heading "One Key™ members always save" [level=2]
+      - text "One Key™ members always save"
+        - text "One Key™ members always save"
+    - paragraph
+      - text "Sign in to unlock instant Member Prices on over 100,000 stays."
+        - text "Sign in to unlock instant Member Prices on over 100,000 stays."
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - text "PERFECTLY PLANNED"
+      - text "PERFECTLY PLANNED"
+    - heading "Discover your next escape" [level=2]
+      - text "Discover your next escape"
+        - text "Discover your next escape"
+    - paragraph
+      - text "Start with a stay, a flight, or a whole home made for everyone."
+        - text "Start with a stay, a flight, or a whole home made for everyone."
+    - button "Vacation home with pool SPACE FOR EVERYONE Vacation homes with private pools Explore Orlando" [focusable=True]
+      - image "Vacation home with pool"
+      - text "SPACE FOR EVERYONE"
+        - text "SPACE FOR EVERYONE"
+      - text "Vacation homes with private pools"
+        - text "Vacation homes with private pools"
+      - emphasis
+        - text "Explore Orlando"
+          - text "Explore Orlando"
+    - button "Singapore attractions MAKE A DAY OF IT Family adventures in Singapore Find things to do" [focusable=True]
+      - image "Singapore attractions"
+      - text "MAKE A DAY OF IT"
+        - text "MAKE A DAY OF IT"
+      - text "Family adventures in Singapore"
+        - text "Family adventures in Singapore"
+      - emphasis
+        - text "Find things to do"
+          - text "Find things to do"
+    - button "Scenic road trip PICK UP AND GO Weekend road trips made easy Find a car" [focusable=True]
+      - image "Scenic road trip"
+      - text "PICK UP AND GO"
+        - text "PICK UP AND GO"
+      - text "Weekend road trips made easy"
+        - text "Weekend road trips made easy"
+      - emphasis
+        - text "Find a car"
+          - text "Find a car"
+    - heading "Free cancellation options" [level=3]
+      - text "Free cancellation options"
+        - text "Free cancellation options"
+    - paragraph
+      - text "Filter for flexible stays, flights, cars, and activities."
+        - text "Filter for flexible stays, flights, cars, and"
+        - text "activities."
+    - heading "Millions of choices" [level=3]
+      - text "Millions of choices"
+        - text "Millions of choices"
+    - paragraph
+      - text "Compare realistic options for every kind of trip."
+        - text "Compare realistic options for every kind of trip."
+    - heading "Support when you need it" [level=3]
+      - text "Support when you need it"
+        - text "Support when you need it"
+    - paragraph
+      - text "Our virtual agent is ready to help with your plans."
+        - text "Our virtual agent is ready to help with your plans."
+    - text "GO FURTHER WITH THE APP"
+      - text "GO FURTHER WITH THE APP"
+    - heading "Everything your trip needs, in your pocket" [level=2]
+      - text "Everything your trip needs, in your pocket"
+        - text "Everything your trip needs, in"
+        - text "your pocket"
+    - paragraph
+      - text "Get real-time alerts, save your favorites, and access your itinerary anywhere."
+        - text "Get real-time alerts, save your favorites, and access your itinerary"
+        - text "anywhere."
+    - button "Get the app" [focusable=True]
+      - text "Get the app"
+        - text "Get the app"
+    - text "Your London trip"
+      - text "Your London trip"
+  - contentinfo
+    - text "expedia"
+      - text "expedia"
+    - paragraph
+      - text "Made to travel. Plan it all in one place."
+        - text "Made to travel. Plan it all in one place."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - button "Flights" [focusable=True]
+      - text "Flights"
+        - text "Flights"
+    - button "Cars" [focusable=True]
+      - text "Cars"
+        - text "Cars"
+    - button "Vacation rentals" [focusable=True]
+      - text "Vacation rentals"
+        - text "Vacation rentals"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - button "Support" [focusable=True]
+      - text "Support"
+        - text "Support"
+    - button "Privacy choices" [focusable=True]
+      - text "Privacy choices"
+        - text "Privacy choices"
+    - button "Terms of use" [focusable=True]
+      - text "Terms of use"
+        - text "Terms of use"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Partner with us" [focusable=True]
+      - text "Partner with us"
+        - text "Partner with us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Expedia, Inc. All rights reserved."
+      - text "© 2026 Expedia, Inc. All rights reserved."
+    - text "Mock travel experience · Prices shown in USD"
+      - text "Mock travel experience · Prices shown in USD"

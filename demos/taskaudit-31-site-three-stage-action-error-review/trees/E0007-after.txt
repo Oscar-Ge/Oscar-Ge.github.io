@@ -1,0 +1,286 @@
+- document "CVS Pharmacy | Health, wellness & pharmacy care" [focused=True, focusable=True]
+  - text "CVS.com®"
+    - text "CVS.com®"
+  - text "|"
+    - text "|"
+  - button "Store & pharmacy hours" [focusable=True]
+    - text "Store & pharmacy hours"
+      - text "Store & pharmacy hours"
+  - link "ExtraCare®" [focusable=True]
+    - text "ExtraCare®"
+      - text "ExtraCare®"
+  - link "Health services" [focusable=True]
+    - text "Health services"
+      - text "Health services"
+  - banner
+    - link "CVS Pharmacy home" [focusable=True]
+      - text "CVS"
+        - text "CVS"
+      - strong
+        - text "pharmacy"
+          - text "pharmacy"
+    - search
+      - LabelText
+        - text "Search products and health information"
+          - text "Search products and health information"
+      - entry "Search products and health information" [focusable=True]
+      - button "Search" [focusable=True]
+    - link "Find a store Set my store" [focusable=True]
+      - text "Find a store"
+        - text "Find a store"
+      - text "Set my store"
+        - text "Set my store"
+    - link "Welcome Sign in" [focusable=True]
+      - text "Welcome"
+        - text "Welcome"
+      - text "Sign in"
+        - text "Sign in"
+    - link "Cart with 0 items" [focusable=True]
+    - navigation "Main navigation"
+      - link "Shop" [focusable=True]
+        - text "Shop"
+          - text "Shop"
+      - link "Pharmacy" [focusable=True]
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - link "Health services" [focusable=True]
+        - text "Health services"
+          - text "Health services"
+      - link "COVID-19 testing" [focusable=True]
+        - text "COVID-19 testing"
+          - text "COVID-19 testing"
+      - link "Weekly ad" [focusable=True]
+        - text "Weekly ad"
+          - text "Weekly ad"
+      - link "ExtraCare" [focusable=True]
+        - text "ExtraCare"
+          - text "ExtraCare"
+      - link "Virtual care" [focusable=True]
+        - text "Virtual care"
+          - text "Virtual care"
+  - navigation "Breadcrumb"
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - text "Weekly ad"
+      - text "Weekly ad"
+  - main
+    - text "AUGUST 16–22, 2026"
+      - text "AUGUST 16–22, 2026"
+    - heading "Weekly deals" [level=1]
+      - text "Weekly deals"
+        - text "Weekly deals"
+    - paragraph
+      - text "ExtraCare members get more ways to save every week."
+        - text "ExtraCare members get more ways to save every week."
+    - text "Member"
+      - text "Member"
+    - text "savings"
+      - text "savings"
+    - form
+      - text "Deals for"
+        - text "Deals for"
+      - text "Columbus, OH"
+        - text "Columbus, OH"
+      - text "109 S High St, Columbus, OH 43215"
+        - text "109 S High St, Columbus, OH 43215"
+      - LabelText
+        - text "Weekly ad ZIP code"
+          - text "Weekly ad ZIP code"
+      - entry "Weekly ad ZIP code" value="43215" [focusable=True, required=True]
+        - text "43215"
+          - text "43215"
+      - button "Update store" [focusable=True]
+        - text "Update store"
+          - text "Update store"
+    - heading "Featured offers" [level=2]
+      - text "Featured offers"
+        - text "Featured offers"
+    - paragraph
+      - text "6"
+        - text "6"
+      - text "deals at your Columbus store"
+        - text "deals at your Columbus store"
+    - generic "Choose ad view"
+      - button "Grid view" [focusable=True]
+        - text "Grid view"
+          - text "Grid view"
+      - button "List view" [focusable=True]
+        - text "List view"
+          - text "List view"
+    - article
+      - text "ExtraCare deal"
+        - text "ExtraCare deal"
+      - heading "Buy 1, get 1 FREE" [level=3]
+        - text "Buy 1, get 1 FREE"
+          - text "Buy 1, get 1 FREE"
+      - paragraph
+        - text "CVS Health vitamins and supplements"
+          - text "CVS Health vitamins and supplements"
+      - text "CVS Health Vitamin D3 2000 IU Softgels, 100 CT"
+        - text "CVS Health Vitamin D3 2000 IU Softgels, 100 CT"
+      - text "·"
+        - text "·"
+      - text "$8.49"
+        - text "$8.49"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - text "Members save"
+        - text "Members save"
+      - heading "$4 ExtraBucks Rewards" [level=3]
+        - text "$4 ExtraBucks Rewards"
+          - text "$4 ExtraBucks Rewards"
+      - paragraph
+        - text "Select cough, cold and flu care"
+          - text "Select cough, cold and flu care"
+      - text "Delsym Adult 12 Hour Cough Suppressant, Orange, 3 OZ"
+        - text "Delsym Adult 12 Hour Cough Suppressant, Orange, 3"
+        - text "OZ"
+      - text "·"
+        - text "·"
+      - text "$18.99"
+        - text "$18.99"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - text "Digital coupon"
+        - text "Digital coupon"
+      - heading "Save $5" [level=3]
+        - text "Save $5"
+          - text "Save $5"
+      - paragraph
+        - text "Zyrtec allergy relief, select sizes"
+          - text "Zyrtec allergy relief, select sizes"
+      - text "Zyrtec 24 Hour Allergy Relief Tablets, 30 CT"
+        - text "Zyrtec 24 Hour Allergy Relief Tablets, 30 CT"
+      - text "·"
+        - text "·"
+      - text "$17.99"
+        - text "$17.99"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - text "Weekly deal"
+        - text "Weekly deal"
+      - heading "2 for $18" [level=3]
+        - text "2 for $18"
+          - text "2 for $18"
+      - paragraph
+        - text "CVS Health at-home COVID-19 tests"
+          - text "CVS Health at-home COVID-19 tests"
+      - text "CVS Health At Home COVID-19 Test Kit, 2 CT"
+        - text "CVS Health At Home COVID-19 Test Kit, 2 CT"
+      - text "·"
+        - text "·"
+      - text "$9.99"
+        - text "$9.99"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - text "ExtraCare deal"
+        - text "ExtraCare deal"
+      - heading "20% off" [level=3]
+        - text "20% off"
+          - text "20% off"
+      - paragraph
+        - text "CVS Health immune support"
+          - text "CVS Health immune support"
+      - text "CVS Health Vitamin C 250mg Tablets, 100 CT"
+        - text "CVS Health Vitamin C 250mg Tablets, 100 CT"
+      - text "·"
+        - text "·"
+      - text "$5.49"
+        - text "$5.49"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - text "Members save"
+        - text "Members save"
+      - heading "Buy 2, get $5 ExtraBucks" [level=3]
+        - text "Buy 2, get $5 ExtraBucks"
+          - text "Buy 2, get $5 ExtraBucks"
+      - paragraph
+        - text "Select allergy treatments"
+          - text "Select allergy treatments"
+      - text "Benadryl Allergy Relief Liquid, Cherry, 4 FL OZ"
+        - text "Benadryl Allergy Relief Liquid, Cherry, 4 FL OZ"
+      - text "·"
+        - text "·"
+      - text "$12.99"
+        - text "$12.99"
+      - button "Clip deal" [focusable=True]
+        - text "Clip deal"
+          - text "Clip deal"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+  - contentinfo
+    - link "CVS Pharmacy home" [focusable=True]
+      - text "CVS"
+        - text "CVS"
+      - strong
+        - text "pharmacy"
+          - text "pharmacy"
+    - paragraph
+      - text "Bringing our heart to every moment of your health."
+        - text "Bringing our heart to every moment of your"
+        - text "health."
+    - text "© 2026 CVS Pharmacy. Mock experience."
+      - text "© 2026 CVS Pharmacy. Mock experience."
+    - heading "Shop & save" [level=2]
+      - text "Shop & save"
+        - text "Shop & save"
+    - link "Shop products" [focusable=True]
+      - text "Shop products"
+        - text "Shop products"
+    - link "Weekly ad" [focusable=True]
+      - text "Weekly ad"
+        - text "Weekly ad"
+    - link "ExtraCare rewards" [focusable=True]
+      - text "ExtraCare rewards"
+        - text "ExtraCare rewards"
+    - heading "Pharmacy & care" [level=2]
+      - text "Pharmacy & care"
+        - text "Pharmacy & care"
+    - link "Find a pharmacy" [focusable=True]
+      - text "Find a pharmacy"
+        - text "Find a pharmacy"
+    - link "COVID-19 testing" [focusable=True]
+      - text "COVID-19 testing"
+        - text "COVID-19 testing"
+    - link "Health services" [focusable=True]
+      - text "Health services"
+        - text "Health services"
+    - heading "Get care" [level=2]
+      - text "Get care"
+        - text "Get care"
+    - link "Virtual care" [focusable=True]
+      - text "Virtual care"
+        - text "Virtual care"
+    - link "MinuteClinic services" [focusable=True]
+      - text "MinuteClinic services"
+        - text "MinuteClinic services"
+    - link "Store hours" [focusable=True]
+      - text "Store hours"
+        - text "Store hours"

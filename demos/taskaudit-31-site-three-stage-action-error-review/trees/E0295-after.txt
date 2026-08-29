@@ -1,0 +1,192 @@
+- document "StubHub | Be There Live" [focused=True, focusable=True]
+  - banner
+    - button "StubHub home" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - navigation "Main navigation"
+      - button "Concerts" [focusable=True]
+        - text "Concerts"
+          - text "Concerts"
+      - button "Sports" [focusable=True]
+        - text "Sports"
+          - text "Sports"
+      - button "Theater" [focusable=True]
+        - text "Theater"
+          - text "Theater"
+      - button "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - button "Open cart with 0 items" [focusable=True]
+  - main
+    - text "GIVE LIVE. GIVE LOUD."
+      - text "GIVE LIVE. GIVE LOUD."
+    - heading "A gift they’ll actually remember." [level=1]
+      - text "A gift they’ll"
+        - text "A gift they’ll"
+      - LineBreak
+        - text
+      - emphasis
+        - text "actually remember."
+          - text "actually"
+          - text "remember."
+    - paragraph
+      - text "Choose an eGift card design, add a personal note, and make someone’s next live moment possible."
+        - text "Choose an eGift card design, add a personal note, and make someone’s next live"
+        - text "moment possible."
+    - text "stubhub®"
+      - text "stubhub®"
+    - strong
+      - text "Happy Birthday"
+        - text "Happy Birthday"
+    - text "The best gift is being there."
+      - text "The best gift is being there."
+    - text "$100"
+      - text "$100"
+    - text "GIFT CARD BUILDER"
+      - text "GIFT CARD BUILDER"
+    - heading "Make it theirs" [level=2]
+      - text "Make it theirs"
+        - text "Make it theirs"
+    - group "1. Choose a format"
+      - Legend
+        - text "1. Choose a format"
+          - text "1. Choose a format"
+      - button "eGift card Delivered by email" [focusable=True]
+        - text "eGift card"
+          - text "eGift card"
+        - text "Delivered by email"
+          - text "Delivered by email"
+      - button "Paper gift card Ready to print" [focusable=True]
+        - text "Paper gift card"
+          - text "Paper gift card"
+        - text "Ready to print"
+          - text "Ready to print"
+    - group "2. Choose an amount"
+      - Legend
+        - text "2. Choose an amount"
+          - text "2. Choose an amount"
+      - button "$25" [focusable=True]
+        - text "$25"
+          - text "$25"
+      - button "$50" [focusable=True]
+        - text "$50"
+          - text "$50"
+      - button "$100" [focusable=True]
+        - text "$100"
+          - text "$100"
+      - button "$200" [focusable=True]
+        - text "$200"
+          - text "$200"
+    - group "3. Pick a design"
+      - Legend
+        - text "3. Pick a design"
+          - text "3. Pick a design"
+      - button "Happy Birthday" [focused=True, focusable=True]
+        - text "Happy Birthday"
+          - text "Happy Birthday"
+      - button "Let’s Celebrate" [focusable=True]
+        - text "Let’s Celebrate"
+          - text "Let’s Celebrate"
+      - button "Big Thanks" [focusable=True]
+        - text "Big Thanks"
+          - text "Big Thanks"
+    - group "4. Who is it for?"
+      - Legend
+        - text "4. Who is it for?"
+          - text "4. Who is it for?"
+      - button "Myself" [focusable=True]
+        - text "Myself"
+          - text "Myself"
+      - button "Someone else" [focusable=True]
+        - text "Someone else"
+          - text "Someone else"
+      - LabelText
+        - text "Gift message"
+          - text "Gift message"
+        - entry "Gift message 36/120" value="Hope your birthday is unforgettable!" [focusable=True]
+          - text "Hope your birthday is unforgettable!"
+            - text "Hope your birthday is unforgettable!"
+        - text "36"
+          - text "36"
+        - text "/120"
+          - text "/120"
+    - text "YOUR GIFT"
+      - text "YOUR GIFT"
+    - text "stubhub®"
+      - text "stubhub®"
+    - strong
+      - text "Happy Birthday"
+        - text "Happy Birthday"
+    - text "Value"
+      - text "Value"
+    - text "$100"
+      - text "$100"
+    - text "Format"
+      - text "Format"
+    - text "eGift card"
+      - text "eGift card"
+    - text "Recipient"
+      - text "Recipient"
+    - text "Myself"
+      - text "Myself"
+    - button "Add to cart · $100" [focusable=True]
+      - text "Add to cart ·"
+        - text "Add to cart ·"
+      - text "$100"
+        - text "$100"
+    - paragraph
+      - text "Gift card value never expires."
+        - text "Gift card value never expires."
+  - contentinfo
+    - button "stubhub ®" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - paragraph
+      - text "Be there live."
+        - text "Be there live."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - button "NHL in Boston" [focusable=True]
+      - text "NHL in Boston"
+        - text "NHL in Boston"
+    - button "Las Vegas theater" [focusable=True]
+      - text "Las Vegas theater"
+        - text "Las Vegas theater"
+    - heading "GIFTS" [level=3]
+      - text "GIFTS"
+        - text "GIFTS"
+    - button "Buy a gift card" [focusable=True]
+      - text "Buy a gift card"
+        - text "Buy a gift card"
+    - button "Gift card cart" [focusable=True]
+      - text "Gift card cart"
+        - text "Gift card cart"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - button "Transfer NFL tickets" [focusable=True]
+      - text "Transfer NFL tickets"
+        - text "Transfer NFL tickets"
+    - button "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - text "© 2026 StubHub demo marketplace"
+      - text "© 2026 StubHub demo marketplace"
+    - text "United States · USD"
+      - text "United States · USD"
+    - text "FanProtect Guarantee"
+      - text "FanProtect Guarantee"

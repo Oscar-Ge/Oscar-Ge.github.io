@@ -1,0 +1,390 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focused=True, focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - paragraph
+      - text "EXPLORE REDDIT"
+        - text "EXPLORE REDDIT"
+    - heading "Popular" [level=1]
+      - text "Popular"
+        - text "Popular"
+    - paragraph
+      - text "What people are talking about right now"
+        - text "What people are talking about right now"
+    - generic "Feed controls"
+      - button "Hot" [focusable=True, pressed=true]
+        - text "Hot"
+          - text "Hot"
+      - button "New" [focusable=True]
+        - text "New"
+          - text "New"
+      - button "Top" [focusable=True]
+        - text "Top"
+          - text "Top"
+      - button "Rising" [focusable=True]
+        - text "Rising"
+          - text "Rising"
+      - button "Most comments" [focusable=True]
+        - text "Most comments"
+          - text "Most comments"
+      - LabelText
+        - combobox "Popular location" value="Everywhere" [focusable=True]
+          - MenuListPopup
+            - option "Everywhere" [focusable=True, selected=True]
+            - option "Japan" [focusable=True]
+            - option "Chile" [focusable=True]
+      - generic "Post view"
+        - button "Card view" [focusable=True, pressed=true]
+        - button "Compact view" [focusable=True]
+    - article
+      - button "Upvote Fresh snow over the Andes this morning" [focusable=True]
+      - strong
+        - text "57.8k"
+          - text "57.8k"
+      - button "Downvote Fresh snow over the Andes this morning" [focusable=True]
+      - button "r/chile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "chile"
+          - text "chile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "cordillera_view"
+        - text "cordillera_view"
+      - text "•"
+        - text "•"
+      - text "1 hr ago"
+        - text "1 hr ago"
+      - text "Fotografía"
+        - text "Fotografía"
+      - button "Fresh snow over the Andes this morning" [focusable=True]
+        - text "Fresh snow over the Andes this morning"
+          - text "Fresh snow over the Andes this morning"
+      - paragraph
+        - text "The clearest winter sunrise Santiago has had all week."
+          - text "The clearest winter sunrise Santiago has had all week."
+      - button "Open Snowy Andes above Santiago" [focusable=True]
+        - text "Snowy Andes above Santiago"
+          - text "Snowy Andes above Santiago"
+      - button "4.1k comments" [focusable=True]
+        - text "4.1k"
+          - text "4.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Fresh snow over the Andes this morning" [focusable=True]
+    - article
+      - button "Upvote The night train returns for the summer festival season" [focusable=True]
+      - strong
+        - text "68.4k"
+          - text "68.4k"
+      - button "Downvote The night train returns for the summer festival season" [focusable=True]
+      - button "r/japan" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "japan"
+          - text "japan"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "tokyo_window"
+        - text "tokyo_window"
+      - text "•"
+        - text "•"
+      - text "2 hr ago"
+        - text "2 hr ago"
+      - text "Travel"
+        - text "Travel"
+      - button "The night train returns for the summer festival season" [focusable=True]
+        - text "The night train returns for the summer festival season"
+          - text "The night train returns for the summer festival season"
+      - paragraph
+        - text "A photo essay from the first service between Tokyo and Izumo."
+          - text "A photo essay from the first service between Tokyo and Izumo."
+      - button "Open Night train at a lantern-lit station" [focusable=True]
+        - text "Night train at a lantern-lit station"
+          - text "Night train at a lantern-lit station"
+      - button "3.4k comments" [focusable=True]
+        - text "3.4k"
+          - text "3.4k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for The night train returns for the summer festival season" [focusable=True]
+    - article
+      - button "Upvote Neighborhood summer festivals worth the train ride" [focusable=True]
+      - strong
+        - text "42.2k"
+          - text "42.2k"
+      - button "Downvote Neighborhood summer festivals worth the train ride" [focusable=True]
+      - button "r/japanlife" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "japanlife"
+          - text "japanlife"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "bento_break"
+        - text "bento_break"
+      - text "•"
+        - text "•"
+      - text "5 hr ago"
+        - text "5 hr ago"
+      - text "Local Guide"
+        - text "Local Guide"
+      - button "Neighborhood summer festivals worth the train ride" [focusable=True]
+        - text "Neighborhood summer festivals worth the train ride"
+          - text "Neighborhood summer festivals worth the train ride"
+      - paragraph
+        - text "Locals share smaller festivals and practical travel tips."
+          - text "Locals share smaller festivals and practical travel tips."
+      - button "2.8k comments" [focusable=True]
+        - text "2.8k"
+          - text "2.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Neighborhood summer festivals worth the train ride" [focusable=True]
+    - article
+      - button "Upvote TIL a library book was returned after 96 years—with a note" [focusable=True]
+      - strong
+        - text "3.9k"
+          - text "3.9k"
+      - button "Downvote TIL a library book was returned after 96 years—with a note" [focusable=True]
+      - button "r/todayilearned" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "todayilearned"
+          - text "todayilearned"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "small_fact"
+        - text "small_fact"
+      - text "•"
+        - text "•"
+      - text "27 min ago"
+        - text "27 min ago"
+      - text "Culture"
+        - text "Culture"
+      - button "TIL a library book was returned after 96 years—with a note" [focusable=True]
+        - text "TIL a library book was returned after 96 years—with a note"
+          - text "TIL a library book was returned after 96 years—with a note"
+      - paragraph
+        - text "The librarian waived the late fee and added the note to the local archive."
+          - text "The librarian waived the late fee and added the note to the local archive."
+      - button "477 comments" [focusable=True]
+        - text "477"
+          - text "477"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for TIL a library book was returned after 96 years—with a note" [focusable=True]
+    - article
+      - button "Upvote Community markets thriving from Valdivia to Arica" [focusable=True]
+      - strong
+        - text "29.6k"
+          - text "29.6k"
+      - button "Downvote Community markets thriving from Valdivia to Arica" [focusable=True]
+      - button "r/chile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "chile"
+          - text "chile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "sur_a_norte"
+        - text "sur_a_norte"
+      - text "•"
+        - text "•"
+      - text "4 hr ago"
+        - text "4 hr ago"
+      - text "Cultura"
+        - text "Cultura"
+      - button "Community markets thriving from Valdivia to Arica" [focusable=True]
+        - text "Community markets thriving from Valdivia to Arica"
+          - text "Community markets thriving from Valdivia to Arica"
+      - paragraph
+        - text "A thread for sharing favorite weekend markets and independent makers."
+          - text "A thread for sharing favorite weekend markets and independent makers."
+      - button "2.2k comments" [focusable=True]
+        - text "2.2k"
+          - text "2.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Community markets thriving from Valdivia to Arica" [focusable=True]
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

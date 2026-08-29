@@ -1,0 +1,175 @@
+- document "Petfinder — Find Your New Best Friend" [focused=True, focusable=True]
+  - link "Skip to content" [focusable=True]
+    - text "Skip to content"
+      - text "Skip to content"
+  - banner
+    - link "Petfinder home" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - navigation "Main navigation"
+      - link "Find a Pet" [focusable=True]
+        - text "Find a Pet"
+          - text "Find a Pet"
+      - link "Shelters & Rescues" [focusable=True]
+        - text "Shelters & Rescues"
+          - text "Shelters & Rescues"
+      - link "Pet Care" [focusable=True]
+        - text "Pet Care"
+          - text "Pet Care"
+      - link "Favorites" [focusable=True]
+        - text "Favorites"
+          - text "Favorites"
+      - link "Donate" [focused=True, focusable=True]
+        - text "Donate"
+          - text "Donate"
+  - main
+    - paragraph
+      - text "PETFINDER FOUNDATION"
+        - text "PETFINDER FOUNDATION"
+    - heading "Give more pets a chance to be found." [level=1]
+      - text "Give more pets a chance to be found."
+        - text "Give more pets a"
+        - text "chance to be found."
+    - paragraph
+      - text "Your gift helps shelters and rescue groups care for pets, respond to emergencies, and connect more families through a..."
+        - text "Your gift helps shelters and rescue groups care for pets, respond to emergencies, and"
+        - text "connect more families through adoption."
+    - text "Support shelter enrichment"
+      - text "Support shelter enrichment"
+    - text "Fund emergency response"
+      - text "Fund emergency response"
+    - text "Help pets get adoption-ready"
+      - text "Help pets get adoption-ready"
+    - form
+      - paragraph
+        - text "1. Choose your gift"
+          - text "1. Choose your gift"
+      - group "Donation frequency"
+        - button "Monthly" [focusable=True, pressed=true]
+          - text "Monthly"
+            - text "Monthly"
+        - button "One time" [focusable=True]
+          - text "One time"
+            - text "One time"
+      - group "Donation amount"
+        - button "$10" [focusable=True, pressed=true]
+          - text "$"
+            - text "$"
+          - text "10"
+            - text "10"
+        - button "$25" [focusable=True]
+          - text "$"
+            - text "$"
+          - text "25"
+            - text "25"
+        - button "$50" [focusable=True]
+          - text "$"
+            - text "$"
+          - text "50"
+            - text "50"
+        - button "$100" [focusable=True]
+          - text "$"
+            - text "$"
+          - text "100"
+            - text "100"
+        - button "Other" [focusable=True]
+          - text "Other"
+            - text "Other"
+      - paragraph
+        - text "2. Payment details"
+          - text "2. Payment details"
+      - text "Secure mock checkout — no payment will be processed"
+        - text "Secure mock checkout — no payment will be processed"
+      - LabelText
+        - text "Card number"
+          - text "Card number"
+        - entry "Card number" [focusable=True]
+      - LabelText
+        - text "Expiration date"
+          - text "Expiration date"
+        - entry "Expiration date" [focusable=True]
+      - LabelText
+        - text "Security code"
+          - text "Security code"
+        - entry "Security code" [focusable=True]
+      - LabelText
+        - text "Name on card"
+          - text "Name on card"
+        - entry "Name on card" [focusable=True]
+      - LabelText
+        - text "Email for receipt (optional)"
+          - text "Email for receipt (optional)"
+        - entry "Email for receipt (optional)" [focusable=True]
+      - button "Give $10.00 monthly" [focusable=True]
+        - text "Give $"
+          - text "Give $"
+        - text "10.00"
+          - text "10.00"
+        - text
+          - text
+        - text "monthly"
+          - text "monthly"
+      - paragraph
+        - text "By continuing, you confirm this demonstration gift. No card data is transmitted or stored."
+          - text "By continuing, you confirm this demonstration gift. No card data is transmitted or stored."
+    - heading "Your impact adds up" [level=2]
+      - text "Your impact adds up"
+        - text "Your impact adds up"
+    - paragraph
+      - text "A dependable monthly gift helps rescue partners plan for food, veterinary care, safe housing, and adoption events."
+        - text "A dependable monthly gift helps rescue partners plan"
+        - text "for food, veterinary care, safe housing, and adoption"
+        - text "events."
+    - blockquote
+      - text "“A little support at the right moment can change a pet’s whole future.”"
+        - text "“A little support at the right moment can change a"
+        - text "pet’s whole future.”"
+  - contentinfo
+    - link "petfinder" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - paragraph
+      - text "Connecting adoptable pets with loving people."
+        - text "Connecting adoptable pets with loving"
+        - text "people."
+    - heading "ADOPT" [level=2]
+      - text "ADOPT"
+        - text "ADOPT"
+    - link "Dogs & puppies" [focusable=True]
+      - text "Dogs & puppies"
+        - text "Dogs & puppies"
+    - link "Cats & kittens" [focusable=True]
+      - text "Cats & kittens"
+        - text "Cats & kittens"
+    - link "Rabbits" [focusable=True]
+      - text "Rabbits"
+        - text "Rabbits"
+    - link "Favorites" [focusable=True]
+      - text "Favorites"
+        - text "Favorites"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Pet care library" [focusable=True]
+      - text "Pet care library"
+        - text "Pet care library"
+    - link "Dog & puppy grooming" [focusable=True]
+      - text "Dog & puppy grooming"
+        - text "Dog & puppy grooming"
+    - link "Shelters & rescues" [focusable=True]
+      - text "Shelters & rescues"
+        - text "Shelters & rescues"
+    - heading "GIVE" [level=2]
+      - text "GIVE"
+        - text "GIVE"
+    - paragraph
+      - text "Help adoption groups care for more pets."
+        - text "Help adoption groups care for more"
+        - text "pets."
+    - link "Donate to the Foundation" [focusable=True]
+      - text "Donate to the Foundation"
+        - text "Donate to the Foundation"
+    - text "© 2026 Petfinder demo experience"
+      - text "© 2026 Petfinder demo experience"
+    - text "Built with synthetic adoption data"
+      - text "Built with synthetic adoption data"

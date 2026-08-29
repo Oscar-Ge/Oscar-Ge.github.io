@@ -1,0 +1,241 @@
+- document "CA.gov | State of California" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - text "Official website of the State of California"
+    - text "Official website of the State of California"
+  - button "How you know" [focusable=True]
+    - text "How you know"
+      - text "How you know"
+  - banner
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+      - text "STATE OF CALIFORNIA"
+        - text "STATE OF CALIFORNIA"
+    - search
+      - LabelText
+        - text "Search CA.gov"
+          - text "Search CA.gov"
+      - entry "Search CA.gov" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - navigation "Main navigation"
+      - link "Services" [focusable=True]
+        - text "Services"
+          - text "Services"
+      - link "Benefits" [focusable=True]
+        - text "Benefits"
+          - text "Benefits"
+      - link "Government" [focusable=True]
+        - text "Government"
+          - text "Government"
+      - link "Business" [focusable=True]
+        - text "Business"
+          - text "Business"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Services"
+        - text "Services"
+    - text "CA.GOV SERVICES"
+      - text "CA.GOV SERVICES"
+    - heading "Find state services" [level=1]
+      - text "Find state services"
+        - text "Find state services"
+    - paragraph
+      - text "Search and browse California services, benefits, and public information."
+        - text "Search and browse California services, benefits, and public information."
+    - complementary
+      - heading "Filter by topic" [level=2]
+        - text "Filter by topic"
+          - text "Filter by topic"
+      - button "All services 14" [focusable=True]
+        - text "All services"
+          - text "All services"
+        - text "14"
+          - text "14"
+      - button "Benefits & assistance 3" [focusable=True]
+        - text "Benefits & assistance"
+          - text "Benefits & assistance"
+        - text "3"
+          - text "3"
+      - button "Business 1" [focusable=True]
+        - text "Business"
+          - text "Business"
+        - text "1"
+          - text "1"
+      - button "Education 2" [focusable=True]
+        - text "Education"
+          - text "Education"
+        - text "2"
+          - text "2"
+      - button "Government 5" [focusable=True]
+        - text "Government"
+          - text "Government"
+        - text "5"
+          - text "5"
+      - button "Living in California 3" [focusable=True]
+        - text "Living in California"
+          - text "Living in California"
+        - text "3"
+          - text "3"
+    - form
+      - LabelText
+        - text "Search services"
+          - text "Search services"
+      - entry "Search services" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - strong
+      - text "14"
+        - text "14"
+    - text
+      - text
+    - text "results"
+      - text "results"
+    - link "Birth certificates Request a certified copy of a California birth record." [focusable=True]
+      - strong
+        - text "Birth certificates"
+          - text "Birth certificates"
+      - text "Request a certified copy of a California birth record."
+        - text "Request a certified copy of a California birth record."
+    - link "Voting locations Find a vote center or ballot drop box near you." [focusable=True]
+      - strong
+        - text "Voting locations"
+          - text "Voting locations"
+      - text "Find a vote center or ballot drop box near you."
+        - text "Find a vote center or ballot drop box near you."
+    - link "Seller's permit Review requirements and begin a California seller’s permit application." [focusable=True]
+      - strong
+        - text "Seller's permit"
+          - text "Seller's permit"
+      - text "Review requirements and begin a California seller’s permit application."
+        - text "Review requirements and begin a California seller’s permit application."
+    - link "California minimum wage See the current statewide minimum wage and related rates." [focusable=True]
+      - strong
+        - text "California minimum wage"
+          - text "California minimum wage"
+      - text "See the current statewide minimum wage and related rates."
+        - text "See the current statewide minimum wage and related rates."
+    - link "Find a school Browse public schools in San Jose and filter the list." [focusable=True]
+      - strong
+        - text "Find a school"
+          - text "Find a school"
+      - text "Browse public schools in San Jose and filter the list."
+        - text "Browse public schools in San Jose and filter the list."
+    - link "Unemployment benefits Check what you need and start a new unemployment claim." [focusable=True]
+      - strong
+        - text "Unemployment benefits"
+          - text "Unemployment benefits"
+      - text "Check what you need and start a new unemployment claim."
+        - text "Check what you need and start a new unemployment claim."
+    - link "Food assistance Use the Getting Services portal to start a CalFresh application." [focusable=True]
+      - strong
+        - text "Food assistance"
+          - text "Food assistance"
+      - text "Use the Getting Services portal to start a CalFresh application."
+        - text "Use the Getting Services portal to start a CalFresh application."
+    - link "Bill search Look up California legislation by bill number." [focusable=True]
+      - strong
+        - text "Bill search"
+          - text "Bill search"
+      - text "Look up California legislation by bill number."
+        - text "Look up California legislation by bill number."
+    - link "Register to vote Check eligibility and start first-time voter registration." [focusable=True]
+      - strong
+        - text "Register to vote"
+          - text "Register to vote"
+      - text "Check eligibility and start first-time voter registration."
+        - text "Check eligibility and start first-time voter registration."
+    - link "Office of Administrative Law View the agency profile, address, phone, and email." [focusable=True]
+      - strong
+        - text "Office of Administrative Law"
+          - text "Office of Administrative Law"
+      - text "View the agency profile, address, phone, and email."
+        - text "View the agency profile, address, phone, and email."
+    - link "Low-cost health insurance Check potential savings and start a health coverage application." [focusable=True]
+      - strong
+        - text "Low-cost health insurance"
+          - text "Low-cost health insurance"
+      - text "Check potential savings and start a health coverage application."
+        - text "Check potential savings and start a health coverage application."
+    - link "Find your state senator Enter a California address to find State Senate representation." [focusable=True]
+      - strong
+        - text "Find your state senator"
+          - text "Find your state senator"
+      - text "Enter a California address to find State Senate representation."
+        - text "Enter a California address to find State Senate representation."
+    - link "Cal Grant eligibility Review the requirements for California Cal Grant awards." [focusable=True]
+      - strong
+        - text "Cal Grant eligibility"
+          - text "Cal Grant eligibility"
+      - text "Review the requirements for California Cal Grant awards."
+        - text "Review the requirements for California Cal Grant awards."
+    - link "Driver's license fees See fees for a new California driver’s license." [focusable=True]
+      - strong
+        - text "Driver's license fees"
+          - text "Driver's license fees"
+      - text "See fees for a new California driver’s license."
+        - text "See fees for a new California driver’s license."
+  - contentinfo
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+    - paragraph
+      - text "California services and information in one place."
+        - text "California services and information in"
+        - text "one place."
+    - heading "POPULAR SERVICES" [level=2]
+      - text "POPULAR SERVICES"
+        - text "POPULAR SERVICES"
+    - link "Birth certificates" [focusable=True]
+      - text "Birth certificates"
+        - text "Birth certificates"
+    - link "Register to vote" [focusable=True]
+      - text "Register to vote"
+        - text "Register to vote"
+    - link "Unemployment benefits" [focusable=True]
+      - text "Unemployment benefits"
+        - text "Unemployment benefits"
+    - heading "GOVERNMENT" [level=2]
+      - text "GOVERNMENT"
+        - text "GOVERNMENT"
+    - link "Find your representative" [focusable=True]
+      - text "Find your representative"
+        - text "Find your representative"
+    - link "Search legislation" [focusable=True]
+      - text "Search legislation"
+        - text "Search legislation"
+    - link "Agency directory" [focusable=True]
+      - text "Agency directory"
+        - text "Agency directory"
+    - heading "GET HELP" [level=2]
+      - text "GET HELP"
+        - text "GET HELP"
+    - link "1-800-807-7777" [focusable=True]
+      - text "1-800-807-7777"
+        - text "1-800-807-7777"
+    - link "info@ca.gov" [focusable=True]
+      - text "info@ca.gov"
+        - text "info@ca.gov"
+    - link "Browse all services" [focused=True, focusable=True]
+      - text "Browse all services"
+        - text "Browse all services"
+    - text "© 2026 State of California"
+      - text "© 2026 State of California"
+    - text "Built for accessibility and public service"
+      - text "Built for accessibility and public service"

@@ -1,0 +1,200 @@
+- document "FlightAware — Live Flight Tracking & Aviation Intelligence" [focused=True, focusable=True]
+  - banner
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - navigation "Main navigation"
+      - link "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - link "Airports" [focusable=True]
+        - text "Airports"
+          - text "Airports"
+      - link "Photos" [focusable=True]
+        - text "Photos"
+          - text "Photos"
+      - link "Community" [focusable=True]
+        - text "Community"
+          - text "Community"
+      - button "Products" [focusable=True]
+        - text "Products"
+          - text "Products"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - form
+      - entry "Search flight or tail number" [focusable=True, required=True]
+      - button "Submit flight search" [focusable=True]
+  - main
+    - text "SOLUTIONS FOR AIRPORTS"
+      - text "SOLUTIONS FOR AIRPORTS"
+    - heading "See your operation more clearly." [level=1]
+      - text "See your operation"
+        - text "See your operation"
+      - LineBreak
+        - text
+      - text "more clearly."
+        - text "more clearly."
+    - paragraph
+      - text "Turn live and historical flight intelligence into better planning, performance, and passenger experiences."
+        - text "Turn live and historical flight intelligence into better planning, performance, and"
+        - text "passenger experiences."
+    - link "Talk to our airport team" [focusable=True]
+      - text "Talk to our airport team"
+        - text "Talk to our airport team"
+    - generic "Airport operations summary"
+      - text "Airport operations"
+        - text "Airport operations"
+      - strong
+        - text "On time"
+          - text "On time"
+      - text "Arrivals today"
+        - text "Arrivals today"
+      - strong
+        - text "428"
+          - text "428"
+      - text "Average taxi-in"
+        - text "Average taxi-in"
+      - strong
+        - text "7.4 min"
+          - text "7.4 min"
+      - text "Gate utilization"
+        - text "Gate utilization"
+      - strong
+        - text "83%"
+          - text "83%"
+      - text "Delay trend"
+        - text "Delay trend"
+      - strong
+        - text "12% lower"
+          - text "12% lower"
+      - paragraph
+        - text "Current operational briefing · updated moments ago"
+          - text "Current operational briefing · updated moments ago"
+    - text "OPERATIONAL INTELLIGENCE"
+      - text "OPERATIONAL INTELLIGENCE"
+    - heading "One data layer for the whole airport" [level=2]
+      - text "One data layer for the whole airport"
+        - text "One data layer for the whole airport"
+    - heading "Improve predictability" [level=3]
+      - text "Improve predictability"
+        - text "Improve predictability"
+    - paragraph
+      - text "Track arrivals, taxi times, and disruptions before they affect the operation."
+        - text "Track arrivals, taxi times, and disruptions"
+        - text "before they affect the operation."
+    - heading "Align every team" [level=3]
+      - text "Align every team"
+        - text "Align every team"
+    - paragraph
+      - text "Give operations, planning, and commercial teams one trusted view."
+        - text "Give operations, planning, and commercial"
+        - text "teams one trusted view."
+    - heading "Plan with confidence" [level=3]
+      - text "Plan with confidence"
+        - text "Plan with confidence"
+    - paragraph
+      - text "Use historical patterns to support capacity and infrastructure decisions."
+        - text "Use historical patterns to support capacity and"
+        - text "infrastructure decisions."
+    - text "GET IN TOUCH"
+      - text "GET IN TOUCH"
+    - heading "Talk to an airport solutions specialist" [level=2]
+      - text "Talk to an airport solutions specialist"
+        - text "Talk to an airport solutions"
+        - text "specialist"
+    - paragraph
+      - text "Ask a question, request a demo, or send us a message to receive the airport solutions brochure."
+        - text "Ask a question, request a demo, or send us a message to"
+        - text "receive the airport solutions brochure."
+    - strong
+      - text "Airport solutions"
+        - text "Airport solutions"
+    - text "airports@flightaware.demo"
+      - text "airports@flightaware.demo"
+    - strong
+      - text "Business hours"
+        - text "Business hours"
+    - text "Monday–Friday, 8 AM–6 PM CT"
+      - text "Monday–Friday, 8 AM–6 PM CT"
+    - form
+      - heading "Contact airport solutions" [level=2]
+        - text "Contact airport solutions"
+          - text "Contact airport solutions"
+      - LabelText
+        - text "Full name"
+          - text "Full name"
+        - entry "Full name" value="e" [focusable=True, required=True]
+          - text "e"
+            - text "e"
+      - LabelText
+        - text "Email"
+          - text "Email"
+        - entry "Email" [focusable=True, required=True]
+      - LabelText
+        - text "Phone number"
+          - text "Phone number"
+        - entry "Phone number" [focusable=True, required=True]
+      - LabelText
+        - text "Airport or organization"
+          - text "Airport or organization"
+        - entry "Airport or organization" [focused=True, focusable=True]
+      - LabelText
+        - text "Message"
+          - text "Message"
+        - entry "Message" [focusable=True, required=True]
+      - button "Send message" [focusable=True]
+        - text "Send message"
+          - text "Send message"
+  - contentinfo
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - paragraph
+      - text "Global aviation intelligence for operators, travelers, and enthusiasts."
+        - text "Global aviation intelligence for operators, travelers,"
+        - text "and enthusiasts."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - link "Flight finder" [focusable=True]
+      - text "Flight finder"
+        - text "Flight finder"
+    - link "Airports" [focusable=True]
+      - text "Airports"
+        - text "Airports"
+    - link "Popular photos" [focusable=True]
+      - text "Popular photos"
+        - text "Popular photos"
+    - heading "Community" [level=3]
+      - text "Community"
+        - text "Community"
+    - link "Discussions" [focusable=True]
+      - text "Discussions"
+        - text "Discussions"
+    - link "Aircraft by country" [focusable=True]
+      - text "Aircraft by country"
+        - text "Aircraft by country"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - heading "Business" [level=3]
+      - text "Business"
+        - text "Business"
+    - link "Subscriptions" [focusable=True]
+      - text "Subscriptions"
+        - text "Subscriptions"
+    - link "AeroAPI plans" [focusable=True]
+      - text "AeroAPI plans"
+        - text "AeroAPI plans"
+    - link "Airport solutions" [focusable=True]
+      - text "Airport solutions"
+        - text "Airport solutions"
+    - text "© 2026 FlightAware-inspired demo"
+      - text "© 2026 FlightAware-inspired demo"
+    - text "Real-time experiences. Synthetic demo data."
+      - text "Real-time experiences. Synthetic demo data."

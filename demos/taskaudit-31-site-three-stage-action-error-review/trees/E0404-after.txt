@@ -1,0 +1,174 @@
+- document "Steam Store" [focused=True, focusable=True]
+  - banner
+    - link "Steam Store home" [focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - navigation "Main navigation"
+      - link "STORE" [focusable=True]
+        - text "STORE"
+          - text "STORE"
+      - link "COMMUNITY" [focusable=True]
+        - text "COMMUNITY"
+          - text "COMMUNITY"
+      - button "ALEX" [focusable=True]
+        - text "ALEX"
+          - text "ALEX"
+    - button "Notifications" [focusable=True]
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - link "Your Store" [focusable=True]
+    - text "Your Store"
+      - text "Your Store"
+  - link "Browse" [focusable=True]
+    - text "Browse"
+      - text "Browse"
+  - link "Charts" [focusable=True]
+    - text "Charts"
+      - text "Charts"
+  - link "Upcoming" [focusable=True]
+    - text "Upcoming"
+      - text "Upcoming"
+  - link "Points Shop" [focusable=True]
+    - text "Points Shop"
+      - text "Points Shop"
+  - search
+    - entry "Search the store" [focusable=True]
+    - button "Submit search" [focusable=True]
+  - main
+    - link "Back to browse" [focusable=True]
+      - text "Back to browse"
+        - text "Back to browse"
+    - heading "Cities: Skylines" [level=1]
+      - text "Cities: Skylines"
+        - text "Cities: Skylines"
+    - paragraph
+      - text "Simulation • City Builder • Strategy"
+        - text "Simulation • City Builder • Strategy"
+    - button "Add to wishlist" [focusable=True]
+      - text "Add to wishlist"
+        - text "Add to wishlist"
+    - image "Cities: Skylines artwork"
+    - image "Cities: Skylines capsule"
+    - paragraph
+      - text "Build the city of your dreams and manage its living, breathing systems."
+        - text "Build the city of your dreams and manage its living,"
+        - text "breathing systems."
+    - DescriptionList
+      - term "RECENT REVIEWS"
+        - text "RECENT REVIEWS"
+          - text "RECENT REVIEWS"
+      - definition
+        - text "Very Positive"
+          - text "Very Positive"
+      - term "ALL REVIEWS"
+        - text "ALL REVIEWS"
+          - text "ALL REVIEWS"
+      - definition
+        - text "Very Positive"
+          - text "Very Positive"
+        - text "("
+          - text "("
+        - text "92"
+          - text "92"
+        - text "%)"
+          - text "%)"
+      - term "RELEASE DATE"
+        - text "RELEASE DATE"
+          - text "RELEASE DATE"
+      - definition
+        - text "Mar 10, 2015"
+          - text "Mar 10, 2015"
+      - term "DEVELOPER"
+        - text "DEVELOPER"
+          - text "DEVELOPER"
+      - definition
+        - text "Northstar Interactive"
+          - text "Northstar Interactive"
+    - text "Simulation"
+      - text "Simulation"
+    - text "City Builder"
+      - text "City Builder"
+    - text "Strategy"
+      - text "Strategy"
+    - heading "Buy Cities: Skylines" [level=2]
+      - text "Buy"
+        - text "Buy"
+      - text "Cities: Skylines"
+        - text "Cities: Skylines"
+    - text "Windows"
+      - text "Windows"
+    - strong
+      - text "$29.99"
+        - text "$29.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+    - text "COMPLETE THE CLASSIC EXPERIENCE"
+      - text "COMPLETE THE CLASSIC EXPERIENCE"
+    - heading "Cities: Skylines Classic Bundle" [level=2]
+      - text "Cities: Skylines Classic Bundle"
+        - text "Cities: Skylines Classic Bundle"
+    - paragraph
+      - text "Includes"
+        - text "Includes"
+      - text "Cities: Skylines, After Dark, Mass Transit, Industries"
+        - text "Cities: Skylines, After Dark, Mass Transit, Industries"
+      - text "."
+        - text "."
+    - text "Cities: Skylines"
+      - text "Cities: Skylines"
+    - text "After Dark"
+      - text "After Dark"
+    - text "Mass Transit"
+      - text "Mass Transit"
+    - text "Industries"
+      - text "Industries"
+    - text "Save 40%"
+      - text "Save 40%"
+    - strong
+      - text "$"
+        - text "$"
+      - text "59.97"
+        - text "59.97"
+    - button "Purchase bundle" [focusable=True]
+      - text "Purchase bundle"
+        - text "Purchase bundle"
+    - text "ABOUT THIS GAME"
+      - text "ABOUT THIS GAME"
+    - heading "Your next great adventure starts here" [level=2]
+      - text "Your next great adventure starts here"
+        - text "Your next great adventure starts here"
+    - paragraph
+      - text "Build the city of your dreams and manage its living, breathing systems."
+        - text "Build the city of your dreams and manage its living, breathing systems."
+      - text "Shape your own story with deep systems, memorable places, and an active community of players."
+        - text "Shape your own story with deep systems, memorable places, and"
+        - text "an active community of players."
+    - image "Cities: Skylines gameplay preview"
+    - complementary
+      - heading "Links & community" [level=3]
+        - text "Links & community"
+          - text "Links & community"
+      - link "Your game forums" [focusable=True]
+        - text "Your game forums"
+          - text "Your game forums"
+      - link "Browse similar games" [focusable=True]
+        - text "Browse similar games"
+          - text "Browse similar games"
+  - contentinfo
+    - link "STEAM" [focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - paragraph
+      - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+        - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+    - link "Browse Store" [focusable=True]
+      - text "Browse Store"
+        - text "Browse Store"
+    - link "Community" [focusable=True]
+      - text "Community"
+        - text "Community"
+    - link "Points Shop" [focusable=True]
+      - text "Points Shop"
+        - text "Points Shop"

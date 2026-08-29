@@ -1,0 +1,235 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Date Add date" [focusable=True]
+      - text "Date"
+        - text "Date"
+      - strong
+        - text "Add date"
+          - text "Add date"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+  - main
+    - region "Browse categories"
+      - button "Cooking" [focusable=True]
+        - text "Cooking"
+          - text "Cooking"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Cooking online experiences" [level=1]
+      - text "Cooking online experiences"
+        - text "Cooking online experiences"
+    - text "1 guest"
+      - text "1 guest"
+    - button "Refine" [focused=True, focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - button "Cooking" [focusable=True]
+      - text "Cooking"
+        - text "Cooking"
+    - article
+      - button "View Cook Handmade Pasta with Nonna" [focusable=True]
+        - image "Cook Handmade Pasta with Nonna"
+      - text "Online"
+        - text "Online"
+      - button "Live from Rome, Italy" [focusable=True]
+        - text "Live from Rome, Italy"
+          - text "Live from Rome, Italy"
+      - text "4.99"
+        - text "4.99"
+      - paragraph
+        - text "Cook Handmade Pasta with Nonna"
+          - text "Cook Handmade Pasta with Nonna"
+      - paragraph
+        - text "Cooking · 1.5 hours"
+          - text "Cooking · 1.5 hours"
+      - paragraph
+        - text "Evening"
+          - text "Evening"
+        - text "· Hosted in"
+          - text "· Hosted in"
+        - text "English"
+          - text "English"
+        - text "· Up to"
+          - text "· Up to"
+          - text "· Up to"
+          - text "…"
+        - text "8"
+          - text "8"
+        - text "guests"
+          - text "guests"
+      - strong
+        - text "$32"
+          - text "$32"
+        - text
+          - text
+        - text "person"
+          - text "person"
+    - article
+      - button "View Mexican Street Tacos at Home" [focusable=True]
+        - image "Mexican Street Tacos at Home"
+      - text "Online"
+        - text "Online"
+      - button "Live from Mexico City" [focusable=True]
+        - text "Live from Mexico City"
+          - text "Live from Mexico City"
+      - text "4.95"
+        - text "4.95"
+      - paragraph
+        - text "Mexican Street Tacos at Home"
+          - text "Mexican Street Tacos at Home"
+      - paragraph
+        - text "Cooking · 1 hour"
+          - text "Cooking · 1 hour"
+      - paragraph
+        - text "Afternoon"
+          - text "Afternoon"
+        - text "· Hosted in"
+          - text "· Hosted in"
+        - text "English"
+          - text "English"
+        - text "· Up to"
+          - text "· Up to"
+          - text "· Up t"
+          - text "…"
+        - text "12"
+          - text "12"
+        - text "guests"
+          - text "guests"
+      - strong
+        - text "$27"
+          - text "$27"
+        - text
+          - text
+        - text "person"
+          - text "person"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"
+  - dialog "Filters"
+    - button "Close" [focusable=True]
+    - heading "Filters" [level=2]
+      - text "Filters"
+        - text "Filters"
+    - heading "Price range" [level=3]
+      - text "Price range"
+        - text "Price range"
+    - paragraph
+      - text "Price per person, before fees"
+        - text "Price per person, before fees"
+    - LabelText
+      - text "Minimum"
+        - text "Minimum"
+      - text "$"
+        - text "$"
+      - spinbutton "Minimum $" [focusable=True]
+    - text "–"
+      - text "–"
+    - LabelText
+      - text "Maximum"
+        - text "Maximum"
+      - text "$"
+        - text "$"
+      - spinbutton "Maximum $" [focusable=True]
+    - heading "Time of day" [level=3]
+      - text "Time of day"
+        - text "Time of day"
+    - button "Any time" [focusable=True]
+      - text "Any time"
+        - text "Any time"
+    - button "Morning" [focusable=True]
+      - text "Morning"
+        - text "Morning"
+    - button "Afternoon" [focusable=True]
+      - text "Afternoon"
+        - text "Afternoon"
+    - button "Evening" [focusable=True]
+      - text "Evening"
+        - text "Evening"
+    - heading "Language" [level=3]
+      - text "Language"
+        - text "Language"
+    - button "Any language" [focusable=True]
+      - text "Any language"
+        - text "Any language"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "Clear all" [focusable=True]
+      - text "Clear all"
+        - text "Clear all"
+    - button "Show 2 experiences" [focusable=True]
+      - text "Show"
+        - text "Show"
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "experiences"
+        - text "experiences"

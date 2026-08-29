@@ -1,0 +1,149 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Diseases & conditions" [focusable=True]
+        - text "Diseases & conditions"
+          - text "Diseases & conditions"
+      - text "Fever"
+        - text "Fever"
+    - paragraph
+      - text "SYMPTOMS"
+        - text "SYMPTOMS"
+    - heading "Fever" [level=1]
+      - text "Fever"
+        - text "Fever"
+    - paragraph
+      - text "A fever is a temporary rise in body temperature. It is often part of the body’s response to an infection."
+        - text "A fever is a temporary rise in body temperature. It is often part of the body’s response to an"
+        - text "infection."
+    - navigation "Condition sections"
+      - link "Overview" [focusable=True]
+        - text "Overview"
+          - text "Overview"
+      - link "Symptoms & causes" [focusable=True]
+        - text "Symptoms & causes"
+          - text "Symptoms & causes"
+      - link "Diagnosis & treatment" [focusable=True]
+        - text "Diagnosis & treatment"
+          - text "Diagnosis & treatment"
+    - article
+      - paragraph
+        - text "Average body temperature varies by person and time of day. A temperature of 100.4°F (38°C) or higher is generally con..."
+          - text "Average body temperature varies by person and time of day. A temperature of 100.4°F"
+          - text "(38°C) or higher is generally considered a fever in adults."
+      - heading "Overview" [level=2]
+        - text "Overview"
+          - text "Overview"
+      - paragraph
+        - text "Fever itself is usually not dangerous, but the condition causing it may need care. Age, symptoms and overall health h..."
+          - text "Fever itself is usually not dangerous, but the condition causing it may need care. Age, symptoms and"
+          - text "overall health help determine what to do next."
+      - strong
+        - text "Infants need special attention"
+          - text "Infants need special attention"
+      - paragraph
+        - text "Seek prompt medical advice for any fever in a baby younger than 3 months."
+          - text "Seek prompt medical advice for any fever in a baby younger than 3 months."
+    - heading "At a glance" [level=2]
+      - text "At a glance"
+        - text "At a glance"
+    - strong
+      - text "100.4°F"
+        - text "100.4°F"
+    - text "38°C or higher"
+      - text "38°C or higher"
+    - paragraph
+      - text "Temperature thresholds and urgency vary by age, measurement method and other symptoms."
+        - text "Temperature thresholds and urgency"
+        - text "vary by age, measurement method"
+        - text "and other symptoms."
+    - link "Check symptoms" [focusable=True]
+      - text "Check symptoms"
+        - text "Check symptoms"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

@@ -1,0 +1,205 @@
+- document "CarGurus | Shop, Sell & Research Cars" [focused=True, focusable=True]
+  - banner
+    - link "CarGurus home" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - navigation "Main navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Sell" [focusable=True]
+        - text "Sell"
+          - text "Sell"
+      - link "Finance" [focusable=True]
+        - text "Finance"
+          - text "Finance"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+      - link "Price trends" [focusable=True]
+        - text "Price trends"
+          - text "Price trends"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved cars" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "REVIEWS & RESEARCH"
+        - text "REVIEWS & RESEARCH"
+    - heading "Research your next car" [level=1]
+      - text "Research your next car"
+        - text "Research your next car"
+    - paragraph
+      - text "Read expert insights, owner reviews, specs, and reliability information."
+        - text "Read expert insights, owner reviews, specs, and reliability information."
+    - form
+      - entry "Model year" value="2020" [focusable=True]
+        - text "2020"
+          - text "2020"
+      - entry "Make" value="Audi" [focusable=True]
+        - text "Audi"
+          - text "Audi"
+      - entry "Model" value="A6" [focusable=True]
+        - text "A6"
+          - text "A6"
+      - button "Research" [focused=True, focusable=True]
+        - text "Research"
+          - text "Research"
+    - image "2020 Audi A6 placeholder"
+    - paragraph
+      - text "MIDSIZE LUXURY SEDAN"
+        - text "MIDSIZE LUXURY SEDAN"
+    - heading "2020 Audi A6" [level=1]
+      - text "2020 Audi A6"
+        - text "2020 Audi A6"
+    - generic "4.6 out of 5 stars"
+    - strong
+      - text "4.6"
+        - text "4.6"
+    - text "18 owner reviews"
+      - text "18 owner reviews"
+    - paragraph
+      - text "The 2020 Audi A6 blends a quiet, upscale cabin with confident all-wheel-drive handling and intuitive technology."
+        - text "The 2020 Audi A6 blends a quiet, upscale cabin with confident all-"
+        - text "wheel-drive handling and intuitive technology."
+    - text "Expert score"
+      - text "Expert score"
+    - strong
+      - text "8.4/10"
+        - text "8.4/10"
+    - text "Used price range"
+      - text "Used price range"
+    - strong
+      - text "$27K–$39K"
+        - text "$27K–$39K"
+    - text "Combined MPG"
+      - text "Combined MPG"
+    - strong
+      - text "25–27"
+        - text "25–27"
+    - tablist
+      - button "Overview" [focusable=True]
+        - text "Overview"
+          - text "Overview"
+      - button "Reviews" [focusable=True]
+        - text "Reviews"
+          - text "Reviews"
+      - button "Reliability" [focusable=True]
+        - text "Reliability"
+          - text "Reliability"
+      - button "Specs" [focusable=True]
+        - text "Specs"
+          - text "Specs"
+    - paragraph
+      - text "EXPERT TAKE"
+        - text "EXPERT TAKE"
+    - heading "A polished, technology-rich luxury sedan" [level=2]
+      - text "A polished, technology-rich luxury sedan"
+        - text "A polished, technology-rich luxury sedan"
+    - article
+      - heading "What stands out" [level=3]
+        - text "What stands out"
+          - text "What stands out"
+      - paragraph
+        - text "The A6’s restrained styling hides a spacious, serene interior. Standard Quattro all-wheel drive and composed steering..."
+          - text "The A6’s restrained styling hides a spacious, serene"
+          - text "interior. Standard Quattro all-wheel drive and composed"
+          - text "steering make it secure without feeling heavy."
+    - article
+      - heading "What to consider" [level=3]
+        - text "What to consider"
+          - text "What to consider"
+      - paragraph
+        - text "The dual-touchscreen interface can distract at first, and options push prices upward. Used shoppers should verify ser..."
+          - text "The dual-touchscreen interface can distract at first, and"
+          - text "options push prices upward. Used shoppers should"
+          - text "verify service records and inspect wheel condition."
+    - article
+      - heading "Pros" [level=3]
+        - text "Pros"
+          - text "Pros"
+      - list
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Beautifully finished cabin"
+            - text "Beautifully finished cabin"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Quiet and comfortable ride"
+            - text "Quiet and comfortable ride"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Strong standard technology"
+            - text "Strong standard technology"
+      - heading "Cons" [level=3]
+        - text "Cons"
+          - text "Cons"
+      - list
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Touch-heavy controls"
+            - text "Touch-heavy controls"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Modest trunk size"
+            - text "Modest trunk size"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Premium maintenance costs"
+            - text "Premium maintenance costs"
+  - contentinfo
+    - link "Car Gurus" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - paragraph
+      - text "Giving people the power to reach their destination with confidence."
+        - text "Giving people the power to reach their destination"
+        - text "with confidence."
+    - heading "Shop" [level=3]
+      - text "Shop"
+        - text "Shop"
+    - link "Used cars" [focusable=True]
+      - text "Used cars"
+        - text "Used cars"
+    - link "Car reviews" [focusable=True]
+      - text "Car reviews"
+        - text "Car reviews"
+    - link "Price trends" [focusable=True]
+      - text "Price trends"
+        - text "Price trends"
+    - heading "Sell & finance" [level=3]
+      - text "Sell & finance"
+        - text "Sell & finance"
+    - link "Get an offer" [focusable=True]
+      - text "Get an offer"
+        - text "Get an offer"
+    - link "Loan calculator" [focusable=True]
+      - text "Loan calculator"
+        - text "Loan calculator"
+    - link "Pre-qualify" [focusable=True]
+      - text "Pre-qualify"
+        - text "Pre-qualify"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "Mock marketplace experience"
+      - text "Mock marketplace experience"
+    - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+      - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+    - text "Built for confident car shopping."
+      - text "Built for confident car shopping."

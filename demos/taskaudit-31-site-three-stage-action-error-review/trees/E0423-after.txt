@@ -1,0 +1,160 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focused=True, focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - text "RENT AFFORDABILITY CALCULATOR"
+      - text "RENT AFFORDABILITY CALCULATOR"
+    - heading "How much rent can you afford?" [level=1]
+      - text "How much rent can you afford?"
+        - text "How much rent can you afford?"
+    - paragraph
+      - text "Use a clear 30% income guideline and adjust for your existing monthly debt."
+        - text "Use a clear 30% income guideline and adjust for your existing monthly"
+        - text "debt."
+    - button "$130K income · Chicago" [focusable=True]
+      - text "$130K income · Chicago"
+        - text "$130K income · Chicago"
+    - button "$100K income · 94587" [focusable=True]
+      - text "$100K income · 94587"
+        - text "$100K income · 94587"
+    - LabelText
+      - text "Annual gross income"
+        - text "Annual gross income"
+      - text "$"
+        - text "$"
+      - spinbutton "Annual gross income $" value="130000" [focusable=True]
+        - text "130000"
+          - text "130000"
+    - LabelText
+      - text "Monthly debt payments"
+        - text "Monthly debt payments"
+      - text "$"
+        - text "$"
+      - spinbutton "Monthly debt payments $" value="0" [focusable=True]
+        - text "0"
+          - text "0"
+    - LabelText
+      - text "City or ZIP code"
+        - text "City or ZIP code"
+      - entry "City or ZIP code" value="Chicago, IL" [focusable=True]
+        - text "Chicago, IL"
+          - text "Chicago, IL"
+    - strong
+      - text "Our guideline:"
+        - text "Our guideline:"
+    - text "keep rent near 30% of gross income, then account for recurring debt."
+      - text "keep rent near 30% of gross income, then account for recurring debt."
+    - complementary
+      - text "RECOMMENDED IN"
+        - text "RECOMMENDED IN"
+      - text "CHICAGO, IL"
+        - text "CHICAGO, IL"
+      - paragraph
+        - text "Monthly rent budget"
+          - text "Monthly rent budget"
+      - text "$3,250"
+        - text "$3,250"
+      - text "/mo"
+        - text "/mo"
+      - text "Comfortable"
+        - text "Comfortable"
+      - strong
+        - text "$2,763"
+          - text "$2,763"
+      - text "More room for savings"
+        - text "More room for savings"
+      - text "Recommended"
+        - text "Recommended"
+      - strong
+        - text "$3,250"
+          - text "$3,250"
+      - text "30% income guideline"
+        - text "30% income guideline"
+      - text "Stretch"
+        - text "Stretch"
+      - strong
+        - text "$3,575"
+          - text "$3,575"
+      - text "Less financial flexibility"
+        - text "Less financial flexibility"
+      - link "See rentals in my budget" [focusable=True]
+        - text "See rentals in my budget"
+          - text "See rentals in my budget"
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

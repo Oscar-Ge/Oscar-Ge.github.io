@@ -1,0 +1,231 @@
+- document "CarGurus | Shop, Sell & Research Cars" [focused=True, focusable=True]
+  - banner
+    - link "CarGurus home" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - navigation "Main navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Sell" [focusable=True]
+        - text "Sell"
+          - text "Sell"
+      - link "Finance" [focusable=True]
+        - text "Finance"
+          - text "Finance"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+      - link "Price trends" [focusable=True]
+        - text "Price trends"
+          - text "Price trends"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved cars" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "CONFIDENCE FROM SEARCH TO SIGNATURE"
+        - text "CONFIDENCE FROM SEARCH TO SIGNATURE"
+    - heading "Find the right car at the right price." [level=1]
+      - text "Find the right car at the right price."
+        - text "Find the right car at the right"
+        - text "price."
+    - paragraph
+      - text "Compare deals, understand market value, and shop millions of used cars with confidence."
+        - text "Compare deals, understand market value, and shop millions of used cars with"
+        - text "confidence."
+    - tablist "Choose shopping task"
+      - tab "Buy a car" [focusable=True]
+        - text "Buy a car"
+          - text "Buy a car"
+      - tab "Sell my car" [focusable=True]
+        - text "Sell my car"
+          - text "Sell my car"
+    - form
+      - LabelText
+        - text "Make"
+          - text "Make"
+        - combobox "Make" value="Jeep" [focused=True, focusable=True]
+          - MenuListPopup
+            - option "Toyota" [focusable=True]
+            - option "Tesla" [focusable=True]
+            - option "BMW" [focusable=True]
+            - option "Lexus" [focusable=True]
+            - option "Honda" [focusable=True]
+            - option "Jeep" [focusable=True, selected=True]
+      - LabelText
+        - text "Model"
+          - text "Model"
+        - entry "Model" value="RX 350" [focusable=True]
+          - text "RX 350"
+            - text "RX 350"
+      - LabelText
+        - text "ZIP code"
+          - text "ZIP code"
+        - entry "ZIP code" value="10019" [focusable=True, required=True]
+          - text "10019"
+            - text "10019"
+      - button "Search cars" [focusable=True]
+        - text "Search cars"
+          - text "Search cars"
+    - text "Popular:"
+      - text "Popular:"
+    - link "Used Tesla near 10017" [focusable=True]
+      - text "Used Tesla near 10017"
+        - text "Used Tesla near 10017"
+    - link "Cheapest BMW i3" [focusable=True]
+      - text "Cheapest BMW i3"
+        - text "Cheapest BMW i3"
+    - link "CPO Lexus RX 350" [focusable=True]
+      - text "CPO Lexus RX 350"
+        - text "CPO Lexus RX 350"
+    - link "Newest Lexus SUV" [focusable=True]
+      - text "Newest Lexus SUV"
+        - text "Newest Lexus SUV"
+    - region "Marketplace highlights"
+      - strong
+        - text "5M+"
+          - text "5M+"
+      - text "car listings analyzed"
+        - text "car listings analyzed"
+      - strong
+        - text "40,000+"
+          - text "40,000+"
+      - text "trusted dealerships"
+        - text "trusted dealerships"
+      - strong
+        - text "Deal ratings"
+          - text "Deal ratings"
+      - text "based on local market data"
+        - text "based on local market data"
+      - strong
+        - text "Free tools"
+          - text "Free tools"
+      - text "for shopping, financing, and selling"
+        - text "for shopping, financing, and selling"
+    - paragraph
+      - text "EVERYTHING YOU NEED"
+        - text "EVERYTHING YOU NEED"
+    - heading "Car shopping, simplified" [level=2]
+      - text "Car shopping, simplified"
+        - text "Car shopping, simplified"
+    - paragraph
+      - text "Move from research to purchase with clear data and helpful tools at every step."
+        - text "Move from research to purchase with clear data and helpful tools at every step."
+    - article
+      - heading "Shop used cars" [level=3]
+        - text "Shop used cars"
+          - text "Shop used cars"
+      - paragraph
+        - text "Filter by the details that matter, compare deals, and save your favorites."
+          - text "Filter by the details that matter, compare"
+          - text "deals, and save your favorites."
+      - link "Browse inventory" [focusable=True]
+        - text "Browse inventory"
+          - text "Browse inventory"
+    - article
+      - heading "Sell with confidence" [level=3]
+        - text "Sell with confidence"
+          - text "Sell with confidence"
+      - paragraph
+        - text "Get a realistic, no-obligation offer based on your vehicle details."
+          - text "Get a realistic, no-obligation offer based"
+          - text "on your vehicle details."
+      - link "Value my car" [focusable=True]
+        - text "Value my car"
+          - text "Value my car"
+    - article
+      - heading "Plan your payment" [level=3]
+        - text "Plan your payment"
+          - text "Plan your payment"
+      - paragraph
+        - text "Estimate monthly payments or see a mock prequalification with no credit impact."
+          - text "Estimate monthly payments or see a mock"
+          - text "prequalification with no credit impact."
+      - link "Explore financing" [focusable=True]
+        - text "Explore financing"
+          - text "Explore financing"
+    - paragraph
+      - text "KNOW THE MARKET"
+        - text "KNOW THE MARKET"
+    - heading "Price transparency you can use" [level=2]
+      - text "Price transparency you can use"
+        - text "Price transparency you can use"
+    - paragraph
+      - text "Our mocked deal ratings compare each listing with similar vehicles nearby, so a good price is easier to spot."
+        - text "Our mocked deal ratings compare each listing with similar vehicles"
+        - text "nearby, so a good price is easier to spot."
+    - link "Explore price trends" [focusable=True]
+      - text "Explore price trends"
+        - text "Explore price trends"
+    - text "Great Deal"
+      - text "Great Deal"
+    - paragraph
+      - text "2020 Tesla Model 3"
+        - text "2020 Tesla Model 3"
+    - strong
+      - text "$21,995"
+        - text "$21,995"
+    - text "Below market"
+      - text "Below market"
+    - text "Above market"
+      - text "Above market"
+    - paragraph
+      - text "$2,010 below estimated market price"
+        - text "$2,010 below estimated market price"
+  - contentinfo
+    - link "Car Gurus" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - paragraph
+      - text "Giving people the power to reach their destination with confidence."
+        - text "Giving people the power to reach their destination"
+        - text "with confidence."
+    - heading "Shop" [level=3]
+      - text "Shop"
+        - text "Shop"
+    - link "Used cars" [focusable=True]
+      - text "Used cars"
+        - text "Used cars"
+    - link "Car reviews" [focusable=True]
+      - text "Car reviews"
+        - text "Car reviews"
+    - link "Price trends" [focusable=True]
+      - text "Price trends"
+        - text "Price trends"
+    - heading "Sell & finance" [level=3]
+      - text "Sell & finance"
+        - text "Sell & finance"
+    - link "Get an offer" [focusable=True]
+      - text "Get an offer"
+        - text "Get an offer"
+    - link "Loan calculator" [focusable=True]
+      - text "Loan calculator"
+        - text "Loan calculator"
+    - link "Pre-qualify" [focusable=True]
+      - text "Pre-qualify"
+        - text "Pre-qualify"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "Mock marketplace experience"
+      - text "Mock marketplace experience"
+    - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+      - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+    - text "Built for confident car shopping."
+      - text "Built for confident car shopping."

@@ -1,0 +1,258 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - link "Finance" [focusable=True]
+      - text "Finance"
+        - text "Finance"
+    - text "S&P 500"
+      - text "S&P 500"
+    - text "G"
+      - text "G"
+    - heading "S&P 500 (^GSPC)" [level=1]
+      - text "S&P 500"
+        - text "S&P 500"
+      - text "("
+        - text "("
+      - text "^GSPC"
+        - text "^GSPC"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "SNP"
+        - text "SNP"
+      - text "·"
+        - text "·"
+      - text "US Index · Large-cap benchmark"
+        - text "US Index · Large-cap benchmark"
+      - text "· USD"
+        - text "· USD"
+    - strong
+      - text "6,449.80"
+        - text "6,449.80"
+    - text "+20.12"
+      - text "+20.12"
+    - text "("
+      - text "("
+    - text "+0.31%"
+      - text "+0.31%"
+    - text ")"
+      - text ")"
+    - paragraph
+      - text "At close: August 14 at 4:00:00 PM EDT ·"
+        - text "At close: August 14 at 4:00:00 PM EDT ·"
+      - text "Market closed"
+        - text "Market closed"
+    - button "Follow" [focusable=True]
+      - text "Follow"
+        - text "Follow"
+    - navigation "S&P 500 sections"
+      - button "Summary" [focusable=True]
+        - text "Summary"
+          - text "Summary"
+      - button "Chart" [focused=True, focusable=True]
+        - text "Chart"
+          - text "Chart"
+      - button "Historical Data" [focusable=True]
+        - text "Historical Data"
+          - text "Historical Data"
+      - button "Profile" [focusable=True]
+        - text "Profile"
+          - text "Profile"
+      - button "Community" [focusable=True]
+        - text "Community"
+          - text "Community"
+      - button "News" [focusable=True]
+        - text "News"
+          - text "News"
+    - text "INTERACTIVE CHART"
+      - text "INTERACTIVE CHART"
+    - heading "^GSPC · 5Y performance" [level=2]
+      - text "^GSPC"
+        - text "^GSPC"
+      - text "·"
+        - text "·"
+      - text "5Y"
+        - text "5Y"
+      - text "performance"
+        - text "performance"
+    - button "Moving Average (20)" [focusable=True]
+      - text "Moving Average (20)"
+        - text "Moving Average (20)"
+    - button "Print" [focusable=True]
+      - text "Print"
+        - text "Print"
+    - generic "Chart range"
+      - button "1D" [focusable=True]
+        - text "1D"
+          - text "1D"
+      - button "5D" [focusable=True]
+        - text "5D"
+          - text "5D"
+      - button "1M" [focusable=True]
+        - text "1M"
+          - text "1M"
+      - button "6M" [focusable=True]
+        - text "6M"
+          - text "6M"
+      - button "YTD" [focusable=True]
+        - text "YTD"
+          - text "YTD"
+      - button "1Y" [focusable=True]
+        - text "1Y"
+          - text "1Y"
+      - button "5Y" [focusable=True]
+        - text "5Y"
+          - text "5Y"
+      - button "Max" [focusable=True]
+        - text "Max"
+          - text "Max"
+    - image "S&P 500 5Y chart"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "close"
+      - text "close"
+    - text "Hover over the chart for values"
+      - text "Hover over the chart for values"
+    - group
+      - DisclosureTriangle "View chart data table" [focusable=True]
+        - text "View chart data table"
+          - text "View chart data table"
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

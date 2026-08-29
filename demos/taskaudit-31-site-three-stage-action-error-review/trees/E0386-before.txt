@@ -1,0 +1,357 @@
+- document "IMDb — Movies, TV and Celebrities" [focused=True, focusable=True]
+  - banner
+    - link "IMDb home" [focusable=True]
+      - text "IMDb"
+        - text "IMDb"
+    - button "Open menu" [focusable=True]
+      - text "Menu"
+        - text "Menu"
+    - search
+      - LabelText
+        - text "Search category"
+          - text "Search category"
+      - combobox "Search category" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Titles" [focusable=True]
+          - option "Celebs" [focusable=True]
+          - option "Videos" [focusable=True]
+      - LabelText
+        - text "Search IMDb"
+          - text "Search IMDb"
+      - entry "Search IMDb" value="b" [focused=True, focusable=True]
+        - text "b"
+          - text "b"
+      - button "Search" [focusable=True]
+    - link "IMDb Pro" [focusable=True]
+      - text "IMDb"
+        - text "IMDb"
+      - text "Pro"
+        - text "Pro"
+    - link "Watchlist 2" [focusable=True]
+      - text "Watchlist"
+        - text "Watchlist"
+      - text "2"
+        - text "2"
+    - button "Alex" [focusable=True]
+      - text "Alex"
+        - text "Alex"
+  - main
+    - text "IMDB SEARCH"
+      - text "IMDB SEARCH"
+    - heading "Search results for “b”" [level=1]
+      - text "Search results for"
+        - text "Search results for"
+      - text "“"
+        - text "“"
+      - text "b"
+        - text "b"
+      - text "”"
+        - text "”"
+    - heading "Names" [level=2]
+      - text "Names"
+        - text "Names"
+    - link "Aaron Horvath Aaron Horvath Producer • Writer • Director Known for The Super Mario Bros. Movie, Teen Titans GO! To th..." [focusable=True]
+      - image "Aaron Horvath"
+      - strong
+        - text "Aaron Horvath"
+          - text "Aaron Horvath"
+      - text "Producer • Writer • Director"
+        - text "Producer • Writer • Director"
+      - paragraph
+        - text "Known for"
+          - text "Known for"
+        - text "The Super Mario Bros. Movie, Teen Titans GO! To the Movies, Teen Titans Go!"
+          - text "The Super Mario Bros. Movie, Teen Titans GO! To the Movies, Teen Titans Go!"
+    - heading "Titles" [level=2]
+      - text "Titles"
+        - text "Titles"
+    - article
+      - link "Blue Planet II poster" [focusable=True]
+        - image "Blue Planet II poster"
+      - link "Blue Planet II" [focusable=True]
+        - strong
+          - text "Blue Planet II"
+            - text "Blue Planet II"
+      - text "2017"
+        - text "2017"
+      - text "•"
+        - text "•"
+      - text "TV Mini Series"
+        - text "TV Mini Series"
+      - text "•"
+        - text "•"
+      - text "Documentary"
+        - text "Documentary"
+      - paragraph
+        - text "9.3"
+          - text "9.3"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "48K"
+          - text "48K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Blue Planet II to Watchlist" [focusable=True]
+    - article
+      - link "Star Wars: Episode V — The Empire Strikes Back poster" [focusable=True]
+        - image "Star Wars: Episode V — The Empire Strikes Back poster"
+      - link "Star Wars: Episode V — The Empire Strikes Back" [focusable=True]
+        - strong
+          - text "Star Wars: Episode V — The Empire Strikes Back"
+            - text "Star Wars: Episode V — The Empire Strikes Back"
+      - text "1980"
+        - text "1980"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Action, Adventure, Fantasy, Sci-Fi"
+        - text "Action, Adventure, Fantasy, Sci-Fi"
+      - paragraph
+        - text "8.7"
+          - text "8.7"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "1.4M"
+          - text "1.4M"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Star Wars: Episode V — The Empire Strikes Back to Watchlist" [focusable=True]
+    - article
+      - link "The Grand Budapest Hotel poster" [focusable=True]
+        - image "The Grand Budapest Hotel poster"
+      - link "The Grand Budapest Hotel" [focusable=True]
+        - strong
+          - text "The Grand Budapest Hotel"
+            - text "The Grand Budapest Hotel"
+      - text "2014"
+        - text "2014"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Adventure, Comedy, Crime"
+        - text "Adventure, Comedy, Crime"
+      - paragraph
+        - text "8.1"
+          - text "8.1"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "910K"
+          - text "910K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add The Grand Budapest Hotel to Watchlist" [focusable=True]
+    - article
+      - link "Bridesmaids poster" [focusable=True]
+        - image "Bridesmaids poster"
+      - link "Bridesmaids" [focusable=True]
+        - strong
+          - text "Bridesmaids"
+            - text "Bridesmaids"
+      - text "2011"
+        - text "2011"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Comedy, Romance"
+        - text "Comedy, Romance"
+      - paragraph
+        - text "6.8"
+          - text "6.8"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "318K"
+          - text "318K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Bridesmaids to Watchlist" [focusable=True]
+    - article
+      - link "The Super Mario Bros. Movie poster" [focusable=True]
+        - image "The Super Mario Bros. Movie poster"
+      - link "The Super Mario Bros. Movie" [focusable=True]
+        - strong
+          - text "The Super Mario Bros. Movie"
+            - text "The Super Mario Bros. Movie"
+      - text "2023"
+        - text "2023"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Animation, Adventure, Comedy"
+        - text "Animation, Adventure, Comedy"
+      - paragraph
+        - text "7"
+          - text "7"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "261K"
+          - text "261K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add The Super Mario Bros. Movie to Watchlist" [focusable=True]
+    - article
+      - link "Oppenheimer poster" [focusable=True]
+        - image "Oppenheimer poster"
+      - link "Oppenheimer" [focusable=True]
+        - strong
+          - text "Oppenheimer"
+            - text "Oppenheimer"
+      - text "2023"
+        - text "2023"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Biography, Drama, History"
+        - text "Biography, Drama, History"
+      - paragraph
+        - text "8.5"
+          - text "8.5"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "921K"
+          - text "921K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Oppenheimer to Watchlist" [focusable=True]
+    - article
+      - link "Blade Runner poster" [focusable=True]
+        - image "Blade Runner poster"
+      - link "Blade Runner" [focusable=True]
+        - strong
+          - text "Blade Runner"
+            - text "Blade Runner"
+      - text "1982"
+        - text "1982"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Sci-Fi, Adventure"
+        - text "Sci-Fi, Adventure"
+      - paragraph
+        - text "8.1"
+          - text "8.1"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "850K"
+          - text "850K"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Blade Runner to Watchlist" [focusable=True]
+    - article
+      - link "Back to the Future poster" [focusable=True]
+        - image "Back to the Future poster"
+      - link "Back to the Future" [focusable=True]
+        - strong
+          - text "Back to the Future"
+            - text "Back to the Future"
+      - text "1985"
+        - text "1985"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Sci-Fi, Drama"
+        - text "Sci-Fi, Drama"
+      - paragraph
+        - text "8.5"
+          - text "8.5"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "1.4M"
+          - text "1.4M"
+        - text "votes)"
+          - text "votes)"
+      - button "Add Back to the Future to Watchlist" [focusable=True]
+    - article
+      - link "The Life of Hannibal poster" [focusable=True]
+        - image "The Life of Hannibal poster"
+      - link "The Life of Hannibal" [focusable=True]
+        - strong
+          - text "The Life of Hannibal"
+            - text "The Life of Hannibal"
+      - text "2027"
+        - text "2027"
+      - text "•"
+        - text "•"
+      - text "Movie"
+        - text "Movie"
+      - text "•"
+        - text "•"
+      - text "Biography, Drama"
+        - text "Biography, Drama"
+      - paragraph
+        - text "Not rated"
+          - text "Not rated"
+        - text
+          - text
+        - text "("
+          - text "("
+        - text "Not yet released"
+          - text "Not yet released"
+        - text "votes)"
+          - text "votes)"
+      - button "Add The Life of Hannibal to Watchlist" [focusable=True]
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - text "Follow IMDb"
+      - text "Follow IMDb"
+    - navigation
+      - link "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+      - link "IMDbPro" [focusable=True]
+        - text "IMDbPro"
+          - text "IMDbPro"
+      - link "Conditions of Use" [focusable=True]
+        - text "Conditions of Use"
+          - text "Conditions of Use"
+      - link "Privacy Policy" [focusable=True]
+        - text "Privacy Policy"
+          - text "Privacy Policy"
+      - link "Your lists" [focusable=True]
+        - text "Your lists"
+          - text "Your lists"
+    - paragraph
+      - text "an amazon company"
+        - text "an amazon company"
+    - text "© 1990–2026 IMDb.com, Inc. • Synthetic demonstration content"
+      - text "© 1990–2026 IMDb.com, Inc. • Synthetic demonstration content"
+  - status

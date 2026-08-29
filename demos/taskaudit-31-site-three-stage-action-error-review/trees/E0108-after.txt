@@ -1,0 +1,311 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping on orders $99+"
+    - text "Free shipping on orders $99+"
+  - link "Find a store" [focusable=True]
+    - text "Find a store"
+      - text "Find a store"
+  - link "Easy online returns" [focusable=True]
+    - text "Easy online returns"
+      - text "Easy online returns"
+  - banner
+    - link "UNIQLO home" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - navigation "Primary navigation"
+      - link "WOMEN" [focusable=True]
+        - text "WOMEN"
+          - text "WOMEN"
+      - link "MEN" [focusable=True]
+        - text "MEN"
+          - text "MEN"
+      - link "KIDS" [focusable=True]
+        - text "KIDS"
+          - text "KIDS"
+      - link "BABY" [focusable=True]
+        - text "BABY"
+          - text "BABY"
+      - link "TODDLER" [focusable=True]
+        - text "TODDLER"
+          - text "TODDLER"
+      - link "SALE" [focusable=True]
+        - text "SALE"
+          - text "SALE"
+    - search
+      - entry "Search products" [focusable=True]
+    - link "Store finder" [focusable=True]
+      - text "Stores"
+        - text "Stores"
+    - link "Sign in" [focusable=True]
+      - text "Account"
+        - text "Account"
+    - link "Wishlist with 0 items" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "/"
+        - text "/"
+      - text "Shop all"
+        - text "Shop all"
+    - paragraph
+      - text "LIFEWEAR COLLECTION"
+        - text "LIFEWEAR COLLECTION"
+    - heading "Shop All" [level=1]
+      - text "Shop All"
+        - text "Shop All"
+    - paragraph
+      - text "1"
+        - text "1"
+      - text "product"
+        - text "product"
+      - text "found"
+        - text "found"
+    - complementary
+      - LabelText
+        - text "CATEGORY"
+          - text "CATEGORY"
+        - combobox "CATEGORY" value="All categorys" [focusable=True]
+          - MenuListPopup
+            - option "All categorys" [focusable=True, selected=True]
+            - option "Accessories" [focusable=True]
+            - option "Blazers" [focusable=True]
+            - option "Bras" [focusable=True]
+            - option "Cropped Tops" [focusable=True]
+            - option "Graphic T-Shirts" [focusable=True]
+            - option "Jackets & Parkas" [focusable=True]
+            - option "One Piece" [focusable=True]
+            - option "Pants" [focusable=True]
+            - option "Shorts" [focusable=True]
+            - option "Socks" [focusable=True]
+            - option "Sportswear" [focusable=True]
+            - option "Sweatshirts" [focusable=True]
+            - option "T-Shirts" [focusable=True]
+      - LabelText
+        - text "COLOR"
+          - text "COLOR"
+        - combobox "COLOR" value="Blue" [focusable=True]
+          - MenuListPopup
+            - option "All colors" [focusable=True]
+            - option "Black" [focusable=True]
+            - option "Blue" [focusable=True, selected=True]
+            - option "Brown" [focusable=True]
+            - option "Cream" [focusable=True]
+            - option "Dark Brown" [focusable=True]
+            - option "Dark Gray" [focusable=True]
+            - option "Gray" [focusable=True]
+            - option "Green" [focusable=True]
+            - option "Light Blue" [focusable=True]
+            - option "Light Green" [focusable=True]
+            - option "Multi" [focusable=True]
+            - option "Navy" [focusable=True]
+            - option "Olive" [focusable=True]
+            - option "Orange" [focusable=True]
+            - option "Pink" [focusable=True]
+            - option "Purple" [focusable=True]
+            - option "Red" [focusable=True]
+            - option "White" [focusable=True]
+            - option "Yellow" [focusable=True]
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "SIZE" value="XS" [focused=True, focusable=True]
+          - MenuListPopup
+            - option "All sizes" [focusable=True]
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+            - option "XXL" [focusable=True]
+            - option "One Size" [focusable=True]
+            - option "6-12M" [focusable=True]
+            - option "12-24M" [focusable=True]
+            - option "0-3M" [focusable=True]
+            - option "3-6M" [focusable=True]
+            - option "6-9M" [focusable=True]
+            - option "7-8Y" [focusable=True]
+            - option "9-10Y" [focusable=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+            - option "XXS" [focusable=True]
+            - option "6M-5Y" [focusable=True]
+            - option "3XL" [focusable=True]
+      - LabelText
+        - text "PRICE RANGE"
+          - text "PRICE RANGE"
+      - text "$"
+        - text "$"
+      - spinbutton "Min" [focusable=True]
+      - text "—"
+        - text "—"
+      - text "$"
+        - text "$"
+      - spinbutton "Max" [focusable=True]
+      - LabelText
+        - checkbox "Sale" [focusable=True]
+        - text "Sale"
+          - text "Sale"
+      - LabelText
+        - checkbox "New arrivals" [focusable=True]
+        - text "New arrivals"
+          - text "New arrivals"
+      - LabelText
+        - checkbox "Limited Time Offers" [focusable=True]
+        - text "Limited Time Offers"
+          - text "Limited Time Offers"
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - button "Blue" [focusable=True]
+      - text "Blue"
+        - text "Blue"
+    - button "XS" [focusable=True]
+      - text "XS"
+        - text "XS"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Lowest price first" [focusable=True]
+          - option "Highest price first" [focusable=True]
+          - option "Top rated" [focusable=True]
+    - article
+      - image "AIRism Active Support Bra in Blue"
+      - text "SPORT UTILITY WEAR"
+        - text "SPORT UTILITY WEAR"
+      - button "Add AIRism Active Support Bra to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "SPORTSWEAR"
+          - text "SPORTSWEAR"
+        - text "/"
+          - text "/"
+        - text "SPORT UTILITY WEAR"
+          - text "SPORT UTILITY WEAR"
+      - heading "AIRism Active Support Bra" [level=3]
+        - text "AIRism Active Support Bra"
+          - text "AIRism Active Support Bra"
+      - paragraph
+        - text "Medium support with breathable mesh zones."
+          - text "Medium support with breathable mesh zones."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "92"
+        - text "92"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$19.90"
+          - text "$19.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Blue" [focusable=True]
+        - text "Blue"
+          - text "Blue"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for AIRism Active Support Bra" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for AIRism Active Support Bra" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+  - contentinfo
+    - link "UNI QLO" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - paragraph
+      - text "Simple, high-quality everyday clothing with a practical sense of beauty."
+        - text "Simple, high-quality everyday clothing with a"
+        - text "practical sense of beauty."
+    - button "United States / English" [focusable=True]
+      - text "United States / English"
+        - text "United States / English"
+    - heading "SHOP" [level=2]
+      - text "SHOP"
+        - text "SHOP"
+    - link "Women" [focusable=True]
+      - text "Women"
+        - text "Women"
+    - link "Men" [focusable=True]
+      - text "Men"
+        - text "Men"
+    - link "Kids" [focusable=True]
+      - text "Kids"
+        - text "Kids"
+    - link "Baby" [focusable=True]
+      - text "Baby"
+        - text "Baby"
+    - link "Sale" [focusable=True]
+      - text "Sale"
+        - text "Sale"
+    - heading "HELP" [level=2]
+      - text "HELP"
+        - text "HELP"
+    - link "Store locator" [focusable=True]
+      - text "Store locator"
+        - text "Store locator"
+    - link "Online returns" [focusable=True]
+      - text "Online returns"
+        - text "Online returns"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - link "Wishlist" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "My account" [focusable=True]
+      - text "My account"
+        - text "My account"
+    - heading "DISCOVER" [level=2]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "New arrivals" [focusable=True]
+      - text "New arrivals"
+        - text "New arrivals"
+    - link "Limited-time offers" [focusable=True]
+      - text "Limited-time offers"
+        - text "Limited-time offers"
+    - link "Sport Utility Wear" [focusable=True]
+      - text "Sport Utility Wear"
+        - text "Sport Utility Wear"
+    - link "Toddler collection" [focusable=True]
+      - text "Toddler collection"
+        - text "Toddler collection"
+    - text "© 2026 UNIQLO mock storefront"
+      - text "© 2026 UNIQLO mock storefront"
+    - text "Designed for this interactive prototype · No real purchases are processed"
+      - text "Designed for this interactive prototype · No real purchases are processed"

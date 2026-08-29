@@ -1,0 +1,705 @@
+- document "Amazon.com: Shop deals and everyday essentials" [focused=True, focusable=True]
+  - banner
+    - link "Amazon home" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "Change delivery location" [focusable=True]
+      - text "Delivering to Salt Lake City"
+        - text "Delivering to Salt Lake City"
+      - strong
+        - text "Update location"
+          - text "Update location"
+        - text "84101"
+          - text "84101"
+    - search
+      - LabelText
+        - text "Search department"
+          - text "Search department"
+      - combobox "Search department" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Amazon Pharmacy" [focusable=True]
+          - option "Books" [focusable=True]
+          - option "Electronics" [focusable=True]
+          - option "Gift Cards" [focusable=True]
+          - option "Home & Kitchen" [focusable=True]
+          - option "Pet Supplies" [focusable=True]
+          - option "Video Games" [focusable=True]
+      - LabelText
+        - text "Search Amazon"
+          - text "Search Amazon"
+      - entry "Search Amazon" value="Amazon Basics" [focusable=True]
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - button "Search" [focusable=True]
+    - button "Language: English" [focusable=True]
+      - text "US"
+        - text "US"
+      - strong
+        - text "EN"
+          - text "EN"
+    - button "Hello, sign in Account & Lists" [focusable=True]
+      - text "Hello,"
+        - text "Hello,"
+      - text "sign in"
+        - text "sign in"
+      - strong
+        - text "Account & Lists"
+          - text "Account & Lists"
+    - link "Returns & Orders" [focusable=True]
+      - text "Returns"
+        - text "Returns"
+      - strong
+        - text "& Orders"
+          - text "& Orders"
+    - link "Cart with 0 items" [focusable=True]
+      - text "0"
+        - text "0"
+      - strong
+        - text "Cart"
+          - text "Cart"
+    - navigation "Main navigation"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - link "Today’s Deals" [focusable=True]
+        - text "Today’s Deals"
+          - text "Today’s Deals"
+      - link "Amazon Basics" [focused=True, focusable=True]
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - link "Books" [focusable=True]
+        - text "Books"
+          - text "Books"
+      - link "Pharmacy" [focusable=True]
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - link "Pet Supplies" [focusable=True]
+        - text "Pet Supplies"
+          - text "Pet Supplies"
+      - link "Electronics" [focusable=True]
+        - text "Electronics"
+          - text "Electronics"
+      - text "Free delivery on millions of items"
+        - text "Free delivery on millions of items"
+  - main
+    - text "1-"
+      - text "1-"
+    - text "11"
+      - text "11"
+    - text "of"
+      - text "of"
+    - text "11"
+      - text "11"
+    - text "results for"
+      - text "results for"
+    - strong
+      - text "“Amazon Basics”"
+        - text "“Amazon Basics”"
+    - complementary "Search filters"
+      - strong
+        - text "Department"
+          - text "Department"
+      - text "All Departments"
+        - text "All Departments"
+      - group "Customer Reviews"
+        - Legend
+          - text "Customer Reviews"
+            - text "Customer Reviews"
+        - LabelText
+          - checkbox "4 out of 5 stars & Up" [focusable=True]
+          - generic "4 out of 5 stars"
+            - text "4"
+              - text "4"
+          - text "& Up"
+            - text "& Up"
+      - group "Price"
+        - Legend
+          - text "Price"
+            - text "Price"
+        - LabelText
+          - text "Minimum price"
+            - text "Minimum price"
+          - spinbutton "Minimum price" [focusable=True]
+        - LabelText
+          - text "Maximum price"
+            - text "Maximum price"
+          - spinbutton "Maximum price" [focusable=True]
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - heading "Results" [level=1]
+      - text "Results"
+        - text "Results"
+    - paragraph
+      - text "Check each product page for other buying options."
+        - text "Check each product page for other buying options."
+    - LabelText
+      - text "Sort by:"
+        - text "Sort by:"
+      - combobox "Sort results" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Price: Low to High" [focusable=True]
+          - option "Price: High to Low" [focusable=True]
+          - option "Avg. Customer Review" [focusable=True]
+    - article
+      - link "Amazon Basics 2-Ply Toilet Paper, 12 Rolls" [focusable=True]
+        - image "Amazon Basics 2-Ply Toilet Paper, 12 Rolls"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics 2-Ply Toilet Paper, 12 Rolls" [focusable=True]
+        - text "Amazon Basics 2-Ply Toilet Paper, 12 Rolls"
+          - text "Amazon Basics 2-Ply Toilet Paper, 12 Rolls"
+      - generic "4.4 out of 5 stars, 23910 reviews"
+        - text "4.4"
+          - text "4.4"
+        - text "("
+          - text "("
+        - text "23,910"
+          - text "23,910"
+        - text ")"
+          - text ")"
+      - text "12 rolls"
+        - text "12 rolls"
+      - text "2-ply"
+        - text "2-ply"
+      - text "FSC certified"
+        - text "FSC certified"
+      - text "$"
+        - text "$"
+      - text "12"
+        - text "12"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics 2-Ply Toilet Paper, 12 Rolls" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Fresh Scent Laundry Detergent, 82 Loads" [focusable=True]
+        - image "Amazon Basics Fresh Scent Laundry Detergent, 82 Loads"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Fresh Scent Laundry Detergent, 82 Loads" [focusable=True]
+        - text "Amazon Basics Fresh Scent Laundry Detergent, 82 Loads"
+          - text "Amazon Basics Fresh Scent Laundry Detergent, 82 Loads"
+      - generic "4.4 out of 5 stars, 6910 reviews"
+        - text "4.4"
+          - text "4.4"
+        - text "("
+          - text "("
+        - text "6,910"
+          - text "6,910"
+        - text ")"
+          - text ")"
+      - text "82 loads"
+        - text "82 loads"
+      - text "Fresh scent"
+        - text "Fresh scent"
+      - text "Concentrated"
+        - text "Concentrated"
+      - text "$"
+        - text "$"
+      - text "9"
+        - text "9"
+      - text "88"
+        - text "88"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Fresh Scent Laundry Detergent, 82 Loads" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics 8-Outlet Surge Protector Power Strip" [focusable=True]
+        - image "Amazon Basics 8-Outlet Surge Protector Power Strip"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics 8-Outlet Surge Protector Power Strip" [focusable=True]
+        - text "Amazon Basics 8-Outlet Surge Protector Power Strip"
+          - text "Amazon Basics 8-Outlet Surge Protector Power Strip"
+      - generic "4.6 out of 5 stars, 30227 reviews"
+        - text "4.6"
+          - text "4.6"
+        - text "("
+          - text "("
+        - text "30,227"
+          - text "30,227"
+        - text ")"
+          - text ")"
+      - text "8 outlets"
+        - text "8 outlets"
+      - text "4,500 joules"
+        - text "4,500 joules"
+      - text "6 ft cord"
+        - text "6 ft cord"
+      - text "$"
+        - text "$"
+      - text "18"
+        - text "18"
+      - text "49"
+        - text "49"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics 8-Outlet Surge Protector Power Strip" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Round Washable Pet Bed, 32-Inch" [focusable=True]
+        - image "Amazon Basics Round Washable Pet Bed, 32-Inch"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Round Washable Pet Bed, 32-Inch" [focusable=True]
+        - text "Amazon Basics Round Washable Pet Bed, 32-Inch"
+          - text "Amazon Basics Round Washable Pet Bed, 32-Inch"
+      - generic "4.4 out of 5 stars, 12417 reviews"
+        - text "4.4"
+          - text "4.4"
+        - text "("
+          - text "("
+        - text "12,417"
+          - text "12,417"
+        - text ")"
+          - text ")"
+      - text "32-inch diameter"
+        - text "32-inch diameter"
+      - text "Machine-washable cover"
+        - text "Machine-washable cover"
+      - text "Plush fill"
+        - text "Plush fill"
+      - text "$"
+        - text "$"
+      - text "29"
+        - text "29"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Round Washable Pet Bed, 32-Inch" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Lightweight Microfiber Comforter, Full/Queen" [focusable=True]
+        - image "Amazon Basics Lightweight Microfiber Comforter, Full/Queen"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Lightweight Microfiber Comforter, Full/Queen" [focusable=True]
+        - text "Amazon Basics Lightweight Microfiber Comforter, Full/Queen"
+          - text "Amazon Basics Lightweight Microfiber Comforter, Full/Queen"
+      - generic "4.5 out of 5 stars, 26891 reviews"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "26,891"
+          - text "26,891"
+        - text ")"
+          - text ")"
+      - text "Full/Queen available"
+        - text "Full/Queen available"
+      - text "Red available"
+        - text "Red available"
+      - text "Machine washable"
+        - text "Machine washable"
+      - text "$"
+        - text "$"
+      - text "54"
+        - text "54"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Lightweight Microfiber Comforter, Full/Queen" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Reversible Down-Alternative Comforter, Full/Queen" [focusable=True]
+        - image "Amazon Basics Reversible Down-Alternative Comforter, Full/Queen"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Reversible Down-Alternative Comforter, Full/Queen" [focusable=True]
+        - text "Amazon Basics Reversible Down-Alternative Comforter, Full/Queen"
+          - text "Amazon Basics Reversible Down-Alternative Comforter, Full/Queen"
+      - generic "4.6 out of 5 stars, 15508 reviews"
+        - text "4.6"
+          - text "4.6"
+        - text "("
+          - text "("
+        - text "15,508"
+          - text "15,508"
+        - text ")"
+          - text ")"
+      - text "Full/Queen available"
+        - text "Full/Queen available"
+      - text "Reversible"
+        - text "Reversible"
+      - text "Machine washable"
+        - text "Machine washable"
+      - text "$"
+        - text "$"
+      - text "62"
+        - text "62"
+      - text "49"
+        - text "49"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Reversible Down-Alternative Comforter, Full/Queen" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Premium Cotton Comforter, Full/Queen" [focusable=True]
+        - image "Amazon Basics Premium Cotton Comforter, Full/Queen"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Premium Cotton Comforter, Full/Queen" [focusable=True]
+        - text "Amazon Basics Premium Cotton Comforter, Full/Queen"
+          - text "Amazon Basics Premium Cotton Comforter, Full/Queen"
+      - generic "4.7 out of 5 stars, 4812 reviews"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "4,812"
+          - text "4,812"
+        - text ")"
+          - text ")"
+      - text "Full/Queen available"
+        - text "Full/Queen available"
+      - text "100% cotton shell"
+        - text "100% cotton shell"
+      - text "All season"
+        - text "All season"
+      - text "$"
+        - text "$"
+      - text "89"
+        - text "89"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Premium Cotton Comforter, Full/Queen" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Memory Foam Mattress, 8-Inch, Twin" [focusable=True]
+        - image "Amazon Basics Memory Foam Mattress, 8-Inch, Twin"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Memory Foam Mattress, 8-Inch, Twin" [focusable=True]
+        - text "Amazon Basics Memory Foam Mattress, 8-Inch, Twin"
+          - text "Amazon Basics Memory Foam Mattress, 8-Inch, Twin"
+      - generic "4.4 out of 5 stars, 4382 reviews"
+        - text "4.4"
+          - text "4.4"
+        - text "("
+          - text "("
+        - text "4,382"
+          - text "4,382"
+        - text ")"
+          - text ")"
+      - text "8-inch profile"
+        - text "8-inch profile"
+      - text "Twin"
+        - text "Twin"
+      - text "Medium-firm"
+        - text "Medium-firm"
+      - text "$"
+        - text "$"
+      - text "119"
+        - text "119"
+      - text "00"
+        - text "00"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Memory Foam Mattress, 8-Inch, Twin" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen" [focusable=True]
+        - image "Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen"
+      - text "AMAZON BASICS"
+        - text "AMAZON BASICS"
+      - link "Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen" [focusable=True]
+        - text "Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen"
+          - text "Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen"
+      - generic "4.5 out of 5 stars, 1906 reviews"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "1,906"
+          - text "1,906"
+        - text ")"
+          - text ")"
+      - text "10-inch profile"
+        - text "10-inch profile"
+      - text "Queen"
+        - text "Queen"
+      - text "Cooling gel foam"
+        - text "Cooling gel foam"
+      - text "$"
+        - text "$"
+      - text "249"
+        - text "249"
+      - text "00"
+        - text "00"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Amazon Basics Cooling Gel Hybrid Mattress, 10-Inch, Queen" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Metformin HCl 1000 mg Tablet, 30 Count" [focusable=True]
+        - image "Metformin HCl 1000 mg Tablet, 30 Count"
+      - text "AMAZON PHARMACY"
+        - text "AMAZON PHARMACY"
+      - link "Metformin HCl 1000 mg Tablet, 30 Count" [focusable=True]
+        - text "Metformin HCl 1000 mg Tablet, 30 Count"
+          - text "Metformin HCl 1000 mg Tablet, 30 Count"
+      - generic "4.8 out of 5 stars, 312 reviews"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "312"
+          - text "312"
+        - text ")"
+          - text ")"
+      - text "1000 mg strength"
+        - text "1000 mg strength"
+      - text "30 tablets"
+        - text "30 tablets"
+      - text "Prescription required"
+        - text "Prescription required"
+      - paragraph
+        - text "Prescription required. Price shown before insurance."
+          - text "Prescription required. Price shown before insurance."
+      - text "$"
+        - text "$"
+      - text "11"
+        - text "11"
+      - text "40"
+        - text "40"
+      - link "View price & details" [focusable=True]
+        - text "View price & details"
+          - text "View price & details"
+    - article
+      - link "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home" [focusable=True]
+        - image "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+      - text "AMAZON GIFT CARDS"
+        - text "AMAZON GIFT CARDS"
+      - link "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home" [focusable=True]
+        - text "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+          - text "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+      - generic "4.9 out of 5 stars, 3654 reviews"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "3,654"
+          - text "3,654"
+        - text ")"
+          - text ")"
+      - text "Print at home"
+        - text "Print at home"
+      - text "Foldable card"
+        - text "Foldable card"
+      - text "$50–$100"
+        - text "$50–$100"
+      - text "$"
+        - text "$"
+      - text "50"
+        - text "50"
+      - text "00"
+        - text "00"
+      - link "Customize & add" [focusable=True]
+        - text "Customize & add"
+          - text "Customize & add"
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - heading "Get to Know Us" [level=3]
+      - text "Get to Know Us"
+        - text "Get to Know Us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "Amazon Newsletter" [focusable=True]
+      - text "Amazon Newsletter"
+        - text "Amazon Newsletter"
+    - button "About Amazon" [focusable=True]
+      - text "About Amazon"
+        - text "About Amazon"
+    - heading "Make Money with Us" [level=3]
+      - text "Make Money with Us"
+        - text "Make Money with Us"
+    - button "Sell products on Amazon" [focusable=True]
+      - text "Sell products on Amazon"
+        - text "Sell products on Amazon"
+    - button "Become an Affiliate" [focusable=True]
+      - text "Become an Affiliate"
+        - text "Become an Affiliate"
+    - button "Advertise Your Products" [focusable=True]
+      - text "Advertise Your Products"
+        - text "Advertise Your Products"
+    - heading "Amazon Payment Products" [level=3]
+      - text "Amazon Payment Products"
+        - text "Amazon Payment Products"
+    - button "Amazon Visa" [focusable=True]
+      - text "Amazon Visa"
+        - text "Amazon Visa"
+    - button "Amazon Gift Cards" [focusable=True]
+      - text "Amazon Gift Cards"
+        - text "Amazon Gift Cards"
+    - button "Reload Your Balance" [focusable=True]
+      - text "Reload Your Balance"
+        - text "Reload Your Balance"
+    - heading "Let Us Help You" [level=3]
+      - text "Let Us Help You"
+        - text "Let Us Help You"
+    - link "Your Orders" [focusable=True]
+      - text "Your Orders"
+        - text "Your Orders"
+    - button "Shipping Rates & Policies" [focusable=True]
+      - text "Shipping Rates & Policies"
+        - text "Shipping Rates & Policies"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "amazon .com" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "$ USD - U.S. Dollar" [focusable=True]
+      - text "$ USD - U.S. Dollar"
+        - text "$ USD - U.S. Dollar"
+    - button "United States" [focusable=True]
+      - text "United States"
+        - text "United States"
+    - text "Conditions of Use"
+      - text "Conditions of Use"
+    - text "Privacy Notice"
+      - text "Privacy Notice"
+    - text "Consumer Health Data Privacy Disclosure"
+      - text "Consumer Health Data Privacy Disclosure"
+    - text "© 1996-2026, Amazon.com, Inc. or its affiliates"
+      - text "© 1996-2026, Amazon.com, Inc. or its affiliates"

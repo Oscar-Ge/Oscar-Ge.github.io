@@ -1,0 +1,231 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+  - main
+    - paragraph
+      - text "WORLD-CLASS CARE, FOCUSED ON YOU"
+        - text "WORLD-CLASS CARE, FOCUSED ON YOU"
+    - heading "Answers. Expertise. Hope." [level=1]
+      - text "Answers."
+        - text "Answers."
+      - LineBreak
+        - text
+      - text "Expertise."
+        - text "Expertise."
+      - LineBreak
+        - text
+      - emphasis
+        - text "Hope."
+          - text "Hope."
+    - paragraph
+      - text "At Mayo Clinic, specialists work together to solve the world’s toughest medical problems—so you can get back to what ..."
+        - text "At Mayo Clinic, specialists work together to solve the world’s toughest"
+        - text "medical problems—so you can get back to what matters most."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - generic "Collaborative expert care illustration"
+      - strong
+        - text "Team-based"
+          - text "Team-based"
+      - text "specialty care"
+        - text "specialty care"
+      - strong
+        - text "3 major"
+          - text "3 major"
+      - text "destination campuses"
+        - text "destination campuses"
+    - form
+      - LabelText
+        - text "How can we help?"
+          - text "How can we help?"
+      - entry "How can we help?" value="k" [focusable=True]
+        - text "k"
+          - text "k"
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - link "Find a doctor Search our specialists" [focusable=True]
+      - strong
+        - text "Find a doctor"
+          - text "Find a doctor"
+      - text "Search our specialists"
+        - text "Search our specialists"
+    - link "Diseases & conditions Trusted health information" [focusable=True]
+      - strong
+        - text "Diseases & conditions"
+          - text "Diseases & conditions"
+      - text "Trusted health information"
+        - text "Trusted health information"
+    - link "Check symptoms Explore possible causes" [focused=True, focusable=True]
+      - strong
+        - text "Check symptoms"
+          - text "Check symptoms"
+      - text "Explore possible causes"
+        - text "Explore possible causes"
+    - paragraph
+      - text "WHY CHOOSE MAYO CLINIC"
+        - text "WHY CHOOSE MAYO CLINIC"
+    - heading "Experience care built around your whole story" [level=2]
+      - text "Experience care built around your whole story"
+        - text "Experience care built around"
+        - text "your whole story"
+    - paragraph
+      - text "Our experts collaborate across specialties, reviewing every detail to create a plan designed for you—not just your di..."
+        - text "Our experts collaborate across specialties, reviewing every detail to"
+        - text "create a plan designed for you—not just your diagnosis."
+    - list
+      - listitem [level=1]
+        - text "Leading experts in serious and complex care"
+          - text "Leading experts in serious and complex care"
+      - listitem [level=1]
+        - text "Appointments coordinated to respect your time"
+          - text "Appointments coordinated to respect your time"
+      - listitem [level=1]
+        - text "Research and innovation brought to the bedside"
+          - text "Research and innovation brought to the bedside"
+    - link "Explore patient care" [focusable=True]
+      - text "Explore patient care"
+        - text "Explore patient care"
+    - paragraph
+      - text "EXPLORE MAYO CLINIC"
+        - text "EXPLORE MAYO CLINIC"
+    - heading "Knowledge that moves medicine forward" [level=2]
+      - text "Knowledge that moves medicine forward"
+        - text "Knowledge that moves medicine"
+        - text "forward"
+    - link "DEPARTMENTS & CENTERS Neurosciences Discover coordinated programs for complex brain, spine and nervous system conditi..." [focusable=True]
+      - text "DEPARTMENTS & CENTERS"
+        - text "DEPARTMENTS & CENTERS"
+      - heading "Neurosciences" [level=3]
+        - text "Neurosciences"
+          - text "Neurosciences"
+      - paragraph
+        - text "Discover coordinated programs for complex brain, spine and nervous system conditions."
+          - text "Discover coordinated programs for"
+          - text "complex brain, spine and nervous system"
+          - text "conditions."
+      - text "Explore programs"
+        - text "Explore programs"
+    - link "EDUCATION Train where medicine is transformed Explore degree programs, internships and immersive learning opportuniti..." [focusable=True]
+      - text "EDUCATION"
+        - text "EDUCATION"
+      - heading "Train where medicine is transformed" [level=3]
+        - text "Train where medicine is transformed"
+          - text "Train where medicine is"
+          - text "transformed"
+      - paragraph
+        - text "Explore degree programs, internships and immersive learning opportunities."
+          - text "Explore degree programs, internships and"
+          - text "immersive learning opportunities."
+      - text "Explore education"
+        - text "Explore education"
+    - link "RESEARCH Airway Biology Laboratory Meet the team studying airway health, inflammation and respiratory disease. Visit ..." [focusable=True]
+      - text "RESEARCH"
+        - text "RESEARCH"
+      - heading "Airway Biology Laboratory" [level=3]
+        - text "Airway Biology Laboratory"
+          - text "Airway Biology Laboratory"
+      - paragraph
+        - text "Meet the team studying airway health, inflammation and respiratory disease."
+          - text "Meet the team studying airway health,"
+          - text "inflammation and respiratory disease."
+      - text "Visit the lab"
+        - text "Visit the lab"
+    - paragraph
+      - text "READY WHEN YOU ARE"
+        - text "READY WHEN YOU ARE"
+    - heading "Take the next step toward answers" [level=2]
+      - text "Take the next step toward answers"
+        - text "Take the next step toward answers"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Call 1-800-423-2233" [focusable=True]
+      - text "Call 1-800-423-2233"
+        - text "Call 1-800-423-2233"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

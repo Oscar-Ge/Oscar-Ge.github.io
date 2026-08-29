@@ -1,0 +1,189 @@
+- document "CA.gov | State of California" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - text "Official website of the State of California"
+    - text "Official website of the State of California"
+  - button "How you know" [focusable=True]
+    - text "How you know"
+      - text "How you know"
+  - banner
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+      - text "STATE OF CALIFORNIA"
+        - text "STATE OF CALIFORNIA"
+    - search
+      - LabelText
+        - text "Search CA.gov"
+          - text "Search CA.gov"
+      - entry "Search CA.gov" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - navigation "Main navigation"
+      - link "Services" [focusable=True]
+        - text "Services"
+          - text "Services"
+      - link "Benefits" [focusable=True]
+        - text "Benefits"
+          - text "Benefits"
+      - link "Government" [focusable=True]
+        - text "Government"
+          - text "Government"
+      - link "Business" [focusable=True]
+        - text "Business"
+          - text "Business"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Agency directory" [focusable=True]
+        - text "Agency directory"
+          - text "Agency directory"
+      - text "Office of Administrative Law"
+        - text "Office of Administrative Law"
+    - text "AGENCY PROFILE"
+      - text "AGENCY PROFILE"
+    - heading "Office of Administrative Law" [level=1]
+      - text "Office of Administrative Law"
+        - text "Office of Administrative"
+        - text "Law"
+    - paragraph
+      - text "The independent state agency responsible for reviewing California administrative regulations."
+        - text "The independent state agency responsible for reviewing California administrative regulations."
+    - article
+      - text "OAL"
+        - text "OAL"
+      - heading "About the Office of Administrative Law" [level=2]
+        - text "About the Office of Administrative Law"
+          - text "About the Office of Administrative Law"
+      - paragraph
+        - text "The Office of Administrative Law ensures that state agency regulations are clear, necessary, legally valid, and avail..."
+          - text "The Office of Administrative Law ensures that state agency regulations are clear,"
+          - text "necessary, legally valid, and available to the public. OAL reviews proposed regulations"
+          - text "and maintains the official California Code of Regulations."
+      - heading "Primary responsibilities" [level=3]
+        - text "Primary responsibilities"
+          - text "Primary responsibilities"
+      - list
+        - listitem [level=1]
+          - text "Review regulations adopted by more than 200 state agencies."
+            - text "Review regulations adopted by more than 200 state agencies."
+        - listitem [level=1]
+          - text "Publish the California Regulatory Notice Register."
+            - text "Publish the California Regulatory Notice Register."
+        - listitem [level=1]
+          - text "Accept petitions regarding alleged underground regulations."
+            - text "Accept petitions regarding alleged underground regulations."
+        - listitem [level=1]
+          - text "Provide public access to rulemaking records and guidance."
+            - text "Provide public access to rulemaking records and guidance."
+      - text "KM"
+        - text "KM"
+      - text "Director"
+        - text "Director"
+      - strong
+        - text "Kenneth J. Pogue"
+          - text "Kenneth J. Pogue"
+      - text "Appointed agency director"
+        - text "Appointed agency director"
+    - complementary
+      - heading "Contact OAL" [level=2]
+        - text "Contact OAL"
+          - text "Contact OAL"
+      - strong
+        - text "OFFICE ADDRESS"
+          - text "OFFICE ADDRESS"
+      - group
+        - text "300 Capitol Mall, Suite 1250"
+          - text "300 Capitol Mall, Suite 1250"
+        - LineBreak
+          - text
+        - text "Sacramento, CA 95814"
+          - text "Sacramento, CA 95814"
+      - button "Copy address" [focusable=True]
+        - text "Copy address"
+          - text "Copy address"
+      - strong
+        - text "PHONE"
+          - text "PHONE"
+      - link "(916) 323-6225" [focusable=True]
+        - text "(916) 323-6225"
+          - text "(916) 323-6225"
+      - strong
+        - text "EMAIL"
+          - text "EMAIL"
+      - link "staff@oal.ca.gov" [focusable=True]
+        - text "staff@oal.ca.gov"
+          - text "staff@oal.ca.gov"
+      - strong
+        - text "OFFICE HOURS"
+          - text "OFFICE HOURS"
+      - text "Monday–Friday"
+        - text "Monday–Friday"
+      - LineBreak
+        - text
+      - text "8:00 AM–5:00 PM"
+        - text "8:00 AM–5:00 PM"
+      - link "Email the office" [focusable=True]
+        - text "Email the office"
+          - text "Email the office"
+  - contentinfo
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+    - paragraph
+      - text "California services and information in one place."
+        - text "California services and information in"
+        - text "one place."
+    - heading "POPULAR SERVICES" [level=2]
+      - text "POPULAR SERVICES"
+        - text "POPULAR SERVICES"
+    - link "Birth certificates" [focusable=True]
+      - text "Birth certificates"
+        - text "Birth certificates"
+    - link "Register to vote" [focusable=True]
+      - text "Register to vote"
+        - text "Register to vote"
+    - link "Unemployment benefits" [focusable=True]
+      - text "Unemployment benefits"
+        - text "Unemployment benefits"
+    - heading "GOVERNMENT" [level=2]
+      - text "GOVERNMENT"
+        - text "GOVERNMENT"
+    - link "Find your representative" [focusable=True]
+      - text "Find your representative"
+        - text "Find your representative"
+    - link "Search legislation" [focusable=True]
+      - text "Search legislation"
+        - text "Search legislation"
+    - link "Agency directory" [focused=True, focusable=True]
+      - text "Agency directory"
+        - text "Agency directory"
+    - heading "GET HELP" [level=2]
+      - text "GET HELP"
+        - text "GET HELP"
+    - link "1-800-807-7777" [focusable=True]
+      - text "1-800-807-7777"
+        - text "1-800-807-7777"
+    - link "info@ca.gov" [focusable=True]
+      - text "info@ca.gov"
+        - text "info@ca.gov"
+    - link "Browse all services" [focusable=True]
+      - text "Browse all services"
+        - text "Browse all services"
+    - text "© 2026 State of California"
+      - text "© 2026 State of California"
+    - text "Built for accessibility and public service"
+      - text "Built for accessibility and public service"

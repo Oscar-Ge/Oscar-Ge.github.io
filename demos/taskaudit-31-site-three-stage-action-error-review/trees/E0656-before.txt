@@ -1,0 +1,199 @@
+- document "Petfinder — Find Your New Best Friend" [focused=True, focusable=True]
+  - link "Skip to content" [focusable=True]
+    - text "Skip to content"
+      - text "Skip to content"
+  - banner
+    - link "Petfinder home" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - navigation "Main navigation"
+      - link "Find a Pet" [focusable=True]
+        - text "Find a Pet"
+          - text "Find a Pet"
+      - link "Shelters & Rescues" [focusable=True]
+        - text "Shelters & Rescues"
+          - text "Shelters & Rescues"
+      - link "Pet Care" [focusable=True]
+        - text "Pet Care"
+          - text "Pet Care"
+      - link "Favorites" [focusable=True]
+        - text "Favorites"
+          - text "Favorites"
+      - link "Donate" [focused=True, focusable=True]
+        - text "Donate"
+          - text "Donate"
+  - main
+    - paragraph
+      - text "FIND LOVE. GIVE LOVE."
+        - text "FIND LOVE. GIVE LOVE."
+    - heading "Bring home more happy." [level=1]
+      - text "Bring home"
+        - text "Bring home"
+      - LineBreak
+        - text
+      - text "more"
+        - text "more"
+      - emphasis
+        - text "happy."
+          - text "happy."
+    - paragraph
+      - text "Search thousands of adoptable pets from shelters and rescue groups near you."
+        - text "Search thousands of adoptable pets from shelters and"
+        - text "rescue groups near you."
+    - form
+      - group "Pet type"
+        - button "Dog" [focusable=True, pressed=true]
+          - text "Dog"
+            - text "Dog"
+        - button "Cat" [focusable=True]
+          - text "Cat"
+            - text "Cat"
+        - button "Rabbit" [focusable=True]
+          - text "Rabbit"
+            - text "Rabbit"
+      - LabelText
+        - text "Location"
+          - text "Location"
+        - entry "Location" [focusable=True]
+      - button "Search pets" [focusable=True]
+        - text "Search pets"
+          - text "Search pets"
+    - paragraph
+      - text "ADOPTION STARTS HERE"
+        - text "ADOPTION STARTS HERE"
+    - heading "Find your new best friend" [level=2]
+      - text "Find your new best friend"
+        - text "Find your new best friend"
+    - paragraph
+      - text "Browse adoptable pets from trusted shelters and rescues."
+        - text "Browse adoptable pets from trusted shelters and rescues."
+    - link "Dogs & Puppies Patient tails are waiting" [focusable=True]
+      - strong
+        - text "Dogs & Puppies"
+          - text "Dogs & Puppies"
+      - text "Patient tails are waiting"
+        - text "Patient tails are waiting"
+    - link "Cats & Kittens Meet your purr-fect match" [focusable=True]
+      - strong
+        - text "Cats & Kittens"
+          - text "Cats & Kittens"
+      - text "Meet your purr-fect match"
+        - text "Meet your purr-fect match"
+    - link "Rabbits Big personalities, soft ears" [focusable=True]
+      - strong
+        - text "Rabbits"
+          - text "Rabbits"
+      - text "Big personalities, soft ears"
+        - text "Big personalities, soft ears"
+    - paragraph
+      - text "A THOUGHTFUL MATCH"
+        - text "A THOUGHTFUL MATCH"
+    - heading "How adoption works" [level=2]
+      - text "How adoption works"
+        - text "How adoption works"
+    - article
+      - text "1"
+        - text "1"
+      - heading "Search" [level=3]
+        - text "Search"
+          - text "Search"
+      - paragraph
+        - text "Use filters to find pets who fit your home and lifestyle."
+          - text "Use filters to find pets who fit your home and"
+          - text "lifestyle."
+    - article
+      - text "2"
+        - text "2"
+      - heading "Connect" [level=3]
+        - text "Connect"
+          - text "Connect"
+      - paragraph
+        - text "Read profiles and contact the shelter or rescue directly."
+          - text "Read profiles and contact the shelter or rescue"
+          - text "directly."
+    - article
+      - text "3"
+        - text "3"
+      - heading "Adopt" [level=3]
+        - text "Adopt"
+          - text "Adopt"
+      - paragraph
+        - text "Complete the group’s process and welcome your new companion."
+          - text "Complete the group’s process and welcome"
+          - text "your new companion."
+    - paragraph
+      - text "PET CARE ESSENTIALS"
+        - text "PET CARE ESSENTIALS"
+    - heading "Help your dog look and feel their best" [level=2]
+      - text "Help your dog look and feel their best"
+        - text "Help your dog look and feel"
+        - text "their best"
+    - paragraph
+      - text "Learn brushing, bathing, nail care, and coat-care basics for dogs and puppies."
+        - text "Learn brushing, bathing, nail care, and coat-care basics for dogs and"
+        - text "puppies."
+    - link "Read the grooming guide" [focusable=True]
+      - text "Read the grooming guide"
+        - text "Read the grooming guide"
+    - paragraph
+      - text "PETFINDER FOUNDATION"
+        - text "PETFINDER FOUNDATION"
+    - heading "Help shelters save more lives" [level=2]
+      - text "Help shelters save more lives"
+        - text "Help shelters save more lives"
+    - paragraph
+      - text "Your monthly gift supports adoption programs, disaster response, and shelter enrichment."
+        - text "Your monthly gift supports adoption programs, disaster response, and shelter"
+        - text "enrichment."
+    - link "Make a gift" [focusable=True]
+      - text "Make a gift"
+        - text "Make a gift"
+  - contentinfo
+    - link "petfinder" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - paragraph
+      - text "Connecting adoptable pets with loving people."
+        - text "Connecting adoptable pets with loving"
+        - text "people."
+    - heading "ADOPT" [level=2]
+      - text "ADOPT"
+        - text "ADOPT"
+    - link "Dogs & puppies" [focusable=True]
+      - text "Dogs & puppies"
+        - text "Dogs & puppies"
+    - link "Cats & kittens" [focusable=True]
+      - text "Cats & kittens"
+        - text "Cats & kittens"
+    - link "Rabbits" [focusable=True]
+      - text "Rabbits"
+        - text "Rabbits"
+    - link "Favorites" [focusable=True]
+      - text "Favorites"
+        - text "Favorites"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Pet care library" [focusable=True]
+      - text "Pet care library"
+        - text "Pet care library"
+    - link "Dog & puppy grooming" [focusable=True]
+      - text "Dog & puppy grooming"
+        - text "Dog & puppy grooming"
+    - link "Shelters & rescues" [focusable=True]
+      - text "Shelters & rescues"
+        - text "Shelters & rescues"
+    - heading "GIVE" [level=2]
+      - text "GIVE"
+        - text "GIVE"
+    - paragraph
+      - text "Help adoption groups care for more pets."
+        - text "Help adoption groups care for more"
+        - text "pets."
+    - link "Donate to the Foundation" [focusable=True]
+      - text "Donate to the Foundation"
+        - text "Donate to the Foundation"
+    - text "© 2026 Petfinder demo experience"
+      - text "© 2026 Petfinder demo experience"
+    - text "Built with synthetic adoption data"
+      - text "Built with synthetic adoption data"

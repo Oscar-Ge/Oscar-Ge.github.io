@@ -1,0 +1,204 @@
+- document "craigslist — local classifieds and forums" [focused=True, focusable=True]
+  - banner
+    - button "Craigslist home" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "Chicago" [focused=True, focusable=True]
+      - text "Chicago"
+        - text "Chicago"
+    - form
+      - entry "Search craigslist" [focusable=True]
+      - button "Submit search" [focusable=True]
+        - text "SEARCH"
+          - text "SEARCH"
+    - navigation
+      - button "saved" [focusable=True]
+        - text "saved"
+          - text "saved"
+      - button "account" [focusable=True]
+        - text "account"
+          - text "account"
+      - button "post an ad" [focusable=True]
+        - text "post an ad"
+          - text "post an ad"
+  - main
+    - text "LOCAL FINDS, REAL PEOPLE"
+      - text "LOCAL FINDS, REAL PEOPLE"
+    - heading "Everything nearby, all in one place." [level=1]
+      - text "Everything nearby,"
+        - text "Everything nearby,"
+      - LineBreak
+        - text
+      - emphasis
+        - text "all in one place."
+          - text "all in one place."
+    - paragraph
+      - text "Find homes, work, services, and one-of-a-kind things from people in your community."
+        - text "Find homes, work, services, and one-of-a-kind things from people in your community."
+    - form
+      - entry "What are you looking for?" [focusable=True]
+      - combobox "Search category" value="all categories" [focusable=True]
+        - MenuListPopup
+          - option "all categories" [focusable=True, selected=True]
+          - option "apartments / housing" [focusable=True]
+          - option "furniture" [focusable=True]
+          - option "jobs" [focusable=True]
+          - option "lessons & tutoring" [focusable=True]
+          - option "pets" [focusable=True]
+          - option "tickets" [focusable=True]
+          - option "vacation rentals" [focusable=True]
+          - option "appliances" [focusable=True]
+          - option "cell phones" [focusable=True]
+          - option "garage & moving sales" [focusable=True]
+          - option "parking & storage" [focusable=True]
+          - option "services" [focusable=True]
+          - option "antiques" [focusable=True]
+      - button "Change search location" [focusable=True]
+        - text "Chicago"
+          - text "Chicago"
+      - button "search" [focusable=True]
+        - text "search"
+          - text "search"
+    - text "popular:"
+      - text "popular:"
+    - button "couches" [focusable=True]
+      - text "couches"
+        - text "couches"
+    - button "apartments" [focusable=True]
+      - text "apartments"
+        - text "apartments"
+    - button "part-time jobs" [focusable=True]
+      - text "part-time jobs"
+        - text "part-time jobs"
+    - button "pets" [focusable=True]
+      - text "pets"
+        - text "pets"
+    - text "EXPLORE CRAIGSLIST"
+      - text "EXPLORE CRAIGSLIST"
+    - heading "Start with a category" [level=2]
+      - text "Start with a category"
+        - text "Start with a category"
+    - button "browse all listings" [focusable=True]
+      - text "browse all listings"
+        - text "browse all listings"
+    - article
+      - heading "housing" [level=3]
+        - text "housing"
+          - text "housing"
+      - button "apartments / housing" [focusable=True]
+        - text "apartments / housing"
+          - text "apartments / housing"
+      - button "rooms & shares" [focusable=True]
+        - text "rooms & shares"
+          - text "rooms & shares"
+      - button "parking & storage" [focusable=True]
+        - text "parking & storage"
+          - text "parking & storage"
+      - button "vacation rentals" [focusable=True]
+        - text "vacation rentals"
+          - text "vacation rentals"
+    - article
+      - heading "for sale" [level=3]
+        - text "for sale"
+          - text "for sale"
+      - button "antiques" [focusable=True]
+        - text "antiques"
+          - text "antiques"
+      - button "appliances" [focusable=True]
+        - text "appliances"
+          - text "appliances"
+      - button "furniture" [focusable=True]
+        - text "furniture"
+          - text "furniture"
+      - button "cell phones" [focusable=True]
+        - text "cell phones"
+          - text "cell phones"
+      - button "garage sales" [focusable=True]
+        - text "garage sales"
+          - text "garage sales"
+      - button "tickets" [focusable=True]
+        - text "tickets"
+          - text "tickets"
+    - article
+      - heading "jobs" [level=3]
+        - text "jobs"
+          - text "jobs"
+      - button "general labor" [focusable=True]
+        - text "general labor"
+          - text "general labor"
+      - button "writing / editing" [focusable=True]
+        - text "writing / editing"
+          - text "writing / editing"
+      - button "retail / food" [focusable=True]
+        - text "retail / food"
+          - text "retail / food"
+      - button "skilled trades" [focusable=True]
+        - text "skilled trades"
+          - text "skilled trades"
+    - article
+      - heading "services" [level=3]
+        - text "services"
+          - text "services"
+      - button "child care" [focusable=True]
+        - text "child care"
+          - text "child care"
+      - button "lessons & tutoring" [focusable=True]
+        - text "lessons & tutoring"
+          - text "lessons & tutoring"
+      - button "household services" [focusable=True]
+        - text "household services"
+          - text "household services"
+      - button "creative services" [focusable=True]
+        - text "creative services"
+          - text "creative services"
+    - article
+      - heading "community" [level=3]
+        - text "community"
+          - text "community"
+      - button "pets" [focusable=True]
+        - text "pets"
+          - text "pets"
+      - button "events" [focusable=True]
+        - text "events"
+          - text "events"
+      - button "local news" [focusable=True]
+        - text "local news"
+          - text "local news"
+      - button "volunteers" [focusable=True]
+        - text "volunteers"
+          - text "volunteers"
+    - text "Made for your neighborhood"
+      - text "Made for your neighborhood"
+    - text "Browse relevant listings nearby."
+      - text "Browse relevant listings nearby."
+    - text "Simple, direct connections"
+      - text "Simple, direct connections"
+    - text "Reach posters without a middleman."
+      - text "Reach posters without a middleman."
+    - text "Fresh every day"
+      - text "Fresh every day"
+    - text "New opportunities added constantly."
+      - text "New opportunities added constantly."
+  - contentinfo
+    - button "c craigslist" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "help & safety" [focusable=True]
+      - text "help & safety"
+        - text "help & safety"
+    - button "privacy" [focusable=True]
+      - text "privacy"
+        - text "privacy"
+    - button "terms" [focusable=True]
+      - text "terms"
+        - text "terms"
+    - button "about" [focusable=True]
+      - text "about"
+        - text "about"
+    - paragraph
+      - text "© 2026 craigslist · local connections, simply made"
+        - text "© 2026 craigslist · local connections, simply made"

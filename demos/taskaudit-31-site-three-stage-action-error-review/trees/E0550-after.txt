@@ -1,0 +1,787 @@
+- document "Allrecipes | Food, Friends, and Recipe Inspiration" [focused=True, focusable=True]
+  - banner
+    - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+      - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+    - text "TESTED IN HOME KITCHENS SINCE 1997"
+      - text "TESTED IN HOME KITCHENS SINCE 1997"
+    - link "Allrecipes home" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - search
+      - LabelText
+        - text "Search recipes and ingredients"
+          - text "Search recipes and ingredients"
+      - entry "Search recipes and ingredients" [focusable=True]
+      - button "Search" [focused=True, focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+    - link "My recipes, 0 items" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - navigation "Main navigation"
+      - link "RECIPES" [focusable=True]
+        - text "RECIPES"
+          - text "RECIPES"
+      - link "QUICK & EASY" [focusable=True]
+        - text "QUICK & EASY"
+          - text "QUICK & EASY"
+      - link "DESSERTS" [focusable=True]
+        - text "DESSERTS"
+          - text "DESSERTS"
+      - link "AIR FRYER" [focusable=True]
+        - text "AIR FRYER"
+          - text "AIR FRYER"
+      - link "KITCHEN TIPS" [focusable=True]
+        - text "KITCHEN TIPS"
+          - text "KITCHEN TIPS"
+      - link "FOOD NEWS" [focusable=True]
+        - text "FOOD NEWS"
+          - text "FOOD NEWS"
+      - link "HOLIDAYS" [focusable=True]
+        - text "HOLIDAYS"
+          - text "HOLIDAYS"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Recipes"
+        - text "Recipes"
+    - paragraph
+      - text "TESTED & TRUSTED"
+        - text "TESTED & TRUSTED"
+    - heading "Browse Recipes" [level=1]
+      - text "Browse Recipes"
+        - text "Browse Recipes"
+    - paragraph
+      - text "Filter by ingredient, cuisine, time, and rating to find your next favorite."
+        - text "Filter by ingredient, cuisine, time, and rating to find your next favorite."
+    - form
+      - LabelText
+        - text "Search within recipes"
+          - text "Search within recipes"
+      - entry "Search within recipes" [focusable=True]
+      - button "Search recipes" [focusable=True]
+    - complementary
+      - heading "Filter recipes" [level=2]
+        - text "Filter recipes"
+          - text "Filter recipes"
+      - LabelText
+        - text "Category"
+          - text "Category"
+        - combobox "Category" value="All categories" [focusable=True]
+          - MenuListPopup
+            - option "All categories" [focusable=True, selected=True]
+            - option "Main Dishes" [focusable=True]
+            - option "Desserts" [focusable=True]
+            - option "Breakfast & Brunch" [focusable=True]
+            - option "Easter Brunch" [focusable=True]
+      - LabelText
+        - text "Main ingredient"
+          - text "Main ingredient"
+        - combobox "Main ingredient" value="Any ingredient" [focusable=True]
+          - MenuListPopup
+            - option "Any ingredient" [focusable=True, selected=True]
+            - option "Seafood" [focusable=True]
+            - option "Sweet Potato" [focusable=True]
+            - option "Pumpkin" [focusable=True]
+            - option "Pork" [focusable=True]
+            - option "Cinnamon" [focusable=True]
+      - LabelText
+        - text "Cuisine"
+          - text "Cuisine"
+        - combobox "Cuisine" value="Any cuisine" [focusable=True]
+          - MenuListPopup
+            - option "Any cuisine" [focusable=True, selected=True]
+            - option "Filipino" [focusable=True]
+            - option "American" [focusable=True]
+            - option "Italian Inspired" [focusable=True]
+      - LabelText
+        - text "Maximum time"
+          - text "Maximum time"
+        - combobox "Maximum time" value="Any time" [focusable=True]
+          - MenuListPopup
+            - option "Any time" [focusable=True, selected=True]
+            - option "30 minutes or less" [focusable=True]
+      - LabelText
+        - text "User rating"
+          - text "User rating"
+        - combobox "User rating" value="Any rating" [focusable=True]
+          - MenuListPopup
+            - option "Any rating" [focusable=True, selected=True]
+            - option "Highly rated (4.8+)" [focusable=True]
+            - option "5 stars" [focusable=True]
+    - paragraph
+      - strong
+        - text "16"
+          - text "16"
+      - text
+        - text
+      - text "recipes"
+        - text "recipes"
+      - text "found"
+        - text "found"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Recommended" [focusable=True]
+        - MenuListPopup
+          - option "Recommended" [focusable=True, selected=True]
+          - option "Most ratings" [focusable=True]
+          - option "Highest rated" [focusable=True]
+          - option "Fastest" [focusable=True]
+    - article
+      - link "View Pepper Steak with Beef Sirloin" [focusable=True]
+        - image "Pepper Steak with Beef Sirloin"
+      - button "Favorite Pepper Steak with Beef Sirloin" [focusable=True]
+      - text "READER FAVORITE"
+        - text "READER FAVORITE"
+      - paragraph
+        - text "BEEF SIRLOIN"
+          - text "BEEF SIRLOIN"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Pepper Steak with Beef Sirloin" [level=3]
+        - link "Pepper Steak with Beef Sirloin" [focusable=True]
+          - text "Pepper Steak with Beef Sirloin"
+            - text "Pepper Steak with Beef"
+            - text "Sirloin"
+      - generic "4.8 out of 5 stars, 1,284 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,284"
+          - text "1,284"
+        - text ")"
+          - text ")"
+      - text "40"
+        - text "40"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Spicy Chicken Noodles" [focusable=True]
+        - image "Spicy Chicken Noodles"
+      - button "Favorite Spicy Chicken Noodles" [focusable=True]
+      - text "READY IN 25 MINUTES"
+        - text "READY IN 25 MINUTES"
+      - paragraph
+        - text "CHICKEN"
+          - text "CHICKEN"
+        - text "·"
+          - text "·"
+        - text "ASIAN INSPIRED"
+          - text "ASIAN INSPIRED"
+      - heading "Spicy Chicken Noodles" [level=3]
+        - link "Spicy Chicken Noodles" [focusable=True]
+          - text "Spicy Chicken Noodles"
+            - text "Spicy Chicken Noodles"
+      - generic "4.9 out of 5 stars, 2,387 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "2,387"
+          - text "2,387"
+        - text ")"
+          - text ")"
+      - text "25"
+        - text "25"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View 5-Star Honey Garlic Pork Chops" [focusable=True]
+        - image "5-Star Honey Garlic Pork Chops"
+      - button "Favorite 5-Star Honey Garlic Pork Chops" [focusable=True]
+      - text "5-STAR RECIPE"
+        - text "5-STAR RECIPE"
+      - paragraph
+        - text "PORK"
+          - text "PORK"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "5-Star Honey Garlic Pork Chops" [level=3]
+        - link "5-Star Honey Garlic Pork Chops" [focusable=True]
+          - text "5-Star Honey Garlic Pork Chops"
+            - text "5-Star Honey Garlic Pork"
+            - text "Chops"
+      - generic "5 out of 5 stars, 684 ratings"
+        - text "5.0"
+          - text "5.0"
+        - text "("
+          - text "("
+        - text "684"
+          - text "684"
+        - text ")"
+          - text ")"
+      - text "30"
+        - text "30"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View The Best Lemon Bars" [focusable=True]
+        - image "The Best Lemon Bars"
+      - button "Favorite The Best Lemon Bars" [focusable=True]
+      - text "MOST RATED"
+        - text "MOST RATED"
+      - paragraph
+        - text "LEMON"
+          - text "LEMON"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "The Best Lemon Bars" [level=3]
+        - link "The Best Lemon Bars" [focusable=True]
+          - text "The Best Lemon Bars"
+            - text "The Best Lemon Bars"
+      - generic "4.9 out of 5 stars, 7,945 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "7,945"
+          - text "7,945"
+        - text ")"
+          - text ")"
+      - text "55"
+        - text "55"
+      - text "mins"
+        - text "mins"
+      - text "24"
+        - text "24"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Old-Fashioned Lemon Bars" [focusable=True]
+        - image "Old-Fashioned Lemon Bars"
+      - button "Favorite Old-Fashioned Lemon Bars" [focusable=True]
+      - paragraph
+        - text "LEMON"
+          - text "LEMON"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Old-Fashioned Lemon Bars" [level=3]
+        - link "Old-Fashioned Lemon Bars" [focusable=True]
+          - text "Old-Fashioned Lemon Bars"
+            - text "Old-Fashioned Lemon Bars"
+      - generic "4.7 out of 5 stars, 2,214 ratings"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "2,214"
+          - text "2,214"
+        - text ")"
+          - text ")"
+      - text "60"
+        - text "60"
+      - text "mins"
+        - text "mins"
+      - text "20"
+        - text "20"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View 5-Star Bibingka (Filipino Coconut Cake)" [focusable=True]
+        - image "5-Star Bibingka (Filipino Coconut Cake)"
+      - button "Favorite 5-Star Bibingka (Filipino Coconut Cake)" [focusable=True]
+      - text "5-STAR FILIPINO DESSERT"
+        - text "5-STAR FILIPINO DESSERT"
+      - paragraph
+        - text "COCONUT"
+          - text "COCONUT"
+        - text "·"
+          - text "·"
+        - text "FILIPINO"
+          - text "FILIPINO"
+      - heading "5-Star Bibingka (Filipino Coconut Cake)" [level=3]
+        - link "5-Star Bibingka (Filipino Coconut Cake)" [focusable=True]
+          - text "5-Star Bibingka (Filipino Coconut Cake)"
+            - text "5-Star Bibingka (Filipino"
+            - text "Coconut Cake)"
+      - generic "5 out of 5 stars, 513 ratings"
+        - text "5.0"
+          - text "5.0"
+        - text "("
+          - text "("
+        - text "513"
+          - text "513"
+        - text ")"
+          - text ")"
+      - text "45"
+        - text "45"
+      - text "mins"
+        - text "mins"
+      - text "8"
+        - text "8"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Roasted Sweet Potato Power Bowls" [focusable=True]
+        - image "Roasted Sweet Potato Power Bowls"
+      - button "Favorite Roasted Sweet Potato Power Bowls" [focusable=True]
+      - text "MAIN INGREDIENT: SWEET POTATO"
+        - text "MAIN INGREDIENT: SWEET POTATO"
+      - paragraph
+        - text "SWEET POTATO"
+          - text "SWEET POTATO"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Roasted Sweet Potato Power Bowls" [level=3]
+        - link "Roasted Sweet Potato Power Bowls" [focusable=True]
+          - text "Roasted Sweet Potato Power Bowls"
+            - text "Roasted Sweet Potato Power"
+            - text "Bowls"
+      - generic "4.8 out of 5 stars, 376 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "376"
+          - text "376"
+        - text ")"
+          - text ")"
+      - text "35"
+        - text "35"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Savory Sweet Potato Breakfast Hash" [focusable=True]
+        - image "Savory Sweet Potato Breakfast Hash"
+      - button "Favorite Savory Sweet Potato Breakfast Hash" [focusable=True]
+      - paragraph
+        - text "SWEET POTATO"
+          - text "SWEET POTATO"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Savory Sweet Potato Breakfast Hash" [level=3]
+        - link "Savory Sweet Potato Breakfast Hash" [focusable=True]
+          - text "Savory Sweet Potato Breakfast Hash"
+            - text "Savory Sweet Potato"
+            - text "Breakfast Hash"
+      - generic "4.7 out of 5 stars, 842 ratings"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "842"
+          - text "842"
+        - text ")"
+          - text ")"
+      - text "30"
+        - text "30"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Easy Coffee Mocha" [focusable=True]
+        - image "Easy Coffee Mocha"
+      - button "Favorite Easy Coffee Mocha" [focusable=True]
+      - text "CAFÉ FAVORITE"
+        - text "CAFÉ FAVORITE"
+      - paragraph
+        - text "COFFEE"
+          - text "COFFEE"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Easy Coffee Mocha" [level=3]
+        - link "Easy Coffee Mocha" [focusable=True]
+          - text "Easy Coffee Mocha"
+            - text "Easy Coffee Mocha"
+      - generic "4.8 out of 5 stars, 1,106 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,106"
+          - text "1,106"
+        - text ")"
+          - text ")"
+      - text "10"
+        - text "10"
+      - text "mins"
+        - text "mins"
+      - text "2"
+        - text "2"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Overnight Cinnamon Rolls" [focusable=True]
+        - image "Overnight Cinnamon Rolls"
+      - button "Favorite Overnight Cinnamon Rolls" [focusable=True]
+      - text "TOP RATED"
+        - text "TOP RATED"
+      - paragraph
+        - text "CINNAMON"
+          - text "CINNAMON"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Overnight Cinnamon Rolls" [level=3]
+        - link "Overnight Cinnamon Rolls" [focusable=True]
+          - text "Overnight Cinnamon Rolls"
+            - text "Overnight Cinnamon Rolls"
+      - generic "4.9 out of 5 stars, 5,120 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "5,120"
+          - text "5,120"
+        - text ")"
+          - text ")"
+      - text "105"
+        - text "105"
+      - text "mins"
+        - text "mins"
+      - text "12"
+        - text "12"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Easter Ham and Asparagus Brunch Casserole" [focusable=True]
+        - image "Easter Ham and Asparagus Brunch Casserole"
+      - button "Favorite Easter Ham and Asparagus Brunch Casserole" [focusable=True]
+      - text "1,000+ RATINGS"
+        - text "1,000+ RATINGS"
+      - paragraph
+        - text "HAM"
+          - text "HAM"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Easter Ham and Asparagus Brunch Casserole" [level=3]
+        - link "Easter Ham and Asparagus Brunch Casserole" [focusable=True]
+          - text "Easter Ham and Asparagus Brunch Casserole"
+            - text "Easter Ham and Asparagus"
+            - text "Brunch Casserole"
+      - generic "4.8 out of 5 stars, 1,226 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,226"
+          - text "1,226"
+        - text ")"
+          - text ")"
+      - text "60"
+        - text "60"
+      - text "mins"
+        - text "mins"
+      - text "10"
+        - text "10"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Air Fryer Salmon Bites" [focusable=True]
+        - image "Air Fryer Salmon Bites"
+      - button "Favorite Air Fryer Salmon Bites" [focusable=True]
+      - text "AIR FRYER FAVORITE"
+        - text "AIR FRYER FAVORITE"
+      - paragraph
+        - text "SEAFOOD"
+          - text "SEAFOOD"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Air Fryer Salmon Bites" [level=3]
+        - link "Air Fryer Salmon Bites" [focusable=True]
+          - text "Air Fryer Salmon Bites"
+            - text "Air Fryer Salmon Bites"
+      - generic "4.9 out of 5 stars, 746 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "746"
+          - text "746"
+        - text ")"
+          - text ")"
+      - text "18"
+        - text "18"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Crispy Air Fryer Chicken Parmesan" [focusable=True]
+        - image "Crispy Air Fryer Chicken Parmesan"
+      - button "Favorite Crispy Air Fryer Chicken Parmesan" [focusable=True]
+      - text "READY IN 28 MINUTES"
+        - text "READY IN 28 MINUTES"
+      - paragraph
+        - text "CHICKEN"
+          - text "CHICKEN"
+        - text "·"
+          - text "·"
+        - text "ITALIAN AMERICAN"
+          - text "ITALIAN AMERICAN"
+      - heading "Crispy Air Fryer Chicken Parmesan" [level=3]
+        - link "Crispy Air Fryer Chicken Parmesan" [focusable=True]
+          - text "Crispy Air Fryer Chicken Parmesan"
+            - text "Crispy Air Fryer Chicken"
+            - text "Parmesan"
+      - generic "4.8 out of 5 stars, 1,532 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,532"
+          - text "1,532"
+        - text ")"
+          - text ")"
+      - text "28"
+        - text "28"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View 30-Minute Garlic Butter Shrimp Pasta" [focusable=True]
+        - image "30-Minute Garlic Butter Shrimp Pasta"
+      - button "Favorite 30-Minute Garlic Butter Shrimp Pasta" [focusable=True]
+      - text "25-MINUTE MAIN DISH"
+        - text "25-MINUTE MAIN DISH"
+      - paragraph
+        - text "SEAFOOD"
+          - text "SEAFOOD"
+        - text "·"
+          - text "·"
+        - text "ITALIAN INSPIRED"
+          - text "ITALIAN INSPIRED"
+      - heading "30-Minute Garlic Butter Shrimp Pasta" [level=3]
+        - link "30-Minute Garlic Butter Shrimp Pasta" [focusable=True]
+          - text "30-Minute Garlic Butter Shrimp Pasta"
+            - text "30-Minute Garlic Butter"
+            - text "Shrimp Pasta"
+      - generic "4.8 out of 5 stars, 2,914 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "2,914"
+          - text "2,914"
+        - text ")"
+          - text ")"
+      - text "25"
+        - text "25"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View 30-Minute Blackened Fish Tacos" [focusable=True]
+        - image "30-Minute Blackened Fish Tacos"
+      - button "Favorite 30-Minute Blackened Fish Tacos" [focusable=True]
+      - paragraph
+        - text "SEAFOOD"
+          - text "SEAFOOD"
+        - text "·"
+          - text "·"
+        - text "MEXICAN INSPIRED"
+          - text "MEXICAN INSPIRED"
+      - heading "30-Minute Blackened Fish Tacos" [level=3]
+        - link "30-Minute Blackened Fish Tacos" [focusable=True]
+          - text "30-Minute Blackened Fish Tacos"
+            - text "30-Minute Blackened Fish"
+            - text "Tacos"
+      - generic "4.7 out of 5 stars, 1,784 ratings"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "1,784"
+          - text "1,784"
+        - text ")"
+          - text ")"
+      - text "30"
+        - text "30"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Top-Rated Pumpkin Cheesecake Bars" [focusable=True]
+        - image "Top-Rated Pumpkin Cheesecake Bars"
+      - button "Favorite Top-Rated Pumpkin Cheesecake Bars" [focusable=True]
+      - text "TOP-RATED PUMPKIN DESSERT"
+        - text "TOP-RATED PUMPKIN DESSERT"
+      - paragraph
+        - text "PUMPKIN"
+          - text "PUMPKIN"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Top-Rated Pumpkin Cheesecake Bars" [level=3]
+        - link "Top-Rated Pumpkin Cheesecake Bars" [focusable=True]
+          - text "Top-Rated Pumpkin Cheesecake Bars"
+            - text "Top-Rated Pumpkin"
+            - text "Cheesecake Bars"
+      - generic "4.9 out of 5 stars, 3,891 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "3,891"
+          - text "3,891"
+        - text ")"
+          - text ")"
+      - text "70"
+        - text "70"
+      - text "mins"
+        - text "mins"
+      - text "20"
+        - text "20"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+  - contentinfo
+    - link "allrecipes *" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - paragraph
+      - text "Reliable recipes and helpful kitchen know-how, made for home cooks."
+        - text "Reliable recipes and helpful kitchen know-how,"
+        - text "made for home cooks."
+    - heading "EXPLORE" [level=2]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "All Recipes" [focusable=True]
+      - text "All Recipes"
+        - text "All Recipes"
+    - link "30-Minute Meals" [focusable=True]
+      - text "30-Minute Meals"
+        - text "30-Minute Meals"
+    - link "Air Fryer Recipes" [focusable=True]
+      - text "Air Fryer Recipes"
+        - text "Air Fryer Recipes"
+    - link "Desserts" [focusable=True]
+      - text "Desserts"
+        - text "Desserts"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Kitchen Tips" [focusable=True]
+      - text "Kitchen Tips"
+        - text "Kitchen Tips"
+    - link "Food Safety" [focusable=True]
+      - text "Food Safety"
+        - text "Food Safety"
+    - link "Recall News" [focusable=True]
+      - text "Recall News"
+        - text "Recall News"
+    - link "Food Trends" [focusable=True]
+      - text "Food Trends"
+        - text "Food Trends"
+    - heading "YOUR KITCHEN" [level=2]
+      - text "YOUR KITCHEN"
+        - text "YOUR KITCHEN"
+    - link "My Recipes" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - link "Search Cinnamon Recipes" [focusable=True]
+      - text "Search Cinnamon Recipes"
+        - text "Search Cinnamon Recipes"
+    - link "About Allrecipes" [focusable=True]
+      - text "About Allrecipes"
+        - text "About Allrecipes"
+    - text "© 2026 Allrecipes demo"
+      - text "© 2026 Allrecipes demo"
+    - text "All content is synthetic and for demonstration only."
+      - text "All content is synthetic and for demonstration only."

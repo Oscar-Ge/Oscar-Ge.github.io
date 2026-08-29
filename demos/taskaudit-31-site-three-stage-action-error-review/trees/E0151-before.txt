@@ -1,0 +1,308 @@
+- document "American Airlines | Travel with confidence" [focused=True, focusable=True]
+  - banner
+    - text "American Airlines"
+      - text "American Airlines"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - button "Contact American" [focusable=True]
+      - text "Contact American"
+        - text "Contact American"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "American Airlines home" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - navigation "Primary navigation"
+      - button "Book" [focusable=True]
+        - text "Book"
+          - text "Book"
+      - button "Manage trips / Check-in" [focusable=True]
+        - text "Manage trips / Check-in"
+          - text "Manage trips / Check-in"
+      - button "Flight status" [focusable=True]
+        - text "Flight status"
+          - text "Flight status"
+      - button "AAdvantage®" [focusable=True]
+        - text "AAdvantage®"
+          - text "AAdvantage®"
+      - button "Travel information" [focusable=True]
+        - text "Travel information"
+          - text "Travel information"
+    - button "Search site" [focusable=True]
+    - button "Log in" [focusable=True]
+      - text "Log in"
+        - text "Log in"
+  - main
+    - paragraph
+      - text "FLIGHT RESULTS"
+        - text "FLIGHT RESULTS"
+    - heading "JFK to LHR" [level=1]
+      - text "JFK to LHR"
+        - text "JFK to LHR"
+    - paragraph
+      - text "Apr 20, 2027 – Apr 23, 2027 · 1 traveler · Main Cabin"
+        - text "Apr 20, 2027 – Apr 23, 2027 · 1 traveler · Main Cabin"
+    - text "FROM"
+      - text "FROM"
+    - strong
+      - text "New York, NY (JFK)"
+        - text "New York, NY (JFK)"
+    - text "TO"
+      - text "TO"
+    - strong
+      - text "London, England (LHR)"
+        - text "London, England (LHR)"
+    - button "Modify search" [focused=True, focusable=True]
+      - text "Modify search"
+        - text "Modify search"
+    - strong
+      - text "3"
+        - text "3"
+      - text "recommended options"
+        - text "recommended options"
+    - text "· Prices include taxes"
+      - text "· Prices include taxes"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort flights" value="Lowest price" [focusable=True]
+        - MenuListPopup
+          - option "Lowest price" [focusable=True, selected=True]
+          - option "Shortest travel time" [focusable=True]
+          - option "Departure time" [focusable=True]
+    - article
+      - text "LOWEST FARE"
+        - text "LOWEST FARE"
+      - text "8:10 AM"
+        - text "8:10 AM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "7h 05m"
+        - text "7h 05m"
+      - text "·"
+        - text "·"
+      - text "Nonstop"
+        - text "Nonstop"
+      - text "AA 104"
+        - text "AA 104"
+      - text "8:15 PM"
+        - text "8:15 PM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "RETURN ·"
+        - text "RETURN ·"
+      - text "Apr 23, 2027"
+        - text "Apr 23, 2027"
+      - text "10:05 AM"
+        - text "10:05 AM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "7h 35m · Nonstop"
+        - text "7h 35m · Nonstop"
+      - text "AA"
+        - text "AA"
+      - text "107"
+        - text "107"
+      - text "1:40 PM"
+        - text "1:40 PM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "Wi-Fi"
+        - text "Wi-Fi"
+      - text "Seat selection"
+        - text "Seat selection"
+      - text "Carry-on included"
+        - text "Carry-on included"
+      - text "Round trip per traveler"
+        - text "Round trip per traveler"
+      - strong
+        - text "$"
+          - text "$"
+        - text "867"
+          - text "867"
+      - text "Taxes included"
+        - text "Taxes included"
+      - button "Select flight" [focusable=True]
+        - text "Select flight"
+          - text "Select flight"
+    - article
+      - text "SHORTEST TRAVEL TIME"
+        - text "SHORTEST TRAVEL TIME"
+      - text "6:30 PM"
+        - text "6:30 PM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "6h 55m"
+        - text "6h 55m"
+      - text "·"
+        - text "·"
+      - text "Nonstop"
+        - text "Nonstop"
+      - text "AA 100"
+        - text "AA 100"
+      - text "6:25 AM"
+        - text "6:25 AM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "RETURN ·"
+        - text "RETURN ·"
+      - text "Apr 23, 2027"
+        - text "Apr 23, 2027"
+      - text "2:30 PM"
+        - text "2:30 PM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "7h 35m · Nonstop"
+        - text "7h 35m · Nonstop"
+      - text "AA"
+        - text "AA"
+      - text "101"
+        - text "101"
+      - text "6:05 PM"
+        - text "6:05 PM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "Wi-Fi"
+        - text "Wi-Fi"
+      - text "Seat selection"
+        - text "Seat selection"
+      - text "Carry-on included"
+        - text "Carry-on included"
+      - text "Round trip per traveler"
+        - text "Round trip per traveler"
+      - strong
+        - text "$"
+          - text "$"
+        - text "965"
+          - text "965"
+      - text "Taxes included"
+        - text "Taxes included"
+      - button "Select flight" [focusable=True]
+        - text "Select flight"
+          - text "Select flight"
+    - article
+      - text "FLEXIBLE CHOICE"
+        - text "FLEXIBLE CHOICE"
+      - text "10:45 PM"
+        - text "10:45 PM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "9h 10m"
+        - text "9h 10m"
+      - text "·"
+        - text "·"
+      - text "1 stop, PHL"
+        - text "1 stop, PHL"
+      - text "AA 728 · AA 736"
+        - text "AA 728 · AA 736"
+      - text "11:55 AM"
+        - text "11:55 AM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "RETURN ·"
+        - text "RETURN ·"
+      - text "Apr 23, 2027"
+        - text "Apr 23, 2027"
+      - text "7:45 PM"
+        - text "7:45 PM"
+      - strong
+        - text "LHR"
+          - text "LHR"
+      - text "9h 35m · 1 stop, PHL"
+        - text "9h 35m · 1 stop, PHL"
+      - text "AA"
+        - text "AA"
+      - text "729 · 445"
+        - text "729 · 445"
+      - text "11:20 PM"
+        - text "11:20 PM"
+      - strong
+        - text "JFK"
+          - text "JFK"
+      - text "Wi-Fi"
+        - text "Wi-Fi"
+      - text "Seat selection"
+        - text "Seat selection"
+      - text "Carry-on included"
+        - text "Carry-on included"
+      - text "Round trip per traveler"
+        - text "Round trip per traveler"
+      - strong
+        - text "$"
+          - text "$"
+        - text "1,100"
+          - text "1,100"
+      - text "Taxes included"
+        - text "Taxes included"
+      - button "Select flight" [focusable=True]
+        - text "Select flight"
+          - text "Select flight"
+  - contentinfo
+    - button "American AIRLINES" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - heading "TRAVEL" [level=3]
+      - text "TRAVEL"
+        - text "TRAVEL"
+    - button "Book flights" [focusable=True]
+      - text "Book flights"
+        - text "Book flights"
+    - button "Flight status" [focusable=True]
+      - text "Flight status"
+        - text "Flight status"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - heading "MANAGE" [level=3]
+      - text "MANAGE"
+        - text "MANAGE"
+    - button "Manage trips" [focusable=True]
+      - text "Manage trips"
+        - text "Manage trips"
+    - button "Travel credits" [focusable=True]
+      - text "Travel credits"
+        - text "Travel credits"
+    - button "Receipts and refunds" [focusable=True]
+      - text "Receipts and refunds"
+        - text "Receipts and refunds"
+    - heading "ABOUT AMERICAN" [level=3]
+      - text "ABOUT AMERICAN"
+        - text "ABOUT AMERICAN"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - text "© 2026 American Airlines, Inc. Demo experience."
+      - text "© 2026 American Airlines, Inc. Demo experience."
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "Cookie settings" [focusable=True]
+      - text "Cookie settings"
+        - text "Cookie settings"

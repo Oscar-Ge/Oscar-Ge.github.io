@@ -1,0 +1,422 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focused=True, focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - form
+    - entry "Search" [focusable=True]
+    - button "Close search" [focusable=True]
+  - text "TRY SEARCHING"
+    - text "TRY SEARCHING"
+  - link "Mikal Bridges NBA • New York Knicks" [focusable=True]
+    - strong
+      - text "Mikal Bridges"
+        - text "Mikal Bridges"
+    - text "NBA • New York Knicks"
+      - text "NBA • New York Knicks"
+  - link "Kevin Durant NBA • Forward" [focusable=True]
+    - strong
+      - text "Kevin Durant"
+        - text "Kevin Durant"
+    - text "NBA • Forward"
+      - text "NBA • Forward"
+  - link "Michael Jordan NFL • Guard" [focusable=True]
+    - strong
+      - text "Michael Jordan"
+        - text "Michael Jordan"
+    - text "NFL • Guard"
+      - text "NFL • Guard"
+  - link "Cristiano Ronaldo Soccer • Portugal" [focusable=True]
+    - strong
+      - text "Cristiano Ronaldo"
+        - text "Cristiano Ronaldo"
+    - text "Soccer • Portugal"
+      - text "Soccer • Portugal"
+  - main
+    - heading "Favorites" [level=3]
+      - text "Favorites"
+        - text "Favorites"
+    - paragraph
+      - text "Follow teams and athletes for a personalized feed."
+        - text "Follow teams and athletes for a"
+        - text "personalized feed."
+    - link "Find favorites" [focusable=True]
+      - text "Find favorites"
+        - text "Find favorites"
+    - text "QUICK LINKS"
+      - text "QUICK LINKS"
+    - link "NBA scoreboard" [focusable=True]
+      - text "NBA scoreboard"
+        - text "NBA scoreboard"
+    - link "ESPN2 schedule" [focusable=True]
+      - text "ESPN2 schedule"
+        - text "ESPN2 schedule"
+    - link "F1 podcast" [focusable=True]
+      - text "F1 podcast"
+        - text "F1 podcast"
+    - article
+      - image "Sunday Night Baseball featured matchup"
+      - text "LIVE"
+        - text "LIVE"
+      - heading "Rivalry night takes center stage" [level=1]
+        - text "Rivalry night takes center stage"
+          - text "Rivalry night takes center stage"
+      - paragraph
+        - text "Yankees and Red Sox meet with the division race tightening down the stretch."
+          - text "Yankees and Red Sox meet with the division race tightening down the stretch."
+      - link "Open scoreboards" [focusable=True]
+        - text "Open scoreboards"
+          - text "Open scoreboards"
+    - link "Mikal Bridges news feature NBA Bridges sets the tone for a new season in New York" [focusable=True]
+      - image "Mikal Bridges news feature"
+      - text "NBA"
+        - text "NBA"
+      - heading "Bridges sets the tone for a new season in New York" [level=3]
+        - text "Bridges sets the tone for a new season in New York"
+          - text "Bridges sets the tone for a new season in"
+          - text "New York"
+    - link "Champions League feature CHAMPIONS LEAGUE How City's historic 2022–23 run stacks up" [focusable=True]
+      - image "Champions League feature"
+      - text "CHAMPIONS LEAGUE"
+        - text "CHAMPIONS LEAGUE"
+      - heading "How City's historic 2022–23 run stacks up" [level=3]
+        - text "How City's historic 2022–23 run stacks up"
+          - text "How City's historic 2022–23 run stacks up"
+    - heading "Top Headlines" [level=3]
+      - text "Top Headlines"
+        - text "Top Headlines"
+    - link "Bridges: Knicks embracing championship expectations" [focusable=True]
+      - text "Bridges: Knicks embracing championship expectations"
+        - text "Bridges: Knicks embracing"
+        - text "championship expectations"
+    - link "NBA's highest-scoring offenses, ranked" [focusable=True]
+      - text "NBA's highest-scoring offenses, ranked"
+        - text "NBA's highest-scoring offenses,"
+        - text "ranked"
+    - link "Real Madrid's Champions League path set" [focusable=True]
+      - text "Real Madrid's Champions League path set"
+        - text "Real Madrid's Champions League"
+        - text "path set"
+    - link "Ronaldo's World Cup record, tournament by tournament" [focusable=True]
+      - text "Ronaldo's World Cup record, tournament by tournament"
+        - text "Ronaldo's World Cup record,"
+        - text "tournament by tournament"
+    - link "Revisit the biggest UFC cards of 2019" [focusable=True]
+      - text "Revisit the biggest UFC cards of 2019"
+        - text "Revisit the biggest UFC cards of"
+        - text "2019"
+    - text "EXPLORE ESPN"
+      - text "EXPLORE ESPN"
+    - heading "Find the sports story you need" [level=2]
+      - text "Find the sports story you need"
+        - text "Find the sports story you need"
+    - paragraph
+      - text "Scores, schedules, stats, players and shows—all in one place."
+        - text "Scores, schedules, stats, players and shows—all in one place."
+    - link "NHL Atlantic Division team leaders Pick a club and follow a leader" [focusable=True]
+      - text "NHL"
+        - text "NHL"
+      - heading "Atlantic Division team leaders" [level=3]
+        - text "Atlantic Division team leaders"
+          - text "Atlantic Division team leaders"
+      - paragraph
+        - text "Pick a club and follow a leader"
+          - text "Pick a club and follow a leader"
+    - link "NBA Yesterday's NBA scores Full scoreboard and game status" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Yesterday's NBA scores" [level=3]
+        - text "Yesterday's NBA scores"
+          - text "Yesterday's NBA scores"
+      - paragraph
+        - text "Full scoreboard and game status"
+          - text "Full scoreboard and game status"
+    - link "MLS 2022 scoring leaders Highest goal scorer and leaderboard" [focusable=True]
+      - text "MLS"
+        - text "MLS"
+      - heading "2022 scoring leaders" [level=3]
+        - text "2022 scoring leaders"
+          - text "2022 scoring leaders"
+      - paragraph
+        - text "Highest goal scorer and leaderboard"
+          - text "Highest goal scorer and leaderboard"
+    - link "UEFA CHAMPIONS LEAGUE Manchester City 2022/23 stats Club performance by competition" [focusable=True]
+      - text "UEFA CHAMPIONS LEAGUE"
+        - text "UEFA CHAMPIONS LEAGUE"
+      - heading "Manchester City 2022/23 stats" [level=3]
+        - text "Manchester City 2022/23 stats"
+          - text "Manchester City 2022/23 stats"
+      - paragraph
+        - text "Club performance by competition"
+          - text "Club performance by competition"
+    - link "NFL Michael Jordan biography Career, position and personal details" [focusable=True]
+      - text "NFL"
+        - text "NFL"
+      - heading "Michael Jordan biography" [level=3]
+        - text "Michael Jordan biography"
+          - text "Michael Jordan biography"
+      - paragraph
+        - text "Career, position and personal details"
+          - text "Career, position and personal details"
+    - link "COPA DEL REY Barcelona's next fixture Upcoming cup schedule" [focusable=True]
+      - text "COPA DEL REY"
+        - text "COPA DEL REY"
+      - heading "Barcelona's next fixture" [level=3]
+        - text "Barcelona's next fixture"
+          - text "Barcelona's next fixture"
+      - paragraph
+        - text "Upcoming cup schedule"
+          - text "Upcoming cup schedule"
+    - link "NBA NEWS Latest on Mikal Bridges News, analysis and updates" [focusable=True]
+      - text "NBA NEWS"
+        - text "NBA NEWS"
+      - heading "Latest on Mikal Bridges" [level=3]
+        - text "Latest on Mikal Bridges"
+          - text "Latest on Mikal Bridges"
+      - paragraph
+        - text "News, analysis and updates"
+          - text "News, analysis and updates"
+    - link "F1 Play an F1 podcast Unlapped: strategy and paddock news" [focusable=True]
+      - text "F1"
+        - text "F1"
+      - heading "Play an F1 podcast" [level=3]
+        - text "Play an F1 podcast"
+          - text "Play an F1 podcast"
+      - paragraph
+        - text "Unlapped: strategy and paddock news"
+          - text "Unlapped: strategy and paddock news"
+    - link "UFC 2019 schedule & athlete profiles Select an event and fighter" [focusable=True]
+      - text "UFC"
+        - text "UFC"
+      - heading "2019 schedule & athlete profiles" [level=3]
+        - text "2019 schedule & athlete profiles"
+          - text "2019 schedule & athlete profiles"
+      - paragraph
+        - text "Select an event and fighter"
+          - text "Select an event and fighter"
+    - link "NBA March 11 scoreboard Scores from a selected date" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "March 11 scoreboard" [level=3]
+        - text "March 11 scoreboard"
+          - text "March 11 scoreboard"
+      - paragraph
+        - text "Scores from a selected date"
+          - text "Scores from a selected date"
+    - link "NBA Dallas Mavericks schedule Upcoming games and results" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Dallas Mavericks schedule" [level=3]
+        - text "Dallas Mavericks schedule"
+          - text "Dallas Mavericks schedule"
+      - paragraph
+        - text "Upcoming games and results"
+          - text "Upcoming games and results"
+    - link "NBA Kevin Durant's bio Player profile and career summary" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Kevin Durant's bio" [level=3]
+        - text "Kevin Durant's bio"
+          - text "Kevin Durant's bio"
+      - paragraph
+        - text "Player profile and career summary"
+          - text "Player profile and career summary"
+    - link "NBA Golden State Warriors roster Players by position" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Golden State Warriors roster" [level=3]
+        - text "Golden State Warriors roster"
+          - text "Golden State Warriors roster"
+      - paragraph
+        - text "Players by position"
+          - text "Players by position"
+    - link "NFL Super Bowl 2015 scoreboard Patriots vs. Seahawks recap" [focusable=True]
+      - text "NFL"
+        - text "NFL"
+      - heading "Super Bowl 2015 scoreboard" [level=3]
+        - text "Super Bowl 2015 scoreboard"
+          - text "Super Bowl 2015 scoreboard"
+      - paragraph
+        - text "Patriots vs. Seahawks recap"
+          - text "Patriots vs. Seahawks recap"
+    - link "NBA Top scoring team this season Sort teams by points per game" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Top scoring team this season" [level=3]
+        - text "Top scoring team this season"
+          - text "Top scoring team this season"
+      - paragraph
+        - text "Sort teams by points per game"
+          - text "Sort teams by points per game"
+    - link "LALIGA Athletic Club stats Season performance and leaders" [focusable=True]
+      - text "LALIGA"
+        - text "LALIGA"
+      - heading "Athletic Club stats" [level=3]
+        - text "Athletic Club stats"
+          - text "Athletic Club stats"
+      - paragraph
+        - text "Season performance and leaders"
+          - text "Season performance and leaders"
+    - link "NBA 2020–21 season leaders Regular-season category leaders" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "2020–21 season leaders" [level=3]
+        - text "2020–21 season leaders"
+          - text "2020–21 season leaders"
+      - paragraph
+        - text "Regular-season category leaders"
+          - text "Regular-season category leaders"
+    - link "UEFA CHAMPIONS LEAGUE Real Madrid schedule Group and knockout fixtures" [focusable=True]
+      - text "UEFA CHAMPIONS LEAGUE"
+        - text "UEFA CHAMPIONS LEAGUE"
+      - heading "Real Madrid schedule" [level=3]
+        - text "Real Madrid schedule"
+          - text "Real Madrid schedule"
+      - paragraph
+        - text "Group and knockout fixtures"
+          - text "Group and knockout fixtures"
+    - link "PORTUGAL Cristiano Ronaldo World Cup stats Every tournament, one record" [focusable=True]
+      - text "PORTUGAL"
+        - text "PORTUGAL"
+      - heading "Cristiano Ronaldo World Cup stats" [level=3]
+        - text "Cristiano Ronaldo World Cup stats"
+          - text "Cristiano Ronaldo World Cup stats"
+      - paragraph
+        - text "Every tournament, one record"
+          - text "Every tournament, one record"
+    - link "SERIE A April 8, 2023 fixtures Italian league schedule" [focusable=True]
+      - text "SERIE A"
+        - text "SERIE A"
+      - heading "April 8, 2023 fixtures" [level=3]
+        - text "April 8, 2023 fixtures"
+          - text "April 8, 2023 fixtures"
+      - paragraph
+        - text "Italian league schedule"
+          - text "Italian league schedule"
+    - link "ESPN2 Upcoming soccer events TV listings by network" [focusable=True]
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "Upcoming soccer events" [level=3]
+        - text "Upcoming soccer events"
+          - text "Upcoming soccer events"
+      - paragraph
+        - text "TV listings by network"
+          - text "TV listings by network"
+    - link "NBA Brooklyn Nets schedule Upcoming games and results" [focusable=True]
+      - text "NBA"
+        - text "NBA"
+      - heading "Brooklyn Nets schedule" [level=3]
+        - text "Brooklyn Nets schedule"
+          - text "Brooklyn Nets schedule"
+      - paragraph
+        - text "Upcoming games and results"
+          - text "Upcoming games and results"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

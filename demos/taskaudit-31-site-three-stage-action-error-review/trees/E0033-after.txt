@@ -1,0 +1,406 @@
+- document "Amazon.com: Shop deals and everyday essentials" [focused=True, focusable=True]
+  - banner
+    - link "Amazon home" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "Change delivery location" [focusable=True]
+      - text "Delivering to Salt Lake City"
+        - text "Delivering to Salt Lake City"
+      - strong
+        - text "Update location"
+          - text "Update location"
+        - text "84101"
+          - text "84101"
+    - search
+      - LabelText
+        - text "Search department"
+          - text "Search department"
+      - combobox "Search department" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Amazon Pharmacy" [focusable=True]
+          - option "Books" [focusable=True]
+          - option "Electronics" [focusable=True]
+          - option "Gift Cards" [focusable=True]
+          - option "Home & Kitchen" [focusable=True]
+          - option "Pet Supplies" [focusable=True]
+          - option "Video Games" [focusable=True]
+      - LabelText
+        - text "Search Amazon"
+          - text "Search Amazon"
+      - entry "Search Amazon" value="Sam Harris books" [focusable=True]
+        - text "Sam Harris books"
+          - text "Sam Harris books"
+      - button "Search" [focusable=True]
+    - button "Language: English" [focusable=True]
+      - text "US"
+        - text "US"
+      - strong
+        - text "EN"
+          - text "EN"
+    - button "Hello, sign in Account & Lists" [focusable=True]
+      - text "Hello,"
+        - text "Hello,"
+      - text "sign in"
+        - text "sign in"
+      - strong
+        - text "Account & Lists"
+          - text "Account & Lists"
+    - link "Returns & Orders" [focusable=True]
+      - text "Returns"
+        - text "Returns"
+      - strong
+        - text "& Orders"
+          - text "& Orders"
+    - link "Cart with 0 items" [focusable=True]
+      - text "0"
+        - text "0"
+      - strong
+        - text "Cart"
+          - text "Cart"
+    - navigation "Main navigation"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - link "Today’s Deals" [focusable=True]
+        - text "Today’s Deals"
+          - text "Today’s Deals"
+      - link "Amazon Basics" [focusable=True]
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - link "Books" [focusable=True]
+        - text "Books"
+          - text "Books"
+      - link "Pharmacy" [focusable=True]
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - link "Pet Supplies" [focusable=True]
+        - text "Pet Supplies"
+          - text "Pet Supplies"
+      - link "Electronics" [focusable=True]
+        - text "Electronics"
+          - text "Electronics"
+      - text "Free delivery on millions of items"
+        - text "Free delivery on millions of items"
+  - main
+    - text "1-"
+      - text "1-"
+    - text "4"
+      - text "4"
+    - text "of"
+      - text "of"
+    - text "4"
+      - text "4"
+    - text "results for"
+      - text "results for"
+    - strong
+      - text "Books by Sam Harris"
+        - text "Books by Sam Harris"
+    - complementary "Search filters"
+      - strong
+        - text "Department"
+          - text "Department"
+      - text "Books"
+        - text "Books"
+      - group "Customer Reviews"
+        - Legend
+          - text "Customer Reviews"
+            - text "Customer Reviews"
+        - LabelText
+          - checkbox "4 out of 5 stars & Up" [focusable=True]
+          - generic "4 out of 5 stars"
+            - text "4"
+              - text "4"
+          - text "& Up"
+            - text "& Up"
+      - group "Format"
+        - Legend
+          - text "Format"
+            - text "Format"
+        - LabelText
+          - checkbox "Paperback" [focusable=True]
+          - text "Paperback"
+            - text "Paperback"
+        - LabelText
+          - checkbox "Kindle" [focusable=True]
+          - text "Kindle"
+            - text "Kindle"
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - heading "Results" [level=1]
+      - text "Results"
+        - text "Results"
+    - paragraph
+      - text "Check each product page for other buying options."
+        - text "Check each product page for other buying options."
+    - LabelText
+      - text "Sort by:"
+        - text "Sort by:"
+      - combobox "Sort results" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Price: Low to High" [focusable=True]
+          - option "Price: High to Low" [focusable=True]
+          - option "Avg. Customer Review" [focusable=True]
+    - article
+      - link "Waking Up: A Guide to Spirituality Without Religion" [focusable=True]
+        - image "Waking Up: A Guide to Spirituality Without Religion"
+      - text "SAM HARRIS"
+        - text "SAM HARRIS"
+      - link "Waking Up: A Guide to Spirituality Without Religion" [focusable=True]
+        - text "Waking Up: A Guide to Spirituality Without Religion"
+          - text "Waking Up: A Guide to Spirituality Without Religion"
+      - generic "4.5 out of 5 stars, 8351 reviews"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "8,351"
+          - text "8,351"
+        - text ")"
+          - text ")"
+      - text "Paperback available"
+        - text "Paperback available"
+      - text "English"
+        - text "English"
+      - text "256 pages"
+        - text "256 pages"
+      - text "$"
+        - text "$"
+      - text "12"
+        - text "12"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Waking Up: A Guide to Spirituality Without Religion" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "The End of Faith: Religion, Terror, and the Future of Reason" [focusable=True]
+        - image "The End of Faith: Religion, Terror, and the Future of Reason"
+      - text "SAM HARRIS"
+        - text "SAM HARRIS"
+      - link "The End of Faith: Religion, Terror, and the Future of Reason" [focusable=True]
+        - text "The End of Faith: Religion, Terror, and the Future of Reason"
+          - text "The End of Faith: Religion, Terror, and the Future of Reason"
+      - generic "4.4 out of 5 stars, 4266 reviews"
+        - text "4.4"
+          - text "4.4"
+        - text "("
+          - text "("
+        - text "4,266"
+          - text "4,266"
+        - text ")"
+          - text ")"
+      - text "Paperback available"
+        - text "Paperback available"
+      - text "English"
+        - text "English"
+      - text "352 pages"
+        - text "352 pages"
+      - text "$"
+        - text "$"
+      - text "11"
+        - text "11"
+      - text "79"
+        - text "79"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for The End of Faith: Religion, Terror, and the Future of Reason" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Free Will" [focusable=True]
+        - image "Free Will"
+      - text "SAM HARRIS"
+        - text "SAM HARRIS"
+      - link "Free Will" [focusable=True]
+        - text "Free Will"
+          - text "Free Will"
+      - generic "4.3 out of 5 stars, 5421 reviews"
+        - text "4.3"
+          - text "4.3"
+        - text "("
+          - text "("
+        - text "5,421"
+          - text "5,421"
+        - text ")"
+          - text ")"
+      - text "Paperback available"
+        - text "Paperback available"
+      - text "English"
+        - text "English"
+      - text "96 pages"
+        - text "96 pages"
+      - text "$"
+        - text "$"
+      - text "10"
+        - text "10"
+      - text "99"
+        - text "99"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Free Will" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Making Sense: Conversations on Consciousness, Morality, and the Future" [focusable=True]
+        - image "Making Sense: Conversations on Consciousness, Morality, and the Future"
+      - text "SAM HARRIS"
+        - text "SAM HARRIS"
+      - link "Making Sense: Conversations on Consciousness, Morality, and the Future" [focusable=True]
+        - text "Making Sense: Conversations on Consciousness, Morality, and the Future"
+          - text "Making Sense: Conversations on Consciousness, Morality, and the Future"
+      - generic "4.6 out of 5 stars, 1098 reviews"
+        - text "4.6"
+          - text "4.6"
+        - text "("
+          - text "("
+        - text "1,098"
+          - text "1,098"
+        - text ")"
+          - text ")"
+      - text "Hardcover"
+        - text "Hardcover"
+      - text "English"
+        - text "English"
+      - text "$"
+        - text "$"
+      - text "21"
+        - text "21"
+      - text "50"
+        - text "50"
+      - text "prime"
+        - text "prime"
+      - text "FREE delivery Tomorrow"
+        - text "FREE delivery Tomorrow"
+      - LabelText
+        - text "Qty:"
+          - text "Qty:"
+        - combobox "Quantity for Making Sense: Conversations on Consciousness, Morality, and the Future" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - heading "Get to Know Us" [level=3]
+      - text "Get to Know Us"
+        - text "Get to Know Us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "Amazon Newsletter" [focusable=True]
+      - text "Amazon Newsletter"
+        - text "Amazon Newsletter"
+    - button "About Amazon" [focusable=True]
+      - text "About Amazon"
+        - text "About Amazon"
+    - heading "Make Money with Us" [level=3]
+      - text "Make Money with Us"
+        - text "Make Money with Us"
+    - button "Sell products on Amazon" [focusable=True]
+      - text "Sell products on Amazon"
+        - text "Sell products on Amazon"
+    - button "Become an Affiliate" [focusable=True]
+      - text "Become an Affiliate"
+        - text "Become an Affiliate"
+    - button "Advertise Your Products" [focusable=True]
+      - text "Advertise Your Products"
+        - text "Advertise Your Products"
+    - heading "Amazon Payment Products" [level=3]
+      - text "Amazon Payment Products"
+        - text "Amazon Payment Products"
+    - button "Amazon Visa" [focusable=True]
+      - text "Amazon Visa"
+        - text "Amazon Visa"
+    - button "Amazon Gift Cards" [focusable=True]
+      - text "Amazon Gift Cards"
+        - text "Amazon Gift Cards"
+    - button "Reload Your Balance" [focusable=True]
+      - text "Reload Your Balance"
+        - text "Reload Your Balance"
+    - heading "Let Us Help You" [level=3]
+      - text "Let Us Help You"
+        - text "Let Us Help You"
+    - link "Your Orders" [focusable=True]
+      - text "Your Orders"
+        - text "Your Orders"
+    - button "Shipping Rates & Policies" [focusable=True]
+      - text "Shipping Rates & Policies"
+        - text "Shipping Rates & Policies"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "amazon .com" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "$ USD - U.S. Dollar" [focusable=True]
+      - text "$ USD - U.S. Dollar"
+        - text "$ USD - U.S. Dollar"
+    - button "United States" [focusable=True]
+      - text "United States"
+        - text "United States"
+    - text "Conditions of Use"
+      - text "Conditions of Use"
+    - text "Privacy Notice"
+      - text "Privacy Notice"
+    - text "Consumer Health Data Privacy Disclosure"
+      - text "Consumer Health Data Privacy Disclosure"
+    - text "© 1996-2026, Amazon.com, Inc. or its affiliates"
+      - text "© 1996-2026, Amazon.com, Inc. or its affiliates"

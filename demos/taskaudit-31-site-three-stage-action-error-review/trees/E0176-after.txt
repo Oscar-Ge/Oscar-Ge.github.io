@@ -1,0 +1,249 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" value="alifornia" [focusable=True]
+          - text "alifornia"
+            - text "alifornia"
+      - button "Search" [focused=True, focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - main
+    - paragraph
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "/ Search results"
+        - text "/ Search results"
+    - heading "Explore local businesses near alifornia" [level=1]
+      - text "Explore local businesses"
+        - text "Explore local businesses"
+      - text "near alifornia"
+        - text "near alifornia"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text "matching"
+        - text "matching"
+      - text "businesses"
+        - text "businesses"
+      - text "· Synthetic demo listings"
+        - text "· Synthetic demo listings"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort results" value="Recommended" [focusable=True]
+        - MenuListPopup
+          - option "Recommended" [focusable=True, selected=True]
+          - option "Highest rated" [focusable=True]
+          - option "Most reviewed" [focusable=True]
+    - region "Search filters"
+      - button "Open now" [focusable=True]
+        - text "Open now"
+          - text "Open now"
+      - button "Fast responding" [focusable=True]
+        - text "Fast responding"
+          - text "Fast responding"
+      - button "Free Wi-Fi" [focusable=True]
+        - text "Free Wi-Fi"
+          - text "Free Wi-Fi"
+      - button "Offers delivery" [focusable=True]
+        - text "Offers delivery"
+          - text "Offers delivery"
+      - button "Outdoor seating" [focusable=True]
+        - text "Outdoor seating"
+          - text "Outdoor seating"
+      - button "Virtual consultations" [focusable=True]
+        - text "Virtual consultations"
+          - text "Virtual consultations"
+      - button "All filters" [focusable=True]
+        - text "All filters"
+          - text "All filters"
+    - article
+      - link "View Golden State Limo Parking" [focusable=True]
+        - text "PARKING"
+          - text "PARKING"
+      - paragraph
+        - text "1"
+          - text "1"
+        - text "."
+          - text "."
+        - text "PARKING"
+          - text "PARKING"
+      - heading "Golden State Limo Parking" [level=2]
+        - link "Golden State Limo Parking" [focusable=True]
+          - text "Golden State Limo Parking"
+            - text "Golden State Limo Parking"
+      - button "Save Golden State Limo Parking" [focusable=True]
+      - generic "4.9 out of 5 stars, 287 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "287"
+          - text "287"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Parking, Limos"
+        - text "Parking, Limos"
+      - paragraph
+        - text "Central California City"
+          - text "Central California City"
+        - text "·"
+          - text "·"
+        - text "California City, CA 93505"
+          - text "California City, CA 93505"
+      - paragraph
+        - text "Usually responds in 8 min"
+          - text "Usually responds in 8 min"
+      - paragraph
+        - text "A monitored, spacious lot built for limousines and oversized vehicles, with a comfortable Wi-Fi lounge."
+          - text "A monitored, spacious lot built for limousines and oversized"
+          - text "vehicles, with a comfortable Wi-Fi lounge."
+      - text "Open now"
+        - text "Open now"
+      - text "Free Wi-Fi"
+        - text "Free Wi-Fi"
+      - text "Military discount"
+        - text "Military discount"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - text "Fast responding"
+        - text "Fast responding"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Desert Star Parking" [focusable=True]
+        - text "PARKING"
+          - text "PARKING"
+      - paragraph
+        - text "2"
+          - text "2"
+        - text "."
+          - text "."
+        - text "PARKING"
+          - text "PARKING"
+      - heading "Desert Star Parking" [level=2]
+        - link "Desert Star Parking" [focusable=True]
+          - text "Desert Star Parking"
+            - text "Desert Star Parking"
+      - button "Save Desert Star Parking" [focusable=True]
+      - generic "4.2 out of 5 stars, 94 reviews"
+        - strong
+          - text "4.2"
+            - text "4.2"
+        - text "("
+          - text "("
+        - text "94"
+          - text "94"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "•"
+        - text "•"
+      - text "Parking"
+        - text "Parking"
+      - paragraph
+        - text "North Loop"
+          - text "North Loop"
+        - text "·"
+          - text "·"
+        - text "California City, CA 93505"
+          - text "California City, CA 93505"
+      - paragraph
+        - text "Responds in 1 hour"
+          - text "Responds in 1 hour"
+      - paragraph
+        - text "Easy daily and overnight parking near the north side of town."
+          - text "Easy daily and overnight parking near the north side of town."
+      - text "Open now"
+        - text "Open now"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - complementary
+      - text "alifornia"
+        - text "alifornia"
+      - text "2"
+        - text "2"
+      - text "places on map"
+        - text "places on map"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"

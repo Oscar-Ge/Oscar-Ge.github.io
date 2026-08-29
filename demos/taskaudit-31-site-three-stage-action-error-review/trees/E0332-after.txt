@@ -1,0 +1,221 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focused=True, focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "Watch"
+        - text "Watch"
+      - text "TV Schedule"
+        - text "TV Schedule"
+    - sectionheader
+      - text "ESPN TV"
+        - text "ESPN TV"
+      - heading "Upcoming Events" [level=1]
+        - text "Upcoming Events"
+          - text "Upcoming Events"
+      - paragraph
+        - text "Browse live and upcoming programming by network"
+          - text "Browse live and upcoming programming by network"
+    - LabelText
+      - text "Network"
+        - text "Network"
+      - combobox "Network" value="ESPN2" [focusable=True]
+        - MenuListPopup
+          - option "ESPN2" [focusable=True, selected=True]
+          - option "ESPNU" [focusable=True]
+    - LabelText
+      - text "Sport"
+        - text "Sport"
+      - combobox "Sport" value="Soccer" [focusable=True]
+        - MenuListPopup
+          - option "Soccer" [focusable=True, selected=True]
+          - option "Basketball" [focusable=True]
+    - text "ESPN"
+      - text "ESPN"
+    - text "2"
+      - text "2"
+    - strong
+      - text "4"
+        - text "4"
+      - text "upcoming"
+        - text "upcoming"
+      - text "soccer"
+        - text "soccer"
+      - text "events"
+        - text "events"
+    - text "All times Eastern"
+      - text "All times Eastern"
+    - article
+      - strong
+        - text "12:00 PM"
+          - text "12:00 PM"
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "EFL Championship: Coventry City vs. Leicester City" [level=3]
+        - text "EFL Championship: Coventry City vs. Leicester City"
+          - text "EFL Championship: Coventry City vs. Leicester City"
+      - paragraph
+        - text "Live • English Football League"
+          - text "Live • English Football League"
+      - button "Remind me" [focusable=True]
+        - text "Remind me"
+          - text "Remind me"
+    - article
+      - strong
+        - text "2:30 PM"
+          - text "2:30 PM"
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "UEFA Women’s Champions League Magazine" [level=3]
+        - text "UEFA Women’s Champions League Magazine"
+          - text "UEFA Women’s Champions League Magazine"
+      - paragraph
+        - text "New • Soccer"
+          - text "New • Soccer"
+      - button "Remind me" [focusable=True]
+        - text "Remind me"
+          - text "Remind me"
+    - article
+      - strong
+        - text "3:00 PM"
+          - text "3:00 PM"
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "LALIGA: Sevilla vs. Valencia" [level=3]
+        - text "LALIGA: Sevilla vs. Valencia"
+          - text "LALIGA: Sevilla vs. Valencia"
+      - paragraph
+        - text "Live from Ramón Sánchez-Pizjuán"
+          - text "Live from Ramón Sánchez-Pizjuán"
+      - button "Remind me" [focusable=True]
+        - text "Remind me"
+          - text "Remind me"
+    - article
+      - strong
+        - text "5:15 PM"
+          - text "5:15 PM"
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "ESPN FC" [level=3]
+        - text "ESPN FC"
+          - text "ESPN FC"
+      - paragraph
+        - text "Live • News and highlights"
+          - text "Live • News and highlights"
+      - button "Remind me" [focusable=True]
+        - text "Remind me"
+          - text "Remind me"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

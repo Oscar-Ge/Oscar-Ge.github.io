@@ -1,0 +1,381 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Expedia home" [focusable=True]
+      - text "expedia"
+        - text "expedia"
+    - button "Shop travel" [focusable=True]
+      - text "Shop travel"
+        - text "Shop travel"
+    - navigation "Utility navigation"
+      - button "Get the app" [focusable=True]
+        - text "Get the app"
+          - text "Get the app"
+      - button "Language and currency" [focusable=True]
+        - text "English"
+          - text "English"
+      - button "Trips" [focusable=True]
+        - text "Trips"
+          - text "Trips"
+      - button "Sign in" [focusable=True]
+        - text "Sign in"
+          - text "Sign in"
+  - main
+    - text "MADE TO TRAVEL"
+      - text "MADE TO TRAVEL"
+    - heading "It matters who you travel with" [level=1]
+      - text "It matters who you travel with"
+        - text "It matters who you"
+        - text "travel with"
+    - paragraph
+      - text "One place to plan every part of your trip, with member prices and flexible options."
+        - text "One place to plan every part of your trip, with member prices and"
+        - text "flexible options."
+    - tablist "Travel search type"
+      - tab "Stays" [focusable=True, selected=True]
+        - text "Stays"
+          - text "Stays"
+      - tab "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - tab "Cars" [focusable=True]
+        - text "Cars"
+          - text "Cars"
+      - tab "Things to do" [focusable=True]
+        - text "Things to do"
+          - text "Things to do"
+      - tab "Vacation rentals" [focusable=True]
+        - text "Vacation rentals"
+          - text "Vacation rentals"
+    - LabelText
+      - text "Where to?"
+        - text "Where to?"
+      - entry "Going to" value="National University of Singapore" [focusable=True]
+        - text "National University of Singapore"
+          - text "National University of Singapore"
+    - LabelText
+      - text "Check-in"
+        - text "Check-in"
+      - Date "Check-in date" value="2027-04-03" [focusable=True]
+        - spinbutton "Month Month" value="4" [focusable=True]
+          - text "04"
+            - text "04"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="3" [focusable=True]
+          - text "03"
+            - text "03"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - LabelText
+      - text "Check-out"
+        - text "Check-out"
+      - Date "Check-out date" value="2027-04-06" [focusable=True]
+        - spinbutton "Month Month" value="4" [focusable=True]
+          - text "04"
+            - text "04"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="6" [focusable=True]
+          - text "06"
+            - text "06"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - button "Travelers 1 traveler, 1 room" [focusable=True]
+      - text "Travelers"
+        - text "Travelers"
+      - text "1"
+        - text "1"
+      - text "traveler,"
+        - text "traveler,"
+      - text "1"
+        - text "1"
+      - text "room"
+        - text "room"
+    - button "Search" [focused=True, focusable=True]
+      - text "Search"
+        - text "Search"
+    - text "Searching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance."
+      - text "Searching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance."
+    - button "Edit search" [focusable=True]
+      - text "Edit search"
+        - text "Edit search"
+    - heading "Stays near National University of Singapore" [level=2]
+      - text "Stays near National University of Singapore"
+        - text "Stays near National University of Singapore"
+    - paragraph
+      - text "Apr 3 – Apr 6 · 1 traveler · 1 room"
+        - text "Apr 3 – Apr 6 · 1 traveler · 1 room"
+    - text "4"
+      - text "4"
+    - text "results"
+      - text "results"
+    - text "National University of Singapore"
+      - text "National University of"
+      - text "Singapore"
+    - text "Distance measured from campus"
+      - text "Distance measured from campus"
+    - heading "Filter by" [level=3]
+      - text "Filter by"
+        - text "Filter by"
+    - LabelText
+      - text "Maximum stay total"
+        - text "Maximum stay total"
+      - text "Under $"
+        - text "Under $"
+      - text "500"
+        - text "500"
+      - slider "Maximum hotel total" value="500" [focusable=True]
+    - text "Showing stays under $"
+      - text "Showing stays under $"
+    - text "500"
+      - text "500"
+    - text "total"
+      - text "total"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Distance from NUS" [focusable=True]
+        - MenuListPopup
+          - option "Distance from NUS" [focusable=True, selected=True]
+          - option "Price: low to high" [focusable=True]
+    - article
+      - image "lyf one-north Singapore property"
+      - button "Save property" [focusable=True]
+      - text "1.1"
+        - text "1.1"
+      - text "MILES FROM NUS"
+        - text "MILES FROM NUS"
+      - heading "lyf one-north Singapore" [level=3]
+        - text "lyf one-north Singapore"
+          - text "lyf one-north Singapore"
+      - paragraph
+        - text "one-north"
+          - text "one-north"
+        - text "·"
+          - text "·"
+        - text "Closest great-value stay to NUS"
+          - text "Closest great-value stay to NUS"
+      - text "9"
+        - text "9"
+      - text "Wonderful ·"
+        - text "Wonderful ·"
+      - text "726"
+        - text "726"
+      - text "reviews"
+        - text "reviews"
+      - text "Pool"
+        - text "Pool"
+      - text "Free cancellation"
+        - text "Free cancellation"
+      - text "3 nights"
+        - text "3 nights"
+      - strong
+        - text "$"
+          - text "$"
+        - text "414"
+          - text "414"
+      - text "$"
+        - text "$"
+      - text "138"
+        - text "138"
+      - text "per night"
+        - text "per night"
+      - button "See availability" [focusable=True]
+        - text "See availability"
+          - text "See"
+          - text "availability"
+    - article
+      - image "Citadines Science Park Singapore property"
+      - button "Save property" [focusable=True]
+      - text "1.4"
+        - text "1.4"
+      - text "MILES FROM NUS"
+        - text "MILES FROM NUS"
+      - heading "Citadines Science Park Singapore" [level=3]
+        - text "Citadines Science Park Singapore"
+          - text "Citadines Science Park Singapore"
+      - paragraph
+        - text "Kent Ridge"
+          - text "Kent Ridge"
+        - text "·"
+          - text "·"
+        - text "Walkable to Kent Ridge MRT"
+          - text "Walkable to Kent Ridge MRT"
+      - text "8.8"
+        - text "8.8"
+      - text "Wonderful ·"
+        - text "Wonderful ·"
+      - text "412"
+        - text "412"
+      - text "reviews"
+        - text "reviews"
+      - text "Kitchenette"
+        - text "Kitchenette"
+      - text "Free WiFi"
+        - text "Free WiFi"
+      - text "3 nights"
+        - text "3 nights"
+      - strong
+        - text "$"
+          - text "$"
+        - text "453"
+          - text "453"
+      - text "$"
+        - text "$"
+      - text "151"
+        - text "151"
+      - text "per night"
+        - text "per night"
+      - button "See availability" [focusable=True]
+        - text "See availability"
+          - text "See"
+          - text "availability"
+    - article
+      - image "Park Avenue Rochester property"
+      - button "Save property" [focusable=True]
+      - text "1.8"
+        - text "1.8"
+      - text "MILES FROM NUS"
+        - text "MILES FROM NUS"
+      - heading "Park Avenue Rochester" [level=3]
+        - text "Park Avenue Rochester"
+          - text "Park Avenue Rochester"
+      - paragraph
+        - text "Buona Vista"
+          - text "Buona Vista"
+        - text "·"
+          - text "·"
+        - text "Popular with university visitors"
+          - text "Popular with university visitors"
+      - text "8.6"
+        - text "8.6"
+      - text "Wonderful ·"
+        - text "Wonderful ·"
+      - text "981"
+        - text "981"
+      - text "reviews"
+        - text "reviews"
+      - text "Breakfast available"
+        - text "Breakfast available"
+      - text "Pool"
+        - text "Pool"
+      - text "3 nights"
+        - text "3 nights"
+      - strong
+        - text "$"
+          - text "$"
+        - text "492"
+          - text "492"
+      - text "$"
+        - text "$"
+      - text "164"
+        - text "164"
+      - text "per night"
+        - text "per night"
+      - button "See availability" [focusable=True]
+        - text "See availability"
+          - text "See"
+          - text "availability"
+    - article
+      - image "Shipping Container Hotel property"
+      - button "Save property" [focusable=True]
+      - text "2.5"
+        - text "2.5"
+      - text "MILES FROM NUS"
+        - text "MILES FROM NUS"
+      - heading "Shipping Container Hotel" [level=3]
+        - text "Shipping Container Hotel"
+          - text "Shipping Container Hotel"
+      - paragraph
+        - text "Haw Par Villa"
+          - text "Haw Par Villa"
+        - text "·"
+          - text "·"
+        - text "Quiet neighborhood"
+          - text "Quiet neighborhood"
+      - text "8.2"
+        - text "8.2"
+      - text "Wonderful ·"
+        - text "Wonderful ·"
+      - text "154"
+        - text "154"
+      - text "reviews"
+        - text "reviews"
+      - text "Unique stay"
+        - text "Unique stay"
+      - text "Free parking"
+        - text "Free parking"
+      - text "3 nights"
+        - text "3 nights"
+      - strong
+        - text "$"
+          - text "$"
+        - text "357"
+          - text "357"
+      - text "$"
+        - text "$"
+      - text "119"
+        - text "119"
+      - text "per night"
+        - text "per night"
+      - button "See availability" [focusable=True]
+        - text "See availability"
+          - text "See"
+          - text "availability"
+  - contentinfo
+    - text "expedia"
+      - text "expedia"
+    - paragraph
+      - text "Made to travel. Plan it all in one place."
+        - text "Made to travel. Plan it all in one place."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - button "Flights" [focusable=True]
+      - text "Flights"
+        - text "Flights"
+    - button "Cars" [focusable=True]
+      - text "Cars"
+        - text "Cars"
+    - button "Vacation rentals" [focusable=True]
+      - text "Vacation rentals"
+        - text "Vacation rentals"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - button "Support" [focusable=True]
+      - text "Support"
+        - text "Support"
+    - button "Privacy choices" [focusable=True]
+      - text "Privacy choices"
+        - text "Privacy choices"
+    - button "Terms of use" [focusable=True]
+      - text "Terms of use"
+        - text "Terms of use"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Partner with us" [focusable=True]
+      - text "Partner with us"
+        - text "Partner with us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Expedia, Inc. All rights reserved."
+      - text "© 2026 Expedia, Inc. All rights reserved."
+    - text "Mock travel experience · Prices shown in USD"
+      - text "Mock travel experience · Prices shown in USD"

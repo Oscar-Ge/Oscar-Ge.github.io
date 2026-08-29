@@ -1,0 +1,193 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - paragraph
+      - text "CREATE"
+        - text "CREATE"
+    - heading "Create a post" [level=1]
+      - text "Create a post"
+        - text "Create a post"
+    - paragraph
+      - text "Share something useful with a community."
+        - text "Share something useful with a community."
+    - button "Drafts (0)" [focusable=True]
+      - text "Drafts ("
+        - text "Drafts ("
+      - text "0"
+        - text "0"
+      - text ")"
+        - text ")"
+    - LabelText
+      - text "Community"
+        - text "Community"
+      - combobox "Choose a community" value="r/Cryptocurrency" [focusable=True]
+        - MenuListPopup
+          - option "r/announcements" [focusable=True]
+          - option "r/Fitness" [focusable=True]
+          - option "r/politics" [focusable=True]
+          - option "r/Blind" [focusable=True]
+          - option "r/12Monkeys" [focusable=True]
+          - option "r/Music" [focusable=True]
+          - option "r/LetsTalkMusic" [focusable=True]
+          - option "r/news" [focusable=True]
+          - option "r/GiftCardExchange" [focusable=True]
+          - option "r/movies" [focusable=True]
+          - option "r/food" [focusable=True]
+          - option "r/NationalPark" [focusable=True]
+          - option "r/cars" [focusable=True]
+          - option "r/gaming" [focusable=True]
+          - option "r/SkincareAddiction" [focusable=True]
+          - option "r/memes" [focusable=True]
+          - option "r/work" [focusable=True]
+          - option "r/answers" [focusable=True]
+          - option "r/FortNiteBR" [focusable=True]
+          - option "r/FortniteCreative" [focusable=True]
+          - option "r/Cryptocurrency" [focusable=True, selected=True]
+          - option "r/AskReddit" [focusable=True]
+    - strong
+      - text "Text post"
+        - text "Text post"
+    - text "Write a post or save it as a draft"
+      - text "Write a post or save it as a draft"
+    - LabelText
+      - text "Title"
+        - text "Title"
+      - text "0"
+        - text "0"
+      - text "/300"
+        - text "/300"
+      - entry "Post title" [focusable=True]
+    - LabelText
+      - text "Body"
+        - text "Body"
+      - entry "Post body" [focusable=True]
+    - text "Drafts are stored locally for this demo session."
+      - text "Drafts are stored locally for this demo session."
+    - button "Save draft" [focused=True, focusable=True]
+      - text "Save draft"
+        - text "Save draft"
+    - button "Post" [focusable=True]
+      - text "Post"
+        - text "Post"
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

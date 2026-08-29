@@ -1,0 +1,170 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - text "MORTGAGE CALCULATOR"
+      - text "MORTGAGE CALCULATOR"
+    - heading "Know your monthly payment" [level=1]
+      - text "Know your monthly payment"
+        - text "Know your monthly payment"
+    - paragraph
+      - text "Adjust the home price, down payment, term, and rate to get an instant estimate."
+        - text "Adjust the home price, down payment, term, and rate to get an instant"
+        - text "estimate."
+    - button "$500K · 30 yr · 85747" [focusable=True]
+      - text "$500K · 30 yr · 85747"
+        - text "$500K · 30 yr · 85747"
+    - button "$500K · 15 yr · Houston" [focusable=True]
+      - text "$500K · 15 yr · Houston"
+        - text "$500K · 15 yr · Houston"
+    - LabelText
+      - text "Home price"
+        - text "Home price"
+      - text "$"
+        - text "$"
+      - spinbutton "Home price $" value="500000" [focusable=True]
+        - text "500000"
+          - text "500000"
+    - LabelText
+      - text "Down payment"
+        - text "Down payment"
+      - text "$"
+        - text "$"
+      - spinbutton "Down payment $" value="100000" [focused=True, focusable=True]
+        - text "100000"
+          - text "100000"
+    - LabelText
+      - text "Loan term"
+        - text "Loan term"
+      - combobox "Loan term" value="30-year fixed" [focusable=True]
+        - MenuListPopup
+          - option "30-year fixed" [focusable=True, selected=True]
+          - option "15-year fixed" [focusable=True]
+    - LabelText
+      - text "Interest rate"
+        - text "Interest rate"
+      - spinbutton "Interest rate %" value="6.449999809265137" [focusable=True]
+        - text "6.45"
+          - text "6.45"
+      - text "%"
+        - text "%"
+    - LabelText
+      - text "ZIP code or city"
+        - text "ZIP code or city"
+      - entry "ZIP code or city" value="85747" [focusable=True]
+        - text "85747"
+          - text "85747"
+    - text "Estimated loan amount"
+      - text "Estimated loan amount"
+    - strong
+      - text "$400,000"
+        - text "$400,000"
+    - complementary
+      - text "ESTIMATED FOR"
+        - text "ESTIMATED FOR"
+      - text "85747"
+        - text "85747"
+      - paragraph
+        - text "Estimated monthly payment"
+          - text "Estimated monthly payment"
+      - text "$3,161"
+        - text "$3,161"
+      - text "/mo"
+        - text "/mo"
+      - text "Principal & interest"
+        - text "Principal & interest"
+      - strong
+        - text "$2,515"
+          - text "$2,515"
+      - text "Property taxes"
+        - text "Property taxes"
+      - strong
+        - text "$458"
+          - text "$458"
+      - text "Home insurance"
+        - text "Home insurance"
+      - strong
+        - text "$188"
+          - text "$188"
+      - paragraph
+        - text "Estimate only. Rates, taxes, insurance, and eligibility vary by lender and location."
+          - text "Estimate only. Rates, taxes, insurance, and eligibility vary by lender and"
+          - text "location."
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

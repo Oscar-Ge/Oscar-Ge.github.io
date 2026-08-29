@@ -1,0 +1,234 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focused=True, focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "Soccer"
+        - text "Soccer"
+      - text "UEFA Champions League"
+        - text "UEFA Champions League"
+      - text "Manchester City"
+        - text "Manchester City"
+    - sectionheader
+      - text "UEFA CHAMPIONS LEAGUE"
+        - text "UEFA CHAMPIONS LEAGUE"
+      - heading "Manchester City Performance" [level=1]
+        - text "Manchester City Performance"
+          - text "Manchester City Performance"
+      - paragraph
+        - text "Competition statistics and season overview"
+          - text "Competition statistics and season overview"
+      - LabelText
+        - text "Season"
+          - text "Season"
+        - combobox "Season" value="2022/23" [focusable=True]
+          - MenuListPopup
+            - option "2022/23" [focusable=True, selected=True]
+            - option "2023/24" [focusable=True]
+    - text "MCI"
+      - text "MCI"
+    - text "2022/23"
+      - text "2022/23"
+    - text "CAMPAIGN"
+      - text "CAMPAIGN"
+    - heading "Champions of Europe" [level=2]
+      - text "Champions of Europe"
+        - text "Champions of Europe"
+    - paragraph
+      - text "Unbeaten • Defeated Inter Milan 1–0 in the final"
+        - text "Unbeaten • Defeated Inter Milan 1–0 in the final"
+    - text "MATCHES"
+      - text "MATCHES"
+    - strong
+      - text "13"
+        - text "13"
+    - text "WINS"
+      - text "WINS"
+    - strong
+      - text "8"
+        - text "8"
+    - text "DRAWS"
+      - text "DRAWS"
+    - strong
+      - text "5"
+        - text "5"
+    - text "LOSSES"
+      - text "LOSSES"
+    - strong
+      - text "0"
+        - text "0"
+    - text "GOALS"
+      - text "GOALS"
+    - strong
+      - text "32"
+        - text "32"
+    - text "GOALS AGAINST"
+      - text "GOALS AGAINST"
+    - strong
+      - text "5"
+        - text "5"
+    - heading "Performance metrics" [level=2]
+      - text "Performance metrics"
+        - text "Performance metrics"
+    - text "All matches"
+      - text "All matches"
+    - text "Possession"
+      - text "Possession"
+    - strong
+      - text "60.2%"
+        - text "60.2%"
+    - text "Pass accuracy"
+      - text "Pass accuracy"
+    - strong
+      - text "90.1%"
+        - text "90.1%"
+    - text "Clean sheets"
+      - text "Clean sheets"
+    - strong
+      - text "8 of 13"
+        - text "8 of 13"
+    - text "Shot conversion"
+      - text "Shot conversion"
+    - strong
+      - text "18.4%"
+        - text "18.4%"
+    - heading "Team leaders" [level=2]
+      - text "Team leaders"
+        - text "Team leaders"
+    - text "2022/23"
+      - text "2022/23"
+    - text "GOALS"
+      - text "GOALS"
+    - text "Erling Haaland"
+      - text "Erling Haaland"
+    - strong
+      - text "12"
+        - text "12"
+    - text "ASSISTS"
+      - text "ASSISTS"
+    - text "Kevin De Bruyne"
+      - text "Kevin De Bruyne"
+    - strong
+      - text "7"
+        - text "7"
+    - text "MINUTES"
+      - text "MINUTES"
+    - text "Rúben Dias"
+      - text "Rúben Dias"
+    - strong
+      - text "1,086"
+        - text "1,086"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

@@ -1,0 +1,165 @@
+- document "FlightAware — Live Flight Tracking & Aviation Intelligence" [focused=True, focusable=True]
+  - banner
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - navigation "Main navigation"
+      - link "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - link "Airports" [focusable=True]
+        - text "Airports"
+          - text "Airports"
+      - link "Photos" [focusable=True]
+        - text "Photos"
+          - text "Photos"
+      - link "Community" [focusable=True]
+        - text "Community"
+          - text "Community"
+      - button "Products" [focusable=True]
+        - text "Products"
+          - text "Products"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - form
+      - entry "Search flight or tail number" [focusable=True, required=True]
+      - button "Submit flight search" [focusable=True]
+  - main
+    - text "LIVE FLIGHT INTELLIGENCE"
+      - text "LIVE FLIGHT INTELLIGENCE"
+    - heading "Know where your flight is. Before it lands." [level=1]
+      - text "Know where your flight is."
+        - text "Know where your"
+        - text "flight is."
+      - LineBreak
+        - text
+      - text "Before it lands."
+        - text "Before it lands."
+    - paragraph
+      - text "Track flights, explore routes, and turn real-time aviation data into confident decisions."
+        - text "Track flights, explore routes, and turn real-time aviation data into confident"
+        - text "decisions."
+    - form
+      - LabelText
+        - text "From"
+          - text "From"
+        - entry "From airport" [focusable=True, required=True]
+      - LabelText
+        - text "To"
+          - text "To"
+        - entry "To airport" [focusable=True, required=True]
+      - button "Search flights" [focusable=True]
+        - text "Search flights"
+          - text "Search flights"
+    - text "12,481 flights airborne"
+      - text "12,481 flights airborne"
+    - text "195 countries covered"
+      - text "195 countries covered"
+    - text "Updated seconds ago"
+      - text "Updated seconds ago"
+    - text "EXPLORE LIVE AVIATION"
+      - text "EXPLORE LIVE AVIATION"
+    - heading "Everything you need, in one view" [level=2]
+      - text "Everything you need, in one view"
+        - text "Everything you need, in one view"
+    - link "Open Flight Finder" [focusable=True]
+      - text "Open Flight Finder"
+        - text "Open Flight Finder"
+    - link "Search any route Compare schedules, current status, aircraft, gates, and route timing. Find a route" [focusable=True]
+      - heading "Search any route" [level=3]
+        - text "Search any route"
+          - text "Search any route"
+      - paragraph
+        - text "Compare schedules, current status, aircraft, gates, and route timing."
+          - text "Compare schedules, current status, aircraft,"
+          - text "gates, and route timing."
+      - text "Find a route"
+        - text "Find a route"
+    - link "Explore airport maps See runways, local conditions, active traffic, and useful airport details. View KCCR" [focusable=True]
+      - heading "Explore airport maps" [level=3]
+        - text "Explore airport maps"
+          - text "Explore airport maps"
+      - paragraph
+        - text "See runways, local conditions, active traffic, and useful airport details."
+          - text "See runways, local conditions, active traffic,"
+          - text "and useful airport details."
+      - text "View KCCR"
+        - text "View KCCR"
+    - link "Discover aviation photos Browse popular community photography by aircraft model and airline. Browse photos" [focusable=True]
+      - heading "Discover aviation photos" [level=3]
+        - text "Discover aviation photos"
+          - text "Discover aviation photos"
+      - paragraph
+        - text "Browse popular community photography by aircraft model and airline."
+          - text "Browse popular community photography by"
+          - text "aircraft model and airline."
+      - text "Browse photos"
+        - text "Browse photos"
+    - text "BUILT FOR AVIATION TEAMS"
+      - text "BUILT FOR AVIATION TEAMS"
+    - heading "Go beyond the public flight map" [level=2]
+      - text "Go beyond the public flight map"
+        - text "Go beyond the public flight map"
+    - paragraph
+      - text "Operational products, flexible APIs, and premium intelligence for organizations that need aviation data to move faster."
+        - text "Operational products, flexible APIs, and premium intelligence for organizations that need"
+        - text "aviation data to move faster."
+    - link "Compare AeroAPI plans" [focusable=True]
+      - text "Compare AeroAPI plans"
+        - text "Compare AeroAPI plans"
+    - link "Airport solutions" [focusable=True]
+      - text "Airport solutions"
+        - text "Airport solutions"
+  - contentinfo
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - paragraph
+      - text "Global aviation intelligence for operators, travelers, and enthusiasts."
+        - text "Global aviation intelligence for operators, travelers,"
+        - text "and enthusiasts."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - link "Flight finder" [focusable=True]
+      - text "Flight finder"
+        - text "Flight finder"
+    - link "Airports" [focusable=True]
+      - text "Airports"
+        - text "Airports"
+    - link "Popular photos" [focusable=True]
+      - text "Popular photos"
+        - text "Popular photos"
+    - heading "Community" [level=3]
+      - text "Community"
+        - text "Community"
+    - link "Discussions" [focusable=True]
+      - text "Discussions"
+        - text "Discussions"
+    - link "Aircraft by country" [focusable=True]
+      - text "Aircraft by country"
+        - text "Aircraft by country"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - heading "Business" [level=3]
+      - text "Business"
+        - text "Business"
+    - link "Subscriptions" [focusable=True]
+      - text "Subscriptions"
+        - text "Subscriptions"
+    - link "AeroAPI plans" [focusable=True]
+      - text "AeroAPI plans"
+        - text "AeroAPI plans"
+    - link "Airport solutions" [focusable=True]
+      - text "Airport solutions"
+        - text "Airport solutions"
+    - text "© 2026 FlightAware-inspired demo"
+      - text "© 2026 FlightAware-inspired demo"
+    - text "Real-time experiences. Synthetic demo data."
+      - text "Real-time experiences. Synthetic demo data."

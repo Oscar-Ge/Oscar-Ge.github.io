@@ -1,0 +1,243 @@
+- document "app" [focused=True, focusable=True]
+  - text "Trusted since 1945"
+    - text "Trusted since 1945"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "1-800-GO-UHAUL" [focusable=True]
+    - text "1-800-GO-UHAUL"
+      - text "1-800-GO-UHAUL"
+  - banner
+    - link "U-Haul home" [focusable=True]
+      - text "U-HAUL"
+        - text "U-HAUL"
+    - navigation "Main navigation"
+      - link "Trucks & Trailers" [focusable=True]
+        - text "Trucks & Trailers"
+          - text "Trucks & Trailers"
+      - link "Storage" [focusable=True]
+        - text "Storage"
+          - text "Storage"
+      - link "Moving Supplies" [focusable=True]
+        - text "Moving Supplies"
+          - text "Moving Supplies"
+      - link "Hitches" [focusable=True]
+        - text "Hitches"
+          - text "Hitches"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - text "MOVING MADE EASIER"
+      - text "MOVING MADE EASIER"
+    - heading "Your move. Your way." [level=1]
+      - text "Your move. Your way."
+        - text "Your move."
+        - text "Your way."
+    - paragraph
+      - text "Affordable moving trucks, trailers, storage and supplies — all in one place."
+        - text "Affordable moving trucks, trailers, storage and supplies — all"
+        - text "in one place."
+    - form
+      - tablist "Choose a service"
+        - tab "Trucks" [focusable=True, selected=True]
+          - text "Trucks"
+            - text "Trucks"
+        - tab "Trailers" [focusable=True]
+          - text "Trailers"
+            - text "Trailers"
+        - tab "Storage" [focusable=True]
+          - text "Storage"
+            - text "Storage"
+      - LabelText
+        - text "Pick up location"
+          - text "Pick up location"
+        - entry "Pick up location" [focusable=True, required=True]
+      - LabelText
+        - text "Pick up date"
+          - text "Pick up date"
+        - Date "Pick up date" value="2023-04-19" [focusable=True]
+          - spinbutton "Month Month" value="4" [focusable=True]
+            - text "04"
+              - text "04"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="19" [focusable=True]
+            - text "19"
+              - text "19"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2023" [focusable=True]
+            - text "2023"
+              - text "2023"
+          - button "Show date picker" [focusable=True]
+      - button "Get started" [focusable=True]
+        - text "Get started"
+          - text "Get started"
+    - text "PLAN EVERY PART OF YOUR MOVE"
+      - text "PLAN EVERY PART OF YOUR MOVE"
+    - heading "What can we help you with?" [level=2]
+      - text "What can we help you with?"
+        - text "What can we help you with?"
+    - paragraph
+      - text "One trusted place for equipment, storage and moving essentials."
+        - text "One trusted place for equipment, storage and moving essentials."
+    - article
+      - heading "Truck Rentals" [level=3]
+        - text "Truck Rentals"
+          - text "Truck Rentals"
+      - paragraph
+        - text "Choose the right-size truck with flexible local and one-way options."
+          - text "Choose the right-size truck"
+          - text "with flexible local and one-"
+          - text "way options."
+      - link "View truck rates" [focusable=True]
+        - text "View truck rates"
+          - text "View truck rates"
+    - article
+      - heading "Cargo Trailers" [level=3]
+        - text "Cargo Trailers"
+          - text "Cargo Trailers"
+      - paragraph
+        - text "Tow a secure enclosed trailer behind your own compatible vehicle."
+          - text "Tow a secure enclosed"
+          - text "trailer behind your own"
+          - text "compatible vehicle."
+      - link "Browse trailers" [focusable=True]
+        - text "Browse trailers"
+          - text "Browse trailers"
+    - article
+      - heading "Self-Storage" [level=3]
+        - text "Self-Storage"
+          - text "Self-Storage"
+      - paragraph
+        - text "Find indoor and climate-controlled units close to your neighborhood."
+          - text "Find indoor and climate-"
+          - text "controlled units close to"
+          - text "your neighborhood."
+      - link "Find storage" [focusable=True]
+        - text "Find storage"
+          - text "Find storage"
+    - article
+      - heading "Moving Supplies" [level=3]
+        - text "Moving Supplies"
+          - text "Moving Supplies"
+      - paragraph
+        - text "Shop curated box kits, packing materials and moving-day essentials."
+          - text "Shop curated box kits,"
+          - text "packing materials and"
+          - text "moving-day essentials."
+      - link "Shop supplies" [focusable=True]
+        - text "Shop supplies"
+          - text "Shop supplies"
+    - text "MOVE WITH CONFIDENCE"
+      - text "MOVE WITH CONFIDENCE"
+    - heading "Built around real moving days" [level=2]
+      - text "Built around real moving days"
+        - text "Built around real"
+        - text "moving days"
+    - paragraph
+      - text "From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving."
+        - text "From the first box to the final mile, straightforward rates"
+        - text "and helpful local teams keep your plans moving."
+    - link "Build your moving kit" [focusable=True]
+      - text "Build your moving kit"
+        - text "Build your moving kit"
+    - heading "20,000+ locations" [level=3]
+      - text "20,000+ locations"
+        - text "20,000+ locations"
+    - paragraph
+      - text "Find convenient help close to home."
+        - text "Find convenient help close to home."
+    - heading "Flexible coverage" [level=3]
+      - text "Flexible coverage"
+        - text "Flexible coverage"
+    - paragraph
+      - text "Add protection that fits your move."
+        - text "Add protection that fits your move."
+    - heading "Plans can change" [level=3]
+      - text "Plans can change"
+        - text "Plans can change"
+    - paragraph
+      - text "Manage mock reservations with ease."
+        - text "Manage mock reservations with ease."
+    - text "SIMPLE FROM THE START"
+      - text "SIMPLE FROM THE START"
+    - heading "Ready in three easy steps" [level=2]
+      - text "Ready in three easy steps"
+        - text "Ready in three easy steps"
+    - text "1"
+      - text "1"
+    - heading "Tell us your plan" [level=3]
+      - text "Tell us your plan"
+        - text "Tell us your plan"
+    - paragraph
+      - text "Enter where and when you are moving."
+        - text "Enter where and when you are moving."
+    - text "2"
+      - text "2"
+    - heading "Compare your options" [level=3]
+      - text "Compare your options"
+        - text "Compare your options"
+    - paragraph
+      - text "Review clear rates, sizes and features."
+        - text "Review clear rates, sizes and features."
+    - text "3"
+      - text "3"
+    - heading "Reserve with confidence" [level=3]
+      - text "Reserve with confidence"
+        - text "Reserve with confidence"
+    - paragraph
+      - text "Choose your equipment or unit and you are set."
+        - text "Choose your equipment or unit and you are set."
+  - contentinfo
+    - link "U-HAUL" [focusable=True]
+      - text "U-HAUL"
+        - text "U-HAUL"
+    - paragraph
+      - text "Your one-stop shop for moving and storage."
+        - text "Your one-stop shop for moving and"
+        - text "storage."
+    - link "1-800-GO-UHAUL" [focusable=True]
+      - text "1-800-GO-UHAUL"
+        - text "1-800-GO-UHAUL"
+    - heading "Rentals" [level=3]
+      - text "Rentals"
+        - text "Rentals"
+    - link "Moving trucks" [focusable=True]
+      - text "Moving trucks"
+        - text "Moving trucks"
+    - link "Cargo trailers" [focused=True, focusable=True]
+      - text "Cargo trailers"
+        - text "Cargo trailers"
+    - link "Trailer hitches" [focusable=True]
+      - text "Trailer hitches"
+        - text "Trailer hitches"
+    - heading "Storage & supplies" [level=3]
+      - text "Storage & supplies"
+        - text "Storage & supplies"
+    - link "Self-storage" [focusable=True]
+      - text "Self-storage"
+        - text "Self-storage"
+    - link "Moving boxes" [focusable=True]
+      - text "Moving boxes"
+        - text "Moving boxes"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - heading "Helpful shortcuts" [level=3]
+      - text "Helpful shortcuts"
+        - text "Helpful shortcuts"
+    - link "Find a location" [focusable=True]
+      - text "Find a location"
+        - text "Find a location"
+    - link "Get rental rates" [focusable=True]
+      - text "Get rental rates"
+        - text "Get rental rates"
+    - link "Contact support" [focusable=True]
+      - text "Contact support"
+        - text "Contact support"
+    - text "© 2026 U-Haul International, Inc. Mock experience."
+      - text "© 2026 U-Haul International, Inc. Mock experience."
+    - text "Move smart. Move safely."
+      - text "Move smart. Move safely."

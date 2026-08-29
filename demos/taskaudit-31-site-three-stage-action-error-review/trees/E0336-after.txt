@@ -1,0 +1,210 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focused=True, focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "NBA"
+        - text "NBA"
+      - text "Scoreboard"
+        - text "Scoreboard"
+    - sectionheader
+      - text "NBA"
+        - text "NBA"
+      - heading "NBA Scoreboard" [level=1]
+        - text "NBA Scoreboard"
+          - text "NBA Scoreboard"
+      - paragraph
+        - text "Scores, schedules and game leaders"
+          - text "Scores, schedules and game leaders"
+    - button "Previous day" [focusable=True]
+      - text "Previous day"
+        - text "Previous day"
+    - button "Today" [focusable=True]
+      - text "Today"
+        - text "Today"
+    - button "March 11" [focusable=True]
+      - text "March 11"
+        - text "March 11"
+    - LabelText
+      - Date value="2026-08-16" [focusable=True]
+        - spinbutton "Month Month" value="8" [focusable=True]
+          - text "08"
+            - text "08"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="16" [focusable=True]
+          - text "16"
+            - text "16"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2026" [focusable=True]
+          - text "2026"
+            - text "2026"
+        - button "Show date picker" [focusable=True]
+    - text "TODAY"
+      - text "TODAY"
+    - heading "August 16, 2026" [level=2]
+      - text "August 16, 2026"
+        - text "August 16, 2026"
+    - text "2"
+      - text "2"
+    - text "games"
+      - text "games"
+    - article
+      - strong
+        - text "7:30 PM ET"
+          - text "7:30 PM ET"
+      - text "NBA"
+        - text "NBA"
+      - text "MIA"
+        - text "MIA"
+      - text "Miami Heat"
+        - text "Miami Heat"
+      - strong
+        - text "—"
+          - text "—"
+      - text "ORL"
+        - text "ORL"
+      - text "Orlando Magic"
+        - text "Orlando Magic"
+      - strong
+        - text "—"
+          - text "—"
+      - text "Kia Center • Orlando, FL"
+        - text "Kia Center • Orlando, FL"
+    - article
+      - strong
+        - text "8:00 PM ET"
+          - text "8:00 PM ET"
+      - text "NBA"
+        - text "NBA"
+      - text "CHI"
+        - text "CHI"
+      - text "Chicago Bulls"
+        - text "Chicago Bulls"
+      - strong
+        - text "—"
+          - text "—"
+      - text "ATL"
+        - text "ATL"
+      - text "Atlanta Hawks"
+        - text "Atlanta Hawks"
+      - strong
+        - text "—"
+          - text "—"
+      - text "State Farm Arena • Atlanta, GA"
+        - text "State Farm Arena • Atlanta, GA"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

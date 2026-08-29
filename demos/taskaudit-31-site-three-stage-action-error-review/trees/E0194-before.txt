@@ -1,0 +1,247 @@
+- document "Amtrak | Plan Your Train Travel" [focused=True, focusable=True]
+  - text "Travel green. Save 15% on select spring trips."
+    - text "Travel green. Save 15% on select spring trips."
+  - link "See offers" [focusable=True]
+    - text "See offers"
+      - text "See offers"
+  - banner
+    - link "Amtrak home" [focusable=True]
+      - text "AMTRAK"
+        - text "AMTRAK"
+    - navigation "Main navigation"
+      - link "Book" [focusable=True]
+        - text "Book"
+          - text "Book"
+      - link "My Trip" [focusable=True]
+        - text "My Trip"
+          - text "My Trip"
+      - link "Schedules" [focusable=True]
+        - text "Schedules"
+          - text "Schedules"
+      - link "Routes" [focusable=True]
+        - text "Routes"
+          - text "Routes"
+      - link "Deals" [focusable=True]
+        - text "Deals"
+          - text "Deals"
+      - link "Vacations" [focusable=True]
+        - text "Vacations"
+          - text "Vacations"
+      - link "Travel Info" [focusable=True]
+        - text "Travel Info"
+          - text "Travel Info"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - text "AMERICA IS WAITING"
+      - text "AMERICA IS WAITING"
+    - heading "There’s more to see. Take the train." [level=1]
+      - text "There’s more to see."
+        - text "There’s more to see."
+      - LineBreak
+        - text
+      - text "Take the train."
+        - text "Take the train."
+    - paragraph
+      - text "Downtown to downtown, coast to coast. Settle in and enjoy the journey."
+        - text "Downtown to downtown, coast to coast. Settle in and enjoy"
+        - text "the journey."
+    - form
+      - text "BOOK TRAIN TRAVEL"
+        - text "BOOK TRAIN TRAVEL"
+      - heading "Where can we take you?" [level=2]
+        - text "Where can we take you?"
+          - text "Where can we take you?"
+      - generic "Trip type"
+        - button "One way" [focusable=True]
+          - text "One way"
+            - text "One way"
+        - button "Round trip" [focusable=True]
+          - text "Round trip"
+            - text "Round trip"
+      - LabelText
+        - text "From"
+          - text "From"
+        - combobox "From station" value="New York, NY - Moynihan Train Hall (NYP)" [focusable=True, required=True]
+          - text "New York, NY - Moynihan Train Hall (NYP)"
+            - text "New York, NY - Moynihan Train Hall (NYP)"
+      - button "Swap origin and destination" [focusable=True]
+        - text "⇄"
+          - text "⇄"
+      - LabelText
+        - text "To"
+          - text "To"
+        - combobox "To station" value="Washington, DC - Union Station (WAS)" [focusable=True, required=True]
+          - text "Washington, DC - Union Station (WAS)"
+            - text "Washington, DC - Union Station (WAS)"
+      - LabelText
+        - text "Depart"
+          - text "Depart"
+        - Date "Departure date" value="2027-04-18" [focusable=True]
+          - spinbutton "Month Month" value="4" [focusable=True]
+            - text "04"
+              - text "04"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="18" [focusable=True]
+            - text "18"
+              - text "18"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2027" [focused=True, focusable=True]
+            - text "2027"
+              - text "2027"
+          - button "Show date picker" [focusable=True]
+      - button "Travelers 1 Adult" [focusable=True]
+        - text "Travelers"
+          - text "Travelers"
+        - strong
+          - text "1"
+            - text "1"
+          - text "Adult"
+            - text "Adult"
+      - LabelText
+        - text "Service"
+          - text "Service"
+        - combobox "Service class" value="Coach" [focusable=True]
+          - MenuListPopup
+            - option "Coach" [focusable=True, selected=True]
+            - option "Business Class" [focusable=True]
+            - option "First Class" [focusable=True]
+            - option "Private Room" [focusable=True]
+      - button "Find trains" [focusable=True]
+        - text "Find trains"
+          - text "Find trains"
+      - link "Multi-Ride & Rail Passes" [focusable=True]
+        - text "Multi-Ride & Rail Passes"
+          - text "Multi-Ride & Rail Passes"
+      - link "Book Auto Train" [focusable=True]
+        - text "Book Auto Train"
+          - text "Book Auto Train"
+    - text "INSPIRED JOURNEYS"
+      - text "INSPIRED JOURNEYS"
+    - heading "Start with something unforgettable" [level=2]
+      - text "Start with something unforgettable"
+        - text "Start with something unforgettable"
+    - link "Explore all routes" [focusable=True]
+      - text "Explore all routes"
+        - text "Explore all routes"
+    - link "NEW YORK TO MONTRÉAL The Adirondack Hudson River views, mountain towns and an international adventure. Explore route" [focusable=True]
+      - text "NEW YORK TO MONTRÉAL"
+        - text "NEW YORK TO MONTRÉAL"
+      - heading "The Adirondack" [level=3]
+        - text "The Adirondack"
+          - text "The Adirondack"
+      - paragraph
+        - text "Hudson River views, mountain towns and an international adventure."
+          - text "Hudson River views, mountain towns and an"
+          - text "international adventure."
+      - text "Explore route"
+        - text "Explore route"
+    - link "14-DAY RAIL VACATION Grand National Parks Five iconic parks and one spectacular journey through the American West. Vi..." [focusable=True]
+      - text "14-DAY RAIL VACATION"
+        - text "14-DAY RAIL VACATION"
+      - heading "Grand National Parks" [level=3]
+        - text "Grand National Parks"
+          - text "Grand National Parks"
+      - paragraph
+        - text "Five iconic parks and one spectacular journey through the American West."
+          - text "Five iconic parks and one spectacular journey"
+          - text "through the American West."
+      - text "View vacation"
+        - text "View vacation"
+    - link "CALIFORNIA SAVINGS Sunshine looks good on you Save on coastal journeys, city escapes and family trips. See deals" [focusable=True]
+      - text "CALIFORNIA SAVINGS"
+        - text "CALIFORNIA SAVINGS"
+      - heading "Sunshine looks good on you" [level=3]
+        - text "Sunshine looks good on you"
+          - text "Sunshine looks good on"
+          - text "you"
+      - paragraph
+        - text "Save on coastal journeys, city escapes and family trips."
+          - text "Save on coastal journeys, city escapes and family"
+          - text "trips."
+      - text "See deals"
+        - text "See deals"
+    - heading "Bring more along" [level=3]
+      - text "Bring more along"
+        - text "Bring more along"
+    - paragraph
+      - text "Two free carry-on bags and two free personal items."
+        - text "Two free carry-on bags and two free personal items."
+    - heading "Arrive downtown" [level=3]
+      - text "Arrive downtown"
+        - text "Arrive downtown"
+    - paragraph
+      - text "Skip the airport transfer and arrive in the center of it all."
+        - text "Skip the airport transfer and arrive in the center of"
+        - text "it all."
+    - heading "Travel lighter" [level=3]
+      - text "Travel lighter"
+        - text "Travel lighter"
+    - paragraph
+      - text "Rail travel produces up to 83% fewer emissions than driving alone."
+        - text "Rail travel produces up to 83% fewer emissions"
+        - text "than driving alone."
+  - contentinfo
+    - text "AMTRAK"
+      - text "AMTRAK"
+    - paragraph
+      - text "Connecting communities and creating a more sustainable way to travel across America."
+        - text "Connecting communities and creating a more"
+        - text "sustainable way to travel across America."
+    - paragraph
+      - text "Mock experience created for demonstration. No real reservations are made."
+        - text "Mock experience created for demonstration. No real"
+        - text "reservations are made."
+    - heading "Plan" [level=3]
+      - text "Plan"
+        - text "Plan"
+    - link "Book travel" [focusable=True]
+      - text "Book travel"
+        - text "Book travel"
+    - link "Schedules" [focusable=True]
+      - text "Schedules"
+        - text "Schedules"
+    - link "National route map" [focusable=True]
+      - text "National route map"
+        - text "National route map"
+    - link "Multi-Ride passes" [focusable=True]
+      - text "Multi-Ride passes"
+        - text "Multi-Ride passes"
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - link "Deals" [focusable=True]
+      - text "Deals"
+        - text "Deals"
+    - link "Amtrak Vacations" [focusable=True]
+      - text "Amtrak Vacations"
+        - text "Amtrak Vacations"
+    - link "Routes" [focusable=True]
+      - text "Routes"
+        - text "Routes"
+    - link "Café menu" [focusable=True]
+      - text "Café menu"
+        - text "Café menu"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - link "Find my trip" [focusable=True]
+      - text "Find my trip"
+        - text "Find my trip"
+    - link "Travel identification" [focusable=True]
+      - text "Travel identification"
+        - text "Travel identification"
+    - link "RideReserve terms" [focusable=True]
+      - text "RideReserve terms"
+        - text "RideReserve terms"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Amtrak. All rights reserved."
+      - text "© 2026 Amtrak. All rights reserved."

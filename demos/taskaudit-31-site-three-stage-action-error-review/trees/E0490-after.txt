@@ -1,0 +1,285 @@
+- document "Udemy Learning Marketplace" [focused=True, focusable=True]
+  - banner
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - button "Explore" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+    - search
+      - entry "Search for anything" value="JavaScript" [focusable=True]
+        - text "JavaScript"
+          - text "JavaScript"
+    - navigation "Primary navigation"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Teach on Udemy" [focusable=True]
+        - text "Teach on Udemy"
+          - text "Teach on Udemy"
+      - link "Wishlist with 0 courses" [focusable=True]
+      - link "Cart with 0 courses" [focusable=True]
+    - link "Cart with 0 courses" [focusable=True]
+  - main
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - text "Course results"
+      - text "Course results"
+    - text "COURSE MARKETPLACE"
+      - text "COURSE MARKETPLACE"
+    - heading "Results for “JavaScript”" [level=1]
+      - text "Results for “JavaScript”"
+        - text "Results for “JavaScript”"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text "course"
+        - text "course"
+      - text "s"
+        - text "s"
+      - text "match your search and filters."
+        - text "match your search and filters."
+    - LabelText
+      - text "SORT BY"
+        - text "SORT BY"
+      - combobox "Sort courses" value="Most relevant" [focusable=True]
+        - MenuListPopup
+          - option "Most relevant" [focusable=True, selected=True]
+          - option "Highest rated" [focusable=True]
+          - option "Newest" [focusable=True]
+          - option "Most popular" [focusable=True]
+    - button "Filters" [focusable=True]
+      - text "Filters"
+        - text "Filters"
+    - complementary
+      - heading "Filter results" [level=2]
+        - text "Filter results"
+          - text "Filter results"
+      - LabelText
+        - text "RATING"
+          - text "RATING"
+        - combobox "RATING" value="Any rating" [focusable=True]
+          - MenuListPopup
+            - option "Any rating" [focusable=True, selected=True]
+            - option "5.0 only" [focusable=True]
+            - option "4.5 & up" [focusable=True]
+            - option "4.0 & up" [focusable=True]
+            - option "3.5 & up" [focusable=True]
+      - LabelText
+        - text "VIDEO DURATION"
+          - text "VIDEO DURATION"
+        - combobox "VIDEO DURATION" value="Any duration" [focusable=True]
+          - MenuListPopup
+            - option "Any duration" [focusable=True, selected=True]
+            - option "Up to 1 hour" [focusable=True]
+            - option "1–3 hours" [focusable=True]
+            - option "3–6 hours" [focusable=True]
+            - option "17+ hours" [focusable=True]
+      - LabelText
+        - text "LEVEL"
+          - text "LEVEL"
+        - combobox "LEVEL" value="All levels" [focusable=True]
+          - MenuListPopup
+            - option "All levels" [focusable=True, selected=True]
+            - option "Beginner" [focusable=True]
+            - option "Intermediate" [focusable=True]
+            - option "Expert" [focusable=True]
+      - LabelText
+        - text "COURSE LANGUAGE"
+          - text "COURSE LANGUAGE"
+        - combobox "COURSE LANGUAGE" value="Any language" [focusable=True]
+          - MenuListPopup
+            - option "Any language" [focusable=True, selected=True]
+            - option "English" [focusable=True]
+            - option "Portuguese" [focusable=True]
+            - option "French" [focusable=True]
+      - LabelText
+        - text "SUBTITLES"
+          - text "SUBTITLES"
+        - combobox "SUBTITLES" value="Any subtitles" [focusable=True]
+          - MenuListPopup
+            - option "Any subtitles" [focusable=True, selected=True]
+            - option "English subtitles" [focusable=True]
+            - option "French subtitles" [focusable=True]
+            - option "Portuguese subtitles" [focusable=True]
+      - LabelText
+        - text "TOPIC"
+          - text "TOPIC"
+        - combobox "TOPIC" value="Any topic" [focusable=True]
+          - MenuListPopup
+            - option "Any topic" [focusable=True, selected=True]
+            - option "Weight Loss" [focusable=True]
+            - option "Game Design" [focusable=True]
+            - option "Startup" [focusable=True]
+            - option "Public Speaking" [focusable=True]
+            - option "Meditation and Sound Therapy" [focusable=True]
+            - option "AWS Certification" [focusable=True]
+      - LabelText
+        - checkbox "Beginner favorites Courses learners love when starting out" [focusable=True]
+        - strong
+          - text "Beginner favorites"
+            - text "Beginner favorites"
+        - text "Courses learners love when starting out"
+          - text "Courses learners love when starting"
+          - text "out"
+    - article
+      - link "View The Complete JavaScript Course for Beginners" [focusable=True]
+        - text "JAVASCRIPT"
+          - text "JAVASCRIPT"
+      - link "The Complete JavaScript Course for Beginners" [focusable=True]
+        - heading "The Complete JavaScript Course for Beginners" [level=3]
+          - text "The Complete JavaScript Course for Beginners"
+            - text "The Complete JavaScript Course for Beginners"
+      - button "Add The Complete JavaScript Course for Beginners to wishlist" [focusable=True]
+      - paragraph
+        - text "Master modern JavaScript fundamentals with clear explanations and real-world browser projects."
+          - text "Master modern JavaScript fundamentals with clear explanations and real-world browser projects."
+      - paragraph
+        - text "Elena Torres"
+          - text "Elena Torres"
+      - generic "4.8 out of 5 stars"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "92,560"
+          - text "92,560"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "34 total hours"
+          - text "34 total hours"
+        - text "·"
+          - text "·"
+        - text "290"
+          - text "290"
+        - text "lectures ·"
+          - text "lectures ·"
+        - text "Beginner"
+          - text "Beginner"
+      - text "Most popular"
+        - text "Most popular"
+      - text "Beginner favorite"
+        - text "Beginner favorite"
+      - strong
+        - text "$"
+          - text "$"
+        - text "99.99"
+          - text "99.99"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "149.99"
+          - text "149.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "View JavaScript Starter Projects: Learn by Building" [focusable=True]
+        - text "JAVASCRIPT"
+          - text "JAVASCRIPT"
+      - link "JavaScript Starter Projects: Learn by Building" [focusable=True]
+        - heading "JavaScript Starter Projects: Learn by Building" [level=3]
+          - text "JavaScript Starter Projects: Learn by Building"
+            - text "JavaScript Starter Projects: Learn by Building"
+      - button "Add JavaScript Starter Projects: Learn by Building to wishlist" [focusable=True]
+      - paragraph
+        - text "Build 20 small projects that make JavaScript click for new developers."
+          - text "Build 20 small projects that make JavaScript click for new developers."
+      - paragraph
+        - text "Noah Williams"
+          - text "Noah Williams"
+      - generic "4.7 out of 5 stars"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "22,540"
+          - text "22,540"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "18 total hours"
+          - text "18 total hours"
+        - text "·"
+          - text "·"
+        - text "164"
+          - text "164"
+        - text "lectures ·"
+          - text "lectures ·"
+        - text "Beginner"
+          - text "Beginner"
+      - text "Beginner favorite"
+        - text "Beginner favorite"
+      - strong
+        - text "$"
+          - text "$"
+        - text "74.99"
+          - text "74.99"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "114.99"
+          - text "114.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+  - contentinfo
+    - text "LEARN WITHOUT LIMITS"
+      - text "LEARN WITHOUT LIMITS"
+    - heading "Skills open doors. Start learning today." [level=2]
+      - text "Skills open doors. Start learning today."
+        - text "Skills open doors. Start learning today."
+    - link "Explore top courses" [focusable=True]
+      - text "Explore top courses"
+        - text "Explore top courses"
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - paragraph
+      - text "Learn practical skills from real-world experts, at your pace."
+        - text "Learn practical skills from real-world experts, at your"
+        - text "pace."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Development" [focusable=True]
+      - text "Development"
+        - text "Development"
+    - link "Business" [focusable=True]
+      - text "Business"
+        - text "Business"
+    - link "Certifications" [focusable=True]
+      - text "Certifications"
+        - text "Certifications"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - link "Investor events" [focusable=True]
+      - text "Investor events"
+        - text "Investor events"
+    - link "Become a tutor" [focusable=True]
+      - text "Become a tutor"
+        - text "Become a tutor"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - link "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - link "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - text "© 2026 Udemy Learning, Inc."
+      - text "© 2026 Udemy Learning, Inc."
+    - text "English"
+      - text "English"

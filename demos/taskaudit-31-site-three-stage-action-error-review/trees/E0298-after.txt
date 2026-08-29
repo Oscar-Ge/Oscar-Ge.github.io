@@ -1,0 +1,159 @@
+- document "StubHub | Be There Live" [focused=True, focusable=True]
+  - banner
+    - button "StubHub home" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - navigation "Main navigation"
+      - button "Concerts" [focusable=True]
+        - text "Concerts"
+          - text "Concerts"
+      - button "Sports" [focusable=True]
+        - text "Sports"
+          - text "Sports"
+      - button "Theater" [focusable=True]
+        - text "Theater"
+          - text "Theater"
+      - button "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - button "Open cart with 0 items" [focusable=True]
+  - main
+    - text "STUBHUB HELP CENTER"
+      - text "STUBHUB HELP CENTER"
+    - heading "How can we help?" [level=1]
+      - text "How can we help?"
+        - text "How can we help?"
+    - form
+      - entry "Search help" value="How do I transfer NFL tickets?" [focusable=True]
+        - text "How do I transfer NFL tickets?"
+          - text "How do I transfer NFL tickets?"
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - text "NFL MOBILE TICKETS"
+      - text "NFL MOBILE TICKETS"
+    - heading "How to transfer NFL tickets to a friend" [level=1]
+      - text "How to transfer NFL tickets to a friend"
+        - text "How to transfer NFL tickets to a friend"
+    - paragraph
+      - text "Most NFL tickets are transferred securely through the home team or venue’s mobile ticketing account."
+        - text "Most NFL tickets are transferred securely through the home team or venue’s mobile ticketing"
+        - text "account."
+    - paragraph
+      - strong
+        - text "Before you start"
+          - text "Before you start"
+      - text "Make sure you use the same email address for StubHub and the team’s official ticket app. Your friend will need an ema..."
+        - text "Make sure you use the same email address for StubHub and the team’s official ticket app. Your friend"
+        - text "will need an email address and a smartphone."
+    - list
+      - listitem [level=1]
+        - text "1"
+          - text "1"
+        - heading "Open the team’s ticket app" [level=2]
+          - text "Open the team’s ticket app"
+            - text "Open the team’s ticket app"
+        - paragraph
+          - text "Sign in to the NFL team or venue account linked to your order, then open"
+            - text "Sign in to the NFL team or venue account linked to your order, then open"
+          - strong
+            - text "My Tickets"
+              - text "My Tickets"
+          - text "."
+            - text "."
+      - listitem [level=1]
+        - text "2"
+          - text "2"
+        - heading "Select the game" [level=2]
+          - text "Select the game"
+            - text "Select the game"
+        - paragraph
+          - text "Choose the NFL game and tap"
+            - text "Choose the NFL game and tap"
+          - strong
+            - text "Transfer"
+              - text "Transfer"
+          - text ". Select each seat you want to send."
+            - text ". Select each seat you want to send."
+      - listitem [level=1]
+        - text "3"
+          - text "3"
+        - heading "Enter your friend’s details" [level=2]
+          - text "Enter your friend’s details"
+            - text "Enter your friend’s details"
+        - paragraph
+          - text "Add your friend’s name and email address, review the seats, then tap"
+            - text "Add your friend’s name and email address, review the seats, then tap"
+          - strong
+            - text "Send"
+              - text "Send"
+          - text "."
+            - text "."
+      - listitem [level=1]
+        - text "4"
+          - text "4"
+        - heading "Your friend accepts" [level=2]
+          - text "Your friend accepts"
+            - text "Your friend accepts"
+        - paragraph
+          - text "They’ll receive an email with an acceptance link. Once accepted, the rotating mobile barcode appears in their app."
+            - text "They’ll receive an email with an acceptance link. Once accepted, the rotating mobile barcode appears in their app."
+    - heading "Keep the barcode digital" [level=3]
+      - text "Keep the barcode digital"
+        - text "Keep the barcode digital"
+    - paragraph
+      - text "NFL rotating barcodes refresh regularly. Screenshots and printed copies usually won’t scan at the gate."
+        - text "NFL rotating barcodes refresh regularly. Screenshots and printed copies usually won’t scan at the gate."
+  - contentinfo
+    - button "stubhub ®" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - paragraph
+      - text "Be there live."
+        - text "Be there live."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - button "NHL in Boston" [focusable=True]
+      - text "NHL in Boston"
+        - text "NHL in Boston"
+    - button "Las Vegas theater" [focusable=True]
+      - text "Las Vegas theater"
+        - text "Las Vegas theater"
+    - heading "GIFTS" [level=3]
+      - text "GIFTS"
+        - text "GIFTS"
+    - button "Buy a gift card" [focusable=True]
+      - text "Buy a gift card"
+        - text "Buy a gift card"
+    - button "Gift card cart" [focusable=True]
+      - text "Gift card cart"
+        - text "Gift card cart"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - button "Transfer NFL tickets" [focusable=True]
+      - text "Transfer NFL tickets"
+        - text "Transfer NFL tickets"
+    - button "Help center" [focused=True, focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - text "© 2026 StubHub demo marketplace"
+      - text "© 2026 StubHub demo marketplace"
+    - text "United States · USD"
+      - text "United States · USD"
+    - text "FanProtect Guarantee"
+      - text "FanProtect Guarantee"

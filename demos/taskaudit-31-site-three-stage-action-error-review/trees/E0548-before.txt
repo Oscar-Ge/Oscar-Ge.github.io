@@ -1,0 +1,176 @@
+- document "Allrecipes | Food, Friends, and Recipe Inspiration" [focused=True, focusable=True]
+  - banner
+    - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+      - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+    - text "TESTED IN HOME KITCHENS SINCE 1997"
+      - text "TESTED IN HOME KITCHENS SINCE 1997"
+    - link "Allrecipes home" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - search
+      - LabelText
+        - text "Search recipes and ingredients"
+          - text "Search recipes and ingredients"
+      - entry "Search recipes and ingredients" [focusable=True]
+      - button "Search" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+    - link "My recipes, 0 items" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - navigation "Main navigation"
+      - link "RECIPES" [focusable=True]
+        - text "RECIPES"
+          - text "RECIPES"
+      - link "QUICK & EASY" [focusable=True]
+        - text "QUICK & EASY"
+          - text "QUICK & EASY"
+      - link "DESSERTS" [focusable=True]
+        - text "DESSERTS"
+          - text "DESSERTS"
+      - link "AIR FRYER" [focusable=True]
+        - text "AIR FRYER"
+          - text "AIR FRYER"
+      - link "KITCHEN TIPS" [focusable=True]
+        - text "KITCHEN TIPS"
+          - text "KITCHEN TIPS"
+      - link "FOOD NEWS" [focusable=True]
+        - text "FOOD NEWS"
+          - text "FOOD NEWS"
+      - link "HOLIDAYS" [focusable=True]
+        - text "HOLIDAYS"
+          - text "HOLIDAYS"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Food News"
+        - text "Food News"
+    - paragraph
+      - text "STAY IN THE KNOW"
+        - text "STAY IN THE KNOW"
+    - heading "Latest Food Trends" [level=1]
+      - text "Latest Food Trends"
+        - text "Latest Food Trends"
+    - paragraph
+      - text "Timely updates, smart shopping information, and the ideas shaping how we cook now."
+        - text "Timely updates, smart shopping information, and the ideas shaping how we cook now."
+    - tablist "News topics"
+      - button "Latest" [focusable=True]
+        - text "Latest"
+          - text "Latest"
+      - button "Recalls" [focusable=True]
+        - text "Recalls"
+          - text "Recalls"
+      - button "Food Trends" [focusable=True]
+        - text "Food Trends"
+          - text "Food Trends"
+    - article
+      - link "The Crispy Rice Salad Taking Over Summer Tables" [focusable=True]
+        - image "The Crispy Rice Salad Taking Over Summer Tables"
+      - paragraph
+        - text "FOOD TRENDS"
+          - text "FOOD TRENDS"
+        - text "·"
+          - text "·"
+        - text "AUGUST 14, 2026"
+          - text "AUGUST 14, 2026"
+      - heading "The Crispy Rice Salad Taking Over Summer Tables" [level=2]
+        - link "The Crispy Rice Salad Taking Over Summer Tables" [focusable=True]
+          - text "The Crispy Rice Salad Taking Over Summer Tables"
+            - text "The Crispy Rice Salad"
+            - text "Taking Over Summer"
+            - text "Tables"
+      - paragraph
+        - text "Crunchy, bright, and endlessly adaptable, this is the dinner trend our editors keep making."
+          - text "Crunchy, bright, and endlessly adaptable, this is the dinner trend"
+          - text "our editors keep making."
+      - link "Read the story" [focusable=True]
+        - text "Read the story"
+          - text "Read the story"
+      - button "Share" [focusable=True]
+        - text "Share"
+          - text "Share"
+    - article
+      - link "Why Everyone Is Adding Chile Crisp to Lemonade" [focusable=True]
+        - image "Why Everyone Is Adding Chile Crisp to Lemonade"
+      - paragraph
+        - text "FOOD TRENDS"
+          - text "FOOD TRENDS"
+        - text "·"
+          - text "·"
+        - text "AUGUST 7, 2026"
+          - text "AUGUST 7, 2026"
+      - heading "Why Everyone Is Adding Chile Crisp to Lemonade" [level=3]
+        - link "Why Everyone Is Adding Chile Crisp to Lemonade" [focusable=True]
+          - text "Why Everyone Is Adding Chile Crisp to Lemonade"
+            - text "Why Everyone Is Adding Chile Crisp to Lemonade"
+      - paragraph
+        - text "A tiny spoonful brings heat, savoriness, and a surprising depth to the summer classic."
+          - text "A tiny spoonful brings heat, savoriness, and a surprising depth to the summer classic."
+      - link "Read more" [focusable=True]
+        - text "Read more"
+          - text "Read more"
+      - button "Share" [focusable=True]
+        - text "Share"
+          - text "Share"
+  - contentinfo
+    - link "allrecipes *" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - paragraph
+      - text "Reliable recipes and helpful kitchen know-how, made for home cooks."
+        - text "Reliable recipes and helpful kitchen know-how,"
+        - text "made for home cooks."
+    - heading "EXPLORE" [level=2]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "All Recipes" [focusable=True]
+      - text "All Recipes"
+        - text "All Recipes"
+    - link "30-Minute Meals" [focusable=True]
+      - text "30-Minute Meals"
+        - text "30-Minute Meals"
+    - link "Air Fryer Recipes" [focusable=True]
+      - text "Air Fryer Recipes"
+        - text "Air Fryer Recipes"
+    - link "Desserts" [focusable=True]
+      - text "Desserts"
+        - text "Desserts"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Kitchen Tips" [focusable=True]
+      - text "Kitchen Tips"
+        - text "Kitchen Tips"
+    - link "Food Safety" [focusable=True]
+      - text "Food Safety"
+        - text "Food Safety"
+    - link "Recall News" [focusable=True]
+      - text "Recall News"
+        - text "Recall News"
+    - link "Food Trends" [focused=True, focusable=True]
+      - text "Food Trends"
+        - text "Food Trends"
+    - heading "YOUR KITCHEN" [level=2]
+      - text "YOUR KITCHEN"
+        - text "YOUR KITCHEN"
+    - link "My Recipes" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - link "Search Cinnamon Recipes" [focusable=True]
+      - text "Search Cinnamon Recipes"
+        - text "Search Cinnamon Recipes"
+    - link "About Allrecipes" [focusable=True]
+      - text "About Allrecipes"
+        - text "About Allrecipes"
+    - text "© 2026 Allrecipes demo"
+      - text "© 2026 Allrecipes demo"
+    - text "All content is synthetic and for demonstration only."
+      - text "All content is synthetic and for demonstration only."

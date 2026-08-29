@@ -1,0 +1,102 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" [focusable=True]
+      - button "Search" [focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - main
+    - paragraph
+      - text "YOUR SAVED PLACES"
+        - text "YOUR SAVED PLACES"
+    - heading "Collections" [level=1]
+      - text "Collections"
+        - text "Collections"
+    - paragraph
+      - text "Organize businesses for plans, projects, and places to try."
+        - text "Organize businesses for plans, projects, and places to try."
+    - form
+      - LabelText
+        - text "Create a new collection"
+          - text "Create a new collection"
+      - entry "Create a new collection" [focusable=True]
+      - button "Create" [focused=True, focusable=True]
+        - text "Create"
+          - text "Create"
+    - heading "Create your first collection" [level=2]
+      - text "Create your first collection"
+        - text "Create your first collection"
+    - paragraph
+      - text "Name a collection above, then save a business from search results."
+        - text "Name a collection above, then save a business from search results."
+    - link "Browse San Francisco car washes" [focusable=True]
+      - text "Browse San Francisco car washes"
+        - text "Browse San Francisco car washes"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"

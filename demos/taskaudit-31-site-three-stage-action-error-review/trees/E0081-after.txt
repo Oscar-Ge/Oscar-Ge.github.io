@@ -1,0 +1,247 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping at $25"
+    - text "Free shipping at $25"
+  - text "|"
+    - text "|"
+  - text "Store pickup available"
+    - text "Store pickup available"
+  - link "Shop Clearance" [focusable=True]
+    - text "Shop Clearance"
+      - text "Shop Clearance"
+  - banner
+    - link "Macy's home" [focusable=True]
+      - text "macy's"
+        - text "macy's"
+    - search
+      - LabelText
+        - text "Search products"
+          - text "Search products"
+      - entry "Search products" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - link "Lists" [focusable=True]
+      - text "Lists"
+        - text "Lists"
+    - link "Bag" [focusable=True]
+      - text "Bag"
+        - text "Bag"
+    - navigation "Shop departments"
+      - link "Men" [focusable=True]
+        - text "Men"
+          - text "Men"
+      - link "Kids & Baby" [focusable=True]
+        - text "Kids & Baby"
+          - text "Kids & Baby"
+      - link "Handbags" [focusable=True]
+        - text "Handbags"
+          - text "Handbags"
+      - link "Toys" [focusable=True]
+        - text "Toys"
+          - text "Toys"
+      - link "Trending" [focusable=True]
+        - text "Trending"
+          - text "Trending"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Jewelry" [focusable=True]
+        - text "Jewelry"
+          - text "Jewelry"
+      - link "Kitchen" [focusable=True]
+        - text "Kitchen"
+          - text "Kitchen"
+      - link "Wine" [focusable=True]
+        - text "Wine"
+          - text "Wine"
+      - link "Shoes" [focusable=True]
+        - text "Shoes"
+          - text "Shoes"
+      - link "Clearance" [focusable=True]
+        - text "Clearance"
+          - text "Clearance"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+  - main
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - text "Toys for Every Imagination"
+      - text "Toys for Every Imagination"
+    - sectionheader
+      - text "Toys"
+        - text "Toys"
+      - heading "Toys for Every Imagination" [level=1]
+        - text "Toys for Every Imagination"
+          - text "Toys for Every Imagination"
+      - paragraph
+        - text "Top-rated picks, creative building sets and gifts by age."
+          - text "Top-rated picks, creative building sets and gifts by age."
+    - strong
+      - text "2"
+        - text "2"
+    - text "results"
+      - text "results"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort products" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Price: Low to High" [focusable=True]
+          - option "Price: High to Low" [focusable=True]
+          - option "Top Rated" [focusable=True]
+    - complementary
+      - heading "Filter & refine" [level=2]
+        - text "Filter & refine"
+          - text "Filter & refine"
+      - button "Clear all" [focusable=True]
+        - text "Clear all"
+          - text "Clear all"
+      - LabelText
+        - text "Toy type"
+          - text "Toy type"
+        - combobox "Toy type" value="All" [focusable=True]
+          - MenuListPopup
+            - option "All" [focusable=True, selected=True]
+            - option "Building Toy" [focusable=True]
+      - LabelText
+        - text "Age range"
+          - text "Age range"
+        - combobox "Age range" value="All" [focusable=True]
+          - MenuListPopup
+            - option "All" [focusable=True, selected=True]
+            - option "5 to 7 years" [focusable=True]
+            - option "8 to 10 years" [focusable=True]
+      - LabelText
+        - text "Gender"
+          - text "Gender"
+        - combobox "Gender" value="All" [focusable=True]
+          - MenuListPopup
+            - option "All" [focusable=True, selected=True]
+            - option "Unisex" [focusable=True]
+      - LabelText
+        - text "Customer rating"
+          - text "Customer rating"
+        - combobox "Customer rating" value="Any rating" [focusable=True]
+          - MenuListPopup
+            - option "Any rating" [focusable=True, selected=True]
+            - option "4" [focusable=True]
+            - option "4.5" [focusable=True]
+            - option "5" [focusable=True]
+      - LabelText
+        - checkbox "Best Sellers only" [focusable=True]
+        - text "Best Sellers only"
+          - text "Best Sellers only"
+      - LabelText
+        - text "Maximum price"
+          - text "Maximum price"
+        - text "$"
+          - text "$"
+        - spinbutton "Maximum price $" [focusable=True]
+    - article
+      - link "Creator City 500-Piece Building Set View details" [focusable=True]
+        - image "Creator City 500-Piece Building Set"
+        - text "View details"
+          - text "View details"
+      - text "BEST SELLER"
+        - text "BEST SELLER"
+      - text "TOP RATED"
+        - text "TOP RATED"
+      - paragraph
+        - text "PlayBuild"
+          - text "PlayBuild"
+      - link "Creator City 500-Piece Building Set" [focusable=True]
+        - text "Creator City 500-Piece Building Set"
+          - text "Creator City 500-Piece Building Set"
+      - generic "5 out of 5 stars, 904 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "904"
+          - text "904"
+        - text ")"
+          - text ")"
+      - text "$34.99"
+        - text "$34.99"
+      - text "$44.99"
+        - text "$44.99"
+      - text "22"
+        - text "22"
+      - text "% off"
+        - text "% off"
+      - link "View Details" [focusable=True]
+        - text "View Details"
+          - text "View Details"
+    - article
+      - link "Space Explorer Building Kit View details" [focusable=True]
+        - image "Space Explorer Building Kit"
+        - text "View details"
+          - text "View details"
+      - paragraph
+        - text "PlayBuild"
+          - text "PlayBuild"
+      - link "Space Explorer Building Kit" [focusable=True]
+        - text "Space Explorer Building Kit"
+          - text "Space Explorer Building Kit"
+      - generic "4.4 out of 5 stars, 128 reviews"
+        - strong
+          - text "4.4"
+            - text "4.4"
+        - text "("
+          - text "("
+        - text "128"
+          - text "128"
+        - text ")"
+          - text ")"
+      - text "$27.99"
+        - text "$27.99"
+      - link "View Details" [focusable=True]
+        - text "View Details"
+          - text "View Details"
+  - contentinfo
+    - text "macy's"
+      - text "macy's"
+    - paragraph
+      - text "Great style, thoughtful gifts and memorable moments—all in one place."
+        - text "Great style, thoughtful gifts and memorable moments"
+        - text "—all in one place."
+    - heading "CUSTOMER SERVICE" [level=3]
+      - text "CUSTOMER SERVICE"
+        - text "CUSTOMER SERVICE"
+    - link "Order Status" [focusable=True]
+      - text "Order Status"
+        - text "Order Status"
+    - link "Shopping Bag" [focusable=True]
+      - text "Shopping Bag"
+        - text "Shopping Bag"
+    - link "My Lists" [focusable=True]
+      - text "My Lists"
+        - text "My Lists"
+    - heading "GIFTS & EVENTS" [level=3]
+      - text "GIFTS & EVENTS"
+        - text "GIFTS & EVENTS"
+    - link "E-Gift Cards" [focusable=True]
+      - text "E-Gift Cards"
+        - text "E-Gift Cards"
+    - link "Wedding Registry" [focusable=True]
+      - text "Wedding Registry"
+        - text "Wedding Registry"
+    - link "Giftable Toys" [focusable=True]
+      - text "Giftable Toys"
+        - text "Giftable Toys"
+    - heading "POPULAR SHOPS" [level=3]
+      - text "POPULAR SHOPS"
+        - text "POPULAR SHOPS"
+    - link "Trending Now" [focusable=True]
+      - text "Trending Now"
+        - text "Trending Now"
+    - link "Kitchen Sale" [focusable=True]
+      - text "Kitchen Sale"
+        - text "Kitchen Sale"
+    - link "Clearance" [focusable=True]
+      - text "Clearance"
+        - text "Clearance"
+    - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."

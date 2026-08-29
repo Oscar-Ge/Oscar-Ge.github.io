@@ -1,0 +1,287 @@
+- document "Udemy Learning Marketplace" [focused=True, focusable=True]
+  - banner
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - button "Explore" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+    - search
+      - entry "Search for anything" value="Python" [focusable=True]
+        - text "Python"
+          - text "Python"
+    - navigation "Primary navigation"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Teach on Udemy" [focusable=True]
+        - text "Teach on Udemy"
+          - text "Teach on Udemy"
+      - link "Wishlist with 0 courses" [focusable=True]
+      - link "Cart with 0 courses" [focusable=True]
+    - link "Cart with 0 courses" [focusable=True]
+  - main
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - text "Course results"
+      - text "Course results"
+    - text "COURSE MARKETPLACE"
+      - text "COURSE MARKETPLACE"
+    - heading "Results for “Python”" [level=1]
+      - text "Results for “Python”"
+        - text "Results for “Python”"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text "course"
+        - text "course"
+      - text "s"
+        - text "s"
+      - text "match your search and filters."
+        - text "match your search and filters."
+    - LabelText
+      - text "SORT BY"
+        - text "SORT BY"
+      - combobox "Sort courses" value="Most relevant" [focusable=True]
+        - MenuListPopup
+          - option "Most relevant" [focusable=True, selected=True]
+          - option "Highest rated" [focusable=True]
+          - option "Newest" [focusable=True]
+          - option "Most popular" [focusable=True]
+    - button "Filters" [focusable=True]
+      - text "Filters"
+        - text "Filters"
+    - complementary
+      - heading "Filter results" [level=2]
+        - text "Filter results"
+          - text "Filter results"
+      - LabelText
+        - text "RATING"
+          - text "RATING"
+        - combobox "RATING" value="Any rating" [focusable=True]
+          - MenuListPopup
+            - option "Any rating" [focusable=True, selected=True]
+            - option "5.0 only" [focusable=True]
+            - option "4.5 & up" [focusable=True]
+            - option "4.0 & up" [focusable=True]
+            - option "3.5 & up" [focusable=True]
+      - LabelText
+        - text "VIDEO DURATION"
+          - text "VIDEO DURATION"
+        - combobox "VIDEO DURATION" value="Any duration" [focusable=True]
+          - MenuListPopup
+            - option "Any duration" [focusable=True, selected=True]
+            - option "Up to 1 hour" [focusable=True]
+            - option "1–3 hours" [focusable=True]
+            - option "3–6 hours" [focusable=True]
+            - option "17+ hours" [focusable=True]
+      - LabelText
+        - text "LEVEL"
+          - text "LEVEL"
+        - combobox "LEVEL" value="All levels" [focusable=True]
+          - MenuListPopup
+            - option "All levels" [focusable=True, selected=True]
+            - option "Beginner" [focusable=True]
+            - option "Intermediate" [focusable=True]
+            - option "Expert" [focusable=True]
+      - LabelText
+        - text "COURSE LANGUAGE"
+          - text "COURSE LANGUAGE"
+        - combobox "COURSE LANGUAGE" value="Any language" [focusable=True]
+          - MenuListPopup
+            - option "Any language" [focusable=True, selected=True]
+            - option "English" [focusable=True]
+            - option "Portuguese" [focusable=True]
+            - option "French" [focusable=True]
+      - LabelText
+        - text "SUBTITLES"
+          - text "SUBTITLES"
+        - combobox "SUBTITLES" value="Any subtitles" [focusable=True]
+          - MenuListPopup
+            - option "Any subtitles" [focusable=True, selected=True]
+            - option "English subtitles" [focusable=True]
+            - option "French subtitles" [focusable=True]
+            - option "Portuguese subtitles" [focusable=True]
+      - LabelText
+        - text "TOPIC"
+          - text "TOPIC"
+        - combobox "TOPIC" value="Any topic" [focusable=True]
+          - MenuListPopup
+            - option "Any topic" [focusable=True, selected=True]
+            - option "Weight Loss" [focusable=True]
+            - option "Game Design" [focusable=True]
+            - option "Startup" [focusable=True]
+            - option "Public Speaking" [focusable=True]
+            - option "Meditation and Sound Therapy" [focusable=True]
+            - option "AWS Certification" [focusable=True]
+      - LabelText
+        - checkbox "Beginner favorites Courses learners love when starting out" [focusable=True]
+        - strong
+          - text "Beginner favorites"
+            - text "Beginner favorites"
+        - text "Courses learners love when starting out"
+          - text "Courses learners love when starting"
+          - text "out"
+    - article
+      - link "View Python From Zero: The Beginner Masterclass" [focusable=True]
+        - text "PYTHON"
+          - text "PYTHON"
+      - link "Python From Zero: The Beginner Masterclass" [focusable=True]
+        - heading "Python From Zero: The Beginner Masterclass" [level=3]
+          - text "Python From Zero: The Beginner Masterclass"
+            - text "Python From Zero: The Beginner Masterclass"
+      - button "Add Python From Zero: The Beginner Masterclass to wishlist" [focusable=True]
+      - paragraph
+        - text "Learn Python by building 12 practical projects, from your first variable to a complete web app."
+          - text "Learn Python by building 12 practical projects, from your first variable to a complete web app."
+      - paragraph
+        - text "Maya Chen"
+          - text "Maya Chen"
+      - generic "4.9 out of 5 stars"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "68,420"
+          - text "68,420"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "28 total hours"
+          - text "28 total hours"
+        - text "·"
+          - text "·"
+        - text "214"
+          - text "214"
+        - text "lectures ·"
+          - text "lectures ·"
+        - text "Beginner"
+          - text "Beginner"
+      - text "Highest rated"
+        - text "Highest rated"
+      - text "Beginner favorite"
+        - text "Beginner favorite"
+      - strong
+        - text "$"
+          - text "$"
+        - text "94.99"
+          - text "94.99"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "139.99"
+          - text "139.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "View 100 Days of Practical Python" [focusable=True]
+        - text "PYTHON"
+          - text "PYTHON"
+      - link "100 Days of Practical Python" [focusable=True]
+        - heading "100 Days of Practical Python" [level=3]
+          - text "100 Days of Practical Python"
+            - text "100 Days of Practical Python"
+      - button "Add 100 Days of Practical Python to wishlist" [focusable=True]
+      - paragraph
+        - text "A project-first Python bootcamp designed for complete beginners and career changers."
+          - text "A project-first Python bootcamp designed for complete beginners and career changers."
+      - paragraph
+        - text "Jon Bell"
+          - text "Jon Bell"
+      - generic "4.8 out of 5 stars"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "41,280"
+          - text "41,280"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "54 total hours"
+          - text "54 total hours"
+        - text "·"
+          - text "·"
+        - text "380"
+          - text "380"
+        - text "lectures ·"
+          - text "lectures ·"
+        - text "Beginner"
+          - text "Beginner"
+      - text "Bestseller"
+        - text "Bestseller"
+      - text "Beginner favorite"
+        - text "Beginner favorite"
+      - strong
+        - text "$"
+          - text "$"
+        - text "89.99"
+          - text "89.99"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "129.99"
+          - text "129.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+  - contentinfo
+    - text "LEARN WITHOUT LIMITS"
+      - text "LEARN WITHOUT LIMITS"
+    - heading "Skills open doors. Start learning today." [level=2]
+      - text "Skills open doors. Start learning today."
+        - text "Skills open doors. Start learning today."
+    - link "Explore top courses" [focusable=True]
+      - text "Explore top courses"
+        - text "Explore top courses"
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - paragraph
+      - text "Learn practical skills from real-world experts, at your pace."
+        - text "Learn practical skills from real-world experts, at your"
+        - text "pace."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Development" [focusable=True]
+      - text "Development"
+        - text "Development"
+    - link "Business" [focusable=True]
+      - text "Business"
+        - text "Business"
+    - link "Certifications" [focusable=True]
+      - text "Certifications"
+        - text "Certifications"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - link "Investor events" [focusable=True]
+      - text "Investor events"
+        - text "Investor events"
+    - link "Become a tutor" [focusable=True]
+      - text "Become a tutor"
+        - text "Become a tutor"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - link "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - link "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - text "© 2026 Udemy Learning, Inc."
+      - text "© 2026 Udemy Learning, Inc."
+    - text "English"
+      - text "English"

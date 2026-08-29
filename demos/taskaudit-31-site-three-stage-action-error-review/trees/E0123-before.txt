@@ -1,0 +1,315 @@
+- document "FlightAware — Live Flight Tracking & Aviation Intelligence" [focused=True, focusable=True]
+  - banner
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - navigation "Main navigation"
+      - link "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - link "Airports" [focusable=True]
+        - text "Airports"
+          - text "Airports"
+      - link "Photos" [focusable=True]
+        - text "Photos"
+          - text "Photos"
+      - link "Community" [focusable=True]
+        - text "Community"
+          - text "Community"
+      - button "Products" [focusable=True]
+        - text "Products"
+          - text "Products"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - form
+      - entry "Search flight or tail number" [focusable=True, required=True]
+      - button "Submit flight search" [focusable=True]
+  - main
+    - text "AEROAPI"
+      - text "AEROAPI"
+    - heading "Aviation data, ready when you are." [level=1]
+      - text "Aviation data,"
+        - text "Aviation data,"
+      - LineBreak
+        - text
+      - text "ready when you are."
+        - text "ready when you are."
+    - paragraph
+      - text "Build with reliable flight status, tracks, schedules, airport data, and predictive intelligence."
+        - text "Build with reliable flight status, tracks, schedules, airport data, and predictive"
+        - text "intelligence."
+    - text "GET /aeroapi/flights/UA549 { \"status\": \"Scheduled\", \"aircraft_type\": \"B789\", \"origin\": \"KSFO\", \"destination\": \"KEWR\" }"
+      - text "GET /aeroapi/flights/UA549"
+      - text
+      - text
+      - text "{"
+      - text
+      - text
+      - text "\"status\": \"Scheduled\","
+      - text
+      - text
+      - text "\"aircraft_type\": \"B789\","
+      - text
+      - text
+      - text "\"origin\": \"KSFO\","
+      - text
+      - text
+      - text "\"destination\": \"KEWR\""
+      - text
+      - text "}"
+    - text "SIMPLE, SCALABLE PRICING"
+      - text "SIMPLE, SCALABLE PRICING"
+    - heading "Compare AeroAPI plans" [level=2]
+      - text "Compare AeroAPI plans"
+        - text "Compare AeroAPI plans"
+    - paragraph
+      - text "Start with the data volume you need today and move up whenever you’re ready."
+        - text "Start with the data volume you need today and move up whenever you’re ready."
+    - article
+      - heading "Starter" [level=3]
+        - text "Starter"
+          - text "Starter"
+      - paragraph
+        - text "For prototypes and evaluation"
+          - text "For prototypes and evaluation"
+      - strong
+        - text "$0"
+          - text "$0"
+      - text "500 calls / month"
+        - text "500 calls / month"
+      - list
+        - listitem [level=1]
+          - text "Current flight status"
+            - text "Current flight status"
+        - listitem [level=1]
+          - text "Airport reference data"
+            - text "Airport reference data"
+        - listitem [level=1]
+          - text "Community support"
+            - text "Community support"
+      - button "Choose Starter" [focusable=True]
+        - text "Choose"
+          - text "Choose"
+        - text "Starter"
+          - text "Starter"
+    - article
+      - heading "Standard" [level=3]
+        - text "Standard"
+          - text "Standard"
+      - paragraph
+        - text "For growing applications"
+          - text "For growing applications"
+      - strong
+        - text "$99"
+          - text "$99"
+      - text "10,000 calls / month"
+        - text "10,000 calls / month"
+      - list
+        - listitem [level=1]
+          - text "All Starter endpoints"
+            - text "All Starter endpoints"
+        - listitem [level=1]
+          - text "Flight tracks and history"
+            - text "Flight tracks and history"
+        - listitem [level=1]
+          - text "Email support"
+            - text "Email support"
+      - button "Choose Standard" [focusable=True]
+        - text "Choose"
+          - text "Choose"
+        - text "Standard"
+          - text "Standard"
+    - article
+      - text "BEST FOR PRODUCTION"
+        - text "BEST FOR PRODUCTION"
+      - heading "Premium" [level=3]
+        - text "Premium"
+          - text "Premium"
+      - paragraph
+        - text "For production workloads"
+          - text "For production workloads"
+      - strong
+        - text "$499"
+          - text "$499"
+      - text "100,000 calls / month"
+        - text "100,000 calls / month"
+      - list
+        - listitem [level=1]
+          - text "All Standard endpoints"
+            - text "All Standard endpoints"
+        - listitem [level=1]
+          - text "Foresight predictions"
+            - text "Foresight predictions"
+        - listitem [level=1]
+          - text "Priority support"
+            - text "Priority support"
+      - button "Choose Premium" [focusable=True]
+        - text "Choose"
+          - text "Choose"
+        - text "Premium"
+          - text "Premium"
+    - article
+      - heading "Enterprise" [level=3]
+        - text "Enterprise"
+          - text "Enterprise"
+      - paragraph
+        - text "For large-scale operations"
+          - text "For large-scale operations"
+      - strong
+        - text "Let’s talk"
+          - text "Let’s talk"
+      - text "Custom volume"
+        - text "Custom volume"
+      - list
+        - listitem [level=1]
+          - text "Custom limits"
+            - text "Custom limits"
+        - listitem [level=1]
+          - text "Service-level options"
+            - text "Service-level options"
+        - listitem [level=1]
+          - text "Dedicated solutions team"
+            - text "Dedicated solutions team"
+      - button "Choose Enterprise" [focusable=True]
+        - text "Choose"
+          - text "Choose"
+        - text "Enterprise"
+          - text "Enterprise"
+    - heading "Endpoint access by plan" [level=2]
+      - text "Endpoint access by plan"
+        - text "Endpoint access by plan"
+    - table
+      - rowgroup
+        - row
+          - columnheader "CAPABILITY"
+            - text "CAPABILITY"
+              - text "CAPABILITY"
+          - columnheader "STARTER"
+            - text "STARTER"
+              - text "STARTER"
+          - columnheader "STANDARD"
+            - text "STANDARD"
+              - text "STANDARD"
+          - columnheader "PREMIUM"
+            - text "PREMIUM"
+              - text "PREMIUM"
+          - columnheader "ENTERPRISE"
+            - text "ENTERPRISE"
+              - text "ENTERPRISE"
+      - row
+        - cell "Live status"
+          - text "Live status"
+            - text "Live status"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+      - row
+        - cell "Flight history"
+          - text "Flight history"
+            - text "Flight history"
+        - cell "—"
+          - text "—"
+            - text "—"
+        - cell "3 months"
+          - text "3 months"
+            - text "3 months"
+        - cell "5 years"
+          - text "5 years"
+            - text "5 years"
+        - cell "Custom"
+          - text "Custom"
+            - text "Custom"
+      - row
+        - cell "Predictive ETAs"
+          - text "Predictive ETAs"
+            - text "Predictive ETAs"
+        - cell "—"
+          - text "—"
+            - text "—"
+        - cell "—"
+          - text "—"
+            - text "—"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+        - cell "Included"
+          - text "Included"
+            - text "Included"
+      - row
+        - cell "Rate limits"
+          - text "Rate limits"
+            - text "Rate limits"
+        - cell "10/min"
+          - text "10/min"
+            - text "10/min"
+        - cell "60/min"
+          - text "60/min"
+            - text "60/min"
+        - cell "300/min"
+          - text "300/min"
+            - text "300/min"
+        - cell "Custom"
+          - text "Custom"
+            - text "Custom"
+  - contentinfo
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - paragraph
+      - text "Global aviation intelligence for operators, travelers, and enthusiasts."
+        - text "Global aviation intelligence for operators, travelers,"
+        - text "and enthusiasts."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - link "Flight finder" [focusable=True]
+      - text "Flight finder"
+        - text "Flight finder"
+    - link "Airports" [focusable=True]
+      - text "Airports"
+        - text "Airports"
+    - link "Popular photos" [focusable=True]
+      - text "Popular photos"
+        - text "Popular photos"
+    - heading "Community" [level=3]
+      - text "Community"
+        - text "Community"
+    - link "Discussions" [focusable=True]
+      - text "Discussions"
+        - text "Discussions"
+    - link "Aircraft by country" [focusable=True]
+      - text "Aircraft by country"
+        - text "Aircraft by country"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - heading "Business" [level=3]
+      - text "Business"
+        - text "Business"
+    - link "Subscriptions" [focusable=True]
+      - text "Subscriptions"
+        - text "Subscriptions"
+    - link "AeroAPI plans" [focused=True, focusable=True]
+      - text "AeroAPI plans"
+        - text "AeroAPI plans"
+    - link "Airport solutions" [focusable=True]
+      - text "Airport solutions"
+        - text "Airport solutions"
+    - text "© 2026 FlightAware-inspired demo"
+      - text "© 2026 FlightAware-inspired demo"
+    - text "Real-time experiences. Synthetic demo data."
+      - text "Real-time experiences. Synthetic demo data."

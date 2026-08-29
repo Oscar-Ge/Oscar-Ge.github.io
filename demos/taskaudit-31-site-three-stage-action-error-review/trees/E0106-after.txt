@@ -1,0 +1,380 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping on orders $99+"
+    - text "Free shipping on orders $99+"
+  - link "Find a store" [focusable=True]
+    - text "Find a store"
+      - text "Find a store"
+  - link "Easy online returns" [focusable=True]
+    - text "Easy online returns"
+      - text "Easy online returns"
+  - banner
+    - link "UNIQLO home" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - navigation "Primary navigation"
+      - link "WOMEN" [focusable=True]
+        - text "WOMEN"
+          - text "WOMEN"
+      - link "MEN" [focusable=True]
+        - text "MEN"
+          - text "MEN"
+      - link "KIDS" [focusable=True]
+        - text "KIDS"
+          - text "KIDS"
+      - link "BABY" [focusable=True]
+        - text "BABY"
+          - text "BABY"
+      - link "TODDLER" [focusable=True]
+        - text "TODDLER"
+          - text "TODDLER"
+      - link "SALE" [focusable=True]
+        - text "SALE"
+          - text "SALE"
+    - search
+      - entry "Search products" [focusable=True]
+    - link "Store finder" [focusable=True]
+      - text "Stores"
+        - text "Stores"
+    - link "Sign in" [focusable=True]
+      - text "Account"
+        - text "Account"
+    - link "Wishlist with 0 items" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - paragraph
+      - text "STORE LOCATOR"
+        - text "STORE LOCATOR"
+    - heading "Find LifeWear near you." [level=1]
+      - text "Find LifeWear near you."
+        - text "Find LifeWear near you."
+    - paragraph
+      - text "Search by city, state, or ZIP. Filter services and get clear directions."
+        - text "Search by city, state, or ZIP. Filter services and get clear directions."
+    - complementary
+      - heading "Find a store" [level=2]
+        - text "Find a store"
+          - text "Find a store"
+      - LabelText
+        - text "CITY, STATE, OR ZIP CODE"
+          - text "CITY, STATE, OR ZIP CODE"
+        - entry "CITY, STATE, OR ZIP CODE" [focusable=True]
+      - LabelText
+        - text "STATE"
+          - text "STATE"
+        - combobox "STATE" value="All states" [focusable=True]
+          - MenuListPopup
+            - option "All states" [focusable=True, selected=True]
+            - option "Illinois (IL)" [focusable=True]
+            - option "District of Columbia (DC)" [focusable=True]
+            - option "Washington (WA)" [focusable=True]
+            - option "New York (NY)" [focusable=True]
+      - group "STORE FEATURES"
+        - Legend
+          - text "STORE FEATURES"
+            - text "STORE FEATURES"
+        - LabelText
+          - checkbox "Large store" [focusable=True]
+          - text "Large store"
+            - text "Large store"
+        - LabelText
+          - checkbox "Kids' products" [focusable=True]
+          - text "Kids' products"
+            - text "Kids' products"
+        - LabelText
+          - checkbox "Maternity products" [focusable=True]
+          - text "Maternity products"
+            - text "Maternity products"
+        - LabelText
+          - checkbox "Parking lot" [focusable=True]
+          - text "Parking lot"
+            - text "Parking lot"
+      - button "SEARCH STORES" [focused=True, focusable=True]
+        - text "SEARCH STORES"
+          - text "SEARCH STORES"
+      - button "FIND NEAREST" [focusable=True]
+        - text "FIND NEAREST"
+          - text "FIND NEAREST"
+      - button "Reset search" [focusable=True]
+        - text "Reset search"
+          - text "Reset search"
+    - paragraph
+      - text "STORE RESULTS"
+        - text "STORE RESULTS"
+    - heading "7 stores found" [level=2]
+      - text "7"
+        - text "7"
+      - text "store"
+        - text "store"
+      - text "s"
+        - text "s"
+      - text "found"
+        - text "found"
+    - article
+      - text "1"
+        - text "1"
+      - heading "UNIQLO 5th Avenue" [level=3]
+        - text "UNIQLO 5th Avenue"
+          - text "UNIQLO 5th Avenue"
+      - paragraph
+        - text "666 5th Avenue, New York, NY 10017"
+          - text "666 5th Avenue, New York, NY 10017"
+      - text "10:00 AM–9:00 PM"
+        - text "10:00 AM–9:00 PM"
+      - text "(212) 555-0155"
+        - text "(212) 555-0155"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Maternity"
+        - text "Maternity"
+      - text "Parking"
+        - text "Parking"
+      - text "not available"
+        - text "not available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "2"
+        - text "2"
+      - heading "UNIQLO Chicago State Street" [level=3]
+        - text "UNIQLO Chicago State Street"
+          - text "UNIQLO Chicago State Street"
+      - paragraph
+        - text "22 N State Street, Chicago, IL 60602"
+          - text "22 N State Street, Chicago, IL 60602"
+      - text "10:00 AM–8:00 PM"
+        - text "10:00 AM–8:00 PM"
+      - text "(312) 555-0180"
+        - text "(312) 555-0180"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Parking"
+        - text "Parking"
+      - text "not available"
+        - text "not available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "3"
+        - text "3"
+      - heading "UNIQLO Washington Union Station" [level=3]
+        - text "UNIQLO Washington Union Station"
+          - text "UNIQLO Washington Union Station"
+      - paragraph
+        - text "50 Massachusetts Avenue NE, Washington, DC 20002"
+          - text "50 Massachusetts Avenue NE, Washington, DC 20002"
+      - text "10:00 AM–8:00 PM"
+        - text "10:00 AM–8:00 PM"
+      - text "(202) 555-0140"
+        - text "(202) 555-0140"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Maternity"
+        - text "Maternity"
+      - text "Parking"
+        - text "Parking"
+      - text "available"
+        - text "available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "4"
+        - text "4"
+      - heading "UNIQLO Michigan Avenue" [level=3]
+        - text "UNIQLO Michigan Avenue"
+          - text "UNIQLO Michigan Avenue"
+      - paragraph
+        - text "830 N Michigan Avenue, Chicago, IL 60611"
+          - text "830 N Michigan Avenue, Chicago, IL 60611"
+      - text "10:00 AM–9:00 PM"
+        - text "10:00 AM–9:00 PM"
+      - text "(312) 555-0128"
+        - text "(312) 555-0128"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Maternity"
+        - text "Maternity"
+      - text "Parking"
+        - text "Parking"
+      - text "available"
+        - text "available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "5"
+        - text "5"
+      - heading "UNIQLO SoHo" [level=3]
+        - text "UNIQLO SoHo"
+          - text "UNIQLO SoHo"
+      - paragraph
+        - text "546 Broadway, New York, NY 10012"
+          - text "546 Broadway, New York, NY 10012"
+      - text "10:00 AM–9:00 PM"
+        - text "10:00 AM–9:00 PM"
+      - text "(212) 555-0177"
+        - text "(212) 555-0177"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Parking"
+        - text "Parking"
+      - text "not available"
+        - text "not available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "6"
+        - text "6"
+      - heading "UNIQLO Bellevue Square" [level=3]
+        - text "UNIQLO Bellevue Square"
+          - text "UNIQLO Bellevue Square"
+      - paragraph
+        - text "575 Bellevue Square, Bellevue, WA 98004"
+          - text "575 Bellevue Square, Bellevue, WA 98004"
+      - text "10:00 AM–9:00 PM"
+        - text "10:00 AM–9:00 PM"
+      - text "(425) 555-0199"
+        - text "(425) 555-0199"
+      - text "Large store"
+        - text "Large store"
+      - text "Kids"
+        - text "Kids"
+      - text "Maternity"
+        - text "Maternity"
+      - text "Parking"
+        - text "Parking"
+      - text "available"
+        - text "available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+    - article
+      - text "7"
+        - text "7"
+      - heading "UNIQLO Oakbrook Center" [level=3]
+        - text "UNIQLO Oakbrook Center"
+          - text "UNIQLO Oakbrook Center"
+      - paragraph
+        - text "1150 Oakbrook Center, Oak Brook, IL 60523"
+          - text "1150 Oakbrook Center, Oak Brook, IL 60523"
+      - text "10:00 AM–8:00 PM"
+        - text "10:00 AM–8:00 PM"
+      - text "(630) 555-0114"
+        - text "(630) 555-0114"
+      - text "Kids"
+        - text "Kids"
+      - text "Parking"
+        - text "Parking"
+      - text "available"
+        - text "available"
+      - button "GET DIRECTIONS" [focusable=True]
+        - text "GET DIRECTIONS"
+          - text "GET DIRECTIONS"
+      - button "SET AS MY STORE" [focusable=True]
+        - text "SET AS MY STORE"
+          - text "SET AS MY STORE"
+  - contentinfo
+    - link "UNI QLO" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - paragraph
+      - text "Simple, high-quality everyday clothing with a practical sense of beauty."
+        - text "Simple, high-quality everyday clothing with a"
+        - text "practical sense of beauty."
+    - button "United States / English" [focusable=True]
+      - text "United States / English"
+        - text "United States / English"
+    - heading "SHOP" [level=2]
+      - text "SHOP"
+        - text "SHOP"
+    - link "Women" [focusable=True]
+      - text "Women"
+        - text "Women"
+    - link "Men" [focusable=True]
+      - text "Men"
+        - text "Men"
+    - link "Kids" [focusable=True]
+      - text "Kids"
+        - text "Kids"
+    - link "Baby" [focusable=True]
+      - text "Baby"
+        - text "Baby"
+    - link "Sale" [focusable=True]
+      - text "Sale"
+        - text "Sale"
+    - heading "HELP" [level=2]
+      - text "HELP"
+        - text "HELP"
+    - link "Store locator" [focusable=True]
+      - text "Store locator"
+        - text "Store locator"
+    - link "Online returns" [focusable=True]
+      - text "Online returns"
+        - text "Online returns"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - link "Wishlist" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "My account" [focusable=True]
+      - text "My account"
+        - text "My account"
+    - heading "DISCOVER" [level=2]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "New arrivals" [focusable=True]
+      - text "New arrivals"
+        - text "New arrivals"
+    - link "Limited-time offers" [focusable=True]
+      - text "Limited-time offers"
+        - text "Limited-time offers"
+    - link "Sport Utility Wear" [focusable=True]
+      - text "Sport Utility Wear"
+        - text "Sport Utility Wear"
+    - link "Toddler collection" [focusable=True]
+      - text "Toddler collection"
+        - text "Toddler collection"
+    - text "© 2026 UNIQLO mock storefront"
+      - text "© 2026 UNIQLO mock storefront"
+    - text "Designed for this interactive prototype · No real purchases are processed"
+      - text "Designed for this interactive prototype · No real purchases are processed"

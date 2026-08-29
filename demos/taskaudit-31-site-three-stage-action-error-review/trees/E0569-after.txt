@@ -1,0 +1,212 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focused=True, focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Education"
+        - text "Education"
+    - paragraph
+      - text "MAYO CLINIC COLLEGE OF MEDICINE AND SCIENCE"
+        - text "MAYO CLINIC COLLEGE OF MEDICINE AND SCIENCE"
+    - heading "Build the future of medicine" [level=1]
+      - text "Build the future of medicine"
+        - text "Build the future of medicine"
+    - paragraph
+      - text "Learn from experts, care for patients and contribute to discoveries in an environment designed for your growth."
+        - text "Learn from experts, care for patients and contribute to discoveries in an environment designed"
+        - text "for your growth."
+    - form
+      - heading "Find an education program" [level=2]
+        - text "Find an education program"
+          - text "Find an education program"
+      - LabelText
+        - text "Program keyword"
+          - text "Program keyword"
+        - entry "Program keyword" [focusable=True]
+      - LabelText
+        - text "Campus"
+          - text "Campus"
+        - combobox "Campus" value="All campuses" [focusable=True]
+          - MenuListPopup
+            - option "All campuses" [focusable=True, selected=True]
+            - option "Florida" [focusable=True]
+            - option "Minnesota" [focusable=True]
+            - option "Arizona" [focusable=True]
+      - LabelText
+        - text "Program type"
+          - text "Program type"
+        - combobox "Program type" value="All program types" [focusable=True]
+          - MenuListPopup
+            - option "All program types" [focusable=True, selected=True]
+            - option "Internship" [focusable=True]
+            - option "Degree" [focusable=True]
+      - button "Find programs" [focusable=True]
+        - text "Find programs"
+          - text "Find programs"
+    - paragraph
+      - text "PROGRAMS"
+        - text "PROGRAMS"
+    - heading "Featured opportunities" [level=2]
+      - text "Featured opportunities"
+        - text "Featured opportunities"
+    - article
+      - text "Internship"
+        - text "Internship"
+      - text "Florida"
+        - text "Florida"
+      - heading "Summer Undergraduate Research Fellowship (SURF)" [level=3]
+        - link "Summer Undergraduate Research Fellowship (SURF)" [focusable=True]
+          - text "Summer Undergraduate Research Fellowship (SURF)"
+            - text "Summer Undergraduate Research Fellowship (SURF)"
+      - paragraph
+        - text "A paid, full-time summer research experience with Mayo Clinic scientists and laboratory teams."
+          - text "A paid, full-time summer research experience with Mayo Clinic scientists and laboratory teams."
+      - text "Jacksonville, Florida"
+        - text "Jacksonville, Florida"
+      - text "10 weeks"
+        - text "10 weeks"
+      - text "Undergraduate students"
+        - text "Undergraduate students"
+      - link "View Summer Undergraduate Research Fellowship (SURF)" [focusable=True]
+    - article
+      - text "Internship"
+        - text "Internship"
+      - text "Florida"
+        - text "Florida"
+      - heading "Biomedical Research Internship" [level=3]
+        - link "Biomedical Research Internship" [focusable=True]
+          - text "Biomedical Research Internship"
+            - text "Biomedical Research Internship"
+      - paragraph
+        - text "Hands-on laboratory experience in neuroscience, cancer biology and regenerative medicine."
+          - text "Hands-on laboratory experience in neuroscience, cancer biology and regenerative medicine."
+      - text "Jacksonville, Florida"
+        - text "Jacksonville, Florida"
+      - text "12 weeks"
+        - text "12 weeks"
+      - text "College juniors and seniors"
+        - text "College juniors and seniors"
+      - link "View Biomedical Research Internship" [focusable=True]
+    - article
+      - text "Internship"
+        - text "Internship"
+      - text "Florida"
+        - text "Florida"
+      - heading "Clinical Research Internship" [level=3]
+        - link "Clinical Research Internship" [focusable=True]
+          - text "Clinical Research Internship"
+            - text "Clinical Research Internship"
+      - paragraph
+        - text "Mentored experience in study design, clinical data and patient-centered outcomes research."
+          - text "Mentored experience in study design, clinical data and patient-centered outcomes research."
+      - text "Jacksonville, Florida"
+        - text "Jacksonville, Florida"
+      - text "8 weeks"
+        - text "8 weeks"
+      - text "Undergraduate and graduate students"
+        - text "Undergraduate and graduate students"
+      - link "View Clinical Research Internship" [focusable=True]
+    - article
+      - text "Degree"
+        - text "Degree"
+      - text "All campuses"
+        - text "All campuses"
+      - heading "M.D. Program" [level=3]
+        - link "M.D. Program" [focusable=True]
+          - text "M.D. Program"
+            - text "M.D. Program"
+      - paragraph
+        - text "An innovative medical curriculum built around patient care, science and leadership."
+          - text "An innovative medical curriculum built around patient care, science and leadership."
+      - text "Minnesota and Arizona"
+        - text "Minnesota and Arizona"
+      - text "4 years"
+        - text "4 years"
+      - text "Future physicians"
+        - text "Future physicians"
+      - link "View M.D. Program" [focusable=True]
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

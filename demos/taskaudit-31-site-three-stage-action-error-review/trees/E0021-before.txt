@@ -1,0 +1,217 @@
+- document "CarGurus | Shop, Sell & Research Cars" [focused=True, focusable=True]
+  - banner
+    - link "CarGurus home" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - navigation "Main navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Sell" [focusable=True]
+        - text "Sell"
+          - text "Sell"
+      - link "Finance" [focusable=True]
+        - text "Finance"
+          - text "Finance"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+      - link "Price trends" [focusable=True]
+        - text "Price trends"
+          - text "Price trends"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved cars" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "JOIN OUR TEAM"
+        - text "JOIN OUR TEAM"
+    - heading "Help people drive what’s possible" [level=1]
+      - text "Help people drive what’s possible"
+        - text "Help people drive what’s possible"
+    - paragraph
+      - text "Build products and partnerships that bring more confidence to car shopping."
+        - text "Build products and partnerships that bring more confidence to car shopping."
+    - paragraph
+      - text "OPEN POSITIONS"
+        - text "OPEN POSITIONS"
+    - heading "Find your next opportunity" [level=2]
+      - text "Find your next opportunity"
+        - text "Find your next opportunity"
+    - paragraph
+      - text "Search our synthetic job openings by team or location."
+        - text "Search our synthetic job openings by team or location."
+    - form
+      - LabelText
+        - entry [focusable=True]
+      - LabelText
+        - entry [focusable=True]
+      - button "Search jobs" [focusable=True]
+        - text "Search jobs"
+          - text "Search jobs"
+    - paragraph
+      - text "3"
+        - text "3"
+      - text "open position"
+        - text "open position"
+      - text "s"
+        - text "s"
+    - article
+      - text "SALES"
+        - text "SALES"
+      - heading "Regional Sales Executive" [level=3]
+        - text "Regional Sales Executive"
+          - text "Regional Sales Executive"
+      - paragraph
+        - text "Help dealerships grow by connecting them with high-intent car shoppers across Northern California."
+          - text "Help dealerships grow by connecting them with high-intent car shoppers across Northern California."
+      - text "San Francisco, CA"
+        - text "San Francisco, CA"
+      - text "Full-time"
+        - text "Full-time"
+      - button "View & apply" [focusable=True]
+        - text "View & apply"
+          - text "View & apply"
+    - article
+      - text "CUSTOMER SUCCESS"
+        - text "CUSTOMER SUCCESS"
+      - heading "Account Manager" [level=3]
+        - text "Account Manager"
+          - text "Account Manager"
+      - paragraph
+        - text "Build lasting relationships with dealer partners and help them get more value from our marketplace."
+          - text "Build lasting relationships with dealer partners and help them get more value from our marketplace."
+      - text "Boston, MA"
+        - text "Boston, MA"
+      - text "Full-time"
+        - text "Full-time"
+      - button "View & apply" [focused=True, focusable=True]
+        - text "View & apply"
+          - text "View & apply"
+    - article
+      - text "PRODUCT & ENGINEERING"
+        - text "PRODUCT & ENGINEERING"
+      - heading "Senior Frontend Engineer" [level=3]
+        - text "Senior Frontend Engineer"
+          - text "Senior Frontend Engineer"
+      - paragraph
+        - text "Create clear, fast shopping experiences for millions of people researching their next car."
+          - text "Create clear, fast shopping experiences for millions of people researching their next car."
+      - text "Remote, US"
+        - text "Remote, US"
+      - text "Full-time"
+        - text "Full-time"
+      - button "View & apply" [focusable=True]
+        - text "View & apply"
+          - text "View & apply"
+    - dialog "Apply for Regional Sales Executive"
+      - button "Close" [focusable=True]
+      - paragraph
+        - text "SALES"
+          - text "SALES"
+      - heading "Regional Sales Executive" [level=2]
+        - text "Regional Sales Executive"
+          - text "Regional Sales Executive"
+      - paragraph
+        - text "San Francisco, CA"
+          - text "San Francisco, CA"
+        - text "·"
+          - text "·"
+        - text "Full-time"
+          - text "Full-time"
+      - paragraph
+        - text "Help dealerships grow by connecting them with high-intent car shoppers across Northern California."
+          - text "Help dealerships grow by connecting them with high-intent car shoppers across"
+          - text "Northern California."
+      - heading "What you’ll do" [level=3]
+        - text "What you’ll do"
+          - text "What you’ll do"
+      - list
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Build trusted relationships with automotive retail partners."
+            - text "Build trusted relationships with automotive retail partners."
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Use marketplace insights to identify growth opportunities."
+            - text "Use marketplace insights to identify growth opportunities."
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Collaborate with product, marketing, and customer success."
+            - text "Collaborate with product, marketing, and customer success."
+      - form
+        - LabelText
+          - text "Full name"
+            - text "Full name"
+          - entry "Full name" [focusable=True, required=True]
+        - LabelText
+          - text "Email"
+            - text "Email"
+          - entry "Email" [focusable=True, required=True]
+        - LabelText
+          - text "Phone"
+            - text "Phone"
+          - entry "Phone" [focusable=True]
+        - LabelText
+          - text "Why are you a fit?"
+            - text "Why are you a fit?"
+          - entry "Why are you a fit?" [focusable=True, required=True]
+        - button "Submit application" [focusable=True]
+          - text "Submit application"
+            - text "Submit application"
+  - contentinfo
+    - link "Car Gurus" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - paragraph
+      - text "Giving people the power to reach their destination with confidence."
+        - text "Giving people the power to reach their destination"
+        - text "with confidence."
+    - heading "Shop" [level=3]
+      - text "Shop"
+        - text "Shop"
+    - link "Used cars" [focusable=True]
+      - text "Used cars"
+        - text "Used cars"
+    - link "Car reviews" [focusable=True]
+      - text "Car reviews"
+        - text "Car reviews"
+    - link "Price trends" [focusable=True]
+      - text "Price trends"
+        - text "Price trends"
+    - heading "Sell & finance" [level=3]
+      - text "Sell & finance"
+        - text "Sell & finance"
+    - link "Get an offer" [focusable=True]
+      - text "Get an offer"
+        - text "Get an offer"
+    - link "Loan calculator" [focusable=True]
+      - text "Loan calculator"
+        - text "Loan calculator"
+    - link "Pre-qualify" [focusable=True]
+      - text "Pre-qualify"
+        - text "Pre-qualify"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "Mock marketplace experience"
+      - text "Mock marketplace experience"
+    - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+      - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+    - text "Built for confident car shopping."
+      - text "Built for confident car shopping."

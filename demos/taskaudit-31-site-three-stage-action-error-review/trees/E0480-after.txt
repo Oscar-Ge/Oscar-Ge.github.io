@@ -1,0 +1,690 @@
+- document "Udemy Learning Marketplace" [focused=True, focusable=True]
+  - banner
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - button "Explore" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+    - search
+      - entry "Search for anything" [focusable=True]
+    - navigation "Primary navigation"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Teach on Udemy" [focusable=True]
+        - text "Teach on Udemy"
+          - text "Teach on Udemy"
+      - link "Wishlist with 0 courses" [focusable=True]
+      - link "Cart with 0 courses" [focusable=True]
+    - link "Cart with 0 courses" [focusable=True]
+  - text "Learn the skills shaping 2026"
+    - text "Learn the skills shaping 2026"
+  - heading "Learn today. Lead tomorrow." [level=1]
+    - text "Learn today."
+      - text "Learn today."
+    - LineBreak
+      - text
+    - emphasis
+      - text "Lead tomorrow."
+        - text "Lead tomorrow."
+  - paragraph
+    - text "Build real-world skills with expert-led courses in technology, business, creativity, and more."
+      - text "Build real-world skills with expert-led courses in technology, business,"
+      - text "creativity, and more."
+  - search
+    - entry "Search for anything" [focused=True, focusable=True]
+    - button "Search" [focusable=True]
+      - text "Search"
+        - text "Search"
+  - text "Popular:"
+    - text "Popular:"
+  - link "Python" [focusable=True]
+    - text "Python"
+      - text "Python"
+  - link "JavaScript" [focusable=True]
+    - text "JavaScript"
+      - text "JavaScript"
+  - link "Public speaking" [focusable=True]
+    - text "Public speaking"
+      - text "Public speaking"
+  - strong
+    - text "78M+"
+      - text "78M+"
+  - text "Learners"
+    - text "Learners"
+  - strong
+    - text "250K+"
+      - text "250K+"
+  - text "Courses"
+    - text "Courses"
+  - strong
+    - text "4.7/5"
+      - text "4.7/5"
+  - text "Avg. rating"
+    - text "Avg. rating"
+  - generic "Learning progress illustration"
+    - text "WEEKLY PROGRESS"
+      - text "WEEKLY PROGRESS"
+    - strong
+      - text "8.5 hours"
+        - text "8.5 hours"
+    - paragraph
+      - text "You’re in the top 10% this week"
+        - text "You’re in the top 10% this week"
+    - strong
+      - text "JavaScript"
+        - text "JavaScript"
+    - text "12 lessons complete"
+      - text "12 lessons complete"
+    - text "A"
+      - text "A"
+    - text "M"
+      - text "M"
+    - text "J"
+      - text "J"
+    - strong
+      - text "24K learning now"
+        - text "24K learning now"
+    - text "Join the community"
+      - text "Join the community"
+  - text "EXPLORE BY CATEGORY"
+    - text "EXPLORE BY CATEGORY"
+  - heading "What do you want to learn?" [level=2]
+    - text "What do you want to learn?"
+      - text "What do you want to learn?"
+  - link "Development Explore top courses" [focusable=True]
+    - strong
+      - text "Development"
+        - text "Development"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - link "Business Explore top courses" [focusable=True]
+    - strong
+      - text "Business"
+        - text "Business"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - link "Design Explore top courses" [focusable=True]
+    - strong
+      - text "Design"
+        - text "Design"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - link "IT & Software Explore top courses" [focusable=True]
+    - strong
+      - text "IT & Software"
+        - text "IT & Software"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - link "Personal Development Explore top courses" [focusable=True]
+    - strong
+      - text "Personal Development"
+        - text "Personal Development"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - link "Health & Fitness Explore top courses" [focusable=True]
+    - strong
+      - text "Health & Fitness"
+        - text "Health & Fitness"
+    - text "Explore top courses"
+      - text "Explore top courses"
+  - text "CURATED FOR YOU"
+    - text "CURATED FOR YOU"
+  - heading "Skills learners love right now" [level=2]
+    - text "Skills learners love right now"
+      - text "Skills learners love right now"
+  - paragraph
+    - text "Bestsellers, fresh releases, and highly rated courses chosen by our learning community."
+      - text "Bestsellers, fresh releases, and highly rated courses chosen by our learning community."
+  - link "See all" [focusable=True]
+    - text "See all"
+      - text "See all"
+  - article
+    - link "View Business Leadership & Strategy Masterclass" [focusable=True]
+      - text "BUSINESS STRATEGY"
+        - text "BUSINESS STRATEGY"
+    - link "Business Leadership & Strategy Masterclass" [focusable=True]
+      - heading "Business Leadership & Strategy Masterclass" [level=3]
+        - text "Business Leadership & Strategy Masterclass"
+          - text "Business Leadership &"
+          - text "Strategy Masterclass"
+    - button "Add Business Leadership & Strategy Masterclass to wishlist" [focusable=True]
+    - paragraph
+      - text "Think like a general manager, lead high-performing teams, and turn strategy into measurable results."
+        - text "Think like a general manager, lead high-"
+        - text "performing teams, and turn strategy into"
+        - text "…"
+        - text "measurable results."
+    - paragraph
+      - text "Michael Rhodes"
+        - text "Michael Rhodes"
+    - generic "4.9 out of 5 stars"
+      - strong
+        - text "4.9"
+          - text "4.9"
+      - text "("
+        - text "("
+      - text "114,200"
+        - text "114,200"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "31 total hours"
+        - text "31 total hours"
+      - text "·"
+        - text "·"
+      - text "248"
+        - text "248"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "All Levels"
+        - text "All Levels"
+    - text "Most popular"
+      - text "Most popular"
+    - strong
+      - text "$"
+        - text "$"
+      - text "109.99"
+        - text "109.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "169.99"
+        - text "169.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View Python From Zero: The Beginner Masterclass" [focusable=True]
+      - text "PYTHON"
+        - text "PYTHON"
+    - link "Python From Zero: The Beginner Masterclass" [focusable=True]
+      - heading "Python From Zero: The Beginner Masterclass" [level=3]
+        - text "Python From Zero: The Beginner Masterclass"
+          - text "Python From Zero: The"
+          - text "Beginner Masterclass"
+    - button "Add Python From Zero: The Beginner Masterclass to wishlist" [focusable=True]
+    - paragraph
+      - text "Learn Python by building 12 practical projects, from your first variable to a complete web app."
+        - text "Learn Python by building 12 practical"
+        - text "projects, from your first variable to a"
+        - text "…"
+        - text "complete web app."
+    - paragraph
+      - text "Maya Chen"
+        - text "Maya Chen"
+    - generic "4.9 out of 5 stars"
+      - strong
+        - text "4.9"
+          - text "4.9"
+      - text "("
+        - text "("
+      - text "68,420"
+        - text "68,420"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "28 total hours"
+        - text "28 total hours"
+      - text "·"
+        - text "·"
+      - text "214"
+        - text "214"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "Beginner"
+        - text "Beginner"
+    - text "Highest rated"
+      - text "Highest rated"
+    - text "Beginner favorite"
+      - text "Beginner favorite"
+    - strong
+      - text "$"
+        - text "$"
+      - text "94.99"
+        - text "94.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "139.99"
+        - text "139.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View The Science of Better Habits & Personal Growth" [focusable=True]
+      - text "PERSONAL DEVELOPMENT"
+        - text "PERSONAL DEVELOPMENT"
+    - link "The Science of Better Habits & Personal Growth" [focusable=True]
+      - heading "The Science of Better Habits & Personal Growth" [level=3]
+        - text "The Science of Better Habits & Personal Growth"
+          - text "The Science of Better"
+          - text "Habits & Personal Growth"
+    - button "Add The Science of Better Habits & Personal Growth to wishlist" [focusable=True]
+    - paragraph
+      - text "Use behavioral science to make meaningful change, build resilience, and create habits that last."
+        - text "Use behavioral science to make meaningful"
+        - text "change, build resilience, and create habits"
+        - text "…"
+        - text "that last."
+    - paragraph
+      - text "Dr. Lena Brooks"
+        - text "Dr. Lena Brooks"
+    - generic "4.8 out of 5 stars"
+      - strong
+        - text "4.8"
+          - text "4.8"
+      - text "("
+        - text "("
+      - text "38,750"
+        - text "38,750"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "6.5 total hours"
+        - text "6.5 total hours"
+      - text "·"
+        - text "·"
+      - text "64"
+        - text "64"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "All Levels"
+        - text "All Levels"
+    - text "Trending"
+      - text "Trending"
+    - strong
+      - text "$"
+        - text "$"
+      - text "84.99"
+        - text "84.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "124.99"
+        - text "124.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View Unreal Engine 5 Game Development Bootcamp" [focusable=True]
+      - text "UNREAL ENGINE"
+        - text "UNREAL ENGINE"
+    - link "Unreal Engine 5 Game Development Bootcamp" [focusable=True]
+      - heading "Unreal Engine 5 Game Development Bootcamp" [level=3]
+        - text "Unreal Engine 5 Game Development Bootcamp"
+          - text "Unreal Engine 5 Game"
+          - text "Development Bootcamp"
+    - button "Add Unreal Engine 5 Game Development Bootcamp to wishlist" [focusable=True]
+    - paragraph
+      - text "Build complete 3D games with Blueprints, C++, level design, AI, and polished gameplay systems."
+        - text "Build complete 3D games with Blueprints,"
+        - text "C++, level design, AI, and polished gameplay"
+        - text "C++, level design, AI, and polished gamepl"
+        - text "…"
+        - text "systems."
+    - paragraph
+      - text "Lucas Wright"
+        - text "Lucas Wright"
+    - generic "4.8 out of 5 stars"
+      - strong
+        - text "4.8"
+          - text "4.8"
+      - text "("
+        - text "("
+      - text "33,560"
+        - text "33,560"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "22.5 total hours"
+        - text "22.5 total hours"
+      - text "·"
+        - text "·"
+      - text "192"
+        - text "192"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "All Levels"
+        - text "All Levels"
+    - text "Bestseller"
+      - text "Bestseller"
+    - strong
+      - text "$"
+        - text "$"
+      - text "94.99"
+        - text "94.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "144.99"
+        - text "144.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - text "CERTIFICATION-READY LEARNING"
+    - text "CERTIFICATION-READY LEARNING"
+  - heading "Prepare for your next cloud role." [level=2]
+    - text "Prepare for your next cloud role."
+      - text "Prepare for your next cloud role."
+  - paragraph
+    - text "Follow a focused AWS software development path, practice Amazon EC2 skills, and get ready for exam day."
+      - text "Follow a focused AWS software development path, practice Amazon EC2 skills,"
+      - text "and get ready for exam day."
+  - link "Explore AWS Developer certification" [focusable=True]
+    - text "Explore AWS Developer certification"
+      - text "Explore AWS Developer certification"
+  - text "AWS LEARNING PATH"
+    - text "AWS LEARNING PATH"
+  - heading "Developer – Associate" [level=3]
+    - text "Developer – Associate"
+      - text "Developer – Associate"
+  - list
+    - listitem [level=1]
+      - text "Amazon EC2"
+        - text "Amazon EC2"
+    - listitem [level=1]
+      - text "Serverless apps"
+        - text "Serverless apps"
+    - listitem [level=1]
+      - text "Practice exams"
+        - text "Practice exams"
+  - text "CURATED FOR YOU"
+    - text "CURATED FOR YOU"
+  - heading "Beginner favorites" [level=2]
+    - text "Beginner favorites"
+      - text "Beginner favorites"
+  - paragraph
+    - text "Friendly, practical courses designed to help you build confidence from lesson one."
+      - text "Friendly, practical courses designed to help you build confidence from lesson one."
+  - link "See all" [focusable=True]
+    - text "See all"
+      - text "See all"
+  - article
+    - link "View Startup Foundations: Validate Before You Build" [focusable=True]
+      - text "STARTUP"
+        - text "STARTUP"
+    - link "Startup Foundations: Validate Before You Build" [focusable=True]
+      - heading "Startup Foundations: Validate Before You Build" [level=3]
+        - text "Startup Foundations: Validate Before You Build"
+          - text "Startup Foundations:"
+          - text "Validate Before You Build"
+    - button "Add Startup Foundations: Validate Before You Build to wishlist" [focusable=True]
+    - paragraph
+      - text "Find a real problem, test demand, and shape a focused startup idea with minimal time and money."
+        - text "Find a real problem, test demand, and shape"
+        - text "a focused startup idea with minimal time and"
+        - text "a focused startup idea with minimal time a"
+        - text "…"
+        - text "money."
+    - paragraph
+      - text "Leila Hassan"
+        - text "Leila Hassan"
+    - generic "4.8 out of 5 stars"
+      - strong
+        - text "4.8"
+          - text "4.8"
+      - text "("
+        - text "("
+      - text "12,920"
+        - text "12,920"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "5.5 total hours"
+        - text "5.5 total hours"
+      - text "·"
+        - text "·"
+      - text "47"
+        - text "47"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "Beginner"
+        - text "Beginner"
+    - text "Beginner favorite"
+      - text "Beginner favorite"
+    - strong
+      - text "$"
+        - text "$"
+      - text "64.99"
+        - text "64.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "99.99"
+        - text "99.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View The Complete JavaScript Course for Beginners" [focusable=True]
+      - text "JAVASCRIPT"
+        - text "JAVASCRIPT"
+    - link "The Complete JavaScript Course for Beginners" [focusable=True]
+      - heading "The Complete JavaScript Course for Beginners" [level=3]
+        - text "The Complete JavaScript Course for Beginners"
+          - text "The Complete JavaScript"
+          - text "Course for Beginners"
+    - button "Add The Complete JavaScript Course for Beginners to wishlist" [focusable=True]
+    - paragraph
+      - text "Master modern JavaScript fundamentals with clear explanations and real-world browser projects."
+        - text "Master modern JavaScript fundamentals with"
+        - text "clear explanations and real-world browser"
+        - text "…"
+        - text "projects."
+    - paragraph
+      - text "Elena Torres"
+        - text "Elena Torres"
+    - generic "4.8 out of 5 stars"
+      - strong
+        - text "4.8"
+          - text "4.8"
+      - text "("
+        - text "("
+      - text "92,560"
+        - text "92,560"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "34 total hours"
+        - text "34 total hours"
+      - text "·"
+        - text "·"
+      - text "290"
+        - text "290"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "Beginner"
+        - text "Beginner"
+    - text "Most popular"
+      - text "Most popular"
+    - text "Beginner favorite"
+      - text "Beginner favorite"
+    - strong
+      - text "$"
+        - text "$"
+      - text "99.99"
+        - text "99.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "149.99"
+        - text "149.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View Home Workout for Weight Loss: 30 Days to Stronger" [focusable=True]
+      - text "WEIGHT LOSS"
+        - text "WEIGHT LOSS"
+    - link "Home Workout for Weight Loss: 30 Days to Stronger" [focusable=True]
+      - heading "Home Workout for Weight Loss: 30 Days to Stronger" [level=3]
+        - text "Home Workout for Weight Loss: 30 Days to Stronger"
+          - text "Home Workout for Weight"
+          - text "Loss: 30 Days to Stronger"
+    - button "Add Home Workout for Weight Loss: 30 Days to Stronger to wishlist" [focusable=True]
+    - paragraph
+      - text "Short, equipment-free workouts for beginners who want sustainable weight loss and better energy."
+        - text "Short, equipment-free workouts for beginners"
+        - text "who want sustainable weight loss and better"
+        - text "who want sustainable weight loss and bett"
+        - text "…"
+        - text "energy."
+    - paragraph
+      - text "Tara Johnson"
+        - text "Tara Johnson"
+    - generic "4.7 out of 5 stars"
+      - strong
+        - text "4.7"
+          - text "4.7"
+      - text "("
+        - text "("
+      - text "2,860"
+        - text "2,860"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "45 min"
+        - text "45 min"
+      - text "·"
+        - text "·"
+      - text "18"
+        - text "18"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "Beginner"
+        - text "Beginner"
+    - text "New"
+      - text "New"
+    - text "Beginner favorite"
+      - text "Beginner favorite"
+    - strong
+      - text "$"
+        - text "$"
+      - text "34.99"
+        - text "34.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "59.99"
+        - text "59.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - article
+    - link "View Pencil Drawing Fundamentals: Shape to Shading" [focusable=True]
+      - text "PENCIL DRAWING"
+        - text "PENCIL DRAWING"
+    - link "Pencil Drawing Fundamentals: Shape to Shading" [focusable=True]
+      - heading "Pencil Drawing Fundamentals: Shape to Shading" [level=3]
+        - text "Pencil Drawing Fundamentals: Shape to Shading"
+          - text "Pencil Drawing"
+          - text "Fundamentals: Shape to"
+          - text "…"
+          - text "Shading"
+    - button "Add Pencil Drawing Fundamentals: Shape to Shading to wishlist" [focusable=True]
+    - paragraph
+      - text "Build strong drawing habits through form, perspective, value, and everyday sketching exercises."
+        - text "Build strong drawing habits through form,"
+        - text "perspective, value, and everyday sketching"
+        - text "perspective, value, and everyday sketchin"
+        - text "…"
+        - text "exercises."
+    - paragraph
+      - text "Theo Martin"
+        - text "Theo Martin"
+    - generic "5 out of 5 stars"
+      - strong
+        - text "5.0"
+          - text "5.0"
+      - text "("
+        - text "("
+      - text "960"
+        - text "960"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "7.5 total hours"
+        - text "7.5 total hours"
+      - text "·"
+        - text "·"
+      - text "62"
+        - text "62"
+      - text "lectures ·"
+        - text "lectures ·"
+      - text "Beginner"
+        - text "Beginner"
+    - text "Top rated"
+      - text "Top rated"
+    - text "Beginner favorite"
+      - text "Beginner favorite"
+    - strong
+      - text "$"
+        - text "$"
+      - text "59.99"
+        - text "59.99"
+    - deletion
+      - text "$"
+        - text "$"
+      - text "89.99"
+        - text "89.99"
+    - button "Add to cart" [focusable=True]
+      - text "Add to cart"
+        - text "Add to cart"
+  - contentinfo
+    - text "LEARN WITHOUT LIMITS"
+      - text "LEARN WITHOUT LIMITS"
+    - heading "Skills open doors. Start learning today." [level=2]
+      - text "Skills open doors. Start learning today."
+        - text "Skills open doors. Start learning today."
+    - link "Explore top courses" [focusable=True]
+      - text "Explore top courses"
+        - text "Explore top courses"
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - paragraph
+      - text "Learn practical skills from real-world experts, at your pace."
+        - text "Learn practical skills from real-world experts, at your"
+        - text "pace."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Development" [focusable=True]
+      - text "Development"
+        - text "Development"
+    - link "Business" [focusable=True]
+      - text "Business"
+        - text "Business"
+    - link "Certifications" [focusable=True]
+      - text "Certifications"
+        - text "Certifications"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - link "Investor events" [focusable=True]
+      - text "Investor events"
+        - text "Investor events"
+    - link "Become a tutor" [focusable=True]
+      - text "Become a tutor"
+        - text "Become a tutor"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - link "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - link "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - text "© 2026 Udemy Learning, Inc."
+      - text "© 2026 Udemy Learning, Inc."
+    - text "English"
+      - text "English"

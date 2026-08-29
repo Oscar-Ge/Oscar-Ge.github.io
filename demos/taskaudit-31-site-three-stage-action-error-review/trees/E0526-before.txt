@@ -1,0 +1,273 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focused=True, focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - text "YAHOO FINANCE PLUS"
+      - text "YAHOO FINANCE PLUS"
+    - heading "Invest with more confidence" [level=1]
+      - text "Invest with more confidence"
+        - text "Invest with more confidence"
+    - paragraph
+      - text "Compare plans and choose the research experience that fits the way you invest."
+        - text "Compare plans and choose the research experience that fits the way you invest."
+    - button "Monthly" [focusable=True]
+      - text "Monthly"
+        - text "Monthly"
+    - button "Annual Save 20%" [focusable=True]
+      - text "Annual"
+        - text "Annual"
+      - text "Save 20%"
+        - text "Save 20%"
+    - article
+      - heading "Free" [level=2]
+        - text "Free"
+          - text "Free"
+      - paragraph
+        - text "Essential market data and news."
+          - text "Essential market data and news."
+      - strong
+        - text "$0"
+          - text "$0"
+      - list
+        - listitem [level=1]
+          - text "Real-time-style quotes"
+            - text "Real-time-style quotes"
+        - listitem [level=1]
+          - text "Basic interactive charts"
+            - text "Basic interactive charts"
+        - listitem [level=1]
+          - text "Watchlists and portfolios"
+            - text "Watchlists and portfolios"
+      - button "Current plan" [disabled=True]
+        - text "Current plan"
+          - text "Current plan"
+    - article
+      - text "MOST POPULAR"
+        - text "MOST POPULAR"
+      - heading "Essential" [level=2]
+        - text "Essential"
+          - text "Essential"
+      - paragraph
+        - text "Powerful research for active investors."
+          - text "Powerful research for active investors."
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - text "/"
+        - text "/"
+      - text "month"
+        - text "month"
+      - list
+        - listitem [level=1]
+          - text "Advanced charts and indicators"
+            - text "Advanced charts and indicators"
+        - listitem [level=1]
+          - text "Fair value and technical insights"
+            - text "Fair value and technical insights"
+        - listitem [level=1]
+          - text "Enhanced company analytics"
+            - text "Enhanced company analytics"
+        - listitem [level=1]
+          - text "Ad-lite experience"
+            - text "Ad-lite experience"
+      - button "Start 14-day trial" [focusable=True]
+        - text "Start 14-day trial"
+          - text "Start 14-day trial"
+    - article
+      - heading "Premium" [level=2]
+        - text "Premium"
+          - text "Premium"
+      - paragraph
+        - text "Our complete investing toolkit."
+          - text "Our complete investing toolkit."
+      - strong
+        - text "$49.99"
+          - text "$49.99"
+      - text "/"
+        - text "/"
+      - text "month"
+        - text "month"
+      - list
+        - listitem [level=1]
+          - text "Everything in Essential"
+            - text "Everything in Essential"
+        - listitem [level=1]
+          - text "Portfolio risk analysis"
+            - text "Portfolio risk analysis"
+        - listitem [level=1]
+          - text "Morning Brief Pro"
+            - text "Morning Brief Pro"
+        - listitem [level=1]
+          - text "Priority support"
+            - text "Priority support"
+      - button "Start 14-day trial" [focusable=True]
+        - text "Start 14-day trial"
+          - text "Start 14-day trial"
+    - heading "Compare every feature" [level=2]
+      - text "Compare every feature"
+        - text "Compare every feature"
+    - strong
+      - text "Streaming quotes"
+        - text "Streaming quotes"
+    - strong
+      - text "Advanced chart indicators"
+        - text "Advanced chart indicators"
+    - text "—"
+      - text "—"
+    - strong
+      - text "Company insights"
+        - text "Company insights"
+    - text "—"
+      - text "—"
+    - strong
+      - text "Portfolio risk analysis"
+        - text "Portfolio risk analysis"
+    - text "—"
+      - text "—"
+    - text "—"
+      - text "—"
+    - strong
+      - text "Priority support"
+        - text "Priority support"
+    - text "—"
+      - text "—"
+    - text "—"
+      - text "—"
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

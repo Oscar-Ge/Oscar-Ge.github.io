@@ -1,0 +1,168 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focused=True, focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "INSIDE THE WORKPLACE"
+        - text "INSIDE THE WORKPLACE"
+    - heading "Find a company you'll love" [level=1]
+      - text "Find a company you'll love"
+        - text "Find a company you'll love"
+    - paragraph
+      - text "Explore employee reviews, ratings, interview questions, and company insights."
+        - text "Explore employee reviews, ratings, interview questions, and company insights."
+    - form
+      - LabelText
+        - text "Company name"
+          - text "Company name"
+        - entry "Company name" [focusable=True]
+      - button "Find companies" [focusable=True]
+        - text "Find companies"
+          - text "Find companies"
+    - paragraph
+      - text "POPULAR COMPANY PAGES"
+        - text "POPULAR COMPANY PAGES"
+    - heading "Explore company insights" [level=2]
+      - text "Explore company insights"
+        - text "Explore company insights"
+    - article
+      - text "B"
+        - text "B"
+      - heading "Burger King" [level=2]
+        - text "Burger King"
+          - text "Burger King"
+      - paragraph
+        - text "3.4"
+          - text "3.4"
+        - text "·"
+          - text "·"
+        - text "58,412"
+          - text "58,412"
+        - text "reviews"
+          - text "reviews"
+      - paragraph
+        - text "A global quick-service restaurant brand known for flame-grilled favorites and team-based restaurant roles."
+          - text "A global quick-service restaurant brand known for flame-grilled favorites"
+          - text "and team-based restaurant roles."
+      - text "Restaurants & Food Service"
+        - text "Restaurants & Food Service"
+      - link "Reviews" [focusable=True]
+        - text "Reviews"
+          - text "Reviews"
+      - link "Interview questions" [focusable=True]
+        - text "Interview questions"
+          - text "Interview questions"
+    - article
+      - text "M"
+        - text "M"
+      - heading "McDonald's" [level=2]
+        - text "McDonald's"
+          - text "McDonald's"
+      - paragraph
+        - text "3.5"
+          - text "3.5"
+        - text "·"
+          - text "·"
+        - text "246,700"
+          - text "246,700"
+        - text "reviews"
+          - text "reviews"
+      - paragraph
+        - text "A global restaurant employer offering crew, management, operations, and corporate opportunities."
+          - text "A global restaurant employer offering crew, management, operations, and"
+          - text "corporate opportunities."
+      - text "Restaurants & Food Service"
+        - text "Restaurants & Food Service"
+      - link "Reviews" [focusable=True]
+        - text "Reviews"
+          - text "Reviews"
+      - link "Interview questions" [focusable=True]
+        - text "Interview questions"
+          - text "Interview questions"
+    - article
+      - text "C"
+        - text "C"
+      - heading "Calico Life Sciences" [level=2]
+        - text "Calico Life Sciences"
+          - text "Calico Life Sciences"
+      - paragraph
+        - text "4.3"
+          - text "4.3"
+        - text "·"
+          - text "·"
+        - text "39"
+          - text "39"
+        - text "reviews"
+          - text "reviews"
+      - paragraph
+        - text "A research and development company studying the biology that controls aging and lifespan."
+          - text "A research and development company studying the biology that controls"
+          - text "aging and lifespan."
+      - text "Biotechnology"
+        - text "Biotechnology"
+      - link "Reviews" [focusable=True]
+        - text "Reviews"
+          - text "Reviews"
+      - link "Interview questions" [focusable=True]
+        - text "Interview questions"
+          - text "Interview questions"
+    - article
+      - text "A"
+        - text "A"
+      - heading "Arcadia Genomics" [level=2]
+        - text "Arcadia Genomics"
+          - text "Arcadia Genomics"
+      - paragraph
+        - text "4.6"
+          - text "4.6"
+        - text "·"
+          - text "·"
+        - text "214"
+          - text "214"
+        - text "reviews"
+          - text "reviews"
+      - paragraph
+        - text "A precision health company using statistical genetics to advance better clinical decisions."
+          - text "A precision health company using statistical genetics to advance better"
+          - text "clinical decisions."
+      - text "Biotechnology"
+        - text "Biotechnology"
+      - link "Reviews" [focusable=True]
+        - text "Reviews"
+          - text "Reviews"
+      - link "Interview questions" [focusable=True]
+        - text "Interview questions"
+          - text "Interview questions"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

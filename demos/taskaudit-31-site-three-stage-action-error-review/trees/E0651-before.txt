@@ -1,0 +1,534 @@
+- document "Petfinder — Find Your New Best Friend" [focused=True, focusable=True]
+  - link "Skip to content" [focusable=True]
+    - text "Skip to content"
+      - text "Skip to content"
+  - banner
+    - link "Petfinder home" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - navigation "Main navigation"
+      - link "Find a Pet" [focusable=True]
+        - text "Find a Pet"
+          - text "Find a Pet"
+      - link "Shelters & Rescues" [focusable=True]
+        - text "Shelters & Rescues"
+          - text "Shelters & Rescues"
+      - link "Pet Care" [focusable=True]
+        - text "Pet Care"
+          - text "Pet Care"
+      - link "Favorites" [focusable=True]
+        - text "Favorites"
+          - text "Favorites"
+      - link "Donate" [focusable=True]
+        - text "Donate"
+          - text "Donate"
+  - main
+    - paragraph
+      - text "FIND A PET"
+        - text "FIND A PET"
+    - heading "Someone wonderful is waiting." [level=1]
+      - text "Someone wonderful is waiting."
+        - text "Someone wonderful is waiting."
+    - LabelText
+      - combobox "Pet type" value="Cats" [focusable=True]
+        - MenuListPopup
+          - option "All pets" [focusable=True]
+          - option "Dogs" [focusable=True]
+          - option "Cats" [focusable=True, selected=True]
+          - option "Rabbits" [focusable=True]
+    - LabelText
+      - entry "Search location" [focusable=True]
+    - LabelText
+      - text "Distance"
+        - text "Distance"
+      - combobox "Distance" value="Within 25 miles" [focusable=True]
+        - MenuListPopup
+          - option "Within 10 miles" [focusable=True]
+          - option "Within 25 miles" [focusable=True, selected=True]
+          - option "Within 50 miles" [focusable=True]
+          - option "Within 100 miles" [focusable=True]
+          - option "Any distance" [focusable=True]
+    - button "Filters (1)" [focused=True, focusable=True]
+      - text "Filters"
+        - text "Filters"
+      - text "(1)"
+        - text "(1)"
+    - complementary "Pet search filters"
+      - heading "Filter results" [level=2]
+        - text "Filter results"
+          - text "Filter results"
+      - LabelText
+        - text "Breed"
+          - text "Breed"
+      - combobox "Breed" value="All breeds" [focusable=True]
+        - MenuListPopup
+          - option "All breeds" [focusable=True, selected=True]
+          - option "Abyssinian" [focusable=True]
+          - option "British Shorthair" [focusable=True]
+          - option "Domestic Shorthair" [focusable=True]
+          - option "Siamese Mix" [focusable=True]
+      - LabelText
+        - text "Gender"
+          - text "Gender"
+      - combobox "Gender" value="Any gender" [focusable=True]
+        - MenuListPopup
+          - option "Any gender" [focusable=True, selected=True]
+          - option "Female" [focusable=True]
+          - option "Male" [focusable=True]
+      - group "Age"
+        - Legend
+          - text "Age"
+            - text "Age"
+        - LabelText
+          - checkbox "Baby" [focusable=True]
+          - text "Baby"
+            - text "Baby"
+        - LabelText
+          - checkbox "Young" [focusable=True]
+          - text "Young"
+            - text "Young"
+        - LabelText
+          - checkbox "Adult" [focusable=True]
+          - text "Adult"
+            - text "Adult"
+        - LabelText
+          - checkbox "Senior" [focusable=True]
+          - text "Senior"
+            - text "Senior"
+      - LabelText
+        - text "Size"
+          - text "Size"
+      - combobox "Size" value="Any size" [focusable=True]
+        - MenuListPopup
+          - option "Any size" [focusable=True, selected=True]
+          - option "Small" [focusable=True]
+          - option "Medium" [focusable=True]
+          - option "Large" [focusable=True]
+      - LabelText
+        - text "Color"
+          - text "Color"
+      - combobox "Color" value="Any color" [focusable=True]
+        - MenuListPopup
+          - option "Any color" [focusable=True, selected=True]
+          - option "Blue" [focusable=True]
+          - option "Cinnamon" [focusable=True]
+          - option "Cream" [focusable=True]
+          - option "Gray" [focusable=True]
+          - option "Orange" [focusable=True]
+          - option "Ruddy" [focusable=True]
+          - option "Silver" [focusable=True]
+          - option "Tortoiseshell" [focusable=True]
+      - LabelText
+        - text "Coat length"
+          - text "Coat length"
+      - combobox "Coat length" value="Any coat" [focusable=True]
+        - MenuListPopup
+          - option "Any coat" [focusable=True, selected=True]
+          - option "Short" [focusable=True]
+          - option "Medium" [focusable=True]
+          - option "Long" [focusable=True]
+      - group "Good with"
+        - Legend
+          - text "Good with"
+            - text "Good with"
+        - LabelText
+          - checkbox "Kids" [focusable=True]
+          - text "Kids"
+            - text "Kids"
+        - LabelText
+          - checkbox "Cats" [focusable=True]
+          - text "Cats"
+            - text "Cats"
+      - LabelText
+        - text "Time on Petfinder"
+          - text "Time on Petfinder"
+      - combobox "Time on Petfinder" value="Any time" [focusable=True]
+        - MenuListPopup
+          - option "Any time" [focusable=True, selected=True]
+          - option "Over 30 days" [focusable=True]
+          - option "Over 60 days" [focusable=True]
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - paragraph
+      - strong
+        - text "8"
+          - text "8"
+      - text "adoptable"
+        - text "adoptable"
+      - text "cats"
+        - text "cats"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Nearest" [focusable=True]
+          - option "Newest Addition" [focusable=True]
+          - option "Oldest Addition" [focusable=True]
+    - article
+      - link "View Archie's profile" [focusable=True]
+        - image "Archie, a Domestic Shorthair"
+      - button "Add Archie to favorites" [focusable=True]
+      - text "55"
+        - text "55"
+      - text "days"
+        - text "days"
+      - link "Archie" [focusable=True]
+        - heading "Archie" [level=3]
+          - text "Archie"
+            - text "Archie"
+      - paragraph
+        - text "Domestic Shorthair"
+          - text "Domestic Shorthair"
+      - paragraph
+        - text "Young"
+          - text "Young"
+        - text "·"
+          - text "·"
+        - text "Male"
+          - text "Male"
+        - text "·"
+          - text "·"
+        - text "Medium"
+          - text "Medium"
+      - paragraph
+        - text "Union City"
+          - text "Union City"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Cleo's profile" [focusable=True]
+        - image "Cleo, a Abyssinian"
+      - button "Add Cleo to favorites" [focusable=True]
+      - text "39"
+        - text "39"
+      - text "days"
+        - text "days"
+      - link "Cleo" [focusable=True]
+        - heading "Cleo" [level=3]
+          - text "Cleo"
+            - text "Cleo"
+      - paragraph
+        - text "Abyssinian"
+          - text "Abyssinian"
+      - paragraph
+        - text "Young"
+          - text "Young"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Medium"
+          - text "Medium"
+      - paragraph
+        - text "Hayward"
+          - text "Hayward"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Luna's profile" [focusable=True]
+        - image "Luna, a Abyssinian"
+      - button "Add Luna to favorites" [focusable=True]
+      - text "72"
+        - text "72"
+      - text "days"
+        - text "days"
+      - link "Luna" [focusable=True]
+        - heading "Luna" [level=3]
+          - text "Luna"
+            - text "Luna"
+      - paragraph
+        - text "Abyssinian"
+          - text "Abyssinian"
+      - paragraph
+        - text "Adult"
+          - text "Adult"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Medium"
+          - text "Medium"
+      - paragraph
+        - text "Union City"
+          - text "Union City"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Mabel's profile" [focusable=True]
+        - image "Mabel, a Domestic Shorthair"
+      - button "Add Mabel to favorites" [focusable=True]
+      - text "91"
+        - text "91"
+      - text "days"
+        - text "days"
+      - link "Mabel" [focusable=True]
+        - heading "Mabel" [level=3]
+          - text "Mabel"
+            - text "Mabel"
+      - paragraph
+        - text "Domestic Shorthair"
+          - text "Domestic Shorthair"
+      - paragraph
+        - text "Adult"
+          - text "Adult"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Medium"
+          - text "Medium"
+      - paragraph
+        - text "Fremont"
+          - text "Fremont"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+    - article
+      - link "View Mimi's profile" [focusable=True]
+        - image "Mimi, a Siamese Mix"
+      - button "Add Mimi to favorites" [focusable=True]
+      - text "New"
+        - text "New"
+      - link "Mimi" [focusable=True]
+        - heading "Mimi" [level=3]
+          - text "Mimi"
+            - text "Mimi"
+      - paragraph
+        - text "Siamese Mix"
+          - text "Siamese Mix"
+      - paragraph
+        - text "Young"
+          - text "Young"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Small"
+          - text "Small"
+      - paragraph
+        - text "Seattle"
+          - text "Seattle"
+        - text ","
+          - text ","
+        - text "WA"
+          - text "WA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Nova's profile" [focusable=True]
+        - image "Nova, a Domestic Shorthair"
+      - button "Add Nova to favorites" [focusable=True]
+      - text "New"
+        - text "New"
+      - link "Nova" [focusable=True]
+        - heading "Nova" [level=3]
+          - text "Nova"
+            - text "Nova"
+      - paragraph
+        - text "Domestic Shorthair"
+          - text "Domestic Shorthair"
+      - paragraph
+        - text "Young"
+          - text "Young"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Small"
+          - text "Small"
+      - paragraph
+        - text "Seattle"
+          - text "Seattle"
+        - text ","
+          - text ","
+        - text "WA"
+          - text "WA"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Willow's profile" [focusable=True]
+        - image "Willow, a British Shorthair"
+      - button "Add Willow to favorites" [focusable=True]
+      - link "Willow" [focusable=True]
+        - heading "Willow" [level=3]
+          - text "Willow"
+            - text "Willow"
+      - paragraph
+        - text "British Shorthair"
+          - text "British Shorthair"
+      - paragraph
+        - text "Adult"
+          - text "Adult"
+        - text "·"
+          - text "·"
+        - text "Female"
+          - text "Female"
+        - text "·"
+          - text "·"
+        - text "Medium"
+          - text "Medium"
+      - paragraph
+        - text "Naperville"
+          - text "Naperville"
+        - text ","
+          - text ","
+        - text "IL"
+          - text "IL"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+      - text "Good with cats"
+        - text "Good with cats"
+    - article
+      - link "View Winston's profile" [focusable=True]
+        - image "Winston, a British Shorthair"
+      - button "Add Winston to favorites" [focusable=True]
+      - text "31"
+        - text "31"
+      - text "days"
+        - text "days"
+      - link "Winston" [focusable=True]
+        - heading "Winston" [level=3]
+          - text "Winston"
+            - text "Winston"
+      - paragraph
+        - text "British Shorthair"
+          - text "British Shorthair"
+      - paragraph
+        - text "Adult"
+          - text "Adult"
+        - text "·"
+          - text "·"
+        - text "Male"
+          - text "Male"
+        - text "·"
+          - text "·"
+        - text "Large"
+          - text "Large"
+      - paragraph
+        - text "Aurora"
+          - text "Aurora"
+        - text ","
+          - text ","
+        - text "IL"
+          - text "IL"
+      - text "Short"
+        - text "Short"
+      - text "coat"
+        - text "coat"
+      - text "Good with kids"
+        - text "Good with kids"
+  - contentinfo
+    - link "petfinder" [focusable=True]
+      - text "petfinder"
+        - text "petfinder"
+    - paragraph
+      - text "Connecting adoptable pets with loving people."
+        - text "Connecting adoptable pets with loving"
+        - text "people."
+    - heading "ADOPT" [level=2]
+      - text "ADOPT"
+        - text "ADOPT"
+    - link "Dogs & puppies" [focusable=True]
+      - text "Dogs & puppies"
+        - text "Dogs & puppies"
+    - link "Cats & kittens" [focusable=True]
+      - text "Cats & kittens"
+        - text "Cats & kittens"
+    - link "Rabbits" [focusable=True]
+      - text "Rabbits"
+        - text "Rabbits"
+    - link "Favorites" [focusable=True]
+      - text "Favorites"
+        - text "Favorites"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Pet care library" [focusable=True]
+      - text "Pet care library"
+        - text "Pet care library"
+    - link "Dog & puppy grooming" [focusable=True]
+      - text "Dog & puppy grooming"
+        - text "Dog & puppy grooming"
+    - link "Shelters & rescues" [focusable=True]
+      - text "Shelters & rescues"
+        - text "Shelters & rescues"
+    - heading "GIVE" [level=2]
+      - text "GIVE"
+        - text "GIVE"
+    - paragraph
+      - text "Help adoption groups care for more pets."
+        - text "Help adoption groups care for more"
+        - text "pets."
+    - link "Donate to the Foundation" [focusable=True]
+      - text "Donate to the Foundation"
+        - text "Donate to the Foundation"
+    - text "© 2026 Petfinder demo experience"
+      - text "© 2026 Petfinder demo experience"
+    - text "Built with synthetic adoption data"
+      - text "Built with synthetic adoption data"

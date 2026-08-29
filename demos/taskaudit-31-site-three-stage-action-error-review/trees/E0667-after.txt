@@ -1,0 +1,182 @@
+- document "UPS Shipping, Tracking & Locations" [focused=True, focusable=True]
+  - alert "Please fill out this field."
+  - text "United States – English"
+    - text "United States – English"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "Support" [focusable=True]
+    - text "Support"
+      - text "Support"
+  - banner
+    - link "UPS home" [focusable=True]
+      - generic "UPS home"
+        - text "ups"
+          - text "ups"
+    - navigation "Primary navigation"
+      - link "Shipping" [focusable=True]
+        - text "Shipping"
+          - text "Shipping"
+      - link "Tracking" [focusable=True]
+        - text "Tracking"
+          - text "Tracking"
+      - link "Locations" [focusable=True]
+        - text "Locations"
+          - text "Locations"
+      - link "Schedule a Pickup" [focusable=True]
+        - text "Schedule a Pickup"
+          - text "Schedule a Pickup"
+    - button "Search UPS" [focusable=True]
+    - button "Sign In" [focusable=True]
+      - text "Sign In"
+        - text "Sign In"
+  - main
+    - text "PLAN YOUR SHIPMENT"
+      - text "PLAN YOUR SHIPMENT"
+    - heading "Calculate time & cost" [level=1]
+      - text "Calculate time & cost"
+        - text "Calculate time & cost"
+    - paragraph
+      - text "Compare UPS delivery services for packages moving within the United States."
+        - text "Compare UPS delivery services for packages moving within the United States."
+    - text "1"
+      - text "1"
+    - strong
+      - text "Route"
+        - text "Route"
+    - text "From and to"
+      - text "From and to"
+    - text "2"
+      - text "2"
+    - strong
+      - text "Package"
+        - text "Package"
+    - text "Weight and size"
+      - text "Weight and size"
+    - text "3"
+      - text "3"
+    - strong
+      - text "Compare"
+        - text "Compare"
+    - text "Speed and price"
+      - text "Speed and price"
+    - paragraph
+      - strong
+        - text "Looking for a flat rate?"
+          - text "Looking for a flat rate?"
+      - text "Compare the common medium box with other parcel services."
+        - text "Compare the common"
+        - text "medium box with other"
+        - text "parcel services."
+    - link "View UPS Simple Rate" [focusable=True]
+      - text "View UPS Simple Rate"
+        - text "View UPS Simple Rate"
+    - form
+      - text "SHIPMENT DETAILS"
+        - text "SHIPMENT DETAILS"
+      - heading "Where is it going?" [level=2]
+        - text "Where is it going?"
+          - text "Where is it going?"
+      - text "United States"
+        - text "United States"
+      - LabelText
+        - text "Ship from"
+          - text "Ship from"
+        - entry "Ship from" [focused=True, focusable=True, required=True]
+      - LabelText
+        - text "Ship to"
+          - text "Ship to"
+        - entry "Ship to" [focusable=True, required=True]
+      - LabelText
+        - text "Package weight"
+          - text "Package weight"
+        - spinbutton "Package weight lb" value="3" [focusable=True, required=True]
+          - text "3"
+            - text "3"
+        - text "lb"
+          - text "lb"
+      - LabelText
+        - text "Packaging"
+          - text "Packaging"
+        - combobox "Packaging" value="My own packaging" [focusable=True]
+          - MenuListPopup
+            - option "My own packaging" [focusable=True, selected=True]
+            - option "UPS Express Box" [focusable=True]
+            - option "UPS Simple Rate — Extra Small" [focusable=True]
+            - option "UPS Simple Rate — Small" [focusable=True]
+            - option "UPS Simple Rate — Common Medium" [focusable=True]
+            - option "UPS Simple Rate — Large" [focusable=True]
+            - option "UPS Simple Rate — Extra Large" [focusable=True]
+      - LabelText
+        - text "Ship date"
+          - text "Ship date"
+        - Date "Ship date" value="2026-08-18" [focusable=True]
+          - spinbutton "Month Month" value="8" [focusable=True]
+            - text "08"
+              - text "08"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="18" [focusable=True]
+            - text "18"
+              - text "18"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2026" [focusable=True]
+            - text "2026"
+              - text "2026"
+          - button "Show date picker" [focusable=True]
+      - text "Rates include estimated transportation charges."
+        - text "Rates include estimated transportation charges."
+      - button "Calculate Time & Cost" [focusable=True]
+        - text "Calculate Time & Cost"
+          - text "Calculate Time & Cost"
+  - contentinfo
+    - generic "UPS home"
+      - text "ups"
+        - text "ups"
+    - paragraph
+      - text "Delivering what matters—from your neighborhood to the world."
+        - text "Delivering what matters—from"
+        - text "your neighborhood to the world."
+    - text "Secure mock experience"
+      - text "Secure mock experience"
+    - heading "Ship & Track" [level=3]
+      - text "Ship & Track"
+        - text "Ship & Track"
+    - link "Calculate Time & Cost" [focusable=True]
+      - text "Calculate Time & Cost"
+        - text "Calculate Time & Cost"
+    - link "Track a Package" [focusable=True]
+      - text "Track a Package"
+        - text "Track a Package"
+    - link "UPS Simple Rate" [focusable=True]
+      - text "UPS Simple Rate"
+        - text "UPS Simple Rate"
+    - heading "Pickup & Locations" [level=3]
+      - text "Pickup & Locations"
+        - text "Pickup & Locations"
+    - link "Schedule a Pickup" [focusable=True]
+      - text "Schedule a Pickup"
+        - text "Schedule a Pickup"
+    - link "Pickup Request Status" [focusable=True]
+      - text "Pickup Request Status"
+        - text "Pickup Request Status"
+    - link "Find a UPS Location" [focusable=True]
+      - text "Find a UPS Location"
+        - text "Find a UPS Location"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - link "Contact UPS" [focusable=True]
+      - text "Contact UPS"
+        - text "Contact UPS"
+    - link "Email a Transcript" [focusable=True]
+      - text "Email a Transcript"
+        - text "Email a Transcript"
+    - link "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+      - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+    - text "Privacy & security · Accessibility"
+      - text "Privacy & security · Accessibility"

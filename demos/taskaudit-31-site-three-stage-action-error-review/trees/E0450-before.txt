@@ -1,0 +1,606 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focused=True, focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - form
+      - LabelText
+        - text "WHAT"
+          - text "WHAT"
+        - entry "What" [focusable=True]
+      - LabelText
+        - text "WHERE"
+          - text "WHERE"
+        - entry "Where" [focusable=True]
+      - button "Search jobs" [focusable=True]
+        - text "Search jobs"
+          - text "Search jobs"
+    - text "Filter your search"
+      - text "Filter your search"
+    - LabelText
+      - text "Job type"
+        - text "Job type"
+      - combobox "Job type" value="Any job type" [focusable=True]
+        - MenuListPopup
+          - option "Any job type" [focusable=True, selected=True]
+          - option "Full-time" [focusable=True]
+          - option "Part-time" [focusable=True]
+    - LabelText
+      - text "Salary"
+        - text "Salary"
+      - combobox "Salary" value="Any salary" [focusable=True]
+        - MenuListPopup
+          - option "Any salary" [focusable=True, selected=True]
+          - option "$20/hour+" [focusable=True]
+          - option "$25,000+ annual" [focusable=True]
+          - option "$30,000+ annual" [focusable=True]
+          - option "$40,000+ annual" [focusable=True]
+          - option "$100,000+ annual" [focusable=True]
+          - option "£20,000+ annual" [focusable=True]
+          - option "₹25,000/month+" [focusable=True]
+          - option "₹30,000/month+" [focusable=True]
+    - LabelText
+      - text "Date posted"
+        - text "Date posted"
+      - combobox "Date posted" value="Any date posted" [focusable=True]
+        - MenuListPopup
+          - option "Any date posted" [focusable=True, selected=True]
+          - option "Last 24 hours" [focusable=True]
+          - option "Last 7 days" [focusable=True]
+    - LabelText
+      - text "Education"
+        - text "Education"
+      - combobox "Education" value="Any education" [focusable=True]
+        - MenuListPopup
+          - option "Any education" [focusable=True, selected=True]
+          - option "Bachelor's degree" [focusable=True]
+          - option "Master's degree" [focusable=True]
+    - LabelText
+      - text "Experience level"
+        - text "Experience level"
+      - combobox "Experience level" value="Any experience level" [focusable=True]
+        - MenuListPopup
+          - option "Any experience level" [focusable=True, selected=True]
+          - option "Entry level" [focusable=True]
+          - option "No experience required" [focusable=True]
+    - LabelText
+      - text "Industry"
+        - text "Industry"
+      - combobox "Industry" value="Any industry" [focusable=True]
+        - MenuListPopup
+          - option "Any industry" [focusable=True, selected=True]
+          - option "Healthcare" [focusable=True]
+          - option "Finance" [focusable=True]
+          - option "Human resources" [focusable=True]
+          - option "Customer service" [focusable=True]
+          - option "Retail" [focusable=True]
+    - LabelText
+      - text "Remote"
+        - text "Remote"
+      - combobox "Remote" value="Any remote" [focusable=True]
+        - MenuListPopup
+          - option "Any remote" [focusable=True, selected=True]
+          - option "Remote only" [focusable=True]
+    - LabelText
+      - text "Distance"
+        - text "Distance"
+      - combobox "Distance" value="Any distance" [focusable=True]
+        - MenuListPopup
+          - option "Any distance" [focusable=True, selected=True]
+          - option "Within 10 miles" [focusable=True]
+    - LabelText
+      - text "Posted by"
+        - text "Posted by"
+      - combobox "Posted by" value="Any posted by" [focusable=True]
+        - MenuListPopup
+          - option "Any posted by" [focusable=True, selected=True]
+          - option "Employer posted" [focusable=True]
+    - LabelText
+      - text "Schedule"
+        - text "Schedule"
+      - combobox "Schedule" value="Any schedule" [focusable=True]
+        - MenuListPopup
+          - option "Any schedule" [focusable=True, selected=True]
+          - option "No weekends" [focusable=True]
+    - paragraph
+      - text "JOB SEARCH"
+        - text "JOB SEARCH"
+    - heading "All jobs" [level=1]
+      - text "All jobs"
+        - text "All jobs"
+    - paragraph
+      - text "14"
+        - text "14"
+      - text
+        - text
+      - text "jobs"
+        - text "jobs"
+      - text "found"
+        - text "found"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort jobs" value="Most recent" [focusable=True]
+        - MenuListPopup
+          - option "Most recent" [focusable=True, selected=True]
+          - option "Highest salary" [focusable=True]
+    - article
+      - text "V"
+        - text "V"
+      - button "Save Remote Member Support Associate" [focusable=True]
+      - link "Remote Member Support Associate" [focusable=True]
+        - heading "Remote Member Support Associate" [level=2]
+          - text "Remote Member Support Associate"
+            - text "Remote Member Support Associate"
+      - paragraph
+        - text "Volunteer Benefits Co."
+          - text "Volunteer Benefits Co."
+      - paragraph
+        - text "Remote — Bradley County, Tennessee"
+          - text "Remote — Bradley County, Tennessee"
+      - strong
+        - text "$21 - $24 an hour"
+          - text "$21 - $24 an hour"
+      - text "Remote"
+        - text "Remote"
+      - text "Part-time"
+        - text "Part-time"
+      - text "Entry level"
+        - text "Entry level"
+      - paragraph
+        - text "Help Tennessee members by chat and email from your home office. Equipment is provided."
+          - text "Help Tennessee members by chat and email from your"
+          - text "home office. Equipment is provided."
+      - text "2 hours ago"
+        - text "2 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "H"
+        - text "H"
+      - button "Save Community Healthcare Assistant" [focusable=True]
+      - link "Community Healthcare Assistant" [focusable=True]
+        - heading "Community Healthcare Assistant" [level=2]
+          - text "Community Healthcare Assistant"
+            - text "Community Healthcare Assistant"
+      - paragraph
+        - text "Harbour Care Essex"
+          - text "Harbour Care Essex"
+      - paragraph
+        - text "Chelmsford, Essex"
+          - text "Chelmsford, Essex"
+      - strong
+        - text "£24,500 - £27,000 a year"
+          - text "£24,500 - £27,000 a year"
+      - text "Part-time"
+        - text "Part-time"
+      - text "Employer posted"
+        - text "Employer posted"
+      - text "Posted today"
+        - text "Posted today"
+      - paragraph
+        - text "Employer-posted community care role with paid travel time and a 24-hour weekly contract."
+          - text "Employer-posted community care role with paid travel time"
+          - text "and a 24-hour weekly contract."
+      - text "3 hours ago"
+        - text "3 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "C"
+        - text "C"
+      - button "Save Senior Software Engineer" [focusable=True]
+      - link "Senior Software Engineer" [focusable=True]
+        - heading "Senior Software Engineer" [level=2]
+          - text "Senior Software Engineer"
+            - text "Senior Software Engineer"
+      - paragraph
+        - text "Cobalt Cloud Systems"
+          - text "Cobalt Cloud Systems"
+      - paragraph
+        - text "Remote, United States"
+          - text "Remote, United States"
+      - strong
+        - text "$132,000 - $168,000 a year"
+          - text "$132,000 - $168,000 a year"
+      - text "Remote"
+        - text "Remote"
+      - text "$100k+"
+        - text "$100k+"
+      - text "Software engineering"
+        - text "Software engineering"
+      - paragraph
+        - text "Design distributed services for a remote-first product engineering organization."
+          - text "Design distributed services for a remote-first product"
+          - text "engineering organization."
+      - text "6 hours ago"
+        - text "6 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "N"
+        - text "N"
+      - button "Save Graduate Finance Analyst" [focusable=True]
+      - link "Graduate Finance Analyst" [focusable=True]
+        - heading "Graduate Finance Analyst" [level=2]
+          - text "Graduate Finance Analyst"
+            - text "Graduate Finance Analyst"
+      - paragraph
+        - text "Northstar Capital Partners"
+          - text "Northstar Capital Partners"
+      - paragraph
+        - text "San Francisco, CA"
+          - text "San Francisco, CA"
+      - strong
+        - text "$78,000 - $92,000 a year"
+          - text "$78,000 - $92,000 a year"
+      - text "Entry level"
+        - text "Entry level"
+      - text "Master's degree"
+        - text "Master's degree"
+      - text "Finance"
+        - text "Finance"
+      - paragraph
+        - text "Build financial models and market reports alongside a supportive analyst cohort."
+          - text "Build financial models and market reports alongside a"
+          - text "supportive analyst cohort."
+      - text "18 hours ago"
+        - text "18 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "Z"
+        - text "Z"
+      - button "Save Human Resources Specialist" [focusable=True]
+      - link "Human Resources Specialist" [focusable=True]
+        - heading "Human Resources Specialist" [level=2]
+          - text "Human Resources Specialist"
+            - text "Human Resources Specialist"
+      - paragraph
+        - text "Zoho Corporation"
+          - text "Zoho Corporation"
+      - paragraph
+        - text "Chennai, Tamil Nadu"
+          - text "Chennai, Tamil Nadu"
+      - strong
+        - text "₹45,000 - ₹58,000 a month"
+          - text "₹45,000 - ₹58,000 a month"
+      - text "Zoho Corporation"
+        - text "Zoho Corporation"
+      - text "Human resources"
+        - text "Human resources"
+      - text "Master's degree"
+        - text "Master's degree"
+      - paragraph
+        - text "Support talent programs, employee experience, and people analytics at Zoho Corporation."
+          - text "Support talent programs, employee experience, and"
+          - text "people analytics at Zoho Corporation."
+      - text "22 hours ago"
+        - text "22 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "L"
+        - text "L"
+      - button "Save Customer Service Representative" [focusable=True]
+      - link "Customer Service Representative" [focusable=True]
+        - heading "Customer Service Representative" [level=2]
+          - text "Customer Service Representative"
+            - text "Customer Service Representative"
+      - paragraph
+        - text "Lakeshore Home Services"
+          - text "Lakeshore Home Services"
+      - paragraph
+        - text "Chicago, IL"
+          - text "Chicago, IL"
+      - strong
+        - text "$23 - $27 an hour"
+          - text "$23 - $27 an hour"
+      - text "$20+/hour"
+        - text "$20+/hour"
+      - text "No experience required"
+        - text "No experience required"
+      - text "Paid training"
+        - text "Paid training"
+      - paragraph
+        - text "Support customers by phone and chat. Paid training means no prior experience is needed."
+          - text "Support customers by phone and chat. Paid training"
+          - text "means no prior experience is needed."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "S"
+        - text "S"
+      - button "Save Grocery Store Cashier" [focusable=True]
+      - link "Grocery Store Cashier" [focusable=True]
+        - heading "Grocery Store Cashier" [level=2]
+          - text "Grocery Store Cashier"
+            - text "Grocery Store Cashier"
+      - paragraph
+        - text "Sunbasket Fresh Market"
+          - text "Sunbasket Fresh Market"
+      - paragraph
+        - text "Orlando, Florida"
+          - text "Orlando, Florida"
+      - strong
+        - text "$17 - $20 an hour"
+          - text "$17 - $20 an hour"
+      - text "Grocery store"
+        - text "Grocery store"
+      - text "Part-time"
+        - text "Part-time"
+      - text "No experience required"
+        - text "No experience required"
+      - paragraph
+        - text "Welcome shoppers, scan purchases, and keep checkout lanes organized at a neighborhood grocer."
+          - text "Welcome shoppers, scan purchases, and keep checkout"
+          - text "lanes organized at a neighborhood grocer."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "J"
+        - text "J"
+      - button "Save Software Engineer, Platform" [focusable=True]
+      - link "Software Engineer, Platform" [focusable=True]
+        - heading "Software Engineer, Platform" [level=2]
+          - text "Software Engineer, Platform"
+            - text "Software Engineer, Platform"
+      - paragraph
+        - text "Juniper Metrics"
+          - text "Juniper Metrics"
+      - paragraph
+        - text "Remote, United States"
+          - text "Remote, United States"
+      - strong
+        - text "$118,000 - $145,000 a year"
+          - text "$118,000 - $145,000 a year"
+      - text "Remote"
+        - text "Remote"
+      - text "$100k+"
+        - text "$100k+"
+      - text "Platform engineering"
+        - text "Platform engineering"
+      - paragraph
+        - text "Improve developer tooling and cloud reliability for a fully distributed team."
+          - text "Improve developer tooling and cloud reliability for a fully"
+          - text "distributed team."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "B"
+        - text "B"
+      - button "Save Administrative Assistant (Part-time)" [focusable=True]
+      - link "Administrative Assistant (Part-time)" [focusable=True]
+        - heading "Administrative Assistant (Part-time)" [level=2]
+          - text "Administrative Assistant (Part-time)"
+            - text "Administrative Assistant (Part-time)"
+      - paragraph
+        - text "Biscayne Community Legal"
+          - text "Biscayne Community Legal"
+      - paragraph
+        - text "Miami, FL"
+          - text "Miami, FL"
+      - strong
+        - text "$44,000 - $48,000 a year"
+          - text "$44,000 - $48,000 a year"
+      - text "Part-time"
+        - text "Part-time"
+      - text "$40k+"
+        - text "$40k+"
+      - text "Administrative"
+        - text "Administrative"
+      - paragraph
+        - text "Coordinate calendars, client files, and front-desk coverage on a flexible 28-hour schedule."
+          - text "Coordinate calendars, client files, and front-desk coverage"
+          - text "on a flexible 28-hour schedule."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "B"
+        - text "B"
+      - button "Save Registered Nutritionist" [focusable=True]
+      - link "Registered Nutritionist" [focusable=True]
+        - heading "Registered Nutritionist" [level=2]
+          - text "Registered Nutritionist"
+            - text "Registered Nutritionist"
+      - paragraph
+        - text "Buckeye Wellness Network"
+          - text "Buckeye Wellness Network"
+      - paragraph
+        - text "Columbus, Ohio"
+          - text "Columbus, Ohio"
+      - strong
+        - text "$61,000 - $73,000 a year"
+          - text "$61,000 - $73,000 a year"
+      - text "Nutrition"
+        - text "Nutrition"
+      - text "Hybrid"
+        - text "Hybrid"
+      - text "No weekends"
+        - text "No weekends"
+      - paragraph
+        - text "Provide practical nutrition plans across outpatient and virtual wellness programs."
+          - text "Provide practical nutrition plans across outpatient and"
+          - text "virtual wellness programs."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "P"
+        - text "P"
+      - button "Save Healthcare Program Coordinator" [focusable=True]
+      - link "Healthcare Program Coordinator" [focusable=True]
+        - heading "Healthcare Program Coordinator" [level=2]
+          - text "Healthcare Program Coordinator"
+            - text "Healthcare Program Coordinator"
+      - paragraph
+        - text "Pacific Family Health"
+          - text "Pacific Family Health"
+      - paragraph
+        - text "Los Angeles, CA"
+          - text "Los Angeles, CA"
+      - strong
+        - text "$72,000 - $84,000 a year"
+          - text "$72,000 - $84,000 a year"
+      - text "Bachelor's degree"
+        - text "Bachelor's degree"
+      - text "No weekends"
+        - text "No weekends"
+      - text "Healthcare"
+        - text "Healthcare"
+      - paragraph
+        - text "Coordinate community health programs on a Monday–Friday schedule with no weekends."
+          - text "Coordinate community health programs on a Monday–"
+          - text "Friday schedule with no weekends."
+      - text "2 days ago"
+        - text "2 days ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "E"
+        - text "E"
+      - button "Save Home Office Project Coordinator" [focusable=True]
+      - link "Home Office Project Coordinator" [focusable=True]
+        - heading "Home Office Project Coordinator" [level=2]
+          - text "Home Office Project Coordinator"
+            - text "Home Office Project Coordinator"
+      - paragraph
+        - text "Elm & Oak Retail Group"
+          - text "Elm & Oak Retail Group"
+      - paragraph
+        - text "Home office — United Kingdom"
+          - text "Home office — United Kingdom"
+      - strong
+        - text "£28,000 - £32,000 a year"
+          - text "£28,000 - £32,000 a year"
+      - text "Home office"
+        - text "Home office"
+      - text "Remote"
+        - text "Remote"
+      - text "Salary over 25,000"
+        - text "Salary over 25,000"
+      - paragraph
+        - text "Run project trackers and team updates from a fully equipped home office."
+          - text "Run project trackers and team updates from a fully"
+          - text "equipped home office."
+      - text "2 days ago"
+        - text "2 days ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "C"
+        - text "C"
+      - button "Save Remote Appointment Scheduler" [focusable=True]
+      - link "Remote Appointment Scheduler" [focusable=True]
+        - heading "Remote Appointment Scheduler" [level=2]
+          - text "Remote Appointment Scheduler"
+            - text "Remote Appointment Scheduler"
+      - paragraph
+        - text "Cleveland Family Health"
+          - text "Cleveland Family Health"
+      - paragraph
+        - text "Remote — Bradley County, Tennessee"
+          - text "Remote — Bradley County, Tennessee"
+      - strong
+        - text "$19 - $22 an hour"
+          - text "$19 - $22 an hour"
+      - text "Remote"
+        - text "Remote"
+      - text "Part-time"
+        - text "Part-time"
+      - text "Entry level"
+        - text "Entry level"
+      - paragraph
+        - text "Schedule patient visits in a fully remote, part-time role serving Bradley County."
+          - text "Schedule patient visits in a fully remote, part-time role"
+          - text "serving Bradley County."
+      - text "3 days ago"
+        - text "3 days ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "N"
+        - text "N"
+      - button "Save Junior Operations Coordinator" [focusable=True]
+      - link "Junior Operations Coordinator" [focusable=True]
+        - heading "Junior Operations Coordinator" [level=2]
+          - text "Junior Operations Coordinator"
+            - text "Junior Operations Coordinator"
+      - paragraph
+        - text "Naga Hills Commerce"
+          - text "Naga Hills Commerce"
+      - paragraph
+        - text "Kohima, Nagaland"
+          - text "Kohima, Nagaland"
+      - strong
+        - text "₹28,000 - ₹34,000 a month"
+          - text "₹28,000 - ₹34,000 a month"
+      - text "Bachelor's degree"
+        - text "Bachelor's degree"
+      - text "₹25k+ monthly"
+        - text "₹25k+ monthly"
+      - text "Posted within 7 days"
+        - text "Posted within 7 days"
+      - paragraph
+        - text "Coordinate local vendors, inventory updates, and weekly operations reporting."
+          - text "Coordinate local vendors, inventory updates, and weekly"
+          - text "operations reporting."
+      - text "4 days ago"
+        - text "4 days ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

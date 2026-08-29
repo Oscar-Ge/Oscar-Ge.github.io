@@ -1,0 +1,258 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "Search"
+        - text "Search"
+    - sectionheader
+      - text "ESPN SEARCH"
+        - text "ESPN SEARCH"
+      - heading "Results for “k”" [level=1]
+        - text "Results for “k”"
+          - text "Results for “k”"
+      - paragraph
+        - text "11 matching destinations"
+          - text "11 matching destinations"
+    - form
+      - entry "Search ESPN" value="k" [focused=True, focusable=True]
+        - text "k"
+          - text "k"
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - link "ADt NHL Atlantic Division team leaders Atlantic Division team leaders Pick a club and follow a leader" [focusable=True]
+      - text "ADt"
+        - text "ADt"
+      - text "NHL"
+        - text "NHL"
+      - heading "Atlantic Division team leaders" [level=3]
+        - text "Atlantic Division team leaders"
+          - text "Atlantic Division team leaders"
+      - paragraph
+        - text "Atlantic Division team leaders Pick a club and follow a leader"
+          - text "Atlantic Division team leaders Pick a club and follow a leader"
+    - link "LoM NBA NEWS Latest on Mikal Bridges Latest on Mikal Bridges News, analysis and updates" [focusable=True]
+      - text "LoM"
+        - text "LoM"
+      - text "NBA NEWS"
+        - text "NBA NEWS"
+      - heading "Latest on Mikal Bridges" [level=3]
+        - text "Latest on Mikal Bridges"
+          - text "Latest on Mikal Bridges"
+      - paragraph
+        - text "Latest on Mikal Bridges News, analysis and updates"
+          - text "Latest on Mikal Bridges News, analysis and updates"
+    - link "PaF F1 Play an F1 podcast Play an F1 podcast Unlapped: strategy and paddock news" [focusable=True]
+      - text "PaF"
+        - text "PaF"
+      - text "F1"
+        - text "F1"
+      - heading "Play an F1 podcast" [level=3]
+        - text "Play an F1 podcast"
+          - text "Play an F1 podcast"
+      - paragraph
+        - text "Play an F1 podcast Unlapped: strategy and paddock news"
+          - text "Play an F1 podcast Unlapped: strategy and paddock news"
+    - link "DMs NBA Dallas Mavericks schedule Dallas Mavericks schedule Upcoming games and results" [focusable=True]
+      - text "DMs"
+        - text "DMs"
+      - text "NBA"
+        - text "NBA"
+      - heading "Dallas Mavericks schedule" [level=3]
+        - text "Dallas Mavericks schedule"
+          - text "Dallas Mavericks schedule"
+      - paragraph
+        - text "Dallas Mavericks schedule Upcoming games and results"
+          - text "Dallas Mavericks schedule Upcoming games and results"
+    - link "KDb NBA Kevin Durant's bio Kevin Durant's bio Player profile and career summary" [focusable=True]
+      - text "KDb"
+        - text "KDb"
+      - text "NBA"
+        - text "NBA"
+      - heading "Kevin Durant's bio" [level=3]
+        - text "Kevin Durant's bio"
+          - text "Kevin Durant's bio"
+      - paragraph
+        - text "Kevin Durant's bio Player profile and career summary"
+          - text "Kevin Durant's bio Player profile and career summary"
+    - link "SB2 NFL Super Bowl 2015 scoreboard Super Bowl 2015 scoreboard Patriots vs. Seahawks recap" [focusable=True]
+      - text "SB2"
+        - text "SB2"
+      - text "NFL"
+        - text "NFL"
+      - heading "Super Bowl 2015 scoreboard" [level=3]
+        - text "Super Bowl 2015 scoreboard"
+          - text "Super Bowl 2015 scoreboard"
+      - paragraph
+        - text "Super Bowl 2015 scoreboard Patriots vs. Seahawks recap"
+          - text "Super Bowl 2015 scoreboard Patriots vs. Seahawks recap"
+    - link "RMs UEFA CHAMPIONS LEAGUE Real Madrid schedule Real Madrid schedule Group and knockout fixtures" [focusable=True]
+      - text "RMs"
+        - text "RMs"
+      - text "UEFA CHAMPIONS LEAGUE"
+        - text "UEFA CHAMPIONS LEAGUE"
+      - heading "Real Madrid schedule" [level=3]
+        - text "Real Madrid schedule"
+          - text "Real Madrid schedule"
+      - paragraph
+        - text "Real Madrid schedule Group and knockout fixtures"
+          - text "Real Madrid schedule Group and knockout fixtures"
+    - link "Use ESPN2 Upcoming soccer events Upcoming soccer events TV listings by network" [focusable=True]
+      - text "Use"
+        - text "Use"
+      - text "ESPN2"
+        - text "ESPN2"
+      - heading "Upcoming soccer events" [level=3]
+        - text "Upcoming soccer events"
+          - text "Upcoming soccer events"
+      - paragraph
+        - text "Upcoming soccer events TV listings by network"
+          - text "Upcoming soccer events TV listings by network"
+    - link "BNs NBA Brooklyn Nets schedule Brooklyn Nets schedule Upcoming games and results" [focusable=True]
+      - text "BNs"
+        - text "BNs"
+      - text "NBA"
+        - text "NBA"
+      - heading "Brooklyn Nets schedule" [level=3]
+        - text "Brooklyn Nets schedule"
+          - text "Brooklyn Nets schedule"
+      - paragraph
+        - text "Brooklyn Nets schedule Upcoming games and results"
+          - text "Brooklyn Nets schedule Upcoming games and results"
+    - link "MB NBA • New York Knicks Mikal Bridges Mikal Bridges latest news Knicks" [focusable=True]
+      - text "MB"
+        - text "MB"
+      - text "NBA • New York Knicks"
+        - text "NBA • New York Knicks"
+      - heading "Mikal Bridges" [level=3]
+        - text "Mikal Bridges"
+          - text "Mikal Bridges"
+      - paragraph
+        - text "Mikal Bridges latest news Knicks"
+          - text "Mikal Bridges latest news Knicks"
+    - link "KD NBA • Forward Kevin Durant Kevin Durant bio biography player" [focusable=True]
+      - text "KD"
+        - text "KD"
+      - text "NBA • Forward"
+        - text "NBA • Forward"
+      - heading "Kevin Durant" [level=3]
+        - text "Kevin Durant"
+          - text "Kevin Durant"
+      - paragraph
+        - text "Kevin Durant bio biography player"
+          - text "Kevin Durant bio biography player"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

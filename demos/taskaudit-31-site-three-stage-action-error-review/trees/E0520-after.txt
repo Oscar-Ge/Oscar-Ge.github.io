@@ -1,0 +1,222 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focused=True, focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - text "YAHOO FINANCE NEWS"
+      - text "YAHOO FINANCE NEWS"
+    - heading "Top stories" [level=1]
+      - text "Top stories"
+        - text "Top stories"
+    - paragraph
+      - text "The latest business, markets, technology, and cryptocurrency headlines."
+        - text "The latest business, markets, technology, and cryptocurrency headlines."
+    - button "Top stories" [focusable=True]
+      - text "Top stories"
+        - text "Top stories"
+    - button "Bitcoin" [focusable=True]
+      - text "Bitcoin"
+        - text "Bitcoin"
+    - button "Markets" [focusable=True]
+      - text "Markets"
+        - text "Markets"
+    - button "Technology" [focusable=True]
+      - text "Technology"
+        - text "Technology"
+    - text "LATEST"
+      - text "LATEST"
+    - heading "Top stories" [level=2]
+      - text "Top stories"
+        - text "Top stories"
+    - link "More news" [focusable=True]
+      - text "More news"
+        - text "More news"
+    - link "Markets · 18 min ago Stocks edge higher as investors weigh retail strength and rate path Major averages held near rec..." [focusable=True]
+      - text "Markets"
+        - text "Markets"
+      - text "·"
+        - text "·"
+      - text "18 min ago"
+        - text "18 min ago"
+      - heading "Stocks edge higher as investors weigh retail strength and rate path" [level=3]
+        - text "Stocks edge higher as investors weigh retail strength and rate path"
+          - text "Stocks edge higher as investors weigh retail strength and rate path"
+      - paragraph
+        - text "Major averages held near records as fresh economic data supported a soft-landing outlook."
+          - text "Major averages held near records as fresh economic data supported a soft-landing outlook."
+    - link "Bitcoin · 42 min ago Bitcoin steadies above $118,000 as institutional inflows accelerate Digital-asset funds posted a..." [focusable=True]
+      - text "Bitcoin"
+        - text "Bitcoin"
+      - text "·"
+        - text "·"
+      - text "42 min ago"
+        - text "42 min ago"
+      - heading "Bitcoin steadies above $118,000 as institutional inflows accelerate" [level=3]
+        - text "Bitcoin steadies above $118,000 as institutional inflows accelerate"
+          - text "Bitcoin steadies above $118,000 as institutional inflows accelerate"
+      - paragraph
+        - text "Digital-asset funds posted another week of net inflows while volatility remained contained."
+          - text "Digital-asset funds posted another week of net inflows while volatility remained contained."
+    - link "Technology · 1 hr ago Chip stocks rise on stronger data-center spending forecast Semiconductor shares moved higher af..." [focusable=True]
+      - text "Technology"
+        - text "Technology"
+      - text "·"
+        - text "·"
+      - text "1 hr ago"
+        - text "1 hr ago"
+      - heading "Chip stocks rise on stronger data-center spending forecast" [level=3]
+        - text "Chip stocks rise on stronger data-center spending forecast"
+          - text "Chip stocks rise on stronger data-center spending forecast"
+      - paragraph
+        - text "Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand."
+          - text "Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand."
+    - link "Personal Finance · 2 hrs ago Five money moves to make before the end of summer A midyear checkup can help savers opti..." [focusable=True]
+      - text "Personal Finance"
+        - text "Personal Finance"
+      - text "·"
+        - text "·"
+      - text "2 hrs ago"
+        - text "2 hrs ago"
+      - heading "Five money moves to make before the end of summer" [level=3]
+        - text "Five money moves to make before the end of summer"
+          - text "Five money moves to make before the end of summer"
+      - paragraph
+        - text "A midyear checkup can help savers optimize taxes, benefits, and emergency funds."
+          - text "A midyear checkup can help savers optimize taxes, benefits, and emergency funds."
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

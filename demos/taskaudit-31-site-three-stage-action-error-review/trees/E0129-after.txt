@@ -1,0 +1,139 @@
+- document "American Airlines | Travel with confidence" [focused=True, focusable=True]
+  - banner
+    - text "American Airlines"
+      - text "American Airlines"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - button "Contact American" [focusable=True]
+      - text "Contact American"
+        - text "Contact American"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "American Airlines home" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - navigation "Primary navigation"
+      - button "Book" [focusable=True]
+        - text "Book"
+          - text "Book"
+      - button "Manage trips / Check-in" [focusable=True]
+        - text "Manage trips / Check-in"
+          - text "Manage trips / Check-in"
+      - button "Flight status" [focusable=True]
+        - text "Flight status"
+          - text "Flight status"
+      - button "AAdvantage®" [focusable=True]
+        - text "AAdvantage®"
+          - text "AAdvantage®"
+      - button "Travel information" [focusable=True]
+        - text "Travel information"
+          - text "Travel information"
+    - button "Search site" [focusable=True]
+    - button "Log in" [focusable=True]
+      - text "Log in"
+        - text "Log in"
+  - main
+    - paragraph
+      - text "FLIGHT INFORMATION"
+        - text "FLIGHT INFORMATION"
+    - heading "Flight status" [level=1]
+      - text "Flight status"
+        - text "Flight status"
+    - paragraph
+      - text "Get current departure, arrival and gate information."
+        - text "Get current departure, arrival and gate information."
+    - button "By cities" [focusable=True]
+      - text "By cities"
+        - text "By cities"
+    - button "By flight number" [focusable=True]
+      - text "By flight number"
+        - text "By flight number"
+    - form
+      - LabelText
+        - text "From"
+          - text "From"
+        - entry "From" [focusable=True, required=True]
+      - LabelText
+        - text "To"
+          - text "To"
+        - entry "To" [focusable=True, required=True]
+      - LabelText
+        - text "Departure date"
+          - text "Departure date"
+        - Date "Departure date" value="2026-08-30" [focusable=True]
+          - spinbutton "Month Month" value="8" [focusable=True]
+            - text "08"
+              - text "08"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="30" [focusable=True]
+            - text "30"
+              - text "30"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2026" [focusable=True]
+            - text "2026"
+              - text "2026"
+          - button "Show date picker" [focusable=True]
+      - button "Search flight status" [focusable=True]
+        - text "Search flight status"
+          - text "Search flight status"
+  - contentinfo
+    - button "American AIRLINES" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - heading "TRAVEL" [level=3]
+      - text "TRAVEL"
+        - text "TRAVEL"
+    - button "Book flights" [focusable=True]
+      - text "Book flights"
+        - text "Book flights"
+    - button "Flight status" [focused=True, focusable=True]
+      - text "Flight status"
+        - text "Flight status"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - heading "MANAGE" [level=3]
+      - text "MANAGE"
+        - text "MANAGE"
+    - button "Manage trips" [focusable=True]
+      - text "Manage trips"
+        - text "Manage trips"
+    - button "Travel credits" [focusable=True]
+      - text "Travel credits"
+        - text "Travel credits"
+    - button "Receipts and refunds" [focusable=True]
+      - text "Receipts and refunds"
+        - text "Receipts and refunds"
+    - heading "ABOUT AMERICAN" [level=3]
+      - text "ABOUT AMERICAN"
+        - text "ABOUT AMERICAN"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - text "© 2026 American Airlines, Inc. Demo experience."
+      - text "© 2026 American Airlines, Inc. Demo experience."
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "Cookie settings" [focusable=True]
+      - text "Cookie settings"
+        - text "Cookie settings"

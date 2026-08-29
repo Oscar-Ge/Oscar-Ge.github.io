@@ -1,0 +1,207 @@
+- document "UPS Shipping, Tracking & Locations" [focused=True, focusable=True]
+  - text "United States – English"
+    - text "United States – English"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "Support" [focusable=True]
+    - text "Support"
+      - text "Support"
+  - banner
+    - link "UPS home" [focusable=True]
+      - generic "UPS home"
+        - text "ups"
+          - text "ups"
+    - navigation "Primary navigation"
+      - link "Shipping" [focusable=True]
+        - text "Shipping"
+          - text "Shipping"
+      - link "Tracking" [focusable=True]
+        - text "Tracking"
+          - text "Tracking"
+      - link "Locations" [focusable=True]
+        - text "Locations"
+          - text "Locations"
+      - link "Schedule a Pickup" [focusable=True]
+        - text "Schedule a Pickup"
+          - text "Schedule a Pickup"
+    - button "Search UPS" [focusable=True]
+    - button "Sign In" [focusable=True]
+      - text "Sign In"
+        - text "Sign In"
+  - main
+    - text "SHIP CONFIDENTLY, EVERY TIME"
+      - text "SHIP CONFIDENTLY, EVERY TIME"
+    - heading "Right here. Right on time." [level=1]
+      - text "Right here."
+        - text "Right here."
+      - LineBreak
+        - text
+      - text "Right on time."
+        - text "Right on"
+        - text "time."
+    - paragraph
+      - text "Get reliable shipping, flexible pickup options, and visibility at every step of the journey."
+        - text "Get reliable shipping, flexible pickup options, and visibility at"
+        - text "every step of the journey."
+    - text "220+ countries"
+      - text "220+ countries"
+    - text "Door-to-door tracking"
+      - text "Door-to-door tracking"
+    - tablist "Quick actions"
+      - tab "Track" [focusable=True, selected=True]
+        - text "Track"
+          - text "Track"
+      - tab "Quote" [focusable=True]
+        - text "Quote"
+          - text "Quote"
+      - tab "Find a Location" [focusable=True]
+        - text "Find a Location"
+          - text "Find a Location"
+    - form
+      - LabelText
+        - text "Tracking number"
+          - text "Tracking number"
+        - entry "Tracking number" value="k" [focusable=True, required=True]
+          - text "k"
+            - text "k"
+      - button "Track Package" [focusable=True]
+        - text "Track Package"
+          - text "Track Package"
+    - text "EVERYTHING YOU NEED"
+      - text "EVERYTHING YOU NEED"
+    - heading "Shipping made simpler" [level=2]
+      - text "Shipping made simpler"
+        - text "Shipping made simpler"
+    - paragraph
+      - text "From a single envelope to your weekly business orders, choose the right service and stay in control."
+        - text "From a single envelope to your weekly business orders,"
+        - text "choose the right service and stay in control."
+    - link "SHIP NOW Calculate time & cost Compare delivery speeds and prices for your exact route and package. Get a quote" [focusable=True]
+      - text "SHIP NOW"
+        - text "SHIP NOW"
+      - heading "Calculate time & cost" [level=3]
+        - text "Calculate time & cost"
+          - text "Calculate time & cost"
+      - paragraph
+        - text "Compare delivery speeds and prices for your exact route and package."
+          - text "Compare delivery speeds and prices"
+          - text "for your exact route and package."
+      - text "Get a quote"
+        - text "Get a quote"
+    - link "NEARBY HELP Find a UPS location Locate drop offs, UPS Access Point® locations, notary services, and supplies. Find lo..." [focusable=True]
+      - text "NEARBY HELP"
+        - text "NEARBY HELP"
+      - heading "Find a UPS location" [level=3]
+        - text "Find a UPS location"
+          - text "Find a UPS location"
+      - paragraph
+        - text "Locate drop offs, UPS Access Point® locations, notary services, and supplies."
+          - text "Locate drop offs, UPS Access Point®"
+          - text "locations, notary services, and"
+          - text "supplies."
+      - text "Find locations"
+        - text "Find locations"
+    - link "WE COME TO YOU Schedule a pickup Choose the date, place, and time window that works for your shipment. Schedule now" [focusable=True]
+      - text "WE COME TO YOU"
+        - text "WE COME TO YOU"
+      - heading "Schedule a pickup" [level=3]
+        - text "Schedule a pickup"
+          - text "Schedule a pickup"
+      - paragraph
+        - text "Choose the date, place, and time window that works for your shipment."
+          - text "Choose the date, place, and time"
+          - text "window that works for your shipment."
+      - text "Schedule now"
+        - text "Schedule now"
+    - text "ONE SIZE. ONE PRICE."
+      - text "ONE SIZE. ONE PRICE."
+    - heading "Meet UPS® Simple Rate" [level=2]
+      - text "Meet UPS® Simple Rate"
+        - text "Meet UPS® Simple Rate"
+    - paragraph
+      - text "Use your own packaging, choose from five common sizes, and compare straightforward flat-rate pricing."
+        - text "Use your own packaging, choose from five common sizes, and compare"
+        - text "straightforward flat-rate pricing."
+    - link "Compare flat rates" [focusable=True]
+      - text "Compare flat rates"
+        - text "Compare flat rates"
+    - text "BUILT AROUND YOUR DAY"
+      - text "BUILT AROUND YOUR DAY"
+    - heading "More control, less wondering" [level=2]
+      - text "More control, less wondering"
+        - text "More control, less"
+        - text "wondering"
+    - paragraph
+      - text "Plan with clear delivery windows, convenient handoff options, and updates that keep everyone informed."
+        - text "Plan with clear delivery windows, convenient"
+        - text "handoff options, and updates that keep everyone"
+        - text "informed."
+    - heading "Stay informed" [level=3]
+      - text "Stay informed"
+        - text "Stay informed"
+    - paragraph
+      - text "Get a clear mock tracking timeline and email update options."
+        - text "Get a clear mock tracking timeline and email update options."
+    - heading "Choose convenience" [level=3]
+      - text "Choose convenience"
+        - text "Choose convenience"
+    - paragraph
+      - text "Find staffed stores and neighborhood Access Point locations."
+        - text "Find staffed stores and neighborhood Access Point locations."
+    - heading "Ship with confidence" [level=3]
+      - text "Ship with confidence"
+        - text "Ship with confidence"
+    - paragraph
+      - text "Compare service levels before making a selection."
+        - text "Compare service levels before making a selection."
+  - contentinfo
+    - generic "UPS home"
+      - text "ups"
+        - text "ups"
+    - paragraph
+      - text "Delivering what matters—from your neighborhood to the world."
+        - text "Delivering what matters—from"
+        - text "your neighborhood to the world."
+    - text "Secure mock experience"
+      - text "Secure mock experience"
+    - heading "Ship & Track" [level=3]
+      - text "Ship & Track"
+        - text "Ship & Track"
+    - link "Calculate Time & Cost" [focusable=True]
+      - text "Calculate Time & Cost"
+        - text "Calculate Time & Cost"
+    - link "Track a Package" [focusable=True]
+      - text "Track a Package"
+        - text "Track a Package"
+    - link "UPS Simple Rate" [focusable=True]
+      - text "UPS Simple Rate"
+        - text "UPS Simple Rate"
+    - heading "Pickup & Locations" [level=3]
+      - text "Pickup & Locations"
+        - text "Pickup & Locations"
+    - link "Schedule a Pickup" [focusable=True]
+      - text "Schedule a Pickup"
+        - text "Schedule a Pickup"
+    - link "Pickup Request Status" [focused=True, focusable=True]
+      - text "Pickup Request Status"
+        - text "Pickup Request Status"
+    - link "Find a UPS Location" [focusable=True]
+      - text "Find a UPS Location"
+        - text "Find a UPS Location"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - link "Contact UPS" [focusable=True]
+      - text "Contact UPS"
+        - text "Contact UPS"
+    - link "Email a Transcript" [focusable=True]
+      - text "Email a Transcript"
+        - text "Email a Transcript"
+    - link "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+      - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+    - text "Privacy & security · Accessibility"
+      - text "Privacy & security · Accessibility"

@@ -1,0 +1,110 @@
+- document "UPS Shipping, Tracking & Locations" [focused=True, focusable=True]
+  - text "United States – English"
+    - text "United States – English"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "Support" [focusable=True]
+    - text "Support"
+      - text "Support"
+  - banner
+    - link "UPS home" [focusable=True]
+      - generic "UPS home"
+        - text "ups"
+          - text "ups"
+    - navigation "Primary navigation"
+      - link "Shipping" [focusable=True]
+        - text "Shipping"
+          - text "Shipping"
+      - link "Tracking" [focusable=True]
+        - text "Tracking"
+          - text "Tracking"
+      - link "Locations" [focusable=True]
+        - text "Locations"
+          - text "Locations"
+      - link "Schedule a Pickup" [focusable=True]
+        - text "Schedule a Pickup"
+          - text "Schedule a Pickup"
+    - button "Search UPS" [focusable=True]
+    - button "Sign In" [focusable=True]
+      - text "Sign In"
+        - text "Sign In"
+  - main
+    - text "PICKUP VISIBILITY"
+      - text "PICKUP VISIBILITY"
+    - heading "Pickup Request Status" [level=1]
+      - text "Pickup Request Status"
+        - text "Pickup Request Status"
+    - paragraph
+      - text "Enter your pickup request number to confirm the date, time window, and current status."
+        - text "Enter your pickup request number to confirm the date, time window, and"
+        - text "current status."
+    - form
+      - text "REQUEST LOOKUP"
+        - text "REQUEST LOOKUP"
+      - heading "Find your scheduled pickup" [level=2]
+        - text "Find your scheduled pickup"
+          - text "Find your"
+          - text "scheduled"
+          - text "pickup"
+      - paragraph
+        - text "Your request number is included in the pickup confirmation."
+          - text "Your request number is included in the"
+          - text "pickup confirmation."
+      - LabelText
+        - text "Pickup Request Number"
+          - text "Pickup Request Number"
+        - entry "Pickup Request Number Check Status" [focusable=True, required=True]
+        - button "Check Status" [focusable=True]
+          - text "Check Status"
+            - text "Check Status"
+  - contentinfo
+    - generic "UPS home"
+      - text "ups"
+        - text "ups"
+    - paragraph
+      - text "Delivering what matters—from your neighborhood to the world."
+        - text "Delivering what matters—from"
+        - text "your neighborhood to the world."
+    - text "Secure mock experience"
+      - text "Secure mock experience"
+    - heading "Ship & Track" [level=3]
+      - text "Ship & Track"
+        - text "Ship & Track"
+    - link "Calculate Time & Cost" [focusable=True]
+      - text "Calculate Time & Cost"
+        - text "Calculate Time & Cost"
+    - link "Track a Package" [focusable=True]
+      - text "Track a Package"
+        - text "Track a Package"
+    - link "UPS Simple Rate" [focusable=True]
+      - text "UPS Simple Rate"
+        - text "UPS Simple Rate"
+    - heading "Pickup & Locations" [level=3]
+      - text "Pickup & Locations"
+        - text "Pickup & Locations"
+    - link "Schedule a Pickup" [focusable=True]
+      - text "Schedule a Pickup"
+        - text "Schedule a Pickup"
+    - link "Pickup Request Status" [focused=True, focusable=True]
+      - text "Pickup Request Status"
+        - text "Pickup Request Status"
+    - link "Find a UPS Location" [focusable=True]
+      - text "Find a UPS Location"
+        - text "Find a UPS Location"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - link "Contact UPS" [focusable=True]
+      - text "Contact UPS"
+        - text "Contact UPS"
+    - link "Email a Transcript" [focusable=True]
+      - text "Email a Transcript"
+        - text "Email a Transcript"
+    - link "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+      - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+    - text "Privacy & security · Accessibility"
+      - text "Privacy & security · Accessibility"

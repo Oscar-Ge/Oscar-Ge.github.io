@@ -1,0 +1,198 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Anywhere" [focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Anywhere"
+          - text "Anywhere"
+    - button "When Apr 10 – Apr 12" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "Apr 10 – Apr 12"
+          - text "Apr 10 – Apr 12"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+    - strong
+      - text "Adults"
+        - text "Adults"
+    - text "Ages 13 or above"
+      - text "Ages 13 or above"
+    - button "Remove one Adults" [disabled=True]
+    - text "1"
+      - text "1"
+    - button "Add one Adults" [focusable=True]
+    - strong
+      - text "Children"
+        - text "Children"
+    - text "Ages 2–12"
+      - text "Ages 2–12"
+    - button "Remove one Children" [disabled=True]
+    - text "0"
+      - text "0"
+    - button "Add one Children" [focusable=True]
+    - strong
+      - text "Pets"
+        - text "Pets"
+    - text "Bringing a service animal?"
+      - text "Bringing a service animal?"
+    - button "Remove one Pets" [disabled=True]
+    - text "0"
+      - text "0"
+    - button "Add one Pets" [focused=True, focusable=True]
+    - button "Search" [focusable=True]
+      - text "Search"
+        - text "Search"
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Tiny homes" [level=1]
+      - text "Tiny homes"
+        - text "Tiny homes"
+    - text "Apr 10 – Apr 12 · 1 guest"
+      - text "Apr 10 – Apr 12 · 1 guest"
+    - button "Refine" [focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - button "Tiny homes" [focusable=True]
+      - text "Tiny homes"
+        - text "Tiny homes"
+    - article
+      - button "View The Little Desert Cabin" [focusable=True]
+        - image "The Little Desert Cabin"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save The Little Desert Cabin to a wishlist" [focusable=True]
+      - button "Yucca Valley, California" [focusable=True]
+        - text "Yucca Valley, California"
+          - text "Yucca Valley, California"
+      - text "4.96"
+        - text "4.96"
+      - paragraph
+        - text "The Little Desert Cabin"
+          - text "The Little Desert Cabin"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$184"
+          - text "$184"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Painted Tiny House by the Sea" [focusable=True]
+        - image "Painted Tiny House by the Sea"
+      - button "Save Painted Tiny House by the Sea to a wishlist" [focusable=True]
+      - button "Portland, Maine" [focusable=True]
+        - text "Portland, Maine"
+          - text "Portland, Maine"
+      - text "4.9"
+        - text "4.9"
+      - paragraph
+        - text "Painted Tiny House by the Sea"
+          - text "Painted Tiny House by the Sea"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$136"
+          - text "$136"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"

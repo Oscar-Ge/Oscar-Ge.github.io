@@ -1,0 +1,121 @@
+- document "American Airlines | Travel with confidence" [focused=True, focusable=True]
+  - banner
+    - text "American Airlines"
+      - text "American Airlines"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - button "Contact American" [focusable=True]
+      - text "Contact American"
+        - text "Contact American"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "American Airlines home" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - navigation "Primary navigation"
+      - button "Book" [focusable=True]
+        - text "Book"
+          - text "Book"
+      - button "Manage trips / Check-in" [focusable=True]
+        - text "Manage trips / Check-in"
+          - text "Manage trips / Check-in"
+      - button "Flight status" [focusable=True]
+        - text "Flight status"
+          - text "Flight status"
+      - button "AAdvantage®" [focusable=True]
+        - text "AAdvantage®"
+          - text "AAdvantage®"
+      - button "Travel information" [focusable=True]
+        - text "Travel information"
+          - text "Travel information"
+    - button "Search site" [focusable=True]
+    - button "Log in" [focusable=True]
+      - text "Log in"
+        - text "Log in"
+  - main
+    - paragraph
+      - text "YOUR TRIP"
+        - text "YOUR TRIP"
+    - heading "Manage trips and check in" [level=1]
+      - text "Manage trips and check in"
+        - text "Manage trips and check in"
+    - paragraph
+      - text "Find your reservation using your last name and record locator."
+        - text "Find your reservation using your last name and record locator."
+    - button "Manage trip" [focusable=True]
+      - text "Manage trip"
+        - text "Manage trip"
+    - button "Check in" [focusable=True]
+      - text "Check in"
+        - text "Check in"
+    - form
+      - LabelText
+        - text "Passenger last name"
+          - text "Passenger last name"
+        - entry "Passenger last name" [focusable=True, required=True]
+      - LabelText
+        - text "Confirmation / record locator"
+          - text "Confirmation / record locator"
+        - entry "Confirmation / record locator" [focusable=True, required=True]
+      - button "Find your trip" [focusable=True]
+        - text "Find your trip"
+          - text "Find your trip"
+  - contentinfo
+    - button "American AIRLINES" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - heading "TRAVEL" [level=3]
+      - text "TRAVEL"
+        - text "TRAVEL"
+    - button "Book flights" [focusable=True]
+      - text "Book flights"
+        - text "Book flights"
+    - button "Flight status" [focusable=True]
+      - text "Flight status"
+        - text "Flight status"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - heading "MANAGE" [level=3]
+      - text "MANAGE"
+        - text "MANAGE"
+    - button "Manage trips" [focusable=True]
+      - text "Manage trips"
+        - text "Manage trips"
+    - button "Travel credits" [focusable=True]
+      - text "Travel credits"
+        - text "Travel credits"
+    - button "Receipts and refunds" [focused=True, focusable=True]
+      - text "Receipts and refunds"
+        - text "Receipts and refunds"
+    - heading "ABOUT AMERICAN" [level=3]
+      - text "ABOUT AMERICAN"
+        - text "ABOUT AMERICAN"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - text "© 2026 American Airlines, Inc. Demo experience."
+      - text "© 2026 American Airlines, Inc. Demo experience."
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "Cookie settings" [focusable=True]
+      - text "Cookie settings"
+        - text "Cookie settings"

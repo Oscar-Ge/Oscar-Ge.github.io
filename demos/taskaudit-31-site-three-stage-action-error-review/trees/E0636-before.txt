@@ -1,0 +1,941 @@
+- document "craigslist — local classifieds and forums" [focused=True, focusable=True]
+  - banner
+    - button "Craigslist home" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "Chicago" [focusable=True]
+      - text "Chicago"
+        - text "Chicago"
+    - form
+      - entry "Search craigslist" [focusable=True]
+      - button "Submit search" [focusable=True]
+        - text "SEARCH"
+          - text "SEARCH"
+    - navigation
+      - button "saved" [focusable=True]
+        - text "saved"
+          - text "saved"
+      - button "account" [focusable=True]
+        - text "account"
+          - text "account"
+      - button "post an ad" [focusable=True]
+        - text "post an ad"
+          - text "post an ad"
+  - main
+    - button "back" [focusable=True]
+      - text "back"
+        - text "back"
+    - text "/"
+      - text "/"
+    - text "Chicago"
+      - text "Chicago"
+    - text "/"
+      - text "/"
+    - text "all categories"
+      - text "all categories"
+    - text "CHICAGO"
+      - text "CHICAGO"
+    - text ","
+      - text ","
+    - text "IL"
+      - text "IL"
+    - heading "all categories" [level=1]
+      - text "all categories"
+        - text "all categories"
+    - paragraph
+      - text "21"
+        - text "21"
+      - text "result"
+        - text "result"
+      - text "s"
+        - text "s"
+      - text "nearby"
+        - text "nearby"
+    - button "save this list" [focusable=True]
+      - text "save this list"
+        - text "save this list"
+    - form
+      - entry "Search within results" [focusable=True]
+      - combobox "Category" value="all categories" [focusable=True]
+        - MenuListPopup
+          - option "all categories" [focusable=True, selected=True]
+          - option "apartments / housing" [focusable=True]
+          - option "furniture" [focusable=True]
+          - option "jobs" [focusable=True]
+          - option "lessons & tutoring" [focusable=True]
+          - option "pets" [focusable=True]
+          - option "tickets" [focusable=True]
+          - option "vacation rentals" [focusable=True]
+          - option "appliances" [focusable=True]
+          - option "cell phones" [focusable=True]
+          - option "garage & moving sales" [focusable=True]
+          - option "parking & storage" [focusable=True]
+          - option "services" [focusable=True]
+          - option "antiques" [focusable=True]
+      - button "search" [focusable=True]
+        - text "search"
+          - text "search"
+    - complementary
+      - heading "FILTERS" [level=2]
+        - text "FILTERS"
+          - text "FILTERS"
+      - LabelText
+        - checkbox "search titles only" [focusable=True]
+        - text "search titles only"
+          - text "search titles only"
+      - LabelText
+        - checkbox "only listings with images" [focusable=True, checked=true]
+        - text "only listings with images"
+          - text "only listings with images"
+      - LabelText
+        - checkbox "hide duplicate ads" [focusable=True]
+        - text "hide duplicate ads"
+          - text "hide duplicate ads"
+      - button "PRICE" [focusable=True]
+        - text "PRICE"
+          - text "PRICE"
+      - button "HOUSING DETAILS" [focused=True, focusable=True]
+        - text "HOUSING DETAILS"
+          - text "HOUSING DETAILS"
+      - LabelText
+        - text "BEDROOMS"
+          - text "BEDROOMS"
+        - combobox "Minimum bedrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - text "BATHROOMS"
+          - text "BATHROOMS"
+        - combobox "Minimum bathrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - checkbox "furnished" [focusable=True]
+        - text "furnished"
+          - text "furnished"
+      - LabelText
+        - checkbox "no broker fee" [focusable=True]
+        - text "no broker fee"
+          - text "no broker fee"
+      - LabelText
+        - checkbox "attached garage" [focusable=True]
+        - text "attached garage"
+          - text "attached garage"
+      - LabelText
+        - checkbox "available within 30 days" [focusable=True]
+        - text "available within 30 days"
+          - text "available within 30 days"
+      - button "LISTING DETAILS" [focusable=True]
+        - text "LISTING DETAILS"
+          - text "LISTING DETAILS"
+      - LabelText
+        - text "CONDITION"
+          - text "CONDITION"
+        - combobox "CONDITION" value="any condition" [focusable=True]
+          - MenuListPopup
+            - option "any condition" [focusable=True, selected=True]
+            - option "good" [focusable=True]
+            - option "like new" [focusable=True]
+            - option "excellent" [focusable=True]
+            - option "fair" [focusable=True]
+      - LabelText
+        - text "EMPLOYMENT TYPE"
+          - text "EMPLOYMENT TYPE"
+        - combobox "EMPLOYMENT TYPE" value="any type" [focusable=True]
+          - MenuListPopup
+            - option "any type" [focusable=True, selected=True]
+            - option "full-time" [focusable=True]
+            - option "part-time" [focusable=True]
+      - LabelText
+        - checkbox "accepts cryptocurrency" [focusable=True]
+        - text "accepts cryptocurrency"
+          - text "accepts cryptocurrency"
+      - button "AMENITIES" [focusable=True]
+        - text "AMENITIES"
+          - text "AMENITIES"
+      - LabelText
+        - checkbox "dog friendly" [focusable=True]
+        - text "dog friendly"
+          - text "dog friendly"
+      - LabelText
+        - checkbox "air conditioning" [focusable=True]
+        - text "air conditioning"
+          - text "air conditioning"
+      - LabelText
+        - checkbox "carport" [focusable=True]
+        - text "carport"
+          - text "carport"
+      - button "POSTED DATE" [focusable=True]
+        - text "POSTED DATE"
+          - text "POSTED DATE"
+      - LabelText
+        - text "WHEN"
+          - text "WHEN"
+        - combobox "WHEN" value="any time" [focusable=True]
+          - MenuListPopup
+            - option "any time" [focusable=True, selected=True]
+            - option "posted today" [focusable=True]
+            - option "available within 30 days" [focusable=True]
+      - LabelText
+        - text "SPECIFIC DATE"
+          - text "SPECIFIC DATE"
+        - Date "SPECIFIC DATE" [focusable=True]
+          - spinbutton "Month Month" value="0" [focusable=True]
+            - text "mm"
+              - text "mm"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="0" [focusable=True]
+            - text "dd"
+              - text "dd"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="0" [focusable=True]
+            - text "yyyy"
+              - text "yyyy"
+          - button "Show date picker" [focusable=True]
+      - button "DISTANCE" [focusable=True]
+        - text "DISTANCE"
+          - text "DISTANCE"
+      - LabelText
+        - text "ZIP CODE"
+          - text "ZIP CODE"
+        - entry "ZIP CODE" [focusable=True]
+      - LabelText
+        - text "WITHIN"
+          - text "WITHIN"
+        - combobox "WITHIN" value="any distance" [focusable=True]
+          - MenuListPopup
+            - option "any distance" [focusable=True, selected=True]
+            - option "10 miles" [focusable=True]
+            - option "25 miles" [focusable=True]
+            - option "50 miles" [focusable=True]
+            - option "100 miles" [focusable=True]
+      - button "reset all filters" [focusable=True]
+        - text "reset all filters"
+          - text "reset all filters"
+    - button "has image" [focusable=True]
+      - text "has image"
+        - text "has image"
+    - button "clear all" [focusable=True]
+      - text "clear all"
+        - text "clear all"
+    - LabelText
+      - text "sort by"
+        - text "sort by"
+      - combobox "Sort listings" value="newest" [focusable=True]
+        - MenuListPopup
+          - option "newest" [focusable=True, selected=True]
+          - option "price: low to high" [focusable=True]
+          - option "price: high to low" [focusable=True]
+          - option "oldest" [focusable=True]
+    - generic "View options"
+      - button "List view" [focusable=True]
+      - button "Grid view" [focusable=True]
+      - button "Map view" [focusable=True]
+    - article
+      - button "View Gentle rescue dog ready for adoption" [focusable=True]
+        - image "Gentle rescue dog ready for adoption"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "ROSCOE VILLAGE"
+        - text "ROSCOE VILLAGE"
+      - text "·"
+        - text "·"
+      - text "4.8"
+        - text "4.8"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 10:25 AM"
+        - text "TODAY, 10:25 AM"
+      - button "Gentle rescue dog ready for adoption" [focusable=True]
+        - text "Gentle rescue dog ready for adoption"
+          - text "Gentle rescue dog ready for adoption"
+      - paragraph
+        - text "Meet Juniper, a calm two-year-old mixed breed. Vaccinated, house-trained, and wonderful with people."
+          - text "Meet Juniper, a calm two-year-old mixed breed. Vaccinated, house-trained, and wonderful with people."
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$125"
+          - text "$125"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Laundry in unit — sunny 2BR / 2BA" [focusable=True]
+        - image "Laundry in unit — sunny 2BR / 2BA"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "LINCOLN PARK"
+        - text "LINCOLN PARK"
+      - text "·"
+        - text "·"
+      - text "2.9"
+        - text "2.9"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 11:08 AM"
+        - text "TODAY, 11:08 AM"
+      - button "Laundry in unit — sunny 2BR / 2BA" [focusable=True]
+        - text "Laundry in unit — sunny 2BR / 2BA"
+          - text "Laundry in unit — sunny 2BR / 2BA"
+      - paragraph
+        - text "Bright apartment with in-unit laundry, balcony, two bedrooms, two full bathrooms, and garage parking."
+          - text "Bright apartment with in-unit laundry, balcony, two bedrooms, two full bathrooms, and garage parking."
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$3,200"
+          - text "$3,200"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Vintage walnut dining set — six chairs" [focusable=True]
+        - image "Vintage walnut dining set — six chairs"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "LOGAN SQUARE"
+        - text "LOGAN SQUARE"
+      - text "·"
+        - text "·"
+      - text "3.1"
+        - text "3.1"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 10:42 AM"
+        - text "TODAY, 10:42 AM"
+      - button "Vintage walnut dining set — six chairs" [focusable=True]
+        - text "Vintage walnut dining set — six chairs"
+          - text "Vintage walnut dining set — six chairs"
+      - paragraph
+        - text "Solid walnut table with six restored chairs. Clean, sturdy, and ready for a new home. Bitcoin and other major cryptoc..."
+          - text "Solid walnut table with six restored chairs. Clean, sturdy, and ready for a new home. Bitcoin and other major"
+          - text "cryptocurrency accepted."
+      - text "excellent"
+        - text "excellent"
+      - text "crypto ok"
+        - text "crypto ok"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$650"
+          - text "$650"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Cozy one bedroom garden apartment" [focusable=True]
+        - image "Cozy one bedroom garden apartment"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "RAVENSWOOD"
+        - text "RAVENSWOOD"
+      - text "·"
+        - text "·"
+      - text "5.2"
+        - text "5.2"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 9:45 AM"
+        - text "TODAY, 9:45 AM"
+      - button "Cozy one bedroom garden apartment" [focusable=True]
+        - text "Cozy one bedroom garden apartment"
+          - text "Cozy one bedroom garden apartment"
+      - paragraph
+        - text "Quiet one-bedroom, one-bath garden apartment with shared laundry."
+          - text "Quiet one-bedroom, one-bath garden apartment with shared laundry."
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$2,100"
+          - text "$2,100"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Walnut dining table set with six chairs" [focusable=True]
+        - image "Walnut dining table set with six chairs"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "BUCKTOWN"
+        - text "BUCKTOWN"
+      - text "·"
+        - text "·"
+      - text "3.6"
+        - text "3.6"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 9:10 AM"
+        - text "TODAY, 9:10 AM"
+      - button "Walnut dining table set with six chairs" [focusable=True]
+        - text "Walnut dining table set with six chairs"
+          - text "Walnut dining table set with six chairs"
+      - paragraph
+        - text "The same restored walnut dining set, cross-posted for visibility. Cryptocurrency accepted."
+          - text "The same restored walnut dining set, cross-posted for visibility. Cryptocurrency accepted."
+      - text "excellent"
+        - text "excellent"
+      - text "crypto ok"
+        - text "crypto ok"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$675"
+          - text "$675"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Handmade oak writing desk" [focusable=True]
+        - image "Handmade oak writing desk"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "HYDE PARK"
+        - text "HYDE PARK"
+      - text "·"
+        - text "·"
+      - text "6.8"
+        - text "6.8"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 8:20 AM"
+        - text "TODAY, 8:20 AM"
+      - button "Handmade oak writing desk" [focusable=True]
+        - text "Handmade oak writing desk"
+          - text "Handmade oak writing desk"
+      - paragraph
+        - text "Compact solid-oak desk, dovetail drawer, natural finish. Digital currency accepted."
+          - text "Compact solid-oak desk, dovetail drawer, natural finish. Digital currency accepted."
+      - text "like new"
+        - text "like new"
+      - text "crypto ok"
+        - text "crypto ok"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$290"
+          - text "$290"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Solar panel installer — paid training" [focusable=True]
+        - image "Solar panel installer — paid training"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "PILSEN"
+        - text "PILSEN"
+      - text "·"
+        - text "·"
+      - text "4.7"
+        - text "4.7"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 8:10 AM"
+        - text "TODAY, 8:10 AM"
+      - button "Solar panel installer — paid training" [focusable=True]
+        - text "Solar panel installer — paid training"
+          - text "Solar panel installer — paid training"
+      - paragraph
+        - text "Full-time solar panel installer. Paid safety training, benefits, and local projects. Construction experience preferred."
+          - text "Full-time solar panel installer. Paid safety training, benefits, and local projects. Construction experience"
+          - text "preferred."
+      - text "full-time"
+        - text "full-time"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$29/hr"
+          - text "$29/hr"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Cloud-style cream couch" [focusable=True]
+        - image "Cloud-style cream couch"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "WEST LOOP"
+        - text "WEST LOOP"
+      - text "·"
+        - text "·"
+      - text "1.7"
+        - text "1.7"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 7:05 AM"
+        - text "TODAY, 7:05 AM"
+      - button "Cloud-style cream couch" [focusable=True]
+        - text "Cloud-style cream couch"
+          - text "Cloud-style cream couch"
+      - paragraph
+        - text "Soft cream couch with washable covers and down-alternative cushions."
+          - text "Soft cream couch with washable covers and down-alternative cushions."
+      - text "like new"
+        - text "like new"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$180"
+          - text "$180"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Hiring solar installers — join our crew" [focusable=True]
+        - image "Hiring solar installers — join our crew"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "BRIDGEPORT"
+        - text "BRIDGEPORT"
+      - text "·"
+        - text "·"
+      - text "5"
+        - text "5"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 7:50 AM"
+        - text "TODAY, 7:50 AM"
+      - button "Hiring solar installers — join our crew" [focusable=True]
+        - text "Hiring solar installers — join our crew"
+          - text "Hiring solar installers — join our crew"
+      - paragraph
+        - text "Duplicate of our full-time solar panel installer role. Paid training and benefits."
+          - text "Duplicate of our full-time solar panel installer role. Paid training and benefits."
+      - text "full-time"
+        - text "full-time"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$29/hr"
+          - text "$29/hr"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Warm, patient piano lessons for all ages" [focusable=True]
+        - image "Warm, patient piano lessons for all ages"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "WICKER PARK"
+        - text "WICKER PARK"
+      - text "·"
+        - text "·"
+      - text "3.9"
+        - text "3.9"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 8:44 AM"
+        - text "TODAY, 8:44 AM"
+      - button "Warm, patient piano lessons for all ages" [focusable=True]
+        - text "Warm, patient piano lessons for all ages"
+          - text "Warm, patient piano lessons for all ages"
+      - paragraph
+        - text "Weekly piano lessons for children and adults, beginner through advanced. In-home or studio sessions."
+          - text "Weekly piano lessons for children and adults, beginner through advanced. In-home or studio sessions."
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$55/lesson"
+          - text "$55/lesson"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Front-load washing machine — works great" [focusable=True]
+        - image "Front-load washing machine — works great"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "AVONDALE"
+        - text "AVONDALE"
+      - text "·"
+        - text "·"
+      - text "5.7"
+        - text "5.7"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 9:18 AM"
+        - text "TODAY, 9:18 AM"
+      - button "Front-load washing machine — works great" [focusable=True]
+        - text "Front-load washing machine — works great"
+          - text "Front-load washing machine — works great"
+      - paragraph
+        - text "Clean front-load washing machine in excellent working order. Moving this week, pickup today."
+          - text "Clean front-load washing machine in excellent working order. Moving this week, pickup today."
+      - text "good"
+        - text "good"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$240"
+          - text "$240"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View iPhone X 256GB unlocked — good condition" [focusable=True]
+        - image "iPhone X 256GB unlocked — good condition"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "SOUTH LOOP"
+        - text "SOUTH LOOP"
+      - text "·"
+        - text "·"
+      - text "1.9"
+        - text "1.9"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 8:03 AM"
+        - text "TODAY, 8:03 AM"
+      - button "iPhone X 256GB unlocked — good condition" [focusable=True]
+        - text "iPhone X 256GB unlocked — good condition"
+          - text "iPhone X 256GB unlocked — good condition"
+      - paragraph
+        - text "Space gray Apple phone, unlocked, 256GB. Battery health 86%. Includes case and cable."
+          - text "Space gray Apple phone, unlocked, 256GB. Battery health 86%. Includes case and cable."
+      - text "good"
+        - text "good"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$350"
+          - text "$350"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View iPhone X 64GB — excellent" [focusable=True]
+        - image "iPhone X 64GB — excellent"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "GOLD COAST"
+        - text "GOLD COAST"
+      - text "·"
+        - text "·"
+      - text "2.1"
+        - text "2.1"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 6:58 AM"
+        - text "TODAY, 6:58 AM"
+      - button "iPhone X 64GB — excellent" [focusable=True]
+        - text "iPhone X 64GB — excellent"
+          - text "iPhone X 64GB — excellent"
+      - paragraph
+        - text "Pristine iPhone X with original box. Good to excellent condition."
+          - text "Pristine iPhone X with original box. Good to excellent condition."
+      - text "excellent"
+        - text "excellent"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$475"
+          - text "$475"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Spacious three bedroom near the lake" [focusable=True]
+        - image "Spacious three bedroom near the lake"
+      - text "EDGEWATER"
+        - text "EDGEWATER"
+      - text "·"
+        - text "·"
+      - text "7.5"
+        - text "7.5"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 15"
+        - text "AUG 15"
+      - button "Spacious three bedroom near the lake" [focusable=True]
+        - text "Spacious three bedroom near the lake"
+          - text "Spacious three bedroom near the lake"
+      - paragraph
+        - text "Three-bedroom, two-bath apartment with lake views, updated kitchen, and laundry room."
+          - text "Three-bedroom, two-bath apartment with lake views, updated kitchen, and laundry room."
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$3,850"
+          - text "$3,850"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Modular storage cabinet" [focusable=True]
+        - image "Modular storage cabinet"
+      - text "UKRAINIAN VILLAGE"
+        - text "UKRAINIAN VILLAGE"
+      - text "·"
+        - text "·"
+      - text "2.2"
+        - text "2.2"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 15"
+        - text "AUG 15"
+      - button "Modular storage cabinet" [focusable=True]
+        - text "Modular storage cabinet"
+          - text "Modular storage cabinet"
+      - paragraph
+        - text "Flexible white storage cabinet with adjustable shelves. Cash only."
+          - text "Flexible white storage cabinet with adjustable shelves. Cash only."
+      - text "good"
+        - text "good"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$220"
+          - text "$220"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Apple phone model X with cracked back" [focusable=True]
+        - image "Apple phone model X with cracked back"
+      - text "HUMBOLDT PARK"
+        - text "HUMBOLDT PARK"
+      - text "·"
+        - text "·"
+      - text "4.2"
+        - text "4.2"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 15"
+        - text "AUG 15"
+      - button "Apple phone model X with cracked back" [focusable=True]
+        - text "Apple phone model X with cracked back"
+          - text "Apple phone model X with cracked back"
+      - paragraph
+        - text "iPhone X works normally but has a cracked glass back. Fair condition."
+          - text "iPhone X works normally but has a cracked glass back. Fair condition."
+      - text "fair"
+        - text "fair"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$225"
+          - text "$225"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Reliable evening & weekend babysitter" [focusable=True]
+        - image "Reliable evening & weekend babysitter"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "LINCOLN SQUARE"
+        - text "LINCOLN SQUARE"
+      - text "·"
+        - text "·"
+      - text "5.6"
+        - text "5.6"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 9:04 AM"
+        - text "TODAY, 9:04 AM"
+      - button "Reliable evening & weekend babysitter" [focusable=True]
+        - text "Reliable evening & weekend babysitter"
+          - text "Reliable evening & weekend babysitter"
+      - paragraph
+        - text "Experienced babysitter available evenings and weekends. CPR certified, references available, and comfortable with pets."
+          - text "Experienced babysitter available evenings and weekends. CPR certified, references available, and comfortable"
+          - text "with pets."
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$24/hr"
+          - text "$24/hr"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Blue sectional couch — clean and comfy" [focusable=True]
+        - image "Blue sectional couch — clean and comfy"
+      - text "LAKEVIEW"
+        - text "LAKEVIEW"
+      - text "·"
+        - text "·"
+      - text "4.4"
+        - text "4.4"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 14"
+        - text "AUG 14"
+      - button "Blue sectional couch — clean and comfy" [focusable=True]
+        - text "Blue sectional couch — clean and comfy"
+          - text "Blue sectional couch — clean and comfy"
+      - paragraph
+        - text "Deep blue three-piece sectional couch from a smoke-free home. Good condition."
+          - text "Deep blue three-piece sectional couch from a smoke-free home. Good condition."
+      - text "good"
+        - text "good"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$90"
+          - text "$90"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Jazz and classical piano teacher" [focusable=True]
+        - image "Jazz and classical piano teacher"
+      - text "HYDE PARK"
+        - text "HYDE PARK"
+      - text "·"
+        - text "·"
+      - text "7.3"
+        - text "7.3"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 14"
+        - text "AUG 14"
+      - button "Jazz and classical piano teacher" [focusable=True]
+        - text "Jazz and classical piano teacher"
+          - text "Jazz and classical piano teacher"
+      - paragraph
+        - text "Piano instruction with a conservatory-trained teacher. Adults and teens welcome."
+          - text "Piano instruction with a conservatory-trained teacher. Adults and teens welcome."
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$65/lesson"
+          - text "$65/lesson"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Art Deco bar cart — restored" [focusable=True]
+        - image "Art Deco bar cart — restored"
+      - text "BRONZEVILLE"
+        - text "BRONZEVILLE"
+      - text "·"
+        - text "·"
+      - text "5.1"
+        - text "5.1"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "JUL 18"
+        - text "JUL 18"
+      - button "Art Deco bar cart — restored" [focusable=True]
+        - text "Art Deco bar cart — restored"
+          - text "Art Deco bar cart — restored"
+      - paragraph
+        - text "Restored 1930s Art Deco rolling bar cart with mirrored shelves."
+          - text "Restored 1930s Art Deco rolling bar cart with mirrored shelves."
+      - text "excellent"
+        - text "excellent"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$475"
+          - text "$475"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Victorian brass table lamp — 1890s" [focusable=True]
+        - image "Victorian brass table lamp — 1890s"
+      - text "OLD TOWN"
+        - text "OLD TOWN"
+      - text "·"
+        - text "·"
+      - text "2.6"
+        - text "2.6"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "JUL 2"
+        - text "JUL 2"
+      - button "Victorian brass table lamp — 1890s" [focusable=True]
+        - text "Victorian brass table lamp — 1890s"
+          - text "Victorian brass table lamp — 1890s"
+      - paragraph
+        - text "Late Victorian brass lamp with original decorative base and restored wiring."
+          - text "Late Victorian brass lamp with original decorative base and restored wiring."
+      - text "good"
+        - text "good"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$320"
+          - text "$320"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+  - contentinfo
+    - button "c craigslist" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "help & safety" [focusable=True]
+      - text "help & safety"
+        - text "help & safety"
+    - button "privacy" [focusable=True]
+      - text "privacy"
+        - text "privacy"
+    - button "terms" [focusable=True]
+      - text "terms"
+        - text "terms"
+    - button "about" [focusable=True]
+      - text "about"
+        - text "about"
+    - paragraph
+      - text "© 2026 craigslist · local connections, simply made"
+        - text "© 2026 craigslist · local connections, simply made"

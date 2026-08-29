@@ -1,0 +1,343 @@
+- document "Amazon.com: Shop deals and everyday essentials" [focused=True, focusable=True]
+  - banner
+    - link "Amazon home" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "Change delivery location" [focusable=True]
+      - text "Delivering to Salt Lake City"
+        - text "Delivering to Salt Lake City"
+      - strong
+        - text "Update location"
+          - text "Update location"
+        - text "84101"
+          - text "84101"
+    - search
+      - LabelText
+        - text "Search department"
+          - text "Search department"
+      - combobox "Search department" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Amazon Pharmacy" [focusable=True]
+          - option "Books" [focusable=True]
+          - option "Electronics" [focusable=True]
+          - option "Gift Cards" [focusable=True]
+          - option "Home & Kitchen" [focusable=True]
+          - option "Pet Supplies" [focusable=True]
+          - option "Video Games" [focusable=True]
+      - LabelText
+        - text "Search Amazon"
+          - text "Search Amazon"
+      - entry "Search Amazon" [focusable=True]
+      - button "Search" [focusable=True]
+    - button "Language: English" [focusable=True]
+      - text "US"
+        - text "US"
+      - strong
+        - text "EN"
+          - text "EN"
+    - button "Hello, sign in Account & Lists" [focusable=True]
+      - text "Hello,"
+        - text "Hello,"
+      - text "sign in"
+        - text "sign in"
+      - strong
+        - text "Account & Lists"
+          - text "Account & Lists"
+    - link "Returns & Orders" [focusable=True]
+      - text "Returns"
+        - text "Returns"
+      - strong
+        - text "& Orders"
+          - text "& Orders"
+    - link "Cart with 0 items" [focusable=True]
+      - text "0"
+        - text "0"
+      - strong
+        - text "Cart"
+          - text "Cart"
+    - navigation "Main navigation"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - link "Today’s Deals" [focusable=True]
+        - text "Today’s Deals"
+          - text "Today’s Deals"
+      - link "Amazon Basics" [focusable=True]
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - link "Books" [focusable=True]
+        - text "Books"
+          - text "Books"
+      - link "Pharmacy" [focusable=True]
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - link "Pet Supplies" [focusable=True]
+        - text "Pet Supplies"
+          - text "Pet Supplies"
+      - link "Electronics" [focusable=True]
+        - text "Electronics"
+          - text "Electronics"
+      - text "Free delivery on millions of items"
+        - text "Free delivery on millions of items"
+  - main
+    - text "BIG VALUE, DELIVERED"
+      - text "BIG VALUE, DELIVERED"
+    - heading "Everything you need, all in one place." [level=1]
+      - text "Everything you need,"
+        - text "Everything you"
+        - text "need,"
+      - LineBreak
+        - text
+      - text "all in one place."
+        - text "all in one place."
+    - paragraph
+      - text "Explore everyday essentials, fresh releases, and limited-time deals with fast, free delivery."
+        - text "Explore everyday essentials, fresh releases, and limited-time deals with"
+        - text "fast, free delivery."
+    - button "Shop today’s deals" [focusable=True]
+      - text "Shop today’s deals"
+        - text "Shop today’s deals"
+    - text "EXPLORE DEPARTMENTS"
+      - text "EXPLORE DEPARTMENTS"
+    - heading "Shop by category" [level=2]
+      - text "Shop by category"
+        - text "Shop by category"
+    - link "See all deals" [focusable=True]
+      - text "See all deals"
+        - text "See all deals"
+    - button "Gaming deals Save on mice & more" [focusable=True]
+      - strong
+        - text "Gaming deals"
+          - text "Gaming deals"
+      - text "Save on mice & more"
+        - text "Save on mice & more"
+    - button "Books Great reads in every format" [focused=True, focusable=True]
+      - strong
+        - text "Books"
+          - text "Books"
+      - text "Great reads in every format"
+        - text "Great reads in every format"
+    - button "Pharmacy View medication details" [focusable=True]
+      - strong
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - text "View medication details"
+        - text "View medication details"
+    - button "Home essentials Stock up and save" [focusable=True]
+      - strong
+        - text "Home essentials"
+          - text "Home essentials"
+      - text "Stock up and save"
+        - text "Stock up and save"
+    - button "Electronics Storage, audio & wearables" [focusable=True]
+      - strong
+        - text "Electronics"
+          - text "Electronics"
+      - text "Storage, audio & wearables"
+        - text "Storage, audio & wearables"
+    - button "Pet supplies Food, beds & everyday care" [focusable=True]
+      - strong
+        - text "Pet supplies"
+          - text "Pet supplies"
+      - text "Food, beds & everyday care"
+        - text "Food, beds & everyday care"
+    - button "Gift cards Digital and print-at-home" [focusable=True]
+      - strong
+        - text "Gift cards"
+          - text "Gift cards"
+      - text "Digital and print-at-home"
+        - text "Digital and print-at-home"
+    - button "Amazon Basics Simple. Reliable. Everyday." [focusable=True]
+      - strong
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - text "Simple. Reliable. Everyday."
+        - text "Simple. Reliable. Everyday."
+    - text "POPULAR RIGHT NOW"
+      - text "POPULAR RIGHT NOW"
+    - heading "Deals worth a look" [level=2]
+      - text "Deals worth a look"
+        - text "Deals worth a look"
+    - link "Explore all" [focusable=True]
+      - text "Explore all"
+        - text "Explore all"
+    - article
+      - link "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons" [focusable=True]
+        - image "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons"
+      - text "53"
+        - text "53"
+      - text "% off"
+        - text "% off"
+      - link "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons" [focusable=True]
+        - text "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons"
+          - text "Redragon M601 RGB Wired"
+          - text "Gaming Mouse, 7 Buttons"
+      - generic "4.5 out of 5 stars, 48123 reviews"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "48,123"
+          - text "48,123"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "9"
+        - text "9"
+      - text "49"
+        - text "49"
+      - text "List:"
+        - text "List:"
+      - text "$19.99"
+        - text "$19.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones" [focusable=True]
+        - image "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones"
+      - text "Popular pick"
+        - text "Popular pick"
+      - link "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones" [focusable=True]
+        - text "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones"
+          - text "Soundcore Life Q30 Hybrid"
+          - text "Active Noise Cancelling"
+          - text "Headphones"
+      - generic "4.5 out of 5 stars, 72318 reviews"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "72,318"
+          - text "72,318"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "69"
+        - text "69"
+      - text "99"
+        - text "99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - article
+      - link "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb" [focusable=True]
+        - image "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb"
+      - text "Popular pick"
+        - text "Popular pick"
+      - link "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb" [focusable=True]
+        - text "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb"
+          - text "Pedigree Puppy Growth &"
+          - text "Protection Dry Dog Food,"
+          - text "3.5 lb"
+      - generic "4.7 out of 5 stars, 9840 reviews"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "9,840"
+          - text "9,840"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "7"
+        - text "7"
+      - text "98"
+        - text "98"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to cart"
+    - text "prime"
+      - text "prime"
+    - heading "Fast, free delivery. One easy membership." [level=2]
+      - text "Fast, free delivery. One easy membership."
+        - text "Fast, free delivery. One easy membership."
+    - paragraph
+      - text "Millions of items. Flexible delivery choices. Entertainment included."
+        - text "Millions of items. Flexible delivery choices. Entertainment included."
+    - button "Explore Prime picks" [focusable=True]
+      - text "Explore Prime picks"
+        - text "Explore Prime picks"
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - heading "Get to Know Us" [level=3]
+      - text "Get to Know Us"
+        - text "Get to Know Us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "Amazon Newsletter" [focusable=True]
+      - text "Amazon Newsletter"
+        - text "Amazon Newsletter"
+    - button "About Amazon" [focusable=True]
+      - text "About Amazon"
+        - text "About Amazon"
+    - heading "Make Money with Us" [level=3]
+      - text "Make Money with Us"
+        - text "Make Money with Us"
+    - button "Sell products on Amazon" [focusable=True]
+      - text "Sell products on Amazon"
+        - text "Sell products on Amazon"
+    - button "Become an Affiliate" [focusable=True]
+      - text "Become an Affiliate"
+        - text "Become an Affiliate"
+    - button "Advertise Your Products" [focusable=True]
+      - text "Advertise Your Products"
+        - text "Advertise Your Products"
+    - heading "Amazon Payment Products" [level=3]
+      - text "Amazon Payment Products"
+        - text "Amazon Payment Products"
+    - button "Amazon Visa" [focusable=True]
+      - text "Amazon Visa"
+        - text "Amazon Visa"
+    - button "Amazon Gift Cards" [focusable=True]
+      - text "Amazon Gift Cards"
+        - text "Amazon Gift Cards"
+    - button "Reload Your Balance" [focusable=True]
+      - text "Reload Your Balance"
+        - text "Reload Your Balance"
+    - heading "Let Us Help You" [level=3]
+      - text "Let Us Help You"
+        - text "Let Us Help You"
+    - link "Your Orders" [focusable=True]
+      - text "Your Orders"
+        - text "Your Orders"
+    - button "Shipping Rates & Policies" [focusable=True]
+      - text "Shipping Rates & Policies"
+        - text "Shipping Rates & Policies"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "amazon .com" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "$ USD - U.S. Dollar" [focusable=True]
+      - text "$ USD - U.S. Dollar"
+        - text "$ USD - U.S. Dollar"
+    - button "United States" [focusable=True]
+      - text "United States"
+        - text "United States"
+    - text "Conditions of Use"
+      - text "Conditions of Use"
+    - text "Privacy Notice"
+      - text "Privacy Notice"
+    - text "Consumer Health Data Privacy Disclosure"
+      - text "Consumer Health Data Privacy Disclosure"
+    - text "© 1996-2026, Amazon.com, Inc. or its affiliates"
+      - text "© 1996-2026, Amazon.com, Inc. or its affiliates"

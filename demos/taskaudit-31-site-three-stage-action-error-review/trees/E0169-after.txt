@@ -1,0 +1,272 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" [focusable=True]
+      - button "Search" [focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - main
+    - link "Back to results" [focusable=True]
+      - text "Back to results"
+        - text "Back to results"
+    - paragraph
+      - text "Mexican · Breakfast & Brunch"
+        - text "Mexican · Breakfast & Brunch"
+    - heading "La Pinata Mexican Restaurant" [level=1]
+      - text "La Pinata Mexican Restaurant"
+        - text "La Pinata Mexican"
+        - text "Restaurant"
+    - generic "4.7 out of 5 stars, 1742 reviews"
+      - strong
+        - text "4.7"
+          - text "4.7"
+      - text "("
+        - text "("
+      - text "1,742"
+        - text "1,742"
+      - text ")"
+        - text ")"
+    - text "$$"
+      - text "$$"
+    - text "Open now"
+      - text "Open now"
+    - paragraph
+      - text "Todos Santos"
+        - text "Todos Santos"
+      - text "·"
+        - text "·"
+      - text "Concord, CA 94520"
+        - text "Concord, CA 94520"
+    - button "Start order" [focused=True, focusable=True]
+      - text "Start order"
+        - text "Start order"
+    - button "Save" [focusable=True]
+      - text "Save"
+        - text "Save"
+    - button "Directions" [focusable=True]
+      - text "Directions"
+        - text "Directions"
+    - heading "About this business" [level=2]
+      - text "About this business"
+        - text "About this business"
+    - paragraph
+      - text "A lively Concord favorite serving generous plates, house salsas, and family recipes."
+        - text "A lively Concord favorite serving generous plates, house salsas, and family recipes."
+    - heading "Services" [level=2]
+      - text "Services"
+        - text "Services"
+    - text "Online ordering"
+      - text "Online ordering"
+    - text "Family meals"
+      - text "Family meals"
+    - text "Weekend brunch"
+      - text "Weekend brunch"
+    - heading "Amenities and more" [level=2]
+      - text "Amenities and more"
+        - text "Amenities and more"
+    - text "Open now"
+      - text "Open now"
+    - text "Offers delivery"
+      - text "Offers delivery"
+    - text "Offers takeout"
+      - text "Offers takeout"
+    - text "Accepts Apple Pay"
+      - text "Accepts Apple Pay"
+    - text "Outdoor seating"
+      - text "Outdoor seating"
+    - text "M"
+      - text "M"
+    - generic "5 out of 5 stars, 1 reviews"
+      - strong
+        - text "5.0"
+          - text "5.0"
+      - text "("
+        - text "("
+      - text "1"
+        - text "1"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "“Clear details, friendly communication, and an experience that matched the listing. I’d happily return.”"
+        - text "“Clear details, friendly communication, and an experience that matched the listing. I’d happily"
+        - text "return.”"
+    - strong
+      - text "Morgan L. · Featured synthetic review"
+        - text "Morgan L. · Featured synthetic review"
+    - complementary
+      - heading "Business info" [level=2]
+        - text "Business info"
+          - text "Business info"
+      - text "Today"
+        - text "Today"
+      - strong
+        - text "Closes 10 PM"
+          - text "Closes 10 PM"
+      - text "Address"
+        - text "Address"
+      - strong
+        - text "Concord, CA 94520"
+          - text "Concord, CA 94520"
+      - text "Price"
+        - text "Price"
+      - strong
+        - text "$$"
+          - text "$$"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"
+  - dialog "Order from La Pinata Mexican Restaurant"
+    - text "MEXICAN"
+      - text "MEXICAN"
+    - text "·"
+      - text "·"
+    - text "CONCORD"
+      - text "CONCORD"
+    - heading "Order from La Pinata Mexican Restaurant" [level=2]
+      - text "Order from La Pinata Mexican Restaurant"
+        - text "Order from La Pinata Mexican"
+        - text "Restaurant"
+    - button "Close" [focusable=True]
+    - paragraph
+      - text "Choose a few local favorites. This is a realistic demo order; no payment is collected."
+        - text "Choose a few local favorites. This is a realistic demo order; no payment"
+        - text "is collected."
+    - strong
+      - text "Super Burrito"
+        - text "Super Burrito"
+    - text "$"
+      - text "$"
+    - text "15.95"
+      - text "15.95"
+    - button "Remove one Super Burrito" [focusable=True]
+      - text "−"
+        - text "−"
+    - text "0"
+      - text "0"
+    - button "Add one Super Burrito" [focusable=True]
+      - text "+"
+        - text "+"
+    - strong
+      - text "Birria Tacos"
+        - text "Birria Tacos"
+    - text "$"
+      - text "$"
+    - text "17.50"
+      - text "17.50"
+    - button "Remove one Birria Tacos" [focusable=True]
+      - text "−"
+        - text "−"
+    - text "0"
+      - text "0"
+    - button "Add one Birria Tacos" [focusable=True]
+      - text "+"
+        - text "+"
+    - strong
+      - text "Chicken Enchiladas"
+        - text "Chicken Enchiladas"
+    - text "$"
+      - text "$"
+    - text "16.75"
+      - text "16.75"
+    - button "Remove one Chicken Enchiladas" [focusable=True]
+      - text "−"
+        - text "−"
+    - text "0"
+      - text "0"
+    - button "Add one Chicken Enchiladas" [focusable=True]
+      - text "+"
+        - text "+"
+    - strong
+      - text "Chips & Guacamole"
+        - text "Chips & Guacamole"
+    - text "$"
+      - text "$"
+    - text "9.50"
+      - text "9.50"
+    - button "Remove one Chips & Guacamole" [focusable=True]
+      - text "−"
+        - text "−"
+    - text "0"
+      - text "0"
+    - button "Add one Chips & Guacamole" [focusable=True]
+      - text "+"
+        - text "+"
+    - LabelText
+      - text "Order notes"
+        - text "Order notes"
+      - entry "Order notes" [focusable=True]
+    - text "Subtotal"
+      - text "Subtotal"
+    - strong
+      - text "$"
+        - text "$"
+      - text "0.00"
+        - text "0.00"
+    - button "Place pickup order" [disabled=True]
+      - text "Place pickup order"
+        - text "Place pickup order"

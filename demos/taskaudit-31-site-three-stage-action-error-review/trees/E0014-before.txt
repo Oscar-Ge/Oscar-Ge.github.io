@@ -1,0 +1,238 @@
+- document "CarGurus | Shop, Sell & Research Cars" [focused=True, focusable=True]
+  - banner
+    - link "CarGurus home" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - navigation "Main navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Sell" [focusable=True]
+        - text "Sell"
+          - text "Sell"
+      - link "Finance" [focusable=True]
+        - text "Finance"
+          - text "Finance"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+      - link "Price trends" [focusable=True]
+        - text "Price trends"
+          - text "Price trends"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved cars" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "USED CAR MARKETPLACE"
+        - text "USED CAR MARKETPLACE"
+    - heading "BMW hk" [level=1]
+      - text "BMW hk"
+        - text "BMW hk"
+    - paragraph
+      - text "Within 50 miles of 10019"
+        - text "Within 50 miles of 10019"
+    - strong
+      - text "0"
+        - text "0"
+    - text "matches"
+      - text "matches"
+    - complementary "Vehicle filters"
+      - heading "Filters" [level=2]
+        - text "Filters"
+          - text "Filters"
+      - button "Reset" [focusable=True]
+        - text "Reset"
+          - text "Reset"
+      - LabelText
+        - text "Condition"
+          - text "Condition"
+        - combobox "Condition" value="Used" [focusable=True]
+          - MenuListPopup
+            - option "Used" [focusable=True, selected=True]
+            - option "Certified pre-owned" [focusable=True]
+      - LabelText
+        - text "Make"
+          - text "Make"
+        - combobox "Make" value="BMW" [focusable=True]
+          - MenuListPopup
+            - option "All makes" [focusable=True]
+            - option "Audi" [focusable=True]
+            - option "BMW" [focusable=True, selected=True]
+            - option "Honda" [focusable=True]
+            - option "Jeep" [focusable=True]
+            - option "Lexus" [focusable=True]
+            - option "Tesla" [focusable=True]
+            - option "Toyota" [focusable=True]
+      - LabelText
+        - text "Model"
+          - text "Model"
+        - entry "Model" value="hk" [focusable=True]
+          - text "hk"
+            - text "hk"
+      - LabelText
+        - text "ZIP code"
+          - text "ZIP code"
+        - entry "ZIP code" value="10019" [focused=True, focusable=True]
+          - text "10019"
+            - text "10019"
+      - LabelText
+        - text "Distance"
+          - text "Distance"
+        - combobox "Distance" value="50 mi" [focusable=True]
+          - MenuListPopup
+            - option "10 mi" [focusable=True]
+            - option "25 mi" [focusable=True]
+            - option "50 mi" [focusable=True, selected=True]
+            - option "100 mi" [focusable=True]
+            - option "200 mi" [focusable=True]
+            - option "500 mi" [focusable=True]
+      - LabelText
+        - text "Min year"
+          - text "Min year"
+        - spinbutton "Min year" [focusable=True]
+      - LabelText
+        - text "Max year"
+          - text "Max year"
+        - spinbutton "Max year" [focusable=True]
+      - LabelText
+        - text "Maximum price"
+          - text "Maximum price"
+        - spinbutton "Maximum price" [focusable=True]
+      - group
+        - DisclosureTriangle "Features & details" [focusable=True, expanded=True]
+          - text "Features & details"
+            - text "Features & details"
+        - LabelText
+          - text "Exterior color"
+            - text "Exterior color"
+          - combobox "Exterior color" value="Any color" [focusable=True]
+            - MenuListPopup
+              - option "Any color" [focusable=True, selected=True]
+              - option "Black" [focusable=True]
+              - option "Blue" [focusable=True]
+              - option "Gray" [focusable=True]
+              - option "Red" [focusable=True]
+              - option "Silver" [focusable=True]
+              - option "White" [focusable=True]
+        - LabelText
+          - text "Interior color"
+            - text "Interior color"
+          - combobox "Interior color" value="Any interior" [focusable=True]
+            - MenuListPopup
+              - option "Any interior" [focusable=True, selected=True]
+              - option "Black" [focusable=True]
+              - option "Cream" [focusable=True]
+              - option "Gray" [focusable=True]
+              - option "Parchment" [focusable=True]
+        - LabelText
+          - text "Body style"
+            - text "Body style"
+          - combobox "Body style" value="Any body style" [focusable=True]
+            - MenuListPopup
+              - option "Any body style" [focusable=True, selected=True]
+              - option "SUV" [focusable=True]
+              - option "Sedan" [focusable=True]
+              - option "Hatchback" [focusable=True]
+        - LabelText
+          - text "Drivetrain"
+            - text "Drivetrain"
+          - combobox "Drivetrain" value="Any drivetrain" [focusable=True]
+            - MenuListPopup
+              - option "Any drivetrain" [focusable=True, selected=True]
+              - option "FWD" [focusable=True]
+              - option "RWD" [focusable=True]
+              - option "AWD" [focusable=True]
+        - LabelText
+          - text "Feature"
+            - text "Feature"
+          - combobox "Feature" value="Any feature" [focusable=True]
+            - MenuListPopup
+              - option "Any feature" [focusable=True, selected=True]
+              - option "Backup Camera" [focusable=True]
+              - option "Leather Seats" [focusable=True]
+              - option "Navigation" [focusable=True]
+              - option "Heated Seats" [focusable=True]
+        - checkbox "Certified pre-owned only" [focusable=True]
+        - checkbox "Single-owner vehicles only" [focusable=True]
+      - button "Search inventory" [focusable=True]
+        - text "Search inventory"
+          - text "Search inventory"
+    - paragraph
+      - text "No vehicles match every filter"
+        - text "No vehicles match every filter"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Best deals" [focusable=True]
+        - MenuListPopup
+          - option "Best deals" [focusable=True, selected=True]
+          - option "Lowest price" [focusable=True]
+          - option "Lowest mileage" [focusable=True]
+          - option "Newest year" [focusable=True]
+    - heading "Try broadening your search" [level=2]
+      - text "Try broadening your search"
+        - text "Try broadening your search"
+    - paragraph
+      - text "Increase your distance or remove one of the selected filters."
+        - text "Increase your distance or remove one of the selected"
+        - text "filters."
+    - button "Clear filters" [focusable=True]
+      - text "Clear filters"
+        - text "Clear filters"
+  - contentinfo
+    - link "Car Gurus" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - paragraph
+      - text "Giving people the power to reach their destination with confidence."
+        - text "Giving people the power to reach their destination"
+        - text "with confidence."
+    - heading "Shop" [level=3]
+      - text "Shop"
+        - text "Shop"
+    - link "Used cars" [focusable=True]
+      - text "Used cars"
+        - text "Used cars"
+    - link "Car reviews" [focusable=True]
+      - text "Car reviews"
+        - text "Car reviews"
+    - link "Price trends" [focusable=True]
+      - text "Price trends"
+        - text "Price trends"
+    - heading "Sell & finance" [level=3]
+      - text "Sell & finance"
+        - text "Sell & finance"
+    - link "Get an offer" [focusable=True]
+      - text "Get an offer"
+        - text "Get an offer"
+    - link "Loan calculator" [focusable=True]
+      - text "Loan calculator"
+        - text "Loan calculator"
+    - link "Pre-qualify" [focusable=True]
+      - text "Pre-qualify"
+        - text "Pre-qualify"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "Mock marketplace experience"
+      - text "Mock marketplace experience"
+    - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+      - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+    - text "Built for confident car shopping."
+      - text "Built for confident car shopping."

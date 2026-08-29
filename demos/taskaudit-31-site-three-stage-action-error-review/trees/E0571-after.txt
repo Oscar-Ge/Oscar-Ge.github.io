@@ -1,0 +1,190 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - paragraph
+      - text "HEALTH TOOLS"
+        - text "HEALTH TOOLS"
+    - heading "Symptom Checker" [level=1]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - paragraph
+      - text "Tell us what you’re experiencing to review possible causes and understand when to seek care."
+        - text "Tell us what you’re experiencing to review possible causes and understand when to seek care."
+    - form
+      - text "1"
+        - text "1"
+      - heading "Main symptom" [level=2]
+        - text "Main symptom"
+          - text "Main symptom"
+      - paragraph
+        - text "Choose the symptom that concerns you most."
+          - text "Choose the symptom that concerns you most."
+      - LabelText
+        - text "Select a symptom"
+          - text "Select a symptom"
+      - combobox "Select a symptom" value="Choose one" [focusable=True]
+        - MenuListPopup
+          - option "Choose one" [focusable=True, selected=True]
+          - option "Chest pain" [focusable=True]
+          - option "Headache" [focusable=True]
+          - option "Abdominal pain" [focusable=True]
+          - option "Dizziness" [focusable=True]
+      - text "2"
+        - text "2"
+      - heading "How does it feel?" [level=2]
+        - text "How does it feel?"
+          - text "How does it feel?"
+      - paragraph
+        - text "Select the description that fits best."
+          - text "Select the description that fits best."
+      - LabelText
+        - text "Pain quality"
+          - text "Pain quality"
+      - combobox "Pain quality" value="Choose one" [focusable=True]
+        - MenuListPopup
+          - option "Choose one" [focusable=True, selected=True]
+          - option "Sharp" [focusable=True]
+          - option "Pressure or squeezing" [focusable=True]
+          - option "Burning" [focusable=True]
+          - option "Dull or aching" [focusable=True]
+      - group "3 Other symptoms Select at least one symptom that accompanies it."
+        - Legend
+          - text "3"
+            - text "3"
+          - heading "Other symptoms" [level=2]
+            - text "Other symptoms"
+              - text "Other symptoms"
+          - paragraph
+            - text "Select at least one symptom that accompanies it."
+              - text "Select at least one symptom that accompanies it."
+        - LabelText
+          - checkbox "Anxiety" [focusable=True]
+          - text "Anxiety"
+            - text "Anxiety"
+        - LabelText
+          - checkbox "Shortness of breath" [focusable=True]
+          - text "Shortness of breath"
+            - text "Shortness of breath"
+        - LabelText
+          - checkbox "Nausea" [focusable=True]
+          - text "Nausea"
+            - text "Nausea"
+        - LabelText
+          - checkbox "Fever" [focusable=True]
+          - text "Fever"
+            - text "Fever"
+        - LabelText
+          - checkbox "Pain with movement" [focusable=True]
+          - text "Pain with movement"
+            - text "Pain with movement"
+        - LabelText
+          - checkbox "Sweating" [focusable=True]
+          - text "Sweating"
+            - text "Sweating"
+      - button "View possible causes" [disabled=True]
+        - text "View possible causes"
+          - text "View possible causes"
+    - heading "Chest pain can be an emergency" [level=2]
+      - text "Chest pain can be an emergency"
+        - text "Chest pain can be an"
+        - text "emergency"
+    - paragraph
+      - text "Call 911 or your local emergency number now for new, severe or unexplained chest pain—especially with trouble breathi..."
+        - text "Call 911 or your local emergency"
+        - text "number now for new, severe or"
+        - text "unexplained chest pain—especially"
+        - text "with trouble breathing, sweating,"
+        - text "fainting or pain spreading to an arm or"
+        - text "jaw."
+    - link "Call 911" [focusable=True]
+      - text "Call 911"
+        - text "Call 911"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."
