@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "ltl-ui-cross-replay-error-review-cases/1",
+  "expectedCaseCount": 484,
+  "replayErrorCounts": {
+    "replay-1": 235,
+    "replay-2": 249,
+    "replay-3": 217
+  },
+  "evidenceImageCount": 1402
+}
