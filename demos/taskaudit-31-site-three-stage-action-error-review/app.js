@@ -78,7 +78,16 @@
   }
   function render() {
     const item = filtered.find((row) => row.errorId === currentId) || filtered[0];
-    if (!item) { APP.innerHTML = '<div class="empty"><h2>No matching errors</h2><p>Change the filters to continue reviewing.</p></div>'; return; }
+    if (!item) {
+      APP.innerHTML = '<div class="empty"><h2>No matching errors</h2><p>Reset the filters to continue reviewing.</p><button type="button" data-reset-filters>Reset filters</button></div>';
+      document.querySelector("[data-reset-filters]").addEventListener("click", () => {
+        Object.keys(filters).forEach((key) => { filters[key] = ""; });
+        filtered = [...cases];
+        currentId = cases[0]?.errorId;
+        render();
+      });
+      return;
+    }
     currentId = item.errorId;
     const saved = reviews[item.errorId] || {};
     const position = filtered.findIndex((row) => row.errorId === item.errorId);
