@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review cross-replay LTL-UI errors with evidence from each replay.">
+  <link rel="icon" href="data:,">
+  <title>LTL-UI · Cross-replay error review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">LTL-UI · Selected-31 · latest run</p>
+      <h1>Cross-replay error review</h1>
+      <p>One decision per identity · separate evidence for every represented replay</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import JSON</button>
+      <button type="button" data-action="export">Export JSON</button>
+      <input class="sr-only" type="file" accept="application/json,.json" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
