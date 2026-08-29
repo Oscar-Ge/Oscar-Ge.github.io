@@ -102,7 +102,7 @@ function start() {
   function analysisTable(analysis) {
     const rows = [["Overall", analysis.overall], ...Object.entries(analysis.byReplay)
       .map(([replay, value]) => [replay.replace("replay-", "Replay "), value])];
-    return `<div class="analysis-wrap"><table><caption>Live review analysis</caption><thead><tr><th>Scope</th><th>Total</th><th>Correct</th><th>False positive</th><th>Unsure</th><th>Unreviewed</th><th>Correctness</th><th>Coverage</th></tr></thead><tbody>${rows.map(([label, value]) => `<tr><th>${label}</th><td>${value.totalErrorCount}</td><td>${value.correctErrorCount}</td><td>${value.falsePositiveCount}</td><td>${value.unsureCount}</td><td>${value.unreviewedCount}</td><td>${percent(value.correctnessRate)}</td><td>${percent(value.annotationCoverageRate)}</td></tr>`).join("")}</tbody></table></div>`;
+    return `<div class="analysis-wrap"><table><caption>Live review analysis</caption><thead><tr><th>Scope</th><th>Total</th><th>Correct</th><th>False positive</th><th>Unsure</th><th>Duplicate</th><th>Unreviewed</th><th>Correctness</th><th>Coverage</th></tr></thead><tbody>${rows.map(([label, value]) => `<tr><th>${label}</th><td>${value.totalErrorCount}</td><td>${value.correctErrorCount}</td><td>${value.falsePositiveCount}</td><td>${value.unsureCount}</td><td>${value.duplicateCount}</td><td>${value.unreviewedCount}</td><td>${percent(value.correctnessRate)}</td><td>${percent(value.annotationCoverageRate)}</td></tr>`).join("")}</tbody></table></div>`;
   }
 
   function focusLabel(focus) {
@@ -254,7 +254,7 @@ function start() {
     const item = filtered.find((candidate) => candidate.errorId === currentId);
     const position = filtered.findIndex((candidate) => candidate.errorId === currentId);
     if (!item) return;
-    if (["1", "2", "3"].includes(event.key)) {
+    if (["1", "2", "3", "4"].includes(event.key)) {
       const decision = Object.keys(DECISIONS)[Number(event.key) - 1];
       saveReview(item.errorId, {
         decision: reviewFor(item.errorId).decision === decision ? null : decision,
