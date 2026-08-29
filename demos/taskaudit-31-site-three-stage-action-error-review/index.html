@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review action-level TaskAudit accessibility detections from the 31-site three-stage run.">
+  <link rel="icon" href="data:,">
+  <title>TaskAudit · 31-site three-stage action-level review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">TaskAudit-faithful three-stage pipeline · 31 websites · raw action-level findings</p>
+      <h1>31-site accessibility and navigation finding review</h1>
+      <p id="dataset-summary">Loading recorded Stage-2 accessibility detections…</p>
+      <p class="scope-note">All Stage-2 accessibility positives are retained. Stage-3 taxonomy results are shown separately as MAPPED, UNMAPPED, or OUT_OF_SCOPE and never revise the Stage-2 decision. Counts are raw action-level findings, not deduplicated website bugs.</p>
+      <p class="provenance">Before/after screenshots, focus rectangles, screen-reader transcripts, and accessibility-tree links come directly from the original agent runs; no browser replay was used. Red boxes show the recorded focus for each action.</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import</button>
+      <button type="button" data-action="export">Export JSONL</button>
+      <input class="sr-only" type="file" accept="application/json,.json,.jsonl" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
