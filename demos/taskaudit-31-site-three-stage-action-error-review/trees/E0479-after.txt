@@ -1,0 +1,251 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" value="h" [focusable=True]
+        - text "h"
+          - text "h"
+      - button "Clear search" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - button "← Back to r/MadeMeSmile" [focusable=True]
+      - text "← Back to r/"
+        - text "← Back to r/"
+      - text "MadeMeSmile"
+        - text "MadeMeSmile"
+    - article
+      - button "Upvote A tiny act of kindness became a whole town tradition" [focusable=True]
+      - strong
+        - text "193k"
+          - text "193k"
+      - button "Downvote A tiny act of kindness became a whole town tradition" [focusable=True]
+      - button "r/MadeMeSmile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "day_brightener"
+        - text "day_brightener"
+      - text "•"
+        - text "•"
+      - text "12 days ago"
+        - text "12 days ago"
+      - text "Wholesome"
+        - text "Wholesome"
+      - button "A tiny act of kindness became a whole town tradition" [focusable=True]
+        - text "A tiny act of kindness became a whole town tradition"
+          - text "A tiny act of kindness became a whole town tradition"
+      - paragraph
+        - text "Every Friday, people leave a note of thanks for someone in their community."
+          - text "Every Friday, people leave a note of thanks for someone in their community."
+      - button "12.8k comments" [focused=True, focusable=True]
+        - text "12.8k"
+          - text "12.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for A tiny act of kindness became a whole town tradition" [focusable=True]
+    - form
+      - LabelText
+        - text "Join the conversation"
+          - text "Join the conversation"
+      - entry "Add a comment" [focusable=True]
+      - text "Commenting as"
+        - text "Commenting as"
+      - strong
+        - text "u/orange_orbit"
+          - text "u/orange_orbit"
+      - button "Comment" [focusable=True]
+        - text "Comment"
+          - text "Comment"
+    - LabelText
+      - text "Sort comments by"
+        - text "Sort comments by"
+      - combobox "Sort comments by" value="Top" [focusable=True]
+        - MenuListPopup
+          - option "Top" [focusable=True, selected=True]
+          - option "Newest" [focusable=True]
+          - option "Oldest" [focusable=True]
+    - text "2"
+      - text "2"
+    - text "loaded comments"
+      - text "loaded comments"
+    - article
+      - text "J"
+        - text "J"
+      - strong
+        - text "u/"
+          - text "u/"
+        - text "joyfulnoise"
+          - text "joyfulnoise"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - paragraph
+        - text "I am going to leave a note for my bus driver tomorrow."
+          - text "I am going to leave a note for my bus driver tomorrow."
+      - button "Upvote comment by joyfulnoise" [focusable=True]
+      - strong
+        - text "3.4k"
+          - text "3.4k"
+      - button "Downvote comment by joyfulnoise" [focusable=True]
+      - button "Reply" [focusable=True]
+        - text "Reply"
+          - text "Reply"
+    - article
+      - text "F"
+        - text "F"
+      - strong
+        - text "u/"
+          - text "u/"
+        - text "first_light"
+          - text "first_light"
+      - text "•"
+        - text "•"
+      - text "11 days ago"
+        - text "11 days ago"
+      - text "Oldest"
+        - text "Oldest"
+      - paragraph
+        - text "This started in my town too. One note is still pinned above the bakery counter."
+          - text "This started in my town too. One note is still pinned above the bakery counter."
+      - button "Upvote comment by first_light" [focusable=True]
+      - strong
+        - text "1.2k"
+          - text "1.2k"
+      - button "Downvote comment by first_light" [focusable=True]
+      - button "Reply" [focusable=True]
+        - text "Reply"
+          - text "Reply"
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

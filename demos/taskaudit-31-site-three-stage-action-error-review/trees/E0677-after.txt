@@ -1,0 +1,167 @@
+- document "app" [focused=True, focusable=True]
+  - text "Trusted since 1945"
+    - text "Trusted since 1945"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "1-800-GO-UHAUL" [focusable=True]
+    - text "1-800-GO-UHAUL"
+      - text "1-800-GO-UHAUL"
+  - banner
+    - link "U-Haul home" [focusable=True]
+      - text "U-HAUL"
+        - text "U-HAUL"
+    - navigation "Main navigation"
+      - link "Trucks & Trailers" [focusable=True]
+        - text "Trucks & Trailers"
+          - text "Trucks & Trailers"
+      - link "Storage" [focusable=True]
+        - text "Storage"
+          - text "Storage"
+      - link "Moving Supplies" [focusable=True]
+        - text "Moving Supplies"
+          - text "Moving Supplies"
+      - link "Hitches" [focusable=True]
+        - text "Hitches"
+          - text "Hitches"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - text "THE RIGHT EQUIPMENT FOR EVERY MOVE"
+      - text "THE RIGHT EQUIPMENT FOR EVERY MOVE"
+    - heading "Truck & trailer rentals" [level=1]
+      - text "Truck & trailer rentals"
+        - text "Truck & trailer"
+        - text "rentals"
+    - paragraph
+      - text "Compare equipment sizes, transparent rates and one-way options near you."
+        - text "Compare equipment sizes, transparent rates and one-way options near you."
+    - tablist "Rental equipment type"
+      - button "Moving trucks" [focusable=True]
+        - text "Moving trucks"
+          - text "Moving trucks"
+      - button "Cargo trailers" [focusable=True]
+        - text "Cargo trailers"
+          - text "Cargo trailers"
+    - form
+      - text "STEP 1 OF 2"
+        - text "STEP 1 OF 2"
+      - heading "Find a trailer that fits your vehicle" [level=2]
+        - text "Find a trailer that fits your vehicle"
+          - text "Find a trailer that fits your vehicle"
+      - text "Secure reservation"
+        - text "Secure reservation"
+      - LabelText
+        - text "Pick up location"
+          - text "Pick up location"
+        - entry "Pick up location" [focusable=True, required=True]
+      - LabelText
+        - text "Pick up date"
+          - text "Pick up date"
+        - Date "Pick up date" value="2023-04-19" [focusable=True]
+          - spinbutton "Month Month" value="4" [focusable=True]
+            - text "04"
+              - text "04"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="19" [focusable=True]
+            - text "19"
+              - text "19"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2023" [focusable=True]
+            - text "2023"
+              - text "2023"
+          - button "Show date picker" [focusable=True]
+      - group "Vehicle doing the towing"
+        - Legend
+          - text "Vehicle doing the towing"
+            - text "Vehicle doing the towing"
+        - paragraph
+          - text "We will only show trailers compatible with your vehicle."
+            - text "We will only show trailers compatible with your vehicle."
+        - LabelText
+          - text "Year"
+            - text "Year"
+          - combobox "Vehicle year" value="2015" [focusable=True]
+            - MenuListPopup
+              - option "2015" [focusable=True, selected=True]
+              - option "2016" [focusable=True]
+              - option "2017" [focusable=True]
+        - LabelText
+          - text "Make"
+            - text "Make"
+          - combobox "Vehicle make" value="Honda" [focused=True, focusable=True]
+            - MenuListPopup
+              - option "Dodge" [focusable=True]
+              - option "Doge" [focusable=True]
+              - option "Honda" [focusable=True, selected=True]
+              - option "Ford" [focusable=True]
+        - LabelText
+          - text "Model"
+            - text "Model"
+          - combobox "Vehicle model" value="Challenger" [focusable=True]
+            - MenuListPopup
+              - option "Challenger" [focusable=True, selected=True]
+              - option "Charger" [focusable=True]
+              - option "Durango" [focusable=True]
+      - paragraph
+        - text "No credit card required to view rates"
+          - text "No credit card required to view rates"
+      - button "Show available trailers" [focusable=True]
+        - text "Show available"
+          - text "Show available"
+        - text "trailers"
+          - text "trailers"
+  - contentinfo
+    - link "U-HAUL" [focusable=True]
+      - text "U-HAUL"
+        - text "U-HAUL"
+    - paragraph
+      - text "Your one-stop shop for moving and storage."
+        - text "Your one-stop shop for moving and"
+        - text "storage."
+    - link "1-800-GO-UHAUL" [focusable=True]
+      - text "1-800-GO-UHAUL"
+        - text "1-800-GO-UHAUL"
+    - heading "Rentals" [level=3]
+      - text "Rentals"
+        - text "Rentals"
+    - link "Moving trucks" [focusable=True]
+      - text "Moving trucks"
+        - text "Moving trucks"
+    - link "Cargo trailers" [focusable=True]
+      - text "Cargo trailers"
+        - text "Cargo trailers"
+    - link "Trailer hitches" [focusable=True]
+      - text "Trailer hitches"
+        - text "Trailer hitches"
+    - heading "Storage & supplies" [level=3]
+      - text "Storage & supplies"
+        - text "Storage & supplies"
+    - link "Self-storage" [focusable=True]
+      - text "Self-storage"
+        - text "Self-storage"
+    - link "Moving boxes" [focusable=True]
+      - text "Moving boxes"
+        - text "Moving boxes"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - heading "Helpful shortcuts" [level=3]
+      - text "Helpful shortcuts"
+        - text "Helpful shortcuts"
+    - link "Find a location" [focusable=True]
+      - text "Find a location"
+        - text "Find a location"
+    - link "Get rental rates" [focusable=True]
+      - text "Get rental rates"
+        - text "Get rental rates"
+    - link "Contact support" [focusable=True]
+      - text "Contact support"
+        - text "Contact support"
+    - text "© 2026 U-Haul International, Inc. Mock experience."
+      - text "© 2026 U-Haul International, Inc. Mock experience."
+    - text "Move smart. Move safely."
+      - text "Move smart. Move safely."

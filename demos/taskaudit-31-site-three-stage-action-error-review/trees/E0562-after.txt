@@ -1,0 +1,272 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - text "Sunday, August 16"
+      - text "Sunday, August 16"
+    - text "Live conditions"
+      - text "Live conditions"
+    - button "Weatherwise home" [focusable=True]
+      - strong
+        - text "Weather"
+          - text "Weather"
+      - emphasis
+        - text "wise"
+          - text "wise"
+    - search
+      - combobox "Search city or ZIP code" [focusable=True]
+      - button "Search" [focused=True, focusable=True]
+        - text "Search"
+          - text "Search"
+      - alert
+        - text "Try Seattle, Denver, Los Angeles, Champaign, 90028, 90210, or 10019."
+          - text "Try Seattle, Denver, Los Angeles, Champaign, 90028, 90210, or 10019."
+    - button "Use my location" [focusable=True]
+      - text "Use my location"
+        - text "Use my location"
+    - generic "Temperature unit"
+      - button "°F" [focusable=True, pressed=true]
+        - text "°F"
+          - text "°F"
+      - button "°C" [focusable=True]
+        - text "°C"
+          - text "°C"
+    - navigation "Primary navigation"
+      - button "Forecast" [focusable=True]
+        - text "Forecast"
+          - text "Forecast"
+      - button "Maps" [focusable=True]
+        - text "Maps"
+          - text "Maps"
+      - button "Air Quality" [focusable=True]
+        - text "Air Quality"
+          - text "Air Quality"
+      - button "Health & Activities" [focusable=True]
+        - text "Health & Activities"
+          - text "Health & Activities"
+  - text "KING COUNTY"
+    - text "KING COUNTY"
+  - text "·"
+    - text "·"
+  - text "98101"
+    - text "98101"
+  - heading "Seattle, WA" [level=1]
+    - text "Seattle, WA"
+      - text "Seattle, WA"
+  - paragraph
+    - text "As of 11:12 AM PDT · Updated moments ago"
+      - text "As of 11:12 AM PDT · Updated moments ago"
+  - strong
+    - text "66°"
+      - text "66°"
+  - text "Mostly Cloudy"
+    - text "Mostly Cloudy"
+  - text "Feels like"
+    - text "Feels like"
+  - text "65°"
+    - text "65°"
+  - navigation "Weather views"
+    - button "Today" [focusable=True]
+      - text "Today"
+        - text "Today"
+    - button "Hourly" [focusable=True]
+      - text "Hourly"
+        - text "Hourly"
+    - button "10 Day" [focusable=True]
+      - text "10 Day"
+        - text "10 Day"
+    - button "Monthly" [focusable=True]
+      - text "Monthly"
+        - text "Monthly"
+    - button "Health" [focusable=True]
+      - text "Health"
+        - text "Health"
+    - button "Air Quality" [focusable=True]
+      - text "Air Quality"
+        - text "Air Quality"
+    - button "History" [focusable=True]
+      - text "History"
+        - text "History"
+    - button "Radar" [focusable=True]
+      - text "Radar"
+        - text "Radar"
+  - main
+    - text "CURRENT WEATHER"
+      - text "CURRENT WEATHER"
+    - heading "Seattle right now" [level=2]
+      - text "Seattle"
+        - text "Seattle"
+      - text "right now"
+        - text "right now"
+    - text "Updated now"
+      - text "Updated now"
+    - strong
+      - text "66°"
+        - text "66°"
+    - text "Mostly Cloudy"
+      - text "Mostly Cloudy"
+    - text "Feels like"
+      - text "Feels like"
+    - text "65°"
+      - text "65°"
+    - text "High"
+      - text "High"
+    - text "72°"
+      - text "72°"
+    - text "Low"
+      - text "Low"
+    - text "56°"
+      - text "56°"
+    - paragraph
+      - text "Clouds thinning this afternoon with comfortable temperatures and a light breeze."
+        - text "Clouds thinning this afternoon with comfortable temperatures and a light breeze."
+    - text "Humidity"
+      - text "Humidity"
+    - strong
+      - text "69%"
+        - text "69%"
+    - text "Wind"
+      - text "Wind"
+    - strong
+      - text "SSW 7 mph"
+        - text "SSW 7 mph"
+    - text "Visibility"
+      - text "Visibility"
+    - strong
+      - text "10 mi"
+        - text "10 mi"
+    - text "Pressure"
+      - text "Pressure"
+    - strong
+      - text "30.02 in"
+        - text "30.02 in"
+    - text "Dew point"
+      - text "Dew point"
+    - strong
+      - text "55°"
+        - text "55°"
+    - text "Rain chance"
+      - text "Rain chance"
+    - strong
+      - text "28%"
+        - text "28%"
+    - text "COMING UP"
+      - text "COMING UP"
+    - heading "Hourly outlook" [level=2]
+      - text "Hourly outlook"
+        - text "Hourly outlook"
+    - button "Next 24 hours" [focusable=True]
+      - text "Next 24 hours"
+        - text "Next 24 hours"
+    - text "Now"
+      - text "Now"
+    - strong
+      - text "70°"
+        - text "70°"
+    - text "20"
+      - text "20"
+    - text "%"
+      - text "%"
+    - text "12 PM"
+      - text "12 PM"
+    - strong
+      - text "72°"
+        - text "72°"
+    - text "27"
+      - text "27"
+    - text "%"
+      - text "%"
+    - text "1 PM"
+      - text "1 PM"
+    - strong
+      - text "72°"
+        - text "72°"
+    - text "34"
+      - text "34"
+    - text "%"
+      - text "%"
+    - text "2 PM"
+      - text "2 PM"
+    - strong
+      - text "72°"
+        - text "72°"
+    - text "24"
+      - text "24"
+    - text "%"
+      - text "%"
+    - text "3 PM"
+      - text "3 PM"
+    - strong
+      - text "70°"
+        - text "70°"
+    - text "31"
+      - text "31"
+    - text "%"
+      - text "%"
+    - text "4 PM"
+      - text "4 PM"
+    - strong
+      - text "69°"
+        - text "69°"
+    - text "21"
+      - text "21"
+    - text "%"
+      - text "%"
+    - complementary
+      - text "SUNDAY'S OUTLOOK"
+        - text "SUNDAY'S OUTLOOK"
+      - heading "Sun & moon" [level=2]
+        - text "Sun & moon"
+          - text "Sun & moon"
+      - text "Sunrise"
+        - text "Sunrise"
+      - strong
+        - text "6:05 AM"
+          - text "6:05 AM"
+      - text "Sunset"
+        - text "Sunset"
+      - strong
+        - text "8:18 PM"
+          - text "8:18 PM"
+      - button "AIR QUALITY 32 · Good See pollutant details" [focusable=True]
+        - text "AIR QUALITY"
+          - text "AIR QUALITY"
+        - strong
+          - text "32"
+            - text "32"
+          - text "·"
+            - text "·"
+          - text "Good"
+            - text "Good"
+        - emphasis
+          - text "See pollutant details"
+            - text "See pollutant details"
+      - button "COLD & FLU Low risk View today's health outlook" [focusable=True]
+        - text "COLD & FLU"
+          - text "COLD & FLU"
+        - strong
+          - text "Low"
+            - text "Low"
+          - text "risk"
+            - text "risk"
+        - emphasis
+          - text "View today's health outlook"
+            - text "View today's health outlook"
+      - button "RADAR Live local map Track precipitation nearby" [focusable=True]
+        - text "RADAR"
+          - text "RADAR"
+        - strong
+          - text "Live local map"
+            - text "Live local map"
+        - emphasis
+          - text "Track precipitation nearby"
+            - text "Track precipitation nearby"
+  - contentinfo
+    - strong
+      - text "Weatherwise"
+        - text "Weatherwise"
+    - text "Clear forecasts. Confident plans."
+      - text "Clear forecasts. Confident plans."
+    - paragraph
+      - text "All forecasts, history, radar, and air quality readings on this demo are synthetically generated."
+        - text "All forecasts, history, radar, and air quality readings on this demo are synthetically generated."
+    - text "© 2026 Weatherwise"
+      - text "© 2026 Weatherwise"

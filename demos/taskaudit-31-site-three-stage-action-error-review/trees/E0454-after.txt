@@ -1,0 +1,2714 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" value="b" [focused=True, focusable=True]
+        - text "b"
+          - text "b"
+      - button "Clear search" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - paragraph
+      - text "SEARCH RESULTS"
+        - text "SEARCH RESULTS"
+    - heading "“b”" [level=1]
+      - text "“"
+        - text "“"
+      - text "b"
+        - text "b"
+      - text "”"
+        - text "”"
+    - paragraph
+      - text "67"
+        - text "67"
+      - text "relevant results from synthetic Reddit data"
+        - text "relevant results from synthetic Reddit data"
+    - tablist "Search result types"
+      - tab "All" [focusable=True, selected=True]
+        - text "All"
+          - text "All"
+      - tab "Posts" [focusable=True]
+        - text "Posts"
+          - text "Posts"
+      - tab "Comments" [focusable=True]
+        - text "Comments"
+          - text "Comments"
+      - tab "Communities" [focusable=True]
+        - text "Communities"
+          - text "Communities"
+    - heading "Communities" [level=2]
+      - text "Communities"
+        - text "Communities"
+    - text "Sorted by relevance and current viewers"
+      - text "Sorted by relevance and current viewers"
+    - article
+      - button "r/announcements Reddit Announcements" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "announcements"
+            - text "announcements"
+        - emphasis
+          - text "Reddit Announcements"
+            - text "Reddit Announcements"
+      - paragraph
+        - text "Official updates, product news, and announcements from Reddit."
+          - text "Official updates, product news, and announcements from"
+          - text "Reddit."
+      - text "278m"
+        - text "278m"
+      - text "members"
+        - text "members"
+      - text "4.8m"
+        - text "4.8m"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Joined" [focusable=True]
+        - text "Joined"
+          - text "Joined"
+    - article
+      - button "r/AskReddit Ask Reddit" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "AskReddit"
+            - text "AskReddit"
+        - emphasis
+          - text "Ask Reddit"
+            - text "Ask Reddit"
+      - paragraph
+        - text "Ask and answer thought-provoking questions."
+          - text "Ask and answer thought-provoking questions."
+      - text "49m"
+        - text "49m"
+      - text "members"
+        - text "members"
+      - text "184k"
+        - text "184k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/gaming Gaming" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "gaming"
+            - text "gaming"
+        - emphasis
+          - text "Gaming"
+            - text "Gaming"
+      - paragraph
+        - text "A community for game news and discussion."
+          - text "A community for game news and discussion."
+      - text "42m"
+        - text "42m"
+      - text "members"
+        - text "members"
+      - text "120k"
+        - text "120k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/memes Memes" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "memes"
+            - text "memes"
+        - emphasis
+          - text "Memes"
+            - text "Memes"
+      - paragraph
+        - text "Memes, internet culture, and a little chaos."
+          - text "Memes, internet culture, and a little chaos."
+      - text "33m"
+        - text "33m"
+      - text "members"
+        - text "members"
+      - text "99.1k"
+        - text "99.1k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/Music Music" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "Music"
+            - text "Music"
+        - emphasis
+          - text "Music"
+            - text "Music"
+      - paragraph
+        - text "The highest-viewed community for music news, discovery, and discussion."
+          - text "The highest-viewed community for music news, discovery,"
+          - text "and discussion."
+      - text "35m"
+        - text "35m"
+      - text "members"
+        - text "members"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/news News" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "news"
+            - text "news"
+        - emphasis
+          - text "News"
+            - text "News"
+      - paragraph
+        - text "Real news articles and current events from around the world."
+          - text "Real news articles and current events from around the world."
+      - text "29m"
+        - text "29m"
+      - text "members"
+        - text "members"
+      - text "58.6k"
+        - text "58.6k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/movies Movies" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "movies"
+            - text "movies"
+        - emphasis
+          - text "Movies"
+            - text "Movies"
+      - paragraph
+        - text "News and discussion about films, trailers, and cinema."
+          - text "News and discussion about films, trailers, and cinema."
+      - text "35m"
+        - text "35m"
+      - text "members"
+        - text "members"
+      - text "45.3k"
+        - text "45.3k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/food Food" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "food"
+            - text "food"
+        - emphasis
+          - text "Food"
+            - text "Food"
+      - paragraph
+        - text "Food photos, recipes, kitchen stories, and delicious discussion."
+          - text "Food photos, recipes, kitchen stories, and delicious"
+          - text "discussion."
+      - text "25m"
+        - text "25m"
+      - text "members"
+        - text "members"
+      - text "31.6k"
+        - text "31.6k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/FortNiteBR Fortnite Battle Royale" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "FortNiteBR"
+            - text "FortNiteBR"
+        - emphasis
+          - text "Fortnite Battle Royale"
+            - text "Fortnite Battle Royale"
+      - paragraph
+        - text "The largest Fortnite community for Battle Royale news and discussion."
+          - text "The largest Fortnite community for Battle Royale news and"
+          - text "discussion."
+      - text "5.4m"
+        - text "5.4m"
+      - text "members"
+        - text "members"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/politics Politics" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "politics"
+            - text "politics"
+        - emphasis
+          - text "Politics"
+            - text "Politics"
+      - paragraph
+        - text "News and discussion about politics in the United States."
+          - text "News and discussion about politics in the United States."
+      - text "8.6m"
+        - text "8.6m"
+      - text "members"
+        - text "members"
+      - text "24.8k"
+        - text "24.8k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/Cryptocurrency CryptoCurrency" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "Cryptocurrency"
+            - text "Cryptocurrency"
+        - emphasis
+          - text "CryptoCurrency"
+            - text "CryptoCurrency"
+      - paragraph
+        - text "News and discussion about cryptocurrency markets and technology."
+          - text "News and discussion about cryptocurrency markets and"
+          - text "technology."
+      - text "9.1m"
+        - text "9.1m"
+      - text "members"
+        - text "members"
+      - text "22.9k"
+        - text "22.9k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/Fitness Fitness" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "Fitness"
+            - text "Fitness"
+        - emphasis
+          - text "Fitness"
+            - text "Fitness"
+      - paragraph
+        - text "A welcoming community for fitness questions, routines, and progress."
+          - text "A welcoming community for fitness questions, routines, and"
+          - text "progress."
+      - text "12m"
+        - text "12m"
+      - text "members"
+        - text "members"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/work Work" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "work"
+            - text "work"
+        - emphasis
+          - text "Work"
+            - text "Work"
+      - paragraph
+        - text "Stories, questions, and advice about life at work."
+          - text "Stories, questions, and advice about life at work."
+      - text "3.2m"
+        - text "3.2m"
+      - text "members"
+        - text "members"
+      - text "11.8k"
+        - text "11.8k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/cars Cars" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "cars"
+            - text "cars"
+        - emphasis
+          - text "Cars"
+            - text "Cars"
+      - paragraph
+        - text "Car news, questions, projects, and informed discussion."
+          - text "Car news, questions, projects, and informed discussion."
+      - text "6.2m"
+        - text "6.2m"
+      - text "members"
+        - text "members"
+      - text "9.2k"
+        - text "9.2k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/SkincareAddiction Skincare Addiction" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "SkincareAddiction"
+            - text "SkincareAddiction"
+        - emphasis
+          - text "Skincare Addiction"
+            - text "Skincare Addiction"
+      - paragraph
+        - text "Evidence-minded skincare routines and product discussion."
+          - text "Evidence-minded skincare routines and product discussion."
+      - text "3.1m"
+        - text "3.1m"
+      - text "members"
+        - text "members"
+      - text "7.4k"
+        - text "7.4k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/FortniteCreative Fortnite Creative" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "FortniteCreative"
+            - text "FortniteCreative"
+        - emphasis
+          - text "Fortnite Creative"
+            - text "Fortnite Creative"
+      - paragraph
+        - text "Maps, tools, and creators in Fortnite Creative."
+          - text "Maps, tools, and creators in Fortnite Creative."
+      - text "810k"
+        - text "810k"
+      - text "members"
+        - text "members"
+      - text "6.2k"
+        - text "6.2k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/LetsTalkMusic Let's Talk Music" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "LetsTalkMusic"
+            - text "LetsTalkMusic"
+        - emphasis
+          - text "Let's Talk Music"
+            - text "Let's Talk Music"
+      - paragraph
+        - text "In-depth music discussion and thoughtful reviews."
+          - text "In-depth music discussion and thoughtful reviews."
+      - text "3.1m"
+        - text "3.1m"
+      - text "members"
+        - text "members"
+      - text "4.9k"
+        - text "4.9k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/answers Answers" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "answers"
+            - text "answers"
+        - emphasis
+          - text "Answers"
+            - text "Answers"
+      - paragraph
+        - text "Reference-style answers to questions from across Reddit."
+          - text "Reference-style answers to questions from across Reddit."
+      - text "890k"
+        - text "890k"
+      - text "members"
+        - text "members"
+      - text "3.4k"
+        - text "3.4k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/GiftCardExchange Gift Card Exchange" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "GiftCardExchange"
+            - text "GiftCardExchange"
+        - emphasis
+          - text "Gift Card Exchange"
+            - text "Gift Card Exchange"
+      - paragraph
+        - text "A trusted place for Redditors to exchange gift cards."
+          - text "A trusted place for Redditors to exchange gift cards."
+      - text "412k"
+        - text "412k"
+      - text "members"
+        - text "members"
+      - text "2.3k"
+        - text "2.3k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/NationalPark National Park" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "NationalPark"
+            - text "NationalPark"
+        - emphasis
+          - text "National Park"
+            - text "National Park"
+      - paragraph
+        - text "Celebrating national parks, wild places, and responsible travel."
+          - text "Celebrating national parks, wild places, and responsible"
+          - text "travel."
+      - text "1.2m"
+        - text "1.2m"
+      - text "members"
+        - text "members"
+      - text "2.1k"
+        - text "2.1k"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/12Monkeys 12 Monkeys" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "12Monkeys"
+            - text "12Monkeys"
+        - emphasis
+          - text "12 Monkeys"
+            - text "12 Monkeys"
+      - paragraph
+        - text "Discussion of the 12 Monkeys series, timeline, and characters."
+          - text "Discussion of the 12 Monkeys series, timeline, and"
+          - text "characters."
+      - text "42.8k"
+        - text "42.8k"
+      - text "members"
+        - text "members"
+      - text "318"
+        - text "318"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - article
+      - button "r/Blind Blind and Visually Impaired" [focusable=True]
+        - strong
+          - text "r/"
+            - text "r/"
+          - text "Blind"
+            - text "Blind"
+        - emphasis
+          - text "Blind and Visually Impaired"
+            - text "Blind and Visually Impaired"
+      - paragraph
+        - text "A supportive community by and for blind and visually impaired people."
+          - text "A supportive community by and for blind and visually"
+          - text "impaired people."
+      - text "24.6k"
+        - text "24.6k"
+      - text "members"
+        - text "members"
+      - text "126"
+        - text "126"
+      - text "viewing now"
+        - text "viewing now"
+      - button "Join" [focusable=True]
+        - text "Join"
+          - text "Join"
+    - heading "Posts" [level=2]
+      - text "Posts"
+        - text "Posts"
+    - text "Use Top, New, time, and comments filters to refine"
+      - text "Use Top, New, time, and comments filters to refine"
+    - generic "Feed controls"
+      - button "Hot" [focusable=True, pressed=true]
+        - text "Hot"
+          - text "Hot"
+      - button "New" [focusable=True]
+        - text "New"
+          - text "New"
+      - button "Top" [focusable=True]
+        - text "Top"
+          - text "Top"
+      - button "Rising" [focusable=True]
+        - text "Rising"
+          - text "Rising"
+      - button "Most comments" [focusable=True]
+        - text "Most comments"
+          - text "Most comments"
+      - generic "Post view"
+        - button "Card view" [focusable=True, pressed=true]
+        - button "Compact view" [focusable=True]
+    - article
+      - button "Upvote The day the whole neighborhood came together" [focusable=True]
+      - strong
+        - text "486k"
+          - text "486k"
+      - button "Downvote The day the whole neighborhood came together" [focusable=True]
+      - button "r/pics" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "pics"
+          - text "pics"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "kindstranger"
+        - text "kindstranger"
+      - text "•"
+        - text "•"
+      - text "6 years ago"
+        - text "6 years ago"
+      - text "Wholesome"
+        - text "Wholesome"
+      - button "The day the whole neighborhood came together" [focusable=True]
+        - text "The day the whole neighborhood came together"
+          - text "The day the whole neighborhood came together"
+      - paragraph
+        - text "Thousands of people helped rebuild the community garden in a single weekend."
+          - text "Thousands of people helped rebuild the community garden in a single weekend."
+      - button "28.4k comments" [focusable=True]
+        - text "28.4k"
+          - text "28.4k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for The day the whole neighborhood came together" [focusable=True]
+    - article
+      - button "Upvote What is a small decision that changed your entire life?" [focusable=True]
+      - strong
+        - text "422k"
+          - text "422k"
+      - button "Downvote What is a small decision that changed your entire life?" [focusable=True]
+      - button "r/AskReddit" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "question_keeper"
+        - text "question_keeper"
+      - text "•"
+        - text "•"
+      - text "4 years ago"
+        - text "4 years ago"
+      - button "What is a small decision that changed your entire life?" [focusable=True]
+        - text "What is a small decision that changed your entire life?"
+          - text "What is a small decision that changed your entire life?"
+      - button "96.7k comments" [focusable=True]
+        - text "96.7k"
+          - text "96.7k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What is a small decision that changed your entire life?" [focusable=True]
+    - article
+      - button "Upvote My grandfather finished his first video game at 82" [focusable=True]
+      - strong
+        - text "399k"
+          - text "399k"
+      - button "Downvote My grandfather finished his first video game at 82" [focusable=True]
+      - button "r/gaming" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "gaming"
+          - text "gaming"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "save_point"
+        - text "save_point"
+      - text "•"
+        - text "•"
+      - text "3 years ago"
+        - text "3 years ago"
+      - text "Achievement"
+        - text "Achievement"
+      - button "My grandfather finished his first video game at 82" [focusable=True]
+        - text "My grandfather finished his first video game at 82"
+          - text "My grandfather finished his first video game at 82"
+      - paragraph
+        - text "He asked if there was a sequel before the credits had finished."
+          - text "He asked if there was a sequel before the credits had finished."
+      - button "19.1k comments" [focusable=True]
+        - text "19.1k"
+          - text "19.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for My grandfather finished his first video game at 82" [focusable=True]
+    - article
+      - button "Upvote A tiny act of kindness became a whole town tradition" [focusable=True]
+      - strong
+        - text "193k"
+          - text "193k"
+      - button "Downvote A tiny act of kindness became a whole town tradition" [focusable=True]
+      - button "r/MadeMeSmile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "day_brightener"
+        - text "day_brightener"
+      - text "•"
+        - text "•"
+      - text "12 days ago"
+        - text "12 days ago"
+      - text "Wholesome"
+        - text "Wholesome"
+      - button "A tiny act of kindness became a whole town tradition" [focusable=True]
+        - text "A tiny act of kindness became a whole town tradition"
+          - text "A tiny act of kindness became a whole town tradition"
+      - paragraph
+        - text "Every Friday, people leave a note of thanks for someone in their community."
+          - text "Every Friday, people leave a note of thanks for someone in their community."
+      - button "12.8k comments" [focusable=True]
+        - text "12.8k"
+          - text "12.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for A tiny act of kindness became a whole town tradition" [focusable=True]
+    - article
+      - button "Upvote When the group chat discovers the same old meme again" [focusable=True]
+      - strong
+        - text "159k"
+          - text "159k"
+      - button "Downvote When the group chat discovers the same old meme again" [focusable=True]
+      - button "r/memes" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "memes"
+          - text "memes"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "compressedjpeg"
+        - text "compressedjpeg"
+      - text "•"
+        - text "•"
+      - text "5 days ago"
+        - text "5 days ago"
+      - text "Meme"
+        - text "Meme"
+      - button "When the group chat discovers the same old meme again" [focusable=True]
+        - text "When the group chat discovers the same old meme again"
+          - text "When the group chat discovers the same old meme again"
+      - paragraph
+        - text "It somehow gets funnier every time."
+          - text "It somehow gets funnier every time."
+      - button "Open A reaction meme about the group chat" [focusable=True]
+        - text "A reaction meme about the group chat"
+          - text "A reaction meme about the group chat"
+      - button "19.4k comments" [focusable=True]
+        - text "19.4k"
+          - text "19.4k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for When the group chat discovers the same old meme again" [focusable=True]
+    - article
+      - button "Upvote What local story deserves more attention this month?" [focusable=True]
+      - strong
+        - text "143k"
+          - text "143k"
+      - button "Downvote What local story deserves more attention this month?" [focusable=True]
+      - button "r/AskReddit" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "newsroomquestion"
+        - text "newsroomquestion"
+      - text "•"
+        - text "•"
+      - text "9 days ago"
+        - text "9 days ago"
+      - text "Breaking News"
+        - text "Breaking News"
+      - button "What local story deserves more attention this month?" [focusable=True]
+        - text "What local story deserves more attention this month?"
+          - text "What local story deserves more attention this month?"
+      - button "55.3k comments" [focusable=True]
+        - text "55.3k"
+          - text "55.3k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What local story deserves more attention this month?" [focusable=True]
+    - article
+      - button "Upvote What habit has quietly improved your life this month?" [focusable=True]
+      - strong
+        - text "118k"
+          - text "118k"
+      - button "Downvote What habit has quietly improved your life this month?" [focusable=True]
+      - button "r/AskReddit" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "wondering_aloud"
+        - text "wondering_aloud"
+      - text "•"
+        - text "•"
+      - text "6 days ago"
+        - text "6 days ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "What habit has quietly improved your life this month?" [focusable=True]
+        - text "What habit has quietly improved your life this month?"
+          - text "What habit has quietly improved your life this month?"
+      - button "42.1k comments" [focusable=True]
+        - text "42.1k"
+          - text "42.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What habit has quietly improved your life this month?" [focusable=True]
+    - article
+      - button "Upvote Which game from last year deserved much more attention?" [focusable=True]
+      - strong
+        - text "101k"
+          - text "101k"
+      - button "Downvote Which game from last year deserved much more attention?" [focusable=True]
+      - button "r/gaming" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "gaming"
+          - text "gaming"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "final_boss"
+        - text "final_boss"
+      - text "•"
+        - text "•"
+      - text "10 months ago"
+        - text "10 months ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "Which game from last year deserved much more attention?" [focusable=True]
+        - text "Which game from last year deserved much more attention?"
+          - text "Which game from last year deserved much more attention?"
+      - paragraph
+        - text "Tell us the moment that sold you on it."
+          - text "Tell us the moment that sold you on it."
+      - button "38.5k comments" [focusable=True]
+        - text "38.5k"
+          - text "38.5k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Which game from last year deserved much more attention?" [focusable=True]
+    - article
+      - button "Upvote What meal could you happily eat every week forever?" [focusable=True]
+      - strong
+        - text "88.4k"
+          - text "88.4k"
+      - button "Downvote What meal could you happily eat every week forever?" [focusable=True]
+      - button "r/food" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "food"
+          - text "food"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "simmerdown"
+        - text "simmerdown"
+      - text "•"
+        - text "•"
+      - text "8 months ago"
+        - text "8 months ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "What meal could you happily eat every week forever?" [focusable=True]
+        - text "What meal could you happily eat every week forever?"
+          - text "What meal could you happily eat every week forever?"
+      - paragraph
+        - text "The answers have become a genuinely excellent dinner-planning list."
+          - text "The answers have become a genuinely excellent dinner-planning list."
+      - button "48.2k comments" [focusable=True]
+        - text "48.2k"
+          - text "48.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What meal could you happily eat every week forever?" [focusable=True]
+    - article
+      - button "Upvote The best game mechanics introduced last year" [focusable=True]
+      - strong
+        - text "78.7k"
+          - text "78.7k"
+      - button "Downvote The best game mechanics introduced last year" [focusable=True]
+      - button "r/gaming" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "gaming"
+          - text "gaming"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "player_two"
+        - text "player_two"
+      - text "•"
+        - text "•"
+      - text "1 year ago"
+        - text "1 year ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "The best game mechanics introduced last year" [focusable=True]
+        - text "The best game mechanics introduced last year"
+          - text "The best game mechanics introduced last year"
+      - paragraph
+        - text "A community-voted list of ideas we hope other games learn from."
+          - text "A community-voted list of ideas we hope other games learn from."
+      - button "27.1k comments" [focusable=True]
+        - text "27.1k"
+          - text "27.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for The best game mechanics introduced last year" [focusable=True]
+    - article
+      - button "Upvote What the largest long-term COVID study found after five years" [focusable=True]
+      - strong
+        - text "72.4k"
+          - text "72.4k"
+      - button "Downvote What the largest long-term COVID study found after five years" [focusable=True]
+      - button "r/science" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "science"
+          - text "science"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "evidencefirst"
+        - text "evidencefirst"
+      - text "•"
+        - text "•"
+      - text "11 months ago"
+        - text "11 months ago"
+      - text "Research"
+        - text "Research"
+      - button "What the largest long-term COVID study found after five years" [focusable=True]
+        - text "What the largest long-term COVID study found after five years"
+          - text "What the largest long-term COVID study found after five years"
+      - paragraph
+        - text "Researchers tracked recovery, reinfection, and long-term symptoms across 14 countries. This overview links the paper ..."
+          - text "Researchers tracked recovery, reinfection, and long-term symptoms across 14 countries. This overview"
+          - text "links the paper and explains the key findings."
+      - button "8.1k comments" [focusable=True]
+        - text "8.1k"
+          - text "8.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What the largest long-term COVID study found after five years" [focusable=True]
+    - article
+      - button "Upvote The night train returns for the summer festival season" [focusable=True]
+      - strong
+        - text "68.4k"
+          - text "68.4k"
+      - button "Downvote The night train returns for the summer festival season" [focusable=True]
+      - button "r/japan" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "japan"
+          - text "japan"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "tokyo_window"
+        - text "tokyo_window"
+      - text "•"
+        - text "•"
+      - text "2 hr ago"
+        - text "2 hr ago"
+      - text "Travel"
+        - text "Travel"
+      - button "The night train returns for the summer festival season" [focusable=True]
+        - text "The night train returns for the summer festival season"
+          - text "The night train returns for the summer festival season"
+      - paragraph
+        - text "A photo essay from the first service between Tokyo and Izumo."
+          - text "A photo essay from the first service between Tokyo and Izumo."
+      - button "Open Night train at a lantern-lit station" [focusable=True]
+        - text "Night train at a lantern-lit station"
+          - text "Night train at a lantern-lit station"
+      - button "3.4k comments" [focusable=True]
+        - text "3.4k"
+          - text "3.4k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for The night train returns for the summer festival season" [focusable=True]
+    - article
+      - button "Upvote Fresh snow over the Andes this morning" [focusable=True]
+      - strong
+        - text "57.8k"
+          - text "57.8k"
+      - button "Downvote Fresh snow over the Andes this morning" [focusable=True]
+      - button "r/chile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "chile"
+          - text "chile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "cordillera_view"
+        - text "cordillera_view"
+      - text "•"
+        - text "•"
+      - text "1 hr ago"
+        - text "1 hr ago"
+      - text "Fotografía"
+        - text "Fotografía"
+      - button "Fresh snow over the Andes this morning" [focusable=True]
+        - text "Fresh snow over the Andes this morning"
+          - text "Fresh snow over the Andes this morning"
+      - paragraph
+        - text "The clearest winter sunrise Santiago has had all week."
+          - text "The clearest winter sunrise Santiago has had all week."
+      - button "Open Snowy Andes above Santiago" [focusable=True]
+        - text "Snowy Andes above Santiago"
+          - text "Snowy Andes above Santiago"
+      - button "4.1k comments" [focusable=True]
+        - text "4.1k"
+          - text "4.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Fresh snow over the Andes this morning" [focusable=True]
+    - article
+      - button "Upvote Home cooks: what is your most controversial kitchen shortcut?" [focusable=True]
+      - strong
+        - text "51.4k"
+          - text "51.4k"
+      - button "Downvote Home cooks: what is your most controversial kitchen shortcut?" [focusable=True]
+      - button "r/food" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "food"
+          - text "food"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "breadwinner"
+        - text "breadwinner"
+      - text "•"
+        - text "•"
+      - text "10 months ago"
+        - text "10 months ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "Home cooks: what is your most controversial kitchen shortcut?" [focusable=True]
+        - text "Home cooks: what is your most controversial kitchen shortcut?"
+          - text "Home cooks: what is your most controversial kitchen shortcut?"
+      - button "31.9k comments" [focusable=True]
+        - text "31.9k"
+          - text "31.9k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Home cooks: what is your most controversial kitchen shortcut?" [focusable=True]
+    - article
+      - button "Upvote The policy questions behind today’s Donald Trump coverage" [focusable=True]
+      - strong
+        - text "44.2k"
+          - text "44.2k"
+      - button "Downvote The policy questions behind today’s Donald Trump coverage" [focusable=True]
+      - button "r/politics" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "politics"
+          - text "politics"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "capitol_context"
+        - text "capitol_context"
+      - text "•"
+        - text "•"
+      - text "3 days ago"
+        - text "3 days ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "The policy questions behind today’s Donald Trump coverage" [focusable=True]
+        - text "The policy questions behind today’s Donald Trump coverage"
+          - text "The policy questions behind today’s Donald Trump coverage"
+      - paragraph
+        - text "A sourced discussion thread focused on policy details and voter impact."
+          - text "A sourced discussion thread focused on policy details and voter impact."
+      - button "8.6k comments" [focusable=True]
+        - text "8.6k"
+          - text "8.6k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for The policy questions behind today’s Donald Trump coverage" [focusable=True]
+    - article
+      - button "Upvote Neighborhood summer festivals worth the train ride" [focusable=True]
+      - strong
+        - text "42.2k"
+          - text "42.2k"
+      - button "Downvote Neighborhood summer festivals worth the train ride" [focusable=True]
+      - button "r/japanlife" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "japanlife"
+          - text "japanlife"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "bento_break"
+        - text "bento_break"
+      - text "•"
+        - text "•"
+      - text "5 hr ago"
+        - text "5 hr ago"
+      - text "Local Guide"
+        - text "Local Guide"
+      - button "Neighborhood summer festivals worth the train ride" [focusable=True]
+        - text "Neighborhood summer festivals worth the train ride"
+          - text "Neighborhood summer festivals worth the train ride"
+      - paragraph
+        - text "Locals share smaller festivals and practical travel tips."
+          - text "Locals share smaller festivals and practical travel tips."
+      - button "2.8k comments" [focusable=True]
+        - text "2.8k"
+          - text "2.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Neighborhood summer festivals worth the train ride" [focusable=True]
+    - article
+      - button "Upvote How marketplace changes are affecting independent sellers" [focusable=True]
+      - strong
+        - text "37.4k"
+          - text "37.4k"
+      - button "Downvote How marketplace changes are affecting independent sellers" [focusable=True]
+      - button "r/technology" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "technology"
+          - text "technology"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "platform_watch"
+        - text "platform_watch"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - text "Business"
+        - text "Business"
+      - button "How marketplace changes are affecting independent sellers" [focusable=True]
+        - text "How marketplace changes are affecting independent sellers"
+          - text "How marketplace changes are affecting independent sellers"
+      - paragraph
+        - text "Sellers discuss logistics, fees, and their experience on Amazon and other platforms."
+          - text "Sellers discuss logistics, fees, and their experience on Amazon and other platforms."
+      - button "5.2k comments" [focusable=True]
+        - text "5.2k"
+          - text "5.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for How marketplace changes are affecting independent sellers" [focusable=True]
+    - article
+      - button "Upvote Court filing prompts renewed political analysis" [focusable=True]
+      - strong
+        - text "33.1k"
+          - text "33.1k"
+      - button "Downvote Court filing prompts renewed political analysis" [focusable=True]
+      - button "r/news" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "news"
+          - text "news"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "daily_context"
+        - text "daily_context"
+      - text "•"
+        - text "•"
+      - text "5 days ago"
+        - text "5 days ago"
+      - text "US News"
+        - text "US News"
+      - button "Court filing prompts renewed political analysis" [focusable=True]
+        - text "Court filing prompts renewed political analysis"
+          - text "Court filing prompts renewed political analysis"
+      - paragraph
+        - text "A thread separating confirmed facts from speculation."
+          - text "A thread separating confirmed facts from speculation."
+      - button "7.1k comments" [focusable=True]
+        - text "7.1k"
+          - text "7.1k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Court filing prompts renewed political analysis" [focusable=True]
+    - article
+      - button "Upvote TALK TO ME — Official Trailer" [focusable=True]
+      - strong
+        - text "32.7k"
+          - text "32.7k"
+      - button "Downvote TALK TO ME — Official Trailer" [focusable=True]
+      - button "r/movies" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "movies"
+          - text "movies"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "framebyframe"
+        - text "framebyframe"
+      - text "•"
+        - text "•"
+      - text "3 years ago"
+        - text "3 years ago"
+      - text "Trailer"
+        - text "Trailer"
+      - button "TALK TO ME — Official Trailer" [focusable=True]
+        - text "TALK TO ME — Official Trailer"
+          - text "TALK TO ME — Official Trailer"
+      - paragraph
+        - text "The new trailer for Talk to Me is here. What do you think?"
+          - text "The new trailer for Talk to Me is here. What do you think?"
+      - button "Open Official trailer preview" [focusable=True]
+        - text "Official trailer preview"
+          - text "Official trailer preview"
+      - button "4.7k comments" [focusable=True]
+        - text "4.7k"
+          - text "4.7k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for TALK TO ME — Official Trailer" [focusable=True]
+    - article
+      - button "Upvote Community markets thriving from Valdivia to Arica" [focusable=True]
+      - strong
+        - text "29.6k"
+          - text "29.6k"
+      - button "Downvote Community markets thriving from Valdivia to Arica" [focusable=True]
+      - button "r/chile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "chile"
+          - text "chile"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "sur_a_norte"
+        - text "sur_a_norte"
+      - text "•"
+        - text "•"
+      - text "4 hr ago"
+        - text "4 hr ago"
+      - text "Cultura"
+        - text "Cultura"
+      - button "Community markets thriving from Valdivia to Arica" [focusable=True]
+        - text "Community markets thriving from Valdivia to Arica"
+          - text "Community markets thriving from Valdivia to Arica"
+      - paragraph
+        - text "A thread for sharing favorite weekend markets and independent makers."
+          - text "A thread for sharing favorite weekend markets and independent makers."
+      - button "2.2k comments" [focusable=True]
+        - text "2.2k"
+          - text "2.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Community markets thriving from Valdivia to Arica" [focusable=True]
+    - article
+      - button "Upvote This adaptation is at its best when it trusts the characters" [focusable=True]
+      - strong
+        - text "26.8k"
+          - text "26.8k"
+      - button "Downvote This adaptation is at its best when it trusts the characters" [focusable=True]
+      - button "r/television" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "television"
+          - text "television"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "episode_guide"
+        - text "episode_guide"
+      - text "•"
+        - text "•"
+      - text "1 week ago"
+        - text "1 week ago"
+      - text "Review"
+        - text "Review"
+      - button "This adaptation is at its best when it trusts the characters" [focusable=True]
+        - text "This adaptation is at its best when it trusts the characters"
+          - text "This adaptation is at its best when it trusts the characters"
+      - paragraph
+        - text "A spoiler-conscious discussion of the latest Amazon streaming adaptation."
+          - text "A spoiler-conscious discussion of the latest Amazon streaming adaptation."
+      - button "4.3k comments" [focusable=True]
+        - text "4.3k"
+          - text "4.3k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for This adaptation is at its best when it trusts the characters" [focusable=True]
+    - article
+      - button "Upvote An update on Reddit search" [focusable=True]
+      - strong
+        - text "24.1k"
+          - text "24.1k"
+      - button "Downvote An update on Reddit search" [focusable=True]
+      - button "r/announcements" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "announcements"
+          - text "announcements"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "reddit"
+        - text "reddit"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - text "Official"
+        - text "Official"
+      - button "An update on Reddit search" [focusable=True]
+        - text "An update on Reddit search"
+          - text "An update on Reddit search"
+      - paragraph
+        - text "Search is becoming faster and more relevant across posts, comments, and communities."
+          - text "Search is becoming faster and more relevant across posts, comments, and communities."
+      - button "4.2k comments" [focusable=True]
+        - text "4.2k"
+          - text "4.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for An update on Reddit search" [focusable=True]
+    - article
+      - button "Upvote Severe weather interrupts major football match" [focusable=True]
+      - strong
+        - text "19.2k"
+          - text "19.2k"
+      - button "Downvote Severe weather interrupts major football match" [focusable=True]
+      - button "r/news" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "news"
+          - text "news"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "world_desk"
+        - text "world_desk"
+      - text "•"
+        - text "•"
+      - text "3 hr ago"
+        - text "3 hr ago"
+      - text "World News"
+        - text "World News"
+      - button "Severe weather interrupts major football match" [focusable=True]
+        - text "Severe weather interrupts major football match"
+          - text "Severe weather interrupts major football match"
+      - paragraph
+        - text "Officials paused the match and moved supporters while the storm passed."
+          - text "Officials paused the match and moved supporters while the storm passed."
+      - button "2.9k comments" [focusable=True]
+        - text "2.9k"
+          - text "2.9k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Severe weather interrupts major football match" [focusable=True]
+    - article
+      - button "Upvote Reddit’s newest community updates are here" [focusable=True]
+      - strong
+        - text "18.6k"
+          - text "18.6k"
+      - button "Downvote Reddit’s newest community updates are here" [focusable=True]
+      - button "r/announcements" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "announcements"
+          - text "announcements"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "reddit"
+        - text "reddit"
+      - text "•"
+        - text "•"
+      - text "18 min ago"
+        - text "18 min ago"
+      - text "Official"
+        - text "Official"
+      - button "Reddit’s newest community updates are here" [focusable=True]
+        - text "Reddit’s newest community updates are here"
+          - text "Reddit’s newest community updates are here"
+      - paragraph
+        - text "A faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today."
+          - text "A faster community drawer, clearer moderation tools, and new ways to discover great conversations"
+          - text "are rolling out today."
+      - button "2.8k comments" [focusable=True]
+        - text "2.8k"
+          - text "2.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Reddit’s newest community updates are here" [focusable=True]
+    - article
+      - button "Upvote What modern cars are actually designed to last?" [focusable=True]
+      - strong
+        - text "18.4k"
+          - text "18.4k"
+      - button "Downvote What modern cars are actually designed to last?" [focusable=True]
+      - button "r/cars" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "cars"
+          - text "cars"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "openroad_reader"
+        - text "openroad_reader"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - text "Discussion"
+        - text "Discussion"
+      - button "What modern cars are actually designed to last?" [focusable=True]
+        - text "What modern cars are actually designed to last?"
+          - text "What modern cars are actually designed to last?"
+      - paragraph
+        - text "Owners and mechanics compare maintenance histories rather than spec sheets."
+          - text "Owners and mechanics compare maintenance histories rather than spec sheets."
+      - button "6.2k comments" [focusable=True]
+        - text "6.2k"
+          - text "6.2k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for What modern cars are actually designed to last?" [focusable=True]
+    - article
+      - button "Upvote Anti aging routines: what still works after a full year?" [focusable=True]
+      - strong
+        - text "12.7k"
+          - text "12.7k"
+      - button "Downvote Anti aging routines: what still works after a full year?" [focusable=True]
+      - button "r/SkincareAddiction" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "SkincareAddiction"
+          - text "SkincareAddiction"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "derm_notes"
+        - text "derm_notes"
+      - text "•"
+        - text "•"
+      - text "5 months ago"
+        - text "5 months ago"
+      - text "Megathread"
+        - text "Megathread"
+      - button "Anti aging routines: what still works after a full year?" [focusable=True]
+        - text "Anti aging routines: what still works after a full year?"
+          - text "Anti aging routines: what still works after a full year?"
+      - paragraph
+        - text "A evidence-focused megathread for sunscreen, retinoids, sleep, and realistic expectations."
+          - text "A evidence-focused megathread for sunscreen, retinoids, sleep, and realistic expectations."
+      - button "22.8k comments" [focusable=True]
+        - text "22.8k"
+          - text "22.8k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Anti aging routines: what still works after a full year?" [focusable=True]
+    - article
+      - button "Upvote TIL a library book was returned after 96 years—with a note" [focusable=True]
+      - strong
+        - text "3.9k"
+          - text "3.9k"
+      - button "Downvote TIL a library book was returned after 96 years—with a note" [focusable=True]
+      - button "r/todayilearned" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "todayilearned"
+          - text "todayilearned"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "small_fact"
+        - text "small_fact"
+      - text "•"
+        - text "•"
+      - text "27 min ago"
+        - text "27 min ago"
+      - text "Culture"
+        - text "Culture"
+      - button "TIL a library book was returned after 96 years—with a note" [focusable=True]
+        - text "TIL a library book was returned after 96 years—with a note"
+          - text "TIL a library book was returned after 96 years—with a note"
+      - paragraph
+        - text "The librarian waived the late fee and added the note to the local archive."
+          - text "The librarian waived the late fee and added the note to the local archive."
+      - button "477 comments" [focusable=True]
+        - text "477"
+          - text "477"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for TIL a library book was returned after 96 years—with a note" [focusable=True]
+    - article
+      - button "Upvote Morning fog rolling through the redwoods" [focusable=True]
+      - strong
+        - text "1.2k"
+          - text "1.2k"
+      - button "Downvote Morning fog rolling through the redwoods" [focusable=True]
+      - button "r/NationalPark" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "NationalPark"
+          - text "NationalPark"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "trail_light"
+        - text "trail_light"
+      - text "•"
+        - text "•"
+      - text "12 min ago"
+        - text "12 min ago"
+      - text "Nature"
+        - text "Nature"
+      - button "Morning fog rolling through the redwoods" [focusable=True]
+        - text "Morning fog rolling through the redwoods"
+          - text "Morning fog rolling through the redwoods"
+      - paragraph
+        - text "A quiet nature moment from today’s first trail. Please stay on marked paths."
+          - text "A quiet nature moment from today’s first trail. Please stay on marked paths."
+      - button "Open Misty redwood forest" [focusable=True]
+        - text "Misty redwood forest"
+          - text "Misty redwood forest"
+      - button "96 comments" [focusable=True]
+        - text "96"
+          - text "96"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for Morning fog rolling through the redwoods" [focusable=True]
+    - article
+      - button "Upvote James Cole’s choice in the finale still gets me" [focusable=True]
+      - strong
+        - text "842"
+          - text "842"
+      - button "Downvote James Cole’s choice in the finale still gets me" [focusable=True]
+      - button "r/12Monkeys" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "12Monkeys"
+          - text "12Monkeys"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "splinter_cell"
+        - text "splinter_cell"
+      - text "•"
+        - text "•"
+      - text "34 min ago"
+        - text "34 min ago"
+      - text "Series Discussion"
+        - text "Series Discussion"
+      - button "James Cole’s choice in the finale still gets me" [focusable=True]
+        - text "James Cole’s choice in the finale still gets me"
+          - text "James Cole’s choice in the finale still gets me"
+      - paragraph
+        - text "Rewatching the final loop makes James Cole’s decision feel even more deliberate. The small details were there all along."
+          - text "Rewatching the final loop makes James Cole’s decision feel even more deliberate. The small details"
+          - text "were there all along."
+      - button "137 comments" [focusable=True]
+        - text "137"
+          - text "137"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for James Cole’s choice in the finale still gets me" [focusable=True]
+    - article
+      - button "Upvote My team replaced one weekly meeting with this simple update" [focusable=True]
+      - strong
+        - text "684"
+          - text "684"
+      - button "Downvote My team replaced one weekly meeting with this simple update" [focusable=True]
+      - button "r/work" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "work"
+          - text "work"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "desk_neighbor"
+        - text "desk_neighbor"
+      - text "•"
+        - text "•"
+      - text "22 min ago"
+        - text "22 min ago"
+      - text "Success Story"
+        - text "Success Story"
+      - button "My team replaced one weekly meeting with this simple update" [focusable=True]
+        - text "My team replaced one weekly meeting with this simple update"
+          - text "My team replaced one weekly meeting with this simple update"
+      - paragraph
+        - text "It is early, but people are more informed and have more focus time."
+          - text "It is early, but people are more informed and have more focus time."
+      - button "211 comments" [focusable=True]
+        - text "211"
+          - text "211"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for My team replaced one weekly meeting with this simple update" [focusable=True]
+    - article
+      - button "Upvote A James Cole timeline detail I missed" [focusable=True]
+      - strong
+        - text "511"
+          - text "511"
+      - button "Downvote A James Cole timeline detail I missed" [focusable=True]
+      - button "r/12Monkeys" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "12Monkeys"
+          - text "12Monkeys"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "witness_red"
+        - text "witness_red"
+      - text "•"
+        - text "•"
+      - text "4 hr ago"
+        - text "4 hr ago"
+      - text "Theory"
+        - text "Theory"
+      - button "A James Cole timeline detail I missed" [focusable=True]
+        - text "A James Cole timeline detail I missed"
+          - text "A James Cole timeline detail I missed"
+      - paragraph
+        - text "This changes how I read his first conversation with Cassie."
+          - text "This changes how I read his first conversation with Cassie."
+      - button "89 comments" [focusable=True]
+        - text "89"
+          - text "89"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for A James Cole timeline detail I missed" [focusable=True]
+    - article
+      - button "Upvote [H] $100 Amazon Gift Card [W] 85% PayPal" [focusable=True]
+      - strong
+        - text "318"
+          - text "318"
+      - button "Downvote [H] $100 Amazon Gift Card [W] 85% PayPal" [focusable=True]
+      - button "r/GiftCardExchange" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "GiftCardExchange"
+          - text "GiftCardExchange"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "VerifiedTrader88"
+        - text "VerifiedTrader88"
+      - text "•"
+        - text "•"
+      - text "1 hr ago"
+        - text "1 hr ago"
+      - text "Trading"
+        - text "Trading"
+      - button "[H] $100 Amazon Gift Card [W] 85% PayPal" [focusable=True]
+        - text "[H] $100 Amazon Gift Card [W] 85% PayPal"
+          - text "[H] $100 Amazon Gift Card [W] 85% PayPal"
+      - paragraph
+        - text "Confirmed trader. Please comment before messaging. Digital code ready for exchange."
+          - text "Confirmed trader. Please comment before messaging. Digital code ready for exchange."
+      - button "42 comments" [focusable=True]
+        - text "42"
+          - text "42"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for [H] $100 Amazon Gift Card [W] 85% PayPal" [focusable=True]
+    - heading "Comments" [level=2]
+      - text "Comments"
+        - text "Comments"
+    - text "Top comments appear first"
+      - text "Top comments appear first"
+    - button "Top comments" [focusable=True]
+      - text "Top comments"
+        - text "Top comments"
+    - button "Newest comments" [focusable=True]
+      - text "Newest comments"
+        - text "Newest comments"
+    - article
+      - button "r/politics" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "politics"
+          - text "politics"
+      - text "• u/"
+        - text "• u/"
+      - text "policy_wonk_42"
+        - text "policy_wonk_42"
+      - text "•"
+        - text "•"
+      - text "3 days ago"
+        - text "3 days ago"
+      - paragraph
+        - text "The most important part of the Donald Trump story is how the policy details affect ordinary voters, not the daily spe..."
+          - text "The most important part of the Donald Trump story is how the policy details affect ordinary voters, not the"
+          - text "daily spectacle."
+      - button "On “The policy questions behind today’s Donald Trump coverage” · 8.6k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "The policy questions behind today’s Donald Trump coverage"
+          - text "The policy questions behind today’s Donald Trump coverage"
+        - text "” ·"
+          - text "” ·"
+        - text "8.6k"
+          - text "8.6k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by policy_wonk_42" [focusable=True]
+      - strong
+        - text "28.6k"
+          - text "28.6k"
+      - button "Downvote comment by policy_wonk_42" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/politics" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "politics"
+          - text "politics"
+    - article
+      - button "r/technology" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "technology"
+          - text "technology"
+      - text "• u/"
+        - text "• u/"
+      - text "market_observer"
+        - text "market_observer"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - paragraph
+        - text "Amazon’s logistics advantage is substantial, but the more interesting story is how smaller sellers adapt to marketpla..."
+          - text "Amazon’s logistics advantage is substantial, but the more interesting story is how smaller sellers adapt to"
+          - text "marketplace fees."
+      - button "On “How marketplace changes are affecting independent sellers” · 5.2k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "How marketplace changes are affecting independent sellers"
+          - text "How marketplace changes are affecting independent sellers"
+        - text "” ·"
+          - text "” ·"
+        - text "5.2k"
+          - text "5.2k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by market_observer" [focusable=True]
+      - strong
+        - text "22.1k"
+          - text "22.1k"
+      - button "Downvote comment by market_observer" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/technology" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "technology"
+          - text "technology"
+    - article
+      - button "r/news" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "news"
+          - text "news"
+      - text "• u/"
+        - text "• u/"
+      - text "context_matters"
+        - text "context_matters"
+      - text "•"
+        - text "•"
+      - text "5 days ago"
+        - text "5 days ago"
+      - paragraph
+        - text "Any discussion mentioning Donald Trump should distinguish the court filing from speculation around it."
+          - text "Any discussion mentioning Donald Trump should distinguish the court filing from speculation around it."
+      - button "On “Court filing prompts renewed political analysis” · 7.1k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "Court filing prompts renewed political analysis"
+          - text "Court filing prompts renewed political analysis"
+        - text "” ·"
+          - text "” ·"
+        - text "7.1k"
+          - text "7.1k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by context_matters" [focusable=True]
+      - strong
+        - text "19.4k"
+          - text "19.4k"
+      - button "Downvote comment by context_matters" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/news" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "news"
+          - text "news"
+    - article
+      - button "r/television" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "television"
+          - text "television"
+      - text "• u/"
+        - text "• u/"
+      - text "remote_found"
+        - text "remote_found"
+      - text "•"
+        - text "•"
+      - text "1 week ago"
+        - text "1 week ago"
+      - paragraph
+        - text "The Amazon adaptation works best when it slows down and trusts the characters."
+          - text "The Amazon adaptation works best when it slows down and trusts the characters."
+      - button "On “This adaptation is at its best when it trusts the characters” · 4.3k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "This adaptation is at its best when it trusts the characters"
+          - text "This adaptation is at its best when it trusts the characters"
+        - text "” ·"
+          - text "” ·"
+        - text "4.3k"
+          - text "4.3k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by remote_found" [focusable=True]
+      - strong
+        - text "13.8k"
+          - text "13.8k"
+      - button "Downvote comment by remote_found" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/television" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "television"
+          - text "television"
+    - article
+      - button "r/cars" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "cars"
+          - text "cars"
+      - text "• u/"
+        - text "• u/"
+      - text "wrenchwise"
+        - text "wrenchwise"
+      - text "•"
+        - text "•"
+      - text "1 day ago"
+        - text "1 day ago"
+      - paragraph
+        - text "For modern cars, a complete maintenance history matters more than the badge. Cooling systems and regular fluid change..."
+          - text "For modern cars, a complete maintenance history matters more than the badge. Cooling systems and regular"
+          - text "fluid changes are where longevity starts."
+      - button "On “What modern cars are actually designed to last?” · 6.2k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "What modern cars are actually designed to last?"
+          - text "What modern cars are actually designed to last?"
+        - text "” ·"
+          - text "” ·"
+        - text "6.2k"
+          - text "6.2k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by wrenchwise" [focusable=True]
+      - strong
+        - text "9.4k"
+          - text "9.4k"
+      - button "Downvote comment by wrenchwise" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/cars" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "cars"
+          - text "cars"
+    - article
+      - button "r/AskReddit" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "• u/"
+        - text "• u/"
+      - text "localdesk"
+        - text "localdesk"
+      - text "•"
+        - text "•"
+      - text "8 days ago"
+        - text "8 days ago"
+      - paragraph
+        - text "Our public library just opened a free tool-lending program."
+          - text "Our public library just opened a free tool-lending program."
+      - button "On “What local story deserves more attention this month?” · 55.3k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "What local story deserves more attention this month?"
+          - text "What local story deserves more attention this month?"
+        - text "” ·"
+          - text "” ·"
+        - text "55.3k"
+          - text "55.3k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by localdesk" [focusable=True]
+      - strong
+        - text "7.2k"
+          - text "7.2k"
+      - button "Downvote comment by localdesk" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/AskReddit" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "AskReddit"
+          - text "AskReddit"
+    - article
+      - button "r/memes" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "memes"
+          - text "memes"
+      - text "• u/"
+        - text "• u/"
+      - text "crate_digger"
+        - text "crate_digger"
+      - text "•"
+        - text "•"
+      - text "3 days ago"
+        - text "3 days ago"
+      - paragraph
+        - text "The hip hop version of this meme is when one sample sends the entire group chat digging through 90s records."
+          - text "The hip hop version of this meme is when one sample sends the entire group chat digging through 90s"
+          - text "records."
+      - button "On “When the group chat discovers the same old meme again” · 19.4k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "When the group chat discovers the same old meme again"
+          - text "When the group chat discovers the same old meme again"
+        - text "” ·"
+          - text "” ·"
+        - text "19.4k"
+          - text "19.4k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by crate_digger" [focusable=True]
+      - strong
+        - text "6.8k"
+          - text "6.8k"
+      - button "Downvote comment by crate_digger" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/memes" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "memes"
+          - text "memes"
+    - article
+      - button "r/MadeMeSmile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+      - text "• u/"
+        - text "• u/"
+      - text "joyfulnoise"
+        - text "joyfulnoise"
+      - text "•"
+        - text "•"
+      - text "2 days ago"
+        - text "2 days ago"
+      - paragraph
+        - text "I am going to leave a note for my bus driver tomorrow."
+          - text "I am going to leave a note for my bus driver tomorrow."
+      - button "On “A tiny act of kindness became a whole town tradition” · 12.8k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "A tiny act of kindness became a whole town tradition"
+          - text "A tiny act of kindness became a whole town tradition"
+        - text "” ·"
+          - text "” ·"
+        - text "12.8k"
+          - text "12.8k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by joyfulnoise" [focusable=True]
+      - strong
+        - text "3.4k"
+          - text "3.4k"
+      - button "Downvote comment by joyfulnoise" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/MadeMeSmile" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+    - article
+      - button "r/MadeMeSmile" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+      - text "• u/"
+        - text "• u/"
+      - text "first_light"
+        - text "first_light"
+      - text "•"
+        - text "•"
+      - text "11 days ago"
+        - text "11 days ago"
+      - paragraph
+        - text "This started in my town too. One note is still pinned above the bakery counter."
+          - text "This started in my town too. One note is still pinned above the bakery counter."
+      - button "On “A tiny act of kindness became a whole town tradition” · 12.8k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "A tiny act of kindness became a whole town tradition"
+          - text "A tiny act of kindness became a whole town tradition"
+        - text "” ·"
+          - text "” ·"
+        - text "12.8k"
+          - text "12.8k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by first_light" [focusable=True]
+      - strong
+        - text "1.2k"
+          - text "1.2k"
+      - button "Downvote comment by first_light" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/MadeMeSmile" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "MadeMeSmile"
+          - text "MadeMeSmile"
+    - article
+      - button "r/SkincareAddiction" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "SkincareAddiction"
+          - text "SkincareAddiction"
+      - text "• u/"
+        - text "• u/"
+      - text "Separate-Camp7202"
+        - text "Separate-Camp7202"
+      - text "•"
+        - text "•"
+      - text "2 months ago"
+        - text "2 months ago"
+      - paragraph
+        - text "Consistency and sunscreen made a much bigger difference for me than adding more products."
+          - text "Consistency and sunscreen made a much bigger difference for me than adding more products."
+      - button "On “Anti aging routines: what still works after a full year?” · 22.8k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "Anti aging routines: what still works after a full year?"
+          - text "Anti aging routines: what still works after a full year?"
+        - text "” ·"
+          - text "” ·"
+        - text "22.8k"
+          - text "22.8k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by Separate-Camp7202" [focusable=True]
+      - strong
+        - text "527"
+          - text "527"
+      - button "Downvote comment by Separate-Camp7202" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/SkincareAddiction" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "SkincareAddiction"
+          - text "SkincareAddiction"
+    - article
+      - button "r/news" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "news"
+          - text "news"
+      - text "• u/"
+        - text "• u/"
+      - text "away_end"
+        - text "away_end"
+      - text "•"
+        - text "•"
+      - text "2 hr ago"
+        - text "2 hr ago"
+      - paragraph
+        - text "Football supporters had already been moved away from the affected section before kickoff."
+          - text "Football supporters had already been moved away from the affected section before kickoff."
+      - button "On “Severe weather interrupts major football match” · 2.9k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "Severe weather interrupts major football match"
+          - text "Severe weather interrupts major football match"
+        - text "” ·"
+          - text "” ·"
+        - text "2.9k"
+          - text "2.9k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by away_end" [focusable=True]
+      - strong
+        - text "311"
+          - text "311"
+      - button "Downvote comment by away_end" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/news" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "news"
+          - text "news"
+    - article
+      - button "r/gaming" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "gaming"
+          - text "gaming"
+      - text "• u/"
+        - text "• u/"
+      - text "Separate-Camp7202"
+        - text "Separate-Camp7202"
+      - text "•"
+        - text "•"
+      - text "10 months ago"
+        - text "10 months ago"
+      - paragraph
+        - text "The sound design is what made that final level memorable."
+          - text "The sound design is what made that final level memorable."
+      - button "On “Which game from last year deserved much more attention?” · 38.5k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "Which game from last year deserved much more attention?"
+          - text "Which game from last year deserved much more attention?"
+        - text "” ·"
+          - text "” ·"
+        - text "38.5k"
+          - text "38.5k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by Separate-Camp7202" [focusable=True]
+      - strong
+        - text "184"
+          - text "184"
+      - button "Downvote comment by Separate-Camp7202" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/gaming" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "gaming"
+          - text "gaming"
+    - article
+      - button "r/news" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "news"
+          - text "news"
+      - text "• u/"
+        - text "• u/"
+      - text "touchline_report"
+        - text "touchline_report"
+      - text "•"
+        - text "•"
+      - text "4 min ago"
+        - text "4 min ago"
+      - paragraph
+        - text "The newest football update confirms the match will resume after the weather delay."
+          - text "The newest football update confirms the match will resume after the weather delay."
+      - button "On “Severe weather interrupts major football match” · 2.9k comments" [focusable=True]
+        - text "On “"
+          - text "On “"
+        - text "Severe weather interrupts major football match"
+          - text "Severe weather interrupts major football match"
+        - text "” ·"
+          - text "” ·"
+        - text "2.9k"
+          - text "2.9k"
+        - text "comments"
+          - text "comments"
+      - button "Upvote comment by touchline_report" [focusable=True]
+      - strong
+        - text "84"
+          - text "84"
+      - button "Downvote comment by touchline_report" [focusable=True]
+      - button "View thread" [focusable=True]
+        - text "View thread"
+          - text "View thread"
+      - button "Message moderators of r/news" [focusable=True]
+        - text "Message moderators of r/"
+          - text "Message moderators of r/"
+        - text "news"
+          - text "news"
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

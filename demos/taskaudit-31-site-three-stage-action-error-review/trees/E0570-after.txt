@@ -1,0 +1,110 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focused=True, focusable=True]
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Search"
+        - text "Search"
+    - paragraph
+      - text "SITE SEARCH"
+        - text "SITE SEARCH"
+    - heading "Search results for “bhBk”" [level=1]
+      - text "Search results for “bhBk”"
+        - text "Search results for “bhBk”"
+    - paragraph
+      - text "0 helpful results found."
+        - text "0 helpful results found."
+    - heading "No exact matches found" [level=3]
+      - text "No exact matches found"
+        - text "No exact matches found"
+    - paragraph
+      - text "Try a shorter phrase such as “fever,” “doctor,” “tuition” or “airway.”"
+        - text "Try a shorter phrase such as “fever,” “doctor,” “tuition” or “airway.”"
+    - link "Return home" [focusable=True]
+      - text "Return home"
+        - text "Return home"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

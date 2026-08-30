@@ -1,0 +1,221 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" value="k" [focusable=True]
+        - text "k"
+          - text "k"
+      - button "Clear search" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - heading "Movies" [level=1]
+      - text "Movies"
+        - text "Movies"
+    - paragraph
+      - text "r/"
+        - text "r/"
+      - text "movies"
+        - text "movies"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "35m"
+        - text "35m"
+    - text "members"
+      - text "members"
+    - strong
+      - text "45.3k"
+        - text "45.3k"
+    - text "online now"
+      - text "online now"
+    - button "Message moderators" [focusable=True]
+      - text "Message moderators"
+        - text "Message moderators"
+    - LabelText
+      - entry "Search in r/movies" [focusable=True]
+    - generic "Feed controls"
+      - button "Hot" [focusable=True, pressed=true]
+        - text "Hot"
+          - text "Hot"
+      - button "New" [focusable=True]
+        - text "New"
+          - text "New"
+      - button "Top" [focusable=True]
+        - text "Top"
+          - text "Top"
+      - button "Rising" [focusable=True]
+        - text "Rising"
+          - text "Rising"
+      - button "Most comments" [focusable=True]
+        - text "Most comments"
+          - text "Most comments"
+      - generic "Post view"
+        - button "Card view" [focusable=True, pressed=true]
+        - button "Compact view" [focusable=True]
+    - article
+      - button "Upvote TALK TO ME — Official Trailer" [focusable=True]
+      - strong
+        - text "32.7k"
+          - text "32.7k"
+      - button "Downvote TALK TO ME — Official Trailer" [focusable=True]
+      - button "r/movies" [focusable=True]
+        - text "r/"
+          - text "r/"
+        - text "movies"
+          - text "movies"
+      - text "• Posted by u/"
+        - text "• Posted by u/"
+      - text "framebyframe"
+        - text "framebyframe"
+      - text "•"
+        - text "•"
+      - text "3 years ago"
+        - text "3 years ago"
+      - text "Trailer"
+        - text "Trailer"
+      - button "TALK TO ME — Official Trailer" [focusable=True]
+        - text "TALK TO ME — Official Trailer"
+          - text "TALK TO ME — Official Trailer"
+      - paragraph
+        - text "The new trailer for Talk to Me is here. What do you think?"
+          - text "The new trailer for Talk to Me is here. What do you think?"
+      - button "Open Official trailer preview" [focusable=True]
+        - text "Official trailer preview"
+          - text "Official trailer preview"
+      - button "4.7k comments" [focusable=True]
+        - text "4.7k"
+          - text "4.7k"
+        - text "comments"
+          - text "comments"
+      - button "Copy link" [focusable=True]
+        - text "Copy link"
+          - text "Copy link"
+      - button "Save" [focusable=True]
+        - text "Save"
+          - text "Save"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+      - button "Award" [focused=True, focusable=True]
+        - text "Award"
+          - text "Award"
+      - button "More actions for TALK TO ME — Official Trailer" [focusable=True]
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

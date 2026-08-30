@@ -1,0 +1,130 @@
+- document "FlightAware — Live Flight Tracking & Aviation Intelligence" [focused=True, focusable=True]
+  - banner
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - navigation "Main navigation"
+      - link "Flights" [focusable=True]
+        - text "Flights"
+          - text "Flights"
+      - link "Airports" [focusable=True]
+        - text "Airports"
+          - text "Airports"
+      - link "Photos" [focusable=True]
+        - text "Photos"
+          - text "Photos"
+      - link "Community" [focusable=True]
+        - text "Community"
+          - text "Community"
+      - button "Products" [focusable=True]
+        - text "Products"
+          - text "Products"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - form
+      - entry "Search flight or tail number" [focusable=True, required=True]
+      - button "Submit flight search" [focusable=True]
+  - main
+    - text "LIVE FLIGHT TRACKER"
+      - text "LIVE FLIGHT TRACKER"
+    - heading "Find flights by route" [level=1]
+      - text "Find flights by route"
+        - text "Find flights by route"
+    - paragraph
+      - text "Search scheduled and recent flights using airports, cities, states, status, and aircraft type."
+        - text "Search scheduled and recent flights using airports, cities, states, status, and aircraft type."
+    - form
+      - LabelText
+        - text "From"
+          - text "From"
+        - entry "From airport" [focusable=True, required=True]
+      - LabelText
+        - text "To"
+          - text "To"
+        - entry "To airport" [focusable=True, required=True]
+      - LabelText
+        - text "Status"
+          - text "Status"
+        - combobox "Flight status" value="Any status" [focusable=True]
+          - MenuListPopup
+            - option "Any status" [focusable=True, selected=True]
+            - option "Scheduled" [focusable=True]
+            - option "En Route" [focusable=True]
+            - option "Arrived" [focusable=True]
+      - LabelText
+        - text "Aircraft"
+          - text "Aircraft"
+        - combobox "Aircraft type" value="Any aircraft" [focusable=True]
+          - MenuListPopup
+            - option "Any aircraft" [focusable=True, selected=True]
+            - option "Boeing 787-9" [focusable=True]
+            - option "Boeing 737-800" [focusable=True]
+            - option "Airbus A321" [focusable=True]
+            - option "Embraer E175" [focusable=True]
+      - button "Search flights" [focusable=True]
+        - text "Search flights"
+          - text "Search flights"
+    - text "Try a route:"
+      - text "Try a route:"
+    - button "Ohio → New York · Arrived" [focusable=True]
+      - text "Ohio → New York · Arrived"
+        - text "Ohio → New York · Arrived"
+    - button "SFO → EWR · Boeing 787-9" [focusable=True]
+      - text "SFO → EWR · Boeing 787-9"
+        - text "SFO → EWR · Boeing 787-9"
+    - button "Delhi → Los Cabos" [focusable=True]
+      - text "Delhi → Los Cabos"
+        - text "Delhi → Los Cabos"
+  - contentinfo
+    - link "FlightAware home" [focusable=True]
+      - text "Flight"
+        - text "Flight"
+      - text "Aware"
+        - text "Aware"
+    - paragraph
+      - text "Global aviation intelligence for operators, travelers, and enthusiasts."
+        - text "Global aviation intelligence for operators, travelers,"
+        - text "and enthusiasts."
+    - heading "Explore" [level=3]
+      - text "Explore"
+        - text "Explore"
+    - link "Flight finder" [focusable=True]
+      - text "Flight finder"
+        - text "Flight finder"
+    - link "Airports" [focusable=True]
+      - text "Airports"
+        - text "Airports"
+    - link "Popular photos" [focusable=True]
+      - text "Popular photos"
+        - text "Popular photos"
+    - heading "Community" [level=3]
+      - text "Community"
+        - text "Community"
+    - link "Discussions" [focusable=True]
+      - text "Discussions"
+        - text "Discussions"
+    - link "Aircraft by country" [focusable=True]
+      - text "Aircraft by country"
+        - text "Aircraft by country"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - heading "Business" [level=3]
+      - text "Business"
+        - text "Business"
+    - link "Subscriptions" [focusable=True]
+      - text "Subscriptions"
+        - text "Subscriptions"
+    - link "AeroAPI plans" [focusable=True]
+      - text "AeroAPI plans"
+        - text "AeroAPI plans"
+    - link "Airport solutions" [focused=True, focusable=True]
+      - text "Airport solutions"
+        - text "Airport solutions"
+    - text "© 2026 FlightAware-inspired demo"
+      - text "© 2026 FlightAware-inspired demo"
+    - text "Real-time experiences. Synthetic demo data."
+      - text "Real-time experiences. Synthetic demo data."

@@ -1,0 +1,2382 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" [focusable=True]
+      - button "Search" [focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - main
+    - paragraph
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "/ Search results"
+        - text "/ Search results"
+    - heading "Explore local businesses" [level=1]
+      - text "Explore local businesses"
+        - text "Explore local businesses"
+    - paragraph
+      - text "40"
+        - text "40"
+      - text "matching"
+        - text "matching"
+      - text "businesses"
+        - text "businesses"
+      - text "· Synthetic demo listings"
+        - text "· Synthetic demo listings"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort results" value="Recommended" [focusable=True]
+        - MenuListPopup
+          - option "Recommended" [focusable=True, selected=True]
+          - option "Highest rated" [focusable=True]
+          - option "Most reviewed" [focusable=True]
+    - region "Search filters"
+      - button "Open now" [focusable=True]
+        - text "Open now"
+          - text "Open now"
+      - button "Fast responding" [focusable=True]
+        - text "Fast responding"
+          - text "Fast responding"
+      - button "Free Wi-Fi" [focusable=True]
+        - text "Free Wi-Fi"
+          - text "Free Wi-Fi"
+      - button "Offers delivery" [focusable=True]
+        - text "Offers delivery"
+          - text "Offers delivery"
+      - button "Outdoor seating" [focusable=True]
+        - text "Outdoor seating"
+          - text "Outdoor seating"
+      - button "Virtual consultations" [focusable=True]
+        - text "Virtual consultations"
+          - text "Virtual consultations"
+      - button "All filters" [focusable=True]
+        - text "All filters"
+          - text "All filters"
+    - article
+      - link "View Golden Gate Auto Locksmith" [focusable=True]
+        - text "LOCKSMITHS"
+          - text "LOCKSMITHS"
+      - paragraph
+        - text "1"
+          - text "1"
+        - text "."
+          - text "."
+        - text "LOCKSMITHS"
+          - text "LOCKSMITHS"
+      - heading "Golden Gate Auto Locksmith" [level=2]
+        - link "Golden Gate Auto Locksmith" [focusable=True]
+          - text "Golden Gate Auto Locksmith"
+            - text "Golden Gate Auto Locksmith"
+      - button "Save Golden Gate Auto Locksmith" [focusable=True]
+      - generic "5 out of 5 stars, 1338 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "1,338"
+          - text "1,338"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Locksmiths, Roadside Assistance"
+        - text "Locksmiths, Roadside Assistance"
+      - paragraph
+        - text "Serving San Francisco"
+          - text "Serving San Francisco"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94109"
+          - text "San Francisco, CA 94109"
+      - paragraph
+        - text "Usually responds in 5 min"
+          - text "Usually responds in 5 min"
+      - paragraph
+        - text "Highly rated mobile vehicle locksmiths specializing in damage-free broken-key extraction."
+          - text "Highly rated mobile vehicle locksmiths specializing in damage-"
+          - text "free broken-key extraction."
+      - text "Open now"
+        - text "Open now"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Westside Landscape Design" [focusable=True]
+        - text "LANDSCAPING"
+          - text "LANDSCAPING"
+      - paragraph
+        - text "2"
+          - text "2"
+        - text "."
+          - text "."
+        - text "LANDSCAPING"
+          - text "LANDSCAPING"
+      - heading "Westside Landscape Design" [level=2]
+        - link "Westside Landscape Design" [focusable=True]
+          - text "Westside Landscape Design"
+            - text "Westside Landscape Design"
+      - button "Save Westside Landscape Design" [focusable=True]
+      - generic "5 out of 5 stars, 1084 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "1,084"
+          - text "1,084"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Landscaping, Landscape Architects"
+        - text "Landscaping, Landscape Architects"
+      - paragraph
+        - text "Serving West Hollywood"
+          - text "Serving West Hollywood"
+        - text "·"
+          - text "·"
+        - text "West Hollywood, CA 90069"
+          - text "West Hollywood, CA 90069"
+      - paragraph
+        - text "Usually responds in 6 min"
+          - text "Usually responds in 6 min"
+      - paragraph
+        - text "Yelp-verified landscape professionals creating practical, polished lawns and low-water outdoor spaces."
+          - text "Yelp-verified landscape professionals creating practical, polished"
+          - text "lawns and low-water outdoor spaces."
+      - text "Open now"
+        - text "Open now"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View RestorePro Phone Repair" [focusable=True]
+        - text "MOBILE PHONE REPAIR"
+          - text "MOBILE PHONE REPAIR"
+      - paragraph
+        - text "3"
+          - text "3"
+        - text "."
+          - text "."
+        - text "MOBILE PHONE REPAIR"
+          - text "MOBILE PHONE REPAIR"
+      - heading "RestorePro Phone Repair" [level=2]
+        - link "RestorePro Phone Repair" [focusable=True]
+          - text "RestorePro Phone Repair"
+            - text "RestorePro Phone Repair"
+      - button "Save RestorePro Phone Repair" [focusable=True]
+      - generic "5 out of 5 stars, 923 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "923"
+          - text "923"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Mobile Phone Repair, Data Recovery"
+        - text "Mobile Phone Repair, Data Recovery"
+      - paragraph
+        - text "Midtown"
+          - text "Midtown"
+        - text "·"
+          - text "·"
+        - text "Houston, TX 77002"
+          - text "Houston, TX 77002"
+      - paragraph
+        - text "Usually responds in 4 min"
+          - text "Usually responds in 4 min"
+      - paragraph
+        - text "Board-level phone repair and careful data recovery with quick diagnostics and clear estimates."
+          - text "Board-level phone repair and careful data recovery with quick"
+          - text "diagnostics and clear estimates."
+      - text "Open now"
+        - text "Open now"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Pressed & Polished Cleaners" [focusable=True]
+        - text "DRY CLEANING"
+          - text "DRY CLEANING"
+      - paragraph
+        - text "4"
+          - text "4"
+        - text "."
+          - text "."
+        - text "DRY CLEANING"
+          - text "DRY CLEANING"
+      - heading "Pressed & Polished Cleaners" [level=2]
+        - link "Pressed & Polished Cleaners" [focusable=True]
+          - text "Pressed & Polished Cleaners"
+            - text "Pressed & Polished Cleaners"
+      - button "Save Pressed & Polished Cleaners" [focusable=True]
+      - generic "5 out of 5 stars, 891 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "891"
+          - text "891"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Dry Cleaning, Sewing & Alterations"
+        - text "Dry Cleaning, Sewing & Alterations"
+      - paragraph
+        - text "Chelsea"
+          - text "Chelsea"
+        - text "·"
+          - text "·"
+        - text "New York, NY 10011"
+          - text "New York, NY 10011"
+      - paragraph
+        - text "Usually responds in 10 min"
+          - text "Usually responds in 10 min"
+      - paragraph
+        - text "Meticulous garment care with video consultations for stains, suits, and delicate fabrics before drop-off."
+          - text "Meticulous garment care with video consultations for stains,"
+          - text "suits, and delicate fabrics before drop-off."
+      - text "Open now"
+        - text "Open now"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Siam Garden" [focusable=True]
+        - text "THAI"
+          - text "THAI"
+      - paragraph
+        - text "5"
+          - text "5"
+        - text "."
+          - text "."
+        - text "THAI"
+          - text "THAI"
+      - heading "Siam Garden" [level=2]
+        - link "Siam Garden" [focusable=True]
+          - text "Siam Garden"
+            - text "Siam Garden"
+      - button "Save Siam Garden" [focusable=True]
+      - generic "5 out of 5 stars, 764 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "764"
+          - text "764"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Thai, Noodles"
+        - text "Thai, Noodles"
+      - paragraph
+        - text "Little Saigon"
+          - text "Little Saigon"
+        - text "·"
+          - text "·"
+        - text "Westminster, CA 92683"
+          - text "Westminster, CA 92683"
+      - paragraph
+        - text "Fragrant curries and wok-fired noodles made by a fully vaccinated team, with easy takeout and Apple Pay."
+          - text "Fragrant curries and wok-fired noodles made by a fully"
+          - text "vaccinated team, with easy takeout and Apple Pay."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Staff fully vaccinated"
+        - text "Staff fully vaccinated"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Victory Ring Boxing Club" [focusable=True]
+        - text "BOXING"
+          - text "BOXING"
+      - paragraph
+        - text "6"
+          - text "6"
+        - text "."
+          - text "."
+        - text "BOXING"
+          - text "BOXING"
+      - heading "Victory Ring Boxing Club" [level=2]
+        - link "Victory Ring Boxing Club" [focusable=True]
+          - text "Victory Ring Boxing Club"
+            - text "Victory Ring Boxing Club"
+      - button "Save Victory Ring Boxing Club" [focusable=True]
+      - generic "5 out of 5 stars, 738 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "738"
+          - text "738"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Boxing, Gyms"
+        - text "Boxing, Gyms"
+      - paragraph
+        - text "Uptown"
+          - text "Uptown"
+        - text "·"
+          - text "·"
+        - text "Dallas, TX 75201"
+          - text "Dallas, TX 75201"
+      - paragraph
+        - text "Usually responds in 8 min"
+          - text "Usually responds in 8 min"
+      - paragraph
+        - text "Technique-first boxing for every level, with dedicated personal coaches and flexible month-to-month plans."
+          - text "Technique-first boxing for every level, with dedicated personal"
+          - text "coaches and flexible month-to-month plans."
+      - text "Open now"
+        - text "Open now"
+      - text "Personal training"
+        - text "Personal training"
+      - text "Monthly memberships"
+        - text "Monthly memberships"
+      - text "Fast responding"
+        - text "Fast responding"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Island Move Masters" [focusable=True]
+        - text "MOVERS"
+          - text "MOVERS"
+      - paragraph
+        - text "7"
+          - text "7"
+        - text "."
+          - text "."
+        - text "MOVERS"
+          - text "MOVERS"
+      - heading "Island Move Masters" [level=2]
+        - link "Island Move Masters" [focusable=True]
+          - text "Island Move Masters"
+            - text "Island Move Masters"
+      - button "Save Island Move Masters" [focusable=True]
+      - generic "5 out of 5 stars, 711 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "711"
+          - text "711"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Movers, Vehicle Shipping"
+        - text "Movers, Vehicle Shipping"
+      - paragraph
+        - text "Serving Oʻahu"
+          - text "Serving Oʻahu"
+        - text "·"
+          - text "·"
+        - text "Honolulu, HI 96813"
+          - text "Honolulu, HI 96813"
+      - paragraph
+        - text "Usually responds in 9 min"
+          - text "Usually responds in 9 min"
+      - paragraph
+        - text "Coordinated island-to-mainland moves for vehicles, appliances, and full households, starting with a video walkthrough."
+          - text "Coordinated island-to-mainland moves for vehicles, appliances,"
+          - text "and full households, starting with a video walkthrough."
+      - text "Open now"
+        - text "Open now"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View BrightLine Electric" [focusable=True]
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - paragraph
+        - text "8"
+          - text "8"
+        - text "."
+          - text "."
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - heading "BrightLine Electric" [level=2]
+        - link "BrightLine Electric" [focusable=True]
+          - text "BrightLine Electric"
+            - text "BrightLine Electric"
+      - button "Save BrightLine Electric" [focusable=True]
+      - generic "5 out of 5 stars, 642 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "642"
+          - text "642"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Electricians, Lighting Fixtures & Equipment"
+        - text "Electricians, Lighting Fixtures & Equipment"
+      - paragraph
+        - text "Serving Orange County"
+          - text "Serving Orange County"
+        - text "·"
+          - text "·"
+        - text "Westminster, CA 92683"
+          - text "Westminster, CA 92683"
+      - paragraph
+        - text "Usually responds in 5 min"
+          - text "Usually responds in 5 min"
+      - paragraph
+        - text "Licensed local electricians for clean fixture swaps and same-day electrical troubleshooting."
+          - text "Licensed local electricians for clean fixture swaps and same-day"
+          - text "electrical troubleshooting."
+      - text "Open now"
+        - text "Open now"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Solace Day Spa" [focusable=True]
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - paragraph
+        - text "9"
+          - text "9"
+        - text "."
+          - text "."
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - heading "Solace Day Spa" [level=2]
+        - link "Solace Day Spa" [focusable=True]
+          - text "Solace Day Spa"
+            - text "Solace Day Spa"
+      - button "Save Solace Day Spa" [focusable=True]
+      - generic "4.9 out of 5 stars, 1287 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "1,287"
+          - text "1,287"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Day Spas, Massage"
+        - text "Day Spas, Massage"
+      - paragraph
+        - text "Little Italy"
+          - text "Little Italy"
+        - text "·"
+          - text "·"
+        - text "San Diego, CA 92101"
+          - text "San Diego, CA 92101"
+      - paragraph
+        - text "Responds in 15 min"
+          - text "Responds in 15 min"
+      - paragraph
+        - text "A calm urban retreat known for attentive therapists, restorative treatments, and accessible packages."
+          - text "A calm urban retreat known for attentive therapists, restorative"
+          - text "treatments, and accessible packages."
+      - text "Open now"
+        - text "Open now"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Stackhouse Burgers" [focusable=True]
+        - text "BURGERS"
+          - text "BURGERS"
+      - paragraph
+        - text "10"
+          - text "10"
+        - text "."
+          - text "."
+        - text "BURGERS"
+          - text "BURGERS"
+      - heading "Stackhouse Burgers" [level=2]
+        - link "Stackhouse Burgers" [focusable=True]
+          - text "Stackhouse Burgers"
+            - text "Stackhouse Burgers"
+      - button "Save Stackhouse Burgers" [focusable=True]
+      - generic "4.9 out of 5 stars, 1278 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "1,278"
+          - text "1,278"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Burgers, American"
+        - text "Burgers, American"
+      - paragraph
+        - text "Avon Lake"
+          - text "Avon Lake"
+        - text "·"
+          - text "·"
+        - text "Avon Lake, OH 44012"
+          - text "Avon Lake, OH 44012"
+      - paragraph
+        - text "Crisp-edged smash burgers, hand-cut fries, and thick shakes served in the 44012 area."
+          - text "Crisp-edged smash burgers, hand-cut fries, and thick shakes"
+          - text "served in the 44012 area."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Gulf Key Locksmith" [focusable=True]
+        - text "LOCKSMITHS"
+          - text "LOCKSMITHS"
+      - paragraph
+        - text "11"
+          - text "11"
+        - text "."
+          - text "."
+        - text "LOCKSMITHS"
+          - text "LOCKSMITHS"
+      - heading "Gulf Key Locksmith" [level=2]
+        - link "Gulf Key Locksmith" [focusable=True]
+          - text "Gulf Key Locksmith"
+            - text "Gulf Key Locksmith"
+      - button "Save Gulf Key Locksmith" [focusable=True]
+      - generic "4.9 out of 5 stars, 602 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "602"
+          - text "602"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Locksmiths, Keys & Locksmiths"
+        - text "Locksmiths, Keys & Locksmiths"
+      - paragraph
+        - text "Serving Galveston County"
+          - text "Serving Galveston County"
+        - text "·"
+          - text "·"
+        - text "Texas City, TX 77590"
+          - text "Texas City, TX 77590"
+      - paragraph
+        - text "Usually responds in 6 min"
+          - text "Usually responds in 6 min"
+      - paragraph
+        - text "Around-the-clock mobile locksmith service with quick video consultations before dispatch."
+          - text "Around-the-clock mobile locksmith service with quick video"
+          - text "consultations before dispatch."
+      - text "Open now"
+        - text "Open now"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Heritage Barber Studio" [focusable=True]
+        - text "BARBERS"
+          - text "BARBERS"
+      - paragraph
+        - text "12"
+          - text "12"
+        - text "."
+          - text "."
+        - text "BARBERS"
+          - text "BARBERS"
+      - heading "Heritage Barber Studio" [level=2]
+        - link "Heritage Barber Studio" [focusable=True]
+          - text "Heritage Barber Studio"
+            - text "Heritage Barber Studio"
+      - button "Save Heritage Barber Studio" [focusable=True]
+      - generic "4.9 out of 5 stars, 531 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "531"
+          - text "531"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Barbers, Men's Hair Salons"
+        - text "Barbers, Men's Hair Salons"
+      - paragraph
+        - text "Roosevelt Row"
+          - text "Roosevelt Row"
+        - text "·"
+          - text "·"
+        - text "Phoenix, AZ 85004"
+          - text "Phoenix, AZ 85004"
+      - paragraph
+        - text "Usually responds in 12 min"
+          - text "Usually responds in 12 min"
+      - paragraph
+        - text "Detail-focused cuts in a relaxed studio with a dedicated private parking lot behind the shop."
+          - text "Detail-focused cuts in a relaxed studio with a dedicated private"
+          - text "parking lot behind the shop."
+      - text "Open now"
+        - text "Open now"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Fast responding"
+        - text "Fast responding"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View BaySpark Electric" [focusable=True]
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - paragraph
+        - text "13"
+          - text "13"
+        - text "."
+          - text "."
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - heading "BaySpark Electric" [level=2]
+        - link "BaySpark Electric" [focusable=True]
+          - text "BaySpark Electric"
+            - text "BaySpark Electric"
+      - button "Save BaySpark Electric" [focusable=True]
+      - generic "4.9 out of 5 stars, 519 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "519"
+          - text "519"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Electricians"
+        - text "Electricians"
+      - paragraph
+        - text "Serving Lower Pacific Heights"
+          - text "Serving Lower Pacific Heights"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94115"
+          - text "San Francisco, CA 94115"
+      - paragraph
+        - text "Usually responds in 7 min"
+          - text "Usually responds in 7 min"
+      - paragraph
+        - text "Fast, licensed residential electrical service across the 94115 area and central San Francisco."
+          - text "Fast, licensed residential electrical service across the 94115"
+          - text "area and central San Francisco."
+      - text "Open now"
+        - text "Open now"
+      - text "Fast responding"
+        - text "Fast responding"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - text "Virtual consultations"
+        - text "Virtual consultations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Golden State Limo Parking" [focusable=True]
+        - text "PARKING"
+          - text "PARKING"
+      - paragraph
+        - text "14"
+          - text "14"
+        - text "."
+          - text "."
+        - text "PARKING"
+          - text "PARKING"
+      - heading "Golden State Limo Parking" [level=2]
+        - link "Golden State Limo Parking" [focusable=True]
+          - text "Golden State Limo Parking"
+            - text "Golden State Limo Parking"
+      - button "Save Golden State Limo Parking" [focusable=True]
+      - generic "4.9 out of 5 stars, 287 reviews"
+        - strong
+          - text "4.9"
+            - text "4.9"
+        - text "("
+          - text "("
+        - text "287"
+          - text "287"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Parking, Limos"
+        - text "Parking, Limos"
+      - paragraph
+        - text "Central California City"
+          - text "Central California City"
+        - text "·"
+          - text "·"
+        - text "California City, CA 93505"
+          - text "California City, CA 93505"
+      - paragraph
+        - text "Usually responds in 8 min"
+          - text "Usually responds in 8 min"
+      - paragraph
+        - text "A monitored, spacious lot built for limousines and oversized vehicles, with a comfortable Wi-Fi lounge."
+          - text "A monitored, spacious lot built for limousines and oversized"
+          - text "vehicles, with a comfortable Wi-Fi lounge."
+      - text "Open now"
+        - text "Open now"
+      - text "Free Wi-Fi"
+        - text "Free Wi-Fi"
+      - text "Military discount"
+        - text "Military discount"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - text "Fast responding"
+        - text "Fast responding"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Juniper Cocktail Club" [focusable=True]
+        - text "COCKTAIL BARS"
+          - text "COCKTAIL BARS"
+      - paragraph
+        - text "15"
+          - text "15"
+        - text "."
+          - text "."
+        - text "COCKTAIL BARS"
+          - text "COCKTAIL BARS"
+      - heading "Juniper Cocktail Club" [level=2]
+        - link "Juniper Cocktail Club" [focusable=True]
+          - text "Juniper Cocktail Club"
+            - text "Juniper Cocktail Club"
+      - button "Save Juniper Cocktail Club" [focusable=True]
+      - generic "4.8 out of 5 stars, 3876 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "3,876"
+          - text "3,876"
+        - text ")"
+          - text ")"
+      - text "$$$"
+        - text "$$$"
+      - text "•"
+        - text "•"
+      - text "Cocktail Bars, Lounges"
+        - text "Cocktail Bars, Lounges"
+      - paragraph
+        - text "Mission District"
+          - text "Mission District"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94110"
+          - text "San Francisco, CA 94110"
+      - paragraph
+        - text "Inventive seasonal drinks and a warm, plant-filled patio at one of the city’s most-reviewed cocktail spots."
+          - text "Inventive seasonal drinks and a warm, plant-filled patio at one"
+          - text "of the city’s most-reviewed cocktail spots."
+      - text "Open now"
+        - text "Open now"
+      - text "Outdoor seating"
+        - text "Outdoor seating"
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Jade Harbor Cantonese Kitchen" [focusable=True]
+        - text "CANTONESE"
+          - text "CANTONESE"
+      - paragraph
+        - text "16"
+          - text "16"
+        - text "."
+          - text "."
+        - text "CANTONESE"
+          - text "CANTONESE"
+      - heading "Jade Harbor Cantonese Kitchen" [level=2]
+        - link "Jade Harbor Cantonese Kitchen" [focusable=True]
+          - text "Jade Harbor Cantonese Kitchen"
+            - text "Jade Harbor Cantonese Kitchen"
+      - button "Save Jade Harbor Cantonese Kitchen" [focusable=True]
+      - generic "4.8 out of 5 stars, 1847 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "1,847"
+          - text "1,847"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Cantonese, Dim Sum"
+        - text "Cantonese, Dim Sum"
+      - paragraph
+        - text "Chinatown"
+          - text "Chinatown"
+        - text "·"
+          - text "·"
+        - text "Chicago, IL 60616"
+          - text "Chicago, IL 60616"
+      - paragraph
+        - text "Traditional Cantonese roasts, delicate dim sum, and seafood in a bright Chinatown dining room."
+          - text "Traditional Cantonese roasts, delicate dim sum, and seafood in"
+          - text "a bright Chinatown dining room."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Bay Bubble Auto Spa" [focusable=True]
+        - text "CAR WASH"
+          - text "CAR WASH"
+      - paragraph
+        - text "17"
+          - text "17"
+        - text "."
+          - text "."
+        - text "CAR WASH"
+          - text "CAR WASH"
+      - heading "Bay Bubble Auto Spa" [level=2]
+        - link "Bay Bubble Auto Spa" [focusable=True]
+          - text "Bay Bubble Auto Spa"
+            - text "Bay Bubble Auto Spa"
+      - button "Save Bay Bubble Auto Spa" [focusable=True]
+      - generic "4.8 out of 5 stars, 1596 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "1,596"
+          - text "1,596"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Car Wash"
+        - text "Car Wash"
+      - paragraph
+        - text "Potrero Hill"
+          - text "Potrero Hill"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94107"
+          - text "San Francisco, CA 94107"
+      - paragraph
+        - text "Friendly neighborhood hand washes and wax service."
+          - text "Friendly neighborhood hand washes and wax service."
+      - text "Open now"
+        - text "Open now"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Dogwood Cafe & Patio" [focusable=True]
+        - text "CAFES"
+          - text "CAFES"
+      - paragraph
+        - text "18"
+          - text "18"
+        - text "."
+          - text "."
+        - text "CAFES"
+          - text "CAFES"
+      - heading "Dogwood Cafe & Patio" [level=2]
+        - link "Dogwood Cafe & Patio" [focusable=True]
+          - text "Dogwood Cafe & Patio"
+            - text "Dogwood Cafe & Patio"
+      - button "Save Dogwood Cafe & Patio" [focusable=True]
+      - generic "4.8 out of 5 stars, 1529 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "1,529"
+          - text "1,529"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Cafes, Breakfast & Brunch"
+        - text "Cafes, Breakfast & Brunch"
+      - paragraph
+        - text "South Congress"
+          - text "South Congress"
+        - text "·"
+          - text "·"
+        - text "Austin, TX 78704"
+          - text "Austin, TX 78704"
+      - paragraph
+        - text "An easygoing cafe with a leafy covered patio, plenty of water bowls, and a dog-friendly welcome."
+          - text "An easygoing cafe with a leafy covered patio, plenty of water"
+          - text "bowls, and a dog-friendly welcome."
+      - text "Open now"
+        - text "Open now"
+      - text "Outdoor seating"
+        - text "Outdoor seating"
+      - text "Dogs allowed"
+        - text "Dogs allowed"
+      - text "Free Wi-Fi"
+        - text "Free Wi-Fi"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Houston Device Lab" [focusable=True]
+        - text "MOBILE PHONE REPAIR"
+          - text "MOBILE PHONE REPAIR"
+      - paragraph
+        - text "19"
+          - text "19"
+        - text "."
+          - text "."
+        - text "MOBILE PHONE REPAIR"
+          - text "MOBILE PHONE REPAIR"
+      - heading "Houston Device Lab" [level=2]
+        - link "Houston Device Lab" [focusable=True]
+          - text "Houston Device Lab"
+            - text "Houston Device Lab"
+      - button "Save Houston Device Lab" [focusable=True]
+      - generic "4.8 out of 5 stars, 1108 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "1,108"
+          - text "1,108"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Mobile Phone Repair"
+        - text "Mobile Phone Repair"
+      - paragraph
+        - text "Montrose"
+          - text "Montrose"
+        - text "·"
+          - text "·"
+        - text "Houston, TX 77006"
+          - text "Houston, TX 77006"
+      - paragraph
+        - text "Responds in 35 min"
+          - text "Responds in 35 min"
+      - paragraph
+        - text "Convenient repairs for phones and tablets."
+          - text "Convenient repairs for phones and tablets."
+      - text "Open now"
+        - text "Open now"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Oakland Hot Dog Co." [focusable=True]
+        - text "HOT DOGS"
+          - text "HOT DOGS"
+      - paragraph
+        - text "20"
+          - text "20"
+        - text "."
+          - text "."
+        - text "HOT DOGS"
+          - text "HOT DOGS"
+      - heading "Oakland Hot Dog Co." [level=2]
+        - link "Oakland Hot Dog Co." [focusable=True]
+          - text "Oakland Hot Dog Co."
+            - text "Oakland Hot Dog Co."
+      - button "Save Oakland Hot Dog Co." [focusable=True]
+      - generic "4.8 out of 5 stars, 974 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "974"
+          - text "974"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "•"
+        - text "•"
+      - text "Hot Dogs, American"
+        - text "Hot Dogs, American"
+      - paragraph
+        - text "Uptown"
+          - text "Uptown"
+        - text "·"
+          - text "·"
+        - text "Oakland, CA 94612"
+          - text "Oakland, CA 94612"
+      - paragraph
+        - text "Creative griddled dogs, loaded fries, and fast delivery across central Oakland."
+          - text "Creative griddled dogs, loaded fries, and fast delivery across"
+          - text "central Oakland."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Green Basil Thai Kitchen" [focusable=True]
+        - text "THAI"
+          - text "THAI"
+      - paragraph
+        - text "21"
+          - text "21"
+        - text "."
+          - text "."
+        - text "THAI"
+          - text "THAI"
+      - heading "Green Basil Thai Kitchen" [level=2]
+        - link "Green Basil Thai Kitchen" [focusable=True]
+          - text "Green Basil Thai Kitchen"
+            - text "Green Basil Thai Kitchen"
+      - button "Save Green Basil Thai Kitchen" [focusable=True]
+      - generic "4.8 out of 5 stars, 936 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "936"
+          - text "936"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Thai, Vegan"
+        - text "Thai, Vegan"
+      - paragraph
+        - text "Pearl District"
+          - text "Pearl District"
+        - text "·"
+          - text "·"
+        - text "Portland, OR 97205"
+          - text "Portland, OR 97205"
+      - paragraph
+        - text "Plant-forward Thai classics with a separate vegan menu and dependable neighborhood delivery."
+          - text "Plant-forward Thai classics with a separate vegan menu and"
+          - text "dependable neighborhood delivery."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Vegan options"
+        - text "Vegan options"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Juniper Coffee House" [focusable=True]
+        - text "COFFEE & TEA"
+          - text "COFFEE & TEA"
+      - paragraph
+        - text "22"
+          - text "22"
+        - text "."
+          - text "."
+        - text "COFFEE & TEA"
+          - text "COFFEE & TEA"
+      - heading "Juniper Coffee House" [level=2]
+        - link "Juniper Coffee House" [focusable=True]
+          - text "Juniper Coffee House"
+            - text "Juniper Coffee House"
+      - button "Save Juniper Coffee House" [focusable=True]
+      - generic "4.8 out of 5 stars, 864 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "864"
+          - text "864"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Coffee & Tea, Cafes"
+        - text "Coffee & Tea, Cafes"
+      - paragraph
+        - text "Midtown"
+          - text "Midtown"
+        - text "·"
+          - text "·"
+        - text "Sacramento, CA 95814"
+          - text "Sacramento, CA 95814"
+      - paragraph
+        - text "Bright neighborhood coffee shop with fast Wi-Fi, shaded patio tables, and house-roasted beans."
+          - text "Bright neighborhood coffee shop with fast Wi-Fi, shaded patio"
+          - text "tables, and house-roasted beans."
+      - text "Open now"
+        - text "Open now"
+      - text "Free Wi-Fi"
+        - text "Free Wi-Fi"
+      - text "Outdoor seating"
+        - text "Outdoor seating"
+      - text "Dogs allowed"
+        - text "Dogs allowed"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Sunset Gardens LA" [focusable=True]
+        - text "LANDSCAPING"
+          - text "LANDSCAPING"
+      - paragraph
+        - text "23"
+          - text "23"
+        - text "."
+          - text "."
+        - text "LANDSCAPING"
+          - text "LANDSCAPING"
+      - heading "Sunset Gardens LA" [level=2]
+        - link "Sunset Gardens LA" [focusable=True]
+          - text "Sunset Gardens LA"
+            - text "Sunset Gardens LA"
+      - button "Save Sunset Gardens LA" [focusable=True]
+      - generic "4.8 out of 5 stars, 612 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "612"
+          - text "612"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Landscaping"
+        - text "Landscaping"
+      - paragraph
+        - text "Melrose"
+          - text "Melrose"
+        - text "·"
+          - text "·"
+        - text "West Hollywood, CA 90046"
+          - text "West Hollywood, CA 90046"
+      - paragraph
+        - text "Responds in 45 min"
+          - text "Responds in 45 min"
+      - paragraph
+        - text "Routine garden maintenance and irrigation support."
+          - text "Routine garden maintenance and irrigation support."
+      - text "Open now"
+        - text "Open now"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Ocean Stone Retreat" [focusable=True]
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - paragraph
+        - text "24"
+          - text "24"
+        - text "."
+          - text "."
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - heading "Ocean Stone Retreat" [level=2]
+        - link "Ocean Stone Retreat" [focusable=True]
+          - text "Ocean Stone Retreat"
+            - text "Ocean Stone Retreat"
+      - button "Save Ocean Stone Retreat" [focusable=True]
+      - generic "4.8 out of 5 stars, 608 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "608"
+          - text "608"
+        - text ")"
+          - text ")"
+      - text "$$$"
+        - text "$$$"
+      - text "•"
+        - text "•"
+      - text "Day Spas, Skin Care"
+        - text "Day Spas, Skin Care"
+      - paragraph
+        - text "Village"
+          - text "Village"
+        - text "·"
+          - text "·"
+        - text "La Jolla, CA 92037"
+          - text "La Jolla, CA 92037"
+      - paragraph
+        - text "Elevated coastal treatments and private relaxation suites."
+          - text "Elevated coastal treatments and private relaxation suites."
+      - text "Open now"
+        - text "Open now"
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Shining City Car Wash" [focusable=True]
+        - text "CAR WASH"
+          - text "CAR WASH"
+      - paragraph
+        - text "25"
+          - text "25"
+        - text "."
+          - text "."
+        - text "CAR WASH"
+          - text "CAR WASH"
+      - heading "Shining City Car Wash" [level=2]
+        - link "Shining City Car Wash" [focusable=True]
+          - text "Shining City Car Wash"
+            - text "Shining City Car Wash"
+      - button "Save Shining City Car Wash" [focusable=True]
+      - generic "4.7 out of 5 stars, 4218 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "4,218"
+          - text "4,218"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Car Wash, Auto Detailing"
+        - text "Car Wash, Auto Detailing"
+      - paragraph
+        - text "SoMa"
+          - text "SoMa"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94103"
+          - text "San Francisco, CA 94103"
+      - paragraph
+        - text "Usually responds in 12 min"
+          - text "Usually responds in 12 min"
+      - paragraph
+        - text "San Francisco’s most-reviewed wash for quick exterior service and careful full detailing."
+          - text "San Francisco’s most-reviewed wash for quick exterior service"
+          - text "and careful full detailing."
+      - text "Open now"
+        - text "Open now"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Fast responding"
+        - text "Fast responding"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View The Brass Room" [focusable=True]
+        - text "COCKTAIL BARS"
+          - text "COCKTAIL BARS"
+      - paragraph
+        - text "26"
+          - text "26"
+        - text "."
+          - text "."
+        - text "COCKTAIL BARS"
+          - text "COCKTAIL BARS"
+      - heading "The Brass Room" [level=2]
+        - link "The Brass Room" [focusable=True]
+          - text "The Brass Room"
+            - text "The Brass Room"
+      - button "Save The Brass Room" [focusable=True]
+      - generic "4.7 out of 5 stars, 1964 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "1,964"
+          - text "1,964"
+        - text ")"
+          - text ")"
+      - text "$$$"
+        - text "$$$"
+      - text "•"
+        - text "•"
+      - text "Cocktail Bars, Wine Bars"
+        - text "Cocktail Bars, Wine Bars"
+      - paragraph
+        - text "Hayes Valley"
+          - text "Hayes Valley"
+        - text "·"
+          - text "·"
+        - text "San Francisco, CA 94102"
+          - text "San Francisco, CA 94102"
+      - paragraph
+        - text "Polished cocktails and a tucked-away courtyard."
+          - text "Polished cocktails and a tucked-away courtyard."
+      - text "Open now"
+        - text "Open now"
+      - text "Outdoor seating"
+        - text "Outdoor seating"
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Clinton Square Shops" [focusable=True]
+        - text "SHOPPING CENTERS"
+          - text "SHOPPING CENTERS"
+      - paragraph
+        - text "27"
+          - text "27"
+        - text "."
+          - text "."
+        - text "SHOPPING CENTERS"
+          - text "SHOPPING CENTERS"
+      - heading "Clinton Square Shops" [level=2]
+        - link "Clinton Square Shops" [focusable=True]
+          - text "Clinton Square Shops"
+            - text "Clinton Square Shops"
+      - button "Save Clinton Square Shops" [focusable=True]
+      - generic "4.7 out of 5 stars, 1820 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "1,820"
+          - text "1,820"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Shopping Centers"
+        - text "Shopping Centers"
+      - paragraph
+        - text "Central New York"
+          - text "Central New York"
+        - text "·"
+          - text "·"
+        - text "Syracuse, NY 13202"
+          - text "Syracuse, NY 13202"
+      - paragraph
+        - text "A walkable collection of independent shops downtown."
+          - text "A walkable collection of independent shops downtown."
+      - text "Open now"
+        - text "Open now"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - link "View La Pinata Mexican Restaurant" [focusable=True]
+        - text "MEXICAN"
+          - text "MEXICAN"
+      - paragraph
+        - text "28"
+          - text "28"
+        - text "."
+          - text "."
+        - text "MEXICAN"
+          - text "MEXICAN"
+      - heading "La Pinata Mexican Restaurant" [level=2]
+        - link "La Pinata Mexican Restaurant" [focusable=True]
+          - text "La Pinata Mexican Restaurant"
+            - text "La Pinata Mexican Restaurant"
+      - button "Save La Pinata Mexican Restaurant" [focusable=True]
+      - generic "4.7 out of 5 stars, 1742 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "1,742"
+          - text "1,742"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Mexican, Breakfast & Brunch"
+        - text "Mexican, Breakfast & Brunch"
+      - paragraph
+        - text "Todos Santos"
+          - text "Todos Santos"
+        - text "·"
+          - text "·"
+        - text "Concord, CA 94520"
+          - text "Concord, CA 94520"
+      - paragraph
+        - text "A lively Concord favorite serving generous plates, house salsas, and family recipes."
+          - text "A lively Concord favorite serving generous plates, house salsas,"
+          - text "and family recipes."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Outdoor seating"
+        - text "Outdoor seating"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Chelsea Cleaners" [focusable=True]
+        - text "DRY CLEANING"
+          - text "DRY CLEANING"
+      - paragraph
+        - text "29"
+          - text "29"
+        - text "."
+          - text "."
+        - text "DRY CLEANING"
+          - text "DRY CLEANING"
+      - heading "Chelsea Cleaners" [level=2]
+        - link "Chelsea Cleaners" [focusable=True]
+          - text "Chelsea Cleaners"
+            - text "Chelsea Cleaners"
+      - button "Save Chelsea Cleaners" [focusable=True]
+      - generic "4.7 out of 5 stars, 1105 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "1,105"
+          - text "1,105"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Dry Cleaning"
+        - text "Dry Cleaning"
+      - paragraph
+        - text "Chelsea"
+          - text "Chelsea"
+        - text "·"
+          - text "·"
+        - text "New York, NY 10011"
+          - text "New York, NY 10011"
+      - paragraph
+        - text "Reliable neighborhood dry cleaning and shirt laundry."
+          - text "Reliable neighborhood dry cleaning and shirt laundry."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Quiet Cloud Spa" [focusable=True]
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - paragraph
+        - text "30"
+          - text "30"
+        - text "."
+          - text "."
+        - text "DAY SPAS"
+          - text "DAY SPAS"
+      - heading "Quiet Cloud Spa" [level=2]
+        - link "Quiet Cloud Spa" [focusable=True]
+          - text "Quiet Cloud Spa"
+            - text "Quiet Cloud Spa"
+      - button "Save Quiet Cloud Spa" [focusable=True]
+      - generic "4.7 out of 5 stars, 845 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "845"
+          - text "845"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "•"
+        - text "•"
+      - text "Day Spas, Massage"
+        - text "Day Spas, Massage"
+      - paragraph
+        - text "Hillcrest"
+          - text "Hillcrest"
+        - text "·"
+          - text "·"
+        - text "San Diego, CA 92103"
+          - text "San Diego, CA 92103"
+      - paragraph
+        - text "A friendly neighborhood spa with simple, affordable treatments."
+          - text "A friendly neighborhood spa with simple, affordable treatments."
+      - text "Takes reservations"
+        - text "Takes reservations"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Dallas Boxing House" [focusable=True]
+        - text "BOXING"
+          - text "BOXING"
+      - paragraph
+        - text "31"
+          - text "31"
+        - text "."
+          - text "."
+        - text "BOXING"
+          - text "BOXING"
+      - heading "Dallas Boxing House" [level=2]
+        - link "Dallas Boxing House" [focusable=True]
+          - text "Dallas Boxing House"
+            - text "Dallas Boxing House"
+      - button "Save Dallas Boxing House" [focusable=True]
+      - generic "4.7 out of 5 stars, 510 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "510"
+          - text "510"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Boxing, Gyms"
+        - text "Boxing, Gyms"
+      - paragraph
+        - text "Old East Dallas"
+          - text "Old East Dallas"
+        - text "·"
+          - text "·"
+        - text "Dallas, TX 75204"
+          - text "Dallas, TX 75204"
+      - paragraph
+        - text "Community boxing classes and open-gym training."
+          - text "Community boxing classes and open-gym training."
+      - text "Open now"
+        - text "Open now"
+      - text "Monthly memberships"
+        - text "Monthly memberships"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Aloha Relocation Co." [focusable=True]
+        - text "MOVERS"
+          - text "MOVERS"
+      - paragraph
+        - text "32"
+          - text "32"
+        - text "."
+          - text "."
+        - text "MOVERS"
+          - text "MOVERS"
+      - heading "Aloha Relocation Co." [level=2]
+        - link "Aloha Relocation Co." [focusable=True]
+          - text "Aloha Relocation Co."
+            - text "Aloha Relocation Co."
+      - button "Save Aloha Relocation Co." [focusable=True]
+      - generic "4.7 out of 5 stars, 486 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "486"
+          - text "486"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Movers"
+        - text "Movers"
+      - paragraph
+        - text "Kalihi"
+          - text "Kalihi"
+        - text "·"
+          - text "·"
+        - text "Honolulu, HI 96817"
+          - text "Honolulu, HI 96817"
+      - paragraph
+        - text "Responds in 1 hour"
+          - text "Responds in 1 hour"
+      - paragraph
+        - text "Local residential moving and packing across Oʻahu."
+          - text "Local residential moving and packing across Oʻahu."
+      - text "Open now"
+        - text "Open now"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Westminster WireWorks" [focusable=True]
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - paragraph
+        - text "33"
+          - text "33"
+        - text "."
+          - text "."
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - heading "Westminster WireWorks" [level=2]
+        - link "Westminster WireWorks" [focusable=True]
+          - text "Westminster WireWorks"
+            - text "Westminster WireWorks"
+      - button "Save Westminster WireWorks" [focusable=True]
+      - generic "4.7 out of 5 stars, 388 reviews"
+        - strong
+          - text "4.7"
+            - text "4.7"
+        - text "("
+          - text "("
+        - text "388"
+          - text "388"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Electricians"
+        - text "Electricians"
+      - paragraph
+        - text "Bolsa Chica"
+          - text "Bolsa Chica"
+        - text "·"
+          - text "·"
+        - text "Westminster, CA 92683"
+          - text "Westminster, CA 92683"
+      - paragraph
+        - text "Responds in 40 min"
+          - text "Responds in 40 min"
+      - paragraph
+        - text "Residential wiring and repair services throughout Westminster."
+          - text "Residential wiring and repair services throughout Westminster."
+      - text "Open now"
+        - text "Open now"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Request a quote" [focusable=True]
+        - text "Request a quote"
+          - text "Request a quote"
+    - article
+      - link "View Empire Marketplace" [focusable=True]
+        - text "SHOPPING CENTERS"
+          - text "SHOPPING CENTERS"
+      - paragraph
+        - text "34"
+          - text "34"
+        - text "."
+          - text "."
+        - text "SHOPPING CENTERS"
+          - text "SHOPPING CENTERS"
+      - heading "Empire Marketplace" [level=2]
+        - link "Empire Marketplace" [focusable=True]
+          - text "Empire Marketplace"
+            - text "Empire Marketplace"
+      - button "Save Empire Marketplace" [focusable=True]
+      - generic "4.6 out of 5 stars, 4962 reviews"
+        - strong
+          - text "4.6"
+            - text "4.6"
+        - text "("
+          - text "("
+        - text "4,962"
+          - text "4,962"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Shopping Centers, Department Stores"
+        - text "Shopping Centers, Department Stores"
+      - paragraph
+        - text "Central New York"
+          - text "Central New York"
+        - text "·"
+          - text "·"
+        - text "Syracuse, NY 13202"
+          - text "Syracuse, NY 13202"
+      - paragraph
+        - text "Central New York’s bustling indoor marketplace with dozens of shops and broad Apple Pay acceptance."
+          - text "Central New York’s bustling indoor marketplace with dozens of"
+          - text "shops and broad Apple Pay acceptance."
+      - text "Open now"
+        - text "Open now"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - link "View Clipper & Co." [focusable=True]
+        - text "BARBERS"
+          - text "BARBERS"
+      - paragraph
+        - text "35"
+          - text "35"
+        - text "."
+          - text "."
+        - text "BARBERS"
+          - text "BARBERS"
+      - heading "Clipper & Co." [level=2]
+        - link "Clipper & Co." [focusable=True]
+          - text "Clipper & Co."
+            - text "Clipper & Co."
+      - button "Save Clipper & Co." [focusable=True]
+      - generic "4.6 out of 5 stars, 303 reviews"
+        - strong
+          - text "4.6"
+            - text "4.6"
+        - text "("
+          - text "("
+        - text "303"
+          - text "303"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Barbers"
+        - text "Barbers"
+      - paragraph
+        - text "Downtown"
+          - text "Downtown"
+        - text "·"
+          - text "·"
+        - text "Phoenix, AZ 85003"
+          - text "Phoenix, AZ 85003"
+      - paragraph
+        - text "Modern cuts and traditional barber service downtown."
+          - text "Modern cuts and traditional barber service downtown."
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Reserve" [focusable=True]
+        - text "Reserve"
+          - text "Reserve"
+    - article
+      - link "View Lake Road Grill" [focusable=True]
+        - text "BURGERS"
+          - text "BURGERS"
+      - paragraph
+        - text "36"
+          - text "36"
+        - text "."
+          - text "."
+        - text "BURGERS"
+          - text "BURGERS"
+      - heading "Lake Road Grill" [level=2]
+        - link "Lake Road Grill" [focusable=True]
+          - text "Lake Road Grill"
+            - text "Lake Road Grill"
+      - button "Save Lake Road Grill" [focusable=True]
+      - generic "4.5 out of 5 stars, 904 reviews"
+        - strong
+          - text "4.5"
+            - text "4.5"
+        - text "("
+          - text "("
+        - text "904"
+          - text "904"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Burgers, American"
+        - text "Burgers, American"
+      - paragraph
+        - text "Lake Road"
+          - text "Lake Road"
+        - text "·"
+          - text "·"
+        - text "Avon Lake, OH 44012"
+          - text "Avon Lake, OH 44012"
+      - paragraph
+        - text "Local grill favorites near the lake."
+          - text "Local grill favorites near the lake."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Thai Basil Table" [focusable=True]
+        - text "THAI"
+          - text "THAI"
+      - paragraph
+        - text "37"
+          - text "37"
+        - text "."
+          - text "."
+        - text "THAI"
+          - text "THAI"
+      - heading "Thai Basil Table" [level=2]
+        - link "Thai Basil Table" [focusable=True]
+          - text "Thai Basil Table"
+            - text "Thai Basil Table"
+      - button "Save Thai Basil Table" [focusable=True]
+      - generic "4.5 out of 5 stars, 412 reviews"
+        - strong
+          - text "4.5"
+            - text "4.5"
+        - text "("
+          - text "("
+        - text "412"
+          - text "412"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Thai"
+        - text "Thai"
+      - paragraph
+        - text "Westminster Center"
+          - text "Westminster Center"
+        - text "·"
+          - text "·"
+        - text "Westminster, CA 92683"
+          - text "Westminster, CA 92683"
+      - paragraph
+        - text "Comforting Thai staples and quick weekday lunches."
+          - text "Comforting Thai staples and quick weekday lunches."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Casa del Sol" [focusable=True]
+        - text "MEXICAN"
+          - text "MEXICAN"
+      - paragraph
+        - text "38"
+          - text "38"
+        - text "."
+          - text "."
+        - text "MEXICAN"
+          - text "MEXICAN"
+      - heading "Casa del Sol" [level=2]
+        - link "Casa del Sol" [focusable=True]
+          - text "Casa del Sol"
+            - text "Casa del Sol"
+      - button "Save Casa del Sol" [focusable=True]
+      - generic "4.4 out of 5 stars, 804 reviews"
+        - strong
+          - text "4.4"
+            - text "4.4"
+        - text "("
+          - text "("
+        - text "804"
+          - text "804"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Mexican"
+        - text "Mexican"
+      - paragraph
+        - text "Clayton Valley"
+          - text "Clayton Valley"
+        - text "·"
+          - text "·"
+        - text "Concord, CA 94521"
+          - text "Concord, CA 94521"
+      - paragraph
+        - text "Casual Mexican plates and weekday specials."
+          - text "Casual Mexican plates and weekday specials."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - article
+      - link "View Desert Star Parking" [focusable=True]
+        - text "PARKING"
+          - text "PARKING"
+      - paragraph
+        - text "39"
+          - text "39"
+        - text "."
+          - text "."
+        - text "PARKING"
+          - text "PARKING"
+      - heading "Desert Star Parking" [level=2]
+        - link "Desert Star Parking" [focusable=True]
+          - text "Desert Star Parking"
+            - text "Desert Star Parking"
+      - button "Save Desert Star Parking" [focusable=True]
+      - generic "4.2 out of 5 stars, 94 reviews"
+        - strong
+          - text "4.2"
+            - text "4.2"
+        - text "("
+          - text "("
+        - text "94"
+          - text "94"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "•"
+        - text "•"
+      - text "Parking"
+        - text "Parking"
+      - paragraph
+        - text "North Loop"
+          - text "North Loop"
+        - text "·"
+          - text "·"
+        - text "California City, CA 93505"
+          - text "California City, CA 93505"
+      - paragraph
+        - text "Responds in 1 hour"
+          - text "Responds in 1 hour"
+      - paragraph
+        - text "Easy daily and overnight parking near the north side of town."
+          - text "Easy daily and overnight parking near the north side of town."
+      - text "Open now"
+        - text "Open now"
+      - text "Private lot parking"
+        - text "Private lot parking"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - link "View McDonald's" [focusable=True]
+        - text "FAST FOOD"
+          - text "FAST FOOD"
+      - paragraph
+        - text "40"
+          - text "40"
+        - text "."
+          - text "."
+        - text "FAST FOOD"
+          - text "FAST FOOD"
+      - heading "McDonald's" [level=2]
+        - link "McDonald's" [focusable=True]
+          - text "McDonald's"
+            - text "McDonald's"
+      - button "Save McDonald's" [focusable=True]
+      - generic "3.8 out of 5 stars, 216 reviews"
+        - strong
+          - text "3.8"
+            - text "3.8"
+        - text "("
+          - text "("
+        - text "216"
+          - text "216"
+        - text ")"
+          - text ")"
+      - text "$"
+        - text "$"
+      - text "•"
+        - text "•"
+      - text "Fast Food, Burgers"
+        - text "Fast Food, Burgers"
+      - paragraph
+        - text "Downtown Greenville"
+          - text "Downtown Greenville"
+        - text "·"
+          - text "·"
+        - text "Greenville, SC 29601"
+          - text "Greenville, SC 29601"
+      - paragraph
+        - text "Classic burgers, fries, breakfast, and coffee with convenient drive-thru service."
+          - text "Classic burgers, fries, breakfast, and coffee with convenient"
+          - text "drive-thru service."
+      - text "Open now"
+        - text "Open now"
+      - text "Offers delivery"
+        - text "Offers delivery"
+      - text "Offers takeout"
+        - text "Offers takeout"
+      - text "Free Wi-Fi"
+        - text "Free Wi-Fi"
+      - text "Accepts Apple Pay"
+        - text "Accepts Apple Pay"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+      - button "Start order" [focusable=True]
+        - text "Start order"
+          - text "Start order"
+    - complementary
+      - text "All locations"
+        - text "All locations"
+      - text "40"
+        - text "40"
+      - text "places on map"
+        - text "places on map"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"

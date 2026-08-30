@@ -1,0 +1,133 @@
+- document "SoundCloud — Hear what’s next" [focused=True, focusable=True]
+  - banner
+    - link "SoundCloud home" [focused=True, focusable=True]
+      - text "SOUNDCLOUD"
+        - text "SOUNDCLOUD"
+    - navigation "Primary navigation"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Feed" [focusable=True]
+        - text "Feed"
+          - text "Feed"
+      - link "Charts" [focusable=True]
+        - text "Charts"
+          - text "Charts"
+      - link "Library" [focusable=True]
+        - text "Library"
+          - text "Library"
+    - search
+      - LabelText
+        - text "Search SoundCloud"
+          - text "Search SoundCloud"
+      - entry "Search SoundCloud" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - link "For Artists" [focusable=True]
+      - text "For Artists"
+        - text "For Artists"
+    - link "Open your library" [focusable=True]
+      - text "AR"
+        - text "AR"
+  - main
+    - text "YOUR SOUNDCLOUD"
+      - text "YOUR SOUNDCLOUD"
+    - heading "Library" [level=1]
+      - text "Library"
+        - text "Library"
+    - paragraph
+      - text "Everything you’ve saved, played and created."
+        - text "Everything you’ve saved, played and created."
+    - navigation "Library sections"
+      - link "Likes" [focusable=True]
+        - text "Likes"
+          - text "Likes"
+      - link "Playlists" [focusable=True]
+        - text "Playlists"
+          - text "Playlists"
+      - link "Listening history" [focusable=True]
+        - text "Listening history"
+          - text "Listening history"
+    - text "SAVED BY YOU"
+      - text "SAVED BY YOU"
+    - heading "Likes" [level=2]
+      - text "Likes"
+        - text "Likes"
+    - text "2"
+      - text "2"
+    - text "items"
+      - text "items"
+    - heading "Tracks" [level=3]
+      - text "Tracks"
+        - text "Tracks"
+    - article
+      - button "Play Soft Hours" [focusable=True]
+      - text "Maya Cove"
+        - text "Maya Cove"
+      - strong
+        - text "Soft Hours"
+          - text "Soft Hours"
+      - text "#"
+        - text "#"
+      - text "Chill"
+        - text "Chill"
+      - text "#"
+        - text "#"
+      - text "Ambient"
+        - text "Ambient"
+      - text "816K"
+        - text "816K"
+      - text "32.4K"
+        - text "32.4K"
+      - text "3:34"
+        - text "3:34"
+      - button "Unlike Soft Hours" [focusable=True]
+      - button "Share Soft Hours" [focusable=True]
+      - button "Add Soft Hours to Next up" [focusable=True]
+      - button "Add Soft Hours to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Come As You Are" [focusable=True]
+      - text "Nirvana"
+        - text "Nirvana"
+      - strong
+        - text "Come As You Are"
+          - text "Come As You Are"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - text "#"
+        - text "#"
+      - text "Grunge"
+        - text "Grunge"
+      - text "692M"
+        - text "692M"
+      - text "3.2M"
+        - text "3.2M"
+      - text "3:39"
+        - text "3:39"
+      - button "Unlike Come As You Are" [focusable=True]
+      - button "Share Come As You Are" [focusable=True]
+      - button "Add Come As You Are to Next up" [focusable=True]
+      - button "Add Come As You Are to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+  - contentinfo "Audio player"
+    - strong
+      - text "Midnight City Lights"
+        - text "Midnight City Lights"
+    - text "Lunar Arcade"
+      - text "Lunar Arcade"
+    - button "Like current track" [focusable=True]
+    - button "Previous track" [focusable=True]
+    - button "Play" [focusable=True]
+    - button "Next track" [focusable=True]
+    - text "0:00"
+      - text "0:00"
+    - text "4:08"
+      - text "4:08"
+    - button "Mute" [focusable=True]
+    - button "Next up" [focusable=True]
+      - text "Next up"
+        - text "Next up"

@@ -8,6 +8,7 @@
   --blue: #2457d6;
   --red: #b4232c;
   --green: #147d52;
+  --amber: #9a6700;
 }
 
 * { box-sizing: border-box; }
@@ -41,6 +42,7 @@ button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-
 .status-dot.correct { color: var(--green); }
 .status-dot.false-positive { color: var(--red); }
 .status-dot.unsure { color: var(--blue); }
+.status-dot.duplicate { color: var(--amber); }
 .content { padding: 20px 24px 40px; min-width: 0; }
 .analysis-wrap { overflow-x: auto; margin-bottom: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
@@ -72,11 +74,12 @@ thead th, tbody th { text-align: left; }
 .focus-label span { color: var(--muted); overflow-wrap: anywhere; }
 .action-arrow { margin: 12px 0; text-align: center; font-weight: 750; color: var(--blue); }
 .review-card { margin-top: 16px; padding: 16px; }
-.decision-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.decision-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .decision-row button[aria-pressed="true"] { color: white; border-color: transparent; }
 .decision-row [data-decision="correct"][aria-pressed="true"] { background: var(--green); }
 .decision-row [data-decision="false-positive"][aria-pressed="true"] { background: var(--red); }
 .decision-row [data-decision="unsure"][aria-pressed="true"] { background: var(--blue); }
+.decision-row [data-decision="duplicate"][aria-pressed="true"] { background: var(--amber); }
 .note-label { display: grid; gap: 6px; margin-top: 12px; font-weight: 650; }
 textarea { width: 100%; min-height: 86px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 9px; }
 .navigation { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; }

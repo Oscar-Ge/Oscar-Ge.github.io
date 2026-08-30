@@ -1,0 +1,418 @@
+- document "Allrecipes | Food, Friends, and Recipe Inspiration" [focused=True, focusable=True]
+  - banner
+    - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+      - text "AMERICA’S #1 TRUSTED RECIPE RESOURCE"
+    - text "TESTED IN HOME KITCHENS SINCE 1997"
+      - text "TESTED IN HOME KITCHENS SINCE 1997"
+    - link "Allrecipes home" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - search
+      - LabelText
+        - text "Search recipes and ingredients"
+          - text "Search recipes and ingredients"
+      - entry "Search recipes and ingredients" [focusable=True]
+      - button "Search" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+    - link "My recipes, 0 items" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - navigation "Main navigation"
+      - link "RECIPES" [focusable=True]
+        - text "RECIPES"
+          - text "RECIPES"
+      - link "QUICK & EASY" [focusable=True]
+        - text "QUICK & EASY"
+          - text "QUICK & EASY"
+      - link "DESSERTS" [focusable=True]
+        - text "DESSERTS"
+          - text "DESSERTS"
+      - link "AIR FRYER" [focusable=True]
+        - text "AIR FRYER"
+          - text "AIR FRYER"
+      - link "KITCHEN TIPS" [focusable=True]
+        - text "KITCHEN TIPS"
+          - text "KITCHEN TIPS"
+      - link "FOOD NEWS" [focusable=True]
+        - text "FOOD NEWS"
+          - text "FOOD NEWS"
+      - link "HOLIDAYS" [focusable=True]
+        - text "HOLIDAYS"
+          - text "HOLIDAYS"
+  - main
+    - paragraph
+      - text "COOK WITH CONFIDENCE"
+        - text "COOK WITH CONFIDENCE"
+    - heading "Recipes you’ll want to make again and again." [level=1]
+      - text "Recipes you’ll want to make again and again."
+        - text "Recipes you’ll"
+        - text "want to make"
+        - text "again and again."
+    - paragraph
+      - text "Discover reliable favorites, quick weeknight dinners, and ideas for every craving—all tested by home cooks."
+        - text "Discover reliable favorites, quick weeknight dinners, and ideas for"
+        - text "every craving—all tested by home cooks."
+    - form
+      - LabelText
+        - text "What are you looking for?"
+          - text "What are you looking for?"
+      - entry "What are you looking for?" [focused=True, focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - link "30-Minute Garlic Butter Shrimp Pasta TONIGHT’S PICK 30-Minute Garlic Butter Shrimp Pasta 4.8 out of 5 stars, 2,914 ra..." [focusable=True]
+      - image "30-Minute Garlic Butter Shrimp Pasta"
+      - text "TONIGHT’S PICK"
+        - text "TONIGHT’S PICK"
+      - heading "30-Minute Garlic Butter Shrimp Pasta" [level=2]
+        - text "30-Minute Garlic Butter Shrimp Pasta"
+          - text "30-Minute Garlic Butter"
+          - text "Shrimp Pasta"
+      - generic "4.8 out of 5 stars, 2,914 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "2,914"
+          - text "2,914"
+        - text ")"
+          - text ")"
+      - text "Get the recipe"
+        - text "Get the recipe"
+    - paragraph
+      - text "FIND EXACTLY WHAT YOU NEED"
+        - text "FIND EXACTLY WHAT YOU NEED"
+    - heading "What sounds good?" [level=2]
+      - text "What sounds good?"
+        - text "What sounds good?"
+    - link "30-Minute Meals Fast, full-flavored dinners" [focusable=True]
+      - strong
+        - text "30-Minute Meals"
+          - text "30-Minute Meals"
+      - text "Fast, full-flavored dinners"
+        - text "Fast, full-flavored dinners"
+    - link "Sweet Potato Make it the main event" [focusable=True]
+      - strong
+        - text "Sweet Potato"
+          - text "Sweet Potato"
+      - text "Make it the main event"
+        - text "Make it the main event"
+    - link "Quick Seafood Main dishes in 30 minutes" [focusable=True]
+      - strong
+        - text "Quick Seafood"
+          - text "Quick Seafood"
+      - text "Main dishes in 30 minutes"
+        - text "Main dishes in 30 minutes"
+    - link "Filipino Desserts Five-star sweet favorites" [focusable=True]
+      - strong
+        - text "Filipino Desserts"
+          - text "Filipino Desserts"
+      - text "Five-star sweet favorites"
+        - text "Five-star sweet favorites"
+    - link "Easter Brunch Celebration-worthy recipes" [focusable=True]
+      - strong
+        - text "Easter Brunch"
+          - text "Easter Brunch"
+      - text "Celebration-worthy recipes"
+        - text "Celebration-worthy recipes"
+    - link "Food Safety Smart kitchen know-how" [focusable=True]
+      - strong
+        - text "Food Safety"
+          - text "Food Safety"
+      - text "Smart kitchen know-how"
+        - text "Smart kitchen know-how"
+    - paragraph
+      - text "WEEKNIGHT WINS"
+        - text "WEEKNIGHT WINS"
+    - heading "Ready in 30 minutes" [level=2]
+      - text "Ready in 30 minutes"
+        - text "Ready in 30 minutes"
+    - link "View all quick recipes" [focusable=True]
+      - text "View all quick recipes"
+        - text "View all quick recipes"
+    - article
+      - link "View Spicy Chicken Noodles" [focusable=True]
+        - image "Spicy Chicken Noodles"
+      - button "Favorite Spicy Chicken Noodles" [focusable=True]
+      - text "READY IN 25 MINUTES"
+        - text "READY IN 25 MINUTES"
+      - paragraph
+        - text "CHICKEN"
+          - text "CHICKEN"
+        - text "·"
+          - text "·"
+        - text "ASIAN INSPIRED"
+          - text "ASIAN INSPIRED"
+      - heading "Spicy Chicken Noodles" [level=3]
+        - link "Spicy Chicken Noodles" [focusable=True]
+          - text "Spicy Chicken Noodles"
+            - text "Spicy Chicken Noodles"
+      - generic "4.9 out of 5 stars, 2,387 ratings"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "2,387"
+          - text "2,387"
+        - text ")"
+          - text ")"
+      - text "25"
+        - text "25"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View 5-Star Honey Garlic Pork Chops" [focusable=True]
+        - image "5-Star Honey Garlic Pork Chops"
+      - button "Favorite 5-Star Honey Garlic Pork Chops" [focusable=True]
+      - text "5-STAR RECIPE"
+        - text "5-STAR RECIPE"
+      - paragraph
+        - text "PORK"
+          - text "PORK"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "5-Star Honey Garlic Pork Chops" [level=3]
+        - link "5-Star Honey Garlic Pork Chops" [focusable=True]
+          - text "5-Star Honey Garlic Pork Chops"
+            - text "5-Star Honey Garlic Pork"
+            - text "Chops"
+      - generic "5 out of 5 stars, 684 ratings"
+        - text "5.0"
+          - text "5.0"
+        - text "("
+          - text "("
+        - text "684"
+          - text "684"
+        - text ")"
+          - text ")"
+      - text "30"
+        - text "30"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Savory Sweet Potato Breakfast Hash" [focusable=True]
+        - image "Savory Sweet Potato Breakfast Hash"
+      - button "Favorite Savory Sweet Potato Breakfast Hash" [focusable=True]
+      - paragraph
+        - text "SWEET POTATO"
+          - text "SWEET POTATO"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Savory Sweet Potato Breakfast Hash" [level=3]
+        - link "Savory Sweet Potato Breakfast Hash" [focusable=True]
+          - text "Savory Sweet Potato Breakfast Hash"
+            - text "Savory Sweet Potato"
+            - text "Breakfast Hash"
+      - generic "4.7 out of 5 stars, 842 ratings"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "842"
+          - text "842"
+        - text ")"
+          - text ")"
+      - text "30"
+        - text "30"
+      - text "mins"
+        - text "mins"
+      - text "4"
+        - text "4"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - article
+      - link "View Easy Coffee Mocha" [focusable=True]
+        - image "Easy Coffee Mocha"
+      - button "Favorite Easy Coffee Mocha" [focusable=True]
+      - text "CAFÉ FAVORITE"
+        - text "CAFÉ FAVORITE"
+      - paragraph
+        - text "COFFEE"
+          - text "COFFEE"
+        - text "·"
+          - text "·"
+        - text "AMERICAN"
+          - text "AMERICAN"
+      - heading "Easy Coffee Mocha" [level=3]
+        - link "Easy Coffee Mocha" [focusable=True]
+          - text "Easy Coffee Mocha"
+            - text "Easy Coffee Mocha"
+      - generic "4.8 out of 5 stars, 1,106 ratings"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,106"
+          - text "1,106"
+        - text ")"
+          - text ")"
+      - text "10"
+        - text "10"
+      - text "mins"
+        - text "mins"
+      - text "2"
+        - text "2"
+      - text "servings"
+        - text "servings"
+      - button "Save recipe" [focusable=True]
+        - text "Save recipe"
+          - text "Save recipe"
+    - paragraph
+      - text "FRESH FROM OUR EDITORS"
+        - text "FRESH FROM OUR EDITORS"
+    - heading "Food news & trends" [level=2]
+      - text "Food news & trends"
+        - text "Food news & trends"
+    - link "See all stories" [focusable=True]
+      - text "See all stories"
+        - text "See all stories"
+    - article
+      - link "The Crispy Rice Salad Taking Over Summer Tables" [focusable=True]
+        - image "The Crispy Rice Salad Taking Over Summer Tables"
+      - paragraph
+        - text "FOOD TRENDS"
+          - text "FOOD TRENDS"
+        - text "·"
+          - text "·"
+        - text "AUGUST 14, 2026"
+          - text "AUGUST 14, 2026"
+      - heading "The Crispy Rice Salad Taking Over Summer Tables" [level=3]
+        - link "The Crispy Rice Salad Taking Over Summer Tables" [focusable=True]
+          - text "The Crispy Rice Salad Taking Over Summer Tables"
+            - text "The Crispy Rice Salad Taking Over"
+            - text "Summer Tables"
+      - paragraph
+        - text "Crunchy, bright, and endlessly adaptable, this is the dinner trend our editors keep making."
+          - text "Crunchy, bright, and endlessly adaptable, this is the dinner"
+          - text "trend our editors keep making."
+      - link "Read more" [focusable=True]
+        - text "Read more"
+          - text "Read more"
+      - button "Share" [focusable=True]
+        - text "Share"
+          - text "Share"
+    - article
+      - link "FreshFields Recalls Cinnamon Granola Bars in 12 States" [focusable=True]
+        - image "FreshFields Recalls Cinnamon Granola Bars in 12 States"
+      - paragraph
+        - text "RECALL"
+          - text "RECALL"
+        - text "·"
+          - text "·"
+        - text "AUGUST 15, 2026"
+          - text "AUGUST 15, 2026"
+      - heading "FreshFields Recalls Cinnamon Granola Bars in 12 States" [level=3]
+        - link "FreshFields Recalls Cinnamon Granola Bars in 12 States" [focusable=True]
+          - text "FreshFields Recalls Cinnamon Granola Bars in 12 States"
+            - text "FreshFields Recalls Cinnamon Granola"
+            - text "Bars in 12 States"
+      - paragraph
+        - text "Here’s how to check your pantry and what to do if you have an affected package."
+          - text "Here’s how to check your pantry and what to do if you have an"
+          - text "affected package."
+      - link "Read more" [focusable=True]
+        - text "Read more"
+          - text "Read more"
+      - button "Share" [focusable=True]
+        - text "Share"
+          - text "Share"
+    - paragraph
+      - text "THE DAILY DISH"
+        - text "THE DAILY DISH"
+    - heading "Delicious ideas, delivered." [level=2]
+      - text "Delicious ideas, delivered."
+        - text "Delicious ideas,"
+        - text "delivered."
+    - paragraph
+      - text "Get our best recipes and smartest kitchen tips in your inbox."
+        - text "Get our best recipes and smartest"
+        - text "kitchen tips in your inbox."
+    - form
+      - LabelText
+        - text "Email address"
+          - text "Email address"
+      - entry "Email address" [focusable=True, required=True]
+      - button "Sign me up" [focusable=True]
+        - text "Sign me up"
+          - text "Sign me up"
+  - contentinfo
+    - link "allrecipes *" [focusable=True]
+      - text "allrecipes"
+        - text "allrecipes"
+      - text "*"
+        - text "*"
+    - paragraph
+      - text "Reliable recipes and helpful kitchen know-how, made for home cooks."
+        - text "Reliable recipes and helpful kitchen know-how,"
+        - text "made for home cooks."
+    - heading "EXPLORE" [level=2]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "All Recipes" [focusable=True]
+      - text "All Recipes"
+        - text "All Recipes"
+    - link "30-Minute Meals" [focusable=True]
+      - text "30-Minute Meals"
+        - text "30-Minute Meals"
+    - link "Air Fryer Recipes" [focusable=True]
+      - text "Air Fryer Recipes"
+        - text "Air Fryer Recipes"
+    - link "Desserts" [focusable=True]
+      - text "Desserts"
+        - text "Desserts"
+    - heading "LEARN" [level=2]
+      - text "LEARN"
+        - text "LEARN"
+    - link "Kitchen Tips" [focusable=True]
+      - text "Kitchen Tips"
+        - text "Kitchen Tips"
+    - link "Food Safety" [focusable=True]
+      - text "Food Safety"
+        - text "Food Safety"
+    - link "Recall News" [focusable=True]
+      - text "Recall News"
+        - text "Recall News"
+    - link "Food Trends" [focusable=True]
+      - text "Food Trends"
+        - text "Food Trends"
+    - heading "YOUR KITCHEN" [level=2]
+      - text "YOUR KITCHEN"
+        - text "YOUR KITCHEN"
+    - link "My Recipes" [focusable=True]
+      - text "My Recipes"
+        - text "My Recipes"
+    - link "Search Cinnamon Recipes" [focusable=True]
+      - text "Search Cinnamon Recipes"
+        - text "Search Cinnamon Recipes"
+    - link "About Allrecipes" [focusable=True]
+      - text "About Allrecipes"
+        - text "About Allrecipes"
+    - text "© 2026 Allrecipes demo"
+      - text "© 2026 Allrecipes demo"
+    - text "All content is synthetic and for demonstration only."
+      - text "All content is synthetic and for demonstration only."

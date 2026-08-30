@@ -1,0 +1,578 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - form
+      - entry "Search location" value="c" [focusable=True]
+        - text "c"
+          - text "c"
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - LabelText
+      - text "Minimum price"
+        - text "Minimum price"
+      - combobox "Minimum price" value="No min price" [focusable=True]
+        - MenuListPopup
+          - option "No min price" [focusable=True, selected=True]
+          - option "$100,000" [focusable=True]
+          - option "$200,000" [focusable=True]
+          - option "$300,000" [focusable=True]
+          - option "$500,000" [focusable=True]
+          - option "$750,000" [focusable=True]
+          - option "$1,000,000" [focusable=True]
+    - LabelText
+      - text "Maximum price"
+        - text "Maximum price"
+      - combobox "Maximum price" value="No max price" [focusable=True]
+        - MenuListPopup
+          - option "No max price" [focusable=True, selected=True]
+          - option "$200,000" [focusable=True]
+          - option "$300,000" [focusable=True]
+          - option "$500,000" [focusable=True]
+          - option "$750,000" [focusable=True]
+          - option "$1,000,000" [focusable=True]
+          - option "$1,500,000" [focusable=True]
+    - LabelText
+      - text "Minimum bedrooms"
+        - text "Minimum bedrooms"
+      - combobox "Minimum bedrooms" value="Beds" [focusable=True]
+        - MenuListPopup
+          - option "Beds" [focusable=True, selected=True]
+          - option "1+ beds" [focusable=True]
+          - option "2+ beds" [focusable=True]
+          - option "3+ beds" [focusable=True]
+          - option "4+ beds" [focusable=True]
+          - option "5+ beds" [focusable=True]
+    - LabelText
+      - text "Minimum bathrooms"
+        - text "Minimum bathrooms"
+      - combobox "Minimum bathrooms" value="Baths" [focusable=True]
+        - MenuListPopup
+          - option "Baths" [focusable=True, selected=True]
+          - option "1+ baths" [focusable=True]
+          - option "1.5+ baths" [focusable=True]
+          - option "2+ baths" [focusable=True]
+          - option "2.5+ baths" [focusable=True]
+          - option "3+ baths" [focusable=True]
+    - button "More filters" [focusable=True]
+      - text "More filters"
+        - text "More filters"
+    - text "Home /"
+      - text "Home /"
+    - text "Buy"
+      - text "Buy"
+    - heading "Homes for sale in c" [level=1]
+      - text "Homes for sale in c"
+        - text "Homes for sale in c"
+    - paragraph
+      - strong
+        - text "8"
+          - text "8"
+      - text "matching"
+        - text "matching"
+      - text "properties"
+        - text "properties"
+      - text "from synthetic listing data"
+        - text "from synthetic listing data"
+    - LabelText
+      - combobox "Sort listings" value="Recommended" [focusable=True]
+        - MenuListPopup
+          - option "Recommended" [focusable=True, selected=True]
+          - option "Price: low to high" [focusable=True]
+          - option "Price: high to low" [focusable=True]
+          - option "Newest listings" [focusable=True]
+          - option "Square feet: low to high" [focusable=True]
+          - option "Square feet: high to low" [focusable=True]
+    - group "Results view"
+      - button "Card view" [focusable=True, pressed=true]
+      - button "Table view" [focusable=True]
+    - button "c" [focusable=True]
+      - text "c"
+        - text "c"
+    - article
+      - image "House at 10241 E Rincon Shadows Rd"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 10241 E Rincon Shadows Rd" [focusable=True]
+      - strong
+        - text "$445,000"
+          - text "$445,000"
+      - text "Est."
+        - text "Est."
+      - text "$3,044"
+        - text "$3,044"
+      - text "/mo"
+        - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "2,260"
+        - text "2,260"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "10241 E Rincon Shadows Rd" [level=3]
+        - text "10241 E Rincon Shadows Rd"
+          - text "10241 E Rincon Shadows Rd"
+      - paragraph
+        - text "Rita Ranch"
+          - text "Rita Ranch"
+        - text "·"
+          - text "·"
+        - text "Tucson"
+          - text "Tucson"
+        - text ","
+          - text ","
+        - text "AZ"
+          - text "AZ"
+        - text
+          - text
+        - text "85747"
+          - text "85747"
+      - text "Private pool"
+        - text "Private pool"
+      - text "Mountain view"
+        - text "Mountain view"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 4872 Canyon View Dr"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 4872 Canyon View Dr" [focusable=True]
+      - strong
+        - text "$799,000"
+          - text "$799,000"
+      - text "Est."
+        - text "Est."
+      - text "$5,448"
+        - text "$5,448"
+      - text "/mo"
+        - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,480"
+        - text "1,480"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "4872 Canyon View Dr" [level=3]
+        - text "4872 Canyon View Dr"
+          - text "4872 Canyon View Dr"
+      - paragraph
+        - text "Clairemont"
+          - text "Clairemont"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92117"
+          - text "92117"
+      - text "Canyon view"
+        - text "Canyon view"
+      - text "Solar"
+        - text "Solar"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Condo at 225 E 46th St #7C"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 225 E 46th St #7C" [focusable=True]
+      - strong
+        - text "$239,000"
+          - text "$239,000"
+      - text "Est."
+        - text "Est."
+      - text "$1,926"
+        - text "$1,926"
+      - text "/mo"
+        - text "/mo"
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - text "610"
+        - text "610"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "225 E 46th St #7C" [level=3]
+        - text "225 E 46th St #7C"
+          - text "225 E 46th St #7C"
+      - paragraph
+        - text "Turtle Bay"
+          - text "Turtle Bay"
+        - text "·"
+          - text "·"
+        - text "New York"
+          - text "New York"
+        - text ","
+          - text ","
+        - text "NY"
+          - text "NY"
+        - text
+          - text
+        - text "10017"
+          - text "10017"
+      - text "City view"
+        - text "City view"
+      - text "Laundry room"
+        - text "Laundry room"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 1212 Laurel View Dr"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 1212 Laurel View Dr" [focusable=True]
+      - strong
+        - text "$2,450,000"
+          - text "$2,450,000"
+      - text "Est."
+        - text "Est."
+      - text "$15,480"
+        - text "$15,480"
+      - text "/mo"
+        - text "/mo"
+      - text "5"
+        - text "5"
+      - text "bd"
+        - text "bd"
+      - text "4.5"
+        - text "4.5"
+      - text "ba"
+        - text "ba"
+      - text "4,120"
+        - text "4,120"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "1212 Laurel View Dr" [level=3]
+        - text "1212 Laurel View Dr"
+          - text "1212 Laurel View Dr"
+      - paragraph
+        - text "Hollywood Hills"
+          - text "Hollywood Hills"
+        - text "·"
+          - text "·"
+        - text "Los Angeles"
+          - text "Los Angeles"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "90069"
+          - text "90069"
+      - text "Private pool"
+        - text "Private pool"
+      - text "City view"
+        - text "City view"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 3126 Adams Ave"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 3126 Adams Ave" [focusable=True]
+      - strong
+        - text "$925,000"
+          - text "$925,000"
+      - text "Est."
+        - text "Est."
+      - text "$6,275"
+        - text "$6,275"
+      - text "/mo"
+        - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "1,785"
+        - text "1,785"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "3126 Adams Ave" [level=3]
+        - text "3126 Adams Ave"
+          - text "3126 Adams Ave"
+      - paragraph
+        - text "Normal Heights"
+          - text "Normal Heights"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92116"
+          - text "92116"
+      - text "Guest suite"
+        - text "Guest suite"
+      - text "Walkable"
+        - text "Walkable"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 1840 S Marion St"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 1840 S Marion St" [focusable=True]
+      - strong
+        - text "$949,000"
+          - text "$949,000"
+      - text "Est."
+        - text "Est."
+      - text "$6,450"
+        - text "$6,450"
+      - text "/mo"
+        - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "3"
+        - text "3"
+      - text "ba"
+        - text "ba"
+      - text "2,415"
+        - text "2,415"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "1840 S Marion St" [level=3]
+        - text "1840 S Marion St"
+          - text "1840 S Marion St"
+      - paragraph
+        - text "Platt Park"
+          - text "Platt Park"
+        - text "·"
+          - text "·"
+        - text "Denver"
+          - text "Denver"
+        - text ","
+          - text ","
+        - text "CO"
+          - text "CO"
+        - text
+          - text
+        - text "80210"
+          - text "80210"
+      - text "Finished basement"
+        - text "Finished basement"
+      - text "Walkable"
+        - text "Walkable"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 9886 S Desert Vista Dr"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 9886 S Desert Vista Dr" [focusable=True]
+      - strong
+        - text "$535,000"
+          - text "$535,000"
+      - text "Est."
+        - text "Est."
+      - text "$3,610"
+        - text "$3,610"
+      - text "/mo"
+        - text "/mo"
+      - text "5"
+        - text "5"
+      - text "bd"
+        - text "bd"
+      - text "3"
+        - text "3"
+      - text "ba"
+        - text "ba"
+      - text "2,815"
+        - text "2,815"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "9886 S Desert Vista Dr" [level=3]
+        - text "9886 S Desert Vista Dr"
+          - text "9886 S Desert Vista Dr"
+      - paragraph
+        - text "Rancho del Lago"
+          - text "Rancho del Lago"
+        - text "·"
+          - text "·"
+        - text "Tucson"
+          - text "Tucson"
+        - text ","
+          - text ","
+        - text "AZ"
+          - text "AZ"
+        - text
+          - text
+        - text "85747"
+          - text "85747"
+      - text "Private pool"
+        - text "Private pool"
+      - text "Three-car garage"
+        - text "Three-car garage"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Townhouse at 7425 Mesa College Dr #18"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 7425 Mesa College Dr #18" [focusable=True]
+      - strong
+        - text "$879,000"
+          - text "$879,000"
+      - text "Est."
+        - text "Est."
+      - text "$5,998"
+        - text "$5,998"
+      - text "/mo"
+        - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "1,610"
+        - text "1,610"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "7425 Mesa College Dr #18" [level=3]
+        - text "7425 Mesa College Dr #18"
+          - text "7425 Mesa College Dr #18"
+      - paragraph
+        - text "Linda Vista"
+          - text "Linda Vista"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92111"
+          - text "92111"
+      - text "Community pool"
+        - text "Community pool"
+      - text "Two-car garage"
+        - text "Two-car garage"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

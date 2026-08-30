@@ -1,0 +1,158 @@
+- document "CA.gov | State of California" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - text "Official website of the State of California"
+    - text "Official website of the State of California"
+  - button "How you know" [focusable=True]
+    - text "How you know"
+      - text "How you know"
+  - banner
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+      - text "STATE OF CALIFORNIA"
+        - text "STATE OF CALIFORNIA"
+    - search
+      - LabelText
+        - text "Search CA.gov"
+          - text "Search CA.gov"
+      - entry "Search CA.gov" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - navigation "Main navigation"
+      - link "Services" [focusable=True]
+        - text "Services"
+          - text "Services"
+      - link "Benefits" [focusable=True]
+        - text "Benefits"
+          - text "Benefits"
+      - link "Government" [focusable=True]
+        - text "Government"
+          - text "Government"
+      - link "Business" [focusable=True]
+        - text "Business"
+          - text "Business"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Elections" [focusable=True]
+        - text "Elections"
+          - text "Elections"
+      - text "Register to vote"
+        - text "Register to vote"
+    - text "ELECTIONS & VOTING"
+      - text "ELECTIONS & VOTING"
+    - heading "Register to vote in California" [level=1]
+      - text "Register to vote in California"
+        - text "Register to vote in"
+        - text "California"
+    - paragraph
+      - text "Check eligibility and start a secure first-time voter registration."
+        - text "Check eligibility and start a secure first-time voter registration."
+    - text "Step 1 of 2"
+      - text "Step 1 of 2"
+    - heading "Confirm voter eligibility" [level=2]
+      - text "Confirm voter eligibility"
+        - text "Confirm voter eligibility"
+    - paragraph
+      - text "Check each statement that applies to you."
+        - text "Check each statement that applies to you."
+    - LabelText
+      - checkbox "I am a United States citizen." [focusable=True]
+      - strong
+        - text "I am a United States citizen."
+          - text "I am a United States citizen."
+    - LabelText
+      - checkbox "I am a resident of California." [focusable=True]
+      - strong
+        - text "I am a resident of California."
+          - text "I am a resident of California."
+    - LabelText
+      - checkbox "I am at least 18 years old on Election Day. You may pre-register at age 16 or 17." [focusable=True]
+      - strong
+        - text "I am at least 18 years old on Election Day."
+          - text "I am at least 18 years old on Election Day."
+      - text "You may pre-register at age 16 or 17."
+        - text "You may pre-register at age 16 or 17."
+    - LabelText
+      - checkbox "I am not currently serving a state or federal prison term for a felony." [focusable=True]
+      - strong
+        - text "I am not currently serving a state or federal prison term for a felony."
+          - text "I am not currently serving a state or federal prison term for a felony."
+    - LabelText
+      - checkbox "A court has not found me mentally incompetent to vote." [focusable=True]
+      - strong
+        - text "A court has not found me mentally incompetent to vote."
+          - text "A court has not found me mentally incompetent to vote."
+    - LabelText
+      - checkbox "This is my first time registering to vote." [focusable=True, checked=true]
+      - strong
+        - text "This is my first time registering to vote."
+          - text "This is my first time registering to vote."
+    - button "Begin voter registration" [disabled=True]
+      - text "Begin voter registration"
+        - text "Begin voter registration"
+    - paragraph
+      - text "Check all five eligibility statements to continue."
+        - text "Check all five eligibility statements to continue."
+  - contentinfo
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+    - paragraph
+      - text "California services and information in one place."
+        - text "California services and information in"
+        - text "one place."
+    - heading "POPULAR SERVICES" [level=2]
+      - text "POPULAR SERVICES"
+        - text "POPULAR SERVICES"
+    - link "Birth certificates" [focusable=True]
+      - text "Birth certificates"
+        - text "Birth certificates"
+    - link "Register to vote" [focused=True, focusable=True]
+      - text "Register to vote"
+        - text "Register to vote"
+    - link "Unemployment benefits" [focusable=True]
+      - text "Unemployment benefits"
+        - text "Unemployment benefits"
+    - heading "GOVERNMENT" [level=2]
+      - text "GOVERNMENT"
+        - text "GOVERNMENT"
+    - link "Find your representative" [focusable=True]
+      - text "Find your representative"
+        - text "Find your representative"
+    - link "Search legislation" [focusable=True]
+      - text "Search legislation"
+        - text "Search legislation"
+    - link "Agency directory" [focusable=True]
+      - text "Agency directory"
+        - text "Agency directory"
+    - heading "GET HELP" [level=2]
+      - text "GET HELP"
+        - text "GET HELP"
+    - link "1-800-807-7777" [focusable=True]
+      - text "1-800-807-7777"
+        - text "1-800-807-7777"
+    - link "info@ca.gov" [focusable=True]
+      - text "info@ca.gov"
+        - text "info@ca.gov"
+    - link "Browse all services" [focusable=True]
+      - text "Browse all services"
+        - text "Browse all services"
+    - text "© 2026 State of California"
+      - text "© 2026 State of California"
+    - text "Built for accessibility and public service"
+      - text "Built for accessibility and public service"

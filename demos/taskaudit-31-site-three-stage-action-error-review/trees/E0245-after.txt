@@ -1,0 +1,237 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Europe" [focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Europe"
+          - text "Europe"
+    - button "When Sep 7 – Sep 14" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "Sep 7 – Sep 14"
+          - text "Sep 7 – Sep 14"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Castles in Europe" [level=1]
+      - text "Castles in Europe"
+        - text "Castles in Europe"
+    - text "Sep 7 – Sep 14 · 1 guest"
+      - text "Sep 7 – Sep 14 · 1 guest"
+    - button "Refine" [focused=True, focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - button "Castles" [focusable=True]
+      - text "Castles"
+        - text "Castles"
+    - article
+      - button "View Storybook Stone Castle" [focusable=True]
+        - image "Storybook Stone Castle"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Storybook Stone Castle to a wishlist" [focusable=True]
+      - button "Dordogne, France" [focusable=True]
+        - text "Dordogne, France"
+          - text "Dordogne, France"
+      - text "4.91"
+        - text "4.91"
+      - paragraph
+        - text "Storybook Stone Castle"
+          - text "Storybook Stone Castle"
+      - paragraph
+        - text "Entire home · 5 beds"
+          - text "Entire home · 5 beds"
+      - strong
+        - text "$875"
+          - text "$875"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Tuscan Castle Above the Vines" [focusable=True]
+        - image "Tuscan Castle Above the Vines"
+      - button "Save Tuscan Castle Above the Vines to a wishlist" [focusable=True]
+      - button "Siena, Italy" [focusable=True]
+        - text "Siena, Italy"
+          - text "Siena, Italy"
+      - text "4.88"
+        - text "4.88"
+      - paragraph
+        - text "Tuscan Castle Above the Vines"
+          - text "Tuscan Castle Above the Vines"
+      - paragraph
+        - text "Entire home · 6 beds"
+          - text "Entire home · 6 beds"
+      - strong
+        - text "$940"
+          - text "$940"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"
+  - dialog "Filters"
+    - button "Close" [focusable=True]
+    - heading "Filters" [level=2]
+      - text "Filters"
+        - text "Filters"
+    - heading "Price range" [level=3]
+      - text "Price range"
+        - text "Price range"
+    - paragraph
+      - text "Nightly prices before fees and taxes"
+        - text "Nightly prices before fees and taxes"
+    - LabelText
+      - text "Minimum"
+        - text "Minimum"
+      - text "$"
+        - text "$"
+      - spinbutton "Minimum $" [focusable=True]
+    - text "–"
+      - text "–"
+    - LabelText
+      - text "Maximum"
+        - text "Maximum"
+      - text "$"
+        - text "$"
+      - spinbutton "Maximum $" [focusable=True]
+    - heading "Type of place" [level=3]
+      - text "Type of place"
+        - text "Type of place"
+    - button "Any type" [focusable=True]
+      - text "Any type"
+        - text "Any type"
+    - button "Entire home" [focusable=True]
+      - text "Entire home"
+        - text "Entire home"
+    - button "Private room" [focusable=True]
+      - text "Private room"
+        - text "Private room"
+    - button "Shared room" [focusable=True]
+      - text "Shared room"
+        - text "Shared room"
+    - heading "Booking options & amenities" [level=3]
+      - text "Booking options & amenities"
+        - text "Booking options & amenities"
+    - LabelText
+      - strong
+        - text "Free cancellation"
+          - text "Free cancellation"
+      - text "Plans change. Book with flexibility."
+        - text "Plans change. Book with flexibility."
+      - checkbox "Free cancellation Plans change. Book with flexibility." [focusable=True]
+    - LabelText
+      - strong
+        - text "Swimming pool"
+          - text "Swimming pool"
+      - text "Show stays with a private or shared pool."
+        - text "Show stays with a private or shared pool."
+      - checkbox "Swimming pool Show stays with a private or shared pool." [focusable=True]
+    - button "Clear all" [focusable=True]
+      - text "Clear all"
+        - text "Clear all"
+    - button "Show 2 places" [focusable=True]
+      - text "Show"
+        - text "Show"
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "places"
+        - text "places"

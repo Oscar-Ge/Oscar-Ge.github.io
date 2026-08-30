@@ -1,0 +1,299 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - text "Customer support: (855) 266-9565"
+      - text "Customer support: (855) 266-9565"
+    - text "US · English"
+      - text "US · English"
+    - link "Enterprise Rent-A-Car" [focusable=True]
+      - generic "Enterprise Rent-A-Car"
+        - text "e"
+          - text "e"
+        - text "enterprise"
+          - text "enterprise"
+        - text "RENT-A-CAR"
+          - text "RENT-A-"
+          - text "CAR"
+    - navigation "Primary navigation"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Exotic Cars" [focusable=True]
+        - text "Exotic Cars"
+          - text "Exotic Cars"
+      - link "Buy a Car" [focusable=True]
+        - text "Buy a Car"
+          - text "Buy a Car"
+      - link "Hotel Pickup" [focusable=True]
+        - text "Hotel Pickup"
+          - text "Hotel Pickup"
+      - link "Manage Reservation" [focusable=True]
+        - text "Manage Reservation"
+          - text "Manage Reservation"
+      - link "Email Offers" [focusable=True]
+        - text "Email Offers"
+          - text "Email Offers"
+  - main
+    - text "THE ROAD IS YOURS"
+      - text "THE ROAD IS YOURS"
+    - heading "Ready when you are." [level=1]
+      - text "Ready when you are."
+        - text "Ready"
+        - text "when you"
+        - text "are."
+    - paragraph
+      - text "From quick city trips to unforgettable getaways, find a vehicle that fits your plans."
+        - text "From quick city trips to unforgettable getaways, find"
+        - text "a vehicle that fits your plans."
+    - text "No hidden booking fees"
+      - text "No hidden booking fees"
+    - text "Free cancellation on most rentals"
+      - text "Free cancellation on most rentals"
+    - form
+      - text "RESERVE A VEHICLE"
+        - text "RESERVE A VEHICLE"
+      - heading "Start a reservation" [level=2]
+        - text "Start a reservation"
+          - text "Start a reservation"
+      - text "Secure booking"
+        - text "Secure booking"
+      - LabelText
+        - text "Pickup location"
+          - text "Pickup location"
+        - combobox "Pickup location" value="Brooklyn City, NY, US" [focusable=True]
+          - text "Brooklyn City, NY, US"
+            - text "Brooklyn City, NY, US"
+      - LabelText
+        - text "Return location"
+          - text "Return location"
+        - combobox "Return location" [focusable=True]
+      - LabelText
+        - checkbox "Return to a different location" [focusable=True, checked=true]
+        - text "Return to a different location"
+          - text "Return to a different location"
+      - LabelText
+        - text "Pick-up date"
+          - text "Pick-up date"
+        - Date "Pick-up date" value="2026-04-05" [focusable=True]
+          - spinbutton "Month Month" value="4" [focusable=True]
+            - text "04"
+              - text "04"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="5" [focusable=True]
+            - text "05"
+              - text "05"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2026" [focusable=True]
+            - text "2026"
+              - text "2026"
+          - button "Show date picker" [focusable=True]
+      - LabelText
+        - text "Pick-up time"
+          - text "Pick-up time"
+        - combobox "Pick-up time" value="11:00 AM" [focusable=True]
+          - MenuListPopup
+            - option "8:00 AM" [focusable=True]
+            - option "9:00 AM" [focusable=True]
+            - option "10:00 AM" [focusable=True]
+            - option "11:00 AM" [focusable=True, selected=True]
+            - option "12:00 PM" [focusable=True]
+            - option "1:00 PM" [focusable=True]
+            - option "2:00 PM" [focusable=True]
+            - option "3:00 PM" [focusable=True]
+            - option "4:00 PM" [focusable=True]
+            - option "5:00 PM" [focusable=True]
+            - option "6:00 PM" [focusable=True]
+      - LabelText
+        - text "Return date"
+          - text "Return date"
+        - Date "Return date" value="2026-04-08" [focusable=True]
+          - spinbutton "Month Month" value="4" [focusable=True]
+            - text "04"
+              - text "04"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="8" [focusable=True]
+            - text "08"
+              - text "08"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="2026" [focusable=True]
+            - text "2026"
+              - text "2026"
+          - button "Show date picker" [focusable=True]
+      - LabelText
+        - text "Return time"
+          - text "Return time"
+        - combobox "Return time" value="5:00 PM" [focusable=True]
+          - MenuListPopup
+            - option "8:00 AM" [focusable=True]
+            - option "9:00 AM" [focusable=True]
+            - option "10:00 AM" [focusable=True]
+            - option "11:00 AM" [focusable=True]
+            - option "12:00 PM" [focusable=True]
+            - option "1:00 PM" [focusable=True]
+            - option "2:00 PM" [focusable=True]
+            - option "3:00 PM" [focusable=True]
+            - option "4:00 PM" [focusable=True]
+            - option "5:00 PM" [focusable=True, selected=True]
+            - option "6:00 PM" [focusable=True]
+      - LabelText
+        - text "Renter age"
+          - text "Renter age"
+        - combobox "Renter age" value="25 or older" [focusable=True]
+          - MenuListPopup
+            - option "18 years old" [focusable=True]
+            - option "19 years old" [focusable=True]
+            - option "20 years old" [focusable=True]
+            - option "21 years old" [focusable=True]
+            - option "22 years old" [focusable=True]
+            - option "23 years old" [focusable=True]
+            - option "24 years old" [focusable=True]
+            - option "25 or older" [focusable=True, selected=True]
+      - LabelText
+        - text "Vehicle class"
+          - text "Vehicle class"
+        - combobox "Vehicle class" value="Any vehicle" [focusable=True]
+          - MenuListPopup
+            - option "Any vehicle" [focusable=True, selected=True]
+            - option "Economy" [focusable=True]
+            - option "Compact" [focusable=True]
+            - option "SUV" [focusable=True]
+            - option "Mini Van" [focusable=True]
+            - option "Pickup Truck" [focusable=True]
+            - option "Exotic" [focusable=True]
+      - LabelText
+        - text "Passengers"
+          - text "Passengers"
+        - combobox "Passengers" value="2 people" [focusable=True]
+          - MenuListPopup
+            - option "1 person" [focusable=True]
+            - option "2 people" [focusable=True, selected=True]
+            - option "3 people" [focusable=True]
+            - option "4 people" [focusable=True]
+            - option "5 people" [focusable=True]
+            - option "6 people" [focusable=True]
+            - option "7 people" [focusable=True]
+      - button "View vehicles" [focusable=True]
+        - text "View vehicles"
+          - text "View vehicles"
+      - alert
+        - text "Enter a return location for this one-way rental."
+          - text "Enter a return location for this one-way rental."
+    - link "Pickup at your hotel Find Boston hotels by ZIP code" [focusable=True]
+      - strong
+        - text "Pickup at your hotel"
+          - text "Pickup at your hotel"
+      - text "Find Boston hotels by ZIP code"
+        - text "Find Boston hotels by ZIP code"
+    - link "Explore exotic vehicles Performance and luxury collection" [focusable=True]
+      - strong
+        - text "Explore exotic vehicles"
+          - text "Explore exotic vehicles"
+      - text "Performance and luxury collection"
+        - text "Performance and luxury collection"
+    - link "Manage a reservation Look up a booking or ticket" [focusable=True]
+      - strong
+        - text "Manage a reservation"
+          - text "Manage a reservation"
+      - text "Look up a booking or ticket"
+        - text "Look up a booking or ticket"
+    - text "MORE WAYS TO MOVE"
+      - text "MORE WAYS TO MOVE"
+    - heading "Everything your trip needs" [level=2]
+      - text "Everything your trip needs"
+        - text "Everything your trip needs"
+    - paragraph
+      - text "Thoughtful options for family weekends, business travel and once-in-a-lifetime drives."
+        - text "Thoughtful options for family weekends, business travel and once-in-a-lifetime drives."
+    - article
+      - paragraph
+        - text "ENTERPRISE EXOTIC CAR COLLECTION"
+          - text "ENTERPRISE EXOTIC CAR COLLECTION"
+      - heading "Make the drive the destination." [level=3]
+        - text "Make the drive the destination."
+          - text "Make the drive the"
+          - text "destination."
+      - paragraph
+        - text "Browse sports cars and premium SUVs, including Corvette, Porsche, Range Rover and Ferrari models."
+          - text "Browse sports cars and premium SUVs, including Corvette, Porsche,"
+          - text "Range Rover and Ferrari models."
+      - link "View exotic vehicles" [focusable=True]
+        - text "View exotic vehicles"
+          - text "View exotic vehicles"
+    - article
+      - paragraph
+        - text "ENTERPRISE CAR SALES"
+          - text "ENTERPRISE CAR SALES"
+      - heading "A better way to buy used." [level=3]
+        - text "A better way to buy used."
+          - text "A better way to buy used."
+      - paragraph
+        - text "Shop no-haggle used vehicles, including convertibles under $20,000."
+          - text "Shop no-haggle used vehicles, including"
+          - text "convertibles under $20,000."
+      - link "Browse cars for sale" [focusable=True]
+        - text "Browse cars for sale"
+          - text "Browse cars for sale"
+    - text "DRIVE MORE, SPEND LESS"
+      - text "DRIVE MORE, SPEND LESS"
+    - heading "Get rental offers in your inbox" [level=2]
+      - text "Get rental offers in your inbox"
+        - text "Get rental offers in your inbox"
+    - paragraph
+      - text "Sign up for member-only promotions and travel inspiration."
+        - text "Sign up for member-only promotions and travel inspiration."
+    - link "Sign me up" [focusable=True]
+      - text "Sign me up"
+        - text "Sign me up"
+  - contentinfo
+    - generic "Enterprise Rent-A-Car"
+      - text "e"
+        - text "e"
+      - text "enterprise"
+        - text "enterprise"
+      - text "RENT-A-CAR"
+        - text "RENT-A-"
+        - text "CAR"
+    - paragraph
+      - text "Every journey starts with a reliable ride. Mock rental experiences, made simple."
+        - text "Every journey starts with a reliable ride. Mock rental"
+        - text "experiences, made simple."
+    - heading "Rent" [level=3]
+      - text "Rent"
+        - text "Rent"
+    - link "Start a reservation" [focusable=True]
+      - text "Start a reservation"
+        - text "Start a reservation"
+    - link "Exotic collection" [focusable=True]
+      - text "Exotic collection"
+        - text "Exotic collection"
+    - link "Hotel pickup" [focusable=True]
+      - text "Hotel pickup"
+        - text "Hotel pickup"
+    - heading "Shop & manage" [level=3]
+      - text "Shop & manage"
+        - text "Shop & manage"
+    - link "Cars for sale" [focusable=True]
+      - text "Cars for sale"
+        - text "Cars for sale"
+    - link "Look up a booking" [focusable=True]
+      - text "Look up a booking"
+        - text "Look up a booking"
+    - link "Email offers" [focusable=True]
+      - text "Email offers"
+        - text "Email offers"
+    - heading "Need help?" [level=3]
+      - text "Need help?"
+        - text "Need help?"
+    - paragraph
+      - text "(855) 266-9565"
+        - text "(855) 266-9565"
+    - paragraph
+      - text "Open daily, 7 a.m.–10 p.m."
+        - text "Open daily, 7 a.m.–10 p.m."
+    - text "© 2026 Enterprise Rent-A-Car mock experience."
+      - text "© 2026 Enterprise Rent-A-Car mock experience."
+    - text "Rates and inventory are simulated for demonstration."
+      - text "Rates and inventory are simulated for demonstration."

@@ -1,0 +1,935 @@
+- document "SoundCloud — Hear what’s next" [focused=True, focusable=True]
+  - banner
+    - link "SoundCloud home" [focusable=True]
+      - text "SOUNDCLOUD"
+        - text "SOUNDCLOUD"
+    - navigation "Primary navigation"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Feed" [focusable=True]
+        - text "Feed"
+          - text "Feed"
+      - link "Charts" [focusable=True]
+        - text "Charts"
+          - text "Charts"
+      - link "Library" [focusable=True]
+        - text "Library"
+          - text "Library"
+    - search
+      - LabelText
+        - text "Search SoundCloud"
+          - text "Search SoundCloud"
+      - entry "Search SoundCloud" value="h" [focusable=True]
+        - text "h"
+          - text "h"
+      - button "Submit search" [focusable=True]
+    - link "For Artists" [focusable=True]
+      - text "For Artists"
+        - text "For Artists"
+    - link "Open your library" [focusable=True]
+      - text "AR"
+        - text "AR"
+  - main
+    - form
+      - entry "Search query" value="hhkk" [focusable=True]
+        - text "hhkk"
+          - text "hhkk"
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - tablist "Result type"
+      - tab "All" [focused=True, focusable=True, selected=True]
+        - text "All"
+          - text "All"
+      - tab "Tracks" [focusable=True]
+        - text "Tracks"
+          - text "Tracks"
+      - tab "Artists" [focusable=True]
+        - text "Artists"
+          - text "Artists"
+      - tab "Playlists" [focusable=True]
+        - text "Playlists"
+          - text "Playlists"
+      - tab "Albums" [focusable=True]
+        - text "Albums"
+          - text "Albums"
+      - tab "Podcasts" [focusable=True]
+        - text "Podcasts"
+          - text "Podcasts"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - LabelText
+      - text "DURATION"
+        - text "DURATION"
+      - combobox "DURATION" value="Any duration" [focusable=True]
+        - MenuListPopup
+          - option "Any duration" [focusable=True, selected=True]
+          - option "2–10 minutes" [focusable=True]
+          - option "10–30 minutes" [focusable=True]
+          - option "Longer than 30 minutes" [focusable=True]
+    - LabelText
+      - text "DATE ADDED"
+        - text "DATE ADDED"
+      - combobox "DATE ADDED" value="Any time" [focusable=True]
+        - MenuListPopup
+          - option "Any time" [focusable=True, selected=True]
+          - option "Past month" [focusable=True]
+          - option "Past year" [focusable=True]
+    - LabelText
+      - text "TAG"
+        - text "TAG"
+      - combobox "TAG" value="All tags" [focusable=True]
+        - MenuListPopup
+          - option "All tags" [focusable=True, selected=True]
+          - option "Audiobook" [focusable=True]
+          - option "Electronics" [focusable=True]
+          - option "Dance & edm" [focusable=True]
+          - option "Indian classical" [focusable=True]
+          - option "Rock" [focusable=True]
+          - option "Chill" [focusable=True]
+    - LabelText
+      - text "COUNTRY"
+        - text "COUNTRY"
+      - combobox "COUNTRY" value="All countries" [focusable=True]
+        - MenuListPopup
+          - option "All countries" [focusable=True, selected=True]
+          - option "India" [focusable=True]
+          - option "South Africa" [focusable=True]
+          - option "United Kingdom" [focusable=True]
+          - option "United States" [focusable=True]
+    - button "Clear filters" [focusable=True]
+      - text "Clear filters"
+        - text "Clear filters"
+    - text "SEARCH RESULTS"
+      - text "SEARCH RESULTS"
+    - heading "“h”" [level=1]
+      - text "“h”"
+        - text "“h”"
+    - text "28"
+      - text "28"
+    - text "results"
+      - text "results"
+    - heading "Artists" [level=2]
+      - text "Artists"
+        - text "Artists"
+    - article
+      - link "MK" [focusable=True]
+        - text "MK"
+          - text "MK"
+      - text "ARTIST"
+        - text "ARTIST"
+      - link "Mark Knight" [focusable=True]
+        - heading "Mark Knight" [level=3]
+          - text "Mark Knight"
+            - text "Mark Knight"
+      - paragraph
+        - text "London, United Kingdom"
+          - text "London, United Kingdom"
+      - text "House"
+        - text "House"
+      - text "·"
+        - text "·"
+      - text "318K"
+        - text "318K"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - article
+      - link "MC" [focusable=True]
+        - text "MC"
+          - text "MC"
+      - text "ARTIST"
+        - text "ARTIST"
+      - link "Maya Cove" [focusable=True]
+        - heading "Maya Cove" [level=3]
+          - text "Maya Cove"
+            - text "Maya Cove"
+      - paragraph
+        - text "Copenhagen, Denmark"
+          - text "Copenhagen, Denmark"
+      - text "Chill"
+        - text "Chill"
+      - text "·"
+        - text "·"
+      - text "42.8K"
+        - text "42.8K"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - article
+      - link "TS" [focusable=True]
+        - text "TS"
+          - text "TS"
+      - text "ARTIST"
+        - text "ARTIST"
+      - link "Taylor Swift" [focusable=True]
+        - heading "Taylor Swift" [level=3]
+          - text "Taylor Swift"
+            - text "Taylor Swift"
+      - paragraph
+        - text "Nashville, United States"
+          - text "Nashville, United States"
+      - text "Pop"
+        - text "Pop"
+      - text "·"
+        - text "·"
+      - text "13M"
+        - text "13M"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - article
+      - link "NS" [focusable=True]
+        - text "NS"
+          - text "NS"
+      - text "ARTIST"
+        - text "ARTIST"
+      - link "Nova Saint" [focusable=True]
+        - heading "Nova Saint" [level=3]
+          - text "Nova Saint"
+            - text "Nova Saint"
+      - paragraph
+        - text "Atlanta, United States"
+          - text "Atlanta, United States"
+      - text "Hip-hop & Rap"
+        - text "Hip-hop & Rap"
+      - text "·"
+        - text "·"
+      - text "740K"
+        - text "740K"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - article
+      - link "TM" [focusable=True]
+        - text "TM"
+          - text "TM"
+      - text "ARTIST"
+        - text "ARTIST"
+      - link "Thandi Mokoena" [focusable=True]
+        - heading "Thandi Mokoena" [level=3]
+          - text "Thandi Mokoena"
+            - text "Thandi Mokoena"
+      - paragraph
+        - text "Cape Town, South Africa"
+          - text "Cape Town, South Africa"
+      - text "History"
+        - text "History"
+      - text "·"
+        - text "·"
+      - text "19.6K"
+        - text "19.6K"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - heading "Playlists & albums" [level=2]
+      - text "Playlists & albums"
+        - text "Playlists & albums"
+    - article
+      - button "Play Rock Classics Recharged" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Rock Classics Recharged" [focusable=True]
+        - text "Rock Classics Recharged"
+          - text "Rock Classics Recharged"
+      - paragraph
+        - text "SoundCloud Rock"
+          - text "SoundCloud Rock"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - button "Like Rock Classics Recharged" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Rock Classics Recharged" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Rock Classics Recharged to Next up" [focusable=True]
+    - article
+      - button "Play The Eras Tour Essentials" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "The Eras Tour Essentials" [focusable=True]
+        - text "The Eras Tour Essentials"
+          - text "The Eras Tour Essentials"
+      - paragraph
+        - text "Taylor Swift"
+          - text "Taylor Swift"
+      - text "#"
+        - text "#"
+      - text "Pop"
+        - text "Pop"
+      - text "#"
+        - text "#"
+      - text "Live"
+        - text "Live"
+      - button "Like The Eras Tour Essentials" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost The Eras Tour Essentials" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add The Eras Tour Essentials to Next up" [focusable=True]
+    - article
+      - button "Play Chill Current" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Chill Current" [focusable=True]
+        - text "Chill Current"
+          - text "Chill Current"
+      - paragraph
+        - text "SoundCloud Selects"
+          - text "SoundCloud Selects"
+      - text "#"
+        - text "#"
+      - text "Chill"
+        - text "Chill"
+      - text "#"
+        - text "#"
+      - text "Ambient"
+        - text "Ambient"
+      - button "Like Chill Current" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Chill Current" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Chill Current to Next up" [focusable=True]
+    - heading "Tracks" [level=2]
+      - text "Tracks"
+        - text "Tracks"
+    - article
+      - button "Play Midnight City Lights" [focusable=True]
+      - text "Lunar Arcade"
+        - text "Lunar Arcade"
+      - strong
+        - text "Midnight City Lights"
+          - text "Midnight City Lights"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - text "#"
+        - text "#"
+      - text "Night drive"
+        - text "Night drive"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 12, 2026"
+          - text "Aug 12, 2026"
+      - text "1.2M"
+        - text "1.2M"
+      - text "48.2K"
+        - text "48.2K"
+      - text "4:08"
+        - text "4:08"
+      - button "Like Midnight City Lights" [focusable=True]
+      - button "Share Midnight City Lights" [focusable=True]
+      - button "Add Midnight City Lights to Next up" [focusable=True]
+      - button "Add Midnight City Lights to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Soft Hours" [focusable=True]
+      - text "Maya Cove"
+        - text "Maya Cove"
+      - strong
+        - text "Soft Hours"
+          - text "Soft Hours"
+      - text "#"
+        - text "#"
+      - text "Chill"
+        - text "Chill"
+      - text "#"
+        - text "#"
+      - text "Ambient"
+        - text "Ambient"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 7, 2026"
+          - text "Aug 7, 2026"
+      - text "816K"
+        - text "816K"
+      - text "32.4K"
+        - text "32.4K"
+      - text "3:34"
+        - text "3:34"
+      - button "Unlike Soft Hours" [focusable=True]
+      - button "Share Soft Hours" [focusable=True]
+      - button "Add Soft Hours to Next up" [focusable=True]
+      - button "Add Soft Hours to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Ocean Motion" [focusable=True]
+      - text "Sol Tide"
+        - text "Sol Tide"
+      - strong
+        - text "Ocean Motion"
+          - text "Ocean Motion"
+      - text "#"
+        - text "#"
+      - text "Chill"
+        - text "Chill"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Jul 19, 2026"
+          - text "Jul 19, 2026"
+      - text "392K"
+        - text "392K"
+      - text "18.7K"
+        - text "18.7K"
+      - text "3:18"
+        - text "3:18"
+      - button "Like Ocean Motion" [focusable=True]
+      - button "Share Ocean Motion" [focusable=True]
+      - button "Add Ocean Motion to Next up" [focusable=True]
+      - button "Add Ocean Motion to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Raga Yaman: A Night Meditation" [focusable=True]
+      - text "Ananya Sen Ensemble"
+        - text "Ananya Sen Ensemble"
+      - strong
+        - text "Raga Yaman: A Night Meditation"
+          - text "Raga Yaman: A Night Meditation"
+      - text "#"
+        - text "#"
+      - text "Indian classical"
+        - text "Indian classical"
+      - text "#"
+        - text "#"
+      - text "Meditation"
+        - text "Meditation"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 4, 2026"
+          - text "Aug 4, 2026"
+      - text "310K"
+        - text "310K"
+      - text "19.7K"
+        - text "19.7K"
+      - text "42:36"
+        - text "42:36"
+      - button "Like Raga Yaman: A Night Meditation" [focusable=True]
+      - button "Share Raga Yaman: A Night Meditation" [focusable=True]
+      - button "Add Raga Yaman: A Night Meditation to Next up" [focusable=True]
+      - button "Add Raga Yaman: A Night Meditation to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Your Love (Extended Mix)" [focusable=True]
+      - text "Mark Knight"
+        - text "Mark Knight"
+      - strong
+        - text "Your Love (Extended Mix)"
+          - text "Your Love (Extended Mix)"
+      - text "#"
+        - text "#"
+      - text "House"
+        - text "House"
+      - text "#"
+        - text "#"
+      - text "Dance & edm"
+        - text "Dance & edm"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Feb 20, 2026"
+          - text "Feb 20, 2026"
+      - text "8.9M"
+        - text "8.9M"
+      - text "285K"
+        - text "285K"
+      - text "7:12"
+        - text "7:12"
+      - button "Like Your Love (Extended Mix)" [focusable=True]
+      - button "Share Your Love (Extended Mix)" [focusable=True]
+      - button "Add Your Love (Extended Mix) to Next up" [focusable=True]
+      - button "Add Your Love (Extended Mix) to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play The General" [focusable=True]
+      - text "Mark Knight"
+        - text "Mark Knight"
+      - strong
+        - text "The General"
+          - text "The General"
+      - text "#"
+        - text "#"
+      - text "House"
+        - text "House"
+      - text "#"
+        - text "#"
+      - text "Dance & edm"
+        - text "Dance & edm"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Oct 10, 2025"
+          - text "Oct 10, 2025"
+      - text "5.4M"
+        - text "5.4M"
+      - text "169K"
+        - text "169K"
+      - text "6:45"
+        - text "6:45"
+      - button "Like The General" [focusable=True]
+      - button "Share The General" [focusable=True]
+      - button "Add The General to Next up" [focusable=True]
+      - button "Add The General to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play All 4 Love" [focusable=True]
+      - text "Mark Knight"
+        - text "Mark Knight"
+      - strong
+        - text "All 4 Love"
+          - text "All 4 Love"
+      - text "#"
+        - text "#"
+      - text "House"
+        - text "House"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Jun 8, 2025"
+          - text "Jun 8, 2025"
+      - text "4.7M"
+        - text "4.7M"
+      - text "143K"
+        - text "143K"
+      - text "6:11"
+        - text "6:11"
+      - button "Like All 4 Love" [focusable=True]
+      - button "Share All 4 Love" [focusable=True]
+      - button "Add All 4 Love to Next up" [focusable=True]
+      - button "Add All 4 Love to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Echoes of the Cape: A Nation Remembers" [focusable=True]
+      - text "Thandi Mokoena"
+        - text "Thandi Mokoena"
+      - strong
+        - text "Echoes of the Cape: A Nation Remembers"
+          - text "Echoes of the Cape: A Nation Remembers"
+      - text "#"
+        - text "#"
+      - text "Audiobook"
+        - text "Audiobook"
+      - text "#"
+        - text "#"
+      - text "South African history"
+        - text "South African history"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Jul 2, 2026"
+          - text "Jul 2, 2026"
+      - text "94.0K"
+        - text "94.0K"
+      - text "12.8K"
+        - text "12.8K"
+      - text "22:18"
+        - text "22:18"
+      - button "Like Echoes of the Cape: A Nation Remembers" [focusable=True]
+      - button "Share Echoes of the Cape: A Nation Remembers" [focusable=True]
+      - button "Add Echoes of the Cape: A Nation Remembers to Next up" [focusable=True]
+      - button "Add Echoes of the Cape: A Nation Remembers to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Gold Reef Stories: Johannesburg 1886" [focusable=True]
+      - text "Thandi Mokoena"
+        - text "Thandi Mokoena"
+      - strong
+        - text "Gold Reef Stories: Johannesburg 1886"
+          - text "Gold Reef Stories: Johannesburg 1886"
+      - text "#"
+        - text "#"
+      - text "Audiobook"
+        - text "Audiobook"
+      - text "#"
+        - text "#"
+      - text "South African history"
+        - text "South African history"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Mar 22, 2026"
+          - text "Mar 22, 2026"
+      - text "68.0K"
+        - text "68.0K"
+      - text "9.7K"
+        - text "9.7K"
+      - text "28:44"
+        - text "28:44"
+      - button "Like Gold Reef Stories: Johannesburg 1886" [focusable=True]
+      - button "Share Gold Reef Stories: Johannesburg 1886" [focusable=True]
+      - button "Add Gold Reef Stories: Johannesburg 1886 to Next up" [focusable=True]
+      - button "Add Gold Reef Stories: Johannesburg 1886 to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Crown Season" [focusable=True]
+      - text "Nova Saint"
+        - text "Nova Saint"
+      - strong
+        - text "Crown Season"
+          - text "Crown Season"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "#"
+        - text "#"
+      - text "Trending"
+        - text "Trending"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 14, 2026"
+          - text "Aug 14, 2026"
+      - text "12M"
+        - text "12M"
+      - text "421K"
+        - text "421K"
+      - text "3:24"
+        - text "3:24"
+      - button "Like Crown Season" [focusable=True]
+      - button "Share Crown Season" [focusable=True]
+      - button "Add Crown Season to Next up" [focusable=True]
+      - button "Add Crown Season to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play City Never Sleeps" [focusable=True]
+      - text "Jae Rivers"
+        - text "Jae Rivers"
+      - strong
+        - text "City Never Sleeps"
+          - text "City Never Sleeps"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 10, 2026"
+          - text "Aug 10, 2026"
+      - text "11M"
+        - text "11M"
+      - text "368K"
+        - text "368K"
+      - text "3:07"
+        - text "3:07"
+      - button "Like City Never Sleeps" [focusable=True]
+      - button "Share City Never Sleeps" [focusable=True]
+      - button "Add City Never Sleeps to Next up" [focusable=True]
+      - button "Add City Never Sleeps to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play No Apologies" [focusable=True]
+      - text "Kairo West"
+        - text "Kairo West"
+      - strong
+        - text "No Apologies"
+          - text "No Apologies"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 9, 2026"
+          - text "Aug 9, 2026"
+      - text "9.7M"
+        - text "9.7M"
+      - text "332K"
+        - text "332K"
+      - text "3:16"
+        - text "3:16"
+      - button "Like No Apologies" [focusable=True]
+      - button "Share No Apologies" [focusable=True]
+      - button "Add No Apologies to Next up" [focusable=True]
+      - button "Add No Apologies to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Paper Crowns" [focusable=True]
+      - text "Lola Vee"
+        - text "Lola Vee"
+      - strong
+        - text "Paper Crowns"
+          - text "Paper Crowns"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 8, 2026"
+          - text "Aug 8, 2026"
+      - text "8.8M"
+        - text "8.8M"
+      - text "298K"
+        - text "298K"
+      - text "3:41"
+        - text "3:41"
+      - button "Like Paper Crowns" [focusable=True]
+      - button "Share Paper Crowns" [focusable=True]
+      - button "Add Paper Crowns to Next up" [focusable=True]
+      - button "Add Paper Crowns to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Northside Code" [focusable=True]
+      - text "Trey North"
+        - text "Trey North"
+      - strong
+        - text "Northside Code"
+          - text "Northside Code"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 6, 2026"
+          - text "Aug 6, 2026"
+      - text "7.3M"
+        - text "7.3M"
+      - text "255K"
+        - text "255K"
+      - text "2:56"
+        - text "2:56"
+      - button "Like Northside Code" [focusable=True]
+      - button "Share Northside Code" [focusable=True]
+      - button "Add Northside Code to Next up" [focusable=True]
+      - button "Add Northside Code to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Hands to Myself" [focusable=True]
+      - text "Selena Gomez"
+        - text "Selena Gomez"
+      - strong
+        - text "Hands to Myself"
+          - text "Hands to Myself"
+      - text "#"
+        - text "#"
+      - text "Pop"
+        - text "Pop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Nov 21, 2025"
+          - text "Nov 21, 2025"
+      - text "368M"
+        - text "368M"
+      - text "2.1M"
+        - text "2.1M"
+      - text "3:20"
+        - text "3:20"
+      - button "Like Hands to Myself" [focusable=True]
+      - button "Share Hands to Myself" [focusable=True]
+      - button "Add Hands to Myself to Next up" [focusable=True]
+      - button "Add Hands to Myself to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Heart-Shaped Box" [focusable=True]
+      - text "Nirvana"
+        - text "Nirvana"
+      - strong
+        - text "Heart-Shaped Box"
+          - text "Heart-Shaped Box"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - text "#"
+        - text "#"
+      - text "Grunge"
+        - text "Grunge"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Dec 18, 2025"
+          - text "Dec 18, 2025"
+      - text "514M"
+        - text "514M"
+      - text "2.7M"
+        - text "2.7M"
+      - text "4:41"
+        - text "4:41"
+      - button "Like Heart-Shaped Box" [focusable=True]
+      - button "Share Heart-Shaped Box" [focusable=True]
+      - button "Add Heart-Shaped Box to Next up" [focusable=True]
+      - button "Add Heart-Shaped Box to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Lithium" [focusable=True]
+      - text "Nirvana"
+        - text "Nirvana"
+      - strong
+        - text "Lithium"
+          - text "Lithium"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - text "#"
+        - text "#"
+      - text "Grunge"
+        - text "Grunge"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Dec 18, 2025"
+          - text "Dec 18, 2025"
+      - text "468M"
+        - text "468M"
+      - text "2.4M"
+        - text "2.4M"
+      - text "4:17"
+        - text "4:17"
+      - button "Like Lithium" [focusable=True]
+      - button "Share Lithium" [focusable=True]
+      - button "Add Lithium to Next up" [focusable=True]
+      - button "Add Lithium to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Countdown" [focusable=True]
+      - text "Adrien Brunelat"
+        - text "Adrien Brunelat"
+      - strong
+        - text "Countdown"
+          - text "Countdown"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - text "#"
+        - text "#"
+      - text "Melodic techno"
+        - text "Melodic techno"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 11, 2026"
+          - text "Aug 11, 2026"
+      - text "905K"
+        - text "905K"
+      - text "43.8K"
+        - text "43.8K"
+      - text "4:23"
+        - text "4:23"
+      - button "Like Countdown" [focusable=True]
+      - button "Share Countdown" [focusable=True]
+      - button "Add Countdown to Next up" [focusable=True]
+      - button "Add Countdown to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Voltage Bloom" [focusable=True]
+      - text "Rina Phase"
+        - text "Rina Phase"
+      - strong
+        - text "Voltage Bloom"
+          - text "Voltage Bloom"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Aug 6, 2026"
+          - text "Aug 6, 2026"
+      - text "784K"
+        - text "784K"
+      - text "38.2K"
+        - text "38.2K"
+      - text "4:49"
+        - text "4:49"
+      - button "Like Voltage Bloom" [focusable=True]
+      - button "Share Voltage Bloom" [focusable=True]
+      - button "Add Voltage Bloom to Next up" [focusable=True]
+      - button "Add Voltage Bloom to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - button "Play Lavender Haze" [focusable=True]
+      - text "Taylor Swift"
+        - text "Taylor Swift"
+      - strong
+        - text "Lavender Haze"
+          - text "Lavender Haze"
+      - text "#"
+        - text "#"
+      - text "Pop"
+        - text "Pop"
+      - text "Added"
+        - text "Added"
+      - strong
+        - text "Oct 27, 2025"
+          - text "Oct 27, 2025"
+      - text "740M"
+        - text "740M"
+      - text "3.9M"
+        - text "3.9M"
+      - text "3:22"
+        - text "3:22"
+      - button "Like Lavender Haze" [focusable=True]
+      - button "Share Lavender Haze" [focusable=True]
+      - button "Add Lavender Haze to Next up" [focusable=True]
+      - button "Add Lavender Haze to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+  - contentinfo "Audio player"
+    - strong
+      - text "Midnight City Lights"
+        - text "Midnight City Lights"
+    - text "Lunar Arcade"
+      - text "Lunar Arcade"
+    - button "Like current track" [focusable=True]
+    - button "Previous track" [focusable=True]
+    - button "Play" [focusable=True]
+    - button "Next track" [focusable=True]
+    - text "0:00"
+      - text "0:00"
+    - text "4:08"
+      - text "4:08"
+    - button "Mute" [focusable=True]
+    - button "Next up" [focusable=True]
+      - text "Next up"
+        - text "Next up"

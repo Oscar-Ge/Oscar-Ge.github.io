@@ -1,0 +1,215 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focused=True, focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - text "MARKET DATA"
+      - text "MARKET DATA"
+    - heading "Markets" [level=1]
+      - text "Markets"
+        - text "Markets"
+    - paragraph
+      - text "A broad view of stocks, indexes, commodities, currencies, and cryptocurrency."
+        - text "A broad view of stocks, indexes, commodities, currencies, and cryptocurrency."
+    - link "SNP S&P 500 6,449.80 +0.31% S&P 500 mini chart" [focusable=True]
+      - text "SNP"
+        - text "SNP"
+      - heading "S&P 500" [level=3]
+        - text "S&P 500"
+          - text "S&P 500"
+      - strong
+        - text "6,449.80"
+          - text "6,449.80"
+      - emphasis
+        - text "+0.31%"
+          - text "+0.31%"
+      - image "S&P 500 mini chart"
+    - link "DJI Dow Jones Industrial Average 45,092.81 +0.08% Dow Jones Industrial Average mini chart" [focusable=True]
+      - text "DJI"
+        - text "DJI"
+      - heading "Dow Jones Industrial Average" [level=3]
+        - text "Dow Jones Industrial Average"
+          - text "Dow Jones Industrial Average"
+      - strong
+        - text "45,092.81"
+          - text "45,092.81"
+      - emphasis
+        - text "+0.08%"
+          - text "+0.08%"
+      - image "Dow Jones Industrial Average mini chart"
+    - link "COMEX Gold Dec 26 2,548.70 +0.72% Gold Dec 26 mini chart" [focusable=True]
+      - text "COMEX"
+        - text "COMEX"
+      - heading "Gold Dec 26" [level=3]
+        - text "Gold Dec 26"
+          - text "Gold Dec 26"
+      - strong
+        - text "2,548.70"
+          - text "2,548.70"
+      - emphasis
+        - text "+0.72%"
+          - text "+0.72%"
+      - image "Gold Dec 26 mini chart"
+    - link "CCC Bitcoin USD 118,420.17 +1.44% Bitcoin USD mini chart" [focusable=True]
+      - text "CCC"
+        - text "CCC"
+      - heading "Bitcoin USD" [level=3]
+        - text "Bitcoin USD"
+          - text "Bitcoin USD"
+      - strong
+        - text "118,420.17"
+          - text "118,420.17"
+      - emphasis
+        - text "+1.44%"
+          - text "+1.44%"
+      - image "Bitcoin USD mini chart"
+    - link "CCY EUR/USD 1.1684 +0.27% EUR/USD mini chart" [focusable=True]
+      - text "CCY"
+        - text "CCY"
+      - heading "EUR/USD" [level=3]
+        - text "EUR/USD"
+          - text "EUR/USD"
+      - strong
+        - text "1.1684"
+          - text "1.1684"
+      - emphasis
+        - text "+0.27%"
+          - text "+0.27%"
+      - image "EUR/USD mini chart"
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

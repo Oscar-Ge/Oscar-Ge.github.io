@@ -1,0 +1,228 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Anywhere" [focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Anywhere"
+          - text "Anywhere"
+    - button "When Add dates" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "Add dates"
+          - text "Add dates"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+    - heading "Choose your dates" [level=3]
+      - text "Choose your dates"
+        - text "Choose your dates"
+    - LabelText
+      - text "Check in"
+        - text "Check in"
+      - Date "Check in" [focusable=True]
+        - spinbutton "Month Month" value="0" [focusable=True]
+          - text "mm"
+            - text "mm"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="0" [focusable=True]
+          - text "dd"
+            - text "dd"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="0" [focusable=True]
+          - text "yyyy"
+            - text "yyyy"
+        - button "Show date picker" [focusable=True]
+    - LabelText
+      - text "Check out"
+        - text "Check out"
+      - Date "Check out" [focusable=True]
+        - spinbutton "Month Month" value="0" [focusable=True]
+          - text "mm"
+            - text "mm"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="0" [focusable=True]
+          - text "dd"
+            - text "dd"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="0" [focusable=True]
+          - text "yyyy"
+            - text "yyyy"
+        - button "Show date picker" [focusable=True]
+    - paragraph
+      - text "QUICK DATE CHOICES"
+        - text "QUICK DATE CHOICES"
+    - button "Apr 10–12" [focused=True, focusable=True]
+      - text "Apr 10–12"
+        - text "Apr 10–12"
+    - button "1 week next month" [focusable=True]
+      - text "1 week next month"
+        - text "1 week next month"
+    - button "Weekend in May" [focusable=True]
+      - text "Weekend in May"
+        - text "Weekend in May"
+    - button "Apr 1–2" [focusable=True]
+      - text "Apr 1–2"
+        - text "Apr 1–2"
+    - button "Any month" [focusable=True]
+      - text "Any month"
+        - text "Any month"
+    - button "Next: add guests" [focusable=True]
+      - text "Next: add guests"
+        - text "Next: add guests"
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Tiny homes" [level=1]
+      - text "Tiny homes"
+        - text "Tiny homes"
+    - text "1 guest"
+      - text "1 guest"
+    - button "Refine" [focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - button "Tiny homes" [focusable=True]
+      - text "Tiny homes"
+        - text "Tiny homes"
+    - article
+      - button "View The Little Desert Cabin" [focusable=True]
+        - image "The Little Desert Cabin"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save The Little Desert Cabin to a wishlist" [focusable=True]
+      - button "Yucca Valley, California" [focusable=True]
+        - text "Yucca Valley, California"
+          - text "Yucca Valley, California"
+      - text "4.96"
+        - text "4.96"
+      - paragraph
+        - text "The Little Desert Cabin"
+          - text "The Little Desert Cabin"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$184"
+          - text "$184"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Painted Tiny House by the Sea" [focusable=True]
+        - image "Painted Tiny House by the Sea"
+      - button "Save Painted Tiny House by the Sea to a wishlist" [focusable=True]
+      - button "Portland, Maine" [focusable=True]
+        - text "Portland, Maine"
+          - text "Portland, Maine"
+      - text "4.9"
+        - text "4.9"
+      - paragraph
+        - text "Painted Tiny House by the Sea"
+          - text "Painted Tiny House by the Sea"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$136"
+          - text "$136"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"

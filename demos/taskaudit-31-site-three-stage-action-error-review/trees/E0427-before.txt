@@ -1,0 +1,350 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focused=True, focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - text "MOVE WITH CONFIDENCE"
+      - text "MOVE WITH CONFIDENCE"
+    - heading "Find the right home at the right price." [level=1]
+      - text "Find the right home"
+        - text "Find the right"
+        - text "home"
+      - LineBreak
+        - text
+      - text "at the right price."
+        - text "at the right price."
+    - paragraph
+      - text "Search accurate, up-to-date homes for sale and rent across the country."
+        - text "Search accurate, up-to-date homes for sale and rent across"
+        - text "the country."
+    - group "Search type"
+      - button "Buy" [focusable=True, pressed=true]
+        - text "Buy"
+          - text "Buy"
+      - button "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - button "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+    - form
+      - entry "City, neighborhood, or ZIP" [focusable=True, required=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - text "EVERYTHING YOU NEED"
+      - text "EVERYTHING YOU NEED"
+    - heading "Your next move, all in one place" [level=2]
+      - text "Your next move, all in one place"
+        - text "Your next move, all in one"
+        - text "place"
+    - paragraph
+      - text "Explore listings, run the numbers, or connect with a top local professional."
+        - text "Explore listings, run the numbers, or connect with a top local professional."
+    - link "Buy a home Get powerful filters, clear monthly estimates, and homes updated daily. Search homes" [focusable=True]
+      - heading "Buy a home" [level=3]
+        - text "Buy a home"
+          - text "Buy a home"
+      - paragraph
+        - text "Get powerful filters, clear monthly estimates, and homes updated daily."
+          - text "Get powerful filters, clear monthly"
+          - text "estimates, and homes updated daily."
+      - text "Search homes"
+        - text "Search homes"
+    - link "Find a rental Compare apartments and houses with the amenities and space you need. Browse rentals" [focusable=True]
+      - heading "Find a rental" [level=3]
+        - text "Find a rental"
+          - text "Find a rental"
+      - paragraph
+        - text "Compare apartments and houses with the amenities and space you need."
+          - text "Compare apartments and houses with"
+          - text "the amenities and space you need."
+      - text "Browse rentals"
+        - text "Browse rentals"
+    - link "Plan your budget Estimate a monthly mortgage with clear principal, tax, insurance, and term controls. Open mortgage c..." [focusable=True]
+      - heading "Plan your budget" [level=3]
+        - text "Plan your budget"
+          - text "Plan your budget"
+      - paragraph
+        - text "Estimate a monthly mortgage with clear principal, tax, insurance, and term controls."
+          - text "Estimate a monthly mortgage with clear"
+          - text "principal, tax, insurance, and term"
+          - text "controls."
+      - text "Open mortgage calculator"
+        - text "Open mortgage calculator"
+    - text "START WITH A POPULAR SEARCH"
+      - text "START WITH A POPULAR SEARCH"
+    - heading "Real answers, just a few clicks away" [level=2]
+      - text "Real answers, just a few clicks away"
+        - text "Real answers, just a"
+        - text "few clicks away"
+    - paragraph
+      - text "These ready-made searches demonstrate precise filters, sorting, and realistic local results."
+        - text "These ready-made searches demonstrate precise filters,"
+        - text "sorting, and realistic local results."
+    - link "San Diego homes 3+ beds under $1M ›" [focusable=True]
+      - text "San Diego homes"
+        - text "San Diego homes"
+      - text "3+ beds under $1M"
+        - text "3+ beds under $1M"
+      - text "›"
+        - text "›"
+    - link "Rentals in 85747 3+ beds, lowest price ›" [focusable=True]
+      - text "Rentals in 85747"
+        - text "Rentals in 85747"
+      - text "3+ beds, lowest price"
+        - text "3+ beds, lowest price"
+      - text "›"
+        - text "›"
+    - link "New York condos 1 bed, 1 bath ›" [focusable=True]
+      - text "New York condos"
+        - text "New York condos"
+      - text "1 bed, 1 bath"
+        - text "1 bed, 1 bath"
+      - text "›"
+        - text "›"
+    - link "St. Augustine agents Premier local experts ›" [focusable=True]
+      - text "St. Augustine agents"
+        - text "St. Augustine agents"
+      - text "Premier local experts"
+        - text "Premier local experts"
+      - text "›"
+        - text "›"
+    - text "FRESH ON THE MARKET"
+      - text "FRESH ON THE MARKET"
+    - heading "Homes worth a closer look" [level=2]
+      - text "Homes worth a closer look"
+        - text "Homes worth a closer look"
+    - link "View all homes" [focusable=True]
+      - text "View all homes"
+        - text "View all homes"
+    - article
+      - image "House at 4872 Canyon View Dr"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 4872 Canyon View Dr" [focusable=True]
+      - strong
+        - text "$799,000"
+          - text "$799,000"
+      - text "Est."
+        - text "Est."
+      - text "$5,448"
+        - text "$5,448"
+      - text "/mo"
+        - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - text "1,480"
+        - text "1,480"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "4872 Canyon View Dr" [level=3]
+        - text "4872 Canyon View Dr"
+          - text "4872 Canyon View Dr"
+      - paragraph
+        - text "Clairemont"
+          - text "Clairemont"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92117"
+          - text "92117"
+      - text "Canyon view"
+        - text "Canyon view"
+      - text "Solar"
+        - text "Solar"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "House at 3126 Adams Ave"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 3126 Adams Ave" [focusable=True]
+      - strong
+        - text "$925,000"
+          - text "$925,000"
+      - text "Est."
+        - text "Est."
+      - text "$6,275"
+        - text "$6,275"
+      - text "/mo"
+        - text "/mo"
+      - text "4"
+        - text "4"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "1,785"
+        - text "1,785"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "3126 Adams Ave" [level=3]
+        - text "3126 Adams Ave"
+          - text "3126 Adams Ave"
+      - paragraph
+        - text "Normal Heights"
+          - text "Normal Heights"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92116"
+          - text "92116"
+      - text "Guest suite"
+        - text "Guest suite"
+      - text "Walkable"
+        - text "Walkable"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - image "Townhouse at 7425 Mesa College Dr #18"
+      - text "FOR SALE"
+        - text "FOR SALE"
+      - button "Save 7425 Mesa College Dr #18" [focusable=True]
+      - strong
+        - text "$879,000"
+          - text "$879,000"
+      - text "Est."
+        - text "Est."
+      - text "$5,998"
+        - text "$5,998"
+      - text "/mo"
+        - text "/mo"
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2.5"
+        - text "2.5"
+      - text "ba"
+        - text "ba"
+      - text "1,610"
+        - text "1,610"
+      - text "sq ft"
+        - text "sq ft"
+      - heading "7425 Mesa College Dr #18" [level=3]
+        - text "7425 Mesa College Dr #18"
+          - text "7425 Mesa College Dr #18"
+      - paragraph
+        - text "Linda Vista"
+          - text "Linda Vista"
+        - text "·"
+          - text "·"
+        - text "San Diego"
+          - text "San Diego"
+        - text ","
+          - text ","
+        - text "CA"
+          - text "CA"
+        - text
+          - text
+        - text "92111"
+          - text "92111"
+      - text "Community pool"
+        - text "Community pool"
+      - text "Two-car garage"
+        - text "Two-car garage"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

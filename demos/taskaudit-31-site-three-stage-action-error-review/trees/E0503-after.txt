@@ -1,0 +1,100 @@
+- document "Udemy Learning Marketplace" [focused=True, focusable=True]
+  - banner
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - button "Explore" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+    - search
+      - entry "Search for anything" [focusable=True]
+    - navigation "Primary navigation"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Teach on Udemy" [focusable=True]
+        - text "Teach on Udemy"
+          - text "Teach on Udemy"
+      - link "Wishlist with 0 courses" [focusable=True]
+      - link "Cart with 0 courses" [focusable=True]
+    - link "Cart with 0 courses" [focused=True, focusable=True]
+  - main
+    - text "YOUR LEARNING JOURNEY"
+      - text "YOUR LEARNING JOURNEY"
+    - heading "Shopping cart" [level=1]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - paragraph
+      - text "0"
+        - text "0"
+      - text "course"
+        - text "course"
+      - text "s"
+        - text "s"
+      - text "in your cart"
+        - text "in your cart"
+    - heading "Your cart is ready for big ideas" [level=2]
+      - text "Your cart is ready for big ideas"
+        - text "Your cart is ready for big ideas"
+    - paragraph
+      - text "Browse courses and add the skills you want to learn next."
+        - text "Browse courses and add the skills you want to learn next."
+    - link "Browse courses" [focusable=True]
+      - text "Browse courses"
+        - text "Browse courses"
+  - contentinfo
+    - text "LEARN WITHOUT LIMITS"
+      - text "LEARN WITHOUT LIMITS"
+    - heading "Skills open doors. Start learning today." [level=2]
+      - text "Skills open doors. Start learning today."
+        - text "Skills open doors. Start learning today."
+    - link "Explore top courses" [focusable=True]
+      - text "Explore top courses"
+        - text "Explore top courses"
+    - link "Udemy home" [focusable=True]
+      - text "udemy"
+        - text "udemy"
+    - paragraph
+      - text "Learn practical skills from real-world experts, at your pace."
+        - text "Learn practical skills from real-world experts, at your"
+        - text "pace."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Development" [focusable=True]
+      - text "Development"
+        - text "Development"
+    - link "Business" [focusable=True]
+      - text "Business"
+        - text "Business"
+    - link "Certifications" [focusable=True]
+      - text "Certifications"
+        - text "Certifications"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - link "Investor events" [focusable=True]
+      - text "Investor events"
+        - text "Investor events"
+    - link "Become a tutor" [focusable=True]
+      - text "Become a tutor"
+        - text "Become a tutor"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - link "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - link "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - text "© 2026 Udemy Learning, Inc."
+      - text "© 2026 Udemy Learning, Inc."
+    - text "English"
+      - text "English"

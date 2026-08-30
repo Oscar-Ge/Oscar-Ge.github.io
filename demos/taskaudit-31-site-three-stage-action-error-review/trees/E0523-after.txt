@@ -1,0 +1,350 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focused=True, focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - text "STOCK SCREENER"
+      - text "STOCK SCREENER"
+    - heading "Equity Screener" [level=1]
+      - text "Equity Screener"
+        - text "Equity Screener"
+    - paragraph
+      - text "Find stocks that match market capitalization, sector, and performance criteria."
+        - text "Find stocks that match market capitalization, sector, and performance criteria."
+    - strong
+      - text "Filters"
+        - text "Filters"
+    - text "Choose criteria"
+      - text "Choose criteria"
+    - LabelText
+      - text "MARKET CAP"
+        - text "MARKET CAP"
+      - combobox "MARKET CAP" value="Any" [focusable=True]
+        - MenuListPopup
+          - option "Any" [focusable=True, selected=True]
+          - option "Small Cap" [focusable=True]
+          - option "Mid Cap" [focusable=True]
+          - option "Large Cap" [focusable=True]
+    - LabelText
+      - text "SECTOR"
+        - text "SECTOR"
+      - combobox "SECTOR" value="Any" [focusable=True]
+        - MenuListPopup
+          - option "Any" [focusable=True, selected=True]
+          - option "Healthcare" [focusable=True]
+          - option "Technology" [focusable=True]
+          - option "Financial Services" [focusable=True]
+    - button "Find stocks" [focusable=True]
+      - text "Find stocks"
+        - text "Find stocks"
+    - button "Reset" [focusable=True]
+      - text "Reset"
+        - text "Reset"
+    - heading "6 results" [level=2]
+      - text "6"
+        - text "6"
+      - text "results"
+        - text "results"
+    - combobox "Sort results" value="Market cap" [focusable=True]
+      - MenuListPopup
+        - option "Market cap" [focusable=True, selected=True]
+        - option "Day change" [focusable=True]
+    - table
+      - rowgroup
+        - row
+          - columnheader "SYMBOL"
+            - text "SYMBOL"
+              - text "SYMBOL"
+          - columnheader "COMPANY"
+            - text "COMPANY"
+              - text "COMPANY"
+          - columnheader "SECTOR"
+            - text "SECTOR"
+              - text "SECTOR"
+          - columnheader "MARKET CAP CATEGORY"
+            - text "MARKET CAP CATEGORY"
+              - text "MARKET CAP CATEGORY"
+          - columnheader "PRICE"
+            - text "PRICE"
+              - text "PRICE"
+          - columnheader "CHANGE"
+            - text "CHANGE"
+              - text "CHANGE"
+          - columnheader "MARKET CAP"
+            - text "MARKET CAP"
+              - text "MARKET CAP"
+      - row
+        - cell "ALGN"
+          - strong
+            - text "ALGN"
+              - text "ALGN"
+        - cell "Align Technology, Inc."
+          - text "Align Technology, Inc."
+            - text "Align Technology, Inc."
+        - cell "Healthcare"
+          - text "Healthcare"
+            - text "Healthcare"
+        - cell "Mid Cap"
+          - text "Mid Cap"
+            - text "Mid Cap"
+        - cell "$206.83"
+          - text "$206.83"
+            - text "$206.83"
+        - cell "+0.74%"
+          - text "+0.74%"
+            - text "+0.74%"
+        - cell "14.56B"
+          - text "14.56B"
+            - text "14.56B"
+      - row
+        - cell "HALO"
+          - strong
+            - text "HALO"
+              - text "HALO"
+        - cell "Halozyme Therapeutics"
+          - text "Halozyme Therapeutics"
+            - text "Halozyme Therapeutics"
+        - cell "Healthcare"
+          - text "Healthcare"
+            - text "Healthcare"
+        - cell "Mid Cap"
+          - text "Mid Cap"
+            - text "Mid Cap"
+        - cell "$68.41"
+          - text "$68.41"
+            - text "$68.41"
+        - cell "+1.33%"
+          - text "+1.33%"
+            - text "+1.33%"
+        - cell "8.67B"
+          - text "8.67B"
+            - text "8.67B"
+      - row
+        - cell "MASI"
+          - strong
+            - text "MASI"
+              - text "MASI"
+        - cell "Masimo Corporation"
+          - text "Masimo Corporation"
+            - text "Masimo Corporation"
+        - cell "Healthcare"
+          - text "Healthcare"
+            - text "Healthcare"
+        - cell "Mid Cap"
+          - text "Mid Cap"
+            - text "Mid Cap"
+        - cell "$151.92"
+          - text "$151.92"
+            - text "$151.92"
+        - cell "+2.06%"
+          - text "+2.06%"
+            - text "+2.06%"
+        - cell "8.21B"
+          - text "8.21B"
+            - text "8.21B"
+      - row
+        - cell "IONS"
+          - strong
+            - text "IONS"
+              - text "IONS"
+        - cell "Ionis Pharmaceuticals"
+          - text "Ionis Pharmaceuticals"
+            - text "Ionis Pharmaceuticals"
+        - cell "Healthcare"
+          - text "Healthcare"
+            - text "Healthcare"
+        - cell "Mid Cap"
+          - text "Mid Cap"
+            - text "Mid Cap"
+        - cell "$51.18"
+          - text "$51.18"
+            - text "$51.18"
+        - cell "-0.41%"
+          - text "-0.41%"
+            - text "-0.41%"
+        - cell "7.91B"
+          - text "7.91B"
+            - text "7.91B"
+      - row
+        - cell "PEN"
+          - strong
+            - text "PEN"
+              - text "PEN"
+        - cell "Penumbra, Inc."
+          - text "Penumbra, Inc."
+            - text "Penumbra, Inc."
+        - cell "Healthcare"
+          - text "Healthcare"
+            - text "Healthcare"
+        - cell "Mid Cap"
+          - text "Mid Cap"
+            - text "Mid Cap"
+        - cell "$267.14"
+          - text "$267.14"
+            - text "$267.14"
+        - cell "+1.18%"
+          - text "+1.18%"
+            - text "+1.18%"
+        - cell "7.82B"
+          - text "7.82B"
+            - text "7.82B"
+      - row
+        - cell "AAPL"
+          - strong
+            - text "AAPL"
+              - text "AAPL"
+        - cell "Apple Inc."
+          - text "Apple Inc."
+            - text "Apple Inc."
+        - cell "Technology"
+          - text "Technology"
+            - text "Technology"
+        - cell "Large Cap"
+          - text "Large Cap"
+            - text "Large Cap"
+        - cell "$226.34"
+          - text "$226.34"
+            - text "$226.34"
+        - cell "+1.25%"
+          - text "+1.25%"
+            - text "+1.25%"
+        - cell "3.39T"
+          - text "3.39T"
+            - text "3.39T"
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

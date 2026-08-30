@@ -1,0 +1,258 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - form
+      - LabelText
+        - text "WHAT"
+          - text "WHAT"
+        - entry "What" [focusable=True]
+      - LabelText
+        - text "WHERE"
+          - text "WHERE"
+        - entry "Where" value="b" [focusable=True]
+          - text "b"
+            - text "b"
+      - button "Search jobs" [focused=True, focusable=True]
+        - text "Search jobs"
+          - text "Search jobs"
+    - text "Filter your search"
+      - text "Filter your search"
+    - LabelText
+      - text "Job type"
+        - text "Job type"
+      - combobox "Job type" value="Any job type" [focusable=True]
+        - MenuListPopup
+          - option "Any job type" [focusable=True, selected=True]
+          - option "Full-time" [focusable=True]
+          - option "Part-time" [focusable=True]
+    - LabelText
+      - text "Salary"
+        - text "Salary"
+      - combobox "Salary" value="Any salary" [focusable=True]
+        - MenuListPopup
+          - option "Any salary" [focusable=True, selected=True]
+          - option "$20/hour+" [focusable=True]
+          - option "$25,000+ annual" [focusable=True]
+          - option "$30,000+ annual" [focusable=True]
+          - option "$40,000+ annual" [focusable=True]
+          - option "$100,000+ annual" [focusable=True]
+          - option "£20,000+ annual" [focusable=True]
+          - option "₹25,000/month+" [focusable=True]
+          - option "₹30,000/month+" [focusable=True]
+    - LabelText
+      - text "Date posted"
+        - text "Date posted"
+      - combobox "Date posted" value="Any date posted" [focusable=True]
+        - MenuListPopup
+          - option "Any date posted" [focusable=True, selected=True]
+          - option "Last 24 hours" [focusable=True]
+          - option "Last 7 days" [focusable=True]
+    - LabelText
+      - text "Education"
+        - text "Education"
+      - combobox "Education" value="Any education" [focusable=True]
+        - MenuListPopup
+          - option "Any education" [focusable=True, selected=True]
+          - option "Bachelor's degree" [focusable=True]
+          - option "Master's degree" [focusable=True]
+    - LabelText
+      - text "Experience level"
+        - text "Experience level"
+      - combobox "Experience level" value="Any experience level" [focusable=True]
+        - MenuListPopup
+          - option "Any experience level" [focusable=True, selected=True]
+          - option "Entry level" [focusable=True]
+          - option "No experience required" [focusable=True]
+    - LabelText
+      - text "Industry"
+        - text "Industry"
+      - combobox "Industry" value="Any industry" [focusable=True]
+        - MenuListPopup
+          - option "Any industry" [focusable=True, selected=True]
+          - option "Healthcare" [focusable=True]
+          - option "Finance" [focusable=True]
+          - option "Human resources" [focusable=True]
+          - option "Customer service" [focusable=True]
+          - option "Retail" [focusable=True]
+    - LabelText
+      - text "Remote"
+        - text "Remote"
+      - combobox "Remote" value="Any remote" [focusable=True]
+        - MenuListPopup
+          - option "Any remote" [focusable=True, selected=True]
+          - option "Remote only" [focusable=True]
+    - LabelText
+      - text "Distance"
+        - text "Distance"
+      - combobox "Distance" value="Any distance" [focusable=True]
+        - MenuListPopup
+          - option "Any distance" [focusable=True, selected=True]
+          - option "Within 10 miles" [focusable=True]
+    - LabelText
+      - text "Posted by"
+        - text "Posted by"
+      - combobox "Posted by" value="Any posted by" [focusable=True]
+        - MenuListPopup
+          - option "Any posted by" [focusable=True, selected=True]
+          - option "Employer posted" [focusable=True]
+    - LabelText
+      - text "Schedule"
+        - text "Schedule"
+      - combobox "Schedule" value="Any schedule" [focusable=True]
+        - MenuListPopup
+          - option "Any schedule" [focusable=True, selected=True]
+          - option "No weekends" [focusable=True]
+    - paragraph
+      - text "JOB SEARCH"
+        - text "JOB SEARCH"
+    - heading "All jobs in b" [level=1]
+      - text "All jobs"
+        - text "All jobs"
+      - text "in b"
+        - text "in b"
+    - paragraph
+      - text "3"
+        - text "3"
+      - text
+        - text
+      - text "jobs"
+        - text "jobs"
+      - text "found"
+        - text "found"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort jobs" value="Most recent" [focusable=True]
+        - MenuListPopup
+          - option "Most recent" [focusable=True, selected=True]
+          - option "Highest salary" [focusable=True]
+    - article
+      - text "V"
+        - text "V"
+      - button "Save Remote Member Support Associate" [focusable=True]
+      - link "Remote Member Support Associate" [focusable=True]
+        - heading "Remote Member Support Associate" [level=2]
+          - text "Remote Member Support Associate"
+            - text "Remote Member Support Associate"
+      - paragraph
+        - text "Volunteer Benefits Co."
+          - text "Volunteer Benefits Co."
+      - paragraph
+        - text "Remote — Bradley County, Tennessee"
+          - text "Remote — Bradley County, Tennessee"
+      - strong
+        - text "$21 - $24 an hour"
+          - text "$21 - $24 an hour"
+      - text "Remote"
+        - text "Remote"
+      - text "Part-time"
+        - text "Part-time"
+      - text "Entry level"
+        - text "Entry level"
+      - paragraph
+        - text "Help Tennessee members by chat and email from your home office. Equipment is provided."
+          - text "Help Tennessee members by chat and email from your"
+          - text "home office. Equipment is provided."
+      - text "2 hours ago"
+        - text "2 hours ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "B"
+        - text "B"
+      - button "Save Registered Nutritionist" [focusable=True]
+      - link "Registered Nutritionist" [focusable=True]
+        - heading "Registered Nutritionist" [level=2]
+          - text "Registered Nutritionist"
+            - text "Registered Nutritionist"
+      - paragraph
+        - text "Buckeye Wellness Network"
+          - text "Buckeye Wellness Network"
+      - paragraph
+        - text "Columbus, Ohio"
+          - text "Columbus, Ohio"
+      - strong
+        - text "$61,000 - $73,000 a year"
+          - text "$61,000 - $73,000 a year"
+      - text "Nutrition"
+        - text "Nutrition"
+      - text "Hybrid"
+        - text "Hybrid"
+      - text "No weekends"
+        - text "No weekends"
+      - paragraph
+        - text "Provide practical nutrition plans across outpatient and virtual wellness programs."
+          - text "Provide practical nutrition plans across outpatient and"
+          - text "virtual wellness programs."
+      - text "1 day ago"
+        - text "1 day ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+    - article
+      - text "C"
+        - text "C"
+      - button "Save Remote Appointment Scheduler" [focusable=True]
+      - link "Remote Appointment Scheduler" [focusable=True]
+        - heading "Remote Appointment Scheduler" [level=2]
+          - text "Remote Appointment Scheduler"
+            - text "Remote Appointment Scheduler"
+      - paragraph
+        - text "Cleveland Family Health"
+          - text "Cleveland Family Health"
+      - paragraph
+        - text "Remote — Bradley County, Tennessee"
+          - text "Remote — Bradley County, Tennessee"
+      - strong
+        - text "$19 - $22 an hour"
+          - text "$19 - $22 an hour"
+      - text "Remote"
+        - text "Remote"
+      - text "Part-time"
+        - text "Part-time"
+      - text "Entry level"
+        - text "Entry level"
+      - paragraph
+        - text "Schedule patient visits in a fully remote, part-time role serving Bradley County."
+          - text "Schedule patient visits in a fully remote, part-time role"
+          - text "serving Bradley County."
+      - text "3 days ago"
+        - text "3 days ago"
+      - link "View job" [focusable=True]
+        - text "View job"
+          - text "View job"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

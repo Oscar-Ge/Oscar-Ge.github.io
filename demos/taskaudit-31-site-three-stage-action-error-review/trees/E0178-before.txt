@@ -1,0 +1,196 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" [focused=True, focusable=True]
+      - button "Search" [focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - main
+    - link "Back to results" [focusable=True]
+      - text "Back to results"
+        - text "Back to results"
+    - paragraph
+      - text "Landscaping · Landscape Architects"
+        - text "Landscaping · Landscape Architects"
+    - heading "Westside Landscape Design" [level=1]
+      - text "Westside Landscape Design"
+        - text "Westside Landscape"
+        - text "Design"
+    - generic "5 out of 5 stars, 1084 reviews"
+      - strong
+        - text "5.0"
+          - text "5.0"
+      - text "("
+        - text "("
+      - text "1,084"
+        - text "1,084"
+      - text ")"
+        - text ")"
+    - text "$$"
+      - text "$$"
+    - text "Open now"
+      - text "Open now"
+    - paragraph
+      - text "Serving West Hollywood"
+        - text "Serving West Hollywood"
+      - text "·"
+        - text "·"
+      - text "West Hollywood, CA 90069"
+        - text "West Hollywood, CA 90069"
+    - button "Request a quote" [focusable=True]
+      - text "Request a quote"
+        - text "Request a quote"
+    - button "Virtual consultation" [focusable=True]
+      - text "Virtual consultation"
+        - text "Virtual consultation"
+    - button "Save" [focusable=True]
+      - text "Save"
+        - text "Save"
+    - button "Directions" [focusable=True]
+      - text "Directions"
+        - text "Directions"
+    - heading "About this business" [level=2]
+      - text "About this business"
+        - text "About this business"
+    - paragraph
+      - text "Yelp-verified landscape professionals creating practical, polished lawns and low-water outdoor spaces."
+        - text "Yelp-verified landscape professionals creating practical, polished lawns and low-water outdoor"
+        - text "spaces."
+    - strong
+      - text "Fast responding"
+        - text "Fast responding"
+    - text "Usually responds in 6 min"
+      - text "Usually responds in 6 min"
+    - heading "Services" [level=2]
+      - text "Services"
+        - text "Services"
+    - text "Lawn design"
+      - text "Lawn design"
+    - text "Drought-tolerant gardens"
+      - text "Drought-tolerant gardens"
+    - text "Landscape planning"
+      - text "Landscape planning"
+    - heading "Amenities and more" [level=2]
+      - text "Amenities and more"
+        - text "Amenities and more"
+    - text "Open now"
+      - text "Open now"
+    - text "Fast responding"
+      - text "Fast responding"
+    - text "License verified by Yelp"
+      - text "License verified by Yelp"
+    - text "Virtual consultations"
+      - text "Virtual consultations"
+    - text "M"
+      - text "M"
+    - generic "5 out of 5 stars, 1 reviews"
+      - strong
+        - text "5.0"
+          - text "5.0"
+      - text "("
+        - text "("
+      - text "1"
+        - text "1"
+      - text ")"
+        - text ")"
+    - paragraph
+      - text "“Clear details, friendly communication, and an experience that matched the listing. I’d happily return.”"
+        - text "“Clear details, friendly communication, and an experience that matched the listing. I’d happily"
+        - text "return.”"
+    - strong
+      - text "Morgan L. · Featured synthetic review"
+        - text "Morgan L. · Featured synthetic review"
+    - complementary
+      - heading "Business info" [level=2]
+        - text "Business info"
+          - text "Business info"
+      - text "Today"
+        - text "Today"
+      - strong
+        - text "Closes 7 PM"
+          - text "Closes 7 PM"
+      - text "Address"
+        - text "Address"
+      - strong
+        - text "West Hollywood, CA 90069"
+          - text "West Hollywood, CA 90069"
+      - text "Price"
+        - text "Price"
+      - strong
+        - text "$$"
+          - text "$$"
+      - text "Response"
+        - text "Response"
+      - strong
+        - text "responds in 6 min"
+          - text "responds in 6 min"
+      - text "License verified by Yelp"
+        - text "License verified by Yelp"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"

@@ -1,0 +1,1801 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping on orders $99+"
+    - text "Free shipping on orders $99+"
+  - link "Find a store" [focusable=True]
+    - text "Find a store"
+      - text "Find a store"
+  - link "Easy online returns" [focusable=True]
+    - text "Easy online returns"
+      - text "Easy online returns"
+  - banner
+    - link "UNIQLO home" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - navigation "Primary navigation"
+      - link "WOMEN" [focusable=True]
+        - text "WOMEN"
+          - text "WOMEN"
+      - link "MEN" [focusable=True]
+        - text "MEN"
+          - text "MEN"
+      - link "KIDS" [focusable=True]
+        - text "KIDS"
+          - text "KIDS"
+      - link "BABY" [focusable=True]
+        - text "BABY"
+          - text "BABY"
+      - link "TODDLER" [focusable=True]
+        - text "TODDLER"
+          - text "TODDLER"
+      - link "SALE" [focusable=True]
+        - text "SALE"
+          - text "SALE"
+    - search
+      - entry "Search products" [focusable=True]
+    - link "Store finder" [focusable=True]
+      - text "Stores"
+        - text "Stores"
+    - link "Sign in" [focusable=True]
+      - text "Account"
+        - text "Account"
+    - link "Wishlist with 0 items" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "/"
+        - text "/"
+      - text "Shop all"
+        - text "Shop all"
+    - paragraph
+      - text "LIFEWEAR COLLECTION"
+        - text "LIFEWEAR COLLECTION"
+    - heading "Shop All" [level=1]
+      - text "Shop All"
+        - text "Shop All"
+    - paragraph
+      - text "25"
+        - text "25"
+      - text "product"
+        - text "product"
+      - text "s"
+        - text "s"
+      - text "found"
+        - text "found"
+    - complementary
+      - LabelText
+        - text "CATEGORY"
+          - text "CATEGORY"
+        - combobox "CATEGORY" value="All categorys" [focusable=True]
+          - MenuListPopup
+            - option "All categorys" [focusable=True, selected=True]
+            - option "Accessories" [focusable=True]
+            - option "Blazers" [focusable=True]
+            - option "Bras" [focusable=True]
+            - option "Cropped Tops" [focusable=True]
+            - option "Graphic T-Shirts" [focusable=True]
+            - option "Jackets & Parkas" [focusable=True]
+            - option "One Piece" [focusable=True]
+            - option "Pants" [focusable=True]
+            - option "Shorts" [focusable=True]
+            - option "Socks" [focusable=True]
+            - option "Sportswear" [focusable=True]
+            - option "Sweatshirts" [focusable=True]
+            - option "T-Shirts" [focusable=True]
+      - LabelText
+        - text "COLOR"
+          - text "COLOR"
+        - combobox "COLOR" value="All colors" [focusable=True]
+          - MenuListPopup
+            - option "All colors" [focusable=True, selected=True]
+            - option "Black" [focusable=True]
+            - option "Blue" [focusable=True]
+            - option "Brown" [focusable=True]
+            - option "Cream" [focusable=True]
+            - option "Dark Brown" [focusable=True]
+            - option "Dark Gray" [focusable=True]
+            - option "Gray" [focusable=True]
+            - option "Green" [focusable=True]
+            - option "Light Blue" [focusable=True]
+            - option "Light Green" [focusable=True]
+            - option "Multi" [focusable=True]
+            - option "Navy" [focusable=True]
+            - option "Olive" [focusable=True]
+            - option "Orange" [focusable=True]
+            - option "Pink" [focusable=True]
+            - option "Purple" [focusable=True]
+            - option "Red" [focusable=True]
+            - option "White" [focusable=True]
+            - option "Yellow" [focusable=True]
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "SIZE" value="All sizes" [focusable=True]
+          - MenuListPopup
+            - option "All sizes" [focusable=True, selected=True]
+            - option "XS" [focusable=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+            - option "XXL" [focusable=True]
+            - option "One Size" [focusable=True]
+            - option "6-12M" [focusable=True]
+            - option "12-24M" [focusable=True]
+            - option "0-3M" [focusable=True]
+            - option "3-6M" [focusable=True]
+            - option "6-9M" [focusable=True]
+            - option "7-8Y" [focusable=True]
+            - option "9-10Y" [focusable=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+            - option "XXS" [focusable=True]
+            - option "6M-5Y" [focusable=True]
+            - option "3XL" [focusable=True]
+      - LabelText
+        - text "PRICE RANGE"
+          - text "PRICE RANGE"
+      - text "$"
+        - text "$"
+      - spinbutton "Min" [focusable=True]
+      - text "—"
+        - text "—"
+      - text "$"
+        - text "$"
+      - spinbutton "Max" [focusable=True]
+      - LabelText
+        - checkbox "Sale" [focusable=True]
+        - text "Sale"
+          - text "Sale"
+      - LabelText
+        - checkbox "New arrivals" [focusable=True]
+        - text "New arrivals"
+          - text "New arrivals"
+      - LabelText
+        - checkbox "Limited Time Offers" [focusable=True]
+        - text "Limited Time Offers"
+          - text "Limited Time Offers"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort by" value="Featured" [focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Lowest price first" [focusable=True]
+          - option "Highest price first" [focusable=True]
+          - option "Top rated" [focusable=True]
+    - article
+      - image "Women's Sweatpants in Pink"
+      - text "BEST SELLER"
+        - text "BEST SELLER"
+      - button "Add Women's Sweatpants to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "PANTS"
+          - text "PANTS"
+        - text "/"
+          - text "/"
+        - text "LOUNGEWEAR"
+          - text "LOUNGEWEAR"
+      - heading "Women's Sweatpants" [level=3]
+        - text "Women's Sweatpants"
+          - text "Women's Sweatpants"
+      - paragraph
+        - text "Soft brushed jersey with a relaxed, tapered fit."
+          - text "Soft brushed jersey with a relaxed, tapered fit."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "184"
+        - text "184"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$29.90"
+          - text "$29.90"
+      - generic "Available colors"
+        - button "Select Pink" [focused=True, focusable=True]
+        - button "Select Gray" [focusable=True]
+        - text "Pink"
+          - text "Pink"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Women's Sweatpants" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+            - option "XXL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Women's Sweatpants" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Baby Ribbed Bib in Yellow"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Baby Ribbed Bib to wishlist" [focusable=True]
+      - paragraph
+        - text "BABY"
+          - text "BABY"
+        - text "/"
+          - text "/"
+        - text "ACCESSORIES"
+          - text "ACCESSORIES"
+        - text "/"
+          - text "/"
+        - text "BABY ESSENTIALS"
+          - text "BABY ESSENTIALS"
+      - heading "Baby Ribbed Bib" [level=3]
+        - text "Baby Ribbed Bib"
+          - text "Baby Ribbed Bib"
+      - paragraph
+        - text "Soft, absorbent cotton with an easy snap closure."
+          - text "Soft, absorbent cotton with an easy snap closure."
+      - text "4.7"
+        - text "4.7"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "55"
+        - text "55"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$5.90"
+          - text "$5.90"
+      - deletion
+        - text "$7.90"
+          - text "$7.90"
+      - generic "Available colors"
+        - button "Select Yellow" [focusable=True]
+        - button "Select Cream" [focusable=True]
+        - text "Yellow"
+          - text "Yellow"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Baby Ribbed Bib" value="One Size" [focusable=True]
+          - MenuListPopup
+            - option "One Size" [focusable=True, selected=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Baby Ribbed Bib" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Baby Color Socks (2 Pairs) in Blue"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Baby Color Socks (2 Pairs) to wishlist" [focusable=True]
+      - paragraph
+        - text "BABY"
+          - text "BABY"
+        - text "/"
+          - text "/"
+        - text "SOCKS"
+          - text "SOCKS"
+        - text "/"
+          - text "/"
+        - text "BABY ESSENTIALS"
+          - text "BABY ESSENTIALS"
+      - heading "Baby Color Socks (2 Pairs)" [level=3]
+        - text "Baby Color Socks (2 Pairs)"
+          - text "Baby Color Socks (2 Pairs)"
+      - paragraph
+        - text "Stay-on cuffs and gentle stretch for tiny feet."
+          - text "Stay-on cuffs and gentle stretch for tiny feet."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "32"
+        - text "32"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$7.90"
+          - text "$7.90"
+      - deletion
+        - text "$9.90"
+          - text "$9.90"
+      - generic "Available colors"
+        - button "Select Blue" [focusable=True]
+        - button "Select Pink" [focusable=True]
+        - text "Blue"
+          - text "Blue"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Baby Color Socks (2 Pairs)" value="6-12M" [focusable=True]
+          - MenuListPopup
+            - option "6-12M" [focusable=True, selected=True]
+            - option "12-24M" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Baby Color Socks (2 Pairs)" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Baby Cotton One Piece in Cream"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Baby Cotton One Piece to wishlist" [focusable=True]
+      - paragraph
+        - text "BABY"
+          - text "BABY"
+        - text "/"
+          - text "/"
+        - text "ONE PIECE"
+          - text "ONE PIECE"
+        - text "/"
+          - text "/"
+        - text "BABY ESSENTIALS"
+          - text "BABY ESSENTIALS"
+      - heading "Baby Cotton One Piece" [level=3]
+        - text "Baby Cotton One Piece"
+          - text "Baby Cotton One Piece"
+      - paragraph
+        - text "Envelope neckline and snap bottom for easy changes."
+          - text "Envelope neckline and snap bottom for easy changes."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "96"
+        - text "96"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$9.90"
+          - text "$9.90"
+      - deletion
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Cream" [focusable=True]
+        - button "Select Light Green" [focusable=True]
+        - text "Cream"
+          - text "Cream"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Baby Cotton One Piece" value="0-3M" [focusable=True]
+          - MenuListPopup
+            - option "0-3M" [focusable=True, selected=True]
+            - option "3-6M" [focusable=True]
+            - option "6-9M" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Baby Cotton One Piece" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's Comfort Blazer in Black"
+      - text "POPULAR"
+        - text "POPULAR"
+      - button "Add Men's Comfort Blazer to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "BLAZERS"
+          - text "BLAZERS"
+        - text "/"
+          - text "/"
+        - text "SMART CASUAL"
+          - text "SMART CASUAL"
+      - heading "Men's Comfort Blazer" [level=3]
+        - text "Men's Comfort Blazer"
+          - text "Men's Comfort Blazer"
+      - paragraph
+        - text "A polished stretch blazer that moves like a cardigan."
+          - text "A polished stretch blazer that moves like a cardigan."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "241"
+        - text "241"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$69.90"
+          - text "$69.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Navy" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's Comfort Blazer" value="S" [focusable=True]
+          - MenuListPopup
+            - option "S" [focusable=True, selected=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+            - option "XXL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's Comfort Blazer" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's AirSense Blazer in Black"
+      - text "NEW"
+        - text "NEW"
+      - button "Add Men's AirSense Blazer to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "BLAZERS"
+          - text "BLAZERS"
+        - text "/"
+          - text "/"
+        - text "SMART CASUAL"
+          - text "SMART CASUAL"
+      - heading "Men's AirSense Blazer" [level=3]
+        - text "Men's AirSense Blazer"
+          - text "Men's AirSense Blazer"
+      - paragraph
+        - text "Lightweight tailoring with quick-dry performance."
+          - text "Lightweight tailoring with quick-dry performance."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "78"
+        - text "78"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$79.90"
+          - text "$79.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Dark Gray" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's AirSense Blazer" value="M" [focusable=True]
+          - MenuListPopup
+            - option "M" [focusable=True, selected=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's AirSense Blazer" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Kids Pokémon Graphic T-Shirt in White"
+      - text "NEW ARRIVAL"
+        - text "NEW ARRIVAL"
+      - button "Add Kids Pokémon Graphic T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "KIDS"
+          - text "KIDS"
+        - text "/"
+          - text "/"
+        - text "GRAPHIC T-SHIRTS"
+          - text "GRAPHIC T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "BOYS"
+          - text "BOYS"
+      - heading "Kids Pokémon Graphic T-Shirt" [level=3]
+        - text "Kids Pokémon Graphic T-Shirt"
+          - text "Kids Pokémon Graphic T-Shirt"
+      - paragraph
+        - text "A new UT graphic tee made from comfortable cotton."
+          - text "A new UT graphic tee made from comfortable cotton."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "112"
+        - text "112"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select White" [focusable=True]
+        - button "Select Blue" [focusable=True]
+        - text "White"
+          - text "White"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Kids Pokémon Graphic T-Shirt" value="7-8Y" [focusable=True]
+          - MenuListPopup
+            - option "7-8Y" [focusable=True, selected=True]
+            - option "9-10Y" [focusable=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Kids Pokémon Graphic T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Women's Mini T-Shirt in White"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Women's Mini T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "EVERYDAY ESSENTIALS"
+          - text "EVERYDAY ESSENTIALS"
+      - heading "Women's Mini T-Shirt" [level=3]
+        - text "Women's Mini T-Shirt"
+          - text "Women's Mini T-Shirt"
+      - paragraph
+        - text "A compact crew neck tee in smooth cotton jersey."
+          - text "A compact crew neck tee in smooth cotton jersey."
+      - text "4.5"
+        - text "4.5"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "318"
+        - text "318"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$9.90"
+          - text "$9.90"
+      - deletion
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select White" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - button "Select Yellow" [focusable=True]
+        - text "White"
+          - text "White"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Women's Mini T-Shirt" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Women's Mini T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's Blocktech Parka in Orange"
+      - text "WEATHER READY"
+        - text "WEATHER READY"
+      - button "Add Men's Blocktech Parka to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "JACKETS & PARKAS"
+          - text "JACKETS & PARKAS"
+        - text "/"
+          - text "/"
+        - text "OUTERWEAR"
+          - text "OUTERWEAR"
+      - heading "Men's Blocktech Parka" [level=3]
+        - text "Men's Blocktech Parka"
+          - text "Men's Blocktech Parka"
+      - paragraph
+        - text "Weather-ready protection in a clean everyday silhouette."
+          - text "Weather-ready protection in a clean everyday silhouette."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "166"
+        - text "166"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$59.90"
+          - text "$59.90"
+      - generic "Available colors"
+        - button "Select Orange" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Orange"
+          - text "Orange"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's Blocktech Parka" value="S" [focusable=True]
+          - MenuListPopup
+            - option "S" [focusable=True, selected=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's Blocktech Parka" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's AIRism Cotton T-Shirt in Blue"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Men's AIRism Cotton T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "AIRISM"
+          - text "AIRISM"
+      - heading "Men's AIRism Cotton T-Shirt" [level=3]
+        - text "Men's AIRism Cotton T-Shirt"
+          - text "Men's AIRism Cotton T-Shirt"
+      - paragraph
+        - text "The look of cotton with cool, smooth AIRism comfort."
+          - text "The look of cotton with cool, smooth AIRism comfort."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "624"
+        - text "624"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$9.90"
+          - text "$9.90"
+      - deletion
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Blue" [focusable=True]
+        - button "Select White" [focusable=True]
+        - text "Blue"
+          - text "Blue"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's AIRism Cotton T-Shirt" value="S" [focusable=True]
+          - MenuListPopup
+            - option "S" [focusable=True, selected=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's AIRism Cotton T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Wireless Bra (Ultra Relax) in Brown"
+      - text "COMFORT FAVORITE"
+        - text "COMFORT FAVORITE"
+      - button "Add Wireless Bra (Ultra Relax) to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "BRAS"
+          - text "BRAS"
+        - text "/"
+          - text "/"
+        - text "INNERWEAR"
+          - text "INNERWEAR"
+      - heading "Wireless Bra (Ultra Relax)" [level=3]
+        - text "Wireless Bra (Ultra Relax)"
+          - text "Wireless Bra (Ultra Relax)"
+      - paragraph
+        - text "Soft, seamless support designed for all-day comfort."
+          - text "Soft, seamless support designed for all-day comfort."
+      - text "4.7"
+        - text "4.7"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "489"
+        - text "489"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$29.90"
+          - text "$29.90"
+      - generic "Available colors"
+        - button "Select Brown" [focusable=True]
+        - button "Select Purple" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Brown"
+          - text "Brown"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Wireless Bra (Ultra Relax)" value="XXS" [focusable=True]
+          - MenuListPopup
+            - option "XXS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Wireless Bra (Ultra Relax)" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Kids AIRism Cotton T-Shirt in Green"
+      - text "LIMITED TIME"
+        - text "LIMITED TIME"
+      - button "Add Kids AIRism Cotton T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "KIDS"
+          - text "KIDS"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "EVERYDAY ESSENTIALS"
+          - text "EVERYDAY ESSENTIALS"
+      - heading "Kids AIRism Cotton T-Shirt" [level=3]
+        - text "Kids AIRism Cotton T-Shirt"
+          - text "Kids AIRism Cotton T-Shirt"
+      - paragraph
+        - text "Cool-touch everyday comfort for active kids."
+          - text "Cool-touch everyday comfort for active kids."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "147"
+        - text "147"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$12.90"
+          - text "$12.90"
+      - deletion
+        - text "$19.90"
+          - text "$19.90"
+      - generic "Available colors"
+        - button "Select Green" [focusable=True]
+        - button "Select Navy" [focusable=True]
+        - text "Green"
+          - text "Green"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Kids AIRism Cotton T-Shirt" value="9-10Y" [focusable=True]
+          - MenuListPopup
+            - option "9-10Y" [focusable=True, selected=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Kids AIRism Cotton T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Kids Dry Sweat Crew Neck Shirt in Gray"
+      - text "LIMITED TIME"
+        - text "LIMITED TIME"
+      - button "Add Kids Dry Sweat Crew Neck Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "KIDS"
+          - text "KIDS"
+        - text "/"
+          - text "/"
+        - text "SWEATSHIRTS"
+          - text "SWEATSHIRTS"
+        - text "/"
+          - text "/"
+        - text "EVERYDAY ESSENTIALS"
+          - text "EVERYDAY ESSENTIALS"
+      - heading "Kids Dry Sweat Crew Neck Shirt" [level=3]
+        - text "Kids Dry Sweat Crew Neck Shirt"
+          - text "Kids Dry Sweat Crew Neck Shirt"
+      - paragraph
+        - text "Lightweight sweatshirt with a smooth, quick-dry finish."
+          - text "Lightweight sweatshirt with a smooth, quick-dry finish."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "68"
+        - text "68"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$19.90"
+          - text "$19.90"
+      - deletion
+        - text "$24.90"
+          - text "$24.90"
+      - generic "Available colors"
+        - button "Select Gray" [focusable=True]
+        - button "Select Pink" [focusable=True]
+        - text "Gray"
+          - text "Gray"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Kids Dry Sweat Crew Neck Shirt" value="7-8Y" [focusable=True]
+          - MenuListPopup
+            - option "7-8Y" [focusable=True, selected=True]
+            - option "9-10Y" [focusable=True]
+            - option "11-12Y(150)" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Kids Dry Sweat Crew Neck Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Ribbed Cropped Tank Top in Black"
+      - button "Add Ribbed Cropped Tank Top to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "CROPPED TOPS"
+          - text "CROPPED TOPS"
+        - text "/"
+          - text "/"
+        - text "CASUAL TOPS"
+          - text "CASUAL TOPS"
+      - heading "Ribbed Cropped Tank Top" [level=3]
+        - text "Ribbed Cropped Tank Top"
+          - text "Ribbed Cropped Tank Top"
+      - paragraph
+        - text "A fitted ribbed layer with a softly squared neckline."
+          - text "A fitted ribbed layer with a softly squared neckline."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "132"
+        - text "132"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select White" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Ribbed Cropped Tank Top" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Ribbed Cropped Tank Top" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "AIRism Cropped T-Shirt in Light Blue"
+      - text "NEW"
+        - text "NEW"
+      - button "Add AIRism Cropped T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "CROPPED TOPS"
+          - text "CROPPED TOPS"
+        - text "/"
+          - text "/"
+        - text "AIRISM"
+          - text "AIRISM"
+      - heading "AIRism Cropped T-Shirt" [level=3]
+        - text "AIRism Cropped T-Shirt"
+          - text "AIRism Cropped T-Shirt"
+      - paragraph
+        - text "A breezy cropped tee with a silky, cool-touch finish."
+          - text "A breezy cropped tee with a silky, cool-touch finish."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "85"
+        - text "85"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$19.90"
+          - text "$19.90"
+      - generic "Available colors"
+        - button "Select Light Blue" [focusable=True]
+        - button "Select White" [focusable=True]
+        - text "Light Blue"
+          - text "Light Blue"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for AIRism Cropped T-Shirt" value="S" [focusable=True]
+          - MenuListPopup
+            - option "S" [focusable=True, selected=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for AIRism Cropped T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Washable Knit Cropped Top in Red"
+      - button "Add Washable Knit Cropped Top to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "CROPPED TOPS"
+          - text "CROPPED TOPS"
+        - text "/"
+          - text "/"
+        - text "KNITWEAR"
+          - text "KNITWEAR"
+      - heading "Washable Knit Cropped Top" [level=3]
+        - text "Washable Knit Cropped Top"
+          - text "Washable Knit Cropped Top"
+      - paragraph
+        - text "Fine-gauge washable knitwear with a refined short length."
+          - text "Fine-gauge washable knitwear with a refined short length."
+      - text "4.7"
+        - text "4.7"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "47"
+        - text "47"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$24.90"
+          - text "$24.90"
+      - generic "Available colors"
+        - button "Select Red" [focusable=True]
+        - button "Select Cream" [focusable=True]
+        - text "Red"
+          - text "Red"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Washable Knit Cropped Top" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Washable Knit Cropped Top" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "AIRism Active Support Bra in Black"
+      - text "SPORT UTILITY WEAR"
+        - text "SPORT UTILITY WEAR"
+      - button "Add AIRism Active Support Bra to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "SPORTSWEAR"
+          - text "SPORTSWEAR"
+        - text "/"
+          - text "/"
+        - text "SPORT UTILITY WEAR"
+          - text "SPORT UTILITY WEAR"
+      - heading "AIRism Active Support Bra" [level=3]
+        - text "AIRism Active Support Bra"
+          - text "AIRism Active Support Bra"
+      - paragraph
+        - text "Medium support with breathable mesh zones."
+          - text "Medium support with breathable mesh zones."
+      - text "4.6"
+        - text "4.6"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "92"
+        - text "92"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$19.90"
+          - text "$19.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Blue" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for AIRism Active Support Bra" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for AIRism Active Support Bra" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Ultra Stretch Active Leggings in Black"
+      - text "SPORT UTILITY WEAR"
+        - text "SPORT UTILITY WEAR"
+      - button "Add Ultra Stretch Active Leggings to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "SPORTSWEAR"
+          - text "SPORTSWEAR"
+        - text "/"
+          - text "/"
+        - text "SPORT UTILITY WEAR"
+          - text "SPORT UTILITY WEAR"
+      - heading "Ultra Stretch Active Leggings" [level=3]
+        - text "Ultra Stretch Active Leggings"
+          - text "Ultra Stretch Active Leggings"
+      - paragraph
+        - text "Supportive four-way stretch for studio, run, and everyday."
+          - text "Supportive four-way stretch for studio, run, and everyday."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "301"
+        - text "301"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$24.90"
+          - text "$24.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Olive" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Ultra Stretch Active Leggings" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Ultra Stretch Active Leggings" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Kids Crew Neck T-Shirt in Green"
+      - button "Add Kids Crew Neck T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "KIDS"
+          - text "KIDS"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "BOYS"
+          - text "BOYS"
+      - heading "Kids Crew Neck T-Shirt" [level=3]
+        - text "Kids Crew Neck T-Shirt"
+          - text "Kids Crew Neck T-Shirt"
+      - paragraph
+        - text "A soft everyday tee made to hold its shape wash after wash."
+          - text "A soft everyday tee made to hold its shape wash after"
+          - text "wash."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "225"
+        - text "225"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$9.90"
+          - text "$9.90"
+      - generic "Available colors"
+        - button "Select Green" [focusable=True]
+        - button "Select White" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Green"
+          - text "Green"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Kids Crew Neck T-Shirt" value="9-10Y" [focusable=True]
+          - MenuListPopup
+            - option "9-10Y" [focusable=True, selected=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Kids Crew Neck T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Toddler Ankle Socks (2 Pairs) in Pink"
+      - text "LOWEST PRICE"
+        - text "LOWEST PRICE"
+      - button "Add Toddler Ankle Socks (2 Pairs) to wishlist" [focusable=True]
+      - paragraph
+        - text "TODDLER"
+          - text "TODDLER"
+        - text "/"
+          - text "/"
+        - text "SOCKS"
+          - text "SOCKS"
+        - text "/"
+          - text "/"
+        - text "TODDLER COLLECTION"
+          - text "TODDLER COLLECTION"
+      - heading "Toddler Ankle Socks (2 Pairs)" [level=3]
+        - text "Toddler Ankle Socks (2 Pairs)"
+          - text "Toddler Ankle Socks (2 Pairs)"
+      - paragraph
+        - text "Cushioned soles and non-slip grips for growing feet."
+          - text "Cushioned soles and non-slip grips for growing feet."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "74"
+        - text "74"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$4.90"
+          - text "$4.90"
+      - generic "Available colors"
+        - button "Select Pink" [focusable=True]
+        - button "Select Blue" [focusable=True]
+        - text "Pink"
+          - text "Pink"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Toddler Ankle Socks (2 Pairs)" value="6M-5Y" [focusable=True]
+          - MenuListPopup
+            - option "6M-5Y" [focusable=True, selected=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Toddler Ankle Socks (2 Pairs)" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Toddler Patterned Socks (3 Pairs) in Multi"
+      - button "Add Toddler Patterned Socks (3 Pairs) to wishlist" [focusable=True]
+      - paragraph
+        - text "TODDLER"
+          - text "TODDLER"
+        - text "/"
+          - text "/"
+        - text "SOCKS"
+          - text "SOCKS"
+        - text "/"
+          - text "/"
+        - text "TODDLER COLLECTION"
+          - text "TODDLER COLLECTION"
+      - heading "Toddler Patterned Socks (3 Pairs)" [level=3]
+        - text "Toddler Patterned Socks (3 Pairs)"
+          - text "Toddler Patterned Socks (3 Pairs)"
+      - paragraph
+        - text "Playful patterns with soft cuffs and anti-slip soles."
+          - text "Playful patterns with soft cuffs and anti-slip soles."
+      - text "4.7"
+        - text "4.7"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "49"
+        - text "49"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$6.90"
+          - text "$6.90"
+      - generic "Available colors"
+        - button "Select Multi" [focusable=True]
+        - text "Multi"
+          - text "Multi"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Toddler Patterned Socks (3 Pairs)" value="6M-5Y" [focusable=True]
+          - MenuListPopup
+            - option "6M-5Y" [focusable=True, selected=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Toddler Patterned Socks (3 Pairs)" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Women's SUPIMA Cotton T-Shirt in Yellow"
+      - text "PREMIUM COTTON"
+        - text "PREMIUM COTTON"
+      - button "Add Women's SUPIMA Cotton T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "EVERYDAY ESSENTIALS"
+          - text "EVERYDAY ESSENTIALS"
+      - heading "Women's SUPIMA Cotton T-Shirt" [level=3]
+        - text "Women's SUPIMA Cotton T-Shirt"
+          - text "Women's SUPIMA Cotton T-Shirt"
+      - paragraph
+        - text "Smooth premium cotton in a classic regular fit."
+          - text "Smooth premium cotton in a classic regular fit."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "710"
+        - text "710"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Yellow" [focusable=True]
+        - button "Select White" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Yellow"
+          - text "Yellow"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Women's SUPIMA Cotton T-Shirt" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Women's SUPIMA Cotton T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Uniqlo U Premium Jersey T-Shirt in Dark Brown"
+      - text "MEMBER EXCLUSIVE"
+        - text "MEMBER EXCLUSIVE"
+      - button "Add Uniqlo U Premium Jersey T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "UNIQLO U"
+          - text "UNIQLO U"
+      - heading "Uniqlo U Premium Jersey T-Shirt" [level=3]
+        - text "Uniqlo U Premium Jersey T-Shirt"
+          - text "Uniqlo U Premium Jersey T-Shirt"
+      - paragraph
+        - text "Elevated heavyweight jersey with a sculpted modern fit."
+          - text "Elevated heavyweight jersey with a sculpted modern fit."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "59"
+        - text "59"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$49.90"
+          - text "$49.90"
+      - generic "Available colors"
+        - button "Select Dark Brown" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Dark Brown"
+          - text "Dark Brown"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Uniqlo U Premium Jersey T-Shirt" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Uniqlo U Premium Jersey T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's Dry-EX Shorts in Black"
+      - text "TOP PICK · SALE"
+        - text "TOP PICK · SALE"
+      - button "Add Men's Dry-EX Shorts to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "SHORTS"
+          - text "SHORTS"
+        - text "/"
+          - text "/"
+        - text "SPORT UTILITY WEAR"
+          - text "SPORT UTILITY WEAR"
+      - heading "Men's Dry-EX Shorts" [level=3]
+        - text "Men's Dry-EX Shorts"
+          - text "Men's Dry-EX Shorts"
+      - paragraph
+        - text "Light, fast-drying shorts with comfortable stretch."
+          - text "Light, fast-drying shorts with comfortable stretch."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "386"
+        - text "386"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - deletion
+        - text "$24.90"
+          - text "$24.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Navy" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's Dry-EX Shorts" value="XL" [focusable=True]
+          - MenuListPopup
+            - option "XL" [focusable=True, selected=True]
+            - option "XXL" [focusable=True]
+            - option "3XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's Dry-EX Shorts" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's Utility Cargo Shorts in Black"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Men's Utility Cargo Shorts to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "SHORTS"
+          - text "SHORTS"
+        - text "/"
+          - text "/"
+        - text "UTILITY"
+          - text "UTILITY"
+      - heading "Men's Utility Cargo Shorts" [level=3]
+        - text "Men's Utility Cargo Shorts"
+          - text "Men's Utility Cargo Shorts"
+      - paragraph
+        - text "Roomy everyday shorts with secure utility pockets."
+          - text "Roomy everyday shorts with secure utility pockets."
+      - text "4.7"
+        - text "4.7"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "144"
+        - text "144"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$19.90"
+          - text "$19.90"
+      - deletion
+        - text "$29.90"
+          - text "$29.90"
+      - generic "Available colors"
+        - button "Select Black" [focusable=True]
+        - button "Select Olive" [focusable=True]
+        - text "Black"
+          - text "Black"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's Utility Cargo Shorts" value="XXL" [focusable=True]
+          - MenuListPopup
+            - option "XXL" [focusable=True, selected=True]
+            - option "3XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's Utility Cargo Shorts" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+  - contentinfo
+    - link "UNI QLO" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - paragraph
+      - text "Simple, high-quality everyday clothing with a practical sense of beauty."
+        - text "Simple, high-quality everyday clothing with a"
+        - text "practical sense of beauty."
+    - button "United States / English" [focusable=True]
+      - text "United States / English"
+        - text "United States / English"
+    - heading "SHOP" [level=2]
+      - text "SHOP"
+        - text "SHOP"
+    - link "Women" [focusable=True]
+      - text "Women"
+        - text "Women"
+    - link "Men" [focusable=True]
+      - text "Men"
+        - text "Men"
+    - link "Kids" [focusable=True]
+      - text "Kids"
+        - text "Kids"
+    - link "Baby" [focusable=True]
+      - text "Baby"
+        - text "Baby"
+    - link "Sale" [focusable=True]
+      - text "Sale"
+        - text "Sale"
+    - heading "HELP" [level=2]
+      - text "HELP"
+        - text "HELP"
+    - link "Store locator" [focusable=True]
+      - text "Store locator"
+        - text "Store locator"
+    - link "Online returns" [focusable=True]
+      - text "Online returns"
+        - text "Online returns"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - link "Wishlist" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "My account" [focusable=True]
+      - text "My account"
+        - text "My account"
+    - heading "DISCOVER" [level=2]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "New arrivals" [focusable=True]
+      - text "New arrivals"
+        - text "New arrivals"
+    - link "Limited-time offers" [focusable=True]
+      - text "Limited-time offers"
+        - text "Limited-time offers"
+    - link "Sport Utility Wear" [focusable=True]
+      - text "Sport Utility Wear"
+        - text "Sport Utility Wear"
+    - link "Toddler collection" [focusable=True]
+      - text "Toddler collection"
+        - text "Toddler collection"
+    - text "© 2026 UNIQLO mock storefront"
+      - text "© 2026 UNIQLO mock storefront"
+    - text "Designed for this interactive prototype · No real purchases are processed"
+      - text "Designed for this interactive prototype · No real purchases are processed"

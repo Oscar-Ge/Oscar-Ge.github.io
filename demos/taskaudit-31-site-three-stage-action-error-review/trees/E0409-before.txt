@@ -1,0 +1,194 @@
+- document "Redfin | Find Your Next Home" [focused=True, focusable=True]
+  - banner
+    - link "Redfin home" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - navigation "Primary navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Rent" [focusable=True]
+        - text "Rent"
+          - text "Rent"
+      - link "Sold" [focusable=True]
+        - text "Sold"
+          - text "Sold"
+      - link "Mortgage" [focusable=True]
+        - text "Mortgage"
+          - text "Mortgage"
+      - link "Rent budget" [focusable=True]
+        - text "Rent budget"
+          - text "Rent budget"
+      - link "Find an agent" [focusable=True]
+        - text "Find an agent"
+          - text "Find an agent"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved homes" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+  - main
+    - text "BUILD A BETTER WAY TO MOVE"
+      - text "BUILD A BETTER WAY TO MOVE"
+    - heading "Real estate careers with real impact" [level=1]
+      - text "Real estate careers with real impact"
+        - text "Real estate careers"
+        - text "with real impact"
+    - paragraph
+      - text "Join a customer-first team using technology and local expertise to redefine the home journey."
+        - text "Join a customer-first team using technology and local expertise to redefine"
+        - text "the home journey."
+    - form
+      - LabelText
+        - entry "Role or keyword" value="Real Estate Agent" [focusable=True]
+          - text "Real Estate Agent"
+            - text "Real Estate Agent"
+      - LabelText
+        - entry "City or state" value="Atlanta, GA" [focusable=True]
+          - text "Atlanta, GA"
+            - text "Atlanta, GA"
+      - button "Search jobs" [focusable=True]
+        - text "Search jobs"
+          - text "Search jobs"
+    - text "WORK WITH US"
+      - text "WORK WITH US"
+    - heading "Open roles" [level=2]
+      - text "Open roles"
+        - text "Open roles"
+    - paragraph
+      - text "Search our synthetic job board by position and location."
+        - text "Search our synthetic job board by"
+        - text "position and location."
+    - button "Atlanta agent roles View available jobs" [focusable=True]
+      - strong
+        - text "Atlanta agent roles"
+          - text "Atlanta agent roles"
+      - text "View available jobs"
+        - text "View available jobs"
+    - heading "Jobs in Atlanta, GA" [level=2]
+      - text "Jobs in Atlanta, GA"
+        - text "Jobs in Atlanta, GA"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text "matching"
+        - text "matching"
+      - text "positions"
+        - text "positions"
+    - button "Clear search" [focusable=True]
+      - text "Clear search"
+        - text "Clear search"
+    - article
+      - text "REAL ESTATE OPERATIONS"
+        - text "REAL ESTATE OPERATIONS"
+      - heading "Associate Real Estate Agent" [level=3]
+        - text "Associate Real Estate Agent"
+          - text "Associate Real Estate Agent"
+      - paragraph
+        - text "Atlanta, GA"
+          - text "Atlanta, GA"
+        - text
+          - text
+        - text "·"
+          - text "·"
+        - text "Contract"
+          - text "Contract"
+      - text "Posted 3 days ago"
+        - text "Posted 3 days ago"
+      - paragraph
+        - text "Support home tours, inspections, and local customer experiences across metro Atlanta with flexible scheduling and com..."
+          - text "Support home tours, inspections, and local customer experiences across metro Atlanta with flexible"
+          - text "scheduling and comprehensive field training."
+      - strong
+        - text "Compensation:"
+          - text "Compensation:"
+      - text
+        - text
+      - text "$34–$42 per field event"
+        - text "$34–$42 per field event"
+      - button "View & apply" [focusable=True]
+        - text "View & apply"
+          - text "View & apply"
+    - article
+      - text "SALES"
+        - text "SALES"
+      - heading "Lead Real Estate Agent" [level=3]
+        - text "Lead Real Estate Agent"
+          - text "Lead Real Estate Agent"
+      - paragraph
+        - text "Atlanta, GA"
+          - text "Atlanta, GA"
+        - text
+          - text
+        - text "·"
+          - text "·"
+        - text "Full-time"
+          - text "Full-time"
+      - text "Posted 8 days ago"
+        - text "Posted 8 days ago"
+      - paragraph
+        - text "Guide buyers and sellers through their Atlanta real estate journey using modern tools, team support, and a customer-f..."
+          - text "Guide buyers and sellers through their Atlanta real estate journey using modern tools, team support, and"
+          - text "a customer-first model."
+      - strong
+        - text "Compensation:"
+          - text "Compensation:"
+      - text
+        - text
+      - text "$72,000–$118,000 estimated total pay"
+        - text "$72,000–$118,000 estimated total pay"
+      - button "View & apply" [focused=True, focusable=True]
+        - text "View & apply"
+          - text "View & apply"
+  - contentinfo
+    - link "redfin" [focusable=True]
+      - text "redfin"
+        - text "redfin"
+    - paragraph
+      - text "A polished, independent demo built with synthetic listings for realistic search experiences."
+        - text "A polished, independent demo built with synthetic"
+        - text "listings for realistic search experiences."
+    - heading "EXPLORE" [level=3]
+      - text "EXPLORE"
+        - text "EXPLORE"
+    - link "Homes for sale" [focusable=True]
+      - text "Homes for sale"
+        - text "Homes for sale"
+    - link "Homes for rent" [focusable=True]
+      - text "Homes for rent"
+        - text "Homes for rent"
+    - link "Sold homes" [focusable=True]
+      - text "Sold homes"
+        - text "Sold homes"
+    - link "Saved homes" [focusable=True]
+      - text "Saved homes"
+        - text "Saved homes"
+    - heading "PLAN" [level=3]
+      - text "PLAN"
+        - text "PLAN"
+    - link "Mortgage calculator" [focusable=True]
+      - text "Mortgage calculator"
+        - text "Mortgage calculator"
+    - link "Rent affordability" [focusable=True]
+      - text "Rent affordability"
+        - text "Rent affordability"
+    - link "Find an agent" [focusable=True]
+      - text "Find an agent"
+        - text "Find an agent"
+    - heading "COMPANY" [level=3]
+      - text "COMPANY"
+        - text "COMPANY"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - link "Contact" [focusable=True]
+      - text "Contact"
+        - text "Contact"
+    - link "(800) 555-0120" [focusable=True]
+      - text "(800) 555-0120"
+        - text "(800) 555-0120"
+    - text "© 2026 Redfin demo experience"
+      - text "© 2026 Redfin demo experience"
+    - text "All properties, people, and roles are fictional."
+      - text "All properties, people, and roles are fictional."

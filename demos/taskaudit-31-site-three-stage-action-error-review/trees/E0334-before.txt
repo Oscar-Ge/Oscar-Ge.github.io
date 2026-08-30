@@ -1,0 +1,188 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focused=True, focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "NBA"
+        - text "NBA"
+      - text "Players"
+        - text "Players"
+      - text "Kevin Durant"
+        - text "Kevin Durant"
+    - image "Kevin Durant player portrait placeholder"
+    - text "FORWARD • HOUSTON ROCKETS"
+      - text "FORWARD • HOUSTON ROCKETS"
+    - heading "Kevin Durant" [level=1]
+      - text "Kevin Durant"
+        - text "Kevin Durant"
+    - strong
+      - text "#"
+        - text "#"
+      - text "7"
+        - text "7"
+    - button "Follow" [focusable=True]
+      - text "Follow"
+        - text "Follow"
+    - button "Biography" [focusable=True]
+      - text "Biography"
+        - text "Biography"
+    - button "Career stats" [focusable=True]
+      - text "Career stats"
+        - text "Career stats"
+    - heading "Biography" [level=2]
+      - text "Biography"
+        - text "Biography"
+    - paragraph
+      - text "Kevin Durant is a two-time NBA champion, former league MVP and one of the most prolific scorers in basketball history..."
+        - text "Kevin Durant is a two-time NBA champion, former league MVP and one of the most prolific scorers in basketball"
+        - text "history. His combination of size, shooting range and shot creation has made him a perennial All-NBA selection."
+    - text "Career figures shown through the end of the 2025–26 regular season."
+      - text "Career figures shown through the end of the 2025–26 regular season."
+    - complementary
+      - heading "Personal information" [level=2]
+        - text "Personal information"
+          - text "Personal information"
+      - text "Position"
+        - text "Position"
+      - strong
+        - text "Power Forward"
+          - text "Power Forward"
+      - text "Birthdate"
+        - text "Birthdate"
+      - strong
+        - text "9/29/1988 (37)"
+          - text "9/29/1988 (37)"
+      - text "College"
+        - text "College"
+      - strong
+        - text "Texas"
+          - text "Texas"
+      - text "Draft"
+        - text "Draft"
+      - strong
+        - text "2007 • Round 1 • Pick 2"
+          - text "2007 • Round 1 • Pick 2"
+      - text "Experience"
+        - text "Experience"
+      - strong
+        - text "19th season"
+          - text "19th season"
+      - text "Birthplace"
+        - text "Birthplace"
+      - strong
+        - text "Washington, DC"
+          - text "Washington, DC"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

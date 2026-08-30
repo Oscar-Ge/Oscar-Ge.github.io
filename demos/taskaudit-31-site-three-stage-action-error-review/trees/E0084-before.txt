@@ -1,0 +1,221 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping at $25"
+    - text "Free shipping at $25"
+  - text "|"
+    - text "|"
+  - text "Store pickup available"
+    - text "Store pickup available"
+  - link "Shop Clearance" [focusable=True]
+    - text "Shop Clearance"
+      - text "Shop Clearance"
+  - banner
+    - link "Macy's home" [focusable=True]
+      - text "macy's"
+        - text "macy's"
+    - search
+      - LabelText
+        - text "Search products"
+          - text "Search products"
+      - entry "Search products" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - link "Lists" [focusable=True]
+      - text "Lists"
+        - text "Lists"
+    - link "Bag 2" [focusable=True]
+      - text "Bag"
+        - text "Bag"
+      - text "2"
+        - text "2"
+    - navigation "Shop departments"
+      - link "Men" [focusable=True]
+        - text "Men"
+          - text "Men"
+      - link "Kids & Baby" [focusable=True]
+        - text "Kids & Baby"
+          - text "Kids & Baby"
+      - link "Handbags" [focusable=True]
+        - text "Handbags"
+          - text "Handbags"
+      - link "Toys" [focusable=True]
+        - text "Toys"
+          - text "Toys"
+      - link "Trending" [focusable=True]
+        - text "Trending"
+          - text "Trending"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Jewelry" [focusable=True]
+        - text "Jewelry"
+          - text "Jewelry"
+      - link "Kitchen" [focusable=True]
+        - text "Kitchen"
+          - text "Kitchen"
+      - link "Wine" [focusable=True]
+        - text "Wine"
+          - text "Wine"
+      - link "Shoes" [focusable=True]
+        - text "Shoes"
+          - text "Shoes"
+      - link "Clearance" [focusable=True]
+        - text "Clearance"
+          - text "Clearance"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+  - main
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - link "Trending Now" [focusable=True]
+      - text "Trending Now"
+        - text "Trending Now"
+    - text "Pleated-Neck Work Top"
+      - text "Pleated-Neck Work Top"
+    - image "Pleated-Neck Work Top"
+    - text "Product image is a styled placeholder for this demo."
+      - text "Product image is a styled placeholder for this demo."
+    - text "TRENDING"
+      - text "TRENDING"
+    - paragraph
+      - text "Alfani"
+        - text "Alfani"
+    - heading "Pleated-Neck Work Top" [level=1]
+      - text "Pleated-Neck Work Top"
+        - text "Pleated-Neck Work Top"
+    - generic "4.7 out of 5 stars, 442 reviews"
+      - strong
+        - text "4.7"
+          - text "4.7"
+      - text "("
+        - text "("
+      - text "442"
+        - text "442"
+      - text ")"
+        - text ")"
+    - text "$29.99"
+      - text "$29.99"
+    - text "$49.50"
+      - text "$49.50"
+    - text "39"
+      - text "39"
+    - text "% off"
+      - text "% off"
+    - paragraph
+      - text "A polished black crepe top with a softly pleated neckline made for office-ready layering."
+        - text "A polished black crepe top with a softly pleated neckline made for"
+        - text "office-ready layering."
+    - LabelText
+      - text "Color:"
+        - text "Color:"
+      - strong
+        - text "Black"
+          - text "Black"
+      - combobox "Choose color" value="Black" [focusable=True]
+        - MenuListPopup
+          - option "Black" [focusable=True, selected=True]
+    - LabelText
+      - text "Size"
+        - text "Size"
+      - text ":"
+        - text ":"
+      - strong
+        - text "XS"
+          - text "XS"
+      - combobox "Choose size" value="XS" [focusable=True]
+        - MenuListPopup
+          - option "XS" [focusable=True, selected=True]
+          - option "S" [focusable=True]
+          - option "M" [focusable=True]
+          - option "L" [focusable=True]
+          - option "XL" [focusable=True]
+    - LabelText
+      - text "Quantity"
+        - text "Quantity"
+      - combobox "Choose quantity" value="1" [focusable=True]
+        - MenuListPopup
+          - option "1" [focusable=True, selected=True]
+          - option "2" [focusable=True]
+          - option "3" [focusable=True]
+          - option "4" [focusable=True]
+          - option "5" [focusable=True]
+          - option "6" [focusable=True]
+    - button "Add to Bag" [focused=True, focusable=True]
+      - text "Add"
+        - text "Add"
+      - text "to"
+        - text "to"
+      - text "Bag"
+        - text "Bag"
+    - strong
+      - text "Shipping & delivery"
+        - text "Shipping & delivery"
+    - LineBreak
+      - text
+    - text "Estimated in 3–5 business days"
+      - text "Estimated in 3–5 business days"
+    - strong
+      - text "Easy returns"
+        - text "Easy returns"
+    - LineBreak
+      - text
+    - text "Return most items within 30 days"
+      - text "Return most items within 30 days"
+    - heading "Product details" [level=2]
+      - text "Product details"
+        - text "Product details"
+    - list
+      - listitem [level=1]
+        - text "Relaxed fit"
+          - text "Relaxed fit"
+      - listitem [level=1]
+        - text "Pleated neckline"
+          - text "Pleated neckline"
+      - listitem [level=1]
+        - text "Easy-care fabric"
+          - text "Easy-care fabric"
+  - contentinfo
+    - text "macy's"
+      - text "macy's"
+    - paragraph
+      - text "Great style, thoughtful gifts and memorable moments—all in one place."
+        - text "Great style, thoughtful gifts and memorable moments"
+        - text "—all in one place."
+    - heading "CUSTOMER SERVICE" [level=3]
+      - text "CUSTOMER SERVICE"
+        - text "CUSTOMER SERVICE"
+    - link "Order Status" [focusable=True]
+      - text "Order Status"
+        - text "Order Status"
+    - link "Shopping Bag" [focusable=True]
+      - text "Shopping Bag"
+        - text "Shopping Bag"
+    - link "My Lists" [focusable=True]
+      - text "My Lists"
+        - text "My Lists"
+    - heading "GIFTS & EVENTS" [level=3]
+      - text "GIFTS & EVENTS"
+        - text "GIFTS & EVENTS"
+    - link "E-Gift Cards" [focusable=True]
+      - text "E-Gift Cards"
+        - text "E-Gift Cards"
+    - link "Wedding Registry" [focusable=True]
+      - text "Wedding Registry"
+        - text "Wedding Registry"
+    - link "Giftable Toys" [focusable=True]
+      - text "Giftable Toys"
+        - text "Giftable Toys"
+    - heading "POPULAR SHOPS" [level=3]
+      - text "POPULAR SHOPS"
+        - text "POPULAR SHOPS"
+    - link "Trending Now" [focusable=True]
+      - text "Trending Now"
+        - text "Trending Now"
+    - link "Kitchen Sale" [focusable=True]
+      - text "Kitchen Sale"
+        - text "Kitchen Sale"
+    - link "Clearance" [focusable=True]
+      - text "Clearance"
+        - text "Clearance"
+    - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."

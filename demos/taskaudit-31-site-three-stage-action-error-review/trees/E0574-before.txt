@@ -1,0 +1,129 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - paragraph
+      - text "HEALTH INFORMATION"
+        - text "HEALTH INFORMATION"
+    - heading "Diseases and conditions" [level=1]
+      - text "Diseases and conditions"
+        - text "Diseases and conditions"
+    - paragraph
+      - text "Explore clear, expert-reviewed information about symptoms, causes, diagnosis and treatment."
+        - text "Explore clear, expert-reviewed information about symptoms, causes, diagnosis and treatment."
+    - LabelText
+      - text "Search diseases and conditions"
+        - text "Search diseases and conditions"
+      - entry "Search diseases and conditions" [focused=True, focusable=True]
+    - link "REPRODUCTIVE HEALTH Female infertility Learn about the evaluation and treatment of factors that can make pregnancy di..." [focusable=True]
+      - text "REPRODUCTIVE HEALTH"
+        - text "REPRODUCTIVE HEALTH"
+      - heading "Female infertility" [level=2]
+        - text "Female infertility"
+          - text "Female infertility"
+      - paragraph
+        - text "Learn about the evaluation and treatment of factors that can make pregnancy difficult."
+          - text "Learn about the evaluation and treatment of factors that can make"
+          - text "pregnancy difficult."
+      - text "Read more"
+        - text "Read more"
+    - link "SYMPTOMS Fever A temporary rise in body temperature, often caused by an infection or inflammatory response. Read more" [focusable=True]
+      - text "SYMPTOMS"
+        - text "SYMPTOMS"
+      - heading "Fever" [level=2]
+        - text "Fever"
+          - text "Fever"
+      - paragraph
+        - text "A temporary rise in body temperature, often caused by an infection or inflammatory response."
+          - text "A temporary rise in body temperature, often caused by an infection"
+          - text "or inflammatory response."
+      - text "Read more"
+        - text "Read more"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

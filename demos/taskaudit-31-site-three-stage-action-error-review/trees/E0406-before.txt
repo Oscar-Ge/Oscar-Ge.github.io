@@ -1,0 +1,654 @@
+- document "Steam Store" [focused=True, focusable=True]
+  - banner
+    - link "Steam Store home" [focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - navigation "Main navigation"
+      - link "STORE" [focusable=True]
+        - text "STORE"
+          - text "STORE"
+      - link "COMMUNITY" [focusable=True]
+        - text "COMMUNITY"
+          - text "COMMUNITY"
+      - button "ALEX" [focusable=True]
+        - text "ALEX"
+          - text "ALEX"
+    - button "Notifications" [focusable=True]
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - link "Your Store" [focusable=True]
+    - text "Your Store"
+      - text "Your Store"
+  - link "Browse" [focusable=True]
+    - text "Browse"
+      - text "Browse"
+  - link "Charts" [focusable=True]
+    - text "Charts"
+      - text "Charts"
+  - link "Upcoming" [focusable=True]
+    - text "Upcoming"
+      - text "Upcoming"
+  - link "Points Shop" [focusable=True]
+    - text "Points Shop"
+      - text "Points Shop"
+  - search
+    - entry "Search the store" [focusable=True]
+    - button "Submit search" [focused=True, focusable=True]
+  - main
+    - sectionheader
+      - text "STEAM DISCOVERY"
+        - text "STEAM DISCOVERY"
+      - heading "Browse all games" [level=1]
+        - text "Browse all games"
+          - text "Browse all games"
+      - paragraph
+        - text "Refine the catalog by tags, price, features, and release status."
+          - text "Refine the catalog by tags, price, features, and release status."
+    - text "14"
+      - text "14"
+    - text "results"
+      - text "results"
+    - LabelText
+      - text "Sort by"
+        - text "Sort by"
+      - combobox "Sort games" value="Relevance" [focusable=True]
+        - MenuListPopup
+          - option "Relevance" [focusable=True, selected=True]
+          - option "User reviews" [focusable=True]
+          - option "Daily players" [focusable=True]
+          - option "Release date (newest)" [focusable=True]
+          - option "Price (low to high)" [focusable=True]
+    - complementary
+      - text "Narrow results"
+        - text "Narrow results"
+      - group "TAGS"
+        - Legend
+          - text "TAGS"
+            - text "TAGS"
+        - LabelText
+          - checkbox "Adventure" [focusable=True]
+          - text "Adventure"
+            - text "Adventure"
+        - LabelText
+          - checkbox "JRPG" [focusable=True]
+          - text "JRPG"
+            - text "JRPG"
+        - LabelText
+          - checkbox "Simulation" [focusable=True]
+          - text "Simulation"
+            - text "Simulation"
+        - LabelText
+          - checkbox "Massively Multiplayer" [focusable=True]
+          - text "Massively Multiplayer"
+            - text "Massively Multiplayer"
+        - LabelText
+          - checkbox "Farming" [focusable=True]
+          - text "Farming"
+            - text "Farming"
+        - LabelText
+          - checkbox "Crafting" [focusable=True]
+          - text "Crafting"
+            - text "Crafting"
+      - group "MAXIMUM PRICE"
+        - Legend
+          - text "MAXIMUM PRICE"
+            - text "MAXIMUM PRICE"
+        - combobox "Maximum price" value="Any price" [focusable=True]
+          - MenuListPopup
+            - option "Any price" [focusable=True, selected=True]
+            - option "Under $10" [focusable=True]
+            - option "Under $20" [focusable=True]
+            - option "Under $30" [focusable=True]
+      - group "FEATURES & STATUS"
+        - Legend
+          - text "FEATURES & STATUS"
+            - text "FEATURES & STATUS"
+        - LabelText
+          - checkbox "VR Supported" [focusable=True]
+          - text "VR Supported"
+            - text "VR Supported"
+        - LabelText
+          - checkbox "Early Access" [focusable=True]
+          - text "Early Access"
+            - text "Early Access"
+        - LabelText
+          - checkbox "Free to Play" [focusable=True]
+          - text "Free to Play"
+            - text "Free to Play"
+    - article
+      - link "Dota 2 cover TOP RESULT" [focusable=True]
+        - image "Dota 2 cover"
+        - text "TOP RESULT"
+          - text "TOP RESULT"
+      - link "Dota 2" [focusable=True]
+        - heading "Dota 2" [level=2]
+          - text "Dota 2"
+            - text "Dota 2"
+      - button "Add Dota 2 to wishlist" [focusable=True]
+      - paragraph
+        - text "Every day, millions of players enter battle as one of over a hundred heroes."
+          - text "Every day, millions of players enter battle as one of over a hundred heroes."
+      - text "Action"
+        - text "Action"
+      - text "Massively Multiplayer"
+        - text "Massively Multiplayer"
+      - text "Strategy"
+        - text "Strategy"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "90"
+        - text "90"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Jul 9, 2013"
+        - text "Jul 9, 2013"
+      - strong
+        - text "Free to Play"
+          - text "Free to Play"
+      - button "Play game" [focusable=True]
+        - text "Play game"
+          - text "Play game"
+    - article
+      - link "Cities: Skylines cover" [focusable=True]
+        - image "Cities: Skylines cover"
+      - link "Cities: Skylines" [focusable=True]
+        - heading "Cities: Skylines" [level=2]
+          - text "Cities: Skylines"
+            - text "Cities: Skylines"
+      - button "Add Cities: Skylines to wishlist" [focusable=True]
+      - paragraph
+        - text "Build the city of your dreams and manage its living, breathing systems."
+          - text "Build the city of your dreams and manage its living, breathing systems."
+      - text "Simulation"
+        - text "Simulation"
+      - text "City Builder"
+        - text "City Builder"
+      - text "Strategy"
+        - text "Strategy"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "92"
+        - text "92"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Mar 10, 2015"
+        - text "Mar 10, 2015"
+      - strong
+        - text "$29.99"
+          - text "$29.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Fallout 4 cover" [focusable=True]
+        - image "Fallout 4 cover"
+      - link "Fallout 4" [focusable=True]
+        - heading "Fallout 4" [level=2]
+          - text "Fallout 4"
+            - text "Fallout 4"
+      - button "Add Fallout 4 to wishlist" [focusable=True]
+      - paragraph
+        - text "Explore a vast open world devastated by nuclear war and shape its future."
+          - text "Explore a vast open world devastated by nuclear war and shape its future."
+      - text "Adventure"
+        - text "Adventure"
+      - text "RPG"
+        - text "RPG"
+      - text "Open World"
+        - text "Open World"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "83"
+        - text "83"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Nov 10, 2015"
+        - text "Nov 10, 2015"
+      - strong
+        - text "$19.99"
+          - text "$19.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Sea of Stars cover" [focusable=True]
+        - image "Sea of Stars cover"
+      - link "Sea of Stars" [focusable=True]
+        - heading "Sea of Stars" [level=2]
+          - text "Sea of Stars"
+            - text "Sea of Stars"
+      - button "Add Sea of Stars to wishlist" [focusable=True]
+      - paragraph
+        - text "A turn-based RPG inspired by the classics, with a radiant world to explore."
+          - text "A turn-based RPG inspired by the classics, with a radiant world to explore."
+      - text "Adventure"
+        - text "Adventure"
+      - text "JRPG"
+        - text "JRPG"
+      - text "RPG"
+        - text "RPG"
+      - text "Overwhelmingly Positive"
+        - text "Overwhelmingly Positive"
+      - text "("
+        - text "("
+      - text "96"
+        - text "96"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Aug 29, 2023"
+        - text "Aug 29, 2023"
+      - text "-50%"
+        - text "-50%"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "34.99"
+          - text "34.99"
+      - strong
+        - text "$17.49"
+          - text "$17.49"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Chained Echoes cover" [focusable=True]
+        - image "Chained Echoes cover"
+      - link "Chained Echoes" [focusable=True]
+        - heading "Chained Echoes" [level=2]
+          - text "Chained Echoes"
+            - text "Chained Echoes"
+      - button "Add Chained Echoes to wishlist" [focusable=True]
+      - paragraph
+        - text "A story-driven JRPG where heroes travel a continent torn by war."
+          - text "A story-driven JRPG where heroes travel a continent torn by war."
+      - text "Adventure"
+        - text "Adventure"
+      - text "JRPG"
+        - text "JRPG"
+      - text "RPG"
+        - text "RPG"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "94"
+        - text "94"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Dec 8, 2022"
+        - text "Dec 8, 2022"
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Hades cover" [focusable=True]
+        - image "Hades cover"
+      - link "Hades" [focusable=True]
+        - heading "Hades" [level=2]
+          - text "Hades"
+            - text "Hades"
+      - button "Add Hades to wishlist" [focusable=True]
+      - paragraph
+        - text "Defy the god of the dead as you battle out of the Underworld."
+          - text "Defy the god of the dead as you battle out of the Underworld."
+      - text "Adventure"
+        - text "Adventure"
+      - text "Action"
+        - text "Action"
+      - text "Roguelike"
+        - text "Roguelike"
+      - text "Overwhelmingly Positive"
+        - text "Overwhelmingly Positive"
+      - text "("
+        - text "("
+      - text "98"
+        - text "98"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Sep 17, 2020"
+        - text "Sep 17, 2020"
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "DREDGE cover" [focusable=True]
+        - image "DREDGE cover"
+      - link "DREDGE" [focusable=True]
+        - heading "DREDGE" [level=2]
+          - text "DREDGE"
+            - text "DREDGE"
+      - button "Remove DREDGE from wishlist" [focusable=True]
+      - paragraph
+        - text "Captain your fishing trawler across remote isles and the surrounding depths."
+          - text "Captain your fishing trawler across remote isles and the surrounding depths."
+      - text "Adventure"
+        - text "Adventure"
+      - text "Fishing"
+        - text "Fishing"
+      - text "Exploration"
+        - text "Exploration"
+      - text "Overwhelmingly Positive"
+        - text "Overwhelmingly Positive"
+      - text "("
+        - text "("
+      - text "95"
+        - text "95"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Mar 30, 2023"
+        - text "Mar 30, 2023"
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Wanderer's Vale cover" [focusable=True]
+        - image "Wanderer's Vale cover"
+      - link "Wanderer's Vale" [focusable=True]
+        - heading "Wanderer's Vale" [level=2]
+          - text "Wanderer's Vale"
+            - text "Wanderer's Vale"
+      - button "Add Wanderer's Vale to wishlist" [focusable=True]
+      - paragraph
+        - text "Chart a hand-painted wilderness that changes with every expedition."
+          - text "Chart a hand-painted wilderness that changes with every expedition."
+      - text "Adventure"
+        - text "Adventure"
+      - text "Exploration"
+        - text "Exploration"
+      - text "RPG"
+        - text "RPG"
+      - text "Overwhelmingly Positive"
+        - text "Overwhelmingly Positive"
+      - text "("
+        - text "("
+      - text "97"
+        - text "97"
+      - text "%)"
+        - text "%)"
+      - text "EARLY ACCESS"
+        - text "EARLY ACCESS"
+      - text "Released"
+        - text "Released"
+      - text "May 22, 2026"
+        - text "May 22, 2026"
+      - strong
+        - text "$19.99"
+          - text "$19.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Slime Rancher 2 cover" [focusable=True]
+        - image "Slime Rancher 2 cover"
+      - link "Slime Rancher 2" [focusable=True]
+        - heading "Slime Rancher 2" [level=2]
+          - text "Slime Rancher 2"
+            - text "Slime Rancher 2"
+      - button "Add Slime Rancher 2 to wishlist" [focusable=True]
+      - paragraph
+        - text "Continue the adventures of Beatrix LeBeau across Rainbow Island."
+          - text "Continue the adventures of Beatrix LeBeau across Rainbow Island."
+      - text "Adventure"
+        - text "Adventure"
+      - text "Simulation"
+        - text "Simulation"
+      - text "Farming"
+        - text "Farming"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "93"
+        - text "93"
+      - text "%)"
+        - text "%)"
+      - text "EARLY ACCESS"
+        - text "EARLY ACCESS"
+      - text "Released"
+        - text "Released"
+      - text "Sep 22, 2022"
+        - text "Sep 22, 2022"
+      - strong
+        - text "$29.99"
+          - text "$29.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Zenith: Nexus cover" [focusable=True]
+        - image "Zenith: Nexus cover"
+      - link "Zenith: Nexus" [focusable=True]
+        - heading "Zenith: Nexus" [level=2]
+          - text "Zenith: Nexus"
+            - text "Zenith: Nexus"
+      - button "Add Zenith: Nexus to wishlist" [focusable=True]
+      - paragraph
+        - text "A shared-world VR action RPG with soaring traversal and social adventures."
+          - text "A shared-world VR action RPG with soaring traversal and social adventures."
+      - text "Massively Multiplayer"
+        - text "Massively Multiplayer"
+      - text "RPG"
+        - text "RPG"
+      - text "Action"
+        - text "Action"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "88"
+        - text "88"
+      - text "%)"
+        - text "%)"
+      - text "VR SUPPORTED"
+        - text "VR SUPPORTED"
+      - text "Released"
+        - text "Released"
+      - text "Nov 12, 2025"
+        - text "Nov 12, 2025"
+      - strong
+        - text "$29.99"
+          - text "$29.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "OrbusVR: Reborn cover" [focusable=True]
+        - image "OrbusVR: Reborn cover"
+      - link "OrbusVR: Reborn" [focusable=True]
+        - heading "OrbusVR: Reborn" [level=2]
+          - text "OrbusVR: Reborn"
+            - text "OrbusVR: Reborn"
+      - button "Add OrbusVR: Reborn to wishlist" [focusable=True]
+      - paragraph
+        - text "Explore a fully realized fantasy world designed from the ground up for VR."
+          - text "Explore a fully realized fantasy world designed from the ground up for VR."
+      - text "Massively Multiplayer"
+        - text "Massively Multiplayer"
+      - text "RPG"
+        - text "RPG"
+      - text "Adventure"
+        - text "Adventure"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "82"
+        - text "82"
+      - text "%)"
+        - text "%)"
+      - text "VR SUPPORTED"
+        - text "VR SUPPORTED"
+      - text "Released"
+        - text "Released"
+      - text "Apr 23, 2019"
+        - text "Apr 23, 2019"
+      - strong
+        - text "$19.99"
+          - text "$19.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "A Township Tale cover" [focusable=True]
+        - image "A Township Tale cover"
+      - link "A Township Tale" [focusable=True]
+        - heading "A Township Tale" [level=2]
+          - text "A Township Tale"
+            - text "A Township Tale"
+      - button "Add A Township Tale to wishlist" [focusable=True]
+      - paragraph
+        - text "Forge, craft, explore, and build a home together in an immersive VR world."
+          - text "Forge, craft, explore, and build a home together in an immersive VR world."
+      - text "Massively Multiplayer"
+        - text "Massively Multiplayer"
+      - text "Crafting"
+        - text "Crafting"
+      - text "Adventure"
+        - text "Adventure"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "86"
+        - text "86"
+      - text "%)"
+        - text "%)"
+      - text "VR SUPPORTED"
+        - text "VR SUPPORTED"
+      - text "Released"
+        - text "Released"
+      - text "Jul 17, 2025"
+        - text "Jul 17, 2025"
+      - strong
+        - text "$9.99"
+          - text "$9.99"
+      - button "Add to cart" [focusable=True]
+        - text "Add to cart"
+          - text "Add to"
+          - text "cart"
+    - article
+      - link "Meadow Makers cover" [focusable=True]
+        - image "Meadow Makers cover"
+      - link "Meadow Makers" [focusable=True]
+        - heading "Meadow Makers" [level=2]
+          - text "Meadow Makers"
+            - text "Meadow Makers"
+      - button "Add Meadow Makers to wishlist" [focusable=True]
+      - paragraph
+        - text "Grow a communal farm, craft clever tools, and restore a cozy valley together."
+          - text "Grow a communal farm, craft clever tools, and restore a cozy valley together."
+      - text "Farming"
+        - text "Farming"
+      - text "Crafting"
+        - text "Crafting"
+      - text "Simulation"
+        - text "Simulation"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "91"
+        - text "91"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Aug 14, 2026"
+        - text "Aug 14, 2026"
+      - strong
+        - text "Free to Play"
+          - text "Free to Play"
+      - button "Play game" [focusable=True]
+        - text "Play game"
+          - text "Play game"
+    - article
+      - link "Homestead Horizons cover" [focusable=True]
+        - image "Homestead Horizons cover"
+      - link "Homestead Horizons" [focusable=True]
+        - heading "Homestead Horizons" [level=2]
+          - text "Homestead Horizons"
+            - text "Homestead Horizons"
+      - button "Add Homestead Horizons to wishlist" [focusable=True]
+      - paragraph
+        - text "Turn an empty island into a thriving free-to-play crafting community."
+          - text "Turn an empty island into a thriving free-to-play crafting community."
+      - text "Farming"
+        - text "Farming"
+      - text "Crafting"
+        - text "Crafting"
+      - text "Simulation"
+        - text "Simulation"
+      - text "Very Positive"
+        - text "Very Positive"
+      - text "("
+        - text "("
+      - text "87"
+        - text "87"
+      - text "%)"
+        - text "%)"
+      - text "Released"
+        - text "Released"
+      - text "Aug 9, 2026"
+        - text "Aug 9, 2026"
+      - strong
+        - text "Free to Play"
+          - text "Free to Play"
+      - button "Play game" [focusable=True]
+        - text "Play game"
+          - text "Play game"
+  - contentinfo
+    - link "STEAM" [focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - paragraph
+      - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+        - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+    - link "Browse Store" [focusable=True]
+      - text "Browse Store"
+        - text "Browse Store"
+    - link "Community" [focusable=True]
+      - text "Community"
+        - text "Community"
+    - link "Points Shop" [focusable=True]
+      - text "Points Shop"
+        - text "Points Shop"

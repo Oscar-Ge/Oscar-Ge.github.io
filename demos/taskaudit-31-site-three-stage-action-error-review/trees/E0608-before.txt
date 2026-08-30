@@ -1,0 +1,415 @@
+- document "craigslist — local classifieds and forums" [focused=True, focusable=True]
+  - banner
+    - button "Craigslist home" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "Chicago" [focusable=True]
+      - text "Chicago"
+        - text "Chicago"
+    - form
+      - entry "Search craigslist" [focusable=True]
+      - button "Submit search" [focusable=True]
+        - text "SEARCH"
+          - text "SEARCH"
+    - navigation
+      - button "saved" [focusable=True]
+        - text "saved"
+          - text "saved"
+      - button "account" [focusable=True]
+        - text "account"
+          - text "account"
+      - button "post an ad" [focusable=True]
+        - text "post an ad"
+          - text "post an ad"
+  - main
+    - button "back" [focusable=True]
+      - text "back"
+        - text "back"
+    - text "/"
+      - text "/"
+    - text "Chicago"
+      - text "Chicago"
+    - text "/"
+      - text "/"
+    - text "apartments / housing"
+      - text "apartments / housing"
+    - text "CHICAGO"
+      - text "CHICAGO"
+    - text ","
+      - text ","
+    - text "IL"
+      - text "IL"
+    - heading "apartments / housing" [level=1]
+      - text "apartments / housing"
+        - text "apartments / housing"
+    - paragraph
+      - text "3"
+        - text "3"
+      - text "result"
+        - text "result"
+      - text "s"
+        - text "s"
+      - text "nearby"
+        - text "nearby"
+    - button "save this list" [focusable=True]
+      - text "save this list"
+        - text "save this list"
+    - form
+      - entry "Search within results" [focusable=True]
+      - combobox "Category" value="apartments / housing" [focusable=True]
+        - MenuListPopup
+          - option "all categories" [focusable=True]
+          - option "apartments / housing" [focusable=True, selected=True]
+          - option "furniture" [focusable=True]
+          - option "jobs" [focusable=True]
+          - option "lessons & tutoring" [focusable=True]
+          - option "pets" [focusable=True]
+          - option "tickets" [focusable=True]
+          - option "vacation rentals" [focusable=True]
+          - option "appliances" [focusable=True]
+          - option "cell phones" [focusable=True]
+          - option "garage & moving sales" [focusable=True]
+          - option "parking & storage" [focusable=True]
+          - option "services" [focusable=True]
+          - option "antiques" [focusable=True]
+      - button "search" [focusable=True]
+        - text "search"
+          - text "search"
+    - complementary
+      - heading "FILTERS" [level=2]
+        - text "FILTERS"
+          - text "FILTERS"
+      - LabelText
+        - checkbox "search titles only" [focusable=True]
+        - text "search titles only"
+          - text "search titles only"
+      - LabelText
+        - checkbox "only listings with images" [focused=True, focusable=True]
+        - text "only listings with images"
+          - text "only listings with images"
+      - LabelText
+        - checkbox "hide duplicate ads" [focusable=True]
+        - text "hide duplicate ads"
+          - text "hide duplicate ads"
+      - button "PRICE" [focusable=True]
+        - text "PRICE"
+          - text "PRICE"
+      - LabelText
+        - text "MIN"
+          - text "MIN"
+        - spinbutton "MIN" [focusable=True]
+      - text "—"
+        - text "—"
+      - LabelText
+        - text "MAX"
+          - text "MAX"
+        - spinbutton "MAX" [focusable=True]
+      - button "HOUSING DETAILS" [focusable=True]
+        - text "HOUSING DETAILS"
+          - text "HOUSING DETAILS"
+      - LabelText
+        - text "BEDROOMS"
+          - text "BEDROOMS"
+        - combobox "Minimum bedrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - text "BATHROOMS"
+          - text "BATHROOMS"
+        - combobox "Minimum bathrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - checkbox "furnished" [focusable=True]
+        - text "furnished"
+          - text "furnished"
+      - LabelText
+        - checkbox "no broker fee" [focusable=True]
+        - text "no broker fee"
+          - text "no broker fee"
+      - LabelText
+        - checkbox "attached garage" [focusable=True]
+        - text "attached garage"
+          - text "attached garage"
+      - LabelText
+        - checkbox "available within 30 days" [focusable=True]
+        - text "available within 30 days"
+          - text "available within 30 days"
+      - button "LISTING DETAILS" [focusable=True]
+        - text "LISTING DETAILS"
+          - text "LISTING DETAILS"
+      - LabelText
+        - text "CONDITION"
+          - text "CONDITION"
+        - combobox "CONDITION" value="any condition" [focusable=True]
+          - MenuListPopup
+            - option "any condition" [focusable=True, selected=True]
+            - option "good" [focusable=True]
+            - option "like new" [focusable=True]
+            - option "excellent" [focusable=True]
+            - option "fair" [focusable=True]
+      - LabelText
+        - text "EMPLOYMENT TYPE"
+          - text "EMPLOYMENT TYPE"
+        - combobox "EMPLOYMENT TYPE" value="any type" [focusable=True]
+          - MenuListPopup
+            - option "any type" [focusable=True, selected=True]
+            - option "full-time" [focusable=True]
+            - option "part-time" [focusable=True]
+      - LabelText
+        - checkbox "accepts cryptocurrency" [focusable=True]
+        - text "accepts cryptocurrency"
+          - text "accepts cryptocurrency"
+      - button "AMENITIES" [focusable=True]
+        - text "AMENITIES"
+          - text "AMENITIES"
+      - LabelText
+        - checkbox "dog friendly" [focusable=True]
+        - text "dog friendly"
+          - text "dog friendly"
+      - LabelText
+        - checkbox "air conditioning" [focusable=True]
+        - text "air conditioning"
+          - text "air conditioning"
+      - LabelText
+        - checkbox "carport" [focusable=True]
+        - text "carport"
+          - text "carport"
+      - button "POSTED DATE" [focusable=True]
+        - text "POSTED DATE"
+          - text "POSTED DATE"
+      - LabelText
+        - text "WHEN"
+          - text "WHEN"
+        - combobox "WHEN" value="any time" [focusable=True]
+          - MenuListPopup
+            - option "any time" [focusable=True, selected=True]
+            - option "posted today" [focusable=True]
+            - option "available within 30 days" [focusable=True]
+      - LabelText
+        - text "SPECIFIC DATE"
+          - text "SPECIFIC DATE"
+        - Date "SPECIFIC DATE" [focusable=True]
+          - spinbutton "Month Month" value="0" [focusable=True]
+            - text "mm"
+              - text "mm"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="0" [focusable=True]
+            - text "dd"
+              - text "dd"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="0" [focusable=True]
+            - text "yyyy"
+              - text "yyyy"
+          - button "Show date picker" [focusable=True]
+      - button "DISTANCE" [focusable=True]
+        - text "DISTANCE"
+          - text "DISTANCE"
+      - LabelText
+        - text "ZIP CODE"
+          - text "ZIP CODE"
+        - entry "ZIP CODE" [focusable=True]
+      - LabelText
+        - text "WITHIN"
+          - text "WITHIN"
+        - combobox "WITHIN" value="any distance" [focusable=True]
+          - MenuListPopup
+            - option "any distance" [focusable=True, selected=True]
+            - option "10 miles" [focusable=True]
+            - option "25 miles" [focusable=True]
+            - option "50 miles" [focusable=True]
+            - option "100 miles" [focusable=True]
+      - button "reset all filters" [focusable=True]
+        - text "reset all filters"
+          - text "reset all filters"
+    - LabelText
+      - text "sort by"
+        - text "sort by"
+      - combobox "Sort listings" value="newest" [focusable=True]
+        - MenuListPopup
+          - option "newest" [focusable=True, selected=True]
+          - option "price: low to high" [focusable=True]
+          - option "price: high to low" [focusable=True]
+          - option "oldest" [focusable=True]
+    - generic "View options"
+      - button "List view" [focusable=True]
+      - button "Grid view" [focusable=True]
+      - button "Map view" [focusable=True]
+    - article
+      - button "View Laundry in unit — sunny 2BR / 2BA" [focusable=True]
+        - image "Laundry in unit — sunny 2BR / 2BA"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "LINCOLN PARK"
+        - text "LINCOLN PARK"
+      - text "·"
+        - text "·"
+      - text "2.9"
+        - text "2.9"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 11:08 AM"
+        - text "TODAY, 11:08 AM"
+      - button "Laundry in unit — sunny 2BR / 2BA" [focusable=True]
+        - text "Laundry in unit — sunny 2BR / 2BA"
+          - text "Laundry in unit — sunny 2BR / 2BA"
+      - paragraph
+        - text "Bright apartment with in-unit laundry, balcony, two bedrooms, two full bathrooms, and garage parking."
+          - text "Bright apartment with in-unit laundry, balcony, two bedrooms, two full bathrooms, and garage parking."
+      - text "2"
+        - text "2"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$3,200"
+          - text "$3,200"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Cozy one bedroom garden apartment" [focusable=True]
+        - image "Cozy one bedroom garden apartment"
+        - text "NEW TODAY"
+          - text "NEW TODAY"
+      - text "RAVENSWOOD"
+        - text "RAVENSWOOD"
+      - text "·"
+        - text "·"
+      - text "5.2"
+        - text "5.2"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "TODAY, 9:45 AM"
+        - text "TODAY, 9:45 AM"
+      - button "Cozy one bedroom garden apartment" [focusable=True]
+        - text "Cozy one bedroom garden apartment"
+          - text "Cozy one bedroom garden apartment"
+      - paragraph
+        - text "Quiet one-bedroom, one-bath garden apartment with shared laundry."
+          - text "Quiet one-bedroom, one-bath garden apartment with shared laundry."
+      - text "1"
+        - text "1"
+      - text "bd"
+        - text "bd"
+      - text "1"
+        - text "1"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$2,100"
+          - text "$2,100"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+    - article
+      - button "View Spacious three bedroom near the lake" [focusable=True]
+        - image "Spacious three bedroom near the lake"
+      - text "EDGEWATER"
+        - text "EDGEWATER"
+      - text "·"
+        - text "·"
+      - text "7.5"
+        - text "7.5"
+      - text "MI"
+        - text "MI"
+      - text "·"
+        - text "·"
+      - text "AUG 15"
+        - text "AUG 15"
+      - button "Spacious three bedroom near the lake" [focusable=True]
+        - text "Spacious three bedroom near the lake"
+          - text "Spacious three bedroom near the lake"
+      - paragraph
+        - text "Three-bedroom, two-bath apartment with lake views, updated kitchen, and laundry room."
+          - text "Three-bedroom, two-bath apartment with lake views, updated kitchen, and laundry room."
+      - text "3"
+        - text "3"
+      - text "bd"
+        - text "bd"
+      - text "2"
+        - text "2"
+      - text "ba"
+        - text "ba"
+      - button "Save to favorites" [focusable=True]
+      - strong
+        - text "$3,850"
+          - text "$3,850"
+      - button "view details" [focusable=True]
+        - text "view details"
+          - text "view details"
+  - contentinfo
+    - button "c craigslist" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "help & safety" [focusable=True]
+      - text "help & safety"
+        - text "help & safety"
+    - button "privacy" [focusable=True]
+      - text "privacy"
+        - text "privacy"
+    - button "terms" [focusable=True]
+      - text "terms"
+        - text "terms"
+    - button "about" [focusable=True]
+      - text "about"
+        - text "about"
+    - paragraph
+      - text "© 2026 craigslist · local connections, simply made"
+        - text "© 2026 craigslist · local connections, simply made"
+  - dialog
+    - button "Close" [focusable=True]
+    - text "CHOOSE YOUR AREA"
+      - text "CHOOSE YOUR AREA"
+    - heading "Browse a local craigslist" [level=2]
+      - text "Browse a local craigslist"
+        - text "Browse a local craigslist"
+    - paragraph
+      - text "Your location sets the default area for search results."
+        - text "Your location sets the default area for search results."
+    - button "Chicago IL" [focusable=True]
+      - text "Chicago"
+        - text "Chicago"
+      - text "IL"
+        - text "IL"
+    - button "New York City NY" [focusable=True]
+      - text "New York City"
+        - text "New York City"
+      - text "NY"
+        - text "NY"
+    - button "Indianapolis IN" [focusable=True]
+      - text "Indianapolis"
+        - text "Indianapolis"
+      - text "IN"
+        - text "IN"
+    - button "Phoenix AZ" [focusable=True]
+      - text "Phoenix"
+        - text "Phoenix"
+      - text "AZ"
+        - text "AZ"
+    - button "Austin TX" [focusable=True]
+      - text "Austin"
+        - text "Austin"
+      - text "TX"
+        - text "TX"

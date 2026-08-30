@@ -1,0 +1,269 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Anywhere" [focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Anywhere"
+          - text "Anywhere"
+    - button "When Add dates" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "Add dates"
+          - text "Add dates"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+    - strong
+      - text "Adults"
+        - text "Adults"
+    - text "Ages 13 or above"
+      - text "Ages 13 or above"
+    - button "Remove one Adults" [disabled=True]
+    - text "1"
+      - text "1"
+    - button "Add one Adults" [focusable=True]
+    - strong
+      - text "Children"
+        - text "Children"
+    - text "Ages 2–12"
+      - text "Ages 2–12"
+    - button "Remove one Children" [disabled=True]
+    - text "0"
+      - text "0"
+    - button "Add one Children" [focusable=True]
+    - strong
+      - text "Pets"
+        - text "Pets"
+    - text "Bringing a service animal?"
+      - text "Bringing a service animal?"
+    - button "Remove one Pets" [disabled=True]
+    - text "0"
+      - text "0"
+    - button "Add one Pets" [focusable=True]
+    - button "Search" [focusable=True]
+      - text "Search"
+        - text "Search"
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Amazing pools" [level=1]
+      - text "Amazing pools"
+        - text "Amazing pools"
+    - text "1 guest"
+      - text "1 guest"
+    - button "Refine" [focused=True, focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - button "Amazing pools" [focusable=True]
+      - text "Amazing pools"
+        - text "Amazing pools"
+    - article
+      - button "View Jungle Pool House" [focusable=True]
+        - image "Jungle Pool House"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Jungle Pool House to a wishlist" [focusable=True]
+      - button "Ubud, Indonesia" [focusable=True]
+        - text "Ubud, Indonesia"
+          - text "Ubud, Indonesia"
+      - text "4.98"
+        - text "4.98"
+      - paragraph
+        - text "Jungle Pool House"
+          - text "Jungle Pool House"
+      - paragraph
+        - text "Entire home · 2 beds"
+          - text "Entire home · 2 beds"
+      - strong
+        - text "$245"
+          - text "$245"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Mallorca Courtyard Retreat" [focusable=True]
+        - image "Mallorca Courtyard Retreat"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Mallorca Courtyard Retreat to a wishlist" [focusable=True]
+      - button "Sóller, Spain" [focusable=True]
+        - text "Sóller, Spain"
+          - text "Sóller, Spain"
+      - text "4.92"
+        - text "4.92"
+      - paragraph
+        - text "Mallorca Courtyard Retreat"
+          - text "Mallorca Courtyard Retreat"
+      - paragraph
+        - text "Entire home · 3 beds"
+          - text "Entire home · 3 beds"
+      - strong
+        - text "$285"
+          - text "$285"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"
+  - dialog "Filters"
+    - button "Close" [focusable=True]
+    - heading "Filters" [level=2]
+      - text "Filters"
+        - text "Filters"
+    - heading "Price range" [level=3]
+      - text "Price range"
+        - text "Price range"
+    - paragraph
+      - text "Nightly prices before fees and taxes"
+        - text "Nightly prices before fees and taxes"
+    - LabelText
+      - text "Minimum"
+        - text "Minimum"
+      - text "$"
+        - text "$"
+      - spinbutton "Minimum $" [focusable=True]
+    - text "–"
+      - text "–"
+    - LabelText
+      - text "Maximum"
+        - text "Maximum"
+      - text "$"
+        - text "$"
+      - spinbutton "Maximum $" [focusable=True]
+    - heading "Type of place" [level=3]
+      - text "Type of place"
+        - text "Type of place"
+    - button "Any type" [focusable=True]
+      - text "Any type"
+        - text "Any type"
+    - button "Entire home" [focusable=True]
+      - text "Entire home"
+        - text "Entire home"
+    - button "Private room" [focusable=True]
+      - text "Private room"
+        - text "Private room"
+    - button "Shared room" [focusable=True]
+      - text "Shared room"
+        - text "Shared room"
+    - heading "Booking options & amenities" [level=3]
+      - text "Booking options & amenities"
+        - text "Booking options & amenities"
+    - LabelText
+      - strong
+        - text "Free cancellation"
+          - text "Free cancellation"
+      - text "Plans change. Book with flexibility."
+        - text "Plans change. Book with flexibility."
+      - checkbox "Free cancellation Plans change. Book with flexibility." [focusable=True]
+    - LabelText
+      - strong
+        - text "Swimming pool"
+          - text "Swimming pool"
+      - text "Show stays with a private or shared pool."
+        - text "Show stays with a private or shared pool."
+      - checkbox "Swimming pool Show stays with a private or shared pool." [focusable=True]
+    - button "Clear all" [focusable=True]
+      - text "Clear all"
+        - text "Clear all"
+    - button "Show 2 places" [focusable=True]
+      - text "Show"
+        - text "Show"
+      - text "2"
+        - text "2"
+      - text
+        - text
+      - text "places"
+        - text "places"

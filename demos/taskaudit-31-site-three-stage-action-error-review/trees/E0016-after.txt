@@ -1,0 +1,137 @@
+- document "CarGurus | Shop, Sell & Research Cars" [focused=True, focusable=True]
+  - banner
+    - link "CarGurus home" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - navigation "Main navigation"
+      - link "Buy" [focusable=True]
+        - text "Buy"
+          - text "Buy"
+      - link "Sell" [focusable=True]
+        - text "Sell"
+          - text "Sell"
+      - link "Finance" [focusable=True]
+        - text "Finance"
+          - text "Finance"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+      - link "Price trends" [focusable=True]
+        - text "Price trends"
+          - text "Price trends"
+      - link "Careers" [focusable=True]
+        - text "Careers"
+          - text "Careers"
+    - link "0 saved cars" [focusable=True]
+      - text "Saved"
+        - text "Saved"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "SELL OR TRADE"
+        - text "SELL OR TRADE"
+    - heading "Get your instant offer" [level=1]
+      - text "Get your instant offer"
+        - text "Get your instant offer"
+    - paragraph
+      - text "Share a few details. Get a firm mock offer with no obligation and no dealership haggling."
+        - text "Share a few details. Get a firm mock offer with no obligation and no dealership haggling."
+    - text "Takes about 3 minutes"
+      - text "Takes about 3 minutes"
+    - text "Your data stays private"
+      - text "Your data stays private"
+    - text "No fees"
+      - text "No fees"
+    - text "1"
+      - text "1"
+    - heading "Tell us which car" [level=2]
+      - text "Tell us which car"
+        - text "Tell us which car"
+    - paragraph
+      - text "Use the VIN or your license plate."
+        - text "Use the VIN or your license plate."
+    - tablist
+      - button "VIN" [focusable=True]
+        - text "VIN"
+          - text "VIN"
+      - button "License plate" [focused=True, focusable=True]
+        - text "License plate"
+          - text "License plate"
+    - form
+      - LabelText
+        - text "State"
+          - text "State"
+        - combobox "State" value="Arizona" [focusable=True]
+          - MenuListPopup
+            - option "Arizona" [focusable=True, selected=True]
+            - option "Louisiana" [focusable=True]
+            - option "California" [focusable=True]
+            - option "New York" [focusable=True]
+            - option "Montana" [focusable=True]
+      - LabelText
+        - text "License plate"
+          - text "License plate"
+        - entry "License plate" [focusable=True, required=True]
+      - LabelText
+        - text "Mileage"
+          - text "Mileage"
+        - spinbutton "Mileage" [focusable=True]
+      - LabelText
+        - text "ZIP code"
+          - text "ZIP code"
+        - entry "ZIP code" [focusable=True]
+      - button "Find my car" [focusable=True]
+        - text "Find my car"
+          - text "Find my car"
+  - contentinfo
+    - link "Car Gurus" [focusable=True]
+      - text "Car"
+        - text "Car"
+      - strong
+        - text "Gurus"
+          - text "Gurus"
+    - paragraph
+      - text "Giving people the power to reach their destination with confidence."
+        - text "Giving people the power to reach their destination"
+        - text "with confidence."
+    - heading "Shop" [level=3]
+      - text "Shop"
+        - text "Shop"
+    - link "Used cars" [focusable=True]
+      - text "Used cars"
+        - text "Used cars"
+    - link "Car reviews" [focusable=True]
+      - text "Car reviews"
+        - text "Car reviews"
+    - link "Price trends" [focusable=True]
+      - text "Price trends"
+        - text "Price trends"
+    - heading "Sell & finance" [level=3]
+      - text "Sell & finance"
+        - text "Sell & finance"
+    - link "Get an offer" [focusable=True]
+      - text "Get an offer"
+        - text "Get an offer"
+    - link "Loan calculator" [focusable=True]
+      - text "Loan calculator"
+        - text "Loan calculator"
+    - link "Pre-qualify" [focusable=True]
+      - text "Pre-qualify"
+        - text "Pre-qualify"
+    - heading "Company" [level=3]
+      - text "Company"
+        - text "Company"
+    - link "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "Mock marketplace experience"
+      - text "Mock marketplace experience"
+    - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+      - text "© 2026 CarGurus concept. Synthetic data for demonstration only."
+    - text "Built for confident car shopping."
+      - text "Built for confident car shopping."

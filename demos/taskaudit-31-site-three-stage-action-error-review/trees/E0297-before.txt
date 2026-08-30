@@ -1,0 +1,324 @@
+- document "StubHub | Be There Live" [focused=True, focusable=True]
+  - banner
+    - button "StubHub home" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - navigation "Main navigation"
+      - button "Concerts" [focusable=True]
+        - text "Concerts"
+          - text "Concerts"
+      - button "Sports" [focusable=True]
+        - text "Sports"
+          - text "Sports"
+      - button "Theater" [focusable=True]
+        - text "Theater"
+          - text "Theater"
+      - button "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - button "Open cart with 0 items" [focusable=True]
+  - main
+    - text "YOUR NEXT GREAT STORY STARTS HERE"
+      - text "YOUR NEXT GREAT STORY STARTS HERE"
+    - heading "Be there for the moments that matter." [level=1]
+      - text "Be there for the"
+        - text "Be there for the"
+      - LineBreak
+        - text
+      - emphasis
+        - text "moments that matter."
+          - text "moments that"
+          - text "matter."
+    - paragraph
+      - text "Discover concerts, sports, and theatre events around the world. Every order is backed by our FanProtect Guarantee."
+        - text "Discover concerts, sports, and theatre events around the world. Every order"
+        - text "is backed by our FanProtect Guarantee."
+    - search
+      - entry "Search events" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - generic "Popular searches"
+      - text "Popular:"
+        - text "Popular:"
+      - button "Taylor Swift" [focusable=True]
+        - text "Taylor Swift"
+          - text "Taylor Swift"
+      - button "NHL in Boston" [focusable=True]
+        - text "NHL in Boston"
+          - text "NHL in Boston"
+      - button "Las Vegas theater" [focusable=True]
+        - text "Las Vegas theater"
+          - text "Las Vegas theater"
+      - button "Celine Dion" [focusable=True]
+        - text "Celine Dion"
+          - text "Celine Dion"
+    - region "Buyer benefits"
+      - strong
+        - text "FanProtect Guarantee"
+          - text "FanProtect Guarantee"
+      - text "Buy with confidence"
+        - text "Buy with confidence"
+      - strong
+        - text "Upfront pricing"
+          - text "Upfront pricing"
+      - text "See estimated fees"
+        - text "See estimated fees"
+      - strong
+        - text "Easy mobile entry"
+          - text "Easy mobile entry"
+      - text "Your tickets in one place"
+        - text "Your tickets in one place"
+    - text "HAPPENING SOON"
+      - text "HAPPENING SOON"
+    - heading "Events fans are loving" [level=2]
+      - text "Events fans are loving"
+        - text "Events fans are loving"
+    - button "Explore all" [focusable=True]
+      - text "Explore all"
+        - text "Explore all"
+    - article
+      - text "POP"
+        - text "POP"
+      - heading "Taylor Swift" [level=3]
+        - text "Taylor Swift"
+          - text "Taylor Swift"
+      - paragraph
+        - text "Fri, Aug 28 • 7:30 PM"
+          - text "Fri, Aug 28 • 7:30 PM"
+      - paragraph
+        - text "Allegiant Stadium"
+          - text "Allegiant Stadium"
+        - text ","
+          - text ","
+        - text "Las Vegas"
+          - text "Las Vegas"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$236"
+          - text "$236"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for Taylor Swift" [focusable=True]
+    - article
+      - text "POP"
+        - text "POP"
+      - heading "Celine Dion" [level=3]
+        - text "Celine Dion"
+          - text "Celine Dion"
+      - paragraph
+        - text "Sat, Oct 17 • 8:00 PM"
+          - text "Sat, Oct 17 • 8:00 PM"
+      - paragraph
+        - text "Stade de France"
+          - text "Stade de France"
+        - text ","
+          - text ","
+        - text "Paris"
+          - text "Paris"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$207"
+          - text "$207"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for Celine Dion" [focusable=True]
+    - article
+      - text "POP"
+        - text "POP"
+      - heading "Adele" [level=3]
+        - text "Adele"
+          - text "Adele"
+      - paragraph
+        - text "Wed, Jun 16 • 8:00 PM"
+          - text "Wed, Jun 16 • 8:00 PM"
+      - paragraph
+        - text "The Colosseum at Caesars Palace"
+          - text "The Colosseum at Caesars Palace"
+        - text ","
+          - text ","
+        - text "Las Vegas"
+          - text "Las Vegas"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$345"
+          - text "$345"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for Adele" [focusable=True]
+    - article
+      - text "NBA"
+        - text "NBA"
+      - heading "Los Angeles Lakers vs Memphis Grizzlies" [level=3]
+        - text "Los Angeles Lakers vs Memphis Grizzlies"
+          - text "Los Angeles Lakers vs Memphis Grizzlies"
+      - paragraph
+        - text "Thu, Apr 22 • 7:30 PM"
+          - text "Thu, Apr 22 • 7:30 PM"
+      - paragraph
+        - text "Crypto.com Arena"
+          - text "Crypto.com Arena"
+        - text ","
+          - text ","
+        - text "Los Angeles"
+          - text "Los Angeles"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$375"
+          - text "$375"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for Los Angeles Lakers vs Memphis Grizzlies" [focusable=True]
+    - article
+      - text "LAS VEGAS SHOWS"
+        - text "LAS VEGAS SHOWS"
+      - heading "O by Cirque du Soleil" [level=3]
+        - text "O by Cirque du Soleil"
+          - text "O by Cirque du Soleil"
+      - paragraph
+        - text "Thu, Aug 20 • 7:00 PM"
+          - text "Thu, Aug 20 • 7:00 PM"
+      - paragraph
+        - text "O Theatre at Bellagio"
+          - text "O Theatre at Bellagio"
+        - text ","
+          - text ","
+        - text "Las Vegas"
+          - text "Las Vegas"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$143"
+          - text "$143"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for O by Cirque du Soleil" [focusable=True]
+    - article
+      - text "NHL"
+        - text "NHL"
+      - heading "Boston Bruins vs New York Rangers" [level=3]
+        - text "Boston Bruins vs New York Rangers"
+          - text "Boston Bruins vs New York Rangers"
+      - paragraph
+        - text "Sat, Sep 19 • 7:00 PM"
+          - text "Sat, Sep 19 • 7:00 PM"
+      - paragraph
+        - text "TD Garden"
+          - text "TD Garden"
+        - text ","
+          - text ","
+        - text "Boston"
+          - text "Boston"
+      - text "From"
+        - text "From"
+      - strong
+        - text "$106"
+          - text "$106"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "View tickets for Boston Bruins vs New York Rangers" [focusable=True]
+    - text "FIND YOUR THING"
+      - text "FIND YOUR THING"
+    - heading "Browse by category" [level=2]
+      - text "Browse by category"
+        - text "Browse by category"
+    - button "Concerts Big tours. Intimate sets." [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+      - text "Big tours. Intimate sets."
+        - text "Big tours. Intimate sets."
+    - button "Sports Every rivalry. Every seat." [focusable=True]
+      - text "Sports"
+        - text "Sports"
+      - text "Every rivalry. Every seat."
+        - text "Every rivalry. Every seat."
+    - button "Theater Shows worth talking about." [focusable=True]
+      - text "Theater"
+        - text "Theater"
+      - text "Shows worth talking about."
+        - text "Shows worth talking about."
+    - article
+      - text "THE PERFECT PRESENT"
+        - text "THE PERFECT PRESENT"
+      - heading "Give them something to look forward to." [level=2]
+        - text "Give them something"
+          - text "Give them something"
+        - LineBreak
+          - text
+        - text "to look forward to."
+          - text "to look forward to."
+      - paragraph
+        - text "StubHub gift cards unlock thousands of unforgettable live experiences."
+          - text "StubHub gift cards unlock thousands of unforgettable live"
+          - text "experiences."
+      - button "Shop gift cards" [focusable=True]
+        - text "Shop gift cards"
+          - text "Shop gift cards"
+    - article
+      - heading "Sending tickets to a friend?" [level=3]
+        - text "Sending tickets to a friend?"
+          - text "Sending tickets to a friend?"
+      - paragraph
+        - text "Learn how to securely transfer NFL and other mobile tickets in a few quick steps."
+          - text "Learn how to securely transfer NFL and other mobile"
+          - text "tickets in a few quick steps."
+      - button "View transfer guide" [focusable=True]
+        - text "View transfer guide"
+          - text "View transfer guide"
+  - contentinfo
+    - button "stubhub ®" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - paragraph
+      - text "Be there live."
+        - text "Be there live."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - button "NHL in Boston" [focusable=True]
+      - text "NHL in Boston"
+        - text "NHL in Boston"
+    - button "Las Vegas theater" [focusable=True]
+      - text "Las Vegas theater"
+        - text "Las Vegas theater"
+    - heading "GIFTS" [level=3]
+      - text "GIFTS"
+        - text "GIFTS"
+    - button "Buy a gift card" [focusable=True]
+      - text "Buy a gift card"
+        - text "Buy a gift card"
+    - button "Gift card cart" [focusable=True]
+      - text "Gift card cart"
+        - text "Gift card cart"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - button "Transfer NFL tickets" [focused=True, focusable=True]
+      - text "Transfer NFL tickets"
+        - text "Transfer NFL tickets"
+    - button "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - text "© 2026 StubHub demo marketplace"
+      - text "© 2026 StubHub demo marketplace"
+    - text "United States · USD"
+      - text "United States · USD"
+    - text "FanProtect Guarantee"
+      - text "FanProtect Guarantee"

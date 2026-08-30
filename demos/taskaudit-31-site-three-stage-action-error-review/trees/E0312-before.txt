@@ -1,0 +1,138 @@
+- document "SoundCloud — Hear what’s next" [focused=True, focusable=True]
+  - banner
+    - link "SoundCloud home" [focusable=True]
+      - text "SOUNDCLOUD"
+        - text "SOUNDCLOUD"
+    - navigation "Primary navigation"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Feed" [focusable=True]
+        - text "Feed"
+          - text "Feed"
+      - link "Charts" [focusable=True]
+        - text "Charts"
+          - text "Charts"
+      - link "Library" [focusable=True]
+        - text "Library"
+          - text "Library"
+    - search
+      - LabelText
+        - text "Search SoundCloud"
+          - text "Search SoundCloud"
+      - entry "Search SoundCloud" [focusable=True]
+      - button "Submit search" [focused=True, focusable=True]
+    - link "For Artists" [focusable=True]
+      - text "For Artists"
+        - text "For Artists"
+    - link "Open your library" [focusable=True]
+      - text "AR"
+        - text "AR"
+  - main
+    - text "DISCOVER"
+      - text "DISCOVER"
+    - heading "Trending playlists" [level=1]
+      - text "Trending playlists"
+        - text "Trending playlists"
+    - paragraph
+      - text "What the SoundCloud community is playing right now."
+        - text "What the SoundCloud community is playing right now."
+    - text "Filter by tag"
+      - text "Filter by tag"
+    - button "All tags" [focusable=True]
+      - text "All tags"
+        - text "All tags"
+    - button "#Electronics" [focusable=True]
+      - text "#Electronics"
+        - text "#Electronics"
+    - button "#Dance & edm" [focusable=True]
+      - text "#Dance & edm"
+        - text "#Dance & edm"
+    - button "#Rock" [focusable=True]
+      - text "#Rock"
+        - text "#Rock"
+    - article
+      - button "Play Rock Classics Recharged" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Rock Classics Recharged" [focusable=True]
+        - text "Rock Classics Recharged"
+          - text "Rock Classics Recharged"
+      - paragraph
+        - text "SoundCloud Rock"
+          - text "SoundCloud Rock"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - button "Like Rock Classics Recharged" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Rock Classics Recharged" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Rock Classics Recharged to Next up" [focusable=True]
+    - article
+      - button "Play Electronics After Dark" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Electronics After Dark" [focusable=True]
+        - text "Electronics After Dark"
+          - text "Electronics After Dark"
+      - paragraph
+        - text "Pulse Selects"
+          - text "Pulse Selects"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - button "Like Electronics After Dark" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Electronics After Dark" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Electronics After Dark to Next up" [focusable=True]
+    - article
+      - button "Play Pop Workout mix" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Pop Workout mix" [focusable=True]
+        - text "Pop Workout mix"
+          - text "Pop Workout mix"
+      - paragraph
+        - text "Move Mode"
+          - text "Move Mode"
+      - text "#"
+        - text "#"
+      - text "Dance & edm"
+        - text "Dance & edm"
+      - text "#"
+        - text "#"
+      - text "Workout"
+        - text "Workout"
+      - button "Like Pop Workout mix" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Pop Workout mix" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Pop Workout mix to Next up" [focusable=True]
+  - contentinfo "Audio player"
+    - strong
+      - text "Midnight City Lights"
+        - text "Midnight City Lights"
+    - text "Lunar Arcade"
+      - text "Lunar Arcade"
+    - button "Like current track" [focusable=True]
+    - button "Previous track" [focusable=True]
+    - button "Play" [focusable=True]
+    - button "Next track" [focusable=True]
+    - text "0:00"
+      - text "0:00"
+    - text "4:08"
+      - text "4:08"
+    - button "Mute" [focusable=True]
+    - button "Next up" [focusable=True]
+      - text "Next up"
+        - text "Next up"

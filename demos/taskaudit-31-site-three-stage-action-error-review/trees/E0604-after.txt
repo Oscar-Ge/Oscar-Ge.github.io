@@ -1,0 +1,373 @@
+- document "craigslist — local classifieds and forums" [focused=True, focusable=True]
+  - banner
+    - button "Craigslist home" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "Chicago" [focusable=True]
+      - text "Chicago"
+        - text "Chicago"
+    - form
+      - entry "Search craigslist" [focusable=True]
+      - button "Submit search" [focusable=True]
+        - text "SEARCH"
+          - text "SEARCH"
+    - navigation
+      - button "saved" [focusable=True]
+        - text "saved"
+          - text "saved"
+      - button "account" [focusable=True]
+        - text "account"
+          - text "account"
+      - button "post an ad" [focusable=True]
+        - text "post an ad"
+          - text "post an ad"
+  - main
+    - button "back" [focusable=True]
+      - text "back"
+        - text "back"
+    - text "/"
+      - text "/"
+    - text "Chicago"
+      - text "Chicago"
+    - text "/"
+      - text "/"
+    - text "all categories"
+      - text "all categories"
+    - text "CHICAGO"
+      - text "CHICAGO"
+    - text ","
+      - text ","
+    - text "IL"
+      - text "IL"
+    - heading "all categories" [level=1]
+      - text "all categories"
+        - text "all categories"
+    - paragraph
+      - text "24"
+        - text "24"
+      - text "result"
+        - text "result"
+      - text "s"
+        - text "s"
+      - text "nearby"
+        - text "nearby"
+    - button "save this list" [focusable=True]
+      - text "save this list"
+        - text "save this list"
+    - form
+      - entry "Search within results" [focusable=True]
+      - combobox "Category" value="all categories" [focusable=True]
+        - MenuListPopup
+          - option "all categories" [focusable=True, selected=True]
+          - option "apartments / housing" [focusable=True]
+          - option "furniture" [focusable=True]
+          - option "jobs" [focusable=True]
+          - option "lessons & tutoring" [focusable=True]
+          - option "pets" [focusable=True]
+          - option "tickets" [focusable=True]
+          - option "vacation rentals" [focusable=True]
+          - option "appliances" [focusable=True]
+          - option "cell phones" [focusable=True]
+          - option "garage & moving sales" [focusable=True]
+          - option "parking & storage" [focusable=True]
+          - option "services" [focusable=True]
+          - option "antiques" [focusable=True]
+      - button "search" [focusable=True]
+        - text "search"
+          - text "search"
+    - complementary
+      - heading "FILTERS" [level=2]
+        - text "FILTERS"
+          - text "FILTERS"
+      - LabelText
+        - checkbox "search titles only" [focusable=True]
+        - text "search titles only"
+          - text "search titles only"
+      - LabelText
+        - checkbox "only listings with images" [focusable=True]
+        - text "only listings with images"
+          - text "only listings with images"
+      - LabelText
+        - checkbox "hide duplicate ads" [focusable=True]
+        - text "hide duplicate ads"
+          - text "hide duplicate ads"
+      - button "PRICE" [focusable=True]
+        - text "PRICE"
+          - text "PRICE"
+      - LabelText
+        - text "MIN"
+          - text "MIN"
+        - spinbutton "MIN" [focusable=True]
+      - text "—"
+        - text "—"
+      - LabelText
+        - text "MAX"
+          - text "MAX"
+        - spinbutton "MAX" [focusable=True]
+      - button "HOUSING DETAILS" [focusable=True]
+        - text "HOUSING DETAILS"
+          - text "HOUSING DETAILS"
+      - LabelText
+        - text "BEDROOMS"
+          - text "BEDROOMS"
+        - combobox "Minimum bedrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - text "BATHROOMS"
+          - text "BATHROOMS"
+        - combobox "Minimum bathrooms" value="any" [focusable=True]
+          - MenuListPopup
+            - option "any" [focusable=True, selected=True]
+            - option "1+" [focusable=True]
+            - option "2+" [focusable=True]
+            - option "3+" [focusable=True]
+      - LabelText
+        - checkbox "furnished" [focusable=True]
+        - text "furnished"
+          - text "furnished"
+      - LabelText
+        - checkbox "no broker fee" [focusable=True]
+        - text "no broker fee"
+          - text "no broker fee"
+      - LabelText
+        - checkbox "attached garage" [focusable=True]
+        - text "attached garage"
+          - text "attached garage"
+      - LabelText
+        - checkbox "available within 30 days" [focusable=True]
+        - text "available within 30 days"
+          - text "available within 30 days"
+      - button "LISTING DETAILS" [focusable=True]
+        - text "LISTING DETAILS"
+          - text "LISTING DETAILS"
+      - LabelText
+        - text "CONDITION"
+          - text "CONDITION"
+        - combobox "CONDITION" value="any condition" [focusable=True]
+          - MenuListPopup
+            - option "any condition" [focusable=True, selected=True]
+            - option "good" [focusable=True]
+            - option "like new" [focusable=True]
+            - option "excellent" [focusable=True]
+            - option "fair" [focusable=True]
+      - LabelText
+        - text "EMPLOYMENT TYPE"
+          - text "EMPLOYMENT TYPE"
+        - combobox "EMPLOYMENT TYPE" value="any type" [focusable=True]
+          - MenuListPopup
+            - option "any type" [focusable=True, selected=True]
+            - option "full-time" [focusable=True]
+            - option "part-time" [focusable=True]
+      - LabelText
+        - checkbox "accepts cryptocurrency" [focusable=True]
+        - text "accepts cryptocurrency"
+          - text "accepts cryptocurrency"
+      - button "AMENITIES" [focusable=True]
+        - text "AMENITIES"
+          - text "AMENITIES"
+      - LabelText
+        - checkbox "dog friendly" [focusable=True]
+        - text "dog friendly"
+          - text "dog friendly"
+      - LabelText
+        - checkbox "air conditioning" [focusable=True]
+        - text "air conditioning"
+          - text "air conditioning"
+      - LabelText
+        - checkbox "carport" [focusable=True]
+        - text "carport"
+          - text "carport"
+      - button "POSTED DATE" [focusable=True]
+        - text "POSTED DATE"
+          - text "POSTED DATE"
+      - LabelText
+        - text "WHEN"
+          - text "WHEN"
+        - combobox "WHEN" value="any time" [focusable=True]
+          - MenuListPopup
+            - option "any time" [focusable=True, selected=True]
+            - option "posted today" [focusable=True]
+            - option "available within 30 days" [focusable=True]
+      - LabelText
+        - text "SPECIFIC DATE"
+          - text "SPECIFIC DATE"
+        - Date "SPECIFIC DATE" [focusable=True]
+          - spinbutton "Month Month" value="0" [focusable=True]
+            - text "mm"
+              - text "mm"
+          - text "/"
+            - text "/"
+          - spinbutton "Day Day" value="0" [focusable=True]
+            - text "dd"
+              - text "dd"
+          - text "/"
+            - text "/"
+          - spinbutton "Year Year" value="0" [focusable=True]
+            - text "yyyy"
+              - text "yyyy"
+          - button "Show date picker" [focusable=True]
+      - button "DISTANCE" [focusable=True]
+        - text "DISTANCE"
+          - text "DISTANCE"
+      - LabelText
+        - text "ZIP CODE"
+          - text "ZIP CODE"
+        - entry "ZIP CODE" [focusable=True]
+      - LabelText
+        - text "WITHIN"
+          - text "WITHIN"
+        - combobox "WITHIN" value="any distance" [focusable=True]
+          - MenuListPopup
+            - option "any distance" [focusable=True, selected=True]
+            - option "10 miles" [focusable=True]
+            - option "25 miles" [focusable=True]
+            - option "50 miles" [focusable=True]
+            - option "100 miles" [focusable=True]
+      - button "reset all filters" [focusable=True]
+        - text "reset all filters"
+          - text "reset all filters"
+    - LabelText
+      - text "sort by"
+        - text "sort by"
+      - combobox "Sort listings" value="newest" [focusable=True]
+        - MenuListPopup
+          - option "newest" [focusable=True, selected=True]
+          - option "price: low to high" [focusable=True]
+          - option "price: high to low" [focusable=True]
+          - option "oldest" [focusable=True]
+    - generic "View options"
+      - button "List view" [focusable=True]
+      - button "Grid view" [focusable=True]
+      - button "Map view" [focused=True, focusable=True]
+    - text "downtown"
+      - text "downtown"
+    - text "north side"
+      - text "north side"
+    - text "south side"
+      - text "south side"
+    - button "Show Gentle rescue dog ready for adoption" [focusable=True]
+      - text "$125"
+        - text "$125"
+    - button "Show Laundry in unit — sunny 2BR / 2BA" [focusable=True]
+      - text "$3200"
+        - text "$3200"
+    - button "Show Vintage walnut dining set — six chairs" [focusable=True]
+      - text "$650"
+        - text "$650"
+    - button "Show Cozy one bedroom garden apartment" [focusable=True]
+      - text "$2100"
+        - text "$2100"
+    - button "Show Walnut dining table set with six chairs" [focusable=True]
+      - text "$675"
+        - text "$675"
+    - button "Show Handmade oak writing desk" [focusable=True]
+      - text "$290"
+        - text "$290"
+    - button "Show Solar panel installer — paid training" [focusable=True]
+      - text "$29"
+        - text "$29"
+    - button "Show Cloud-style cream couch" [focusable=True]
+      - text "$180"
+        - text "$180"
+    - button "Show Hiring solar installers — join our crew" [focusable=True]
+      - text "$29"
+        - text "$29"
+    - button "Show Warm, patient piano lessons for all ages" [focusable=True]
+      - text "$55"
+        - text "$55"
+    - button "Show Front-load washing machine — works great" [focusable=True]
+      - text "$240"
+        - text "$240"
+    - button "Show iPhone X 256GB unlocked — good condition" [focusable=True]
+      - text "$350"
+        - text "$350"
+    - button "Show iPhone X 64GB — excellent" [focusable=True]
+      - text "$475"
+        - text "$475"
+    - button "Show Weekend cashier at local bookstore" [focusable=True]
+      - text "$19"
+        - text "$19"
+    - button "Show Spacious three bedroom near the lake" [focusable=True]
+      - text "$3850"
+        - text "$3850"
+    - button "Show Modular storage cabinet" [focusable=True]
+      - text "$220"
+        - text "$220"
+    - button "Show Bonded pair of tabby cats" [focusable=True]
+      - text "$80"
+        - text "$80"
+    - button "Show Apple phone model X with cracked back" [focusable=True]
+      - text "$225"
+        - text "$225"
+    - button "Show Reliable evening & weekend babysitter" [focusable=True]
+      - text "$24"
+        - text "$24"
+    - button "Show Blue sectional couch — clean and comfy" [focusable=True]
+      - text "$90"
+        - text "$90"
+    - button "Show Jazz and classical piano teacher" [focusable=True]
+      - text "$65"
+        - text "$65"
+    - button "Show Compact washer for apartment" [focusable=True]
+      - text "$120"
+        - text "$120"
+    - button "Show Art Deco bar cart — restored" [focusable=True]
+      - text "$475"
+        - text "$475"
+    - button "Show Victorian brass table lamp — 1890s" [focusable=True]
+      - text "$320"
+        - text "$320"
+    - text "24"
+      - text "24"
+    - text "listing"
+      - text "listing"
+    - text "s"
+      - text "s"
+    - text "on map"
+      - text "on map"
+    - article
+      - image "Gentle rescue dog ready for adoption"
+      - text "ROSCOE VILLAGE"
+        - text "ROSCOE VILLAGE"
+      - heading "Gentle rescue dog ready for adoption" [level=3]
+        - text "Gentle rescue dog ready for adoption"
+          - text "Gentle rescue dog ready for"
+          - text "adoption"
+      - strong
+        - text "$125"
+          - text "$125"
+      - paragraph
+        - text "Meet Juniper, a calm two-year-old mixed breed. Vaccinated, house-trained, and wonderful with people."
+          - text "Meet Juniper, a calm two-year-old mixed breed."
+          - text "Vaccinated, house-trained, and wonderful with"
+          - text "people."
+      - button "view full details" [focusable=True]
+        - text "view full details"
+          - text "view full details"
+  - contentinfo
+    - button "c craigslist" [focusable=True]
+      - text "c"
+        - text "c"
+      - text "craigslist"
+        - text "craigslist"
+    - button "help & safety" [focusable=True]
+      - text "help & safety"
+        - text "help & safety"
+    - button "privacy" [focusable=True]
+      - text "privacy"
+        - text "privacy"
+    - button "terms" [focusable=True]
+      - text "terms"
+        - text "terms"
+    - button "about" [focusable=True]
+      - text "about"
+        - text "about"
+    - paragraph
+      - text "© 2026 craigslist · local connections, simply made"
+        - text "© 2026 craigslist · local connections, simply made"

@@ -3,6 +3,7 @@ export const DECISIONS = Object.freeze({
   correct: "Correct error",
   "false-positive": "False positive",
   unsure: "Unsure",
+  duplicate: "Duplicate",
 });
 
 export function normalizeReview(value) {
@@ -23,6 +24,7 @@ function scopeAnalysis(cases, reviews) {
     correctErrorCount: 0,
     falsePositiveCount: 0,
     unsureCount: 0,
+    duplicateCount: 0,
     unreviewedCount: 0,
   };
   for (const item of cases) {
@@ -30,6 +32,7 @@ function scopeAnalysis(cases, reviews) {
     if (decision === "correct") counts.correctErrorCount += 1;
     else if (decision === "false-positive") counts.falsePositiveCount += 1;
     else if (decision === "unsure") counts.unsureCount += 1;
+    else if (decision === "duplicate") counts.duplicateCount += 1;
     else counts.unreviewedCount += 1;
   }
   counts.decidedErrorCount = counts.correctErrorCount + counts.falsePositiveCount;

@@ -1,0 +1,507 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Search destinations" [focused=True, focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Search destinations"
+          - text "Search destinations"
+    - button "When Add dates" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "Add dates"
+          - text "Add dates"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+    - heading "Search by destination" [level=3]
+      - text "Search by destination"
+        - text "Search by destination"
+    - entry "Destination" [focusable=True]
+    - paragraph
+      - text "SUGGESTED DESTINATIONS"
+        - text "SUGGESTED DESTINATIONS"
+    - button "Anywhere Explore every destination" [focusable=True]
+      - strong
+        - text "Anywhere"
+          - text "Anywhere"
+      - text "Explore every destination"
+        - text "Explore every destination"
+    - button "Europe Castles, mansions and more" [focusable=True]
+      - strong
+        - text "Europe"
+          - text "Europe"
+      - text "Castles, mansions and more"
+        - text "Castles, mansions and more"
+    - button "Belo Horizonte A lively weekend in Brazil" [focusable=True]
+      - strong
+        - text "Belo Horizonte"
+          - text "Belo Horizonte"
+      - text "A lively weekend in Brazil"
+        - text "A lively weekend in Brazil"
+    - button "India Treehouses and nature stays" [focusable=True]
+      - strong
+        - text "India"
+          - text "India"
+      - text "Treehouses and nature stays"
+        - text "Treehouses and nature stays"
+    - button "New York Private rooms in the city" [focusable=True]
+      - strong
+        - text "New York"
+          - text "New York"
+      - text "Private rooms in the city"
+        - text "Private rooms in the city"
+    - button "Portugal Sports and coastal experiences" [focusable=True]
+      - strong
+        - text "Portugal"
+          - text "Portugal"
+      - text "Sports and coastal experiences"
+        - text "Sports and coastal experiences"
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "NOT SURE WHERE TO GO?"
+        - text "NOT SURE WHERE TO GO?"
+    - heading "Find a stay that feels made for you." [level=1]
+      - text "Find a stay that feels made for you."
+        - text "Find a stay that feels"
+        - text "made for you."
+    - paragraph
+      - text "Explore tiny homes, castles, treehouses and one-of-a-kind escapes."
+        - text "Explore tiny homes, castles, treehouses and one-of-a-kind escapes."
+    - button "Explore tiny homes" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+      - text "tiny homes"
+        - text "tiny homes"
+    - paragraph
+      - text "14"
+        - text "14"
+      - text
+        - text
+      - text "RESULTS"
+        - text "RESULTS"
+    - heading "Guest favorites" [level=1]
+      - text "Guest favorites"
+        - text "Guest favorites"
+    - text "1 guest"
+      - text "1 guest"
+    - button "Refine" [focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - article
+      - button "View The Little Desert Cabin" [focusable=True]
+        - image "The Little Desert Cabin"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save The Little Desert Cabin to a wishlist" [focusable=True]
+      - button "Yucca Valley, California" [focusable=True]
+        - text "Yucca Valley, California"
+          - text "Yucca Valley, California"
+      - text "4.96"
+        - text "4.96"
+      - paragraph
+        - text "The Little Desert Cabin"
+          - text "The Little Desert Cabin"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$184"
+          - text "$184"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Storybook Stone Castle" [focusable=True]
+        - image "Storybook Stone Castle"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Storybook Stone Castle to a wishlist" [focusable=True]
+      - button "Dordogne, France" [focusable=True]
+        - text "Dordogne, France"
+          - text "Dordogne, France"
+      - text "4.91"
+        - text "4.91"
+      - paragraph
+        - text "Storybook Stone Castle"
+          - text "Storybook Stone Castle"
+      - paragraph
+        - text "Entire home · 5 beds"
+          - text "Entire home · 5 beds"
+      - strong
+        - text "$875"
+          - text "$875"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Tuscan Castle Above the Vines" [focusable=True]
+        - image "Tuscan Castle Above the Vines"
+      - button "Save Tuscan Castle Above the Vines to a wishlist" [focusable=True]
+      - button "Siena, Italy" [focusable=True]
+        - text "Siena, Italy"
+          - text "Siena, Italy"
+      - text "4.88"
+        - text "4.88"
+      - paragraph
+        - text "Tuscan Castle Above the Vines"
+          - text "Tuscan Castle Above the Vines"
+      - paragraph
+        - text "Entire home · 6 beds"
+          - text "Entire home · 6 beds"
+      - strong
+        - text "$940"
+          - text "$940"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Modern Villa on the Amalfi Coast" [focusable=True]
+        - image "Modern Villa on the Amalfi Coast"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Modern Villa on the Amalfi Coast to a wishlist" [focusable=True]
+      - button "Ravello, Italy" [focusable=True]
+        - text "Ravello, Italy"
+          - text "Ravello, Italy"
+      - text "4.97"
+        - text "4.97"
+      - paragraph
+        - text "Modern Villa on the Amalfi Coast"
+          - text "Modern Villa on the Amalfi Coast"
+      - paragraph
+        - text "Entire home · 4 beds"
+          - text "Entire home · 4 beds"
+      - strong
+        - text "$790"
+          - text "$790"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Atlantic Garden Mansion" [focusable=True]
+        - image "Atlantic Garden Mansion"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Atlantic Garden Mansion to a wishlist" [focusable=True]
+      - button "Cascais, Portugal" [focusable=True]
+        - text "Cascais, Portugal"
+          - text "Cascais, Portugal"
+      - text "4.93"
+        - text "4.93"
+      - paragraph
+        - text "Atlantic Garden Mansion"
+          - text "Atlantic Garden Mansion"
+      - paragraph
+        - text "Entire home · 5 beds"
+          - text "Entire home · 5 beds"
+      - strong
+        - text "$910"
+          - text "$910"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Sunny Shared Loft in Savassi" [focusable=True]
+        - image "Sunny Shared Loft in Savassi"
+      - button "Save Sunny Shared Loft in Savassi to a wishlist" [focusable=True]
+      - button "Belo Horizonte, Brazil" [focusable=True]
+        - text "Belo Horizonte, Brazil"
+          - text "Belo Horizonte, Brazil"
+      - text "4.84"
+        - text "4.84"
+      - paragraph
+        - text "Sunny Shared Loft in Savassi"
+          - text "Sunny Shared Loft in Savassi"
+      - paragraph
+        - text "Shared room · 1 bed"
+          - text "Shared room · 1 bed"
+      - strong
+        - text "$74"
+          - text "$74"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Jungle Pool House" [focusable=True]
+        - image "Jungle Pool House"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Jungle Pool House to a wishlist" [focusable=True]
+      - button "Ubud, Indonesia" [focusable=True]
+        - text "Ubud, Indonesia"
+          - text "Ubud, Indonesia"
+      - text "4.98"
+        - text "4.98"
+      - paragraph
+        - text "Jungle Pool House"
+          - text "Jungle Pool House"
+      - paragraph
+        - text "Entire home · 2 beds"
+          - text "Entire home · 2 beds"
+      - strong
+        - text "$245"
+          - text "$245"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Mallorca Courtyard Retreat" [focusable=True]
+        - image "Mallorca Courtyard Retreat"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Mallorca Courtyard Retreat to a wishlist" [focusable=True]
+      - button "Sóller, Spain" [focusable=True]
+        - text "Sóller, Spain"
+          - text "Sóller, Spain"
+      - text "4.92"
+        - text "4.92"
+      - paragraph
+        - text "Mallorca Courtyard Retreat"
+          - text "Mallorca Courtyard Retreat"
+      - paragraph
+        - text "Entire home · 3 beds"
+          - text "Entire home · 3 beds"
+      - strong
+        - text "$285"
+          - text "$285"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Canopy Treehouse in the Western Ghats" [focusable=True]
+        - image "Canopy Treehouse in the Western Ghats"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Canopy Treehouse in the Western Ghats to a wishlist" [focusable=True]
+      - button "Wayanad, India" [focusable=True]
+        - text "Wayanad, India"
+          - text "Wayanad, India"
+      - text "4.89"
+        - text "4.89"
+      - paragraph
+        - text "Canopy Treehouse in the Western Ghats"
+          - text "Canopy Treehouse in the Western Ghats"
+          - text "Canopy Treehouse in the Western"
+          - text "…"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$88"
+          - text "$88"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Glass Bubble Under the Stars" [focusable=True]
+        - image "Glass Bubble Under the Stars"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Glass Bubble Under the Stars to a wishlist" [focusable=True]
+      - button "Atacama, Chile" [focusable=True]
+        - text "Atacama, Chile"
+          - text "Atacama, Chile"
+      - text "4.94"
+        - text "4.94"
+      - paragraph
+        - text "Glass Bubble Under the Stars"
+          - text "Glass Bubble Under the Stars"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$320"
+          - text "$320"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View The Cave House" [focusable=True]
+        - image "The Cave House"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save The Cave House to a wishlist" [focusable=True]
+      - button "Cappadocia, Türkiye" [focusable=True]
+        - text "Cappadocia, Türkiye"
+          - text "Cappadocia, Türkiye"
+      - text "4.99"
+        - text "4.99"
+      - paragraph
+        - text "The Cave House"
+          - text "The Cave House"
+      - paragraph
+        - text "Entire home · 2 beds"
+          - text "Entire home · 2 beds"
+      - strong
+        - text "$410"
+          - text "$410"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Mirrored Forest Cabin" [focusable=True]
+        - image "Mirrored Forest Cabin"
+      - button "Save Mirrored Forest Cabin to a wishlist" [focusable=True]
+      - button "Quebec, Canada" [focusable=True]
+        - text "Quebec, Canada"
+          - text "Quebec, Canada"
+      - text "4.95"
+        - text "4.95"
+      - paragraph
+        - text "Mirrored Forest Cabin"
+          - text "Mirrored Forest Cabin"
+      - paragraph
+        - text "Entire home · 2 beds"
+          - text "Entire home · 2 beds"
+      - strong
+        - text "$465"
+          - text "$465"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Quiet Private Room in Brooklyn" [focusable=True]
+        - image "Quiet Private Room in Brooklyn"
+      - text "Guest favorite"
+        - text "Guest favorite"
+      - button "Save Quiet Private Room in Brooklyn to a wishlist" [focusable=True]
+      - button "New York, New York" [focusable=True]
+        - text "New York, New York"
+          - text "New York, New York"
+      - text "4.87"
+        - text "4.87"
+      - paragraph
+        - text "Quiet Private Room in Brooklyn"
+          - text "Quiet Private Room in Brooklyn"
+      - paragraph
+        - text "Private room · 1 bed"
+          - text "Private room · 1 bed"
+      - strong
+        - text "$92"
+          - text "$92"
+        - text
+          - text
+        - text "night"
+          - text "night"
+    - article
+      - button "View Painted Tiny House by the Sea" [focusable=True]
+        - image "Painted Tiny House by the Sea"
+      - button "Save Painted Tiny House by the Sea to a wishlist" [focusable=True]
+      - button "Portland, Maine" [focusable=True]
+        - text "Portland, Maine"
+          - text "Portland, Maine"
+      - text "4.9"
+        - text "4.9"
+      - paragraph
+        - text "Painted Tiny House by the Sea"
+          - text "Painted Tiny House by the Sea"
+      - paragraph
+        - text "Entire home · 1 bed"
+          - text "Entire home · 1 bed"
+      - strong
+        - text "$136"
+          - text "$136"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"

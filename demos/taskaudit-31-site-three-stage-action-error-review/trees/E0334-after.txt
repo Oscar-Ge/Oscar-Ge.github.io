@@ -1,0 +1,212 @@
+- document "ESPN — Scores, News, Stats & More" [focused=True, focusable=True]
+  - text "SCORES"
+    - text "SCORES"
+  - link "MLB Final NYY 5 BOS 3" [focusable=True]
+    - text "MLB"
+      - text "MLB"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYY"
+      - text "NYY"
+    - strong
+      - text "5"
+        - text "5"
+    - text "BOS"
+      - text "BOS"
+    - strong
+      - text "3"
+        - text "3"
+  - link "WNBA Final NYL 84 LVA 81" [focusable=True]
+    - text "WNBA"
+      - text "WNBA"
+    - strong
+      - text "Final"
+        - text "Final"
+    - text "NYL"
+      - text "NYL"
+    - strong
+      - text "84"
+        - text "84"
+    - text "LVA"
+      - text "LVA"
+    - strong
+      - text "81"
+        - text "81"
+  - link "SOCCER 67′ MCI 2 TOT 1" [focusable=True]
+    - text "SOCCER"
+      - text "SOCCER"
+    - strong
+      - text "67′"
+        - text "67′"
+    - text "MCI"
+      - text "MCI"
+    - strong
+      - text "2"
+        - text "2"
+    - text "TOT"
+      - text "TOT"
+    - strong
+      - text "1"
+        - text "1"
+  - link "NFL 7:00 PM DAL — BAL —" [focusable=True]
+    - text "NFL"
+      - text "NFL"
+    - strong
+      - text "7:00 PM"
+        - text "7:00 PM"
+    - text "DAL"
+      - text "DAL"
+    - strong
+      - text "—"
+        - text "—"
+    - text "BAL"
+      - text "BAL"
+    - strong
+      - text "—"
+        - text "—"
+  - link "All scores" [focusable=True]
+    - text "All scores"
+      - text "All scores"
+  - banner
+    - link "ESPN home" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - navigation "Primary navigation"
+      - link "NFL" [focusable=True]
+        - text "NFL"
+          - text "NFL"
+      - link "NBA" [focusable=True]
+        - text "NBA"
+          - text "NBA"
+      - link "NHL" [focusable=True]
+        - text "NHL"
+          - text "NHL"
+      - link "Soccer" [focusable=True]
+        - text "Soccer"
+          - text "Soccer"
+      - link "UFC" [focused=True, focusable=True]
+        - text "UFC"
+          - text "UFC"
+      - link "F1" [focusable=True]
+        - text "F1"
+          - text "F1"
+    - button "Search ESPN" [focusable=True]
+    - button "Notifications" [focusable=True]
+    - button "Log In" [focusable=True]
+      - text "Log In"
+        - text "Log In"
+  - main
+    - navigation "Breadcrumb"
+      - link "ESPN" [focusable=True]
+        - text "ESPN"
+          - text "ESPN"
+      - text "UFC"
+        - text "UFC"
+      - text "Schedule"
+        - text "Schedule"
+    - sectionheader
+      - text "UFC"
+        - text "UFC"
+      - heading "UFC Schedule" [level=1]
+        - text "UFC Schedule"
+          - text "UFC Schedule"
+      - paragraph
+        - text "Select an event, then open a full athlete profile"
+          - text "Select an event, then open a full athlete profile"
+    - LabelText
+      - text "Year"
+        - text "Year"
+      - combobox "Year" value="2019" [focusable=True]
+        - MenuListPopup
+          - option "2019" [focusable=True, selected=True]
+          - option "2024" [focusable=True]
+    - text "3"
+      - text "3"
+    - text "featured events"
+      - text "featured events"
+    - complementary
+      - heading "2019 events" [level=2]
+        - text "2019"
+          - text "2019"
+        - text "events"
+          - text "events"
+      - text "Schedule"
+        - text "Schedule"
+      - button "DEC 14 UFC 245: Usman vs. Covington T-Mobile Arena • Las Vegas" [focusable=True]
+        - strong
+          - text "DEC 14"
+            - text "DEC 14"
+        - text "UFC 245: Usman vs. Covington"
+          - text "UFC 245: Usman vs. Covington"
+        - text "T-Mobile Arena • Las Vegas"
+          - text "T-Mobile Arena • Las Vegas"
+      - button "NOV 2 UFC 244: Masvidal vs. Diaz Madison Square Garden • New York" [focusable=True]
+        - strong
+          - text "NOV 2"
+            - text "NOV 2"
+        - text "UFC 244: Masvidal vs. Diaz"
+          - text "UFC 244: Masvidal vs. Diaz"
+        - text "Madison Square Garden • New York"
+          - text "Madison Square Garden • New York"
+      - button "OCT 5 UFC 243: Whittaker vs. Adesanya Marvel Stadium • Melbourne" [focusable=True]
+        - strong
+          - text "OCT 5"
+            - text "OCT 5"
+        - text "UFC 243: Whittaker vs. Adesanya"
+          - text "UFC 243: Whittaker vs. Adesanya"
+        - text "Marvel Stadium • Melbourne"
+          - text "Marvel Stadium • Melbourne"
+    - text "SELECTED EVENT"
+      - text "SELECTED EVENT"
+    - heading "UFC 245: Usman vs. Covington" [level=2]
+      - text "UFC 245: Usman vs. Covington"
+        - text "UFC 245: Usman vs. Covington"
+    - paragraph
+      - text "T-Mobile Arena • Las Vegas"
+        - text "T-Mobile Arena • Las Vegas"
+    - text "KU"
+      - text "KU"
+    - text "WELTERWEIGHT"
+      - text "WELTERWEIGHT"
+    - heading "Kamaru Usman" [level=3]
+      - text "Kamaru Usman"
+        - text "Kamaru Usman"
+    - strong
+      - text "20-4-0"
+        - text "20-4-0"
+    - button "Full profile" [focusable=True]
+      - text "Full profile"
+        - text "Full profile"
+    - emphasis
+      - text "VS"
+        - text "VS"
+    - text "CC"
+      - text "CC"
+    - text "WELTERWEIGHT"
+      - text "WELTERWEIGHT"
+    - heading "Colby Covington" [level=3]
+      - text "Colby Covington"
+        - text "Colby Covington"
+    - strong
+      - text "17-4-0"
+        - text "17-4-0"
+    - button "Full profile" [focusable=True]
+      - text "Full profile"
+        - text "Full profile"
+  - contentinfo
+    - link "ESPN" [focusable=True]
+      - text "ESPN"
+        - text "ESPN"
+    - paragraph
+      - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+        - text "© 2026 ESPN Mock Experience. Synthetic data for demonstration only."
+    - link "Scores" [focusable=True]
+      - text "Scores"
+        - text "Scores"
+    - link "Teams" [focusable=True]
+      - text "Teams"
+        - text "Teams"
+    - link "Podcasts" [focusable=True]
+      - text "Podcasts"
+        - text "Podcasts"

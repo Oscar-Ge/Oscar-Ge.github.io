@@ -1,0 +1,121 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focused=True, focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - text "B"
+      - text "B"
+    - paragraph
+      - text "COMPANY PROFILE"
+        - text "COMPANY PROFILE"
+    - heading "Burger King" [level=1]
+      - text "Burger King"
+        - text "Burger King"
+    - paragraph
+      - text "3.4"
+        - text "3.4"
+      - text "·"
+        - text "·"
+      - text "58,412"
+        - text "58,412"
+      - text "reviews ·"
+        - text "reviews ·"
+      - text "Restaurants & Food Service"
+        - text "Restaurants & Food Service"
+    - button "Follow" [focusable=True]
+      - text "Follow"
+        - text "Follow"
+    - tablist "Burger King sections"
+      - tab "Overview" [focusable=True]
+        - text "Overview"
+          - text "Overview"
+      - tab "Reviews" [focusable=True, selected=True]
+        - text "Reviews"
+          - text "Reviews"
+      - tab "Interview questions" [focusable=True]
+        - text "Interview questions"
+          - text "Interview questions"
+      - tab "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - tab "Jobs" [focusable=True]
+        - text "Jobs"
+          - text "Jobs"
+    - paragraph
+      - text "EMPLOYEE EXPERIENCES"
+        - text "EMPLOYEE EXPERIENCES"
+    - heading "Burger King Reviews" [level=2]
+      - text "Burger King"
+        - text "Burger King"
+      - text "Reviews"
+        - text "Reviews"
+    - paragraph
+      - text "What employees say about culture, management, flexibility, and growth."
+        - text "What employees say about culture, management, flexibility, and growth."
+    - article
+      - generic "4 out of 5 stars"
+      - heading "Fast-paced and friendly team" [level=3]
+        - text "Fast-paced and friendly team"
+          - text "Fast-paced and friendly team"
+      - paragraph
+        - text "Team Member"
+          - text "Team Member"
+        - text "·"
+          - text "·"
+        - text "Atlanta, GA"
+          - text "Atlanta, GA"
+        - text "·"
+          - text "·"
+        - text "July 8, 2026"
+          - text "July 8, 2026"
+      - paragraph
+        - text "The team supported one another during busy shifts and managers made training straightforward."
+          - text "The team supported one another during busy shifts and managers made training straightforward."
+      - button "Helpful 18" [focusable=True]
+        - text "Helpful"
+          - text "Helpful"
+        - text "18"
+          - text "18"
+    - strong
+      - text "3.4"
+        - text "3.4"
+    - text "Overall rating"
+      - text "Overall rating"
+    - separator
+    - paragraph
+      - text "58,412"
+        - text "58,412"
+      - text "total employee reviews"
+        - text "total employee reviews"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

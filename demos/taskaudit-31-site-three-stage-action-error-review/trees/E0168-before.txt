@@ -1,0 +1,309 @@
+- document "Yelp — Discover trusted local businesses" [focused=True, focusable=True]
+  - banner
+    - link "Yelp home" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - search
+      - LabelText
+        - text "FIND"
+          - text "FIND"
+        - combobox "Search for businesses" [focusable=True]
+      - LabelText
+        - text "NEAR"
+          - text "NEAR"
+        - combobox "Search location" [focusable=True]
+      - button "Search" [focusable=True]
+    - navigation "Main navigation"
+      - button "Yelp for Business" [focusable=True]
+        - text "Yelp for Business"
+          - text "Yelp for Business"
+      - link "Collections" [focusable=True]
+        - text "Collections"
+          - text "Collections"
+      - button "Write a Review" [focusable=True]
+        - text "Write a Review"
+          - text "Write a Review"
+      - button "Log In" [focusable=True]
+        - text "Log In"
+          - text "Log In"
+      - button "Sign Up" [focusable=True]
+        - text "Sign Up"
+          - text "Sign Up"
+  - paragraph
+    - text "LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT"
+      - text "LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT"
+  - heading "Find your next favorite place." [level=1]
+    - text "Find your next"
+      - text "Find your next"
+    - LineBreak
+      - text
+    - text "favorite place."
+      - text "favorite place."
+  - paragraph
+    - text "Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals."
+      - text "Explore standout restaurants, trusted local pros, and neighborhood favorites—"
+      - text "backed by real community signals."
+  - search
+    - LabelText
+      - text "SEARCH FOR"
+        - text "SEARCH FOR"
+      - combobox "Search for businesses" [focusable=True]
+    - LabelText
+      - text "NEAR"
+        - text "NEAR"
+      - combobox "Search location" [focused=True, focusable=True]
+    - button "Search" [focusable=True]
+      - text "Search"
+        - text "Search"
+  - button "Top Thai in Westminster" [focusable=True]
+    - text "Top Thai in Westminster"
+      - text "Top Thai in Westminster"
+  - button "Fast electricians near 94115" [focusable=True]
+    - text "Fast electricians near 94115"
+      - text "Fast electricians near 94115"
+  - button "Dog-friendly cafes" [focusable=True]
+    - text "Dog-friendly cafes"
+      - text "Dog-friendly cafes"
+  - complementary "Featured business"
+    - text "COMMUNITY FAVORITE"
+      - text "COMMUNITY FAVORITE"
+    - text "COCKTAIL BARS"
+      - text "COCKTAIL BARS"
+    - paragraph
+      - text "San Francisco · Cocktail Bars"
+        - text "San Francisco · Cocktail Bars"
+    - heading "Juniper Cocktail Club" [level=2]
+      - text "Juniper Cocktail Club"
+        - text "Juniper Cocktail Club"
+    - generic "4.8 out of 5 stars, 3876 reviews"
+      - strong
+        - text "4.8"
+          - text "4.8"
+      - text "("
+        - text "("
+      - text "3,876"
+        - text "3,876"
+      - text ")"
+        - text ")"
+    - button "See why locals love it" [focusable=True]
+      - text "See why locals love it"
+        - text "See why locals love it"
+  - main
+    - paragraph
+      - text "EXPLORE YOUR CITY"
+        - text "EXPLORE YOUR CITY"
+    - heading "What are you looking for?" [level=2]
+      - text "What are you looking for?"
+        - text "What are you looking for?"
+    - paragraph
+      - text "Start with a category, then narrow the results with the details that matter."
+        - text "Start with a category, then narrow the results with the details that matter."
+    - button "Restaurants Explore nearby" [focusable=True]
+      - strong
+        - text "Restaurants"
+          - text "Restaurants"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Coffee & Cafes Explore nearby" [focusable=True]
+      - strong
+        - text "Coffee & Cafes"
+          - text "Coffee & Cafes"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Home Services Explore nearby" [focusable=True]
+      - strong
+        - text "Home Services"
+          - text "Home Services"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Auto Services Explore nearby" [focusable=True]
+      - strong
+        - text "Auto Services"
+          - text "Auto Services"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Beauty & Spas Explore nearby" [focusable=True]
+      - strong
+        - text "Beauty & Spas"
+          - text "Beauty & Spas"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Barbers Explore nearby" [focusable=True]
+      - strong
+        - text "Barbers"
+          - text "Barbers"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "Shopping Explore nearby" [focusable=True]
+      - strong
+        - text "Shopping"
+          - text "Shopping"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - button "More Explore nearby" [focusable=True]
+      - strong
+        - text "More"
+          - text "More"
+      - text "Explore nearby"
+        - text "Explore nearby"
+    - paragraph
+      - text "HIGHLY RATED"
+        - text "HIGHLY RATED"
+    - heading "Local standouts" [level=2]
+      - text "Local standouts"
+        - text "Local standouts"
+    - button "Browse all businesses" [focusable=True]
+      - text "Browse all businesses"
+        - text "Browse all businesses"
+    - article
+      - link "View Juniper Coffee House" [focusable=True]
+        - text "COFFEE & TEA"
+          - text "COFFEE & TEA"
+      - paragraph
+        - text "1"
+          - text "1"
+        - text "."
+          - text "."
+        - text "COFFEE & TEA"
+          - text "COFFEE & TEA"
+      - heading "Juniper Coffee House" [level=2]
+        - link "Juniper Coffee House" [focusable=True]
+          - text "Juniper Coffee House"
+            - text "Juniper Coffee House"
+      - generic "4.8 out of 5 stars, 864 reviews"
+        - strong
+          - text "4.8"
+            - text "4.8"
+        - text "("
+          - text "("
+        - text "864"
+          - text "864"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Coffee & Tea, Cafes"
+        - text "Coffee & Tea, Cafes"
+    - article
+      - link "View Siam Garden" [focusable=True]
+        - text "THAI"
+          - text "THAI"
+      - paragraph
+        - text "2"
+          - text "2"
+        - text "."
+          - text "."
+        - text "THAI"
+          - text "THAI"
+      - heading "Siam Garden" [level=2]
+        - link "Siam Garden" [focusable=True]
+          - text "Siam Garden"
+            - text "Siam Garden"
+      - generic "5 out of 5 stars, 764 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "764"
+          - text "764"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Thai, Noodles"
+        - text "Thai, Noodles"
+    - article
+      - link "View BrightLine Electric" [focusable=True]
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - paragraph
+        - text "3"
+          - text "3"
+        - text "."
+          - text "."
+        - text "ELECTRICIANS"
+          - text "ELECTRICIANS"
+      - heading "BrightLine Electric" [level=2]
+        - link "BrightLine Electric" [focusable=True]
+          - text "BrightLine Electric"
+            - text "BrightLine Electric"
+      - generic "5 out of 5 stars, 642 reviews"
+        - strong
+          - text "5.0"
+            - text "5.0"
+        - text "("
+          - text "("
+        - text "642"
+          - text "642"
+        - text ")"
+          - text ")"
+      - text "$$"
+        - text "$$"
+      - text "•"
+        - text "•"
+      - text "Electricians, Lighting Fixtures & Equipment"
+        - text "Electricians, Lighting Fixtures & Equipment"
+    - strong
+      - text "Trusted details"
+        - text "Trusted details"
+    - text "Clear service and amenity signals"
+      - text "Clear service and amenity signals"
+    - strong
+      - text "Fast responses"
+        - text "Fast responses"
+    - text "See who gets back to you quickly"
+      - text "See who gets back to you quickly"
+    - strong
+      - text "Save your finds"
+        - text "Save your finds"
+    - text "Build collections for every plan"
+      - text "Build collections for every plan"
+  - contentinfo
+    - link "yelp ✦" [focusable=True]
+      - text "yelp"
+        - text "yelp"
+      - text "✦"
+        - text "✦"
+    - paragraph
+      - text "Discover trusted places and local pros."
+        - text "Discover trusted places and local pros."
+    - strong
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "Restaurants" [focusable=True]
+      - text "Restaurants"
+        - text "Restaurants"
+    - link "Home services" [focusable=True]
+      - text "Home services"
+        - text "Home services"
+    - link "Shopping" [focusable=True]
+      - text "Shopping"
+        - text "Shopping"
+    - strong
+      - text "PLAN"
+        - text "PLAN"
+    - link "Collections" [focusable=True]
+      - text "Collections"
+        - text "Collections"
+    - link "Coffee shops" [focusable=True]
+      - text "Coffee shops"
+        - text "Coffee shops"
+    - link "Car washes" [focusable=True]
+      - text "Car washes"
+        - text "Car washes"
+    - strong
+      - text "DEMO"
+        - text "DEMO"
+    - paragraph
+      - text "All listings, reviews, availability, and transactions on this site are synthetic."
+        - text "All listings, reviews, availability, and"
+        - text "transactions on this site are synthetic."
+    - text "© 2026 Yelp-style local discovery demo"
+      - text "© 2026 Yelp-style local discovery demo"

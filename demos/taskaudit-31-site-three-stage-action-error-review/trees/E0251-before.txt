@@ -1,0 +1,216 @@
+- document "Airbnb — Stays and experiences" [focused=True, focusable=True]
+  - banner
+    - button "Airbnb home" [focusable=True]
+      - text "airbnb"
+        - text "airbnb"
+    - navigation "Main navigation"
+      - button "Stays" [focusable=True]
+        - text "Stays"
+          - text "Stays"
+      - button "Experiences" [focusable=True]
+        - text "Experiences"
+          - text "Experiences"
+      - button "Online experiences" [focusable=True]
+        - text "Online experiences"
+          - text "Online experiences"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Choose language and currency" [focusable=True]
+    - button "Open profile menu" [focusable=True]
+    - button "Where Belo Horizonte" [focusable=True]
+      - text "Where"
+        - text "Where"
+      - strong
+        - text "Belo Horizonte"
+          - text "Belo Horizonte"
+    - button "When May 14 – May 16" [focusable=True]
+      - text "When"
+        - text "When"
+      - strong
+        - text "May 14 – May 16"
+          - text "May 14 – May 16"
+    - button "Who 1 guest" [focusable=True]
+      - text "Who"
+        - text "Who"
+      - strong
+        - text "1 guest"
+          - text "1 guest"
+    - button "Search" [focusable=True]
+    - heading "Choose your dates" [level=3]
+      - text "Choose your dates"
+        - text "Choose your dates"
+    - LabelText
+      - text "Check in"
+        - text "Check in"
+      - Date "Check in" value="2027-05-14" [focusable=True]
+        - spinbutton "Month Month" value="5" [focusable=True]
+          - text "05"
+            - text "05"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="14" [focusable=True]
+          - text "14"
+            - text "14"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - LabelText
+      - text "Check out"
+        - text "Check out"
+      - Date "Check out" value="2027-05-16" [focusable=True]
+        - spinbutton "Month Month" value="5" [focusable=True]
+          - text "05"
+            - text "05"
+        - text "/"
+          - text "/"
+        - spinbutton "Day Day" value="16" [focusable=True]
+          - text "16"
+            - text "16"
+        - text "/"
+          - text "/"
+        - spinbutton "Year Year" value="2027" [focusable=True]
+          - text "2027"
+            - text "2027"
+        - button "Show date picker" [focusable=True]
+    - paragraph
+      - text "QUICK DATE CHOICES"
+        - text "QUICK DATE CHOICES"
+    - button "Apr 10–12" [focusable=True]
+      - text "Apr 10–12"
+        - text "Apr 10–12"
+    - button "1 week next month" [focusable=True]
+      - text "1 week next month"
+        - text "1 week next month"
+    - button "Weekend in May" [focusable=True]
+      - text "Weekend in May"
+        - text "Weekend in May"
+    - button "Apr 1–2" [focusable=True]
+      - text "Apr 1–2"
+        - text "Apr 1–2"
+    - button "Any month" [focusable=True]
+      - text "Any month"
+        - text "Any month"
+    - button "Next: add guests" [focused=True, focusable=True]
+      - text "Next: add guests"
+        - text "Next: add guests"
+  - main
+    - region "Browse categories"
+      - button "Tiny homes" [focusable=True]
+        - text "Tiny homes"
+          - text "Tiny homes"
+      - button "Castles" [focusable=True]
+        - text "Castles"
+          - text "Castles"
+      - button "Mansions" [focusable=True]
+        - text "Mansions"
+          - text "Mansions"
+      - button "Shared rooms" [focusable=True]
+        - text "Shared rooms"
+          - text "Shared rooms"
+      - button "Amazing pools" [focusable=True]
+        - text "Amazing pools"
+          - text "Amazing pools"
+      - button "Treehouses" [focusable=True]
+        - text "Treehouses"
+          - text "Treehouses"
+      - button "OMG!" [focusable=True]
+        - text "OMG!"
+          - text "OMG!"
+      - button "Filters" [focusable=True]
+        - text "Filters"
+          - text "Filters"
+    - paragraph
+      - text "NOT SURE WHERE TO GO?"
+        - text "NOT SURE WHERE TO GO?"
+    - heading "Find a stay that feels made for you." [level=1]
+      - text "Find a stay that feels made for you."
+        - text "Find a stay that feels"
+        - text "made for you."
+    - paragraph
+      - text "Explore tiny homes, castles, treehouses and one-of-a-kind escapes."
+        - text "Explore tiny homes, castles, treehouses and one-of-a-kind escapes."
+    - button "Explore tiny homes" [focusable=True]
+      - text "Explore"
+        - text "Explore"
+      - text "tiny homes"
+        - text "tiny homes"
+    - paragraph
+      - text "1"
+        - text "1"
+      - text
+        - text
+      - text "RESULT"
+        - text "RESULT"
+    - heading "Places to stay in Belo Horizonte" [level=1]
+      - text "Places to stay in Belo Horizonte"
+        - text "Places to stay in Belo Horizonte"
+    - text "May 14 – May 16 · 1 guest"
+      - text "May 14 – May 16 · 1 guest"
+    - button "Refine" [focusable=True]
+      - text "Refine"
+        - text "Refine"
+    - article
+      - button "View Sunny Shared Loft in Savassi" [focusable=True]
+        - image "Sunny Shared Loft in Savassi"
+      - button "Save Sunny Shared Loft in Savassi to a wishlist" [focusable=True]
+      - button "Belo Horizonte, Brazil" [focusable=True]
+        - text "Belo Horizonte, Brazil"
+          - text "Belo Horizonte, Brazil"
+      - text "4.84"
+        - text "4.84"
+      - paragraph
+        - text "Sunny Shared Loft in Savassi"
+          - text "Sunny Shared Loft in Savassi"
+      - paragraph
+        - text "Shared room · 1 bed"
+          - text "Shared room · 1 bed"
+      - strong
+        - text "$74"
+          - text "$74"
+        - text
+          - text
+        - text "night"
+          - text "night"
+  - contentinfo
+    - strong
+      - text "Support"
+        - text "Support"
+    - button "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - button "AirCover" [focusable=True]
+      - text "AirCover"
+        - text "AirCover"
+    - strong
+      - text "Hosting"
+        - text "Hosting"
+    - button "Airbnb your home" [focusable=True]
+      - text "Airbnb your home"
+        - text "Airbnb your home"
+    - button "Community forum" [focusable=True]
+      - text "Community forum"
+        - text "Community forum"
+    - strong
+      - text "Airbnb"
+        - text "Airbnb"
+    - button "Newsroom" [focusable=True]
+      - text "Newsroom"
+        - text "Newsroom"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - text "© 2026 Airbnb-inspired demo"
+      - text "© 2026 Airbnb-inspired demo"
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "English (US) · $ USD" [focusable=True]
+      - text "English (US) · $ USD"
+        - text "English (US) · $ USD"

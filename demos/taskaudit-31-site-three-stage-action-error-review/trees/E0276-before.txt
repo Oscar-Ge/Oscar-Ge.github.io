@@ -1,0 +1,261 @@
+- document "StubHub | Be There Live" [focused=True, focusable=True]
+  - banner
+    - button "StubHub home" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - navigation "Main navigation"
+      - button "Concerts" [focusable=True]
+        - text "Concerts"
+          - text "Concerts"
+      - button "Sports" [focusable=True]
+        - text "Sports"
+          - text "Sports"
+      - button "Theater" [focusable=True]
+        - text "Theater"
+          - text "Theater"
+      - button "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - button "Open cart with 0 items" [focusable=True]
+  - main
+    - button "Back" [focusable=True]
+      - text "Back"
+        - text "Back"
+    - text "/"
+      - text "/"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - text "/"
+      - text "/"
+    - text "Celine Dion"
+      - text "Celine Dion"
+    - text "POP"
+      - text "POP"
+    - text "FRANCE"
+      - text "FRANCE"
+    - heading "Celine Dion" [level=1]
+      - text "Celine Dion"
+        - text "Celine Dion"
+    - paragraph
+      - text "Live in Paris"
+        - text "Live in Paris"
+    - text "Sat, Oct 17 • 8:00 PM"
+      - text "Sat, Oct 17 • 8:00 PM"
+    - text "Stade de France"
+      - text "Stade de France"
+    - text "Paris"
+      - text "Paris"
+    - text ","
+      - text ","
+    - text "Île-de-France"
+      - text "Île-de-France"
+    - strong
+      - text "FanProtect"
+        - text "FanProtect"
+    - text "Order guarantee"
+      - text "Order guarantee"
+    - paragraph
+      - text "How many?"
+        - text "How many?"
+    - generic "Ticket quantity"
+      - button "Decrease quantity" [disabled=True]
+      - strong
+        - text "1"
+          - text "1"
+      - text "ticket"
+        - text "ticket"
+      - button "Increase quantity" [focusable=True]
+    - paragraph
+      - text "Ticket type"
+        - text "Ticket type"
+    - combobox value="All sections" [focusable=True]
+      - MenuListPopup
+        - option "All sections" [focusable=True, selected=True]
+        - option "Golden Circle" [focusable=True]
+        - option "Reserved" [focusable=True]
+    - LabelText
+      - checkbox "Aisle seats only Easy access to your row" [focusable=True]
+      - text "Aisle seats only"
+        - text "Aisle seats only"
+      - text "Easy access to your row"
+        - text "Easy access to your row"
+    - heading "About this event" [level=3]
+      - text "About this event"
+        - text "About this event"
+    - paragraph
+      - text "Celine Dion returns to France for an unforgettable open-air performance in Paris."
+        - text "Celine Dion returns to France for an"
+        - text "unforgettable open-air performance in"
+        - text "Paris."
+    - text "VERIFIED TICKETS"
+      - text "VERIFIED TICKETS"
+    - heading "3 listings for 1" [level=2]
+      - text "3"
+        - text "3"
+      - text
+        - text
+      - text "listings"
+        - text "listings"
+      - text "for"
+        - text "for"
+      - text "1"
+        - text "1"
+    - LabelText
+      - checkbox "Prices with estimated fees" [focusable=True, checked=true]
+      - text "Prices with estimated fees"
+        - text "Prices with estimated fees"
+    - combobox "Sort listings" value="Lowest price" [focusable=True]
+      - MenuListPopup
+        - option "Lowest price" [focusable=True, selected=True]
+        - option "Highest price" [focusable=True]
+    - text "All prices below include estimated service fees."
+      - text "All prices below include estimated service fees."
+    - article
+      - text "01"
+        - text "01"
+      - heading "Category 1" [level=3]
+        - text "Category 1"
+          - text "Category 1"
+      - paragraph
+        - text "Row 12"
+          - text "Row 12"
+      - text "Reserved seat"
+        - text "Reserved seat"
+      - text "Mobile ticket"
+        - text "Mobile ticket"
+      - text "·"
+        - text "·"
+      - text "4"
+        - text "4"
+      - text "available"
+        - text "available"
+      - strong
+        - text "$207"
+          - text "$207"
+      - text "each"
+        - text "each"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "Select" [focusable=True]
+        - text "Select"
+          - text "Select"
+    - article
+      - text "02"
+        - text "02"
+      - heading "Golden Circle" [level=3]
+        - text "Golden Circle"
+          - text "Golden Circle"
+      - paragraph
+        - text "Standing"
+          - text "Standing"
+      - text "Golden Circle"
+        - text "Golden Circle"
+      - text "Paper ticket"
+        - text "Paper ticket"
+      - text "Paper ticket"
+        - text "Paper ticket"
+      - text "·"
+        - text "·"
+      - text "8"
+        - text "8"
+      - text "available"
+        - text "available"
+      - text "Lowest Golden Circle"
+        - text "Lowest Golden Circle"
+      - strong
+        - text "$262"
+          - text "$262"
+      - text "each"
+        - text "each"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "Select" [focusable=True]
+        - text "Select"
+          - text "Select"
+    - article
+      - text "03"
+        - text "03"
+      - heading "Golden Circle" [level=3]
+        - text "Golden Circle"
+          - text "Golden Circle"
+      - paragraph
+        - text "Standing"
+          - text "Standing"
+      - text "Golden Circle"
+        - text "Golden Circle"
+      - text "Paper ticket"
+        - text "Paper ticket"
+      - text "Early entry"
+        - text "Early entry"
+      - text "Paper ticket"
+        - text "Paper ticket"
+      - text "·"
+        - text "·"
+      - text "6"
+        - text "6"
+      - text "available"
+        - text "available"
+      - strong
+        - text "$295"
+          - text "$295"
+      - text "each"
+        - text "each"
+      - text "incl. fees"
+        - text "incl. fees"
+      - button "Select" [focused=True, focusable=True]
+        - text "Select"
+          - text "Select"
+  - contentinfo
+    - button "stubhub ®" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - paragraph
+      - text "Be there live."
+        - text "Be there live."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - button "NHL in Boston" [focusable=True]
+      - text "NHL in Boston"
+        - text "NHL in Boston"
+    - button "Las Vegas theater" [focusable=True]
+      - text "Las Vegas theater"
+        - text "Las Vegas theater"
+    - heading "GIFTS" [level=3]
+      - text "GIFTS"
+        - text "GIFTS"
+    - button "Buy a gift card" [focusable=True]
+      - text "Buy a gift card"
+        - text "Buy a gift card"
+    - button "Gift card cart" [focusable=True]
+      - text "Gift card cart"
+        - text "Gift card cart"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - button "Transfer NFL tickets" [focusable=True]
+      - text "Transfer NFL tickets"
+        - text "Transfer NFL tickets"
+    - button "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - text "© 2026 StubHub demo marketplace"
+      - text "© 2026 StubHub demo marketplace"
+    - text "United States · USD"
+      - text "United States · USD"
+    - text "FanProtect Guarantee"
+      - text "FanProtect Guarantee"

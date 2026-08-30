@@ -1,0 +1,170 @@
+- document "StubHub | Be There Live" [focused=True, focusable=True]
+  - banner
+    - button "StubHub home" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - navigation "Main navigation"
+      - button "Concerts" [focusable=True]
+        - text "Concerts"
+          - text "Concerts"
+      - button "Sports" [focusable=True]
+        - text "Sports"
+          - text "Sports"
+      - button "Theater" [focusable=True]
+        - text "Theater"
+          - text "Theater"
+      - button "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - button "Open cart with 0 items" [focusable=True]
+  - main
+    - button "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - search
+      - entry "Search events" value="events" [focusable=True]
+        - text "events"
+          - text "events"
+      - button "Search" [focused=True, focusable=True]
+        - text "Search"
+          - text "Search"
+    - complementary
+      - heading "Filters" [level=2]
+        - text "Filters"
+          - text "Filters"
+      - LabelText
+        - text "Location"
+          - text "Location"
+        - combobox "Location" value="All cities" [focusable=True]
+          - MenuListPopup
+            - option "All cities" [focusable=True, selected=True]
+            - option "Austin" [focusable=True]
+            - option "Boston" [focusable=True]
+            - option "Brisbane" [focusable=True]
+            - option "Las Vegas" [focusable=True]
+            - option "Los Angeles" [focusable=True]
+            - option "Mexico City" [focusable=True]
+            - option "New York" [focusable=True]
+            - option "Paris" [focusable=True]
+            - option "Sydney" [focusable=True]
+      - LabelText
+        - text "Category"
+          - text "Category"
+        - combobox "Category" value="All categories" [focusable=True]
+          - MenuListPopup
+            - option "All categories" [focusable=True, selected=True]
+            - option "Concerts" [focusable=True]
+            - option "Sports" [focusable=True]
+            - option "Theater" [focusable=True]
+      - LabelText
+        - text "Date"
+          - text "Date"
+        - combobox "Date" value="All dates" [focusable=True]
+          - MenuListPopup
+            - option "All dates" [focusable=True, selected=True]
+            - option "This month" [focusable=True]
+            - option "Next week" [focusable=True]
+            - option "Apr 22" [focusable=True]
+            - option "Apr 23" [focusable=True]
+            - option "Apr 26" [focusable=True]
+            - option "Jun 16" [focusable=True]
+            - option "Jul 8" [focusable=True]
+            - option "Before Mar 30" [focusable=True]
+      - LabelText
+        - text "Tickets"
+          - text "Tickets"
+        - combobox "Tickets" value="1 ticket" [focusable=True]
+          - MenuListPopup
+            - option "1 ticket" [focusable=True, selected=True]
+            - option "2 tickets" [focusable=True]
+            - option "3 tickets" [focusable=True]
+            - option "4 tickets" [focusable=True]
+            - option "5 tickets" [focusable=True]
+            - option "6 tickets" [focusable=True]
+            - option "7 tickets" [focusable=True]
+            - option "8 tickets" [focusable=True]
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - text "VERIFIED MARKETPLACE"
+      - text "VERIFIED MARKETPLACE"
+    - heading "Tickets for “events”" [level=1]
+      - text "Tickets for “events”"
+        - text "Tickets for “events”"
+    - paragraph
+      - text "0"
+        - text "0"
+      - text
+        - text
+      - text "events"
+        - text "events"
+      - text "found · Prices shown with estimated fees"
+        - text "found · Prices shown with estimated fees"
+    - text "1"
+      - text "1"
+    - text
+      - text
+    - text "ticket"
+      - text "ticket"
+    - heading "No exact matches yet" [level=2]
+      - text "No exact matches yet"
+        - text "No exact matches yet"
+    - paragraph
+      - text "Try clearing the filters to see the matching event."
+        - text "Try clearing the filters to see the matching event."
+    - button "Clear filters" [focusable=True]
+      - text "Clear filters"
+        - text "Clear filters"
+  - contentinfo
+    - button "stubhub ®" [focusable=True]
+      - text "stubhub"
+        - text "stubhub"
+      - text "®"
+        - text "®"
+    - paragraph
+      - text "Be there live."
+        - text "Be there live."
+    - heading "DISCOVER" [level=3]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - button "Concerts" [focusable=True]
+      - text "Concerts"
+        - text "Concerts"
+    - button "NHL in Boston" [focusable=True]
+      - text "NHL in Boston"
+        - text "NHL in Boston"
+    - button "Las Vegas theater" [focusable=True]
+      - text "Las Vegas theater"
+        - text "Las Vegas theater"
+    - heading "GIFTS" [level=3]
+      - text "GIFTS"
+        - text "GIFTS"
+    - button "Buy a gift card" [focusable=True]
+      - text "Buy a gift card"
+        - text "Buy a gift card"
+    - button "Gift card cart" [focusable=True]
+      - text "Gift card cart"
+        - text "Gift card cart"
+    - heading "SUPPORT" [level=3]
+      - text "SUPPORT"
+        - text "SUPPORT"
+    - button "Transfer NFL tickets" [focusable=True]
+      - text "Transfer NFL tickets"
+        - text "Transfer NFL tickets"
+    - button "Help center" [focusable=True]
+      - text "Help center"
+        - text "Help center"
+    - text "© 2026 StubHub demo marketplace"
+      - text "© 2026 StubHub demo marketplace"
+    - text "United States · USD"
+      - text "United States · USD"
+    - text "FanProtect Guarantee"
+      - text "FanProtect Guarantee"

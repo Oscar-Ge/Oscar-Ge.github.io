@@ -1,0 +1,203 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - button "Reddit home" [focusable=True]
+      - text "reddit"
+        - text "reddit"
+    - search
+      - entry "Search Reddit" value="Bb" [focused=True, focusable=True]
+        - text "Bb"
+          - text "Bb"
+      - button "Clear search" [focusable=True]
+    - navigation "Account actions"
+      - button "Open chat" [focusable=True]
+      - button "Notifications" [focusable=True]
+        - text "3"
+          - text "3"
+      - button "Create" [focusable=True]
+        - text "Create"
+          - text "Create"
+      - button "Open user menu" [focusable=True]
+        - text "oo"
+          - text "oo"
+  - complementary
+    - navigation "Primary navigation"
+      - button "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - button "Popular" [focusable=True]
+        - text "Popular"
+          - text "Popular"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - button "Create a post" [focusable=True]
+        - text "Create a post"
+          - text "Create a post"
+      - button "Drafts" [focusable=True]
+        - text "Drafts"
+          - text "Drafts"
+    - text "COMMUNITIES"
+      - text "COMMUNITIES"
+    - button "Create a community" [focusable=True]
+    - button "Create a community" [focusable=True]
+      - text "Create a community"
+        - text "Create a community"
+    - button "r/announcements" [focusable=True]
+      - text "r/"
+        - text "r/"
+      - text "announcements"
+        - text "announcements"
+    - paragraph
+      - text "About • Content Policy"
+        - text "About • Content Policy"
+      - LineBreak
+        - text
+      - text "Privacy • User Agreement"
+        - text "Privacy • User Agreement"
+  - main
+    - paragraph
+      - text "SEARCH RESULTS"
+        - text "SEARCH RESULTS"
+    - heading "“Bb”" [level=1]
+      - text "“"
+        - text "“"
+      - text "Bb"
+        - text "Bb"
+      - text "”"
+        - text "”"
+    - paragraph
+      - text "0"
+        - text "0"
+      - text "relevant results from synthetic Reddit data"
+        - text "relevant results from synthetic Reddit data"
+    - tablist "Search result types"
+      - tab "All" [focusable=True, selected=True]
+        - text "All"
+          - text "All"
+      - tab "Posts" [focusable=True]
+        - text "Posts"
+          - text "Posts"
+      - tab "Comments" [focusable=True]
+        - text "Comments"
+          - text "Comments"
+      - tab "Communities" [focusable=True]
+        - text "Communities"
+          - text "Communities"
+    - heading "Posts" [level=2]
+      - text "Posts"
+        - text "Posts"
+    - text "Use Top, New, time, and comments filters to refine"
+      - text "Use Top, New, time, and comments filters to refine"
+    - generic "Feed controls"
+      - button "Hot" [focusable=True, pressed=true]
+        - text "Hot"
+          - text "Hot"
+      - button "New" [focusable=True]
+        - text "New"
+          - text "New"
+      - button "Top" [focusable=True]
+        - text "Top"
+          - text "Top"
+      - button "Rising" [focusable=True]
+        - text "Rising"
+          - text "Rising"
+      - button "Most comments" [focusable=True]
+        - text "Most comments"
+          - text "Most comments"
+      - generic "Post view"
+        - button "Card view" [focusable=True, pressed=true]
+        - button "Compact view" [focusable=True]
+    - heading "Nothing here" [level=3]
+      - text "Nothing here"
+        - text "Nothing here"
+    - paragraph
+      - text "No results match these filters yet."
+        - text "No results match these filters yet."
+    - heading "Comments" [level=2]
+      - text "Comments"
+        - text "Comments"
+    - text "Top comments appear first"
+      - text "Top comments appear first"
+    - button "Top comments" [focusable=True]
+      - text "Top comments"
+        - text "Top comments"
+    - button "Newest comments" [focusable=True]
+      - text "Newest comments"
+        - text "Newest comments"
+    - heading "Nothing here" [level=3]
+      - text "Nothing here"
+        - text "Nothing here"
+    - paragraph
+      - text "No results match these filters yet."
+        - text "No results match these filters yet."
+  - complementary
+    - text "Popular communities"
+      - text "Popular communities"
+    - text "1"
+      - text "1"
+    - button "r/Music 81.2k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Music"
+          - text "Music"
+      - text "81.2k"
+        - text "81.2k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "2"
+      - text "2"
+    - button "r/FortNiteBR 27.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "FortNiteBR"
+          - text "FortNiteBR"
+      - text "27.4k"
+        - text "27.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "3"
+      - text "3"
+    - button "r/Fitness 18.4k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "Fitness"
+          - text "Fitness"
+      - text "18.4k"
+        - text "18.4k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - text "4"
+      - text "4"
+    - button "r/AskReddit 184k viewing" [focusable=True]
+      - strong
+        - text "r/"
+          - text "r/"
+        - text "AskReddit"
+          - text "AskReddit"
+      - text "184k"
+        - text "184k"
+      - text "viewing"
+        - text "viewing"
+    - button "Join" [focusable=True]
+      - text "Join"
+        - text "Join"
+    - strong
+      - text "A better Reddit experience"
+        - text "A better Reddit experience"
+    - paragraph
+      - text "All content here is realistic synthetic data. Your actions stay in this demo."
+        - text "All content here is realistic synthetic"
+        - text "data. Your actions stay in this demo."
+  - status

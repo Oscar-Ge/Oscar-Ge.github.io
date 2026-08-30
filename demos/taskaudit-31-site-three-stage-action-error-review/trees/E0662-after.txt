@@ -1,0 +1,165 @@
+- document "UPS Shipping, Tracking & Locations" [focused=True, focusable=True]
+  - text "United States – English"
+    - text "United States – English"
+  - link "Find a Location" [focusable=True]
+    - text "Find a Location"
+      - text "Find a Location"
+  - link "Support" [focusable=True]
+    - text "Support"
+      - text "Support"
+  - banner
+    - link "UPS home" [focusable=True]
+      - generic "UPS home"
+        - text "ups"
+          - text "ups"
+    - navigation "Primary navigation"
+      - link "Shipping" [focusable=True]
+        - text "Shipping"
+          - text "Shipping"
+      - link "Tracking" [focusable=True]
+        - text "Tracking"
+          - text "Tracking"
+      - link "Locations" [focusable=True]
+        - text "Locations"
+          - text "Locations"
+      - link "Schedule a Pickup" [focusable=True]
+        - text "Schedule a Pickup"
+          - text "Schedule a Pickup"
+    - button "Search UPS" [focusable=True]
+    - button "Sign In" [focusable=True]
+      - text "Sign In"
+        - text "Sign In"
+  - main
+    - text "WE’RE HERE TO HELP"
+      - text "WE’RE HERE TO HELP"
+    - heading "Contact UPS" [level=1]
+      - text "Contact UPS"
+        - text "Contact UPS"
+    - paragraph
+      - text "Send a message, review a realistic conversation, and request an emailed transcript."
+        - text "Send a message, review a realistic conversation, and request an emailed"
+        - text "transcript."
+    - text "CONTACT SUPPORT"
+      - text "CONTACT SUPPORT"
+    - heading "Tell us how we can help" [level=2]
+      - text "Tell us how we can help"
+        - text "Tell us how we can help"
+    - paragraph
+      - text "A support specialist will review the details of your mock request."
+        - text "A support specialist will review the details of your mock request."
+    - form
+      - LabelText
+        - text "Name"
+          - text "Name"
+        - entry "Name" [focusable=True, required=True]
+      - LabelText
+        - text "Email address"
+          - text "Email address"
+        - entry "Email address" [focusable=True, required=True]
+      - LabelText
+        - text "What do you need help with?"
+          - text "What do you need help with?"
+        - combobox "What do you need help with?" value="Shipping question" [focusable=True]
+          - MenuListPopup
+            - option "Shipping question" [focusable=True, selected=True]
+            - option "Tracking question" [focusable=True]
+            - option "Pickup question" [focusable=True]
+            - option "Location services" [focusable=True]
+      - LabelText
+        - text "Message"
+          - text "Message"
+        - entry "Message" [focusable=True, required=True]
+      - button "Send Message" [focusable=True]
+        - text "Send Message"
+          - text "Send Message"
+    - strong
+      - text "Under 2 minutes"
+        - text "Under 2 minutes"
+    - paragraph
+      - text "Typical demo response time"
+        - text "Typical demo response time"
+    - strong
+      - text "Private by design"
+        - text "Private by design"
+    - paragraph
+      - text "No information leaves this mock site"
+        - text "No information leaves this mock"
+        - text "site"
+    - heading "Support hours" [level=3]
+      - text "Support hours"
+        - text "Support hours"
+    - paragraph
+      - text "Monday–Friday: 8:00 AM–8:00 PM ET"
+        - text "Monday–Friday: 8:00 AM–8:00 PM ET"
+    - paragraph
+      - text "Saturday: 9:00 AM–5:00 PM ET"
+        - text "Saturday: 9:00 AM–5:00 PM ET"
+    - text "KEEP A COPY"
+      - text "KEEP A COPY"
+    - heading "Email the conversation transcript" [level=2]
+      - text "Email the conversation transcript"
+        - text "Email the"
+        - text "conversation"
+        - text "transcript"
+    - paragraph
+      - text "We’ll send a complete mock transcript and reference number to the address you provide."
+        - text "We’ll send a complete mock transcript and reference number"
+        - text "to the address you provide."
+    - form
+      - LabelText
+        - text "Email address"
+          - text "Email address"
+        - entry "Email address" [focusable=True, required=True]
+      - button "Email Transcript" [focusable=True]
+        - text "Email Transcript"
+          - text "Email Transcript"
+  - contentinfo
+    - generic "UPS home"
+      - text "ups"
+        - text "ups"
+    - paragraph
+      - text "Delivering what matters—from your neighborhood to the world."
+        - text "Delivering what matters—from"
+        - text "your neighborhood to the world."
+    - text "Secure mock experience"
+      - text "Secure mock experience"
+    - heading "Ship & Track" [level=3]
+      - text "Ship & Track"
+        - text "Ship & Track"
+    - link "Calculate Time & Cost" [focusable=True]
+      - text "Calculate Time & Cost"
+        - text "Calculate Time & Cost"
+    - link "Track a Package" [focusable=True]
+      - text "Track a Package"
+        - text "Track a Package"
+    - link "UPS Simple Rate" [focusable=True]
+      - text "UPS Simple Rate"
+        - text "UPS Simple Rate"
+    - heading "Pickup & Locations" [level=3]
+      - text "Pickup & Locations"
+        - text "Pickup & Locations"
+    - link "Schedule a Pickup" [focusable=True]
+      - text "Schedule a Pickup"
+        - text "Schedule a Pickup"
+    - link "Pickup Request Status" [focusable=True]
+      - text "Pickup Request Status"
+        - text "Pickup Request Status"
+    - link "Find a UPS Location" [focusable=True]
+      - text "Find a UPS Location"
+        - text "Find a UPS Location"
+    - heading "Help" [level=3]
+      - text "Help"
+        - text "Help"
+    - link "Contact UPS" [focused=True, focusable=True]
+      - text "Contact UPS"
+        - text "Contact UPS"
+    - link "Email a Transcript" [focusable=True]
+      - text "Email a Transcript"
+        - text "Email a Transcript"
+    - link "Help Center" [focusable=True]
+      - text "Help Center"
+        - text "Help Center"
+    - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+      - text "© 2026 United Parcel Service of America, Inc. This is a realistic demo."
+    - text "Privacy & security · Accessibility"
+      - text "Privacy & security · Accessibility"

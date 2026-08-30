@@ -1,0 +1,456 @@
+- document "American Airlines | Travel with confidence" [focused=True, focusable=True]
+  - banner
+    - text "American Airlines"
+      - text "American Airlines"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - button "Contact American" [focusable=True]
+      - text "Contact American"
+        - text "Contact American"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "American Airlines home" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - navigation "Primary navigation"
+      - button "Book" [focusable=True]
+        - text "Book"
+          - text "Book"
+      - button "Manage trips / Check-in" [focusable=True]
+        - text "Manage trips / Check-in"
+          - text "Manage trips / Check-in"
+      - button "Flight status" [focusable=True]
+        - text "Flight status"
+          - text "Flight status"
+      - button "AAdvantage®" [focusable=True]
+        - text "AAdvantage®"
+          - text "AAdvantage®"
+      - button "Travel information" [focusable=True]
+        - text "Travel information"
+          - text "Travel information"
+    - button "Search site" [focusable=True]
+    - button "Log in" [focusable=True]
+      - text "Log in"
+        - text "Log in"
+  - main
+    - paragraph
+      - text "YOUR WORLD IS WAITING"
+        - text "YOUR WORLD IS WAITING"
+    - heading "More places. More possibilities." [level=1]
+      - text "More places. More possibilities."
+        - text "More places. More"
+        - text "possibilities."
+    - paragraph
+      - text "Plan every part of your trip with confidence, from takeoff to touchdown."
+        - text "Plan every part of your trip with confidence, from takeoff to touchdown."
+    - region "Book travel"
+      - tablist "Travel tools"
+        - tab "Book" [focusable=True, selected=True]
+          - text "Book"
+            - text "Book"
+        - tab "Manage trips" [focusable=True]
+          - text "Manage trips"
+            - text "Manage trips"
+        - tab "Flight status" [focusable=True]
+          - text "Flight status"
+            - text "Flight status"
+      - form
+        - generic "Trip type"
+          - radio "Round trip" [focusable=True, checked=true]
+          - radio "One way" [focusable=True]
+          - radio "Multi-city" [focusable=True]
+          - radio "Vacation package" [focusable=True]
+        - LabelText
+          - text "From"
+            - text "From"
+          - entry "From" value="New York, NY (JFK)" [focusable=True, required=True]
+            - text "New York, NY (JFK)"
+              - text "New York, NY (JFK)"
+        - button "Swap origin and destination" [focusable=True]
+          - text "⇄"
+            - text "⇄"
+        - LabelText
+          - text "To"
+            - text "To"
+          - entry "To" value="London, England (LHR)" [focusable=True, required=True]
+            - text "London, England (LHR)"
+              - text "London, England (LHR)"
+        - LabelText
+          - text "Depart"
+            - text "Depart"
+          - Date "Depart" value="2027-04-20" [focusable=True]
+            - spinbutton "Month Month" value="4" [focusable=True]
+              - text "04"
+                - text "04"
+            - text "/"
+              - text "/"
+            - spinbutton "Day Day" value="20" [focusable=True]
+              - text "20"
+                - text "20"
+            - text "/"
+              - text "/"
+            - spinbutton "Year Year" value="2027" [focusable=True]
+              - text "2027"
+                - text "2027"
+            - button "Show date picker" [focusable=True]
+        - LabelText
+          - text "Return"
+            - text "Return"
+          - Date "Return" value="2027-04-23" [focusable=True]
+            - spinbutton "Month Month" value="4" [focusable=True]
+              - text "04"
+                - text "04"
+            - text "/"
+              - text "/"
+            - spinbutton "Day Day" value="23" [focusable=True]
+              - text "23"
+                - text "23"
+            - text "/"
+              - text "/"
+            - spinbutton "Year Year" value="2027" [focusable=True]
+              - text "2027"
+                - text "2027"
+            - button "Show date picker" [focusable=True]
+            - group
+              - button "April 2027" [focusable=True]
+                - text "April 2027"
+                  - text "April 2027"
+                - image
+              - button "Show previous month" [focusable=True]
+                - image
+              - button "Show next month" [focusable=True]
+                - image
+              - grid [focusable=True]
+                - text "S"
+                  - text "S"
+                - text "M"
+                  - text "M"
+                - text "T"
+                  - text "T"
+                - text "W"
+                  - text "W"
+                - text "T"
+                  - text "T"
+                - text "F"
+                  - text "F"
+                - text "S"
+                  - text "S"
+                - row
+                  - gridcell "Sunday, March 28, 2027"
+                    - text "28"
+                      - text "28"
+                  - gridcell "Monday, March 29, 2027"
+                    - text "29"
+                      - text "29"
+                  - gridcell "Tuesday, March 30, 2027"
+                    - text "30"
+                      - text "30"
+                  - gridcell "Wednesday, March 31, 2027"
+                    - text "31"
+                      - text "31"
+                  - gridcell "Thursday, April 1, 2027"
+                    - text "1"
+                      - text "1"
+                  - gridcell "Friday, April 2, 2027"
+                    - text "2"
+                      - text "2"
+                  - gridcell "Saturday, April 3, 2027"
+                    - text "3"
+                      - text "3"
+                - row
+                  - gridcell "Sunday, April 4, 2027"
+                    - text "4"
+                      - text "4"
+                  - gridcell "Monday, April 5, 2027"
+                    - text "5"
+                      - text "5"
+                  - gridcell "Tuesday, April 6, 2027"
+                    - text "6"
+                      - text "6"
+                  - gridcell "Wednesday, April 7, 2027"
+                    - text "7"
+                      - text "7"
+                  - gridcell "Thursday, April 8, 2027"
+                    - text "8"
+                      - text "8"
+                  - gridcell "Friday, April 9, 2027"
+                    - text "9"
+                      - text "9"
+                  - gridcell "Saturday, April 10, 2027"
+                    - text "10"
+                      - text "10"
+                - row
+                  - gridcell "Sunday, April 11, 2027"
+                    - text "11"
+                      - text "11"
+                  - gridcell "Monday, April 12, 2027"
+                    - text "12"
+                      - text "12"
+                  - gridcell "Tuesday, April 13, 2027"
+                    - text "13"
+                      - text "13"
+                  - gridcell "Wednesday, April 14, 2027"
+                    - text "14"
+                      - text "14"
+                  - gridcell "Thursday, April 15, 2027"
+                    - text "15"
+                      - text "15"
+                  - gridcell "Friday, April 16, 2027"
+                    - text "16"
+                      - text "16"
+                  - gridcell "Saturday, April 17, 2027"
+                    - text "17"
+                      - text "17"
+                - row
+                  - gridcell "Sunday, April 18, 2027"
+                    - text "18"
+                      - text "18"
+                  - gridcell "Monday, April 19, 2027"
+                    - text "19"
+                      - text "19"
+                  - gridcell "Tuesday, April 20, 2027"
+                    - text "20"
+                      - text "20"
+                  - gridcell "Wednesday, April 21, 2027"
+                    - text "21"
+                      - text "21"
+                  - gridcell "Thursday, April 22, 2027"
+                    - text "22"
+                      - text "22"
+                  - gridcell "Friday, April 23, 2027" [selected=True]
+                    - text "23"
+                      - text "23"
+                  - gridcell "Saturday, April 24, 2027"
+                    - text "24"
+                      - text "24"
+                - row
+                  - gridcell "Sunday, April 25, 2027"
+                    - text "25"
+                      - text "25"
+                  - gridcell "Monday, April 26, 2027"
+                    - text "26"
+                      - text "26"
+                  - gridcell "Tuesday, April 27, 2027"
+                    - text "27"
+                      - text "27"
+                  - gridcell "Wednesday, April 28, 2027"
+                    - text "28"
+                      - text "28"
+                  - gridcell "Thursday, April 29, 2027"
+                    - text "29"
+                      - text "29"
+                  - gridcell "Friday, April 30, 2027"
+                    - text "30"
+                      - text "30"
+                  - gridcell "Saturday, May 1, 2027"
+                    - text "1"
+                      - text "1"
+                - row
+                  - gridcell "Sunday, May 2, 2027"
+                    - text "2"
+                      - text "2"
+                  - gridcell "Monday, May 3, 2027"
+                    - text "3"
+                      - text "3"
+                  - gridcell "Tuesday, May 4, 2027"
+                    - text "4"
+                      - text "4"
+                  - gridcell "Wednesday, May 5, 2027"
+                    - text "5"
+                      - text "5"
+                  - gridcell "Thursday, May 6, 2027"
+                    - text "6"
+                      - text "6"
+                  - gridcell "Friday, May 7, 2027"
+                    - text "7"
+                      - text "7"
+                  - gridcell "Saturday, May 8, 2027"
+                    - text "8"
+                      - text "8"
+                - button "Clear" [focusable=True]
+                  - text "Clear"
+                    - text "Clear"
+                - button "Today" [focused=True, focusable=True]
+                  - text "Today"
+                    - text "Today"
+        - LabelText
+          - text "Adults"
+            - text "Adults"
+          - combobox "Adults" value="1 adult" [focusable=True]
+            - MenuListPopup
+              - option "1 adult" [focusable=True, selected=True]
+              - option "2 adults" [focusable=True]
+              - option "3 adults" [focusable=True]
+              - option "4 adults" [focusable=True]
+              - option "5 adults" [focusable=True]
+              - option "6 adults" [focusable=True]
+        - LabelText
+          - text "Children (2–11)"
+            - text "Children (2–11)"
+          - combobox "Children (2–11)" value="0 children" [focusable=True]
+            - MenuListPopup
+              - option "0 children" [focusable=True, selected=True]
+              - option "1 child" [focusable=True]
+              - option "2 children" [focusable=True]
+              - option "3 children" [focusable=True]
+              - option "4 children" [focusable=True]
+        - LabelText
+          - text "Cabin"
+            - text "Cabin"
+          - combobox "Cabin" value="Main Cabin" [focusable=True]
+            - MenuListPopup
+              - option "Main Cabin" [focusable=True, selected=True]
+              - option "Premium Economy" [focusable=True]
+              - option "Business" [focusable=True]
+              - option "First" [focusable=True]
+        - LabelText
+          - checkbox "Nearby airports Include airports near your cities" [focusable=True]
+          - strong
+            - text "Nearby airports"
+              - text "Nearby airports"
+          - text "Include airports near your cities"
+            - text "Include airports near your cities"
+        - button "Search flights" [focusable=True]
+          - text "Search flights"
+            - text "Search flights"
+    - paragraph
+      - text "TRAVEL MADE SIMPLE"
+        - text "TRAVEL MADE SIMPLE"
+    - heading "What can we help you with?" [level=2]
+      - text "What can we help you with?"
+        - text "What can we help you with?"
+    - button "Flight status Get the latest arrival and departure information." [focusable=True]
+      - strong
+        - text "Flight status"
+          - text "Flight status"
+      - text "Get the latest arrival and departure information."
+        - text "Get the latest arrival and departure"
+        - text "information."
+    - button "Manage your trip Check in, choose seats and add travel extras." [focusable=True]
+      - strong
+        - text "Manage your trip"
+          - text "Manage your trip"
+      - text "Check in, choose seats and add travel extras."
+        - text "Check in, choose seats and add travel extras."
+    - button "Travel credits Find and view your available trip credits." [focusable=True]
+      - strong
+        - text "Travel credits"
+          - text "Travel credits"
+      - text "Find and view your available trip credits."
+        - text "Find and view your available trip credits."
+    - button "Schedules & alerts View schedules and receive flight notifications." [focusable=True]
+      - strong
+        - text "Schedules & alerts"
+          - text "Schedules & alerts"
+      - text "View schedules and receive flight notifications."
+        - text "View schedules and receive flight"
+        - text "notifications."
+    - button "Hotels Find a stay that works for your itinerary." [focusable=True]
+      - strong
+        - text "Hotels"
+          - text "Hotels"
+      - text "Find a stay that works for your itinerary."
+        - text "Find a stay that works for your itinerary."
+    - button "Careers Join a team that connects the world." [focusable=True]
+      - strong
+        - text "Careers"
+          - text "Careers"
+      - text "Join a team that connects the world."
+        - text "Join a team that connects the world."
+    - paragraph
+      - text "GO FURTHER"
+        - text "GO FURTHER"
+    - heading "Your next favorite place is closer than you think" [level=2]
+      - text "Your next favorite place is closer than you think"
+        - text "Your next favorite place is closer"
+        - text "than you think"
+    - paragraph
+      - text "Explore flexible fares and thoughtfully timed flights to hundreds of destinations."
+        - text "Explore flexible fares and thoughtfully timed flights to hundreds of destinations."
+    - button "Search flights" [focusable=True]
+      - text "Search flights"
+        - text "Search flights"
+    - generic "Decorative route illustration"
+      - text "JFK"
+        - text "JFK"
+      - text "LHR"
+        - text "LHR"
+    - heading "More flexibility" [level=3]
+      - text "More flexibility"
+        - text "More flexibility"
+    - paragraph
+      - text "Change plans with options designed around your journey."
+        - text "Change plans with options designed around your"
+        - text "journey."
+    - heading "More connected" [level=3]
+      - text "More connected"
+        - text "More connected"
+    - paragraph
+      - text "Stay productive or entertained on select flights."
+        - text "Stay productive or entertained on select flights."
+    - heading "Our best fares" [level=3]
+      - text "Our best fares"
+        - text "Our best fares"
+    - paragraph
+      - text "Compare choices and pick the trip that fits you best."
+        - text "Compare choices and pick the trip that fits you"
+        - text "best."
+  - contentinfo
+    - button "American AIRLINES" [focusable=True]
+      - strong
+        - text "American"
+          - text "American"
+      - text "AIRLINES"
+        - text "AIRLINES"
+    - heading "TRAVEL" [level=3]
+      - text "TRAVEL"
+        - text "TRAVEL"
+    - button "Book flights" [focusable=True]
+      - text "Book flights"
+        - text "Book flights"
+    - button "Flight status" [focusable=True]
+      - text "Flight status"
+        - text "Flight status"
+    - button "Hotels" [focusable=True]
+      - text "Hotels"
+        - text "Hotels"
+    - heading "MANAGE" [level=3]
+      - text "MANAGE"
+        - text "MANAGE"
+    - button "Manage trips" [focusable=True]
+      - text "Manage trips"
+        - text "Manage trips"
+    - button "Travel credits" [focusable=True]
+      - text "Travel credits"
+        - text "Travel credits"
+    - button "Receipts and refunds" [focusable=True]
+      - text "Receipts and refunds"
+        - text "Receipts and refunds"
+    - heading "ABOUT AMERICAN" [level=3]
+      - text "ABOUT AMERICAN"
+        - text "ABOUT AMERICAN"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "About us" [focusable=True]
+      - text "About us"
+        - text "About us"
+    - button "Accessibility" [focusable=True]
+      - text "Accessibility"
+        - text "Accessibility"
+    - text "© 2026 American Airlines, Inc. Demo experience."
+      - text "© 2026 American Airlines, Inc. Demo experience."
+    - button "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - button "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - button "Cookie settings" [focusable=True]
+      - text "Cookie settings"
+        - text "Cookie settings"

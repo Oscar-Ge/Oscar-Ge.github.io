@@ -1,0 +1,199 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - paragraph
+      - text "LEARN ON YOUR TERMS"
+        - text "LEARN ON YOUR TERMS"
+    - heading "Find career certifications" [level=1]
+      - text "Find career certifications"
+        - text "Find career certifications"
+    - paragraph
+      - text "Compare flexible training by topic, school rating, class format, and duration."
+        - text "Compare flexible training by topic, school rating, class format, and duration."
+    - form
+      - LabelText
+        - text "What do you want to learn?"
+          - text "What do you want to learn?"
+        - entry "Certification search" [focusable=True]
+      - button "Search training" [focused=True, focusable=True]
+        - text "Search training"
+          - text "Search training"
+    - LabelText
+      - text "Class format"
+        - text "Class format"
+      - combobox "Class format" value="Any class format" [focusable=True]
+        - MenuListPopup
+          - option "Any class format" [focusable=True, selected=True]
+          - option "Online classes" [focusable=True]
+    - LabelText
+      - text "School rating"
+        - text "School rating"
+      - combobox "School rating" value="Any school rating" [focusable=True]
+        - MenuListPopup
+          - option "Any school rating" [focusable=True, selected=True]
+          - option "4 stars & up" [focusable=True]
+    - LabelText
+      - text "Duration"
+        - text "Duration"
+      - combobox "Duration" value="Any duration" [focusable=True]
+        - MenuListPopup
+          - option "Any duration" [focusable=True, selected=True]
+          - option "30 to 60 minutes" [focusable=True]
+    - LabelText
+      - text "Study method"
+        - text "Study method"
+      - combobox "Study method" value="Any study method" [focusable=True]
+        - MenuListPopup
+          - option "Any study method" [focusable=True, selected=True]
+          - option "Self-study" [focusable=True]
+    - paragraph
+      - text "TRAINING RESULTS"
+        - text "TRAINING RESULTS"
+    - heading "Online certifications" [level=2]
+      - text "Online certifications"
+        - text "Online certifications"
+    - paragraph
+      - text "3"
+        - text "3"
+      - text "courses match your selections"
+        - text "courses match your selections"
+      - text "— use the search and filters to narrow them"
+        - text "— use the search and filters to narrow them"
+      - text "."
+        - text "."
+    - article
+      - text "Self-study"
+        - text "Self-study"
+      - text "Online classes"
+        - text "Online classes"
+      - text "45 minutes"
+        - text "45 minutes"
+      - heading "Forklift Operator Safety Certification" [level=3]
+        - text "Forklift Operator Safety Certification"
+          - text "Forklift Operator Safety Certification"
+      - paragraph
+        - text "National Safety Training Institute"
+          - text "National Safety Training Institute"
+        - text "·"
+          - text "·"
+        - text "4.8"
+          - text "4.8"
+        - text "("
+          - text "("
+        - text "1,247"
+          - text "1,247"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "A concise, self-paced online class covering inspection, stability, load handling, and workplace safety fundamentals."
+          - text "A concise, self-paced online class covering inspection, stability, load handling, and workplace safety fundamentals."
+      - strong
+        - text "$39"
+          - text "$39"
+      - text "one-time"
+        - text "one-time"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - text "Instructor-led"
+        - text "Instructor-led"
+      - text "Online classes"
+        - text "Online classes"
+      - text "2 hours"
+        - text "2 hours"
+      - heading "Forklift Safety Live Workshop" [level=3]
+        - text "Forklift Safety Live Workshop"
+          - text "Forklift Safety Live Workshop"
+      - paragraph
+        - text "WorkReady Academy"
+          - text "WorkReady Academy"
+        - text "·"
+          - text "·"
+        - text "4.5"
+          - text "4.5"
+        - text "("
+          - text "("
+        - text "508"
+          - text "508"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "A live online introduction to forklift safety with an instructor Q&A."
+          - text "A live online introduction to forklift safety with an instructor Q&A."
+      - strong
+        - text "$69"
+          - text "$69"
+      - text "one-time"
+        - text "one-time"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+    - article
+      - text "Self-study"
+        - text "Self-study"
+      - text "Online classes"
+        - text "Online classes"
+      - text "35 minutes"
+        - text "35 minutes"
+      - heading "Warehouse Equipment Safety Basics" [level=3]
+        - text "Warehouse Equipment Safety Basics"
+          - text "Warehouse Equipment Safety Basics"
+      - paragraph
+        - text "Skills Forward"
+          - text "Skills Forward"
+        - text "·"
+          - text "·"
+        - text "3.9"
+          - text "3.9"
+        - text "("
+          - text "("
+        - text "194"
+          - text "194"
+        - text ")"
+          - text ")"
+      - paragraph
+        - text "General warehouse safety concepts for new team members."
+          - text "General warehouse safety concepts for new team members."
+      - strong
+        - text "$25"
+          - text "$25"
+      - text "one-time"
+        - text "one-time"
+      - link "View details" [focusable=True]
+        - text "View details"
+          - text "View details"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

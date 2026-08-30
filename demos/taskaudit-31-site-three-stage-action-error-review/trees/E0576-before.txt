@@ -1,0 +1,126 @@
+- document "Mayo Clinic | Patient Care, Education and Research" [focused=True, focusable=True]
+  - link "Skip to main content" [focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - banner
+    - text "Care that puts your needs first"
+      - text "Care that puts your needs first"
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - button "Patient login" [focusable=True]
+      - text "Patient login"
+        - text "Patient login"
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - navigation "Primary navigation"
+      - link "Patient care" [focusable=True]
+        - text "Patient care"
+          - text "Patient care"
+      - link "Departments & centers" [focusable=True]
+        - text "Departments & centers"
+          - text "Departments & centers"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+      - link "Research" [focusable=True]
+        - text "Research"
+          - text "Research"
+    - button "Open site search" [focusable=True]
+    - form
+      - LabelText
+        - text "Search Mayo Clinic"
+          - text "Search Mayo Clinic"
+      - entry "Search Mayo Clinic" [focusable=True]
+      - button "Search" [disabled=True]
+        - text "Search"
+          - text "Search"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - text "Research"
+        - text "Research"
+    - paragraph
+      - text "RESEARCH AT MAYO CLINIC"
+        - text "RESEARCH AT MAYO CLINIC"
+    - heading "Discovery with purpose" [level=1]
+      - text "Discovery with purpose"
+        - text "Discovery with purpose"
+    - paragraph
+      - text "Scientists and clinicians work side by side to turn promising ideas into better ways to prevent, diagnose and treat d..."
+        - text "Scientists and clinicians work side by side to turn promising ideas into better ways to prevent,"
+        - text "diagnose and treat disease."
+    - LabelText
+      - text "Find a laboratory or research program"
+        - text "Find a laboratory or research program"
+      - entry "Find a laboratory or research program" [focused=True, focusable=True]
+    - link "PULMONARY AND CRITICAL CARE RESEARCH Airway Biology Laboratory Investigating airway structure, inflammation and cell ..." [focusable=True]
+      - text "PULMONARY AND CRITICAL CARE RESEARCH"
+        - text "PULMONARY AND CRITICAL CARE RESEARCH"
+      - heading "Airway Biology Laboratory" [level=2]
+        - text "Airway Biology Laboratory"
+          - text "Airway Biology Laboratory"
+      - paragraph
+        - text "Investigating airway structure, inflammation and cell signaling to improve understanding of asthma and other respirat..."
+          - text "Investigating airway structure, inflammation and cell signaling to improve understanding of"
+          - text "asthma and other respiratory diseases."
+      - text "Explore the laboratory"
+        - text "Explore the laboratory"
+  - contentinfo
+    - link "Mayo Clinic home" [focusable=True]
+      - text "MAYO CLINIC"
+        - text "MAYO CLINIC"
+    - paragraph
+      - text "Transforming medicine to connect and cure as the global authority in the care of serious or complex disease."
+        - text "Transforming medicine to connect and cure as the"
+        - text "global authority in the care of serious or complex"
+        - text "disease."
+    - link "Request an appointment" [focusable=True]
+      - text "Request an appointment"
+        - text "Request an appointment"
+    - heading "Patient care" [level=2]
+      - text "Patient care"
+        - text "Patient care"
+    - link "Find a doctor" [focusable=True]
+      - text "Find a doctor"
+        - text "Find a doctor"
+    - link "Diseases & conditions" [focusable=True]
+      - text "Diseases & conditions"
+        - text "Diseases & conditions"
+    - link "Symptom Checker" [focusable=True]
+      - text "Symptom Checker"
+        - text "Symptom Checker"
+    - heading "Explore" [level=2]
+      - text "Explore"
+        - text "Explore"
+    - link "Departments & centers" [focusable=True]
+      - text "Departments & centers"
+        - text "Departments & centers"
+    - link "Education" [focusable=True]
+      - text "Education"
+        - text "Education"
+    - link "Research" [focusable=True]
+      - text "Research"
+        - text "Research"
+    - heading "Contact" [level=2]
+      - text "Contact"
+        - text "Contact"
+    - link "1-800-423-2233" [focusable=True]
+      - text "1-800-423-2233"
+        - text "1-800-423-2233"
+    - link "Send a message" [focusable=True]
+      - text "Send a message"
+        - text "Send a message"
+    - link "Locations" [focusable=True]
+      - text "Locations"
+        - text "Locations"
+    - text "© 2026 Mayo Clinic experience"
+      - text "© 2026 Mayo Clinic experience"
+    - text "Demonstration website with synthetic content. Not medical advice."
+      - text "Demonstration website with synthetic content. Not medical advice."

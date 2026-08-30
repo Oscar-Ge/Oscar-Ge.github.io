@@ -1,0 +1,449 @@
+- document "Yahoo Finance — Stock Market Live, Quotes & News" [focused=True, focusable=True]
+  - text "Yahoo"
+    - text "Yahoo"
+  - text "Mail"
+    - text "Mail"
+  - text "News"
+    - text "News"
+  - strong
+    - text "Finance"
+      - text "Finance"
+  - text "Sports"
+    - text "Sports"
+  - text "More"
+    - text "More"
+  - text "U.S. markets closed"
+    - text "U.S. markets closed"
+  - banner
+    - link "Yahoo Finance" [focusable=True]
+      - generic "Yahoo Finance"
+        - text "yahoo!"
+          - text "yahoo!"
+        - strong
+          - text "finance"
+            - text "finance"
+    - search
+      - entry "Search for news, symbols or companies" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+    - button "Notifications" [focusable=True]
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+    - navigation
+      - link "My Portfolio" [focused=True, focusable=True]
+        - text "My Portfolio"
+          - text "My Portfolio"
+      - link "Markets" [focusable=True]
+        - text "Markets"
+          - text "Markets"
+      - link "News" [focusable=True]
+        - text "News"
+          - text "News"
+      - link "Screeners" [focusable=True]
+        - text "Screeners"
+          - text "Screeners"
+      - link "Calendar" [focusable=True]
+        - text "Calendar"
+          - text "Calendar"
+      - link "Small Business" [focusable=True]
+        - text "Small Business"
+          - text "Small Business"
+      - link "Finance Plus" [focusable=True]
+        - text "Finance Plus"
+          - text "Finance Plus"
+      - text "1"
+        - text "1"
+      - text "followed"
+        - text "followed"
+  - link "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+    - strong
+      - text "S&P 500"
+        - text "S&P 500"
+    - text "^GSPC"
+      - text "^GSPC"
+    - text "6,449.80"
+      - text "6,449.80"
+    - emphasis
+      - text "+0.31%"
+        - text "+0.31%"
+  - link "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+    - strong
+      - text "Dow 30"
+        - text "Dow 30"
+    - text "^DJI"
+      - text "^DJI"
+    - text "45,092.81"
+      - text "45,092.81"
+    - emphasis
+      - text "+0.08%"
+        - text "+0.08%"
+  - link "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+    - strong
+      - text "Nasdaq"
+        - text "Nasdaq"
+    - text "^IXIC"
+      - text "^IXIC"
+    - text "21,622.98"
+      - text "21,622.98"
+    - emphasis
+      - text "+0.14%"
+        - text "+0.14%"
+  - link "Russell 2000 ^RUT 2,286.52 -0.16%" [focusable=True]
+    - strong
+      - text "Russell 2000"
+        - text "Russell 2000"
+    - text "^RUT"
+      - text "^RUT"
+    - text "2,286.52"
+      - text "2,286.52"
+    - emphasis
+      - text "-0.16%"
+        - text "-0.16%"
+  - link "Bitcoin USD BTC-USD 118,420.17 +1.44%" [focusable=True]
+    - strong
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+    - text "BTC-USD"
+      - text "BTC-USD"
+    - text "118,420.17"
+      - text "118,420.17"
+    - emphasis
+      - text "+1.44%"
+        - text "+1.44%"
+  - main
+    - text "MARKETS • AUGUST 16, 2026"
+      - text "MARKETS • AUGUST 16, 2026"
+    - heading "Your money, made clearer." [level=1]
+      - text "Your money, made clearer."
+        - text "Your money, made"
+        - text "clearer."
+    - paragraph
+      - text "Track what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor."
+        - text "Track what moves the market with real-time-style quotes, thoughtful analysis,"
+        - text "and tools built for every investor."
+    - button "Explore markets" [focusable=True]
+      - text "Explore markets"
+        - text "Explore markets"
+    - text "Market snapshot"
+      - text "Market snapshot"
+    - text "Closed"
+      - text "Closed"
+    - button "S&P 500 ^GSPC 6,449.80 +0.31%" [focusable=True]
+      - strong
+        - text "S&P 500"
+          - text "S&P 500"
+      - text "^GSPC"
+        - text "^GSPC"
+      - text "6,449.80"
+        - text "6,449.80"
+      - emphasis
+        - text "+0.31%"
+          - text "+0.31%"
+    - button "Dow 30 ^DJI 45,092.81 +0.08%" [focusable=True]
+      - strong
+        - text "Dow 30"
+          - text "Dow 30"
+      - text "^DJI"
+        - text "^DJI"
+      - text "45,092.81"
+        - text "45,092.81"
+      - emphasis
+        - text "+0.08%"
+          - text "+0.08%"
+    - button "Nasdaq ^IXIC 21,622.98 +0.14%" [focusable=True]
+      - strong
+        - text "Nasdaq"
+          - text "Nasdaq"
+      - text "^IXIC"
+        - text "^IXIC"
+      - text "21,622.98"
+        - text "21,622.98"
+      - emphasis
+        - text "+0.14%"
+          - text "+0.14%"
+    - text "DISCOVER"
+      - text "DISCOVER"
+    - heading "Explore the market" [level=2]
+      - text "Explore the market"
+        - text "Explore the market"
+    - link "Most Active Penny Stocks High-volume stocks trading below $10. Explore" [focusable=True]
+      - strong
+        - text "Most Active Penny Stocks"
+          - text "Most Active Penny Stocks"
+      - paragraph
+        - text "High-volume stocks trading below $10."
+          - text "High-volume stocks trading below $10."
+      - text "Explore"
+        - text "Explore"
+    - link "IPO Calendar Upcoming and recently priced listings. Explore" [focusable=True]
+      - strong
+        - text "IPO Calendar"
+          - text "IPO Calendar"
+      - paragraph
+        - text "Upcoming and recently priced listings."
+          - text "Upcoming and recently priced listings."
+      - text "Explore"
+        - text "Explore"
+    - link "High-Yield Dividend Stocks A curated income-focused watchlist. Explore" [focusable=True]
+      - strong
+        - text "High-Yield Dividend Stocks"
+          - text "High-Yield Dividend Stocks"
+      - paragraph
+        - text "A curated income-focused watchlist."
+          - text "A curated income-focused watchlist."
+      - text "Explore"
+        - text "Explore"
+    - link "Build a Portfolio Create a list and track your holdings. Explore" [focusable=True]
+      - strong
+        - text "Build a Portfolio"
+          - text "Build a Portfolio"
+      - paragraph
+        - text "Create a list and track your holdings."
+          - text "Create a list and track your holdings."
+      - text "Explore"
+        - text "Explore"
+    - text "TRENDING TICKERS"
+      - text "TRENDING TICKERS"
+    - heading "What investors are watching" [level=2]
+      - text "What investors are watching"
+        - text "What investors are watching"
+    - link "View all" [focusable=True]
+      - text "View all"
+        - text "View all"
+    - text "SYMBOL"
+      - text "SYMBOL"
+    - text "LAST PRICE"
+      - text "LAST PRICE"
+    - text "CHANGE"
+      - text "CHANGE"
+    - text "TREND"
+      - text "TREND"
+    - link "A AAPL Apple Inc. 226.34 +1.25% Upward trend" [focusable=True]
+      - text "A"
+        - text "A"
+      - strong
+        - text "AAPL"
+          - text "AAPL"
+      - text "Apple Inc."
+        - text "Apple Inc."
+      - strong
+        - text "226.34"
+          - text "226.34"
+      - emphasis
+        - text "+1.25%"
+          - text "+1.25%"
+      - generic "Upward trend"
+    - link "T TSLA Tesla, Inc. 341.76 -0.82% Downward trend" [focusable=True]
+      - text "T"
+        - text "T"
+      - strong
+        - text "TSLA"
+          - text "TSLA"
+      - text "Tesla, Inc."
+        - text "Tesla, Inc."
+      - strong
+        - text "341.76"
+          - text "341.76"
+      - emphasis
+        - text "-0.82%"
+          - text "-0.82%"
+      - generic "Downward trend"
+    - link "N NVDA NVIDIA Corporation 182.70 +0.86% Upward trend" [focusable=True]
+      - text "N"
+        - text "N"
+      - strong
+        - text "NVDA"
+          - text "NVDA"
+      - text "NVIDIA Corporation"
+        - text "NVIDIA Corporation"
+      - strong
+        - text "182.70"
+          - text "182.70"
+      - emphasis
+        - text "+0.86%"
+          - text "+0.86%"
+      - generic "Upward trend"
+    - link "M MSFT Microsoft Corporation 521.44 +0.93% Upward trend" [focusable=True]
+      - text "M"
+        - text "M"
+      - strong
+        - text "MSFT"
+          - text "MSFT"
+      - text "Microsoft Corporation"
+        - text "Microsoft Corporation"
+      - strong
+        - text "521.44"
+          - text "521.44"
+      - emphasis
+        - text "+0.93%"
+          - text "+0.93%"
+      - generic "Upward trend"
+    - link "B BTC-USD Bitcoin USD 118,420.17 +1.44% Upward trend" [focusable=True]
+      - text "B"
+        - text "B"
+      - strong
+        - text "BTC-USD"
+          - text "BTC-USD"
+      - text "Bitcoin USD"
+        - text "Bitcoin USD"
+      - strong
+        - text "118,420.17"
+          - text "118,420.17"
+      - emphasis
+        - text "+1.44%"
+          - text "+1.44%"
+      - generic "Upward trend"
+    - text "LATEST"
+      - text "LATEST"
+    - heading "Top stories" [level=2]
+      - text "Top stories"
+        - text "Top stories"
+    - link "More news" [focusable=True]
+      - text "More news"
+        - text "More news"
+    - link "Markets · 18 min ago Stocks edge higher as investors weigh retail strength and rate path Major averages held near rec..." [focusable=True]
+      - text "Markets"
+        - text "Markets"
+      - text "·"
+        - text "·"
+      - text "18 min ago"
+        - text "18 min ago"
+      - heading "Stocks edge higher as investors weigh retail strength and rate path" [level=3]
+        - text "Stocks edge higher as investors weigh retail strength and rate path"
+          - text "Stocks edge higher as investors weigh retail strength and rate path"
+      - paragraph
+        - text "Major averages held near records as fresh economic data supported a soft-landing outlook."
+          - text "Major averages held near records as fresh economic data supported a soft-landing outlook."
+    - link "Bitcoin · 42 min ago Bitcoin steadies above $118,000 as institutional inflows accelerate Digital-asset funds posted a..." [focusable=True]
+      - text "Bitcoin"
+        - text "Bitcoin"
+      - text "·"
+        - text "·"
+      - text "42 min ago"
+        - text "42 min ago"
+      - heading "Bitcoin steadies above $118,000 as institutional inflows accelerate" [level=3]
+        - text "Bitcoin steadies above $118,000 as institutional inflows accelerate"
+          - text "Bitcoin steadies above $118,000 as institutional inflows accelerate"
+      - paragraph
+        - text "Digital-asset funds posted another week of net inflows while volatility remained contained."
+          - text "Digital-asset funds posted another week of net inflows while volatility remained contained."
+    - link "Technology · 1 hr ago Chip stocks rise on stronger data-center spending forecast Semiconductor shares moved higher af..." [focusable=True]
+      - text "Technology"
+        - text "Technology"
+      - text "·"
+        - text "·"
+      - text "1 hr ago"
+        - text "1 hr ago"
+      - heading "Chip stocks rise on stronger data-center spending forecast" [level=3]
+        - text "Chip stocks rise on stronger data-center spending forecast"
+          - text "Chip stocks rise on stronger data-center spending forecast"
+      - paragraph
+        - text "Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand."
+          - text "Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand."
+    - link "Personal Finance · 2 hrs ago Five money moves to make before the end of summer A midyear checkup can help savers opti..." [focusable=True]
+      - text "Personal Finance"
+        - text "Personal Finance"
+      - text "·"
+        - text "·"
+      - text "2 hrs ago"
+        - text "2 hrs ago"
+      - heading "Five money moves to make before the end of summer" [level=3]
+        - text "Five money moves to make before the end of summer"
+          - text "Five money moves to make before the end of summer"
+      - paragraph
+        - text "A midyear checkup can help savers optimize taxes, benefits, and emergency funds."
+          - text "A midyear checkup can help savers optimize taxes, benefits, and emergency funds."
+    - complementary
+      - heading "My watchlist" [level=3]
+        - text "My watchlist"
+          - text "My watchlist"
+      - link "Edit" [focusable=True]
+        - text "Edit"
+          - text "Edit"
+      - link "AAPL Apple Inc. 226.34 +1.25%" [focusable=True]
+        - strong
+          - text "AAPL"
+            - text "AAPL"
+        - text "Apple Inc."
+          - text "Apple Inc."
+        - text "226.34"
+          - text "226.34"
+        - emphasis
+          - text "+1.25%"
+            - text "+1.25%"
+      - link "MSFT Microsoft Corporation 521.44 +0.93%" [focusable=True]
+        - strong
+          - text "MSFT"
+            - text "MSFT"
+        - text "Microsoft Corporation"
+          - text "Microsoft Corporation"
+        - text "521.44"
+          - text "521.44"
+        - emphasis
+          - text "+0.93%"
+            - text "+0.93%"
+      - link "GC=F Gold Dec 26 2,548.70 +0.72%" [focusable=True]
+        - strong
+          - text "GC=F"
+            - text "GC=F"
+        - text "Gold Dec 26"
+          - text "Gold Dec 26"
+        - text "2,548.70"
+          - text "2,548.70"
+        - emphasis
+          - text "+0.72%"
+            - text "+0.72%"
+      - text "YAHOO FINANCE PLUS"
+        - text "YAHOO FINANCE PLUS"
+      - heading "Invest with more confidence." [level=3]
+        - text "Invest with more confidence."
+          - text "Invest with more"
+          - text "confidence."
+      - paragraph
+        - text "Unlock advanced charts, enhanced data, and expert insights."
+          - text "Unlock advanced charts, enhanced data, and"
+          - text "expert insights."
+      - link "Compare plans" [focusable=True]
+        - text "Compare plans"
+          - text "Compare plans"
+      - text "SMALL BUSINESS"
+        - text "SMALL BUSINESS"
+      - heading "Stay ahead of tax deadlines" [level=3]
+        - text "Stay ahead of tax deadlines"
+          - text "Stay ahead of tax deadlines"
+      - paragraph
+        - text "See important federal tax dates and practical filing reminders for 2026."
+          - text "See important federal tax dates and practical"
+          - text "filing reminders for 2026."
+      - link "View tax calendar" [focusable=True]
+        - text "View tax calendar"
+          - text "View tax calendar"
+  - contentinfo
+    - generic "Yahoo Finance"
+      - text "yahoo!"
+        - text "yahoo!"
+      - strong
+        - text "finance"
+          - text "finance"
+    - paragraph
+      - text "Market insights and tools for every investor."
+        - text "Market insights and tools for every investor."
+    - link "About" [focusable=True]
+      - text "About"
+        - text "About"
+    - link "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "Privacy" [focusable=True]
+      - text "Privacy"
+        - text "Privacy"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"
+    - link "Disclaimer" [focusable=True]
+      - text "Disclaimer"
+        - text "Disclaimer"
+    - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      - text "© 2026 Yahoo Finance inspired demo. All data is synthetic."

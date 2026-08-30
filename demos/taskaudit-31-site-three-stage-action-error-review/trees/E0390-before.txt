@@ -1,0 +1,544 @@
+- document "IMDb — Movies, TV and Celebrities" [focused=True, focusable=True]
+  - banner
+    - link "IMDb home" [focusable=True]
+      - text "IMDb"
+        - text "IMDb"
+    - button "Open menu" [focusable=True]
+      - text "Menu"
+        - text "Menu"
+    - search
+      - LabelText
+        - text "Search category"
+          - text "Search category"
+      - combobox "Search category" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Titles" [focusable=True]
+          - option "Celebs" [focusable=True]
+          - option "Videos" [focusable=True]
+      - LabelText
+        - text "Search IMDb"
+          - text "Search IMDb"
+      - entry "Search IMDb" [focusable=True]
+      - button "Search" [focused=True, focusable=True]
+    - link "IMDb Pro" [focusable=True]
+      - text "IMDb"
+        - text "IMDb"
+      - text "Pro"
+        - text "Pro"
+    - link "Watchlist 2" [focusable=True]
+      - text "Watchlist"
+        - text "Watchlist"
+      - text "2"
+        - text "2"
+    - button "Alex" [focusable=True]
+      - text "Alex"
+        - text "Alex"
+  - main
+    - link "The Flash poster View details" [focusable=True]
+      - image "The Flash poster"
+      - text "View details"
+        - text "View details"
+    - button "Play trailer for The Flash" [focusable=True]
+    - text "NOW STREAMING"
+      - text "NOW STREAMING"
+    - heading "The Flash" [level=1]
+      - text "The Flash"
+        - text "The Flash"
+    - paragraph
+      - text "Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without super..."
+        - text "Barry Allen uses his super speed to change the past, but his attempt to save his"
+        - text "family creates a world without superheroes."
+    - text "2023"
+      - text "2023"
+    - text "2h 24m"
+      - text "2h 24m"
+    - text "PG-13"
+      - text "PG-13"
+    - text "6.6"
+      - text "6.6"
+    - button "Add to Watchlist" [focusable=True]
+      - text "Add to Watchlist"
+        - text "Add to Watchlist"
+    - link "More info" [focusable=True]
+      - text "More info"
+        - text "More info"
+    - heading "Featured today" [level=2]
+      - text "Featured today"
+        - text "Featured today"
+    - paragraph
+      - text "Standout stories from across IMDb"
+        - text "Standout stories from across IMDb"
+    - link "Relive the Oscars 2023 Speeches, performances, and winning moments" [focusable=True]
+      - strong
+        - text "Relive the Oscars 2023"
+          - text "Relive the Oscars 2023"
+      - text "Speeches, performances, and winning moments"
+        - text "Speeches, performances, and winning"
+        - text "moments"
+    - link "Cannes 2022 Jury Prize Discover EO and its celebrated director" [focusable=True]
+      - strong
+        - text "Cannes 2022 Jury Prize"
+          - text "Cannes 2022 Jury Prize"
+      - text "Discover EO and its celebrated director"
+        - text "Discover EO and its celebrated director"
+    - link "Comic-book sci-fi Top-rated titles with the most votes" [focusable=True]
+      - strong
+        - text "Comic-book sci-fi"
+          - text "Comic-book sci-fi"
+      - text "Top-rated titles with the most votes"
+        - text "Top-rated titles with the most votes"
+    - heading "Top picks for you" [level=2]
+      - text "Top picks for you"
+        - text "Top picks for you"
+    - paragraph
+      - text "TV shows and movies we think you’ll enjoy"
+        - text "TV shows and movies we think you’ll enjoy"
+    - button "Scroll Top picks for you left" [focusable=True]
+    - article
+      - link "Dune: Part Two poster" [focusable=True]
+        - image "Dune: Part Two poster"
+      - button "Remove Dune: Part Two from Watchlist" [focusable=True]
+      - text "8.5"
+        - text "8.5"
+      - text "Movie"
+        - text "Movie"
+      - link "Dune: Part Two" [focusable=True]
+        - text "Dune: Part Two"
+          - text "Dune: Part Two"
+      - text "2024"
+        - text "2024"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "In Watchlist" [focusable=True]
+        - text "In Watchlist"
+          - text "In Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Fallout poster" [focusable=True]
+        - image "Fallout poster"
+      - button "Add Fallout to Watchlist" [focusable=True]
+      - text "8.3"
+        - text "8.3"
+      - text "TV Series"
+        - text "TV Series"
+      - link "Fallout" [focusable=True]
+        - text "Fallout"
+          - text "Fallout"
+      - text "2024"
+        - text "2024"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Severance poster" [focusable=True]
+        - image "Severance poster"
+      - button "Add Severance to Watchlist" [focusable=True]
+      - text "8.7"
+        - text "8.7"
+      - text "TV Series"
+        - text "TV Series"
+      - link "Severance" [focusable=True]
+        - text "Severance"
+          - text "Severance"
+      - text "2022"
+        - text "2022"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Interstellar poster" [focusable=True]
+        - image "Interstellar poster"
+      - button "Remove Interstellar from Watchlist" [focusable=True]
+      - text "8.7"
+        - text "8.7"
+      - text "Movie"
+        - text "Movie"
+      - link "Interstellar" [focusable=True]
+        - text "Interstellar"
+          - text "Interstellar"
+      - text "2014"
+        - text "2014"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "In Watchlist" [focusable=True]
+        - text "In Watchlist"
+          - text "In Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Oppenheimer poster" [focusable=True]
+        - image "Oppenheimer poster"
+      - button "Add Oppenheimer to Watchlist" [focusable=True]
+      - text "8.5"
+        - text "8.5"
+      - text "Movie"
+        - text "Movie"
+      - link "Oppenheimer" [focusable=True]
+        - text "Oppenheimer"
+          - text "Oppenheimer"
+      - text "2023"
+        - text "2023"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Parasite poster" [focusable=True]
+        - image "Parasite poster"
+      - button "Add Parasite to Watchlist" [focusable=True]
+      - text "8.5"
+        - text "8.5"
+      - text "Movie"
+        - text "Movie"
+      - link "Parasite" [focusable=True]
+        - text "Parasite"
+          - text "Parasite"
+      - text "2019"
+        - text "2019"
+      - text
+        - text
+      - text "• R"
+        - text "• R"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - button "Scroll Top picks for you right" [focusable=True]
+    - text "IMDB RECOMMENDATIONS"
+      - text "IMDB RECOMMENDATIONS"
+    - heading "Not sure what to watch next?" [level=2]
+      - text "Not sure what to watch next?"
+        - text "Not sure what to watch next?"
+    - paragraph
+      - text "Explore a fresh mix of acclaimed movies, popular series, and hidden gems."
+        - text "Explore a fresh mix of acclaimed movies, popular series, and hidden gems."
+    - link "Get recommendations" [focusable=True]
+      - text "Get recommendations"
+        - text "Get recommendations"
+    - heading "Fan favorites" [level=2]
+      - text "Fan favorites"
+        - text "Fan favorites"
+    - paragraph
+      - text "This week’s top-rated crowd pleasers"
+        - text "This week’s top-rated crowd pleasers"
+    - button "Scroll Fan favorites left" [focusable=True]
+    - article
+      - link "The Shawshank Redemption poster" [focusable=True]
+        - image "The Shawshank Redemption poster"
+      - button "Add The Shawshank Redemption to Watchlist" [focusable=True]
+      - text "9.3"
+        - text "9.3"
+      - text "Movie"
+        - text "Movie"
+      - link "The Shawshank Redemption" [focusable=True]
+        - text "The Shawshank Redemption"
+          - text "The Shawshank"
+          - text "Redemption"
+      - text "1994"
+        - text "1994"
+      - text
+        - text
+      - text "• R"
+        - text "• R"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "The Dark Knight poster" [focusable=True]
+        - image "The Dark Knight poster"
+      - button "Add The Dark Knight to Watchlist" [focusable=True]
+      - text "9"
+        - text "9"
+      - text "Movie"
+        - text "Movie"
+      - link "The Dark Knight" [focusable=True]
+        - text "The Dark Knight"
+          - text "The Dark Knight"
+      - text "2008"
+        - text "2008"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Interstellar poster" [focusable=True]
+        - image "Interstellar poster"
+      - button "Remove Interstellar from Watchlist" [focusable=True]
+      - text "8.7"
+        - text "8.7"
+      - text "Movie"
+        - text "Movie"
+      - link "Interstellar" [focusable=True]
+        - text "Interstellar"
+          - text "Interstellar"
+      - text "2014"
+        - text "2014"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "In Watchlist" [focusable=True]
+        - text "In Watchlist"
+          - text "In Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "The Grand Budapest Hotel poster" [focusable=True]
+        - image "The Grand Budapest Hotel poster"
+      - button "Add The Grand Budapest Hotel to Watchlist" [focusable=True]
+      - text "8.1"
+        - text "8.1"
+      - text "Movie"
+        - text "Movie"
+      - link "The Grand Budapest Hotel" [focusable=True]
+        - text "The Grand Budapest Hotel"
+          - text "The Grand Budapest"
+          - text "Hotel"
+      - text "2014"
+        - text "2014"
+      - text
+        - text
+      - text "• R"
+        - text "• R"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - article
+      - link "Terminator 2: Judgment Day poster" [focusable=True]
+        - image "Terminator 2: Judgment Day poster"
+      - button "Add Terminator 2: Judgment Day to Watchlist" [focusable=True]
+      - text "8.6"
+        - text "8.6"
+      - text "Movie"
+        - text "Movie"
+      - link "Terminator 2: Judgment Day" [focusable=True]
+        - text "Terminator 2: Judgment Day"
+          - text "Terminator 2: Judgment"
+          - text "Day"
+      - text "1991"
+        - text "1991"
+      - text
+        - text
+      - text "• R"
+        - text "• R"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - button "Scroll Fan favorites right" [focusable=True]
+    - heading "Top 5 this week" [level=2]
+      - text "Top 5 this week"
+        - text "Top 5 this week"
+    - paragraph
+      - text "Titles receiving the most IMDb page views"
+        - text "Titles receiving the most IMDb page views"
+    - text "1"
+      - text "1"
+    - article
+      - link "The Last of Us poster" [focusable=True]
+        - image "The Last of Us poster"
+      - button "Add The Last of Us to Watchlist" [focusable=True]
+      - text "8.7"
+        - text "8.7"
+      - text "TV Series"
+        - text "TV Series"
+      - link "The Last of Us" [focusable=True]
+        - text "The Last of Us"
+          - text "The Last of Us"
+      - text "2023"
+        - text "2023"
+      - text
+        - text
+      - text "• TV-MA"
+        - text "• TV-MA"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - text "2"
+      - text "2"
+    - article
+      - link "Dune: Part Two poster" [focusable=True]
+        - image "Dune: Part Two poster"
+      - button "Remove Dune: Part Two from Watchlist" [focusable=True]
+      - text "8.5"
+        - text "8.5"
+      - text "Movie"
+        - text "Movie"
+      - link "Dune: Part Two" [focusable=True]
+        - text "Dune: Part Two"
+          - text "Dune: Part Two"
+      - text "2024"
+        - text "2024"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "In Watchlist" [focusable=True]
+        - text "In Watchlist"
+          - text "In Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - text "3"
+      - text "3"
+    - article
+      - link "Fallout poster" [focusable=True]
+        - image "Fallout poster"
+      - button "Add Fallout to Watchlist" [focusable=True]
+      - text "8.3"
+        - text "8.3"
+      - text "TV Series"
+        - text "TV Series"
+      - link "Fallout" [focusable=True]
+        - text "Fallout"
+          - text "Fallout"
+      - text "2024"
+        - text "2024"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - text "4"
+      - text "4"
+    - article
+      - link "Oppenheimer poster" [focusable=True]
+        - image "Oppenheimer poster"
+      - button "Add Oppenheimer to Watchlist" [focusable=True]
+      - text "8.5"
+        - text "8.5"
+      - text "Movie"
+        - text "Movie"
+      - link "Oppenheimer" [focusable=True]
+        - text "Oppenheimer"
+          - text "Oppenheimer"
+      - text "2023"
+        - text "2023"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - text "5"
+      - text "5"
+    - article
+      - link "The Flash poster" [focusable=True]
+        - image "The Flash poster"
+      - button "Add The Flash to Watchlist" [focusable=True]
+      - text "6.6"
+        - text "6.6"
+      - text "Movie"
+        - text "Movie"
+      - link "The Flash" [focusable=True]
+        - text "The Flash"
+          - text "The Flash"
+      - text "2023"
+        - text "2023"
+      - text
+        - text
+      - text "• PG-13"
+        - text "• PG-13"
+      - button "Watchlist" [focusable=True]
+        - text "Watchlist"
+          - text "Watchlist"
+      - button "Trailer" [focusable=True]
+        - text "Trailer"
+          - text "Trailer"
+    - text "EXPLORE BY GENRE"
+      - text "EXPLORE BY GENRE"
+    - heading "50 essential Sci-Fi movies & TV shows" [level=2]
+      - text "50 essential Sci-Fi movies & TV shows"
+        - text "50 essential Sci-Fi movies & TV shows"
+    - paragraph
+      - text "From distant galaxies to artificial intelligence, browse IMDb’s top genre picks in one complete chart."
+        - text "From distant galaxies to artificial intelligence, browse IMDb’s top genre picks in one"
+        - text "complete chart."
+    - link "See the Top 50" [focusable=True]
+      - text "See the Top 50"
+        - text "See the Top 50"
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - text "Follow IMDb"
+      - text "Follow IMDb"
+    - navigation
+      - link "Help" [focusable=True]
+        - text "Help"
+          - text "Help"
+      - link "IMDbPro" [focusable=True]
+        - text "IMDbPro"
+          - text "IMDbPro"
+      - link "Conditions of Use" [focusable=True]
+        - text "Conditions of Use"
+          - text "Conditions of Use"
+      - link "Privacy Policy" [focusable=True]
+        - text "Privacy Policy"
+          - text "Privacy Policy"
+      - link "Your lists" [focusable=True]
+        - text "Your lists"
+          - text "Your lists"
+    - paragraph
+      - text "an amazon company"
+        - text "an amazon company"
+    - text "© 1990–2026 IMDb.com, Inc. • Synthetic demonstration content"
+      - text "© 1990–2026 IMDb.com, Inc. • Synthetic demonstration content"
+  - status

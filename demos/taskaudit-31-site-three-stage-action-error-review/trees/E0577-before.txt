@@ -1,0 +1,180 @@
+- document "CA.gov | State of California" [focused=True, focusable=True]
+  - link "Skip to main content" [focused=True, focusable=True]
+    - text "Skip to main content"
+      - text "Skip to main content"
+  - text "Official website of the State of California"
+    - text "Official website of the State of California"
+  - button "How you know" [focusable=True]
+    - text "How you know"
+      - text "How you know"
+  - banner
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+      - text "STATE OF CALIFORNIA"
+        - text "STATE OF CALIFORNIA"
+    - search
+      - LabelText
+        - text "Search CA.gov"
+          - text "Search CA.gov"
+      - entry "Search CA.gov" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - navigation "Main navigation"
+      - link "Services" [focusable=True]
+        - text "Services"
+          - text "Services"
+      - link "Benefits" [focusable=True]
+        - text "Benefits"
+          - text "Benefits"
+      - link "Government" [focusable=True]
+        - text "Government"
+          - text "Government"
+      - link "Business" [focusable=True]
+        - text "Business"
+          - text "Business"
+      - link "Education" [focusable=True]
+        - text "Education"
+          - text "Education"
+  - main
+    - navigation "Breadcrumb"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Services" [focusable=True]
+        - text "Services"
+          - text "Services"
+      - text "Birth certificates"
+        - text "Birth certificates"
+    - text "VITAL RECORDS"
+      - text "VITAL RECORDS"
+    - heading "Apply for a birth certificate" [level=1]
+      - text "Apply for a birth certificate"
+        - text "Apply for a birth"
+        - text "certificate"
+    - paragraph
+      - text "Order a certified copy of a birth record from the county where the birth occurred."
+        - text "Order a certified copy of a birth record from the county where the birth occurred."
+    - article
+      - heading "How to apply for a birth certificate" [level=2]
+        - text "How to apply for a birth certificate"
+          - text "How to apply for a birth certificate"
+      - paragraph
+        - text "You can request an authorized or informational certified copy. An authorized copy can be used to establish identity; ..."
+          - text "You can request an authorized or informational certified copy. An authorized copy can be used to"
+          - text "establish identity; an informational copy cannot."
+      - list
+        - listitem [level=1]
+          - text "1"
+            - text "1"
+          - strong
+            - text "Confirm you are eligible"
+              - text "Confirm you are eligible"
+          - paragraph
+            - text "Authorized copies are available to the person named on the record, a parent, legal guardian, child, grandparent, spou..."
+              - text "Authorized copies are available to the person named on the record, a parent, legal guardian, child,"
+              - text "grandparent, spouse, domestic partner, sibling, or authorized representative."
+        - listitem [level=1]
+          - text "2"
+            - text "2"
+          - strong
+            - text "Gather record details"
+              - text "Gather record details"
+          - paragraph
+            - text "You will need the full name at birth, date and city of birth, parents’ names, and a valid government-issued ID."
+              - text "You will need the full name at birth, date and city of birth, parents’ names, and a valid government-"
+              - text "issued ID."
+        - listitem [level=1]
+          - text "3"
+            - text "3"
+          - strong
+            - text "Submit your request"
+              - text "Submit your request"
+          - paragraph
+            - text "Choose the county of birth, complete the application, and pay the county fee. Some authorized copies require a notari..."
+              - text "Choose the county of birth, complete the application, and pay the county fee. Some authorized copies"
+              - text "require a notarized sworn statement."
+      - strong
+        - text "Processing time"
+          - text "Processing time"
+      - paragraph
+        - text "Online county requests are typically processed in 5–10 business days, plus delivery time."
+          - text "Online county requests are typically processed in 5–10 business days, plus delivery time."
+      - button "Start online application" [focusable=True]
+        - text "Start online application"
+          - text "Start online application"
+    - complementary
+      - heading "At a glance" [level=2]
+        - text "At a glance"
+          - text "At a glance"
+      - strong
+        - text "TYPICAL FEE"
+          - text "TYPICAL FEE"
+      - text "$32–$38 per certified copy; county fees vary."
+        - text "$32–$38 per certified copy; county fees"
+        - text "vary."
+      - strong
+        - text "PROCESSING"
+          - text "PROCESSING"
+      - text "Usually 5–10 business days online."
+        - text "Usually 5–10 business days online."
+      - strong
+        - text "YOU MAY NEED"
+          - text "YOU MAY NEED"
+      - text "Photo ID and a notarized sworn statement."
+        - text "Photo ID and a notarized sworn statement."
+  - contentinfo
+    - link "CA.gov home" [focusable=True]
+      - text "CA"
+        - text "CA"
+      - text "."
+        - text "."
+      - text "gov"
+        - text "gov"
+    - paragraph
+      - text "California services and information in one place."
+        - text "California services and information in"
+        - text "one place."
+    - heading "POPULAR SERVICES" [level=2]
+      - text "POPULAR SERVICES"
+        - text "POPULAR SERVICES"
+    - link "Birth certificates" [focusable=True]
+      - text "Birth certificates"
+        - text "Birth certificates"
+    - link "Register to vote" [focusable=True]
+      - text "Register to vote"
+        - text "Register to vote"
+    - link "Unemployment benefits" [focusable=True]
+      - text "Unemployment benefits"
+        - text "Unemployment benefits"
+    - heading "GOVERNMENT" [level=2]
+      - text "GOVERNMENT"
+        - text "GOVERNMENT"
+    - link "Find your representative" [focusable=True]
+      - text "Find your representative"
+        - text "Find your representative"
+    - link "Search legislation" [focusable=True]
+      - text "Search legislation"
+        - text "Search legislation"
+    - link "Agency directory" [focusable=True]
+      - text "Agency directory"
+        - text "Agency directory"
+    - heading "GET HELP" [level=2]
+      - text "GET HELP"
+        - text "GET HELP"
+    - link "1-800-807-7777" [focusable=True]
+      - text "1-800-807-7777"
+        - text "1-800-807-7777"
+    - link "info@ca.gov" [focusable=True]
+      - text "info@ca.gov"
+        - text "info@ca.gov"
+    - link "Browse all services" [focusable=True]
+      - text "Browse all services"
+        - text "Browse all services"
+    - text "© 2026 State of California"
+      - text "© 2026 State of California"
+    - text "Built for accessibility and public service"
+      - text "Built for accessibility and public service"

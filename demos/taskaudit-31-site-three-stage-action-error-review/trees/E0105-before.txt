@@ -1,0 +1,522 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping on orders $99+"
+    - text "Free shipping on orders $99+"
+  - link "Find a store" [focusable=True]
+    - text "Find a store"
+      - text "Find a store"
+  - link "Easy online returns" [focusable=True]
+    - text "Easy online returns"
+      - text "Easy online returns"
+  - banner
+    - link "UNIQLO home" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - navigation "Primary navigation"
+      - link "WOMEN" [focusable=True]
+        - text "WOMEN"
+          - text "WOMEN"
+      - link "MEN" [focusable=True]
+        - text "MEN"
+          - text "MEN"
+      - link "KIDS" [focusable=True]
+        - text "KIDS"
+          - text "KIDS"
+      - link "BABY" [focusable=True]
+        - text "BABY"
+          - text "BABY"
+      - link "TODDLER" [focusable=True]
+        - text "TODDLER"
+          - text "TODDLER"
+      - link "SALE" [focusable=True]
+        - text "SALE"
+          - text "SALE"
+    - search
+      - entry "Search products" [focusable=True]
+    - link "Store finder" [focused=True, focusable=True]
+      - text "Stores"
+        - text "Stores"
+    - link "Sign in" [focusable=True]
+      - text "Account"
+        - text "Account"
+    - link "Wishlist with 0 items" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - main
+    - paragraph
+      - text "LIFEWEAR · FALL 2026"
+        - text "LIFEWEAR · FALL 2026"
+    - heading "Every day, made better." [level=1]
+      - text "Every day,"
+        - text "Every day,"
+      - LineBreak
+        - text
+      - text "made better."
+        - text "made"
+        - text "better."
+    - paragraph
+      - text "Thoughtful essentials, designed for real life and every kind of weather."
+        - text "Thoughtful essentials, designed for real life and every kind"
+        - text "of weather."
+    - link "SHOP NEW ARRIVALS" [focusable=True]
+      - text "SHOP NEW ARRIVALS"
+        - text "SHOP NEW ARRIVALS"
+    - link "LIMITED-TIME OFFERS" [focusable=True]
+      - text "LIMITED-TIME OFFERS"
+        - text "LIMITED-TIME OFFERS"
+    - region "Shopping benefits"
+      - link "Free shipping $99+ Fast, trackable delivery" [focusable=True]
+        - strong
+          - text "Free shipping $99+"
+            - text "Free shipping $99+"
+        - text "Fast, trackable delivery"
+          - text "Fast, trackable delivery"
+      - link "Pick up in store Reserve at a nearby location" [focusable=True]
+        - strong
+          - text "Pick up in store"
+            - text "Pick up in store"
+        - text "Reserve at a nearby location"
+          - text "Reserve at a nearby location"
+      - link "Easy online returns Simple step-by-step help" [focusable=True]
+        - strong
+          - text "Easy online returns"
+            - text "Easy online returns"
+        - text "Simple step-by-step help"
+          - text "Simple step-by-step help"
+    - paragraph
+      - text "SHOP BY DEPARTMENT"
+        - text "SHOP BY DEPARTMENT"
+    - heading "LifeWear for everyone" [level=2]
+      - text "LifeWear for everyone"
+        - text "LifeWear for everyone"
+    - link "VIEW ALL" [focusable=True]
+      - text "VIEW ALL"
+        - text "VIEW ALL"
+    - link "Women Essential layers in considered color. SHOP NOW" [focusable=True]
+      - heading "Women" [level=3]
+        - text "Women"
+          - text "Women"
+      - paragraph
+        - text "Essential layers in considered color."
+          - text "Essential layers in considered color."
+      - text "SHOP NOW"
+        - text "SHOP NOW"
+    - link "Men Refined comfort for work and weekend. SHOP NOW" [focusable=True]
+      - heading "Men" [level=3]
+        - text "Men"
+          - text "Men"
+      - paragraph
+        - text "Refined comfort for work and weekend."
+          - text "Refined comfort for work and weekend."
+      - text "SHOP NOW"
+        - text "SHOP NOW"
+    - link "Kids Move-ready favorites built for play. SHOP NOW" [focusable=True]
+      - heading "Kids" [level=3]
+        - text "Kids"
+          - text "Kids"
+      - paragraph
+        - text "Move-ready favorites built for play."
+          - text "Move-ready favorites built for play."
+      - text "SHOP NOW"
+        - text "SHOP NOW"
+    - link "Baby Gentle fabrics for the littlest moments. SHOP NOW" [focusable=True]
+      - heading "Baby" [level=3]
+        - text "Baby"
+          - text "Baby"
+      - paragraph
+        - text "Gentle fabrics for the littlest moments."
+          - text "Gentle fabrics for the littlest moments."
+      - text "SHOP NOW"
+        - text "SHOP NOW"
+    - paragraph
+      - text "UNIQLO SPORT UTILITY WEAR"
+        - text "UNIQLO SPORT UTILITY WEAR"
+    - heading "Made to move. Ready for life." [level=2]
+      - text "Made to move."
+        - text "Made to"
+        - text "move."
+      - LineBreak
+        - text
+      - text "Ready for life."
+        - text "Ready for life."
+    - paragraph
+      - text "Performance comfort and clean design, from morning walks to everything after."
+        - text "Performance comfort and clean design, from morning walks"
+        - text "to everything after."
+    - link "SHOP WOMEN'S SPORTSWEAR" [focusable=True]
+      - text "SHOP WOMEN'S SPORTSWEAR"
+        - text "SHOP WOMEN'S SPORTSWEAR"
+    - paragraph
+      - text "CURATED FOR YOU"
+        - text "CURATED FOR YOU"
+    - heading "Trending now" [level=2]
+      - text "Trending now"
+        - text "Trending now"
+    - article
+      - image "Women's SUPIMA Cotton T-Shirt in Yellow"
+      - text "PREMIUM COTTON"
+        - text "PREMIUM COTTON"
+      - button "Add Women's SUPIMA Cotton T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "WOMEN"
+          - text "WOMEN"
+        - text "/"
+          - text "/"
+        - text "T-SHIRTS"
+          - text "T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "EVERYDAY ESSENTIALS"
+          - text "EVERYDAY ESSENTIALS"
+      - heading "Women's SUPIMA Cotton T-Shirt" [level=3]
+        - text "Women's SUPIMA Cotton T-Shirt"
+          - text "Women's SUPIMA Cotton T-Shirt"
+      - paragraph
+        - text "Smooth premium cotton in a classic regular fit."
+          - text "Smooth premium cotton in a classic regular fit."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "710"
+        - text "710"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Yellow" [focusable=True]
+        - button "Select White" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Yellow"
+          - text "Yellow"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Women's SUPIMA Cotton T-Shirt" value="XS" [focusable=True]
+          - MenuListPopup
+            - option "XS" [focusable=True, selected=True]
+            - option "S" [focusable=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Women's SUPIMA Cotton T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Men's Blocktech Parka in Orange"
+      - text "WEATHER READY"
+        - text "WEATHER READY"
+      - button "Add Men's Blocktech Parka to wishlist" [focusable=True]
+      - paragraph
+        - text "MEN"
+          - text "MEN"
+        - text "/"
+          - text "/"
+        - text "JACKETS & PARKAS"
+          - text "JACKETS & PARKAS"
+        - text "/"
+          - text "/"
+        - text "OUTERWEAR"
+          - text "OUTERWEAR"
+      - heading "Men's Blocktech Parka" [level=3]
+        - text "Men's Blocktech Parka"
+          - text "Men's Blocktech Parka"
+      - paragraph
+        - text "Weather-ready protection in a clean everyday silhouette."
+          - text "Weather-ready protection in a clean everyday"
+          - text "silhouette."
+      - text "4.8"
+        - text "4.8"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "166"
+        - text "166"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$59.90"
+          - text "$59.90"
+      - generic "Available colors"
+        - button "Select Orange" [focusable=True]
+        - button "Select Black" [focusable=True]
+        - text "Orange"
+          - text "Orange"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Men's Blocktech Parka" value="S" [focusable=True]
+          - MenuListPopup
+            - option "S" [focusable=True, selected=True]
+            - option "M" [focusable=True]
+            - option "L" [focusable=True]
+            - option "XL" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Men's Blocktech Parka" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Kids Pokémon Graphic T-Shirt in White"
+      - text "NEW ARRIVAL"
+        - text "NEW ARRIVAL"
+      - button "Add Kids Pokémon Graphic T-Shirt to wishlist" [focusable=True]
+      - paragraph
+        - text "KIDS"
+          - text "KIDS"
+        - text "/"
+          - text "/"
+        - text "GRAPHIC T-SHIRTS"
+          - text "GRAPHIC T-SHIRTS"
+        - text "/"
+          - text "/"
+        - text "BOYS"
+          - text "BOYS"
+      - heading "Kids Pokémon Graphic T-Shirt" [level=3]
+        - text "Kids Pokémon Graphic T-Shirt"
+          - text "Kids Pokémon Graphic T-Shirt"
+      - paragraph
+        - text "A new UT graphic tee made from comfortable cotton."
+          - text "A new UT graphic tee made from comfortable cotton."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "112"
+        - text "112"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select White" [focusable=True]
+        - button "Select Blue" [focusable=True]
+        - text "White"
+          - text "White"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Kids Pokémon Graphic T-Shirt" value="7-8Y" [focusable=True]
+          - MenuListPopup
+            - option "7-8Y" [focusable=True, selected=True]
+            - option "9-10Y" [focusable=True]
+            - option "11-12Y(150)" [focusable=True]
+            - option "13Y" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Kids Pokémon Graphic T-Shirt" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - article
+      - image "Baby Cotton One Piece in Cream"
+      - text "SALE"
+        - text "SALE"
+      - button "Add Baby Cotton One Piece to wishlist" [focusable=True]
+      - paragraph
+        - text "BABY"
+          - text "BABY"
+        - text "/"
+          - text "/"
+        - text "ONE PIECE"
+          - text "ONE PIECE"
+        - text "/"
+          - text "/"
+        - text "BABY ESSENTIALS"
+          - text "BABY ESSENTIALS"
+      - heading "Baby Cotton One Piece" [level=3]
+        - text "Baby Cotton One Piece"
+          - text "Baby Cotton One Piece"
+      - paragraph
+        - text "Envelope neckline and snap bottom for easy changes."
+          - text "Envelope neckline and snap bottom for easy changes."
+      - text "4.9"
+        - text "4.9"
+      - text
+        - text
+      - text "("
+        - text "("
+      - text "96"
+        - text "96"
+      - text ")"
+        - text ")"
+      - strong
+        - text "$9.90"
+          - text "$9.90"
+      - deletion
+        - text "$14.90"
+          - text "$14.90"
+      - generic "Available colors"
+        - button "Select Cream" [focusable=True]
+        - button "Select Light Green" [focusable=True]
+        - text "Cream"
+          - text "Cream"
+      - LabelText
+        - text "SIZE"
+          - text "SIZE"
+        - combobox "Size for Baby Cotton One Piece" value="0-3M" [focusable=True]
+          - MenuListPopup
+            - option "0-3M" [focusable=True, selected=True]
+            - option "3-6M" [focusable=True]
+            - option "6-9M" [focusable=True]
+      - LabelText
+        - text "QTY"
+          - text "QTY"
+        - combobox "Quantity for Baby Cotton One Piece" value="1" [focusable=True]
+          - MenuListPopup
+            - option "1" [focusable=True, selected=True]
+            - option "2" [focusable=True]
+            - option "3" [focusable=True]
+            - option "4" [focusable=True]
+            - option "5" [focusable=True]
+      - button "ADD TO CART" [focusable=True]
+        - text "ADD TO CART"
+          - text "ADD TO CART"
+    - paragraph
+      - text "QUICK FIND"
+        - text "QUICK FIND"
+    - heading "Looking for something specific?" [level=2]
+      - text "Looking for something specific?"
+        - text "Looking for something"
+        - text "specific?"
+    - link "Women's cropped tops" [focusable=True]
+      - text "Women's cropped tops"
+        - text "Women's cropped tops"
+    - link "Men's black blazers" [focusable=True]
+      - text "Men's black blazers"
+        - text "Men's black blazers"
+    - link "Kids limited-time offers" [focusable=True]
+      - text "Kids limited-time offers"
+        - text "Kids limited-time offers"
+    - link "Baby sale under $10" [focusable=True]
+      - text "Baby sale under $10"
+        - text "Baby sale under $10"
+    - link "Toddler collection" [focusable=True]
+      - text "Toddler collection"
+        - text "Toddler collection"
+    - link "Find your nearest store" [focusable=True]
+      - text "Find your nearest store"
+        - text "Find your nearest store"
+    - paragraph
+      - text "UNIQLO NEWS"
+        - text "UNIQLO NEWS"
+    - heading "New arrivals, offers, and LifeWear stories." [level=2]
+      - text "New arrivals, offers, and LifeWear stories."
+        - text "New arrivals, offers, and LifeWear"
+        - text "stories."
+    - paragraph
+      - text "Join our mailing list for thoughtful updates, not inbox clutter."
+        - text "Join our mailing list for thoughtful updates, not inbox clutter."
+    - form
+      - LabelText
+        - text "EMAIL ADDRESS"
+          - text "EMAIL ADDRESS"
+      - entry "EMAIL ADDRESS" [focusable=True, required=True]
+      - button "SIGN ME UP" [focusable=True]
+        - text "SIGN ME UP"
+          - text "SIGN ME UP"
+  - contentinfo
+    - link "UNI QLO" [focusable=True]
+      - text "UNI"
+        - text "UNI"
+      - text "QLO"
+        - text "QLO"
+    - paragraph
+      - text "Simple, high-quality everyday clothing with a practical sense of beauty."
+        - text "Simple, high-quality everyday clothing with a"
+        - text "practical sense of beauty."
+    - button "United States / English" [focusable=True]
+      - text "United States / English"
+        - text "United States / English"
+    - heading "SHOP" [level=2]
+      - text "SHOP"
+        - text "SHOP"
+    - link "Women" [focusable=True]
+      - text "Women"
+        - text "Women"
+    - link "Men" [focusable=True]
+      - text "Men"
+        - text "Men"
+    - link "Kids" [focusable=True]
+      - text "Kids"
+        - text "Kids"
+    - link "Baby" [focusable=True]
+      - text "Baby"
+        - text "Baby"
+    - link "Sale" [focusable=True]
+      - text "Sale"
+        - text "Sale"
+    - heading "HELP" [level=2]
+      - text "HELP"
+        - text "HELP"
+    - link "Store locator" [focusable=True]
+      - text "Store locator"
+        - text "Store locator"
+    - link "Online returns" [focusable=True]
+      - text "Online returns"
+        - text "Online returns"
+    - link "Shopping cart" [focusable=True]
+      - text "Shopping cart"
+        - text "Shopping cart"
+    - link "Wishlist" [focusable=True]
+      - text "Wishlist"
+        - text "Wishlist"
+    - link "My account" [focusable=True]
+      - text "My account"
+        - text "My account"
+    - heading "DISCOVER" [level=2]
+      - text "DISCOVER"
+        - text "DISCOVER"
+    - link "New arrivals" [focusable=True]
+      - text "New arrivals"
+        - text "New arrivals"
+    - link "Limited-time offers" [focusable=True]
+      - text "Limited-time offers"
+        - text "Limited-time offers"
+    - link "Sport Utility Wear" [focusable=True]
+      - text "Sport Utility Wear"
+        - text "Sport Utility Wear"
+    - link "Toddler collection" [focusable=True]
+      - text "Toddler collection"
+        - text "Toddler collection"
+    - text "© 2026 UNIQLO mock storefront"
+      - text "© 2026 UNIQLO mock storefront"
+    - text "Designed for this interactive prototype · No real purchases are processed"
+      - text "Designed for this interactive prototype · No real purchases are processed"

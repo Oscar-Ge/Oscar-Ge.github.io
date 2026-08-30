@@ -1,0 +1,180 @@
+- document "Apple — Products, Store & Support" [focused=True, focusable=True]
+  - banner
+    - navigation "Global navigation"
+      - link "Apple home" [focusable=True]
+        - text "●"
+          - text "●"
+      - link "Store" [focused=True, focusable=True]
+        - text "Store"
+          - text "Store"
+      - link "Mac" [focusable=True]
+        - text "Mac"
+          - text "Mac"
+      - link "iPad" [focusable=True]
+        - text "iPad"
+          - text "iPad"
+      - link "Watch" [focusable=True]
+        - text "Watch"
+          - text "Watch"
+      - link "AirPods" [focusable=True]
+        - text "AirPods"
+          - text "AirPods"
+      - link "TV & Home" [focusable=True]
+        - text "TV & Home"
+          - text "TV & Home"
+      - link "Support" [focusable=True]
+        - text "Support"
+          - text "Support"
+      - button "Search Apple" [focusable=True]
+      - link "Shopping bag with 0 items" [focusable=True]
+  - main
+    - paragraph
+      - text "APPLE STORE"
+        - text "APPLE STORE"
+    - heading "Store. The best way to buy the products you love." [level=1]
+      - text "Store."
+        - text "Store."
+      - text "The best way to buy the products you love."
+        - text "The best way to buy"
+        - text "the products you love."
+    - strong
+      - text "Need shopping help?"
+        - text "Need shopping help?"
+    - link "Ask a Specialist" [focusable=True]
+      - text "Ask a Specialist"
+        - text "Ask a Specialist"
+    - region "Featured products"
+      - link "iPad iPad Colorful. Capable. Fun. From $349" [focusable=True]
+        - image "iPad"
+          - text "PRO"
+            - text "PRO"
+        - heading "iPad" [level=2]
+          - text "iPad"
+            - text "iPad"
+        - paragraph
+          - text "Colorful. Capable. Fun."
+            - text "Colorful. Capable. Fun."
+        - strong
+          - text "From $349"
+            - text "From $349"
+      - link "MacBook Air MacBook Air Supercharged by M4. From $999" [focusable=True]
+        - image "MacBook Air"
+          - text "Air"
+            - text "Air"
+        - heading "MacBook Air" [level=2]
+          - text "MacBook Air"
+            - text "MacBook Air"
+        - paragraph
+          - text "Supercharged by M4."
+            - text "Supercharged by M4."
+        - strong
+          - text "From $999"
+            - text "From $999"
+      - link "Apple Watch Apple Watch A healthy leap ahead. From $249" [focusable=True]
+        - image "Apple Watch"
+          - text "10:09"
+            - text "10:09"
+          - text "MON 16"
+            - text "MON 16"
+        - heading "Apple Watch" [level=2]
+          - text "Apple Watch"
+            - text "Apple Watch"
+        - paragraph
+          - text "A healthy leap ahead."
+            - text "A healthy leap ahead."
+        - strong
+          - text "From $249"
+            - text "From $249"
+      - link "HomePod mini HomePod mini Room-filling sound. $99" [focusable=True]
+        - image "HomePod mini"
+        - heading "HomePod mini" [level=2]
+          - text "HomePod mini"
+            - text "HomePod mini"
+        - paragraph
+          - text "Room-filling sound."
+            - text "Room-filling sound."
+        - strong
+          - text "$99"
+            - text "$99"
+    - paragraph
+      - text "THE APPLE STORE DIFFERENCE"
+        - text "THE APPLE STORE DIFFERENCE"
+    - heading "There’s even more to love." [level=2]
+      - text "There’s even more to love."
+        - text "There’s even more to love."
+    - list
+      - listitem [level=1]
+        - strong
+          - text "Fast, free delivery"
+            - text "Fast, free delivery"
+        - text "Or pick up available items at an Apple Store."
+          - text "Or pick up available items at an Apple Store."
+      - listitem [level=1]
+        - strong
+          - text "Free personal engraving"
+            - text "Free personal engraving"
+        - text "Add a message to eligible iPad models."
+          - text "Add a message to eligible iPad models."
+      - listitem [level=1]
+        - strong
+          - text "Flexible ways to pay"
+            - text "Flexible ways to pay"
+        - text "Choose the option that works for you."
+          - text "Choose the option that works for you."
+    - link "Configure iPad" [focusable=True]
+      - text "Configure iPad"
+        - text "Configure iPad"
+    - link "Find a Store" [focusable=True]
+      - text "Find a Store"
+        - text "Find a Store"
+  - contentinfo
+    - paragraph
+      - text "This is a polished demonstration storefront. Product, order, store, and repair data are synthetic."
+        - text "This is a polished demonstration storefront. Product, order, store, and repair data are synthetic."
+    - heading "Shop and Learn" [level=3]
+      - text "Shop and Learn"
+        - text "Shop and Learn"
+    - link "Store" [focusable=True]
+      - text "Store"
+        - text "Store"
+    - link "Mac" [focusable=True]
+      - text "Mac"
+        - text "Mac"
+    - link "iPad" [focusable=True]
+      - text "iPad"
+        - text "iPad"
+    - link "Watch" [focusable=True]
+      - text "Watch"
+        - text "Watch"
+    - link "HomePod" [focusable=True]
+      - text "HomePod"
+        - text "HomePod"
+    - heading "Apple Store" [level=3]
+      - text "Apple Store"
+        - text "Apple Store"
+    - link "Find a Store" [focusable=True]
+      - text "Find a Store"
+        - text "Find a Store"
+    - link "Order Status" [focusable=True]
+      - text "Order Status"
+        - text "Order Status"
+    - link "Shopping Bag" [focusable=True]
+      - text "Shopping Bag"
+        - text "Shopping Bag"
+    - heading "For Support" [level=3]
+      - text "For Support"
+        - text "For Support"
+    - link "Find Lost AirPods" [focusable=True]
+      - text "Find Lost AirPods"
+        - text "Find Lost AirPods"
+    - link "Repair Status" [focusable=True]
+      - text "Repair Status"
+        - text "Repair Status"
+    - link "Apple Support" [focusable=True]
+      - text "Apple Support"
+        - text "Apple Support"
+    - text "Copyright © 2026 Apple Demo. All rights reserved."
+      - text "Copyright © 2026 Apple Demo. All rights reserved."
+    - link "Privacy & support" [focusable=True]
+      - text "Privacy & support"
+        - text "Privacy & support"

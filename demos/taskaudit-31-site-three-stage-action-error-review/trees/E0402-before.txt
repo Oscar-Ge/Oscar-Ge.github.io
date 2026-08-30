@@ -1,0 +1,281 @@
+- document "Steam Store" [focused=True, focusable=True]
+  - banner
+    - link "Steam Store home" [focused=True, focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - navigation "Main navigation"
+      - link "STORE" [focusable=True]
+        - text "STORE"
+          - text "STORE"
+      - link "COMMUNITY" [focusable=True]
+        - text "COMMUNITY"
+          - text "COMMUNITY"
+      - button "ALEX" [focusable=True]
+        - text "ALEX"
+          - text "ALEX"
+    - button "Notifications" [focusable=True]
+    - link "Cart with 0 items" [focusable=True]
+      - text "Cart"
+        - text "Cart"
+  - link "Your Store" [focusable=True]
+    - text "Your Store"
+      - text "Your Store"
+  - link "Browse" [focusable=True]
+    - text "Browse"
+      - text "Browse"
+  - link "Charts" [focusable=True]
+    - text "Charts"
+      - text "Charts"
+  - link "Upcoming" [focusable=True]
+    - text "Upcoming"
+      - text "Upcoming"
+  - link "Points Shop" [focusable=True]
+    - text "Points Shop"
+      - text "Points Shop"
+  - search
+    - entry "Search the store" [focusable=True]
+    - button "Submit search" [focusable=True]
+  - main
+    - text "FEATURED & RECOMMENDED"
+      - text "FEATURED & RECOMMENDED"
+    - link "Cities: Skylines featured artwork" [focusable=True]
+      - image "Cities: Skylines featured artwork"
+    - text "YOUR CITY. YOUR RULES."
+      - text "YOUR CITY. YOUR RULES."
+    - heading "Cities: Skylines" [level=1]
+      - text "Cities: Skylines"
+        - text "Cities: Skylines"
+    - paragraph
+      - text "Build the city of your dreams and manage its living, breathing systems."
+        - text "Build the city of your dreams and manage its living,"
+        - text "breathing systems."
+    - image "City transit preview"
+    - image "Downtown preview"
+    - image "City at night preview"
+    - image "Industries preview"
+    - text "Top Seller"
+      - text "Top Seller"
+    - text "PC"
+      - text "PC"
+    - text "STARTING AT"
+      - text "STARTING AT"
+    - strong
+      - text "$29.99"
+        - text "$29.99"
+    - link "View details" [focusable=True]
+      - text "View details"
+        - text "View details"
+    - region "Popular destinations"
+      - link "Recently played Jump back into your games" [focusable=True]
+        - text "Recently played"
+          - text "Recently played"
+        - text "Jump back into your games"
+          - text "Jump back into your games"
+      - link "Most played See today's player counts" [focusable=True]
+        - text "Most played"
+          - text "Most played"
+        - text "See today's player counts"
+          - text "See today's player counts"
+      - link "Popular upcoming Discover anticipated releases" [focusable=True]
+        - text "Popular upcoming"
+          - text "Popular upcoming"
+        - text "Discover anticipated releases"
+          - text "Discover anticipated releases"
+      - link "Your game forums Join community discussions" [focusable=True]
+        - text "Your game forums"
+          - text "Your game forums"
+        - text "Join community discussions"
+          - text "Join community discussions"
+    - heading "SPECIAL OFFERS" [level=2]
+      - text "SPECIAL OFFERS"
+        - text "SPECIAL OFFERS"
+    - paragraph
+      - text "Great games at great prices"
+        - text "Great games at great prices"
+    - link "Browse all games" [focusable=True]
+      - text "Browse all games"
+        - text "Browse all games"
+    - article
+      - link "Sea of Stars cover" [focusable=True]
+        - image "Sea of Stars cover"
+      - link "Sea of Stars" [focusable=True]
+        - heading "Sea of Stars" [level=3]
+          - text "Sea of Stars"
+            - text "Sea of Stars"
+      - text "Windows"
+        - text "Windows"
+      - button "Add Sea of Stars to wishlist" [focusable=True]
+      - text "Adventure"
+        - text "Adventure"
+      - text "JRPG"
+        - text "JRPG"
+      - text "RPG"
+        - text "RPG"
+      - text "96"
+        - text "96"
+      - text "%"
+        - text "%"
+      - deletion
+        - text "$"
+          - text "$"
+        - text "34.99"
+          - text "34.99"
+      - strong
+        - text "$17.49"
+          - text "$17.49"
+      - button "Add" [focusable=True]
+        - text "Add"
+          - text "Add"
+    - article
+      - link "Hades cover" [focusable=True]
+        - image "Hades cover"
+      - link "Hades" [focusable=True]
+        - heading "Hades" [level=3]
+          - text "Hades"
+            - text "Hades"
+      - text "Windows"
+        - text "Windows"
+      - button "Add Hades to wishlist" [focusable=True]
+      - text "Adventure"
+        - text "Adventure"
+      - text "Action"
+        - text "Action"
+      - text "Roguelike"
+        - text "Roguelike"
+      - text "98"
+        - text "98"
+      - text "%"
+        - text "%"
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - button "Add" [focusable=True]
+        - text "Add"
+          - text "Add"
+    - article
+      - link "DREDGE cover" [focusable=True]
+        - image "DREDGE cover"
+      - link "DREDGE" [focusable=True]
+        - heading "DREDGE" [level=3]
+          - text "DREDGE"
+            - text "DREDGE"
+      - text "Windows"
+        - text "Windows"
+      - button "Remove DREDGE from wishlist" [focusable=True]
+      - text "Adventure"
+        - text "Adventure"
+      - text "Fishing"
+        - text "Fishing"
+      - text "Exploration"
+        - text "Exploration"
+      - text "95"
+        - text "95"
+      - text "%"
+        - text "%"
+      - strong
+        - text "$24.99"
+          - text "$24.99"
+      - button "Add" [focusable=True]
+        - text "Add"
+          - text "Add"
+    - heading "TOP GAMES BY DAILY PLAYERS" [level=2]
+      - text "TOP GAMES BY DAILY PLAYERS"
+        - text "TOP GAMES BY DAILY PLAYERS"
+    - link "View full chart" [focusable=True]
+      - text "View full chart"
+        - text "View full chart"
+    - link "1 Counter-Strike 2 1,183,492 daily" [focusable=True]
+      - text "1"
+        - text "1"
+      - text "Counter-Strike 2"
+        - text "Counter-Strike 2"
+      - text "1,183,492"
+        - text "1,183,492"
+      - text "daily"
+        - text "daily"
+    - link "2 Dota 2 668,211 daily" [focusable=True]
+      - text "2"
+        - text "2"
+      - text "Dota 2"
+        - text "Dota 2"
+      - text "668,211"
+        - text "668,211"
+      - text "daily"
+        - text "daily"
+    - link "3 PUBG: BATTLEGROUNDS 497,230 daily" [focusable=True]
+      - text "3"
+        - text "3"
+      - text "PUBG: BATTLEGROUNDS"
+        - text "PUBG: BATTLEGROUNDS"
+      - text "497,230"
+        - text "497,230"
+      - text "daily"
+        - text "daily"
+    - link "4 Apex Legends 310,884 daily" [focusable=True]
+      - text "4"
+        - text "4"
+      - text "Apex Legends"
+        - text "Apex Legends"
+      - text "310,884"
+        - text "310,884"
+      - text "daily"
+        - text "daily"
+    - link "5 Rust 246,019 daily" [focusable=True]
+      - text "5"
+        - text "5"
+      - text "Rust"
+        - text "Rust"
+      - text "246,019"
+        - text "246,019"
+      - text "daily"
+        - text "daily"
+    - heading "POPULAR UPCOMING" [level=2]
+      - text "POPULAR UPCOMING"
+        - text "POPULAR UPCOMING"
+    - link "See all upcoming" [focusable=True]
+      - text "See all upcoming"
+        - text "See all upcoming"
+    - link "Hollow Knight: Silksong August 28, 2026 3,251,400" [focusable=True]
+      - text "Hollow Knight: Silksong"
+        - text "Hollow Knight: Silksong"
+      - text "August 28, 2026"
+        - text "August 28, 2026"
+      - text "3,251,400"
+        - text "3,251,400"
+    - link "Fable September 17, 2026 2,481,200" [focusable=True]
+      - text "Fable"
+        - text "Fable"
+      - text "September 17, 2026"
+        - text "September 17, 2026"
+      - text "2,481,200"
+        - text "2,481,200"
+    - link "Light No Fire October 9, 2026 1,834,920" [focusable=True]
+      - text "Light No Fire"
+        - text "Light No Fire"
+      - text "October 9, 2026"
+        - text "October 9, 2026"
+      - text "1,834,920"
+        - text "1,834,920"
+    - link "Subnautica 2 November 6, 2026 1,620,080" [focusable=True]
+      - text "Subnautica 2"
+        - text "Subnautica 2"
+      - text "November 6, 2026"
+        - text "November 6, 2026"
+      - text "1,620,080"
+        - text "1,620,080"
+  - contentinfo
+    - link "STEAM" [focusable=True]
+      - text "STEAM"
+        - text "STEAM"
+    - paragraph
+      - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+        - text "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic."
+    - link "Browse Store" [focusable=True]
+      - text "Browse Store"
+        - text "Browse Store"
+    - link "Community" [focusable=True]
+      - text "Community"
+        - text "Community"
+    - link "Points Shop" [focusable=True]
+      - text "Points Shop"
+        - text "Points Shop"

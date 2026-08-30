@@ -1,0 +1,215 @@
+- document "SoundCloud — Hear what’s next" [focused=True, focusable=True]
+  - banner
+    - link "SoundCloud home" [focusable=True]
+      - text "SOUNDCLOUD"
+        - text "SOUNDCLOUD"
+    - navigation "Primary navigation"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Feed" [focusable=True]
+        - text "Feed"
+          - text "Feed"
+      - link "Charts" [focusable=True]
+        - text "Charts"
+          - text "Charts"
+      - link "Library" [focusable=True]
+        - text "Library"
+          - text "Library"
+    - search
+      - LabelText
+        - text "Search SoundCloud"
+          - text "Search SoundCloud"
+      - entry "Search SoundCloud" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - link "For Artists" [focusable=True]
+      - text "For Artists"
+        - text "For Artists"
+    - link "Open your library" [focusable=True]
+      - text "AR"
+        - text "AR"
+  - main
+    - text "SOUNDCLOUD CHARTS"
+      - text "SOUNDCLOUD CHARTS"
+    - heading "Top 50" [level=1]
+      - text "Top 50"
+        - text "Top 50"
+    - paragraph
+      - text "The most played tracks on SoundCloud this week."
+        - text "The most played tracks on SoundCloud this week."
+    - text "Updated"
+      - text "Updated"
+    - LineBreak
+      - text
+    - strong
+      - text "hourly"
+        - text "hourly"
+    - button "Hip-hop & Rap" [focusable=True]
+      - text "Hip-hop & Rap"
+        - text "Hip-hop & Rap"
+    - button "Pop" [focusable=True]
+      - text "Pop"
+        - text "Pop"
+    - button "Rock" [focusable=True]
+      - text "Rock"
+        - text "Rock"
+    - button "Electronic" [focusable=True]
+      - text "Electronic"
+        - text "Electronic"
+    - text "GLOBAL CHART"
+      - text "GLOBAL CHART"
+    - heading "Top 50 · Hip-hop & Rap" [level=2]
+      - text "Top 50 ·"
+        - text "Top 50 ·"
+      - text "Hip-hop & Rap"
+        - text "Hip-hop & Rap"
+    - text "Week of Aug 16"
+      - text "Week of Aug 16"
+    - article
+      - button "Play Crown Season" [focusable=True]
+      - text "Nova Saint"
+        - text "Nova Saint"
+      - strong
+        - text "Crown Season"
+          - text "Crown Season"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "#"
+        - text "#"
+      - text "Trending"
+        - text "Trending"
+      - text "12M"
+        - text "12M"
+      - text "421K"
+        - text "421K"
+      - text "3:24"
+        - text "3:24"
+      - button "Like Crown Season" [focusable=True]
+      - button "Share Crown Season" [focusable=True]
+      - button "Add Crown Season to Next up" [focusable=True]
+      - button "Add Crown Season to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - text "2"
+        - text "2"
+      - button "Play City Never Sleeps" [focusable=True]
+      - text "Jae Rivers"
+        - text "Jae Rivers"
+      - strong
+        - text "City Never Sleeps"
+          - text "City Never Sleeps"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "11M"
+        - text "11M"
+      - text "368K"
+        - text "368K"
+      - text "3:07"
+        - text "3:07"
+      - button "Like City Never Sleeps" [focusable=True]
+      - button "Share City Never Sleeps" [focusable=True]
+      - button "Add City Never Sleeps to Next up" [focusable=True]
+      - button "Add City Never Sleeps to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - text "3"
+        - text "3"
+      - button "Play No Apologies" [focusable=True]
+      - text "Kairo West"
+        - text "Kairo West"
+      - strong
+        - text "No Apologies"
+          - text "No Apologies"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "9.7M"
+        - text "9.7M"
+      - text "332K"
+        - text "332K"
+      - text "3:16"
+        - text "3:16"
+      - button "Like No Apologies" [focusable=True]
+      - button "Share No Apologies" [focusable=True]
+      - button "Add No Apologies to Next up" [focusable=True]
+      - button "Add No Apologies to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - text "4"
+        - text "4"
+      - button "Play Paper Crowns" [focusable=True]
+      - text "Lola Vee"
+        - text "Lola Vee"
+      - strong
+        - text "Paper Crowns"
+          - text "Paper Crowns"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "8.8M"
+        - text "8.8M"
+      - text "298K"
+        - text "298K"
+      - text "3:41"
+        - text "3:41"
+      - button "Like Paper Crowns" [focusable=True]
+      - button "Share Paper Crowns" [focusable=True]
+      - button "Add Paper Crowns to Next up" [focusable=True]
+      - button "Add Paper Crowns to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - article
+      - text "5"
+        - text "5"
+      - button "Play Northside Code" [focusable=True]
+      - text "Trey North"
+        - text "Trey North"
+      - strong
+        - text "Northside Code"
+          - text "Northside Code"
+      - text "#"
+        - text "#"
+      - text "Hip hop"
+        - text "Hip hop"
+      - text "7.3M"
+        - text "7.3M"
+      - text "255K"
+        - text "255K"
+      - text "2:56"
+        - text "2:56"
+      - button "Like Northside Code" [focusable=True]
+      - button "Share Northside Code" [focusable=True]
+      - button "Add Northside Code to Next up" [focusable=True]
+      - button "Add Northside Code to playlist" [focusable=True]
+        - text "Playlist"
+          - text "Playlist"
+    - paragraph
+      - text "Showing the leading tracks from this week’s Top 50."
+        - text "Showing the leading tracks from this week’s Top 50."
+  - contentinfo "Audio player"
+    - strong
+      - text "Midnight City Lights"
+        - text "Midnight City Lights"
+    - text "Lunar Arcade"
+      - text "Lunar Arcade"
+    - button "Like current track" [focusable=True]
+    - button "Previous track" [focusable=True]
+    - button "Play" [focusable=True]
+    - button "Next track" [focusable=True]
+    - text "0:00"
+      - text "0:00"
+    - text "4:08"
+      - text "4:08"
+    - button "Mute" [focusable=True]
+    - button "Next up" [focusable=True]
+      - text "Next up"
+        - text "Next up"

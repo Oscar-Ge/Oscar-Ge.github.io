@@ -1,0 +1,203 @@
+- document "SoundCloud — Hear what’s next" [focused=True, focusable=True]
+  - banner
+    - link "SoundCloud home" [focusable=True]
+      - text "SOUNDCLOUD"
+        - text "SOUNDCLOUD"
+    - navigation "Primary navigation"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Feed" [focusable=True]
+        - text "Feed"
+          - text "Feed"
+      - link "Charts" [focusable=True]
+        - text "Charts"
+          - text "Charts"
+      - link "Library" [focusable=True]
+        - text "Library"
+          - text "Library"
+    - search
+      - LabelText
+        - text "Search SoundCloud"
+          - text "Search SoundCloud"
+      - entry "Search SoundCloud" [focusable=True]
+      - button "Submit search" [focusable=True]
+    - link "For Artists" [focusable=True]
+      - text "For Artists"
+        - text "For Artists"
+    - link "Open your library" [focusable=True]
+      - text "AR"
+        - text "AR"
+  - main
+    - text "YOUR SOUND, EVERYWHERE"
+      - text "YOUR SOUND, EVERYWHERE"
+    - heading "Discover what’s next in music." [level=1]
+      - text "Discover what’s next in music."
+        - text "Discover what’s"
+        - text "next in music."
+    - paragraph
+      - text "Fresh tracks, cult favorites and independent voices—all in one place."
+        - text "Fresh tracks, cult favorites and independent voices—all in one"
+        - text "place."
+    - link "Explore trending" [focusable=True]
+      - text "Explore trending"
+        - text "Explore trending"
+    - link "Browse charts" [focusable=True]
+      - text "Browse charts"
+        - text "Browse charts"
+    - text "START HERE"
+      - text "START HERE"
+    - heading "Made for your moment" [level=2]
+      - text "Made for your moment"
+        - text "Made for your moment"
+    - link "See what’s trending" [focusable=True]
+      - text "See what’s trending"
+        - text "See what’s trending"
+    - article
+      - button "Play Ultimate Game Mix: Level Up" [focusable=True]
+      - text "ALBUM"
+        - text "ALBUM"
+      - link "Ultimate Game Mix: Level Up" [focusable=True]
+        - text "Ultimate Game Mix: Level Up"
+          - text "Ultimate Game Mix: Level Up"
+      - paragraph
+        - text "GameWave Collective"
+          - text "GameWave Collective"
+      - text "#"
+        - text "#"
+      - text "Gaming"
+        - text "Gaming"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - button "Like Ultimate Game Mix: Level Up" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Ultimate Game Mix: Level Up" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Ultimate Game Mix: Level Up to Next up" [focusable=True]
+    - article
+      - button "Play Rock Classics Recharged" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Rock Classics Recharged" [focusable=True]
+        - text "Rock Classics Recharged"
+          - text "Rock Classics Recharged"
+      - paragraph
+        - text "SoundCloud Rock"
+          - text "SoundCloud Rock"
+      - text "#"
+        - text "#"
+      - text "Rock"
+        - text "Rock"
+      - button "Like Rock Classics Recharged" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Rock Classics Recharged" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Rock Classics Recharged to Next up" [focusable=True]
+    - article
+      - button "Play Electronics After Dark" [focusable=True]
+      - text "PLAYLIST"
+        - text "PLAYLIST"
+      - link "Electronics After Dark" [focusable=True]
+        - text "Electronics After Dark"
+          - text "Electronics After Dark"
+      - paragraph
+        - text "Pulse Selects"
+          - text "Pulse Selects"
+      - text "#"
+        - text "#"
+      - text "Electronics"
+        - text "Electronics"
+      - button "Like Electronics After Dark" [focusable=True]
+        - text "Like"
+          - text "Like"
+      - button "Repost Electronics After Dark" [focusable=True]
+        - text "Repost"
+          - text "Repost"
+      - button "Add Electronics After Dark to Next up" [focusable=True]
+    - text "EXPLORE BY MOOD"
+      - text "EXPLORE BY MOOD"
+    - heading "Find your frequency" [level=2]
+      - text "Find your frequency"
+        - text "Find your frequency"
+    - group "Music categories"
+      - button "Chill" [focusable=True]
+        - text "Chill"
+          - text "Chill"
+      - button "Rock" [focusable=True]
+        - text "Rock"
+          - text "Rock"
+      - button "Pop" [focusable=True]
+        - text "Pop"
+          - text "Pop"
+      - button "Electronic" [focusable=True]
+        - text "Electronic"
+          - text "Electronic"
+      - button "Hip-hop & Rap" [focusable=True]
+        - text "Hip-hop & Rap"
+          - text "Hip-hop & Rap"
+      - button "Indian classical" [focusable=True]
+        - text "Indian classical"
+          - text "Indian classical"
+    - text "ARTISTS IN"
+      - text "ARTISTS IN"
+    - text "HIP-HOP & RAP"
+      - text "HIP-HOP & RAP"
+    - heading "Creators to follow" [level=3]
+      - text "Creators to follow"
+        - text "Creators to follow"
+    - paragraph
+      - text "Tap follow to bring new releases directly into your feed."
+        - text "Tap follow to bring new releases directly into your feed."
+    - article
+      - link "NS" [focusable=True]
+        - text "NS"
+          - text "NS"
+      - link "Nova Saint" [focusable=True]
+        - text "Nova Saint"
+          - text "Nova Saint"
+      - text "Hip-hop & Rap"
+        - text "Hip-hop & Rap"
+      - text "·"
+        - text "·"
+      - text "740K"
+        - text "740K"
+      - text "followers"
+        - text "followers"
+      - button "Follow" [focusable=True]
+        - text "Follow"
+          - text "Follow"
+    - text "SOUNDCLOUD CHARTS"
+      - text "SOUNDCLOUD CHARTS"
+    - heading "The tracks shaping culture right now." [level=2]
+      - text "The tracks shaping culture right now."
+        - text "The tracks shaping culture right now."
+    - paragraph
+      - text "See what listeners are playing, sharing and reposting worldwide."
+        - text "See what listeners are playing, sharing and reposting worldwide."
+    - link "Open Top 50" [focused=True, focusable=True]
+      - text "Open Top 50"
+        - text "Open Top 50"
+  - contentinfo "Audio player"
+    - strong
+      - text "Midnight City Lights"
+        - text "Midnight City Lights"
+    - text "Lunar Arcade"
+      - text "Lunar Arcade"
+    - button "Like current track" [focusable=True]
+    - button "Previous track" [focusable=True]
+    - button "Play" [focusable=True]
+    - button "Next track" [focusable=True]
+    - text "0:00"
+      - text "0:00"
+    - text "4:08"
+      - text "4:08"
+    - button "Mute" [focusable=True]
+    - button "Next up" [focusable=True]
+      - text "Next up"
+        - text "Next up"

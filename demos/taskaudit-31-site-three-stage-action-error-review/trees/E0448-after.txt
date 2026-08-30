@@ -1,0 +1,161 @@
+- document "Indeed — Find jobs, salaries & company reviews" [focused=True, focusable=True]
+  - banner
+    - link "Indeed home" [focusable=True]
+      - text "indeed"
+        - text "indeed"
+    - navigation "Primary navigation"
+      - link "Find jobs" [focusable=True]
+        - text "Find jobs"
+          - text "Find jobs"
+      - link "Company reviews" [focusable=True]
+        - text "Company reviews"
+          - text "Company reviews"
+      - link "Salaries" [focusable=True]
+        - text "Salaries"
+          - text "Salaries"
+      - link "Certifications" [focusable=True]
+        - text "Certifications"
+          - text "Certifications"
+      - link "Recent searches" [focusable=True]
+        - text "Recent searches"
+          - text "Recent searches"
+    - button "Sign in" [focusable=True]
+      - text "Sign in"
+        - text "Sign in"
+  - main
+    - button "Back to jobs" [focusable=True]
+      - text "Back to jobs"
+        - text "Back to jobs"
+    - article
+      - paragraph
+        - text "ZOHO CORPORATION"
+          - text "ZOHO CORPORATION"
+      - heading "Human Resources Specialist" [level=1]
+        - text "Human Resources Specialist"
+          - text "Human Resources Specialist"
+      - paragraph
+        - text "Chennai, Tamil Nadu"
+          - text "Chennai, Tamil Nadu"
+        - text "·"
+          - text "·"
+        - text "Hybrid"
+          - text "Hybrid"
+      - strong
+        - text "₹45,000 - ₹58,000 a month"
+          - text "₹45,000 - ₹58,000 a month"
+      - button "Save job" [focusable=True]
+        - text "Save job"
+          - text "Save job"
+      - button "Apply now" [focused=True, focusable=True]
+        - text "Apply now"
+          - text "Apply now"
+      - text "JOB TYPE"
+        - text "JOB TYPE"
+      - text "Full-time"
+        - text "Full-time"
+      - text "EDUCATION"
+        - text "EDUCATION"
+      - text "Master's degree"
+        - text "Master's degree"
+      - text "DATE POSTED"
+        - text "DATE POSTED"
+      - text "22 hours ago"
+        - text "22 hours ago"
+      - text "INDUSTRY"
+        - text "INDUSTRY"
+      - text "Human resources"
+        - text "Human resources"
+      - heading "Job details" [level=2]
+        - text "Job details"
+          - text "Job details"
+      - paragraph
+        - text "Support talent programs, employee experience, and people analytics at Zoho Corporation."
+          - text "Support talent programs, employee experience, and people analytics at Zoho"
+          - text "Corporation."
+      - heading "What you'll bring" [level=3]
+        - text "What you'll bring"
+          - text "What you'll bring"
+      - list
+        - listitem [level=1]
+          - text "Master’s degree in human resources or business"
+            - text "Master’s degree in human resources or business"
+        - listitem [level=1]
+          - text "Strong people communication"
+            - text "Strong people communication"
+        - listitem [level=1]
+          - text "Interest in HR analytics"
+            - text "Interest in HR analytics"
+      - heading "Benefits" [level=3]
+        - text "Benefits"
+          - text "Benefits"
+      - list
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Health insurance"
+            - text "Health insurance"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Learning budget"
+            - text "Learning budget"
+        - listitem [level=1]
+          - ListMarker "•"
+          - text "Employee wellness"
+            - text "Employee wellness"
+      - paragraph
+        - text "Posted directly by the employer"
+          - text "Posted directly by the employer"
+      - button "Report this job" [focusable=True]
+        - text "Report this job"
+          - text "Report this job"
+    - dialog
+      - button "Close" [focusable=True]
+      - paragraph
+        - text "EASY APPLY"
+          - text "EASY APPLY"
+      - heading "Apply to Zoho Corporation" [level=2]
+        - text "Apply to"
+          - text "Apply to"
+        - text "Zoho Corporation"
+          - text "Zoho Corporation"
+      - paragraph
+        - text "Submit your mock application for"
+          - text "Submit your mock application for"
+        - strong
+          - text "Human Resources Specialist"
+            - text "Human Resources"
+            - text "Specialist"
+        - text "."
+          - text "."
+      - form
+        - LabelText
+          - text "Full name"
+            - text "Full name"
+          - entry "Full name" value="Alex Morgan" [focusable=True, required=True]
+            - text "Alex Morgan"
+              - text "Alex Morgan"
+        - LabelText
+          - text "Email address"
+            - text "Email address"
+          - entry "Email address" value="alex.morgan@example.com" [focusable=True, required=True]
+            - text "alex.morgan@example.com"
+              - text "alex.morgan@example.com"
+        - text "Indeed profile attached"
+          - text "Indeed profile attached"
+        - button "Cancel" [focusable=True]
+          - text "Cancel"
+            - text "Cancel"
+        - button "Submit application" [focusable=True]
+          - text "Submit application"
+            - text "Submit application"
+  - contentinfo
+    - text "© 2026 Indeed"
+      - text "© 2026 Indeed"
+    - link "Accessibility at Indeed" [focusable=True]
+      - text "Accessibility at Indeed"
+        - text "Accessibility at Indeed"
+    - link "Privacy Center" [focusable=True]
+      - text "Privacy Center"
+        - text "Privacy Center"
+    - link "Terms" [focusable=True]
+      - text "Terms"
+        - text "Terms"

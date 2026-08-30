@@ -1,0 +1,290 @@
+- document "Amazon.com: Shop deals and everyday essentials" [focused=True, focusable=True]
+  - banner
+    - link "Amazon home" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "Change delivery location" [focusable=True]
+      - text "Delivering to Salt Lake City"
+        - text "Delivering to Salt Lake City"
+      - strong
+        - text "Update location"
+          - text "Update location"
+        - text "84101"
+          - text "84101"
+    - search
+      - LabelText
+        - text "Search department"
+          - text "Search department"
+      - combobox "Search department" value="All" [focusable=True]
+        - MenuListPopup
+          - option "All" [focusable=True, selected=True]
+          - option "Amazon Pharmacy" [focusable=True]
+          - option "Books" [focusable=True]
+          - option "Electronics" [focusable=True]
+          - option "Gift Cards" [focusable=True]
+          - option "Home & Kitchen" [focusable=True]
+          - option "Pet Supplies" [focusable=True]
+          - option "Video Games" [focusable=True]
+      - LabelText
+        - text "Search Amazon"
+          - text "Search Amazon"
+      - entry "Search Amazon" value="Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - button "Search" [focusable=True]
+    - button "Language: English" [focusable=True]
+      - text "US"
+        - text "US"
+      - strong
+        - text "EN"
+          - text "EN"
+    - button "Hello, sign in Account & Lists" [focusable=True]
+      - text "Hello,"
+        - text "Hello,"
+      - text "sign in"
+        - text "sign in"
+      - strong
+        - text "Account & Lists"
+          - text "Account & Lists"
+    - link "Returns & Orders" [focusable=True]
+      - text "Returns"
+        - text "Returns"
+      - strong
+        - text "& Orders"
+          - text "& Orders"
+    - link "Cart with 0 items" [focusable=True]
+      - text "0"
+        - text "0"
+      - strong
+        - text "Cart"
+          - text "Cart"
+    - navigation "Main navigation"
+      - button "All" [focusable=True]
+        - text "All"
+          - text "All"
+      - link "Today’s Deals" [focusable=True]
+        - text "Today’s Deals"
+          - text "Today’s Deals"
+      - link "Amazon Basics" [focusable=True]
+        - text "Amazon Basics"
+          - text "Amazon Basics"
+      - link "Books" [focusable=True]
+        - text "Books"
+          - text "Books"
+      - link "Pharmacy" [focusable=True]
+        - text "Pharmacy"
+          - text "Pharmacy"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+      - link "Pet Supplies" [focusable=True]
+        - text "Pet Supplies"
+          - text "Pet Supplies"
+      - link "Electronics" [focusable=True]
+        - text "Electronics"
+          - text "Electronics"
+      - text "Free delivery on millions of items"
+        - text "Free delivery on millions of items"
+  - main
+    - text "1-"
+      - text "1-"
+    - text "2"
+      - text "2"
+    - text "of"
+      - text "of"
+    - text "2"
+      - text "2"
+    - text "results for"
+      - text "results for"
+    - strong
+      - text "“Gift Cards”"
+        - text "“Gift Cards”"
+    - complementary "Search filters"
+      - strong
+        - text "Department"
+          - text "Department"
+      - text "All Departments"
+        - text "All Departments"
+      - group "Customer Reviews"
+        - Legend
+          - text "Customer Reviews"
+            - text "Customer Reviews"
+        - LabelText
+          - checkbox "4 out of 5 stars & Up" [focusable=True]
+          - generic "4 out of 5 stars"
+            - text "4"
+              - text "4"
+          - text "& Up"
+            - text "& Up"
+      - group "Price"
+        - Legend
+          - text "Price"
+            - text "Price"
+        - LabelText
+          - text "Minimum price"
+            - text "Minimum price"
+          - spinbutton "Minimum price" [focusable=True]
+        - LabelText
+          - text "Maximum price"
+            - text "Maximum price"
+          - spinbutton "Maximum price" [focusable=True]
+      - button "Clear all filters" [focusable=True]
+        - text "Clear all filters"
+          - text "Clear all filters"
+    - heading "Results" [level=1]
+      - text "Results"
+        - text "Results"
+    - paragraph
+      - text "Check each product page for other buying options."
+        - text "Check each product page for other buying options."
+    - LabelText
+      - text "Sort by:"
+        - text "Sort by:"
+      - combobox "Sort results" value="Featured" [focused=True, focusable=True]
+        - MenuListPopup
+          - option "Featured" [focusable=True, selected=True]
+          - option "Price: Low to High" [focusable=True]
+          - option "Price: High to Low" [focusable=True]
+          - option "Avg. Customer Review" [focusable=True]
+    - article
+      - link "Google Play Gift Card — Email Delivery" [focusable=True]
+        - image "Google Play Gift Card — Email Delivery"
+      - text "GOOGLE PLAY"
+        - text "GOOGLE PLAY"
+      - link "Google Play Gift Card — Email Delivery" [focusable=True]
+        - text "Google Play Gift Card — Email Delivery"
+          - text "Google Play Gift Card — Email Delivery"
+      - generic "4.7 out of 5 stars, 88412 reviews"
+        - text "4.7"
+          - text "4.7"
+        - text "("
+          - text "("
+        - text "88,412"
+          - text "88,412"
+        - text ")"
+          - text ")"
+      - text "Email delivery"
+        - text "Email delivery"
+      - text "$25–$200"
+        - text "$25–$200"
+      - text "Usually delivered in 5 minutes"
+        - text "Usually delivered in 5 minutes"
+      - text "$"
+        - text "$"
+      - text "25"
+        - text "25"
+      - text "00"
+        - text "00"
+      - text "Email delivery"
+        - text "Email delivery"
+      - link "Customize & add" [focusable=True]
+        - text "Customize & add"
+          - text "Customize & add"
+    - article
+      - link "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home" [focusable=True]
+        - image "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+      - text "AMAZON GIFT CARDS"
+        - text "AMAZON GIFT CARDS"
+      - link "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home" [focusable=True]
+        - text "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+          - text "“You Are Amazing” Congratulations Amazon Gift Card — Print at Home"
+      - generic "4.9 out of 5 stars, 3654 reviews"
+        - text "4.9"
+          - text "4.9"
+        - text "("
+          - text "("
+        - text "3,654"
+          - text "3,654"
+        - text ")"
+          - text ")"
+      - text "Print at home"
+        - text "Print at home"
+      - text "Foldable card"
+        - text "Foldable card"
+      - text "$50–$100"
+        - text "$50–$100"
+      - text "$"
+        - text "$"
+      - text "50"
+        - text "50"
+      - text "00"
+        - text "00"
+      - link "Customize & add" [focusable=True]
+        - text "Customize & add"
+          - text "Customize & add"
+  - contentinfo
+    - button "Back to top" [focusable=True]
+      - text "Back to top"
+        - text "Back to top"
+    - heading "Get to Know Us" [level=3]
+      - text "Get to Know Us"
+        - text "Get to Know Us"
+    - button "Careers" [focusable=True]
+      - text "Careers"
+        - text "Careers"
+    - button "Amazon Newsletter" [focusable=True]
+      - text "Amazon Newsletter"
+        - text "Amazon Newsletter"
+    - button "About Amazon" [focusable=True]
+      - text "About Amazon"
+        - text "About Amazon"
+    - heading "Make Money with Us" [level=3]
+      - text "Make Money with Us"
+        - text "Make Money with Us"
+    - button "Sell products on Amazon" [focusable=True]
+      - text "Sell products on Amazon"
+        - text "Sell products on Amazon"
+    - button "Become an Affiliate" [focusable=True]
+      - text "Become an Affiliate"
+        - text "Become an Affiliate"
+    - button "Advertise Your Products" [focusable=True]
+      - text "Advertise Your Products"
+        - text "Advertise Your Products"
+    - heading "Amazon Payment Products" [level=3]
+      - text "Amazon Payment Products"
+        - text "Amazon Payment Products"
+    - button "Amazon Visa" [focusable=True]
+      - text "Amazon Visa"
+        - text "Amazon Visa"
+    - button "Amazon Gift Cards" [focusable=True]
+      - text "Amazon Gift Cards"
+        - text "Amazon Gift Cards"
+    - button "Reload Your Balance" [focusable=True]
+      - text "Reload Your Balance"
+        - text "Reload Your Balance"
+    - heading "Let Us Help You" [level=3]
+      - text "Let Us Help You"
+        - text "Let Us Help You"
+    - link "Your Orders" [focusable=True]
+      - text "Your Orders"
+        - text "Your Orders"
+    - button "Shipping Rates & Policies" [focusable=True]
+      - text "Shipping Rates & Policies"
+        - text "Shipping Rates & Policies"
+    - button "Help" [focusable=True]
+      - text "Help"
+        - text "Help"
+    - link "amazon .com" [focusable=True]
+      - text "amazon"
+        - text "amazon"
+      - text ".com"
+        - text ".com"
+    - button "English" [focusable=True]
+      - text "English"
+        - text "English"
+    - button "$ USD - U.S. Dollar" [focusable=True]
+      - text "$ USD - U.S. Dollar"
+        - text "$ USD - U.S. Dollar"
+    - button "United States" [focusable=True]
+      - text "United States"
+        - text "United States"
+    - text "Conditions of Use"
+      - text "Conditions of Use"
+    - text "Privacy Notice"
+      - text "Privacy Notice"
+    - text "Consumer Health Data Privacy Disclosure"
+      - text "Consumer Health Data Privacy Disclosure"
+    - text "© 1996-2026, Amazon.com, Inc. or its affiliates"
+      - text "© 1996-2026, Amazon.com, Inc. or its affiliates"

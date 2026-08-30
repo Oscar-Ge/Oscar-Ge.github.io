@@ -1,0 +1,147 @@
+- document "app" [focused=True, focusable=True]
+  - text "Free shipping at $25"
+    - text "Free shipping at $25"
+  - text "|"
+    - text "|"
+  - text "Store pickup available"
+    - text "Store pickup available"
+  - link "Shop Clearance" [focusable=True]
+    - text "Shop Clearance"
+      - text "Shop Clearance"
+  - banner
+    - link "Macy's home" [focusable=True]
+      - text "macy's"
+        - text "macy's"
+    - search
+      - LabelText
+        - text "Search products"
+          - text "Search products"
+      - entry "Search products" [focusable=True]
+      - button "Submit search" [focused=True, focusable=True]
+    - link "Lists" [focusable=True]
+      - text "Lists"
+        - text "Lists"
+    - link "Bag" [focusable=True]
+      - text "Bag"
+        - text "Bag"
+    - navigation "Shop departments"
+      - link "Men" [focusable=True]
+        - text "Men"
+          - text "Men"
+      - link "Kids & Baby" [focusable=True]
+        - text "Kids & Baby"
+          - text "Kids & Baby"
+      - link "Handbags" [focusable=True]
+        - text "Handbags"
+          - text "Handbags"
+      - link "Toys" [focusable=True]
+        - text "Toys"
+          - text "Toys"
+      - link "Trending" [focusable=True]
+        - text "Trending"
+          - text "Trending"
+      - link "Home" [focusable=True]
+        - text "Home"
+          - text "Home"
+      - link "Jewelry" [focusable=True]
+        - text "Jewelry"
+          - text "Jewelry"
+      - link "Kitchen" [focusable=True]
+        - text "Kitchen"
+          - text "Kitchen"
+      - link "Wine" [focusable=True]
+        - text "Wine"
+          - text "Wine"
+      - link "Shoes" [focusable=True]
+        - text "Shoes"
+          - text "Shoes"
+      - link "Clearance" [focusable=True]
+        - text "Clearance"
+          - text "Clearance"
+      - link "Gift Cards" [focusable=True]
+        - text "Gift Cards"
+          - text "Gift Cards"
+  - main
+    - link "Home" [focusable=True]
+      - text "Home"
+        - text "Home"
+    - text "Search"
+      - text "Search"
+    - sectionheader
+      - text "SEARCH RESULTS"
+        - text "SEARCH RESULTS"
+      - heading "Results for “best sellers”" [level=1]
+        - text "Results for “best sellers”"
+          - text "Results for “best sellers”"
+      - paragraph
+        - text "0"
+          - text "0"
+        - text "matching products"
+          - text "matching products"
+    - LabelText
+      - text "Maximum price $"
+        - text "Maximum price $"
+      - spinbutton "Search maximum price" [focusable=True]
+    - LabelText
+      - text "Minimum rating"
+        - text "Minimum rating"
+      - combobox "Search minimum rating" value="Any" [focusable=True]
+        - MenuListPopup
+          - option "Any" [focusable=True, selected=True]
+          - option "4+ stars" [focusable=True]
+          - option "4.5+ stars" [focusable=True]
+          - option "5 stars" [focusable=True]
+    - heading "No products found" [level=2]
+      - text "No products found"
+        - text "No products found"
+    - paragraph
+      - text "Try a broader phrase such as “infant pajamas,” “baby shoes” or “recliner.”"
+        - text "Try a broader phrase such as “infant pajamas,” “baby shoes” or “recliner.”"
+    - link "Return Home" [focusable=True]
+      - text "Return Home"
+        - text "Return Home"
+  - contentinfo
+    - text "macy's"
+      - text "macy's"
+    - paragraph
+      - text "Great style, thoughtful gifts and memorable moments—all in one place."
+        - text "Great style, thoughtful gifts and memorable moments"
+        - text "—all in one place."
+    - heading "CUSTOMER SERVICE" [level=3]
+      - text "CUSTOMER SERVICE"
+        - text "CUSTOMER SERVICE"
+    - link "Order Status" [focusable=True]
+      - text "Order Status"
+        - text "Order Status"
+    - link "Shopping Bag" [focusable=True]
+      - text "Shopping Bag"
+        - text "Shopping Bag"
+    - link "My Lists" [focusable=True]
+      - text "My Lists"
+        - text "My Lists"
+    - heading "GIFTS & EVENTS" [level=3]
+      - text "GIFTS & EVENTS"
+        - text "GIFTS & EVENTS"
+    - link "E-Gift Cards" [focusable=True]
+      - text "E-Gift Cards"
+        - text "E-Gift Cards"
+    - link "Wedding Registry" [focusable=True]
+      - text "Wedding Registry"
+        - text "Wedding Registry"
+    - link "Giftable Toys" [focusable=True]
+      - text "Giftable Toys"
+        - text "Giftable Toys"
+    - heading "POPULAR SHOPS" [level=3]
+      - text "POPULAR SHOPS"
+        - text "POPULAR SHOPS"
+    - link "Trending Now" [focusable=True]
+      - text "Trending Now"
+        - text "Trending Now"
+    - link "Kitchen Sale" [focusable=True]
+      - text "Kitchen Sale"
+        - text "Kitchen Sale"
+    - link "Clearance" [focusable=True]
+      - text "Clearance"
+        - text "Clearance"
+    - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      - text "© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."

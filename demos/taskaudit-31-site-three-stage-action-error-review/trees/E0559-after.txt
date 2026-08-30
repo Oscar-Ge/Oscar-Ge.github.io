@@ -1,0 +1,225 @@
+- document "app" [focused=True, focusable=True]
+  - banner
+    - text "Sunday, August 16"
+      - text "Sunday, August 16"
+    - text "Live conditions"
+      - text "Live conditions"
+    - button "Weatherwise home" [focusable=True]
+      - strong
+        - text "Weather"
+          - text "Weather"
+      - emphasis
+        - text "wise"
+          - text "wise"
+    - search
+      - combobox "Search city or ZIP code" [focusable=True]
+      - button "Search" [focusable=True]
+        - text "Search"
+          - text "Search"
+      - alert
+        - text "Try Seattle, Denver, Los Angeles, Champaign, 90028, 90210, or 10019."
+          - text "Try Seattle, Denver, Los Angeles, Champaign, 90028, 90210, or 10019."
+    - button "Use my location" [focusable=True]
+      - text "Use my location"
+        - text "Use my location"
+    - generic "Temperature unit"
+      - button "°F" [focusable=True, pressed=true]
+        - text "°F"
+          - text "°F"
+      - button "°C" [focusable=True]
+        - text "°C"
+          - text "°C"
+    - navigation "Primary navigation"
+      - button "Forecast" [focusable=True]
+        - text "Forecast"
+          - text "Forecast"
+      - button "Maps" [focusable=True]
+        - text "Maps"
+          - text "Maps"
+      - button "Air Quality" [focused=True, focusable=True]
+        - text "Air Quality"
+          - text "Air Quality"
+      - button "Health & Activities" [focusable=True]
+        - text "Health & Activities"
+          - text "Health & Activities"
+  - text "KING COUNTY"
+    - text "KING COUNTY"
+  - text "·"
+    - text "·"
+  - text "98101"
+    - text "98101"
+  - heading "Seattle, WA" [level=1]
+    - text "Seattle, WA"
+      - text "Seattle, WA"
+  - paragraph
+    - text "As of 11:12 AM PDT · Updated moments ago"
+      - text "As of 11:12 AM PDT · Updated moments ago"
+  - strong
+    - text "66°"
+      - text "66°"
+  - text "Mostly Cloudy"
+    - text "Mostly Cloudy"
+  - text "Feels like"
+    - text "Feels like"
+  - text "65°"
+    - text "65°"
+  - navigation "Weather views"
+    - button "Today" [focusable=True]
+      - text "Today"
+        - text "Today"
+    - button "Hourly" [focusable=True]
+      - text "Hourly"
+        - text "Hourly"
+    - button "10 Day" [focusable=True]
+      - text "10 Day"
+        - text "10 Day"
+    - button "Monthly" [focusable=True]
+      - text "Monthly"
+        - text "Monthly"
+    - button "Health" [focusable=True]
+      - text "Health"
+        - text "Health"
+    - button "Air Quality" [focusable=True]
+      - text "Air Quality"
+        - text "Air Quality"
+    - button "History" [focusable=True]
+      - text "History"
+        - text "History"
+    - button "Radar" [focusable=True]
+      - text "Radar"
+        - text "Radar"
+  - main
+    - text "CURRENT AIR QUALITY"
+      - text "CURRENT AIR QUALITY"
+    - heading "Seattle, WA" [level=2]
+      - text "Seattle, WA"
+        - text "Seattle, WA"
+    - paragraph
+      - text "Observed Sunday, August 16 at 11:00 AM"
+        - text "Observed Sunday, August 16 at 11:00 AM"
+    - text "Modeled station data"
+      - text "Modeled station data"
+    - generic "Air quality index 32, Good"
+      - strong
+        - text "32"
+          - text "32"
+      - text "US AQI"
+        - text "US AQI"
+      - strong
+        - text "GOOD"
+          - text "GOOD"
+    - heading "It’s a good day to be active outside." [level=3]
+      - text "It’s a good day to be active outside."
+        - text "It’s a good day to be active outside."
+    - paragraph
+      - text "Air pollution poses little or no risk. No special precautions are needed."
+        - text "Air pollution poses little or no risk. No special precautions are needed."
+    - button "Show health guidance" [focusable=True]
+      - text "Show"
+        - text "Show"
+      - text "health guidance"
+        - text "health guidance"
+    - generic "AQI category scale"
+      - text "GOOD 0–50"
+        - text "GOOD 0–50"
+      - text "MODERATE 51–100"
+        - text "MODERATE 51–100"
+      - text "SENSITIVE 101–150"
+        - text "SENSITIVE 101–150"
+      - text "UNHEALTHY 151+"
+        - text "UNHEALTHY 151+"
+    - text "AIR QUALITY ALERTS & WARNINGS"
+      - text "AIR QUALITY ALERTS & WARNINGS"
+    - heading "No official air quality alert in effect" [level=2]
+      - text "No official air quality alert in effect"
+        - text "No official air quality alert in effect"
+    - paragraph
+      - text "No agency-issued alert is active for Seattle, WA. Conditions are being monitored through this afternoon."
+        - text "No agency-issued alert is active for Seattle, WA. Conditions are being monitored through this afternoon."
+    - text "Last checked: 11:12 AM · Next update in 1 hour"
+      - text "Last checked: 11:12 AM · Next update in 1 hour"
+    - text "POLLUTANT BREAKDOWN"
+      - text "POLLUTANT BREAKDOWN"
+    - heading "AQI details" [level=2]
+      - text "AQI details"
+        - text "AQI details"
+    - text "Primary:"
+      - text "Primary:"
+    - text "PM2.5"
+      - text "PM2.5"
+    - table "Pollutant details for Seattle, WA"
+      - row
+        - text "POLLUTANT"
+          - text "POLLUTANT"
+        - text "INDEX"
+          - text "INDEX"
+        - text "LEVEL"
+          - text "LEVEL"
+        - text "SHARE OF AQI"
+          - text "SHARE OF AQI"
+      - row
+        - strong
+          - text "O₃"
+            - text "O₃"
+        - text "Ozone"
+          - text "Ozone"
+        - strong
+          - text "18"
+            - text "18"
+        - text "Good"
+          - text "Good"
+      - row
+        - strong
+          - text "PM2.5"
+            - text "PM2.5"
+        - text "Fine particles"
+          - text "Fine particles"
+        - strong
+          - text "32"
+            - text "32"
+        - text "Good"
+          - text "Good"
+      - row
+        - strong
+          - text "PM10"
+            - text "PM10"
+        - text "Coarse particles"
+          - text "Coarse particles"
+        - strong
+          - text "12"
+            - text "12"
+        - text "Good"
+          - text "Good"
+      - row
+        - strong
+          - text "NO₂"
+            - text "NO₂"
+        - text "Nitrogen dioxide"
+          - text "Nitrogen dioxide"
+        - strong
+          - text "9"
+            - text "9"
+        - text "Good"
+          - text "Good"
+      - row
+        - strong
+          - text "CO"
+            - text "CO"
+        - text "Carbon monoxide"
+          - text "Carbon monoxide"
+        - strong
+          - text "5"
+            - text "5"
+        - text "Good"
+          - text "Good"
+  - contentinfo
+    - strong
+      - text "Weatherwise"
+        - text "Weatherwise"
+    - text "Clear forecasts. Confident plans."
+      - text "Clear forecasts. Confident plans."
+    - paragraph
+      - text "All forecasts, history, radar, and air quality readings on this demo are synthetically generated."
+        - text "All forecasts, history, radar, and air quality readings on this demo are synthetically generated."
+    - text "© 2026 Weatherwise"
+      - text "© 2026 Weatherwise"
