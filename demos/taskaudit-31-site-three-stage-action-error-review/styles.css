@@ -74,7 +74,7 @@ button:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-
 .transcript { margin: 8px 0 0; padding: 10px 12px; max-height: 170px; overflow: auto; background: #f6f8fb; border-radius: 8px; white-space: pre-wrap; }
 .transcript-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .mismatch { margin-top: 12px; border-left: 4px solid var(--amber); background: #fff8e8; padding: 9px 12px; }
-.review-card { margin-top: 16px; padding: 16px; }
+.review-card { margin: 0 0 16px; padding: 16px; }
 .decision-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .decision-row button[aria-pressed="true"] { color: white; border-color: transparent; }
 .decision-row [data-decision="valid"][aria-pressed="true"] { background: var(--green); }
