@@ -13,7 +13,9 @@
     return;
   }
 
-  const cases = DATA.cases;
+  const cases = [...DATA.cases].sort((left, right) => (
+    left.website.localeCompare(right.website, "en", { sensitivity: "base" })
+  ));
   const filters = { website: "", scope: "", family: "", taxonomy: "", context: "", evidence: "", status: "" };
   let reviews = readReviews();
   let filtered = [...cases];
