@@ -48,7 +48,8 @@ function validDataset(data) {
 function start() {
   const propertyPriority = { "AP-S2-05": 0, "AP-FD1-03": 1 };
   const cases = [...DATA.cases].sort((left, right) =>
-    propertyPriority[left.property] - propertyPriority[right.property]
+    left.website.localeCompare(right.website)
+    || propertyPriority[left.property] - propertyPriority[right.property]
     || right.replays.length - left.replays.length
     || left.identityQuality.localeCompare(right.identityQuality)
     || left.errorId.localeCompare(right.errorId));
