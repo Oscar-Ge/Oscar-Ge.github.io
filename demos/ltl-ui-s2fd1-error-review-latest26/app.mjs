@@ -8,7 +8,7 @@ import {
 } from "./model.mjs";
 
 const POLICY = "tier1-wait-tab4-shift1/1";
-const STORAGE_KEY = "ltl-ui-s2fd1-error-reviews-latest26-v1";
+const STORAGE_KEY = "ltl-ui-s2fd1-error-reviews-latest26-website-order-v2";
 const DATA = window.LTL_S2FD1_ERROR_REVIEW;
 const APP = document.querySelector("#review");
 const PROPERTY_DEFINITIONS = Object.freeze({
