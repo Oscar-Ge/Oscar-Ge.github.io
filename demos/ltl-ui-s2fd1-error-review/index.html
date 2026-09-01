@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review AP-S2-05 and AP-FD1-03 LTL-UI errors with cross-replay evidence.">
+  <link rel="icon" href="data:,">
+  <title>LTL-UI · S2-05 / FD1-03 error review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#review">Skip to review</a>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">LTL-UI · Selected-31 × 3 · 2026-08-31 r3</p>
+      <h1>AP-S2-05 / AP-FD1-03 error review</h1>
+      <p>One decision per site/route/control · separate evidence for every represented replay</p>
+    </div>
+    <div class="top-actions">
+      <button type="button" data-action="import">Import JSON</button>
+      <button type="button" data-action="export">Export JSON</button>
+      <input class="sr-only" type="file" accept="application/json,.json" data-review-file>
+    </div>
+  </header>
+  <main id="review"></main>
+  <script src="cases.js"></script>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "ltl-ui-s2fd1-error-review-cases/1",
+  "expectedCaseCount": 1109,
+  "uniqueInteractionOccurrences": 9609,
+  "propertyCounts": {
+    "AP-S2-05": 0,
+    "AP-FD1-03": 1109
+  },
+  "repeatabilityCounts": {
+    "1": 535,
+    "2": 263,
+    "3": 311
+  },
+  "replayErrorCounts": {
+    "replay-1": 638,
+    "replay-2": 699,
+    "replay-3": 657
+  },
+  "evidenceImageCount": 3988
+}
