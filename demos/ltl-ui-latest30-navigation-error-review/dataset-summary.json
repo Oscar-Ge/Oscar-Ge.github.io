@@ -1,0 +1,19 @@
+{
+  "caseCount": 2358,
+  "websiteCount": 29,
+  "propertyCounts": {
+    "AP-CAC1-01": 124,
+    "AP-FD1-03": 929,
+    "AP-FM1-02": 372,
+    "AP-N1-02": 79,
+    "AP-N2-04": 114,
+    "AP-S2-05": 740
+  },
+  "selectedReplayEvidenceCount": 4565,
+  "uniqueImageCount": 6992,
+  "imageBytes": 239460367,
+  "traceMismatchCount": 0,
+  "traceMismatches": [],
+  "missingImageCount": 0,
+  "missingImages": []
+}
