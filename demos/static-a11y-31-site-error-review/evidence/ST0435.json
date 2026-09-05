@@ -1,0 +1,163 @@
+{
+  "site": "reddit",
+  "siteKey": "20-reddit",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/20-reddit/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 1,
+  "selector": [
+    ".sidebar-footer"
+  ],
+  "html": "<p class=\"sidebar-footer\">About &nbsp; • &nbsp; Content Policy<br>Privacy &nbsp; • &nbsp; User Agreement</p>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#7b8d96",
+          "bgColor": "#ffffff",
+          "contrastRatio": 3.44,
+          "fontSize": "8.3pt (11px)",
+          "fontWeight": "normal",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<aside class=\"sidebar \">",
+            "target": [
+              ".sidebar"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 3.44 (foreground color: #7b8d96, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/20-reddit/axe/attempt-1/raw.json",
+  "errorId": "ST0435",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]/P[1]",
+    "tag": "P",
+    "text": "About   •   Content Policy\nPrivacy   •   User Agreement",
+    "html": "<p class=\"sidebar-footer\">About &nbsp; • &nbsp; Content Policy<br>Privacy &nbsp; • &nbsp; User Agreement</p>",
+    "class": "sidebar-footer",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 12,
+      "y": 476,
+      "width": 211,
+      "height": 44
+    },
+    "style": {
+      "color": "rgb(123, 141, 150)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "ASIDE",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]",
+      "tag": "ASIDE",
+      "class": "sidebar ",
+      "text": "Home\nPopular\nAll\nCreate a post\nDrafts\nCOMMUNITIES\nCreate a community\nA\nr/announcements\n\nAbout   •   Content Policy\nPrivacy   •   User Agreement",
+      "html": "<aside class=\"sidebar \"><nav aria-label=\"Primary navigation\"><button class=\"sidebar-link active\"><svg data-prefix=\"fas\" data-icon=\"house\" class=\"svg-inline--fa fa-house\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z\"></path></svg> <span>Home</span></button><button class=\"sidebar-link \"><svg data-prefix=\"fas\" data-icon=\"arrow-trend-up\" class=\"svg-inline--fa fa-arrow-trend-up\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-169.4 169.4c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z\"></path></svg> <span>Popular</span></button><button class=\"sidebar-link \"><svg data-prefix=\"fas\" data-icon=\"globe\" class=\"svg-inline--fa fa-globe\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z\"></path></svg> <span>All</span></button><button class=\"sidebar-link \"><svg data-prefix=\"fas\" data-icon=\"plus\" class=\"svg-inline--fa fa-plus\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"></path></svg> <span>Create a post</span></button><button class=\"sidebar-link \"><svg data-prefix=\"fas\" data-icon=\"floppy-disk\" class=\"svg-inline--fa fa-floppy-disk\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-242.7c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32L64 32zm32 96c0-17.7 14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-160 0c-17.7 0-32-14.3-32-32l0-64zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z\"></path></svg> <span>Drafts</span></button></nav><div class=\"sidebar-divider\"></div><div class=\"sidebar-heading\"><span>Communities</span><button aria-label=\"Create a community\"><svg data-prefix=\"fas\" data-icon=\"plus\" class=\"svg-inline--fa fa-plus\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"></path></svg></button></div><button class=\"sidebar-create\"><span class=\"community-mini add\"><svg data-prefix=\"fas\" data-icon=\"plus\" class=\"svg-inline--fa fa-plus\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"></path></svg></span>Create a community</button><button class=\"community-link\"><span class=\"community-avatar small\" aria-hidden=\"true\" style=\"background: rgb(255, 69, 0);\">A</span><span>r/announcements</span></button><div class=\"sidebar-divider\"></div><p class=\"sidebar-footer\">About &nbsp; • &nbsp; Content Policy<br>Privacy &nbsp; • &nbsp; User Agreement</p></aside>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": ".sidebar-footer",
+        "declarations": {
+          "color": "rgb(123, 141, 150)",
+          "font-size": "11px"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Home",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "reddit\n3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Account actions",
+        "text": "3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts\nCOMMUNITIES\nCreate a community\nA\nr/announcements\n\nAbout   •   Content Policy\nPrivacy   •   User Agreement"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "EXPLORE REDDIT\n\nHome\n\nYour personalized front page of the internet\n\nHot\nNew\nTop\nRising\nMost comments\nEverywhere\nJapan\nChile\n18.6k\nA\nr/announcements\n• Posted by u/reddit\n• 18 min ago\nOfficial\nReddit’s newest community updates are here\n\nA faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n\n2.8k comments\nCopy link\nSave\nFollow\nAward\n68.4k\nJ\nr/japan\n• Posted by u/tokyo_window\n• 2 hr ago\nTravel\nThe night train returns for the summer f"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[2]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Popular communities\n1\nM\nr/Music\n81.2k viewing\nJoin\n2\nF\nr/FortNiteBR\n27.4k viewing\nJoin\n3\nF\nr/Fitness\n18.4k viewing\nJoin\n4\nA\nr/AskReddit\n184k viewing\nJoin\nA better Reddit experience\n\nAll content here is realistic synthetic data. Your actions stay in this demo."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Reddit home\": reddit\n  - search:\n    - textbox \"Search Reddit\"\n  - navigation \"Account actions\":\n    - button \"Open chat\"\n    - button \"Notifications\": \"3\"\n    - button \"Create\"\n    - button \"Open user menu\": oo\n- complementary:\n  - navigation \"Primary navigation\":\n    - button \"Home\"\n    - button \"Popular\"\n    - button \"All\"\n    - button \"Create a post\"\n    - button \"Drafts\"\n  - text: Communities\n  - button \"Create a community\"\n  - button \"Create a community\"\n  - button \"r/announcements\"\n  - paragraph: About • Content Policy Privacy • User Agreement\n- main:\n  - paragraph: Explore Reddit\n  - heading \"Home\" [level=1]\n  - paragraph: Your personalized front page of the internet\n  - button \"Hot\" [pressed]\n  - button \"New\"\n  - button \"Top\"\n  - button \"Rising\"\n  - button \"Most comments\"\n  - combobox \"Popular location\":\n    - option \"Everywhere\" [selected]\n    - option \"Japan\"\n    - option \"Chile\"\n  - button \"Card view\" [pressed]\n  - button \"Compact view\"\n  - article:\n    - button \"Upvote Reddit’s newest community updates are here\"\n    - strong: 18.6k\n    - button \"Downvote Reddit’s newest community updates are here\"\n    - button \"r/announcements\"\n    - text: • Posted by u/reddit • 18 min ago Official\n    - button \"Reddit’s newest community updates are here\"\n    - paragraph: A faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n    - button \"2.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for Reddit’s newest community updates are here\"\n  - article:\n    - button \"Upvote The night train returns for the summer festival season\"\n    - strong: 68.4k\n    - button \"Downvote The night train returns for the summer festival season\"\n    - button \"r/japan\"\n    - text: • Posted by u/tokyo_window • 2 hr ago Travel\n    - button \"The night train returns for the summer festival season\"\n    - paragraph: A photo essay from the first service between Tokyo and Izumo.\n    - button \"Open Night train at a lantern-lit station\": Night train at a lantern-lit station\n    - button \"3.4k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for The night train returns for the summer festival season\"\n  - article:\n    - button \"Upvote TIL a library book was returned after 96 years—with a note\"\n    - strong: 3.9k\n    - button \"Downvote TIL a library book was returned after 96 years—with a note\"\n    - button \"r/todayilearned\"\n    - text: • Posted by u/small_fact • 27 min ago Culture\n    - button \"TIL a library book was returned after 96 years—with a note\"\n    - paragraph: The librarian waived the late fee and added the note to the local archive.\n    - button \"477 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for TIL a library book was returned after 96 years—with a note\"\n  - article:\n    - button \"Upvote My team replaced one weekly meeting with this simple update\"\n    - strong: \"684\"\n    - button \"Downvote My team replaced one weekly meeting with this simple update\"\n    - button \"r/work\"\n    - text: • Posted by u/desk_neighbor • 22 min ago Success Story\n    - button \"My team replaced one weekly meeting with this simple update\"\n    - paragraph: It is early, but people are more informed and have more focus time.\n    - button \"211 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for My team replaced one weekly meeting with this simple update\"\n  - article:\n    - button \"Upvote A tiny act of kindness became a whole town tradition\"\n    - strong: 193k\n    - button \"Downvote A tiny act of kindness became a whole town tradition\"\n    - button \"r/MadeMeSmile\"\n    - text: • Posted by u/day_brightener • 12 days ago Wholesome\n    - button \"A tiny act of kindness became a whole town tradition\"\n    - paragraph: Every Friday, people leave a note of thanks for someone in their community.\n    - button \"12.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for A tiny act of kindness became a whole town tradition\"\n  - article:\n    - button \"Upvote What meal could you happily eat every week forever?\"\n    - strong: 88.4k\n    - button \"Downvote What meal could you happily eat every week forever?\"\n    - button \"r/food\"\n    - text: • Posted by u/simmerdown • 8 months ago Discussion\n    - button \"What meal could you happily eat every week forever?\"\n    - paragraph: The answers have become a genuinely excellent dinner-planning list.\n    - button \"48.2k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for What meal could you happily eat every week forever?\"\n- complementary:\n  - text: Popular communities 1\n  - button \"r/Music 81.2k viewing\":\n    - strong: r/Music\n    - text: 81.2k viewing\n  - button \"Join\"\n  - text: \"2\"\n  - button \"r/FortNiteBR 27.4k viewing\":\n    - strong: r/FortNiteBR\n    - text: 27.4k viewing\n  - button \"Join\"\n  - text: \"3\"\n  - button \"r/Fitness 18.4k viewing\":\n    - strong: r/Fitness\n    - text: 18.4k viewing\n  - button \"Join\"\n  - text: \"4\"\n  - button \"r/AskReddit 184k viewing\":\n    - strong: r/AskReddit\n    - text: 184k viewing\n  - button \"Join\"\n  - strong: A better Reddit experience\n  - paragraph: All content here is realistic synthetic data. Your actions stay in this demo.\n- status"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/20-reddit/dist/assets/index-2mZPLF8B.js",
+      "offset": 342417,
+      "match": "className:\"sidebar-footer\"",
+      "context": "n:d.jsx(ee,{icon:Yn})})]}),d.jsxs(\"button\",{className:\"sidebar-create\",onClick:()=>re({type:\"community\"}),children:[d.jsx(\"span\",{className:\"community-mini add\",children:d.jsx(ee,{icon:Yn})}),\"Create a community\"]}),Xa.map(k=>d.jsxs(\"button\",{className:\"community-link\",onClick:()=>Ye(`/r/${k.name}`),children:[d.jsx(Fi,{community:k,small:!0}),d.jsxs(\"span\",{children:[\"r/\",k.name]})]},k.name)),d.jsx(\"div\",{className:\"sidebar-divider\"}),d.jsxs(\"p\",{className:\"sidebar-footer\",children:[\"About   •   Content Policy\",d.jsx(\"br\",{}),\"Privacy   •   User Agreement\"]})]}),d.jsx(\"main\",{className:\"main-content\",children:$n?d.jsx(N6,{query:dt,results:du,allPosts:f,tab:ne,setTab:Te,sort:ie,setSort:I,timeFilter:he,setTimeFilter:ge,viewMode:at,setViewMode:ta,postProps:{communities:s,joined:g,toggleJoin:da,postVotes:R,votePost:ma,savedPosts:w,toggleSaved:Pl,followedPosts:q,toggleFollow:en,awardedPosts:ce,openAward:Al,copyPostLink"
+    }
+  ]
+}

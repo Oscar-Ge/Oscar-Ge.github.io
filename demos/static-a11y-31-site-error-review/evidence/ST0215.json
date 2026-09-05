@@ -1,0 +1,190 @@
+{
+  "site": "amtrak",
+  "siteKey": "09-amtrak",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/09-amtrak/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 1,
+  "xpath": "/HTML/BODY[1]/DIV[2]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/09-amtrak/wave/attempt-1/raw.json",
+  "errorId": "ST0215",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "14-DAY RAIL VACATION",
+    "html": "<span>14-day rail vacation</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 555.65625,
+      "y": 1181.9375,
+      "width": 145.640625,
+      "height": 12
+    },
+    "style": {
+      "color": "rgb(0, 117, 169)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10.88px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]",
+      "tag": "DIV",
+      "class": "",
+      "text": "14-DAY RAIL VACATION\nGrand National Parks\n\nFive iconic parks and one spectacular journey through the American West.\n\nView vacation ",
+      "html": "<div><span>14-day rail vacation</span><h3>Grand National Parks</h3><p>Five iconic parks and one spectacular journey through the American West.</p><b>View vacation <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></b></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]",
+      "tag": "A",
+      "text": "14-DAY RAIL VACATION\nGrand National Parks\n\nFive iconic parks and one spectacular journey through the American West.\n\nView vacation ",
+      "ariaLabel": null,
+      "href": "/vacations/grand-national-parks",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:44113/assets/index-D2ZsA99i.css",
+        "selector": ".feature-card > div > span",
+        "declarations": {
+          "color": "rgb(0, 117, 169)",
+          "font-size": "0.68rem",
+          "font-weight": "800"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Amtrak | Plan Your Train Travel",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/H1[1]",
+        "tag": "H1",
+        "text": "There’s more to see.\nTake the train.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Where can we take you?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Start with something unforgettable",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "The Adirondack",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Grand National Parks",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Sunshine looks good on you",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Bring more along",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Arrive downtown",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Travel lighter",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Plan",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Explore",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Help",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "AMTRAK\nBook\nMy Trip\nSchedules\nRoutes\nDeals\nVacations\nTravel Info\nCareers\nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Book\nMy Trip\nSchedules\nRoutes\nDeals\nVacations\nTravel Info\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "AMERICA IS WAITING\nThere’s more to see.\nTake the train.\n\nDowntown to downtown, coast to coast. Settle in and enjoy the journey.\n\nBOOK TRAIN TRAVEL\nWhere can we take you?\nOne way\nRound trip\nFrom\n⇄\nTo\nDepart\n Travelers\n1 Adult\nService\nCoach\nBusiness Class\nFirst Class\nPrivate Room\nFind trains\nMulti-Ride & Rail Passes\nBook Auto Train\nINSPIRED JOURNEYS\nStart with something unforgettable\nExplore all routes \nNEW YORK TO MONTRÉAL\nThe Adirondack\n\nHudson River views, mountain towns and an international ad"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "AMTRAK\n\nConnecting communities and creating a more sustainable way to travel across America.\n\nMock experience created for demonstration. No real reservations are made.\n\nPlan\nBook travel\nSchedules\nNational route map\nMulti-Ride passes\nExplore\nDeals\nAmtrak Vacations\nRoutes\nCafé menu\nHelp\nFind my trip\nTravel identification\nRideReserve terms\nCareers\n© 2026 Amtrak. All rights reserved."
+      }
+    ],
+    "axSnapshot": "- text: Travel green. Save 15% on select spring trips.\n- link \"See offers\":\n  - /url: /deals\n- banner:\n  - link \"Amtrak home\":\n    - /url: /\n    - text: AMTRAK\n  - navigation \"Main navigation\":\n    - link \"Book\":\n      - /url: /book\n    - link \"My Trip\":\n      - /url: /my-trip\n    - link \"Schedules\":\n      - /url: /schedules\n    - link \"Routes\":\n      - /url: /routes\n    - link \"Deals\":\n      - /url: /deals\n    - link \"Vacations\":\n      - /url: /vacations\n    - link \"Travel Info\":\n      - /url: /travel-info\n    - link \"Careers\":\n      - /url: /careers\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- main:\n  - text: America is waiting\n  - heading \"There’s more to see. Take the train.\" [level=1]\n  - paragraph: Downtown to downtown, coast to coast. Settle in and enjoy the journey.\n  - text: Book train travel\n  - heading \"Where can we take you?\" [level=2]\n  - button \"One way\"\n  - button \"Round trip\"\n  - text: From\n  - combobox \"From station\": New York, NY - Moynihan Train Hall (NYP)\n  - button \"Swap origin and destination\": ⇄\n  - text: To\n  - combobox \"To station\": Washington, DC - Union Station (WAS)\n  - text: Depart\n  - textbox \"Departure date\": 2027-04-18\n  - button \"Travelers 1 Adult\":\n    - text: Travelers\n    - strong: 1 Adult\n  - text: Service\n  - combobox \"Service class\":\n    - option \"Coach\" [selected]\n    - option \"Business Class\"\n    - option \"First Class\"\n    - option \"Private Room\"\n  - button \"Find trains\"\n  - link \"Multi-Ride & Rail Passes\":\n    - /url: /multi-ride\n  - link \"Book Auto Train\":\n    - /url: /auto-train\n  - text: Inspired journeys\n  - heading \"Start with something unforgettable\" [level=2]\n  - link \"Explore all routes\":\n    - /url: /routes\n  - link \"New York to Montréal The Adirondack Hudson River views, mountain towns and an international adventure. Explore route\":\n    - /url: /routes/adirondack\n    - text: New York to Montréal\n    - heading \"The Adirondack\" [level=3]\n    - paragraph: Hudson River views, mountain towns and an international adventure.\n    - text: Explore route\n  - link \"14-day rail vacation Grand National Parks Five iconic parks and one spectacular journey through the American West. View vacation\":\n    - /url: /vacations/grand-national-parks\n    - text: 14-day rail vacation\n    - heading \"Grand National Parks\" [level=3]\n    - paragraph: Five iconic parks and one spectacular journey through the American West.\n    - text: View vacation\n  - link \"California savings Sunshine looks good on you Save on coastal journeys, city escapes and family trips. See deals\":\n    - /url: /deals\n    - text: California savings\n    - heading \"Sunshine looks good on you\" [level=3]\n    - paragraph: Save on coastal journeys, city escapes and family trips.\n    - text: See deals\n  - heading \"Bring more along\" [level=3]\n  - paragraph: Two free carry-on bags and two free personal items.\n  - heading \"Arrive downtown\" [level=3]\n  - paragraph: Skip the airport transfer and arrive in the center of it all.\n  - heading \"Travel lighter\" [level=3]\n  - paragraph: Rail travel produces up to 83% fewer emissions than driving alone.\n- contentinfo:\n  - text: AMTRAK\n  - paragraph: Connecting communities and creating a more sustainable way to travel across America.\n  - paragraph: Mock experience created for demonstration. No real reservations are made.\n  - heading \"Plan\" [level=3]\n  - link \"Book travel\":\n    - /url: /book\n  - link \"Schedules\":\n    - /url: /schedules\n  - link \"National route map\":\n    - /url: /routes/national-map\n  - link \"Multi-Ride passes\":\n    - /url: /multi-ride\n  - heading \"Explore\" [level=3]\n  - link \"Deals\":\n    - /url: /deals\n  - link \"Amtrak Vacations\":\n    - /url: /vacations\n  - link \"Routes\":\n    - /url: /routes\n  - link \"Café menu\":\n    - /url: /travel-info/cafe-menu\n  - heading \"Help\" [level=3]\n  - link \"Find my trip\":\n    - /url: /my-trip\n  - link \"Travel identification\":\n    - /url: /travel-info/identification\n  - link \"RideReserve terms\":\n    - /url: /travel-info/ride-reserve-terms\n  - link \"Careers\":\n    - /url: /careers\n  - text: © 2026 Amtrak. All rights reserved."
+  },
+  "sourceSnippets": []
+}

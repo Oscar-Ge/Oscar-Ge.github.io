@@ -1,0 +1,155 @@
+{
+  "site": "aa",
+  "siteKey": "07-aa",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/07-aa/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/07-aa/wave/attempt-1/raw.json",
+  "errorId": "ST0200",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "© 2026 American Airlines, Inc. Demo experience.",
+    "html": "<span>© 2026 American Airlines, Inc. Demo experience.</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 130,
+      "y": 2043.4375,
+      "width": 236.515625,
+      "height": 12
+    },
+    "style": {
+      "color": "rgb(132, 155, 173)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10.88px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]",
+      "tag": "DIV",
+      "class": "page-section",
+      "text": "© 2026 American Airlines, Inc. Demo experience.\nPrivacy\nTerms\nCookie settings",
+      "html": "<div class=\"page-section\"><span>© 2026 American Airlines, Inc. Demo experience.</span><div><button type=\"button\">Privacy</button><button type=\"button\">Terms</button><button type=\"button\">Cookie settings</button></div></div>"
+    },
+    "control": null,
+    "matchedStyles": []
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "American Airlines | Travel with confidence",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[4]/H1[1]",
+        "tag": "H1",
+        "text": "More places. More possibilities.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help you with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Your next favorite place is closer than you think",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "More flexibility",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "More connected",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Our best fares",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "TRAVEL",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "MANAGE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "ABOUT AMERICAN",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "American Airlines\nHelp\nContact American\n English\nAmerican\nAIRLINES\nBook\nManage trips / Check-in\nFlight status\nAAdvantage®\nTravel information\n Log in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Book\nManage trips / Check-in\nFlight status\nAAdvantage®\nTravel information"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR WORLD IS WAITING\n\nMore places. More possibilities.\n\nPlan every part of your trip with confidence, from takeoff to touchdown.\n\n Book\n Manage trips\n Flight status\nRound trip\nOne way\nMulti-city\nVacation package\nFrom\n⇄\nTo\nDepart\nReturn\nAdults\n1 adult\n2 adults\n3 adults\n4 adults\n5 adults\n6 adults\nChildren (2–11)\n0 children\n1 child\n2 children\n3 children\n4 children\nCabin\nMain Cabin\nPremium Economy\nBusiness\nFirst\nNearby airports\nInclude airports near your cities\nSearch flights\n\nTRAVEL MADE SIMPLE\n\nW"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "American\nAIRLINES\nTRAVEL\nBook flights\nFlight status\nHotels\nMANAGE\nManage trips\nTravel credits\nReceipts and refunds\nABOUT AMERICAN\nCareers\nAbout us\nAccessibility\n© 2026 American Airlines, Inc. Demo experience.\nPrivacy\nTerms\nCookie settings"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: American Airlines\n  - button \"Help\"\n  - button \"Contact American\"\n  - button \"English\"\n  - button \"American Airlines home\":\n    - strong: American\n    - text: Airlines\n  - navigation \"Primary navigation\":\n    - button \"Book\"\n    - button \"Manage trips / Check-in\"\n    - button \"Flight status\"\n    - button \"AAdvantage®\"\n    - button \"Travel information\"\n  - button \"Search site\"\n  - button \"Log in\"\n- main:\n  - paragraph: YOUR WORLD IS WAITING\n  - heading \"More places. More possibilities.\" [level=1]\n  - paragraph: Plan every part of your trip with confidence, from takeoff to touchdown.\n  - region \"Book travel\":\n    - tablist \"Travel tools\":\n      - tab \"Book\" [selected]\n      - tab \"Manage trips\"\n      - tab \"Flight status\"\n    - radio \"Round trip\" [checked]\n    - text: Round trip\n    - radio \"One way\"\n    - text: One way\n    - radio \"Multi-city\"\n    - text: Multi-city\n    - radio \"Vacation package\"\n    - text: Vacation package From\n    - textbox \"From\":\n      - /placeholder: City or airport\n      - text: New York, NY (JFK)\n    - button \"Swap origin and destination\": ⇄\n    - text: To\n    - textbox \"To\":\n      - /placeholder: City or airport\n      - text: London, England (LHR)\n    - text: Depart\n    - textbox \"Depart\": 2027-04-20\n    - text: Return\n    - textbox \"Return\": 2027-04-23\n    - text: Adults\n    - combobox \"Adults\":\n      - option \"1 adult\" [selected]\n      - option \"2 adults\"\n      - option \"3 adults\"\n      - option \"4 adults\"\n      - option \"5 adults\"\n      - option \"6 adults\"\n    - text: Children (2–11)\n    - combobox \"Children (2–11)\":\n      - option \"0 children\" [selected]\n      - option \"1 child\"\n      - option \"2 children\"\n      - option \"3 children\"\n      - option \"4 children\"\n    - text: Cabin\n    - combobox \"Cabin\":\n      - option \"Main Cabin\" [selected]\n      - option \"Premium Economy\"\n      - option \"Business\"\n      - option \"First\"\n    - checkbox \"Nearby airports Include airports near your cities\"\n    - strong: Nearby airports\n    - text: Include airports near your cities\n    - button \"Search flights\"\n  - paragraph: TRAVEL MADE SIMPLE\n  - heading \"What can we help you with?\" [level=2]\n  - button \"Flight status Get the latest arrival and departure information.\":\n    - strong: Flight status\n    - text: Get the latest arrival and departure information.\n  - button \"Manage your trip Check in, choose seats and add travel extras.\":\n    - strong: Manage your trip\n    - text: Check in, choose seats and add travel extras.\n  - button \"Travel credits Find and view your available trip credits.\":\n    - strong: Travel credits\n    - text: Find and view your available trip credits.\n  - button \"Schedules & alerts View schedules and receive flight notifications.\":\n    - strong: Schedules & alerts\n    - text: View schedules and receive flight notifications.\n  - button \"Hotels Find a stay that works for your itinerary.\":\n    - strong: Hotels\n    - text: Find a stay that works for your itinerary.\n  - button \"Careers Join a team that connects the world.\":\n    - strong: Careers\n    - text: Join a team that connects the world.\n  - paragraph: GO FURTHER\n  - heading \"Your next favorite place is closer than you think\" [level=2]\n  - paragraph: Explore flexible fares and thoughtfully timed flights to hundreds of destinations.\n  - button \"Search flights\"\n  - text: JFK LHR\n  - heading \"More flexibility\" [level=3]\n  - paragraph: Change plans with options designed around your journey.\n  - heading \"More connected\" [level=3]\n  - paragraph: Stay productive or entertained on select flights.\n  - heading \"Our best fares\" [level=3]\n  - paragraph: Compare choices and pick the trip that fits you best.\n- contentinfo:\n  - button \"American Airlines\":\n    - strong: American\n    - text: Airlines\n  - heading \"Travel\" [level=3]\n  - button \"Book flights\"\n  - button \"Flight status\"\n  - button \"Hotels\"\n  - heading \"Manage\" [level=3]\n  - button \"Manage trips\"\n  - button \"Travel credits\"\n  - button \"Receipts and refunds\"\n  - heading \"About American\" [level=3]\n  - button \"Careers\"\n  - button \"About us\"\n  - button \"Accessibility\"\n  - text: © 2026 American Airlines, Inc. Demo experience.\n  - button \"Privacy\"\n  - button \"Terms\"\n  - button \"Cookie settings\""
+  },
+  "sourceSnippets": []
+}

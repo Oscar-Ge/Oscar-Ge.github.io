@@ -1,0 +1,140 @@
+- text: CVS.com® |
+- button "Store & pharmacy hours"
+- link "ExtraCare®":
+  - /url: /extracare
+- link "Health services":
+  - /url: /health-services
+- banner:
+  - link "CVS Pharmacy home":
+    - /url: /
+    - text: CVS
+    - strong: pharmacy
+  - search:
+    - text: Search products and health information
+    - textbox "Search products and health information":
+      - /placeholder: Search products & health info
+    - button "Search"
+  - link "Find a store Set my store":
+    - /url: /pharmacy-locator
+  - link "Welcome Sign in":
+    - /url: /extracare
+  - link "Cart with 0 items":
+    - /url: /cart
+  - navigation "Main navigation":
+    - link "Shop":
+      - /url: /shop
+    - link "Pharmacy":
+      - /url: /pharmacy-locator
+    - link "Health services":
+      - /url: /health-services
+    - link "COVID-19 testing":
+      - /url: /covid-test
+    - link "Weekly ad":
+      - /url: /weekly-ad
+    - link "ExtraCare":
+      - /url: /extracare
+    - link "Virtual care":
+      - /url: /virtual-care
+- text: Health happens together
+- heading "Care that fits your life." [level=1]
+- paragraph: Everyday essentials, nearby pharmacy care and health services—all in one place.
+- button "Shop health essentials"
+- button "Find care near you"
+- text: Appointments
+- heading "Schedule care, on your time" [level=2]
+- paragraph: Book a COVID-19 test or find in-person health services near you.
+- button "Schedule a test"
+- region "Popular actions":
+  - link "Find a CVS Pharmacy Locations, hours & services":
+    - /url: /pharmacy-locator
+  - link "See this week’s deals Save with ExtraCare":
+    - /url: /weekly-ad
+  - link "Virtual care Connect from anywhere":
+    - /url: /virtual-care
+- text: Shop by need
+- heading "What can we help with?" [level=2]
+- link "Shop all":
+  - /url: /shop
+- link "Cough & cold Shop now":
+  - /url: /shop?search=cough
+- link "Vitamins Shop now":
+  - /url: /shop?search=vitamin
+- link "Allergy relief Shop now":
+  - /url: /shop?search=allergy
+- link "COVID-19 tests Shop now":
+  - /url: /shop?search=covid%20test
+- text: Picked for you
+- heading "Health essentials & new deals" [level=2]
+- link "View weekly ad":
+  - /url: /weekly-ad
+- article:
+  - link "View CVS Health Vitamin D3 2000 IU Softgels, 100 CT":
+    - /url: /product/cvs-health-vitamin-d3-new-arrival
+  - text: New arrival Buy 1, get 1 FREE
+  - link "CVS Health Vitamin D3 2000 IU Softgels, 100 CT":
+    - /url: /product/cvs-health-vitamin-d3-new-arrival
+  - text: 4.9 (42) $8.49 each
+  - paragraph: In stock for shipping & pickup
+  - text: Qty
+  - button "Decrease quantity" [disabled]
+  - strong: "1"
+  - button "Increase quantity"
+  - button "Add to cart"
+- article:
+  - link "View CVS Health At Home COVID-19 Test Kit, 2 CT":
+    - /url: /product/cvs-health-at-home-covid-19-test-kit
+  - text: CVS brand
+  - link "CVS Health At Home COVID-19 Test Kit, 2 CT":
+    - /url: /product/cvs-health-at-home-covid-19-test-kit
+  - text: 4.5 (518) $9.99 each
+  - paragraph: In stock for shipping & pickup
+  - text: Qty
+  - button "Decrease quantity" [disabled]
+  - strong: "1"
+  - button "Increase quantity"
+  - button "Add to cart"
+- article:
+  - link "View Zyrtec 24 Hour Allergy Relief Tablets, 30 CT":
+    - /url: /product/zyrtec-24-hour-allergy-tablets
+  - text: Pickup ready
+  - link "Zyrtec 24 Hour Allergy Relief Tablets, 30 CT":
+    - /url: /product/zyrtec-24-hour-allergy-tablets
+  - text: 4.8 (1248) $17.99 each
+  - paragraph: In stock for shipping & pickup
+  - button "Choose pickup"
+- text: In-store services
+- heading "Care close to home" [level=2]
+- paragraph: Find screenings, treatment evaluations and convenient testing at a location near you.
+- button "Explore health services"
+- text: ExtraCare
+- heading "More savings. More rewards." [level=2]
+- paragraph: Join free for personalized deals, ExtraBucks Rewards and member-only prices.
+- button "Join ExtraCare"
+- contentinfo:
+  - link "CVS Pharmacy home":
+    - /url: /
+    - text: CVS
+    - strong: pharmacy
+  - paragraph: Bringing our heart to every moment of your health.
+  - text: © 2026 CVS Pharmacy. Mock experience.
+  - heading "Shop & save" [level=2]
+  - link "Shop products":
+    - /url: /shop
+  - link "Weekly ad":
+    - /url: /weekly-ad
+  - link "ExtraCare rewards":
+    - /url: /extracare
+  - heading "Pharmacy & care" [level=2]
+  - link "Find a pharmacy":
+    - /url: /pharmacy-locator
+  - link "COVID-19 testing":
+    - /url: /covid-test
+  - link "Health services":
+    - /url: /health-services
+  - heading "Get care" [level=2]
+  - link "Virtual care":
+    - /url: /virtual-care
+  - link "MinuteClinic services":
+    - /url: /health-services
+  - link "Store hours":
+    - /url: /pharmacy-locator

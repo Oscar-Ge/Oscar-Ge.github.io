@@ -1,0 +1,171 @@
+- text: Free shipping at $25 | Store pickup available
+- link "Shop Clearance":
+  - /url: /shop/clearance
+- banner:
+  - link "Macy's home":
+    - /url: /
+    - text: macy's
+  - search:
+    - text: Search products
+    - textbox "Search products":
+      - /placeholder: Search products, brands & more
+    - button "Submit search"
+  - link "Lists":
+    - /url: /lists
+  - link "Bag":
+    - /url: /bag
+  - navigation "Shop departments":
+    - link "Men":
+      - /url: /shop/men
+    - link "Kids & Baby":
+      - /url: /shop/kids
+    - link "Handbags":
+      - /url: /shop/handbags
+    - link "Toys":
+      - /url: /shop/toys
+    - link "Trending":
+      - /url: /shop/trending
+    - link "Home":
+      - /url: /shop/furniture
+    - link "Jewelry":
+      - /url: /shop/jewelry
+    - link "Kitchen":
+      - /url: /shop/kitchen
+    - link "Wine":
+      - /url: /shop/wine
+    - link "Shoes":
+      - /url: /shop/shoes
+    - link "Clearance":
+      - /url: /shop/clearance
+    - link "Gift Cards":
+      - /url: /gift-cards
+- main:
+  - text: THE BIG STYLE EVENT
+  - heading "Good finds. Great prices." [level=1]
+  - paragraph: Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.
+  - link "Shop Trending":
+    - /url: /shop/trending
+  - link "Explore Clearance":
+    - /url: /shop/clearance
+  - text: Limited-time values on select styles. Prices as marked. up to
+  - strong: 60%
+  - text: "off"
+  - img "New season fashion placeholder"
+  - text: New arrivals every week
+  - region "Shopping benefits":
+    - strong: Free shipping
+    - text: at $25
+    - strong: Free returns
+    - text: by mail or in store
+    - strong: Secure checkout
+    - text: for every order
+  - text: SHOP YOUR WAY
+  - heading "Find exactly what you need" [level=2]
+  - link "Search all products":
+    - /url: /search?q=best+sellers
+  - link "Special occasion Evening bags under $50 Shop now":
+    - /url: /shop/handbags
+    - text: Special occasion
+    - heading "Evening bags under $50" [level=3]
+    - text: Shop now
+  - link "Top-rated Best-selling building toys Shop now":
+    - /url: /shop/toys
+    - text: Top-rated
+    - heading "Best-selling building toys" [level=3]
+    - text: Shop now
+  - link "Make it home Recliners at every price Shop now":
+    - /url: /shop/furniture
+    - text: Make it home
+    - heading "Recliners at every price" [level=3]
+    - text: Shop now
+  - link "Forever starts here Engagement rings Shop now":
+    - /url: /shop/jewelry
+    - text: Forever starts here
+    - heading "Engagement rings" [level=3]
+    - text: Shop now
+  - text: THE EDIT
+  - 'heading "Trending: the workwear refresh" [level=2]'
+  - link "View all trending":
+    - /url: /shop/trending
+  - article:
+    - link "Pleated-Neck Work Top View details":
+      - /url: /product/black-work-top
+      - img "Pleated-Neck Work Top"
+      - text: View details
+    - text: Trending
+    - paragraph: Alfani
+    - link "Pleated-Neck Work Top":
+      - /url: /product/black-work-top
+    - strong: "4.7"
+    - text: (442) $29.99 $49.50 39% off
+    - paragraph: "Color: Black"
+    - link "View Details":
+      - /url: /product/black-work-top
+    - button "Add to Bag"
+  - article:
+    - link "Satin Button-Cuff Work Top View details":
+      - /url: /product/brown-work-top
+      - img "Satin Button-Cuff Work Top"
+      - text: View details
+    - text: Trending
+    - paragraph: Bar III
+    - link "Satin Button-Cuff Work Top":
+      - /url: /product/brown-work-top
+    - strong: "4.8"
+    - text: (318) $34.99 $59.50 41% off
+    - paragraph: "Color: Brown"
+    - link "View Details":
+      - /url: /product/brown-work-top
+    - button "Add to Bag"
+  - text: COLOR STORY
+  - heading "Black & brown are better together." [level=3]
+  - paragraph: Build a polished work wardrobe with rich neutrals and softly tailored shapes.
+  - link "Shop work tops":
+    - /url: /shop/trending
+  - text: MORE WAYS TO SHOP
+  - heading "Make every moment easier" [level=2]
+  - link "Create a searchable list Save room ideas, gifts and future favorites. My Lists":
+    - /url: /lists
+    - heading "Create a searchable list" [level=3]
+    - paragraph: Save room ideas, gifts and future favorites.
+    - text: My Lists
+  - link "Send an E-Gift Card Choose an amount and add a personal message. Send a gift":
+    - /url: /gift-cards
+    - heading "Send an E-Gift Card" [level=3]
+    - paragraph: Choose an amount and add a personal message.
+    - text: Send a gift
+  - link "Track an order Look up details with an order number and email. Order status":
+    - /url: /order-status
+    - heading "Track an order" [level=3]
+    - paragraph: Look up details with an order number and email.
+    - text: Order status
+  - link "Find a registry Search wedding registries by the registrant's name. Registry search":
+    - /url: /registry
+    - heading "Find a registry" [level=3]
+    - paragraph: Search wedding registries by the registrant's name.
+    - text: Registry search
+- contentinfo:
+  - text: macy's
+  - paragraph: Great style, thoughtful gifts and memorable moments—all in one place.
+  - heading "Customer Service" [level=3]
+  - link "Order Status":
+    - /url: /order-status
+  - link "Shopping Bag":
+    - /url: /bag
+  - link "My Lists":
+    - /url: /lists
+  - heading "Gifts & Events" [level=3]
+  - link "E-Gift Cards":
+    - /url: /gift-cards
+  - link "Wedding Registry":
+    - /url: /registry
+  - link "Giftable Toys":
+    - /url: /shop/toys
+  - heading "Popular Shops" [level=3]
+  - link "Trending Now":
+    - /url: /shop/trending
+  - link "Kitchen Sale":
+    - /url: /shop/kitchen
+  - link "Clearance":
+    - /url: /shop/clearance
+  - text: © 2026 Macy's inspired storefront. Demo shopping experience with synthetic data.

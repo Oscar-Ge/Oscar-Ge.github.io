@@ -1,0 +1,191 @@
+{
+  "site": "finance.yahoo",
+  "siteKey": "22-finance.yahoo",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/22-finance.yahoo/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 5,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/22-finance.yahoo/wave/attempt-1/raw.json",
+  "errorId": "ST0637",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "Markets · 18 min ago",
+    "html": "<span>Markets · 18 min ago</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 290,
+      "y": 1644.15625,
+      "width": 98.953125,
+      "height": 11
+    },
+    "style": {
+      "color": "rgb(96, 1, 210)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "",
+      "text": "Markets · 18 min ago\nStocks edge higher as investors weigh retail strength and rate path\n\nMajor averages held near records as fresh economic data supported a soft-landing outlook.",
+      "html": "<div><span>Markets · 18 min ago</span><h3>Stocks edge higher as investors weigh retail strength and rate path</h3><p>Major averages held near records as fresh economic data supported a soft-landing outlook.</p></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]",
+      "tag": "A",
+      "text": "Markets · 18 min ago\nStocks edge higher as investors weigh retail strength and rate path\n\nMajor averages held near records as fresh economic data supported a soft-landing outlook.",
+      "ariaLabel": null,
+      "href": "/news",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34713/assets/index-Cd5tR9hz.css",
+        "selector": ".news-row span",
+        "declarations": {
+          "color": "var(--purple)",
+          "font-size": "10px",
+          "font-weight": "700"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Yahoo Finance — Stock Market Live, Quotes & News",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Your money, made clearer.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Explore the market",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What investors are watching",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Top stories",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Stocks edge higher as investors weigh retail strength and rate path",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Bitcoin steadies above $118,000 as institutional inflows accelerate",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Chip stocks rise on stronger data-center spending forecast",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Five money moves to make before the end of summer",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "My watchlist",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[2]/H3[1]",
+        "tag": "H3",
+        "text": "Invest with more confidence.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[3]/H3[1]",
+        "tag": "H3",
+        "text": "Stay ahead of tax deadlines",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "yahoo!\nfinance\nSearch\n Sign in\nMy Portfolio\nMarkets\nNews\nScreeners\nCalendar\nSmall Business\nFinance Plus\n1 followed"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": null,
+        "text": "My Portfolio\nMarkets\nNews\nScreeners\nCalendar\nSmall Business\nFinance Plus\n1 followed"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MARKETS • AUGUST 16, 2026\nYour money, made clearer.\n\nTrack what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.\n\nExplore markets\nMarket snapshot\nClosed\nS&P 500\n^GSPC\n6,449.80\n+0.31%\nDow 30\n^DJI\n45,092.81\n+0.08%\nNasdaq\n^IXIC\n21,622.98\n+0.14%\nDISCOVER\nExplore the market\nMost Active Penny Stocks\n\nHigh-volume stocks trading below $10.\n\nExplore \nIPO Calendar\n\nUpcoming and recently priced listings.\n\nExplore \nHigh-Yield Dividend Stocks\n\nA curated i"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "My watchlist\nEdit\nAAPL\nApple Inc.\n226.34\n+1.25%\nMSFT\nMicrosoft Corporation\n521.44\n+0.93%\nGC=F\nGold Dec 26\n2,548.70\n+0.72%\n YAHOO FINANCE PLUS\nInvest with more confidence.\n\nUnlock advanced charts, enhanced data, and expert insights.\n\nCompare plans\nSMALL BUSINESS\nStay ahead of tax deadlines\n\nSee important federal tax dates and practical filing reminders for 2026.\n\nView tax calendar "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "yahoo!\nfinance\n\nMarket insights and tools for every investor.\n\nAbout\nHelp\nPrivacy\nTerms\nDisclaimer\n© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      }
+    ],
+    "axSnapshot": "- text: Yahoo Mail News\n- strong: Finance\n- text: Sports More U.S. markets closed\n- banner:\n  - link \"Yahoo Finance\":\n    - /url: /\n    - text: yahoo!\n    - strong: finance\n  - search:\n    - textbox \"Search for news, symbols or companies\"\n    - button \"Search\"\n  - button \"Notifications\"\n  - button \"Sign in\"\n  - navigation:\n    - link \"My Portfolio\":\n      - /url: /portfolio\n    - link \"Markets\":\n      - /url: /markets\n    - link \"News\":\n      - /url: /news\n    - link \"Screeners\":\n      - /url: /screener/equity\n    - link \"Calendar\":\n      - /url: /calendar/ipo\n    - link \"Small Business\":\n      - /url: /personal-finance/small-business-tax-calendar\n    - link \"Finance Plus\":\n      - /url: /plus\n    - text: 1 followed\n- link \"S&P 500 ^GSPC 6,449.80 +0.31%\":\n  - /url: /quote/%5EGSPC\n  - strong: S&P 500\n  - text: ^GSPC 6,449.80\n  - emphasis: +0.31%\n- link \"Dow 30 ^DJI 45,092.81 +0.08%\":\n  - /url: /quote/%5EDJI\n  - strong: Dow 30\n  - text: ^DJI 45,092.81\n  - emphasis: +0.08%\n- link \"Nasdaq ^IXIC 21,622.98 +0.14%\":\n  - /url: /quote/%5EIXIC\n  - strong: Nasdaq\n  - text: ^IXIC 21,622.98\n  - emphasis: +0.14%\n- link \"Russell 2000 ^RUT 2,286.52 -0.16%\":\n  - /url: /quote/%5ERUT\n  - strong: Russell 2000\n  - text: ^RUT 2,286.52\n  - emphasis: \"-0.16%\"\n- link \"Bitcoin USD BTC-USD 118,420.17 +1.44%\":\n  - /url: /quote/BTC-USD\n  - strong: Bitcoin USD\n  - text: BTC-USD 118,420.17\n  - emphasis: +1.44%\n- main:\n  - text: MARKETS • AUGUST 16, 2026\n  - heading \"Your money, made clearer.\" [level=1]\n  - paragraph: Track what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.\n  - button \"Explore markets\"\n  - text: Market snapshot Closed\n  - button \"S&P 500 ^GSPC 6,449.80 +0.31%\":\n    - strong: S&P 500\n    - text: ^GSPC 6,449.80\n    - emphasis: +0.31%\n  - button \"Dow 30 ^DJI 45,092.81 +0.08%\":\n    - strong: Dow 30\n    - text: ^DJI 45,092.81\n    - emphasis: +0.08%\n  - button \"Nasdaq ^IXIC 21,622.98 +0.14%\":\n    - strong: Nasdaq\n    - text: ^IXIC 21,622.98\n    - emphasis: +0.14%\n  - text: DISCOVER\n  - heading \"Explore the market\" [level=2]\n  - link \"Most Active Penny Stocks High-volume stocks trading below $10. Explore\":\n    - /url: /markets/stocks/most-active-penny-stocks\n    - strong: Most Active Penny Stocks\n    - paragraph: High-volume stocks trading below $10.\n    - text: Explore\n  - link \"IPO Calendar Upcoming and recently priced listings. Explore\":\n    - /url: /calendar/ipo\n    - strong: IPO Calendar\n    - paragraph: Upcoming and recently priced listings.\n    - text: Explore\n  - link \"High-Yield Dividend Stocks A curated income-focused watchlist. Explore\":\n    - /url: /watchlists/high-yield-dividend-stocks\n    - strong: High-Yield Dividend Stocks\n    - paragraph: A curated income-focused watchlist.\n    - text: Explore\n  - link \"Build a Portfolio Create a list and track your holdings. Explore\":\n    - /url: /portfolio\n    - strong: Build a Portfolio\n    - paragraph: Create a list and track your holdings.\n    - text: Explore\n  - text: TRENDING TICKERS\n  - heading \"What investors are watching\" [level=2]\n  - link \"View all\":\n    - /url: /markets\n  - text: Symbol Last price Change Trend\n  - link \"A AAPL Apple Inc. 226.34 +1.25% Upward trend\":\n    - /url: /quote/AAPL\n    - text: A\n    - strong: AAPL\n    - text: Apple Inc.\n    - strong: \"226.34\"\n    - emphasis: +1.25%\n  - link \"T TSLA Tesla, Inc. 341.76 -0.82% Downward trend\":\n    - /url: /quote/TSLA\n    - text: T\n    - strong: TSLA\n    - text: Tesla, Inc.\n    - strong: \"341.76\"\n    - emphasis: \"-0.82%\"\n  - link \"N NVDA NVIDIA Corporation 182.70 +0.86% Upward trend\":\n    - /url: /quote/NVDA\n    - text: \"N\"\n    - strong: NVDA\n    - text: NVIDIA Corporation\n    - strong: \"182.70\"\n    - emphasis: +0.86%\n  - link \"M MSFT Microsoft Corporation 521.44 +0.93% Upward trend\":\n    - /url: /quote/MSFT\n    - text: M\n    - strong: MSFT\n    - text: Microsoft Corporation\n    - strong: \"521.44\"\n    - emphasis: +0.93%\n  - link \"B BTC-USD Bitcoin USD 118,420.17 +1.44% Upward trend\":\n    - /url: /quote/BTC-USD\n    - text: B\n    - strong: BTC-USD\n    - text: Bitcoin USD\n    - strong: 118,420.17\n    - emphasis: +1.44%\n  - text: LATEST\n  - heading \"Top stories\" [level=2]\n  - link \"More news\":\n    - /url: /news\n  - link \"Markets · 18 min ago Stocks edge higher as investors weigh retail strength and rate path Major averages held near records as fresh economic data supported a soft-landing outlook.\":\n    - /url: /news\n    - text: Markets · 18 min ago\n    - heading \"Stocks edge higher as investors weigh retail strength and rate path\" [level=3]\n    - paragraph: Major averages held near records as fresh economic data supported a soft-landing outlook.\n  - link \"Bitcoin · 42 min ago Bitcoin steadies above $118,000 as institutional inflows accelerate Digital-asset funds posted another week of net inflows while volatility remained contained.\":\n    - /url: /quote/BTC-USD\n    - text: Bitcoin · 42 min ago\n    - heading \"Bitcoin steadies above $118,000 as institutional inflows accelerate\" [level=3]\n    - paragraph: Digital-asset funds posted another week of net inflows while volatility remained contained.\n  - link \"Technology · 1 hr ago Chip stocks rise on stronger data-center spending forecast Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.\":\n    - /url: /news\n    - text: Technology · 1 hr ago\n    - heading \"Chip stocks rise on stronger data-center spending forecast\" [level=3]\n    - paragraph: Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.\n  - link \"Personal Finance · 2 hrs ago Five money moves to make before the end of summer A midyear checkup can help savers optimize taxes, benefits, and emergency funds.\":\n    - /url: /news\n    - text: Personal Finance · 2 hrs ago\n    - heading \"Five money moves to make before the end of summer\" [level=3]\n    - paragraph: A midyear checkup can help savers optimize taxes, benefits, and emergency funds.\n  - complementary:\n    - heading \"My watchlist\" [level=3]\n    - link \"Edit\":\n      - /url: /portfolio\n    - link \"AAPL Apple Inc. 226.34 +1.25%\":\n      - /url: /quote/AAPL\n      - strong: AAPL\n      - text: Apple Inc. 226.34\n      - emphasis: +1.25%\n    - link \"MSFT Microsoft Corporation 521.44 +0.93%\":\n      - /url: /quote/MSFT\n      - strong: MSFT\n      - text: Microsoft Corporation 521.44\n      - emphasis: +0.93%\n    - link \"GC=F Gold Dec 26 2,548.70 +0.72%\":\n      - /url: /quote/GC%3DF\n      - strong: GC=F\n      - text: Gold Dec 26 2,548.70\n      - emphasis: +0.72%\n    - text: YAHOO FINANCE PLUS\n    - heading \"Invest with more confidence.\" [level=3]\n    - paragraph: Unlock advanced charts, enhanced data, and expert insights.\n    - link \"Compare plans\":\n      - /url: /plus\n    - text: SMALL BUSINESS\n    - heading \"Stay ahead of tax deadlines\" [level=3]\n    - paragraph: See important federal tax dates and practical filing reminders for 2026.\n    - link \"View tax calendar\":\n      - /url: /personal-finance/small-business-tax-calendar\n- contentinfo:\n  - text: yahoo!\n  - strong: finance\n  - paragraph: Market insights and tools for every investor.\n  - link \"About\":\n    - /url: /legal/about\n  - link \"Help\":\n    - /url: /legal/help\n  - link \"Privacy\":\n    - /url: /legal/privacy\n  - link \"Terms\":\n    - /url: /legal/terms\n  - link \"Disclaimer\":\n    - /url: /legal/disclaimer\n  - text: © 2026 Yahoo Finance inspired demo. All data is synthetic."
+  },
+  "sourceSnippets": []
+}

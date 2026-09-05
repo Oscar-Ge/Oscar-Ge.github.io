@@ -1,0 +1,114 @@
+- banner:
+  - link "CarGurus home":
+    - /url: /
+    - text: Car
+    - strong: Gurus
+  - navigation "Main navigation":
+    - link "Buy":
+      - /url: /cars
+    - link "Sell":
+      - /url: /sell
+    - link "Finance":
+      - /url: /finance
+    - link "Research":
+      - /url: /research
+    - link "Price trends":
+      - /url: /trends
+    - link "Careers":
+      - /url: /careers
+  - link "0 saved cars":
+    - /url: /cars?saved=1
+    - text: Saved
+  - button "Sign in"
+- main:
+  - paragraph: Confidence from search to signature
+  - heading "Find the right car at the right price." [level=1]
+  - paragraph: Compare deals, understand market value, and shop millions of used cars with confidence.
+  - tablist "Choose shopping task":
+    - tab "Buy a car"
+    - tab "Sell my car"
+  - text: Make
+  - combobox "Make":
+    - option "Toyota" [selected]
+    - option "Tesla"
+    - option "BMW"
+    - option "Lexus"
+    - option "Honda"
+    - option "Jeep"
+  - text: Model
+  - textbox "Model":
+    - /placeholder: Any model
+    - text: Corolla
+  - text: ZIP code
+  - textbox "ZIP code": "10019"
+  - button "Search cars"
+  - text: "Popular:"
+  - link "Used Tesla near 10017":
+    - /url: /cars?condition=Used&make=Tesla&zip=10017
+  - link "Cheapest BMW i3":
+    - /url: /cars?condition=Used&make=BMW&model=i3&zip=10001&sort=price
+  - link "CPO Lexus RX 350":
+    - /url: /cars?condition=Used&make=Lexus&model=RX%20350&zip=90012&certified=1&exterior=White&yearMin=2017&yearMax=2017&sort=price
+  - link "Newest Lexus SUV":
+    - /url: /cars?condition=Used&make=Lexus&zip=10017&bodyStyle=SUV&exterior=Silver&interior=Black&feature=Backup%20Camera&yearMin=2022&yearMax=2023&sort=newest
+  - region "Marketplace highlights":
+    - strong: 5M+
+    - text: car listings analyzed
+    - strong: 40,000+
+    - text: trusted dealerships
+    - strong: Deal ratings
+    - text: based on local market data
+    - strong: Free tools
+    - text: for shopping, financing, and selling
+  - paragraph: Everything you need
+  - heading "Car shopping, simplified" [level=2]
+  - paragraph: Move from research to purchase with clear data and helpful tools at every step.
+  - article:
+    - heading "Shop used cars" [level=3]
+    - paragraph: Filter by the details that matter, compare deals, and save your favorites.
+    - link "Browse inventory":
+      - /url: /cars
+  - article:
+    - heading "Sell with confidence" [level=3]
+    - paragraph: Get a realistic, no-obligation offer based on your vehicle details.
+    - link "Value my car":
+      - /url: /sell
+  - article:
+    - heading "Plan your payment" [level=3]
+    - paragraph: Estimate monthly payments or see a mock prequalification with no credit impact.
+    - link "Explore financing":
+      - /url: /finance
+  - paragraph: Know the market
+  - heading "Price transparency you can use" [level=2]
+  - paragraph: Our mocked deal ratings compare each listing with similar vehicles nearby, so a good price is easier to spot.
+  - link "Explore price trends":
+    - /url: /trends
+  - text: Great Deal
+  - paragraph: 2020 Tesla Model 3
+  - strong: $21,995
+  - text: Below market Above market
+  - paragraph: $2,010 below estimated market price
+- contentinfo:
+  - link "Car Gurus":
+    - /url: /
+    - text: Car
+    - strong: Gurus
+  - paragraph: Giving people the power to reach their destination with confidence.
+  - heading "Shop" [level=3]
+  - link "Used cars":
+    - /url: /cars
+  - link "Car reviews":
+    - /url: /research
+  - link "Price trends":
+    - /url: /trends
+  - heading "Sell & finance" [level=3]
+  - link "Get an offer":
+    - /url: /sell
+  - link "Loan calculator":
+    - /url: /finance
+  - link "Pre-qualify":
+    - /url: /finance?mode=prequalify
+  - heading "Company" [level=3]
+  - link "Careers":
+    - /url: /careers
+  - text: Mock marketplace experience © 2026 CarGurus concept. Synthetic data for demonstration only. Built for confident car shopping.

@@ -1,0 +1,165 @@
+{
+  "site": "craigslist.org",
+  "siteKey": "27-craigslist.org",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/27-craigslist.org/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "contrast",
+  "ruleId": "contrast",
+  "description": "Very low contrast",
+  "nodeIndex": 2,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[3]/SPAN[1]/SMALL[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[3]/SPAN[1]/SMALL[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false,
+    "contrastdata": [
+      4.16,
+      "#777078",
+      "#f2edf6",
+      false
+    ]
+  },
+  "rawRef": "scans/27-craigslist.org/wave/attempt-1/raw.json",
+  "errorId": "ST0745",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[3]/SPAN[1]/SMALL[1]",
+    "tag": "SMALL",
+    "text": "New opportunities added constantly.",
+    "html": "<small>New opportunities added constantly.</small>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1012.65625,
+      "y": 1360.59375,
+      "width": 195.078125,
+      "height": 14
+    },
+    "style": {
+      "color": "rgb(119, 112, 120)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "12.16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[3]/SPAN[1]",
+      "tag": "SPAN",
+      "class": "",
+      "text": "Fresh every day\nNew opportunities added constantly.",
+      "html": "<span><b>Fresh every day</b><small>New opportunities added constantly.</small></span>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:46011/assets/index-_00hFOds.css",
+        "selector": ".trust-strip small",
+        "declarations": {
+          "color": "rgb(119, 112, 120)",
+          "font-size": "0.76rem"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:46011/assets/index-_00hFOds.css",
+        "selector": "body *",
+        "declarations": {
+          "visibility": "hidden"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "craigslist — local classifieds and forums",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Everything nearby,\nall in one place.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Start with a category",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "housing",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "for sale",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[3]/H3[1]",
+        "tag": "H3",
+        "text": "jobs",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[4]/H3[1]",
+        "tag": "H3",
+        "text": "services",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[5]/H3[1]",
+        "tag": "H3",
+        "text": "community",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "c\ncraigslist\nChicago\nSEARCH\nsaved\naccount\npost an ad"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": null,
+        "text": "saved\naccount\npost an ad"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "LOCAL FINDS, REAL PEOPLE\nEverything nearby,\nall in one place.\n\nFind homes, work, services, and one-of-a-kind things from people in your community.\n\nall categories\napartments / housing\nfurniture\njobs\nlessons & tutoring\npets\ntickets\nvacation rentals\nappliances\ncell phones\ngarage & moving sales\nparking & storage\nservices\nantiques\nChicago\nsearch\npopular:\ncouches\napartments\npart-time jobs\npets\nc\n38\nfresh listings\nlocal & simple\nEXPLORE CRAIGSLIST\nStart with a category\nbrowse all listings \nhousing\napa"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "c\ncraigslist\nhelp & safety\nprivacy\nterms\nabout\n\n© 2026 craigslist · local connections, simply made"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Craigslist home\": c craigslist\n  - button \"Chicago\"\n  - textbox \"Search craigslist\":\n    - /placeholder: Search Chicago\n  - button \"Submit search\": search\n  - navigation:\n    - button \"saved\"\n    - button \"account\"\n    - button \"post an ad\"\n- main:\n  - text: local finds, real people\n  - heading \"Everything nearby, all in one place.\" [level=1]:\n    - text: Everything nearby,\n    - emphasis: all in one place.\n  - paragraph: Find homes, work, services, and one-of-a-kind things from people in your community.\n  - textbox \"What are you looking for?\"\n  - combobox \"Search category\":\n    - option \"all categories\" [selected]\n    - option \"apartments / housing\"\n    - option \"furniture\"\n    - option \"jobs\"\n    - option \"lessons & tutoring\"\n    - option \"pets\"\n    - option \"tickets\"\n    - option \"vacation rentals\"\n    - option \"appliances\"\n    - option \"cell phones\"\n    - option \"garage & moving sales\"\n    - option \"parking & storage\"\n    - option \"services\"\n    - option \"antiques\"\n  - button \"Change search location\": Chicago\n  - button \"search\"\n  - text: \"popular:\"\n  - button \"couches\"\n  - button \"apartments\"\n  - button \"part-time jobs\"\n  - button \"pets\"\n  - text: explore craigslist\n  - heading \"Start with a category\" [level=2]\n  - button \"browse all listings\"\n  - article:\n    - heading \"housing\" [level=3]\n    - button \"apartments / housing\"\n    - button \"rooms & shares\"\n    - button \"parking & storage\"\n    - button \"vacation rentals\"\n  - article:\n    - heading \"for sale\" [level=3]\n    - button \"antiques\"\n    - button \"appliances\"\n    - button \"furniture\"\n    - button \"cell phones\"\n    - button \"garage sales\"\n    - button \"tickets\"\n  - article:\n    - heading \"jobs\" [level=3]\n    - button \"general labor\"\n    - button \"writing / editing\"\n    - button \"retail / food\"\n    - button \"skilled trades\"\n  - article:\n    - heading \"services\" [level=3]\n    - button \"child care\"\n    - button \"lessons & tutoring\"\n    - button \"household services\"\n    - button \"creative services\"\n  - article:\n    - heading \"community\" [level=3]\n    - button \"pets\"\n    - button \"events\"\n    - button \"local news\"\n    - button \"volunteers\"\n  - text: Made for your neighborhood Browse relevant listings nearby. Simple, direct connections Reach posters without a middleman. Fresh every day New opportunities added constantly.\n- contentinfo:\n  - button \"c craigslist\"\n  - button \"help & safety\"\n  - button \"privacy\"\n  - button \"terms\"\n  - button \"about\"\n  - paragraph: © 2026 craigslist · local connections, simply made"
+  },
+  "sourceSnippets": []
+}

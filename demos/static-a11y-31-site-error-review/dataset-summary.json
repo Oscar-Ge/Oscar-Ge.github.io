@@ -1,0 +1,31 @@
+{
+  "datasetId": "static-a11y-selected31-20260904-r1/multi-agent-v3",
+  "summaries": {
+    "axe": {
+      "correct": 17,
+      "false-positive": 1,
+      "duplicate": 196,
+      "unsure": 0,
+      "excluded": 81,
+      "total": 295,
+      "inScope": 149,
+      "outsideTarget": 146,
+      "duplicateInScope": 131,
+      "duplicateOutsideTarget": 65
+    },
+    "wave": {
+      "correct": 20,
+      "false-positive": 48,
+      "duplicate": 193,
+      "unsure": 0,
+      "excluded": 204,
+      "total": 465,
+      "inScope": 104,
+      "outsideTarget": 361,
+      "duplicateInScope": 36,
+      "duplicateOutsideTarget": 157
+    }
+  },
+  "siteCount": 31,
+  "scanCount": 62
+}

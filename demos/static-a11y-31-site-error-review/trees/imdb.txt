@@ -1,0 +1,265 @@
+- banner:
+  - link "IMDb home":
+    - /url: /
+    - text: IMDb
+  - button "Open menu": Menu
+  - search:
+    - text: Search category
+    - combobox "Search category":
+      - option "All" [selected]
+      - option "Titles"
+      - option "Celebs"
+      - option "Videos"
+    - text: Search IMDb
+    - textbox "Search IMDb"
+    - button "Search"
+  - link "IMDb Pro":
+    - /url: /recommendations
+  - link "Watchlist 2":
+    - /url: /watchlist
+  - button "Alex"
+- main:
+  - link "The Flash poster View details":
+    - /url: /title/the-flash
+    - img "The Flash poster"
+    - text: View details
+  - button "Play trailer for The Flash"
+  - text: Now streaming
+  - heading "The Flash" [level=1]
+  - paragraph: Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without superheroes.
+  - text: 2023 2h 24m PG-13 6.6
+  - button "Add to Watchlist"
+  - link "More info":
+    - /url: /title/the-flash
+  - heading "Featured today" [level=2]
+  - paragraph: Standout stories from across IMDb
+  - link "Relive the Oscars 2023 Speeches, performances, and winning moments":
+    - /url: /videos/oscars-2023
+    - strong: Relive the Oscars 2023
+    - text: Speeches, performances, and winning moments
+  - link "Cannes 2022 Jury Prize Discover EO and its celebrated director":
+    - /url: /awards/cannes-2022
+    - strong: Cannes 2022 Jury Prize
+    - text: Discover EO and its celebrated director
+  - link "Comic-book sci-fi Top-rated titles with the most votes":
+    - /url: /browse/superhero
+    - strong: Comic-book sci-fi
+    - text: Top-rated titles with the most votes
+  - heading "Top picks for you" [level=2]
+  - paragraph: TV shows and movies we think you’ll enjoy
+  - button "Scroll Top picks for you left"
+  - article:
+    - 'link "Dune: Part Two poster"':
+      - /url: /title/dune-part-two
+      - 'img "Dune: Part Two poster"'
+    - 'button "Remove Dune: Part Two from Watchlist"'
+    - text: 8.5 Movie
+    - 'link "Dune: Part Two"':
+      - /url: /title/dune-part-two
+    - text: 2024 • PG-13
+    - button "In Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Fallout poster":
+      - /url: /title/fallout
+      - img "Fallout poster"
+    - button "Add Fallout to Watchlist"
+    - text: 8.3 TV Series
+    - link "Fallout":
+      - /url: /title/fallout
+    - text: 2024 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Severance poster":
+      - /url: /title/severance
+      - img "Severance poster"
+    - button "Add Severance to Watchlist"
+    - text: 8.7 TV Series
+    - link "Severance":
+      - /url: /title/severance
+    - text: 2022 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Interstellar poster":
+      - /url: /title/interstellar
+      - img "Interstellar poster"
+    - button "Remove Interstellar from Watchlist"
+    - text: 8.7 Movie
+    - link "Interstellar":
+      - /url: /title/interstellar
+    - text: 2014 • PG-13
+    - button "In Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Oppenheimer poster":
+      - /url: /title/oppenheimer
+      - img "Oppenheimer poster"
+    - button "Add Oppenheimer to Watchlist"
+    - text: 8.5 Movie
+    - link "Oppenheimer":
+      - /url: /title/oppenheimer
+    - text: 2023 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Parasite poster":
+      - /url: /title/parasite
+      - img "Parasite poster"
+    - button "Add Parasite to Watchlist"
+    - text: 8.5 Movie
+    - link "Parasite":
+      - /url: /title/parasite
+    - text: 2019 • R
+    - button "Watchlist"
+    - button "Trailer"
+  - button "Scroll Top picks for you right"
+  - text: IMDb recommendations
+  - heading "Not sure what to watch next?" [level=2]
+  - paragraph: Explore a fresh mix of acclaimed movies, popular series, and hidden gems.
+  - link "Get recommendations":
+    - /url: /recommendations
+  - heading "Fan favorites" [level=2]
+  - paragraph: This week’s top-rated crowd pleasers
+  - button "Scroll Fan favorites left"
+  - article:
+    - link "The Shawshank Redemption poster":
+      - /url: /title/shawshank
+      - img "The Shawshank Redemption poster"
+    - button "Add The Shawshank Redemption to Watchlist"
+    - text: 9.3 Movie
+    - link "The Shawshank Redemption":
+      - /url: /title/shawshank
+    - text: 1994 • R
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - link "The Dark Knight poster":
+      - /url: /title/dark-knight
+      - img "The Dark Knight poster"
+    - button "Add The Dark Knight to Watchlist"
+    - text: 9 Movie
+    - link "The Dark Knight":
+      - /url: /title/dark-knight
+    - text: 2008 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - link "Interstellar poster":
+      - /url: /title/interstellar
+      - img "Interstellar poster"
+    - button "Remove Interstellar from Watchlist"
+    - text: 8.7 Movie
+    - link "Interstellar":
+      - /url: /title/interstellar
+    - text: 2014 • PG-13
+    - button "In Watchlist"
+    - button "Trailer"
+  - article:
+    - link "The Grand Budapest Hotel poster":
+      - /url: /title/grand-budapest
+      - img "The Grand Budapest Hotel poster"
+    - button "Add The Grand Budapest Hotel to Watchlist"
+    - text: 8.1 Movie
+    - link "The Grand Budapest Hotel":
+      - /url: /title/grand-budapest
+    - text: 2014 • R
+    - button "Watchlist"
+    - button "Trailer"
+  - article:
+    - 'link "Terminator 2: Judgment Day poster"':
+      - /url: /title/terminator-2
+      - 'img "Terminator 2: Judgment Day poster"'
+    - 'button "Add Terminator 2: Judgment Day to Watchlist"'
+    - text: 8.6 Movie
+    - 'link "Terminator 2: Judgment Day"':
+      - /url: /title/terminator-2
+    - text: 1991 • R
+    - button "Watchlist"
+    - button "Trailer"
+  - button "Scroll Fan favorites right"
+  - heading "Top 5 this week" [level=2]
+  - paragraph: Titles receiving the most IMDb page views
+  - text: "1"
+  - article:
+    - link "The Last of Us poster":
+      - /url: /title/the-last-of-us
+      - img "The Last of Us poster"
+    - button "Add The Last of Us to Watchlist"
+    - text: 8.7 TV Series
+    - link "The Last of Us":
+      - /url: /title/the-last-of-us
+    - text: 2023 • TV-MA
+    - button "Watchlist"
+    - button "Trailer"
+  - text: "2"
+  - article:
+    - 'link "Dune: Part Two poster"':
+      - /url: /title/dune-part-two
+      - 'img "Dune: Part Two poster"'
+    - 'button "Remove Dune: Part Two from Watchlist"'
+    - text: 8.5 Movie
+    - 'link "Dune: Part Two"':
+      - /url: /title/dune-part-two
+    - text: 2024 • PG-13
+    - button "In Watchlist"
+    - button "Trailer"
+  - text: "3"
+  - article:
+    - link "Fallout poster":
+      - /url: /title/fallout
+      - img "Fallout poster"
+    - button "Add Fallout to Watchlist"
+    - text: 8.3 TV Series
+    - link "Fallout":
+      - /url: /title/fallout
+    - text: 2024 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - text: "4"
+  - article:
+    - link "Oppenheimer poster":
+      - /url: /title/oppenheimer
+      - img "Oppenheimer poster"
+    - button "Add Oppenheimer to Watchlist"
+    - text: 8.5 Movie
+    - link "Oppenheimer":
+      - /url: /title/oppenheimer
+    - text: 2023 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - text: "5"
+  - article:
+    - link "The Flash poster":
+      - /url: /title/the-flash
+      - img "The Flash poster"
+    - button "Add The Flash to Watchlist"
+    - text: 6.6 Movie
+    - link "The Flash":
+      - /url: /title/the-flash
+    - text: 2023 • PG-13
+    - button "Watchlist"
+    - button "Trailer"
+  - text: Explore by genre
+  - heading "50 essential Sci-Fi movies & TV shows" [level=2]
+  - paragraph: From distant galaxies to artificial intelligence, browse IMDb’s top genre picks in one complete chart.
+  - link "See the Top 50":
+    - /url: /genre/sci-fi
+- contentinfo:
+  - button "Back to top"
+  - text: Follow IMDb
+  - navigation:
+    - link "Help":
+      - /url: /about
+    - link "IMDbPro":
+      - /url: /about
+    - link "Conditions of Use":
+      - /url: /about
+    - link "Privacy Policy":
+      - /url: /about
+    - link "Your lists":
+      - /url: /lists
+  - paragraph: an amazon company
+  - text: © 1990–2026 IMDb.com, Inc. • Synthetic demonstration content
+- status

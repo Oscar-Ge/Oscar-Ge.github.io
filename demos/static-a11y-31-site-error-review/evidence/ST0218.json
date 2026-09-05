@@ -1,0 +1,161 @@
+{
+  "site": "expedia",
+  "siteKey": "10-expedia",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/10-expedia/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 1,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/10-expedia/wave/attempt-1/raw.json",
+  "errorId": "ST0218",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+    "tag": "SPAN",
+    "text": "Mock travel experience · Prices shown in USD",
+    "html": "<span>Mock travel experience · Prices shown in USD</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1081.828125,
+      "y": 2464.875,
+      "width": 228.171875,
+      "height": 11
+    },
+    "style": {
+      "color": "rgb(141, 154, 182)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "footer-bottom content-width",
+      "text": "© 2026 Expedia, Inc. All rights reserved.\nMock travel experience · Prices shown in USD",
+      "html": "<div class=\"footer-bottom content-width\"><span>© 2026 Expedia, Inc. All rights reserved.</span><span>Mock travel experience · Prices shown in USD</span></div>"
+    },
+    "control": null,
+    "matchedStyles": []
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "It matters who you travel with",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "One Key™ members always save",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Discover your next escape",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Free cancellation options",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Millions of choices",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Support when you need it",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Everything your trip needs, in your pocket",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Explore",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Help",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Company",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "expedia\nShop travel \n Get the app\n English\nTrips\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Utility navigation",
+        "text": " Get the app\n English\nTrips\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MADE TO TRAVEL\nIt matters who you travel with\n\nOne place to plan every part of your trip, with member prices and flexible options.\n\nStays\nFlights\nCars\nThings to do\nVacation rentals\nWhere to?\nCheck-in\nCheck-out\nTravelers\n1 traveler, 1 room\n Search\nSearching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance.\nOne Key™ members always save\n\nSign in to unlock instant Member Prices on over 100,000 stays.\n\nSign in\nPERFECTLY PLANNED\nDiscover your next escape\n\nSta"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "expedia\n\nMade to travel. Plan it all in one place.\n\nExplore\nHotels\nFlights\nCars\nVacation rentals\nHelp\nSupport\nPrivacy choices\nTerms of use\nCompany\nAbout us\nPartner with us\nCareers\n© 2026 Expedia, Inc. All rights reserved.\nMock travel experience · Prices shown in USD"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Expedia home\": expedia\n  - button \"Shop travel\"\n  - navigation \"Utility navigation\":\n    - button \"Get the app\"\n    - button \"Language and currency\": English\n    - button \"Trips\"\n    - button \"Sign in\"\n- main:\n  - text: Made to travel\n  - heading \"It matters who you travel with\" [level=1]\n  - paragraph: One place to plan every part of your trip, with member prices and flexible options.\n  - tablist \"Travel search type\":\n    - tab \"Stays\" [selected]\n    - tab \"Flights\"\n    - tab \"Cars\"\n    - tab \"Things to do\"\n    - tab \"Vacation rentals\"\n  - text: Where to?\n  - textbox \"Going to\": National University of Singapore\n  - text: Check-in\n  - textbox \"Check-in date\": 2027-04-03\n  - text: Check-out\n  - textbox \"Check-out date\": 2027-04-06\n  - button \"Travelers 1 traveler, 1 room\"\n  - button \"Search\"\n  - text: Searching near a landmark? Enter “National University of Singapore” to see hotels ordered by distance.\n  - heading \"One Key™ members always save\" [level=2]\n  - paragraph: Sign in to unlock instant Member Prices on over 100,000 stays.\n  - button \"Sign in\"\n  - text: Perfectly planned\n  - heading \"Discover your next escape\" [level=2]\n  - paragraph: Start with a stay, a flight, or a whole home made for everyone.\n  - button \"Vacation home with pool Space for everyone Vacation homes with private pools Explore Orlando\":\n    - img \"Vacation home with pool\"\n    - text: Space for everyone Vacation homes with private pools\n    - emphasis: Explore Orlando\n  - button \"Singapore attractions Make a day of it Family adventures in Singapore Find things to do\":\n    - img \"Singapore attractions\"\n    - text: Make a day of it Family adventures in Singapore\n    - emphasis: Find things to do\n  - button \"Scenic road trip Pick up and go Weekend road trips made easy Find a car\":\n    - img \"Scenic road trip\"\n    - text: Pick up and go Weekend road trips made easy\n    - emphasis: Find a car\n  - heading \"Free cancellation options\" [level=3]\n  - paragraph: Filter for flexible stays, flights, cars, and activities.\n  - heading \"Millions of choices\" [level=3]\n  - paragraph: Compare realistic options for every kind of trip.\n  - heading \"Support when you need it\" [level=3]\n  - paragraph: Our virtual agent is ready to help with your plans.\n  - text: Go further with the app\n  - heading \"Everything your trip needs, in your pocket\" [level=2]\n  - paragraph: Get real-time alerts, save your favorites, and access your itinerary anywhere.\n  - button \"Get the app\"\n  - text: Your London trip\n- contentinfo:\n  - text: expedia\n  - paragraph: Made to travel. Plan it all in one place.\n  - heading \"Explore\" [level=3]\n  - button \"Hotels\"\n  - button \"Flights\"\n  - button \"Cars\"\n  - button \"Vacation rentals\"\n  - heading \"Help\" [level=3]\n  - button \"Support\"\n  - button \"Privacy choices\"\n  - button \"Terms of use\"\n  - heading \"Company\" [level=3]\n  - button \"About us\"\n  - button \"Partner with us\"\n  - button \"Careers\"\n  - text: © 2026 Expedia, Inc. All rights reserved. Mock travel experience · Prices shown in USD"
+  },
+  "sourceSnippets": []
+}

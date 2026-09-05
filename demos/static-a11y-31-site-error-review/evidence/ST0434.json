@@ -1,0 +1,162 @@
+{
+  "site": "reddit",
+  "siteKey": "20-reddit",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/20-reddit/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 0,
+  "selector": [
+    ".create-button > span"
+  ],
+  "html": "<span>Create</span>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#ffffff",
+          "bgColor": "#ff4500",
+          "contrastRatio": 3.44,
+          "fontSize": "12.0pt (16px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<button class=\"create-button\">",
+            "target": [
+              ".create-button"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #ff4500, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/20-reddit/axe/attempt-1/raw.json",
+  "errorId": "ST0434",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]/BUTTON[3]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "Create",
+    "html": "<span>Create</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1300.21875,
+      "y": 20,
+      "width": 59.78125,
+      "height": 19
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "NAV",
+      "role": null,
+      "label": "Account actions",
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]/BUTTON[3]",
+      "tag": "BUTTON",
+      "class": "create-button",
+      "text": "Create",
+      "html": "<button class=\"create-button\"><svg data-prefix=\"fas\" data-icon=\"plus\" class=\"svg-inline--fa fa-plus\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"></path></svg> <span>Create</span></button>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]/BUTTON[3]",
+      "tag": "BUTTON",
+      "text": "Create",
+      "ariaLabel": null,
+      "href": null,
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": ".create-button span, .header-actions .header-icon:nth-child(2)",
+        "declarations": {
+          "display": "none"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Home",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "reddit\n3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Account actions",
+        "text": "3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts\nCOMMUNITIES\nCreate a community\nA\nr/announcements\n\nAbout   •   Content Policy\nPrivacy   •   User Agreement"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "EXPLORE REDDIT\n\nHome\n\nYour personalized front page of the internet\n\nHot\nNew\nTop\nRising\nMost comments\nEverywhere\nJapan\nChile\n18.6k\nA\nr/announcements\n• Posted by u/reddit\n• 18 min ago\nOfficial\nReddit’s newest community updates are here\n\nA faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n\n2.8k comments\nCopy link\nSave\nFollow\nAward\n68.4k\nJ\nr/japan\n• Posted by u/tokyo_window\n• 2 hr ago\nTravel\nThe night train returns for the summer f"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[2]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Popular communities\n1\nM\nr/Music\n81.2k viewing\nJoin\n2\nF\nr/FortNiteBR\n27.4k viewing\nJoin\n3\nF\nr/Fitness\n18.4k viewing\nJoin\n4\nA\nr/AskReddit\n184k viewing\nJoin\nA better Reddit experience\n\nAll content here is realistic synthetic data. Your actions stay in this demo."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Reddit home\": reddit\n  - search:\n    - textbox \"Search Reddit\"\n  - navigation \"Account actions\":\n    - button \"Open chat\"\n    - button \"Notifications\": \"3\"\n    - button \"Create\"\n    - button \"Open user menu\": oo\n- complementary:\n  - navigation \"Primary navigation\":\n    - button \"Home\"\n    - button \"Popular\"\n    - button \"All\"\n    - button \"Create a post\"\n    - button \"Drafts\"\n  - text: Communities\n  - button \"Create a community\"\n  - button \"Create a community\"\n  - button \"r/announcements\"\n  - paragraph: About • Content Policy Privacy • User Agreement\n- main:\n  - paragraph: Explore Reddit\n  - heading \"Home\" [level=1]\n  - paragraph: Your personalized front page of the internet\n  - button \"Hot\" [pressed]\n  - button \"New\"\n  - button \"Top\"\n  - button \"Rising\"\n  - button \"Most comments\"\n  - combobox \"Popular location\":\n    - option \"Everywhere\" [selected]\n    - option \"Japan\"\n    - option \"Chile\"\n  - button \"Card view\" [pressed]\n  - button \"Compact view\"\n  - article:\n    - button \"Upvote Reddit’s newest community updates are here\"\n    - strong: 18.6k\n    - button \"Downvote Reddit’s newest community updates are here\"\n    - button \"r/announcements\"\n    - text: • Posted by u/reddit • 18 min ago Official\n    - button \"Reddit’s newest community updates are here\"\n    - paragraph: A faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n    - button \"2.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for Reddit’s newest community updates are here\"\n  - article:\n    - button \"Upvote The night train returns for the summer festival season\"\n    - strong: 68.4k\n    - button \"Downvote The night train returns for the summer festival season\"\n    - button \"r/japan\"\n    - text: • Posted by u/tokyo_window • 2 hr ago Travel\n    - button \"The night train returns for the summer festival season\"\n    - paragraph: A photo essay from the first service between Tokyo and Izumo.\n    - button \"Open Night train at a lantern-lit station\": Night train at a lantern-lit station\n    - button \"3.4k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for The night train returns for the summer festival season\"\n  - article:\n    - button \"Upvote TIL a library book was returned after 96 years—with a note\"\n    - strong: 3.9k\n    - button \"Downvote TIL a library book was returned after 96 years—with a note\"\n    - button \"r/todayilearned\"\n    - text: • Posted by u/small_fact • 27 min ago Culture\n    - button \"TIL a library book was returned after 96 years—with a note\"\n    - paragraph: The librarian waived the late fee and added the note to the local archive.\n    - button \"477 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for TIL a library book was returned after 96 years—with a note\"\n  - article:\n    - button \"Upvote My team replaced one weekly meeting with this simple update\"\n    - strong: \"684\"\n    - button \"Downvote My team replaced one weekly meeting with this simple update\"\n    - button \"r/work\"\n    - text: • Posted by u/desk_neighbor • 22 min ago Success Story\n    - button \"My team replaced one weekly meeting with this simple update\"\n    - paragraph: It is early, but people are more informed and have more focus time.\n    - button \"211 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for My team replaced one weekly meeting with this simple update\"\n  - article:\n    - button \"Upvote A tiny act of kindness became a whole town tradition\"\n    - strong: 193k\n    - button \"Downvote A tiny act of kindness became a whole town tradition\"\n    - button \"r/MadeMeSmile\"\n    - text: • Posted by u/day_brightener • 12 days ago Wholesome\n    - button \"A tiny act of kindness became a whole town tradition\"\n    - paragraph: Every Friday, people leave a note of thanks for someone in their community.\n    - button \"12.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for A tiny act of kindness became a whole town tradition\"\n  - article:\n    - button \"Upvote What meal could you happily eat every week forever?\"\n    - strong: 88.4k\n    - button \"Downvote What meal could you happily eat every week forever?\"\n    - button \"r/food\"\n    - text: • Posted by u/simmerdown • 8 months ago Discussion\n    - button \"What meal could you happily eat every week forever?\"\n    - paragraph: The answers have become a genuinely excellent dinner-planning list.\n    - button \"48.2k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for What meal could you happily eat every week forever?\"\n- complementary:\n  - text: Popular communities 1\n  - button \"r/Music 81.2k viewing\":\n    - strong: r/Music\n    - text: 81.2k viewing\n  - button \"Join\"\n  - text: \"2\"\n  - button \"r/FortNiteBR 27.4k viewing\":\n    - strong: r/FortNiteBR\n    - text: 27.4k viewing\n  - button \"Join\"\n  - text: \"3\"\n  - button \"r/Fitness 18.4k viewing\":\n    - strong: r/Fitness\n    - text: 18.4k viewing\n  - button \"Join\"\n  - text: \"4\"\n  - button \"r/AskReddit 184k viewing\":\n    - strong: r/AskReddit\n    - text: 184k viewing\n  - button \"Join\"\n  - strong: A better Reddit experience\n  - paragraph: All content here is realistic synthetic data. Your actions stay in this demo.\n- status"
+  },
+  "sourceSnippets": []
+}

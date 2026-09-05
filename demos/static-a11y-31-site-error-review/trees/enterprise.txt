@@ -1,0 +1,139 @@
+- banner:
+  - text: "Customer support: (855) 266-9565 US · English"
+  - link "Enterprise Rent-A-Car":
+    - /url: /
+    - text: e enterprise rent-a-car
+  - navigation "Primary navigation":
+    - link "Rent":
+      - /url: /
+    - link "Exotic Cars":
+      - /url: /exotic-cars
+    - link "Buy a Car":
+      - /url: /cars-for-sale
+    - link "Hotel Pickup":
+      - /url: /hotel-pickup
+    - link "Manage Reservation":
+      - /url: /reservation-lookup
+    - link "Email Offers":
+      - /url: /email-offers
+- main:
+  - text: The road is yours
+  - heading "Ready when you are." [level=1]
+  - paragraph: From quick city trips to unforgettable getaways, find a vehicle that fits your plans.
+  - text: No hidden booking fees Free cancellation on most rentals Reserve a vehicle
+  - heading "Start a reservation" [level=2]
+  - text: Secure booking Pickup location
+  - combobox "Pickup location"
+  - checkbox "Return to a different location"
+  - text: Return to a different location Pick-up date
+  - textbox "Pick-up date": 2026-04-05
+  - text: Pick-up time
+  - combobox "Pick-up time":
+    - option "8:00 AM"
+    - option "9:00 AM"
+    - option "10:00 AM"
+    - option "11:00 AM" [selected]
+    - option "12:00 PM"
+    - option "1:00 PM"
+    - option "2:00 PM"
+    - option "3:00 PM"
+    - option "4:00 PM"
+    - option "5:00 PM"
+    - option "6:00 PM"
+  - text: Return date
+  - textbox "Return date": 2026-04-08
+  - text: Return time
+  - combobox "Return time":
+    - option "8:00 AM"
+    - option "9:00 AM"
+    - option "10:00 AM"
+    - option "11:00 AM"
+    - option "12:00 PM"
+    - option "1:00 PM"
+    - option "2:00 PM"
+    - option "3:00 PM"
+    - option "4:00 PM"
+    - option "5:00 PM" [selected]
+    - option "6:00 PM"
+  - text: Renter age
+  - combobox "Renter age":
+    - option "18 years old"
+    - option "19 years old"
+    - option "20 years old"
+    - option "21 years old"
+    - option "22 years old"
+    - option "23 years old"
+    - option "24 years old"
+    - option "25 or older" [selected]
+  - text: Vehicle class
+  - combobox "Vehicle class":
+    - option "Any vehicle" [selected]
+    - option "Economy"
+    - option "Compact"
+    - option "SUV"
+    - option "Mini Van"
+    - option "Pickup Truck"
+    - option "Exotic"
+  - text: Passengers
+  - combobox "Passengers":
+    - option "1 person"
+    - option "2 people" [selected]
+    - option "3 people"
+    - option "4 people"
+    - option "5 people"
+    - option "6 people"
+    - option "7 people"
+  - button "View vehicles"
+  - link "Pickup at your hotel Find Boston hotels by ZIP code":
+    - /url: /hotel-pickup
+    - strong: Pickup at your hotel
+    - text: Find Boston hotels by ZIP code
+  - link "Explore exotic vehicles Performance and luxury collection":
+    - /url: /exotic-cars
+    - strong: Explore exotic vehicles
+    - text: Performance and luxury collection
+  - link "Manage a reservation Look up a booking or ticket":
+    - /url: /reservation-lookup
+    - strong: Manage a reservation
+    - text: Look up a booking or ticket
+  - text: More ways to move
+  - heading "Everything your trip needs" [level=2]
+  - paragraph: Thoughtful options for family weekends, business travel and once-in-a-lifetime drives.
+  - article:
+    - paragraph: Enterprise Exotic Car Collection
+    - heading "Make the drive the destination." [level=3]
+    - paragraph: Browse sports cars and premium SUVs, including Corvette, Porsche, Range Rover and Ferrari models.
+    - link "View exotic vehicles":
+      - /url: /exotic-cars
+  - article:
+    - paragraph: Enterprise Car Sales
+    - heading "A better way to buy used." [level=3]
+    - paragraph: Shop no-haggle used vehicles, including convertibles under $20,000.
+    - link "Browse cars for sale":
+      - /url: /cars-for-sale
+  - text: Drive more, spend less
+  - heading "Get rental offers in your inbox" [level=2]
+  - paragraph: Sign up for member-only promotions and travel inspiration.
+  - link "Sign me up":
+    - /url: /email-offers
+- contentinfo:
+  - text: e enterprise rent-a-car
+  - paragraph: Every journey starts with a reliable ride. Mock rental experiences, made simple.
+  - heading "Rent" [level=3]
+  - link "Start a reservation":
+    - /url: /
+  - link "Exotic collection":
+    - /url: /exotic-cars
+  - link "Hotel pickup":
+    - /url: /hotel-pickup
+  - heading "Shop & manage" [level=3]
+  - link "Cars for sale":
+    - /url: /cars-for-sale
+  - link "Look up a booking":
+    - /url: /reservation-lookup
+  - link "Email offers":
+    - /url: /email-offers
+  - heading "Need help?" [level=3]
+  - paragraph: (855) 266-9565
+  - paragraph: Open daily, 7 a.m.–10 p.m.
+  - text: © 2026 Enterprise Rent-A-Car mock experience. Rates and inventory are simulated for demonstration.

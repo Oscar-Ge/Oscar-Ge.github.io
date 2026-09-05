@@ -1,0 +1,228 @@
+- text: SCORES
+- link "MLB Final NYY 5 BOS 3":
+  - /url: /search?q=MLB+scores
+  - text: MLB
+  - strong: Final
+  - paragraph:
+    - text: NYY
+    - strong: "5"
+  - paragraph:
+    - text: BOS
+    - strong: "3"
+- link "WNBA Final NYL 84 LVA 81":
+  - /url: /nba/scoreboard
+  - text: WNBA
+  - strong: Final
+  - paragraph:
+    - text: NYL
+    - strong: "84"
+  - paragraph:
+    - text: LVA
+    - strong: "81"
+- link "SOCCER 67′ MCI 2 TOT 1":
+  - /url: /soccer/man-city-stats
+  - text: SOCCER
+  - strong: 67′
+  - paragraph:
+    - text: MCI
+    - strong: "2"
+  - paragraph:
+    - text: TOT
+    - strong: "1"
+- link "NFL 7:00 PM DAL — BAL —":
+  - /url: /nfl/super-bowl-2015
+  - text: NFL
+  - strong: 7:00 PM
+  - paragraph:
+    - text: DAL
+    - strong: —
+  - paragraph:
+    - text: BAL
+    - strong: —
+- link "All scores":
+  - /url: /nba/scoreboard
+- banner:
+  - link "ESPN home":
+    - /url: /
+    - text: ESPN
+  - navigation "Primary navigation":
+    - link "NFL":
+      - /url: /nfl/super-bowl-2015
+    - link "NBA":
+      - /url: /nba/scoreboard
+    - link "NHL":
+      - /url: /nhl/atlantic
+    - link "Soccer":
+      - /url: /soccer/tv-schedule
+    - link "UFC":
+      - /url: /ufc/schedule
+    - link "F1":
+      - /url: /podcasts/f1
+  - button "Search ESPN"
+  - button "Notifications"
+  - button "Log In"
+- main:
+  - complementary:
+    - heading "Favorites" [level=3]
+    - paragraph: Follow teams and athletes for a personalized feed.
+    - link "Find favorites":
+      - /url: /nhl/atlantic
+    - text: Quick links
+    - link "NBA scoreboard":
+      - /url: /nba/scoreboard
+    - link "ESPN2 schedule":
+      - /url: /soccer/tv-schedule
+    - link "F1 podcast":
+      - /url: /podcasts/f1
+  - article:
+    - img "Sunday Night Baseball featured matchup"
+    - text: LIVE
+    - heading "Rivalry night takes center stage" [level=1]
+    - paragraph: Yankees and Red Sox meet with the division race tightening down the stretch.
+    - link "Open scoreboards":
+      - /url: /nba/scoreboard
+  - link "Mikal Bridges news feature NBA Bridges sets the tone for a new season in New York":
+    - /url: /news/mikal-bridges
+    - img "Mikal Bridges news feature"
+    - text: NBA
+    - heading "Bridges sets the tone for a new season in New York" [level=3]
+  - link "Champions League feature CHAMPIONS LEAGUE How City's historic 2022–23 run stacks up":
+    - /url: /soccer/man-city-stats
+    - img "Champions League feature"
+    - text: CHAMPIONS LEAGUE
+    - heading "How City's historic 2022–23 run stacks up" [level=3]
+  - complementary:
+    - heading "Top Headlines" [level=3]
+    - 'link "Bridges: Knicks embracing championship expectations"':
+      - /url: /news/mikal-bridges
+    - link "NBA's highest-scoring offenses, ranked":
+      - /url: /nba/team-stats
+    - link "Real Madrid's Champions League path set":
+      - /url: /team/real-madrid/schedule
+    - link "Ronaldo's World Cup record, tournament by tournament":
+      - /url: /soccer/cristiano-ronaldo-world-cup
+    - link "Revisit the biggest UFC cards of 2019":
+      - /url: /ufc/schedule
+  - text: Explore ESPN
+  - heading "Find the sports story you need" [level=2]
+  - paragraph: Scores, schedules, stats, players and shows—all in one place.
+  - link "NHL Atlantic Division team leaders Pick a club and follow a leader":
+    - /url: /nhl/atlantic
+    - text: NHL
+    - heading "Atlantic Division team leaders" [level=3]
+    - paragraph: Pick a club and follow a leader
+  - link "NBA Yesterday's NBA scores Full scoreboard and game status":
+    - /url: /nba/scoreboard?preset=yesterday
+    - text: NBA
+    - heading "Yesterday's NBA scores" [level=3]
+    - paragraph: Full scoreboard and game status
+  - link "MLS 2022 scoring leaders Highest goal scorer and leaderboard":
+    - /url: /soccer/mls-leaders
+    - text: MLS
+    - heading "2022 scoring leaders" [level=3]
+    - paragraph: Highest goal scorer and leaderboard
+  - link "UEFA CHAMPIONS LEAGUE Manchester City 2022/23 stats Club performance by competition":
+    - /url: /soccer/man-city-stats
+    - text: UEFA CHAMPIONS LEAGUE
+    - heading "Manchester City 2022/23 stats" [level=3]
+    - paragraph: Club performance by competition
+  - link "NFL Michael Jordan biography Career, position and personal details":
+    - /url: /nfl/player/michael-jordan
+    - text: NFL
+    - heading "Michael Jordan biography" [level=3]
+    - paragraph: Career, position and personal details
+  - link "COPA DEL REY Barcelona's next fixture Upcoming cup schedule":
+    - /url: /team/barcelona/schedule
+    - text: COPA DEL REY
+    - heading "Barcelona's next fixture" [level=3]
+    - paragraph: Upcoming cup schedule
+  - link "NBA NEWS Latest on Mikal Bridges News, analysis and updates":
+    - /url: /news/mikal-bridges
+    - text: NBA NEWS
+    - heading "Latest on Mikal Bridges" [level=3]
+    - paragraph: News, analysis and updates
+  - 'link "F1 Play an F1 podcast Unlapped: strategy and paddock news"':
+    - /url: /podcasts/f1
+    - text: F1
+    - heading "Play an F1 podcast" [level=3]
+    - paragraph: "Unlapped: strategy and paddock news"
+  - link "UFC 2019 schedule & athlete profiles Select an event and fighter":
+    - /url: /ufc/schedule
+    - text: UFC
+    - heading "2019 schedule & athlete profiles" [level=3]
+    - paragraph: Select an event and fighter
+  - link "NBA March 11 scoreboard Scores from a selected date":
+    - /url: /nba/scoreboard?preset=march11
+    - text: NBA
+    - heading "March 11 scoreboard" [level=3]
+    - paragraph: Scores from a selected date
+  - link "NBA Dallas Mavericks schedule Upcoming games and results":
+    - /url: /team/dallas-mavericks/schedule
+    - text: NBA
+    - heading "Dallas Mavericks schedule" [level=3]
+    - paragraph: Upcoming games and results
+  - link "NBA Kevin Durant's bio Player profile and career summary":
+    - /url: /nba/player/kevin-durant
+    - text: NBA
+    - heading "Kevin Durant's bio" [level=3]
+    - paragraph: Player profile and career summary
+  - link "NBA Golden State Warriors roster Players by position":
+    - /url: /team/golden-state-warriors/roster
+    - text: NBA
+    - heading "Golden State Warriors roster" [level=3]
+    - paragraph: Players by position
+  - link "NFL Super Bowl 2015 scoreboard Patriots vs. Seahawks recap":
+    - /url: /nfl/super-bowl-2015
+    - text: NFL
+    - heading "Super Bowl 2015 scoreboard" [level=3]
+    - paragraph: Patriots vs. Seahawks recap
+  - link "NBA Top scoring team this season Sort teams by points per game":
+    - /url: /nba/team-stats
+    - text: NBA
+    - heading "Top scoring team this season" [level=3]
+    - paragraph: Sort teams by points per game
+  - link "LALIGA Athletic Club stats Season performance and leaders":
+    - /url: /soccer/athletic-club-stats
+    - text: LALIGA
+    - heading "Athletic Club stats" [level=3]
+    - paragraph: Season performance and leaders
+  - link "NBA 2020–21 season leaders Regular-season category leaders":
+    - /url: /nba/season-leaders
+    - text: NBA
+    - heading "2020–21 season leaders" [level=3]
+    - paragraph: Regular-season category leaders
+  - link "UEFA CHAMPIONS LEAGUE Real Madrid schedule Group and knockout fixtures":
+    - /url: /team/real-madrid/schedule
+    - text: UEFA CHAMPIONS LEAGUE
+    - heading "Real Madrid schedule" [level=3]
+    - paragraph: Group and knockout fixtures
+  - link "PORTUGAL Cristiano Ronaldo World Cup stats Every tournament, one record":
+    - /url: /soccer/cristiano-ronaldo-world-cup
+    - text: PORTUGAL
+    - heading "Cristiano Ronaldo World Cup stats" [level=3]
+    - paragraph: Every tournament, one record
+  - link "SERIE A April 8, 2023 fixtures Italian league schedule":
+    - /url: /soccer/serie-a-schedule
+    - text: SERIE A
+    - heading "April 8, 2023 fixtures" [level=3]
+    - paragraph: Italian league schedule
+  - link "ESPN2 Upcoming soccer events TV listings by network":
+    - /url: /soccer/tv-schedule
+    - text: ESPN2
+    - heading "Upcoming soccer events" [level=3]
+    - paragraph: TV listings by network
+  - link "NBA Brooklyn Nets schedule Upcoming games and results":
+    - /url: /team/brooklyn-nets/schedule
+    - text: NBA
+    - heading "Brooklyn Nets schedule" [level=3]
+    - paragraph: Upcoming games and results
+- contentinfo:
+  - link "ESPN":
+    - /url: /
+  - paragraph: © 2026 ESPN Mock Experience. Synthetic data for demonstration only.
+  - link "Scores":
+    - /url: /search?q=scores
+  - link "Teams":
+    - /url: /search?q=teams
+  - link "Podcasts":
+    - /url: /podcasts/f1

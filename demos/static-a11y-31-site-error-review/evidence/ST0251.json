@@ -1,0 +1,175 @@
+{
+  "site": "soundcloud",
+  "siteKey": "14-soundcloud",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/14-soundcloud/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 2,
+  "selector": [
+    ".category-result > div:nth-child(1) > .eyebrow"
+  ],
+  "html": "<span class=\"eyebrow\">ARTISTS IN CHILL</span>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#777777",
+          "bgColor": "#ffffff",
+          "contrastRatio": 4.47,
+          "fontSize": "8.3pt (11px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<section class=\"section-block category-section\">",
+            "target": [
+              ".category-section"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/14-soundcloud/axe/attempt-1/raw.json",
+  "errorId": "ST0251",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "ARTISTS IN CHILL",
+    "html": "<span class=\"eyebrow\">ARTISTS IN CHILL</span>",
+    "class": "eyebrow",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 139,
+      "y": 1295,
+      "width": 393.390625,
+      "height": 12
+    },
+    "style": {
+      "color": "rgb(119, 119, 119)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "11px",
+      "fontWeight": "850",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/DIV[1]",
+      "tag": "DIV",
+      "class": "",
+      "text": "ARTISTS IN CHILL\nCreators to follow\n\nTap follow to bring new releases directly into your feed.",
+      "html": "<div><span class=\"eyebrow\">ARTISTS IN CHILL</span><h3>Creators to follow</h3><p>Tap follow to bring new releases directly into your feed.</p></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".eyebrow",
+        "declarations": {
+          "color": "rgb(119, 119, 119)",
+          "font-size": "11px",
+          "font-weight": "850",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "SoundCloud — Hear what’s next",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Discover what’s next in music.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Made for your moment",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find your frequency",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Creators to follow",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "The tracks shaping culture right now.",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "SOUNDCLOUD\nHome\nFeed\nCharts\nLibrary\nSearch SoundCloud\nFor Artists\nAR"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nFeed\nCharts\nLibrary"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR SOUND, EVERYWHERE\nDiscover what’s next in music.\n\nFresh tracks, cult favorites and independent voices—all in one place.\n\nExplore trending\nBrowse charts\nSTART HERE\nMade for your moment\nSee what’s trending \nUG\nALBUM\nUltimate Game Mix: Level Up\n\nGameWave Collective\n\n#Gaming\n#Electronics\n Like\n Repost\nRC\nPLAYLIST\nRock Classics Recharged\n\nSoundCloud Rock\n\n#Rock\n Like\n Repost\nEA\nPLAYLIST\nElectronics After Dark\n\nPulse Selects\n\n#Electronics\n Like\n Repost\nEXPLORE BY MOOD\nFind your frequency\nChill\nRo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": "Audio player",
+        "text": "MC\nMidnight City Lights\nLunar Arcade\n0:00\n4:08\nNext up"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"SoundCloud home\":\n    - /url: /\n    - text: SOUNDCLOUD\n  - navigation \"Primary navigation\":\n    - link \"Home\":\n      - /url: /\n    - link \"Feed\":\n      - /url: /feed\n    - link \"Charts\":\n      - /url: /charts\n    - link \"Library\":\n      - /url: /library/likes\n  - search:\n    - text: Search SoundCloud\n    - textbox \"Search SoundCloud\":\n      - /placeholder: Search artists, tracks, playlists\n    - button \"Submit search\"\n  - link \"For Artists\":\n    - /url: /plans\n  - link \"Open your library\":\n    - /url: /library/likes\n    - text: AR\n- main:\n  - text: YOUR SOUND, EVERYWHERE\n  - heading \"Discover what’s next in music.\" [level=1]\n  - paragraph: Fresh tracks, cult favorites and independent voices—all in one place.\n  - link \"Explore trending\":\n    - /url: /trending\n  - link \"Browse charts\":\n    - /url: /charts\n  - text: START HERE\n  - heading \"Made for your moment\" [level=2]\n  - link \"See what’s trending\":\n    - /url: /trending\n  - article:\n    - 'button \"Play Ultimate Game Mix: Level Up\"'\n    - text: Album\n    - 'link \"Ultimate Game Mix: Level Up\"':\n      - /url: /playlist/ultimate-game-mix\n    - paragraph: GameWave Collective\n    - text: \"#Gaming #Electronics\"\n    - 'button \"Like Ultimate Game Mix: Level Up\"': Like\n    - 'button \"Repost Ultimate Game Mix: Level Up\"': Repost\n    - 'button \"Add Ultimate Game Mix: Level Up to Next up\"'\n  - article:\n    - button \"Play Rock Classics Recharged\"\n    - text: Playlist\n    - link \"Rock Classics Recharged\":\n      - /url: /playlist/rock-revival\n    - paragraph: SoundCloud Rock\n    - text: \"#Rock\"\n    - button \"Like Rock Classics Recharged\": Like\n    - button \"Repost Rock Classics Recharged\": Repost\n    - button \"Add Rock Classics Recharged to Next up\"\n  - article:\n    - button \"Play Electronics After Dark\"\n    - text: Playlist\n    - link \"Electronics After Dark\":\n      - /url: /playlist/electronics-after-dark\n    - paragraph: Pulse Selects\n    - text: \"#Electronics\"\n    - button \"Like Electronics After Dark\": Like\n    - button \"Repost Electronics After Dark\": Repost\n    - button \"Add Electronics After Dark to Next up\"\n  - text: EXPLORE BY MOOD\n  - heading \"Find your frequency\" [level=2]\n  - group \"Music categories\":\n    - button \"Chill\"\n    - button \"Rock\"\n    - button \"Pop\"\n    - button \"Electronic\"\n    - button \"Hip-hop & Rap\"\n    - button \"Indian classical\"\n  - text: ARTISTS IN CHILL\n  - heading \"Creators to follow\" [level=3]\n  - paragraph: Tap follow to bring new releases directly into your feed.\n  - article:\n    - link \"MC\":\n      - /url: /artist/maya-cove\n    - link \"Maya Cove\":\n      - /url: /artist/maya-cove\n    - text: Chill · 42.8K followers\n    - button \"Follow\"\n  - text: SOUNDCLOUD CHARTS\n  - heading \"The tracks shaping culture right now.\" [level=2]\n  - paragraph: See what listeners are playing, sharing and reposting worldwide.\n  - link \"Open Top 50\":\n    - /url: /charts\n- contentinfo \"Audio player\":\n  - strong: Midnight City Lights\n  - text: Lunar Arcade\n  - button \"Like current track\"\n  - button \"Previous track\"\n  - button \"Play\"\n  - button \"Next track\"\n  - text: 0:00 4:08\n  - button \"Mute\"\n  - button \"Next up\""
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/14-soundcloud/dist/assets/index-dbDU6cjI.js",
+      "offset": 334671,
+      "match": "className:\"eyebrow\"",
+      "context": "section-block category-section\",children:[o.jsx(bo,{eyebrow:\"EXPLORE BY MOOD\",title:\"Find your frequency\"}),o.jsx(\"div\",{className:\"category-pills\",role:\"group\",\"aria-label\":\"Music categories\",children:[\"Chill\",\"Rock\",\"Pop\",\"Electronic\",\"Hip-hop & Rap\",\"Indian classical\"].map(s=>o.jsx(\"button\",{className:n===s?\"active\":\"\",onClick:()=>r(s),children:s},s))}),o.jsxs(\"div\",{className:\"category-result\",children:[o.jsxs(\"div\",{children:[o.jsxs(\"span\",{className:\"eyebrow\",children:[\"ARTISTS IN \",n.toUpperCase()]}),o.jsx(\"h3\",{children:\"Creators to follow\"}),o.jsx(\"p\",{children:\"Tap follow to bring new releases directly into your feed.\"})]}),o.jsx(\"div\",{className:\"artist-mini-grid\",children:c.length?c.map(s=>o.jsx(M6,{artist:s},s.id)):o.jsxs(lt,{className:\"empty-category\",to:`/search?q=${encodeURIComponent(n)}`,children:[\"Explore all \",n,\" sounds \",o.jsx(J,{icon:X1})]})})]})]}),o.jsxs(\"section\",{className:\"sectio"
+    }
+  ]
+}

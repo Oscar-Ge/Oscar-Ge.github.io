@@ -1,0 +1,185 @@
+- banner:
+  - text: "America’s #1 trusted recipe resource Tested in home kitchens since 1997"
+  - link "Allrecipes home":
+    - /url: /
+    - text: allrecipes *
+  - search:
+    - text: Search recipes and ingredients
+    - textbox "Search recipes and ingredients":
+      - /placeholder: Search recipes, ingredients, and more
+    - button "Search"
+  - button "Log In"
+  - link "My recipes, 0 items":
+    - /url: /my-recipes
+    - text: My Recipes
+  - navigation "Main navigation":
+    - link "Recipes":
+      - /url: /recipes
+    - link "Quick & Easy":
+      - /url: /recipes?maxTime=30
+    - link "Desserts":
+      - /url: /recipes?category=desserts
+    - link "Air Fryer":
+      - /url: /collection/air-fryer-favorites
+    - link "Kitchen Tips":
+      - /url: /tips
+    - link "Food News":
+      - /url: /news
+    - link "Holidays":
+      - /url: /recipes?category=easter-brunch
+- main:
+  - paragraph: Cook with confidence
+  - heading "Recipes you’ll want to make again and again." [level=1]
+  - paragraph: Discover reliable favorites, quick weeknight dinners, and ideas for every craving—all tested by home cooks.
+  - text: What are you looking for?
+  - textbox "What are you looking for?":
+    - /placeholder: Try “cinnamon” or “lemon bars”
+  - button "Search"
+  - link "30-Minute Garlic Butter Shrimp Pasta Tonight’s pick 30-Minute Garlic Butter Shrimp Pasta 4.8 out of 5 stars, 2,914 ratings Get the recipe":
+    - /url: /recipe/garlic-butter-shrimp-pasta
+    - img "30-Minute Garlic Butter Shrimp Pasta"
+    - text: Tonight’s pick
+    - heading "30-Minute Garlic Butter Shrimp Pasta" [level=2]
+    - text: 4.8 (2,914) Get the recipe
+  - paragraph: Find exactly what you need
+  - heading "What sounds good?" [level=2]
+  - link "30-Minute Meals Fast, full-flavored dinners":
+    - /url: /recipes?maxTime=30
+    - strong: 30-Minute Meals
+    - text: Fast, full-flavored dinners
+  - link "Sweet Potato Make it the main event":
+    - /url: /recipes?ingredient=sweet-potato
+    - strong: Sweet Potato
+    - text: Make it the main event
+  - link "Quick Seafood Main dishes in 30 minutes":
+    - /url: /recipes?category=main-dishes&ingredient=seafood&maxTime=30
+    - strong: Quick Seafood
+    - text: Main dishes in 30 minutes
+  - link "Filipino Desserts Five-star sweet favorites":
+    - /url: /recipes?cuisine=Filipino&category=desserts&rating=5
+    - strong: Filipino Desserts
+    - text: Five-star sweet favorites
+  - link "Easter Brunch Celebration-worthy recipes":
+    - /url: /recipes?category=easter-brunch
+    - strong: Easter Brunch
+    - text: Celebration-worthy recipes
+  - link "Food Safety Smart kitchen know-how":
+    - /url: /tips?topic=food-safety
+    - strong: Food Safety
+    - text: Smart kitchen know-how
+  - paragraph: Weeknight wins
+  - heading "Ready in 30 minutes" [level=2]
+  - link "View all quick recipes":
+    - /url: /recipes?maxTime=30
+  - article:
+    - link "View Spicy Chicken Noodles":
+      - /url: /recipe/spicy-chicken-noodles
+      - img "Spicy Chicken Noodles"
+    - button "Favorite Spicy Chicken Noodles"
+    - text: Ready in 25 minutes
+    - paragraph: Chicken · Asian Inspired
+    - heading "Spicy Chicken Noodles" [level=3]:
+      - link "Spicy Chicken Noodles":
+        - /url: /recipe/spicy-chicken-noodles
+    - text: 4.9 (2,387) 25 mins 4 servings
+    - button "Save recipe"
+  - article:
+    - link "View 5-Star Honey Garlic Pork Chops":
+      - /url: /recipe/honey-garlic-pork-chops
+      - img "5-Star Honey Garlic Pork Chops"
+    - button "Favorite 5-Star Honey Garlic Pork Chops"
+    - text: 5-star recipe
+    - paragraph: Pork · American
+    - heading "5-Star Honey Garlic Pork Chops" [level=3]:
+      - link "5-Star Honey Garlic Pork Chops":
+        - /url: /recipe/honey-garlic-pork-chops
+    - text: 5.0 (684) 30 mins 4 servings
+    - button "Save recipe"
+  - article:
+    - link "View Savory Sweet Potato Breakfast Hash":
+      - /url: /recipe/savory-sweet-potato-hash
+      - img "Savory Sweet Potato Breakfast Hash"
+    - button "Favorite Savory Sweet Potato Breakfast Hash"
+    - paragraph: Sweet Potato · American
+    - heading "Savory Sweet Potato Breakfast Hash" [level=3]:
+      - link "Savory Sweet Potato Breakfast Hash":
+        - /url: /recipe/savory-sweet-potato-hash
+    - text: 4.7 (842) 30 mins 4 servings
+    - button "Save recipe"
+  - article:
+    - link "View Easy Coffee Mocha":
+      - /url: /recipe/easy-coffee-mocha
+      - img "Easy Coffee Mocha"
+    - button "Favorite Easy Coffee Mocha"
+    - text: Café favorite
+    - paragraph: Coffee · American
+    - heading "Easy Coffee Mocha" [level=3]:
+      - link "Easy Coffee Mocha":
+        - /url: /recipe/easy-coffee-mocha
+    - text: 4.8 (1,106) 10 mins 2 servings
+    - button "Save recipe"
+  - paragraph: Fresh from our editors
+  - heading "Food news & trends" [level=2]
+  - link "See all stories":
+    - /url: /news
+  - article:
+    - link "The Crispy Rice Salad Taking Over Summer Tables":
+      - /url: /article/crispy-rice-salad-trend
+      - img "The Crispy Rice Salad Taking Over Summer Tables"
+    - paragraph: Food Trends · August 14, 2026
+    - heading "The Crispy Rice Salad Taking Over Summer Tables" [level=3]:
+      - link "The Crispy Rice Salad Taking Over Summer Tables":
+        - /url: /article/crispy-rice-salad-trend
+    - paragraph: Crunchy, bright, and endlessly adaptable, this is the dinner trend our editors keep making.
+    - link "Read more":
+      - /url: /article/crispy-rice-salad-trend
+    - button "Share"
+  - article:
+    - link "FreshFields Recalls Cinnamon Granola Bars in 12 States":
+      - /url: /article/freshfields-granola-recall
+      - img "FreshFields Recalls Cinnamon Granola Bars in 12 States"
+    - paragraph: Recall · August 15, 2026
+    - heading "FreshFields Recalls Cinnamon Granola Bars in 12 States" [level=3]:
+      - link "FreshFields Recalls Cinnamon Granola Bars in 12 States":
+        - /url: /article/freshfields-granola-recall
+    - paragraph: Here’s how to check your pantry and what to do if you have an affected package.
+    - link "Read more":
+      - /url: /article/freshfields-granola-recall
+    - button "Share"
+  - complementary:
+    - paragraph: The Daily Dish
+    - heading "Delicious ideas, delivered." [level=2]
+    - paragraph: Get our best recipes and smartest kitchen tips in your inbox.
+    - text: Email address
+    - textbox "Email address"
+    - button "Sign me up"
+- contentinfo:
+  - link "allrecipes *":
+    - /url: /
+  - paragraph: Reliable recipes and helpful kitchen know-how, made for home cooks.
+  - heading "Explore" [level=2]
+  - link "All Recipes":
+    - /url: /recipes
+  - link "30-Minute Meals":
+    - /url: /recipes?maxTime=30
+  - link "Air Fryer Recipes":
+    - /url: /collection/air-fryer-favorites
+  - link "Desserts":
+    - /url: /recipes?category=desserts
+  - heading "Learn" [level=2]
+  - link "Kitchen Tips":
+    - /url: /tips
+  - link "Food Safety":
+    - /url: /tips?topic=food-safety
+  - link "Recall News":
+    - /url: /news?tab=recalls
+  - link "Food Trends":
+    - /url: /news?tab=trends
+  - heading "Your kitchen" [level=2]
+  - link "My Recipes":
+    - /url: /my-recipes
+  - link "Search Cinnamon Recipes":
+    - /url: /search?q=cinnamon
+  - link "About Allrecipes":
+    - /url: /about
+  - text: © 2026 Allrecipes demo All content is synthetic and for demonstration only.

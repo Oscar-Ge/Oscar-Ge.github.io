@@ -1,0 +1,172 @@
+{
+  "site": "soundcloud",
+  "siteKey": "14-soundcloud",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/14-soundcloud/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/14-soundcloud/wave/attempt-1/raw.json",
+  "errorId": "ST0259",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+    "tag": "A",
+    "text": "Home",
+    "html": "<a aria-current=\"page\" class=\"active\" href=\"/\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"house\" class=\"svg-inline--fa fa-house\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z\"></path></svg><span>Home</span></a>",
+    "class": "active",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 198.734375,
+      "y": 0,
+      "width": 88.375,
+      "height": 64
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(41, 41, 44)",
+      "fontSize": "13px",
+      "fontWeight": "650",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "NAV",
+      "role": null,
+      "label": "Primary navigation",
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+      "tag": "NAV",
+      "class": "main-nav",
+      "text": "Home\nFeed\nCharts\nLibrary",
+      "html": "<nav class=\"main-nav\" aria-label=\"Primary navigation\"><a aria-current=\"page\" class=\"active\" href=\"/\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"house\" class=\"svg-inline--fa fa-house\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z\"></path></svg><span>Home</span></a><a class=\"\" href=\"/feed\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"user-group\" class=\"svg-inline--fa fa-user-group\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zM0 464c0-97.2 78.8-176 176-176s176 78.8 176 176l0 6c0 23.2-18.8 42-42 42L42 512c-23.2 0-42-18.8-42-42l0-6zM432 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240c79.5 0 144 64.5 144 144l0 22.4c0 23-18.6 41.6-41.6 41.6l-144.8 0c6.6-12.5 10.4-26.8 10.4-42l0-6c0-51.5-17.4-98.9-46.5-136.7 22.6-14.7 49.6-23.3 78.5-23.3z\"></path></svg><span>Feed</span></a><a class=\"\" href=\"/charts\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"chart-line\" class=\"svg-inline--fa fa-chart-line\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7 262.6 153.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l73.4-73.4 57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z\"></path></svg><span>Charts</span></a><a class=\"\" href=\"/library/likes\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"book-open\" class=\"svg-inline--fa fa-book-open\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 141.3l0 309.3 .5-.2C311.1 427.7 369.7 416 428.8 416l19.2 0 0-320-19.2 0c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7zM230.9 61.5L256 72 281.1 61.5C327.9 42 378.1 32 428.8 32L464 32c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-35.2 0c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480L48 480c-26.5 0-48-21.5-48-48L0 80C0 53.5 21.5 32 48 32l35.2 0c50.7 0 100.9 10 147.7 29.5z\"></path></svg><span>Library</span></a></nav>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+      "tag": "A",
+      "text": "Home",
+      "ariaLabel": null,
+      "href": "/",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".main-nav a",
+        "declarations": {
+          "color": "rgb(189, 189, 189)",
+          "font-size": "13px",
+          "font-weight": "650",
+          "display": "flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".main-nav a:hover, .main-nav a.active",
+        "declarations": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(41, 41, 44)",
+          "background-color": "rgb(41, 41, 44)"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".main-nav a",
+        "declarations": {
+          "font-size": "10px"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "SoundCloud — Hear what’s next",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Discover what’s next in music.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Made for your moment",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find your frequency",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Creators to follow",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "The tracks shaping culture right now.",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "SOUNDCLOUD\nHome\nFeed\nCharts\nLibrary\nSearch SoundCloud\nFor Artists\nAR"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nFeed\nCharts\nLibrary"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR SOUND, EVERYWHERE\nDiscover what’s next in music.\n\nFresh tracks, cult favorites and independent voices—all in one place.\n\nExplore trending\nBrowse charts\nSTART HERE\nMade for your moment\nSee what’s trending \nUG\nALBUM\nUltimate Game Mix: Level Up\n\nGameWave Collective\n\n#Gaming\n#Electronics\n Like\n Repost\nRC\nPLAYLIST\nRock Classics Recharged\n\nSoundCloud Rock\n\n#Rock\n Like\n Repost\nEA\nPLAYLIST\nElectronics After Dark\n\nPulse Selects\n\n#Electronics\n Like\n Repost\nEXPLORE BY MOOD\nFind your frequency\nChill\nRo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": "Audio player",
+        "text": "MC\nMidnight City Lights\nLunar Arcade\n0:00\n4:08\nNext up"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"SoundCloud home\":\n    - /url: /\n    - text: SOUNDCLOUD\n  - navigation \"Primary navigation\":\n    - link \"Home\":\n      - /url: /\n    - link \"Feed\":\n      - /url: /feed\n    - link \"Charts\":\n      - /url: /charts\n    - link \"Library\":\n      - /url: /library/likes\n  - search:\n    - text: Search SoundCloud\n    - textbox \"Search SoundCloud\":\n      - /placeholder: Search artists, tracks, playlists\n    - button \"Submit search\"\n  - link \"For Artists\":\n    - /url: /plans\n  - link \"Open your library\":\n    - /url: /library/likes\n    - text: AR\n- main:\n  - text: YOUR SOUND, EVERYWHERE\n  - heading \"Discover what’s next in music.\" [level=1]\n  - paragraph: Fresh tracks, cult favorites and independent voices—all in one place.\n  - link \"Explore trending\":\n    - /url: /trending\n  - link \"Browse charts\":\n    - /url: /charts\n  - text: START HERE\n  - heading \"Made for your moment\" [level=2]\n  - link \"See what’s trending\":\n    - /url: /trending\n  - article:\n    - 'button \"Play Ultimate Game Mix: Level Up\"'\n    - text: Album\n    - 'link \"Ultimate Game Mix: Level Up\"':\n      - /url: /playlist/ultimate-game-mix\n    - paragraph: GameWave Collective\n    - text: \"#Gaming #Electronics\"\n    - 'button \"Like Ultimate Game Mix: Level Up\"': Like\n    - 'button \"Repost Ultimate Game Mix: Level Up\"': Repost\n    - 'button \"Add Ultimate Game Mix: Level Up to Next up\"'\n  - article:\n    - button \"Play Rock Classics Recharged\"\n    - text: Playlist\n    - link \"Rock Classics Recharged\":\n      - /url: /playlist/rock-revival\n    - paragraph: SoundCloud Rock\n    - text: \"#Rock\"\n    - button \"Like Rock Classics Recharged\": Like\n    - button \"Repost Rock Classics Recharged\": Repost\n    - button \"Add Rock Classics Recharged to Next up\"\n  - article:\n    - button \"Play Electronics After Dark\"\n    - text: Playlist\n    - link \"Electronics After Dark\":\n      - /url: /playlist/electronics-after-dark\n    - paragraph: Pulse Selects\n    - text: \"#Electronics\"\n    - button \"Like Electronics After Dark\": Like\n    - button \"Repost Electronics After Dark\": Repost\n    - button \"Add Electronics After Dark to Next up\"\n  - text: EXPLORE BY MOOD\n  - heading \"Find your frequency\" [level=2]\n  - group \"Music categories\":\n    - button \"Chill\"\n    - button \"Rock\"\n    - button \"Pop\"\n    - button \"Electronic\"\n    - button \"Hip-hop & Rap\"\n    - button \"Indian classical\"\n  - text: ARTISTS IN CHILL\n  - heading \"Creators to follow\" [level=3]\n  - paragraph: Tap follow to bring new releases directly into your feed.\n  - article:\n    - link \"MC\":\n      - /url: /artist/maya-cove\n    - link \"Maya Cove\":\n      - /url: /artist/maya-cove\n    - text: Chill · 42.8K followers\n    - button \"Follow\"\n  - text: SOUNDCLOUD CHARTS\n  - heading \"The tracks shaping culture right now.\" [level=2]\n  - paragraph: See what listeners are playing, sharing and reposting worldwide.\n  - link \"Open Top 50\":\n    - /url: /charts\n- contentinfo \"Audio player\":\n  - strong: Midnight City Lights\n  - text: Lunar Arcade\n  - button \"Like current track\"\n  - button \"Previous track\"\n  - button \"Play\"\n  - button \"Next track\"\n  - text: 0:00 4:08\n  - button \"Mute\"\n  - button \"Next up\""
+  },
+  "sourceSnippets": []
+}

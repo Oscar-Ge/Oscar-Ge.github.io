@@ -1,0 +1,166 @@
+{
+  "site": "amazon",
+  "siteKey": "02-amazon",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/02-amazon/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 2,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/02-amazon/wave/attempt-1/raw.json",
+  "errorId": "ST0084",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]/A[1]",
+    "tag": "A",
+    "text": "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones",
+    "html": "<a href=\"/product/headphones-soundcore\" data-discover=\"true\">Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones</a>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/product/headphones-soundcore",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 718.59375,
+      "y": 1184.546875,
+      "width": 202.71875,
+      "height": 58.5
+    },
+    "style": {
+      "color": "rgb(15, 17, 17)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "15px",
+      "fontWeight": "600",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]",
+      "tag": "DIV",
+      "class": "home-product-info",
+      "text": "Popular pick\nSoundcore Life Q30 Hybrid Active Noise Cancelling Headphones\n4.5\n(72,318)\n$\n69\n99\nAdd to cart",
+      "html": "<div class=\"home-product-info\"><span class=\"deal-pill blue\">Popular pick</span><a href=\"/product/headphones-soundcore\" data-discover=\"true\">Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones</a><span class=\"rating\" aria-label=\"4.5 out of 5 stars, 72318 reviews\"><span class=\"star-icons\" aria-hidden=\"true\"><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star star filled\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star star filled\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star star filled\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star star filled\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star star filled\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg></span><span>4.5</span><span class=\"review-count\">(72,318)</span></span><div class=\"price \"><span class=\"price-symbol\">$</span><span class=\"price-whole\">69</span><span class=\"price-fraction\">99</span></div><button class=\"amazon-button\">Add to cart</button></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]/A[1]",
+      "tag": "A",
+      "text": "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones",
+      "ariaLabel": null,
+      "href": "/product/headphones-soundcore",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:38453/assets/index-B4Mtu56m.css",
+        "selector": ".home-product-info > a",
+        "declarations": {
+          "color": "var(--ink)",
+          "font-size": "15px",
+          "font-weight": "600"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Amazon.com: Shop deals and everyday essentials",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Everything you need,\nall in one place.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Shop by category",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Deals worth a look",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Fast, free delivery. One easy membership.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Get to Know Us",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Make Money with Us",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Amazon Payment Products",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Let Us Help You",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "amazon\n.com\nDelivering to Salt Lake City\nUpdate location 84101\nSearch department\nAll\nAmazon Pharmacy\nBooks\nElectronics\nGift Cards\nHome & Kitchen\nPet Supplies\nVideo Games\nSearch Amazon\nUS\nEN\nHello, sign in\nAccount & Lists \nReturns\n& Orders\n0\nCart\nAll\nToday’s Deals\nAmazon Basics\nBooks\nPharmacy\nGift Cards\nPet Supplies\nElectronics\n Free delivery on millions of items"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "All\nToday’s Deals\nAmazon Basics\nBooks\nPharmacy\nGift Cards\nPet Supplies\nElectronics\n Free delivery on millions of items"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "BIG VALUE, DELIVERED\nEverything you need,\nall in one place.\n\nExplore everyday essentials, fresh releases, and limited-time deals with fast, free delivery.\n\nShop today’s deals \nEXPLORE DEPARTMENTS\nShop by category\nSee all deals \nGaming deals\nSave on mice & more\nBooks\nGreat reads in every format\nPharmacy\nView medication details\nHome essentials\nStock up and save\nElectronics\nStorage, audio & wearables\nPet supplies\nFood, beds & everyday care\nGift cards\nDigital and print-at-home\nAmazon Basics\nSimple. "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Back to top\nGet to Know Us\nCareers\nAmazon Newsletter\nAbout Amazon\nMake Money with Us\nSell products on Amazon\nBecome an Affiliate\nAdvertise Your Products\nAmazon Payment Products\nAmazon Visa\nAmazon Gift Cards\nReload Your Balance\nLet Us Help You\nYour Orders\nShipping Rates & Policies\nHelp\namazon\n.com\nEnglish\n$ USD - U.S. Dollar\nUnited States\nConditions of Use\nPrivacy Notice\nConsumer Health Data Privacy Disclosure\n© 1996-2026, Amazon.com, Inc. or its affiliates"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Amazon home\":\n    - /url: /\n    - text: amazon .com\n  - button \"Change delivery location\":\n    - text: Delivering to Salt Lake City\n    - strong: Update location 84101\n  - search:\n    - text: Search department\n    - combobox \"Search department\":\n      - option \"All\" [selected]\n      - option \"Amazon Pharmacy\"\n      - option \"Books\"\n      - option \"Electronics\"\n      - option \"Gift Cards\"\n      - option \"Home & Kitchen\"\n      - option \"Pet Supplies\"\n      - option \"Video Games\"\n    - text: Search Amazon\n    - textbox \"Search Amazon\"\n    - button \"Search\"\n  - 'button \"Language: English\"':\n    - text: US\n    - strong: EN\n  - button \"Hello, sign in Account & Lists\":\n    - text: Hello, sign in\n    - strong: Account & Lists\n  - link \"Returns & Orders\":\n    - /url: /orders\n    - text: Returns\n    - strong: \"& Orders\"\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: \"0\"\n    - strong: Cart\n  - navigation \"Main navigation\":\n    - button \"All\"\n    - link \"Today’s Deals\":\n      - /url: /deals\n    - link \"Amazon Basics\":\n      - /url: /s?k=Amazon+Basics\n    - link \"Books\":\n      - /url: /s?k=Sam+Harris+books\n    - link \"Pharmacy\":\n      - /url: /s?k=Metformin+1000mg\n    - link \"Gift Cards\":\n      - /url: /s?k=Gift+Cards\n    - link \"Pet Supplies\":\n      - /url: /s?k=puppy+dog+food\n    - link \"Electronics\":\n      - /url: /s?k=external+solid+state+drives\n    - text: Free delivery on millions of items\n- main:\n  - text: Big value, delivered\n  - heading \"Everything you need, all in one place.\" [level=1]\n  - paragraph: Explore everyday essentials, fresh releases, and limited-time deals with fast, free delivery.\n  - button \"Shop today’s deals\"\n  - text: Explore departments\n  - heading \"Shop by category\" [level=2]\n  - link \"See all deals\":\n    - /url: /deals\n  - button \"Gaming deals Save on mice & more\":\n    - strong: Gaming deals\n    - text: Save on mice & more\n  - button \"Books Great reads in every format\":\n    - strong: Books\n    - text: Great reads in every format\n  - button \"Pharmacy View medication details\":\n    - strong: Pharmacy\n    - text: View medication details\n  - button \"Home essentials Stock up and save\":\n    - strong: Home essentials\n    - text: Stock up and save\n  - button \"Electronics Storage, audio & wearables\":\n    - strong: Electronics\n    - text: Storage, audio & wearables\n  - button \"Pet supplies Food, beds & everyday care\":\n    - strong: Pet supplies\n    - text: Food, beds & everyday care\n  - button \"Gift cards Digital and print-at-home\":\n    - strong: Gift cards\n    - text: Digital and print-at-home\n  - button \"Amazon Basics Simple. Reliable. Everyday.\":\n    - strong: Amazon Basics\n    - text: Simple. Reliable. Everyday.\n  - text: Popular right now\n  - heading \"Deals worth a look\" [level=2]\n  - link \"Explore all\":\n    - /url: /deals\n  - article:\n    - link \"Redragon M601 RGB Wired Gaming Mouse, 7 Buttons\":\n      - /url: /product/mouse-redragon\n      - img \"Redragon M601 RGB Wired Gaming Mouse, 7 Buttons\"\n    - text: 53% off\n    - link \"Redragon M601 RGB Wired Gaming Mouse, 7 Buttons\":\n      - /url: /product/mouse-redragon\n    - text: \"4.5 (48,123) $ 9 49 List: $19.99\"\n    - button \"Add to cart\"\n  - article:\n    - link \"Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones\":\n      - /url: /product/headphones-soundcore\n      - img \"Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones\"\n    - text: Popular pick\n    - link \"Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones\":\n      - /url: /product/headphones-soundcore\n    - text: 4.5 (72,318) $ 69 99\n    - button \"Add to cart\"\n  - article:\n    - link \"Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb\":\n      - /url: /product/puppy-pedigree\n      - img \"Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb\"\n    - text: Popular pick\n    - link \"Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb\":\n      - /url: /product/puppy-pedigree\n    - text: 4.7 (9,840) $ 7 98\n    - button \"Add to cart\"\n  - text: prime\n  - heading \"Fast, free delivery. One easy membership.\" [level=2]\n  - paragraph: Millions of items. Flexible delivery choices. Entertainment included.\n  - button \"Explore Prime picks\"\n- contentinfo:\n  - button \"Back to top\"\n  - heading \"Get to Know Us\" [level=3]\n  - button \"Careers\"\n  - button \"Amazon Newsletter\"\n  - button \"About Amazon\"\n  - heading \"Make Money with Us\" [level=3]\n  - button \"Sell products on Amazon\"\n  - button \"Become an Affiliate\"\n  - button \"Advertise Your Products\"\n  - heading \"Amazon Payment Products\" [level=3]\n  - button \"Amazon Visa\"\n  - button \"Amazon Gift Cards\"\n  - button \"Reload Your Balance\"\n  - heading \"Let Us Help You\" [level=3]\n  - link \"Your Orders\":\n    - /url: /orders\n  - button \"Shipping Rates & Policies\"\n  - button \"Help\"\n  - link \"amazon .com\":\n    - /url: /\n  - button \"English\"\n  - button \"$ USD - U.S. Dollar\"\n  - button \"United States\"\n  - text: Conditions of Use Privacy Notice Consumer Health Data Privacy Disclosure © 1996-2026, Amazon.com, Inc. or its affiliates"
+  },
+  "sourceSnippets": []
+}

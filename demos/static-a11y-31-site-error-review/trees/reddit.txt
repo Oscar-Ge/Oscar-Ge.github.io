@@ -1,0 +1,145 @@
+- banner:
+  - button "Reddit home": reddit
+  - search:
+    - textbox "Search Reddit"
+  - navigation "Account actions":
+    - button "Open chat"
+    - button "Notifications": "3"
+    - button "Create"
+    - button "Open user menu": oo
+- complementary:
+  - navigation "Primary navigation":
+    - button "Home"
+    - button "Popular"
+    - button "All"
+    - button "Create a post"
+    - button "Drafts"
+  - text: Communities
+  - button "Create a community"
+  - button "Create a community"
+  - button "r/announcements"
+  - paragraph: About • Content Policy Privacy • User Agreement
+- main:
+  - paragraph: Explore Reddit
+  - heading "Home" [level=1]
+  - paragraph: Your personalized front page of the internet
+  - button "Hot" [pressed]
+  - button "New"
+  - button "Top"
+  - button "Rising"
+  - button "Most comments"
+  - combobox "Popular location":
+    - option "Everywhere" [selected]
+    - option "Japan"
+    - option "Chile"
+  - button "Card view" [pressed]
+  - button "Compact view"
+  - article:
+    - button "Upvote Reddit’s newest community updates are here"
+    - strong: 18.6k
+    - button "Downvote Reddit’s newest community updates are here"
+    - button "r/announcements"
+    - text: • Posted by u/reddit • 18 min ago Official
+    - button "Reddit’s newest community updates are here"
+    - paragraph: A faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.
+    - button "2.8k comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for Reddit’s newest community updates are here"
+  - article:
+    - button "Upvote The night train returns for the summer festival season"
+    - strong: 68.4k
+    - button "Downvote The night train returns for the summer festival season"
+    - button "r/japan"
+    - text: • Posted by u/tokyo_window • 2 hr ago Travel
+    - button "The night train returns for the summer festival season"
+    - paragraph: A photo essay from the first service between Tokyo and Izumo.
+    - button "Open Night train at a lantern-lit station": Night train at a lantern-lit station
+    - button "3.4k comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for The night train returns for the summer festival season"
+  - article:
+    - button "Upvote TIL a library book was returned after 96 years—with a note"
+    - strong: 3.9k
+    - button "Downvote TIL a library book was returned after 96 years—with a note"
+    - button "r/todayilearned"
+    - text: • Posted by u/small_fact • 27 min ago Culture
+    - button "TIL a library book was returned after 96 years—with a note"
+    - paragraph: The librarian waived the late fee and added the note to the local archive.
+    - button "477 comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for TIL a library book was returned after 96 years—with a note"
+  - article:
+    - button "Upvote My team replaced one weekly meeting with this simple update"
+    - strong: "684"
+    - button "Downvote My team replaced one weekly meeting with this simple update"
+    - button "r/work"
+    - text: • Posted by u/desk_neighbor • 22 min ago Success Story
+    - button "My team replaced one weekly meeting with this simple update"
+    - paragraph: It is early, but people are more informed and have more focus time.
+    - button "211 comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for My team replaced one weekly meeting with this simple update"
+  - article:
+    - button "Upvote A tiny act of kindness became a whole town tradition"
+    - strong: 193k
+    - button "Downvote A tiny act of kindness became a whole town tradition"
+    - button "r/MadeMeSmile"
+    - text: • Posted by u/day_brightener • 12 days ago Wholesome
+    - button "A tiny act of kindness became a whole town tradition"
+    - paragraph: Every Friday, people leave a note of thanks for someone in their community.
+    - button "12.8k comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for A tiny act of kindness became a whole town tradition"
+  - article:
+    - button "Upvote What meal could you happily eat every week forever?"
+    - strong: 88.4k
+    - button "Downvote What meal could you happily eat every week forever?"
+    - button "r/food"
+    - text: • Posted by u/simmerdown • 8 months ago Discussion
+    - button "What meal could you happily eat every week forever?"
+    - paragraph: The answers have become a genuinely excellent dinner-planning list.
+    - button "48.2k comments"
+    - button "Copy link"
+    - button "Save"
+    - button "Follow"
+    - button "Award"
+    - button "More actions for What meal could you happily eat every week forever?"
+- complementary:
+  - text: Popular communities 1
+  - button "r/Music 81.2k viewing":
+    - strong: r/Music
+    - text: 81.2k viewing
+  - button "Join"
+  - text: "2"
+  - button "r/FortNiteBR 27.4k viewing":
+    - strong: r/FortNiteBR
+    - text: 27.4k viewing
+  - button "Join"
+  - text: "3"
+  - button "r/Fitness 18.4k viewing":
+    - strong: r/Fitness
+    - text: 18.4k viewing
+  - button "Join"
+  - text: "4"
+  - button "r/AskReddit 184k viewing":
+    - strong: r/AskReddit
+    - text: 184k viewing
+  - button "Join"
+  - strong: A better Reddit experience
+  - paragraph: All content here is realistic synthetic data. Your actions stay in this demo.
+- status

@@ -1,0 +1,192 @@
+{
+  "site": "apple",
+  "siteKey": "03-apple",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/03-apple/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "heading_possible",
+  "description": "Possible heading",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[1]/DIV[1]/P[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[1]/DIV[1]/P[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/03-apple/wave/attempt-1/raw.json",
+  "errorId": "ST0092",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[1]/DIV[1]/P[2]",
+    "tag": "P",
+    "text": "Just $99",
+    "html": "<p class=\"price-line\">Just $99</p>",
+    "class": "price-line",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 121.234375,
+      "y": 1788.53125,
+      "width": 484.53125,
+      "height": 27
+    },
+    "style": {
+      "color": "rgb(29, 29, 31)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "23px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "tile-copy",
+      "text": "HOMEPOD MINI\n\nBig sound. Small speaker.\n\nJust $99\n\nLearn more ",
+      "html": "<div class=\"tile-copy\"><p class=\"eyebrow\">HomePod mini</p><h2>Big sound. Small speaker.</h2><p class=\"price-line\">Just $99</p><a class=\"text-link\" href=\"/homepod-mini\" data-discover=\"true\">Learn more <svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:35205/assets/index-BsIEwNnl.css",
+        "selector": ".tile-copy p:not(.eyebrow)",
+        "declarations": {
+          "color": "rgb(82, 82, 86)",
+          "font-size": "17px"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:35205/assets/index-BsIEwNnl.css",
+        "selector": ".tile-copy .price-line",
+        "declarations": {
+          "color": "var(--ink)",
+          "font-size": "23px",
+          "font-weight": "700"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Apple — Products, Store & Support",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "iPad Pro",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Unbelievably thin. Incredibly powerful.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Sky blue. Sky high performance.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Big sound. Small speaker.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Adventure lives here.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Lost one? Find it.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/ARTICLE[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Come see what’s new.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Orders, repairs, and expert support.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Shop and Learn",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Apple Store",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "For Support",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "●\nStore\nMac\niPad\nWatch\nAirPods\nTV & Home\nSupport"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Global navigation",
+        "text": "●\nStore\nMac\niPad\nWatch\nAirPods\nTV & Home\nSupport"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "Get 3% Daily Cash back with Apple Card.\nShop Apple\n\nNew\n\niPad Pro\nUnbelievably thin. Incredibly powerful.\n\nMeet the stunning Ultra Retina XDR display and the mighty M4 chip.\n\nLearn more\nExplore iPad\nPRO\n\nMacBook Air\n\nSky blue. Sky high performance.\n\nSupercharged by M4. Up to 18 hours of battery life.\n\nTech specs\nExplore Mac\nAir\n\nHOMEPOD MINI\n\nBig sound. Small speaker.\n\nJust $99\n\nLearn more \n\nAPPLE WATCH ULTRA 3\n\nAdventure lives here.\n\nRugged, capable, and ready for more.\n\nLearn more \nCompare \n10"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "This is a polished demonstration storefront. Product, order, store, and repair data are synthetic.\n\nShop and Learn\nStore\nMac\niPad\nWatch\nHomePod\nApple Store\nFind a Store\nOrder Status\nShopping Bag\nFor Support\nFind Lost AirPods\nRepair Status\nApple Support\nCopyright © 2026 Apple Demo. All rights reserved.\nPrivacy & support"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - navigation \"Global navigation\":\n    - link \"Apple home\":\n      - /url: /\n      - text: ●\n    - link \"Store\":\n      - /url: /store\n    - link \"Mac\":\n      - /url: /mac\n    - link \"iPad\":\n      - /url: /ipad\n    - link \"Watch\":\n      - /url: /watch\n    - link \"AirPods\":\n      - /url: /airpods\n    - link \"TV & Home\":\n      - /url: /homepod-mini\n    - link \"Support\":\n      - /url: /support\n    - button \"Search Apple\"\n    - link \"Shopping bag with 0 items\":\n      - /url: /bag\n- main:\n  - text: Get 3% Daily Cash back with Apple Card.\n  - link \"Shop Apple\":\n    - /url: /store\n  - paragraph: New\n  - heading \"iPad Pro\" [level=1]\n  - heading \"Unbelievably thin. Incredibly powerful.\" [level=2]\n  - paragraph: Meet the stunning Ultra Retina XDR display and the mighty M4 chip.\n  - link \"Learn more\":\n    - /url: /ipad-pro\n  - link \"Explore iPad\":\n    - /url: /ipad\n  - img \"iPad Pro with vivid purple display\": PRO\n  - paragraph: MacBook Air\n  - heading \"Sky blue. Sky high performance.\" [level=2]\n  - paragraph: Supercharged by M4. Up to 18 hours of battery life.\n  - link \"Tech specs\":\n    - /url: /macbook-air/specs\n  - link \"Explore Mac\":\n    - /url: /mac\n  - img \"Sky blue MacBook Air\": Air\n  - article:\n    - paragraph: HomePod mini\n    - heading \"Big sound. Small speaker.\" [level=2]\n    - paragraph: Just $99\n    - link \"Learn more\":\n      - /url: /homepod-mini\n    - img \"Orange HomePod mini\"\n  - article:\n    - paragraph: Apple Watch Ultra 3\n    - heading \"Adventure lives here.\" [level=2]\n    - paragraph: Rugged, capable, and ready for more.\n    - link \"Learn more\":\n      - /url: /watch-ultra\n    - link \"Compare\":\n      - /url: /watch\n    - img \"Apple Watch Ultra\": 10:09 MON 16\n  - article:\n    - paragraph: AirPods\n    - heading \"Lost one? Find it.\" [level=2]\n    - paragraph: See how Find My helps bring your AirPods back.\n    - link \"Find lost AirPods\":\n      - /url: /support/airpods/find\n    - img \"AirPods with location signal\"\n  - article:\n    - paragraph: Apple Store\n    - heading \"Come see what’s new.\" [level=2]\n    - paragraph: Find a nearby store and check tomorrow’s hours.\n    - link \"Find a Store\":\n      - /url: /stores\n    - text: hello\n  - paragraph: Need a hand?\n  - heading \"Orders, repairs, and expert support.\" [level=2]\n  - link \"Check order status\":\n    - /url: /order-status\n  - link \"Check repair status\":\n    - /url: /repair-status\n  - link \"Visit Support\":\n    - /url: /support\n- contentinfo:\n  - paragraph: This is a polished demonstration storefront. Product, order, store, and repair data are synthetic.\n  - heading \"Shop and Learn\" [level=3]\n  - link \"Store\":\n    - /url: /store\n  - link \"Mac\":\n    - /url: /mac\n  - link \"iPad\":\n    - /url: /ipad\n  - link \"Watch\":\n    - /url: /watch\n  - link \"HomePod\":\n    - /url: /homepod-mini\n  - heading \"Apple Store\" [level=3]\n  - link \"Find a Store\":\n    - /url: /stores\n  - link \"Order Status\":\n    - /url: /order-status\n  - link \"Shopping Bag\":\n    - /url: /bag\n  - heading \"For Support\" [level=3]\n  - link \"Find Lost AirPods\":\n    - /url: /support/airpods/find\n  - link \"Repair Status\":\n    - /url: /repair-status\n  - link \"Apple Support\":\n    - /url: /support\n  - text: Copyright © 2026 Apple Demo. All rights reserved.\n  - link \"Privacy & support\":\n    - /url: /support"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/03-apple/dist/assets/index-C1erVmea.js",
+      "offset": 326237,
+      "match": "className:\"price-line\"",
+      "context": "sx(I,{className:\"button button-secondary\",to:\"/mac\",children:\"Explore Mac\"})]})]}),r.jsx(tt,{type:\"laptop\",color:\"sky\",label:\"Sky blue MacBook Air\"})]}),r.jsxs(\"section\",{className:\"tile-grid section-pad\",children:[r.jsxs(\"article\",{className:\"feature-tile tile-soft-purple\",children:[r.jsxs(\"div\",{className:\"tile-copy\",children:[r.jsx(\"p\",{className:\"eyebrow\",children:\"HomePod mini\"}),r.jsx(\"h2\",{children:\"Big sound. Small speaker.\"}),r.jsx(\"p\",{className:\"price-line\",children:\"Just $99\"}),r.jsxs(I,{className:\"text-link\",to:\"/homepod-mini\",children:[\"Learn more \",r.jsx(Y,{icon:Ut})]})]}),r.jsx(tt,{type:\"homepod\",color:\"orange\",label:\"Orange HomePod mini\"})]}),r.jsxs(\"article\",{className:\"feature-tile tile-black\",children:[r.jsxs(\"div\",{className:\"tile-copy light-copy\",children:[r.jsx(\"p\",{className:\"eyebrow\",children:\"Apple Watch Ultra 3\"}),r.jsx(\"h2\",{children:\"Adventure lives here.\"}),r.jsx(\"p\",{children:\"R"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+- text: Free shipping on orders $99+
+- link "Find a store":
+  - /url: /stores
+- link "Easy online returns":
+  - /url: /returns
+- banner:
+  - link "UNIQLO home":
+    - /url: /
+    - text: UNI QLO
+  - navigation "Primary navigation":
+    - link "Women":
+      - /url: /shop/women
+    - link "Men":
+      - /url: /shop/men
+    - link "Kids":
+      - /url: /shop/kids
+    - link "Baby":
+      - /url: /shop/baby
+    - link "Toddler":
+      - /url: /shop/toddler?collection=Toddler+Collection
+    - link "Sale":
+      - /url: /shop?sale=1
+  - search:
+    - textbox "Search products"
+  - link "Store finder":
+    - /url: /stores
+    - text: Stores
+  - link "Sign in":
+    - /url: /login
+    - text: Account
+  - link "Wishlist with 0 items":
+    - /url: /wishlist
+    - text: Wishlist
+  - link "Cart with 0 items":
+    - /url: /cart
+    - text: Cart
+- main:
+  - paragraph: LIFEWEAR · FALL 2026
+  - heading "Every day, made better." [level=1]
+  - paragraph: Thoughtful essentials, designed for real life and every kind of weather.
+  - link "Shop new arrivals":
+    - /url: /shop?new=1
+  - link "Limited-time offers":
+    - /url: /shop?promotion=Limited+Time+Offer
+  - region "Shopping benefits":
+    - link "Free shipping $99+ Fast, trackable delivery":
+      - /url: /shop
+      - strong: Free shipping $99+
+      - text: Fast, trackable delivery
+    - link "Pick up in store Reserve at a nearby location":
+      - /url: /stores
+      - strong: Pick up in store
+      - text: Reserve at a nearby location
+    - link "Easy online returns Simple step-by-step help":
+      - /url: /returns
+      - strong: Easy online returns
+      - text: Simple step-by-step help
+  - paragraph: SHOP BY DEPARTMENT
+  - heading "LifeWear for everyone" [level=2]
+  - link "View all":
+    - /url: /shop
+  - link "Women Essential layers in considered color. Shop now":
+    - /url: /shop/women
+    - heading "Women" [level=3]
+    - paragraph: Essential layers in considered color.
+    - text: Shop now
+  - link "Men Refined comfort for work and weekend. Shop now":
+    - /url: /shop/men
+    - heading "Men" [level=3]
+    - paragraph: Refined comfort for work and weekend.
+    - text: Shop now
+  - link "Kids Move-ready favorites built for play. Shop now":
+    - /url: /shop/kids
+    - heading "Kids" [level=3]
+    - paragraph: Move-ready favorites built for play.
+    - text: Shop now
+  - link "Baby Gentle fabrics for the littlest moments. Shop now":
+    - /url: /shop/baby
+    - heading "Baby" [level=3]
+    - paragraph: Gentle fabrics for the littlest moments.
+    - text: Shop now
+  - paragraph: UNIQLO SPORT UTILITY WEAR
+  - heading "Made to move. Ready for life." [level=2]
+  - paragraph: Performance comfort and clean design, from morning walks to everything after.
+  - link "Shop women's sportswear":
+    - /url: /shop/women?category=Sportswear&size=S
+  - paragraph: CURATED FOR YOU
+  - heading "Trending now" [level=2]
+  - article:
+    - img "Women's SUPIMA Cotton T-Shirt in Yellow"
+    - text: Premium Cotton
+    - button "Add Women's SUPIMA Cotton T-Shirt to wishlist"
+    - paragraph: Women / T-Shirts / Everyday Essentials
+    - heading "Women's SUPIMA Cotton T-Shirt" [level=3]
+    - paragraph: Smooth premium cotton in a classic regular fit.
+    - text: 4.9 (710)
+    - strong: $14.90
+    - button "Select Yellow"
+    - button "Select White"
+    - button "Select Black"
+    - text: Yellow Size
+    - combobox "Size for Women's SUPIMA Cotton T-Shirt":
+      - option "XS" [selected]
+      - option "S"
+      - option "M"
+      - option "L"
+      - option "XL"
+    - text: Qty
+    - combobox "Quantity for Women's SUPIMA Cotton T-Shirt":
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+    - button "Add to cart"
+  - article:
+    - img "Men's Blocktech Parka in Orange"
+    - text: Weather Ready
+    - button "Add Men's Blocktech Parka to wishlist"
+    - paragraph: Men / Jackets & Parkas / Outerwear
+    - heading "Men's Blocktech Parka" [level=3]
+    - paragraph: Weather-ready protection in a clean everyday silhouette.
+    - text: 4.8 (166)
+    - strong: $59.90
+    - button "Select Orange"
+    - button "Select Black"
+    - text: Orange Size
+    - combobox "Size for Men's Blocktech Parka":
+      - option "S" [selected]
+      - option "M"
+      - option "L"
+      - option "XL"
+    - text: Qty
+    - combobox "Quantity for Men's Blocktech Parka":
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+    - button "Add to cart"
+  - article:
+    - img "Kids Pokémon Graphic T-Shirt in White"
+    - text: New Arrival
+    - button "Add Kids Pokémon Graphic T-Shirt to wishlist"
+    - paragraph: Kids / Graphic T-Shirts / Boys
+    - heading "Kids Pokémon Graphic T-Shirt" [level=3]
+    - paragraph: A new UT graphic tee made from comfortable cotton.
+    - text: 4.9 (112)
+    - strong: $14.90
+    - button "Select White"
+    - button "Select Blue"
+    - text: White Size
+    - combobox "Size for Kids Pokémon Graphic T-Shirt":
+      - option "7-8Y" [selected]
+      - option "9-10Y"
+      - option "11-12Y(150)"
+      - option "13Y"
+    - text: Qty
+    - combobox "Quantity for Kids Pokémon Graphic T-Shirt":
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+    - button "Add to cart"
+  - article:
+    - img "Baby Cotton One Piece in Cream"
+    - text: Sale
+    - button "Add Baby Cotton One Piece to wishlist"
+    - paragraph: Baby / One Piece / Baby Essentials
+    - heading "Baby Cotton One Piece" [level=3]
+    - paragraph: Envelope neckline and snap bottom for easy changes.
+    - text: 4.9 (96)
+    - strong: $9.90
+    - deletion: $14.90
+    - button "Select Cream"
+    - button "Select Light Green"
+    - text: Cream Size
+    - combobox "Size for Baby Cotton One Piece":
+      - option "0-3M" [selected]
+      - option "3-6M"
+      - option "6-9M"
+    - text: Qty
+    - combobox "Quantity for Baby Cotton One Piece":
+      - option "1" [selected]
+      - option "2"
+      - option "3"
+      - option "4"
+      - option "5"
+    - button "Add to cart"
+  - paragraph: QUICK FIND
+  - heading "Looking for something specific?" [level=2]
+  - link "Women's cropped tops":
+    - /url: /shop/women?category=Cropped+Tops&sort=price-low
+  - link "Men's black blazers":
+    - /url: /shop/men?category=Blazers&color=Black&size=M
+  - link "Kids limited-time offers":
+    - /url: /shop/kids?promotion=Limited+Time+Offer&size=11-12Y%28150%29
+  - link "Baby sale under $10":
+    - /url: /shop/baby?sale=1&max=10
+  - link "Toddler collection":
+    - /url: /shop/toddler?collection=Toddler+Collection&category=Socks&sort=price-low
+  - link "Find your nearest store":
+    - /url: /stores
+  - paragraph: UNIQLO NEWS
+  - heading "New arrivals, offers, and LifeWear stories." [level=2]
+  - paragraph: Join our mailing list for thoughtful updates, not inbox clutter.
+  - text: Email address
+  - textbox "Email address":
+    - /placeholder: you@example.com
+  - button "Sign me up"
+- contentinfo:
+  - link "UNI QLO":
+    - /url: /
+  - paragraph: Simple, high-quality everyday clothing with a practical sense of beauty.
+  - button "United States / English"
+  - heading "Shop" [level=2]
+  - link "Women":
+    - /url: /shop/women
+  - link "Men":
+    - /url: /shop/men
+  - link "Kids":
+    - /url: /shop/kids
+  - link "Baby":
+    - /url: /shop/baby
+  - link "Sale":
+    - /url: /shop?sale=1
+  - heading "Help" [level=2]
+  - link "Store locator":
+    - /url: /stores
+  - link "Online returns":
+    - /url: /returns
+  - link "Shopping cart":
+    - /url: /cart
+  - link "Wishlist":
+    - /url: /wishlist
+  - link "My account":
+    - /url: /login
+  - heading "Discover" [level=2]
+  - link "New arrivals":
+    - /url: /shop?new=1
+  - link "Limited-time offers":
+    - /url: /shop?promotion=Limited+Time+Offer
+  - link "Sport Utility Wear":
+    - /url: /shop/women?category=Sportswear
+  - link "Toddler collection":
+    - /url: /shop/toddler?collection=Toddler+Collection
+  - text: © 2026 UNIQLO mock storefront Designed for this interactive prototype · No real purchases are processed

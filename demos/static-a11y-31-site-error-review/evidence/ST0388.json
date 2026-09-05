@@ -1,0 +1,174 @@
+{
+  "site": "imdb",
+  "siteKey": "16-imdb",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/16-imdb/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 16,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[2]/DIV[1]/DIV[5]/ARTICLE[1]/DIV[2]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[2]/DIV[1]/DIV[5]/ARTICLE[1]/DIV[2]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/16-imdb/wave/attempt-1/raw.json",
+  "errorId": "ST0388",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[2]/DIV[1]/DIV[5]/ARTICLE[1]/DIV[2]/A[1]",
+    "tag": "A",
+    "text": "The Flash",
+    "html": "<a class=\"card-title\" href=\"/title/the-flash\" data-discover=\"true\">The Flash</a>",
+    "class": "card-title",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/title/the-flash",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1178,
+      "y": 2960,
+      "width": 168,
+      "height": 42
+    },
+    "style": {
+      "color": "rgb(245, 245, 245)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[2]/DIV[1]/DIV[5]/ARTICLE[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "card-copy",
+      "text": " 6.6\nMovie\nThe Flash\n2023 • PG-13\n Watchlist\n Trailer",
+      "html": "<div class=\"card-copy\"><div class=\"card-rating\"><span><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg> 6.6</span><small>Movie</small></div><a class=\"card-title\" href=\"/title/the-flash\" data-discover=\"true\">The Flash</a><span class=\"card-year\">2023 • PG-13</span><button type=\"button\" class=\"watchlist-card-button \"><svg data-prefix=\"fas\" data-icon=\"plus\" class=\"svg-inline--fa fa-plus\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"></path></svg> Watchlist</button><button type=\"button\" class=\"text-button\"><svg data-prefix=\"fas\" data-icon=\"play\" class=\"svg-inline--fa fa-play\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z\"></path></svg> Trailer</button></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[2]/DIV[1]/DIV[5]/ARTICLE[1]/DIV[2]/A[1]",
+      "tag": "A",
+      "text": "The Flash",
+      "ariaLabel": null,
+      "href": "/title/the-flash",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34821/assets/index-0i5aYyNW.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34821/assets/index-0i5aYyNW.css",
+        "selector": ".card-title",
+        "declarations": {
+          "color": "rgb(245, 245, 245)",
+          "font-size": "14px",
+          "font-weight": "700"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "IMDb — Movies, TV and Celebrities",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "The Flash",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Featured today",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Top picks for you",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Not sure what to watch next?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Fan favorites",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Top 5 this week",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "50 essential Sci-Fi movies & TV shows",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "IMDb\nMenu\nSearch category\nAll\nTitles\nCelebs\nVideos\nSearch IMDb\nIMDb\nPro\nWatchlist\n2\nAlex"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "View details\nNOW STREAMING\nThe Flash\n\nBarry Allen uses his super speed to change the past, but his attempt to save his family creates a world without superheroes.\n\n2023\n2h 24m\nPG-13\n 6.6\nAdd to Watchlist\nMore info\nFeatured today\n\nStandout stories from across IMDb\n\nRelive the Oscars 2023\nSpeeches, performances, and winning moments\nCannes 2022 Jury Prize\nDiscover EO and its celebrated director\nComic-book sci-fi\nTop-rated titles with the most votes\nTop picks for you\n\nTV shows and movies we think yo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Back to top\nFollow IMDb\nHelp\nIMDbPro\nConditions of Use\nPrivacy Policy\nYour lists\n\nan amazon company\n\n© 1990–2026 IMDb.com, Inc. • Synthetic demonstration content"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": null,
+        "text": "Help\nIMDbPro\nConditions of Use\nPrivacy Policy\nYour lists"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"IMDb home\":\n    - /url: /\n    - text: IMDb\n  - button \"Open menu\": Menu\n  - search:\n    - text: Search category\n    - combobox \"Search category\":\n      - option \"All\" [selected]\n      - option \"Titles\"\n      - option \"Celebs\"\n      - option \"Videos\"\n    - text: Search IMDb\n    - textbox \"Search IMDb\"\n    - button \"Search\"\n  - link \"IMDb Pro\":\n    - /url: /recommendations\n  - link \"Watchlist 2\":\n    - /url: /watchlist\n  - button \"Alex\"\n- main:\n  - link \"The Flash poster View details\":\n    - /url: /title/the-flash\n    - img \"The Flash poster\"\n    - text: View details\n  - button \"Play trailer for The Flash\"\n  - text: Now streaming\n  - heading \"The Flash\" [level=1]\n  - paragraph: Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without superheroes.\n  - text: 2023 2h 24m PG-13 6.6\n  - button \"Add to Watchlist\"\n  - link \"More info\":\n    - /url: /title/the-flash\n  - heading \"Featured today\" [level=2]\n  - paragraph: Standout stories from across IMDb\n  - link \"Relive the Oscars 2023 Speeches, performances, and winning moments\":\n    - /url: /videos/oscars-2023\n    - strong: Relive the Oscars 2023\n    - text: Speeches, performances, and winning moments\n  - link \"Cannes 2022 Jury Prize Discover EO and its celebrated director\":\n    - /url: /awards/cannes-2022\n    - strong: Cannes 2022 Jury Prize\n    - text: Discover EO and its celebrated director\n  - link \"Comic-book sci-fi Top-rated titles with the most votes\":\n    - /url: /browse/superhero\n    - strong: Comic-book sci-fi\n    - text: Top-rated titles with the most votes\n  - heading \"Top picks for you\" [level=2]\n  - paragraph: TV shows and movies we think you’ll enjoy\n  - button \"Scroll Top picks for you left\"\n  - article:\n    - 'link \"Dune: Part Two poster\"':\n      - /url: /title/dune-part-two\n      - 'img \"Dune: Part Two poster\"'\n    - 'button \"Remove Dune: Part Two from Watchlist\"'\n    - text: 8.5 Movie\n    - 'link \"Dune: Part Two\"':\n      - /url: /title/dune-part-two\n    - text: 2024 • PG-13\n    - button \"In Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Fallout poster\":\n      - /url: /title/fallout\n      - img \"Fallout poster\"\n    - button \"Add Fallout to Watchlist\"\n    - text: 8.3 TV Series\n    - link \"Fallout\":\n      - /url: /title/fallout\n    - text: 2024 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Severance poster\":\n      - /url: /title/severance\n      - img \"Severance poster\"\n    - button \"Add Severance to Watchlist\"\n    - text: 8.7 TV Series\n    - link \"Severance\":\n      - /url: /title/severance\n    - text: 2022 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Interstellar poster\":\n      - /url: /title/interstellar\n      - img \"Interstellar poster\"\n    - button \"Remove Interstellar from Watchlist\"\n    - text: 8.7 Movie\n    - link \"Interstellar\":\n      - /url: /title/interstellar\n    - text: 2014 • PG-13\n    - button \"In Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Oppenheimer poster\":\n      - /url: /title/oppenheimer\n      - img \"Oppenheimer poster\"\n    - button \"Add Oppenheimer to Watchlist\"\n    - text: 8.5 Movie\n    - link \"Oppenheimer\":\n      - /url: /title/oppenheimer\n    - text: 2023 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Parasite poster\":\n      - /url: /title/parasite\n      - img \"Parasite poster\"\n    - button \"Add Parasite to Watchlist\"\n    - text: 8.5 Movie\n    - link \"Parasite\":\n      - /url: /title/parasite\n    - text: 2019 • R\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - button \"Scroll Top picks for you right\"\n  - text: IMDb recommendations\n  - heading \"Not sure what to watch next?\" [level=2]\n  - paragraph: Explore a fresh mix of acclaimed movies, popular series, and hidden gems.\n  - link \"Get recommendations\":\n    - /url: /recommendations\n  - heading \"Fan favorites\" [level=2]\n  - paragraph: This week’s top-rated crowd pleasers\n  - button \"Scroll Fan favorites left\"\n  - article:\n    - link \"The Shawshank Redemption poster\":\n      - /url: /title/shawshank\n      - img \"The Shawshank Redemption poster\"\n    - button \"Add The Shawshank Redemption to Watchlist\"\n    - text: 9.3 Movie\n    - link \"The Shawshank Redemption\":\n      - /url: /title/shawshank\n    - text: 1994 • R\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"The Dark Knight poster\":\n      - /url: /title/dark-knight\n      - img \"The Dark Knight poster\"\n    - button \"Add The Dark Knight to Watchlist\"\n    - text: 9 Movie\n    - link \"The Dark Knight\":\n      - /url: /title/dark-knight\n    - text: 2008 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"Interstellar poster\":\n      - /url: /title/interstellar\n      - img \"Interstellar poster\"\n    - button \"Remove Interstellar from Watchlist\"\n    - text: 8.7 Movie\n    - link \"Interstellar\":\n      - /url: /title/interstellar\n    - text: 2014 • PG-13\n    - button \"In Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - link \"The Grand Budapest Hotel poster\":\n      - /url: /title/grand-budapest\n      - img \"The Grand Budapest Hotel poster\"\n    - button \"Add The Grand Budapest Hotel to Watchlist\"\n    - text: 8.1 Movie\n    - link \"The Grand Budapest Hotel\":\n      - /url: /title/grand-budapest\n    - text: 2014 • R\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - article:\n    - 'link \"Terminator 2: Judgment Day poster\"':\n      - /url: /title/terminator-2\n      - 'img \"Terminator 2: Judgment Day poster\"'\n    - 'button \"Add Terminator 2: Judgment Day to Watchlist\"'\n    - text: 8.6 Movie\n    - 'link \"Terminator 2: Judgment Day\"':\n      - /url: /title/terminator-2\n    - text: 1991 • R\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - button \"Scroll Fan favorites right\"\n  - heading \"Top 5 this week\" [level=2]\n  - paragraph: Titles receiving the most IMDb page views\n  - text: \"1\"\n  - article:\n    - link \"The Last of Us poster\":\n      - /url: /title/the-last-of-us\n      - img \"The Last of Us poster\"\n    - button \"Add The Last of Us to Watchlist\"\n    - text: 8.7 TV Series\n    - link \"The Last of Us\":\n      - /url: /title/the-last-of-us\n    - text: 2023 • TV-MA\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - text: \"2\"\n  - article:\n    - 'link \"Dune: Part Two poster\"':\n      - /url: /title/dune-part-two\n      - 'img \"Dune: Part Two poster\"'\n    - 'button \"Remove Dune: Part Two from Watchlist\"'\n    - text: 8.5 Movie\n    - 'link \"Dune: Part Two\"':\n      - /url: /title/dune-part-two\n    - text: 2024 • PG-13\n    - button \"In Watchlist\"\n    - button \"Trailer\"\n  - text: \"3\"\n  - article:\n    - link \"Fallout poster\":\n      - /url: /title/fallout\n      - img \"Fallout poster\"\n    - button \"Add Fallout to Watchlist\"\n    - text: 8.3 TV Series\n    - link \"Fallout\":\n      - /url: /title/fallout\n    - text: 2024 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - text: \"4\"\n  - article:\n    - link \"Oppenheimer poster\":\n      - /url: /title/oppenheimer\n      - img \"Oppenheimer poster\"\n    - button \"Add Oppenheimer to Watchlist\"\n    - text: 8.5 Movie\n    - link \"Oppenheimer\":\n      - /url: /title/oppenheimer\n    - text: 2023 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - text: \"5\"\n  - article:\n    - link \"The Flash poster\":\n      - /url: /title/the-flash\n      - img \"The Flash poster\"\n    - button \"Add The Flash to Watchlist\"\n    - text: 6.6 Movie\n    - link \"The Flash\":\n      - /url: /title/the-flash\n    - text: 2023 • PG-13\n    - button \"Watchlist\"\n    - button \"Trailer\"\n  - text: Explore by genre\n  - heading \"50 essential Sci-Fi movies & TV shows\" [level=2]\n  - paragraph: From distant galaxies to artificial intelligence, browse IMDb’s top genre picks in one complete chart.\n  - link \"See the Top 50\":\n    - /url: /genre/sci-fi\n- contentinfo:\n  - button \"Back to top\"\n  - text: Follow IMDb\n  - navigation:\n    - link \"Help\":\n      - /url: /about\n    - link \"IMDbPro\":\n      - /url: /about\n    - link \"Conditions of Use\":\n      - /url: /about\n    - link \"Privacy Policy\":\n      - /url: /about\n    - link \"Your lists\":\n      - /url: /lists\n  - paragraph: an amazon company\n  - text: © 1990–2026 IMDb.com, Inc. • Synthetic demonstration content\n- status"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/16-imdb/dist/assets/index-CwLNKUfR.js",
+      "offset": 352441,
+      "match": "className:\"card-title\"",
+      "context": "),alt:`${n.title} poster`})}),c.jsx(\"button\",{className:`bookmark-ribbon ${h?\"saved\":\"\"}`,type:\"button\",onClick:()=>u(n.id),\"aria-label\":`${h?\"Remove\":\"Add\"} ${n.title} ${h?\"from\":\"to\"} Watchlist`,children:c.jsx(B,{icon:h?ot:Vt})})]}),c.jsxs(\"div\",{className:\"card-copy\",children:[c.jsxs(\"div\",{className:\"card-rating\",children:[c.jsxs(\"span\",{children:[c.jsx(B,{icon:rt}),\" \",n.rating||\"—\"]}),c.jsx(\"small\",{children:n.status||n.type})]}),c.jsx(le,{className:\"card-title\",to:`/title/${n.id}`,children:n.title}),c.jsxs(\"span\",{className:\"card-year\",children:[n.year,\" \",n.certificate?`• ${n.certificate}`:\"\"]}),!f&&c.jsxs(c.Fragment,{children:[c.jsxs(\"button\",{type:\"button\",className:`watchlist-card-button ${h?\"is-saved\":\"\"}`,onClick:()=>u(n.id),children:[c.jsx(B,{icon:h?ot:Vt}),\" \",h?\"In Watchlist\":\"Watchlist\"]}),n.trailer&&!n.trailer.includes(\"Coming Soon\")&&c.jsxs(\"button\",{type:\"button\",className:\"text-button\",on"
+    }
+  ]
+}

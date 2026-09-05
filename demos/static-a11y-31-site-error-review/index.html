@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>axe & WAVE · 31-site accessibility review</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="cases.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#detail">Skip to selected finding</a>
+  <header class="masthead">
+    <p class="eyebrow">STATIC ACCESSIBILITY · SELECTED 31 · V3</p>
+    <h1>axe & WAVE error review</h1>
+    <p>Recorded homepage findings, evidence and three-agent adjudications. Review the candidates—not just the scanner verdict.</p>
+    <div class="toolbar"><button id="export">Export my annotations</button><label class="file-button">Import annotations<input id="import" type="file" accept=".json,application/json"></label><a href="analysis.md">Results analysis (Markdown)</a><a href="baseline-axe.json">axe baseline JSON</a><a href="baseline-wave.json">WAVE baseline JSON</a></div>
+    <p class="notice">31 frozen website snapshots · 62/62 scans succeeded · initial homepage only, not live public websites. axe 4.12.1: 295 violation hits (544 incomplete hits omitted). WAVE 3.3.1.0: 0 errors, 176 contrast findings, 289 alerts. An alert is not a definite error.</p>
+    <p class="notice">Baseline labels are agent judgments from static DOM/AX and source evidence, not human-confirmed or dynamically verified failures. Excluded means outside the keyboard/screen-reader target scope, not FP; general accessibility validity is not established by exclusion. Duplicate is counted within each tool, including outside-scope duplicates.</p>
+  </header>
+  <main>
+    <section id="stats" tabindex="0" aria-label="Separate tool statistics; scroll horizontally on narrow screens"></section>
+    <div class="layout">
+      <aside aria-label="Finding filters and list">
+        <div class="filters">
+          <label>Tool<select id="tool"><option value="axe">axe-core</option><option value="wave">WAVE</option></select></label>
+          <label>Website<select id="site"><option value="">All websites</option></select></label>
+          <label>Rule<select id="rule"><option value="">All rules</option></select></label>
+          <label>Scanner category<select id="category"><option value="">All categories</option></select></label>
+          <label>Target scope<select id="scope"><option value="">All scopes</option><option value="in-scope">In scope</option><option value="outside-target">Outside target</option></select></label>
+          <label>Decision<select id="decision"><option value="">All decisions</option><option value="correct">TP</option><option value="false-positive">FP</option><option value="duplicate">Duplicate</option><option value="excluded">Excluded</option><option value="unsure">Unsure</option></select></label>
+          <label>Review origin<select id="origin"><option value="">All origins</option><option value="agent">Agent baseline only</option><option value="human">Locally reviewed</option></select></label>
+          <label>Search ID / text<input id="search" type="search" placeholder="ST0002 or main landmark"></label>
+          <button id="reset">Reset filters</button>
+        </div>
+        <p id="list-count" role="status"></p><ul id="case-list"></ul>
+      </aside>
+      <section id="detail" tabindex="-1" aria-label="Selected finding"></section>
+    </div>
+  </main>
+  <p id="status" role="status" aria-live="polite"></p>
+  <footer>Edits stay in this browser until exported. They are not uploaded to GitHub and do not modify the original annotations. All source ST IDs are preserved.</footer>
+</body>
+</html>

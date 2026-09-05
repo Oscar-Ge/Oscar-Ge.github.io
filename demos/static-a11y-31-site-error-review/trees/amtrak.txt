@@ -1,0 +1,116 @@
+- text: Travel green. Save 15% on select spring trips.
+- link "See offers":
+  - /url: /deals
+- banner:
+  - link "Amtrak home":
+    - /url: /
+    - text: AMTRAK
+  - navigation "Main navigation":
+    - link "Book":
+      - /url: /book
+    - link "My Trip":
+      - /url: /my-trip
+    - link "Schedules":
+      - /url: /schedules
+    - link "Routes":
+      - /url: /routes
+    - link "Deals":
+      - /url: /deals
+    - link "Vacations":
+      - /url: /vacations
+    - link "Travel Info":
+      - /url: /travel-info
+    - link "Careers":
+      - /url: /careers
+  - link "Cart with 0 items":
+    - /url: /cart
+    - text: Cart
+- main:
+  - text: America is waiting
+  - heading "There’s more to see. Take the train." [level=1]
+  - paragraph: Downtown to downtown, coast to coast. Settle in and enjoy the journey.
+  - text: Book train travel
+  - heading "Where can we take you?" [level=2]
+  - button "One way"
+  - button "Round trip"
+  - text: From
+  - combobox "From station": New York, NY - Moynihan Train Hall (NYP)
+  - button "Swap origin and destination": ⇄
+  - text: To
+  - combobox "To station": Washington, DC - Union Station (WAS)
+  - text: Depart
+  - textbox "Departure date": 2027-04-18
+  - button "Travelers 1 Adult":
+    - text: Travelers
+    - strong: 1 Adult
+  - text: Service
+  - combobox "Service class":
+    - option "Coach" [selected]
+    - option "Business Class"
+    - option "First Class"
+    - option "Private Room"
+  - button "Find trains"
+  - link "Multi-Ride & Rail Passes":
+    - /url: /multi-ride
+  - link "Book Auto Train":
+    - /url: /auto-train
+  - text: Inspired journeys
+  - heading "Start with something unforgettable" [level=2]
+  - link "Explore all routes":
+    - /url: /routes
+  - link "New York to Montréal The Adirondack Hudson River views, mountain towns and an international adventure. Explore route":
+    - /url: /routes/adirondack
+    - text: New York to Montréal
+    - heading "The Adirondack" [level=3]
+    - paragraph: Hudson River views, mountain towns and an international adventure.
+    - text: Explore route
+  - link "14-day rail vacation Grand National Parks Five iconic parks and one spectacular journey through the American West. View vacation":
+    - /url: /vacations/grand-national-parks
+    - text: 14-day rail vacation
+    - heading "Grand National Parks" [level=3]
+    - paragraph: Five iconic parks and one spectacular journey through the American West.
+    - text: View vacation
+  - link "California savings Sunshine looks good on you Save on coastal journeys, city escapes and family trips. See deals":
+    - /url: /deals
+    - text: California savings
+    - heading "Sunshine looks good on you" [level=3]
+    - paragraph: Save on coastal journeys, city escapes and family trips.
+    - text: See deals
+  - heading "Bring more along" [level=3]
+  - paragraph: Two free carry-on bags and two free personal items.
+  - heading "Arrive downtown" [level=3]
+  - paragraph: Skip the airport transfer and arrive in the center of it all.
+  - heading "Travel lighter" [level=3]
+  - paragraph: Rail travel produces up to 83% fewer emissions than driving alone.
+- contentinfo:
+  - text: AMTRAK
+  - paragraph: Connecting communities and creating a more sustainable way to travel across America.
+  - paragraph: Mock experience created for demonstration. No real reservations are made.
+  - heading "Plan" [level=3]
+  - link "Book travel":
+    - /url: /book
+  - link "Schedules":
+    - /url: /schedules
+  - link "National route map":
+    - /url: /routes/national-map
+  - link "Multi-Ride passes":
+    - /url: /multi-ride
+  - heading "Explore" [level=3]
+  - link "Deals":
+    - /url: /deals
+  - link "Amtrak Vacations":
+    - /url: /vacations
+  - link "Routes":
+    - /url: /routes
+  - link "Café menu":
+    - /url: /travel-info/cafe-menu
+  - heading "Help" [level=3]
+  - link "Find my trip":
+    - /url: /my-trip
+  - link "Travel identification":
+    - /url: /travel-info/identification
+  - link "RideReserve terms":
+    - /url: /travel-info/ride-reserve-terms
+  - link "Careers":
+    - /url: /careers
+  - text: © 2026 Amtrak. All rights reserved.

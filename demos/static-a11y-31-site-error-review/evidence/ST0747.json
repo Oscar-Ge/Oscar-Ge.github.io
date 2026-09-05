@@ -1,0 +1,192 @@
+{
+  "site": "petfinder",
+  "siteKey": "28-petfinder",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/28-petfinder/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "heading_possible",
+  "description": "Possible heading",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[2]/P[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[2]/P[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/28-petfinder/wave/attempt-1/raw.json",
+  "errorId": "ST0747",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[2]/P[1]",
+    "tag": "P",
+    "text": "PET CARE ESSENTIALS",
+    "html": "<p class=\"eyebrow\">Pet care essentials</p>",
+    "class": "eyebrow",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 680.140625,
+      "y": 1805.90625,
+      "width": 570,
+      "height": 28.046875
+    },
+    "style": {
+      "color": "rgb(107, 102, 115)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "17px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[2]",
+      "tag": "DIV",
+      "class": "feature-copy",
+      "text": "PET CARE ESSENTIALS\n\nHelp your dog look and feel their best\n\nLearn brushing, bathing, nail care, and coat-care basics for dogs and puppies.\n\nRead the grooming guide",
+      "html": "<div class=\"feature-copy\"><p class=\"eyebrow\">Pet care essentials</p><h2>Help your dog look and feel their best</h2><p>Learn brushing, bathing, nail care, and coat-care basics for dogs and puppies.</p><a class=\"text-link\" href=\"/resources/dog-puppy-grooming\" data-discover=\"true\">Read the grooming guide <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></a></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:42019/assets/index-mpj-vI4L.css",
+        "selector": ".eyebrow",
+        "declarations": {
+          "color": "var(--purple-700)",
+          "font-size": "12px",
+          "font-weight": "800"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:42019/assets/index-mpj-vI4L.css",
+        "selector": ".section-heading > p:last-child, .feature-copy > p, .foundation-inner > div > p:last-child",
+        "declarations": {
+          "color": "var(--muted)",
+          "font-size": "17px"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Petfinder — Find Your New Best Friend",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/H1[1]",
+        "tag": "H1",
+        "text": "Bring home\nmore happy.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find your new best friend",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "How adoption works",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Search",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Connect",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/H3[1]",
+        "tag": "H3",
+        "text": "Adopt",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Help your dog look and feel their best",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Help shelters save more lives",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "ADOPT",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "LEARN",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "GIVE",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "petfinder\nFind a Pet\nShelters & Rescues\nPet Care\nFavorites\nDonate"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Find a Pet\nShelters & Rescues\nPet Care\nFavorites\nDonate"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "FIND LOVE. GIVE LOVE.\n\nBring home\nmore happy.\n\nSearch thousands of adoptable pets from shelters and rescue groups near you.\n\nDog\nCat\nRabbit\nLocation\nSearch pets\n\nADOPTION STARTS HERE\n\nFind your new best friend\n\nBrowse adoptable pets from trusted shelters and rescues.\n\nDogs & Puppies\nPatient tails are waiting\nCats & Kittens\nMeet your purr-fect match\nRabbits\nBig personalities, soft ears\n\nA THOUGHTFUL MATCH\n\nHow adoption works\n1\nSearch\n\nUse filters to find pets who fit your home and lifestyle.\n\n2\nC"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "petfinder\n\nConnecting adoptable pets with loving people.\n\nADOPT\nDogs & puppies\nCats & kittens\nRabbits\nFavorites\nLEARN\nPet care library\nDog & puppy grooming\nShelters & rescues\nGIVE\n\nHelp adoption groups care for more pets.\n\nDonate to the Foundation\n© 2026 Petfinder demo experience\nBuilt with synthetic adoption data"
+      }
+    ],
+    "axSnapshot": "- link \"Skip to content\":\n  - /url: \"#main-content\"\n- banner:\n  - link \"Petfinder home\":\n    - /url: /\n    - text: petfinder\n  - navigation \"Main navigation\":\n    - link \"Find a Pet\":\n      - /url: /search\n    - link \"Shelters & Rescues\":\n      - /url: /organizations\n    - link \"Pet Care\":\n      - /url: /resources\n    - link \"Favorites\":\n      - /url: /favorites\n    - link \"Donate\":\n      - /url: /donate\n- main:\n  - paragraph: Find love. Give love.\n  - heading \"Bring home more happy.\" [level=1]:\n    - text: Bring home more\n    - emphasis: happy.\n  - paragraph: Search thousands of adoptable pets from shelters and rescue groups near you.\n  - group \"Pet type\":\n    - button \"Dog\" [pressed]\n    - button \"Cat\"\n    - button \"Rabbit\"\n  - text: Location\n  - textbox \"Location\":\n    - /placeholder: City, state, or zip\n  - button \"Search pets\"\n  - paragraph: Adoption starts here\n  - heading \"Find your new best friend\" [level=2]\n  - paragraph: Browse adoptable pets from trusted shelters and rescues.\n  - link \"Dogs & Puppies Patient tails are waiting\":\n    - /url: /search?species=Dog\n    - strong: Dogs & Puppies\n    - text: Patient tails are waiting\n  - link \"Cats & Kittens Meet your purr-fect match\":\n    - /url: /search?species=Cat\n    - strong: Cats & Kittens\n    - text: Meet your purr-fect match\n  - link \"Rabbits Big personalities, soft ears\":\n    - /url: /search?species=Rabbit\n    - strong: Rabbits\n    - text: Big personalities, soft ears\n  - paragraph: A thoughtful match\n  - heading \"How adoption works\" [level=2]\n  - article:\n    - text: \"1\"\n    - heading \"Search\" [level=3]\n    - paragraph: Use filters to find pets who fit your home and lifestyle.\n  - article:\n    - text: \"2\"\n    - heading \"Connect\" [level=3]\n    - paragraph: Read profiles and contact the shelter or rescue directly.\n  - article:\n    - text: \"3\"\n    - heading \"Adopt\" [level=3]\n    - paragraph: Complete the group’s process and welcome your new companion.\n  - paragraph: Pet care essentials\n  - heading \"Help your dog look and feel their best\" [level=2]\n  - paragraph: Learn brushing, bathing, nail care, and coat-care basics for dogs and puppies.\n  - link \"Read the grooming guide\":\n    - /url: /resources/dog-puppy-grooming\n  - paragraph: Petfinder Foundation\n  - heading \"Help shelters save more lives\" [level=2]\n  - paragraph: Your monthly gift supports adoption programs, disaster response, and shelter enrichment.\n  - link \"Make a gift\":\n    - /url: /donate\n- contentinfo:\n  - link \"petfinder\":\n    - /url: /\n  - paragraph: Connecting adoptable pets with loving people.\n  - heading \"Adopt\" [level=2]\n  - link \"Dogs & puppies\":\n    - /url: /search?species=Dog\n  - link \"Cats & kittens\":\n    - /url: /search?species=Cat\n  - link \"Rabbits\":\n    - /url: /search?species=Rabbit\n  - link \"Favorites\":\n    - /url: /favorites\n  - heading \"Learn\" [level=2]\n  - link \"Pet care library\":\n    - /url: /resources\n  - link \"Dog & puppy grooming\":\n    - /url: /resources/dog-puppy-grooming\n  - link \"Shelters & rescues\":\n    - /url: /organizations\n  - heading \"Give\" [level=2]\n  - paragraph: Help adoption groups care for more pets.\n  - link \"Donate to the Foundation\":\n    - /url: /donate\n  - text: © 2026 Petfinder demo experience Built with synthetic adoption data"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/28-petfinder/dist/assets/index-BRgV2R-Z.js",
+      "offset": 329706,
+      "match": "className:\"eyebrow\"",
+      "context": "\",children:[c.jsx(V,{icon:jl}),c.jsx(\"input\",{type:\"text\",value:r,onChange:m=>f(m.target.value),placeholder:\"City, state, or zip\",\"aria-label\":\"Location\"})]})]}),c.jsxs(\"button\",{className:\"primary-button hero-search-button\",type:\"submit\",children:[c.jsx(V,{icon:op}),\" Search pets\"]})]})]})]})]}),c.jsxs(\"section\",{className:\"browse-section page-width section-space\",children:[c.jsxs(\"div\",{className:\"section-heading centered\",children:[c.jsx(\"p\",{className:\"eyebrow\",children:\"Adoption starts here\"}),c.jsx(\"h2\",{children:\"Find your new best friend\"}),c.jsx(\"p\",{children:\"Browse adoptable pets from trusted shelters and rescues.\"})]}),c.jsxs(\"div\",{className:\"animal-type-grid\",children:[c.jsxs(de,{to:\"/search?species=Dog\",className:\"animal-type-card dog-card\",children:[c.jsx(\"span\",{className:\"animal-icon\",children:c.jsx(V,{icon:_g})}),c.jsxs(\"span\",{children:[c.jsx(\"strong\",{children:\"Dogs & Puppies\"}),c.jsx("
+    }
+  ]
+}

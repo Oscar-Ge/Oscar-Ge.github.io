@@ -1,0 +1,224 @@
+{
+  "site": "macys",
+  "siteKey": "04-macys",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 4,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/A[1]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/A[1]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/04-macys/wave/attempt-1/raw.json",
+  "errorId": "ST0109",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/A[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "View details",
+    "html": "<span class=\"image-cta\">View details</span>",
+    "class": "image-cta",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 380.59375,
+      "y": 2101.984375,
+      "width": 84.0625,
+      "height": 28
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(23, 23, 23, 0.87)",
+      "fontSize": "10.88px",
+      "fontWeight": "700",
+      "opacity": "0",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/A[1]",
+      "tag": "A",
+      "class": "product-image-wrap",
+      "text": "View details",
+      "html": "<a class=\"product-image-wrap\" href=\"/product/black-work-top\" data-discover=\"true\"><img alt=\"Pleated-Neck Work Top\" src=\"https://placehold.co/600x720/E4E1E2/222222?text=Black%20Work%20Top\"><span class=\"image-cta\">View details</span></a>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/A[1]",
+      "tag": "A",
+      "text": "View details",
+      "ariaLabel": null,
+      "href": "/product/black-work-top",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:43699/assets/index-1Ei0oUn_.css",
+        "selector": ".image-cta",
+        "declarations": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(23, 23, 23, 0.87)",
+          "background-color": "rgba(23, 23, 23, 0.87)",
+          "font-size": "0.68rem",
+          "font-weight": "700",
+          "opacity": "0"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Good finds.\nGreat prices.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find exactly what you need",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Evening bags under $50",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Best-selling building toys",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Recliners at every price",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Engagement rings",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Trending: the workwear refresh",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Black & brown are better together.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Make every moment easier",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Create a searchable list",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Send an E-Gift Card",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Track an order",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Find a registry",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "CUSTOMER SERVICE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "GIFTS & EVENTS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "POPULAR SHOPS",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "macy's\nSearch products\nLists\nBag\nMen\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Shop departments",
+        "text": "Men\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "THE BIG STYLE EVENT\nGood finds.\nGreat prices.\n\nFresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n\nShop Trending\nExplore Clearance\nLimited-time values on select styles. Prices as marked.\nUP TO\n60%\nOFF\n New arrivals every week\nFree shipping at $25\nFree returns by mail or in store\nSecure checkout for every order\nSHOP YOUR WAY\nFind exactly what you need\nSearch all products \nSPECIAL OCCASION\nEvening bags under $50\nShop now \nTOP-RATED\nBest-selling bui"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "macy's\n\nGreat style, thoughtful gifts and memorable moments—all in one place.\n\nCUSTOMER SERVICE\nOrder Status\nShopping Bag\nMy Lists\nGIFTS & EVENTS\nE-Gift Cards\nWedding Registry\nGiftable Toys\nPOPULAR SHOPS\nTrending Now\nKitchen Sale\nClearance\n© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      }
+    ],
+    "axSnapshot": "- text: Free shipping at $25 | Store pickup available\n- link \"Shop Clearance\":\n  - /url: /shop/clearance\n- banner:\n  - link \"Macy's home\":\n    - /url: /\n    - text: macy's\n  - search:\n    - text: Search products\n    - textbox \"Search products\":\n      - /placeholder: Search products, brands & more\n    - button \"Submit search\"\n  - link \"Lists\":\n    - /url: /lists\n  - link \"Bag\":\n    - /url: /bag\n  - navigation \"Shop departments\":\n    - link \"Men\":\n      - /url: /shop/men\n    - link \"Kids & Baby\":\n      - /url: /shop/kids\n    - link \"Handbags\":\n      - /url: /shop/handbags\n    - link \"Toys\":\n      - /url: /shop/toys\n    - link \"Trending\":\n      - /url: /shop/trending\n    - link \"Home\":\n      - /url: /shop/furniture\n    - link \"Jewelry\":\n      - /url: /shop/jewelry\n    - link \"Kitchen\":\n      - /url: /shop/kitchen\n    - link \"Wine\":\n      - /url: /shop/wine\n    - link \"Shoes\":\n      - /url: /shop/shoes\n    - link \"Clearance\":\n      - /url: /shop/clearance\n    - link \"Gift Cards\":\n      - /url: /gift-cards\n- main:\n  - text: THE BIG STYLE EVENT\n  - heading \"Good finds. Great prices.\" [level=1]\n  - paragraph: Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n  - link \"Shop Trending\":\n    - /url: /shop/trending\n  - link \"Explore Clearance\":\n    - /url: /shop/clearance\n  - text: Limited-time values on select styles. Prices as marked. up to\n  - strong: 60%\n  - text: \"off\"\n  - img \"New season fashion placeholder\"\n  - text: New arrivals every week\n  - region \"Shopping benefits\":\n    - strong: Free shipping\n    - text: at $25\n    - strong: Free returns\n    - text: by mail or in store\n    - strong: Secure checkout\n    - text: for every order\n  - text: SHOP YOUR WAY\n  - heading \"Find exactly what you need\" [level=2]\n  - link \"Search all products\":\n    - /url: /search?q=best+sellers\n  - link \"Special occasion Evening bags under $50 Shop now\":\n    - /url: /shop/handbags\n    - text: Special occasion\n    - heading \"Evening bags under $50\" [level=3]\n    - text: Shop now\n  - link \"Top-rated Best-selling building toys Shop now\":\n    - /url: /shop/toys\n    - text: Top-rated\n    - heading \"Best-selling building toys\" [level=3]\n    - text: Shop now\n  - link \"Make it home Recliners at every price Shop now\":\n    - /url: /shop/furniture\n    - text: Make it home\n    - heading \"Recliners at every price\" [level=3]\n    - text: Shop now\n  - link \"Forever starts here Engagement rings Shop now\":\n    - /url: /shop/jewelry\n    - text: Forever starts here\n    - heading \"Engagement rings\" [level=3]\n    - text: Shop now\n  - text: THE EDIT\n  - 'heading \"Trending: the workwear refresh\" [level=2]'\n  - link \"View all trending\":\n    - /url: /shop/trending\n  - article:\n    - link \"Pleated-Neck Work Top View details\":\n      - /url: /product/black-work-top\n      - img \"Pleated-Neck Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Alfani\n    - link \"Pleated-Neck Work Top\":\n      - /url: /product/black-work-top\n    - strong: \"4.7\"\n    - text: (442) $29.99 $49.50 39% off\n    - paragraph: \"Color: Black\"\n    - link \"View Details\":\n      - /url: /product/black-work-top\n    - button \"Add to Bag\"\n  - article:\n    - link \"Satin Button-Cuff Work Top View details\":\n      - /url: /product/brown-work-top\n      - img \"Satin Button-Cuff Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Bar III\n    - link \"Satin Button-Cuff Work Top\":\n      - /url: /product/brown-work-top\n    - strong: \"4.8\"\n    - text: (318) $34.99 $59.50 41% off\n    - paragraph: \"Color: Brown\"\n    - link \"View Details\":\n      - /url: /product/brown-work-top\n    - button \"Add to Bag\"\n  - text: COLOR STORY\n  - heading \"Black & brown are better together.\" [level=3]\n  - paragraph: Build a polished work wardrobe with rich neutrals and softly tailored shapes.\n  - link \"Shop work tops\":\n    - /url: /shop/trending\n  - text: MORE WAYS TO SHOP\n  - heading \"Make every moment easier\" [level=2]\n  - link \"Create a searchable list Save room ideas, gifts and future favorites. My Lists\":\n    - /url: /lists\n    - heading \"Create a searchable list\" [level=3]\n    - paragraph: Save room ideas, gifts and future favorites.\n    - text: My Lists\n  - link \"Send an E-Gift Card Choose an amount and add a personal message. Send a gift\":\n    - /url: /gift-cards\n    - heading \"Send an E-Gift Card\" [level=3]\n    - paragraph: Choose an amount and add a personal message.\n    - text: Send a gift\n  - link \"Track an order Look up details with an order number and email. Order status\":\n    - /url: /order-status\n    - heading \"Track an order\" [level=3]\n    - paragraph: Look up details with an order number and email.\n    - text: Order status\n  - link \"Find a registry Search wedding registries by the registrant's name. Registry search\":\n    - /url: /registry\n    - heading \"Find a registry\" [level=3]\n    - paragraph: Search wedding registries by the registrant's name.\n    - text: Registry search\n- contentinfo:\n  - text: macy's\n  - paragraph: Great style, thoughtful gifts and memorable moments—all in one place.\n  - heading \"Customer Service\" [level=3]\n  - link \"Order Status\":\n    - /url: /order-status\n  - link \"Shopping Bag\":\n    - /url: /bag\n  - link \"My Lists\":\n    - /url: /lists\n  - heading \"Gifts & Events\" [level=3]\n  - link \"E-Gift Cards\":\n    - /url: /gift-cards\n  - link \"Wedding Registry\":\n    - /url: /registry\n  - link \"Giftable Toys\":\n    - /url: /shop/toys\n  - heading \"Popular Shops\" [level=3]\n  - link \"Trending Now\":\n    - /url: /shop/trending\n  - link \"Kitchen Sale\":\n    - /url: /shop/kitchen\n  - link \"Clearance\":\n    - /url: /shop/clearance\n  - text: © 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist/assets/index-egnyh-tu.js",
+      "offset": 336018,
+      "match": "className:\"image-cta\"",
+      "context": "ant's name.\"}),o.jsxs(\"b\",{children:[\"Registry search \",o.jsx(Z,{icon:ft})]})]})]})]})]})]})}function qo({product:n,onQuickAdd:u,onAddToList:c}){const s=n.department===\"clearance\"?\"Move to Shopping Bag\":\"Add to Bag\",f=[\"trending\",\"clearance\"].includes(n.department);return o.jsxs(\"article\",{className:\"product-card\",children:[o.jsxs(ue,{className:\"product-image-wrap\",to:`/product/${n.id}`,children:[o.jsx(\"img\",{src:pu(n),alt:n.name}),o.jsx(\"span\",{className:\"image-cta\",children:\"View details\"})]}),o.jsxs(\"div\",{className:\"product-card-body\",children:[n.badges?.length?o.jsx(\"div\",{className:\"badge-row\",children:n.badges.map(m=>o.jsx(\"span\",{className:\"badge\",children:m},m))}):null,o.jsx(\"p\",{className:\"product-brand\",children:n.brand}),o.jsx(ue,{className:\"product-name\",to:`/product/${n.id}`,children:n.name}),o.jsx(g0,{value:n.rating,reviews:n.reviews,compact:!0}),o.jsx(p0,{product:n}),n.colors?.length?o.jsxs(\""
+    }
+  ]
+}

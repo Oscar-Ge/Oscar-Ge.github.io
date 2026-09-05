@@ -1,0 +1,205 @@
+{
+  "site": "ups",
+  "siteKey": "29-ups",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/29-ups/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 0,
+  "selector": [
+    ".utility-bar"
+  ],
+  "html": "<div class=\"utility-bar\">",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/29-ups/axe/attempt-1/raw.json",
+  "errorId": "ST0748",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]",
+    "tag": "DIV",
+    "text": "United States – English\nFind a Location\nSupport",
+    "html": "<div class=\"utility-bar\"><div class=\"container utility-inner\"><span><svg data-prefix=\"fas\" data-icon=\"globe\" class=\"svg-inline--fa fa-globe\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z\"></path></svg> United States – English</span><div class=\"utility-links\"><a href=\"/locations\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg> Find a Location</a><a href=\"/support\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"headset\" class=\"svg-inline--fa fa-headset\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 64c-79 0-144.7 57.3-157.7 132.7 9.3-3 19.3-4.7 29.7-4.7l16 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0c-53 0-96-43-96-96l0-64C0 100.3 100.3 0 224 0S448 100.3 448 224l0 168.1c0 66.3-53.8 120-120.1 120l-87.9-.1-32 0c-26.5 0-48-21.5-48-48s21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 0 40 0c39.8 0 72-32.2 72-72l0-20.9c-14.1 8.2-30.5 12.8-48 12.8l-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48l16 0c10.4 0 20.3 1.6 29.7 4.7-13-75.3-78.6-132.7-157.7-132.7z\"></path></svg> Support</a></div></div></div>",
+    "class": "utility-bar",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 36
+    },
+    "style": {
+      "color": "rgb(230, 222, 217)",
+      "background": "rgb(36, 21, 16)",
+      "fontSize": "12.48px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "app-shell",
+      "text": "United States – English\nFind a Location\nSupport\nups\nShipping\nTracking\nLocations\nSchedule a Pickup\nSign In\nSHIP CONFIDENTLY, EVERY TIME\nRight here.\nRight on time.\n\nGet reliable shipping, flexible pickup options, and visibility at every step of the journey.\n\n 220+ countries\n Door-to-door tracking\nups\nTrack\nQuote\nFind a Location\nTracking number\nTrack Package\nEVERYTHING YOU NEED\nShipping made simpler\n\nFrom a single envelope to your weekly business orders, choose the right service and stay in control.\n\nSHIP NOW\nCalculate time & cost\n\nCompare delivery speeds and prices for your exact route and package.\n\nGet a quote\nNEARBY HELP\nFind a UPS location\n\nLocate drop offs, UPS Access Point® locations, not",
+      "html": "<div class=\"app-shell\"><div class=\"utility-bar\"><div class=\"container utility-inner\"><span><svg data-prefix=\"fas\" data-icon=\"globe\" class=\"svg-inline--fa fa-globe\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z\"></path></svg> United States – English</span><div class=\"utility-links\"><a href=\"/locations\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg> Find a Location</a><a href=\"/support\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"headset\" class=\"svg-inline--fa fa-headset\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 64c-79 0-144.7 57.3-157.7 132.7 9.3-3 19.3-4.7 29.7-4.7l16 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0c-53 0-96-43-96-96l0-64C0 100.3 100.3 0 224 0S448 100.3 448 224l0 168.1c0 66.3-53.8 120-120.1 120l-87.9-.1-32 0c-26.5 0-48-21.5-48-48s21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 0 40 0c39.8 0 72-32.2 72-72l0-20.9c-14.1 8.2-30.5 12.8-48 12.8l-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48l16 0c10.4 0 20.3 1.6 29.7 4.7-13-75.3-78.6-132.7-157.7-132.7z\"></path></svg> Support</a></div></div></div><header class=\"site-header\"><div class=\"container header-inner\"><a class=\"logo-link\" aria-label=\"UPS home\" href=\"/\" data-discover=\"true\"><span class=\"brand\" aria-label=\"UPS home\"><span class=\"brand-shield\">ups</span></span></a><nav class=\"desktop-nav\" aria-label=\"Primary navigation\"><a class=\"\" href=\"/shipping\" data-discover=\"true\">Shipping</a><a class=\"\" href=\"/track\" data-discover=\"true\">Tracking</a><a class=\"\" href=\"/locations\" data-discover=\"true\">Locations</a><a class=\"\" href=\"/pickup\" data-discover=\"true\">Schedule a Pickup</a></nav><div class=\"header-actions\"><button class=\"icon-button\" type=\"button\" aria-label=\"Search UPS\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg></button><button class=\"sign-in-button\" type=\"button\"><svg data-prefix=\"fas\" data-icon=\"user\" class=\"svg-inline--fa fa-user\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z\"></path></svg> <span>Sign In</span></button><button class=\"mobile-menu-button\" type=\"button\" aria-label=\"Toggle menu\" aria-expanded=\"false\"><svg data-prefix=\"fas\" data-icon=\"bars\" class=\"svg-inline--fa fa-bars\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z\"></path></svg></button></div></div></header><main><section class=\"home-hero\"><div class=\"hero-pattern hero-pattern-one\"></div><div class=\"hero-pattern hero-pattern-two\"></div><div class=\"container home-hero-inner\"><div class=\"hero-copy\"><span class=\"eyebrow light\">Ship confidently, every time</span><h1>Right here.<br>Right on time.</h1><p>Get reliable shipping, flexible pickup options, and visibility at every step of the journey.</p><div class=\"hero-trust-row\"><span><svg data-prefix=\"fas\" data-icon=\"circle-check\" class=\"svg-inline--fa fa-circle-check\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z\"></path></svg> 220+ countries</span><span><svg data-prefix=\"fas\" data-icon=\"circle-check\" class=\"svg-inline--fa fa-circle-check\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z\"></path></svg> Door-to-door tracking</span></div></div><div class=\"hero-illustration\" aria-hidden=\"true\"><div class=\"hero-route route-a\"></div><div class=\"hero-route route-b\"></div><div class=\"package package-back\"><svg data-prefix=\"fas\" data-icon=\"box\" class=\"svg-inline--fa fa-box\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M369.4 128l-34.3-48-222.1 0-34.3 48 290.7 0zM0 148.5c0-13.3 4.2-26.3 11.9-37.2L60.9 42.8C72.9 26 92.3 16 112.9 16l222.1 0c20.7 0 40.1 10 52.1 26.8l48.9 68.5c7.8 10.9 11.9 23.9 11.9 37.2L448 416c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 148.5z\"></path></svg></div><div class=\"package package-front\"><span>ups</span><svg data-prefix=\"fas\" data-icon=\"box-open\" class=\"svg-inline--fa fa-box-open\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M560.3 237.2c10.4 11.8 28.3 14.4 41.8 5.5 14.7-9.8 18.7-29.7 8.9-44.4l-48-72c-2.8-4.2-6.6-7.7-11.1-10.2L351.4 4.7c-"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34339/assets/index-BErfVbUR.css",
+        "selector": ".utility-bar",
+        "declarations": {
+          "color": "rgb(230, 222, 217)",
+          "background": "rgb(36, 21, 16)",
+          "background-color": "rgb(36, 21, 16)",
+          "font-size": "0.78rem"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "UPS Shipping, Tracking & Locations",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[3]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Right here.\nRight on time.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Shipping made simpler",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Calculate time & cost",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "Find a UPS location",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/A[3]/H3[1]",
+        "tag": "H3",
+        "text": "Schedule a pickup",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Meet UPS® Simple Rate",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "More control, less wondering",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Stay informed",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Choose convenience",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Ship with confidence",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Ship & Track",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Pickup & Locations",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Help",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "ups\nShipping\nTracking\nLocations\nSchedule a Pickup\nSign In"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Shipping\nTracking\nLocations\nSchedule a Pickup"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "SHIP CONFIDENTLY, EVERY TIME\nRight here.\nRight on time.\n\nGet reliable shipping, flexible pickup options, and visibility at every step of the journey.\n\n 220+ countries\n Door-to-door tracking\nups\nTrack\nQuote\nFind a Location\nTracking number\nTrack Package\nEVERYTHING YOU NEED\nShipping made simpler\n\nFrom a single envelope to your weekly business orders, choose the right service and stay in control.\n\nSHIP NOW\nCalculate time & cost\n\nCompare delivery speeds and prices for your exact route and package.\n\nG"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "ups\n\nDelivering what matters—from your neighborhood to the world.\n\n Secure mock experience\nShip & Track\nCalculate Time & Cost\nTrack a Package\nUPS Simple Rate\nPickup & Locations\nSchedule a Pickup\nPickup Request Status\nFind a UPS Location\nHelp\nContact UPS\nEmail a Transcript\nHelp Center\n© 2026 United Parcel Service of America, Inc. This is a realistic demo.\nPrivacy & security · Accessibility"
+      }
+    ],
+    "axSnapshot": "- text: United States – English\n- link \"Find a Location\":\n  - /url: /locations\n- link \"Support\":\n  - /url: /support\n- banner:\n  - link \"UPS home\":\n    - /url: /\n    - text: ups\n  - navigation \"Primary navigation\":\n    - link \"Shipping\":\n      - /url: /shipping\n    - link \"Tracking\":\n      - /url: /track\n    - link \"Locations\":\n      - /url: /locations\n    - link \"Schedule a Pickup\":\n      - /url: /pickup\n  - button \"Search UPS\"\n  - button \"Sign In\"\n- main:\n  - text: Ship confidently, every time\n  - heading \"Right here. Right on time.\" [level=1]\n  - paragraph: Get reliable shipping, flexible pickup options, and visibility at every step of the journey.\n  - text: 220+ countries Door-to-door tracking\n  - tablist \"Quick actions\":\n    - tab \"Track\" [selected]\n    - tab \"Quote\"\n    - tab \"Find a Location\"\n  - text: Tracking number\n  - textbox \"Tracking number\":\n    - /placeholder: Enter tracking number\n  - button \"Track Package\"\n  - text: Everything you need\n  - heading \"Shipping made simpler\" [level=2]\n  - paragraph: From a single envelope to your weekly business orders, choose the right service and stay in control.\n  - link \"Ship now Calculate time & cost Compare delivery speeds and prices for your exact route and package. Get a quote\":\n    - /url: /shipping\n    - text: Ship now\n    - heading \"Calculate time & cost\" [level=3]\n    - paragraph: Compare delivery speeds and prices for your exact route and package.\n    - text: Get a quote\n  - link \"Nearby help Find a UPS location Locate drop offs, UPS Access Point® locations, notary services, and supplies. Find locations\":\n    - /url: /locations\n    - text: Nearby help\n    - heading \"Find a UPS location\" [level=3]\n    - paragraph: Locate drop offs, UPS Access Point® locations, notary services, and supplies.\n    - text: Find locations\n  - link \"We come to you Schedule a pickup Choose the date, place, and time window that works for your shipment. Schedule now\":\n    - /url: /pickup\n    - text: We come to you\n    - heading \"Schedule a pickup\" [level=3]\n    - paragraph: Choose the date, place, and time window that works for your shipment.\n    - text: Schedule now\n  - text: One size. One price.\n  - heading \"Meet UPS® Simple Rate\" [level=2]\n  - paragraph: Use your own packaging, choose from five common sizes, and compare straightforward flat-rate pricing.\n  - link \"Compare flat rates\":\n    - /url: /flat-rate\n  - text: Built around your day\n  - heading \"More control, less wondering\" [level=2]\n  - paragraph: Plan with clear delivery windows, convenient handoff options, and updates that keep everyone informed.\n  - heading \"Stay informed\" [level=3]\n  - paragraph: Get a clear mock tracking timeline and email update options.\n  - heading \"Choose convenience\" [level=3]\n  - paragraph: Find staffed stores and neighborhood Access Point locations.\n  - heading \"Ship with confidence\" [level=3]\n  - paragraph: Compare service levels before making a selection.\n- contentinfo:\n  - text: ups\n  - paragraph: Delivering what matters—from your neighborhood to the world.\n  - text: Secure mock experience\n  - heading \"Ship & Track\" [level=3]\n  - link \"Calculate Time & Cost\":\n    - /url: /shipping\n  - link \"Track a Package\":\n    - /url: /track\n  - link \"UPS Simple Rate\":\n    - /url: /flat-rate\n  - heading \"Pickup & Locations\" [level=3]\n  - link \"Schedule a Pickup\":\n    - /url: /pickup\n  - link \"Pickup Request Status\":\n    - /url: /pickup-status\n  - link \"Find a UPS Location\":\n    - /url: /locations\n  - heading \"Help\" [level=3]\n  - link \"Contact UPS\":\n    - /url: /support\n  - link \"Email a Transcript\":\n    - /url: /support#transcript\n  - link \"Help Center\":\n    - /url: /support#help-center\n  - text: © 2026 United Parcel Service of America, Inc. This is a realistic demo. Privacy & security · Accessibility"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/29-ups/dist/assets/index-CgBnfFci.js",
+      "offset": 319397,
+      "match": "className:\"utility-bar\"",
+      "context": "et w=\"/support\";M.includes(\"track\")?w=\"/track\":M.includes(\"pickup status\")?w=\"/pickup-status\":M.includes(\"pickup\")?w=\"/pickup\":M.includes(\"location\")||M.includes(\"drop off\")||M.includes(\"access point\")?w=\"/locations\":M.includes(\"flat\")||M.includes(\"simple rate\")||M.includes(\"medium box\")?w=\"/flat-rate\":(M.includes(\"quote\")||M.includes(\"cost\")||M.includes(\"ship\"))&&(w=\"/shipping\"),c(!1),y(\"\"),g(w)};return r.jsxs(r.Fragment,{children:[r.jsx(\"div\",{className:\"utility-bar\",children:r.jsxs(\"div\",{className:\"container utility-inner\",children:[r.jsxs(\"span\",{children:[r.jsx(H,{icon:qo}),\" United States – English\"]}),r.jsxs(\"div\",{className:\"utility-links\",children:[r.jsxs(Ue,{to:\"/locations\",children:[r.jsx(H,{icon:$t}),\" Find a Location\"]}),r.jsxs(Ue,{to:\"/support\",children:[r.jsx(H,{icon:hp}),\" Support\"]})]})]})}),r.jsxs(\"header\",{className:\"site-header\",children:[r.jsxs(\"div\",{className:\"container header-inner\",ch"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+- banner:
+  - link "Indeed home":
+    - /url: /
+    - text: indeed
+  - navigation "Primary navigation":
+    - link "Find jobs":
+      - /url: /jobs
+    - link "Company reviews":
+      - /url: /companies
+    - link "Salaries":
+      - /url: /salaries
+    - link "Certifications":
+      - /url: /certifications
+    - link "Recent searches":
+      - /url: /recent
+  - button "Sign in"
+- main:
+  - paragraph: Your next opportunity starts here
+  - heading "Find work that works for you" [level=1]
+  - paragraph: Search thousands of realistic mock opportunities by role, pay, location, experience, and the things that matter to you.
+  - text: What
+  - textbox "What":
+    - /placeholder: Job title, keywords, or company
+  - text: Where
+  - textbox "Where":
+    - /placeholder: City, state, or remote
+  - button "Find jobs"
+  - text: "Popular:"
+  - button "Remote software engineer"
+  - button "Part-time admin"
+  - button "Nutritionist in Ohio"
+  - paragraph: Keep exploring
+  - heading "Pick up where you left off" [level=2]
+  - link "See all recent searches":
+    - /url: /recent
+  - strong: Remote software engineer
+  - text: United States · Viewed recently
+  - button "Open search"
+  - paragraph: More than job listings
+  - heading "Make your next move with confidence" [level=2]
+  - link "Compare salaries See what companies pay for the work you want to do. Explore salaries":
+    - /url: /salaries
+    - heading "Compare salaries" [level=3]
+    - paragraph: See what companies pay for the work you want to do.
+    - text: Explore salaries
+  - link "Know the company Read employee reviews and prepare with interview questions. Browse companies":
+    - /url: /companies
+    - heading "Know the company" [level=3]
+    - paragraph: Read employee reviews and prepare with interview questions.
+    - text: Browse companies
+  - link "Build a skill Find flexible certifications that fit your schedule. Find training":
+    - /url: /certifications
+    - heading "Build a skill" [level=3]
+    - paragraph: Find flexible certifications that fit your schedule.
+    - text: Find training
+- contentinfo:
+  - text: © 2026 Indeed
+  - link "Accessibility at Indeed":
+    - /url: /info/accessibility
+  - link "Privacy Center":
+    - /url: /info/privacy
+  - link "Terms":
+    - /url: /info/terms

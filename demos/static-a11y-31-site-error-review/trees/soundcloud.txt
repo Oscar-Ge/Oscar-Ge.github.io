@@ -1,0 +1,99 @@
+- banner:
+  - link "SoundCloud home":
+    - /url: /
+    - text: SOUNDCLOUD
+  - navigation "Primary navigation":
+    - link "Home":
+      - /url: /
+    - link "Feed":
+      - /url: /feed
+    - link "Charts":
+      - /url: /charts
+    - link "Library":
+      - /url: /library/likes
+  - search:
+    - text: Search SoundCloud
+    - textbox "Search SoundCloud":
+      - /placeholder: Search artists, tracks, playlists
+    - button "Submit search"
+  - link "For Artists":
+    - /url: /plans
+  - link "Open your library":
+    - /url: /library/likes
+    - text: AR
+- main:
+  - text: YOUR SOUND, EVERYWHERE
+  - heading "Discover what’s next in music." [level=1]
+  - paragraph: Fresh tracks, cult favorites and independent voices—all in one place.
+  - link "Explore trending":
+    - /url: /trending
+  - link "Browse charts":
+    - /url: /charts
+  - text: START HERE
+  - heading "Made for your moment" [level=2]
+  - link "See what’s trending":
+    - /url: /trending
+  - article:
+    - 'button "Play Ultimate Game Mix: Level Up"'
+    - text: Album
+    - 'link "Ultimate Game Mix: Level Up"':
+      - /url: /playlist/ultimate-game-mix
+    - paragraph: GameWave Collective
+    - text: "#Gaming #Electronics"
+    - 'button "Like Ultimate Game Mix: Level Up"': Like
+    - 'button "Repost Ultimate Game Mix: Level Up"': Repost
+    - 'button "Add Ultimate Game Mix: Level Up to Next up"'
+  - article:
+    - button "Play Rock Classics Recharged"
+    - text: Playlist
+    - link "Rock Classics Recharged":
+      - /url: /playlist/rock-revival
+    - paragraph: SoundCloud Rock
+    - text: "#Rock"
+    - button "Like Rock Classics Recharged": Like
+    - button "Repost Rock Classics Recharged": Repost
+    - button "Add Rock Classics Recharged to Next up"
+  - article:
+    - button "Play Electronics After Dark"
+    - text: Playlist
+    - link "Electronics After Dark":
+      - /url: /playlist/electronics-after-dark
+    - paragraph: Pulse Selects
+    - text: "#Electronics"
+    - button "Like Electronics After Dark": Like
+    - button "Repost Electronics After Dark": Repost
+    - button "Add Electronics After Dark to Next up"
+  - text: EXPLORE BY MOOD
+  - heading "Find your frequency" [level=2]
+  - group "Music categories":
+    - button "Chill"
+    - button "Rock"
+    - button "Pop"
+    - button "Electronic"
+    - button "Hip-hop & Rap"
+    - button "Indian classical"
+  - text: ARTISTS IN CHILL
+  - heading "Creators to follow" [level=3]
+  - paragraph: Tap follow to bring new releases directly into your feed.
+  - article:
+    - link "MC":
+      - /url: /artist/maya-cove
+    - link "Maya Cove":
+      - /url: /artist/maya-cove
+    - text: Chill · 42.8K followers
+    - button "Follow"
+  - text: SOUNDCLOUD CHARTS
+  - heading "The tracks shaping culture right now." [level=2]
+  - paragraph: See what listeners are playing, sharing and reposting worldwide.
+  - link "Open Top 50":
+    - /url: /charts
+- contentinfo "Audio player":
+  - strong: Midnight City Lights
+  - text: Lunar Arcade
+  - button "Like current track"
+  - button "Previous track"
+  - button "Play"
+  - button "Next track"
+  - text: 0:00 4:08
+  - button "Mute"
+  - button "Next up"

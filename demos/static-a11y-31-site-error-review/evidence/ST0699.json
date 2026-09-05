@@ -1,0 +1,181 @@
+{
+  "site": "weather",
+  "siteKey": "24-weather",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/24-weather/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 15,
+  "selector": [
+    ".insight-list > button:nth-child(1) > span:nth-child(2) > em"
+  ],
+  "html": "<em>See pollutant details</em>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#7a8799",
+          "bgColor": "#ffffff",
+          "contrastRatio": 3.65,
+          "fontSize": "8.3pt (11.04px)",
+          "fontWeight": "normal",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<section class=\"card insight-list\">",
+            "target": [
+              ".insight-list"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 3.65 (foreground color: #7a8799, background color: #ffffff, font size: 8.3pt (11.04px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/24-weather/axe/attempt-1/raw.json",
+  "errorId": "ST0699",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]/SECTION[2]/BUTTON[1]/SPAN[2]/EM[1]",
+    "tag": "EM",
+    "text": "See pollutant details",
+    "html": "<em>See pollutant details</em>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1044,
+      "y": 656,
+      "width": 209,
+      "height": 13
+    },
+    "style": {
+      "color": "rgb(122, 135, 153)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "11.04px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "ASIDE",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]/SECTION[2]/BUTTON[1]/SPAN[2]",
+      "tag": "SPAN",
+      "class": "",
+      "text": "AIR QUALITY\n32 · Good\nSee pollutant details",
+      "html": "<span><small>AIR QUALITY</small><strong>32 · Good</strong><em>See pollutant details</em></span>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]/SECTION[2]/BUTTON[1]",
+      "tag": "BUTTON",
+      "text": "AIR QUALITY\n32 · Good\nSee pollutant details",
+      "ariaLabel": null,
+      "href": null,
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34929/assets/index-D5r94fdi.css",
+        "selector": ".insight-list em",
+        "declarations": {
+          "color": "rgb(122, 135, 153)",
+          "font-size": "0.69rem"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Seattle, WA",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Seattle right now",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Hourly outlook",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]/SECTION[1]/H2[1]",
+        "tag": "H2",
+        "text": "Sun & moon",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "Sunday, August 16\nLive conditions\nWeatherwise\nSearch\nUse my location\n°F\n°C\nForecast\nMaps\nAir Quality\nHealth & Activities"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Forecast\nMaps\nAir Quality\nHealth & Activities"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Weather views",
+        "text": "Today\nHourly\n10 Day\nMonthly\nHealth\nAir Quality\nHistory\nRadar"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "CURRENT WEATHER\nSeattle right now\nUpdated now\n66°\nMostly Cloudy\nFeels like 65°\nHigh 72°\nLow 56°\n\nClouds thinning this afternoon with comfortable temperatures and a light breeze.\n\nHumidity\n69%\nWind\nSSW 7 mph\nVisibility\n10 mi\nPressure\n30.02 in\nDew point\n55°\nRain chance\n28%\nCOMING UP\nHourly outlook\nNext 24 hours\nNow\n70°\n 20%\n12 PM\n72°\n 27%\n1 PM\n72°\n 34%\n2 PM\n72°\n 24%\n3 PM\n70°\n 31%\n4 PM\n69°\n 21%\nSUNDAY'S OUTLOOK\nSun & moon\nSunrise\n6:05 AM\nSunset\n8:18 PM\nAIR QUALITY\n32 · Good\nSee pollutant details\nCO"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "SUNDAY'S OUTLOOK\nSun & moon\nSunrise\n6:05 AM\nSunset\n8:18 PM\nAIR QUALITY\n32 · Good\nSee pollutant details\nCOLD & FLU\nLow risk\nView today's health outlook\nRADAR\nLive local map\nTrack precipitation nearby"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Weatherwise\nClear forecasts. Confident plans.\n\nAll forecasts, history, radar, and air quality readings on this demo are synthetically generated.\n\n© 2026 Weatherwise"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: Sunday, August 16 Live conditions\n  - button \"Weatherwise home\":\n    - strong: Weather\n    - emphasis: wise\n  - search:\n    - combobox \"Search city or ZIP code\"\n    - button \"Search\"\n  - button \"Use my location\"\n  - button \"°F\" [pressed]\n  - button \"°C\"\n  - navigation \"Primary navigation\":\n    - button \"Forecast\"\n    - button \"Maps\"\n    - button \"Air Quality\"\n    - button \"Health & Activities\"\n- text: King County · 98101\n- heading \"Seattle, WA\" [level=1]\n- paragraph: As of 11:12 AM PDT · Updated moments ago\n- strong: 66°\n- text: Mostly Cloudy Feels like 65°\n- navigation \"Weather views\":\n  - button \"Today\"\n  - button \"Hourly\"\n  - button \"10 Day\"\n  - button \"Monthly\"\n  - button \"Health\"\n  - button \"Air Quality\"\n  - button \"History\"\n  - button \"Radar\"\n- main:\n  - text: CURRENT WEATHER\n  - heading \"Seattle right now\" [level=2]\n  - text: Updated now\n  - strong: 66°\n  - text: Mostly Cloudy Feels like 65° High 72° Low 56°\n  - paragraph: Clouds thinning this afternoon with comfortable temperatures and a light breeze.\n  - text: Humidity\n  - strong: 69%\n  - text: Wind\n  - strong: SSW 7 mph\n  - text: Visibility\n  - strong: 10 mi\n  - text: Pressure\n  - strong: 30.02 in\n  - text: Dew point\n  - strong: 55°\n  - text: Rain chance\n  - strong: 28%\n  - text: COMING UP\n  - heading \"Hourly outlook\" [level=2]\n  - button \"Next 24 hours\"\n  - text: Now\n  - strong: 70°\n  - text: 20% 12 PM\n  - strong: 72°\n  - text: 27% 1 PM\n  - strong: 72°\n  - text: 34% 2 PM\n  - strong: 72°\n  - text: 24% 3 PM\n  - strong: 70°\n  - text: 31% 4 PM\n  - strong: 69°\n  - text: 21%\n  - complementary:\n    - text: SUNDAY'S OUTLOOK\n    - heading \"Sun & moon\" [level=2]\n    - text: Sunrise\n    - strong: 6:05 AM\n    - text: Sunset\n    - strong: 8:18 PM\n    - button \"AIR QUALITY 32 · Good See pollutant details\":\n      - text: AIR QUALITY\n      - strong: 32 · Good\n      - emphasis: See pollutant details\n    - button \"COLD & FLU Low risk View today's health outlook\":\n      - text: COLD & FLU\n      - strong: Low risk\n      - emphasis: View today's health outlook\n    - button \"RADAR Live local map Track precipitation nearby\":\n      - text: RADAR\n      - strong: Live local map\n      - emphasis: Track precipitation nearby\n- contentinfo:\n  - strong: Weatherwise\n  - text: Clear forecasts. Confident plans.\n  - paragraph: All forecasts, history, radar, and air quality readings on this demo are synthetically generated.\n  - text: © 2026 Weatherwise"
+  },
+  "sourceSnippets": []
+}

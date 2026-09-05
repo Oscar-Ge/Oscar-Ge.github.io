@@ -1,0 +1,246 @@
+{
+  "site": "uniqlo",
+  "siteKey": "05-uniqlo",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/05-uniqlo/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 6,
+  "selector": [
+    "article:nth-child(3) > .product-info > .product-category"
+  ],
+  "html": "<p class=\"product-category\">Kids / Graphic T-Shirts / Boys</p>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#777777",
+          "bgColor": "#ffffff",
+          "contrastRatio": 4.47,
+          "fontSize": "8.2pt (10.88px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<body>",
+            "target": [
+              "body"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 8.2pt (10.88px), font weight: bold). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/05-uniqlo/axe/attempt-1/raw.json",
+  "errorId": "ST0125",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[3]/DIV[2]/P[1]",
+    "tag": "P",
+    "text": "KIDS / GRAPHIC T-SHIRTS / BOYS",
+    "html": "<p class=\"product-category\">Kids / Graphic T-Shirts / Boys</p>",
+    "class": "product-category",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 731,
+      "y": 2918.46875,
+      "width": 327.5,
+      "height": 12
+    },
+    "style": {
+      "color": "rgb(119, 119, 119)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10.88px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[3]/DIV[2]",
+      "tag": "DIV",
+      "class": "product-info",
+      "text": "KIDS / GRAPHIC T-SHIRTS / BOYS\n\nKids Pokémon Graphic T-Shirt\n\nA new UT graphic tee made from comfortable cotton.\n\n 4.9 (112)\n$14.90\nWhite\nSIZE\n7-8Y\n9-10Y\n11-12Y(150)\n13Y\nQTY\n1\n2\n3\n4\n5\nADD TO CART",
+      "html": "<div class=\"product-info\"><p class=\"product-category\">Kids / Graphic T-Shirts / Boys</p><h3>Kids Pokémon Graphic T-Shirt</h3><p class=\"product-description\">A new UT graphic tee made from comfortable cotton.</p><div class=\"rating\"><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg> 4.9 <span>(112)</span></div><div class=\"price-row\"><strong class=\"\">$14.90</strong></div><div class=\"swatches\" aria-label=\"Available colors\"><button type=\"button\" aria-label=\"Select White\" title=\"White\" class=\"selected\" style=\"--swatch: #ffffff;\"></button><button type=\"button\" aria-label=\"Select Blue\" title=\"Blue\" class=\"\" style=\"--swatch: #416a98;\"></button><span>White</span></div><div class=\"product-options\"><label><span>Size</span><select aria-label=\"Size for Kids Pokémon Graphic T-Shirt\"><option>7-8Y</option><option>9-10Y</option><option>11-12Y(150)</option><option>13Y</option></select></label><label><span>Qty</span><select aria-label=\"Quantity for Kids Pokémon Graphic T-Shirt\"><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option></select></label></div><button class=\"button button-dark add-button\" type=\"button\"><svg data-prefix=\"fas\" data-icon=\"bag-shopping\" class=\"svg-inline--fa fa-bag-shopping\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z\"></path></svg> Add to cart</button></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:36669/assets/index-CDnoI4AK.css",
+        "selector": ".product-category",
+        "declarations": {
+          "color": "rgb(119, 119, 119)",
+          "font-size": "0.68rem",
+          "font-weight": "700"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/H1[1]",
+        "tag": "H1",
+        "text": "Every day,\nmade better.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "LifeWear for everyone",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Women",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Men",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Kids",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Baby",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Made to move.\nReady for life.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Trending now",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Women's SUPIMA Cotton T-Shirt",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Men's Blocktech Parka",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Kids Pokémon Graphic T-Shirt",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Baby Cotton One Piece",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[6]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Looking for something specific?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[7]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "New arrivals, offers, and LifeWear stories.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "SHOP",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "HELP",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "DISCOVER",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "UNI\nQLO\nWOMEN\nMEN\nKIDS\nBABY\nTODDLER\nSALE\nStores\nAccount\nWishlist\nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "WOMEN\nMEN\nKIDS\nBABY\nTODDLER\nSALE"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "LIFEWEAR · FALL 2026\n\nEvery day,\nmade better.\n\nThoughtful essentials, designed for real life and every kind of weather.\n\nSHOP NEW ARRIVALS\nLIMITED-TIME OFFERS\nFree shipping $99+\nFast, trackable delivery\nPick up in store\nReserve at a nearby location\nEasy online returns\nSimple step-by-step help\n\nSHOP BY DEPARTMENT\n\nLifeWear for everyone\nVIEW ALL\nWomen\n\nEssential layers in considered color.\n\nSHOP NOW\nMen\n\nRefined comfort for work and weekend.\n\nSHOP NOW\nKids\n\nMove-ready favorites built for play.\n\nSH"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "UNI\nQLO\n\nSimple, high-quality everyday clothing with a practical sense of beauty.\n\n United States / English \nSHOP\nWomen\nMen\nKids\nBaby\nSale\nHELP\nStore locator\nOnline returns\nShopping cart\nWishlist\nMy account\nDISCOVER\nNew arrivals\nLimited-time offers\nSport Utility Wear\nToddler collection\n© 2026 UNIQLO mock storefront\nDesigned for this interactive prototype · No real purchases are processed"
+      }
+    ],
+    "axSnapshot": "- text: Free shipping on orders $99+\n- link \"Find a store\":\n  - /url: /stores\n- link \"Easy online returns\":\n  - /url: /returns\n- banner:\n  - link \"UNIQLO home\":\n    - /url: /\n    - text: UNI QLO\n  - navigation \"Primary navigation\":\n    - link \"Women\":\n      - /url: /shop/women\n    - link \"Men\":\n      - /url: /shop/men\n    - link \"Kids\":\n      - /url: /shop/kids\n    - link \"Baby\":\n      - /url: /shop/baby\n    - link \"Toddler\":\n      - /url: /shop/toddler?collection=Toddler+Collection\n    - link \"Sale\":\n      - /url: /shop?sale=1\n  - search:\n    - textbox \"Search products\"\n  - link \"Store finder\":\n    - /url: /stores\n    - text: Stores\n  - link \"Sign in\":\n    - /url: /login\n    - text: Account\n  - link \"Wishlist with 0 items\":\n    - /url: /wishlist\n    - text: Wishlist\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- main:\n  - paragraph: LIFEWEAR · FALL 2026\n  - heading \"Every day, made better.\" [level=1]\n  - paragraph: Thoughtful essentials, designed for real life and every kind of weather.\n  - link \"Shop new arrivals\":\n    - /url: /shop?new=1\n  - link \"Limited-time offers\":\n    - /url: /shop?promotion=Limited+Time+Offer\n  - region \"Shopping benefits\":\n    - link \"Free shipping $99+ Fast, trackable delivery\":\n      - /url: /shop\n      - strong: Free shipping $99+\n      - text: Fast, trackable delivery\n    - link \"Pick up in store Reserve at a nearby location\":\n      - /url: /stores\n      - strong: Pick up in store\n      - text: Reserve at a nearby location\n    - link \"Easy online returns Simple step-by-step help\":\n      - /url: /returns\n      - strong: Easy online returns\n      - text: Simple step-by-step help\n  - paragraph: SHOP BY DEPARTMENT\n  - heading \"LifeWear for everyone\" [level=2]\n  - link \"View all\":\n    - /url: /shop\n  - link \"Women Essential layers in considered color. Shop now\":\n    - /url: /shop/women\n    - heading \"Women\" [level=3]\n    - paragraph: Essential layers in considered color.\n    - text: Shop now\n  - link \"Men Refined comfort for work and weekend. Shop now\":\n    - /url: /shop/men\n    - heading \"Men\" [level=3]\n    - paragraph: Refined comfort for work and weekend.\n    - text: Shop now\n  - link \"Kids Move-ready favorites built for play. Shop now\":\n    - /url: /shop/kids\n    - heading \"Kids\" [level=3]\n    - paragraph: Move-ready favorites built for play.\n    - text: Shop now\n  - link \"Baby Gentle fabrics for the littlest moments. Shop now\":\n    - /url: /shop/baby\n    - heading \"Baby\" [level=3]\n    - paragraph: Gentle fabrics for the littlest moments.\n    - text: Shop now\n  - paragraph: UNIQLO SPORT UTILITY WEAR\n  - heading \"Made to move. Ready for life.\" [level=2]\n  - paragraph: Performance comfort and clean design, from morning walks to everything after.\n  - link \"Shop women's sportswear\":\n    - /url: /shop/women?category=Sportswear&size=S\n  - paragraph: CURATED FOR YOU\n  - heading \"Trending now\" [level=2]\n  - article:\n    - img \"Women's SUPIMA Cotton T-Shirt in Yellow\"\n    - text: Premium Cotton\n    - button \"Add Women's SUPIMA Cotton T-Shirt to wishlist\"\n    - paragraph: Women / T-Shirts / Everyday Essentials\n    - heading \"Women's SUPIMA Cotton T-Shirt\" [level=3]\n    - paragraph: Smooth premium cotton in a classic regular fit.\n    - text: 4.9 (710)\n    - strong: $14.90\n    - button \"Select Yellow\"\n    - button \"Select White\"\n    - button \"Select Black\"\n    - text: Yellow Size\n    - combobox \"Size for Women's SUPIMA Cotton T-Shirt\":\n      - option \"XS\" [selected]\n      - option \"S\"\n      - option \"M\"\n      - option \"L\"\n      - option \"XL\"\n    - text: Qty\n    - combobox \"Quantity for Women's SUPIMA Cotton T-Shirt\":\n      - option \"1\" [selected]\n      - option \"2\"\n      - option \"3\"\n      - option \"4\"\n      - option \"5\"\n    - button \"Add to cart\"\n  - article:\n    - img \"Men's Blocktech Parka in Orange\"\n    - text: Weather Ready\n    - button \"Add Men's Blocktech Parka to wishlist\"\n    - paragraph: Men / Jackets & Parkas / Outerwear\n    - heading \"Men's Blocktech Parka\" [level=3]\n    - paragraph: Weather-ready protection in a clean everyday silhouette.\n    - text: 4.8 (166)\n    - strong: $59.90\n    - button \"Select Orange\"\n    - button \"Select Black\"\n    - text: Orange Size\n    - combobox \"Size for Men's Blocktech Parka\":\n      - option \"S\" [selected]\n      - option \"M\"\n      - option \"L\"\n      - option \"XL\"\n    - text: Qty\n    - combobox \"Quantity for Men's Blocktech Parka\":\n      - option \"1\" [selected]\n      - option \"2\"\n      - option \"3\"\n      - option \"4\"\n      - option \"5\"\n    - button \"Add to cart\"\n  - article:\n    - img \"Kids Pokémon Graphic T-Shirt in White\"\n    - text: New Arrival\n    - button \"Add Kids Pokémon Graphic T-Shirt to wishlist\"\n    - paragraph: Kids / Graphic T-Shirts / Boys\n    - heading \"Kids Pokémon Graphic T-Shirt\" [level=3]\n    - paragraph: A new UT graphic tee made from comfortable cotton.\n    - text: 4.9 (112)\n    - strong: $14.90\n    - button \"Select White\"\n    - button \"Select Blue\"\n    - text: White Size\n    - combobox \"Size for Kids Pokémon Graphic T-Shirt\":\n      - option \"7-8Y\" [selected]\n      - option \"9-10Y\"\n      - option \"11-12Y(150)\"\n      - option \"13Y\"\n    - text: Qty\n    - combobox \"Quantity for Kids Pokémon Graphic T-Shirt\":\n      - option \"1\" [selected]\n      - option \"2\"\n      - option \"3\"\n      - option \"4\"\n      - option \"5\"\n    - button \"Add to cart\"\n  - article:\n    - img \"Baby Cotton One Piece in Cream\"\n    - text: Sale\n    - button \"Add Baby Cotton One Piece to wishlist\"\n    - paragraph: Baby / One Piece / Baby Essentials\n    - heading \"Baby Cotton One Piece\" [level=3]\n    - paragraph: Envelope neckline and snap bottom for easy changes.\n    - text: 4.9 (96)\n    - strong: $9.90\n    - deletion: $14.90\n    - button \"Select Cream\"\n    - button \"Select Light Green\"\n    - text: Cream Size\n    - combobox \"Size for Baby Cotton One Piece\":\n      - option \"0-3M\" [selected]\n      - option \"3-6M\"\n      - option \"6-9M\"\n    - text: Qty\n    - combobox \"Quantity for Baby Cotton One Piece\":\n      - option \"1\" [selected]\n      - option \"2\"\n      - option \"3\"\n      - option \"4\"\n      - option \"5\"\n    - button \"Add to cart\"\n  - paragraph: QUICK FIND\n  - heading \"Looking for something specific?\" [level=2]\n  - link \"Women's cropped tops\":\n    - /url: /shop/women?category=Cropped+Tops&sort=price-low\n  - link \"Men's black blazers\":\n    - /url: /shop/men?category=Blazers&color=Black&size=M\n  - link \"Kids limited-time offers\":\n    - /url: /shop/kids?promotion=Limited+Time+Offer&size=11-12Y%28150%29\n  - link \"Baby sale under $10\":\n    - /url: /shop/baby?sale=1&max=10\n  - link \"Toddler collection\":\n    - /url: /shop/toddler?collection=Toddler+Collection&category=Socks&sort=price-low\n  - link \"Find your nearest store\":\n    - /url: /stores\n  - paragraph: UNIQLO NEWS\n  - heading \"New arrivals, offers, and LifeWear stories.\" [level=2]\n  - paragraph: Join our mailing list for thoughtful updates, not inbox clutter.\n  - text: Email address\n  - textbox \"Email address\":\n    - /placeholder: you@example.com\n  - button \"Sign me up\"\n- contentinfo:\n  - link \"UNI QLO\":\n    - /url: /\n  - paragraph: Simple, high-quality everyday clothing with a practical sense of beauty.\n  - button \"United States / English\"\n  - heading \"Shop\" [level=2]\n  - link \"Women\":\n    - /url: /shop/women\n  - link \"Men\":\n    - /url: /shop/men\n  - link \"Kids\":\n    - /url: /shop/kids\n  - link \"Baby\":\n    - /url: /shop/baby\n  - link \"Sale\":\n    - /url: /shop?sale=1\n  - heading \"Help\" [level=2]\n  - link \"Store locator\":\n    - /url: /stores\n  - link \"Online returns\":\n    - /url: /returns\n  - link \"Shopping cart\":\n    - /url: /cart\n  - link \"Wishlist\":\n    - /url: /wishlist\n  - link \"My account\":\n    - /url: /login\n  - heading \"Discover\" [level=2]\n  - link \"New arrivals\":\n    - /url: /shop?new=1\n  - link \"Limited-time offers\":\n    - /url: /shop?promotion=Limited+Time+Offer\n  - link \"Sport Utility Wear\":\n    - /url: /shop/women?category=Sportswear\n  - link \"Toddler collection\":\n    - /url: /shop/toddler?collection=Toddler+Collection\n  - text: © 2026 UNIQLO mock storefront Designed for this interactive prototype · No real purchases are processed"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/05-uniqlo/dist/assets/index-LvnxQZxw.js",
+      "offset": 341737,
+      "match": "className:\"product-category\"",
+      "context": "{src:`https://placehold.co/640x780/${n.imageTone}/202020?text=${H}`,alt:`${n.name} in ${g}`}),n.badge&&c.jsx(\"span\",{className:`product-badge ${n.sale||n.promotion?\"sale-badge\":\"\"}`,children:n.badge}),c.jsx(\"button\",{type:\"button\",className:`wishlist-button ${O?\"active\":\"\"}`,\"aria-label\":O?`${n.name} is in wishlist`:`Add ${n.name} to wishlist`,onClick:X,children:c.jsx(Z,{icon:yu})})]}),c.jsxs(\"div\",{className:\"product-info\",children:[c.jsxs(\"p\",{className:\"product-category\",children:[n.department,\" / \",n.category,\" / \",n.collection]}),c.jsx(\"h3\",{children:n.name}),c.jsx(\"p\",{className:\"product-description\",children:n.description}),c.jsxs(\"div\",{className:\"rating\",children:[c.jsx(Z,{icon:hx}),\" \",n.rating,\" \",c.jsxs(\"span\",{children:[\"(\",n.reviews,\")\"]})]}),c.jsxs(\"div\",{className:\"price-row\",children:[c.jsx(\"strong\",{className:n.originalPrice?\"sale-price\":\"\",children:Et(n.price)}),n.originalPrice&&c.jsx(\"del\",{chil"
+    }
+  ]
+}

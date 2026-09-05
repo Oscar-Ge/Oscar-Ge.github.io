@@ -1,0 +1,221 @@
+{
+  "site": "stubhub",
+  "siteKey": "13-stubhub",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/13-stubhub/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 2,
+  "selector": [
+    ".art-ocean > span"
+  ],
+  "html": "<span>ObC</span>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#3791a0",
+          "bgColor": "#177f91",
+          "contrastRatio": 1.27,
+          "fontSize": "33.0pt (44px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "3:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<div class=\"event-art art-ocean \" aria-hidden=\"true\">",
+            "target": [
+              ".art-ocean"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 1.27 (foreground color: #3791a0, background color: #177f91, font size: 33.0pt (44px), font weight: bold). Expected contrast ratio of 3:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/13-stubhub/axe/attempt-1/raw.json",
+  "errorId": "ST0235",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "ObC",
+    "html": "<span>ObC</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 842.765625,
+      "y": 1672.046875,
+      "width": 80.890625,
+      "height": 44
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "44px",
+      "fontWeight": "950",
+      "opacity": "0.14",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[1]",
+      "tag": "DIV",
+      "class": "event-art art-ocean ",
+      "text": "ObC",
+      "html": "<div class=\"event-art art-ocean \" aria-hidden=\"true\"><div class=\"art-orbit art-orbit-one\"></div><div class=\"art-orbit art-orbit-two\"></div><svg data-prefix=\"fas\" data-icon=\"masks-theater\" class=\"svg-inline--fa fa-masks-theater\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M-5 118L23.5 279.7c14 79.5 76.3 141.8 155.8 155.8l12.7 2.2c-16.5-28.6-27.1-60.7-30.6-94.5l-24.1 4.3c-9.7 1.7-18.8-5.8-16.9-15.5 4.8-24.7 19.1-46.6 39.7-60.9l0-74.6c-1.4 .8-3 1.3-4.7 1.6l-63 11.1c-8.7 1.5-17.3-4.4-15.9-13.1 3.1-19.6 18.4-36 39.1-39.7 17.2-3 33.9 3.5 44.6 15.8l0-22.7c0-22.5 6.9-52.4 32.3-73.4 26-21.5 67.7-43.9 124.9-54.2-30.5-16.3-86.3-32-163.8-18.4-80.3 14.2-128 50.1-150.1 76.1-9 10.5-10.8 24.9-8.4 38.5zM208 138.7l0 174.8c0 80.7 50.5 152.9 126.4 180.4L362.1 504c14.1 5.1 29.6 5.1 43.7 0L433.6 494C509.5 466.4 560 394.3 560 313.5l0-174.8c0-6.9-2.1-13.8-7-18.6-22.6-22.5-78.2-56-169-56s-146.4 33.6-169 56c-4.9 4.9-7 11.7-7 18.6zm66.1 187.1c-1.4-7 7-11 12.7-6.6 26.9 20.6 60.6 32.9 97.2 32.9s70.2-12.3 97.2-32.9c5.7-4.4 14.1-.4 12.7 6.6-10.1 51.4-55.5 90.3-109.9 90.3s-99.8-38.8-109.9-90.3zm.5-101.5C281.2 205.5 299 192 320 192s38.9 13.5 45.4 32.3c2.9 8.4-4.5 15.7-13.4 15.7l-64 0c-8.8 0-16.3-7.4-13.4-15.7zM480 240l-64 0c-8.8 0-16.3-7.4-13.4-15.7 6.5-18.8 24.4-32.3 45.4-32.3s38.9 13.5 45.4 32.3c2.9 8.4-4.5 15.7-13.4 15.7z\"></path></svg><span>ObC</span></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:41999/assets/index-Bgq-XdH5.css",
+        "selector": ".event-art > span",
+        "declarations": {
+          "font-size": "44px",
+          "font-weight": "950",
+          "opacity": "0.14"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "StubHub | Be There Live",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Be there for the\nmoments that matter.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Events fans are loving",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Taylor Swift",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Celine Dion",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Adele",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Los Angeles Lakers vs Memphis Grizzlies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "O by Cirque du Soleil",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[6]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Boston Bruins vs New York Rangers",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Browse by category",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/ARTICLE[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Give them something\nto look forward to.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Sending tickets to a friend?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "DISCOVER",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "GIFTS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "SUPPORT",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "stubhub\n®\nConcerts\nSports\nTheater\nGift Cards\nHelp\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Concerts\nSports\nTheater\nGift Cards\nHelp"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR NEXT GREAT STORY STARTS HERE\n\nBe there for the\nmoments that matter.\n\nDiscover concerts, sports, and theatre events around the world. Every order is backed by our FanProtect Guarantee.\n\nSearch\nPopular:\nTaylor Swift\nNHL in Boston\nLas Vegas theater\nCeline Dion\nLIVE\nGood times,\nguaranteed.\nFanProtect Guarantee\nBuy with confidence\nUpfront pricing\nSee estimated fees\nEasy mobile entry\nYour tickets in one place\n\nHAPPENING SOON\n\nEvents fans are loving\nExplore all \nTS\nPOP\nTaylor Swift\n\n Fri, Aug 28 •"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "stubhub\n®\n\nBe there live.\n\nDISCOVER\nConcerts\nNHL in Boston\nLas Vegas theater\nGIFTS\nBuy a gift card\nGift card cart\nSUPPORT\nTransfer NFL tickets\nHelp center\n© 2026 StubHub demo marketplace\n United States · USD\nFanProtect Guarantee"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"StubHub home\": stubhub ®\n  - navigation \"Main navigation\":\n    - button \"Concerts\"\n    - button \"Sports\"\n    - button \"Theater\"\n    - button \"Gift Cards\"\n    - button \"Help\"\n  - button \"Sign in\"\n  - button \"Open cart with 0 items\"\n- main:\n  - paragraph: Your next great story starts here\n  - heading \"Be there for the moments that matter.\" [level=1]:\n    - text: Be there for the\n    - emphasis: moments that matter.\n  - paragraph: Discover concerts, sports, and theatre events around the world. Every order is backed by our FanProtect Guarantee.\n  - search:\n    - textbox \"Search events\":\n      - /placeholder: Search artists, teams, events, or venues\n    - button \"Search\"\n  - text: \"Popular:\"\n  - button \"Taylor Swift\"\n  - button \"NHL in Boston\"\n  - button \"Las Vegas theater\"\n  - button \"Celine Dion\"\n  - region \"Buyer benefits\":\n    - strong: FanProtect Guarantee\n    - text: Buy with confidence\n    - strong: Upfront pricing\n    - text: See estimated fees\n    - strong: Easy mobile entry\n    - text: Your tickets in one place\n  - paragraph: Happening soon\n  - heading \"Events fans are loving\" [level=2]\n  - button \"Explore all\"\n  - article:\n    - text: Pop\n    - heading \"Taylor Swift\" [level=3]\n    - paragraph: Fri, Aug 28 • 7:30 PM\n    - paragraph: Allegiant Stadium, Las Vegas\n    - text: From\n    - strong: $236\n    - text: incl. fees\n    - button \"View tickets for Taylor Swift\"\n  - article:\n    - text: Pop\n    - heading \"Celine Dion\" [level=3]\n    - paragraph: Sat, Oct 17 • 8:00 PM\n    - paragraph: Stade de France, Paris\n    - text: From\n    - strong: $207\n    - text: incl. fees\n    - button \"View tickets for Celine Dion\"\n  - article:\n    - text: Pop\n    - heading \"Adele\" [level=3]\n    - paragraph: Wed, Jun 16 • 8:00 PM\n    - paragraph: The Colosseum at Caesars Palace, Las Vegas\n    - text: From\n    - strong: $345\n    - text: incl. fees\n    - button \"View tickets for Adele\"\n  - article:\n    - text: NBA\n    - heading \"Los Angeles Lakers vs Memphis Grizzlies\" [level=3]\n    - paragraph: Thu, Apr 22 • 7:30 PM\n    - paragraph: Crypto.com Arena, Los Angeles\n    - text: From\n    - strong: $375\n    - text: incl. fees\n    - button \"View tickets for Los Angeles Lakers vs Memphis Grizzlies\"\n  - article:\n    - text: Las Vegas Shows\n    - heading \"O by Cirque du Soleil\" [level=3]\n    - paragraph: Thu, Aug 20 • 7:00 PM\n    - paragraph: O Theatre at Bellagio, Las Vegas\n    - text: From\n    - strong: $143\n    - text: incl. fees\n    - button \"View tickets for O by Cirque du Soleil\"\n  - article:\n    - text: NHL\n    - heading \"Boston Bruins vs New York Rangers\" [level=3]\n    - paragraph: Sat, Sep 19 • 7:00 PM\n    - paragraph: TD Garden, Boston\n    - text: From\n    - strong: $106\n    - text: incl. fees\n    - button \"View tickets for Boston Bruins vs New York Rangers\"\n  - paragraph: Find your thing\n  - heading \"Browse by category\" [level=2]\n  - button \"Concerts Big tours. Intimate sets.\"\n  - button \"Sports Every rivalry. Every seat.\"\n  - button \"Theater Shows worth talking about.\"\n  - article:\n    - paragraph: The perfect present\n    - heading \"Give them something to look forward to.\" [level=2]\n    - paragraph: StubHub gift cards unlock thousands of unforgettable live experiences.\n    - button \"Shop gift cards\"\n  - article:\n    - heading \"Sending tickets to a friend?\" [level=3]\n    - paragraph: Learn how to securely transfer NFL and other mobile tickets in a few quick steps.\n    - button \"View transfer guide\"\n- contentinfo:\n  - button \"stubhub ®\"\n  - paragraph: Be there live.\n  - heading \"Discover\" [level=3]\n  - button \"Concerts\"\n  - button \"NHL in Boston\"\n  - button \"Las Vegas theater\"\n  - heading \"Gifts\" [level=3]\n  - button \"Buy a gift card\"\n  - button \"Gift card cart\"\n  - heading \"Support\" [level=3]\n  - button \"Transfer NFL tickets\"\n  - button \"Help center\"\n  - text: © 2026 StubHub demo marketplace United States · USD FanProtect Guarantee"
+  },
+  "sourceSnippets": []
+}

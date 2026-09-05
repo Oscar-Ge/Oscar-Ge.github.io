@@ -1,0 +1,162 @@
+{
+  "site": "weather",
+  "siteKey": "24-weather",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/24-weather/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 2,
+  "selector": [
+    ".location-snapshot > div"
+  ],
+  "html": "<div><span>Mostly Cloudy</span><small>Feels like 65°</small></div>",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/24-weather/axe/attempt-1/raw.json",
+  "errorId": "ST0706",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[2]/DIV[1]",
+    "tag": "DIV",
+    "text": "Mostly Cloudy\nFeels like 65°",
+    "html": "<div><span>Mostly Cloudy</span><small>Feels like 65°</small></div>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1179.96875,
+      "y": 216.984375,
+      "width": 127.0625,
+      "height": 38
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "location-snapshot",
+      "text": "66°\nMostly Cloudy\nFeels like 65°",
+      "html": "<div class=\"location-snapshot\"><svg data-prefix=\"fas\" data-icon=\"cloud-sun\" class=\"svg-inline--fa fa-cloud-sun weather-icon cloudSun \" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M453.6-14.8c4.9 2 8.5 6.4 9.5 11.6L480 80 563.2 96.8c5.2 1.1 9.5 4.6 11.6 9.5s1.5 10.5-1.4 14.9l-46.9 70.7 46.9 70.7c2.9 4.4 3.5 10 1.4 14.9s-6.4 8.5-11.6 9.5L501 299.7c-11.9-8.7-25.1-15.6-39.4-20.4-2.5-12.7-6.8-24.7-12.7-35.7 9.5-14.9 15.1-32.6 15.1-51.7 0-53-43-96-96-96-47.9 0-87.6 35.1-94.8 80.9-26.5-20.3-59.5-32.5-95.4-32.9l-15.1-22.7c-2.9-4.4-3.5-10-1.4-14.9s6.4-8.5 11.6-9.5L256 80 272.8-3.2c1.1-5.2 4.6-9.5 9.5-11.6s10.5-1.5 14.9 1.4L368 33.6 438.7-13.3c4.4-2.9 10-3.5 14.9-1.4zM416 192c0 3.8-.4 7.5-1.3 11.1-21.7-17-49-27.1-78.7-27.1-4.6 0-9.1 .2-13.5 .7 6.4-19 24.4-32.7 45.5-32.7 26.5 0 48 21.5 48 48zM96 512c-53 0-96-43-96-96 0-42.5 27.6-78.6 65.9-91.2-1.3-6.7-1.9-13.7-1.9-20.8 0-61.9 50.1-112 112-112 43.1 0 80.5 24.3 99.2 60 14.7-17.1 36.5-28 60.8-28 44.2 0 80 35.8 80 80 0 5.5-.6 10.8-1.6 16 .5 0 1.1 0 1.6 0 53 0 96 43 96 96s-43 96-96 96L96 512z\"></path></svg><strong>66°</strong><div><span>Mostly Cloudy</span><small>Feels like 65°</small></div></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34929/assets/index-D5r94fdi.css",
+        "selector": ".location-snapshot > div",
+        "declarations": {
+          "display": "flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34929/assets/index-D5r94fdi.css",
+        "selector": ".location-snapshot > div",
+        "declarations": {
+          "display": "none"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Seattle, WA",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Seattle right now",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Hourly outlook",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]/SECTION[1]/H2[1]",
+        "tag": "H2",
+        "text": "Sun & moon",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "Sunday, August 16\nLive conditions\nWeatherwise\nSearch\nUse my location\n°F\n°C\nForecast\nMaps\nAir Quality\nHealth & Activities"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Forecast\nMaps\nAir Quality\nHealth & Activities"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Weather views",
+        "text": "Today\nHourly\n10 Day\nMonthly\nHealth\nAir Quality\nHistory\nRadar"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "CURRENT WEATHER\nSeattle right now\nUpdated now\n66°\nMostly Cloudy\nFeels like 65°\nHigh 72°\nLow 56°\n\nClouds thinning this afternoon with comfortable temperatures and a light breeze.\n\nHumidity\n69%\nWind\nSSW 7 mph\nVisibility\n10 mi\nPressure\n30.02 in\nDew point\n55°\nRain chance\n28%\nCOMING UP\nHourly outlook\nNext 24 hours\nNow\n70°\n 20%\n12 PM\n72°\n 27%\n1 PM\n72°\n 34%\n2 PM\n72°\n 24%\n3 PM\n70°\n 31%\n4 PM\n69°\n 21%\nSUNDAY'S OUTLOOK\nSun & moon\nSunrise\n6:05 AM\nSunset\n8:18 PM\nAIR QUALITY\n32 · Good\nSee pollutant details\nCO"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "SUNDAY'S OUTLOOK\nSun & moon\nSunrise\n6:05 AM\nSunset\n8:18 PM\nAIR QUALITY\n32 · Good\nSee pollutant details\nCOLD & FLU\nLow risk\nView today's health outlook\nRADAR\nLive local map\nTrack precipitation nearby"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Weatherwise\nClear forecasts. Confident plans.\n\nAll forecasts, history, radar, and air quality readings on this demo are synthetically generated.\n\n© 2026 Weatherwise"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: Sunday, August 16 Live conditions\n  - button \"Weatherwise home\":\n    - strong: Weather\n    - emphasis: wise\n  - search:\n    - combobox \"Search city or ZIP code\"\n    - button \"Search\"\n  - button \"Use my location\"\n  - button \"°F\" [pressed]\n  - button \"°C\"\n  - navigation \"Primary navigation\":\n    - button \"Forecast\"\n    - button \"Maps\"\n    - button \"Air Quality\"\n    - button \"Health & Activities\"\n- text: King County · 98101\n- heading \"Seattle, WA\" [level=1]\n- paragraph: As of 11:12 AM PDT · Updated moments ago\n- strong: 66°\n- text: Mostly Cloudy Feels like 65°\n- navigation \"Weather views\":\n  - button \"Today\"\n  - button \"Hourly\"\n  - button \"10 Day\"\n  - button \"Monthly\"\n  - button \"Health\"\n  - button \"Air Quality\"\n  - button \"History\"\n  - button \"Radar\"\n- main:\n  - text: CURRENT WEATHER\n  - heading \"Seattle right now\" [level=2]\n  - text: Updated now\n  - strong: 66°\n  - text: Mostly Cloudy Feels like 65° High 72° Low 56°\n  - paragraph: Clouds thinning this afternoon with comfortable temperatures and a light breeze.\n  - text: Humidity\n  - strong: 69%\n  - text: Wind\n  - strong: SSW 7 mph\n  - text: Visibility\n  - strong: 10 mi\n  - text: Pressure\n  - strong: 30.02 in\n  - text: Dew point\n  - strong: 55°\n  - text: Rain chance\n  - strong: 28%\n  - text: COMING UP\n  - heading \"Hourly outlook\" [level=2]\n  - button \"Next 24 hours\"\n  - text: Now\n  - strong: 70°\n  - text: 20% 12 PM\n  - strong: 72°\n  - text: 27% 1 PM\n  - strong: 72°\n  - text: 34% 2 PM\n  - strong: 72°\n  - text: 24% 3 PM\n  - strong: 70°\n  - text: 31% 4 PM\n  - strong: 69°\n  - text: 21%\n  - complementary:\n    - text: SUNDAY'S OUTLOOK\n    - heading \"Sun & moon\" [level=2]\n    - text: Sunrise\n    - strong: 6:05 AM\n    - text: Sunset\n    - strong: 8:18 PM\n    - button \"AIR QUALITY 32 · Good See pollutant details\":\n      - text: AIR QUALITY\n      - strong: 32 · Good\n      - emphasis: See pollutant details\n    - button \"COLD & FLU Low risk View today's health outlook\":\n      - text: COLD & FLU\n      - strong: Low risk\n      - emphasis: View today's health outlook\n    - button \"RADAR Live local map Track precipitation nearby\":\n      - text: RADAR\n      - strong: Live local map\n      - emphasis: Track precipitation nearby\n- contentinfo:\n  - strong: Weatherwise\n  - text: Clear forecasts. Confident plans.\n  - paragraph: All forecasts, history, radar, and air quality readings on this demo are synthetically generated.\n  - text: © 2026 Weatherwise"
+  },
+  "sourceSnippets": []
+}

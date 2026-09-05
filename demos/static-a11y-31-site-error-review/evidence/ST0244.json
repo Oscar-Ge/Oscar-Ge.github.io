@@ -1,0 +1,197 @@
+{
+  "site": "stubhub",
+  "siteKey": "13-stubhub",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/13-stubhub/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 4,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/DIV[1]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/DIV[1]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/13-stubhub/wave/attempt-1/raw.json",
+  "errorId": "ST0244",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "LAS VEGAS SHOWS",
+    "html": "<span>Las Vegas Shows</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 524.328125,
+      "y": 1745.046875,
+      "width": 124.859375,
+      "height": 20
+    },
+    "style": {
+      "color": "rgb(21, 21, 21)",
+      "background": "rgb(240, 237, 232)",
+      "fontSize": "10px",
+      "fontWeight": "900",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/DIV[1]",
+      "tag": "DIV",
+      "class": "event-card-meta",
+      "text": "LAS VEGAS SHOWS",
+      "html": "<div class=\"event-card-meta\"><span>Las Vegas Shows</span></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:41999/assets/index-Bgq-XdH5.css",
+        "selector": ".event-card-meta span",
+        "declarations": {
+          "background": "rgb(240, 237, 232)",
+          "background-color": "rgb(240, 237, 232)",
+          "font-size": "10px",
+          "font-weight": "900",
+          "display": "inline-flex"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "StubHub | Be There Live",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Be there for the\nmoments that matter.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Events fans are loving",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Taylor Swift",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Celine Dion",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Adele",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Los Angeles Lakers vs Memphis Grizzlies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[5]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "O by Cirque du Soleil",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[6]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Boston Bruins vs New York Rangers",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Browse by category",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/ARTICLE[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Give them something\nto look forward to.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Sending tickets to a friend?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "DISCOVER",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "GIFTS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "SUPPORT",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "stubhub\n®\nConcerts\nSports\nTheater\nGift Cards\nHelp\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Concerts\nSports\nTheater\nGift Cards\nHelp"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR NEXT GREAT STORY STARTS HERE\n\nBe there for the\nmoments that matter.\n\nDiscover concerts, sports, and theatre events around the world. Every order is backed by our FanProtect Guarantee.\n\nSearch\nPopular:\nTaylor Swift\nNHL in Boston\nLas Vegas theater\nCeline Dion\nLIVE\nGood times,\nguaranteed.\nFanProtect Guarantee\nBuy with confidence\nUpfront pricing\nSee estimated fees\nEasy mobile entry\nYour tickets in one place\n\nHAPPENING SOON\n\nEvents fans are loving\nExplore all \nTS\nPOP\nTaylor Swift\n\n Fri, Aug 28 •"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "stubhub\n®\n\nBe there live.\n\nDISCOVER\nConcerts\nNHL in Boston\nLas Vegas theater\nGIFTS\nBuy a gift card\nGift card cart\nSUPPORT\nTransfer NFL tickets\nHelp center\n© 2026 StubHub demo marketplace\n United States · USD\nFanProtect Guarantee"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"StubHub home\": stubhub ®\n  - navigation \"Main navigation\":\n    - button \"Concerts\"\n    - button \"Sports\"\n    - button \"Theater\"\n    - button \"Gift Cards\"\n    - button \"Help\"\n  - button \"Sign in\"\n  - button \"Open cart with 0 items\"\n- main:\n  - paragraph: Your next great story starts here\n  - heading \"Be there for the moments that matter.\" [level=1]:\n    - text: Be there for the\n    - emphasis: moments that matter.\n  - paragraph: Discover concerts, sports, and theatre events around the world. Every order is backed by our FanProtect Guarantee.\n  - search:\n    - textbox \"Search events\":\n      - /placeholder: Search artists, teams, events, or venues\n    - button \"Search\"\n  - text: \"Popular:\"\n  - button \"Taylor Swift\"\n  - button \"NHL in Boston\"\n  - button \"Las Vegas theater\"\n  - button \"Celine Dion\"\n  - region \"Buyer benefits\":\n    - strong: FanProtect Guarantee\n    - text: Buy with confidence\n    - strong: Upfront pricing\n    - text: See estimated fees\n    - strong: Easy mobile entry\n    - text: Your tickets in one place\n  - paragraph: Happening soon\n  - heading \"Events fans are loving\" [level=2]\n  - button \"Explore all\"\n  - article:\n    - text: Pop\n    - heading \"Taylor Swift\" [level=3]\n    - paragraph: Fri, Aug 28 • 7:30 PM\n    - paragraph: Allegiant Stadium, Las Vegas\n    - text: From\n    - strong: $236\n    - text: incl. fees\n    - button \"View tickets for Taylor Swift\"\n  - article:\n    - text: Pop\n    - heading \"Celine Dion\" [level=3]\n    - paragraph: Sat, Oct 17 • 8:00 PM\n    - paragraph: Stade de France, Paris\n    - text: From\n    - strong: $207\n    - text: incl. fees\n    - button \"View tickets for Celine Dion\"\n  - article:\n    - text: Pop\n    - heading \"Adele\" [level=3]\n    - paragraph: Wed, Jun 16 • 8:00 PM\n    - paragraph: The Colosseum at Caesars Palace, Las Vegas\n    - text: From\n    - strong: $345\n    - text: incl. fees\n    - button \"View tickets for Adele\"\n  - article:\n    - text: NBA\n    - heading \"Los Angeles Lakers vs Memphis Grizzlies\" [level=3]\n    - paragraph: Thu, Apr 22 • 7:30 PM\n    - paragraph: Crypto.com Arena, Los Angeles\n    - text: From\n    - strong: $375\n    - text: incl. fees\n    - button \"View tickets for Los Angeles Lakers vs Memphis Grizzlies\"\n  - article:\n    - text: Las Vegas Shows\n    - heading \"O by Cirque du Soleil\" [level=3]\n    - paragraph: Thu, Aug 20 • 7:00 PM\n    - paragraph: O Theatre at Bellagio, Las Vegas\n    - text: From\n    - strong: $143\n    - text: incl. fees\n    - button \"View tickets for O by Cirque du Soleil\"\n  - article:\n    - text: NHL\n    - heading \"Boston Bruins vs New York Rangers\" [level=3]\n    - paragraph: Sat, Sep 19 • 7:00 PM\n    - paragraph: TD Garden, Boston\n    - text: From\n    - strong: $106\n    - text: incl. fees\n    - button \"View tickets for Boston Bruins vs New York Rangers\"\n  - paragraph: Find your thing\n  - heading \"Browse by category\" [level=2]\n  - button \"Concerts Big tours. Intimate sets.\"\n  - button \"Sports Every rivalry. Every seat.\"\n  - button \"Theater Shows worth talking about.\"\n  - article:\n    - paragraph: The perfect present\n    - heading \"Give them something to look forward to.\" [level=2]\n    - paragraph: StubHub gift cards unlock thousands of unforgettable live experiences.\n    - button \"Shop gift cards\"\n  - article:\n    - heading \"Sending tickets to a friend?\" [level=3]\n    - paragraph: Learn how to securely transfer NFL and other mobile tickets in a few quick steps.\n    - button \"View transfer guide\"\n- contentinfo:\n  - button \"stubhub ®\"\n  - paragraph: Be there live.\n  - heading \"Discover\" [level=3]\n  - button \"Concerts\"\n  - button \"NHL in Boston\"\n  - button \"Las Vegas theater\"\n  - heading \"Gifts\" [level=3]\n  - button \"Buy a gift card\"\n  - button \"Gift card cart\"\n  - heading \"Support\" [level=3]\n  - button \"Transfer NFL tickets\"\n  - button \"Help center\"\n  - text: © 2026 StubHub demo marketplace United States · USD FanProtect Guarantee"
+  },
+  "sourceSnippets": []
+}

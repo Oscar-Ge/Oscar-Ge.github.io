@@ -1,0 +1,169 @@
+{
+  "site": "cargurus",
+  "siteKey": "01-cargurus",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/01-cargurus/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "contrast",
+  "ruleId": "contrast",
+  "description": "Very low contrast",
+  "nodeIndex": 4,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/P[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/P[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false,
+    "contrastdata": [
+      4.28,
+      "#687d8c",
+      "#ffffff",
+      false
+    ]
+  },
+  "rawRef": "scans/01-cargurus/wave/attempt-1/raw.json",
+  "errorId": "ST0072",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/P[2]",
+    "tag": "P",
+    "text": "Move from research to purchase with clear data and helpful tools at every step.",
+    "html": "<p>Move from research to purchase with clear data and helpful tools at every step.</p>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 395,
+      "y": 891.125,
+      "width": 650,
+      "height": 27.1875
+    },
+    "style": {
+      "color": "rgb(104, 125, 140)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]",
+      "tag": "DIV",
+      "class": "section-heading center",
+      "text": "EVERYTHING YOU NEED\n\nCar shopping, simplified\n\nMove from research to purchase with clear data and helpful tools at every step.",
+      "html": "<div class=\"section-heading center\"><p class=\"eyebrow\">Everything you need</p><h2>Car shopping, simplified</h2><p>Move from research to purchase with clear data and helpful tools at every step.</p></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:44709/assets/index-CJqp0JpH.css",
+        "selector": ".section-heading p:last-child",
+        "declarations": {
+          "color": "var(--muted)"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "CarGurus | Shop, Sell & Research Cars",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Find the right car at the right price.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Car shopping, simplified",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Shop used cars",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Sell with confidence",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[3]/H3[1]",
+        "tag": "H3",
+        "text": "Plan your payment",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Price transparency you can use",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Shop",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Sell & finance",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Company",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "Car\nGurus\nBuy\nSell\nFinance\nResearch\nPrice trends\nCareers\nSaved\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Buy\nSell\nFinance\nResearch\nPrice trends\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "CONFIDENCE FROM SEARCH TO SIGNATURE\n\nFind the right car at the right price.\n\nCompare deals, understand market value, and shop millions of used cars with confidence.\n\nBuy a car\nSell my car\nMake\nToyota\nTesla\nBMW\nLexus\nHonda\nJeep\nModel\nZIP code\nSearch cars\nPopular:\nUsed Tesla near 10017\nCheapest BMW i3\nCPO Lexus RX 350\nNewest Lexus SUV\n5M+\ncar listings analyzed\n40,000+\ntrusted dealerships\nDeal ratings\nbased on local market data\nFree tools\nfor shopping, financing, and selling\n\nEVERYTHING YOU NEED\n\nC"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Car\nGurus\n\nGiving people the power to reach their destination with confidence.\n\nShop\nUsed cars\nCar reviews\nPrice trends\nSell & finance\nGet an offer\nLoan calculator\nPre-qualify\nCompany\nCareers\nMock marketplace experience\n© 2026 CarGurus concept. Synthetic data for demonstration only.\nBuilt for confident car shopping."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"CarGurus home\":\n    - /url: /\n    - text: Car\n    - strong: Gurus\n  - navigation \"Main navigation\":\n    - link \"Buy\":\n      - /url: /cars\n    - link \"Sell\":\n      - /url: /sell\n    - link \"Finance\":\n      - /url: /finance\n    - link \"Research\":\n      - /url: /research\n    - link \"Price trends\":\n      - /url: /trends\n    - link \"Careers\":\n      - /url: /careers\n  - link \"0 saved cars\":\n    - /url: /cars?saved=1\n    - text: Saved\n  - button \"Sign in\"\n- main:\n  - paragraph: Confidence from search to signature\n  - heading \"Find the right car at the right price.\" [level=1]\n  - paragraph: Compare deals, understand market value, and shop millions of used cars with confidence.\n  - tablist \"Choose shopping task\":\n    - tab \"Buy a car\"\n    - tab \"Sell my car\"\n  - text: Make\n  - combobox \"Make\":\n    - option \"Toyota\" [selected]\n    - option \"Tesla\"\n    - option \"BMW\"\n    - option \"Lexus\"\n    - option \"Honda\"\n    - option \"Jeep\"\n  - text: Model\n  - textbox \"Model\":\n    - /placeholder: Any model\n    - text: Corolla\n  - text: ZIP code\n  - textbox \"ZIP code\": \"10019\"\n  - button \"Search cars\"\n  - text: \"Popular:\"\n  - link \"Used Tesla near 10017\":\n    - /url: /cars?condition=Used&make=Tesla&zip=10017\n  - link \"Cheapest BMW i3\":\n    - /url: /cars?condition=Used&make=BMW&model=i3&zip=10001&sort=price\n  - link \"CPO Lexus RX 350\":\n    - /url: /cars?condition=Used&make=Lexus&model=RX%20350&zip=90012&certified=1&exterior=White&yearMin=2017&yearMax=2017&sort=price\n  - link \"Newest Lexus SUV\":\n    - /url: /cars?condition=Used&make=Lexus&zip=10017&bodyStyle=SUV&exterior=Silver&interior=Black&feature=Backup%20Camera&yearMin=2022&yearMax=2023&sort=newest\n  - region \"Marketplace highlights\":\n    - strong: 5M+\n    - text: car listings analyzed\n    - strong: 40,000+\n    - text: trusted dealerships\n    - strong: Deal ratings\n    - text: based on local market data\n    - strong: Free tools\n    - text: for shopping, financing, and selling\n  - paragraph: Everything you need\n  - heading \"Car shopping, simplified\" [level=2]\n  - paragraph: Move from research to purchase with clear data and helpful tools at every step.\n  - article:\n    - heading \"Shop used cars\" [level=3]\n    - paragraph: Filter by the details that matter, compare deals, and save your favorites.\n    - link \"Browse inventory\":\n      - /url: /cars\n  - article:\n    - heading \"Sell with confidence\" [level=3]\n    - paragraph: Get a realistic, no-obligation offer based on your vehicle details.\n    - link \"Value my car\":\n      - /url: /sell\n  - article:\n    - heading \"Plan your payment\" [level=3]\n    - paragraph: Estimate monthly payments or see a mock prequalification with no credit impact.\n    - link \"Explore financing\":\n      - /url: /finance\n  - paragraph: Know the market\n  - heading \"Price transparency you can use\" [level=2]\n  - paragraph: Our mocked deal ratings compare each listing with similar vehicles nearby, so a good price is easier to spot.\n  - link \"Explore price trends\":\n    - /url: /trends\n  - text: Great Deal\n  - paragraph: 2020 Tesla Model 3\n  - strong: $21,995\n  - text: Below market Above market\n  - paragraph: $2,010 below estimated market price\n- contentinfo:\n  - link \"Car Gurus\":\n    - /url: /\n    - text: Car\n    - strong: Gurus\n  - paragraph: Giving people the power to reach their destination with confidence.\n  - heading \"Shop\" [level=3]\n  - link \"Used cars\":\n    - /url: /cars\n  - link \"Car reviews\":\n    - /url: /research\n  - link \"Price trends\":\n    - /url: /trends\n  - heading \"Sell & finance\" [level=3]\n  - link \"Get an offer\":\n    - /url: /sell\n  - link \"Loan calculator\":\n    - /url: /finance\n  - link \"Pre-qualify\":\n    - /url: /finance?mode=prequalify\n  - heading \"Company\" [level=3]\n  - link \"Careers\":\n    - /url: /careers\n  - text: Mock marketplace experience © 2026 CarGurus concept. Synthetic data for demonstration only. Built for confident car shopping."
+  },
+  "sourceSnippets": []
+}

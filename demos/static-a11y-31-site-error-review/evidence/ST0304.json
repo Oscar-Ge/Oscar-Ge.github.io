@@ -1,0 +1,307 @@
+{
+  "site": "espn",
+  "siteKey": "15-espn",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/15-espn/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "contrast",
+  "ruleId": "contrast",
+  "description": "Very low contrast",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false,
+    "contrastdata": [
+      4.3,
+      "#ffffffe6",
+      "#dd0000",
+      false
+    ]
+  },
+  "rawRef": "scans/15-espn/wave/attempt-1/raw.json",
+  "errorId": "ST0304",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+    "tag": "A",
+    "text": "NFL",
+    "html": "<a class=\"\" href=\"/nfl/super-bowl-2015\" data-discover=\"true\">NFL</a>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/nfl/super-bowl-2015",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 191.515625,
+      "y": 90,
+      "width": 51.484375,
+      "height": 60
+    },
+    "style": {
+      "color": "rgba(255, 255, 255, 0.9)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "13.12px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "NAV",
+      "role": null,
+      "label": "Primary navigation",
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+      "tag": "NAV",
+      "class": "main-nav",
+      "text": "NFL\nNBA\nNHL\nSoccer\nUFC\nF1",
+      "html": "<nav class=\"main-nav\" aria-label=\"Primary navigation\"><a class=\"\" href=\"/nfl/super-bowl-2015\" data-discover=\"true\">NFL</a><a class=\"\" href=\"/nba/scoreboard\" data-discover=\"true\">NBA</a><a class=\"\" href=\"/nhl/atlantic\" data-discover=\"true\">NHL</a><a class=\"\" href=\"/soccer/tv-schedule\" data-discover=\"true\">Soccer</a><a class=\"\" href=\"/ufc/schedule\" data-discover=\"true\">UFC</a><a class=\"\" href=\"/podcasts/f1\" data-discover=\"true\">F1</a></nav>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]/A[1]",
+      "tag": "A",
+      "text": "NFL",
+      "ariaLabel": null,
+      "href": "/nfl/super-bowl-2015",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:33743/assets/index-DJhTGc6P.css",
+        "selector": ".main-nav a",
+        "declarations": {
+          "color": "rgba(255, 255, 255, 0.9)",
+          "font-size": "0.82rem",
+          "font-weight": "800",
+          "display": "grid"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "ESPN — Scores, News, Stats & More",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/ASIDE[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Favorites",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/ARTICLE[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Rivalry night takes center stage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Bridges sets the tone for a new season in New York",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "How City's historic 2022–23 run stacks up",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/ASIDE[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Top Headlines",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find the sports story you need",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Atlantic Division team leaders",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Yesterday's NBA scores",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "2022 scoring leaders",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Manchester City 2022/23 stats",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[5]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Michael Jordan biography",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[6]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Barcelona's next fixture",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[7]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Latest on Mikal Bridges",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[8]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Play an F1 podcast",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[9]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "2019 schedule & athlete profiles",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[10]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "March 11 scoreboard",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[11]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Dallas Mavericks schedule",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[12]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Kevin Durant's bio",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[13]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Golden State Warriors roster",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[14]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Super Bowl 2015 scoreboard",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[15]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Top scoring team this season",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[16]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Athletic Club stats",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[17]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "2020–21 season leaders",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[18]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Real Madrid schedule",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[19]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Cristiano Ronaldo World Cup stats",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[20]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "April 8, 2023 fixtures",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[21]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Upcoming soccer events",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[22]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Brooklyn Nets schedule",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "ESPN\nNFL\nNBA\nNHL\nSoccer\nUFC\nF1\nLog In"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "NFL\nNBA\nNHL\nSoccer\nUFC\nF1"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "Favorites\n\nFollow teams and athletes for a personalized feed.\n\nFind favorites\nQUICK LINKS\nNBA scoreboard\nESPN2 schedule\nF1 podcast\nLIVE\nRivalry night takes center stage\n\nYankees and Red Sox meet with the division race tightening down the stretch.\n\nOpen scoreboards \nNBA\nBridges sets the tone for a new season in New York\nCHAMPIONS LEAGUE\nHow City's historic 2022–23 run stacks up\nTop Headlines\nBridges: Knicks embracing championship expectations\nNBA's highest-scoring offenses, ranked\nReal Madrid's C"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Favorites\n\nFollow teams and athletes for a personalized feed.\n\nFind favorites\nQUICK LINKS\nNBA scoreboard\nESPN2 schedule\nF1 podcast"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/ASIDE[2]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Top Headlines\nBridges: Knicks embracing championship expectations\nNBA's highest-scoring offenses, ranked\nReal Madrid's Champions League path set\nRonaldo's World Cup record, tournament by tournament\nRevisit the biggest UFC cards of 2019"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "ESPN\n\n© 2026 ESPN Mock Experience. Synthetic data for demonstration only.\n\nScores\nTeams\nPodcasts"
+      }
+    ],
+    "axSnapshot": "- text: SCORES\n- link \"MLB Final NYY 5 BOS 3\":\n  - /url: /search?q=MLB+scores\n  - text: MLB\n  - strong: Final\n  - paragraph:\n    - text: NYY\n    - strong: \"5\"\n  - paragraph:\n    - text: BOS\n    - strong: \"3\"\n- link \"WNBA Final NYL 84 LVA 81\":\n  - /url: /nba/scoreboard\n  - text: WNBA\n  - strong: Final\n  - paragraph:\n    - text: NYL\n    - strong: \"84\"\n  - paragraph:\n    - text: LVA\n    - strong: \"81\"\n- link \"SOCCER 67′ MCI 2 TOT 1\":\n  - /url: /soccer/man-city-stats\n  - text: SOCCER\n  - strong: 67′\n  - paragraph:\n    - text: MCI\n    - strong: \"2\"\n  - paragraph:\n    - text: TOT\n    - strong: \"1\"\n- link \"NFL 7:00 PM DAL — BAL —\":\n  - /url: /nfl/super-bowl-2015\n  - text: NFL\n  - strong: 7:00 PM\n  - paragraph:\n    - text: DAL\n    - strong: —\n  - paragraph:\n    - text: BAL\n    - strong: —\n- link \"All scores\":\n  - /url: /nba/scoreboard\n- banner:\n  - link \"ESPN home\":\n    - /url: /\n    - text: ESPN\n  - navigation \"Primary navigation\":\n    - link \"NFL\":\n      - /url: /nfl/super-bowl-2015\n    - link \"NBA\":\n      - /url: /nba/scoreboard\n    - link \"NHL\":\n      - /url: /nhl/atlantic\n    - link \"Soccer\":\n      - /url: /soccer/tv-schedule\n    - link \"UFC\":\n      - /url: /ufc/schedule\n    - link \"F1\":\n      - /url: /podcasts/f1\n  - button \"Search ESPN\"\n  - button \"Notifications\"\n  - button \"Log In\"\n- main:\n  - complementary:\n    - heading \"Favorites\" [level=3]\n    - paragraph: Follow teams and athletes for a personalized feed.\n    - link \"Find favorites\":\n      - /url: /nhl/atlantic\n    - text: Quick links\n    - link \"NBA scoreboard\":\n      - /url: /nba/scoreboard\n    - link \"ESPN2 schedule\":\n      - /url: /soccer/tv-schedule\n    - link \"F1 podcast\":\n      - /url: /podcasts/f1\n  - article:\n    - img \"Sunday Night Baseball featured matchup\"\n    - text: LIVE\n    - heading \"Rivalry night takes center stage\" [level=1]\n    - paragraph: Yankees and Red Sox meet with the division race tightening down the stretch.\n    - link \"Open scoreboards\":\n      - /url: /nba/scoreboard\n  - link \"Mikal Bridges news feature NBA Bridges sets the tone for a new season in New York\":\n    - /url: /news/mikal-bridges\n    - img \"Mikal Bridges news feature\"\n    - text: NBA\n    - heading \"Bridges sets the tone for a new season in New York\" [level=3]\n  - link \"Champions League feature CHAMPIONS LEAGUE How City's historic 2022–23 run stacks up\":\n    - /url: /soccer/man-city-stats\n    - img \"Champions League feature\"\n    - text: CHAMPIONS LEAGUE\n    - heading \"How City's historic 2022–23 run stacks up\" [level=3]\n  - complementary:\n    - heading \"Top Headlines\" [level=3]\n    - 'link \"Bridges: Knicks embracing championship expectations\"':\n      - /url: /news/mikal-bridges\n    - link \"NBA's highest-scoring offenses, ranked\":\n      - /url: /nba/team-stats\n    - link \"Real Madrid's Champions League path set\":\n      - /url: /team/real-madrid/schedule\n    - link \"Ronaldo's World Cup record, tournament by tournament\":\n      - /url: /soccer/cristiano-ronaldo-world-cup\n    - link \"Revisit the biggest UFC cards of 2019\":\n      - /url: /ufc/schedule\n  - text: Explore ESPN\n  - heading \"Find the sports story you need\" [level=2]\n  - paragraph: Scores, schedules, stats, players and shows—all in one place.\n  - link \"NHL Atlantic Division team leaders Pick a club and follow a leader\":\n    - /url: /nhl/atlantic\n    - text: NHL\n    - heading \"Atlantic Division team leaders\" [level=3]\n    - paragraph: Pick a club and follow a leader\n  - link \"NBA Yesterday's NBA scores Full scoreboard and game status\":\n    - /url: /nba/scoreboard?preset=yesterday\n    - text: NBA\n    - heading \"Yesterday's NBA scores\" [level=3]\n    - paragraph: Full scoreboard and game status\n  - link \"MLS 2022 scoring leaders Highest goal scorer and leaderboard\":\n    - /url: /soccer/mls-leaders\n    - text: MLS\n    - heading \"2022 scoring leaders\" [level=3]\n    - paragraph: Highest goal scorer and leaderboard\n  - link \"UEFA CHAMPIONS LEAGUE Manchester City 2022/23 stats Club performance by competition\":\n    - /url: /soccer/man-city-stats\n    - text: UEFA CHAMPIONS LEAGUE\n    - heading \"Manchester City 2022/23 stats\" [level=3]\n    - paragraph: Club performance by competition\n  - link \"NFL Michael Jordan biography Career, position and personal details\":\n    - /url: /nfl/player/michael-jordan\n    - text: NFL\n    - heading \"Michael Jordan biography\" [level=3]\n    - paragraph: Career, position and personal details\n  - link \"COPA DEL REY Barcelona's next fixture Upcoming cup schedule\":\n    - /url: /team/barcelona/schedule\n    - text: COPA DEL REY\n    - heading \"Barcelona's next fixture\" [level=3]\n    - paragraph: Upcoming cup schedule\n  - link \"NBA NEWS Latest on Mikal Bridges News, analysis and updates\":\n    - /url: /news/mikal-bridges\n    - text: NBA NEWS\n    - heading \"Latest on Mikal Bridges\" [level=3]\n    - paragraph: News, analysis and updates\n  - 'link \"F1 Play an F1 podcast Unlapped: strategy and paddock news\"':\n    - /url: /podcasts/f1\n    - text: F1\n    - heading \"Play an F1 podcast\" [level=3]\n    - paragraph: \"Unlapped: strategy and paddock news\"\n  - link \"UFC 2019 schedule & athlete profiles Select an event and fighter\":\n    - /url: /ufc/schedule\n    - text: UFC\n    - heading \"2019 schedule & athlete profiles\" [level=3]\n    - paragraph: Select an event and fighter\n  - link \"NBA March 11 scoreboard Scores from a selected date\":\n    - /url: /nba/scoreboard?preset=march11\n    - text: NBA\n    - heading \"March 11 scoreboard\" [level=3]\n    - paragraph: Scores from a selected date\n  - link \"NBA Dallas Mavericks schedule Upcoming games and results\":\n    - /url: /team/dallas-mavericks/schedule\n    - text: NBA\n    - heading \"Dallas Mavericks schedule\" [level=3]\n    - paragraph: Upcoming games and results\n  - link \"NBA Kevin Durant's bio Player profile and career summary\":\n    - /url: /nba/player/kevin-durant\n    - text: NBA\n    - heading \"Kevin Durant's bio\" [level=3]\n    - paragraph: Player profile and career summary\n  - link \"NBA Golden State Warriors roster Players by position\":\n    - /url: /team/golden-state-warriors/roster\n    - text: NBA\n    - heading \"Golden State Warriors roster\" [level=3]\n    - paragraph: Players by position\n  - link \"NFL Super Bowl 2015 scoreboard Patriots vs. Seahawks recap\":\n    - /url: /nfl/super-bowl-2015\n    - text: NFL\n    - heading \"Super Bowl 2015 scoreboard\" [level=3]\n    - paragraph: Patriots vs. Seahawks recap\n  - link \"NBA Top scoring team this season Sort teams by points per game\":\n    - /url: /nba/team-stats\n    - text: NBA\n    - heading \"Top scoring team this season\" [level=3]\n    - paragraph: Sort teams by points per game\n  - link \"LALIGA Athletic Club stats Season performance and leaders\":\n    - /url: /soccer/athletic-club-stats\n    - text: LALIGA\n    - heading \"Athletic Club stats\" [level=3]\n    - paragraph: Season performance and leaders\n  - link \"NBA 2020–21 season leaders Regular-season category leaders\":\n    - /url: /nba/season-leaders\n    - text: NBA\n    - heading \"2020–21 season leaders\" [level=3]\n    - paragraph: Regular-season category leaders\n  - link \"UEFA CHAMPIONS LEAGUE Real Madrid schedule Group and knockout fixtures\":\n    - /url: /team/real-madrid/schedule\n    - text: UEFA CHAMPIONS LEAGUE\n    - heading \"Real Madrid schedule\" [level=3]\n    - paragraph: Group and knockout fixtures\n  - link \"PORTUGAL Cristiano Ronaldo World Cup stats Every tournament, one record\":\n    - /url: /soccer/cristiano-ronaldo-world-cup\n    - text: PORTUGAL\n    - heading \"Cristiano Ronaldo World Cup stats\" [level=3]\n    - paragraph: Every tournament, one record\n  - link \"SERIE A April 8, 2023 fixtures Italian league schedule\":\n    - /url: /soccer/serie-a-schedule\n    - text: SERIE A\n    - heading \"April 8, 2023 fixtures\" [level=3]\n    - paragraph: Italian league schedule\n  - link \"ESPN2 Upcoming soccer events TV listings by network\":\n    - /url: /soccer/tv-schedule\n    - text: ESPN2\n    - heading \"Upcoming soccer events\" [level=3]\n    - paragraph: TV listings by network\n  - link \"NBA Brooklyn Nets schedule Upcoming games and results\":\n    - /url: /team/brooklyn-nets/schedule\n    - text: NBA\n    - heading \"Brooklyn Nets schedule\" [level=3]\n    - paragraph: Upcoming games and results\n- contentinfo:\n  - link \"ESPN\":\n    - /url: /\n  - paragraph: © 2026 ESPN Mock Experience. Synthetic data for demonstration only.\n  - link \"Scores\":\n    - /url: /search?q=scores\n  - link \"Teams\":\n    - /url: /search?q=teams\n  - link \"Podcasts\":\n    - /url: /podcasts/f1"
+  },
+  "sourceSnippets": []
+}

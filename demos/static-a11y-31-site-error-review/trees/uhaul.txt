@@ -1,0 +1,108 @@
+- text: Trusted since 1945
+- link "Find a Location":
+  - /url: /storage
+- link "1-800-GO-UHAUL":
+  - /url: tel:18004684285
+- banner:
+  - link "U-Haul home":
+    - /url: /
+    - text: U-HAUL
+  - navigation "Main navigation":
+    - link "Trucks & Trailers":
+      - /url: /trucks-trailers
+    - link "Storage":
+      - /url: /storage
+    - link "Moving Supplies":
+      - /url: /moving-supplies
+    - link "Hitches":
+      - /url: /hitches
+  - link "Cart with 0 items":
+    - /url: /cart
+    - text: Cart
+- main:
+  - text: Moving made easier
+  - heading "Your move. Your way." [level=1]
+  - paragraph: Affordable moving trucks, trailers, storage and supplies — all in one place.
+  - tablist "Choose a service":
+    - tab "Trucks" [selected]
+    - tab "Trailers"
+    - tab "Storage"
+  - text: Pick up location
+  - textbox "Pick up location":
+    - /placeholder: City, state or ZIP code
+  - text: Pick up date
+  - textbox "Pick up date": 2023-04-19
+  - button "Get started"
+  - text: Plan every part of your move
+  - heading "What can we help you with?" [level=2]
+  - paragraph: One trusted place for equipment, storage and moving essentials.
+  - article:
+    - heading "Truck Rentals" [level=3]
+    - paragraph: Choose the right-size truck with flexible local and one-way options.
+    - link "View truck rates":
+      - /url: /trucks-trailers
+  - article:
+    - heading "Cargo Trailers" [level=3]
+    - paragraph: Tow a secure enclosed trailer behind your own compatible vehicle.
+    - link "Browse trailers":
+      - /url: /trucks-trailers
+  - article:
+    - heading "Self-Storage" [level=3]
+    - paragraph: Find indoor and climate-controlled units close to your neighborhood.
+    - link "Find storage":
+      - /url: /storage
+  - article:
+    - heading "Moving Supplies" [level=3]
+    - paragraph: Shop curated box kits, packing materials and moving-day essentials.
+    - link "Shop supplies":
+      - /url: /moving-supplies
+  - text: Move with confidence
+  - heading "Built around real moving days" [level=2]
+  - paragraph: From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.
+  - link "Build your moving kit":
+    - /url: /moving-supplies
+  - heading "20,000+ locations" [level=3]
+  - paragraph: Find convenient help close to home.
+  - heading "Flexible coverage" [level=3]
+  - paragraph: Add protection that fits your move.
+  - heading "Plans can change" [level=3]
+  - paragraph: Manage mock reservations with ease.
+  - text: Simple from the start
+  - heading "Ready in three easy steps" [level=2]
+  - text: "1"
+  - heading "Tell us your plan" [level=3]
+  - paragraph: Enter where and when you are moving.
+  - text: "2"
+  - heading "Compare your options" [level=3]
+  - paragraph: Review clear rates, sizes and features.
+  - text: "3"
+  - heading "Reserve with confidence" [level=3]
+  - paragraph: Choose your equipment or unit and you are set.
+- contentinfo:
+  - link "U-HAUL":
+    - /url: /
+  - paragraph: Your one-stop shop for moving and storage.
+  - link "1-800-GO-UHAUL":
+    - /url: tel:18004684285
+  - heading "Rentals" [level=3]
+  - link "Moving trucks":
+    - /url: /trucks-trailers
+  - link "Cargo trailers":
+    - /url: /trucks-trailers
+  - link "Trailer hitches":
+    - /url: /hitches
+  - heading "Storage & supplies" [level=3]
+  - link "Self-storage":
+    - /url: /storage
+  - link "Moving boxes":
+    - /url: /moving-supplies
+  - link "Shopping cart":
+    - /url: /cart
+  - heading "Helpful shortcuts" [level=3]
+  - link "Find a location":
+    - /url: /storage
+  - link "Get rental rates":
+    - /url: /trucks-trailers
+  - link "Contact support":
+    - /url: tel:18004684285
+  - text: © 2026 U-Haul International, Inc. Mock experience. Move smart. Move safely.

@@ -1,0 +1,121 @@
+- banner:
+  - text: American Airlines
+  - button "Help"
+  - button "Contact American"
+  - button "English"
+  - button "American Airlines home":
+    - strong: American
+    - text: Airlines
+  - navigation "Primary navigation":
+    - button "Book"
+    - button "Manage trips / Check-in"
+    - button "Flight status"
+    - button "AAdvantage®"
+    - button "Travel information"
+  - button "Search site"
+  - button "Log in"
+- main:
+  - paragraph: YOUR WORLD IS WAITING
+  - heading "More places. More possibilities." [level=1]
+  - paragraph: Plan every part of your trip with confidence, from takeoff to touchdown.
+  - region "Book travel":
+    - tablist "Travel tools":
+      - tab "Book" [selected]
+      - tab "Manage trips"
+      - tab "Flight status"
+    - radio "Round trip" [checked]
+    - text: Round trip
+    - radio "One way"
+    - text: One way
+    - radio "Multi-city"
+    - text: Multi-city
+    - radio "Vacation package"
+    - text: Vacation package From
+    - textbox "From":
+      - /placeholder: City or airport
+      - text: New York, NY (JFK)
+    - button "Swap origin and destination": ⇄
+    - text: To
+    - textbox "To":
+      - /placeholder: City or airport
+      - text: London, England (LHR)
+    - text: Depart
+    - textbox "Depart": 2027-04-20
+    - text: Return
+    - textbox "Return": 2027-04-23
+    - text: Adults
+    - combobox "Adults":
+      - option "1 adult" [selected]
+      - option "2 adults"
+      - option "3 adults"
+      - option "4 adults"
+      - option "5 adults"
+      - option "6 adults"
+    - text: Children (2–11)
+    - combobox "Children (2–11)":
+      - option "0 children" [selected]
+      - option "1 child"
+      - option "2 children"
+      - option "3 children"
+      - option "4 children"
+    - text: Cabin
+    - combobox "Cabin":
+      - option "Main Cabin" [selected]
+      - option "Premium Economy"
+      - option "Business"
+      - option "First"
+    - checkbox "Nearby airports Include airports near your cities"
+    - strong: Nearby airports
+    - text: Include airports near your cities
+    - button "Search flights"
+  - paragraph: TRAVEL MADE SIMPLE
+  - heading "What can we help you with?" [level=2]
+  - button "Flight status Get the latest arrival and departure information.":
+    - strong: Flight status
+    - text: Get the latest arrival and departure information.
+  - button "Manage your trip Check in, choose seats and add travel extras.":
+    - strong: Manage your trip
+    - text: Check in, choose seats and add travel extras.
+  - button "Travel credits Find and view your available trip credits.":
+    - strong: Travel credits
+    - text: Find and view your available trip credits.
+  - button "Schedules & alerts View schedules and receive flight notifications.":
+    - strong: Schedules & alerts
+    - text: View schedules and receive flight notifications.
+  - button "Hotels Find a stay that works for your itinerary.":
+    - strong: Hotels
+    - text: Find a stay that works for your itinerary.
+  - button "Careers Join a team that connects the world.":
+    - strong: Careers
+    - text: Join a team that connects the world.
+  - paragraph: GO FURTHER
+  - heading "Your next favorite place is closer than you think" [level=2]
+  - paragraph: Explore flexible fares and thoughtfully timed flights to hundreds of destinations.
+  - button "Search flights"
+  - text: JFK LHR
+  - heading "More flexibility" [level=3]
+  - paragraph: Change plans with options designed around your journey.
+  - heading "More connected" [level=3]
+  - paragraph: Stay productive or entertained on select flights.
+  - heading "Our best fares" [level=3]
+  - paragraph: Compare choices and pick the trip that fits you best.
+- contentinfo:
+  - button "American Airlines":
+    - strong: American
+    - text: Airlines
+  - heading "Travel" [level=3]
+  - button "Book flights"
+  - button "Flight status"
+  - button "Hotels"
+  - heading "Manage" [level=3]
+  - button "Manage trips"
+  - button "Travel credits"
+  - button "Receipts and refunds"
+  - heading "About American" [level=3]
+  - button "Careers"
+  - button "About us"
+  - button "Accessibility"
+  - text: © 2026 American Airlines, Inc. Demo experience.
+  - button "Privacy"
+  - button "Terms"
+  - button "Cookie settings"

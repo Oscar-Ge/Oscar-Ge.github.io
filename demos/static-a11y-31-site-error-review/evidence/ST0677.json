@@ -1,0 +1,215 @@
+{
+  "site": "allrecipes",
+  "siteKey": "23-allrecipes",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/23-allrecipes/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 5,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[2]/P[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[2]/P[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/23-allrecipes/wave/attempt-1/raw.json",
+  "errorId": "ST0677",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[2]/P[1]",
+    "tag": "P",
+    "text": "SWEET POTATO · AMERICAN",
+    "html": "<p class=\"card-kicker\">Sweet Potato · American</p>",
+    "class": "card-kicker",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 753,
+      "y": 1650.625,
+      "width": 235.5,
+      "height": 12
+    },
+    "style": {
+      "color": "rgb(213, 66, 21)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10.56px",
+      "fontWeight": "900",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[2]",
+      "tag": "DIV",
+      "class": "recipe-card-body",
+      "text": "SWEET POTATO · AMERICAN\n\nSavory Sweet Potato Breakfast Hash\n4.7\n★★★★★\n(842)\n30 mins\n4 servings\nSave recipe",
+      "html": "<div class=\"recipe-card-body\"><p class=\"card-kicker\">Sweet Potato · American</p><h3><a href=\"/recipe/savory-sweet-potato-hash\" data-discover=\"true\">Savory Sweet Potato Breakfast Hash</a></h3><div class=\"rating-row \" aria-label=\"4.7 out of 5 stars, 842 ratings\"><span class=\"rating-number\">4.7</span><span class=\"stars\" aria-hidden=\"true\">★★★★★</span><span class=\"rating-count\">(842)</span></div><div class=\"card-meta\"><span><svg data-prefix=\"fas\" data-icon=\"clock\" class=\"svg-inline--fa fa-clock\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"></path></svg> 30 mins</span><span>4 servings</span></div><button class=\"save-button \" type=\"button\"><svg data-prefix=\"fas\" data-icon=\"bookmark\" class=\"svg-inline--fa fa-bookmark\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 0C28.7 0 0 28.7 0 64L0 480c0 11.5 6.2 22.2 16.2 27.8s22.3 5.5 32.2-.4L192 421.3 335.5 507.4c9.9 5.9 22.2 6.1 32.2 .4S384 491.5 384 480l0-416c0-35.3-28.7-64-64-64L64 0z\"></path></svg> Save recipe</button></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:39101/assets/index-B4c2NK2a.css",
+        "selector": ".card-kicker, .article-type",
+        "declarations": {
+          "color": "var(--orange)",
+          "font-size": "0.66rem",
+          "font-weight": "900"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Allrecipes | Food, Friends, and Recipe Inspiration",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Recipes you’ll want to make again and again.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/A[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "30-Minute Garlic Butter Shrimp Pasta",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What sounds good?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Ready in 30 minutes",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Spicy Chicken Noodles",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "5-Star Honey Garlic Pork Chops",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Savory Sweet Potato Breakfast Hash",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/ARTICLE[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Easy Coffee Mocha",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Food news & trends",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "The Crispy Rice Salad Taking Over Summer Tables",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "FreshFields Recalls Cinnamon Granola Bars in 12 States",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/ASIDE[1]/H2[1]",
+        "tag": "H2",
+        "text": "Delicious ideas, delivered.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "EXPLORE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "LEARN",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "YOUR KITCHEN",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "AMERICA’S #1 TRUSTED RECIPE RESOURCE\nTESTED IN HOME KITCHENS SINCE 1997\nallrecipes\n*\nSearch recipes and ingredients\nLog In\nMy Recipes\nRECIPES\nQUICK & EASY\nDESSERTS\nAIR FRYER\nKITCHEN TIPS\nFOOD NEWS\nHOLIDAYS"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "RECIPES\nQUICK & EASY\nDESSERTS\nAIR FRYER\nKITCHEN TIPS\nFOOD NEWS\nHOLIDAYS"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "COOK WITH CONFIDENCE\n\nRecipes you’ll want to make again and again.\n\nDiscover reliable favorites, quick weeknight dinners, and ideas for every craving—all tested by home cooks.\n\nWhat are you looking for?\nSearch\nTONIGHT’S PICK\n30-Minute Garlic Butter Shrimp Pasta\n4.8\n★★★★★\n(2,914)\nGet the recipe\n\nFIND EXACTLY WHAT YOU NEED\n\nWhat sounds good?\n30-Minute Meals\nFast, full-flavored dinners\nSweet Potato\nMake it the main event\nQuick Seafood\nMain dishes in 30 minutes\nFilipino Desserts\nFive-star sweet favo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "THE DAILY DISH\n\nDelicious ideas, delivered.\n\nGet our best recipes and smartest kitchen tips in your inbox.\n\nEmail address\nSign me up"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "allrecipes\n*\n\nReliable recipes and helpful kitchen know-how, made for home cooks.\n\nEXPLORE\nAll Recipes\n30-Minute Meals\nAir Fryer Recipes\nDesserts\nLEARN\nKitchen Tips\nFood Safety\nRecall News\nFood Trends\nYOUR KITCHEN\nMy Recipes\nSearch Cinnamon Recipes\nAbout Allrecipes\n© 2026 Allrecipes demo\nAll content is synthetic and for demonstration only."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: \"America’s #1 trusted recipe resource Tested in home kitchens since 1997\"\n  - link \"Allrecipes home\":\n    - /url: /\n    - text: allrecipes *\n  - search:\n    - text: Search recipes and ingredients\n    - textbox \"Search recipes and ingredients\":\n      - /placeholder: Search recipes, ingredients, and more\n    - button \"Search\"\n  - button \"Log In\"\n  - link \"My recipes, 0 items\":\n    - /url: /my-recipes\n    - text: My Recipes\n  - navigation \"Main navigation\":\n    - link \"Recipes\":\n      - /url: /recipes\n    - link \"Quick & Easy\":\n      - /url: /recipes?maxTime=30\n    - link \"Desserts\":\n      - /url: /recipes?category=desserts\n    - link \"Air Fryer\":\n      - /url: /collection/air-fryer-favorites\n    - link \"Kitchen Tips\":\n      - /url: /tips\n    - link \"Food News\":\n      - /url: /news\n    - link \"Holidays\":\n      - /url: /recipes?category=easter-brunch\n- main:\n  - paragraph: Cook with confidence\n  - heading \"Recipes you’ll want to make again and again.\" [level=1]\n  - paragraph: Discover reliable favorites, quick weeknight dinners, and ideas for every craving—all tested by home cooks.\n  - text: What are you looking for?\n  - textbox \"What are you looking for?\":\n    - /placeholder: Try “cinnamon” or “lemon bars”\n  - button \"Search\"\n  - link \"30-Minute Garlic Butter Shrimp Pasta Tonight’s pick 30-Minute Garlic Butter Shrimp Pasta 4.8 out of 5 stars, 2,914 ratings Get the recipe\":\n    - /url: /recipe/garlic-butter-shrimp-pasta\n    - img \"30-Minute Garlic Butter Shrimp Pasta\"\n    - text: Tonight’s pick\n    - heading \"30-Minute Garlic Butter Shrimp Pasta\" [level=2]\n    - text: 4.8 (2,914) Get the recipe\n  - paragraph: Find exactly what you need\n  - heading \"What sounds good?\" [level=2]\n  - link \"30-Minute Meals Fast, full-flavored dinners\":\n    - /url: /recipes?maxTime=30\n    - strong: 30-Minute Meals\n    - text: Fast, full-flavored dinners\n  - link \"Sweet Potato Make it the main event\":\n    - /url: /recipes?ingredient=sweet-potato\n    - strong: Sweet Potato\n    - text: Make it the main event\n  - link \"Quick Seafood Main dishes in 30 minutes\":\n    - /url: /recipes?category=main-dishes&ingredient=seafood&maxTime=30\n    - strong: Quick Seafood\n    - text: Main dishes in 30 minutes\n  - link \"Filipino Desserts Five-star sweet favorites\":\n    - /url: /recipes?cuisine=Filipino&category=desserts&rating=5\n    - strong: Filipino Desserts\n    - text: Five-star sweet favorites\n  - link \"Easter Brunch Celebration-worthy recipes\":\n    - /url: /recipes?category=easter-brunch\n    - strong: Easter Brunch\n    - text: Celebration-worthy recipes\n  - link \"Food Safety Smart kitchen know-how\":\n    - /url: /tips?topic=food-safety\n    - strong: Food Safety\n    - text: Smart kitchen know-how\n  - paragraph: Weeknight wins\n  - heading \"Ready in 30 minutes\" [level=2]\n  - link \"View all quick recipes\":\n    - /url: /recipes?maxTime=30\n  - article:\n    - link \"View Spicy Chicken Noodles\":\n      - /url: /recipe/spicy-chicken-noodles\n      - img \"Spicy Chicken Noodles\"\n    - button \"Favorite Spicy Chicken Noodles\"\n    - text: Ready in 25 minutes\n    - paragraph: Chicken · Asian Inspired\n    - heading \"Spicy Chicken Noodles\" [level=3]:\n      - link \"Spicy Chicken Noodles\":\n        - /url: /recipe/spicy-chicken-noodles\n    - text: 4.9 (2,387) 25 mins 4 servings\n    - button \"Save recipe\"\n  - article:\n    - link \"View 5-Star Honey Garlic Pork Chops\":\n      - /url: /recipe/honey-garlic-pork-chops\n      - img \"5-Star Honey Garlic Pork Chops\"\n    - button \"Favorite 5-Star Honey Garlic Pork Chops\"\n    - text: 5-star recipe\n    - paragraph: Pork · American\n    - heading \"5-Star Honey Garlic Pork Chops\" [level=3]:\n      - link \"5-Star Honey Garlic Pork Chops\":\n        - /url: /recipe/honey-garlic-pork-chops\n    - text: 5.0 (684) 30 mins 4 servings\n    - button \"Save recipe\"\n  - article:\n    - link \"View Savory Sweet Potato Breakfast Hash\":\n      - /url: /recipe/savory-sweet-potato-hash\n      - img \"Savory Sweet Potato Breakfast Hash\"\n    - button \"Favorite Savory Sweet Potato Breakfast Hash\"\n    - paragraph: Sweet Potato · American\n    - heading \"Savory Sweet Potato Breakfast Hash\" [level=3]:\n      - link \"Savory Sweet Potato Breakfast Hash\":\n        - /url: /recipe/savory-sweet-potato-hash\n    - text: 4.7 (842) 30 mins 4 servings\n    - button \"Save recipe\"\n  - article:\n    - link \"View Easy Coffee Mocha\":\n      - /url: /recipe/easy-coffee-mocha\n      - img \"Easy Coffee Mocha\"\n    - button \"Favorite Easy Coffee Mocha\"\n    - text: Café favorite\n    - paragraph: Coffee · American\n    - heading \"Easy Coffee Mocha\" [level=3]:\n      - link \"Easy Coffee Mocha\":\n        - /url: /recipe/easy-coffee-mocha\n    - text: 4.8 (1,106) 10 mins 2 servings\n    - button \"Save recipe\"\n  - paragraph: Fresh from our editors\n  - heading \"Food news & trends\" [level=2]\n  - link \"See all stories\":\n    - /url: /news\n  - article:\n    - link \"The Crispy Rice Salad Taking Over Summer Tables\":\n      - /url: /article/crispy-rice-salad-trend\n      - img \"The Crispy Rice Salad Taking Over Summer Tables\"\n    - paragraph: Food Trends · August 14, 2026\n    - heading \"The Crispy Rice Salad Taking Over Summer Tables\" [level=3]:\n      - link \"The Crispy Rice Salad Taking Over Summer Tables\":\n        - /url: /article/crispy-rice-salad-trend\n    - paragraph: Crunchy, bright, and endlessly adaptable, this is the dinner trend our editors keep making.\n    - link \"Read more\":\n      - /url: /article/crispy-rice-salad-trend\n    - button \"Share\"\n  - article:\n    - link \"FreshFields Recalls Cinnamon Granola Bars in 12 States\":\n      - /url: /article/freshfields-granola-recall\n      - img \"FreshFields Recalls Cinnamon Granola Bars in 12 States\"\n    - paragraph: Recall · August 15, 2026\n    - heading \"FreshFields Recalls Cinnamon Granola Bars in 12 States\" [level=3]:\n      - link \"FreshFields Recalls Cinnamon Granola Bars in 12 States\":\n        - /url: /article/freshfields-granola-recall\n    - paragraph: Here’s how to check your pantry and what to do if you have an affected package.\n    - link \"Read more\":\n      - /url: /article/freshfields-granola-recall\n    - button \"Share\"\n  - complementary:\n    - paragraph: The Daily Dish\n    - heading \"Delicious ideas, delivered.\" [level=2]\n    - paragraph: Get our best recipes and smartest kitchen tips in your inbox.\n    - text: Email address\n    - textbox \"Email address\"\n    - button \"Sign me up\"\n- contentinfo:\n  - link \"allrecipes *\":\n    - /url: /\n  - paragraph: Reliable recipes and helpful kitchen know-how, made for home cooks.\n  - heading \"Explore\" [level=2]\n  - link \"All Recipes\":\n    - /url: /recipes\n  - link \"30-Minute Meals\":\n    - /url: /recipes?maxTime=30\n  - link \"Air Fryer Recipes\":\n    - /url: /collection/air-fryer-favorites\n  - link \"Desserts\":\n    - /url: /recipes?category=desserts\n  - heading \"Learn\" [level=2]\n  - link \"Kitchen Tips\":\n    - /url: /tips\n  - link \"Food Safety\":\n    - /url: /tips?topic=food-safety\n  - link \"Recall News\":\n    - /url: /news?tab=recalls\n  - link \"Food Trends\":\n    - /url: /news?tab=trends\n  - heading \"Your kitchen\" [level=2]\n  - link \"My Recipes\":\n    - /url: /my-recipes\n  - link \"Search Cinnamon Recipes\":\n    - /url: /search?q=cinnamon\n  - link \"About Allrecipes\":\n    - /url: /about\n  - text: © 2026 Allrecipes demo All content is synthetic and for demonstration only."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/23-allrecipes/dist/assets/index-D8LKa8au.js",
+      "offset": 345448,
+      "match": "className:\"card-kicker\"",
+      "context": "tle}`,children:o.jsx(\"img\",{src:n.image,alt:n.title,loading:\"lazy\"})}),o.jsx(\"button\",{className:`round-action favorite-action ${s?\"is-active\":\"\"}`,type:\"button\",onClick:()=>f(n.slug),\"aria-label\":`${s?\"Remove\":\"Favorite\"} ${n.title}`,title:s?\"Remove from favorites\":\"Add to favorites\",children:o.jsx(ae,{icon:Go})}),n.badge&&o.jsx(\"span\",{className:\"card-badge\",children:n.badge})]}),o.jsxs(\"div\",{className:\"recipe-card-body\",children:[o.jsxs(\"p\",{className:\"card-kicker\",children:[n.mainIngredient,\" · \",n.cuisine]}),o.jsx(\"h3\",{children:o.jsx(ie,{to:`/recipe/${n.slug}`,children:n.title})}),o.jsx(Xo,{recipe:n}),o.jsxs(\"div\",{className:\"card-meta\",children:[o.jsxs(\"span\",{children:[o.jsx(ae,{icon:bo}),\" \",n.totalTime,\" mins\"]}),o.jsxs(\"span\",{children:[n.servings,\" servings\"]})]}),o.jsxs(\"button\",{className:`save-button ${u?\"is-saved\":\"\"}`,type:\"button\",onClick:()=>c(n.slug),children:[o.jsx(ae,{icon:u?fn:wi}),\" \","
+    }
+  ]
+}

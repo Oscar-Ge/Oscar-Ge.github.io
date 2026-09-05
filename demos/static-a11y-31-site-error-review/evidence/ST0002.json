@@ -1,0 +1,166 @@
+{
+  "site": "cvs",
+  "siteKey": "00-cvs",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/00-cvs/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "landmark-one-main",
+  "description": "Ensure the document has a main landmark",
+  "help": "Document should have one main landmark",
+  "impact": "moderate",
+  "nodeIndex": 0,
+  "selector": [
+    "html"
+  ],
+  "html": "<html lang=\"en\">",
+  "checks": {
+    "any": [],
+    "all": [
+      {
+        "id": "page-has-main",
+        "data": null,
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Document does not have a main landmark"
+      }
+    ],
+    "none": []
+  },
+  "rawRef": "scans/00-cvs/axe/attempt-1/raw.json",
+  "errorId": "ST0002",
+  "dom": {
+    "path": "/HTML",
+    "tag": "HTML",
+    "text": "CVS.com®\n|\nStore & pharmacy hours\nExtraCare®\nHealth services\nCVS\npharmacy\nSearch products and health information\nFind a store\nSet my store\nWelcome\nSign in\nShop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care\nHEALTH HAPPENS TOGETHER\nCare that fits\nyour life.\n\nEveryday essentials, nearby pharmacy care and health services—all in one place.\n\nShop health essentials\nFind care near you\nAPPOINTMENTS\nSchedule care, on your time\n",
+    "html": "<html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <style type=\"text/css\">:root, :host {\n  --fa-font-solid: normal 900 1em/1 \"Font Awesome 7 Free\";\n  --fa-font-regular: normal 400 1em/1 \"Font Awesome 7 Free\";\n  --fa-font-light: normal 300 1em/1 \"Font Awesome 7 Pro\";\n  --fa-font-thin: normal 100 1em/1 \"Font Awesome 7 Pro\";\n  --fa-font-duotone: normal 900 1em/1 \"Font Awesome 7 Duotone\";\n  --fa-font-duotone-regular: normal 400 1em/1 \"Font Awesome 7 Duotone\";\n  --fa-font-duotone-light: normal 300 1em/1 \"Font Awesome 7 Duotone\";\n  --fa-font-duotone-thin: normal 100 1em/1 \"Font Awesome 7 Duotone\";\n  --fa-font-brands: normal 400 1em/1 \"Font Awesome 7 Brands\";\n  --fa-font-sharp-solid: normal 900 1em/1 \"Font Awesome 7 Sharp\";\n  --fa-font-sharp-regular: normal 400 1em/1 \"Font Awesome 7 Sharp\";\n  --fa-font-sharp-light: normal 300 1em/1 \"Font Awesome 7 Sharp\";\n  --fa-font-sharp-thin: normal 100 1em/1 \"Font Awesome 7 Sharp\";\n  --fa-font-sharp-duotone-solid: normal 900 1em/1 \"Font Awesome 7 Sharp Duotone\";\n  --fa-font-sharp-duotone-regular: normal 400 1em/1 \"Font Awesome 7 Sharp Duotone\";\n  --fa-font-sharp-duotone-light: normal 300 1em/1 \"Font Awesome 7 Sharp Duotone\";\n  --fa-font-sharp-duotone-thin: normal 100 1em/1 \"Font Awesome 7 Sharp Duotone\";\n  --fa-font-slab-regular: normal 400 1em/1 \"Font Awesome 7 Slab\";\n  --fa-font-slab-press-regular: normal 400 1em/1 \"Font Awesome 7 Slab Press\";\n  --fa-font-whiteboard-semibold: normal 600 1em/1 \"Font Awesome 7 Whiteboard\";\n  --fa-font-thumbprint-light: normal 300 1em/1 \"Font Awesome 7 Thumbprint\";\n  --fa-font-notdog-solid: normal 900 1em/1 \"Font Awesome 7 Notdog\";\n  --fa-font-notdog-duo-solid: normal 900 1em/1 \"Font Awesome 7 Notdog Duo\";\n  --fa-font-etch-solid: normal 900 1em/1 \"Font Awesome 7 Etch\";\n  --fa-font-jelly-regular: normal 400 1em/1 \"Font Awesome 7 Jelly\";\n  --fa-font-jelly-fill-regular: normal 400 1em/1 \"Font Awesome 7 Jelly Fill\";\n  --fa-font-jelly-duo-regular: normal 400 1em/1 \"Font Awesome 7 Jelly Duo\";\n  --fa-font-chisel-regular: normal 400 1em/1 \"Font Awesome 7 Chisel\";\n  --fa-font-utility-semibold: normal 600 1em/1 \"Font Awesome 7 Utility\";\n  --fa-font-utility-duo-semibold: normal 600 1em/1 \"Font Awesome 7 Utility Duo\";\n  --fa-font-utility-fill-semibold: normal 600 1em/1 \"Font Awesome 7 Utility Fill\";\n}\n\n.svg-inline--fa {\n  box-sizing: content-box;\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n  width: var(--fa-width, 1.25em);\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285714em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left,\n.svg-inline--fa .fa-pull-start {\n  float: inline-start;\n  margin-inline-end: var(--fa-pull-margin, 0.3em);\n}\n.svg-inline--fa.fa-pull-right,\n.svg-inline--fa .fa-pull-end {\n  float: inline-end;\n  margin-inline-start: var(--fa-pull-margin, 0.3em);\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));\n  inset-block-start: 0.25em; /* syncing vertical alignment with Web Font rendering */\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: var(--fa-width, 1.25em);\n}\n.fa-layers .svg-inline--fa {\n  inset: 0;\n  margin: auto;\n  position: absolute;\n  transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  transform: scale(var(--fa-counter-scale, 0.25));\n  transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  transform: scale(va",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 2835.203125
+    },
+    "style": {
+      "color": "rgb(22, 22, 22)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": null
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": "html",
+        "declarations": {
+          "background": "rgb(255, 255, 255)",
+          "background-color": "rgb(255, 255, 255)"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": ":root",
+        "declarations": {
+          "color": "var(--ink)"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "CVS Pharmacy | Health, wellness & pharmacy care",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Care that fits\nyour life.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Schedule care, on your time",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Health essentials & new deals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Care close to home",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "More savings. More rewards.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Shop & save",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Pharmacy & care",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "Get care",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\nSearch products and health information\nFind a store\nSet my store\nWelcome\nSign in\nShop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Shop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\n\nBringing our heart to every moment of your health.\n\n© 2026 CVS Pharmacy. Mock experience.\nShop & save\nShop products\nWeekly ad\nExtraCare rewards\nPharmacy & care\nFind a pharmacy\nCOVID-19 testing\nHealth services\nGet care\nVirtual care\nMinuteClinic services\nStore hours"
+      }
+    ],
+    "axSnapshot": "- text: CVS.com® |\n- button \"Store & pharmacy hours\"\n- link \"ExtraCare®\":\n  - /url: /extracare\n- link \"Health services\":\n  - /url: /health-services\n- banner:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - search:\n    - text: Search products and health information\n    - textbox \"Search products and health information\":\n      - /placeholder: Search products & health info\n    - button \"Search\"\n  - link \"Find a store Set my store\":\n    - /url: /pharmacy-locator\n  - link \"Welcome Sign in\":\n    - /url: /extracare\n  - link \"Cart with 0 items\":\n    - /url: /cart\n  - navigation \"Main navigation\":\n    - link \"Shop\":\n      - /url: /shop\n    - link \"Pharmacy\":\n      - /url: /pharmacy-locator\n    - link \"Health services\":\n      - /url: /health-services\n    - link \"COVID-19 testing\":\n      - /url: /covid-test\n    - link \"Weekly ad\":\n      - /url: /weekly-ad\n    - link \"ExtraCare\":\n      - /url: /extracare\n    - link \"Virtual care\":\n      - /url: /virtual-care\n- text: Health happens together\n- heading \"Care that fits your life.\" [level=1]\n- paragraph: Everyday essentials, nearby pharmacy care and health services—all in one place.\n- button \"Shop health essentials\"\n- button \"Find care near you\"\n- text: Appointments\n- heading \"Schedule care, on your time\" [level=2]\n- paragraph: Book a COVID-19 test or find in-person health services near you.\n- button \"Schedule a test\"\n- region \"Popular actions\":\n  - link \"Find a CVS Pharmacy Locations, hours & services\":\n    - /url: /pharmacy-locator\n  - link \"See this week’s deals Save with ExtraCare\":\n    - /url: /weekly-ad\n  - link \"Virtual care Connect from anywhere\":\n    - /url: /virtual-care\n- text: Shop by need\n- heading \"What can we help with?\" [level=2]\n- link \"Shop all\":\n  - /url: /shop\n- link \"Cough & cold Shop now\":\n  - /url: /shop?search=cough\n- link \"Vitamins Shop now\":\n  - /url: /shop?search=vitamin\n- link \"Allergy relief Shop now\":\n  - /url: /shop?search=allergy\n- link \"COVID-19 tests Shop now\":\n  - /url: /shop?search=covid%20test\n- text: Picked for you\n- heading \"Health essentials & new deals\" [level=2]\n- link \"View weekly ad\":\n  - /url: /weekly-ad\n- article:\n  - link \"View CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: New arrival Buy 1, get 1 FREE\n  - link \"CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: 4.9 (42) $8.49 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: CVS brand\n  - link \"CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: 4.5 (518) $9.99 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: Pickup ready\n  - link \"Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: 4.8 (1248) $17.99 each\n  - paragraph: In stock for shipping & pickup\n  - button \"Choose pickup\"\n- text: In-store services\n- heading \"Care close to home\" [level=2]\n- paragraph: Find screenings, treatment evaluations and convenient testing at a location near you.\n- button \"Explore health services\"\n- text: ExtraCare\n- heading \"More savings. More rewards.\" [level=2]\n- paragraph: Join free for personalized deals, ExtraBucks Rewards and member-only prices.\n- button \"Join ExtraCare\"\n- contentinfo:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - paragraph: Bringing our heart to every moment of your health.\n  - text: © 2026 CVS Pharmacy. Mock experience.\n  - heading \"Shop & save\" [level=2]\n  - link \"Shop products\":\n    - /url: /shop\n  - link \"Weekly ad\":\n    - /url: /weekly-ad\n  - link \"ExtraCare rewards\":\n    - /url: /extracare\n  - heading \"Pharmacy & care\" [level=2]\n  - link \"Find a pharmacy\":\n    - /url: /pharmacy-locator\n  - link \"COVID-19 testing\":\n    - /url: /covid-test\n  - link \"Health services\":\n    - /url: /health-services\n  - heading \"Get care\" [level=2]\n  - link \"Virtual care\":\n    - /url: /virtual-care\n  - link \"MinuteClinic services\":\n    - /url: /health-services\n  - link \"Store hours\":\n    - /url: /pharmacy-locator"
+  },
+  "sourceSnippets": []
+}

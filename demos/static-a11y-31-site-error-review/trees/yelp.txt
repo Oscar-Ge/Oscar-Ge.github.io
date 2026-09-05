@@ -1,0 +1,124 @@
+- banner:
+  - link "Yelp home":
+    - /url: /
+    - text: yelp ✦
+  - search:
+    - text: Find
+    - combobox "Search for businesses"
+    - text: Near
+    - combobox "Search location"
+    - button "Search"
+  - navigation "Main navigation":
+    - button "Yelp for Business"
+    - link "Collections":
+      - /url: /collections
+    - button "Write a Review"
+    - button "Log In"
+    - button "Sign Up"
+- paragraph: LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT
+- heading "Find your next favorite place." [level=1]
+- paragraph: Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.
+- search:
+  - text: Search for
+  - combobox "Search for businesses"
+  - text: Near
+  - combobox "Search location"
+  - button "Search"
+- button "Top Thai in Westminster"
+- button "Fast electricians near 94115"
+- button "Dog-friendly cafes"
+- complementary "Featured business":
+  - text: Community favorite Cocktail Bars
+  - paragraph: San Francisco · Cocktail Bars
+  - heading "Juniper Cocktail Club" [level=2]
+  - strong: "4.8"
+  - text: (3,876)
+  - button "See why locals love it"
+- main:
+  - paragraph: EXPLORE YOUR CITY
+  - heading "What are you looking for?" [level=2]
+  - paragraph: Start with a category, then narrow the results with the details that matter.
+  - button "Restaurants Explore nearby":
+    - strong: Restaurants
+    - text: Explore nearby
+  - button "Coffee & Cafes Explore nearby":
+    - strong: Coffee & Cafes
+    - text: Explore nearby
+  - button "Home Services Explore nearby":
+    - strong: Home Services
+    - text: Explore nearby
+  - button "Auto Services Explore nearby":
+    - strong: Auto Services
+    - text: Explore nearby
+  - button "Beauty & Spas Explore nearby":
+    - strong: Beauty & Spas
+    - text: Explore nearby
+  - button "Barbers Explore nearby":
+    - strong: Barbers
+    - text: Explore nearby
+  - button "Shopping Explore nearby":
+    - strong: Shopping
+    - text: Explore nearby
+  - button "More Explore nearby":
+    - strong: More
+    - text: Explore nearby
+  - paragraph: HIGHLY RATED
+  - heading "Local standouts" [level=2]
+  - button "Browse all businesses"
+  - article:
+    - link "View Juniper Coffee House":
+      - /url: /biz/juniper-coffee-house
+      - text: Coffee & Tea
+    - paragraph: 1. Coffee & Tea
+    - heading "Juniper Coffee House" [level=2]:
+      - link "Juniper Coffee House":
+        - /url: /biz/juniper-coffee-house
+    - strong: "4.8"
+    - text: (864) $$ •Coffee & Tea, Cafes
+  - article:
+    - link "View Siam Garden":
+      - /url: /biz/siam-garden-westminster
+      - text: Thai
+    - paragraph: 2. Thai
+    - heading "Siam Garden" [level=2]:
+      - link "Siam Garden":
+        - /url: /biz/siam-garden-westminster
+    - strong: "5.0"
+    - text: (764) $$ •Thai, Noodles
+  - article:
+    - link "View BrightLine Electric":
+      - /url: /biz/brightline-electric
+      - text: Electricians
+    - paragraph: 3. Electricians
+    - heading "BrightLine Electric" [level=2]:
+      - link "BrightLine Electric":
+        - /url: /biz/brightline-electric
+    - strong: "5.0"
+    - text: (642) $$ •Electricians, Lighting Fixtures & Equipment
+  - strong: Trusted details
+  - text: Clear service and amenity signals
+  - strong: Fast responses
+  - text: See who gets back to you quickly
+  - strong: Save your finds
+  - text: Build collections for every plan
+- contentinfo:
+  - link "yelp ✦":
+    - /url: /
+  - paragraph: Discover trusted places and local pros.
+  - strong: Discover
+  - link "Restaurants":
+    - /url: /search?find_desc=Restaurants
+  - link "Home services":
+    - /url: /search?find_desc=Home+Services
+  - link "Shopping":
+    - /url: /search?find_desc=Shopping
+  - strong: Plan
+  - link "Collections":
+    - /url: /collections
+  - link "Coffee shops":
+    - /url: /search?find_desc=Coffee+shop
+  - link "Car washes":
+    - /url: /search?find_desc=Car+wash
+  - strong: Demo
+  - paragraph: All listings, reviews, availability, and transactions on this site are synthetic.
+  - text: © 2026 Yelp-style local discovery demo

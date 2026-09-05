@@ -1,0 +1,221 @@
+{
+  "site": "macys",
+  "siteKey": "04-macys",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "contrast",
+  "ruleId": "contrast",
+  "description": "Very low contrast",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false,
+    "contrastdata": [
+      4.34,
+      "#d3132a",
+      "#efe5dd",
+      false
+    ]
+  },
+  "rawRef": "scans/04-macys/wave/attempt-1/raw.json",
+  "errorId": "ST0098",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "THE BIG STYLE EVENT",
+    "html": "<span class=\"eyebrow\">THE BIG STYLE EVENT</span>",
+    "class": "eyebrow",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 81.53125,
+      "y": 287.40625,
+      "width": 170.5,
+      "height": 14
+    },
+    "style": {
+      "color": "rgb(211, 19, 42)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "hero-copy",
+      "text": "THE BIG STYLE EVENT\nGood finds.\nGreat prices.\n\nFresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n\nShop Trending\nExplore Clearance\nLimited-time values on select styles. Prices as marked.",
+      "html": "<div class=\"hero-copy\"><span class=\"eyebrow\">THE BIG STYLE EVENT</span><h1>Good finds.<br>Great prices.</h1><p>Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.</p><div class=\"button-row\"><a class=\"button button-dark\" href=\"/shop/trending\" data-discover=\"true\">Shop Trending</a><a class=\"button button-light\" href=\"/shop/clearance\" data-discover=\"true\">Explore Clearance</a></div><small>Limited-time values on select styles. Prices as marked.</small></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:43699/assets/index-1Ei0oUn_.css",
+        "selector": ".eyebrow",
+        "declarations": {
+          "color": "var(--red)",
+          "font-size": "0.75rem",
+          "font-weight": "700",
+          "display": "inline-block"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Good finds.\nGreat prices.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find exactly what you need",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Evening bags under $50",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Best-selling building toys",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Recliners at every price",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Engagement rings",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Trending: the workwear refresh",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Black & brown are better together.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Make every moment easier",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Create a searchable list",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Send an E-Gift Card",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Track an order",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Find a registry",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "CUSTOMER SERVICE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "GIFTS & EVENTS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "POPULAR SHOPS",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "macy's\nSearch products\nLists\nBag\nMen\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Shop departments",
+        "text": "Men\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "THE BIG STYLE EVENT\nGood finds.\nGreat prices.\n\nFresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n\nShop Trending\nExplore Clearance\nLimited-time values on select styles. Prices as marked.\nUP TO\n60%\nOFF\n New arrivals every week\nFree shipping at $25\nFree returns by mail or in store\nSecure checkout for every order\nSHOP YOUR WAY\nFind exactly what you need\nSearch all products \nSPECIAL OCCASION\nEvening bags under $50\nShop now \nTOP-RATED\nBest-selling bui"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "macy's\n\nGreat style, thoughtful gifts and memorable moments—all in one place.\n\nCUSTOMER SERVICE\nOrder Status\nShopping Bag\nMy Lists\nGIFTS & EVENTS\nE-Gift Cards\nWedding Registry\nGiftable Toys\nPOPULAR SHOPS\nTrending Now\nKitchen Sale\nClearance\n© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      }
+    ],
+    "axSnapshot": "- text: Free shipping at $25 | Store pickup available\n- link \"Shop Clearance\":\n  - /url: /shop/clearance\n- banner:\n  - link \"Macy's home\":\n    - /url: /\n    - text: macy's\n  - search:\n    - text: Search products\n    - textbox \"Search products\":\n      - /placeholder: Search products, brands & more\n    - button \"Submit search\"\n  - link \"Lists\":\n    - /url: /lists\n  - link \"Bag\":\n    - /url: /bag\n  - navigation \"Shop departments\":\n    - link \"Men\":\n      - /url: /shop/men\n    - link \"Kids & Baby\":\n      - /url: /shop/kids\n    - link \"Handbags\":\n      - /url: /shop/handbags\n    - link \"Toys\":\n      - /url: /shop/toys\n    - link \"Trending\":\n      - /url: /shop/trending\n    - link \"Home\":\n      - /url: /shop/furniture\n    - link \"Jewelry\":\n      - /url: /shop/jewelry\n    - link \"Kitchen\":\n      - /url: /shop/kitchen\n    - link \"Wine\":\n      - /url: /shop/wine\n    - link \"Shoes\":\n      - /url: /shop/shoes\n    - link \"Clearance\":\n      - /url: /shop/clearance\n    - link \"Gift Cards\":\n      - /url: /gift-cards\n- main:\n  - text: THE BIG STYLE EVENT\n  - heading \"Good finds. Great prices.\" [level=1]\n  - paragraph: Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n  - link \"Shop Trending\":\n    - /url: /shop/trending\n  - link \"Explore Clearance\":\n    - /url: /shop/clearance\n  - text: Limited-time values on select styles. Prices as marked. up to\n  - strong: 60%\n  - text: \"off\"\n  - img \"New season fashion placeholder\"\n  - text: New arrivals every week\n  - region \"Shopping benefits\":\n    - strong: Free shipping\n    - text: at $25\n    - strong: Free returns\n    - text: by mail or in store\n    - strong: Secure checkout\n    - text: for every order\n  - text: SHOP YOUR WAY\n  - heading \"Find exactly what you need\" [level=2]\n  - link \"Search all products\":\n    - /url: /search?q=best+sellers\n  - link \"Special occasion Evening bags under $50 Shop now\":\n    - /url: /shop/handbags\n    - text: Special occasion\n    - heading \"Evening bags under $50\" [level=3]\n    - text: Shop now\n  - link \"Top-rated Best-selling building toys Shop now\":\n    - /url: /shop/toys\n    - text: Top-rated\n    - heading \"Best-selling building toys\" [level=3]\n    - text: Shop now\n  - link \"Make it home Recliners at every price Shop now\":\n    - /url: /shop/furniture\n    - text: Make it home\n    - heading \"Recliners at every price\" [level=3]\n    - text: Shop now\n  - link \"Forever starts here Engagement rings Shop now\":\n    - /url: /shop/jewelry\n    - text: Forever starts here\n    - heading \"Engagement rings\" [level=3]\n    - text: Shop now\n  - text: THE EDIT\n  - 'heading \"Trending: the workwear refresh\" [level=2]'\n  - link \"View all trending\":\n    - /url: /shop/trending\n  - article:\n    - link \"Pleated-Neck Work Top View details\":\n      - /url: /product/black-work-top\n      - img \"Pleated-Neck Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Alfani\n    - link \"Pleated-Neck Work Top\":\n      - /url: /product/black-work-top\n    - strong: \"4.7\"\n    - text: (442) $29.99 $49.50 39% off\n    - paragraph: \"Color: Black\"\n    - link \"View Details\":\n      - /url: /product/black-work-top\n    - button \"Add to Bag\"\n  - article:\n    - link \"Satin Button-Cuff Work Top View details\":\n      - /url: /product/brown-work-top\n      - img \"Satin Button-Cuff Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Bar III\n    - link \"Satin Button-Cuff Work Top\":\n      - /url: /product/brown-work-top\n    - strong: \"4.8\"\n    - text: (318) $34.99 $59.50 41% off\n    - paragraph: \"Color: Brown\"\n    - link \"View Details\":\n      - /url: /product/brown-work-top\n    - button \"Add to Bag\"\n  - text: COLOR STORY\n  - heading \"Black & brown are better together.\" [level=3]\n  - paragraph: Build a polished work wardrobe with rich neutrals and softly tailored shapes.\n  - link \"Shop work tops\":\n    - /url: /shop/trending\n  - text: MORE WAYS TO SHOP\n  - heading \"Make every moment easier\" [level=2]\n  - link \"Create a searchable list Save room ideas, gifts and future favorites. My Lists\":\n    - /url: /lists\n    - heading \"Create a searchable list\" [level=3]\n    - paragraph: Save room ideas, gifts and future favorites.\n    - text: My Lists\n  - link \"Send an E-Gift Card Choose an amount and add a personal message. Send a gift\":\n    - /url: /gift-cards\n    - heading \"Send an E-Gift Card\" [level=3]\n    - paragraph: Choose an amount and add a personal message.\n    - text: Send a gift\n  - link \"Track an order Look up details with an order number and email. Order status\":\n    - /url: /order-status\n    - heading \"Track an order\" [level=3]\n    - paragraph: Look up details with an order number and email.\n    - text: Order status\n  - link \"Find a registry Search wedding registries by the registrant's name. Registry search\":\n    - /url: /registry\n    - heading \"Find a registry\" [level=3]\n    - paragraph: Search wedding registries by the registrant's name.\n    - text: Registry search\n- contentinfo:\n  - text: macy's\n  - paragraph: Great style, thoughtful gifts and memorable moments—all in one place.\n  - heading \"Customer Service\" [level=3]\n  - link \"Order Status\":\n    - /url: /order-status\n  - link \"Shopping Bag\":\n    - /url: /bag\n  - link \"My Lists\":\n    - /url: /lists\n  - heading \"Gifts & Events\" [level=3]\n  - link \"E-Gift Cards\":\n    - /url: /gift-cards\n  - link \"Wedding Registry\":\n    - /url: /registry\n  - link \"Giftable Toys\":\n    - /url: /shop/toys\n  - heading \"Popular Shops\" [level=3]\n  - link \"Trending Now\":\n    - /url: /shop/trending\n  - link \"Kitchen Sale\":\n    - /url: /shop/kitchen\n  - link \"Clearance\":\n    - /url: /shop/clearance\n  - text: © 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist/assets/index-egnyh-tu.js",
+      "offset": 331093,
+      "match": "className:\"eyebrow\"",
+      "context": "\",icon:El},{slug:\"furniture\",kicker:\"Make it home\",title:\"Recliners at every price\",tone:\"tile-neutral\",icon:Ja},{slug:\"jewelry\",kicker:\"Forever starts here\",title:\"Engagement rings\",tone:\"tile-silver\",icon:Ho}];function x4({onQuickAdd:n,onAddToList:u}){const c=Ei.filter(s=>s.department===\"trending\");return o.jsxs(\"main\",{children:[o.jsxs(\"section\",{className:\"hero page-width\",children:[o.jsxs(\"div\",{className:\"hero-copy\",children:[o.jsx(\"span\",{className:\"eyebrow\",children:\"THE BIG STYLE EVENT\"}),o.jsxs(\"h1\",{children:[\"Good finds.\",o.jsx(\"br\",{}),\"Great prices.\"]}),o.jsx(\"p\",{children:\"Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\"}),o.jsxs(\"div\",{className:\"button-row\",children:[o.jsx(ue,{className:\"button button-dark\",to:\"/shop/trending\",children:\"Shop Trending\"}),o.jsx(ue,{className:\"button button-light\",to:\"/shop/clearance\",children:\"Explore Clea"
+    }
+  ]
+}

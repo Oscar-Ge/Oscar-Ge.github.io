@@ -1,0 +1,251 @@
+{
+  "site": "uhaul",
+  "siteKey": "30-uhaul",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/30-uhaul/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 1,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/30-uhaul/wave/attempt-1/raw.json",
+  "errorId": "ST0759",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/A[1]",
+    "tag": "A",
+    "text": "Build your moving kit",
+    "html": "<a class=\"secondary-button light-button\" href=\"/moving-supplies\" data-discover=\"true\">Build your moving kit <svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a>",
+    "class": "secondary-button light-button",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/moving-supplies",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 130,
+      "y": 1640.953125,
+      "width": 251.515625,
+      "height": 48
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(255, 255, 255, 0.06)",
+      "fontSize": "14.72px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "",
+      "text": "MOVE WITH CONFIDENCE\nBuilt around real moving days\n\nFrom the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.\n\nBuild your moving kit",
+      "html": "<div><span class=\"eyebrow light\">Move with confidence</span><h2>Built around real moving days</h2><p>From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.</p><a class=\"secondary-button light-button\" href=\"/moving-supplies\" data-discover=\"true\">Build your moving kit <svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/A[1]",
+      "tag": "A",
+      "text": "Build your moving kit",
+      "ariaLabel": null,
+      "href": "/moving-supplies",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34677/assets/index-Bcv9Ew9I.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34677/assets/index-Bcv9Ew9I.css",
+        "selector": ".primary-button, .secondary-button",
+        "declarations": {
+          "font-size": "0.92rem",
+          "font-weight": "800",
+          "display": "inline-flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34677/assets/index-Bcv9Ew9I.css",
+        "selector": ".secondary-button",
+        "declarations": {
+          "color": "var(--ink)",
+          "background": "var(--white)"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34677/assets/index-Bcv9Ew9I.css",
+        "selector": ".light-button",
+        "declarations": {
+          "color": "var(--white)",
+          "background": "rgba(255, 255, 255, 0.06)",
+          "background-color": "rgba(255, 255, 255, 0.06)"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Your move. Your way.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help you with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Truck Rentals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Cargo Trailers",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[3]/H3[1]",
+        "tag": "H3",
+        "text": "Self-Storage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[4]/H3[1]",
+        "tag": "H3",
+        "text": "Moving Supplies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Built around real moving days",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "20,000+ locations",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Flexible coverage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Plans can change",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Ready in three easy steps",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Tell us your plan",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Compare your options",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Reserve with confidence",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Rentals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Storage & supplies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Helpful shortcuts",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "U-HAUL\nTrucks & Trailers\nStorage\nMoving Supplies\nHitches\nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Trucks & Trailers\nStorage\nMoving Supplies\nHitches"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MOVING MADE EASIER\nYour move. Your way.\n\nAffordable moving trucks, trailers, storage and supplies — all in one place.\n\nTrucks\nTrailers\nStorage\nPick up location\nPick up date\nGet started\nPLAN EVERY PART OF YOUR MOVE\nWhat can we help you with?\n\nOne trusted place for equipment, storage and moving essentials.\n\nTruck Rentals\n\nChoose the right-size truck with flexible local and one-way options.\n\nView truck rates\nCargo Trailers\n\nTow a secure enclosed trailer behind your own compatible vehicle.\n\nBrowse t"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "U-HAUL\n\nYour one-stop shop for moving and storage.\n\n1-800-GO-UHAUL\nRentals\nMoving trucks\nCargo trailers\nTrailer hitches\nStorage & supplies\nSelf-storage\nMoving boxes\nShopping cart\nHelpful shortcuts\nFind a location\nGet rental rates\nContact support\n© 2026 U-Haul International, Inc. Mock experience.\n Move smart. Move safely."
+      }
+    ],
+    "axSnapshot": "- text: Trusted since 1945\n- link \"Find a Location\":\n  - /url: /storage\n- link \"1-800-GO-UHAUL\":\n  - /url: tel:18004684285\n- banner:\n  - link \"U-Haul home\":\n    - /url: /\n    - text: U-HAUL\n  - navigation \"Main navigation\":\n    - link \"Trucks & Trailers\":\n      - /url: /trucks-trailers\n    - link \"Storage\":\n      - /url: /storage\n    - link \"Moving Supplies\":\n      - /url: /moving-supplies\n    - link \"Hitches\":\n      - /url: /hitches\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- main:\n  - text: Moving made easier\n  - heading \"Your move. Your way.\" [level=1]\n  - paragraph: Affordable moving trucks, trailers, storage and supplies — all in one place.\n  - tablist \"Choose a service\":\n    - tab \"Trucks\" [selected]\n    - tab \"Trailers\"\n    - tab \"Storage\"\n  - text: Pick up location\n  - textbox \"Pick up location\":\n    - /placeholder: City, state or ZIP code\n  - text: Pick up date\n  - textbox \"Pick up date\": 2023-04-19\n  - button \"Get started\"\n  - text: Plan every part of your move\n  - heading \"What can we help you with?\" [level=2]\n  - paragraph: One trusted place for equipment, storage and moving essentials.\n  - article:\n    - heading \"Truck Rentals\" [level=3]\n    - paragraph: Choose the right-size truck with flexible local and one-way options.\n    - link \"View truck rates\":\n      - /url: /trucks-trailers\n  - article:\n    - heading \"Cargo Trailers\" [level=3]\n    - paragraph: Tow a secure enclosed trailer behind your own compatible vehicle.\n    - link \"Browse trailers\":\n      - /url: /trucks-trailers\n  - article:\n    - heading \"Self-Storage\" [level=3]\n    - paragraph: Find indoor and climate-controlled units close to your neighborhood.\n    - link \"Find storage\":\n      - /url: /storage\n  - article:\n    - heading \"Moving Supplies\" [level=3]\n    - paragraph: Shop curated box kits, packing materials and moving-day essentials.\n    - link \"Shop supplies\":\n      - /url: /moving-supplies\n  - text: Move with confidence\n  - heading \"Built around real moving days\" [level=2]\n  - paragraph: From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.\n  - link \"Build your moving kit\":\n    - /url: /moving-supplies\n  - heading \"20,000+ locations\" [level=3]\n  - paragraph: Find convenient help close to home.\n  - heading \"Flexible coverage\" [level=3]\n  - paragraph: Add protection that fits your move.\n  - heading \"Plans can change\" [level=3]\n  - paragraph: Manage mock reservations with ease.\n  - text: Simple from the start\n  - heading \"Ready in three easy steps\" [level=2]\n  - text: \"1\"\n  - heading \"Tell us your plan\" [level=3]\n  - paragraph: Enter where and when you are moving.\n  - text: \"2\"\n  - heading \"Compare your options\" [level=3]\n  - paragraph: Review clear rates, sizes and features.\n  - text: \"3\"\n  - heading \"Reserve with confidence\" [level=3]\n  - paragraph: Choose your equipment or unit and you are set.\n- contentinfo:\n  - link \"U-HAUL\":\n    - /url: /\n  - paragraph: Your one-stop shop for moving and storage.\n  - link \"1-800-GO-UHAUL\":\n    - /url: tel:18004684285\n  - heading \"Rentals\" [level=3]\n  - link \"Moving trucks\":\n    - /url: /trucks-trailers\n  - link \"Cargo trailers\":\n    - /url: /trucks-trailers\n  - link \"Trailer hitches\":\n    - /url: /hitches\n  - heading \"Storage & supplies\" [level=3]\n  - link \"Self-storage\":\n    - /url: /storage\n  - link \"Moving boxes\":\n    - /url: /moving-supplies\n  - link \"Shopping cart\":\n    - /url: /cart\n  - heading \"Helpful shortcuts\" [level=3]\n  - link \"Find a location\":\n    - /url: /storage\n  - link \"Get rental rates\":\n    - /url: /trucks-trailers\n  - link \"Contact support\":\n    - /url: tel:18004684285\n  - text: © 2026 U-Haul International, Inc. Mock experience. Move smart. Move safely."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/30-uhaul/dist/assets/index-BsOqhTap.js",
+      "offset": 326066,
+      "match": "className:\"secondary-button light-button\"",
+      "context": ":\"Shop supplies\"})]})]})}),r.jsx(\"section\",{className:\"section confidence-section\",children:r.jsxs(\"div\",{className:\"container confidence-grid\",children:[r.jsxs(\"div\",{children:[r.jsx(\"span\",{className:\"eyebrow light\",children:\"Move with confidence\"}),r.jsx(\"h2\",{children:\"Built around real moving days\"}),r.jsx(\"p\",{children:\"From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.\"}),r.jsxs(Re,{className:\"secondary-button light-button\",to:\"/moving-supplies\",children:[\"Build your moving kit \",r.jsx(k,{icon:mv})]})]}),r.jsxs(\"div\",{className:\"confidence-points\",children:[r.jsx(Pc,{icon:Ut,title:\"20,000+ locations\",text:\"Find convenient help close to home.\"}),r.jsx(Pc,{icon:Sn,title:\"Flexible coverage\",text:\"Add protection that fits your move.\"}),r.jsx(Pc,{icon:dv,title:\"Plans can change\",text:\"Manage mock reservations with ease.\"})]})]})}),r.jsx(\"section\",{className:\"section ste"
+    }
+  ]
+}

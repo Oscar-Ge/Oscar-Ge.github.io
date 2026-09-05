@@ -1,0 +1,190 @@
+{
+  "site": "mayoclinic.org",
+  "siteKey": "25-mayoclinic.org",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/25-mayoclinic.org/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/25-mayoclinic.org/wave/attempt-1/raw.json",
+  "errorId": "ST0733",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+    "tag": "A",
+    "text": "Find a doctor\nSearch our specialists",
+    "html": "<a href=\"/find-a-doctor\" data-discover=\"true\"><span><svg data-prefix=\"fas\" data-icon=\"user-doctor\" class=\"svg-inline--fa fa-user-doctor\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 8a120 120 0 1 0 0 240 120 120 0 1 0 0-240zm60 312.8c-5.4-.5-11-.8-16.6-.8l-86.9 0c-5.6 0-11.1 .3-16.6 .8l0 67.5c16.5 7.6 28 24.3 28 43.6 0 26.5-21.5 48-48 48s-48-21.5-48-48c0-19.4 11.5-36.1 28-43.6l0-58.4C61 353 16 413.6 16 484.6 16 499.7 28.3 512 43.4 512l361.1 0c15.1 0 27.4-12.3 27.4-27.4 0-71-45-131.5-108-154.6l0 37.4c23.3 8.2 40 30.5 40 56.6l0 32c0 11-9 20-20 20s-20-9-20-20l0-32c0-11-9-20-20-20s-20 9-20 20l0 32c0 11-9 20-20 20s-20-9-20-20l0-32c0-26.1 16.7-48.3 40-56.6l0-46.6z\"></path></svg></span><div><strong>Find a doctor</strong><small>Search our specialists</small></div><svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/find-a-doctor",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 131,
+      "y": 884.390625,
+      "width": 392.65625,
+      "height": 102
+    },
+    "style": {
+      "color": "rgb(23, 35, 52)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "quick-actions",
+      "text": "Find a doctor\nSearch our specialists\nDiseases & conditions\nTrusted health information\nCheck symptoms\nExplore possible causes",
+      "html": "<div class=\"quick-actions\"><a href=\"/find-a-doctor\" data-discover=\"true\"><span><svg data-prefix=\"fas\" data-icon=\"user-doctor\" class=\"svg-inline--fa fa-user-doctor\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 8a120 120 0 1 0 0 240 120 120 0 1 0 0-240zm60 312.8c-5.4-.5-11-.8-16.6-.8l-86.9 0c-5.6 0-11.1 .3-16.6 .8l0 67.5c16.5 7.6 28 24.3 28 43.6 0 26.5-21.5 48-48 48s-48-21.5-48-48c0-19.4 11.5-36.1 28-43.6l0-58.4C61 353 16 413.6 16 484.6 16 499.7 28.3 512 43.4 512l361.1 0c15.1 0 27.4-12.3 27.4-27.4 0-71-45-131.5-108-154.6l0 37.4c23.3 8.2 40 30.5 40 56.6l0 32c0 11-9 20-20 20s-20-9-20-20l0-32c0-11-9-20-20-20s-20 9-20 20l0 32c0 11-9 20-20 20s-20-9-20-20l0-32c0-26.1 16.7-48.3 40-56.6l0-46.6z\"></path></svg></span><div><strong>Find a doctor</strong><small>Search our specialists</small></div><svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a><a href=\"/diseases-conditions\" data-discover=\"true\"><span><svg data-prefix=\"fas\" data-icon=\"book-medical\" class=\"svg-inline--fa fa-book-medical\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M96 512l320 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-66.7c18.6-6.6 32-24.4 32-45.3l0-288c0-26.5-21.5-48-48-48L96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96zM64 416c0-17.7 14.3-32 32-32l256 0 0 64-256 0c-17.7 0-32-14.3-32-32zM192 120c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 40 40 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-40 0 0 40c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-40-40 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16l40 0 0-40z\"></path></svg></span><div><strong>Diseases &amp; conditions</strong><small>Trusted health information</small></div><svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a><a href=\"/symptom-checker\" data-discover=\"true\"><span><svg data-prefix=\"fas\" data-icon=\"stethoscope\" class=\"svg-inline--fa fa-stethoscope\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M32 48C32 21.5 53.5 0 80 0l48 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0 0 128c0 53 43 96 96 96s96-43 96-96l0-128-32 0c-17.7 0-32-14.3-32-32S238.3 0 256 0l48 0c26.5 0 48 21.5 48 48l0 144c0 77.4-55 142-128 156.8l0 19.2c0 61.9 50.1 112 112 112s112-50.1 112-112l0-85.5c-37.3-13.2-64-48.7-64-90.5 0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 85.5c0 97.2-78.8 176-176 176S160 465.2 160 368l0-19.2C87 334 32 269.4 32 192L32 48zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z\"></path></svg></span><div><strong>Check symptoms</strong><small>Explore possible causes</small></div><svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+      "tag": "A",
+      "text": "Find a doctor\nSearch our specialists",
+      "ariaLabel": null,
+      "href": "/find-a-doctor",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34063/assets/index-Cj5g1A-J.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34063/assets/index-Cj5g1A-J.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34063/assets/index-Cj5g1A-J.css",
+        "selector": ".quick-actions > a",
+        "declarations": {
+          "display": "grid"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Mayo Clinic | Patient Care, Education and Research",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Answers.\nExpertise.\nHope.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Experience care built around your whole story",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Knowledge that moves medicine forward",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Neurosciences",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "Train where medicine is transformed",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/A[3]/H3[1]",
+        "tag": "H3",
+        "text": "Airway Biology Laboratory",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Take the next step toward answers",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Patient care",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Explore",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "Contact",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "Care that puts your needs first\nRequest an appointment\nFind a doctor\nPatient login\nMAYO CLINIC\nPatient care \nDepartments & centers\nEducation\nResearch"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Patient care \nDepartments & centers\nEducation\nResearch"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "WORLD-CLASS CARE, FOCUSED ON YOU\n\nAnswers.\nExpertise.\nHope.\n\nAt Mayo Clinic, specialists work together to solve the world’s toughest medical problems—so you can get back to what matters most.\n\nRequest an appointment\nFind a doctor\nTeam-based\nspecialty care\n3 major\ndestination campuses\nHow can we help?\nSearch\nFind a doctor\nSearch our specialists\nDiseases & conditions\nTrusted health information\nCheck symptoms\nExplore possible causes\nOne coordinated team\nYour needs come first\n\nWHY CHOOSE MAYO CLINIC"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "MAYO CLINIC\n\nTransforming medicine to connect and cure as the global authority in the care of serious or complex disease.\n\nRequest an appointment\nPatient care\nFind a doctor\nDiseases & conditions\nSymptom Checker\nExplore\nDepartments & centers\nEducation\nResearch\nContact\n1-800-423-2233\nSend a message\nLocations\n© 2026 Mayo Clinic experience\nDemonstration website with synthetic content. Not medical advice."
+      }
+    ],
+    "axSnapshot": "- link \"Skip to main content\":\n  - /url: \"#main-content\"\n- banner:\n  - text: Care that puts your needs first\n  - link \"Request an appointment\":\n    - /url: /appointments\n  - link \"Find a doctor\":\n    - /url: /find-a-doctor\n  - button \"Patient login\"\n  - link \"Mayo Clinic home\":\n    - /url: /\n    - text: MAYO CLINIC\n  - navigation \"Primary navigation\":\n    - link \"Patient care\":\n      - /url: /patient-care\n    - link \"Departments & centers\":\n      - /url: /departments-centers\n    - link \"Education\":\n      - /url: /education\n    - link \"Research\":\n      - /url: /research\n  - button \"Open site search\"\n- main:\n  - paragraph: World-class care, focused on you\n  - heading \"Answers. Expertise. Hope.\" [level=1]:\n    - text: Answers. Expertise.\n    - emphasis: Hope.\n  - paragraph: At Mayo Clinic, specialists work together to solve the world’s toughest medical problems—so you can get back to what matters most.\n  - link \"Request an appointment\":\n    - /url: /appointments\n  - link \"Find a doctor\":\n    - /url: /find-a-doctor\n  - strong: Team-based\n  - text: specialty care\n  - strong: 3 major\n  - text: destination campuses How can we help?\n  - textbox \"How can we help?\":\n    - /placeholder: Search a condition, doctor, department or program\n  - button \"Search\" [disabled]\n  - link \"Find a doctor Search our specialists\":\n    - /url: /find-a-doctor\n    - strong: Find a doctor\n    - text: Search our specialists\n  - link \"Diseases & conditions Trusted health information\":\n    - /url: /diseases-conditions\n    - strong: Diseases & conditions\n    - text: Trusted health information\n  - link \"Check symptoms Explore possible causes\":\n    - /url: /symptom-checker\n    - strong: Check symptoms\n    - text: Explore possible causes\n  - paragraph: Why choose Mayo Clinic\n  - heading \"Experience care built around your whole story\" [level=2]\n  - paragraph: Our experts collaborate across specialties, reviewing every detail to create a plan designed for you—not just your diagnosis.\n  - list:\n    - listitem: Leading experts in serious and complex care\n    - listitem: Appointments coordinated to respect your time\n    - listitem: Research and innovation brought to the bedside\n  - link \"Explore patient care\":\n    - /url: /patient-care\n  - paragraph: Explore Mayo Clinic\n  - heading \"Knowledge that moves medicine forward\" [level=2]\n  - link \"Departments & centers Neurosciences Discover coordinated programs for complex brain, spine and nervous system conditions. Explore programs\":\n    - /url: /departments-centers/neurosciences\n    - text: Departments & centers\n    - heading \"Neurosciences\" [level=3]\n    - paragraph: Discover coordinated programs for complex brain, spine and nervous system conditions.\n    - text: Explore programs\n  - link \"Education Train where medicine is transformed Explore degree programs, internships and immersive learning opportunities. Explore education\":\n    - /url: /education\n    - text: Education\n    - heading \"Train where medicine is transformed\" [level=3]\n    - paragraph: Explore degree programs, internships and immersive learning opportunities.\n    - text: Explore education\n  - link \"Research Airway Biology Laboratory Meet the team studying airway health, inflammation and respiratory disease. Visit the lab\":\n    - /url: /research/labs/airway-biology\n    - text: Research\n    - heading \"Airway Biology Laboratory\" [level=3]\n    - paragraph: Meet the team studying airway health, inflammation and respiratory disease.\n    - text: Visit the lab\n  - paragraph: Ready when you are\n  - heading \"Take the next step toward answers\" [level=2]\n  - link \"Request an appointment\":\n    - /url: /appointments\n  - link \"Call 1-800-423-2233\":\n    - /url: tel:18004232233\n- contentinfo:\n  - link \"Mayo Clinic home\":\n    - /url: /\n    - text: MAYO CLINIC\n  - paragraph: Transforming medicine to connect and cure as the global authority in the care of serious or complex disease.\n  - link \"Request an appointment\":\n    - /url: /appointments\n  - heading \"Patient care\" [level=2]\n  - link \"Find a doctor\":\n    - /url: /find-a-doctor\n  - link \"Diseases & conditions\":\n    - /url: /diseases-conditions\n  - link \"Symptom Checker\":\n    - /url: /symptom-checker\n  - heading \"Explore\" [level=2]\n  - link \"Departments & centers\":\n    - /url: /departments-centers\n  - link \"Education\":\n    - /url: /education\n  - link \"Research\":\n    - /url: /research\n  - heading \"Contact\" [level=2]\n  - link \"1-800-423-2233\":\n    - /url: tel:18004232233\n  - link \"Send a message\":\n    - /url: mailto:information@example.org\n  - link \"Locations\":\n    - /url: /locations\n  - text: © 2026 Mayo Clinic experience Demonstration website with synthetic content. Not medical advice."
+  },
+  "sourceSnippets": []
+}

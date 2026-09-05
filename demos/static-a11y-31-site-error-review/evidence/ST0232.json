@@ -1,0 +1,152 @@
+{
+  "site": "airbnb",
+  "siteKey": "12-airbnb",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/12-airbnb/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "contrast",
+  "ruleId": "contrast",
+  "description": "Very low contrast",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/BUTTON[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/BUTTON[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false,
+    "contrastdata": [
+      1,
+      "#ffffff",
+      "#ffffff",
+      false
+    ]
+  },
+  "rawRef": "scans/12-airbnb/wave/attempt-1/raw.json",
+  "errorId": "ST0232",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/BUTTON[1]",
+    "tag": "BUTTON",
+    "text": "Explore tiny homes",
+    "html": "<button type=\"button\">Explore tiny homes <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></button>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 91,
+      "y": 528.875,
+      "width": 210.609375,
+      "height": 42
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "750",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]",
+      "tag": "DIV",
+      "class": "",
+      "text": "NOT SURE WHERE TO GO?\n\nFind a stay that feels made for you.\n\nExplore tiny homes, castles, treehouses and one-of-a-kind escapes.\n\nExplore tiny homes",
+      "html": "<div><p class=\"banner-kicker\">Not sure where to go?</p><h1>Find a stay that feels made for you.</h1><p>Explore tiny homes, castles, treehouses and one-of-a-kind escapes.</p><button type=\"button\">Explore tiny homes <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></button></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/BUTTON[1]",
+      "tag": "BUTTON",
+      "text": "Explore tiny homes",
+      "ariaLabel": null,
+      "href": null,
+      "type": "button"
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:40293/assets/index-BIjL_ikx.css",
+        "selector": "button, input",
+        "declarations": {
+          "font-size": "inherit",
+          "font-weight": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:40293/assets/index-BIjL_ikx.css",
+        "selector": "button",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:40293/assets/index-BIjL_ikx.css",
+        "selector": ".inspiration-banner button",
+        "declarations": {
+          "background": "rgb(255, 255, 255)",
+          "background-color": "rgb(255, 255, 255)",
+          "font-weight": "750",
+          "display": "inline-flex"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Airbnb — Stays and experiences",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Find a stay that feels made for you.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Guest favorites",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "airbnb\nStays\nExperiences\nOnline experiences\nAirbnb your home\nWhere\nSearch destinations\nWhen\nAdd dates\nWho\n1 guest"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Stays\nExperiences\nOnline experiences"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "Tiny homes\nCastles\nMansions\nShared rooms\nAmazing pools\nTreehouses\nOMG!\nFilters\n\nNOT SURE WHERE TO GO?\n\nFind a stay that feels made for you.\n\nExplore tiny homes, castles, treehouses and one-of-a-kind escapes.\n\nExplore tiny homes\n\n14 RESULTS\n\nGuest favorites\n1 guest\nRefine\nGuest favorite\nYucca Valley, California\n4.96\n\nThe Little Desert Cabin\n\nEntire home · 1 bed\n\n$184 night\nGuest favorite\nDordogne, France\n4.91\n\nStorybook Stone Castle\n\nEntire home · 5 beds\n\n$875 night\nSiena, Italy\n4.88\n\nTuscan Cast"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "Support\nHelp Center\nAirCover\nHosting\nAirbnb your home\nCommunity forum\nAirbnb\nNewsroom\nCareers\n© 2026 Airbnb-inspired demo\nPrivacy\nTerms\n English (US) · $ USD"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Airbnb home\": airbnb\n  - navigation \"Main navigation\":\n    - button \"Stays\"\n    - button \"Experiences\"\n    - button \"Online experiences\"\n  - button \"Airbnb your home\"\n  - button \"Choose language and currency\"\n  - button \"Open profile menu\"\n  - button \"Where Search destinations\":\n    - text: Where\n    - strong: Search destinations\n  - button \"When Add dates\":\n    - text: When\n    - strong: Add dates\n  - button \"Who 1 guest\":\n    - text: Who\n    - strong: 1 guest\n  - button \"Search\"\n- main:\n  - region \"Browse categories\":\n    - button \"Tiny homes\"\n    - button \"Castles\"\n    - button \"Mansions\"\n    - button \"Shared rooms\"\n    - button \"Amazing pools\"\n    - button \"Treehouses\"\n    - button \"OMG!\"\n    - button \"Filters\"\n  - paragraph: Not sure where to go?\n  - heading \"Find a stay that feels made for you.\" [level=1]\n  - paragraph: Explore tiny homes, castles, treehouses and one-of-a-kind escapes.\n  - button \"Explore tiny homes\"\n  - paragraph: 14 results\n  - heading \"Guest favorites\" [level=1]\n  - text: 1 guest\n  - button \"Refine\"\n  - article:\n    - button \"View The Little Desert Cabin\":\n      - img \"The Little Desert Cabin\"\n    - text: Guest favorite\n    - button \"Save The Little Desert Cabin to a wishlist\"\n    - button \"Yucca Valley, California\"\n    - text: \"4.96\"\n    - paragraph: The Little Desert Cabin\n    - paragraph: Entire home · 1 bed\n    - strong: $184 night\n  - article:\n    - button \"View Storybook Stone Castle\":\n      - img \"Storybook Stone Castle\"\n    - text: Guest favorite\n    - button \"Save Storybook Stone Castle to a wishlist\"\n    - button \"Dordogne, France\"\n    - text: \"4.91\"\n    - paragraph: Storybook Stone Castle\n    - paragraph: Entire home · 5 beds\n    - strong: $875 night\n  - article:\n    - button \"View Tuscan Castle Above the Vines\":\n      - img \"Tuscan Castle Above the Vines\"\n    - button \"Save Tuscan Castle Above the Vines to a wishlist\"\n    - button \"Siena, Italy\"\n    - text: \"4.88\"\n    - paragraph: Tuscan Castle Above the Vines\n    - paragraph: Entire home · 6 beds\n    - strong: $940 night\n  - article:\n    - button \"View Modern Villa on the Amalfi Coast\":\n      - img \"Modern Villa on the Amalfi Coast\"\n    - text: Guest favorite\n    - button \"Save Modern Villa on the Amalfi Coast to a wishlist\"\n    - button \"Ravello, Italy\"\n    - text: \"4.97\"\n    - paragraph: Modern Villa on the Amalfi Coast\n    - paragraph: Entire home · 4 beds\n    - strong: $790 night\n  - article:\n    - button \"View Atlantic Garden Mansion\":\n      - img \"Atlantic Garden Mansion\"\n    - text: Guest favorite\n    - button \"Save Atlantic Garden Mansion to a wishlist\"\n    - button \"Cascais, Portugal\"\n    - text: \"4.93\"\n    - paragraph: Atlantic Garden Mansion\n    - paragraph: Entire home · 5 beds\n    - strong: $910 night\n  - article:\n    - button \"View Sunny Shared Loft in Savassi\":\n      - img \"Sunny Shared Loft in Savassi\"\n    - button \"Save Sunny Shared Loft in Savassi to a wishlist\"\n    - button \"Belo Horizonte, Brazil\"\n    - text: \"4.84\"\n    - paragraph: Sunny Shared Loft in Savassi\n    - paragraph: Shared room · 1 bed\n    - strong: $74 night\n  - article:\n    - button \"View Jungle Pool House\":\n      - img \"Jungle Pool House\"\n    - text: Guest favorite\n    - button \"Save Jungle Pool House to a wishlist\"\n    - button \"Ubud, Indonesia\"\n    - text: \"4.98\"\n    - paragraph: Jungle Pool House\n    - paragraph: Entire home · 2 beds\n    - strong: $245 night\n  - article:\n    - button \"View Mallorca Courtyard Retreat\":\n      - img \"Mallorca Courtyard Retreat\"\n    - text: Guest favorite\n    - button \"Save Mallorca Courtyard Retreat to a wishlist\"\n    - button \"Sóller, Spain\"\n    - text: \"4.92\"\n    - paragraph: Mallorca Courtyard Retreat\n    - paragraph: Entire home · 3 beds\n    - strong: $285 night\n  - article:\n    - button \"View Canopy Treehouse in the Western Ghats\":\n      - img \"Canopy Treehouse in the Western Ghats\"\n    - text: Guest favorite\n    - button \"Save Canopy Treehouse in the Western Ghats to a wishlist\"\n    - button \"Wayanad, India\"\n    - text: \"4.89\"\n    - paragraph: Canopy Treehouse in the Western Ghats\n    - paragraph: Entire home · 1 bed\n    - strong: $88 night\n  - article:\n    - button \"View Glass Bubble Under the Stars\":\n      - img \"Glass Bubble Under the Stars\"\n    - text: Guest favorite\n    - button \"Save Glass Bubble Under the Stars to a wishlist\"\n    - button \"Atacama, Chile\"\n    - text: \"4.94\"\n    - paragraph: Glass Bubble Under the Stars\n    - paragraph: Entire home · 1 bed\n    - strong: $320 night\n  - article:\n    - button \"View The Cave House\":\n      - img \"The Cave House\"\n    - text: Guest favorite\n    - button \"Save The Cave House to a wishlist\"\n    - button \"Cappadocia, Türkiye\"\n    - text: \"4.99\"\n    - paragraph: The Cave House\n    - paragraph: Entire home · 2 beds\n    - strong: $410 night\n  - article:\n    - button \"View Mirrored Forest Cabin\":\n      - img \"Mirrored Forest Cabin\"\n    - button \"Save Mirrored Forest Cabin to a wishlist\"\n    - button \"Quebec, Canada\"\n    - text: \"4.95\"\n    - paragraph: Mirrored Forest Cabin\n    - paragraph: Entire home · 2 beds\n    - strong: $465 night\n  - article:\n    - button \"View Quiet Private Room in Brooklyn\":\n      - img \"Quiet Private Room in Brooklyn\"\n    - text: Guest favorite\n    - button \"Save Quiet Private Room in Brooklyn to a wishlist\"\n    - button \"New York, New York\"\n    - text: \"4.87\"\n    - paragraph: Quiet Private Room in Brooklyn\n    - paragraph: Private room · 1 bed\n    - strong: $92 night\n  - article:\n    - button \"View Painted Tiny House by the Sea\":\n      - img \"Painted Tiny House by the Sea\"\n    - button \"Save Painted Tiny House by the Sea to a wishlist\"\n    - button \"Portland, Maine\"\n    - text: \"4.9\"\n    - paragraph: Painted Tiny House by the Sea\n    - paragraph: Entire home · 1 bed\n    - strong: $136 night\n- contentinfo:\n  - strong: Support\n  - button \"Help Center\"\n  - button \"AirCover\"\n  - strong: Hosting\n  - button \"Airbnb your home\"\n  - button \"Community forum\"\n  - strong: Airbnb\n  - button \"Newsroom\"\n  - button \"Careers\"\n  - text: © 2026 Airbnb-inspired demo\n  - button \"Privacy\"\n  - button \"Terms\"\n  - button \"English (US) · $ USD\""
+  },
+  "sourceSnippets": []
+}

@@ -1,0 +1,172 @@
+{
+  "site": "store.steampowered",
+  "siteKey": "17-store.steampowered",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/17-store.steampowered/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 9,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/17-store.steampowered/wave/attempt-1/raw.json",
+  "errorId": "ST0404",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]",
+    "tag": "A",
+    "text": "Fable\nSeptember 17, 2026\n 2,481,200",
+    "html": "<a class=\"mini-upcoming-row\" href=\"/upcoming\" data-discover=\"true\"><img alt=\"\" src=\"https://placehold.co/720x400/194f4b/d9eebc?text=FABLE\"><span><b>Fable</b><small>September 17, 2026</small></span><span class=\"followers\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg> 2,481,200</span></a>",
+    "class": "mini-upcoming-row",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/upcoming",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 751,
+      "y": 1535.3125,
+      "width": 538,
+      "height": 59
+    },
+    "style": {
+      "color": "rgb(214, 215, 216)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]",
+      "tag": "DIV",
+      "class": "home-list-panel upcoming-panel",
+      "text": " POPULAR UPCOMING\nSee all upcoming \nHollow Knight: Silksong\nAugust 28, 2026\n 3,251,400\nFable\nSeptember 17, 2026\n 2,481,200\nLight No Fire\nOctober 9, 2026\n 1,834,920\nSubnautica 2\nNovember 6, 2026\n 1,620,080",
+      "html": "<div class=\"home-list-panel upcoming-panel\"><div class=\"section-heading compact\"><div><h2><svg data-prefix=\"fas\" data-icon=\"calendar\" class=\"svg-inline--fa fa-calendar\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M128 0C110.3 0 96 14.3 96 32l0 32-32 0C28.7 64 0 92.7 0 128l0 48 448 0 0-48c0-35.3-28.7-64-64-64l-32 0 0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32-128 0 0-32c0-17.7-14.3-32-32-32zM0 224L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-192-448 0z\"></path></svg> Popular upcoming</h2></div><a href=\"/upcoming\" data-discover=\"true\">See all upcoming <svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M311.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L243.2 256 73.9 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"></path></svg></a></div><a class=\"mini-upcoming-row\" href=\"/upcoming\" data-discover=\"true\"><img alt=\"\" src=\"https://placehold.co/720x400/501d42/f6d6ec?text=HOLLOW%20KNIGHT%3A%20SILKSONG\"><span><b>Hollow Knight: Silksong</b><small>August 28, 2026</small></span><span class=\"followers\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg> 3,251,400</span></a><a class=\"mini-upcoming-row\" href=\"/upcoming\" data-discover=\"true\"><img alt=\"\" src=\"https://placehold.co/720x400/194f4b/d9eebc?text=FABLE\"><span><b>Fable</b><small>September 17, 2026</small></span><span class=\"followers\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg> 2,481,200</span></a><a class=\"mini-upcoming-row\" href=\"/upcoming\" data-discover=\"true\"><img alt=\"\" src=\"https://placehold.co/720x400/54351f/ffdc8a?text=LIGHT%20NO%20FIRE\"><span><b>Light No Fire</b><small>October 9, 2026</small></span><span class=\"followers\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg> 1,834,920</span></a><a class=\"mini-upcoming-row\" href=\"/upcoming\" data-discover=\"true\"><img alt=\"\" src=\"https://placehold.co/720x400/064665/79ddf2?text=SUBNAUTICA%202\"><span><b>Subnautica 2</b><small>November 6, 2026</small></span><span class=\"followers\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg> 1,620,080</span></a></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]",
+      "tag": "A",
+      "text": "Fable\nSeptember 17, 2026\n 2,481,200",
+      "ariaLabel": null,
+      "href": "/upcoming",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:37531/assets/index-CPVGKwKH.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:37531/assets/index-CPVGKwKH.css",
+        "selector": ".mini-upcoming-row",
+        "declarations": {
+          "display": "grid"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Steam Store",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Cities: Skylines",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " SPECIAL OFFERS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Sea of Stars",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Hades",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "DREDGE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " TOP GAMES BY DAILY PLAYERS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " POPULAR UPCOMING",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "STEAM\nSTORE\nCOMMUNITY\nALEX \nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "STORE\nCOMMUNITY\nALEX "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": " FEATURED & RECOMMENDED\nYOUR CITY. YOUR RULES.\nCities: Skylines\n\nBuild the city of your dreams and manage its living, breathing systems.\n\nTop Seller\n PC\nSTARTING AT\n$29.99\nView details\nRecently played\nJump back into your games\nMost played\nSee today's player counts\nPopular upcoming\nDiscover anticipated releases\nYour game forums\nJoin community discussions\n SPECIAL OFFERS\n\nGreat games at great prices\n\nBrowse all games \nSea of Stars\n Windows\nAdventure\nJRPG\nRPG\n 96%\n$34.99\n$17.49\nAdd\nHades\n Windows\nA"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "STEAM\n\n© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.\n\nBrowse Store\nCommunity\nPoints Shop"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Steam Store home\":\n    - /url: /\n    - text: STEAM\n  - navigation \"Main navigation\":\n    - link \"STORE\":\n      - /url: /\n    - link \"COMMUNITY\":\n      - /url: /community/discussions\n    - button \"ALEX\"\n  - button \"Notifications\"\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- link \"Your Store\":\n  - /url: /\n- link \"Browse\":\n  - /url: /search\n- link \"Charts\":\n  - /url: /charts/most-played\n- link \"Upcoming\":\n  - /url: /upcoming\n- link \"Points Shop\":\n  - /url: /points-shop\n- search:\n  - textbox \"Search the store\"\n  - button \"Submit search\"\n- main:\n  - text: FEATURED & RECOMMENDED\n  - 'link \"Cities: Skylines featured artwork\"':\n    - /url: /game/cities-skylines\n    - 'img \"Cities: Skylines featured artwork\"'\n  - text: YOUR CITY. YOUR RULES.\n  - 'heading \"Cities: Skylines\" [level=1]'\n  - paragraph: Build the city of your dreams and manage its living, breathing systems.\n  - img \"City transit preview\"\n  - img \"Downtown preview\"\n  - img \"City at night preview\"\n  - img \"Industries preview\"\n  - text: Top Seller PC Starting at\n  - strong: $29.99\n  - link \"View details\":\n    - /url: /game/cities-skylines\n  - region \"Popular destinations\":\n    - link \"Recently played Jump back into your games\":\n      - /url: /profile/recently-played\n    - link \"Most played See today's player counts\":\n      - /url: /charts/most-played\n    - link \"Popular upcoming Discover anticipated releases\":\n      - /url: /upcoming\n    - link \"Your game forums Join community discussions\":\n      - /url: /community/discussions\n  - heading \"Special offers\" [level=2]\n  - paragraph: Great games at great prices\n  - link \"Browse all games\":\n    - /url: /search\n  - article:\n    - link \"Sea of Stars cover\":\n      - /url: /game/sea-of-stars\n      - img \"Sea of Stars cover\"\n    - link \"Sea of Stars\":\n      - /url: /game/sea-of-stars\n      - heading \"Sea of Stars\" [level=3]\n    - text: Windows\n    - button \"Add Sea of Stars to wishlist\"\n    - text: Adventure JRPG RPG 96%\n    - deletion: $34.99\n    - strong: $17.49\n    - button \"Add\"\n  - article:\n    - link \"Hades cover\":\n      - /url: /game/hades\n      - img \"Hades cover\"\n    - link \"Hades\":\n      - /url: /game/hades\n      - heading \"Hades\" [level=3]\n    - text: Windows\n    - button \"Add Hades to wishlist\"\n    - text: Adventure Action Roguelike 98%\n    - strong: $24.99\n    - button \"Add\"\n  - article:\n    - link \"DREDGE cover\":\n      - /url: /game/dredge\n      - img \"DREDGE cover\"\n    - link \"DREDGE\":\n      - /url: /game/dredge\n      - heading \"DREDGE\" [level=3]\n    - text: Windows\n    - button \"Remove DREDGE from wishlist\"\n    - text: Adventure Fishing Exploration 95%\n    - strong: $24.99\n    - button \"Add\"\n  - heading \"Top games by daily players\" [level=2]\n  - link \"View full chart\":\n    - /url: /charts/most-played\n  - link \"1 Counter-Strike 2 1,183,492 daily\":\n    - /url: /charts/most-played\n  - link \"2 Dota 2 668,211 daily\":\n    - /url: /game/dota-2\n  - 'link \"3 PUBG: BATTLEGROUNDS 497,230 daily\"':\n    - /url: /charts/most-played\n  - link \"4 Apex Legends 310,884 daily\":\n    - /url: /charts/most-played\n  - link \"5 Rust 246,019 daily\":\n    - /url: /charts/most-played\n  - heading \"Popular upcoming\" [level=2]\n  - link \"See all upcoming\":\n    - /url: /upcoming\n  - 'link \"Hollow Knight: Silksong August 28, 2026 3,251,400\"':\n    - /url: /upcoming\n  - link \"Fable September 17, 2026 2,481,200\":\n    - /url: /upcoming\n  - link \"Light No Fire October 9, 2026 1,834,920\":\n    - /url: /upcoming\n  - link \"Subnautica 2 November 6, 2026 1,620,080\":\n    - /url: /upcoming\n- contentinfo:\n  - link \"STEAM\":\n    - /url: /\n  - paragraph: © 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.\n  - link \"Browse Store\":\n    - /url: /search\n  - link \"Community\":\n    - /url: /community/discussions\n  - link \"Points Shop\":\n    - /url: /points-shop"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/17-store.steampowered/dist/assets/index-B5xjs0QV.js",
+      "offset": 340088,
+      "match": "className:\"mini-upcoming-row\"",
+      "context": "ini-chart-row\",to:m.id===\"dota-2\"?\"/game/dota-2\":\"/charts/most-played\",children:[u.jsx(\"span\",{className:\"rank\",children:m.rank}),u.jsx(\"img\",{src:m.image,alt:\"\"}),u.jsx(\"b\",{children:m.title}),u.jsxs(\"span\",{children:[Vt(m.peak),\" daily\"]})]},m.id))]}),u.jsxs(\"div\",{className:\"home-list-panel upcoming-panel\",children:[u.jsx(fu,{icon:Ti,title:\"Popular upcoming\",action:\"See all upcoming\",to:\"/upcoming\",compact:!0}),w2.slice(0,4).map(m=>u.jsxs(le,{className:\"mini-upcoming-row\",to:\"/upcoming\",children:[u.jsx(\"img\",{src:m.image,alt:\"\"}),u.jsxs(\"span\",{children:[u.jsx(\"b\",{children:m.title}),u.jsx(\"small\",{children:m.date})]}),u.jsxs(\"span\",{className:\"followers\",children:[u.jsx(H,{icon:ll}),\" \",Vt(m.followers)]})]},m.id))]})]})]})}function fu({icon:n,title:s,subtitle:o,action:c,to:f,compact:m=!1}){return u.jsxs(\"div\",{className:`section-heading ${m?\"compact\":\"\"}`,children:[u.jsxs(\"div\",{children:[u.jsxs(\"h2\",{children:["
+    }
+  ]
+}

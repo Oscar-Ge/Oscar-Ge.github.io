@@ -1,0 +1,95 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - link "Petfinder home":
+    - /url: /
+    - text: petfinder
+  - navigation "Main navigation":
+    - link "Find a Pet":
+      - /url: /search
+    - link "Shelters & Rescues":
+      - /url: /organizations
+    - link "Pet Care":
+      - /url: /resources
+    - link "Favorites":
+      - /url: /favorites
+    - link "Donate":
+      - /url: /donate
+- main:
+  - paragraph: Find love. Give love.
+  - heading "Bring home more happy." [level=1]:
+    - text: Bring home more
+    - emphasis: happy.
+  - paragraph: Search thousands of adoptable pets from shelters and rescue groups near you.
+  - group "Pet type":
+    - button "Dog" [pressed]
+    - button "Cat"
+    - button "Rabbit"
+  - text: Location
+  - textbox "Location":
+    - /placeholder: City, state, or zip
+  - button "Search pets"
+  - paragraph: Adoption starts here
+  - heading "Find your new best friend" [level=2]
+  - paragraph: Browse adoptable pets from trusted shelters and rescues.
+  - link "Dogs & Puppies Patient tails are waiting":
+    - /url: /search?species=Dog
+    - strong: Dogs & Puppies
+    - text: Patient tails are waiting
+  - link "Cats & Kittens Meet your purr-fect match":
+    - /url: /search?species=Cat
+    - strong: Cats & Kittens
+    - text: Meet your purr-fect match
+  - link "Rabbits Big personalities, soft ears":
+    - /url: /search?species=Rabbit
+    - strong: Rabbits
+    - text: Big personalities, soft ears
+  - paragraph: A thoughtful match
+  - heading "How adoption works" [level=2]
+  - article:
+    - text: "1"
+    - heading "Search" [level=3]
+    - paragraph: Use filters to find pets who fit your home and lifestyle.
+  - article:
+    - text: "2"
+    - heading "Connect" [level=3]
+    - paragraph: Read profiles and contact the shelter or rescue directly.
+  - article:
+    - text: "3"
+    - heading "Adopt" [level=3]
+    - paragraph: Complete the group’s process and welcome your new companion.
+  - paragraph: Pet care essentials
+  - heading "Help your dog look and feel their best" [level=2]
+  - paragraph: Learn brushing, bathing, nail care, and coat-care basics for dogs and puppies.
+  - link "Read the grooming guide":
+    - /url: /resources/dog-puppy-grooming
+  - paragraph: Petfinder Foundation
+  - heading "Help shelters save more lives" [level=2]
+  - paragraph: Your monthly gift supports adoption programs, disaster response, and shelter enrichment.
+  - link "Make a gift":
+    - /url: /donate
+- contentinfo:
+  - link "petfinder":
+    - /url: /
+  - paragraph: Connecting adoptable pets with loving people.
+  - heading "Adopt" [level=2]
+  - link "Dogs & puppies":
+    - /url: /search?species=Dog
+  - link "Cats & kittens":
+    - /url: /search?species=Cat
+  - link "Rabbits":
+    - /url: /search?species=Rabbit
+  - link "Favorites":
+    - /url: /favorites
+  - heading "Learn" [level=2]
+  - link "Pet care library":
+    - /url: /resources
+  - link "Dog & puppy grooming":
+    - /url: /resources/dog-puppy-grooming
+  - link "Shelters & rescues":
+    - /url: /organizations
+  - heading "Give" [level=2]
+  - paragraph: Help adoption groups care for more pets.
+  - link "Donate to the Foundation":
+    - /url: /donate
+  - text: © 2026 Petfinder demo experience Built with synthetic adoption data

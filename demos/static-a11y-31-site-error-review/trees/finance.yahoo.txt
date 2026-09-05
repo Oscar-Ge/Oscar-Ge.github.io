@@ -1,0 +1,202 @@
+- text: Yahoo Mail News
+- strong: Finance
+- text: Sports More U.S. markets closed
+- banner:
+  - link "Yahoo Finance":
+    - /url: /
+    - text: yahoo!
+    - strong: finance
+  - search:
+    - textbox "Search for news, symbols or companies"
+    - button "Search"
+  - button "Notifications"
+  - button "Sign in"
+  - navigation:
+    - link "My Portfolio":
+      - /url: /portfolio
+    - link "Markets":
+      - /url: /markets
+    - link "News":
+      - /url: /news
+    - link "Screeners":
+      - /url: /screener/equity
+    - link "Calendar":
+      - /url: /calendar/ipo
+    - link "Small Business":
+      - /url: /personal-finance/small-business-tax-calendar
+    - link "Finance Plus":
+      - /url: /plus
+    - text: 1 followed
+- link "S&P 500 ^GSPC 6,449.80 +0.31%":
+  - /url: /quote/%5EGSPC
+  - strong: S&P 500
+  - text: ^GSPC 6,449.80
+  - emphasis: +0.31%
+- link "Dow 30 ^DJI 45,092.81 +0.08%":
+  - /url: /quote/%5EDJI
+  - strong: Dow 30
+  - text: ^DJI 45,092.81
+  - emphasis: +0.08%
+- link "Nasdaq ^IXIC 21,622.98 +0.14%":
+  - /url: /quote/%5EIXIC
+  - strong: Nasdaq
+  - text: ^IXIC 21,622.98
+  - emphasis: +0.14%
+- link "Russell 2000 ^RUT 2,286.52 -0.16%":
+  - /url: /quote/%5ERUT
+  - strong: Russell 2000
+  - text: ^RUT 2,286.52
+  - emphasis: "-0.16%"
+- link "Bitcoin USD BTC-USD 118,420.17 +1.44%":
+  - /url: /quote/BTC-USD
+  - strong: Bitcoin USD
+  - text: BTC-USD 118,420.17
+  - emphasis: +1.44%
+- main:
+  - text: MARKETS • AUGUST 16, 2026
+  - heading "Your money, made clearer." [level=1]
+  - paragraph: Track what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.
+  - button "Explore markets"
+  - text: Market snapshot Closed
+  - button "S&P 500 ^GSPC 6,449.80 +0.31%":
+    - strong: S&P 500
+    - text: ^GSPC 6,449.80
+    - emphasis: +0.31%
+  - button "Dow 30 ^DJI 45,092.81 +0.08%":
+    - strong: Dow 30
+    - text: ^DJI 45,092.81
+    - emphasis: +0.08%
+  - button "Nasdaq ^IXIC 21,622.98 +0.14%":
+    - strong: Nasdaq
+    - text: ^IXIC 21,622.98
+    - emphasis: +0.14%
+  - text: DISCOVER
+  - heading "Explore the market" [level=2]
+  - link "Most Active Penny Stocks High-volume stocks trading below $10. Explore":
+    - /url: /markets/stocks/most-active-penny-stocks
+    - strong: Most Active Penny Stocks
+    - paragraph: High-volume stocks trading below $10.
+    - text: Explore
+  - link "IPO Calendar Upcoming and recently priced listings. Explore":
+    - /url: /calendar/ipo
+    - strong: IPO Calendar
+    - paragraph: Upcoming and recently priced listings.
+    - text: Explore
+  - link "High-Yield Dividend Stocks A curated income-focused watchlist. Explore":
+    - /url: /watchlists/high-yield-dividend-stocks
+    - strong: High-Yield Dividend Stocks
+    - paragraph: A curated income-focused watchlist.
+    - text: Explore
+  - link "Build a Portfolio Create a list and track your holdings. Explore":
+    - /url: /portfolio
+    - strong: Build a Portfolio
+    - paragraph: Create a list and track your holdings.
+    - text: Explore
+  - text: TRENDING TICKERS
+  - heading "What investors are watching" [level=2]
+  - link "View all":
+    - /url: /markets
+  - text: Symbol Last price Change Trend
+  - link "A AAPL Apple Inc. 226.34 +1.25% Upward trend":
+    - /url: /quote/AAPL
+    - text: A
+    - strong: AAPL
+    - text: Apple Inc.
+    - strong: "226.34"
+    - emphasis: +1.25%
+  - link "T TSLA Tesla, Inc. 341.76 -0.82% Downward trend":
+    - /url: /quote/TSLA
+    - text: T
+    - strong: TSLA
+    - text: Tesla, Inc.
+    - strong: "341.76"
+    - emphasis: "-0.82%"
+  - link "N NVDA NVIDIA Corporation 182.70 +0.86% Upward trend":
+    - /url: /quote/NVDA
+    - text: "N"
+    - strong: NVDA
+    - text: NVIDIA Corporation
+    - strong: "182.70"
+    - emphasis: +0.86%
+  - link "M MSFT Microsoft Corporation 521.44 +0.93% Upward trend":
+    - /url: /quote/MSFT
+    - text: M
+    - strong: MSFT
+    - text: Microsoft Corporation
+    - strong: "521.44"
+    - emphasis: +0.93%
+  - link "B BTC-USD Bitcoin USD 118,420.17 +1.44% Upward trend":
+    - /url: /quote/BTC-USD
+    - text: B
+    - strong: BTC-USD
+    - text: Bitcoin USD
+    - strong: 118,420.17
+    - emphasis: +1.44%
+  - text: LATEST
+  - heading "Top stories" [level=2]
+  - link "More news":
+    - /url: /news
+  - link "Markets · 18 min ago Stocks edge higher as investors weigh retail strength and rate path Major averages held near records as fresh economic data supported a soft-landing outlook.":
+    - /url: /news
+    - text: Markets · 18 min ago
+    - heading "Stocks edge higher as investors weigh retail strength and rate path" [level=3]
+    - paragraph: Major averages held near records as fresh economic data supported a soft-landing outlook.
+  - link "Bitcoin · 42 min ago Bitcoin steadies above $118,000 as institutional inflows accelerate Digital-asset funds posted another week of net inflows while volatility remained contained.":
+    - /url: /quote/BTC-USD
+    - text: Bitcoin · 42 min ago
+    - heading "Bitcoin steadies above $118,000 as institutional inflows accelerate" [level=3]
+    - paragraph: Digital-asset funds posted another week of net inflows while volatility remained contained.
+  - link "Technology · 1 hr ago Chip stocks rise on stronger data-center spending forecast Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.":
+    - /url: /news
+    - text: Technology · 1 hr ago
+    - heading "Chip stocks rise on stronger data-center spending forecast" [level=3]
+    - paragraph: Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.
+  - link "Personal Finance · 2 hrs ago Five money moves to make before the end of summer A midyear checkup can help savers optimize taxes, benefits, and emergency funds.":
+    - /url: /news
+    - text: Personal Finance · 2 hrs ago
+    - heading "Five money moves to make before the end of summer" [level=3]
+    - paragraph: A midyear checkup can help savers optimize taxes, benefits, and emergency funds.
+  - complementary:
+    - heading "My watchlist" [level=3]
+    - link "Edit":
+      - /url: /portfolio
+    - link "AAPL Apple Inc. 226.34 +1.25%":
+      - /url: /quote/AAPL
+      - strong: AAPL
+      - text: Apple Inc. 226.34
+      - emphasis: +1.25%
+    - link "MSFT Microsoft Corporation 521.44 +0.93%":
+      - /url: /quote/MSFT
+      - strong: MSFT
+      - text: Microsoft Corporation 521.44
+      - emphasis: +0.93%
+    - link "GC=F Gold Dec 26 2,548.70 +0.72%":
+      - /url: /quote/GC%3DF
+      - strong: GC=F
+      - text: Gold Dec 26 2,548.70
+      - emphasis: +0.72%
+    - text: YAHOO FINANCE PLUS
+    - heading "Invest with more confidence." [level=3]
+    - paragraph: Unlock advanced charts, enhanced data, and expert insights.
+    - link "Compare plans":
+      - /url: /plus
+    - text: SMALL BUSINESS
+    - heading "Stay ahead of tax deadlines" [level=3]
+    - paragraph: See important federal tax dates and practical filing reminders for 2026.
+    - link "View tax calendar":
+      - /url: /personal-finance/small-business-tax-calendar
+- contentinfo:
+  - text: yahoo!
+  - strong: finance
+  - paragraph: Market insights and tools for every investor.
+  - link "About":
+    - /url: /legal/about
+  - link "Help":
+    - /url: /legal/help
+  - link "Privacy":
+    - /url: /legal/privacy
+  - link "Terms":
+    - /url: /legal/terms
+  - link "Disclaimer":
+    - /url: /legal/disclaimer
+  - text: © 2026 Yahoo Finance inspired demo. All data is synthetic.

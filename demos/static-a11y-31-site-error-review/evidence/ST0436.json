@@ -1,0 +1,197 @@
+{
+  "site": "reddit",
+  "siteKey": "20-reddit",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/20-reddit/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 2,
+  "selector": [
+    ".sort-pills > .active"
+  ],
+  "html": "<button class=\"active\" aria-pressed=\"true\">",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#d93a00",
+          "bgColor": "#fff0ea",
+          "contrastRatio": 4.14,
+          "fontSize": "9.0pt (12px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<button class=\"active\" aria-pressed=\"true\">",
+            "target": [
+              ".sort-pills > .active"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 4.14 (foreground color: #d93a00, background color: #fff0ea, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/20-reddit/axe/attempt-1/raw.json",
+  "errorId": "ST0436",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "tag": "BUTTON",
+    "text": "Hot",
+    "html": "<button class=\"active\" aria-pressed=\"true\"><svg data-prefix=\"fas\" data-icon=\"fire\" class=\"svg-inline--fa fa-fire\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160.5-26.4c9.3-7.8 23-7.5 31.9 .9 12.3 11.6 23.3 24.4 33.9 37.4 13.5 16.5 29.7 38.3 45.3 64.2 5.2-6.8 10-12.8 14.2-17.9 1.1-1.3 2.2-2.7 3.3-4.1 7.9-9.8 17.7-22.1 30.8-22.1 13.4 0 22.8 11.9 30.8 22.1 1.3 1.7 2.6 3.3 3.9 4.8 10.3 12.4 24 30.3 37.7 52.4 27.2 43.9 55.6 106.4 55.6 176.6 0 123.7-100.3 224-224 224S0 411.7 0 288c0-91.1 41.1-170 80.5-225 19.9-27.7 39.7-49.9 54.6-65.1 8.2-8.4 16.5-16.7 25.5-24.2zM225.7 416c25.3 0 47.7-7 68.8-21 42.1-29.4 53.4-88.2 28.1-134.4-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5-17.3-22.1-49.1-62.4-65.3-83-5.4-6.9-15.2-8-21.5-1.9-18.3 17.8-51.5 56.8-51.5 104.3 0 68.6 50.6 109.2 113.7 109.2z\"></path></svg>Hot</button>",
+    "class": "active",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 275,
+      "y": 192.09375,
+      "width": 70.03125,
+      "height": 36
+    },
+    "style": {
+      "color": "rgb(217, 58, 0)",
+      "background": "rgb(255, 240, 234)",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "sort-pills",
+      "text": "Hot\nNew\nTop\nRising\nMost comments",
+      "html": "<div class=\"sort-pills\"><button class=\"active\" aria-pressed=\"true\"><svg data-prefix=\"fas\" data-icon=\"fire\" class=\"svg-inline--fa fa-fire\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160.5-26.4c9.3-7.8 23-7.5 31.9 .9 12.3 11.6 23.3 24.4 33.9 37.4 13.5 16.5 29.7 38.3 45.3 64.2 5.2-6.8 10-12.8 14.2-17.9 1.1-1.3 2.2-2.7 3.3-4.1 7.9-9.8 17.7-22.1 30.8-22.1 13.4 0 22.8 11.9 30.8 22.1 1.3 1.7 2.6 3.3 3.9 4.8 10.3 12.4 24 30.3 37.7 52.4 27.2 43.9 55.6 106.4 55.6 176.6 0 123.7-100.3 224-224 224S0 411.7 0 288c0-91.1 41.1-170 80.5-225 19.9-27.7 39.7-49.9 54.6-65.1 8.2-8.4 16.5-16.7 25.5-24.2zM225.7 416c25.3 0 47.7-7 68.8-21 42.1-29.4 53.4-88.2 28.1-134.4-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5-17.3-22.1-49.1-62.4-65.3-83-5.4-6.9-15.2-8-21.5-1.9-18.3 17.8-51.5 56.8-51.5 104.3 0 68.6 50.6 109.2 113.7 109.2z\"></path></svg>Hot</button><button class=\"\" aria-pressed=\"false\"><svg data-prefix=\"fas\" data-icon=\"clock\" class=\"svg-inline--fa fa-clock\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"></path></svg>New</button><button class=\"\" aria-pressed=\"false\"><svg data-prefix=\"fas\" data-icon=\"arrow-up\" class=\"svg-inline--fa fa-arrow-up\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M214.6 17.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 117.3 160 488c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z\"></path></svg>Top</button><button class=\"\" aria-pressed=\"false\"><svg data-prefix=\"fas\" data-icon=\"arrow-trend-up\" class=\"svg-inline--fa fa-arrow-trend-up\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-169.4 169.4c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z\"></path></svg>Rising</button><button class=\"\" aria-pressed=\"false\"><svg data-prefix=\"fas\" data-icon=\"comment\" class=\"svg-inline--fa fa-comment\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M512 240c0 132.5-114.6 240-256 240-37.1 0-72.3-7.4-104.1-20.7L33.5 510.1c-9.4 4-20.2 1.7-27.1-5.8S-2 485.8 2.8 476.8l48.8-92.2C19.2 344.3 0 294.3 0 240 0 107.5 114.6 0 256 0S512 107.5 512 240z\"></path></svg>Most comments</button></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/BUTTON[1]",
+      "tag": "BUTTON",
+      "text": "Hot",
+      "ariaLabel": null,
+      "href": null,
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": "button, input, textarea, select",
+        "declarations": {
+          "font-size": "inherit",
+          "font-weight": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": "button",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": "button",
+        "declarations": {
+          "background": "none",
+          "background-color": "initial"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": ".sort-pills button",
+        "declarations": {
+          "color": "rgb(92, 112, 123)",
+          "font-size": "12px",
+          "font-weight": "700",
+          "display": "inline-flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:38953/assets/index-BKbJOdE2.css",
+        "selector": ".sort-pills button:hover, .sort-pills button.active",
+        "declarations": {
+          "color": "var(--orange-dark)",
+          "background": "rgb(255, 240, 234)",
+          "background-color": "rgb(255, 240, 234)"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Home",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "reddit\n3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Account actions",
+        "text": "3\nCreate\noo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts\nCOMMUNITIES\nCreate a community\nA\nr/announcements\n\nAbout   •   Content Policy\nPrivacy   •   User Agreement"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nPopular\nAll\nCreate a post\nDrafts"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "EXPLORE REDDIT\n\nHome\n\nYour personalized front page of the internet\n\nHot\nNew\nTop\nRising\nMost comments\nEverywhere\nJapan\nChile\n18.6k\nA\nr/announcements\n• Posted by u/reddit\n• 18 min ago\nOfficial\nReddit’s newest community updates are here\n\nA faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n\n2.8k comments\nCopy link\nSave\nFollow\nAward\n68.4k\nJ\nr/japan\n• Posted by u/tokyo_window\n• 2 hr ago\nTravel\nThe night train returns for the summer f"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]/ASIDE[2]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "Popular communities\n1\nM\nr/Music\n81.2k viewing\nJoin\n2\nF\nr/FortNiteBR\n27.4k viewing\nJoin\n3\nF\nr/Fitness\n18.4k viewing\nJoin\n4\nA\nr/AskReddit\n184k viewing\nJoin\nA better Reddit experience\n\nAll content here is realistic synthetic data. Your actions stay in this demo."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - button \"Reddit home\": reddit\n  - search:\n    - textbox \"Search Reddit\"\n  - navigation \"Account actions\":\n    - button \"Open chat\"\n    - button \"Notifications\": \"3\"\n    - button \"Create\"\n    - button \"Open user menu\": oo\n- complementary:\n  - navigation \"Primary navigation\":\n    - button \"Home\"\n    - button \"Popular\"\n    - button \"All\"\n    - button \"Create a post\"\n    - button \"Drafts\"\n  - text: Communities\n  - button \"Create a community\"\n  - button \"Create a community\"\n  - button \"r/announcements\"\n  - paragraph: About • Content Policy Privacy • User Agreement\n- main:\n  - paragraph: Explore Reddit\n  - heading \"Home\" [level=1]\n  - paragraph: Your personalized front page of the internet\n  - button \"Hot\" [pressed]\n  - button \"New\"\n  - button \"Top\"\n  - button \"Rising\"\n  - button \"Most comments\"\n  - combobox \"Popular location\":\n    - option \"Everywhere\" [selected]\n    - option \"Japan\"\n    - option \"Chile\"\n  - button \"Card view\" [pressed]\n  - button \"Compact view\"\n  - article:\n    - button \"Upvote Reddit’s newest community updates are here\"\n    - strong: 18.6k\n    - button \"Downvote Reddit’s newest community updates are here\"\n    - button \"r/announcements\"\n    - text: • Posted by u/reddit • 18 min ago Official\n    - button \"Reddit’s newest community updates are here\"\n    - paragraph: A faster community drawer, clearer moderation tools, and new ways to discover great conversations are rolling out today.\n    - button \"2.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for Reddit’s newest community updates are here\"\n  - article:\n    - button \"Upvote The night train returns for the summer festival season\"\n    - strong: 68.4k\n    - button \"Downvote The night train returns for the summer festival season\"\n    - button \"r/japan\"\n    - text: • Posted by u/tokyo_window • 2 hr ago Travel\n    - button \"The night train returns for the summer festival season\"\n    - paragraph: A photo essay from the first service between Tokyo and Izumo.\n    - button \"Open Night train at a lantern-lit station\": Night train at a lantern-lit station\n    - button \"3.4k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for The night train returns for the summer festival season\"\n  - article:\n    - button \"Upvote TIL a library book was returned after 96 years—with a note\"\n    - strong: 3.9k\n    - button \"Downvote TIL a library book was returned after 96 years—with a note\"\n    - button \"r/todayilearned\"\n    - text: • Posted by u/small_fact • 27 min ago Culture\n    - button \"TIL a library book was returned after 96 years—with a note\"\n    - paragraph: The librarian waived the late fee and added the note to the local archive.\n    - button \"477 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for TIL a library book was returned after 96 years—with a note\"\n  - article:\n    - button \"Upvote My team replaced one weekly meeting with this simple update\"\n    - strong: \"684\"\n    - button \"Downvote My team replaced one weekly meeting with this simple update\"\n    - button \"r/work\"\n    - text: • Posted by u/desk_neighbor • 22 min ago Success Story\n    - button \"My team replaced one weekly meeting with this simple update\"\n    - paragraph: It is early, but people are more informed and have more focus time.\n    - button \"211 comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for My team replaced one weekly meeting with this simple update\"\n  - article:\n    - button \"Upvote A tiny act of kindness became a whole town tradition\"\n    - strong: 193k\n    - button \"Downvote A tiny act of kindness became a whole town tradition\"\n    - button \"r/MadeMeSmile\"\n    - text: • Posted by u/day_brightener • 12 days ago Wholesome\n    - button \"A tiny act of kindness became a whole town tradition\"\n    - paragraph: Every Friday, people leave a note of thanks for someone in their community.\n    - button \"12.8k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for A tiny act of kindness became a whole town tradition\"\n  - article:\n    - button \"Upvote What meal could you happily eat every week forever?\"\n    - strong: 88.4k\n    - button \"Downvote What meal could you happily eat every week forever?\"\n    - button \"r/food\"\n    - text: • Posted by u/simmerdown • 8 months ago Discussion\n    - button \"What meal could you happily eat every week forever?\"\n    - paragraph: The answers have become a genuinely excellent dinner-planning list.\n    - button \"48.2k comments\"\n    - button \"Copy link\"\n    - button \"Save\"\n    - button \"Follow\"\n    - button \"Award\"\n    - button \"More actions for What meal could you happily eat every week forever?\"\n- complementary:\n  - text: Popular communities 1\n  - button \"r/Music 81.2k viewing\":\n    - strong: r/Music\n    - text: 81.2k viewing\n  - button \"Join\"\n  - text: \"2\"\n  - button \"r/FortNiteBR 27.4k viewing\":\n    - strong: r/FortNiteBR\n    - text: 27.4k viewing\n  - button \"Join\"\n  - text: \"3\"\n  - button \"r/Fitness 18.4k viewing\":\n    - strong: r/Fitness\n    - text: 18.4k viewing\n  - button \"Join\"\n  - text: \"4\"\n  - button \"r/AskReddit 184k viewing\":\n    - strong: r/AskReddit\n    - text: 184k viewing\n  - button \"Join\"\n  - strong: A better Reddit experience\n  - paragraph: All content here is realistic synthetic data. Your actions stay in this demo.\n- status"
+  },
+  "sourceSnippets": []
+}

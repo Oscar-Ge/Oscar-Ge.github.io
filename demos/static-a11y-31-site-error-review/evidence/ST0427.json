@@ -1,0 +1,205 @@
+{
+  "site": "redfin",
+  "siteKey": "18-redfin",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/18-redfin/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 1,
+  "selector": [
+    ".footer-bottom > span:nth-child(2)"
+  ],
+  "html": "<span>All properties, people, and roles are fictional.</span>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#70797f",
+          "bgColor": "#111f29",
+          "contrastRatio": 3.77,
+          "fontSize": "8.3pt (11px)",
+          "fontWeight": "normal",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<footer class=\"site-footer\">",
+            "target": [
+              "footer"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 3.77 (foreground color: #70797f, background color: #111f29, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/18-redfin/axe/attempt-1/raw.json",
+  "errorId": "ST0427",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+    "tag": "SPAN",
+    "text": "All properties, people, and roles are fictional.",
+    "html": "<span>All properties, people, and roles are fictional.</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1092.578125,
+      "y": 2750.859375,
+      "width": 247.421875,
+      "height": 13
+    },
+    "style": {
+      "color": "rgba(255, 255, 255, 0.4)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "page-width footer-bottom",
+      "text": "© 2026 Redfin demo experience\nAll properties, people, and roles are fictional.",
+      "html": "<div class=\"page-width footer-bottom\"><span>© 2026 Redfin demo experience</span><span>All properties, people, and roles are fictional.</span></div>"
+    },
+    "control": null,
+    "matchedStyles": []
+  },
+  "pageStructure": {
+    "title": "Redfin | Find Your Next Home",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Find the right home\nat the right price.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Your next move, all in one place",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Buy a home",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "Find a rental",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[3]/H3[1]",
+        "tag": "H3",
+        "text": "Plan your budget",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Real answers, just a few clicks away",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Homes worth a closer look",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[2]/ARTICLE[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "4872 Canyon View Dr",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[2]/ARTICLE[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "3126 Adams Ave",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[2]/ARTICLE[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "7425 Mesa College Dr #18",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "EXPLORE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "PLAN",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "COMPANY",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "redfin\nBuy\nRent\nSold\nMortgage\nRent budget\nFind an agent\nCareers\nSaved"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Buy\nRent\nSold\nMortgage\nRent budget\nFind an agent\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MOVE WITH CONFIDENCE\nFind the right home\nat the right price.\n\nSearch accurate, up-to-date homes for sale and rent across the country.\n\nBuy\nRent\nSold\nSearch\nEVERYTHING YOU NEED\nYour next move, all in one place\n\nExplore listings, run the numbers, or connect with a top local professional.\n\nBuy a home\n\nGet powerful filters, clear monthly estimates, and homes updated daily.\n\nSearch homes\nFind a rental\n\nCompare apartments and houses with the amenities and space you need.\n\nBrowse rentals\nPlan your budg"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "redfin\n\nA polished, independent demo built with synthetic listings for realistic search experiences.\n\nEXPLORE\nHomes for sale\nHomes for rent\nSold homes\nSaved homes\nPLAN\nMortgage calculator\nRent affordability\nFind an agent\nCOMPANY\nCareers\n Contact\n (800) 555-0120\n© 2026 Redfin demo experience\nAll properties, people, and roles are fictional."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Redfin home\":\n    - /url: /\n    - text: redfin\n  - navigation \"Primary navigation\":\n    - link \"Buy\":\n      - /url: /buy\n    - link \"Rent\":\n      - /url: /rent\n    - link \"Sold\":\n      - /url: /sold\n    - link \"Mortgage\":\n      - /url: /mortgage\n    - link \"Rent budget\":\n      - /url: /rent-affordability\n    - link \"Find an agent\":\n      - /url: /agents\n    - link \"Careers\":\n      - /url: /careers\n  - link \"0 saved homes\":\n    - /url: /saved-homes\n    - text: Saved\n- main:\n  - text: Move with confidence\n  - heading \"Find the right home at the right price.\" [level=1]\n  - paragraph: Search accurate, up-to-date homes for sale and rent across the country.\n  - group \"Search type\":\n    - button \"Buy\" [pressed]\n    - button \"Rent\"\n    - button \"Sold\"\n  - textbox \"City, neighborhood, or ZIP\"\n  - button \"Search\"\n  - text: Everything you need\n  - heading \"Your next move, all in one place\" [level=2]\n  - paragraph: Explore listings, run the numbers, or connect with a top local professional.\n  - link \"Buy a home Get powerful filters, clear monthly estimates, and homes updated daily. Search homes\":\n    - /url: /buy\n    - heading \"Buy a home\" [level=3]\n    - paragraph: Get powerful filters, clear monthly estimates, and homes updated daily.\n    - text: Search homes\n  - link \"Find a rental Compare apartments and houses with the amenities and space you need. Browse rentals\":\n    - /url: /rent\n    - heading \"Find a rental\" [level=3]\n    - paragraph: Compare apartments and houses with the amenities and space you need.\n    - text: Browse rentals\n  - link \"Plan your budget Estimate a monthly mortgage with clear principal, tax, insurance, and term controls. Open mortgage calculator\":\n    - /url: /mortgage\n    - heading \"Plan your budget\" [level=3]\n    - paragraph: Estimate a monthly mortgage with clear principal, tax, insurance, and term controls.\n    - text: Open mortgage calculator\n  - text: Start with a popular search\n  - heading \"Real answers, just a few clicks away\" [level=2]\n  - paragraph: These ready-made searches demonstrate precise filters, sorting, and realistic local results.\n  - link \"San Diego homes 3+ beds under $1M ›\":\n    - /url: /buy?q=San%20Diego&beds=3&maxPrice=1000000\n  - link \"Rentals in 85747 3+ beds, lowest price ›\":\n    - /url: /rent?q=85747&beds=3&sort=price-asc\n  - link \"New York condos 1 bed, 1 bath ›\":\n    - /url: /buy?q=New%20York&beds=1&baths=1&type=Condo&sort=price-asc\n  - link \"St. Augustine agents Premier local experts ›\":\n    - /url: /agents?q=St%20Augustine%2C%20FL&premier=1\n  - text: Fresh on the market\n  - heading \"Homes worth a closer look\" [level=2]\n  - link \"View all homes\":\n    - /url: /buy\n  - article:\n    - img \"House at 4872 Canyon View Dr\"\n    - text: For sale\n    - button \"Save 4872 Canyon View Dr\"\n    - strong: $799,000\n    - text: Est. $5,448/mo 3 bd 2 ba 1,480 sq ft\n    - heading \"4872 Canyon View Dr\" [level=3]\n    - paragraph: Clairemont · San Diego, CA 92117\n    - text: Canyon view Solar\n    - link \"View details\":\n      - /url: /property/sd-canyon-house\n  - article:\n    - img \"House at 3126 Adams Ave\"\n    - text: For sale\n    - button \"Save 3126 Adams Ave\"\n    - strong: $925,000\n    - text: Est. $6,275/mo 4 bd 2.5 ba 1,785 sq ft\n    - heading \"3126 Adams Ave\" [level=3]\n    - paragraph: Normal Heights · San Diego, CA 92116\n    - text: Guest suite Walkable\n    - link \"View details\":\n      - /url: /property/sd-adams-house\n  - article:\n    - 'img \"Townhouse at 7425 Mesa College Dr #18\"'\n    - text: For sale\n    - 'button \"Save 7425 Mesa College Dr #18\"'\n    - strong: $879,000\n    - text: Est. $5,998/mo 3 bd 2.5 ba 1,610 sq ft\n    - 'heading \"7425 Mesa College Dr #18\" [level=3]'\n    - paragraph: Linda Vista · San Diego, CA 92111\n    - text: Community pool Two-car garage\n    - link \"View details\":\n      - /url: /property/sd-mesa-townhome\n- contentinfo:\n  - link \"redfin\":\n    - /url: /\n  - paragraph: A polished, independent demo built with synthetic listings for realistic search experiences.\n  - heading \"Explore\" [level=3]\n  - link \"Homes for sale\":\n    - /url: /buy\n  - link \"Homes for rent\":\n    - /url: /rent\n  - link \"Sold homes\":\n    - /url: /sold\n  - link \"Saved homes\":\n    - /url: /saved-homes\n  - heading \"Plan\" [level=3]\n  - link \"Mortgage calculator\":\n    - /url: /mortgage\n  - link \"Rent affordability\":\n    - /url: /rent-affordability\n  - link \"Find an agent\":\n    - /url: /agents\n  - heading \"Company\" [level=3]\n  - link \"Careers\":\n    - /url: /careers\n  - link \"Contact\":\n    - /url: mailto:hello@example.com\n  - link \"(800) 555-0120\":\n    - /url: tel:+18005550120\n  - text: © 2026 Redfin demo experience All properties, people, and roles are fictional."
+  },
+  "sourceSnippets": []
+}

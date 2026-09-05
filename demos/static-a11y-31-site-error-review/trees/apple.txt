@@ -1,0 +1,111 @@
+- banner:
+  - navigation "Global navigation":
+    - link "Apple home":
+      - /url: /
+      - text: ●
+    - link "Store":
+      - /url: /store
+    - link "Mac":
+      - /url: /mac
+    - link "iPad":
+      - /url: /ipad
+    - link "Watch":
+      - /url: /watch
+    - link "AirPods":
+      - /url: /airpods
+    - link "TV & Home":
+      - /url: /homepod-mini
+    - link "Support":
+      - /url: /support
+    - button "Search Apple"
+    - link "Shopping bag with 0 items":
+      - /url: /bag
+- main:
+  - text: Get 3% Daily Cash back with Apple Card.
+  - link "Shop Apple":
+    - /url: /store
+  - paragraph: New
+  - heading "iPad Pro" [level=1]
+  - heading "Unbelievably thin. Incredibly powerful." [level=2]
+  - paragraph: Meet the stunning Ultra Retina XDR display and the mighty M4 chip.
+  - link "Learn more":
+    - /url: /ipad-pro
+  - link "Explore iPad":
+    - /url: /ipad
+  - img "iPad Pro with vivid purple display": PRO
+  - paragraph: MacBook Air
+  - heading "Sky blue. Sky high performance." [level=2]
+  - paragraph: Supercharged by M4. Up to 18 hours of battery life.
+  - link "Tech specs":
+    - /url: /macbook-air/specs
+  - link "Explore Mac":
+    - /url: /mac
+  - img "Sky blue MacBook Air": Air
+  - article:
+    - paragraph: HomePod mini
+    - heading "Big sound. Small speaker." [level=2]
+    - paragraph: Just $99
+    - link "Learn more":
+      - /url: /homepod-mini
+    - img "Orange HomePod mini"
+  - article:
+    - paragraph: Apple Watch Ultra 3
+    - heading "Adventure lives here." [level=2]
+    - paragraph: Rugged, capable, and ready for more.
+    - link "Learn more":
+      - /url: /watch-ultra
+    - link "Compare":
+      - /url: /watch
+    - img "Apple Watch Ultra": 10:09 MON 16
+  - article:
+    - paragraph: AirPods
+    - heading "Lost one? Find it." [level=2]
+    - paragraph: See how Find My helps bring your AirPods back.
+    - link "Find lost AirPods":
+      - /url: /support/airpods/find
+    - img "AirPods with location signal"
+  - article:
+    - paragraph: Apple Store
+    - heading "Come see what’s new." [level=2]
+    - paragraph: Find a nearby store and check tomorrow’s hours.
+    - link "Find a Store":
+      - /url: /stores
+    - text: hello
+  - paragraph: Need a hand?
+  - heading "Orders, repairs, and expert support." [level=2]
+  - link "Check order status":
+    - /url: /order-status
+  - link "Check repair status":
+    - /url: /repair-status
+  - link "Visit Support":
+    - /url: /support
+- contentinfo:
+  - paragraph: This is a polished demonstration storefront. Product, order, store, and repair data are synthetic.
+  - heading "Shop and Learn" [level=3]
+  - link "Store":
+    - /url: /store
+  - link "Mac":
+    - /url: /mac
+  - link "iPad":
+    - /url: /ipad
+  - link "Watch":
+    - /url: /watch
+  - link "HomePod":
+    - /url: /homepod-mini
+  - heading "Apple Store" [level=3]
+  - link "Find a Store":
+    - /url: /stores
+  - link "Order Status":
+    - /url: /order-status
+  - link "Shopping Bag":
+    - /url: /bag
+  - heading "For Support" [level=3]
+  - link "Find Lost AirPods":
+    - /url: /support/airpods/find
+  - link "Repair Status":
+    - /url: /repair-status
+  - link "Apple Support":
+    - /url: /support
+  - text: Copyright © 2026 Apple Demo. All rights reserved.
+  - link "Privacy & support":
+    - /url: /support

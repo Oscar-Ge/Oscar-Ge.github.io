@@ -1,0 +1,155 @@
+{
+  "site": "soundcloud",
+  "siteKey": "14-soundcloud",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/14-soundcloud/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 7,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/SPAN[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/SPAN[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/14-soundcloud/wave/attempt-1/raw.json",
+  "errorId": "ST0268",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/SPAN[2]",
+    "tag": "SPAN",
+    "text": "MC",
+    "html": "<span class=\"art-initials\">MC</span>",
+    "class": "art-initials",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 45.578125,
+      "y": 870,
+      "width": 14.5625,
+      "height": 11
+    },
+    "style": {
+      "color": "rgb(119, 119, 119)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10px",
+      "fontWeight": "900",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": "Audio player",
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "art-cover art-tiny",
+      "text": "MC",
+      "html": "<div class=\"art-cover art-tiny\" aria-hidden=\"true\" style=\"--art-color: #7547d8;\"><span class=\"art-glow\"></span><svg data-prefix=\"fas\" data-icon=\"music\" class=\"svg-inline--fa fa-music\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M468 7c7.6 6.1 12 15.3 12 25l0 304c0 44.2-43 80-96 80s-96-35.8-96-80 43-80 96-80c11.2 0 22 1.6 32 4.6l0-116.7-224 49.8 0 206.3c0 44.2-43 80-96 80s-96-35.8-96-80 43-80 96-80c11.2 0 22 1.6 32 4.6L128 96c0-15 10.4-28 25.1-31.2l288-64c9.5-2.1 19.4 .2 27 6.3z\"></path></svg><span class=\"art-initials\">MC</span></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".art-initials",
+        "declarations": {
+          "font-size": "17px",
+          "font-weight": "900"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:34271/assets/index-PGMzDXyd.css",
+        "selector": ".player-track span",
+        "declarations": {
+          "color": "rgb(119, 119, 119)",
+          "font-size": "10px"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "SoundCloud — Hear what’s next",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Discover what’s next in music.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Made for your moment",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find your frequency",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Creators to follow",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "The tracks shaping culture right now.",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "SOUNDCLOUD\nHome\nFeed\nCharts\nLibrary\nSearch SoundCloud\nFor Artists\nAR"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Home\nFeed\nCharts\nLibrary"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR SOUND, EVERYWHERE\nDiscover what’s next in music.\n\nFresh tracks, cult favorites and independent voices—all in one place.\n\nExplore trending\nBrowse charts\nSTART HERE\nMade for your moment\nSee what’s trending \nUG\nALBUM\nUltimate Game Mix: Level Up\n\nGameWave Collective\n\n#Gaming\n#Electronics\n Like\n Repost\nRC\nPLAYLIST\nRock Classics Recharged\n\nSoundCloud Rock\n\n#Rock\n Like\n Repost\nEA\nPLAYLIST\nElectronics After Dark\n\nPulse Selects\n\n#Electronics\n Like\n Repost\nEXPLORE BY MOOD\nFind your frequency\nChill\nRo"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": "Audio player",
+        "text": "MC\nMidnight City Lights\nLunar Arcade\n0:00\n4:08\nNext up"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"SoundCloud home\":\n    - /url: /\n    - text: SOUNDCLOUD\n  - navigation \"Primary navigation\":\n    - link \"Home\":\n      - /url: /\n    - link \"Feed\":\n      - /url: /feed\n    - link \"Charts\":\n      - /url: /charts\n    - link \"Library\":\n      - /url: /library/likes\n  - search:\n    - text: Search SoundCloud\n    - textbox \"Search SoundCloud\":\n      - /placeholder: Search artists, tracks, playlists\n    - button \"Submit search\"\n  - link \"For Artists\":\n    - /url: /plans\n  - link \"Open your library\":\n    - /url: /library/likes\n    - text: AR\n- main:\n  - text: YOUR SOUND, EVERYWHERE\n  - heading \"Discover what’s next in music.\" [level=1]\n  - paragraph: Fresh tracks, cult favorites and independent voices—all in one place.\n  - link \"Explore trending\":\n    - /url: /trending\n  - link \"Browse charts\":\n    - /url: /charts\n  - text: START HERE\n  - heading \"Made for your moment\" [level=2]\n  - link \"See what’s trending\":\n    - /url: /trending\n  - article:\n    - 'button \"Play Ultimate Game Mix: Level Up\"'\n    - text: Album\n    - 'link \"Ultimate Game Mix: Level Up\"':\n      - /url: /playlist/ultimate-game-mix\n    - paragraph: GameWave Collective\n    - text: \"#Gaming #Electronics\"\n    - 'button \"Like Ultimate Game Mix: Level Up\"': Like\n    - 'button \"Repost Ultimate Game Mix: Level Up\"': Repost\n    - 'button \"Add Ultimate Game Mix: Level Up to Next up\"'\n  - article:\n    - button \"Play Rock Classics Recharged\"\n    - text: Playlist\n    - link \"Rock Classics Recharged\":\n      - /url: /playlist/rock-revival\n    - paragraph: SoundCloud Rock\n    - text: \"#Rock\"\n    - button \"Like Rock Classics Recharged\": Like\n    - button \"Repost Rock Classics Recharged\": Repost\n    - button \"Add Rock Classics Recharged to Next up\"\n  - article:\n    - button \"Play Electronics After Dark\"\n    - text: Playlist\n    - link \"Electronics After Dark\":\n      - /url: /playlist/electronics-after-dark\n    - paragraph: Pulse Selects\n    - text: \"#Electronics\"\n    - button \"Like Electronics After Dark\": Like\n    - button \"Repost Electronics After Dark\": Repost\n    - button \"Add Electronics After Dark to Next up\"\n  - text: EXPLORE BY MOOD\n  - heading \"Find your frequency\" [level=2]\n  - group \"Music categories\":\n    - button \"Chill\"\n    - button \"Rock\"\n    - button \"Pop\"\n    - button \"Electronic\"\n    - button \"Hip-hop & Rap\"\n    - button \"Indian classical\"\n  - text: ARTISTS IN CHILL\n  - heading \"Creators to follow\" [level=3]\n  - paragraph: Tap follow to bring new releases directly into your feed.\n  - article:\n    - link \"MC\":\n      - /url: /artist/maya-cove\n    - link \"Maya Cove\":\n      - /url: /artist/maya-cove\n    - text: Chill · 42.8K followers\n    - button \"Follow\"\n  - text: SOUNDCLOUD CHARTS\n  - heading \"The tracks shaping culture right now.\" [level=2]\n  - paragraph: See what listeners are playing, sharing and reposting worldwide.\n  - link \"Open Top 50\":\n    - /url: /charts\n- contentinfo \"Audio player\":\n  - strong: Midnight City Lights\n  - text: Lunar Arcade\n  - button \"Like current track\"\n  - button \"Previous track\"\n  - button \"Play\"\n  - button \"Next track\"\n  - text: 0:00 4:08\n  - button \"Mute\"\n  - button \"Next up\""
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/14-soundcloud/dist/assets/index-dbDU6cjI.js",
+      "offset": 328230,
+      "match": "className:\"art-initials\"",
+      "context": ",\"0\")}`}function bn(n){return n>=1e6?`${(n/1e6).toFixed(n>=1e7?0:1)}M`:n>=1e3?`${(n/1e3).toFixed(n>=1e5?0:1)}K`:String(n)}function C6(n){return n.toLowerCase().trim().replace(/[^a-z0-9]+/g,\"-\").replace(/(^-|-$)/g,\"\")}function tl({title:n,color:r,size:c=\"medium\",icon:s=jv}){return o.jsxs(\"div\",{className:`art-cover art-${c}`,style:{\"--art-color\":r},\"aria-hidden\":\"true\",children:[o.jsx(\"span\",{className:\"art-glow\"}),o.jsx(J,{icon:s}),o.jsx(\"span\",{className:\"art-initials\",children:n.split(\" \").slice(0,2).map(f=>f[0]).join(\"\")})]})}function z6(){const[n,r]=mn(\"sc-liked-items\",[\"soft-hours\",\"come-as-you-are\"]),[c,s]=mn(\"sc-following\",[]),[f,m]=mn(\"sc-reposted\",[]),[h,p]=mn(\"sc-history\",[\"midnight-city-lights\",\"soft-hours\",\"ocean-motion\",\"neon-skyline\"]),[y,g]=mn(\"sc-queue\",[\"midnight-city-lights\",\"soft-hours\"]),[j,b]=mn(\"sc-user-playlists\",[{id:\"night-drives-user\",title:\"Night Drives\",isPrivate:!1,tracks:[\"midnight"
+    }
+  ]
+}

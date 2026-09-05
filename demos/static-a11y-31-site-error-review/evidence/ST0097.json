@@ -1,0 +1,230 @@
+{
+  "site": "macys",
+  "siteKey": "04-macys",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 0,
+  "selector": [
+    ".promo-bar"
+  ],
+  "html": "<div class=\"promo-bar\"><span>Free shipping at $25</span><span class=\"promo-divider\">|</span><span>Store pickup available</span><a href=\"/shop/clearance\" data-discover=\"true\">Shop Clearance</a></div>",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/04-macys/axe/attempt-1/raw.json",
+  "errorId": "ST0097",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]",
+    "tag": "DIV",
+    "text": "Free shipping at $25\n|\nStore pickup available\nShop Clearance",
+    "html": "<div class=\"promo-bar\"><span>Free shipping at $25</span><span class=\"promo-divider\">|</span><span>Store pickup available</span><a href=\"/shop/clearance\" data-discover=\"true\">Shop Clearance</a></div>",
+    "class": "promo-bar",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 34
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(23, 23, 23)",
+      "fontSize": "12.16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "app",
+      "text": "Free shipping at $25\n|\nStore pickup available\nShop Clearance\nmacy's\nSearch products\nLists\nBag\nMen\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards\nTHE BIG STYLE EVENT\nGood finds.\nGreat prices.\n\nFresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n\nShop Trending\nExplore Clearance\nLimited-time values on select styles. Prices as marked.\nUP TO\n60%\nOFF\n New arrivals every week\nFree shipping at $25\nFree returns by mail or in store\nSecure checkout for every order\nSHOP YOUR WAY\nFind exactly what you need\nSearch all products \nSPECIAL OCCASION\nEvening bags under $50\nShop now \nTOP-RATED\nBest-selling building toys\nSho",
+      "html": "<div class=\"app\"><div class=\"promo-bar\"><span>Free shipping at $25</span><span class=\"promo-divider\">|</span><span>Store pickup available</span><a href=\"/shop/clearance\" data-discover=\"true\">Shop Clearance</a></div><header class=\"site-header\"><div class=\"header-main page-width\"><button class=\"icon-button mobile-menu-button\" aria-label=\"Toggle department menu\"><svg data-prefix=\"fas\" data-icon=\"bars\" class=\"svg-inline--fa fa-bars\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z\"></path></svg></button><a class=\"brand\" aria-label=\"Macy's home\" href=\"/\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z\"></path></svg><span>macy's</span></a><form class=\"header-search\" role=\"search\"><label class=\"sr-only\" for=\"site-search\">Search products</label><input id=\"site-search\" placeholder=\"Search products, brands &amp; more\" value=\"\"><button type=\"submit\" aria-label=\"Submit search\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg></button></form><div class=\"header-actions\"><a class=\"\" href=\"/lists\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"list\" class=\"svg-inline--fa fa-list\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z\"></path></svg><span>Lists</span></a><a class=\"bag-link\" href=\"/bag\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"bag-shopping\" class=\"svg-inline--fa fa-bag-shopping\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z\"></path></svg><span>Bag</span></a></div></div><nav class=\"department-nav \" aria-label=\"Shop departments\"><div class=\"page-width department-nav-inner\"><a class=\"\" href=\"/shop/men\" data-discover=\"true\">Men</a><a class=\"\" href=\"/shop/kids\" data-discover=\"true\">Kids &amp; Baby</a><a class=\"\" href=\"/shop/handbags\" data-discover=\"true\">Handbags</a><a class=\"\" href=\"/shop/toys\" data-discover=\"true\">Toys</a><a class=\"\" href=\"/shop/trending\" data-discover=\"true\">Trending</a><a class=\"\" href=\"/shop/furniture\" data-discover=\"true\">Home</a><a class=\"\" href=\"/shop/jewelry\" data-discover=\"true\">Jewelry</a><a class=\"\" href=\"/shop/kitchen\" data-discover=\"true\">Kitchen</a><a class=\"\" href=\"/shop/wine\" data-discover=\"true\">Wine</a><a class=\"\" href=\"/shop/shoes\" data-discover=\"true\">Shoes</a><a class=\"\" href=\"/shop/clearance\" data-discover=\"true\">Clearance</a><a class=\"sale-nav\" href=\"/gift-cards\" data-discover=\"true\">Gift Cards</a></div></nav><div class=\"mobile-search page-width\"><form class=\"header-search\" role=\"search\"><label class=\"sr-only\" for=\"mobile-site-search\">Search products</label><input id=\"mobile-site-search\" placeholder=\"Search Macy's\" value=\"\"><button type=\"submit\" aria-label=\"Submit mobile search\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg></button></form></div></header><main><section class=\"hero page-width\"><div class=\"hero-copy\"><span class=\"eyebrow\">THE BIG STYLE EVENT</span><h1>Good finds.<br>Great prices.</h1><p>Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.</p><div class=\"button-row\"><a class=\"button button-dark\" href=\"/shop/trending\" data-discover=\"true\">Shop Trending</a><a class=\"button button-light\" href=\"/shop/clearance\" data-discover=\"true\">Explore Clearance</a></div><small>Limited-time values on select styles. Prices as marked.</small></div><div class=\"hero-art\" aria-label=\"Seasonal style collage\"><div class=\"hero-circle hero-circle-one\"><span>up to</span><strong>60%</strong><span>off</span></div><img alt=\"New season fashion placeholder\" src=\"https://placehold.co/430x520/E8DDD5/222222?text=New+Season+Style\"><div class=\"hero-tag\"><svg data-prefix=\"fas\" data-icon=\"star\" class=\"svg-inline--fa fa-star\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:43699/assets/index-1Ei0oUn_.css",
+        "selector": ".promo-bar",
+        "declarations": {
+          "color": "rgb(255, 255, 255)",
+          "background": "var(--ink)",
+          "font-size": "0.76rem",
+          "display": "flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:43699/assets/index-1Ei0oUn_.css",
+        "selector": ".promo-bar",
+        "declarations": {
+          "font-size": "0.67rem"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Good finds.\nGreat prices.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Find exactly what you need",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Evening bags under $50",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Best-selling building toys",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Recliners at every price",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Engagement rings",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Trending: the workwear refresh",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Black & brown are better together.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Make every moment easier",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Create a searchable list",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Send an E-Gift Card",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Track an order",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[5]/DIV[2]/A[4]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Find a registry",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "CUSTOMER SERVICE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "GIFTS & EVENTS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "POPULAR SHOPS",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "macy's\nSearch products\nLists\nBag\nMen\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Shop departments",
+        "text": "Men\nKids & Baby\nHandbags\nToys\nTrending\nHome\nJewelry\nKitchen\nWine\nShoes\nClearance\nGift Cards"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "THE BIG STYLE EVENT\nGood finds.\nGreat prices.\n\nFresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n\nShop Trending\nExplore Clearance\nLimited-time values on select styles. Prices as marked.\nUP TO\n60%\nOFF\n New arrivals every week\nFree shipping at $25\nFree returns by mail or in store\nSecure checkout for every order\nSHOP YOUR WAY\nFind exactly what you need\nSearch all products \nSPECIAL OCCASION\nEvening bags under $50\nShop now \nTOP-RATED\nBest-selling bui"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "macy's\n\nGreat style, thoughtful gifts and memorable moments—all in one place.\n\nCUSTOMER SERVICE\nOrder Status\nShopping Bag\nMy Lists\nGIFTS & EVENTS\nE-Gift Cards\nWedding Registry\nGiftable Toys\nPOPULAR SHOPS\nTrending Now\nKitchen Sale\nClearance\n© 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+      }
+    ],
+    "axSnapshot": "- text: Free shipping at $25 | Store pickup available\n- link \"Shop Clearance\":\n  - /url: /shop/clearance\n- banner:\n  - link \"Macy's home\":\n    - /url: /\n    - text: macy's\n  - search:\n    - text: Search products\n    - textbox \"Search products\":\n      - /placeholder: Search products, brands & more\n    - button \"Submit search\"\n  - link \"Lists\":\n    - /url: /lists\n  - link \"Bag\":\n    - /url: /bag\n  - navigation \"Shop departments\":\n    - link \"Men\":\n      - /url: /shop/men\n    - link \"Kids & Baby\":\n      - /url: /shop/kids\n    - link \"Handbags\":\n      - /url: /shop/handbags\n    - link \"Toys\":\n      - /url: /shop/toys\n    - link \"Trending\":\n      - /url: /shop/trending\n    - link \"Home\":\n      - /url: /shop/furniture\n    - link \"Jewelry\":\n      - /url: /shop/jewelry\n    - link \"Kitchen\":\n      - /url: /shop/kitchen\n    - link \"Wine\":\n      - /url: /shop/wine\n    - link \"Shoes\":\n      - /url: /shop/shoes\n    - link \"Clearance\":\n      - /url: /shop/clearance\n    - link \"Gift Cards\":\n      - /url: /gift-cards\n- main:\n  - text: THE BIG STYLE EVENT\n  - heading \"Good finds. Great prices.\" [level=1]\n  - paragraph: Fresh-for-now fashion, home favorites and thoughtful gifts—curated to make shopping feel effortless.\n  - link \"Shop Trending\":\n    - /url: /shop/trending\n  - link \"Explore Clearance\":\n    - /url: /shop/clearance\n  - text: Limited-time values on select styles. Prices as marked. up to\n  - strong: 60%\n  - text: \"off\"\n  - img \"New season fashion placeholder\"\n  - text: New arrivals every week\n  - region \"Shopping benefits\":\n    - strong: Free shipping\n    - text: at $25\n    - strong: Free returns\n    - text: by mail or in store\n    - strong: Secure checkout\n    - text: for every order\n  - text: SHOP YOUR WAY\n  - heading \"Find exactly what you need\" [level=2]\n  - link \"Search all products\":\n    - /url: /search?q=best+sellers\n  - link \"Special occasion Evening bags under $50 Shop now\":\n    - /url: /shop/handbags\n    - text: Special occasion\n    - heading \"Evening bags under $50\" [level=3]\n    - text: Shop now\n  - link \"Top-rated Best-selling building toys Shop now\":\n    - /url: /shop/toys\n    - text: Top-rated\n    - heading \"Best-selling building toys\" [level=3]\n    - text: Shop now\n  - link \"Make it home Recliners at every price Shop now\":\n    - /url: /shop/furniture\n    - text: Make it home\n    - heading \"Recliners at every price\" [level=3]\n    - text: Shop now\n  - link \"Forever starts here Engagement rings Shop now\":\n    - /url: /shop/jewelry\n    - text: Forever starts here\n    - heading \"Engagement rings\" [level=3]\n    - text: Shop now\n  - text: THE EDIT\n  - 'heading \"Trending: the workwear refresh\" [level=2]'\n  - link \"View all trending\":\n    - /url: /shop/trending\n  - article:\n    - link \"Pleated-Neck Work Top View details\":\n      - /url: /product/black-work-top\n      - img \"Pleated-Neck Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Alfani\n    - link \"Pleated-Neck Work Top\":\n      - /url: /product/black-work-top\n    - strong: \"4.7\"\n    - text: (442) $29.99 $49.50 39% off\n    - paragraph: \"Color: Black\"\n    - link \"View Details\":\n      - /url: /product/black-work-top\n    - button \"Add to Bag\"\n  - article:\n    - link \"Satin Button-Cuff Work Top View details\":\n      - /url: /product/brown-work-top\n      - img \"Satin Button-Cuff Work Top\"\n      - text: View details\n    - text: Trending\n    - paragraph: Bar III\n    - link \"Satin Button-Cuff Work Top\":\n      - /url: /product/brown-work-top\n    - strong: \"4.8\"\n    - text: (318) $34.99 $59.50 41% off\n    - paragraph: \"Color: Brown\"\n    - link \"View Details\":\n      - /url: /product/brown-work-top\n    - button \"Add to Bag\"\n  - text: COLOR STORY\n  - heading \"Black & brown are better together.\" [level=3]\n  - paragraph: Build a polished work wardrobe with rich neutrals and softly tailored shapes.\n  - link \"Shop work tops\":\n    - /url: /shop/trending\n  - text: MORE WAYS TO SHOP\n  - heading \"Make every moment easier\" [level=2]\n  - link \"Create a searchable list Save room ideas, gifts and future favorites. My Lists\":\n    - /url: /lists\n    - heading \"Create a searchable list\" [level=3]\n    - paragraph: Save room ideas, gifts and future favorites.\n    - text: My Lists\n  - link \"Send an E-Gift Card Choose an amount and add a personal message. Send a gift\":\n    - /url: /gift-cards\n    - heading \"Send an E-Gift Card\" [level=3]\n    - paragraph: Choose an amount and add a personal message.\n    - text: Send a gift\n  - link \"Track an order Look up details with an order number and email. Order status\":\n    - /url: /order-status\n    - heading \"Track an order\" [level=3]\n    - paragraph: Look up details with an order number and email.\n    - text: Order status\n  - link \"Find a registry Search wedding registries by the registrant's name. Registry search\":\n    - /url: /registry\n    - heading \"Find a registry\" [level=3]\n    - paragraph: Search wedding registries by the registrant's name.\n    - text: Registry search\n- contentinfo:\n  - text: macy's\n  - paragraph: Great style, thoughtful gifts and memorable moments—all in one place.\n  - heading \"Customer Service\" [level=3]\n  - link \"Order Status\":\n    - /url: /order-status\n  - link \"Shopping Bag\":\n    - /url: /bag\n  - link \"My Lists\":\n    - /url: /lists\n  - heading \"Gifts & Events\" [level=3]\n  - link \"E-Gift Cards\":\n    - /url: /gift-cards\n  - link \"Wedding Registry\":\n    - /url: /registry\n  - link \"Giftable Toys\":\n    - /url: /shop/toys\n  - heading \"Popular Shops\" [level=3]\n  - link \"Trending Now\":\n    - /url: /shop/trending\n  - link \"Kitchen Sale\":\n    - /url: /shop/kitchen\n  - link \"Clearance\":\n    - /url: /shop/clearance\n  - text: © 2026 Macy's inspired storefront. Demo shopping experience with synthetic data."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/04-macys/dist/assets/index-egnyh-tu.js",
+      "offset": 327189,
+      "match": "className:\"promo-bar\"",
+      "context": "dren:Gt.format(n.originalPrice)}):null,c>0?o.jsxs(\"span\",{className:\"price-save\",children:[c,\"% off\"]}):null]})}function g4(){const n=ja();return N.useEffect(()=>{window.scrollTo({top:0,behavior:\"smooth\"})},[n.pathname]),null}function p4({bagCount:n}){const[u,c]=N.useState(\"\"),[s,f]=N.useState(!1),m=bo(),h=g=>{g.preventDefault();const p=u.trim();p&&(m(`/search?q=${encodeURIComponent(p)}`),f(!1))};return o.jsxs(o.Fragment,{children:[o.jsxs(\"div\",{className:\"promo-bar\",children:[o.jsx(\"span\",{children:\"Free shipping at $25\"}),o.jsx(\"span\",{className:\"promo-divider\",children:\"|\"}),o.jsx(\"span\",{children:\"Store pickup available\"}),o.jsx(ue,{to:\"/shop/clearance\",children:\"Shop Clearance\"})]}),o.jsxs(\"header\",{className:\"site-header\",children:[o.jsxs(\"div\",{className:\"header-main page-width\",children:[o.jsx(\"button\",{className:\"icon-button mobile-menu-button\",onClick:()=>f(g=>!g),\"aria-label\":\"Toggle department me"
+    }
+  ]
+}

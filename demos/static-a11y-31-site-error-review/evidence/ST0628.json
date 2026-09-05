@@ -1,0 +1,198 @@
+{
+  "site": "finance.yahoo",
+  "siteKey": "22-finance.yahoo",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/22-finance.yahoo/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 1,
+  "selector": [
+    ".market-ribbon"
+  ],
+  "html": "<div class=\"market-ribbon\">",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/22-finance.yahoo/axe/attempt-1/raw.json",
+  "errorId": "ST0628",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]",
+    "tag": "DIV",
+    "text": "S&P 500\n^GSPC\n6,449.80\n+0.31%\nDow 30\n^DJI\n45,092.81\n+0.08%\nNasdaq\n^IXIC\n21,622.98\n+0.14%\nRussell 2000\n^RUT\n2,286.52\n-0.16%\nBitcoin USD\nBTC-USD\n118,420.17\n+1.44%",
+    "html": "<div class=\"market-ribbon\"><div class=\"page-width ribbon-scroll\"><a class=\"ribbon-item\" href=\"/quote/%5EGSPC\" data-discover=\"true\"><span><strong>S&amp;P 500</strong><small>^GSPC</small></span><b>6,449.80</b><em class=\"positive\">+0.31%</em></a><a class=\"ribbon-item\" href=\"/quote/%5EDJI\" data-discover=\"true\"><span><strong>Dow 30</strong><small>^DJI</small></span><b>45,092.81</b><em class=\"positive\">+0.08%</em></a><a class=\"ribbon-item\" href=\"/quote/%5EIXIC\" data-discover=\"true\"><span><strong>Nasdaq</strong><small>^IXIC</small></span><b>21,622.98</b><em class=\"positive\">+0.14%</em></a><a class=\"ribbon-item\" href=\"/quote/%5ERUT\" data-discover=\"true\"><span><strong>Russell 2000</strong><small>^RUT</small></span><b>2,286.52</b><em class=\"negative\">-0.16%</em></a><a class=\"ribbon-item\" href=\"/quote/BTC-USD\" data-discover=\"true\"><span><strong>Bitcoin USD</strong><small>BTC-USD</small></span><b>118,420.17</b><em class=\"positive\">+1.44%</em></a></div></div>",
+    "class": "market-ribbon",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 143,
+      "width": 1440,
+      "height": 43
+    },
+    "style": {
+      "color": "rgb(29, 30, 32)",
+      "background": "rgb(250, 250, 250)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "app-shell",
+      "text": "Yahoo\nMail\nNews\nFinance\nSports\nMore\nU.S. markets closed\nyahoo!\nfinance\nSearch\n Sign in\nMy Portfolio\nMarkets\nNews\nScreeners\nCalendar\nSmall Business\nFinance Plus\n1 followed\nS&P 500\n^GSPC\n6,449.80\n+0.31%\nDow 30\n^DJI\n45,092.81\n+0.08%\nNasdaq\n^IXIC\n21,622.98\n+0.14%\nRussell 2000\n^RUT\n2,286.52\n-0.16%\nBitcoin USD\nBTC-USD\n118,420.17\n+1.44%\nMARKETS • AUGUST 16, 2026\nYour money, made clearer.\n\nTrack what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.\n\nExplore markets\nMarket snapshot\nClosed\nS&P 500\n^GSPC\n6,449.80\n+0.31%\nDow 30\n^DJI\n45,092.81\n+0.08%\nNasdaq\n^IXIC\n21,622.98\n+0.14%\nDISCOVER\nExplore the market\nMost Active Penny Stocks\n\nHigh-volume stocks",
+      "html": "<div class=\"app-shell\"><div class=\"utility-bar\"><div class=\"utility-inner\"><span>Yahoo</span><span>Mail</span><span>News</span><strong>Finance</strong><span>Sports</span><span>More</span><span class=\"utility-spacer\"></span><span>U.S. markets closed</span></div></div><header class=\"site-header\"><div class=\"header-main page-width\"><button class=\"mobile-menu-button\" aria-label=\"Toggle navigation\"><svg data-prefix=\"fas\" data-icon=\"bars\" class=\"svg-inline--fa fa-bars\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z\"></path></svg></button><a class=\"logo-link\" href=\"/\" data-discover=\"true\"><span class=\"brand \" aria-label=\"Yahoo Finance\"><span>yahoo!</span><strong>finance</strong></span></a><form class=\"search-wrap\" role=\"search\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass search-icon\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg><input aria-label=\"Search for news, symbols or companies\" placeholder=\"Search for news, symbols or companies\" value=\"\"><button type=\"submit\" aria-label=\"Search\">Search</button></form><button class=\"icon-button\" aria-label=\"Notifications\"><svg data-prefix=\"fas\" data-icon=\"bell\" class=\"svg-inline--fa fa-bell\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 0c-17.7 0-32 14.3-32 32l0 3.2C119 50 64 114.6 64 192l0 21.7c0 48.1-16.4 94.8-46.4 132.4L7.8 358.3C2.7 364.6 0 372.4 0 380.5 0 400.1 15.9 416 35.5 416l376.9 0c19.6 0 35.5-15.9 35.5-35.5 0-8.1-2.7-15.9-7.8-22.2l-9.8-12.2C400.4 308.5 384 261.8 384 213.7l0-21.7c0-77.4-55-142-128-156.8l0-3.2c0-17.7-14.3-32-32-32zM162 464c7.1 27.6 32.2 48 62 48s54.9-20.4 62-48l-124 0z\"></path></svg></button><button class=\"sign-in-button\"><svg data-prefix=\"fas\" data-icon=\"user\" class=\"svg-inline--fa fa-user\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z\"></path></svg> Sign in</button></div><nav class=\"primary-nav \"><div class=\"page-width nav-inner\"><a class=\"\" href=\"/portfolio\" data-discover=\"true\">My Portfolio</a><a class=\"\" href=\"/markets\" data-discover=\"true\">Markets</a><a class=\"\" href=\"/news\" data-discover=\"true\">News</a><a class=\"\" href=\"/screener/equity\" data-discover=\"true\">Screeners</a><a class=\"\" href=\"/calendar/ipo\" data-discover=\"true\">Calendar</a><a class=\"\" href=\"/personal-finance/small-business-tax-calendar\" data-discover=\"true\">Small Business</a><a class=\"\" href=\"/plus\" data-discover=\"true\">Finance Plus</a><span class=\"watch-count\">1 followed</span></div></nav></header><div class=\"market-ribbon\"><div class=\"page-width ribbon-scroll\"><a class=\"ribbon-item\" href=\"/quote/%5EGSPC\" data-discover=\"true\"><span><strong>S&amp;P 500</strong><small>^GSPC</small></span><b>6,449.80</b><em class=\"positive\">+0.31%</em></a><a class=\"ribbon-item\" href=\"/quote/%5EDJI\" data-discover=\"true\"><span><strong>Dow 30</strong><small>^DJI</small></span><b>45,092.81</b><em class=\"positive\">+0.08%</em></a><a class=\"ribbon-item\" href=\"/quote/%5EIXIC\" data-discover=\"true\"><span><strong>Nasdaq</strong><small>^IXIC</small></span><b>21,622.98</b><em class=\"positive\">+0.14%</em></a><a class=\"ribbon-item\" href=\"/quote/%5ERUT\" data-discover=\"true\"><span><strong>Russell 2000</strong><small>^RUT</small></span><b>2,286.52</b><em class=\"negative\">-0.16%</em></a><a class=\"ribbon-item\" href=\"/quote/BTC-USD\" data-discover=\"true\"><span><strong>Bitcoin USD</strong><small>BTC-USD</small></span><b>118,420.17</b><em class=\"positive\">+1.44%</em></a></div></div><main><div class=\"page-width home-page\"><section class=\"market-hero\"><div><div class=\"eyebrow\">MARKETS • AUGUST 16, 2026</div><h1>Your money, made clearer.</h1><p>Track what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.</p><button class=\"primary-button\">Explore markets <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></button></div><div class=\"hero-market-card\"><div class=\"card-heading\"><span>Market snapshot</span><span class=\"market-status\">Closed</span></div><button><span><strong>S&amp;P 500</strong><small>^GSPC</small></span><b>6,449.80</b><em class=\"positive\">+0.31%</em></button><button><span><strong>Dow 30</strong><small>^DJI</small></span><b>45,092.81</b><em class=\"positive\">+0.08%</em></button><button><span><strong>Nasdaq</strong><small>^IXIC</small></span><b>21,622.98</b><em class=\"positive\">+0.14%</em></button></div></section><div class=\"content-grid\"><div><section class=\"module\"><div class=\"section-title-row\"><div><span class=\"eyebrow\">DISCOVER</span><h2>Explore the market</h2></div></div><div class=\"explore-grid\"><a class=\"feature-card\" href=\"/markets/stocks/most-active-penny-stocks\" data-discover=\"true\"><span class=\"feature-icon\"><svg data-prefix=\"fas\" data-icon=\"bolt\" class=\"svg-inline--fa fa-bolt\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z\"></path></svg></span><strong>Most Active Penny Stocks</strong><p>High-volume stocks trading below $10.</p><span class=\"feature-link\">Explore <svg data-prefix=\"fas\" data-icon=\"chevron-right\" class=\"svg-inline--fa fa-chevron-right\" role=\"img\" viewBox=\"0 0 320 512\" a"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34713/assets/index-Cd5tR9hz.css",
+        "selector": ".market-ribbon",
+        "declarations": {
+          "background": "rgb(250, 250, 250)",
+          "background-color": "rgb(250, 250, 250)"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "Yahoo Finance — Stock Market Live, Quotes & News",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Your money, made clearer.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Explore the market",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What investors are watching",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Top stories",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Stocks edge higher as investors weigh retail strength and rate path",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Bitcoin steadies above $118,000 as institutional inflows accelerate",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Chip stocks rise on stronger data-center spending forecast",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/A[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Five money moves to make before the end of summer",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "My watchlist",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[2]/H3[1]",
+        "tag": "H3",
+        "text": "Invest with more confidence.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]/SECTION[3]/H3[1]",
+        "tag": "H3",
+        "text": "Stay ahead of tax deadlines",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "yahoo!\nfinance\nSearch\n Sign in\nMy Portfolio\nMarkets\nNews\nScreeners\nCalendar\nSmall Business\nFinance Plus\n1 followed"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": null,
+        "text": "My Portfolio\nMarkets\nNews\nScreeners\nCalendar\nSmall Business\nFinance Plus\n1 followed"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MARKETS • AUGUST 16, 2026\nYour money, made clearer.\n\nTrack what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.\n\nExplore markets\nMarket snapshot\nClosed\nS&P 500\n^GSPC\n6,449.80\n+0.31%\nDow 30\n^DJI\n45,092.81\n+0.08%\nNasdaq\n^IXIC\n21,622.98\n+0.14%\nDISCOVER\nExplore the market\nMost Active Penny Stocks\n\nHigh-volume stocks trading below $10.\n\nExplore \nIPO Calendar\n\nUpcoming and recently priced listings.\n\nExplore \nHigh-Yield Dividend Stocks\n\nA curated i"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": null,
+        "text": "My watchlist\nEdit\nAAPL\nApple Inc.\n226.34\n+1.25%\nMSFT\nMicrosoft Corporation\n521.44\n+0.93%\nGC=F\nGold Dec 26\n2,548.70\n+0.72%\n YAHOO FINANCE PLUS\nInvest with more confidence.\n\nUnlock advanced charts, enhanced data, and expert insights.\n\nCompare plans\nSMALL BUSINESS\nStay ahead of tax deadlines\n\nSee important federal tax dates and practical filing reminders for 2026.\n\nView tax calendar "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "yahoo!\nfinance\n\nMarket insights and tools for every investor.\n\nAbout\nHelp\nPrivacy\nTerms\nDisclaimer\n© 2026 Yahoo Finance inspired demo. All data is synthetic."
+      }
+    ],
+    "axSnapshot": "- text: Yahoo Mail News\n- strong: Finance\n- text: Sports More U.S. markets closed\n- banner:\n  - link \"Yahoo Finance\":\n    - /url: /\n    - text: yahoo!\n    - strong: finance\n  - search:\n    - textbox \"Search for news, symbols or companies\"\n    - button \"Search\"\n  - button \"Notifications\"\n  - button \"Sign in\"\n  - navigation:\n    - link \"My Portfolio\":\n      - /url: /portfolio\n    - link \"Markets\":\n      - /url: /markets\n    - link \"News\":\n      - /url: /news\n    - link \"Screeners\":\n      - /url: /screener/equity\n    - link \"Calendar\":\n      - /url: /calendar/ipo\n    - link \"Small Business\":\n      - /url: /personal-finance/small-business-tax-calendar\n    - link \"Finance Plus\":\n      - /url: /plus\n    - text: 1 followed\n- link \"S&P 500 ^GSPC 6,449.80 +0.31%\":\n  - /url: /quote/%5EGSPC\n  - strong: S&P 500\n  - text: ^GSPC 6,449.80\n  - emphasis: +0.31%\n- link \"Dow 30 ^DJI 45,092.81 +0.08%\":\n  - /url: /quote/%5EDJI\n  - strong: Dow 30\n  - text: ^DJI 45,092.81\n  - emphasis: +0.08%\n- link \"Nasdaq ^IXIC 21,622.98 +0.14%\":\n  - /url: /quote/%5EIXIC\n  - strong: Nasdaq\n  - text: ^IXIC 21,622.98\n  - emphasis: +0.14%\n- link \"Russell 2000 ^RUT 2,286.52 -0.16%\":\n  - /url: /quote/%5ERUT\n  - strong: Russell 2000\n  - text: ^RUT 2,286.52\n  - emphasis: \"-0.16%\"\n- link \"Bitcoin USD BTC-USD 118,420.17 +1.44%\":\n  - /url: /quote/BTC-USD\n  - strong: Bitcoin USD\n  - text: BTC-USD 118,420.17\n  - emphasis: +1.44%\n- main:\n  - text: MARKETS • AUGUST 16, 2026\n  - heading \"Your money, made clearer.\" [level=1]\n  - paragraph: Track what moves the market with real-time-style quotes, thoughtful analysis, and tools built for every investor.\n  - button \"Explore markets\"\n  - text: Market snapshot Closed\n  - button \"S&P 500 ^GSPC 6,449.80 +0.31%\":\n    - strong: S&P 500\n    - text: ^GSPC 6,449.80\n    - emphasis: +0.31%\n  - button \"Dow 30 ^DJI 45,092.81 +0.08%\":\n    - strong: Dow 30\n    - text: ^DJI 45,092.81\n    - emphasis: +0.08%\n  - button \"Nasdaq ^IXIC 21,622.98 +0.14%\":\n    - strong: Nasdaq\n    - text: ^IXIC 21,622.98\n    - emphasis: +0.14%\n  - text: DISCOVER\n  - heading \"Explore the market\" [level=2]\n  - link \"Most Active Penny Stocks High-volume stocks trading below $10. Explore\":\n    - /url: /markets/stocks/most-active-penny-stocks\n    - strong: Most Active Penny Stocks\n    - paragraph: High-volume stocks trading below $10.\n    - text: Explore\n  - link \"IPO Calendar Upcoming and recently priced listings. Explore\":\n    - /url: /calendar/ipo\n    - strong: IPO Calendar\n    - paragraph: Upcoming and recently priced listings.\n    - text: Explore\n  - link \"High-Yield Dividend Stocks A curated income-focused watchlist. Explore\":\n    - /url: /watchlists/high-yield-dividend-stocks\n    - strong: High-Yield Dividend Stocks\n    - paragraph: A curated income-focused watchlist.\n    - text: Explore\n  - link \"Build a Portfolio Create a list and track your holdings. Explore\":\n    - /url: /portfolio\n    - strong: Build a Portfolio\n    - paragraph: Create a list and track your holdings.\n    - text: Explore\n  - text: TRENDING TICKERS\n  - heading \"What investors are watching\" [level=2]\n  - link \"View all\":\n    - /url: /markets\n  - text: Symbol Last price Change Trend\n  - link \"A AAPL Apple Inc. 226.34 +1.25% Upward trend\":\n    - /url: /quote/AAPL\n    - text: A\n    - strong: AAPL\n    - text: Apple Inc.\n    - strong: \"226.34\"\n    - emphasis: +1.25%\n  - link \"T TSLA Tesla, Inc. 341.76 -0.82% Downward trend\":\n    - /url: /quote/TSLA\n    - text: T\n    - strong: TSLA\n    - text: Tesla, Inc.\n    - strong: \"341.76\"\n    - emphasis: \"-0.82%\"\n  - link \"N NVDA NVIDIA Corporation 182.70 +0.86% Upward trend\":\n    - /url: /quote/NVDA\n    - text: \"N\"\n    - strong: NVDA\n    - text: NVIDIA Corporation\n    - strong: \"182.70\"\n    - emphasis: +0.86%\n  - link \"M MSFT Microsoft Corporation 521.44 +0.93% Upward trend\":\n    - /url: /quote/MSFT\n    - text: M\n    - strong: MSFT\n    - text: Microsoft Corporation\n    - strong: \"521.44\"\n    - emphasis: +0.93%\n  - link \"B BTC-USD Bitcoin USD 118,420.17 +1.44% Upward trend\":\n    - /url: /quote/BTC-USD\n    - text: B\n    - strong: BTC-USD\n    - text: Bitcoin USD\n    - strong: 118,420.17\n    - emphasis: +1.44%\n  - text: LATEST\n  - heading \"Top stories\" [level=2]\n  - link \"More news\":\n    - /url: /news\n  - link \"Markets · 18 min ago Stocks edge higher as investors weigh retail strength and rate path Major averages held near records as fresh economic data supported a soft-landing outlook.\":\n    - /url: /news\n    - text: Markets · 18 min ago\n    - heading \"Stocks edge higher as investors weigh retail strength and rate path\" [level=3]\n    - paragraph: Major averages held near records as fresh economic data supported a soft-landing outlook.\n  - link \"Bitcoin · 42 min ago Bitcoin steadies above $118,000 as institutional inflows accelerate Digital-asset funds posted another week of net inflows while volatility remained contained.\":\n    - /url: /quote/BTC-USD\n    - text: Bitcoin · 42 min ago\n    - heading \"Bitcoin steadies above $118,000 as institutional inflows accelerate\" [level=3]\n    - paragraph: Digital-asset funds posted another week of net inflows while volatility remained contained.\n  - link \"Technology · 1 hr ago Chip stocks rise on stronger data-center spending forecast Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.\":\n    - /url: /news\n    - text: Technology · 1 hr ago\n    - heading \"Chip stocks rise on stronger data-center spending forecast\" [level=3]\n    - paragraph: Semiconductor shares moved higher after new estimates pointed to durable AI infrastructure demand.\n  - link \"Personal Finance · 2 hrs ago Five money moves to make before the end of summer A midyear checkup can help savers optimize taxes, benefits, and emergency funds.\":\n    - /url: /news\n    - text: Personal Finance · 2 hrs ago\n    - heading \"Five money moves to make before the end of summer\" [level=3]\n    - paragraph: A midyear checkup can help savers optimize taxes, benefits, and emergency funds.\n  - complementary:\n    - heading \"My watchlist\" [level=3]\n    - link \"Edit\":\n      - /url: /portfolio\n    - link \"AAPL Apple Inc. 226.34 +1.25%\":\n      - /url: /quote/AAPL\n      - strong: AAPL\n      - text: Apple Inc. 226.34\n      - emphasis: +1.25%\n    - link \"MSFT Microsoft Corporation 521.44 +0.93%\":\n      - /url: /quote/MSFT\n      - strong: MSFT\n      - text: Microsoft Corporation 521.44\n      - emphasis: +0.93%\n    - link \"GC=F Gold Dec 26 2,548.70 +0.72%\":\n      - /url: /quote/GC%3DF\n      - strong: GC=F\n      - text: Gold Dec 26 2,548.70\n      - emphasis: +0.72%\n    - text: YAHOO FINANCE PLUS\n    - heading \"Invest with more confidence.\" [level=3]\n    - paragraph: Unlock advanced charts, enhanced data, and expert insights.\n    - link \"Compare plans\":\n      - /url: /plus\n    - text: SMALL BUSINESS\n    - heading \"Stay ahead of tax deadlines\" [level=3]\n    - paragraph: See important federal tax dates and practical filing reminders for 2026.\n    - link \"View tax calendar\":\n      - /url: /personal-finance/small-business-tax-calendar\n- contentinfo:\n  - text: yahoo!\n  - strong: finance\n  - paragraph: Market insights and tools for every investor.\n  - link \"About\":\n    - /url: /legal/about\n  - link \"Help\":\n    - /url: /legal/help\n  - link \"Privacy\":\n    - /url: /legal/privacy\n  - link \"Terms\":\n    - /url: /legal/terms\n  - link \"Disclaimer\":\n    - /url: /legal/disclaimer\n  - text: © 2026 Yahoo Finance inspired demo. All data is synthetic."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/22-finance.yahoo/dist/assets/index-Uc1wA4I6.js",
+      "offset": 321252,
+      "match": "className:\"market-ribbon\"",
+      "context": "n:s.jsx(ae,{icon:u4})}),s.jsxs(\"button\",{className:\"sign-in-button\",onClick:u,children:[s.jsx(ae,{icon:ov}),\" Sign in\"]})]}),s.jsx(\"nav\",{className:`primary-nav ${h?\"open\":\"\"}`,children:s.jsxs(\"div\",{className:\"page-width nav-inner\",children:[S.map(([b,R])=>s.jsx(P0,{to:b,onClick:()=>m(!1),children:R},b)),n.length>0&&s.jsxs(\"span\",{className:\"watch-count\",children:[n.length,\" followed\"]})]})})]}),s.jsx(y4,{})]})}function y4(){return s.jsx(\"div\",{className:\"market-ribbon\",children:s.jsx(\"div\",{className:\"page-width ribbon-scroll\",children:pv.map(([n,u,c,o])=>s.jsxs(De,{to:`/quote/${encodeURIComponent(u)}`,className:\"ribbon-item\",children:[s.jsxs(\"span\",{children:[s.jsx(\"strong\",{children:n}),s.jsx(\"small\",{children:u})]}),s.jsx(\"b\",{children:c}),s.jsx(\"em\",{className:o.startsWith(\"-\")?\"negative\":\"positive\",children:o})]},u))})})}function g4(){const n=ho();return s.jsxs(\"div\",{className:\"page-width home-page\",chil"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+- banner:
+  - link "Amazon home":
+    - /url: /
+    - text: amazon .com
+  - button "Change delivery location":
+    - text: Delivering to Salt Lake City
+    - strong: Update location 84101
+  - search:
+    - text: Search department
+    - combobox "Search department":
+      - option "All" [selected]
+      - option "Amazon Pharmacy"
+      - option "Books"
+      - option "Electronics"
+      - option "Gift Cards"
+      - option "Home & Kitchen"
+      - option "Pet Supplies"
+      - option "Video Games"
+    - text: Search Amazon
+    - textbox "Search Amazon"
+    - button "Search"
+  - 'button "Language: English"':
+    - text: US
+    - strong: EN
+  - button "Hello, sign in Account & Lists":
+    - text: Hello, sign in
+    - strong: Account & Lists
+  - link "Returns & Orders":
+    - /url: /orders
+    - text: Returns
+    - strong: "& Orders"
+  - link "Cart with 0 items":
+    - /url: /cart
+    - text: "0"
+    - strong: Cart
+  - navigation "Main navigation":
+    - button "All"
+    - link "Today’s Deals":
+      - /url: /deals
+    - link "Amazon Basics":
+      - /url: /s?k=Amazon+Basics
+    - link "Books":
+      - /url: /s?k=Sam+Harris+books
+    - link "Pharmacy":
+      - /url: /s?k=Metformin+1000mg
+    - link "Gift Cards":
+      - /url: /s?k=Gift+Cards
+    - link "Pet Supplies":
+      - /url: /s?k=puppy+dog+food
+    - link "Electronics":
+      - /url: /s?k=external+solid+state+drives
+    - text: Free delivery on millions of items
+- main:
+  - text: Big value, delivered
+  - heading "Everything you need, all in one place." [level=1]
+  - paragraph: Explore everyday essentials, fresh releases, and limited-time deals with fast, free delivery.
+  - button "Shop today’s deals"
+  - text: Explore departments
+  - heading "Shop by category" [level=2]
+  - link "See all deals":
+    - /url: /deals
+  - button "Gaming deals Save on mice & more":
+    - strong: Gaming deals
+    - text: Save on mice & more
+  - button "Books Great reads in every format":
+    - strong: Books
+    - text: Great reads in every format
+  - button "Pharmacy View medication details":
+    - strong: Pharmacy
+    - text: View medication details
+  - button "Home essentials Stock up and save":
+    - strong: Home essentials
+    - text: Stock up and save
+  - button "Electronics Storage, audio & wearables":
+    - strong: Electronics
+    - text: Storage, audio & wearables
+  - button "Pet supplies Food, beds & everyday care":
+    - strong: Pet supplies
+    - text: Food, beds & everyday care
+  - button "Gift cards Digital and print-at-home":
+    - strong: Gift cards
+    - text: Digital and print-at-home
+  - button "Amazon Basics Simple. Reliable. Everyday.":
+    - strong: Amazon Basics
+    - text: Simple. Reliable. Everyday.
+  - text: Popular right now
+  - heading "Deals worth a look" [level=2]
+  - link "Explore all":
+    - /url: /deals
+  - article:
+    - link "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons":
+      - /url: /product/mouse-redragon
+      - img "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons"
+    - text: 53% off
+    - link "Redragon M601 RGB Wired Gaming Mouse, 7 Buttons":
+      - /url: /product/mouse-redragon
+    - text: "4.5 (48,123) $ 9 49 List: $19.99"
+    - button "Add to cart"
+  - article:
+    - link "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones":
+      - /url: /product/headphones-soundcore
+      - img "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones"
+    - text: Popular pick
+    - link "Soundcore Life Q30 Hybrid Active Noise Cancelling Headphones":
+      - /url: /product/headphones-soundcore
+    - text: 4.5 (72,318) $ 69 99
+    - button "Add to cart"
+  - article:
+    - link "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb":
+      - /url: /product/puppy-pedigree
+      - img "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb"
+    - text: Popular pick
+    - link "Pedigree Puppy Growth & Protection Dry Dog Food, 3.5 lb":
+      - /url: /product/puppy-pedigree
+    - text: 4.7 (9,840) $ 7 98
+    - button "Add to cart"
+  - text: prime
+  - heading "Fast, free delivery. One easy membership." [level=2]
+  - paragraph: Millions of items. Flexible delivery choices. Entertainment included.
+  - button "Explore Prime picks"
+- contentinfo:
+  - button "Back to top"
+  - heading "Get to Know Us" [level=3]
+  - button "Careers"
+  - button "Amazon Newsletter"
+  - button "About Amazon"
+  - heading "Make Money with Us" [level=3]
+  - button "Sell products on Amazon"
+  - button "Become an Affiliate"
+  - button "Advertise Your Products"
+  - heading "Amazon Payment Products" [level=3]
+  - button "Amazon Visa"
+  - button "Amazon Gift Cards"
+  - button "Reload Your Balance"
+  - heading "Let Us Help You" [level=3]
+  - link "Your Orders":
+    - /url: /orders
+  - button "Shipping Rates & Policies"
+  - button "Help"
+  - link "amazon .com":
+    - /url: /
+  - button "English"
+  - button "$ USD - U.S. Dollar"
+  - button "United States"
+  - text: Conditions of Use Privacy Notice Consumer Health Data Privacy Disclosure © 1996-2026, Amazon.com, Inc. or its affiliates

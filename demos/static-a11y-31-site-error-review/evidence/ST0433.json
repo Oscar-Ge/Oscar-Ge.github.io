@@ -1,0 +1,160 @@
+{
+  "site": "indeed",
+  "siteKey": "19-indeed",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/19-indeed/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/19-indeed/wave/attempt-1/raw.json",
+  "errorId": "ST0433",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/A[1]",
+    "tag": "A",
+    "text": "See all recent searches",
+    "html": "<a class=\"inline-link\" href=\"/recent\" data-discover=\"true\">See all recent searches <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></a>",
+    "class": "inline-link",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/recent",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1108.546875,
+      "y": 744.46875,
+      "width": 201.453125,
+      "height": 18
+    },
+    "style": {
+      "color": "rgb(37, 87, 167)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]",
+      "tag": "DIV",
+      "class": "section-heading-row",
+      "text": "KEEP EXPLORING\n\nPick up where you left off\nSee all recent searches ",
+      "html": "<div class=\"section-heading-row\"><div><p class=\"eyebrow\">Keep exploring</p><h2>Pick up where you left off</h2></div><a class=\"inline-link\" href=\"/recent\" data-discover=\"true\">See all recent searches <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></a></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/A[1]",
+      "tag": "A",
+      "text": "See all recent searches ",
+      "ariaLabel": null,
+      "href": "/recent",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:44415/assets/index-DsKkNbNA.css",
+        "selector": ".inline-link, .text-link, .text-link-button",
+        "declarations": {
+          "color": "var(--indeed-blue)",
+          "font-weight": "700"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Indeed — Find jobs, salaries & company reviews",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Find work that works for you",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Pick up where you left off",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Make your next move with confidence",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[4]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Compare salaries",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[4]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "Know the company",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[2]/DIV[4]/A[3]/H3[1]",
+        "tag": "H3",
+        "text": "Build a skill",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "indeed\n•\nFind jobs\nCompany reviews\nSalaries\nCertifications\nRecent searches\nSign in"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Find jobs\nCompany reviews\nSalaries\nCertifications\nRecent searches"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "YOUR NEXT OPPORTUNITY STARTS HERE\n\nFind work that works for you\n\nSearch thousands of realistic mock opportunities by role, pay, location, experience, and the things that matter to you.\n\nWHAT\nWHERE\nFind jobs\nPopular:\nRemote software engineer\nPart-time admin\nNutritionist in Ohio\n\nKEEP EXPLORING\n\nPick up where you left off\nSee all recent searches \nRemote software engineer\nUnited States · Viewed recently\nOpen search\n\nMORE THAN JOB LISTINGS\n\nMake your next move with confidence\nCompare salaries\n\nSee w"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "© 2026 Indeed\nAccessibility at Indeed\nPrivacy Center\nTerms"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Indeed home\":\n    - /url: /\n    - text: indeed\n  - navigation \"Primary navigation\":\n    - link \"Find jobs\":\n      - /url: /jobs\n    - link \"Company reviews\":\n      - /url: /companies\n    - link \"Salaries\":\n      - /url: /salaries\n    - link \"Certifications\":\n      - /url: /certifications\n    - link \"Recent searches\":\n      - /url: /recent\n  - button \"Sign in\"\n- main:\n  - paragraph: Your next opportunity starts here\n  - heading \"Find work that works for you\" [level=1]\n  - paragraph: Search thousands of realistic mock opportunities by role, pay, location, experience, and the things that matter to you.\n  - text: What\n  - textbox \"What\":\n    - /placeholder: Job title, keywords, or company\n  - text: Where\n  - textbox \"Where\":\n    - /placeholder: City, state, or remote\n  - button \"Find jobs\"\n  - text: \"Popular:\"\n  - button \"Remote software engineer\"\n  - button \"Part-time admin\"\n  - button \"Nutritionist in Ohio\"\n  - paragraph: Keep exploring\n  - heading \"Pick up where you left off\" [level=2]\n  - link \"See all recent searches\":\n    - /url: /recent\n  - strong: Remote software engineer\n  - text: United States · Viewed recently\n  - button \"Open search\"\n  - paragraph: More than job listings\n  - heading \"Make your next move with confidence\" [level=2]\n  - link \"Compare salaries See what companies pay for the work you want to do. Explore salaries\":\n    - /url: /salaries\n    - heading \"Compare salaries\" [level=3]\n    - paragraph: See what companies pay for the work you want to do.\n    - text: Explore salaries\n  - link \"Know the company Read employee reviews and prepare with interview questions. Browse companies\":\n    - /url: /companies\n    - heading \"Know the company\" [level=3]\n    - paragraph: Read employee reviews and prepare with interview questions.\n    - text: Browse companies\n  - link \"Build a skill Find flexible certifications that fit your schedule. Find training\":\n    - /url: /certifications\n    - heading \"Build a skill\" [level=3]\n    - paragraph: Find flexible certifications that fit your schedule.\n    - text: Find training\n- contentinfo:\n  - text: © 2026 Indeed\n  - link \"Accessibility at Indeed\":\n    - /url: /info/accessibility\n  - link \"Privacy Center\":\n    - /url: /info/privacy\n  - link \"Terms\":\n    - /url: /info/terms"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/19-indeed/dist/assets/index-DqjEWTMx.js",
+      "offset": 334829,
+      "match": "className:\"inline-link\"",
+      "context": "art-time\",salary:\"40000usd\"}),children:\"Part-time admin\"}),c.jsx(\"button\",{type:\"button\",onClick:()=>y(\"Nutritionist\",\"Ohio\"),children:\"Nutritionist in Ohio\"})]})]})]}),c.jsxs(\"section\",{className:\"page-container home-content-section\",children:[c.jsxs(\"div\",{className:\"section-heading-row\",children:[c.jsxs(\"div\",{children:[c.jsx(\"p\",{className:\"eyebrow\",children:\"Keep exploring\"}),c.jsx(\"h2\",{children:\"Pick up where you left off\"})]}),c.jsxs(Fe,{className:\"inline-link\",to:\"/recent\",children:[\"See all recent searches \",c.jsx(V,{icon:fn})]})]}),c.jsxs(\"div\",{className:\"recent-home-card\",children:[c.jsx(\"div\",{className:\"icon-tile\",children:c.jsx(V,{icon:wi})}),c.jsxs(\"div\",{children:[c.jsx(\"strong\",{children:s?.label||\"Remote software engineer\"}),c.jsxs(\"span\",{children:[s?.l||\"United States\",\" · \",s?.viewed||\"Viewed recently\"]})]}),c.jsx(\"button\",{className:\"secondary-button\",type:\"button\",onClick:()=>y(s?.q||\""
+    }
+  ]
+}

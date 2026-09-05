@@ -1,0 +1,213 @@
+{
+  "site": "amtrak",
+  "siteKey": "09-amtrak",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/09-amtrak/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 0,
+  "selector": [
+    ".service-bar"
+  ],
+  "html": "<div class=\"service-bar\">",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/09-amtrak/axe/attempt-1/raw.json",
+  "errorId": "ST0212",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]",
+    "tag": "DIV",
+    "text": "Travel green. Save 15% on select spring trips.\nSee offers",
+    "html": "<div class=\"service-bar\"><div class=\"page-width service-bar-inner\"><span><svg data-prefix=\"fas\" data-icon=\"circle-info\" class=\"svg-inline--fa fa-circle-info\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z\"></path></svg> Travel green. Save 15% on select spring trips.</span><a href=\"/deals\" data-discover=\"true\">See offers <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></a></div></div>",
+    "class": "service-bar",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 34
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(5, 39, 60)",
+      "fontSize": "12.48px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "",
+      "text": " Travel green. Save 15% on select spring trips.\nSee offers \nAMTRAK\nBook\nMy Trip\nSchedules\nRoutes\nDeals\nVacations\nTravel Info\nCareers\nCart\nAMERICA IS WAITING\nThere’s more to see.\nTake the train.\n\nDowntown to downtown, coast to coast. Settle in and enjoy the journey.\n\nBOOK TRAIN TRAVEL\nWhere can we take you?\nOne way\nRound trip\nFrom\n⇄\nTo\nDepart\n Travelers\n1 Adult\nService\nCoach\nBusiness Class\nFirst Class\nPrivate Room\nFind trains\nMulti-Ride & Rail Passes\nBook Auto Train\nINSPIRED JOURNEYS\nStart with something unforgettable\nExplore all routes \nNEW YORK TO MONTRÉAL\nThe Adirondack\n\nHudson River views, mountain towns and an international adventure.\n\nExplore route \n14-DAY RAIL VACATION\nGrand National P",
+      "html": "<div id=\"root\"><div class=\"service-bar\"><div class=\"page-width service-bar-inner\"><span><svg data-prefix=\"fas\" data-icon=\"circle-info\" class=\"svg-inline--fa fa-circle-info\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z\"></path></svg> Travel green. Save 15% on select spring trips.</span><a href=\"/deals\" data-discover=\"true\">See offers <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></a></div></div><header class=\"site-header\"><div class=\"page-width header-inner\"><a class=\"brand\" aria-label=\"Amtrak home\" href=\"/\" data-discover=\"true\"><span class=\"brand-mark\"><span></span><span></span><span></span></span><span class=\"brand-name\">AMTRAK</span></a><button class=\"mobile-toggle\" aria-label=\"Toggle navigation\" aria-expanded=\"false\"><svg data-prefix=\"fas\" data-icon=\"chevron-down\" class=\"svg-inline--fa fa-chevron-down\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z\"></path></svg></button><nav class=\"main-nav \" aria-label=\"Main navigation\"><a class=\"\" href=\"/book\" data-discover=\"true\">Book</a><a class=\"\" href=\"/my-trip\" data-discover=\"true\">My Trip</a><a class=\"\" href=\"/schedules\" data-discover=\"true\">Schedules</a><a class=\"\" href=\"/routes\" data-discover=\"true\">Routes</a><a class=\"\" href=\"/deals\" data-discover=\"true\">Deals</a><a class=\"\" href=\"/vacations\" data-discover=\"true\">Vacations</a><a class=\"\" href=\"/travel-info\" data-discover=\"true\">Travel Info</a><a class=\"\" href=\"/careers\" data-discover=\"true\">Careers</a></nav><a class=\"cart-link\" aria-label=\"Cart with 0 items\" href=\"/cart\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"ticket\" class=\"svg-inline--fa fa-ticket\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 64C28.7 64 0 92.7 0 128l0 64C0 200.8 7.4 207.7 15.7 210.6 34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320l0 64c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-64c0-8.8-7.4-15.7-15.7-18.6-18.8-6.5-32.3-24.4-32.3-45.4s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6l0-64c0-35.3-28.7-64-64-64L64 64zM416 336l0-160-256 0 0 160 256 0zM112 160c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32l-288 0c-17.7 0-32-14.3-32-32l0-192z\"></path></svg><span>Cart</span></a></div></header><main><section class=\"hero\"><div class=\"hero-backdrop\"><div class=\"sun-glow\"></div><div class=\"land land-one\"></div><div class=\"land land-two\"></div><div class=\"hero-train\"><span></span><span></span><span></span><span></span></div></div><div class=\"page-width hero-copy\"><span class=\"eyebrow light\">America is waiting</span><h1>There’s more to see.<br>Take the train.</h1><p>Downtown to downtown, coast to coast. Settle in and enjoy the journey.</p></div></section><div class=\"page-width home-search\"><form class=\"search-card \"><div class=\"search-card-top\"><div><span class=\"eyebrow\">Book train travel</span><h2>Where can we take you?</h2></div><div class=\"segmented\" aria-label=\"Trip type\"><button type=\"button\" class=\"selected\">One way</button><button type=\"button\" class=\"\">Round trip</button></div></div><div class=\"search-grid\"><label class=\"field \"><span class=\"field-label\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg>From</span><input aria-label=\"From station\" list=\"station-options\" required=\"\" value=\"New York, NY - Moynihan Train Hall (NYP)\"></label><button type=\"button\" class=\"swap-button\" aria-label=\"Swap origin and destination\">⇄</button><label class=\"field \"><span class=\"field-label\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg>To</span><input aria-label=\"To station\" list=\"station-options\" required=\"\" value=\"Washington, DC - Union Station (WAS)\"></label><label class=\"field \"><span class=\"field-label\"><svg data-prefix=\"fas\" data-icon=\"calendar-days\" class=\"svg-inline--fa fa-calendar-days\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z\"></path></svg>Depart</span><input aria-label=\"Departure date\" required=\"\" type=\"date\" value=\"2027-04-18\"></label><div class=\"traveler-control\"><button type=\"button\" class=\"traveler-button\" aria-expanded=\"false\"><span><svg data-prefix=\"fas\" data-icon=\"user-group\" class=\"svg-inline--fa fa-user-group\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden="
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:44113/assets/index-D2ZsA99i.css",
+        "selector": ".service-bar",
+        "declarations": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(5, 39, 60)",
+          "background-color": "rgb(5, 39, 60)",
+          "font-size": "0.78rem"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:44113/assets/index-D2ZsA99i.css",
+        "selector": ".service-bar, .site-header, .site-footer, .route-stops-card button, .route-stops-card a, .toast",
+        "declarations": {
+          "display": "none"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:44113/assets/index-D2ZsA99i.css",
+        "selector": ".service-bar",
+        "declarations": {
+          "display": "none"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "Amtrak | Plan Your Train Travel",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/H1[1]",
+        "tag": "H1",
+        "text": "There’s more to see.\nTake the train.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Where can we take you?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Start with something unforgettable",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "The Adirondack",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Grand National Parks",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Sunshine looks good on you",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Bring more along",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Arrive downtown",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Travel lighter",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Plan",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Explore",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Help",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "AMTRAK\nBook\nMy Trip\nSchedules\nRoutes\nDeals\nVacations\nTravel Info\nCareers\nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Book\nMy Trip\nSchedules\nRoutes\nDeals\nVacations\nTravel Info\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "AMERICA IS WAITING\nThere’s more to see.\nTake the train.\n\nDowntown to downtown, coast to coast. Settle in and enjoy the journey.\n\nBOOK TRAIN TRAVEL\nWhere can we take you?\nOne way\nRound trip\nFrom\n⇄\nTo\nDepart\n Travelers\n1 Adult\nService\nCoach\nBusiness Class\nFirst Class\nPrivate Room\nFind trains\nMulti-Ride & Rail Passes\nBook Auto Train\nINSPIRED JOURNEYS\nStart with something unforgettable\nExplore all routes \nNEW YORK TO MONTRÉAL\nThe Adirondack\n\nHudson River views, mountain towns and an international ad"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "AMTRAK\n\nConnecting communities and creating a more sustainable way to travel across America.\n\nMock experience created for demonstration. No real reservations are made.\n\nPlan\nBook travel\nSchedules\nNational route map\nMulti-Ride passes\nExplore\nDeals\nAmtrak Vacations\nRoutes\nCafé menu\nHelp\nFind my trip\nTravel identification\nRideReserve terms\nCareers\n© 2026 Amtrak. All rights reserved."
+      }
+    ],
+    "axSnapshot": "- text: Travel green. Save 15% on select spring trips.\n- link \"See offers\":\n  - /url: /deals\n- banner:\n  - link \"Amtrak home\":\n    - /url: /\n    - text: AMTRAK\n  - navigation \"Main navigation\":\n    - link \"Book\":\n      - /url: /book\n    - link \"My Trip\":\n      - /url: /my-trip\n    - link \"Schedules\":\n      - /url: /schedules\n    - link \"Routes\":\n      - /url: /routes\n    - link \"Deals\":\n      - /url: /deals\n    - link \"Vacations\":\n      - /url: /vacations\n    - link \"Travel Info\":\n      - /url: /travel-info\n    - link \"Careers\":\n      - /url: /careers\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- main:\n  - text: America is waiting\n  - heading \"There’s more to see. Take the train.\" [level=1]\n  - paragraph: Downtown to downtown, coast to coast. Settle in and enjoy the journey.\n  - text: Book train travel\n  - heading \"Where can we take you?\" [level=2]\n  - button \"One way\"\n  - button \"Round trip\"\n  - text: From\n  - combobox \"From station\": New York, NY - Moynihan Train Hall (NYP)\n  - button \"Swap origin and destination\": ⇄\n  - text: To\n  - combobox \"To station\": Washington, DC - Union Station (WAS)\n  - text: Depart\n  - textbox \"Departure date\": 2027-04-18\n  - button \"Travelers 1 Adult\":\n    - text: Travelers\n    - strong: 1 Adult\n  - text: Service\n  - combobox \"Service class\":\n    - option \"Coach\" [selected]\n    - option \"Business Class\"\n    - option \"First Class\"\n    - option \"Private Room\"\n  - button \"Find trains\"\n  - link \"Multi-Ride & Rail Passes\":\n    - /url: /multi-ride\n  - link \"Book Auto Train\":\n    - /url: /auto-train\n  - text: Inspired journeys\n  - heading \"Start with something unforgettable\" [level=2]\n  - link \"Explore all routes\":\n    - /url: /routes\n  - link \"New York to Montréal The Adirondack Hudson River views, mountain towns and an international adventure. Explore route\":\n    - /url: /routes/adirondack\n    - text: New York to Montréal\n    - heading \"The Adirondack\" [level=3]\n    - paragraph: Hudson River views, mountain towns and an international adventure.\n    - text: Explore route\n  - link \"14-day rail vacation Grand National Parks Five iconic parks and one spectacular journey through the American West. View vacation\":\n    - /url: /vacations/grand-national-parks\n    - text: 14-day rail vacation\n    - heading \"Grand National Parks\" [level=3]\n    - paragraph: Five iconic parks and one spectacular journey through the American West.\n    - text: View vacation\n  - link \"California savings Sunshine looks good on you Save on coastal journeys, city escapes and family trips. See deals\":\n    - /url: /deals\n    - text: California savings\n    - heading \"Sunshine looks good on you\" [level=3]\n    - paragraph: Save on coastal journeys, city escapes and family trips.\n    - text: See deals\n  - heading \"Bring more along\" [level=3]\n  - paragraph: Two free carry-on bags and two free personal items.\n  - heading \"Arrive downtown\" [level=3]\n  - paragraph: Skip the airport transfer and arrive in the center of it all.\n  - heading \"Travel lighter\" [level=3]\n  - paragraph: Rail travel produces up to 83% fewer emissions than driving alone.\n- contentinfo:\n  - text: AMTRAK\n  - paragraph: Connecting communities and creating a more sustainable way to travel across America.\n  - paragraph: Mock experience created for demonstration. No real reservations are made.\n  - heading \"Plan\" [level=3]\n  - link \"Book travel\":\n    - /url: /book\n  - link \"Schedules\":\n    - /url: /schedules\n  - link \"National route map\":\n    - /url: /routes/national-map\n  - link \"Multi-Ride passes\":\n    - /url: /multi-ride\n  - heading \"Explore\" [level=3]\n  - link \"Deals\":\n    - /url: /deals\n  - link \"Amtrak Vacations\":\n    - /url: /vacations\n  - link \"Routes\":\n    - /url: /routes\n  - link \"Café menu\":\n    - /url: /travel-info/cafe-menu\n  - heading \"Help\" [level=3]\n  - link \"Find my trip\":\n    - /url: /my-trip\n  - link \"Travel identification\":\n    - /url: /travel-info/identification\n  - link \"RideReserve terms\":\n    - /url: /travel-info/ride-reserve-terms\n  - link \"Careers\":\n    - /url: /careers\n  - text: © 2026 Amtrak. All rights reserved."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/09-amtrak/dist/assets/index-L2X9RVAX.js",
+      "offset": 316392,
+      "match": "className:\"service-bar\"",
+      "context": "c=\"\"}){return n.jsxs(\"label\",{className:`field ${c}`,children:[n.jsxs(\"span\",{className:\"field-label\",children:[u&&n.jsx(U,{icon:u}),i]}),o]})}function y3(){const[i,u]=E.useState(!1),{cart:o}=E.useContext(jn),c=[[\"Book\",\"/book\"],[\"My Trip\",\"/my-trip\"],[\"Schedules\",\"/schedules\"],[\"Routes\",\"/routes\"],[\"Deals\",\"/deals\"],[\"Vacations\",\"/vacations\"],[\"Travel Info\",\"/travel-info\"],[\"Careers\",\"/careers\"]];return n.jsxs(n.Fragment,{children:[n.jsx(\"div\",{className:\"service-bar\",children:n.jsxs(\"div\",{className:\"page-width service-bar-inner\",children:[n.jsxs(\"span\",{children:[n.jsx(U,{icon:xr}),\" Travel green. Save 15% on select spring trips.\"]}),n.jsxs(ae,{to:\"/deals\",children:[\"See offers \",n.jsx(U,{icon:it})]})]})}),n.jsx(\"header\",{className:\"site-header\",children:n.jsxs(\"div\",{className:\"page-width header-inner\",children:[n.jsxs(ae,{className:\"brand\",to:\"/\",\"aria-label\":\"Amtrak home\",onClick:()=>u(!1),children:[n.js"
+    }
+  ]
+}

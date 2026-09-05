@@ -1,0 +1,230 @@
+{
+  "site": "uhaul",
+  "siteKey": "30-uhaul",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/30-uhaul/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 0,
+  "selector": [
+    ".utility-bar"
+  ],
+  "html": "<div class=\"utility-bar\">",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/30-uhaul/axe/attempt-1/raw.json",
+  "errorId": "ST0751",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[1]",
+    "tag": "DIV",
+    "text": "Trusted since 1945\nFind a Location\n1-800-GO-UHAUL",
+    "html": "<div class=\"utility-bar\"><div class=\"container utility-inner\"><span>Trusted since 1945</span><div><a href=\"/storage\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg> Find a Location</a><a href=\"tel:18004684285\"><svg data-prefix=\"fas\" data-icon=\"phone\" class=\"svg-inline--fa fa-phone\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z\"></path></svg> 1-800-GO-UHAUL</a></div></div></div>",
+    "class": "utility-bar",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 34
+    },
+    "style": {
+      "color": "rgb(219, 226, 230)",
+      "background": "rgb(17, 27, 34)",
+      "fontSize": "12.16px",
+      "fontWeight": "650",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "app-shell",
+      "text": "Trusted since 1945\nFind a Location\n1-800-GO-UHAUL\nU-HAUL\nTrucks & Trailers\nStorage\nMoving Supplies\nHitches\nCart\nMOVING MADE EASIER\nYour move. Your way.\n\nAffordable moving trucks, trailers, storage and supplies — all in one place.\n\nTrucks\nTrailers\nStorage\nPick up location\nPick up date\nGet started\nPLAN EVERY PART OF YOUR MOVE\nWhat can we help you with?\n\nOne trusted place for equipment, storage and moving essentials.\n\nTruck Rentals\n\nChoose the right-size truck with flexible local and one-way options.\n\nView truck rates\nCargo Trailers\n\nTow a secure enclosed trailer behind your own compatible vehicle.\n\nBrowse trailers\nSelf-Storage\n\nFind indoor and climate-controlled units close to your neighborhoo",
+      "html": "<div class=\"app-shell\"><div class=\"utility-bar\"><div class=\"container utility-inner\"><span>Trusted since 1945</span><div><a href=\"/storage\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z\"></path></svg> Find a Location</a><a href=\"tel:18004684285\"><svg data-prefix=\"fas\" data-icon=\"phone\" class=\"svg-inline--fa fa-phone\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z\"></path></svg> 1-800-GO-UHAUL</a></div></div></div><header class=\"site-header\"><div class=\"container header-inner\"><a class=\"brand\" aria-label=\"U-Haul home\" href=\"/\" data-discover=\"true\"><span>U-HAUL</span></a><nav class=\"desktop-nav\" aria-label=\"Main navigation\"><a class=\"\" href=\"/trucks-trailers\" data-discover=\"true\">Trucks &amp; Trailers</a><a class=\"\" href=\"/storage\" data-discover=\"true\">Storage</a><a class=\"\" href=\"/moving-supplies\" data-discover=\"true\">Moving Supplies</a><a class=\"\" href=\"/hitches\" data-discover=\"true\">Hitches</a></nav><div class=\"header-actions\"><a class=\"cart-link\" aria-label=\"Cart with 0 items\" href=\"/cart\" data-discover=\"true\"><svg data-prefix=\"fas\" data-icon=\"cart-shopping\" class=\"svg-inline--fa fa-cart-shopping\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z\"></path></svg><span>Cart</span></a><button class=\"mobile-toggle\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><svg data-prefix=\"fas\" data-icon=\"bars\" class=\"svg-inline--fa fa-bars\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z\"></path></svg></button></div></div></header><main><section class=\"hero\"><div class=\"hero-art\" aria-hidden=\"true\"><div class=\"road-line\"></div><svg data-prefix=\"fas\" data-icon=\"truck-moving\" class=\"svg-inline--fa fa-truck-moving hero-truck\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 32C28.7 32 0 60.7 0 96L0 424c0 48.6 39.4 88 88 88 25.2 0 48-10.6 64-27.6 16 17 38.8 27.6 64 27.6 40.3 0 74.2-27.1 84.7-64l134.6 0c10.4 36.9 44.4 64 84.7 64 43 0 78.9-30.9 86.5-71.7 20-10.8 33.5-32 33.5-56.3l0-146.7c0-17-6.7-33.3-18.7-45.3L576 146.7c-12-12-28.3-18.7-45.3-18.7l-50.7 0 0-32c0-35.3-28.7-64-64-64L64 32zM480 192l50.7 0 45.3 45.3 0 50.7-96 0 0-96zM88 384a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm392 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM216 384a40 40 0 1 1 0 80 40 40 0 1 1 0-80z\"></path></svg></div><div class=\"container hero-content\"><div class=\"hero-copy\"><span class=\"eyebrow light\">Moving made easier</span><h1>Your move. Your way.</h1><p>Affordable moving trucks, trailers, storage and supplies — all in one place.</p></div><form class=\"quick-search\"><div class=\"service-tabs\" role=\"tablist\" aria-label=\"Choose a service\"><button class=\"active\" type=\"button\" role=\"tab\" aria-selected=\"true\"><svg data-prefix=\"fas\" data-icon=\"truck-moving\" class=\"svg-inline--fa fa-truck-moving\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 32C28.7 32 0 60.7 0 96L0 424c0 48.6 39.4 88 88 88 25.2 0 48-10.6 64-27.6 16 17 38.8 27.6 64 27.6 40.3 0 74.2-27.1 84.7-64l134.6 0c10.4 36.9 44.4 64 84.7 64 43 0 78.9-30.9 86.5-71.7 20-10.8 33.5-32 33.5-56.3l0-146.7c0-17-6.7-33.3-18.7-45.3L576 146.7c-12-12-28.3-18.7-45.3-18.7l-50.7 0 0-32c0-35.3-28.7-64-64-64L64 32zM480 192l50.7 0 45.3 45.3 0 50.7-96 0 0-96zM88 384a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm392 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM216 384a40 40 0 1 1 0 80 40 40 0 1 1 0-80z\"></path></svg>Trucks</button><button class=\"\" type=\"button\" role=\"tab\" aria-selected=\"false\"><svg data-prefix=\"fas\" data-icon=\"trailer\" class=\"svg-inline--fa fa-trailer\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M32 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-296.4 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-2.7 .1-5.4 .4-8L96 416c-35.3 0-64-28.7-64-64L32 96zm408 16c-13.3 0-24 10.7-24 24l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24zM112 136l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24s-24 10.7-24 24zm176-24c-13.3 0-24 10.7-24 24l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24zM264 424a40 40 0 1 0 -80 0 40 40 0 1 0 80 0z\"></path></svg>Trailers</button><button class=\"\" type=\"button\" role=\"tab\" aria-selected=\"false\"><svg data-prefix=\"fas\" data-icon=\"warehouse\" class=\"svg-inline--fa fa-warehouse\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 142.1L0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-240c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32l0 240c0 17.7 14.3 32 32 32s32-14.3 32-32l0-337.9c0-27.5-17.6-52-43.8-60.7L303.2 5.1c-9.9-3.3-20.5-3.3-30.4 0L43.8 81.4C17.6 90.1 0 114.6 0 142.1zM464 256l-352 0 0 64 352 0 0-64zM112 416l352 0 0-64-352 0 0 64zm352 32l-352 0 0 64 352 0 0-64z\"></path></svg>Storage</button></div><div class=\"quick-search-body\"><label>Pick up location<span class=\"input-with-icon\"><svg data-prefix=\"fas\" data-icon=\"location-dot\" class=\"svg-inline--fa fa-location-dot\" role=\"img\" viewBox=\"0 0 384 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-17"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34677/assets/index-Bcv9Ew9I.css",
+        "selector": ".utility-bar",
+        "declarations": {
+          "color": "rgb(219, 226, 230)",
+          "background": "rgb(17, 27, 34)",
+          "background-color": "rgb(17, 27, 34)",
+          "font-size": "0.76rem",
+          "font-weight": "650"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Your move. Your way.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help you with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Truck Rentals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "Cargo Trailers",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[3]/H3[1]",
+        "tag": "H3",
+        "text": "Self-Storage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/ARTICLE[4]/H3[1]",
+        "tag": "H3",
+        "text": "Moving Supplies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Built around real moving days",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "20,000+ locations",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Flexible coverage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Plans can change",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Ready in three easy steps",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[1]/H3[1]",
+        "tag": "H3",
+        "text": "Tell us your plan",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Compare your options",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Reserve with confidence",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Rentals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Storage & supplies",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Helpful shortcuts",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "U-HAUL\nTrucks & Trailers\nStorage\nMoving Supplies\nHitches\nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Trucks & Trailers\nStorage\nMoving Supplies\nHitches"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "MOVING MADE EASIER\nYour move. Your way.\n\nAffordable moving trucks, trailers, storage and supplies — all in one place.\n\nTrucks\nTrailers\nStorage\nPick up location\nPick up date\nGet started\nPLAN EVERY PART OF YOUR MOVE\nWhat can we help you with?\n\nOne trusted place for equipment, storage and moving essentials.\n\nTruck Rentals\n\nChoose the right-size truck with flexible local and one-way options.\n\nView truck rates\nCargo Trailers\n\nTow a secure enclosed trailer behind your own compatible vehicle.\n\nBrowse t"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "U-HAUL\n\nYour one-stop shop for moving and storage.\n\n1-800-GO-UHAUL\nRentals\nMoving trucks\nCargo trailers\nTrailer hitches\nStorage & supplies\nSelf-storage\nMoving boxes\nShopping cart\nHelpful shortcuts\nFind a location\nGet rental rates\nContact support\n© 2026 U-Haul International, Inc. Mock experience.\n Move smart. Move safely."
+      }
+    ],
+    "axSnapshot": "- text: Trusted since 1945\n- link \"Find a Location\":\n  - /url: /storage\n- link \"1-800-GO-UHAUL\":\n  - /url: tel:18004684285\n- banner:\n  - link \"U-Haul home\":\n    - /url: /\n    - text: U-HAUL\n  - navigation \"Main navigation\":\n    - link \"Trucks & Trailers\":\n      - /url: /trucks-trailers\n    - link \"Storage\":\n      - /url: /storage\n    - link \"Moving Supplies\":\n      - /url: /moving-supplies\n    - link \"Hitches\":\n      - /url: /hitches\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- main:\n  - text: Moving made easier\n  - heading \"Your move. Your way.\" [level=1]\n  - paragraph: Affordable moving trucks, trailers, storage and supplies — all in one place.\n  - tablist \"Choose a service\":\n    - tab \"Trucks\" [selected]\n    - tab \"Trailers\"\n    - tab \"Storage\"\n  - text: Pick up location\n  - textbox \"Pick up location\":\n    - /placeholder: City, state or ZIP code\n  - text: Pick up date\n  - textbox \"Pick up date\": 2023-04-19\n  - button \"Get started\"\n  - text: Plan every part of your move\n  - heading \"What can we help you with?\" [level=2]\n  - paragraph: One trusted place for equipment, storage and moving essentials.\n  - article:\n    - heading \"Truck Rentals\" [level=3]\n    - paragraph: Choose the right-size truck with flexible local and one-way options.\n    - link \"View truck rates\":\n      - /url: /trucks-trailers\n  - article:\n    - heading \"Cargo Trailers\" [level=3]\n    - paragraph: Tow a secure enclosed trailer behind your own compatible vehicle.\n    - link \"Browse trailers\":\n      - /url: /trucks-trailers\n  - article:\n    - heading \"Self-Storage\" [level=3]\n    - paragraph: Find indoor and climate-controlled units close to your neighborhood.\n    - link \"Find storage\":\n      - /url: /storage\n  - article:\n    - heading \"Moving Supplies\" [level=3]\n    - paragraph: Shop curated box kits, packing materials and moving-day essentials.\n    - link \"Shop supplies\":\n      - /url: /moving-supplies\n  - text: Move with confidence\n  - heading \"Built around real moving days\" [level=2]\n  - paragraph: From the first box to the final mile, straightforward rates and helpful local teams keep your plans moving.\n  - link \"Build your moving kit\":\n    - /url: /moving-supplies\n  - heading \"20,000+ locations\" [level=3]\n  - paragraph: Find convenient help close to home.\n  - heading \"Flexible coverage\" [level=3]\n  - paragraph: Add protection that fits your move.\n  - heading \"Plans can change\" [level=3]\n  - paragraph: Manage mock reservations with ease.\n  - text: Simple from the start\n  - heading \"Ready in three easy steps\" [level=2]\n  - text: \"1\"\n  - heading \"Tell us your plan\" [level=3]\n  - paragraph: Enter where and when you are moving.\n  - text: \"2\"\n  - heading \"Compare your options\" [level=3]\n  - paragraph: Review clear rates, sizes and features.\n  - text: \"3\"\n  - heading \"Reserve with confidence\" [level=3]\n  - paragraph: Choose your equipment or unit and you are set.\n- contentinfo:\n  - link \"U-HAUL\":\n    - /url: /\n  - paragraph: Your one-stop shop for moving and storage.\n  - link \"1-800-GO-UHAUL\":\n    - /url: tel:18004684285\n  - heading \"Rentals\" [level=3]\n  - link \"Moving trucks\":\n    - /url: /trucks-trailers\n  - link \"Cargo trailers\":\n    - /url: /trucks-trailers\n  - link \"Trailer hitches\":\n    - /url: /hitches\n  - heading \"Storage & supplies\" [level=3]\n  - link \"Self-storage\":\n    - /url: /storage\n  - link \"Moving boxes\":\n    - /url: /moving-supplies\n  - link \"Shopping cart\":\n    - /url: /cart\n  - heading \"Helpful shortcuts\" [level=3]\n  - link \"Find a location\":\n    - /url: /storage\n  - link \"Get rental rates\":\n    - /url: /trucks-trailers\n  - link \"Contact support\":\n    - /url: tel:18004684285\n  - text: © 2026 U-Haul International, Inc. Mock experience. Move smart. Move safely."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/30-uhaul/dist/assets/index-BsOqhTap.js",
+      "offset": 320982,
+      "match": "className:\"utility-bar\"",
+      "context": ".jsx(Tx,{addToCart:m})}),r.jsx($a,{path:\"/cart\",element:r.jsx(zx,{cart:n,updateCart:h})}),r.jsx($a,{path:\"*\",element:r.jsx(Cx,{})})]})}),r.jsx(Ox,{}),o&&r.jsxs(\"div\",{className:\"toast\",role:\"status\",children:[r.jsx(k,{icon:wt}),r.jsx(\"span\",{children:o}),r.jsx(Re,{to:\"/cart\",children:\"View cart\"})]})]})}function yx({cartCount:n}){const[s,o]=T.useState(!1),c=Vt();return T.useEffect(()=>o(!1),[c.pathname]),r.jsxs(r.Fragment,{children:[r.jsx(\"div\",{className:\"utility-bar\",children:r.jsxs(\"div\",{className:\"container utility-inner\",children:[r.jsx(\"span\",{children:\"Trusted since 1945\"}),r.jsxs(\"div\",{children:[r.jsxs(Re,{to:\"/storage\",children:[r.jsx(k,{icon:Ut}),\" Find a Location\"]}),r.jsxs(\"a\",{href:\"tel:18004684285\",children:[r.jsx(k,{icon:hv}),\" 1-800-GO-UHAUL\"]})]})]})}),r.jsxs(\"header\",{className:\"site-header\",children:[r.jsxs(\"div\",{className:\"container header-inner\",children:[r.jsx(Re,{className:\"brand\",to:"
+    }
+  ]
+}

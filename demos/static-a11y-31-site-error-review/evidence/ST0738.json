@@ -1,0 +1,221 @@
+{
+  "site": "ca.gov",
+  "siteKey": "26-ca.gov",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/26-ca.gov/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 2,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/26-ca.gov/wave/attempt-1/raw.json",
+  "errorId": "ST0738",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/SPAN[2]",
+    "tag": "SPAN",
+    "text": "Built for accessibility and public service",
+    "html": "<span>Built for accessibility and public service</span>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1127.6875,
+      "y": 2599.515625,
+      "width": 182.3125,
+      "height": 16.359375
+    },
+    "style": {
+      "color": "rgb(145, 177, 191)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "10.56px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]",
+      "tag": "DIV",
+      "class": "shell footer-bottom",
+      "text": "© 2026 State of California\nBuilt for accessibility and public service",
+      "html": "<div class=\"shell footer-bottom\"><span>© 2026 State of California</span><span>Built for accessibility and public service</span></div>"
+    },
+    "control": null,
+    "matchedStyles": []
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "CA.gov | State of California",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[4]/H1[1]",
+        "tag": "H1",
+        "text": "How can we help you?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What do you need help with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Birth certificates",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Voting locations",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[3]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Seller's permit",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[4]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "California minimum wage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[5]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Find a school",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[6]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Unemployment benefits",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[7]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Food assistance",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[8]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Bill search",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[9]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Register to vote",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[10]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Office of Administrative Law",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[11]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Low-cost health insurance",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[12]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Find your state senator",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[13]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Cal Grant eligibility",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[3]/A[14]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Driver's license fees",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Know who represents you",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "POPULAR SERVICES",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "GOVERNMENT",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "GET HELP",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "CA\n.\ngov\nSTATE OF CALIFORNIA\nSearch CA.gov\nServices\nBenefits\nGovernment\nBusiness\nEducation"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Services\nBenefits\nGovernment\nBusiness\nEducation"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "CALIFORNIA FOR ALL\nHow can we help you?\n\nFind state services, benefits, and trusted information for life in California.\n\nSearch California services\nSearch\nPopular:\nRegister to vote\nFood assistance\nDriver’s license fees\nSERVICES\nWhat do you need help with?\nBrowse all services \nAll services\nBenefits & assistance\nBusiness\nEducation\nGovernment\nLiving in California\nBirth certificates\n\nRequest a certified copy of a California birth record.\n\nGet started \nVoting locations\n\nFind a vote center or ballot d"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "CA\n.\ngov\n\nCalifornia services and information in one place.\n\nPOPULAR SERVICES\nBirth certificates\nRegister to vote\nUnemployment benefits\nGOVERNMENT\nFind your representative\nSearch legislation\nAgency directory\nGET HELP\n 1-800-807-7777\n info@ca.gov\nBrowse all services\n© 2026 State of California\nBuilt for accessibility and public service"
+      }
+    ],
+    "axSnapshot": "- link \"Skip to main content\":\n  - /url: \"#main-content\"\n- text: Official website of the State of California\n- button \"How you know\"\n- banner:\n  - link \"CA.gov home\":\n    - /url: /\n    - text: CA . gov State of California\n  - search:\n    - text: Search CA.gov\n    - textbox \"Search CA.gov\":\n      - /placeholder: Search services and information\n    - button \"Submit search\"\n  - navigation \"Main navigation\":\n    - link \"Services\":\n      - /url: /search\n    - link \"Benefits\":\n      - /url: /search?category=benefits\n    - link \"Government\":\n      - /url: /search?category=government\n    - link \"Business\":\n      - /url: /search?category=business\n    - link \"Education\":\n      - /url: /search?category=education\n- main:\n  - text: California for all\n  - heading \"How can we help you?\" [level=1]\n  - paragraph: Find state services, benefits, and trusted information for life in California.\n  - search:\n    - text: Search California services\n    - textbox \"Search California services\":\n      - /placeholder: Try “birth certificate” or “minimum wage”\n    - button \"Search\"\n  - text: \"Popular:\"\n  - link \"Register to vote\":\n    - /url: /elections/register-to-vote\n  - link \"Food assistance\":\n    - /url: /benefits/food-assistance\n  - link \"Driver’s license fees\":\n    - /url: /dmv/license-fees\n  - text: Services\n  - heading \"What do you need help with?\" [level=2]\n  - link \"Browse all services\":\n    - /url: /search\n  - button \"All services\" [pressed]\n  - button \"Benefits & assistance\"\n  - button \"Business\"\n  - button \"Education\"\n  - button \"Government\"\n  - button \"Living in California\"\n  - link \"Birth certificates Request a certified copy of a California birth record. Get started\":\n    - /url: /services/birth-certificate\n    - heading \"Birth certificates\" [level=3]\n    - paragraph: Request a certified copy of a California birth record.\n    - text: Get started\n  - link \"Voting locations Find a vote center or ballot drop box near you. Get started\":\n    - /url: /elections/voting-location\n    - heading \"Voting locations\" [level=3]\n    - paragraph: Find a vote center or ballot drop box near you.\n    - text: Get started\n  - link \"Seller's permit Review requirements and begin a California seller’s permit application. Get started\":\n    - /url: /business/sellers-permit\n    - heading \"Seller's permit\" [level=3]\n    - paragraph: Review requirements and begin a California seller’s permit application.\n    - text: Get started\n  - link \"California minimum wage See the current statewide minimum wage and related rates. Get started\":\n    - /url: /labor/minimum-wage\n    - heading \"California minimum wage\" [level=3]\n    - paragraph: See the current statewide minimum wage and related rates.\n    - text: Get started\n  - link \"Find a school Browse public schools in San Jose and filter the list. Get started\":\n    - /url: /education/schools\n    - heading \"Find a school\" [level=3]\n    - paragraph: Browse public schools in San Jose and filter the list.\n    - text: Get started\n  - link \"Unemployment benefits Check what you need and start a new unemployment claim. Get started\":\n    - /url: /benefits/unemployment\n    - heading \"Unemployment benefits\" [level=3]\n    - paragraph: Check what you need and start a new unemployment claim.\n    - text: Get started\n  - link \"Food assistance Use the Getting Services portal to start a CalFresh application. Get started\":\n    - /url: /benefits/food-assistance\n    - heading \"Food assistance\" [level=3]\n    - paragraph: Use the Getting Services portal to start a CalFresh application.\n    - text: Get started\n  - link \"Bill search Look up California legislation by bill number. Get started\":\n    - /url: /legislature/bill-search\n    - heading \"Bill search\" [level=3]\n    - paragraph: Look up California legislation by bill number.\n    - text: Get started\n  - link \"Register to vote Check eligibility and start first-time voter registration. Get started\":\n    - /url: /elections/register-to-vote\n    - heading \"Register to vote\" [level=3]\n    - paragraph: Check eligibility and start first-time voter registration.\n    - text: Get started\n  - link \"Office of Administrative Law View the agency profile, address, phone, and email. Get started\":\n    - /url: /agency/oal\n    - heading \"Office of Administrative Law\" [level=3]\n    - paragraph: View the agency profile, address, phone, and email.\n    - text: Get started\n  - link \"Low-cost health insurance Check potential savings and start a health coverage application. Get started\":\n    - /url: /health/low-cost-insurance\n    - heading \"Low-cost health insurance\" [level=3]\n    - paragraph: Check potential savings and start a health coverage application.\n    - text: Get started\n  - link \"Find your state senator Enter a California address to find State Senate representation. Get started\":\n    - /url: /government/find-representative\n    - heading \"Find your state senator\" [level=3]\n    - paragraph: Enter a California address to find State Senate representation.\n    - text: Get started\n  - link \"Cal Grant eligibility Review the requirements for California Cal Grant awards. Get started\":\n    - /url: /education/cal-grant\n    - heading \"Cal Grant eligibility\" [level=3]\n    - paragraph: Review the requirements for California Cal Grant awards.\n    - text: Get started\n  - link \"Driver's license fees See fees for a new California driver’s license. Get started\":\n    - /url: /dmv/license-fees\n    - heading \"Driver's license fees\" [level=3]\n    - paragraph: See fees for a new California driver’s license.\n    - text: Get started\n  - text: Your government\n  - heading \"Know who represents you\" [level=2]\n  - paragraph: Use your home address to find your California State Senate representative and contact information.\n  - link \"Find my representative\":\n    - /url: /government/find-representative\n  - strong: Need help?\n  - text: Call California’s information line at\n  - link \"1-800-807-7777\":\n    - /url: tel:18008077777\n  - text: Services are available in multiple languages.\n- contentinfo:\n  - link \"CA.gov home\":\n    - /url: /\n    - text: CA . gov\n  - paragraph: California services and information in one place.\n  - heading \"Popular services\" [level=2]\n  - link \"Birth certificates\":\n    - /url: /services/birth-certificate\n  - link \"Register to vote\":\n    - /url: /elections/register-to-vote\n  - link \"Unemployment benefits\":\n    - /url: /benefits/unemployment\n  - heading \"Government\" [level=2]\n  - link \"Find your representative\":\n    - /url: /government/find-representative\n  - link \"Search legislation\":\n    - /url: /legislature/bill-search\n  - link \"Agency directory\":\n    - /url: /agency/oal\n  - heading \"Get help\" [level=2]\n  - link \"1-800-807-7777\":\n    - /url: tel:18008077777\n  - link \"info@ca.gov\":\n    - /url: mailto:info@ca.gov\n  - link \"Browse all services\":\n    - /url: /search\n  - text: © 2026 State of California Built for accessibility and public service"
+  },
+  "sourceSnippets": []
+}

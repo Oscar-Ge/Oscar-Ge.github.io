@@ -1,0 +1,198 @@
+{
+  "site": "flightaware",
+  "siteKey": "06-flightaware",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/06-flightaware/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "color-contrast",
+  "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "impact": "serious",
+  "nodeIndex": 1,
+  "selector": [
+    ".section-heading > div > .eyebrow"
+  ],
+  "html": "<div class=\"eyebrow\">Explore live aviation</div>",
+  "checks": {
+    "any": [
+      {
+        "id": "color-contrast",
+        "data": {
+          "fgColor": "#00a9e0",
+          "bgColor": "#ffffff",
+          "contrastRatio": 2.7,
+          "fontSize": "9.0pt (12px)",
+          "fontWeight": "bold",
+          "messageKey": null,
+          "expectedContrastRatio": "4.5:1"
+        },
+        "relatedNodes": [
+          {
+            "html": "<body>",
+            "target": [
+              "body"
+            ]
+          }
+        ],
+        "impact": "serious",
+        "message": "Element has insufficient color contrast of 2.7 (foreground color: #00a9e0, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/06-flightaware/axe/attempt-1/raw.json",
+  "errorId": "ST0185",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "tag": "DIV",
+    "text": "EXPLORE LIVE AVIATION",
+    "html": "<div class=\"eyebrow\">Explore live aviation</div>",
+    "class": "eyebrow",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 130,
+      "y": 804.3125,
+      "width": 586.453125,
+      "height": 14
+    },
+    "style": {
+      "color": "rgb(0, 169, 224)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "12px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "",
+      "text": "EXPLORE LIVE AVIATION\nEverything you need, in one view",
+      "html": "<div><div class=\"eyebrow\">Explore live aviation</div><h2>Everything you need, in one view</h2></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:34373/assets/index-CxkHqXh4.css",
+        "selector": ".eyebrow",
+        "declarations": {
+          "color": "var(--sky-500)",
+          "font-size": "12px",
+          "font-weight": "800"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "FlightAware — Live Flight Tracking & Aviation Intelligence",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/H1[1]",
+        "tag": "H1",
+        "text": "Know where your flight is.\nBefore it lands.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Everything you need, in one view",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Search any route",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/A[2]/H3[1]",
+        "tag": "H3",
+        "text": "Explore airport maps",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[2]/A[3]/H3[1]",
+        "tag": "H3",
+        "text": "Discover aviation photos",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Go beyond the public flight map",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Explore",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Community",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Business",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "FlightAware\nFlights\nAirports\nPhotos\nCommunity\nProducts\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Flights\nAirports\nPhotos\nCommunity\nProducts\nCareers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "LIVE FLIGHT INTELLIGENCE\nKnow where your flight is.\nBefore it lands.\n\nTrack flights, explore routes, and turn real-time aviation data into confident decisions.\n\nFrom\nTo\nSearch flights\n12,481 flights airborne\n195 countries covered\nUpdated seconds ago\nEXPLORE LIVE AVIATION\nEverything you need, in one view\nOpen Flight Finder \nSearch any route\n\nCompare schedules, current status, aircraft, gates, and route timing.\n\nFind a route \nExplore airport maps\n\nSee runways, local conditions, active traffic, and"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "FlightAware\n\nGlobal aviation intelligence for operators, travelers, and enthusiasts.\n\nExplore\nFlight finder\nAirports\nPopular photos\nCommunity\nDiscussions\nAircraft by country\nCareers\nBusiness\nSubscriptions\nAeroAPI plans\nAirport solutions\n© 2026 FlightAware-inspired demo\nReal-time experiences. Synthetic demo data."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"FlightAware home\":\n    - /url: /\n    - text: FlightAware\n  - navigation \"Main navigation\":\n    - link \"Flights\":\n      - /url: /live/find-flight\n    - link \"Airports\":\n      - /url: /airports\n    - link \"Photos\":\n      - /url: /photos\n    - link \"Community\":\n      - /url: /community\n    - button \"Products\"\n    - link \"Careers\":\n      - /url: /careers\n  - textbox \"Search flight or tail number\":\n    - /placeholder: \"Flight or tail #\"\n  - button \"Submit flight search\"\n- main:\n  - text: Live flight intelligence\n  - heading \"Know where your flight is. Before it lands.\" [level=1]\n  - paragraph: Track flights, explore routes, and turn real-time aviation data into confident decisions.\n  - text: From\n  - textbox \"From airport\":\n    - /placeholder: Airport, city, or state\n  - text: To\n  - textbox \"To airport\":\n    - /placeholder: Airport, city, or region\n  - button \"Search flights\"\n  - text: 12,481 flights airborne 195 countries covered Updated seconds ago Explore live aviation\n  - heading \"Everything you need, in one view\" [level=2]\n  - link \"Open Flight Finder\":\n    - /url: /live/find-flight\n  - link \"Search any route Compare schedules, current status, aircraft, gates, and route timing. Find a route\":\n    - /url: /live/find-flight?from=Ohio&to=New%20York&status=Arrived\n    - heading \"Search any route\" [level=3]\n    - paragraph: Compare schedules, current status, aircraft, gates, and route timing.\n    - text: Find a route\n  - link \"Explore airport maps See runways, local conditions, active traffic, and useful airport details. View KCCR\":\n    - /url: /airports/KCCR\n    - heading \"Explore airport maps\" [level=3]\n    - paragraph: See runways, local conditions, active traffic, and useful airport details.\n    - text: View KCCR\n  - link \"Discover aviation photos Browse popular community photography by aircraft model and airline. Browse photos\":\n    - /url: /photos\n    - heading \"Discover aviation photos\" [level=3]\n    - paragraph: Browse popular community photography by aircraft model and airline.\n    - text: Browse photos\n  - text: Built for aviation teams\n  - heading \"Go beyond the public flight map\" [level=2]\n  - paragraph: Operational products, flexible APIs, and premium intelligence for organizations that need aviation data to move faster.\n  - link \"Compare AeroAPI plans\":\n    - /url: /aeroapi\n  - link \"Airport solutions\":\n    - /url: /solutions/airports\n- contentinfo:\n  - link \"FlightAware home\":\n    - /url: /\n    - text: FlightAware\n  - paragraph: Global aviation intelligence for operators, travelers, and enthusiasts.\n  - heading \"Explore\" [level=3]\n  - link \"Flight finder\":\n    - /url: /live/find-flight\n  - link \"Airports\":\n    - /url: /airports\n  - link \"Popular photos\":\n    - /url: /photos\n  - heading \"Community\" [level=3]\n  - link \"Discussions\":\n    - /url: /community/discussions\n  - link \"Aircraft by country\":\n    - /url: /community/aircraft-countries\n  - link \"Careers\":\n    - /url: /careers\n  - heading \"Business\" [level=3]\n  - link \"Subscriptions\":\n    - /url: /subscriptions\n  - link \"AeroAPI plans\":\n    - /url: /aeroapi\n  - link \"Airport solutions\":\n    - /url: /solutions/airports\n  - text: © 2026 FlightAware-inspired demo Real-time experiences. Synthetic demo data."
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/06-flightaware/dist/assets/index-pabdqSKY.js",
+      "offset": 331568,
+      "match": "className:\"eyebrow\"",
+      "context": "roAPI plans\"}),r.jsx(me,{to:\"/solutions/airports\",children:\"Airport solutions\"})]})]}),r.jsxs(\"div\",{className:\"footer-bottom\",children:[r.jsx(\"span\",{children:\"© 2026 FlightAware-inspired demo\"}),r.jsx(\"span\",{children:\"Real-time experiences. Synthetic demo data.\"})]})]})}function Xt({eyebrow:n,title:s,description:o,children:c}){return r.jsx(\"section\",{className:\"page-intro\",children:r.jsxs(\"div\",{className:\"container\",children:[n&&r.jsx(\"div\",{className:\"eyebrow\",children:n}),r.jsx(\"h1\",{children:s}),o&&r.jsx(\"p\",{children:o}),c]})})}function gv({compact:n=!1,initialValues:s,onSearch:o}){const[c,d]=z.useState(s||{from:\"\",to:\"\",status:\"Any status\",aircraft:\"Any aircraft\"});z.useEffect(()=>{s&&d(s)},[s?.from,s?.to,s?.status,s?.aircraft]);const h=(p,y)=>d(g=>({...g,[p]:y})),m=p=>{p.preventDefault(),o(c)};return r.jsxs(\"form\",{className:`flight-search-form ${n?\"compact\":\"\"}`,onSubmit:m,children:[r.jsxs(\"labe"
+    }
+  ]
+}

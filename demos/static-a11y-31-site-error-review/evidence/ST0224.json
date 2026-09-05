@@ -1,0 +1,163 @@
+{
+  "site": "enterprise",
+  "siteKey": "11-enterprise",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/11-enterprise/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "label_orphaned",
+  "description": "Orphaned form label",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[3]/LABEL[2]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[3]/LABEL[2]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/11-enterprise/wave/attempt-1/raw.json",
+  "errorId": "ST0224",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[3]/LABEL[2]",
+    "tag": "LABEL",
+    "text": "Pick-up time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:00 PM\n5:00 PM\n6:00 PM",
+    "html": "<label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"clock\" class=\"svg-inline--fa fa-clock\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"></path></svg> Pick-up time</span><select name=\"pickupTime\"><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select></label>",
+    "class": "field",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 842.703125,
+      "y": 423.84375,
+      "width": 125.1875,
+      "height": 73.828125
+    },
+    "style": {
+      "color": "rgb(20, 37, 28)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[3]",
+      "tag": "DIV",
+      "class": "trip-input-grid",
+      "text": " Pick-up date\n Pick-up time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:00 PM\n5:00 PM\n6:00 PM\n Return date\n Return time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:00 PM\n5:00 PM\n6:00 PM",
+      "html": "<div class=\"trip-input-grid\"><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"calendar-days\" class=\"svg-inline--fa fa-calendar-days\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z\"></path></svg> Pick-up date</span><input type=\"date\" value=\"2026-04-05\" name=\"pickupDate\"></label><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"clock\" class=\"svg-inline--fa fa-clock\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"></path></svg> Pick-up time</span><select name=\"pickupTime\"><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select></label><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"calendar-days\" class=\"svg-inline--fa fa-calendar-days\" role=\"img\" viewBox=\"0 0 448 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z\"></path></svg> Return date</span><input type=\"date\" value=\"2026-04-08\" name=\"returnDate\"></label><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"clock\" class=\"svg-inline--fa fa-clock\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z\"></path></svg> Return time</span><select name=\"returnTime\"><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select></label></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:43189/assets/index-BZ8Qsl0Q.css",
+        "selector": ".field",
+        "declarations": {
+          "display": "flex"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Ready when you are.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Start a reservation",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Everything your trip needs",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Make the drive the destination.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "A better way to buy used.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Get rental offers in your inbox",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Rent",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Shop & manage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Need help?",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": " Customer support: (855) 266-9565\nUS · English\ne\nenterprise\nRENT-A-CAR\nRent\nExotic Cars\nBuy a Car\nHotel Pickup\nManage Reservation\nEmail Offers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Rent\nExotic Cars\nBuy a Car\nHotel Pickup\nManage Reservation\nEmail Offers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "THE ROAD IS YOURS\nReady when you are.\n\nFrom quick city trips to unforgettable getaways, find a vehicle that fits your plans.\n\n No hidden booking fees\n Free cancellation on most rentals\nRESERVE A VEHICLE\nStart a reservation\nSecure booking\n Pickup location\nReturn to a different location\n Pick-up date\n Pick-up time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:00 PM\n5:00 PM\n6:00 PM\n Return date\n Return time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "e\nenterprise\nRENT-A-CAR\n\nEvery journey starts with a reliable ride. Mock rental experiences, made simple.\n\nRent\nStart a reservation\nExotic collection\nHotel pickup\nShop & manage\nCars for sale\nLook up a booking\nEmail offers\nNeed help?\n\n (855) 266-9565\n\nOpen daily, 7 a.m.–10 p.m.\n\n© 2026 Enterprise Rent-A-Car mock experience.\nRates and inventory are simulated for demonstration."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: \"Customer support: (855) 266-9565 US · English\"\n  - link \"Enterprise Rent-A-Car\":\n    - /url: /\n    - text: e enterprise rent-a-car\n  - navigation \"Primary navigation\":\n    - link \"Rent\":\n      - /url: /\n    - link \"Exotic Cars\":\n      - /url: /exotic-cars\n    - link \"Buy a Car\":\n      - /url: /cars-for-sale\n    - link \"Hotel Pickup\":\n      - /url: /hotel-pickup\n    - link \"Manage Reservation\":\n      - /url: /reservation-lookup\n    - link \"Email Offers\":\n      - /url: /email-offers\n- main:\n  - text: The road is yours\n  - heading \"Ready when you are.\" [level=1]\n  - paragraph: From quick city trips to unforgettable getaways, find a vehicle that fits your plans.\n  - text: No hidden booking fees Free cancellation on most rentals Reserve a vehicle\n  - heading \"Start a reservation\" [level=2]\n  - text: Secure booking Pickup location\n  - combobox \"Pickup location\"\n  - checkbox \"Return to a different location\"\n  - text: Return to a different location Pick-up date\n  - textbox \"Pick-up date\": 2026-04-05\n  - text: Pick-up time\n  - combobox \"Pick-up time\":\n    - option \"8:00 AM\"\n    - option \"9:00 AM\"\n    - option \"10:00 AM\"\n    - option \"11:00 AM\" [selected]\n    - option \"12:00 PM\"\n    - option \"1:00 PM\"\n    - option \"2:00 PM\"\n    - option \"3:00 PM\"\n    - option \"4:00 PM\"\n    - option \"5:00 PM\"\n    - option \"6:00 PM\"\n  - text: Return date\n  - textbox \"Return date\": 2026-04-08\n  - text: Return time\n  - combobox \"Return time\":\n    - option \"8:00 AM\"\n    - option \"9:00 AM\"\n    - option \"10:00 AM\"\n    - option \"11:00 AM\"\n    - option \"12:00 PM\"\n    - option \"1:00 PM\"\n    - option \"2:00 PM\"\n    - option \"3:00 PM\"\n    - option \"4:00 PM\"\n    - option \"5:00 PM\" [selected]\n    - option \"6:00 PM\"\n  - text: Renter age\n  - combobox \"Renter age\":\n    - option \"18 years old\"\n    - option \"19 years old\"\n    - option \"20 years old\"\n    - option \"21 years old\"\n    - option \"22 years old\"\n    - option \"23 years old\"\n    - option \"24 years old\"\n    - option \"25 or older\" [selected]\n  - text: Vehicle class\n  - combobox \"Vehicle class\":\n    - option \"Any vehicle\" [selected]\n    - option \"Economy\"\n    - option \"Compact\"\n    - option \"SUV\"\n    - option \"Mini Van\"\n    - option \"Pickup Truck\"\n    - option \"Exotic\"\n  - text: Passengers\n  - combobox \"Passengers\":\n    - option \"1 person\"\n    - option \"2 people\" [selected]\n    - option \"3 people\"\n    - option \"4 people\"\n    - option \"5 people\"\n    - option \"6 people\"\n    - option \"7 people\"\n  - button \"View vehicles\"\n  - link \"Pickup at your hotel Find Boston hotels by ZIP code\":\n    - /url: /hotel-pickup\n    - strong: Pickup at your hotel\n    - text: Find Boston hotels by ZIP code\n  - link \"Explore exotic vehicles Performance and luxury collection\":\n    - /url: /exotic-cars\n    - strong: Explore exotic vehicles\n    - text: Performance and luxury collection\n  - link \"Manage a reservation Look up a booking or ticket\":\n    - /url: /reservation-lookup\n    - strong: Manage a reservation\n    - text: Look up a booking or ticket\n  - text: More ways to move\n  - heading \"Everything your trip needs\" [level=2]\n  - paragraph: Thoughtful options for family weekends, business travel and once-in-a-lifetime drives.\n  - article:\n    - paragraph: Enterprise Exotic Car Collection\n    - heading \"Make the drive the destination.\" [level=3]\n    - paragraph: Browse sports cars and premium SUVs, including Corvette, Porsche, Range Rover and Ferrari models.\n    - link \"View exotic vehicles\":\n      - /url: /exotic-cars\n  - article:\n    - paragraph: Enterprise Car Sales\n    - heading \"A better way to buy used.\" [level=3]\n    - paragraph: Shop no-haggle used vehicles, including convertibles under $20,000.\n    - link \"Browse cars for sale\":\n      - /url: /cars-for-sale\n  - text: Drive more, spend less\n  - heading \"Get rental offers in your inbox\" [level=2]\n  - paragraph: Sign up for member-only promotions and travel inspiration.\n  - link \"Sign me up\":\n    - /url: /email-offers\n- contentinfo:\n  - text: e enterprise rent-a-car\n  - paragraph: Every journey starts with a reliable ride. Mock rental experiences, made simple.\n  - heading \"Rent\" [level=3]\n  - link \"Start a reservation\":\n    - /url: /\n  - link \"Exotic collection\":\n    - /url: /exotic-cars\n  - link \"Hotel pickup\":\n    - /url: /hotel-pickup\n  - heading \"Shop & manage\" [level=3]\n  - link \"Cars for sale\":\n    - /url: /cars-for-sale\n  - link \"Look up a booking\":\n    - /url: /reservation-lookup\n  - link \"Email offers\":\n    - /url: /email-offers\n  - heading \"Need help?\" [level=3]\n  - paragraph: (855) 266-9565\n  - paragraph: Open daily, 7 a.m.–10 p.m.\n  - text: © 2026 Enterprise Rent-A-Car mock experience. Rates and inventory are simulated for demonstration."
+  },
+  "sourceSnippets": []
+}

@@ -1,0 +1,115 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- banner:
+  - text: Care that puts your needs first
+  - link "Request an appointment":
+    - /url: /appointments
+  - link "Find a doctor":
+    - /url: /find-a-doctor
+  - button "Patient login"
+  - link "Mayo Clinic home":
+    - /url: /
+    - text: MAYO CLINIC
+  - navigation "Primary navigation":
+    - link "Patient care":
+      - /url: /patient-care
+    - link "Departments & centers":
+      - /url: /departments-centers
+    - link "Education":
+      - /url: /education
+    - link "Research":
+      - /url: /research
+  - button "Open site search"
+- main:
+  - paragraph: World-class care, focused on you
+  - heading "Answers. Expertise. Hope." [level=1]:
+    - text: Answers. Expertise.
+    - emphasis: Hope.
+  - paragraph: At Mayo Clinic, specialists work together to solve the world’s toughest medical problems—so you can get back to what matters most.
+  - link "Request an appointment":
+    - /url: /appointments
+  - link "Find a doctor":
+    - /url: /find-a-doctor
+  - strong: Team-based
+  - text: specialty care
+  - strong: 3 major
+  - text: destination campuses How can we help?
+  - textbox "How can we help?":
+    - /placeholder: Search a condition, doctor, department or program
+  - button "Search" [disabled]
+  - link "Find a doctor Search our specialists":
+    - /url: /find-a-doctor
+    - strong: Find a doctor
+    - text: Search our specialists
+  - link "Diseases & conditions Trusted health information":
+    - /url: /diseases-conditions
+    - strong: Diseases & conditions
+    - text: Trusted health information
+  - link "Check symptoms Explore possible causes":
+    - /url: /symptom-checker
+    - strong: Check symptoms
+    - text: Explore possible causes
+  - paragraph: Why choose Mayo Clinic
+  - heading "Experience care built around your whole story" [level=2]
+  - paragraph: Our experts collaborate across specialties, reviewing every detail to create a plan designed for you—not just your diagnosis.
+  - list:
+    - listitem: Leading experts in serious and complex care
+    - listitem: Appointments coordinated to respect your time
+    - listitem: Research and innovation brought to the bedside
+  - link "Explore patient care":
+    - /url: /patient-care
+  - paragraph: Explore Mayo Clinic
+  - heading "Knowledge that moves medicine forward" [level=2]
+  - link "Departments & centers Neurosciences Discover coordinated programs for complex brain, spine and nervous system conditions. Explore programs":
+    - /url: /departments-centers/neurosciences
+    - text: Departments & centers
+    - heading "Neurosciences" [level=3]
+    - paragraph: Discover coordinated programs for complex brain, spine and nervous system conditions.
+    - text: Explore programs
+  - link "Education Train where medicine is transformed Explore degree programs, internships and immersive learning opportunities. Explore education":
+    - /url: /education
+    - text: Education
+    - heading "Train where medicine is transformed" [level=3]
+    - paragraph: Explore degree programs, internships and immersive learning opportunities.
+    - text: Explore education
+  - link "Research Airway Biology Laboratory Meet the team studying airway health, inflammation and respiratory disease. Visit the lab":
+    - /url: /research/labs/airway-biology
+    - text: Research
+    - heading "Airway Biology Laboratory" [level=3]
+    - paragraph: Meet the team studying airway health, inflammation and respiratory disease.
+    - text: Visit the lab
+  - paragraph: Ready when you are
+  - heading "Take the next step toward answers" [level=2]
+  - link "Request an appointment":
+    - /url: /appointments
+  - link "Call 1-800-423-2233":
+    - /url: tel:18004232233
+- contentinfo:
+  - link "Mayo Clinic home":
+    - /url: /
+    - text: MAYO CLINIC
+  - paragraph: Transforming medicine to connect and cure as the global authority in the care of serious or complex disease.
+  - link "Request an appointment":
+    - /url: /appointments
+  - heading "Patient care" [level=2]
+  - link "Find a doctor":
+    - /url: /find-a-doctor
+  - link "Diseases & conditions":
+    - /url: /diseases-conditions
+  - link "Symptom Checker":
+    - /url: /symptom-checker
+  - heading "Explore" [level=2]
+  - link "Departments & centers":
+    - /url: /departments-centers
+  - link "Education":
+    - /url: /education
+  - link "Research":
+    - /url: /research
+  - heading "Contact" [level=2]
+  - link "1-800-423-2233":
+    - /url: tel:18004232233
+  - link "Send a message":
+    - /url: mailto:information@example.org
+  - link "Locations":
+    - /url: /locations
+  - text: © 2026 Mayo Clinic experience Demonstration website with synthetic content. Not medical advice.

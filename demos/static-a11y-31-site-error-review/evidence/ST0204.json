@@ -1,0 +1,181 @@
+{
+  "site": "yelp",
+  "siteKey": "08-yelp",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/08-yelp/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 2,
+  "selector": [
+    ".hero-copy"
+  ],
+  "html": "<p class=\"hero-copy\">Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.</p>",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/08-yelp/axe/attempt-1/raw.json",
+  "errorId": "ST0204",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[3]/P[2]",
+    "tag": "P",
+    "text": "Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.",
+    "html": "<p class=\"hero-copy\">Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.</p>",
+    "class": "hero-copy",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 86.390625,
+      "y": 413.140625,
+      "width": 720,
+      "height": 61.1875
+    },
+    "style": {
+      "color": "rgba(255, 255, 255, 0.76)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[3]",
+      "tag": "DIV",
+      "class": "hero-content",
+      "text": "LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT\n\nFind your next\nfavorite place.\n\nExplore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.\n\nSEARCH FOR\nNEAR\nSearch\nTop Thai in Westminster\nFast electricians near 94115\nDog-friendly cafes",
+      "html": "<div class=\"hero-content\"><p class=\"eyebrow\">LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT</p><h1>Find your next<br><span>favorite place.</span></h1><p class=\"hero-copy\">Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.</p><form class=\"search-box \" role=\"search\"><label class=\"search-field\"><span>Search for</span><input aria-label=\"Search for businesses\" placeholder=\"tacos, electricians, coffee…\" list=\"business-suggestions\" value=\"\"></label><span class=\"search-divider\" aria-hidden=\"true\"></span><label class=\"search-field location-field\"><span>Near</span><input aria-label=\"Search location\" placeholder=\"city, state or zip\" list=\"location-suggestions\" value=\"\"></label><button class=\"search-submit\" type=\"submit\" aria-label=\"Search\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg><span>Search</span></button><datalist id=\"business-suggestions\"><option value=\"Parking for limos\"></option><option value=\"Coffee shop\"></option><option value=\"McDonald's\"></option><option value=\"Barbershops\"></option><option value=\"Thai restaurants\"></option><option value=\"Spas\"></option><option value=\"Electricians\"></option><option value=\"Mexican restaurants\"></option><option value=\"Phone repair\"></option><option value=\"Movers\"></option><option value=\"Cafes\"></option><option value=\"Locksmiths\"></option><option value=\"Hot Dogs\"></option><option value=\"Cocktail bars\"></option><option value=\"Landscapers\"></option><option value=\"Dry cleaning\"></option><option value=\"Burgers\"></option><option value=\"Shopping\"></option><option value=\"Cantonese food\"></option><option value=\"Car wash\"></option><option value=\"Boxing gym\"></option></datalist><datalist id=\"location-suggestions\"><option value=\"California City, CA\"></option><option value=\"Greenvill, SC\"></option><option value=\"Westminster, CA\"></option><option value=\"Concord, CA\"></option><option value=\"Houston, TX\"></option><option value=\"94115\"></option><option value=\"Honolulu, HI\"></option><option value=\"Texas City, TX\"></option><option value=\"Oakland, CA\"></option><option value=\"San Francisco, CA\"></option><option value=\"West Hollywood, CA\"></option><option value=\"New York City\"></option><option value=\"44012\"></option><option value=\"Central New York\"></option><option value=\"Chicago, IL\"></option><option value=\"Dallas, TX\"></option></datalist></form><div class=\"hero-links\"><button type=\"button\">Top Thai in Westminster</button><button type=\"button\">Fast electricians near 94115</button><button type=\"button\">Dog-friendly cafes</button></div></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:33843/assets/index-B2LBlrQp.css",
+        "selector": ".hero-copy",
+        "declarations": {
+          "color": "rgba(255, 255, 255, 0.76)",
+          "font-size": "18px"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:33843/assets/index-B2LBlrQp.css",
+        "selector": ".hero-copy",
+        "declarations": {
+          "font-size": "16px"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "Yelp — Discover trusted local businesses",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Find your next\nfavorite place.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/ASIDE[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Juniper Cocktail Club",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What are you looking for?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Local standouts",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Juniper Coffee House",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Siam Garden",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "BrightLine Electric",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "yelp\n✦\nFIND\nNEAR\nYelp for Business\nCollections\nWrite a Review\nLog In\nSign Up"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Yelp for Business\nCollections\nWrite a Review\nLog In\nSign Up"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": "Featured business",
+        "text": "COMMUNITY FAVORITE\nCOCKTAIL BARS\n\nSan Francisco · Cocktail Bars\n\nJuniper Cocktail Club\n4.8\n(3,876)\nSee why locals love it "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "EXPLORE YOUR CITY\n\nWhat are you looking for?\n\nStart with a category, then narrow the results with the details that matter.\n\nRestaurants\nExplore nearby \nCoffee & Cafes\nExplore nearby \nHome Services\nExplore nearby \nAuto Services\nExplore nearby \nBeauty & Spas\nExplore nearby \nBarbers\nExplore nearby \nShopping\nExplore nearby \nMore\nExplore nearby \n\nHIGHLY RATED\n\nLocal standouts\nBrowse all businesses \nCOFFEE & TEA\n\n1. COFFEE & TEA\n\nJuniper Coffee House\n4.8\n(864)\n$$\nCoffee & Tea, Cafes\nTHAI\n\n2. THAI\n\nSia"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "yelp\n✦\n\nDiscover trusted places and local pros.\n\nDISCOVER\nRestaurants\nHome services\nShopping\nPLAN\nCollections\nCoffee shops\nCar washes\nDEMO\n\nAll listings, reviews, availability, and transactions on this site are synthetic.\n\n© 2026 Yelp-style local discovery demo"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Yelp home\":\n    - /url: /\n    - text: yelp ✦\n  - search:\n    - text: Find\n    - combobox \"Search for businesses\"\n    - text: Near\n    - combobox \"Search location\"\n    - button \"Search\"\n  - navigation \"Main navigation\":\n    - button \"Yelp for Business\"\n    - link \"Collections\":\n      - /url: /collections\n    - button \"Write a Review\"\n    - button \"Log In\"\n    - button \"Sign Up\"\n- paragraph: LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT\n- heading \"Find your next favorite place.\" [level=1]\n- paragraph: Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.\n- search:\n  - text: Search for\n  - combobox \"Search for businesses\"\n  - text: Near\n  - combobox \"Search location\"\n  - button \"Search\"\n- button \"Top Thai in Westminster\"\n- button \"Fast electricians near 94115\"\n- button \"Dog-friendly cafes\"\n- complementary \"Featured business\":\n  - text: Community favorite Cocktail Bars\n  - paragraph: San Francisco · Cocktail Bars\n  - heading \"Juniper Cocktail Club\" [level=2]\n  - strong: \"4.8\"\n  - text: (3,876)\n  - button \"See why locals love it\"\n- main:\n  - paragraph: EXPLORE YOUR CITY\n  - heading \"What are you looking for?\" [level=2]\n  - paragraph: Start with a category, then narrow the results with the details that matter.\n  - button \"Restaurants Explore nearby\":\n    - strong: Restaurants\n    - text: Explore nearby\n  - button \"Coffee & Cafes Explore nearby\":\n    - strong: Coffee & Cafes\n    - text: Explore nearby\n  - button \"Home Services Explore nearby\":\n    - strong: Home Services\n    - text: Explore nearby\n  - button \"Auto Services Explore nearby\":\n    - strong: Auto Services\n    - text: Explore nearby\n  - button \"Beauty & Spas Explore nearby\":\n    - strong: Beauty & Spas\n    - text: Explore nearby\n  - button \"Barbers Explore nearby\":\n    - strong: Barbers\n    - text: Explore nearby\n  - button \"Shopping Explore nearby\":\n    - strong: Shopping\n    - text: Explore nearby\n  - button \"More Explore nearby\":\n    - strong: More\n    - text: Explore nearby\n  - paragraph: HIGHLY RATED\n  - heading \"Local standouts\" [level=2]\n  - button \"Browse all businesses\"\n  - article:\n    - link \"View Juniper Coffee House\":\n      - /url: /biz/juniper-coffee-house\n      - text: Coffee & Tea\n    - paragraph: 1. Coffee & Tea\n    - heading \"Juniper Coffee House\" [level=2]:\n      - link \"Juniper Coffee House\":\n        - /url: /biz/juniper-coffee-house\n    - strong: \"4.8\"\n    - text: (864) $$ •Coffee & Tea, Cafes\n  - article:\n    - link \"View Siam Garden\":\n      - /url: /biz/siam-garden-westminster\n      - text: Thai\n    - paragraph: 2. Thai\n    - heading \"Siam Garden\" [level=2]:\n      - link \"Siam Garden\":\n        - /url: /biz/siam-garden-westminster\n    - strong: \"5.0\"\n    - text: (764) $$ •Thai, Noodles\n  - article:\n    - link \"View BrightLine Electric\":\n      - /url: /biz/brightline-electric\n      - text: Electricians\n    - paragraph: 3. Electricians\n    - heading \"BrightLine Electric\" [level=2]:\n      - link \"BrightLine Electric\":\n        - /url: /biz/brightline-electric\n    - strong: \"5.0\"\n    - text: (642) $$ •Electricians, Lighting Fixtures & Equipment\n  - strong: Trusted details\n  - text: Clear service and amenity signals\n  - strong: Fast responses\n  - text: See who gets back to you quickly\n  - strong: Save your finds\n  - text: Build collections for every plan\n- contentinfo:\n  - link \"yelp ✦\":\n    - /url: /\n  - paragraph: Discover trusted places and local pros.\n  - strong: Discover\n  - link \"Restaurants\":\n    - /url: /search?find_desc=Restaurants\n  - link \"Home services\":\n    - /url: /search?find_desc=Home+Services\n  - link \"Shopping\":\n    - /url: /search?find_desc=Shopping\n  - strong: Plan\n  - link \"Collections\":\n    - /url: /collections\n  - link \"Coffee shops\":\n    - /url: /search?find_desc=Coffee+shop\n  - link \"Car washes\":\n    - /url: /search?find_desc=Car+wash\n  - strong: Demo\n  - paragraph: All listings, reviews, availability, and transactions on this site are synthetic.\n  - text: © 2026 Yelp-style local discovery demo"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/08-yelp/dist/assets/index-CwiiBbkE.js",
+      "offset": 350337,
+      "match": "className:\"hero-copy\"",
+      "context": "lectric\"].includes(o.id));return d.jsxs(d.Fragment,{children:[d.jsxs(\"section\",{className:\"hero\",children:[d.jsx(\"div\",{className:\"hero-orb hero-orb-one\"}),d.jsx(\"div\",{className:\"hero-orb hero-orb-two\"}),d.jsxs(\"div\",{className:\"hero-content\",children:[d.jsx(\"p\",{className:\"eyebrow\",children:\"LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT\"}),d.jsxs(\"h1\",{children:[\"Find your next\",d.jsx(\"br\",{}),d.jsx(\"span\",{children:\"favorite place.\"})]}),d.jsx(\"p\",{className:\"hero-copy\",children:\"Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.\"}),d.jsx(po,{}),d.jsxs(\"div\",{className:\"hero-links\",children:[d.jsx(\"button\",{type:\"button\",onClick:()=>c(\"/search?find_desc=Thai+restaurants&find_loc=Westminster%2C+CA\"),children:\"Top Thai in Westminster\"}),d.jsx(\"button\",{type:\"button\",onClick:()=>c(\"/search?find_desc=Electricians&find_loc=94115\"),children:\"Fast electrician"
+    }
+  ]
+}

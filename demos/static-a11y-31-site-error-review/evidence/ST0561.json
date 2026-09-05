@@ -1,0 +1,232 @@
+{
+  "site": "udemy",
+  "siteKey": "21-udemy",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/21-udemy/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 60,
+  "selector": [
+    ".section:nth-child(6) > .course-grid > article:nth-child(2) > .course-card-body > .course-card-heading > a"
+  ],
+  "html": "<a href=\"/course/javascript-beginners-popular\" data-discover=\"true\"><h3>The Complete JavaScript Course for Beginners</h3></a>",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/21-udemy/axe/attempt-1/raw.json",
+  "errorId": "ST0561",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/A[1]",
+    "tag": "A",
+    "text": "The Complete JavaScript Course for Beginners",
+    "html": "<a href=\"/course/javascript-beginners-popular\" data-discover=\"true\"><h3>The Complete JavaScript Course for Beginners</h3></a>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/course/javascript-beginners-popular",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 448,
+      "y": 2864.90625,
+      "width": 202,
+      "height": 42.34375
+    },
+    "style": {
+      "color": "rgb(23, 21, 31)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "course-card-heading",
+      "text": "The Complete JavaScript Course for Beginners",
+      "html": "<div class=\"course-card-heading\"><a href=\"/course/javascript-beginners-popular\" data-discover=\"true\"><h3>The Complete JavaScript Course for Beginners</h3></a><button class=\"wish-button \" type=\"button\" aria-label=\"Add The Complete JavaScript Course for Beginners to wishlist\"><svg data-prefix=\"fas\" data-icon=\"heart\" class=\"svg-inline--fa fa-heart\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M241 87.1l15 20.7 15-20.7C296 52.5 336.2 32 378.9 32 452.4 32 512 91.6 512 165.1l0 2.6c0 112.2-139.9 242.5-212.9 298.2-12.4 9.4-27.6 14.1-43.1 14.1s-30.8-4.6-43.1-14.1C139.9 410.2 0 279.9 0 167.7l0-2.6C0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1z\"></path></svg></button></div>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/A[1]",
+      "tag": "A",
+      "text": "The Complete JavaScript Course for Beginners",
+      "ariaLabel": null,
+      "href": "/course/javascript-beginners-popular",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:35831/assets/index-CxuSPZDX.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:35831/assets/index-CxuSPZDX.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "Udemy Learning Marketplace",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Learn today.\nLead tomorrow.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What do you want to learn?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Skills learners love right now",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Business Leadership & Strategy Masterclass",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Python From Zero: The Beginner Masterclass",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "The Science of Better Habits & Personal Growth",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[3]/DIV[2]/ARTICLE[4]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Unreal Engine 5 Game Development Bootcamp",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Prepare for your next cloud role.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[4]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Developer – Associate",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Beginner favorites",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Startup Foundations: Validate Before You Build",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "The Complete JavaScript Course for Beginners",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Home Workout for Weight Loss: 30 Days to Stronger",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[5]/DIV[2]/ARTICLE[4]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Pencil Drawing Fundamentals: Shape to Shading",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Skills open doors. Start learning today.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "DISCOVER",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "COMPANY",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[2]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "SUPPORT",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "udemy\nExplore\nCertifications\nTeach on Udemy"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Certifications\nTeach on Udemy"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "LEARN WITHOUT LIMITS\nSkills open doors. Start learning today.\nExplore top courses\nudemy\n\nLearn practical skills from real-world experts, at your pace.\n\nDISCOVER\nDevelopment\nBusiness\nCertifications\nCOMPANY\nAbout us\nInvestor events\nBecome a tutor\nSUPPORT\nHelp center\nAccessibility\nTerms\n© 2026 Udemy Learning, Inc.\nEnglish"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Udemy home\":\n    - /url: /\n    - text: udemy\n  - button \"Explore\"\n  - search:\n    - textbox \"Search for anything\"\n  - navigation \"Primary navigation\":\n    - link \"Certifications\":\n      - /url: /certifications\n    - link \"Teach on Udemy\":\n      - /url: /teach\n    - link \"Wishlist with 0 courses\":\n      - /url: /wishlist\n    - link \"Cart with 0 courses\":\n      - /url: /cart\n  - link \"Cart with 0 courses\":\n    - /url: /cart\n- text: Learn the skills shaping 2026\n- heading \"Learn today. Lead tomorrow.\" [level=1]:\n  - text: Learn today.\n  - emphasis: Lead tomorrow.\n- paragraph: Build real-world skills with expert-led courses in technology, business, creativity, and more.\n- search:\n  - textbox \"Search for anything\"\n  - button \"Search\"\n- text: \"Popular:\"\n- link \"Python\":\n  - /url: /courses?search=Python&level=Beginner&sort=highest\n- link \"JavaScript\":\n  - /url: /courses?search=JavaScript&level=Beginner&sort=popular\n- link \"Public speaking\":\n  - /url: /courses?search=Public%20Speaking&rating=4.5&sort=newest\n- strong: 78M+\n- text: Learners\n- strong: 250K+\n- text: Courses\n- strong: 4.7/5\n- text: Avg. rating Weekly progress\n- strong: 8.5 hours\n- paragraph: You’re in the top 10% this week\n- strong: JavaScript\n- text: 12 lessons complete A M J\n- strong: 24K learning now\n- text: Join the community Explore by category\n- heading \"What do you want to learn?\" [level=2]\n- link \"Development Explore top courses\":\n  - /url: /courses?search=JavaScript\n  - strong: Development\n  - text: Explore top courses\n- link \"Business Explore top courses\":\n  - /url: /courses?search=Business\n  - strong: Business\n  - text: Explore top courses\n- link \"Design Explore top courses\":\n  - /url: /courses?search=Game%20Design\n  - strong: Design\n  - text: Explore top courses\n- link \"IT & Software Explore top courses\":\n  - /url: /courses?search=Linux%20Administration\n  - strong: IT & Software\n  - text: Explore top courses\n- link \"Personal Development Explore top courses\":\n  - /url: /courses?search=Personal%20Development\n  - strong: Personal Development\n  - text: Explore top courses\n- link \"Health & Fitness Explore top courses\":\n  - /url: /courses?search=Home%20Workout\n  - strong: Health & Fitness\n  - text: Explore top courses\n- text: Curated for you\n- heading \"Skills learners love right now\" [level=2]\n- paragraph: Bestsellers, fresh releases, and highly rated courses chosen by our learning community.\n- link \"See all\":\n  - /url: /courses?search=popular\n- article:\n  - link \"View Business Leadership & Strategy Masterclass\":\n    - /url: /course/business-leadership-masterclass\n    - text: Business Strategy\n  - link \"Business Leadership & Strategy Masterclass\":\n    - /url: /course/business-leadership-masterclass\n    - heading \"Business Leadership & Strategy Masterclass\" [level=3]\n  - button \"Add Business Leadership & Strategy Masterclass to wishlist\"\n  - paragraph: Think like a general manager, lead high-performing teams, and turn strategy into measurable results.\n  - paragraph: Michael Rhodes\n  - strong: \"4.9\"\n  - text: (114,200)\n  - paragraph: 31 total hours · 248 lectures · All Levels\n  - text: Most popular\n  - strong: $109.99\n  - deletion: $169.99\n  - button \"Add to cart\"\n- article:\n  - 'link \"View Python From Zero: The Beginner Masterclass\"':\n    - /url: /course/python-beginner-masterclass\n    - text: Python\n  - 'link \"Python From Zero: The Beginner Masterclass\"':\n    - /url: /course/python-beginner-masterclass\n    - 'heading \"Python From Zero: The Beginner Masterclass\" [level=3]'\n  - 'button \"Add Python From Zero: The Beginner Masterclass to wishlist\"'\n  - paragraph: Learn Python by building 12 practical projects, from your first variable to a complete web app.\n  - paragraph: Maya Chen\n  - strong: \"4.9\"\n  - text: (68,420)\n  - paragraph: 28 total hours · 214 lectures · Beginner\n  - text: Highest rated Beginner favorite\n  - strong: $94.99\n  - deletion: $139.99\n  - button \"Add to cart\"\n- article:\n  - link \"View The Science of Better Habits & Personal Growth\":\n    - /url: /course/better-habits-personal-development\n    - text: Personal Development\n  - link \"The Science of Better Habits & Personal Growth\":\n    - /url: /course/better-habits-personal-development\n    - heading \"The Science of Better Habits & Personal Growth\" [level=3]\n  - button \"Add The Science of Better Habits & Personal Growth to wishlist\"\n  - paragraph: Use behavioral science to make meaningful change, build resilience, and create habits that last.\n  - paragraph: Dr. Lena Brooks\n  - strong: \"4.8\"\n  - text: (38,750)\n  - paragraph: 6.5 total hours · 64 lectures · All Levels\n  - text: Trending\n  - strong: $84.99\n  - deletion: $124.99\n  - button \"Add to cart\"\n- article:\n  - link \"View Unreal Engine 5 Game Development Bootcamp\":\n    - /url: /course/unreal-engine-5-game-development\n    - text: Unreal Engine\n  - link \"Unreal Engine 5 Game Development Bootcamp\":\n    - /url: /course/unreal-engine-5-game-development\n    - heading \"Unreal Engine 5 Game Development Bootcamp\" [level=3]\n  - button \"Add Unreal Engine 5 Game Development Bootcamp to wishlist\"\n  - paragraph: Build complete 3D games with Blueprints, C++, level design, AI, and polished gameplay systems.\n  - paragraph: Lucas Wright\n  - strong: \"4.8\"\n  - text: (33,560)\n  - paragraph: 22.5 total hours · 192 lectures · All Levels\n  - text: Bestseller\n  - strong: $94.99\n  - deletion: $144.99\n  - button \"Add to cart\"\n- text: Certification-ready learning\n- heading \"Prepare for your next cloud role.\" [level=2]\n- paragraph: Follow a focused AWS software development path, practice Amazon EC2 skills, and get ready for exam day.\n- link \"Explore AWS Developer certification\":\n  - /url: /certifications/aws-developer\n- text: AWS learning path\n- heading \"Developer – Associate\" [level=3]\n- list:\n  - listitem: Amazon EC2\n  - listitem: Serverless apps\n  - listitem: Practice exams\n- text: Curated for you\n- heading \"Beginner favorites\" [level=2]\n- paragraph: Friendly, practical courses designed to help you build confidence from lesson one.\n- link \"See all\":\n  - /url: /courses?search=popular\n- article:\n  - 'link \"View Startup Foundations: Validate Before You Build\"':\n    - /url: /course/startup-foundations-beginner\n    - text: Startup\n  - 'link \"Startup Foundations: Validate Before You Build\"':\n    - /url: /course/startup-foundations-beginner\n    - 'heading \"Startup Foundations: Validate Before You Build\" [level=3]'\n  - 'button \"Add Startup Foundations: Validate Before You Build to wishlist\"'\n  - paragraph: Find a real problem, test demand, and shape a focused startup idea with minimal time and money.\n  - paragraph: Leila Hassan\n  - strong: \"4.8\"\n  - text: (12,920)\n  - paragraph: 5.5 total hours · 47 lectures · Beginner\n  - text: Beginner favorite\n  - strong: $64.99\n  - deletion: $99.99\n  - button \"Add to cart\"\n- article:\n  - link \"View The Complete JavaScript Course for Beginners\":\n    - /url: /course/javascript-beginners-popular\n    - text: JavaScript\n  - link \"The Complete JavaScript Course for Beginners\":\n    - /url: /course/javascript-beginners-popular\n    - heading \"The Complete JavaScript Course for Beginners\" [level=3]\n  - button \"Add The Complete JavaScript Course for Beginners to wishlist\"\n  - paragraph: Master modern JavaScript fundamentals with clear explanations and real-world browser projects.\n  - paragraph: Elena Torres\n  - strong: \"4.8\"\n  - text: (92,560)\n  - paragraph: 34 total hours · 290 lectures · Beginner\n  - text: Most popular Beginner favorite\n  - strong: $99.99\n  - deletion: $149.99\n  - button \"Add to cart\"\n- article:\n  - 'link \"View Home Workout for Weight Loss: 30 Days to Stronger\"':\n    - /url: /course/home-workout-weight-loss-2026\n    - text: Weight Loss\n  - 'link \"Home Workout for Weight Loss: 30 Days to Stronger\"':\n    - /url: /course/home-workout-weight-loss-2026\n    - 'heading \"Home Workout for Weight Loss: 30 Days to Stronger\" [level=3]'\n  - 'button \"Add Home Workout for Weight Loss: 30 Days to Stronger to wishlist\"'\n  - paragraph: Short, equipment-free workouts for beginners who want sustainable weight loss and better energy.\n  - paragraph: Tara Johnson\n  - strong: \"4.7\"\n  - text: (2,860)\n  - paragraph: 45 min · 18 lectures · Beginner\n  - text: New Beginner favorite\n  - strong: $34.99\n  - deletion: $59.99\n  - button \"Add to cart\"\n- article:\n  - 'link \"View Pencil Drawing Fundamentals: Shape to Shading\"':\n    - /url: /course/pencil-drawing-fundamentals\n    - text: Pencil Drawing\n  - 'link \"Pencil Drawing Fundamentals: Shape to Shading\"':\n    - /url: /course/pencil-drawing-fundamentals\n    - 'heading \"Pencil Drawing Fundamentals: Shape to Shading\" [level=3]'\n  - 'button \"Add Pencil Drawing Fundamentals: Shape to Shading to wishlist\"'\n  - paragraph: Build strong drawing habits through form, perspective, value, and everyday sketching exercises.\n  - paragraph: Theo Martin\n  - strong: \"5.0\"\n  - text: (960)\n  - paragraph: 7.5 total hours · 62 lectures · Beginner\n  - text: Top rated Beginner favorite\n  - strong: $59.99\n  - deletion: $89.99\n  - button \"Add to cart\"\n- contentinfo:\n  - text: Learn without limits\n  - heading \"Skills open doors. Start learning today.\" [level=2]\n  - link \"Explore top courses\":\n    - /url: /courses?search=Python\n  - link \"Udemy home\":\n    - /url: /\n    - text: udemy\n  - paragraph: Learn practical skills from real-world experts, at your pace.\n  - heading \"Discover\" [level=3]\n  - link \"Development\":\n    - /url: /courses?search=Development\n  - link \"Business\":\n    - /url: /courses?search=Business\n  - link \"Certifications\":\n    - /url: /certifications\n  - heading \"Company\" [level=3]\n  - link \"About us\":\n    - /url: /about\n  - link \"Investor events\":\n    - /url: /investor-events\n  - link \"Become a tutor\":\n    - /url: /teach\n  - heading \"Support\" [level=3]\n  - link \"Help center\":\n    - /url: /help\n  - link \"Accessibility\":\n    - /url: /accessibility\n  - link \"Terms\":\n    - /url: /terms\n  - text: © 2026 Udemy Learning, Inc. English"
+  },
+  "sourceSnippets": []
+}

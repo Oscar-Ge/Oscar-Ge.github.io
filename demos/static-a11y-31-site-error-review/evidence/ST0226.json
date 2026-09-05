@@ -1,0 +1,163 @@
+{
+  "site": "enterprise",
+  "siteKey": "11-enterprise",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/11-enterprise/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "label_orphaned",
+  "description": "Orphaned form label",
+  "nodeIndex": 2,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[4]/LABEL[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[4]/LABEL[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/11-enterprise/wave/attempt-1/raw.json",
+  "errorId": "ST0226",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[4]/LABEL[1]",
+    "tag": "LABEL",
+    "text": "Renter age\n18 years old\n19 years old\n20 years old\n21 years old\n22 years old\n23 years old\n24 years old\n25 or older",
+    "html": "<label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"user-group\" class=\"svg-inline--fa fa-user-group\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zM0 464c0-97.2 78.8-176 176-176s176 78.8 176 176l0 6c0 23.2-18.8 42-42 42L42 512c-23.2 0-42-18.8-42-42l0-6zM432 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240c79.5 0 144 64.5 144 144l0 22.4c0 23-18.6 41.6-41.6 41.6l-144.8 0c6.6-12.5 10.4-26.8 10.4-42l0-6c0-51.5-17.4-98.9-46.5-136.7 22.6-14.7 49.6-23.3 78.5-23.3z\"></path></svg> Renter age</span><select name=\"age\"><option value=\"18\">18 years old</option><option value=\"19\">19 years old</option><option value=\"20\">20 years old</option><option value=\"21\">21 years old</option><option value=\"22\">22 years old</option><option value=\"23\">23 years old</option><option value=\"24\">24 years old</option><option value=\"25+\">25 or older</option></select></label>",
+    "class": "field",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 664.796875,
+      "y": 530.671875,
+      "width": 127.046875,
+      "height": 73.828125
+    },
+    "style": {
+      "color": "rgb(20, 37, 28)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[4]",
+      "tag": "DIV",
+      "class": "rental-options-grid",
+      "text": " Renter age\n18 years old\n19 years old\n20 years old\n21 years old\n22 years old\n23 years old\n24 years old\n25 or older\n Vehicle class\nAny vehicle\nEconomy\nCompact\nSUV\nMini Van\nPickup Truck\nExotic\n Passengers\n1 person\n2 people\n3 people\n4 people\n5 people\n6 people\n7 people\nView vehicles",
+      "html": "<div class=\"rental-options-grid\"><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"user-group\" class=\"svg-inline--fa fa-user-group\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zM0 464c0-97.2 78.8-176 176-176s176 78.8 176 176l0 6c0 23.2-18.8 42-42 42L42 512c-23.2 0-42-18.8-42-42l0-6zM432 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240c79.5 0 144 64.5 144 144l0 22.4c0 23-18.6 41.6-41.6 41.6l-144.8 0c6.6-12.5 10.4-26.8 10.4-42l0-6c0-51.5-17.4-98.9-46.5-136.7 22.6-14.7 49.6-23.3 78.5-23.3z\"></path></svg> Renter age</span><select name=\"age\"><option value=\"18\">18 years old</option><option value=\"19\">19 years old</option><option value=\"20\">20 years old</option><option value=\"21\">21 years old</option><option value=\"22\">22 years old</option><option value=\"23\">23 years old</option><option value=\"24\">24 years old</option><option value=\"25+\">25 or older</option></select></label><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"car-side\" class=\"svg-inline--fa fa-car-side\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M147 106.7l-29.8 85.3 122.9 0 0-96-77.9 0c-6.8 0-12.9 4.3-15.1 10.7zM48.6 193.9L86.5 85.6C97.8 53.5 128.1 32 162.1 32L360 32c25.2 0 48.9 11.9 64 32l96.2 128.3C587.1 196.5 640 252.1 640 320l0 16c0 35.3-28.7 64-64 64l-16.4 0c-4 44.9-41.7 80-87.6 80s-83.6-35.1-87.6-80l-144.7 0c-4 44.9-41.7 80-87.6 80s-83.6-35.1-87.6-80l-.4 0c-35.3 0-64-28.7-64-64l0-80c0-30.1 20.7-55.3 48.6-62.1zM440 192l-67.2-89.6c-3-4-7.8-6.4-12.8-6.4l-72 0 0 96 152 0zM152 432a40 40 0 1 0 0-80 40 40 0 1 0 0 80zm360-40a40 40 0 1 0 -80 0 40 40 0 1 0 80 0z\"></path></svg> Vehicle class</span><select name=\"category\"><option>Any vehicle</option><option>Economy</option><option>Compact</option><option>SUV</option><option>Mini Van</option><option>Pickup Truck</option><option>Exotic</option></select></label><label class=\"field\"><span><svg data-prefix=\"fas\" data-icon=\"user-group\" class=\"svg-inline--fa fa-user-group\" role=\"img\" viewBox=\"0 0 576 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 128a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zM0 464c0-97.2 78.8-176 176-176s176 78.8 176 176l0 6c0 23.2-18.8 42-42 42L42 512c-23.2 0-42-18.8-42-42l0-6zM432 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 240c79.5 0 144 64.5 144 144l0 22.4c0 23-18.6 41.6-41.6 41.6l-144.8 0c6.6-12.5 10.4-26.8 10.4-42l0-6c0-51.5-17.4-98.9-46.5-136.7 22.6-14.7 49.6-23.3 78.5-23.3z\"></path></svg> Passengers</span><select name=\"passengers\"><option value=\"1\">1 person</option><option value=\"2\">2 people</option><option value=\"3\">3 people</option><option value=\"4\">4 people</option><option value=\"5\">5 people</option><option value=\"6\">6 people</option><option value=\"7\">7 people</option></select></label><button class=\"button button-primary search-button\" type=\"submit\"><svg data-prefix=\"fas\" data-icon=\"magnifying-glass\" class=\"svg-inline--fa fa-magnifying-glass\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg> View vehicles</button></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:43189/assets/index-BZ8Qsl0Q.css",
+        "selector": ".field",
+        "declarations": {
+          "display": "flex"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "app",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Ready when you are.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[2]/FORM[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Start a reservation",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Everything your trip needs",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[1]/H3[1]",
+        "tag": "H3",
+        "text": "Make the drive the destination.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[3]/DIV[2]/ARTICLE[2]/H3[1]",
+        "tag": "H3",
+        "text": "A better way to buy used.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[4]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Get rental offers in your inbox",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H3[1]",
+        "tag": "H3",
+        "text": "Rent",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H3[1]",
+        "tag": "H3",
+        "text": "Shop & manage",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H3[1]",
+        "tag": "H3",
+        "text": "Need help?",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": " Customer support: (855) 266-9565\nUS · English\ne\nenterprise\nRENT-A-CAR\nRent\nExotic Cars\nBuy a Car\nHotel Pickup\nManage Reservation\nEmail Offers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Primary navigation",
+        "text": "Rent\nExotic Cars\nBuy a Car\nHotel Pickup\nManage Reservation\nEmail Offers"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "THE ROAD IS YOURS\nReady when you are.\n\nFrom quick city trips to unforgettable getaways, find a vehicle that fits your plans.\n\n No hidden booking fees\n Free cancellation on most rentals\nRESERVE A VEHICLE\nStart a reservation\nSecure booking\n Pickup location\nReturn to a different location\n Pick-up date\n Pick-up time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:00 PM\n5:00 PM\n6:00 PM\n Return date\n Return time\n8:00 AM\n9:00 AM\n10:00 AM\n11:00 AM\n12:00 PM\n1:00 PM\n2:00 PM\n3:00 PM\n4:"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "e\nenterprise\nRENT-A-CAR\n\nEvery journey starts with a reliable ride. Mock rental experiences, made simple.\n\nRent\nStart a reservation\nExotic collection\nHotel pickup\nShop & manage\nCars for sale\nLook up a booking\nEmail offers\nNeed help?\n\n (855) 266-9565\n\nOpen daily, 7 a.m.–10 p.m.\n\n© 2026 Enterprise Rent-A-Car mock experience.\nRates and inventory are simulated for demonstration."
+      }
+    ],
+    "axSnapshot": "- banner:\n  - text: \"Customer support: (855) 266-9565 US · English\"\n  - link \"Enterprise Rent-A-Car\":\n    - /url: /\n    - text: e enterprise rent-a-car\n  - navigation \"Primary navigation\":\n    - link \"Rent\":\n      - /url: /\n    - link \"Exotic Cars\":\n      - /url: /exotic-cars\n    - link \"Buy a Car\":\n      - /url: /cars-for-sale\n    - link \"Hotel Pickup\":\n      - /url: /hotel-pickup\n    - link \"Manage Reservation\":\n      - /url: /reservation-lookup\n    - link \"Email Offers\":\n      - /url: /email-offers\n- main:\n  - text: The road is yours\n  - heading \"Ready when you are.\" [level=1]\n  - paragraph: From quick city trips to unforgettable getaways, find a vehicle that fits your plans.\n  - text: No hidden booking fees Free cancellation on most rentals Reserve a vehicle\n  - heading \"Start a reservation\" [level=2]\n  - text: Secure booking Pickup location\n  - combobox \"Pickup location\"\n  - checkbox \"Return to a different location\"\n  - text: Return to a different location Pick-up date\n  - textbox \"Pick-up date\": 2026-04-05\n  - text: Pick-up time\n  - combobox \"Pick-up time\":\n    - option \"8:00 AM\"\n    - option \"9:00 AM\"\n    - option \"10:00 AM\"\n    - option \"11:00 AM\" [selected]\n    - option \"12:00 PM\"\n    - option \"1:00 PM\"\n    - option \"2:00 PM\"\n    - option \"3:00 PM\"\n    - option \"4:00 PM\"\n    - option \"5:00 PM\"\n    - option \"6:00 PM\"\n  - text: Return date\n  - textbox \"Return date\": 2026-04-08\n  - text: Return time\n  - combobox \"Return time\":\n    - option \"8:00 AM\"\n    - option \"9:00 AM\"\n    - option \"10:00 AM\"\n    - option \"11:00 AM\"\n    - option \"12:00 PM\"\n    - option \"1:00 PM\"\n    - option \"2:00 PM\"\n    - option \"3:00 PM\"\n    - option \"4:00 PM\"\n    - option \"5:00 PM\" [selected]\n    - option \"6:00 PM\"\n  - text: Renter age\n  - combobox \"Renter age\":\n    - option \"18 years old\"\n    - option \"19 years old\"\n    - option \"20 years old\"\n    - option \"21 years old\"\n    - option \"22 years old\"\n    - option \"23 years old\"\n    - option \"24 years old\"\n    - option \"25 or older\" [selected]\n  - text: Vehicle class\n  - combobox \"Vehicle class\":\n    - option \"Any vehicle\" [selected]\n    - option \"Economy\"\n    - option \"Compact\"\n    - option \"SUV\"\n    - option \"Mini Van\"\n    - option \"Pickup Truck\"\n    - option \"Exotic\"\n  - text: Passengers\n  - combobox \"Passengers\":\n    - option \"1 person\"\n    - option \"2 people\" [selected]\n    - option \"3 people\"\n    - option \"4 people\"\n    - option \"5 people\"\n    - option \"6 people\"\n    - option \"7 people\"\n  - button \"View vehicles\"\n  - link \"Pickup at your hotel Find Boston hotels by ZIP code\":\n    - /url: /hotel-pickup\n    - strong: Pickup at your hotel\n    - text: Find Boston hotels by ZIP code\n  - link \"Explore exotic vehicles Performance and luxury collection\":\n    - /url: /exotic-cars\n    - strong: Explore exotic vehicles\n    - text: Performance and luxury collection\n  - link \"Manage a reservation Look up a booking or ticket\":\n    - /url: /reservation-lookup\n    - strong: Manage a reservation\n    - text: Look up a booking or ticket\n  - text: More ways to move\n  - heading \"Everything your trip needs\" [level=2]\n  - paragraph: Thoughtful options for family weekends, business travel and once-in-a-lifetime drives.\n  - article:\n    - paragraph: Enterprise Exotic Car Collection\n    - heading \"Make the drive the destination.\" [level=3]\n    - paragraph: Browse sports cars and premium SUVs, including Corvette, Porsche, Range Rover and Ferrari models.\n    - link \"View exotic vehicles\":\n      - /url: /exotic-cars\n  - article:\n    - paragraph: Enterprise Car Sales\n    - heading \"A better way to buy used.\" [level=3]\n    - paragraph: Shop no-haggle used vehicles, including convertibles under $20,000.\n    - link \"Browse cars for sale\":\n      - /url: /cars-for-sale\n  - text: Drive more, spend less\n  - heading \"Get rental offers in your inbox\" [level=2]\n  - paragraph: Sign up for member-only promotions and travel inspiration.\n  - link \"Sign me up\":\n    - /url: /email-offers\n- contentinfo:\n  - text: e enterprise rent-a-car\n  - paragraph: Every journey starts with a reliable ride. Mock rental experiences, made simple.\n  - heading \"Rent\" [level=3]\n  - link \"Start a reservation\":\n    - /url: /\n  - link \"Exotic collection\":\n    - /url: /exotic-cars\n  - link \"Hotel pickup\":\n    - /url: /hotel-pickup\n  - heading \"Shop & manage\" [level=3]\n  - link \"Cars for sale\":\n    - /url: /cars-for-sale\n  - link \"Look up a booking\":\n    - /url: /reservation-lookup\n  - link \"Email offers\":\n    - /url: /email-offers\n  - heading \"Need help?\" [level=3]\n  - paragraph: (855) 266-9565\n  - paragraph: Open daily, 7 a.m.–10 p.m.\n  - text: © 2026 Enterprise Rent-A-Car mock experience. Rates and inventory are simulated for demonstration."
+  },
+  "sourceSnippets": []
+}

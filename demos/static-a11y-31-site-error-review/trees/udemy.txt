@@ -1,0 +1,258 @@
+- banner:
+  - link "Udemy home":
+    - /url: /
+    - text: udemy
+  - button "Explore"
+  - search:
+    - textbox "Search for anything"
+  - navigation "Primary navigation":
+    - link "Certifications":
+      - /url: /certifications
+    - link "Teach on Udemy":
+      - /url: /teach
+    - link "Wishlist with 0 courses":
+      - /url: /wishlist
+    - link "Cart with 0 courses":
+      - /url: /cart
+  - link "Cart with 0 courses":
+    - /url: /cart
+- text: Learn the skills shaping 2026
+- heading "Learn today. Lead tomorrow." [level=1]:
+  - text: Learn today.
+  - emphasis: Lead tomorrow.
+- paragraph: Build real-world skills with expert-led courses in technology, business, creativity, and more.
+- search:
+  - textbox "Search for anything"
+  - button "Search"
+- text: "Popular:"
+- link "Python":
+  - /url: /courses?search=Python&level=Beginner&sort=highest
+- link "JavaScript":
+  - /url: /courses?search=JavaScript&level=Beginner&sort=popular
+- link "Public speaking":
+  - /url: /courses?search=Public%20Speaking&rating=4.5&sort=newest
+- strong: 78M+
+- text: Learners
+- strong: 250K+
+- text: Courses
+- strong: 4.7/5
+- text: Avg. rating Weekly progress
+- strong: 8.5 hours
+- paragraph: You’re in the top 10% this week
+- strong: JavaScript
+- text: 12 lessons complete A M J
+- strong: 24K learning now
+- text: Join the community Explore by category
+- heading "What do you want to learn?" [level=2]
+- link "Development Explore top courses":
+  - /url: /courses?search=JavaScript
+  - strong: Development
+  - text: Explore top courses
+- link "Business Explore top courses":
+  - /url: /courses?search=Business
+  - strong: Business
+  - text: Explore top courses
+- link "Design Explore top courses":
+  - /url: /courses?search=Game%20Design
+  - strong: Design
+  - text: Explore top courses
+- link "IT & Software Explore top courses":
+  - /url: /courses?search=Linux%20Administration
+  - strong: IT & Software
+  - text: Explore top courses
+- link "Personal Development Explore top courses":
+  - /url: /courses?search=Personal%20Development
+  - strong: Personal Development
+  - text: Explore top courses
+- link "Health & Fitness Explore top courses":
+  - /url: /courses?search=Home%20Workout
+  - strong: Health & Fitness
+  - text: Explore top courses
+- text: Curated for you
+- heading "Skills learners love right now" [level=2]
+- paragraph: Bestsellers, fresh releases, and highly rated courses chosen by our learning community.
+- link "See all":
+  - /url: /courses?search=popular
+- article:
+  - link "View Business Leadership & Strategy Masterclass":
+    - /url: /course/business-leadership-masterclass
+    - text: Business Strategy
+  - link "Business Leadership & Strategy Masterclass":
+    - /url: /course/business-leadership-masterclass
+    - heading "Business Leadership & Strategy Masterclass" [level=3]
+  - button "Add Business Leadership & Strategy Masterclass to wishlist"
+  - paragraph: Think like a general manager, lead high-performing teams, and turn strategy into measurable results.
+  - paragraph: Michael Rhodes
+  - strong: "4.9"
+  - text: (114,200)
+  - paragraph: 31 total hours · 248 lectures · All Levels
+  - text: Most popular
+  - strong: $109.99
+  - deletion: $169.99
+  - button "Add to cart"
+- article:
+  - 'link "View Python From Zero: The Beginner Masterclass"':
+    - /url: /course/python-beginner-masterclass
+    - text: Python
+  - 'link "Python From Zero: The Beginner Masterclass"':
+    - /url: /course/python-beginner-masterclass
+    - 'heading "Python From Zero: The Beginner Masterclass" [level=3]'
+  - 'button "Add Python From Zero: The Beginner Masterclass to wishlist"'
+  - paragraph: Learn Python by building 12 practical projects, from your first variable to a complete web app.
+  - paragraph: Maya Chen
+  - strong: "4.9"
+  - text: (68,420)
+  - paragraph: 28 total hours · 214 lectures · Beginner
+  - text: Highest rated Beginner favorite
+  - strong: $94.99
+  - deletion: $139.99
+  - button "Add to cart"
+- article:
+  - link "View The Science of Better Habits & Personal Growth":
+    - /url: /course/better-habits-personal-development
+    - text: Personal Development
+  - link "The Science of Better Habits & Personal Growth":
+    - /url: /course/better-habits-personal-development
+    - heading "The Science of Better Habits & Personal Growth" [level=3]
+  - button "Add The Science of Better Habits & Personal Growth to wishlist"
+  - paragraph: Use behavioral science to make meaningful change, build resilience, and create habits that last.
+  - paragraph: Dr. Lena Brooks
+  - strong: "4.8"
+  - text: (38,750)
+  - paragraph: 6.5 total hours · 64 lectures · All Levels
+  - text: Trending
+  - strong: $84.99
+  - deletion: $124.99
+  - button "Add to cart"
+- article:
+  - link "View Unreal Engine 5 Game Development Bootcamp":
+    - /url: /course/unreal-engine-5-game-development
+    - text: Unreal Engine
+  - link "Unreal Engine 5 Game Development Bootcamp":
+    - /url: /course/unreal-engine-5-game-development
+    - heading "Unreal Engine 5 Game Development Bootcamp" [level=3]
+  - button "Add Unreal Engine 5 Game Development Bootcamp to wishlist"
+  - paragraph: Build complete 3D games with Blueprints, C++, level design, AI, and polished gameplay systems.
+  - paragraph: Lucas Wright
+  - strong: "4.8"
+  - text: (33,560)
+  - paragraph: 22.5 total hours · 192 lectures · All Levels
+  - text: Bestseller
+  - strong: $94.99
+  - deletion: $144.99
+  - button "Add to cart"
+- text: Certification-ready learning
+- heading "Prepare for your next cloud role." [level=2]
+- paragraph: Follow a focused AWS software development path, practice Amazon EC2 skills, and get ready for exam day.
+- link "Explore AWS Developer certification":
+  - /url: /certifications/aws-developer
+- text: AWS learning path
+- heading "Developer – Associate" [level=3]
+- list:
+  - listitem: Amazon EC2
+  - listitem: Serverless apps
+  - listitem: Practice exams
+- text: Curated for you
+- heading "Beginner favorites" [level=2]
+- paragraph: Friendly, practical courses designed to help you build confidence from lesson one.
+- link "See all":
+  - /url: /courses?search=popular
+- article:
+  - 'link "View Startup Foundations: Validate Before You Build"':
+    - /url: /course/startup-foundations-beginner
+    - text: Startup
+  - 'link "Startup Foundations: Validate Before You Build"':
+    - /url: /course/startup-foundations-beginner
+    - 'heading "Startup Foundations: Validate Before You Build" [level=3]'
+  - 'button "Add Startup Foundations: Validate Before You Build to wishlist"'
+  - paragraph: Find a real problem, test demand, and shape a focused startup idea with minimal time and money.
+  - paragraph: Leila Hassan
+  - strong: "4.8"
+  - text: (12,920)
+  - paragraph: 5.5 total hours · 47 lectures · Beginner
+  - text: Beginner favorite
+  - strong: $64.99
+  - deletion: $99.99
+  - button "Add to cart"
+- article:
+  - link "View The Complete JavaScript Course for Beginners":
+    - /url: /course/javascript-beginners-popular
+    - text: JavaScript
+  - link "The Complete JavaScript Course for Beginners":
+    - /url: /course/javascript-beginners-popular
+    - heading "The Complete JavaScript Course for Beginners" [level=3]
+  - button "Add The Complete JavaScript Course for Beginners to wishlist"
+  - paragraph: Master modern JavaScript fundamentals with clear explanations and real-world browser projects.
+  - paragraph: Elena Torres
+  - strong: "4.8"
+  - text: (92,560)
+  - paragraph: 34 total hours · 290 lectures · Beginner
+  - text: Most popular Beginner favorite
+  - strong: $99.99
+  - deletion: $149.99
+  - button "Add to cart"
+- article:
+  - 'link "View Home Workout for Weight Loss: 30 Days to Stronger"':
+    - /url: /course/home-workout-weight-loss-2026
+    - text: Weight Loss
+  - 'link "Home Workout for Weight Loss: 30 Days to Stronger"':
+    - /url: /course/home-workout-weight-loss-2026
+    - 'heading "Home Workout for Weight Loss: 30 Days to Stronger" [level=3]'
+  - 'button "Add Home Workout for Weight Loss: 30 Days to Stronger to wishlist"'
+  - paragraph: Short, equipment-free workouts for beginners who want sustainable weight loss and better energy.
+  - paragraph: Tara Johnson
+  - strong: "4.7"
+  - text: (2,860)
+  - paragraph: 45 min · 18 lectures · Beginner
+  - text: New Beginner favorite
+  - strong: $34.99
+  - deletion: $59.99
+  - button "Add to cart"
+- article:
+  - 'link "View Pencil Drawing Fundamentals: Shape to Shading"':
+    - /url: /course/pencil-drawing-fundamentals
+    - text: Pencil Drawing
+  - 'link "Pencil Drawing Fundamentals: Shape to Shading"':
+    - /url: /course/pencil-drawing-fundamentals
+    - 'heading "Pencil Drawing Fundamentals: Shape to Shading" [level=3]'
+  - 'button "Add Pencil Drawing Fundamentals: Shape to Shading to wishlist"'
+  - paragraph: Build strong drawing habits through form, perspective, value, and everyday sketching exercises.
+  - paragraph: Theo Martin
+  - strong: "5.0"
+  - text: (960)
+  - paragraph: 7.5 total hours · 62 lectures · Beginner
+  - text: Top rated Beginner favorite
+  - strong: $59.99
+  - deletion: $89.99
+  - button "Add to cart"
+- contentinfo:
+  - text: Learn without limits
+  - heading "Skills open doors. Start learning today." [level=2]
+  - link "Explore top courses":
+    - /url: /courses?search=Python
+  - link "Udemy home":
+    - /url: /
+    - text: udemy
+  - paragraph: Learn practical skills from real-world experts, at your pace.
+  - heading "Discover" [level=3]
+  - link "Development":
+    - /url: /courses?search=Development
+  - link "Business":
+    - /url: /courses?search=Business
+  - link "Certifications":
+    - /url: /certifications
+  - heading "Company" [level=3]
+  - link "About us":
+    - /url: /about
+  - link "Investor events":
+    - /url: /investor-events
+  - link "Become a tutor":
+    - /url: /teach
+  - heading "Support" [level=3]
+  - link "Help center":
+    - /url: /help
+  - link "Accessibility":
+    - /url: /accessibility
+  - link "Terms":
+    - /url: /terms
+  - text: © 2026 Udemy Learning, Inc. English

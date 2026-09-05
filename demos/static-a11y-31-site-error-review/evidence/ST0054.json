@@ -1,0 +1,169 @@
+{
+  "site": "cvs",
+  "siteKey": "00-cvs",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/00-cvs/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/SPAN[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/SPAN[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/00-cvs/wave/attempt-1/raw.json",
+  "errorId": "ST0054",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/SPAN[1]",
+    "tag": "SPAN",
+    "text": "New arrival",
+    "html": "<span class=\"pill-badge\">New arrival</span>",
+    "class": "pill-badge",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 152,
+      "y": 1668.15625,
+      "width": 75.203125,
+      "height": 22
+    },
+    "style": {
+      "color": "rgb(66, 66, 66)",
+      "background": "rgb(238, 238, 234)",
+      "fontSize": "10.72px",
+      "fontWeight": "800",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "badge-row",
+      "text": "New arrival\nBuy 1, get 1 FREE",
+      "html": "<div class=\"badge-row\"><span class=\"pill-badge\">New arrival</span><span class=\"deal-badge\">Buy 1, get 1 FREE</span></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": ".pill-badge, .deal-badge, .match-pill",
+        "declarations": {
+          "font-size": "0.67rem",
+          "font-weight": "800",
+          "display": "inline-flex"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": ".pill-badge",
+        "declarations": {
+          "color": "rgb(66, 66, 66)",
+          "background": "rgb(238, 238, 234)",
+          "background-color": "rgb(238, 238, 234)"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "CVS Pharmacy | Health, wellness & pharmacy care",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Care that fits\nyour life.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Schedule care, on your time",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Health essentials & new deals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Care close to home",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "More savings. More rewards.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Shop & save",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Pharmacy & care",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "Get care",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\nSearch products and health information\nFind a store\nSet my store\nWelcome\nSign in\nShop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Shop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\n\nBringing our heart to every moment of your health.\n\n© 2026 CVS Pharmacy. Mock experience.\nShop & save\nShop products\nWeekly ad\nExtraCare rewards\nPharmacy & care\nFind a pharmacy\nCOVID-19 testing\nHealth services\nGet care\nVirtual care\nMinuteClinic services\nStore hours"
+      }
+    ],
+    "axSnapshot": "- text: CVS.com® |\n- button \"Store & pharmacy hours\"\n- link \"ExtraCare®\":\n  - /url: /extracare\n- link \"Health services\":\n  - /url: /health-services\n- banner:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - search:\n    - text: Search products and health information\n    - textbox \"Search products and health information\":\n      - /placeholder: Search products & health info\n    - button \"Search\"\n  - link \"Find a store Set my store\":\n    - /url: /pharmacy-locator\n  - link \"Welcome Sign in\":\n    - /url: /extracare\n  - link \"Cart with 0 items\":\n    - /url: /cart\n  - navigation \"Main navigation\":\n    - link \"Shop\":\n      - /url: /shop\n    - link \"Pharmacy\":\n      - /url: /pharmacy-locator\n    - link \"Health services\":\n      - /url: /health-services\n    - link \"COVID-19 testing\":\n      - /url: /covid-test\n    - link \"Weekly ad\":\n      - /url: /weekly-ad\n    - link \"ExtraCare\":\n      - /url: /extracare\n    - link \"Virtual care\":\n      - /url: /virtual-care\n- text: Health happens together\n- heading \"Care that fits your life.\" [level=1]\n- paragraph: Everyday essentials, nearby pharmacy care and health services—all in one place.\n- button \"Shop health essentials\"\n- button \"Find care near you\"\n- text: Appointments\n- heading \"Schedule care, on your time\" [level=2]\n- paragraph: Book a COVID-19 test or find in-person health services near you.\n- button \"Schedule a test\"\n- region \"Popular actions\":\n  - link \"Find a CVS Pharmacy Locations, hours & services\":\n    - /url: /pharmacy-locator\n  - link \"See this week’s deals Save with ExtraCare\":\n    - /url: /weekly-ad\n  - link \"Virtual care Connect from anywhere\":\n    - /url: /virtual-care\n- text: Shop by need\n- heading \"What can we help with?\" [level=2]\n- link \"Shop all\":\n  - /url: /shop\n- link \"Cough & cold Shop now\":\n  - /url: /shop?search=cough\n- link \"Vitamins Shop now\":\n  - /url: /shop?search=vitamin\n- link \"Allergy relief Shop now\":\n  - /url: /shop?search=allergy\n- link \"COVID-19 tests Shop now\":\n  - /url: /shop?search=covid%20test\n- text: Picked for you\n- heading \"Health essentials & new deals\" [level=2]\n- link \"View weekly ad\":\n  - /url: /weekly-ad\n- article:\n  - link \"View CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: New arrival Buy 1, get 1 FREE\n  - link \"CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: 4.9 (42) $8.49 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: CVS brand\n  - link \"CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: 4.5 (518) $9.99 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: Pickup ready\n  - link \"Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: 4.8 (1248) $17.99 each\n  - paragraph: In stock for shipping & pickup\n  - button \"Choose pickup\"\n- text: In-store services\n- heading \"Care close to home\" [level=2]\n- paragraph: Find screenings, treatment evaluations and convenient testing at a location near you.\n- button \"Explore health services\"\n- text: ExtraCare\n- heading \"More savings. More rewards.\" [level=2]\n- paragraph: Join free for personalized deals, ExtraBucks Rewards and member-only prices.\n- button \"Join ExtraCare\"\n- contentinfo:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - paragraph: Bringing our heart to every moment of your health.\n  - text: © 2026 CVS Pharmacy. Mock experience.\n  - heading \"Shop & save\" [level=2]\n  - link \"Shop products\":\n    - /url: /shop\n  - link \"Weekly ad\":\n    - /url: /weekly-ad\n  - link \"ExtraCare rewards\":\n    - /url: /extracare\n  - heading \"Pharmacy & care\" [level=2]\n  - link \"Find a pharmacy\":\n    - /url: /pharmacy-locator\n  - link \"COVID-19 testing\":\n    - /url: /covid-test\n  - link \"Health services\":\n    - /url: /health-services\n  - heading \"Get care\" [level=2]\n  - link \"Virtual care\":\n    - /url: /virtual-care\n  - link \"MinuteClinic services\":\n    - /url: /health-services\n  - link \"Store hours\":\n    - /url: /pharmacy-locator"
+  },
+  "sourceSnippets": [
+    {
+      "file": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/00-cvs/dist/assets/index-C7lIq-g0.js",
+      "offset": 337726,
+      "match": "className:\"pill-badge\"",
+      "context": "{const[c,f]=A.useState(1),h=Ml(),m=n.id===\"zyrtec-tablets\";function p(){if(m){h(`/product/${n.slug}`);return}s(n,c)}return i.jsxs(\"article\",{className:`product-card ${o?\"list-card\":\"\"}`,children:[i.jsx(ve,{to:`/product/${n.slug}`,className:\"product-image-link\",\"aria-label\":`View ${n.name}`,children:i.jsx(Eu,{product:n})}),i.jsxs(\"div\",{className:\"product-card-content\",children:[i.jsxs(\"div\",{className:\"badge-row\",children:[n.badge&&i.jsx(\"span\",{className:\"pill-badge\",children:n.badge}),n.bogo&&i.jsx(\"span\",{className:\"deal-badge\",children:\"Buy 1, get 1 FREE\"})]}),i.jsx(ve,{to:`/product/${n.slug}`,className:\"product-name\",children:n.name}),i.jsx(Ci,{value:n.rating,count:n.reviews}),i.jsxs(\"div\",{className:\"product-price\",children:[Jt(n.price),\" \",i.jsx(\"small\",{children:\"each\"})]}),i.jsxs(\"p\",{className:\"availability\",children:[i.jsx(D,{icon:Nt}),\" In stock for shipping & pickup\"]}),i.jsxs(\"div\",{className:\"p"
+    }
+  ]
+}

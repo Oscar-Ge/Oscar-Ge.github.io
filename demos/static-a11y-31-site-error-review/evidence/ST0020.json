@@ -1,0 +1,178 @@
+{
+  "site": "cvs",
+  "siteKey": "00-cvs",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/00-cvs/dist",
+  "route": "/",
+  "engine": "axe",
+  "category": "violations",
+  "ruleId": "region",
+  "description": "Ensure all page content is contained by landmarks",
+  "help": "All page content should be contained by landmarks",
+  "impact": "moderate",
+  "nodeIndex": 17,
+  "selector": [
+    ".rose > b"
+  ],
+  "html": "<b>COVID-19 tests</b>",
+  "checks": {
+    "any": [
+      {
+        "id": "region",
+        "data": {
+          "isIframe": false
+        },
+        "relatedNodes": [],
+        "impact": "moderate",
+        "message": "Some page content is not contained by landmarks"
+      }
+    ],
+    "all": [],
+    "none": []
+  },
+  "rawRef": "scans/00-cvs/axe/attempt-1/raw.json",
+  "errorId": "ST0020",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[2]/A[4]/B[1]",
+    "tag": "B",
+    "text": "COVID-19 tests",
+    "html": "<b>COVID-19 tests</b>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 1056.5,
+      "y": 1089.578125,
+      "width": 130.578125,
+      "height": 22
+    },
+    "style": {
+      "color": "rgb(109, 32, 39)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "19.2px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": null,
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[2]/A[4]",
+      "tag": "A",
+      "class": "category-card rose",
+      "text": "COVID-19 tests\nShop now ",
+      "html": "<a class=\"category-card rose\" href=\"/shop?search=covid%20test\" data-discover=\"true\"><span><svg data-prefix=\"fas\" data-icon=\"kit-medical\" class=\"svg-inline--fa fa-kit-medical\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l16 0 0-384-16 0zm64 0l0 384 256 0 0-384-256 0zM448 448c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-16 0 0 384 16 0zM224 184c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 40 40 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-40 0 0 40c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-40-40 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16l40 0 0-40z\"></path></svg></span><b>COVID-19 tests</b><small>Shop now <svg data-prefix=\"fas\" data-icon=\"arrow-right\" class=\"svg-inline--fa fa-arrow-right\" role=\"img\" viewBox=\"0 0 512 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"></path></svg></small></a>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[2]/A[4]",
+      "tag": "A",
+      "text": "COVID-19 tests\nShop now ",
+      "ariaLabel": null,
+      "href": "/shop?search=covid%20test",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": ".category-card b",
+        "declarations": {
+          "font-size": "1.2rem"
+        }
+      },
+      {
+        "file": "http://127.0.0.1:37139/assets/index-oBKZbM_A.css",
+        "selector": ".category-card b",
+        "declarations": {
+          "font-size": "1rem"
+        }
+      }
+    ]
+  },
+  "pageStructure": {
+    "title": "CVS Pharmacy | Health, wellness & pharmacy care",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Care that fits\nyour life.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Schedule care, on your time",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[3]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What can we help with?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[4]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Health essentials & new deals",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Care close to home",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/DIV[2]/SECTION[5]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "More savings. More rewards.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[2]/H2[1]",
+        "tag": "H2",
+        "text": "Shop & save",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Pharmacy & care",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/DIV[4]/H2[1]",
+        "tag": "H2",
+        "text": "Get care",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\nSearch products and health information\nFind a store\nSet my store\nWelcome\nSign in\nShop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Shop\nPharmacy\nHealth services\nCOVID-19 testing\nWeekly ad\nExtraCare\nVirtual care"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "CVS\npharmacy\n\nBringing our heart to every moment of your health.\n\n© 2026 CVS Pharmacy. Mock experience.\nShop & save\nShop products\nWeekly ad\nExtraCare rewards\nPharmacy & care\nFind a pharmacy\nCOVID-19 testing\nHealth services\nGet care\nVirtual care\nMinuteClinic services\nStore hours"
+      }
+    ],
+    "axSnapshot": "- text: CVS.com® |\n- button \"Store & pharmacy hours\"\n- link \"ExtraCare®\":\n  - /url: /extracare\n- link \"Health services\":\n  - /url: /health-services\n- banner:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - search:\n    - text: Search products and health information\n    - textbox \"Search products and health information\":\n      - /placeholder: Search products & health info\n    - button \"Search\"\n  - link \"Find a store Set my store\":\n    - /url: /pharmacy-locator\n  - link \"Welcome Sign in\":\n    - /url: /extracare\n  - link \"Cart with 0 items\":\n    - /url: /cart\n  - navigation \"Main navigation\":\n    - link \"Shop\":\n      - /url: /shop\n    - link \"Pharmacy\":\n      - /url: /pharmacy-locator\n    - link \"Health services\":\n      - /url: /health-services\n    - link \"COVID-19 testing\":\n      - /url: /covid-test\n    - link \"Weekly ad\":\n      - /url: /weekly-ad\n    - link \"ExtraCare\":\n      - /url: /extracare\n    - link \"Virtual care\":\n      - /url: /virtual-care\n- text: Health happens together\n- heading \"Care that fits your life.\" [level=1]\n- paragraph: Everyday essentials, nearby pharmacy care and health services—all in one place.\n- button \"Shop health essentials\"\n- button \"Find care near you\"\n- text: Appointments\n- heading \"Schedule care, on your time\" [level=2]\n- paragraph: Book a COVID-19 test or find in-person health services near you.\n- button \"Schedule a test\"\n- region \"Popular actions\":\n  - link \"Find a CVS Pharmacy Locations, hours & services\":\n    - /url: /pharmacy-locator\n  - link \"See this week’s deals Save with ExtraCare\":\n    - /url: /weekly-ad\n  - link \"Virtual care Connect from anywhere\":\n    - /url: /virtual-care\n- text: Shop by need\n- heading \"What can we help with?\" [level=2]\n- link \"Shop all\":\n  - /url: /shop\n- link \"Cough & cold Shop now\":\n  - /url: /shop?search=cough\n- link \"Vitamins Shop now\":\n  - /url: /shop?search=vitamin\n- link \"Allergy relief Shop now\":\n  - /url: /shop?search=allergy\n- link \"COVID-19 tests Shop now\":\n  - /url: /shop?search=covid%20test\n- text: Picked for you\n- heading \"Health essentials & new deals\" [level=2]\n- link \"View weekly ad\":\n  - /url: /weekly-ad\n- article:\n  - link \"View CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: New arrival Buy 1, get 1 FREE\n  - link \"CVS Health Vitamin D3 2000 IU Softgels, 100 CT\":\n    - /url: /product/cvs-health-vitamin-d3-new-arrival\n  - text: 4.9 (42) $8.49 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: CVS brand\n  - link \"CVS Health At Home COVID-19 Test Kit, 2 CT\":\n    - /url: /product/cvs-health-at-home-covid-19-test-kit\n  - text: 4.5 (518) $9.99 each\n  - paragraph: In stock for shipping & pickup\n  - text: Qty\n  - button \"Decrease quantity\" [disabled]\n  - strong: \"1\"\n  - button \"Increase quantity\"\n  - button \"Add to cart\"\n- article:\n  - link \"View Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: Pickup ready\n  - link \"Zyrtec 24 Hour Allergy Relief Tablets, 30 CT\":\n    - /url: /product/zyrtec-24-hour-allergy-tablets\n  - text: 4.8 (1248) $17.99 each\n  - paragraph: In stock for shipping & pickup\n  - button \"Choose pickup\"\n- text: In-store services\n- heading \"Care close to home\" [level=2]\n- paragraph: Find screenings, treatment evaluations and convenient testing at a location near you.\n- button \"Explore health services\"\n- text: ExtraCare\n- heading \"More savings. More rewards.\" [level=2]\n- paragraph: Join free for personalized deals, ExtraBucks Rewards and member-only prices.\n- button \"Join ExtraCare\"\n- contentinfo:\n  - link \"CVS Pharmacy home\":\n    - /url: /\n    - text: CVS\n    - strong: pharmacy\n  - paragraph: Bringing our heart to every moment of your health.\n  - text: © 2026 CVS Pharmacy. Mock experience.\n  - heading \"Shop & save\" [level=2]\n  - link \"Shop products\":\n    - /url: /shop\n  - link \"Weekly ad\":\n    - /url: /weekly-ad\n  - link \"ExtraCare rewards\":\n    - /url: /extracare\n  - heading \"Pharmacy & care\" [level=2]\n  - link \"Find a pharmacy\":\n    - /url: /pharmacy-locator\n  - link \"COVID-19 testing\":\n    - /url: /covid-test\n  - link \"Health services\":\n    - /url: /health-services\n  - heading \"Get care\" [level=2]\n  - link \"Virtual care\":\n    - /url: /virtual-care\n  - link \"MinuteClinic services\":\n    - /url: /health-services\n  - link \"Store hours\":\n    - /url: /pharmacy-locator"
+  },
+  "sourceSnippets": []
+}

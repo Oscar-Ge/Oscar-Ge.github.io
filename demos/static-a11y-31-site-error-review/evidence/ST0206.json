@@ -1,0 +1,165 @@
+{
+  "site": "yelp",
+  "siteKey": "08-yelp",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/08-yelp/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "link_redundant",
+  "description": "Redundant link",
+  "nodeIndex": 0,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]/A[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]/A[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/08-yelp/wave/attempt-1/raw.json",
+  "errorId": "ST0206",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]/A[1]",
+    "tag": "A",
+    "text": "Juniper Coffee House",
+    "html": "<a href=\"/biz/juniper-coffee-house\" data-discover=\"true\">Juniper Coffee House</a>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": "/biz/juniper-coffee-house",
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 123,
+      "y": 2102,
+      "width": 227.578125,
+      "height": 24
+    },
+    "style": {
+      "color": "rgb(32, 33, 36)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "MAIN",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+      "tag": "H2",
+      "class": "",
+      "text": "Juniper Coffee House",
+      "html": "<h2><a href=\"/biz/juniper-coffee-house\" data-discover=\"true\">Juniper Coffee House</a></h2>"
+    },
+    "control": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]/A[1]",
+      "tag": "A",
+      "text": "Juniper Coffee House",
+      "ariaLabel": null,
+      "href": "/biz/juniper-coffee-house",
+      "type": null
+    },
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:33843/assets/index-B2LBlrQp.css",
+        "selector": "a",
+        "declarations": {
+          "color": "inherit"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Yelp — Discover trusted local businesses",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[3]/H1[1]",
+        "tag": "H1",
+        "text": "Find your next\nfavorite place.",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/ASIDE[1]/DIV[3]/H2[1]",
+        "tag": "H2",
+        "text": "Juniper Cocktail Club",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "What are you looking for?",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Local standouts",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Juniper Coffee House",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "Siam Garden",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/SECTION[2]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": "BrightLine Electric",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "yelp\n✦\nFIND\nNEAR\nYelp for Business\nCollections\nWrite a Review\nLog In\nSign Up"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "Yelp for Business\nCollections\nWrite a Review\nLog In\nSign Up"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/SECTION[1]/ASIDE[1]",
+        "tag": "ASIDE",
+        "role": null,
+        "label": "Featured business",
+        "text": "COMMUNITY FAVORITE\nCOCKTAIL BARS\n\nSan Francisco · Cocktail Bars\n\nJuniper Cocktail Club\n4.8\n(3,876)\nSee why locals love it "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": "EXPLORE YOUR CITY\n\nWhat are you looking for?\n\nStart with a category, then narrow the results with the details that matter.\n\nRestaurants\nExplore nearby \nCoffee & Cafes\nExplore nearby \nHome Services\nExplore nearby \nAuto Services\nExplore nearby \nBeauty & Spas\nExplore nearby \nBarbers\nExplore nearby \nShopping\nExplore nearby \nMore\nExplore nearby \n\nHIGHLY RATED\n\nLocal standouts\nBrowse all businesses \nCOFFEE & TEA\n\n1. COFFEE & TEA\n\nJuniper Coffee House\n4.8\n(864)\n$$\nCoffee & Tea, Cafes\nTHAI\n\n2. THAI\n\nSia"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "yelp\n✦\n\nDiscover trusted places and local pros.\n\nDISCOVER\nRestaurants\nHome services\nShopping\nPLAN\nCollections\nCoffee shops\nCar washes\nDEMO\n\nAll listings, reviews, availability, and transactions on this site are synthetic.\n\n© 2026 Yelp-style local discovery demo"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Yelp home\":\n    - /url: /\n    - text: yelp ✦\n  - search:\n    - text: Find\n    - combobox \"Search for businesses\"\n    - text: Near\n    - combobox \"Search location\"\n    - button \"Search\"\n  - navigation \"Main navigation\":\n    - button \"Yelp for Business\"\n    - link \"Collections\":\n      - /url: /collections\n    - button \"Write a Review\"\n    - button \"Log In\"\n    - button \"Sign Up\"\n- paragraph: LOCAL KNOWLEDGE, RIGHT WHEN YOU NEED IT\n- heading \"Find your next favorite place.\" [level=1]\n- paragraph: Explore standout restaurants, trusted local pros, and neighborhood favorites—backed by real community signals.\n- search:\n  - text: Search for\n  - combobox \"Search for businesses\"\n  - text: Near\n  - combobox \"Search location\"\n  - button \"Search\"\n- button \"Top Thai in Westminster\"\n- button \"Fast electricians near 94115\"\n- button \"Dog-friendly cafes\"\n- complementary \"Featured business\":\n  - text: Community favorite Cocktail Bars\n  - paragraph: San Francisco · Cocktail Bars\n  - heading \"Juniper Cocktail Club\" [level=2]\n  - strong: \"4.8\"\n  - text: (3,876)\n  - button \"See why locals love it\"\n- main:\n  - paragraph: EXPLORE YOUR CITY\n  - heading \"What are you looking for?\" [level=2]\n  - paragraph: Start with a category, then narrow the results with the details that matter.\n  - button \"Restaurants Explore nearby\":\n    - strong: Restaurants\n    - text: Explore nearby\n  - button \"Coffee & Cafes Explore nearby\":\n    - strong: Coffee & Cafes\n    - text: Explore nearby\n  - button \"Home Services Explore nearby\":\n    - strong: Home Services\n    - text: Explore nearby\n  - button \"Auto Services Explore nearby\":\n    - strong: Auto Services\n    - text: Explore nearby\n  - button \"Beauty & Spas Explore nearby\":\n    - strong: Beauty & Spas\n    - text: Explore nearby\n  - button \"Barbers Explore nearby\":\n    - strong: Barbers\n    - text: Explore nearby\n  - button \"Shopping Explore nearby\":\n    - strong: Shopping\n    - text: Explore nearby\n  - button \"More Explore nearby\":\n    - strong: More\n    - text: Explore nearby\n  - paragraph: HIGHLY RATED\n  - heading \"Local standouts\" [level=2]\n  - button \"Browse all businesses\"\n  - article:\n    - link \"View Juniper Coffee House\":\n      - /url: /biz/juniper-coffee-house\n      - text: Coffee & Tea\n    - paragraph: 1. Coffee & Tea\n    - heading \"Juniper Coffee House\" [level=2]:\n      - link \"Juniper Coffee House\":\n        - /url: /biz/juniper-coffee-house\n    - strong: \"4.8\"\n    - text: (864) $$ •Coffee & Tea, Cafes\n  - article:\n    - link \"View Siam Garden\":\n      - /url: /biz/siam-garden-westminster\n      - text: Thai\n    - paragraph: 2. Thai\n    - heading \"Siam Garden\" [level=2]:\n      - link \"Siam Garden\":\n        - /url: /biz/siam-garden-westminster\n    - strong: \"5.0\"\n    - text: (764) $$ •Thai, Noodles\n  - article:\n    - link \"View BrightLine Electric\":\n      - /url: /biz/brightline-electric\n      - text: Electricians\n    - paragraph: 3. Electricians\n    - heading \"BrightLine Electric\" [level=2]:\n      - link \"BrightLine Electric\":\n        - /url: /biz/brightline-electric\n    - strong: \"5.0\"\n    - text: (642) $$ •Electricians, Lighting Fixtures & Equipment\n  - strong: Trusted details\n  - text: Clear service and amenity signals\n  - strong: Fast responses\n  - text: See who gets back to you quickly\n  - strong: Save your finds\n  - text: Build collections for every plan\n- contentinfo:\n  - link \"yelp ✦\":\n    - /url: /\n  - paragraph: Discover trusted places and local pros.\n  - strong: Discover\n  - link \"Restaurants\":\n    - /url: /search?find_desc=Restaurants\n  - link \"Home services\":\n    - /url: /search?find_desc=Home+Services\n  - link \"Shopping\":\n    - /url: /search?find_desc=Shopping\n  - strong: Plan\n  - link \"Collections\":\n    - /url: /collections\n  - link \"Coffee shops\":\n    - /url: /search?find_desc=Coffee+shop\n  - link \"Car washes\":\n    - /url: /search?find_desc=Car+wash\n  - strong: Demo\n  - paragraph: All listings, reviews, availability, and transactions on this site are synthetic.\n  - text: © 2026 Yelp-style local discovery demo"
+  },
+  "sourceSnippets": []
+}

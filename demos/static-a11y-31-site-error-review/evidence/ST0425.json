@@ -1,0 +1,152 @@
+{
+  "site": "store.steampowered",
+  "siteKey": "17-store.steampowered",
+  "distPath": "/scratch/general/vast/u6076945/generator-runs/ltl-selected31-budget-matrix-20260817/sites/17-store.steampowered/dist",
+  "route": "/",
+  "engine": "wave",
+  "category": "alert",
+  "ruleId": "text_small",
+  "description": "Very small text",
+  "nodeIndex": 18,
+  "xpath": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[1]/P[1]",
+  "evidence": {
+    "xpaths": "/HTML/BODY[1]/DIV[2]/DIV[1]/FOOTER[1]/DIV[1]/P[1]",
+    "selectors": false,
+    "text": false,
+    "hidden": false
+  },
+  "rawRef": "scans/17-store.steampowered/wave/attempt-1/raw.json",
+  "errorId": "ST0425",
+  "dom": {
+    "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]/P[1]",
+    "tag": "P",
+    "text": "© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.",
+    "html": "<p>© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.</p>",
+    "class": "",
+    "role": null,
+    "ariaLabel": null,
+    "ariaLabelledby": null,
+    "href": null,
+    "for": null,
+    "id": "",
+    "visible": true,
+    "rect": {
+      "x": 278,
+      "y": 1874.8125,
+      "width": 808.453125,
+      "height": 10
+    },
+    "style": {
+      "color": "rgb(102, 114, 126)",
+      "background": "rgba(0, 0, 0, 0)",
+      "fontSize": "9px",
+      "fontWeight": "400",
+      "opacity": "1",
+      "backgroundImage": "none"
+    },
+    "landmark": {
+      "tag": "FOOTER",
+      "role": null,
+      "label": null,
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]"
+    },
+    "parent": {
+      "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]/DIV[1]",
+      "tag": "DIV",
+      "class": "page-wrap",
+      "text": "STEAM\n\n© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.\n\nBrowse Store\nCommunity\nPoints Shop",
+      "html": "<div class=\"page-wrap\"><a class=\"steam-logo footer-logo\" href=\"/\" data-discover=\"true\"><span class=\"logo-mark\"><svg data-prefix=\"fas\" data-icon=\"gamepad\" class=\"svg-inline--fa fa-gamepad\" role=\"img\" viewBox=\"0 0 640 512\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M448 64c106 0 192 86 192 192S554 448 448 448l-256 0C86 448 0 362 0 256S86 64 192 64l256 0zM192 176c-13.3 0-24 10.7-24 24l0 32-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 32c0 13.3 10.7 24 24 24s24-10.7 24-24l0-32 32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-32c0-13.3-10.7-24-24-24zm240 96a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm64-96a32 32 0 1 0 0 64 32 32 0 1 0 0-64z\"></path></svg></span><span>STEAM</span></a><p>© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.</p><div><a href=\"/search\" data-discover=\"true\">Browse Store</a><a href=\"/community/discussions\" data-discover=\"true\">Community</a><a href=\"/points-shop\" data-discover=\"true\">Points Shop</a></div></div>"
+    },
+    "control": null,
+    "matchedStyles": [
+      {
+        "file": "http://127.0.0.1:37531/assets/index-CPVGKwKH.css",
+        "selector": ".site-footer p",
+        "declarations": {
+          "color": "rgb(102, 114, 126)",
+          "font-size": "9px"
+        }
+      }
+    ]
+  },
+  "reproducedXPath": true,
+  "pageStructure": {
+    "title": "Steam Store",
+    "headings": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[1]/DIV[2]/DIV[1]/H1[1]",
+        "tag": "H1",
+        "text": "Cities: Skylines",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " SPECIAL OFFERS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Sea of Stars",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[2]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "Hades",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[2]/ARTICLE[3]/DIV[1]/DIV[1]/DIV[1]/A[1]/H3[1]",
+        "tag": "H3",
+        "text": "DREDGE",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[1]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " TOP GAMES BY DAILY PLAYERS",
+        "level": null
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]/DIV[1]/SECTION[3]/DIV[2]/DIV[1]/DIV[1]/H2[1]",
+        "tag": "H2",
+        "text": " POPULAR UPCOMING",
+        "level": null
+      }
+    ],
+    "landmarks": [
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]",
+        "tag": "HEADER",
+        "role": null,
+        "label": null,
+        "text": "STEAM\nSTORE\nCOMMUNITY\nALEX \nCart"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/NAV[1]",
+        "tag": "NAV",
+        "role": null,
+        "label": "Main navigation",
+        "text": "STORE\nCOMMUNITY\nALEX "
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/MAIN[1]",
+        "tag": "MAIN",
+        "role": null,
+        "label": null,
+        "text": " FEATURED & RECOMMENDED\nYOUR CITY. YOUR RULES.\nCities: Skylines\n\nBuild the city of your dreams and manage its living, breathing systems.\n\nTop Seller\n PC\nSTARTING AT\n$29.99\nView details\nRecently played\nJump back into your games\nMost played\nSee today's player counts\nPopular upcoming\nDiscover anticipated releases\nYour game forums\nJoin community discussions\n SPECIAL OFFERS\n\nGreat games at great prices\n\nBrowse all games \nSea of Stars\n Windows\nAdventure\nJRPG\nRPG\n 96%\n$34.99\n$17.49\nAdd\nHades\n Windows\nA"
+      },
+      {
+        "path": "/HTML/BODY[1]/DIV[1]/DIV[1]/FOOTER[1]",
+        "tag": "FOOTER",
+        "role": null,
+        "label": null,
+        "text": "STEAM\n\n© 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.\n\nBrowse Store\nCommunity\nPoints Shop"
+      }
+    ],
+    "axSnapshot": "- banner:\n  - link \"Steam Store home\":\n    - /url: /\n    - text: STEAM\n  - navigation \"Main navigation\":\n    - link \"STORE\":\n      - /url: /\n    - link \"COMMUNITY\":\n      - /url: /community/discussions\n    - button \"ALEX\"\n  - button \"Notifications\"\n  - link \"Cart with 0 items\":\n    - /url: /cart\n    - text: Cart\n- link \"Your Store\":\n  - /url: /\n- link \"Browse\":\n  - /url: /search\n- link \"Charts\":\n  - /url: /charts/most-played\n- link \"Upcoming\":\n  - /url: /upcoming\n- link \"Points Shop\":\n  - /url: /points-shop\n- search:\n  - textbox \"Search the store\"\n  - button \"Submit search\"\n- main:\n  - text: FEATURED & RECOMMENDED\n  - 'link \"Cities: Skylines featured artwork\"':\n    - /url: /game/cities-skylines\n    - 'img \"Cities: Skylines featured artwork\"'\n  - text: YOUR CITY. YOUR RULES.\n  - 'heading \"Cities: Skylines\" [level=1]'\n  - paragraph: Build the city of your dreams and manage its living, breathing systems.\n  - img \"City transit preview\"\n  - img \"Downtown preview\"\n  - img \"City at night preview\"\n  - img \"Industries preview\"\n  - text: Top Seller PC Starting at\n  - strong: $29.99\n  - link \"View details\":\n    - /url: /game/cities-skylines\n  - region \"Popular destinations\":\n    - link \"Recently played Jump back into your games\":\n      - /url: /profile/recently-played\n    - link \"Most played See today's player counts\":\n      - /url: /charts/most-played\n    - link \"Popular upcoming Discover anticipated releases\":\n      - /url: /upcoming\n    - link \"Your game forums Join community discussions\":\n      - /url: /community/discussions\n  - heading \"Special offers\" [level=2]\n  - paragraph: Great games at great prices\n  - link \"Browse all games\":\n    - /url: /search\n  - article:\n    - link \"Sea of Stars cover\":\n      - /url: /game/sea-of-stars\n      - img \"Sea of Stars cover\"\n    - link \"Sea of Stars\":\n      - /url: /game/sea-of-stars\n      - heading \"Sea of Stars\" [level=3]\n    - text: Windows\n    - button \"Add Sea of Stars to wishlist\"\n    - text: Adventure JRPG RPG 96%\n    - deletion: $34.99\n    - strong: $17.49\n    - button \"Add\"\n  - article:\n    - link \"Hades cover\":\n      - /url: /game/hades\n      - img \"Hades cover\"\n    - link \"Hades\":\n      - /url: /game/hades\n      - heading \"Hades\" [level=3]\n    - text: Windows\n    - button \"Add Hades to wishlist\"\n    - text: Adventure Action Roguelike 98%\n    - strong: $24.99\n    - button \"Add\"\n  - article:\n    - link \"DREDGE cover\":\n      - /url: /game/dredge\n      - img \"DREDGE cover\"\n    - link \"DREDGE\":\n      - /url: /game/dredge\n      - heading \"DREDGE\" [level=3]\n    - text: Windows\n    - button \"Remove DREDGE from wishlist\"\n    - text: Adventure Fishing Exploration 95%\n    - strong: $24.99\n    - button \"Add\"\n  - heading \"Top games by daily players\" [level=2]\n  - link \"View full chart\":\n    - /url: /charts/most-played\n  - link \"1 Counter-Strike 2 1,183,492 daily\":\n    - /url: /charts/most-played\n  - link \"2 Dota 2 668,211 daily\":\n    - /url: /game/dota-2\n  - 'link \"3 PUBG: BATTLEGROUNDS 497,230 daily\"':\n    - /url: /charts/most-played\n  - link \"4 Apex Legends 310,884 daily\":\n    - /url: /charts/most-played\n  - link \"5 Rust 246,019 daily\":\n    - /url: /charts/most-played\n  - heading \"Popular upcoming\" [level=2]\n  - link \"See all upcoming\":\n    - /url: /upcoming\n  - 'link \"Hollow Knight: Silksong August 28, 2026 3,251,400\"':\n    - /url: /upcoming\n  - link \"Fable September 17, 2026 2,481,200\":\n    - /url: /upcoming\n  - link \"Light No Fire October 9, 2026 1,834,920\":\n    - /url: /upcoming\n  - link \"Subnautica 2 November 6, 2026 1,620,080\":\n    - /url: /upcoming\n- contentinfo:\n  - link \"STEAM\":\n    - /url: /\n  - paragraph: © 2026 Valve-inspired storefront demo. All product data and interactions are synthetic.\n  - link \"Browse Store\":\n    - /url: /search\n  - link \"Community\":\n    - /url: /community/discussions\n  - link \"Points Shop\":\n    - /url: /points-shop"
+  },
+  "sourceSnippets": []
+}
