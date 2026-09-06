@@ -16,11 +16,17 @@ The 69-case AI mechanism-review supplement includes 28 historical FP cases and
 The other 456 historical rows have no notes in these sources.
 
 Latest30 non-Duplicate representatives include one exact current-rerun trigger
-screenshot each (250 images). Duplicate rows preserve trigger references and
+before/after screenshot pair each (250 pairs, 500 images). The existing after
+images were checked against their exact trace entries before the preceding trace
+frame was added as the before image. Duplicate rows preserve trigger references and
 link to their canonical representative; that representative's screenshot is not
 claimed to show the duplicate row's action. Historical before/after evidence
 uses existing relative assets in `../ltl-ui-cross-replay-error-review/`.
 Screenshots show visual state, not screen-reader speech or reading position.
+
+Historical rows retain their replay membership metadata. The page exposes it as
+a Replay 1/2/3 filter and reports 235, 249, and 217 appearances respectively;
+the Pass@3 union contains 484 unique candidates.
 
 `cases.json` is the downloadable snapshot, schema
 `ltl-ui-combined-error-review/1`; it is not an import for either older review UI.
@@ -36,3 +42,8 @@ Canonical inputs (annotation snapshot 2026-09-05):
 Checker commit: `bfb4996a`. Machine-local paths are omitted from metadata; notes
 are preserved, not re-adjudicated. No checker or annotation changes are made by
 publishing this viewer.
+
+Run `node verify.mjs cases.json` to check the scoped IDs, labels, replay filters,
+Pass@3 counts, and all latest30 screenshot pairs. Passing the previous published
+`cases.json` as a second argument additionally verifies that only `generatedAt`
+and the new `beforeImage` fields differ from that baseline.

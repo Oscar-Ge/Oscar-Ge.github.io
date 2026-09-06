@@ -61,7 +61,7 @@ async function start() {
       top.append(element('span', row.id, 'mono'), badge(row.decision));
       const middle = element('span', undefined, 'row-middle');
       middle.append(element('strong', row.website), element('span', row.property, 'mono'));
-      button.append(top, middle, element('span', row.route, 'route'), element('span', row.dataset === 'R' ? 'AI note' : row.supplement ? 'AI 机制复核 · 原 note 空' : '历史标签 · 未附注', 'note-hint'));
+      button.append(top, middle, element('span', row.route, 'route'), element('span', row.replays.map(value => value.replace('replay-', 'R')).join(' · '), 'replay-hint'), element('span', row.dataset === 'R' ? 'AI note' : row.supplement ? 'AI 机制复核 · 原 note 空' : '历史标签 · 未附注', 'note-hint'));
       button.addEventListener('click', () => selectCase(row.id, true)); list.append(button);
     }
     if (!filtered.length) list.append(element('p', '没有符合筛选条件的案例。', 'empty'));
@@ -115,7 +115,7 @@ async function start() {
       for (const evidence of row.evidence) {
         const evidenceBlock = element('div', undefined, 'evidence-block');
         evidenceBlock.append(element('h4', `${evidence.replay} · ${evidence.actionLabel}${evidence.actionIndex !== undefined ? ` · action ${evidence.actionIndex}` : ''}`));
-        if (row.dataset === 'R') evidenceBlock.append(element('p', '最新 rerun 的触发点截图；单张视觉截图不等于读屏反馈证据。', 'muted small'));
+        if (row.dataset === 'R') evidenceBlock.append(element('p', '最新 rerun 的动作前后截图；视觉截图不等于读屏反馈证据。', 'muted small'));
         const images = element('div', undefined, 'evidence-images');
         for (const [key, caption] of [['beforeImage', '动作前'], ['afterImage', row.dataset === 'R' ? '触发点 · 动作后' : '动作后']]) {
           if (!evidence[key]) continue;
@@ -136,7 +136,7 @@ async function start() {
   }
 
   function update() {
-    const filters = {search: $('#search').value, dataset: $('#dataset').value, decision: $('#decision').value, website: $('#website').value, property: $('#property').value, hideDuplicates: $('#hide-duplicates').checked};
+    const filters = {search: $('#search').value, dataset: $('#dataset').value, replay: $('#replay').value, decision: $('#decision').value, website: $('#website').value, property: $('#property').value, hideDuplicates: $('#hide-duplicates').checked};
     filtered = filterCases(rows, filters, searchIndex); page = 0;
     const count = countDecisions(filtered);
     $('#result-count').textContent = `显示 ${number(filtered.length)} / 2,772 条 · ${count.correct} TP · ${count['false-positive']} FP · ${count.unsure} unsure · ${number(count.duplicate)} Duplicate`;
@@ -147,13 +147,13 @@ async function start() {
   }
 
   function resetFilters() {
-    for (const id of ['search', 'dataset', 'decision', 'website', 'property']) $(`#${id}`).value = '';
+    for (const id of ['search', 'dataset', 'replay', 'decision', 'website', 'property']) $(`#${id}`).value = '';
     $('#hide-duplicates').checked = false; update();
   }
 
   let searchTimer;
   $('#search').addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(update, 120); });
-  for (const id of ['dataset', 'decision', 'website', 'property', 'hide-duplicates']) $(`#${id}`).addEventListener('change', update);
+  for (const id of ['dataset', 'replay', 'decision', 'website', 'property', 'hide-duplicates']) $(`#${id}`).addEventListener('change', update);
   $('#reset').addEventListener('click', resetFilters);
   $('#previous').addEventListener('click', () => { page--; renderList(); });
   $('#next').addEventListener('click', () => { page++; renderList(); });

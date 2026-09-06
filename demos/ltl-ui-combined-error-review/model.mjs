@@ -24,12 +24,13 @@ export function validateDataset(data) {
 }
 
 export function makeSearchIndex(rows) {
-  return new Map(rows.map(row => [row.id, [row.id, row.website, row.property, row.route, row.identity, row.note, row.supplement?.finding, row.supplement?.categoryLabel].filter(Boolean).join(' ').toLocaleLowerCase()]));
+  return new Map(rows.map(row => [row.id, [row.id, row.website, row.property, row.route, row.identity, row.replays.join(' '), row.note, row.supplement?.finding, row.supplement?.categoryLabel].filter(Boolean).join(' ').toLocaleLowerCase()]));
 }
 
 export function filterCases(rows, filters, searchIndex) {
   const query = (filters.search || '').trim().toLocaleLowerCase();
   return rows.filter(row => (!filters.dataset || row.dataset === filters.dataset)
+    && (!filters.replay || row.replays.includes(filters.replay))
     && (!filters.decision || row.decision === filters.decision)
     && (!filters.website || row.website === filters.website)
     && (!filters.property || row.property === filters.property)
