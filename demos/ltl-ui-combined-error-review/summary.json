@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "ltl-ui-combined-error-review/1",
+  "title": "LTL-UI annotated union: latest30 FP-fix 2,288 + historical 484",
+  "generatedAt": "2026-09-06T04:15:59.255Z",
+  "annotationSnapshotDate": "2026-09-05",
+  "checkerCommit": "bfb4996a",
+  "scope": {
+    "historicalCount": 484,
+    "latestCount": 2288,
+    "total": 2772,
+    "representativeCount": 493,
+    "counts": {
+      "correct": 410,
+      "false-positive": 69,
+      "unsure": 14,
+      "duplicate": 2279
+    },
+    "latestAiNotes": 2288,
+    "historicalOriginalNotes": 0,
+    "mechanismReviewNotes": 69,
+    "historicalMechanismReviewNotes": 28,
+    "historicalRowsWithoutAnyNotes": 456,
+    "newCrossSetDeduplication": false,
+    "labelsChanged": false,
+    "allHumanConfirmed": false,
+    "latestRepresentativeScreenshots": 250
+  },
+  "sources": {
+    "historical": "ltl-ui-cross-replay-review-2026-09-03.json",
+    "latest": "ltl-ui-latest30-fpfix-rerun-blv-review-2026-09-05.json",
+    "mechanismReview": "ltl-current-69-fp-source-review-2026-09-05.json"
+  }
+}
