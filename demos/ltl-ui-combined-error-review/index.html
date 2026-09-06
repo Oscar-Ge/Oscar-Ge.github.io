@@ -18,31 +18,29 @@
   <main>
     <section class="overview" aria-label="完整集合统计">
       <div class="stat"><span>全部候选记录</span><strong>2,772</strong><small>保留两批来源与原始 ID</small></div>
-      <div class="stat"><span>非 Duplicate 代表</span><strong>493</strong><small>410 TP · 69 FP · 14 unsure</small></div>
+      <div class="stat"><span>非 Duplicate 代表</span><strong>493</strong><small>424 TP · 69 FP · 0 unsure</small></div>
       <div class="stat"><span>AI 标注 notes</span><strong>2,288</strong><small>另有 69 条 AI 机制复核说明</small></div>
       <div class="stat"><span>已有 Duplicate 标签</span><strong>2,279</strong><small>未进行新的跨集合缺陷合并</small></div>
     </section>
     <details class="scope"><summary>统计口径与标注来源 · 阅读前请注意</summary>
       <p>这里是两批候选记录的联合展示，不是一次运行的结果，也不是重新做的跨集合去重。下方 Replay 筛选按每条记录保留的 run metadata 区分三次运行；隐藏 Duplicate 只排除原文件中已有的 Duplicate 行。2,288 是修改后 checker 的 rerun；不包含旧版 2,358 条，也不与旧版相加。</p>
-      <p>最新 2,288 条都有 AI notes，尚非人工确认的 ground truth。历史 484 条有原标签，但原始 note 全为空，逐条 reviewer/origin 未编码：其中 28 条 FP 有后续 AI 机制复核说明，其余 456 条未附注。机制复核不等于重新裁决，没有修改 TP/FP 标签。</p>
-      <p>TP 的口径包括降低 BLV 导航效率、增加定位或理解负担，不要求任务彻底失败。14 条 unsure 已经检查，但证据仍不足。本页只读；下载的是本站专用 <code>ltl-ui-combined-error-review/1</code>，不要导入旧版审核站。</p>
+      <p>最新 2,288 条保留原 AI notes；其中原为 unsure 的 14 条已由用户逐条看过，并于 2026-09-06 确认为 TP，详情记录本次人工确认。历史 484 条保留原标签与 notes；逐条 reviewer/origin 未编码。69 条 AI 机制复核说明独立保留。</p>
+      <p>TP 的口径包括降低 BLV 导航效率、增加定位或理解负担，不要求任务彻底失败。本次将 14 条 unsure 更新为 TP，当前 unsure 为 0；其他标签沿用已有审核结果。本页只读；下载的是本站专用 <code>ltl-ui-combined-error-review/1</code>。</p>
     </details>
     <section class="replay-summary" aria-labelledby="replay-summary-title">
       <div>
-        <p class="eyebrow">HISTORICAL 484 / REPLAY BREAKDOWN</p>
-        <h2 id="replay-summary-title">三次独立 exploration replay 的人工审核结果</h2>
-        <p>每个 Replay 行统计该次运行中出现的候选；Pass@3 是三次运行合并后的 484 个唯一候选。Correctness = Correct / (Correct + FP)，不把 Duplicate 纳入分母。</p>
+        <p class="eyebrow">ALL 2,772 / REPLAY BREAKDOWN</p>
+        <h2 id="replay-summary-title">全部 484 + 2,288 条 · 三次 Replay 审核结果</h2>
+        <p>每个 Replay 行合计历史 484 与最新 2,288 中属于该次 replay 的候选。Pass@3 为两批来源的 2,772 条候选并集；跨 replay 出现的同一 ID 在并集中只计一次。Correctness = Correct / (Correct + FP)，Duplicate 不进入分母。本表使用已有标签及本次人工确认：14 条 unsure 全部改为 TP。</p>
       </div>
       <div class="table-scroll">
         <table>
-          <caption>Manual review of LTL-UI reports across three independent exploration replays.</caption>
+          <caption>Review of all 484 historical and 2,288 latest30 LTL-UI reports across three exploration replays.</caption>
           <thead><tr><th scope="col">Run</th><th scope="col">Total</th><th scope="col">Correct</th><th scope="col">FP</th><th scope="col">Duplicate</th><th scope="col">Correctness</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Replay 1</th><td>235</td><td>121</td><td>11</td><td>103</td><td>91.7%</td></tr>
-            <tr><th scope="row">Replay 2</th><td>249</td><td>113</td><td>17</td><td>119</td><td>86.9%</td></tr>
-            <tr><th scope="row">Replay 3</th><td>217</td><td>100</td><td>16</td><td>101</td><td>86.2%</td></tr>
-          </tbody>
-          <tfoot><tr><th scope="row">Pass@3</th><td>484</td><td>215</td><td>28</td><td>241</td><td>88.5%</td></tr></tfoot>
+          <tbody id="replay-summary-body"><tr><th scope="row">Replay 1</th><td>1641</td><td>274</td><td>35</td><td>1332</td><td>88.7%</td></tr>
+<tr><th scope="row">Replay 2</th><td>1727</td><td>269</td><td>44</td><td>1414</td><td>85.9%</td></tr>
+<tr><th scope="row">Replay 3</th><td>1709</td><td>257</td><td>42</td><td>1410</td><td>86.0%</td></tr></tbody>
+          <tfoot id="replay-summary-total"><tr><th scope="row">Pass@3</th><td>2772</td><td>424</td><td>69</td><td>2279</td><td>86.0%</td></tr></tfoot>
         </table>
       </div>
     </section>

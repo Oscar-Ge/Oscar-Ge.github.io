@@ -3,11 +3,12 @@
 Read-only public snapshot of the latest30 FP-fix 2,288 candidates and historical
 cross-replay 484 candidates. Entry point: `index.html`. No build dependencies.
 
-The 2,772 rows preserve original labels, notes, and dataset-scoped IDs (`R:X…`
-and `H:X…`). Removing rows already labelled Duplicate leaves 493 representatives:
-410 TP, 69 FP, 14 unsure. This is **not** new cross-dataset defect deduplication,
-one checker run, or human-confirmed ground truth. The old 2,358-case development
-baseline is not included.
+All 2,772 rows retain their notes and dataset-scoped IDs (`R:X…` and `H:X…`).
+On 2026-09-06 the user confirmed reviewing all 14 unsure cases and classified
+them as TP. Each changed row records that confirmation in `humanReview`, retains
+its prior decision, and sets `humanConfirmed: true`. Existing Duplicate groups
+are retained. The 493 representatives now comprise 424 TP and 69 FP (0 unsure).
+The old 2,358-case development baseline is not included.
 
 All latest30 rows include their existing AI notes verbatim. Historical notes are
 empty in the canonical source; do not invent historical annotation provenance.
@@ -24,9 +25,11 @@ claimed to show the duplicate row's action. Historical before/after evidence
 uses existing relative assets in `../ltl-ui-cross-replay-error-review/`.
 Screenshots show visual state, not screen-reader speech or reading position.
 
-Historical rows retain their replay membership metadata. The page exposes it as
-a Replay 1/2/3 filter and reports 235, 249, and 217 appearances respectively;
-the Pass@3 union contains 484 unique candidates.
+The replay table and filter cover both sources: 484 historical + 2,288 latest30.
+Each run counts rows whose `replays` include that run. Pass@3 counts all 2,772
+scoped IDs once. Correctness is Correct / (Correct + FP), excluding Duplicate.
+`summary.json` records this combined breakdown as well as the historical-only
+breakdown for reference. The table is generated from the current case labels.
 
 `cases.json` is the downloadable snapshot, schema
 `ltl-ui-combined-error-review/1`; it is not an import for either older review UI.
@@ -40,10 +43,9 @@ Canonical inputs (annotation snapshot 2026-09-05):
 - `ltl-current-69-fp-source-review-2026-09-05.json`
 
 Checker commit: `bfb4996a`. Machine-local paths are omitted from metadata; notes
-are preserved, not re-adjudicated. No checker or annotation changes are made by
-publishing this viewer.
+are preserved. Only the 14 user-confirmed unsure labels were changed in this update.
 
 Run `node verify.mjs cases.json` to check the scoped IDs, labels, replay filters,
 Pass@3 counts, and all latest30 screenshot pairs. Passing the previous published
-`cases.json` as a second argument additionally verifies that only `generatedAt`
-and the new `beforeImage` fields differ from that baseline.
+`cases.json` (722e4eb4) as a second argument also verifies that only the 14
+user-confirmed annotations and their summary metadata changed.

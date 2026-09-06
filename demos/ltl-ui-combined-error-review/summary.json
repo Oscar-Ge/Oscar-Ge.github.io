@@ -1,7 +1,7 @@
 {
   "schemaVersion": "ltl-ui-combined-error-review/1",
   "title": "LTL-UI annotated union: latest30 FP-fix 2,288 + historical 484",
-  "generatedAt": "2026-09-06T18:56:09.484Z",
+  "generatedAt": "2026-09-06T20:01:34.186Z",
   "annotationSnapshotDate": "2026-09-05",
   "checkerCommit": "bfb4996a",
   "scope": {
@@ -10,9 +10,9 @@
     "total": 2772,
     "representativeCount": 493,
     "counts": {
-      "correct": 410,
+      "correct": 424,
       "false-positive": 69,
-      "unsure": 14,
+      "unsure": 0,
       "duplicate": 2279
     },
     "latestAiNotes": 2288,
@@ -21,16 +21,168 @@
     "historicalMechanismReviewNotes": 28,
     "historicalRowsWithoutAnyNotes": 456,
     "newCrossSetDeduplication": false,
-    "labelsChanged": false,
+    "labelsChanged": true,
     "allHumanConfirmed": false,
     "latestRepresentativeScreenshots": 250,
     "latestRepresentativeScreenshotPairs": 250,
     "latestRepresentativeScreenshotImages": 500,
     "historicalReplayBreakdown": {
-      "replay-1": {"total": 235, "correct": 121, "false-positive": 11, "duplicate": 103, "correctness": 0.917},
-      "replay-2": {"total": 249, "correct": 113, "false-positive": 17, "duplicate": 119, "correctness": 0.869},
-      "replay-3": {"total": 217, "correct": 100, "false-positive": 16, "duplicate": 101, "correctness": 0.862},
-      "pass@3": {"total": 484, "correct": 215, "false-positive": 28, "duplicate": 241, "correctness": 0.885}
+      "replay-1": {
+        "total": 235,
+        "correct": 121,
+        "false-positive": 11,
+        "duplicate": 103,
+        "correctness": 0.917
+      },
+      "replay-2": {
+        "total": 249,
+        "correct": 113,
+        "false-positive": 17,
+        "duplicate": 119,
+        "correctness": 0.869
+      },
+      "replay-3": {
+        "total": 217,
+        "correct": 100,
+        "false-positive": 16,
+        "duplicate": 101,
+        "correctness": 0.862
+      },
+      "pass@3": {
+        "total": 484,
+        "correct": 215,
+        "false-positive": 28,
+        "duplicate": 241,
+        "correctness": 0.885
+      }
+    },
+    "humanConfirmedRows": 14,
+    "humanReviewRevision": {
+      "date": "2026-09-06T20:01:34.186Z",
+      "from": "unsure",
+      "to": "correct",
+      "count": 14,
+      "reviewer": "user",
+      "caseIds": [
+        "R:X0005",
+        "R:X0006",
+        "R:X0011",
+        "R:X0018",
+        "R:X0029",
+        "R:X0037",
+        "R:X0047",
+        "R:X0053",
+        "R:X0273",
+        "R:X0280",
+        "R:X0528",
+        "R:X1169",
+        "R:X1260",
+        "R:X2116"
+      ]
+    },
+    "combinedReplayBreakdown": {
+      "replay-1": {
+        "total": 1641,
+        "correct": 274,
+        "false-positive": 35,
+        "unsure": 0,
+        "duplicate": 1332,
+        "correctness": 0.8867313915857605
+      },
+      "replay-2": {
+        "total": 1727,
+        "correct": 269,
+        "false-positive": 44,
+        "unsure": 0,
+        "duplicate": 1414,
+        "correctness": 0.8594249201277955
+      },
+      "replay-3": {
+        "total": 1709,
+        "correct": 257,
+        "false-positive": 42,
+        "unsure": 0,
+        "duplicate": 1410,
+        "correctness": 0.8595317725752508
+      },
+      "pass@3": {
+        "total": 2772,
+        "correct": 424,
+        "false-positive": 69,
+        "unsure": 0,
+        "duplicate": 2279,
+        "correctness": 0.8600405679513184
+      }
+    },
+    "replayBreakdownByDataset": {
+      "H": {
+        "replay-1": {
+          "total": 235,
+          "correct": 121,
+          "false-positive": 11,
+          "unsure": 0,
+          "duplicate": 103,
+          "correctness": 0.9166666666666666
+        },
+        "replay-2": {
+          "total": 249,
+          "correct": 113,
+          "false-positive": 17,
+          "unsure": 0,
+          "duplicate": 119,
+          "correctness": 0.8692307692307693
+        },
+        "replay-3": {
+          "total": 217,
+          "correct": 100,
+          "false-positive": 16,
+          "unsure": 0,
+          "duplicate": 101,
+          "correctness": 0.8620689655172413
+        },
+        "pass@3": {
+          "total": 484,
+          "correct": 215,
+          "false-positive": 28,
+          "unsure": 0,
+          "duplicate": 241,
+          "correctness": 0.8847736625514403
+        }
+      },
+      "R": {
+        "replay-1": {
+          "total": 1406,
+          "correct": 153,
+          "false-positive": 24,
+          "unsure": 0,
+          "duplicate": 1229,
+          "correctness": 0.864406779661017
+        },
+        "replay-2": {
+          "total": 1478,
+          "correct": 156,
+          "false-positive": 27,
+          "unsure": 0,
+          "duplicate": 1295,
+          "correctness": 0.8524590163934426
+        },
+        "replay-3": {
+          "total": 1492,
+          "correct": 157,
+          "false-positive": 26,
+          "unsure": 0,
+          "duplicate": 1309,
+          "correctness": 0.8579234972677595
+        },
+        "pass@3": {
+          "total": 2288,
+          "correct": 209,
+          "false-positive": 41,
+          "unsure": 0,
+          "duplicate": 2038,
+          "correctness": 0.836
+        }
+      }
     }
   },
   "sources": {

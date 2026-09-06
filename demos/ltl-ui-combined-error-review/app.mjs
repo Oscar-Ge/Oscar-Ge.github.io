@@ -82,7 +82,7 @@ async function start() {
     const permalink = element('a', '案例链接 ↗'); permalink.href = `#${encodeURIComponent(row.id)}`; title.append(permalink);
     detail.append(top, title, element('p', `${row.property}   ${row.route}`, 'case-subtitle'));
     const meta = element('dl', undefined, 'metadata');
-    const facts = [['原始 ID', row.errorId], ['来源', row.dataset === 'R' ? '修改后 latest30 · 2,288 条' : '历史 cross-replay · 484 条'], ['Replay', row.replays.join(', ')], ['标注来源', row.dataset === 'R' ? `${row.reviewer} · 未经人工确认` : '历史文件未编码 reviewer/origin'], ['更新时间', row.updatedAt || '未记录']];
+    const facts = [['原始 ID', row.errorId], ['来源', row.dataset === 'R' ? '修改后 latest30 · 2,288 条' : '历史 cross-replay · 484 条'], ['Replay', row.replays.join(', ')], ['标注来源', row.humanReview ? '用户已查看并人工确认 TP · 2026-09-06' : row.dataset === 'R' ? `${row.reviewer} · 未经人工确认` : '历史文件未编码 reviewer/origin'], ['更新时间', row.updatedAt || '未记录']];
     for (const [key, value] of facts) meta.append(element('dt', key), element('dd', value));
     detail.append(meta);
 
@@ -96,6 +96,11 @@ async function start() {
       detail.append(duplicate);
     }
 
+    if (row.humanReview) {
+      const confirmation = section('人工确认 · 当前裁决 TP');
+      confirmation.append(element('p', '用户确认已经看过此案例，并将原 unsure 裁决更新为 TP。下方保留此前 AI notes 以供追溯。'), disclosure('人工确认记录', row.humanReview));
+      detail.append(confirmation);
+    }
     const notes = section(row.dataset === 'R' ? 'AI 标注 notes' : '历史标注 notes');
     notes.classList.add('annotation');
     notes.append(element('p', row.note || '原始 note 为空；未附 AI 标注说明。', row.note ? 'note-text' : 'muted'));
