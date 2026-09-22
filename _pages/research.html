@@ -1,0 +1,55 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+{% capture research_content %}
+
+### [A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](/portfolio/a11yltlnav/)
+
+**Research Assistant, University of Utah** · May – Sep 2026<br>
+Advisors: Dr. Yue Jiang and Dr. Ben Greenman
+
+Detecting accessibility failures that emerge during interaction, beyond what a static page check can reveal.
+
+- Developed a taxonomy of navigation failures affecting blind and low-vision screen-reader users, drawing on prior literature and user studies.
+- Formalized navigation failures as Linear Temporal Logic (LTL) properties and implemented checks over interface interactions.
+- Built a web-agent baseline that navigates through screen-reader feedback and keyboard-only interaction.
+- Evaluated the checker on generated websites, achieving 88.7% precision.
+
+### [Improving Generative UIs from Use](/portfolio/generative-ui/)
+
+**Research Assistant, Purdue University** · May 2026 – Present<br>
+Advisor: Dr. Jason Wu
+
+Studying how interaction traces can help AI-generated interfaces become more usable.
+
+- Built a pipeline to generate websites, collect task interaction traces, diagnose usability issues, and repair interfaces with coding agents.
+- Used trained computer-use agents as baselines for simulating user behavior and providing usability feedback.
+- Investigating PPO-based fine-tuning and preference optimization using interaction feedback, with controlled experiments on task usability.
+
+### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
+
+**Research Assistant, University of Michigan** · Mar – Jun 2026<br>
+Advisor: Prof. Honglak Lee
+
+Helping web agents transfer what they learn as websites and interfaces change.
+
+- Built an adversarial co-evolution framework that pairs a coding-agent-driven UI drift generator with a web agent.
+- Extracted generalizable reflection rules from agent failures and compared them with an ExpeL baseline.
+- Worked on a knowledge-graph pipeline to identify tasks affected by website version changes.
+- Containerized multiple website versions with Docker and evaluated out-of-distribution generalization using BrowserGym and AgentLab.
+
+### [Gravitational Effects on Microorganism Swarming](/portfolio/swarming-microorganisms/)
+
+**Research Assistant, Shanghai Jiao Tong University** · Sep 2024 – Aug 2025<br>
+Advisor: Dr. Zijie Qu
+
+Automating colony boundary segmentation for the study of microorganism swarming.
+
+- Trained a U-Net for colony boundary segmentation and diagnosed systematic failure modes.
+- Adopted a zero-shot Segment Anything Model (SAM) pipeline for reliable automated detection, replacing a manual annotation pipeline.
+
+{% endcapture %}
+{{ research_content | markdownify }}

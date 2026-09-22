@@ -12,7 +12,7 @@ site_theme               : "default" # the available themes options are "default
 title                    : "Chenming Ge"
 title_separator          : "-"
 name                     : &name "Chenming Ge"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Chenming Ge — Human–Computer Interaction, Generative UI, Accessibility, and Computer-use Agents."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://Oscar-Ge.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Chenming Ge"
   pronouns         : "he/him"  
-  bio              : "Undergraduate Researcher @ UMich & SJTU"
+  bio              : "HCI · Generative UI · Computer-use Agents"
   location         : "Ann Arbor"
   employer         : "University of Michigan"
   uri              : # URL
@@ -84,6 +84,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
+  preprints:
+    title: 'Preprints'
   books:
     title: 'Books'
   manuscripts:
@@ -167,6 +169,29 @@ include:
   - files
   - demos
 exclude:
+  - _posts
+  - _talks
+  - _teaching
+  - cv.tex
+  - cv.log
+  - resume.cls
+  - enumitem.sty
+  - parskip.sty
+  - scripts
+  - tests
+  - _pages/cv-json.md
+  - _pages/markdown.md
+  - _pages/archive-layout-with-content.md
+  - _pages/non-menu-page.md
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/year-archive.html
+  - _publications/2009-10-01-paper-title-number-1.md
+  - _publications/2010-10-01-paper-title-number-2.md
+  - _publications/2015-10-01-paper-title-number-3.md
+  - _publications/2024-02-17-paper-title-number-4.md
+  - _publications/2025-06-08-paper-title-number-5.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

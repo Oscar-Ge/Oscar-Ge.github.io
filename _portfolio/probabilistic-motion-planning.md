@@ -1,18 +1,20 @@
 ---
 title: "Probabilistic Motion Planning for Redundant Robots"
-excerpt: "Benchmarking and optimizing sampling-based motion planning algorithms for the 7-DOF Franka Panda."
 collection: portfolio
+project_type: selected_project
+permalink: /portfolio/probabilistic-motion-planning/
+excerpt: "Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda."
 ---
+Robot Motion Planning
 
-* **Duration:** Nov 2025 - Dec 2025
-* **Context:** EECS 465 (Intro to Algorithmic Robotics) Course Project
-* **Advisor:** Prof. Dmitry Berenson
+**Selected project** · Sep – Dec 2025<br>
+Advisor: Prof. Dmitry Berenson
 
-## Project Overview
+Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
 
-This project focused on the application and optimization of standard path-planning algorithms on high degree-of-freedom robotic arms.
+## My contributions
 
-## Key Contributions
+- Reproduced and benchmarked RRT-Connect and PRM in simulation.
+- Implemented a hybrid sampling strategy that reduced trajectory generation latency by approximately 75%.
 
-* Reproduced and benchmarked **sampling-based motion planning algorithms** (specifically RRT-Connect and PRM) for a **7-DOF Franka Panda** robot in simulation.
-* Implemented a hybrid sampling strategy that significantly optimized performance, reducing trajectory generation latency by approximately **75%**.
+[← Research](/research/) · [Projects →](/portfolio/)

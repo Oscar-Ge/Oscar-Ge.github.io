@@ -2,36 +2,80 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Welcome to my academic page! I am an undergraduate student currently pursuing a B.S.E in Computer Science at the University of Michigan, Ann Arbor, and a B.Eng. in Electrical and Computer Engineering at Shanghai Jiao Tong University.
+I am an undergraduate student pursuing a B.S.E. in Computer Science at the **University of Michigan, Ann Arbor**, and a B.Eng. in Electronic and Computer Engineering at **Shanghai Jiao Tong University**.
 
-My primary research interest is in **AI Agents**, with a particular focus on **Web Agents and their memory**. My goal is to develop highly capable and intelligent systems that can reliably perceive, reason, and act in complex web environments. I am particularly interested in evaluating, benchmarking, and developing robust MLLM-based agentic systems.
+My research interests lie in **Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, and Human–AI Interaction**. I am interested in making AI-generated interfaces more usable and accessible: understanding how people interact with them, using interaction traces to improve their design, and developing agents that can evaluate and adapt to changing interfaces.
+
+My recent work includes accessibility navigation research with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah, generative UI research with **Dr. Jason Wu** at Purdue University, and web-agent adaptation with **Prof. Honglak Lee** at the University of Michigan.
+
+## Research Interests
+
+- **Generative UI and Human–AI Interaction:** using interaction traces and usability feedback to improve AI-generated interfaces.
+- **Accessibility:** detecting navigation barriers that emerge as blind and low-vision screen-reader users interact with websites.
+- **Computer-use Agents:** studying agents for interface evaluation and improving their adaptation as websites evolve.
+
+## Selected Publication
+
+**[A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](https://arxiv.org/abs/2609.17959)**
+
+**Chenming Ge***, Kewen Peng*, Chengyang Shi*, Ben Greenman, Yue Jiang<br>
+arXiv:2609.17959, 2026. **Under review at CHI 2027.** (*Equal contribution.)
+
+A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
+
+[Paper](https://arxiv.org/abs/2609.17959) · [PDF](https://arxiv.org/pdf/2609.17959) · [BibTeX](/files/a11yltlnav.bib)
 
 ## Research Experience
 
-*   **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present) [[Progress Report]](/files/webEvolve_progress_report.pdf)  
-    *Advisor: Prof. Honglak Lee (University of Michigan)*  
-    Investigating how test-time agent memory (insights vs. workflows) degrades when website UIs change. Developed an evaluation framework measuring Experience Transfer Gap (ETG) and Decay Rate (EDR) across 6 controlled drift variants (e.g., surface, structural, content). Comparing the robustness of different memory abstraction levels under version shift to uncover critical failure modes and inform adaptive agent architectures.    
+### [A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](/portfolio/a11yltlnav/)
 
-*   **Efficient Inference for Embodied Foundation Models** (Nov 2025 – Present)  
-    *Advisor: Dr. Jiachen Liu (University of Michigan)*  
-    Profiled **Video Action Models (VAM)** for robotic policy, implementing cross-attention KV caching and token compression to accelerate inference in dynamic environments. Explored quantization and speculative decoding on VLA models to optimize real-time decision-making.
+**Research Assistant, University of Utah** · May – Sep 2026<br>
+Advisors: Dr. Yue Jiang and Dr. Ben Greenman
 
-*   **Gravitational Effect on Swarming Behavior of Microorganisms** (Sep 2024 – Aug 2025)  
-    *Advisor: Prof. Zijie Qu (Shanghai Jiao Tong University)*  
-    Trained a **U-Net** model for colony boundary segmentation; diagnosed systematic failure modes, then adopted a **SAM**-based pipeline that achieved reliable automated detection, replacing manual annotation.
+Detecting accessibility failures that emerge during interaction, beyond what a static page check can reveal.
+
+### [Improving Generative UIs from Use](/portfolio/generative-ui/)
+
+**Research Assistant, Purdue University** · May 2026 – Present<br>
+Advisor: Dr. Jason Wu
+
+Studying how interaction traces can help AI-generated interfaces become more usable.
+
+### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
+
+**Research Assistant, University of Michigan** · Mar – Jun 2026<br>
+Advisor: Prof. Honglak Lee
+
+Helping web agents transfer what they learn as websites and interfaces change.
+
+### [Gravitational Effects on Microorganism Swarming](/portfolio/swarming-microorganisms/)
+
+**Research Assistant, Shanghai Jiao Tong University** · Sep 2024 – Aug 2025<br>
+Advisor: Dr. Zijie Qu
+
+Automating colony boundary segmentation for the study of microorganism swarming.
 
 ## Selected Projects
 
-*   **Probabilistic Motion Planning for Redundant Robots** (Nov 2025 – Dec 2025)  
-    *EECS 465 (Intro to Algorithmic Robotics) course project*  
-    Evaluated RRT-Connect and PRM on a 7-DOF Franka Panda; optimized sampling strategies in high-dimensional state spaces, achieving a 75% reduction in planning latency.
+### [Efficient Inference for Embodied Foundation Models](/portfolio/efficient-inference/)
 
-## Technical Skills
+Nov 2025 – Mar 2026<br>
+Advisor: Dr. Jiachen Liu
 
-*   **Frameworks:** PyTorch, Hugging Face, CUDA, Docker, Linux
-*   **Languages:** Python, C/C++, Java, SQL, LaTeX, Typst
+Accelerating world action models for real-time robotic decision-making.
+
+### [Probabilistic Motion Planning for Redundant Robots](/portfolio/probabilistic-motion-planning/)
+
+Sep – Dec 2025<br>
+Advisor: Prof. Dmitry Berenson
+
+Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
+
+## Contact
+
+You can reach me at [gecm@umich.edu](mailto:gecm@umich.edu). My [CV](/cv/) includes education, awards, and additional details.

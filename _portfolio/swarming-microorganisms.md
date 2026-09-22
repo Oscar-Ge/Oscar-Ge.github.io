@@ -1,19 +1,20 @@
 ---
-title: "Gravitational Effect on Swarming Behavior of Microorganisms"
-excerpt: "Improving automated detection pipelines for tracking microorganism colonies."
+title: "Gravitational Effects on Microorganism Swarming"
 collection: portfolio
+project_type: research
+permalink: /portfolio/swarming-microorganisms/
+excerpt: "Automating colony boundary segmentation for the study of microorganism swarming."
 ---
+Computer Vision · Scientific Computing
 
-* **Duration:** Sep 2024 - Aug 2025
-* **Role:** Research Assistant
-* **Advisor:** Prof. Zijie Qu (Shanghai Jiao Tong University)
+**Shanghai Jiao Tong University** · Sep 2024 – Aug 2025<br>
+Advisor: Dr. Zijie Qu
 
-## Project Overview
+Automating colony boundary segmentation for the study of microorganism swarming.
 
-This project investigated the swarming behavior of microorganisms under different gravitational conditions, requiring robust tracking and segmentation of colony boundaries.
+## My contributions
 
-## Key Contributions
+- Trained a U-Net for colony boundary segmentation and diagnosed systematic failure modes.
+- Adopted a zero-shot Segment Anything Model (SAM) pipeline for reliable automated detection, replacing a manual annotation pipeline.
 
-* Trained a **U-Net** model for colony boundary segmentation.
-* After diagnosing systematic failure modes in the initial approach, I adopted and integrated a **Segment Anything Model (SAM)** based pipeline.
-* The transition to the SAM-based approach successfully achieved reliable automated detection, completely replacing the need for manual annotation.
+[← Research](/research/) · [Projects →](/portfolio/)

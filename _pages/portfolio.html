@@ -1,14 +1,18 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
+redirect_from:
+  - /projects/
 ---
 
 {% include base_path %}
 
+<p>Selected projects in efficient embodied models and robot motion planning. For accessibility, generative UI, and web-agent work, see <a href="{{ '/research/' | relative_url }}">Research</a>.</p>
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% if post.project_type == 'selected_project' %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
-

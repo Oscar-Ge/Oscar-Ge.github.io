@@ -1,53 +1,123 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
 author_profile: true
+permalink: /cv/
 redirect_from:
   - /resume
+  - /cv-json/
+  - /resume-json
 ---
+[Download CV (PDF)]({{ '/files/Chenming_Ge_CV.pdf' | relative_url }})
 
-{% include base_path %}
+## Research Interests
 
-Education
-======
-* **B.S.E. in Computer Science**
-  * University of Michigan, Ann Arbor
-  * Aug 2025 - Present
-  * GPA: 3.88/4.00
-  * Selected Coursework: Machine Learning, Operating Systems, GPU Parallel Programming, Database Management Systems.
-* **B.Eng. in Electrical and Computer Engineering**
-  * Shanghai Jiao Tong University
-  * Aug 2023 - Present
+Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, Human–AI Interaction.
 
-Research Interests
-======
-AI Agents, with a focus on Web Agents and their memory.
+## Education
 
-Selected Research Projects
-======
-* **Agent Memory Decay Under Controlled Web Drift** (Jan 2026 – Present) [[Progress Report]](/files/webEvolve_progress_report.pdf)
-  * Advisor: Prof. Honglak Lee (Ann Arbor, MI)
-  * Investigating the robustness of test-time agent memory systems under controlled website GUI evolution.
-  * Designed a reproducible evaluation testbed injecting 6 distinct drift variants (surface, structural, content, runtime, access, functional) into open-source web applications.
-  * Extracted and implemented varying abstraction levels of agent memory—from raw trajectories (ExpRAG) and semantic insights (ExpeL) to procedural workflows (AWM).
-  * Evaluated memory decay by measuring Experience Transfer Gap (ETG) and Decay Rate (EDR) to systematically demonstrate the vulnerability of fixed test-time experiences against DOM structure and UI visual changes.
-  * Pioneering the systematic study of environmental coupling in agent memory, providing empirical guidelines for self-evolving integration.
+**University of Michigan, Ann Arbor** · Aug 2025 – Present<br>
+B.S.E. in Computer Science · GPA: **3.86/4.00**
 
-* **Efficient Inference for Embodied Foundation Models** (Nov 2025 – Present)
-  * Advisor: Dr. Jiachen Liu (Ann Arbor, MI)
-  * Profiled Video Action Models (VAM) for robotic policy, implementing cross-attention KV caching and token compression to accelerate inference in dynamic environments.
-  * Explored quantization (dynamic precision) and speculative decoding on VLA models, optimizing the computational backbone required for real-time agentic decision-making.
+Selected coursework: Machine Learning, Natural Language Processing, Computer Vision, Operating Systems, Database Management Systems, Applied Parallel Programming for GPUs.
 
-* **Gravitational Effect on Swarming Behavior of Microorganisms** (Sep 2024 - Aug 2025)
-  * Advisor: Prof. Zijie Qu (Shanghai, China)
-  * Trained a U-Net model for colony boundary segmentation; diagnosed systematic failure modes, then adopted a SAM-based pipeline that achieved reliable automated detection, replacing manual annotation.
+**Shanghai Jiao Tong University** · Aug 2023 – Present<br>
+B.Eng. in Electronic and Computer Engineering
 
-* **Probabilistic Motion Planning for Redundant Robots** (Nov 2025 – Dec 2025)
-  * EECS 465 (Intro to Algorithmic Robotics) course project (Ann Arbor, MI)
-  * Evaluated RRT-Connect and PRM on a 7-DOF Franka Panda; optimized sampling strategies in high-dimensional state spaces, achieving a 75% reduction in planning latency.
+## Publications
 
-Skills
-======
-* **Frameworks**: PyTorch, Hugging Face, CUDA, Docker, Linux
-* **Languages**: Python, C/C++, Java, SQL, LaTeX, Typst
+**[A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](https://arxiv.org/abs/2609.17959)**
+
+**Chenming Ge***, Kewen Peng*, Chengyang Shi*, Ben Greenman, Yue Jiang<br>
+arXiv:2609.17959, 2026. **Under review at CHI 2027.** (*Equal contribution.)
+
+A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
+
+[Paper](https://arxiv.org/abs/2609.17959) · [PDF](https://arxiv.org/pdf/2609.17959) · [BibTeX](/files/a11yltlnav.bib)
+
+
+## Research Experience
+
+
+### [A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](/portfolio/a11yltlnav/)
+
+**Research Assistant, University of Utah** · May – Sep 2026<br>
+Advisors: Dr. Yue Jiang and Dr. Ben Greenman
+
+Detecting accessibility failures that emerge during interaction, beyond what a static page check can reveal.
+
+- Developed a taxonomy of navigation failures affecting blind and low-vision screen-reader users, drawing on prior literature and user studies.
+- Formalized navigation failures as Linear Temporal Logic (LTL) properties and implemented checks over interface interactions.
+- Built a web-agent baseline that navigates through screen-reader feedback and keyboard-only interaction.
+- Evaluated the checker on generated websites, achieving 88.7% precision.
+
+### [Improving Generative UIs from Use](/portfolio/generative-ui/)
+
+**Research Assistant, Purdue University** · May 2026 – Present<br>
+Advisor: Dr. Jason Wu
+
+Studying how interaction traces can help AI-generated interfaces become more usable.
+
+- Built a pipeline to generate websites, collect task interaction traces, diagnose usability issues, and repair interfaces with coding agents.
+- Used trained computer-use agents as baselines for simulating user behavior and providing usability feedback.
+- Investigating PPO-based fine-tuning and preference optimization using interaction feedback, with controlled experiments on task usability.
+
+### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
+
+**Research Assistant, University of Michigan** · Mar – Jun 2026<br>
+Advisor: Prof. Honglak Lee
+
+Helping web agents transfer what they learn as websites and interfaces change.
+
+- Built an adversarial co-evolution framework that pairs a coding-agent-driven UI drift generator with a web agent.
+- Extracted generalizable reflection rules from agent failures and compared them with an ExpeL baseline.
+- Worked on a knowledge-graph pipeline to identify tasks affected by website version changes.
+- Containerized multiple website versions with Docker and evaluated out-of-distribution generalization using BrowserGym and AgentLab.
+
+### [Gravitational Effects on Microorganism Swarming](/portfolio/swarming-microorganisms/)
+
+**Research Assistant, Shanghai Jiao Tong University** · Sep 2024 – Aug 2025<br>
+Advisor: Dr. Zijie Qu
+
+Automating colony boundary segmentation for the study of microorganism swarming.
+
+- Trained a U-Net for colony boundary segmentation and diagnosed systematic failure modes.
+- Adopted a zero-shot Segment Anything Model (SAM) pipeline for reliable automated detection, replacing a manual annotation pipeline.
+
+
+## Selected Projects
+
+
+### [Efficient Inference for Embodied Foundation Models](/portfolio/efficient-inference/)
+
+Nov 2025 – Mar 2026<br>
+Advisor: Dr. Jiachen Liu
+
+Accelerating world action models for real-time robotic decision-making.
+
+- Analyzed inference efficiency in world action models (WAMs) for robotic policies.
+- Implemented cross-attention KV caching and token compression to accelerate inference.
+- Explored dynamic-precision quantization and speculative decoding for more efficient agent decisions.
+
+### [Probabilistic Motion Planning for Redundant Robots](/portfolio/probabilistic-motion-planning/)
+
+Sep – Dec 2025<br>
+Advisor: Prof. Dmitry Berenson
+
+Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
+
+- Reproduced and benchmarked RRT-Connect and PRM in simulation.
+- Implemented a hybrid sampling strategy that reduced trajectory generation latency by approximately 75%.
+
+
+## Awards & Honors
+
+- **Dean’s List**, University of Michigan · Apr 2026, Dec 2025
+- **Meritorious Winner (10%)**, Interdisciplinary Contest in Modeling, COMAP · May 2025
+- **Undergraduate Merit Scholarship (Class C)**, Shanghai Jiao Tong University · Oct 2024
+
+## Skills
+
+- **Frameworks & platforms:** PyTorch, Hugging Face, CUDA, Docker, Linux, React, Vue, Vite, OpenAI SDK
+- **Programming:** Python, C/C++, Java, Rust, HTML/CSS/JavaScript, TypeScript, SQL, MATLAB
+- **Tools:** Figma, Illustrator, Remotion, MATLAB, Codex, Claude Code, SolidWorks, LabVIEW

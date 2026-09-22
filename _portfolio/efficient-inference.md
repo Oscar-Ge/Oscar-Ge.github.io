@@ -1,19 +1,21 @@
 ---
 title: "Efficient Inference for Embodied Foundation Models"
-excerpt: "Investigating efficiency improvements in embodied foundational models without sacrificing success rates."
 collection: portfolio
+project_type: selected_project
+permalink: /portfolio/efficient-inference/
+excerpt: "Accelerating world action models for real-time robotic decision-making."
 ---
+Efficient Machine Learning · Robotics
 
-* **Duration:** Nov 2025 – Present
-* **Role:** Research Assistant
-* **Advisor:** Dr. Jiachen Liu (University of Michigan)
+**Selected project** · Nov 2025 – Mar 2026<br>
+Advisor: Dr. Jiachen Liu
 
-## Project Overview
+Accelerating world action models for real-time robotic decision-making.
 
-My work focuses on improving the efficiency of embodied foundation models. I profiled **COSMOS-Policy** across denoising steps, observing that block-level residual skipping is infeasible while cross-attention outputs remain highly stable (cosine similarity > 0.999). 
+## My contributions
 
-## Key Contributions
+- Analyzed inference efficiency in world action models (WAMs) for robotic policies.
+- Implemented cross-attention KV caching and token compression to accelerate inference.
+- Explored dynamic-precision quantization and speculative decoding for more efficient agent decisions.
 
-* Validated **cross-attention KV caching** on **24 RoboCasa tasks**.
-* Achieved an identical task success rate of 68.06% compared to the baseline across 3,600 rollout trials, ensuring consistent denoising speedup across all evaluated tasks.
-* Currently designing **task-aware token compression**. This approach exploits the model's latent-frame slot structure to selectively prune image tokens via self-attention reduction, targeting further denoising acceleration on top of the validated caching strategy.
+[← Research](/research/) · [Projects →](/portfolio/)
