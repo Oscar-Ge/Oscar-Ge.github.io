@@ -9,9 +9,7 @@ redirect_from:
 
 I am an undergraduate student pursuing a B.S.E. in Computer Science at the **University of Michigan, Ann Arbor**, and a B.Eng. in Electronic and Computer Engineering at **Shanghai Jiao Tong University**.
 
-My research interests lie in **Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, and Human–AI Interaction**. I am interested in making AI-generated interfaces more usable and accessible: understanding how people interact with them, using interaction traces to improve their design, and developing agents that can evaluate and adapt to changing interfaces.
-
-My recent work includes accessibility navigation research with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah, generative UI research with **Dr. Jason Wu** at Purdue University, and web-agent adaptation with **Prof. Honglak Lee** at the University of Michigan.
+I currently work with **Dr. Jason Wu** at Purdue University on improving AI-generated interfaces through user interaction feedback. Previously, I worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on web accessibility, and with **Prof. Honglak Lee** at the University of Michigan on helping web agents adapt to evolving websites.
 
 ## Research Interests
 
@@ -79,3 +77,5 @@ Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
 ## Contact
 
 You can reach me at [gecm@umich.edu](mailto:gecm@umich.edu). My [CV](/cv/) includes education, awards, and additional details.
+
+warning: in the working copy of '_pages/about.md', LF will be replaced by CRLF the next time Git touches it
