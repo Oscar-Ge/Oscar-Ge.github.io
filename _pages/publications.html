@@ -10,6 +10,7 @@ author_profile: true
 <h2>Preprints</h2>
 {% for post in site.publications reversed %}
   {% if post.category == 'preprints' %}
-    {% include archive-single.html %}
+    <h2>{{ post.title }}</h2>
+    {{ post.content | markdownify }}
   {% endif %}
 {% endfor %}
