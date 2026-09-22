@@ -77,5 +77,3 @@ Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
 ## Contact
 
 You can reach me at [gecm@umich.edu](mailto:gecm@umich.edu). My [CV](/cv/) includes education, awards, and additional details.
-
-warning: in the working copy of '_pages/about.md', LF will be replaced by CRLF the next time Git touches it
