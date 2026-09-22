@@ -23,8 +23,8 @@ My recent work includes accessibility navigation research with **Dr. Yue Jiang a
 
 **[A11yLTLNav: Automatic Detection of Accessibility Navigation Failures](https://arxiv.org/abs/2609.17959)**
 
-**Chenming Ge***, Kewen Peng*, Chengyang Shi*, Ben Greenman, Yue Jiang<br>
-arXiv:2609.17959, 2026. **Under review at CHI 2027.** (*Equal contribution.)
+**Chenming Ge**<sup>*</sup>, Kewen Peng<sup>*</sup>, Chengyang Shi<sup>*</sup>, Ben Greenman, Yue Jiang<br>
+arXiv:2609.17959, 2026. **Under review at CHI 2027.** (Equal contribution.)
 
 A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
 
