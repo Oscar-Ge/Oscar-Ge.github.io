@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script src="media.js?v=4" defer></script>
 </head>
 <body>
@@ -180,21 +180,25 @@
 
   <section class="section" id="results">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">How reliable are the reports?</h2>
+      <h2 class="title is-3 has-text-centered">How many errors did each checker find?</h2>
       <div class="content reading-width">
-        <p class="has-text-centered"><strong>31 websites · 274 of 309 reports confirmed</strong></p>
-        <table class="table is-fullwidth results-table">
-          <caption>Precision of reported navigation failures</caption>
-          <thead><tr><th scope="col">Checker</th><th scope="col" class="has-text-right">Precision</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Adapted TaskAudit</th><td class="has-text-right">57.2%</td></tr>
-            <tr><th scope="row">A11yLTLNav</th><td class="has-text-right"><strong>88.7%</strong></td></tr>
-          </tbody>
-        </table>
-        <p class="has-text-centered demo-note">Precision measures correct reports, not how many total failures are found.</p>
+        <div class="results-scroll" role="region" aria-label="Human-reviewed evaluation results" tabindex="0">
+          <table class="table is-fullwidth results-table" aria-describedby="evaluation-note">
+            <caption>Human-reviewed, deduplicated reports · 31 generated websites</caption>
+            <thead><tr><th scope="col">Checker</th><th scope="col" class="has-text-right">Reported</th><th scope="col" class="has-text-right confirmed-column">Confirmed<br>errors</th><th scope="col" class="has-text-right">False<br>positives</th><th scope="col" class="has-text-right">Precision</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Axe<span class="checker-kind">Static</span></th><td class="has-text-right">18</td><td class="has-text-right confirmed-column">17</td><td class="has-text-right">1</td><td class="has-text-right"><strong>94.4%</strong></td></tr>
+              <tr><th scope="row">WAVE<span class="checker-kind">Static</span></th><td class="has-text-right">68</td><td class="has-text-right confirmed-column">34</td><td class="has-text-right">34</td><td class="has-text-right">50.0%</td></tr>
+              <tr><th scope="row">Adapted TaskAudit<span class="checker-kind">Agentic</span></th><td class="has-text-right">276</td><td class="has-text-right confirmed-column">158</td><td class="has-text-right">118</td><td class="has-text-right">57.2%</td></tr>
+              <tr class="our-results"><th scope="row">A11yLTLNav<span class="checker-kind">Run 1</span></th><td class="has-text-right">309</td><td class="has-text-right confirmed-column"><strong>274</strong></td><td class="has-text-right">35</td><td class="has-text-right">88.7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="demo-note" id="evaluation-note">Confirmed errors were verified by human reviewers. Static checkers scanned the first page only; counts include findings relevant to blind and low-vision users. <a href="https://arxiv.org/html/2609.17959v1#S6">Paper · Table 4</a></p>
         <details class="technical-details">
-          <summary>Evaluation details</summary>
-          <p>On 31 locally hosted, generated websites, precision ranged from 85.9% to 88.7% across three runs. Testing required no language-model inference. Detection depends on the paths explored and the state exposed by the browser.</p>
+          <summary>Review protocol and evaluation details</summary>
+          <p>Reports were deduplicated by website, component, and checker. Two authors reviewed every report; disagreements were resolved through discussion. Precision is confirmed errors divided by reported findings, not recall.</p>
+          <p>Across three A11yLTLNav runs, precision ranged from 85.9% to 88.7%. No language-model inference was used during its testing. Detection depends on the paths explored and the state exposed by the browser.</p>
           <p>These checks complement static tools and studies with screen-reader users. <a href="https://arxiv.org/html/2609.17959v1#S6">Read the full evaluation.</a></p>
         </details>
       </div>

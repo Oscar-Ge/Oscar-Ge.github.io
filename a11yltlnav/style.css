@@ -63,6 +63,14 @@ figcaption { font-family: 'Noto Sans', sans-serif; font-size: .9rem; line-height
 .results-table thead th { border-top: 2px solid #777; border-bottom: 1px solid #777 !important; }
 .results-table tbody th { font-weight: 400; }
 .results-table tbody tr:last-child th, .results-table tbody tr:last-child td { border-bottom: 2px solid #777; }
+.results-scroll { overflow-x: auto; }
+.results-scroll:focus-visible { outline: 3px solid #165fa4; outline-offset: 3px; }
+.results-table { min-width: 470px; font-variant-numeric: tabular-nums; }
+.results-table th, .results-table td { vertical-align: middle; }
+.results-table .confirmed-column { background: #f4f6f8; }
+.results-table .checker-kind { display: block; font-size: .8em; font-weight: 400; color: #666; }
+.results-table .our-results th { font-weight: 600; }
+.results-table .our-results .confirmed-column strong { font-size: 1.15em; }
 .footer { padding: 3rem 1.5rem; font-size: .9rem; }
 @media(max-width:768px) {
   .publication-title { font-size: 2.2rem !important; }
