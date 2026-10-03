@@ -39,7 +39,7 @@
     {
       "company": "Purdue University",
       "position": "Research Assistant",
-      "summary": "Studying how interaction traces can help AI-generated interfaces become more usable.",
+      "summary": "Studying how interaction traces can improve the usability of generative UI (GenUI).",
       "highlights": [
         "Built a pipeline to generate websites, collect interaction traces from user studies, identify usability issues, and repair interfaces using the resulting critiques.",
         "Implemented Direct Preference Optimization (DPO) to fine-tune models for generating more usable interfaces.",

@@ -31,7 +31,7 @@ arXiv:2609.17959, 2026. **Under review at CHI 2027.** First author.
 
 A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
 
-[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/portfolio/a11yltlnav/)
+[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/a11yltlnav/)
 
 
 ## Research Experience
@@ -54,7 +54,7 @@ Detecting accessibility failures that emerge during interaction, beyond what a s
 **Research Assistant, Purdue University** · May – Oct 2026<br>
 Advisor: Dr. Jason Wu
 
-Studying how interaction traces can help AI-generated interfaces become more usable.
+Studying how interaction traces can improve the usability of generative UI (GenUI).
 
 - Built a pipeline to generate websites, collect interaction traces from user studies, identify usability issues, and repair interfaces using the resulting critiques.
 - Implemented Direct Preference Optimization (DPO) to fine-tune models for generating more usable interfaces.

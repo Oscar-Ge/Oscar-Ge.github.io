@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A11yLTLNav detects accessibility navigation failures by checking temporal properties over website interactions. Explore the paper, recorded examples, and evaluation results.">
+  <meta property="og:title" content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures">
+  <meta property="og:description" content="Checking accessibility as interaction unfolds. A temporal property-based checker for web navigation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oscar-ge.github.io/a11yltlnav/">
+  <meta property="og:image" content="https://oscar-ge.github.io/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png">
+  <meta property="og:image:alt" content="A dialog opens, but keyboard focus remains on the page behind it.">
+  <link rel="canonical" href="https://oscar-ge.github.io/a11yltlnav/">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>A11yLTLNav — Automatic Detection of Accessibility Navigation Failures</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="home-link" href="/">Chenming Ge <span aria-hidden="true">↗</span></a>
+    <nav aria-label="Project sections">
+      <a href="#example">Example</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="paper-title">
+      <p class="eyebrow">Web accessibility · Temporal property-based testing</p>
+      <h1 id="paper-title">A11yLTLNav<span>Automatic Detection of<br class="desktop-break"> Accessibility Navigation Failures</span></h1>
+      <p class="authors"><a href="/">Chenming Ge</a><span>Kewen Peng</span><span>Chengyang Shi</span><span>Ben Greenman</span><span>Yue Jiang</span></p>
+      <p class="affiliations">University of Michigan <span aria-hidden="true">&nbsp;·&nbsp;</span> University of Utah</p>
+      <p class="publication">arXiv preprint, 2026 <span aria-hidden="true">·</span> Under review at CHI 2027</p>
+      <div class="resource-links">
+        <a class="button primary" href="https://arxiv.org/abs/2609.17959">Read on arXiv <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="#example">Explore the example <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-summary">Checking accessibility <em>as interaction unfolds.</em></p>
+      <p class="hero-description">A11yLTLNav checks temporal properties of interface interactions to find navigation failures affecting blind and low-vision screen-reader users.</p>
+    </section>
+
+    <section class="example section" id="example" aria-labelledby="example-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / See the problem</p><h2 id="example-title">The dialog opens. Focus stays behind.</h2></div>
+        <p>A recorded interaction on a generated news website. Step through the sequence to see how keyboard context is lost.</p>
+      </div>
+      <div class="trace">
+        <div class="trace-controls" id="trace-controls" role="group" aria-label="Choose a recorded state" hidden>
+          <button type="button" data-step="0" aria-pressed="false" aria-controls="trace-evidence"><span>01</span> Focus email</button>
+          <button type="button" data-step="1" aria-pressed="true" aria-controls="trace-evidence"><span>02</span> Open dialog</button>
+          <button type="button" data-step="2" aria-pressed="false" aria-controls="trace-evidence"><span>03</span> Prepare email</button>
+          <button type="button" data-step="3" aria-pressed="false" aria-controls="trace-evidence"><span>04</span> Finish</button>
+        </div>
+        <div class="trace-body" id="trace-evidence">
+          <figure class="trace-image">
+            <a id="full-frame" href="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" aria-label="Open the current screenshot at full size">
+              <img id="trace-frame" src="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" width="1440" height="1000" alt="The Share by email dialog is open, but the focus annotation still identifies the Email article button behind the dialog.">
+            </a>
+            <figcaption>Recorded browser state · Yellow annotations identify keyboard focus.<br><a href="/demos/ltl-ui-nfl-email-focus-demo/">View the full recording and trace <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <div class="trace-detail">
+            <div id="trace-description" aria-live="polite" aria-atomic="true">
+              <p class="state-label" id="trace-label">State 02 / Focus entry failure</p>
+              <h3 id="trace-title">A visible dialog.<br>No focus inside it.</h3>
+              <dl>
+                <dt>Action</dt><dd id="trace-action">Activate the Email article button.</dd>
+                <dt>Expected</dt><dd id="trace-expected">Keyboard focus moves into the newly opened dialog.</dd>
+                <dt>Observed</dt><dd id="trace-observed">The dialog appears, but focus remains on its invoker behind the modal.</dd>
+              </dl>
+            </div>
+            <div class="trace-navigation" id="trace-navigation" hidden>
+              <button type="button" id="previous-state" aria-label="Previous recorded state">← Previous</button>
+              <span id="step-count">2 / 4</span>
+              <button type="button" id="next-state" aria-label="Next recorded state">Next →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="takeaway"><strong>Why interaction history matters:</strong> the failure is the mismatch between opening the dialog and the focus state that follows.</p>
+      <noscript><p>The screenshot above shows the focus-entry failure. <a href="/demos/ltl-ui-nfl-email-focus-demo/">View all four recorded states.</a></p></noscript>
+    </section>
+
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / The approach</p><h2 id="method-title">From navigation failures<br>to executable checks.</h2></div>
+        <p>Accessibility expectations become explicit properties that can be checked across interface interactions.</p>
+      </div>
+      <ol class="method-steps">
+        <li><span class="step-number" aria-hidden="true">01</span><h3>Learn from prior studies</h3><p>Organize navigation failures documented in prior research with blind and low-vision users into a failure taxonomy.</p></li>
+        <li><span class="step-number" aria-hidden="true">02</span><h3>Specify expected behavior</h3><p>Translate browser-observable failures into Linear Temporal Logic (LTL) properties over sequences of actions and states.</p></li>
+        <li><span class="step-number" aria-hidden="true">03</span><h3>Explore and check</h3><p>Generate keyboard interaction traces and monitor the properties, connecting each report to the behavior that violated an expectation.</p></li>
+      </ol>
+      <div class="property-note"><span class="eyebrow">Example expectation</span><p>When a dialog opens, keyboard focus should move inside it.</p><span>The checker evaluates the transition between relevant interface states.</span></div>
+    </section>
+
+    <section class="section results" id="results" aria-labelledby="results-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / Evaluation</p><h2 id="results-title">Finding failures with<br>inspectable evidence.</h2></div>
+        <p>Evaluated on 31 locally hosted, generated website environments based on real websites and tasks.</p>
+      </div>
+      <dl class="metrics">
+        <div><dt>Precision</dt><dd>88.7<span>%</span><small>274 confirmed / 309 reported failures</small></dd></div>
+        <div><dt>Across three runs</dt><dd class="range">85.9–88.7<span>%</span><small>Precision under independent exploration</small></dd></div>
+        <div><dt>During testing</dt><dd>0<small>Language-model inference calls</small></dd></div>
+      </dl>
+      <div class="comparison">
+        <h3>Precision of reported failures</h3>
+        <div class="bar-row"><span>A11yLTLNav</span><div class="bar-track"><div class="bar ours" style="width:88.7%"></div></div><strong>88.7%</strong></div>
+        <div class="bar-row"><span>Adapted agentic checker</span><div class="bar-track"><div class="bar baseline" style="width:57.2%"></div></div><strong>57.2%</strong></div>
+        <p class="small">The agentic baseline is adapted from TaskAudit. Precision is the fraction of reported failures confirmed correct; it does not measure all failures present. <a href="https://arxiv.org/html/2609.17959v1#S6">Evaluation details in the paper <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
+    <section class="section further" aria-labelledby="further-title">
+      <div><p class="eyebrow">04 / Explore further</p><h2 id="further-title">Follow the evidence.</h2></div>
+      <div class="further-grid">
+        <article><span class="category">Interactive example</span><h3>A keyboard trap in a code editor</h3><p>A recorded Tab press leaves focus in the same textarea. The accompanying source analysis checks why the usual exit keys do not release focus.</p><a href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/">Step through the keyboard trap <span aria-hidden="true">↗</span></a></article>
+        <article><span class="category">Scope &amp; next steps</span><h3>One part of accessibility evaluation</h3><p>Coverage depends on explored paths and browser-observable state. These checks complement static tools and studies with screen-reader users.</p><a href="https://arxiv.org/html/2609.17959v1#S7">Read the discussion <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><strong>A11yLTLNav</strong><br>Automatic Detection of Accessibility Navigation Failures</p>
+    <p><a href="https://arxiv.org/abs/2609.17959">arXiv</a> <span aria-hidden="true">·</span> <a href="/">Chenming Ge</a> <span aria-hidden="true">·</span> <a href="mailto:gecm@umich.edu">Contact</a></p>
+  </footer>
+</body>
+</html>

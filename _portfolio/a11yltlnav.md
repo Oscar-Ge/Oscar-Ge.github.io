@@ -19,6 +19,6 @@ Detecting accessibility failures that emerge during interaction, beyond what a s
 - Built a web-agent baseline that navigates through screen-reader feedback and keyboard-only interaction.
 - Evaluated the checker on generated websites, achieving 88.7% precision.
 
-[arXiv](https://arxiv.org/abs/2609.17959)
+[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/a11yltlnav/)
 
 [← Research](/research/) · [More Projects →](/portfolio/)

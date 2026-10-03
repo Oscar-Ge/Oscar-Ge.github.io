@@ -9,7 +9,7 @@ redirect_from:
 
 I am an undergraduate student pursuing a B.S.E. in Computer Science at the **University of Michigan, Ann Arbor**, and a B.Eng. in Electronic and Computer Engineering at **Shanghai Jiao Tong University**.
 
-I currently work with **Dr. Jason Wu** at Purdue University on improving AI-generated interfaces through user interaction feedback. Previously, I worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on web accessibility, and with **Prof. Honglak Lee** at the University of Michigan on helping web agents adapt to evolving websites.
+I currently work with **Dr. Jason Wu** at Purdue University on improving generative UI (GenUI) through user interaction feedback. Previously, I worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on web accessibility, and with **Prof. Honglak Lee** at the University of Michigan on helping web agents adapt to evolving websites.
 
 ## Research Interests
 
@@ -24,7 +24,7 @@ arXiv:2609.17959, 2026. **Under review at CHI 2027.** First author.
 
 A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
 
-[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/portfolio/a11yltlnav/)
+[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/a11yltlnav/)
 
 ## Research Experience
 
@@ -40,7 +40,7 @@ Detecting accessibility failures that emerge during interaction, beyond what a s
 **Research Assistant, Purdue University** · May – Oct 2026<br>
 Advisor: Dr. Jason Wu
 
-Studying how interaction traces can help AI-generated interfaces become more usable.
+Studying how interaction traces can improve the usability of generative UI (GenUI).
 
 ### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
 
