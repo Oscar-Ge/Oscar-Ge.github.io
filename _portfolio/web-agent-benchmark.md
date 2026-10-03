@@ -17,6 +17,6 @@ Helping web agents transfer what they learn as websites and interfaces change.
 - Built an adversarial co-evolution framework that pairs a coding-agent-driven UI drift generator with a web agent.
 - Extracted generalizable reflection rules from agent failures and compared them with an ExpeL baseline.
 - Worked on a knowledge-graph pipeline to identify tasks affected by website version changes.
-- Containerized multiple website versions with Docker and evaluated out-of-distribution generalization using BrowserGym and AgentLab.
+- Containerized multiple website versions with Docker using BrowserGym and AgentLab.
 
-[← Research](/research/) · [Projects →](/portfolio/)
+[← Research](/research/) · [More Projects →](/portfolio/)

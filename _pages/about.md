@@ -13,14 +13,14 @@ I currently work with **Dr. Jason Wu** at Purdue University on improving AI-gene
 
 ## Research Interests
 
-Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, Human–AI Interaction, and Accessibility.
+Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, and Human–AI Interaction.
 
 ## Selected Publication
 
 **A11yLTLNav: Automatic Detection of Accessibility Navigation Failures**
 
-**Chenming Ge**<sup>*</sup>, Kewen Peng<sup>*</sup>, Chengyang Shi<sup>*</sup>, Ben Greenman, Yue Jiang<br>
-arXiv:2609.17959, 2026. **Under review at CHI 2027.** (Equal contribution.)
+**Chenming Ge**, Kewen Peng, Chengyang Shi, Ben Greenman, Yue Jiang<br>
+arXiv:2609.17959, 2026. **Under review at CHI 2027.** First author.
 
 A property-based checker for accessibility navigation failures affecting blind and low-vision screen-reader users. It checks temporal properties of interface interactions and achieves **88.7% precision** on generated websites.
 
@@ -35,9 +35,9 @@ Advisors: Dr. Yue Jiang and Dr. Ben Greenman
 
 Detecting accessibility failures that emerge during interaction, beyond what a static page check can reveal.
 
-### [Improving Generative UIs from Use](/portfolio/generative-ui/)
+### [Reinforcement Learning from Interactive Experience and Feedback](/portfolio/generative-ui/)
 
-**Research Assistant, Purdue University** · May 2026 – Present<br>
+**Research Assistant, Purdue University** · May – Oct 2026<br>
 Advisor: Dr. Jason Wu
 
 Studying how interaction traces can help AI-generated interfaces become more usable.
@@ -49,29 +49,8 @@ Advisor: Prof. Honglak Lee
 
 Helping web agents transfer what they learn as websites and interfaces change.
 
-### [Gravitational Effects on Microorganism Swarming](/portfolio/swarming-microorganisms/)
-
-**Research Assistant, Shanghai Jiao Tong University** · Sep 2024 – Aug 2025<br>
-Advisor: Dr. Zijie Qu
-
-Automating colony boundary segmentation for the study of microorganism swarming.
-
-## Selected Projects
-
-### [Efficient Inference for Embodied Foundation Models](/portfolio/efficient-inference/)
-
-Nov 2025 – Mar 2026<br>
-Advisor: Dr. Jiachen Liu
-
-Accelerating world action models for real-time robotic decision-making.
-
-### [Probabilistic Motion Planning for Redundant Robots](/portfolio/probabilistic-motion-planning/)
-
-Sep – Dec 2025<br>
-Advisor: Prof. Dmitry Berenson
-
-Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
+[More Projects →](/portfolio/)
 
 ## Contact
 
-You can reach me at [gecm@umich.edu](mailto:gecm@umich.edu). My [CV](/cv/) includes education, awards, and additional details.
+You can reach me at [gecm@umich.edu](mailto:gecm@umich.edu). My [CV](/cv/) includes education and additional research details.

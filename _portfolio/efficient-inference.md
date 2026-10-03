@@ -18,4 +18,4 @@ Accelerating world action models for real-time robotic decision-making.
 - Implemented cross-attention KV caching and token compression to accelerate inference.
 - Explored dynamic-precision quantization and speculative decoding for more efficient agent decisions.
 
-[← Research](/research/) · [Projects →](/portfolio/)
+[← Research](/research/) · [More Projects →](/portfolio/)

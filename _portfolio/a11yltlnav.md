@@ -21,4 +21,4 @@ Detecting accessibility failures that emerge during interaction, beyond what a s
 
 [arXiv](https://arxiv.org/abs/2609.17959)
 
-[← Research](/research/) · [Projects →](/portfolio/)
+[← Research](/research/) · [More Projects →](/portfolio/)

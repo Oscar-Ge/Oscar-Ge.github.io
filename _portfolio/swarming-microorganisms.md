@@ -1,7 +1,7 @@
 ---
 title: "Gravitational Effects on Microorganism Swarming"
 collection: portfolio
-project_type: research
+project_type: earlier_research
 permalink: /portfolio/swarming-microorganisms/
 excerpt: "Automating colony boundary segmentation for the study of microorganism swarming."
 ---
@@ -17,4 +17,4 @@ Automating colony boundary segmentation for the study of microorganism swarming.
 - Trained a U-Net for colony boundary segmentation and diagnosed systematic failure modes.
 - Adopted a zero-shot Segment Anything Model (SAM) pipeline for reliable automated detection, replacing a manual annotation pipeline.
 
-[← Research](/research/) · [Projects →](/portfolio/)
+[← Research](/research/) · [More Projects →](/portfolio/)

@@ -17,4 +17,4 @@ Benchmarking sampling-based planners on a simulated 7-DOF Franka Panda.
 - Reproduced and benchmarked RRT-Connect and PRM in simulation.
 - Implemented a hybrid sampling strategy that reduced trajectory generation latency by approximately 75%.
 
-[← Research](/research/) · [Projects →](/portfolio/)
+[← Research](/research/) · [More Projects →](/portfolio/)

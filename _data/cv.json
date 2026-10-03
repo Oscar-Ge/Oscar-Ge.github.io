@@ -11,13 +11,17 @@
       "area": "Computer Science",
       "studyType": "B.S.E.",
       "startDate": "2025-08",
-      "gpa": "3.86/4.00"
+      "gpa": "3.86/4.00",
+      "endDate": "2027-05",
+      "endDateNote": "Expected"
     },
     {
       "institution": "Shanghai Jiao Tong University",
       "area": "Electronic and Computer Engineering",
       "studyType": "B.Eng.",
-      "startDate": "2023-08"
+      "startDate": "2023-08",
+      "endDate": "2027-08",
+      "endDateNote": "Expected"
     }
   ],
   "work": [
@@ -37,10 +41,13 @@
       "position": "Research Assistant",
       "summary": "Studying how interaction traces can help AI-generated interfaces become more usable.",
       "highlights": [
-        "Built a pipeline to generate websites, collect task interaction traces, diagnose usability issues, and repair interfaces with coding agents.",
-        "Used trained computer-use agents as baselines for simulating user behavior and providing usability feedback.",
-        "Investigating PPO-based fine-tuning and preference optimization using interaction feedback, with controlled experiments on task usability."
-      ]
+        "Built a pipeline to generate websites, collect interaction traces from user studies, identify usability issues, and repair interfaces using the resulting critiques.",
+        "Implemented Direct Preference Optimization (DPO) to fine-tune models for generating more usable interfaces.",
+        "Explored computer-use agents and coding agents as baselines for simulating user behavior and providing usability feedback."
+      ],
+      "name": "Reinforcement Learning from Interactive Experience and Feedback",
+      "startDate": "2026-05",
+      "endDate": "2026-10"
     },
     {
       "company": "University of Michigan",
@@ -50,16 +57,7 @@
         "Built an adversarial co-evolution framework that pairs a coding-agent-driven UI drift generator with a web agent.",
         "Extracted generalizable reflection rules from agent failures and compared them with an ExpeL baseline.",
         "Worked on a knowledge-graph pipeline to identify tasks affected by website version changes.",
-        "Containerized multiple website versions with Docker and evaluated out-of-distribution generalization using BrowserGym and AgentLab."
-      ]
-    },
-    {
-      "company": "Shanghai Jiao Tong University",
-      "position": "Research Assistant",
-      "summary": "Automating colony boundary segmentation for the study of microorganism swarming.",
-      "highlights": [
-        "Trained a U-Net for colony boundary segmentation and diagnosed systematic failure modes.",
-        "Adopted a zero-shot Segment Anything Model (SAM) pipeline for reliable automated detection, replacing a manual annotation pipeline."
+        "Containerized multiple website versions with Docker using BrowserGym and AgentLab."
       ]
     }
   ],
@@ -68,7 +66,8 @@
       "name": "A11yLTLNav: Automatic Detection of Accessibility Navigation Failures",
       "publisher": "arXiv; under review at CHI 2027",
       "releaseDate": "2026-09-16",
-      "website": "https://arxiv.org/abs/2609.17959"
+      "website": "https://arxiv.org/abs/2609.17959",
+      "authorRole": "First author"
     }
   ]
 }
