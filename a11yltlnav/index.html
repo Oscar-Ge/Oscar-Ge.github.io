@@ -158,10 +158,10 @@
           </video>
           <figcaption id="recording-caption">Recorded task: email the latest story, close the dialog, then search for Chiefs.<br><a href="/demos/ltl-ui-nfl-email-focus-demo/">View the four annotated states and their text descriptions.</a></figcaption>
         </figure>
-        <h3 class="title is-4">A text editor that will not let the keyboard move on</h3>
-        <p>In a generated audio editor, pressing Tab inserts spaces instead of moving to the next control. Focus stays in the same text area. The recorded interaction and the site's key handler reveal why the usual exit keys do not release focus.</p>
-        <p><a class="button is-normal is-rounded is-dark" href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/">Open interactive keyboard-trap demo →</a></p>
-        <p class="demo-note">Use Next in the demo to step through the explanation. This is an interactive walkthrough combining a recorded Tab press with source-code analysis of the exit keys.</p>
+        <h3 class="title is-4" id="text-editor-example">When Tab inserts text instead of moving focus</h3>
+        <p>In the saved audio-editor example, Tab inserts indentation while focus stays in the text area. An accessibility check then needs to establish whether the editor provides another keyboard exit and explains it to the user when necessary.</p>
+        <p><a class="button is-normal is-rounded is-dark" href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/?v=2">Open text-editor walkthrough →</a></p>
+        <p class="demo-note">Use Next to change the explanation and annotations on a saved screenshot. This is a three-step illustrated walkthrough, not a video or a live editor.</p>
       </div>
     </div>
   </section>

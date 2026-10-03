@@ -3,227 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An interactive Bombadil counterexample for a naturally occurring keyboard trap in an unmodified generated website.">
+  <meta name="description" content="An annotated walkthrough of Tab behavior in a generated text editor, from the A11yLTLNav project.">
   <link rel="icon" href="data:,">
-  <title>Keyboard Trap — Bombadil Counterexample</title>
+  <title>Text-editor walkthrough | A11yLTLNav</title>
+  <link rel="stylesheet" href="/a11yltlnav/static/css/bulma.min.css">
   <style>
-    :root {
-      --paper:#f3f2ed; --surface:#fff; --ink:#20201e; --muted:#6d6b65;
-      --line:#d9d6ce; --navy:#182b48; --red:#c9362b; --green:#247957;
-      --amber:#a56a13; --blue:#2376b7; --shadow:0 18px 44px rgba(27,26,23,.09);
-    }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    button { font:inherit; }
-    code, .mono { font-family:"SFMono-Regular", Consolas, "Liberation Mono", monospace; }
-    .page { width:min(1180px, calc(100% - 32px)); margin:28px auto 52px; }
-    .hero { display:flex; align-items:flex-start; justify-content:space-between; gap:28px; margin-bottom:17px; }
-    .eyebrow { color:var(--red); font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
-    h1 { margin:7px 0 7px; font-size:clamp(30px, 4.4vw, 49px); line-height:1.02; letter-spacing:-.045em; }
-    .lede { max-width:790px; margin:0; color:var(--muted); font-size:15px; line-height:1.5; }
-    .badges { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:7px; min-width:230px; }
-    .badge { border:1px solid var(--line); border-radius:99px; padding:5px 9px; background:rgba(255,255,255,.7); font-size:10px; font-weight:800; letter-spacing:.055em; }
-    .card { overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--surface); box-shadow:var(--shadow); }
-    .formula-bar { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:16px; padding:13px 18px; background:#232321; color:#fff; }
-    .label { color:#c9c6bd; font-size:10px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
-    .formula { font-size:clamp(13px, 2vw, 17px); }
-    .formula-result { border-radius:99px; padding:5px 10px; background:rgba(255,255,255,.12); font-size:10px; font-weight:800; white-space:nowrap; }
-    .bombadil { display:grid; grid-template-columns:116px 1fr; gap:15px; padding:13px 18px; border-bottom:1px solid var(--line); background:#f8f7f3; }
-    .bombadil .label { padding-top:2px; color:#7c7971; }
-    .bombadil pre { margin:0; overflow:auto; color:#27313a; font-size:11px; line-height:1.45; white-space:pre-wrap; }
-    .trace-wrap { padding:18px 20px 16px; background:linear-gradient(180deg,#fff,#fbfaf7); }
-    .trace-note { margin:0 0 11px; color:var(--muted); font-size:11px; }
-    .trace { display:grid; grid-template-columns:1fr 50px 1fr 50px 1fr 50px 1fr; align-items:center; }
-    .trace-state { min-height:76px; padding:10px; border:1px solid var(--line); border-radius:11px; background:#fff; color:var(--ink); text-align:left; cursor:pointer; transition:.18s ease; }
-    .trace-state span { display:block; margin-bottom:4px; color:var(--blue); font:800 10px/1 "SFMono-Regular", Consolas, monospace; }
-    .trace-state strong { display:block; font-size:13px; line-height:1.25; }
-    .trace-state small { display:block; margin-top:4px; color:var(--muted); font-size:10px; }
-    .trace-state.violation { border-color:#e1b2ae; }
-    .trace-state.violation span { color:var(--red); }
-    .trace-state:not(.active), .trace-edge:not(.active) { opacity:.27; }
-    .trace-state.active { border-color:var(--navy); box-shadow:0 0 0 2px rgba(24,43,72,.11); transform:translateY(-1px); }
-    .trace-state.violation.active { border-color:var(--red); box-shadow:0 0 0 2px rgba(201,54,43,.12); }
-    .trace-edge { position:relative; height:1px; background:#8e8b83; transition:.18s ease; }
-    .trace-edge::after { content:""; position:absolute; right:-1px; top:-4px; border-width:4px 0 4px 6px; border-style:solid; border-color:transparent transparent transparent #8e8b83; }
-    .trace-edge b { position:absolute; top:-18px; left:50%; transform:translateX(-50%); color:var(--muted); font:700 9px/1 "SFMono-Regular", Consolas, monospace; white-space:nowrap; }
-    .evidence { display:grid; grid-template-columns:minmax(0,1.62fr) minmax(300px,.78fr); border-top:1px solid var(--line); }
-    .shot-panel { padding:16px; border-right:1px solid var(--line); }
-    .shot-head { display:flex; justify-content:space-between; gap:18px; margin-bottom:8px; color:var(--muted); font-size:10px; font-weight:800; letter-spacing:.06em; }
-    .shot { position:relative; overflow:hidden; aspect-ratio:4/3; border:1px solid #27272d; border-radius:9px; background:#09090e; }
-    .shot img { display:block; width:100%; height:100%; object-fit:contain; }
-    .focus-box, .expected-box { position:absolute; pointer-events:none; transition:all .2s ease; }
-    .focus-box { left:.4%; top:14.6%; width:34.7%; height:82%; border:4px solid var(--blue); box-shadow:0 0 0 3px rgba(255,255,255,.85),0 0 0 7px rgba(35,118,183,.25); }
-    .focus-box.warn { border-color:var(--amber); box-shadow:0 0 0 3px rgba(255,255,255,.85),0 0 0 7px rgba(165,106,19,.28); }
-    .focus-box.bad { border-color:var(--red); box-shadow:0 0 0 3px rgba(255,255,255,.85),0 0 0 7px rgba(201,54,43,.25); }
-    .expected-box { display:none; left:35.4%; top:14.6%; width:34.2%; height:82%; border:4px dashed var(--green); box-shadow:0 0 0 3px rgba(255,255,255,.8); }
-    .expected-box.visible { display:block; }
-    .focus-tag, .expected-tag { position:absolute; z-index:3; padding:5px 7px; color:#fff; font:800 9px/1.2 "SFMono-Regular", Consolas, monospace; pointer-events:none; }
-    .focus-tag { left:1.2%; top:16.2%; background:var(--blue); }
-    .focus-tag.warn { background:var(--amber); }
-    .focus-tag.bad { background:var(--red); }
-    .expected-tag { display:none; left:36.2%; top:16.2%; background:var(--green); }
-    .expected-tag.visible { display:block; }
-    .caption { min-height:37px; margin:8px 2px 0; color:#5f5d57; font-size:12px; line-height:1.45; }
-    .facts { display:flex; flex-direction:column; min-height:100%; }
-    .fact-body { flex:1; padding:17px; }
-    .action { display:flex; align-items:center; gap:9px; margin-bottom:14px; font-size:15px; font-weight:800; }
-    .action span { border-radius:5px; padding:4px 6px; background:#eceae3; color:#706e67; font:800 9px/1 "SFMono-Regular", Consolas, monospace; text-transform:uppercase; }
-    .explain { min-height:54px; margin:0 0 15px; color:var(--muted); font-size:12px; line-height:1.5; }
-    .predicates { display:grid; grid-template-columns:1fr auto; border-top:1px solid var(--line); font-size:11px; }
-    .predicates span { padding:8px 0; border-bottom:1px solid #eceae4; }
-    .predicates .value { padding-left:15px; font-family:"SFMono-Regular", Consolas, monospace; font-weight:800; text-align:right; }
-    .value.true { color:var(--green); } .value.false { color:var(--red); } .value.na { color:#8a877f; }
-    .verdict { padding:14px 17px; background:#f0eee8; color:#68665f; font-size:11px; font-weight:850; letter-spacing:.07em; text-transform:uppercase; }
-    .verdict.violation { background:var(--red); color:#fff; }
-    .controls { display:grid; grid-template-columns:110px 1fr 110px; align-items:center; gap:12px; padding:13px 16px; border-top:1px solid var(--line); background:#fbfaf7; }
-    .controls button { border:1px solid var(--line); border-radius:8px; padding:8px 10px; background:#fff; color:#34332f; cursor:pointer; font-size:11px; font-weight:750; }
-    .controls button:disabled { opacity:.35; cursor:default; }
-    .dots { display:flex; justify-content:center; gap:7px; }
-    .dot { width:8px; height:8px; padding:0!important; border:0!important; border-radius:50%!important; background:#cbc8bf!important; }
-    .dot.active { background:var(--navy)!important; }
-    .footnote { margin:11px 2px 0; color:var(--muted); font-size:10px; line-height:1.45; }
-    @media (max-width:800px) {
-      .hero { display:block; } .badges { justify-content:flex-start; margin-top:12px; }
-      .formula-bar { grid-template-columns:1fr; gap:5px; } .formula-result { justify-self:start; }
-      .bombadil { grid-template-columns:1fr; gap:5px; }
-      .trace { grid-template-columns:1fr; gap:7px; } .trace-edge { width:1px; height:20px; margin:auto; }
-      .trace-edge::after { right:-4px; top:auto; bottom:-1px; border-width:6px 4px 0; border-color:#8e8b83 transparent transparent; }
-      .trace-edge b { left:12px; top:5px; transform:none; }
-      .evidence { grid-template-columns:1fr; } .shot-panel { border-right:0; border-bottom:1px solid var(--line); }
-      .controls { grid-template-columns:90px 1fr 90px; }
+    body { color: #363636; font-family: Arial, sans-serif; }
+    .page { max-width: 1000px; margin: 0 auto; padding: 28px 24px 48px; }
+    .back-link { display: inline-block; margin-bottom: 20px; }
+    h1.title { margin-bottom: 14px; line-height: 1.25; }
+    p { line-height: 1.65; }
+    .intro { max-width: 800px; margin-bottom: 20px; }
+    .walkthrough { border-top: 1px solid #ddd; padding-top: 18px; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .controls .button { min-width: 105px; min-height: 44px; }
+    .progress-label { margin-left: auto; font-size: .95rem; font-weight: 600; }
+    .instruction { color: #555; font-size: .9rem; margin-bottom: 14px; }
+    .step-summary { padding: 16px 18px; background: #f5f5f5; border-left: 4px solid #286da8; min-height: 142px; margin-bottom: 20px; }
+    .step-summary h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
+    .step-summary p { max-width: 800px; }
+    .figure { max-width: 640px; margin: 0 auto; }
+    .shot { position: relative; }
+    .shot img { display: block; width: 100%; height: auto; }
+    .focus-box { position: absolute; left: .4%; top: 14.6%; width: 34.7%; height: 82%; border: 3px solid #80c8ff; pointer-events: none; }
+    .focus-tag { position: absolute; left: 1%; top: 16%; padding: 5px 7px; max-width: 33%; background: #fff; color: #1a4465; font-size: .75rem; font-weight: 700; line-height: 1.3; }
+    .shot[data-step="1"] .focus-box { border-color: #ffdb80; }
+    .shot[data-step="1"] .focus-tag { color: #71520a; }
+    figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.6; }
+    .evidence-note { border-top: 1px solid #ddd; margin-top: 28px; padding-top: 18px; font-size: .95rem; }
+    a { text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #165fa4; outline-offset: 4px; }
+    [hidden] { display: none !important; }
+    @media(max-width:600px) {
+      .page { padding: 20px 16px 36px; }
+      h1.title { font-size: 1.7rem; }
+      .step-summary { min-height: 190px; padding: 14px; }
+      .progress-label { width: 100%; margin-left: 0; }
+      .focus-tag { font-size: .65rem; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <header class="hero">
-      <div>
-        <div class="eyebrow">NATURALLY OBSERVED · NO BUG INJECTION</div>
-        <h1>Tab becomes text. Focus cannot leave.</h1>
-        <p class="lede">In the unmodified SynthVis Pro editor, Tab inserts spaces instead of moving to the next control. Shift+Tab follows the same branch, and Escape has no release path.</p>
-      </div>
-      <div class="badges"><span class="badge">SONIC CANVAS</span><span class="badge">BASELINE BUILD</span><span class="badge">TRUSTED KEY TRACE</span></div>
-    </header>
+    <a class="back-link" href="/a11yltlnav/#text-editor-example">← Back to the project page</a>
+    <h1 class="title is-3">When Tab inserts text instead of moving focus</h1>
+    <p class="intro">A text editor can use Tab for indentation. This example explains what happens when that key is handled inside the editor, and what an accessibility check still needs to establish.</p>
 
-    <section class="card" aria-label="Interactive keyboard-trap counterexample">
-      <div class="formula-bar">
-        <span class="label">LTL obligation</span>
-        <span class="formula mono">G(probe_complete → (tab_exits ∨ shift_tab_exits ∨ escape_exits))</span>
-        <span class="formula-result" id="formula-result">TRACE IN PROGRESS</span>
+    <section class="walkthrough" aria-label="Text-editor walkthrough">
+      <div class="controls" id="controls" hidden>
+        <button class="button" id="previous" type="button" disabled>← Previous</button>
+        <button class="button is-dark" id="next" type="button">Next →</button>
+        <span class="progress-label" id="progress">Step 1 of 3</span>
       </div>
-      <div class="bombadil">
-        <span class="label">Bombadil</span>
-        <pre><code>const editorExitProbe = extract(state =&gt;
-  state.window.__keyboardExitProbe ?? { complete: false }
-).named("editorExitProbe");
-
-export const editorHasKeyboardExit = always(() =&gt; {
-  const p = editorExitProbe.current;
-  return !p.complete || p.tabExits || p.shiftTabExits || p.escapeExits;
-});</code></pre>
+      <p class="instruction">Annotated walkthrough: the same saved screenshot is used throughout. Next updates the explanation and focus annotation; this is not a live editor or a video.</p>
+      <div class="step-summary" role="status" aria-live="polite" aria-atomic="true">
+        <h2 id="step-title">1. The editor has keyboard focus</h2>
+        <p id="explanation">The highlighted Audio editor receives keyboard input. To continue navigating through the page, the user tries Tab.</p>
       </div>
-
-      <div class="trace-wrap">
-        <p class="trace-note">one editor context · recorded forward Tab + source-verified exit matrix</p>
-        <div class="trace" aria-label="Four-state keyboard trap trace">
-          <button class="trace-state" data-step="0"><span>s0</span><strong>Audio editor focused</strong><small>trusted key:9</small></button>
-          <div class="trace-edge" data-step="1"><b>Tab</b></div>
-          <button class="trace-state" data-step="1"><span>s1</span><strong>default blocked</strong><small>preventDefault()</small></button>
-          <div class="trace-edge" data-step="2"><b>settle</b></div>
-          <button class="trace-state" data-step="2"><span>s2</span><strong>same textarea</strong><small>trusted key:10</small></button>
-          <div class="trace-edge" data-step="3"><b>probe</b></div>
-          <button class="trace-state violation" data-step="3"><span>s3</span><strong>no keyboard exit</strong><small>all exits false ✕</small></button>
+      <figure class="figure">
+        <div class="shot" id="shot" data-step="0">
+          <img src="assets/sonic-canvas-editor-trace.jpeg" alt="Saved SynthVis Pro screenshot with the Audio editor on the left, the Visual editor in the middle, and a preview on the right.">
+          <div class="focus-box" aria-hidden="true"></div>
+          <div class="focus-tag" id="focus-tag" aria-hidden="true">Focus: Audio editor</div>
         </div>
-      </div>
-
-      <div class="evidence">
-        <div class="shot-panel">
-          <div class="shot-head"><span>UNMODIFIED GENERATED WEBSITE</span><span id="step-title">s0 · Enter editor</span></div>
-          <div class="shot">
-            <img src="assets/sonic-canvas-editor-trace.jpeg" alt="SynthVis Pro audio and visual code editors from the recorded baseline run">
-            <div class="focus-box" id="focus-box"></div>
-            <div class="expected-box" id="expected-box"></div>
-            <div class="focus-tag" id="focus-tag">FOCUS · Audio editor</div>
-            <div class="expected-tag" id="expected-tag">EXPECTED · Visual editor</div>
-          </div>
-          <p class="caption" id="caption"></p>
-        </div>
-
-        <aside class="facts" aria-live="polite">
-          <div class="fact-body">
-            <div class="action" id="action"></div>
-            <p class="explain" id="explain"></p>
-            <div class="predicates" id="predicates"></div>
-          </div>
-          <div class="verdict" id="verdict"></div>
-        </aside>
-      </div>
-
-      <div class="controls">
-        <button id="previous" type="button">← Previous</button>
-        <div class="dots" id="dots" aria-label="Trace position"></div>
-        <button id="next" type="button">Next →</button>
-      </div>
+        <figcaption id="caption">The outline identifies the editor discussed in this example. The screenshot itself does not change between steps.</figcaption>
+      </figure>
+      <noscript>
+        <p><strong>2. Tab is handled inside the editor.</strong> Tab inserts indentation and focus stays in the text area.</p>
+        <p><strong>3. Check how the user can leave.</strong> This interaction alone does not prove a keyboard trap. The next check is whether another keyboard exit is available and, when necessary, explained to the user.</p>
+      </noscript>
     </section>
 
-    <p class="footnote">Evidence: baseline VibeApps artifact 45, Bombadil transaction <code>key:10</code>. The recorded Tab settles on the same textarea. The unmodified handler applies <code>preventDefault()</code> to every Tab without a Shift exception, while no Escape release branch exists. This demo reports the exercised editor context, not all code editors.</p>
+    <div class="evidence-note">
+      <p><strong>What this example establishes.</strong> This is an illustrated explanation of the saved text-editor example, not an executed test or a complete check of all exit methods. Tab inserting indentation is permitted when the user can still leave by keyboard and is told about any nonstandard exit method. <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">Read the W3C explanation.</a></p>
+    </div>
   </main>
-
   <script>
     const steps = [
       {
-        title:'Enter editor', action:'Tab reaches Audio editor', boxClass:'', tag:'FOCUS · Audio editor',
-        caption:'The previous trusted Tab moves from the toolbar into the Audio code editor.',
-        explain:'The editor is a normal textarea in the baseline website. The next keyboard control is the Visual editor.',
-        predicates:[['probe complete','false','na'],['focus = Audio editor','true','true'],['keyboard exit known','not yet','na']], verdict:'WAITING FOR EXIT PROBE'
+        title: 'The editor has keyboard focus',
+        explanation: 'The highlighted Audio editor receives keyboard input. To continue navigating through the page, the user tries Tab.',
+        tag: 'Focus: Audio editor',
+        caption: 'The outline identifies the editor discussed in this example. The screenshot itself does not change between steps.'
       },
       {
-        title:'Tab is intercepted', action:'Press Tab', boxClass:'warn', tag:'TAB CAPTURED · Audio editor',
-        caption:'The site cancels native Tab navigation and inserts two spaces into the document.',
-        explain:'The real handler executes <code>preventDefault()</code> for <em>every</em> Tab key. The browser cannot perform its normal focus move.',
-        predicates:[['trusted Tab delivered','true','true'],['default prevented','true','true'],['tab exits','false','false']], verdict:'EXIT ATTEMPT BLOCKED'
+        title: 'Tab is handled inside the editor',
+        explanation: 'In this example, Tab inserts indentation instead of moving to another control. Keyboard input remains directed to the same text area.',
+        tag: 'Tab: focus stays here',
+        caption: 'The annotation shows where focus remains. The indentation is described here; it is not animated in the saved screenshot.'
       },
       {
-        title:'Focus remains in textarea', action:'Transaction settles', boxClass:'bad', tag:'ACTUAL · Audio editor again',
-        caption:'Expected: Visual editor. Actual: the same Audio textarea receives the caret again.',
-        explain:'Bombadil records the same reliable DOM target before and after <code>key:10</code>. The transaction reaches its deadline without a focus exit.',
-        predicates:[['same textarea','true','true'],['navigation progress','false','false'],['tab exits','false','false']], verdict:'REPEATED FOCUS CONFIRMED'
-      },
-      {
-        title:'No standard exit works', action:'Complete exit matrix', boxClass:'bad', tag:'ACTUAL · Still trapped', expected:true, violation:true,
-        caption:'Tab and Shift+Tab enter the same handler. Escape has no release branch. No standard keyboard exit remains.',
-        explain:'With <code>probe_complete</code> true and all three exit propositions false, the body of <code>always(...)</code> evaluates to false.',
-        predicates:[['tab exits','false','false'],['shift+tab exits','false','false'],['escape exits','false','false']], verdict:'VIOLATED · KEYBOARD TRAP'
+        title: 'Check how the user can leave',
+        explanation: 'Remaining in the editor after Tab does not by itself prove a keyboard trap. The next check is whether another keyboard exit is available and, when necessary, explained to the user.',
+        tag: 'Check the keyboard exit',
+        caption: 'End of walkthrough. A complete exit-path check needs more evidence than the single Tab interaction shown here.'
       }
     ];
-    let current = Math.max(0, Math.min(steps.length - 1, Number(new URLSearchParams(location.search).get('step')) || 0));
     const byId = id => document.getElementById(id);
-    const dots = byId('dots');
-    steps.forEach((_, index) => {
-      const dot = document.createElement('button'); dot.type='button'; dot.className='dot'; dot.setAttribute('aria-label',`Go to state ${index}`);
-      dot.addEventListener('click',()=>render(index)); dots.appendChild(dot);
-    });
+    const requestedStep = Number(new URLSearchParams(location.search).get('step'));
+    let current = Number.isFinite(requestedStep) ? Math.max(0, Math.min(steps.length - 1, Math.trunc(requestedStep))) : 0;
     function render(index) {
-      current=index; const step=steps[current];
-      document.querySelectorAll('.trace-state').forEach(el=>el.classList.toggle('active',Number(el.dataset.step)<=current));
-      document.querySelectorAll('.trace-edge').forEach(el=>el.classList.toggle('active',Number(el.dataset.step)<=current));
-      document.querySelectorAll('.dot').forEach((el,i)=>el.classList.toggle('active',i===current));
-      byId('step-title').textContent=`s${current} · ${step.title}`;
-      byId('caption').textContent=step.caption;
-      byId('action').innerHTML=`<span>action</span>${step.action}`;
-      byId('explain').innerHTML=step.explain;
-      byId('predicates').innerHTML=step.predicates.map(([name,value,state])=>`<span>${name}</span><span class="value ${state}">${value}</span>`).join('');
-      byId('verdict').textContent=step.verdict; byId('verdict').className=`verdict ${step.violation?'violation':''}`;
-      byId('focus-box').className=`focus-box ${step.boxClass}`; byId('focus-tag').className=`focus-tag ${step.boxClass}`; byId('focus-tag').textContent=step.tag;
-      byId('expected-box').className=`expected-box ${step.expected?'visible':''}`; byId('expected-tag').className=`expected-tag ${step.expected?'visible':''}`;
-      const result=byId('formula-result'); result.textContent=step.violation?'VIOLATED AT s3':'TRACE IN PROGRESS'; result.style.background=step.violation?'var(--red)':'rgba(255,255,255,.12)';
-      byId('previous').disabled=current===0; byId('next').disabled=current===steps.length-1;
-      history.replaceState(null,'',`${location.pathname}?step=${current}`);
+      current = index;
+      const step = steps[current];
+      byId('step-title').textContent = `${current + 1}. ${step.title}`;
+      byId('explanation').textContent = step.explanation;
+      byId('focus-tag').textContent = step.tag;
+      byId('caption').textContent = step.caption;
+      byId('shot').dataset.step = String(current);
+      byId('progress').textContent = `Step ${current + 1} of ${steps.length}`;
+      byId('previous').disabled = current === 0;
+      byId('next').textContent = current === steps.length - 1 ? 'Restart ↺' : 'Next →';
+      const url = new URL(location.href);
+      url.searchParams.set('step', String(current));
+      history.replaceState(null, '', url);
     }
-    document.querySelectorAll('.trace-state').forEach(el=>el.addEventListener('click',()=>render(Number(el.dataset.step))));
-    byId('previous').addEventListener('click',()=>current>0&&render(current-1)); byId('next').addEventListener('click',()=>current<steps.length-1&&render(current+1));
-    document.addEventListener('keydown',event=>{ if(event.key==='ArrowLeft'&&current>0)render(current-1); if(event.key==='ArrowRight'&&current<steps.length-1)render(current+1); });
+    byId('previous').addEventListener('click', () => render(Math.max(0, current - 1)));
+    byId('next').addEventListener('click', () => render((current + 1) % steps.length));
     render(current);
+    byId('controls').hidden = false;
   </script>
 </body>
 </html>
