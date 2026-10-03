@@ -10,44 +10,44 @@
   <style>
     body { color: #363636; font-family: Arial, sans-serif; }
     .page { max-width: 1000px; margin: 0 auto; padding: 28px 24px 48px; }
-    .back-link { display: inline-block; margin-bottom: 20px; }
-    h1.title { margin-bottom: 14px; line-height: 1.25; }
-    p { line-height: 1.65; }
-    .intro { max-width: 800px; margin-bottom: 20px; }
+    .back-link { display: inline-block; margin-bottom: 14px; }
+    h1.title { margin-bottom: 20px; line-height: 1.25; }
+    p { line-height: 1.6; }
     .walkthrough { border-top: 1px solid #ddd; padding-top: 18px; }
-    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 12px; }
-    .controls .button { min-width: 105px; min-height: 44px; }
+    .controls { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    .controls .button { min-width: 100px; min-height: 44px; }
     .progress-label { margin-left: auto; font-size: .95rem; font-weight: 600; }
-    .instruction { color: #555; font-size: .9rem; margin-bottom: 14px; }
-    .step-summary { padding: 16px 18px; background: #f5f5f5; border-left: 4px solid #286da8; min-height: 142px; margin-bottom: 20px; }
-    .step-summary h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
-    .step-summary p { max-width: 800px; }
-    .figure { max-width: 640px; margin: 0 auto; }
+    .step-summary { min-height: 78px; margin-bottom: 16px; }
+    .step-summary h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 5px; }
+    .figure { max-width: 760px; margin: 0 auto; }
     .shot { position: relative; }
     .shot img { display: block; width: 100%; height: auto; }
     .focus-box { position: absolute; left: .4%; top: 14.6%; width: 34.7%; height: 82%; border: 3px solid #80c8ff; pointer-events: none; }
     .focus-tag { position: absolute; left: 1%; top: 16%; padding: 5px 7px; max-width: 33%; background: #fff; color: #1a4465; font-size: .75rem; font-weight: 700; line-height: 1.3; }
     .shot[data-step="1"] .focus-box { border-color: #ffdb80; }
     .shot[data-step="1"] .focus-tag { color: #71520a; }
-    figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.6; }
-    .evidence-note { border-top: 1px solid #ddd; margin-top: 28px; padding-top: 18px; font-size: .95rem; }
+    figcaption { margin-top: 8px; color: #555; font-size: .85rem; line-height: 1.5; }
+    .evidence-note { border-top: 1px solid #ddd; margin-top: 24px; padding-top: 16px; font-size: .9rem; }
+    .evidence-note summary { cursor: pointer; font-weight: 600; }
+    .evidence-note p { max-width: 760px; margin-top: 10px; }
     a { text-underline-offset: 3px; }
     a:focus-visible, button:focus-visible { outline: 3px solid #165fa4; outline-offset: 4px; }
     [hidden] { display: none !important; }
     @media(max-width:600px) {
       .page { padding: 20px 16px 36px; }
-      h1.title { font-size: 1.7rem; }
-      .step-summary { min-height: 190px; padding: 14px; }
-      .progress-label { width: 100%; margin-left: 0; }
+      h1.title { font-size: 1.6rem; }
+      .controls { gap: 7px; }
+      .controls .button { min-width: 90px; padding-inline: 10px; }
+      .progress-label { font-size: .85rem; white-space: nowrap; }
+      .step-summary { min-height: 108px; }
       .focus-tag { font-size: .65rem; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <a class="back-link" href="/a11yltlnav/#text-editor-example">← Back to the project page</a>
-    <h1 class="title is-3">When Tab inserts text instead of moving focus</h1>
-    <p class="intro">A text editor can use Tab for indentation. This example explains what happens when that key is handled inside the editor, and what an accessibility check still needs to establish.</p>
+    <a class="back-link" href="/a11yltlnav/#text-editor-example">← Project page</a>
+    <h1 class="title is-3">When Tab stays in the editor</h1>
 
     <section class="walkthrough" aria-label="Text-editor walkthrough">
       <div class="controls" id="controls" hidden>
@@ -55,10 +55,9 @@
         <button class="button is-dark" id="next" type="button">Next →</button>
         <span class="progress-label" id="progress">Step 1 of 3</span>
       </div>
-      <p class="instruction">Annotated walkthrough: the same saved screenshot is used throughout. Next updates the explanation and focus annotation; this is not a live editor or a video.</p>
       <div class="step-summary" role="status" aria-live="polite" aria-atomic="true">
-        <h2 id="step-title">1. The editor has keyboard focus</h2>
-        <p id="explanation">The highlighted Audio editor receives keyboard input. To continue navigating through the page, the user tries Tab.</p>
+        <h2 id="step-title">1. Start in the editor</h2>
+        <p id="explanation">Focus is in the Audio editor. The user presses Tab.</p>
       </div>
       <figure class="figure">
         <div class="shot" id="shot" data-step="0">
@@ -66,37 +65,35 @@
           <div class="focus-box" aria-hidden="true"></div>
           <div class="focus-tag" id="focus-tag" aria-hidden="true">Focus: Audio editor</div>
         </div>
-        <figcaption id="caption">The outline identifies the editor discussed in this example. The screenshot itself does not change between steps.</figcaption>
+        <figcaption>Annotated walkthrough: one saved screenshot, changing explanations and highlights.</figcaption>
       </figure>
       <noscript>
-        <p><strong>2. Tab is handled inside the editor.</strong> Tab inserts indentation and focus stays in the text area.</p>
-        <p><strong>3. Check how the user can leave.</strong> This interaction alone does not prove a keyboard trap. The next check is whether another keyboard exit is available and, when necessary, explained to the user.</p>
+        <p><strong>2. Tab adds indentation.</strong> Focus stays in the editor.</p>
+        <p><strong>3. Check the exit.</strong> This alone does not prove a keyboard trap; check other keyboard exits.</p>
       </noscript>
     </section>
 
-    <div class="evidence-note">
-      <p><strong>What this example establishes.</strong> This is an illustrated explanation of the saved text-editor example, not an executed test or a complete check of all exit methods. Tab inserting indentation is permitted when the user can still leave by keyboard and is told about any nonstandard exit method. <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">Read the W3C explanation.</a></p>
-    </div>
+    <details class="evidence-note">
+      <summary>Evidence and accessibility guidance</summary>
+      <p>This illustrates the saved Tab example, not a live editor, video, or complete exit-path test. Tab indentation is allowed when users can leave by keyboard and are told about any nonstandard exit method. <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">W3C guidance</a>.</p>
+    </details>
   </main>
   <script>
     const steps = [
       {
-        title: 'The editor has keyboard focus',
-        explanation: 'The highlighted Audio editor receives keyboard input. To continue navigating through the page, the user tries Tab.',
-        tag: 'Focus: Audio editor',
-        caption: 'The outline identifies the editor discussed in this example. The screenshot itself does not change between steps.'
+        title: 'Start in the editor',
+        explanation: 'Focus is in the Audio editor. The user presses Tab.',
+        tag: 'Focus: Audio editor'
       },
       {
-        title: 'Tab is handled inside the editor',
-        explanation: 'In this example, Tab inserts indentation instead of moving to another control. Keyboard input remains directed to the same text area.',
-        tag: 'Tab: focus stays here',
-        caption: 'The annotation shows where focus remains. The indentation is described here; it is not animated in the saved screenshot.'
+        title: 'Tab adds indentation',
+        explanation: 'Focus stays in the Audio editor instead of moving on.',
+        tag: 'Tab: focus stays here'
       },
       {
-        title: 'Check how the user can leave',
-        explanation: 'Remaining in the editor after Tab does not by itself prove a keyboard trap. The next check is whether another keyboard exit is available and, when necessary, explained to the user.',
-        tag: 'Check the keyboard exit',
-        caption: 'End of walkthrough. A complete exit-path check needs more evidence than the single Tab interaction shown here.'
+        title: 'Check the exit',
+        explanation: 'Tab indentation alone does not prove a keyboard trap. Check the other keyboard exits.',
+        tag: 'Check the keyboard exit'
       }
     ];
     const byId = id => document.getElementById(id);
@@ -108,7 +105,6 @@
       byId('step-title').textContent = `${current + 1}. ${step.title}`;
       byId('explanation').textContent = step.explanation;
       byId('focus-tag').textContent = step.tag;
-      byId('caption').textContent = step.caption;
       byId('shot').dataset.step = String(current);
       byId('progress').textContent = `Step ${current + 1} of ${steps.length}`;
       byId('previous').disabled = current === 0;

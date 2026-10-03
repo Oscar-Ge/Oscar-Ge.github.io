@@ -23,12 +23,12 @@
       label = button.dataset.label;
       clearSelection();
       button.setAttribute('aria-pressed', 'true');
-      status.textContent = `${label}: loading the 12-second excerpt…`;
+      status.textContent = `${label} · Loading…`;
       try {
         // A seek made before metadata is available becomes the default start position.
         video.currentTime = Number(button.dataset.start);
         await video.play();
-        if (currentRequest === request) status.textContent = `${label}: playing a 12-second excerpt from the full exploration replay.`;
+        if (currentRequest === request) status.textContent = `${label} · Playing 12 s`;
       } catch {
         if (currentRequest !== request) return;
         end = null;
@@ -43,7 +43,7 @@
       video.pause();
       end = null;
       clearSelection();
-      status.textContent = `${label}: excerpt finished. Replay it or select the other example above.`;
+      status.textContent = `${label} · Finished. Select a clip to replay.`;
     }
   });
   video.addEventListener('error', () => {
