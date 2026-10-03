@@ -1,16 +1,16 @@
 ---
-title: "Reinforcement Learning from Interactive Experience and Feedback"
+title: "Usability for Generative UIs (GenUI)"
 collection: portfolio
 project_type: research
 permalink: /portfolio/generative-ui/
-excerpt: "Studying how interaction traces can improve the usability of generative UI (GenUI)."
+excerpt: "Studying usability problems in generative UIs (GenUI) through user interaction traces and feedback."
 ---
 Generative UI · Human–AI Interaction
 
 **Purdue University** · May – Oct 2026<br>
 Advisor: Dr. Jason Wu
 
-Studying how interaction traces can improve the usability of generative UI (GenUI).
+I study how user interaction traces and feedback can reveal usability problems in generative UIs (GenUI), and use these insights to improve generated interfaces.
 
 ## My contributions
 
