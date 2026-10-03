@@ -22,7 +22,8 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="media.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -97,6 +98,10 @@
   <section class="section" id="method">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">How it works</h2>
+      <figure class="method-figure">
+        <a href="static/images/system-overview.png" aria-label="Open the paper's system overview at full size"><img src="static/images/system-overview.png" width="2038" height="564" loading="lazy" alt="The checker selects a valid keyboard action, observes the resulting accessibility state, and checks temporal rules. Violations produce failure logs; exploration continues from the new state."></a>
+        <figcaption>Figure 1 from the paper. Choose an action, observe the result, check the rules, and repeat.<br><a href="static/images/system-overview.png">View full-size figure</a></figcaption>
+      </figure>
       <div class="content reading-width">
         <p>Think of a test that tries using a website with a keyboard and checks what happens after each action.</p>
         <ol class="method-list">
@@ -105,6 +110,16 @@
           <li><strong>Report the sequence that breaks a rule.</strong> When the observed behavior violates an expectation, the checker records the interaction and the relevant states so the failure can be inspected.</li>
         </ol>
         <p><strong>The sequence matters.</strong> Checking the dialog's label alone does not tell us where focus goes after it opens. The failure becomes clear when we connect the action with the state that follows.</p>
+        <div class="rule-example">
+          <h3 class="title is-5">One interaction rule, written precisely</h3>
+          <p>Whenever a dialog opens, keyboard focus should move inside it in the next relevant state.</p>
+          <div class="equation">
+            <math display="block" aria-label="Always: if dialog d opens, focus must be inside dialog d in the next relevant post-action state.">
+              <mrow><mi mathvariant="bold">G</mi><mo>(</mo><mi mathvariant="normal">openModal</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>→</mo><mi mathvariant="bold">X</mi><mspace width="0.2em"/><mi mathvariant="normal">focusInside</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>)</mo></mrow>
+            </math>
+          </div>
+          <p class="rule-key"><strong>G</strong> means “every time”; <strong>X</strong> means “in the next checked state”; <strong>d</strong> is the dialog. The checker observes the relevant state after the interaction settles. <a href="https://arxiv.org/html/2609.17959v1#S4.SS3">This is the focus-entry rule from the paper.</a></p>
+        </div>
         <details class="technical-details">
           <summary>Technical details: LTL and random testing</summary>
           <p><strong>Linear Temporal Logic (LTL)</strong> is a way to write rules about how behavior unfolds over time. Here, it makes expectations such as “after this action, that state should follow” precise enough for a program to check.</p>
@@ -119,6 +134,21 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Examples</h2>
       <div class="content reading-width">
+        <h3 class="title is-4">Watch the checker find a broken interaction</h3>
+        <p>The checker explores keyboard actions on a generated news website. In this run, opening a video player leaves focus behind the dialog. Later, pressing Escape fails to close it. The buttons below play the short sequences where these failures become visible.</p>
+        <div class="buttons excerpt-controls" id="excerpt-controls" hidden>
+          <button type="button" class="button is-small is-rounded" data-start="0" data-end="12" data-label="Focus-entry failure" aria-controls="checker-replay">Play focus failure · 12 s</button>
+          <button type="button" class="button is-small is-rounded" data-start="100" data-end="112" data-label="Escape failure" aria-controls="checker-replay">Play Escape failure · 12 s</button>
+        </div>
+        <p id="excerpt-status" class="replay-status" role="status">Key moments: 00:03 — focus stays outside the player; 01:47 — Escape leaves the dialog open.</p>
+        <figure class="example-figure">
+          <video id="checker-replay" controls playsinline preload="metadata" poster="/demos/blv-ap-task-gallery/assets/ltl-ap-m1-05-witness.jpeg" aria-label="A11yLTLNav checker exploration replay" aria-describedby="checker-caption">
+            <source src="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4" type="video/mp4">
+            <track kind="captions" src="checker-events.vtt" srclang="en" label="Key events" default>
+            <a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Open the checker replay.</a>
+          </video>
+          <figcaption id="checker-caption">A11yLTLNav exploration replay, reconstructed from saved screenshots at their original timing.<br><a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Full 30-minute replay</a> · <a href="/demos/blv-ap-task-gallery/#comparison-ap-m1-05">Annotated evidence and checker output</a></figcaption>
+        </figure>
         <h3 class="title is-4">Finishing a task can still leave navigation broken</h3>
         <p>In the news-site example, a keyboard-only agent finishes an email task and reports success. Yet opening the dialog leaves focus outside it, and closing it fails to restore the original focus. Completing the task alone does not establish that the interaction was accessible.</p>
         <figure class="example-figure">
@@ -130,10 +160,8 @@
         </figure>
         <h3 class="title is-4">A text editor that will not let the keyboard move on</h3>
         <p>In a generated audio editor, pressing Tab inserts spaces instead of moving to the next control. Focus stays in the same text area. The recorded interaction and the site's key handler reveal why the usual exit keys do not release focus.</p>
-        <figure class="example-figure keyboard-example">
-          <a href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/"><img src="/demos/ltl-ui-natural-keyboard-trap-state-stepper/assets/sonic-canvas-editor-trace.jpeg" width="1024" height="768" loading="lazy" alt="SynthVis Pro's audio and visual code editors from the recorded keyboard-trap example."></a>
-          <figcaption><a href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/">Step through the keyboard-trap example.</a><br>Evidence combines a recorded Tab press with source-code analysis of the exit keys.</figcaption>
-        </figure>
+        <p><a class="button is-normal is-rounded is-dark" href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/">Open interactive keyboard-trap demo →</a></p>
+        <p class="demo-note">Use Next in the demo to step through the explanation. This is an interactive walkthrough combining a recorded Tab press with source-code analysis of the exit keys.</p>
       </div>
     </div>
   </section>
