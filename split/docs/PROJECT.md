@@ -1,6 +1,6 @@
 # Split · 合租共享账本
 
-状态：实现契约 v1（2026-10-17）。前端入口：`/split/`。主站页面、导航与主题保持原样。
+状态：实现契约 v2（2026-10-17）。前端入口：`/split/`。主站页面、导航与主题保持原样。
 
 ## 1. 产品目标与范围
 
@@ -22,7 +22,7 @@
 
 界面参照 Kittysplit 的窄幅单列结构：深蓝顶栏、浅蓝背景、白色内容区。首页以成员余额为首要信息，下方提供还款建议；点击“查看账目”进入独立的账目列表，搜索筛选默认收起。设置、备份和回收站收进账本菜单，不显示重复的概览指标或常驻侧栏。主操作为“记一笔”，默认选择买菜，由 xu 和 ge 均分；可切换水电、房租或自定义。新增流程为“填金额/用途 → 核对分摊 → 保存”。保存中禁用重复提交；成功有反馈；失败给出可执行的恢复动作。删除进入回收站，可恢复。还款需要核对双方与金额，不能把“建议”误当作已支付。
 
-桌面采用侧栏和内容区；手机采用顶部导航、单列卡片与自适应表单。所有控件有文字标签，弹窗支持 Escape、键盘焦点约束，状态使用 aria-live，金额颜色配合“待收/待付”文字，不仅依靠颜色传达意义。遵循 prefers-reduced-motion。
+桌面与手机均采用窄幅单列布局，表单在小屏幕自动适配。所有控件有文字标签，弹窗支持 Escape、键盘焦点约束，状态使用 aria-live，金额颜色配合“待收/待付”文字，不仅依靠颜色传达意义。遵循 prefers-reduced-motion。
 
 ## 2. 架构与技术栈
 
@@ -42,6 +42,9 @@ flowchart TD
 | 数据 | D1（SQLite）、Drizzle schema / migration | SQL 约束、参数化查询、持久化、版本迁移 |
 | 一致性 | revision 乐观锁、D1 batch 事务 | 并发冲突、原子审计快照、重试 |
 | 账务 | 整数分 + 高精度分摊单位 | 资金守恒、舍入、结算算法、纯函数测试 |
+| 文件 | R2 对象存储 + D1 元数据 | MIME 签名检测、幂等上传、跨账本引用校验 |
+| 汇率 | Frankfurter API + D1 短期缓存 | 外部依赖降级、固定精度换算、历史快照 |
+| 来源 | Finances 导入文件 + 交易哈希 | 数据最小化、去重、匹配预览与来源追踪 |
 | 任务 | GitHub Actions cron + 云端核对 | 时区、幂等、失败重试、漏跑补记 |
 | 工程 | Node test runner、API 集成测试、GitHub Actions | 回归测试、CI、部署与运维记录 |
 
@@ -55,6 +58,20 @@ flowchart TD
 
 金额 amountCents 是整数分；shares 是每分 1,000,000 单位的整数（microcent），保留 Kittysplit 原有小数分摊。每笔 shares 之和必须等于 amountCents × 1,000,000。所有人的净余额先聚合后舍入到分；再确定性调整尾差，保证余额总和等于零。房租的半分钱不会在记账时凭空多出一分钱。结算建议采用最大债权/债务逐次匹配，减少转账数量，但不声称全局最少。
 
+### 多币种、附件与来源扩展
+
+结算本位币仍为 USD，支持 17 种原币。entry.fx 保存 currency、amountMinor、rate、rateDate、source。JPY/KRW 使用整数，KWD 三位小数，其余两位。汇率为“1 原币 = 多少 USD”的最多 12 位小数字符串；BigInt 定点计算，最终仅舍入一次至 USD 分。保存后锁定汇率，之后更新参考汇率不会重估历史账。固定房租使用 USD。
+
+GET /api/rates 从 Frankfurter 读取指定日期参考汇率，D1 缓存一小时。无报价或上游故障返回明确错误，用户可填写实际付款汇率；参考汇率不等于银行结算汇率。
+
+附件最多每笔 5 个、每个 10 MiB、每账本 1,000 个。支持 JPEG/PNG/WebP/GIF/HEIC/HEIF/PDF，服务端检测文件签名，拒绝 HTML/SVG。R2 保存原文件；D1 的 attachments 表保存 ID、book_id、对象路径、名称、MIME、字节数、SHA-256 与创建时间。客户端生成稳定附件 ID；相同 ID/内容重试复用，异内容返回 409。保存账目时校验每个附件确实属于本账本。移除附件仅解除引用，软删除、历史快照及恢复仍能找到原文件；当前没有物理清理或孤立文件回收。公开账本的附件同样公开。JSON 备份只有附件引用，不包含文件本体，不能当成跨服务完整备份。
+
+Finances 当前提供对话内交易读取；本次环境没有 Sites 连接器资格检查/授权接口，未实现网页实时直连、银行 OAuth 或后台定时同步。已实现显式导入流程：ChatGPT 读取交易 → 生成 split-finances-v1 JSON → 浏览器本地预览 → 选择旧账关联或新建分摊账目 → 保存所选来源。完整银行流水不提交到 GitHub 或公开数据库。导入文件本身包含个人交易，仅供本人保存。
+
+entry.source 只保存 provider=finances、交易 ID 的 SHA-256 引用、商户、日期、原币金额、币种及导入时间，不保存账户 ID、余额、账号或令牌。只建议金额/币种一致、同付款人、商户映射一致、日期相差不超过 7 天且双方匹配唯一的旧账；用户可取消勾选。合并付款、部分分摊和其他人的付款不强行匹配。单笔来源不能重复关联，回收站也参与去重；更改原币金额或类型前须解除关联。来源用于核对，不是银行签名凭证，公开编辑不证明操作者身份。
+
+客户端写入发送 clientVersion=2。账本已含 fx、attachments 或 source 时拒绝旧客户端写入，避免旧缓存丢弃新字段；schemaVersion=1 保持向后兼容的可选字段扩展。
+
 ## 4. API 与一致性契约
 
 完整机器可读契约见 `openapi.json`。调度流程见 `AUTOMATION.md`。
@@ -64,6 +81,9 @@ flowchart TD
 | GET /api/books/{id} | 读取账本和 revision | 200 / 404 / 503 |
 | POST /api/books | 创建新账本 | 201 / 400 / 409 |
 | PUT /api/books/{id} | 传 book + 读取时的 revision | 200 / 400 / 409 |
+| GET /api/rates | 读取历史参考汇率（currency、date） | 200 / 400 / 503 |
+| POST /api/books/{id}/attachments | multipart 上传 id、file | 201 / 400 / 404 / 409 / 413 / 415 / 503 |
+| GET /api/books/{id}/attachments/{attachmentId} | 查看图片或下载原文件 | 200 / 404 / 503 |
 | GET /api/health | 数据库连通性 | 200 / 503 |
 | GET /api/rent | 读取房租规则和到期月份，不写入 | 200 / 503 |
 | POST /api/rent | 应用服务器时钟下已到期房租 | 200 / 400 / 503 |
@@ -83,6 +103,8 @@ flowchart TD
 - 桌面与手机查看、新增、编辑、删除/恢复、还款、搜索和导出可用；测试数据放独立账本，历史账本不产生测试流水。
 - GitHub 提交仅涉及 split/ 及独立 CI 工作流；主站首页内容不变。
 - 实际生产地址能访问；云端任务保存成功、写入工具经过无副作用验证后才宣称自动入账已启用。
+
+- 外币精度、汇率锁定、附件字节往返、重复上传、跨账本引用拒绝、旧客户端保护、来源去重均有回归检查。
 
 ## 6. 展示路线（5 分钟）
 
@@ -105,3 +127,6 @@ flowchart TD
 - [GitHub Pages 的静态托管范围](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Cloudflare D1 的数据库与 batch API](https://developers.cloudflare.com/d1/worker-api/d1-database/)
 - [Drizzle Kit 迁移生成](https://orm.drizzle.team/docs/drizzle-kit-generate)
+
+- [Frankfurter API](https://frankfurter.dev/)
+- [R2 Worker API](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/)

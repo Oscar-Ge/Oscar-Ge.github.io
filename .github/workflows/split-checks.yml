@@ -17,5 +17,5 @@ jobs:
           node-version: '22'
       - run: node --check split/app.mjs
       - run: node --check split/scripts/sync-rent.mjs
-      - run: node --test split/tests/core.test.mjs
+      - run: node --test split/tests/*.test.mjs
       - run: python3 -m json.tool split/docs/openapi.json > /dev/null

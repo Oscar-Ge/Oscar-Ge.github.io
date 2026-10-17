@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Split Shared Ledger API",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Public read/write by product design. No authentication required for REST. CORS is not authentication. Document writes require revision and are transactional; audit snapshots preserve prior versions."
   },
   "servers": [
@@ -82,6 +82,10 @@
                   "revision": {
                     "type": "integer",
                     "minimum": 1
+                  },
+                  "clientVersion": {
+                    "const": 2,
+                    "description": "Required when a book uses FX, attachments or finance source metadata"
                   }
                 }
               }
@@ -110,7 +114,7 @@
             }
           },
           "409": {
-            "description": "Stale revision; refresh and review the draft",
+            "description": "Stale revision or incompatible client; refresh and preserve draft",
             "content": {
               "application/json": {
                 "schema": {
@@ -367,6 +371,229 @@
           }
         }
       }
+    },
+    "/api/books/{id}/attachments": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "post": {
+        "operationId": "uploadAttachment",
+        "summary": "Upload a public file, idempotent by attachment ID and SHA-256",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "file"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Stored attachment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttachmentResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Missing book",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Attachment ID conflict",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Size or quota exceeded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported file signature",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Storage unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/books/{id}/attachments/{attachmentId}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "attachmentId",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "download",
+          "in": "query",
+          "schema": {
+            "const": "1"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "getAttachment",
+        "summary": "Serve public image or download original file",
+        "responses": {
+          "200": {
+            "description": "Binary file; safe MIME, nosniff, immutable cache"
+          },
+          "404": {
+            "description": "Missing attachment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Storage unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/rates": {
+      "get": {
+        "operationId": "getReferenceRate",
+        "summary": "Get daily reference FX rate with one-hour cache and explicit failure fallback",
+        "parameters": [
+          {
+            "name": "currency",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Reference quote",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid currency/date",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Manual rate required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -473,6 +700,19 @@
           },
           "sourceRow": {
             "type": "integer"
+          },
+          "fx": {
+            "$ref": "#/components/schemas/Fx"
+          },
+          "attachments": {
+            "type": "array",
+            "maxItems": 5,
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
+          },
+          "source": {
+            "$ref": "#/components/schemas/FinanceSource"
           }
         }
       },
@@ -588,6 +828,163 @@
         "properties": {
           "error": {
             "type": "string"
+          }
+        }
+      },
+      "Fx": {
+        "type": "object",
+        "required": [
+          "currency",
+          "amountMinor",
+          "rate",
+          "rateDate",
+          "source"
+        ],
+        "properties": {
+          "currency": {
+            "enum": [
+              "CNY",
+              "EUR",
+              "GBP",
+              "CAD",
+              "AUD",
+              "JPY",
+              "KRW",
+              "HKD",
+              "TWD",
+              "SGD",
+              "CHF",
+              "NZD",
+              "THB",
+              "INR",
+              "MXN",
+              "KWD"
+            ]
+          },
+          "amountMinor": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "rate": {
+            "type": "string",
+            "description": "USD per one original unit, up to 12 decimals"
+          },
+          "rateDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "source": {
+            "enum": [
+              "manual",
+              "frankfurter"
+            ]
+          }
+        }
+      },
+      "Attachment": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "mime",
+          "size"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^att-[a-f0-9-]{36}$"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "mime": {
+            "enum": [
+              "image/jpeg",
+              "image/png",
+              "image/webp",
+              "image/gif",
+              "image/heic",
+              "image/heif",
+              "application/pdf"
+            ]
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10485760
+          }
+        }
+      },
+      "FinanceSource": {
+        "type": "object",
+        "required": [
+          "provider",
+          "ref",
+          "date",
+          "currency",
+          "amountMinor",
+          "merchant",
+          "importedAt"
+        ],
+        "properties": {
+          "provider": {
+            "const": "finances"
+          },
+          "ref": {
+            "type": "string",
+            "pattern": "^fin-[a-f0-9]{64}$"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "amountMinor": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "merchant": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "importedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "AttachmentResponse": {
+        "type": "object",
+        "properties": {
+          "attachment": {
+            "$ref": "#/components/schemas/Attachment"
+          }
+        }
+      },
+      "RateResponse": {
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string"
+          },
+          "quote": {
+            "const": "USD"
+          },
+          "rate": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "source": {
+            "const": "frankfurter"
+          },
+          "cached": {
+            "type": "boolean"
           }
         }
       }

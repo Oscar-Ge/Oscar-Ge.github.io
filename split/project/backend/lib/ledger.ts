@@ -8,7 +8,7 @@ export function preflight(req:Request){return new Response(null,{status:204,head
 export function db(){if(!env.DB)throw new Error('Shared database is unavailable.');return env.DB;}
 export async function ensureInitialBook(){const book=validateBook(initial);await db().prepare('INSERT OR IGNORE INTO books (id,document,revision,updated_at) VALUES (?,?,1,?)').bind(book.id,JSON.stringify(book),new Date().toISOString()).run();}
 export async function body(req:Request){if(Number(req.headers.get('content-length')||0)>4_000_000)throw new Error('文件过大。');const raw=await req.text();if(raw.length>4_000_000)throw new Error('文件过大。');return JSON.parse(raw);}
-export function allowedWrite(req:Request){const origin=req.headers.get('origin');if(origin&&!origins.has(origin))throw new Error('来源不受支持。');if(!req.headers.get('content-type')?.includes('application/json'))throw new Error('请使用 JSON。');}
+export function allowedWrite(req:Request,contentType="application/json"){const origin=req.headers.get('origin');if(origin&&!origins.has(origin))throw new Error('来源不受支持。');if(!req.headers.get('content-type')?.includes(contentType))throw new Error('请求格式不受支持。');}
 export type BookRow={document:string;revision:number;updated_at:string};
 export async function readBook(id:string){return db().prepare('SELECT document,revision,updated_at FROM books WHERE id=?').bind(id).first<BookRow>();}
 export async function replaceBook(book:ReturnType<typeof validateBook>,revision:number){

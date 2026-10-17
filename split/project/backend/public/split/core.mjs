@@ -1,3 +1,6 @@
+import {validateSource,sourceFitsEntry} from './finance.mjs';
+import {validateFx,originalText} from './currency.mjs';
+import {validateAttachment,MAX_ATTACHMENTS} from './attachments.mjs';
 // Amounts are integer cents. Shares retain microcent precision so imported
 // Kittysplit fractions do not accumulate rounding differences.
 export const SCALE=1_000_000;
@@ -61,7 +64,7 @@ export function validateBook(input){
  assert(input&&typeof input==='object'&&!Array.isArray(input),'账本格式无效。');assert(input.schemaVersion===1&&id(input.id),'账本版本或编号无效。');assert(string(input.title,100)&&input.title.trim(),'请填写账本名称。');assert(input.currency==='USD','当前版本使用 USD。');
  assert(Array.isArray(input.members)&&input.members.length>0&&input.members.length<=50,'账本须有 1–50 位成员。');const ids=new Set();
  const members=input.members.map(m=>{assert(m&&id(m.id)&&!ids.has(m.id)&&!['__proto__','constructor','prototype'].includes(m.id),'成员编号无效或重复。');ids.add(m.id);assert(string(m.name,60)&&m.name.trim(),'成员名称无效。');return {id:m.id,name:m.name.trim(),active:m.active!==false};});
- assert(new Set(members.map(m=>m.name.toLowerCase())).size===members.length,'成员名称不能重复。');assert(Array.isArray(input.entries)&&input.entries.length<=10000,'账目超过 10,000 条或格式无效。');const seen=new Set();let aggregate=0;
+ assert(new Set(members.map(m=>m.name.toLowerCase())).size===members.length,'成员名称不能重复。');assert(Array.isArray(input.entries)&&input.entries.length<=10000,'账目超过 10,000 条或格式无效。');const seen=new Set(),sourceRefs=new Set();let aggregate=0;
  const entries=input.entries.map(e=>{
   assert(e&&id(e.id)&&!seen.has(e.id),'记录编号无效或重复。');seen.add(e.id);assert(['expense','income','transfer'].includes(e.kind),'记录类型无效。');
   assert(typeof e.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(e.date)&&!Number.isNaN(Date.parse(e.date))&&new Date(e.date).toISOString().slice(0,10)===e.date,'日期无效。');assert(ids.has(e.payerId),'付款人不存在。');assert(Number.isSafeInteger(e.amountCents)&&e.amountCents>0&&e.amountCents<=MAX_AMOUNT,'金额无效。');
@@ -69,7 +72,10 @@ export function validateBook(input){
   if(e.kind==='transfer')assert(ids.has(e.payeeId)&&e.payeeId!==e.payerId,'还款双方必须是不同的成员。');
   else{assert(e.shares&&typeof e.shares==='object'&&!Array.isArray(e.shares),'分摊数据无效。');for(const[k,v]of Object.entries(e.shares)){assert(ids.has(k)&&Number.isSafeInteger(v)&&v>=0,'分摊数据无效。');shares[k]=v;}assert(Object.values(shares).reduce((a,b)=>a+b,0)===e.amountCents*SCALE,'分摊总额与账单不一致。');}
   assert(!e.deletedAt||typeof e.deletedAt==='string'&&!Number.isNaN(Date.parse(e.deletedAt)),'删除日期无效。');
-  return {id:e.id,kind:e.kind,date:e.date,payerId:e.payerId,...(e.kind==='transfer'?{payeeId:e.payeeId}:{}),amountCents:e.amountCents,description:e.description.trim(),shares,splitMode:['equal','amount','percent','shares','imported','rent','transfer'].includes(e.splitMode)?e.splitMode:'imported',category:Object.hasOwn(CATEGORIES,e.category)?e.category:'other',notes:e.notes??'',deletedAt:e.deletedAt||null,...(Number.isInteger(e.sourceRow)?{sourceRow:e.sourceRow}:{}),...(string(e.updatedAt,60)?{updatedAt:e.updatedAt}:{}),...(string(e.createdAt,60)?{createdAt:e.createdAt}:{})};
+  const source=e.source?validateSource(e.source):null;if(source){assert(sourceFitsEntry(source,e),'金额、币种或类型与 Finances 来源不同，请先解除来源关联。');assert(!sourceRefs.has(source.ref),'同一笔 Finances 交易已关联其他账目（包括回收站）。');sourceRefs.add(source.ref);}
+  const fx=e.fx?validateFx(e.fx,e.amountCents):null;assert(!fx||e.splitMode!=='rent','固定房租须使用 USD。');
+  const attachments=e.attachments??[];assert(Array.isArray(attachments)&&attachments.length<=MAX_ATTACHMENTS,'每笔账目最多 5 个附件。');const files=attachments.map(validateAttachment);assert(new Set(files.map(a=>a.id)).size===files.length,'附件不能重复。');
+  return {id:e.id,kind:e.kind,date:e.date,payerId:e.payerId,...(e.kind==='transfer'?{payeeId:e.payeeId}:{}),amountCents:e.amountCents,...(source?{source}:{}),...(fx?{fx}:{}),...(files.length?{attachments:files}:{}),description:e.description.trim(),shares,splitMode:['equal','amount','percent','shares','imported','rent','transfer'].includes(e.splitMode)?e.splitMode:'imported',category:Object.hasOwn(CATEGORIES,e.category)?e.category:'other',notes:e.notes??'',deletedAt:e.deletedAt||null,...(Number.isInteger(e.sourceRow)?{sourceRow:e.sourceRow}:{}),...(string(e.updatedAt,60)?{updatedAt:e.updatedAt}:{}),...(string(e.createdAt,60)?{createdAt:e.createdAt}:{})};
  });
  let rentRule=null;
  if(input.rentRule){const r=input.rentRule;assert(/^\d{4}-(0[1-9]|1[0-2])$/.test(r.startMonth)&&r.startMonth>='2026-11','房租开始月份无效。');assert(ids.has(r.payerId),'房租付款人不存在。');assert(r.memberIds&&['yuan','zhang','xu','ge'].every(k=>ids.has(r.memberIds[k]))&&new Set(Object.values(r.memberIds)).size===4,'房租参与人无效。');rentRule={enabled:r.enabled===true,startMonth:r.startMonth,payerId:r.payerId,memberIds:Object.fromEntries(['yuan','zhang','xu','ge'].map(k=>[k,r.memberIds[k]]))};}
@@ -77,8 +83,8 @@ export function validateBook(input){
 }
 export function csv(book){
  const safe=v=>{let s=String(v??'');if(/^[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};const names=Object.fromEntries(book.members.map(m=>[m.id,m.name]));
- const rows=[['Date','Type','Description','Amount (USD)','Paid by / received by','Paid to','Category','Notes',...book.members.map(m=>m.name+' share (USD)')]];
- for(const e of book.entries.filter(e=>!e.deletedAt))rows.push([e.date,e.kind,e.description,(e.amountCents/100).toFixed(2),names[e.payerId],names[e.payeeId]||'',CATEGORIES[e.category],e.notes,...book.members.map(m=>e.kind==='transfer'?'':(e.shares[m.id]||0)/SCALE/100)]);
+ const rows=[['Date','Type','Description','Amount (USD)','Paid by / received by','Paid to','Category','Notes','Original currency','Original amount','USD per unit','Rate date','Rate source','Attachments','Finance source','Finance transaction reference','Finance merchant','Finance date',...book.members.map(m=>m.name+' share (USD)')]];
+ for(const e of book.entries.filter(e=>!e.deletedAt))rows.push([e.date,e.kind,e.description,(e.amountCents/100).toFixed(2),names[e.payerId],names[e.payeeId]||'',CATEGORIES[e.category],e.notes,e.fx?.currency||'USD',e.fx?originalText(e.fx.amountMinor,e.fx.currency):(e.amountCents/100).toFixed(2),e.fx?.rate||'1',e.fx?.rateDate||e.date,e.fx?.source||'',(e.attachments||[]).map(a=>a.name+' ['+a.id+']').join('; '),e.source?.provider||'',e.source?.ref||'',e.source?.merchant||'',e.source?.date||'',...book.members.map(m=>e.kind==='transfer'?'':(e.shares[m.id]||0)/SCALE/100)]);
  return '\ufeff'+rows.map(r=>r.map(safe).join(',')).join('\r\n');
 }
 
