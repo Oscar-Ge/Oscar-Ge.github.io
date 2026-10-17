@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-17T19:49:25.015Z",
+  "localDate": "2026-10-17",
+  "timezone": "America/New_York",
+  "bookId": "d6",
+  "month": "2026-10",
+  "ruleEnabled": true,
+  "startMonth": "2026-11",
+  "amountCents": 212500,
+  "addedMonths": [],
+  "revisionBefore": 1,
+  "revisionAfter": 1,
+  "monthlyEntryFound": true,
+  "monthlyEntryDeleted": false,
+  "status": "not_due_yet",
+  "runId": "39064078030"
+}
