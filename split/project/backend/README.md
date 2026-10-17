@@ -33,6 +33,6 @@ node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1
 
 ## 月度任务
 
-每次运行先 `get_ledger_summary`，再调用 `apply_due_rent`，最后读回摘要。所有金额、成员和月份来自已保存的规则；调用者不能传入未来日期。默认付款人 ge，起始月 2026-11。重复执行不创建重复条目；暂停时不写入。更新持久化数据无需重新发布网站。
+GitHub Actions 每月运行仓库 `split/scripts/sync-rent.mjs`：先 GET /api/rent，再 POST /api/rent，最后读回账本并保存回执。MCP 的 get_ledger_summary / apply_due_rent 提供同一套规则的可选工具入口。所有金额、成员和月份来自已保存的规则；调用者不能传入未来日期。默认付款人 ge，起始月 2026-11。重复执行不创建重复条目；暂停时不写入。更新持久化数据无需重新发布网站。
 
 任务 ID、启用状态与正式验证结果见仓库 `split/docs/RELEASE.md`。
