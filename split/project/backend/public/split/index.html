@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#256b50">
+  <meta name="description" content="共同记账，清楚分摊。一个简单的共享账本。">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Split · 共享账本</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=1">
+  <script type="module" src="./app.mjs?v=1"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div id="app"><main class="loading" id="main"><span class="loader"></span><h1>正在打开共享账本</h1><p>读取最新账目…</p></main></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p>这个共享账本需要启用 JavaScript。</p></noscript>
+</body>
+</html>

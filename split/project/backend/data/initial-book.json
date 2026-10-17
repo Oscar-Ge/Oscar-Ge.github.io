@@ -1,0 +1,6483 @@
+{
+  "schemaVersion": 1,
+  "id": "d6",
+  "title": "d6",
+  "currency": "USD",
+  "members": [
+    {
+      "id": "ge",
+      "name": "ge",
+      "active": true
+    },
+    {
+      "id": "xu",
+      "name": "xu",
+      "active": true
+    },
+    {
+      "id": "yuan",
+      "name": "yuan",
+      "active": true
+    },
+    {
+      "id": "zhao",
+      "name": "wenchao zhang",
+      "active": true
+    }
+  ],
+  "entries": [
+    {
+      "id": "kitty-r7",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 1733,
+      "description": "麦当劳",
+      "shares": {
+        "ge": 577666666,
+        "xu": 577666667,
+        "yuan": 577666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 7,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r8",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "yuan",
+      "amountCents": 927,
+      "description": "kroger1",
+      "shares": {
+        "ge": 309000000,
+        "xu": 309000000,
+        "yuan": 309000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 8,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r9",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 1416,
+      "description": "kroger2",
+      "shares": {
+        "ge": 708000000,
+        "xu": 708000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 9,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r10",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 1588,
+      "description": "kroger2total",
+      "shares": {
+        "ge": 529333334,
+        "xu": 529333333,
+        "yuan": 529333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 10,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r11",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 2500,
+      "description": "xfinitypre",
+      "shares": {
+        "ge": 833333334,
+        "xu": 833333333,
+        "yuan": 833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 11,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r12",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 1329,
+      "description": "temu垃圾袋，纸巾",
+      "shares": {
+        "ge": 443000000,
+        "xu": 443000000,
+        "yuan": 443000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 12,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r13",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 732,
+      "description": "amazon食材",
+      "shares": {
+        "ge": 366000000,
+        "xu": 366000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 13,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r14",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 1645,
+      "description": "amazon 生活用品",
+      "shares": {
+        "ge": 548333334,
+        "xu": 548333333,
+        "yuan": 548333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 14,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r15",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "yuan",
+      "amountCents": 4522,
+      "description": "kroger3all",
+      "shares": {
+        "ge": 1507333334,
+        "xu": 1507333333,
+        "yuan": 1507333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 15,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r16",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "yuan",
+      "amountCents": 600,
+      "description": "kroger3all2",
+      "shares": {
+        "ge": 200000000,
+        "xu": 200000000,
+        "yuan": 200000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 16,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r17",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "yuan",
+      "amountCents": 1152,
+      "description": "kroger3for2",
+      "shares": {
+        "ge": 576000000,
+        "xu": 576000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 17,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r18",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "yuan",
+      "amountCents": 299,
+      "description": "kroger3icecream",
+      "shares": {
+        "ge": 0,
+        "xu": 299000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 18,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r19",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 3170,
+      "description": "kroger4forall",
+      "shares": {
+        "ge": 1056666666,
+        "xu": 1056666667,
+        "yuan": 1056666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 19,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r20",
+      "kind": "expense",
+      "date": "2025-08-21",
+      "payerId": "ge",
+      "amountCents": 698,
+      "description": "kroger4for2",
+      "shares": {
+        "ge": 349000000,
+        "xu": 349000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 20,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r21",
+      "kind": "expense",
+      "date": "2025-08-22",
+      "payerId": "ge",
+      "amountCents": 600,
+      "description": "kroger5icecream",
+      "shares": {
+        "ge": 0,
+        "xu": 600000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 21,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r22",
+      "kind": "expense",
+      "date": "2025-08-22",
+      "payerId": "ge",
+      "amountCents": 2524,
+      "description": "kroger4all",
+      "shares": {
+        "ge": 841333334,
+        "xu": 841333333,
+        "yuan": 841333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 22,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r23",
+      "kind": "expense",
+      "date": "2025-08-22",
+      "payerId": "ge",
+      "amountCents": 1347,
+      "description": "kroger5for2",
+      "shares": {
+        "ge": 673500000,
+        "xu": 673500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 23,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r24",
+      "kind": "expense",
+      "date": "2025-08-24",
+      "payerId": "ge",
+      "amountCents": 2741,
+      "description": "kroger6",
+      "shares": {
+        "ge": 913666666,
+        "xu": 913666667,
+        "yuan": 913666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 24,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r25",
+      "kind": "expense",
+      "date": "2025-08-24",
+      "payerId": "yuan",
+      "amountCents": 3243,
+      "description": "One-way",
+      "shares": {
+        "ge": 1081000000,
+        "xu": 1081000000,
+        "yuan": 1081000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 25,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r26",
+      "kind": "expense",
+      "date": "2025-08-24",
+      "payerId": "yuan",
+      "amountCents": 1098,
+      "description": "Amazon washing cleaner",
+      "shares": {
+        "ge": 366000000,
+        "xu": 366000000,
+        "yuan": 366000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 26,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r27",
+      "kind": "expense",
+      "date": "2025-08-25",
+      "payerId": "ge",
+      "amountCents": 4223,
+      "description": "kroger7",
+      "shares": {
+        "ge": 1407666666,
+        "xu": 1407666667,
+        "yuan": 1407666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 27,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r28",
+      "kind": "expense",
+      "date": "2025-08-26",
+      "payerId": "ge",
+      "amountCents": 2505,
+      "description": "weee",
+      "shares": {
+        "ge": 835000000,
+        "xu": 835000000,
+        "yuan": 835000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 28,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r29",
+      "kind": "expense",
+      "date": "2025-08-27",
+      "payerId": "ge",
+      "amountCents": 4437,
+      "description": "weee2",
+      "shares": {
+        "ge": 1479000000,
+        "xu": 1479000000,
+        "yuan": 1479000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 29,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r30",
+      "kind": "expense",
+      "date": "2025-08-28",
+      "payerId": "ge",
+      "amountCents": 5887,
+      "description": "kroger8",
+      "shares": {
+        "ge": 1962333334,
+        "xu": 1962333333,
+        "yuan": 1962333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 30,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r31",
+      "kind": "expense",
+      "date": "2025-08-30",
+      "payerId": "yuan",
+      "amountCents": 734,
+      "description": "Toilet paper",
+      "shares": {
+        "ge": 244666666,
+        "xu": 244666667,
+        "yuan": 244666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 31,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r32",
+      "kind": "expense",
+      "date": "2025-08-30",
+      "payerId": "ge",
+      "amountCents": 5522,
+      "description": "kroger9",
+      "shares": {
+        "ge": 1840666666,
+        "xu": 1840666667,
+        "yuan": 1840666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 32,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r33",
+      "kind": "expense",
+      "date": "2025-08-30",
+      "payerId": "ge",
+      "amountCents": 1553,
+      "description": "amazon paper towels and storage ",
+      "shares": {
+        "ge": 517666666,
+        "xu": 517666667,
+        "yuan": 517666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 33,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r34",
+      "kind": "expense",
+      "date": "2025-09-01",
+      "payerId": "ge",
+      "amountCents": 5123,
+      "description": "kroger10",
+      "shares": {
+        "ge": 1707666666,
+        "xu": 1707666667,
+        "yuan": 1707666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 34,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r35",
+      "kind": "expense",
+      "date": "2025-09-01",
+      "payerId": "ge",
+      "amountCents": 3467,
+      "description": "kroger11",
+      "shares": {
+        "ge": 1155666666,
+        "xu": 1155666667,
+        "yuan": 1155666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 35,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r36",
+      "kind": "expense",
+      "date": "2025-09-03",
+      "payerId": "ge",
+      "amountCents": 5217,
+      "description": "kroger12",
+      "shares": {
+        "ge": 1739000000,
+        "xu": 1739000000,
+        "yuan": 1739000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 36,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r37",
+      "kind": "expense",
+      "date": "2025-09-05",
+      "payerId": "ge",
+      "amountCents": 4000,
+      "description": "吸尘器",
+      "shares": {
+        "ge": 1333333334,
+        "xu": 1333333333,
+        "yuan": 1333333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 37,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r38",
+      "kind": "expense",
+      "date": "2025-09-05",
+      "payerId": "yuan",
+      "amountCents": 4536,
+      "description": "Kroger 2025/9/5",
+      "shares": {
+        "ge": 1512000000,
+        "xu": 1512000000,
+        "yuan": 1512000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 38,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r39",
+      "kind": "expense",
+      "date": "2025-09-06",
+      "payerId": "ge",
+      "amountCents": 3000,
+      "description": "networks Spt.",
+      "shares": {
+        "ge": 1000000000,
+        "xu": 1000000000,
+        "yuan": 1000000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 39,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r40",
+      "kind": "expense",
+      "date": "2025-09-06",
+      "payerId": "ge",
+      "amountCents": 2523,
+      "description": "kroger 0906",
+      "shares": {
+        "ge": 841000000,
+        "xu": 841000000,
+        "yuan": 841000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 40,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r41",
+      "kind": "expense",
+      "date": "2025-09-07",
+      "payerId": "ge",
+      "amountCents": 7517,
+      "description": "elecGas until 0905",
+      "shares": {
+        "ge": 2505666666,
+        "xu": 2505666667,
+        "yuan": 2505666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 41,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r42",
+      "kind": "expense",
+      "date": "2025-09-07",
+      "payerId": "ge",
+      "amountCents": 2306,
+      "description": "way1+traderJoe 0906",
+      "shares": {
+        "ge": 768666666,
+        "xu": 768666667,
+        "yuan": 768666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 42,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r43",
+      "kind": "expense",
+      "date": "2025-09-09",
+      "payerId": "ge",
+      "amountCents": 5913,
+      "description": "kroger delivery 0909",
+      "shares": {
+        "ge": 1971000000,
+        "xu": 1971000000,
+        "yuan": 1971000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 43,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r44",
+      "kind": "expense",
+      "date": "2025-09-09",
+      "payerId": "ge",
+      "amountCents": 1245,
+      "description": "kroger果汁",
+      "shares": {
+        "ge": 0,
+        "xu": 1245000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 44,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r45",
+      "kind": "expense",
+      "date": "2025-09-09",
+      "payerId": "ge",
+      "amountCents": 8254,
+      "description": "kroger 0909 delivery",
+      "shares": {
+        "ge": 4127000000,
+        "xu": 4127000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 45,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r46",
+      "kind": "expense",
+      "date": "2025-09-09",
+      "payerId": "ge",
+      "amountCents": 3130,
+      "description": "weee 0910",
+      "shares": {
+        "ge": 1043333334,
+        "xu": 1043333333,
+        "yuan": 1043333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 46,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r47",
+      "kind": "expense",
+      "date": "2025-09-13",
+      "payerId": "yuan",
+      "amountCents": 510,
+      "description": "Kroger grape",
+      "shares": {
+        "ge": 170000000,
+        "xu": 170000000,
+        "yuan": 170000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 47,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r48",
+      "kind": "expense",
+      "date": "2025-09-14",
+      "payerId": "ge",
+      "amountCents": 2674,
+      "description": "洗碗块",
+      "shares": {
+        "ge": 0,
+        "xu": 0,
+        "yuan": 2674000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 48,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r49",
+      "kind": "expense",
+      "date": "2025-09-16",
+      "payerId": "ge",
+      "amountCents": 5327,
+      "description": "kroger 0915",
+      "shares": {
+        "ge": 2663500000,
+        "xu": 2663500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 49,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r50",
+      "kind": "expense",
+      "date": "2025-09-19",
+      "payerId": "ge",
+      "amountCents": 2132,
+      "description": "kroger 0919 public+tomato sauce",
+      "shares": {
+        "ge": 1066000000,
+        "xu": 1066000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 50,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r51",
+      "kind": "expense",
+      "date": "2025-09-19",
+      "payerId": "ge",
+      "amountCents": 3573,
+      "description": "kroger 0919 for xzy and me",
+      "shares": {
+        "ge": 1786500000,
+        "xu": 1786500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 51,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r52",
+      "kind": "expense",
+      "date": "2025-09-21",
+      "payerId": "ge",
+      "amountCents": 4492,
+      "description": "weee",
+      "shares": {
+        "ge": 2246000000,
+        "xu": 2246000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 52,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r53",
+      "kind": "expense",
+      "date": "2025-09-21",
+      "payerId": "ge",
+      "amountCents": 1600,
+      "description": "kroger 0919 offline",
+      "shares": {
+        "ge": 800000000,
+        "xu": 800000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 53,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r54",
+      "kind": "expense",
+      "date": "2025-09-28",
+      "payerId": "ge",
+      "amountCents": 7905,
+      "description": "kroger0928",
+      "shares": {
+        "ge": 3952500000,
+        "xu": 3952500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 54,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r55",
+      "kind": "expense",
+      "date": "2025-09-28",
+      "payerId": "ge",
+      "amountCents": 2025,
+      "description": "weee0929",
+      "shares": {
+        "ge": 675000000,
+        "xu": 675000000,
+        "yuan": 675000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 55,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r56",
+      "kind": "expense",
+      "date": "2025-09-28",
+      "payerId": "ge",
+      "amountCents": 1785,
+      "description": "weee0929",
+      "shares": {
+        "ge": 892500000,
+        "xu": 892500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 56,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r57",
+      "kind": "expense",
+      "date": "2025-09-28",
+      "payerId": "ge",
+      "amountCents": 3548,
+      "description": "8 9月房保险",
+      "shares": {
+        "ge": 1182666666,
+        "xu": 1182666667,
+        "yuan": 1182666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 57,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r58",
+      "kind": "expense",
+      "date": "2025-10-01",
+      "payerId": "ge",
+      "amountCents": 3327,
+      "description": "0930 wholefoods+kroger",
+      "shares": {
+        "ge": 1663500000,
+        "xu": 1663500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 58,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r59",
+      "kind": "expense",
+      "date": "2025-10-04",
+      "payerId": "ge",
+      "amountCents": 399,
+      "description": "kroger1003egg",
+      "shares": {
+        "ge": 133000000,
+        "xu": 133000000,
+        "yuan": 133000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 59,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r60",
+      "kind": "expense",
+      "date": "2025-10-04",
+      "payerId": "ge",
+      "amountCents": 2285,
+      "description": "kroger1003others",
+      "shares": {
+        "ge": 1142500000,
+        "xu": 1142500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 60,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r61",
+      "kind": "expense",
+      "date": "2025-10-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity9",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 61,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r62",
+      "kind": "expense",
+      "date": "2025-10-07",
+      "payerId": "ge",
+      "amountCents": 379,
+      "description": "weeePublic",
+      "shares": {
+        "ge": 126333334,
+        "xu": 126333333,
+        "yuan": 126333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 62,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r63",
+      "kind": "expense",
+      "date": "2025-10-07",
+      "payerId": "ge",
+      "amountCents": 3332,
+      "description": "weee1006my",
+      "shares": {
+        "ge": 1666000000,
+        "xu": 1666000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 63,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r64",
+      "kind": "expense",
+      "date": "2025-10-07",
+      "payerId": "ge",
+      "amountCents": 2783,
+      "description": "kroger1007public",
+      "shares": {
+        "ge": 927666666,
+        "xu": 927666667,
+        "yuan": 927666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 64,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r65",
+      "kind": "expense",
+      "date": "2025-10-07",
+      "payerId": "ge",
+      "amountCents": 792,
+      "description": "kroger1007my",
+      "shares": {
+        "ge": 396000000,
+        "xu": 396000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 65,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r66",
+      "kind": "expense",
+      "date": "2025-10-08",
+      "payerId": "ge",
+      "amountCents": 11995,
+      "description": "dte 202509",
+      "shares": {
+        "ge": 3998333334,
+        "xu": 3998333333,
+        "yuan": 3998333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 66,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r67",
+      "kind": "expense",
+      "date": "2025-10-10",
+      "payerId": "ge",
+      "amountCents": 3700,
+      "description": "weee1010",
+      "shares": {
+        "ge": 1850000000,
+        "xu": 1850000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 67,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r68",
+      "kind": "expense",
+      "date": "2025-10-11",
+      "payerId": "ge",
+      "amountCents": 2500,
+      "description": "rentalEnsurance2510",
+      "shares": {
+        "ge": 833333334,
+        "xu": 833333333,
+        "yuan": 833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 68,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r69",
+      "kind": "expense",
+      "date": "2025-10-12",
+      "payerId": "ge",
+      "amountCents": 1395,
+      "description": "supermarket1011",
+      "shares": {
+        "ge": 697500000,
+        "xu": 697500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 69,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r70",
+      "kind": "expense",
+      "date": "2025-10-16",
+      "payerId": "ge",
+      "amountCents": 3670,
+      "description": "weee1015",
+      "shares": {
+        "ge": 1835000000,
+        "xu": 1835000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 70,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r71",
+      "kind": "expense",
+      "date": "2025-10-16",
+      "payerId": "ge",
+      "amountCents": 5341,
+      "description": "kroger1012 no eggs",
+      "shares": {
+        "ge": 2670500000,
+        "xu": 2670500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 71,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r72",
+      "kind": "expense",
+      "date": "2025-10-16",
+      "payerId": "ge",
+      "amountCents": 600,
+      "description": "kroger 1012 eggs",
+      "shares": {
+        "ge": 200000000,
+        "xu": 200000000,
+        "yuan": 200000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 72,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r73",
+      "kind": "expense",
+      "date": "2025-10-18",
+      "payerId": "yuan",
+      "amountCents": 399,
+      "description": "grapes",
+      "shares": {
+        "ge": 133000000,
+        "xu": 133000000,
+        "yuan": 133000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 73,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r74",
+      "kind": "expense",
+      "date": "2025-10-18",
+      "payerId": "ge",
+      "amountCents": 3120,
+      "description": "kroger1018",
+      "shares": {
+        "ge": 1040000000,
+        "xu": 1040000000,
+        "yuan": 1040000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 74,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r75",
+      "kind": "expense",
+      "date": "2025-10-18",
+      "payerId": "ge",
+      "amountCents": 2207,
+      "description": "kroger1018our",
+      "shares": {
+        "ge": 1103500000,
+        "xu": 1103500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 75,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r76",
+      "kind": "expense",
+      "date": "2025-10-21",
+      "payerId": "ge",
+      "amountCents": 1902,
+      "description": "sam1020KLNX",
+      "shares": {
+        "ge": 634000000,
+        "xu": 634000000,
+        "yuan": 634000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 76,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r77",
+      "kind": "expense",
+      "date": "2025-10-21",
+      "payerId": "ge",
+      "amountCents": 3538,
+      "description": "sam1020",
+      "shares": {
+        "ge": 1769000000,
+        "xu": 1769000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 77,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r78",
+      "kind": "expense",
+      "date": "2025-10-22",
+      "payerId": "ge",
+      "amountCents": 1015,
+      "description": "chopsticks&spoonsAdded",
+      "shares": {
+        "ge": 338333334,
+        "xu": 338333333,
+        "yuan": 338333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 78,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r79",
+      "kind": "expense",
+      "date": "2025-10-25",
+      "payerId": "xu",
+      "amountCents": 2364,
+      "description": "sams1024",
+      "shares": {
+        "ge": 1182000000,
+        "xu": 1182000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 79,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r80",
+      "kind": "expense",
+      "date": "2025-10-25",
+      "payerId": "ge",
+      "amountCents": 1400,
+      "description": "kroger1024",
+      "shares": {
+        "ge": 700000000,
+        "xu": 700000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 80,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r81",
+      "kind": "expense",
+      "date": "2025-10-25",
+      "payerId": "ge",
+      "amountCents": 2500,
+      "description": "weee1026all",
+      "shares": {
+        "ge": 833333334,
+        "xu": 833333333,
+        "yuan": 833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 81,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r82",
+      "kind": "expense",
+      "date": "2025-10-25",
+      "payerId": "ge",
+      "amountCents": 1751,
+      "description": "weee1026now",
+      "shares": {
+        "ge": 875500000,
+        "xu": 875500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 82,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r83",
+      "kind": "expense",
+      "date": "2025-10-26",
+      "payerId": "ge",
+      "amountCents": 1017,
+      "description": "rentalInsurance1015",
+      "shares": {
+        "ge": 339000000,
+        "xu": 339000000,
+        "yuan": 339000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 83,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r84",
+      "kind": "expense",
+      "date": "2025-10-29",
+      "payerId": "ge",
+      "amountCents": 2328,
+      "description": "kroger1028",
+      "shares": {
+        "ge": 1164000000,
+        "xu": 1164000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 84,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r85",
+      "kind": "expense",
+      "date": "2025-10-29",
+      "payerId": "ge",
+      "amountCents": 1826,
+      "description": "sam1029All",
+      "shares": {
+        "ge": 608666666,
+        "xu": 608666667,
+        "yuan": 608666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 85,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r86",
+      "kind": "expense",
+      "date": "2025-10-29",
+      "payerId": "ge",
+      "amountCents": 994,
+      "description": "sam1029us",
+      "shares": {
+        "ge": 497000000,
+        "xu": 497000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 86,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r87",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "ge",
+      "amountCents": 9356,
+      "description": "monthFee",
+      "shares": {
+        "ge": 3118666666,
+        "xu": 3118666667,
+        "yuan": 3118666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 87,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r88",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "ge",
+      "amountCents": 4147,
+      "description": "sams1102",
+      "shares": {
+        "ge": 2073500000,
+        "xu": 2073500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 88,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r89",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "ge",
+      "amountCents": 798,
+      "description": "sams1102all",
+      "shares": {
+        "ge": 266000000,
+        "xu": 266000000,
+        "yuan": 266000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 89,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r90",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "xu",
+      "amountCents": 4280,
+      "description": "drinks1102",
+      "shares": {
+        "ge": 1426666666,
+        "xu": 1426666667,
+        "yuan": 1426666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 90,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r91",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "xu",
+      "amountCents": 476,
+      "description": "kroger1102",
+      "shares": {
+        "ge": 238000000,
+        "xu": 238000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 91,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r92",
+      "kind": "expense",
+      "date": "2025-11-02",
+      "payerId": "ge",
+      "amountCents": 599,
+      "description": "aldi1101eggs",
+      "shares": {
+        "ge": 199666666,
+        "xu": 199666667,
+        "yuan": 199666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 92,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r93",
+      "kind": "expense",
+      "date": "2025-11-04",
+      "payerId": "ge",
+      "amountCents": 3683,
+      "description": "weee1105",
+      "shares": {
+        "ge": 1841500000,
+        "xu": 1841500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 93,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r94",
+      "kind": "expense",
+      "date": "2025-11-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "network10",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 94,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r95",
+      "kind": "expense",
+      "date": "2025-11-06",
+      "payerId": "ge",
+      "amountCents": 14016,
+      "description": "electronicAndGas",
+      "shares": {
+        "ge": 4672000000,
+        "xu": 4672000000,
+        "yuan": 4672000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 95,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r96",
+      "kind": "expense",
+      "date": "2025-11-07",
+      "payerId": "ge",
+      "amountCents": 1509,
+      "description": "kroger1103",
+      "shares": {
+        "ge": 754500000,
+        "xu": 754500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 96,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r97",
+      "kind": "expense",
+      "date": "2025-11-07",
+      "payerId": "ge",
+      "amountCents": 1376,
+      "description": "amazon1101",
+      "shares": {
+        "ge": 688000000,
+        "xu": 688000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 97,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r98",
+      "kind": "expense",
+      "date": "2025-11-08",
+      "payerId": "ge",
+      "amountCents": 400,
+      "description": "egg1108",
+      "shares": {
+        "ge": 133333334,
+        "xu": 133333333,
+        "yuan": 133333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 98,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r99",
+      "kind": "expense",
+      "date": "2025-11-08",
+      "payerId": "ge",
+      "amountCents": 3543,
+      "description": "kroger1107",
+      "shares": {
+        "ge": 1771500000,
+        "xu": 1771500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 99,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r100",
+      "kind": "expense",
+      "date": "2025-11-13",
+      "payerId": "ge",
+      "amountCents": 5606,
+      "description": "sams1111",
+      "shares": {
+        "ge": 2803000000,
+        "xu": 2803000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 100,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r101",
+      "kind": "expense",
+      "date": "2025-11-13",
+      "payerId": "ge",
+      "amountCents": 600,
+      "description": "krogerjuice1113",
+      "shares": {
+        "ge": 0,
+        "xu": 600000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 101,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r102",
+      "kind": "expense",
+      "date": "2025-11-13",
+      "payerId": "ge",
+      "amountCents": 900,
+      "description": "kroger1113",
+      "shares": {
+        "ge": 450000000,
+        "xu": 450000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 102,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r103",
+      "kind": "expense",
+      "date": "2025-11-17",
+      "payerId": "ge",
+      "amountCents": 2854,
+      "description": "sams1115",
+      "shares": {
+        "ge": 1427000000,
+        "xu": 1427000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 103,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r104",
+      "kind": "expense",
+      "date": "2025-11-17",
+      "payerId": "ge",
+      "amountCents": 1148,
+      "description": "kroger1115",
+      "shares": {
+        "ge": 574000000,
+        "xu": 574000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 104,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r105",
+      "kind": "expense",
+      "date": "2025-11-17",
+      "payerId": "ge",
+      "amountCents": 3000,
+      "description": "costco1117public",
+      "shares": {
+        "ge": 1000000000,
+        "xu": 1000000000,
+        "yuan": 1000000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 105,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r106",
+      "kind": "expense",
+      "date": "2025-11-17",
+      "payerId": "ge",
+      "amountCents": 3100,
+      "description": "costco1117we",
+      "shares": {
+        "ge": 1550000000,
+        "xu": 1550000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 106,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r107",
+      "kind": "expense",
+      "date": "2025-11-18",
+      "payerId": "ge",
+      "amountCents": 450,
+      "description": "1115huaxing",
+      "shares": {
+        "ge": 225000000,
+        "xu": 225000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 107,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r108",
+      "kind": "expense",
+      "date": "2025-11-18",
+      "payerId": "ge",
+      "amountCents": 548,
+      "description": "weee1118all",
+      "shares": {
+        "ge": 182666666,
+        "xu": 182666667,
+        "yuan": 182666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 108,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r109",
+      "kind": "expense",
+      "date": "2025-11-18",
+      "payerId": "ge",
+      "amountCents": 3745,
+      "description": "weee1118we",
+      "shares": {
+        "ge": 1872500000,
+        "xu": 1872500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 109,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r110",
+      "kind": "expense",
+      "date": "2025-11-22",
+      "payerId": "ge",
+      "amountCents": 1795,
+      "description": "房屋保险",
+      "shares": {
+        "ge": 598333334,
+        "xu": 598333333,
+        "yuan": 598333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 110,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r111",
+      "kind": "expense",
+      "date": "2025-11-22",
+      "payerId": "ge",
+      "amountCents": 900,
+      "description": "sams1121all",
+      "shares": {
+        "ge": 300000000,
+        "xu": 300000000,
+        "yuan": 300000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 111,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r112",
+      "kind": "expense",
+      "date": "2025-11-22",
+      "payerId": "ge",
+      "amountCents": 4910,
+      "description": "sams1121we",
+      "shares": {
+        "ge": 2455000000,
+        "xu": 2455000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 112,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r113",
+      "kind": "expense",
+      "date": "2025-11-23",
+      "payerId": "xu",
+      "amountCents": 632,
+      "description": "zhongchao1123",
+      "shares": {
+        "ge": 316000000,
+        "xu": 316000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 113,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r114",
+      "kind": "expense",
+      "date": "2025-11-24",
+      "payerId": "yuan",
+      "amountCents": 450,
+      "description": "laoganma",
+      "shares": {
+        "ge": 150000000,
+        "xu": 150000000,
+        "yuan": 150000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 114,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r115",
+      "kind": "expense",
+      "date": "2025-11-24",
+      "payerId": "xu",
+      "amountCents": 717,
+      "description": "costco1123",
+      "shares": {
+        "ge": 717000000,
+        "xu": 0,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 115,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r116",
+      "kind": "expense",
+      "date": "2025-11-24",
+      "payerId": "xu",
+      "amountCents": 2359,
+      "description": "costco1123 02",
+      "shares": {
+        "ge": 1179500000,
+        "xu": 1179500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 116,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r117",
+      "kind": "expense",
+      "date": "2025-11-26",
+      "payerId": "ge",
+      "amountCents": 1109,
+      "description": "weee1128",
+      "shares": {
+        "ge": 369666666,
+        "xu": 369666667,
+        "yuan": 369666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 117,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r118",
+      "kind": "expense",
+      "date": "2025-11-26",
+      "payerId": "ge",
+      "amountCents": 2570,
+      "description": "weee1128our",
+      "shares": {
+        "ge": 1285000000,
+        "xu": 1285000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 118,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r119",
+      "kind": "expense",
+      "date": "2025-11-29",
+      "payerId": "ge",
+      "amountCents": 969,
+      "description": "way1 1128",
+      "shares": {
+        "ge": 484500000,
+        "xu": 484500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 119,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r120",
+      "kind": "expense",
+      "date": "2025-11-29",
+      "payerId": "ge",
+      "amountCents": 199,
+      "description": "kroger1128",
+      "shares": {
+        "ge": 99500000,
+        "xu": 99500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 120,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r121",
+      "kind": "expense",
+      "date": "2025-11-29",
+      "payerId": "ge",
+      "amountCents": 496,
+      "description": "sams1128",
+      "shares": {
+        "ge": 248000000,
+        "xu": 248000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 121,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r122",
+      "kind": "expense",
+      "date": "2025-11-29",
+      "payerId": "ge",
+      "amountCents": 253,
+      "description": "sams1128eat",
+      "shares": {
+        "ge": 0,
+        "xu": 253000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 122,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r123",
+      "kind": "expense",
+      "date": "2025-11-29",
+      "payerId": "ge",
+      "amountCents": 5780,
+      "description": "costco1129",
+      "shares": {
+        "ge": 2890000000,
+        "xu": 2890000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 123,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r124",
+      "kind": "expense",
+      "date": "2025-12-01",
+      "payerId": "ge",
+      "amountCents": 9436,
+      "description": "202511rentalfees",
+      "shares": {
+        "ge": 3145333334,
+        "xu": 3145333333,
+        "yuan": 3145333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 124,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r125",
+      "kind": "expense",
+      "date": "2025-12-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "rentalfee2512",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 125,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r126",
+      "kind": "expense",
+      "date": "2025-12-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity12",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 126,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r127",
+      "kind": "expense",
+      "date": "2025-12-06",
+      "payerId": "ge",
+      "amountCents": 6291,
+      "description": "sams1205",
+      "shares": {
+        "ge": 3145500000,
+        "xu": 3145500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 127,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r128",
+      "kind": "expense",
+      "date": "2025-12-06",
+      "payerId": "ge",
+      "amountCents": 2050,
+      "description": "costco1205",
+      "shares": {
+        "ge": 1025000000,
+        "xu": 1025000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 128,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r129",
+      "kind": "expense",
+      "date": "2025-12-06",
+      "payerId": "ge",
+      "amountCents": 2236,
+      "description": "kroger1205",
+      "shares": {
+        "ge": 1118000000,
+        "xu": 1118000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 129,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r130",
+      "kind": "expense",
+      "date": "2025-12-06",
+      "payerId": "ge",
+      "amountCents": 3991,
+      "description": "weee1207",
+      "shares": {
+        "ge": 1995500000,
+        "xu": 1995500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 130,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r131",
+      "kind": "expense",
+      "date": "2025-12-07",
+      "payerId": "ge",
+      "amountCents": 18198,
+      "description": "energy2511",
+      "shares": {
+        "ge": 6066000000,
+        "xu": 6066000000,
+        "yuan": 6066000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 131,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r132",
+      "kind": "expense",
+      "date": "2025-12-09",
+      "payerId": "ge",
+      "amountCents": 850,
+      "description": "lgm1208",
+      "shares": {
+        "ge": 283333334,
+        "xu": 283333333,
+        "yuan": 283333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 132,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r133",
+      "kind": "expense",
+      "date": "2025-12-09",
+      "payerId": "ge",
+      "amountCents": 2306,
+      "description": "kroger1208",
+      "shares": {
+        "ge": 1153000000,
+        "xu": 1153000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 133,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r134",
+      "kind": "expense",
+      "date": "2025-12-16",
+      "payerId": "ge",
+      "amountCents": 953,
+      "description": "kroger1214",
+      "shares": {
+        "ge": 476500000,
+        "xu": 476500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 134,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r135",
+      "kind": "expense",
+      "date": "2025-12-16",
+      "payerId": "ge",
+      "amountCents": 1547,
+      "description": "weee1217all",
+      "shares": {
+        "ge": 515666666,
+        "xu": 515666667,
+        "yuan": 515666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 135,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r136",
+      "kind": "expense",
+      "date": "2025-12-16",
+      "payerId": "ge",
+      "amountCents": 2014,
+      "description": "weee1217us",
+      "shares": {
+        "ge": 1007000000,
+        "xu": 1007000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 136,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r137",
+      "kind": "expense",
+      "date": "2025-12-27",
+      "payerId": "ge",
+      "amountCents": 1792,
+      "description": "2512rentalInsurance",
+      "shares": {
+        "ge": 597333334,
+        "xu": 597333333,
+        "yuan": 597333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 137,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r138",
+      "kind": "expense",
+      "date": "2026-01-01",
+      "payerId": "ge",
+      "amountCents": 9532,
+      "description": "202601waterandall",
+      "shares": {
+        "ge": 3177333334,
+        "xu": 3177333333,
+        "yuan": 3177333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 138,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r139",
+      "kind": "expense",
+      "date": "2026-01-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "202601rent",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 139,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r140",
+      "kind": "expense",
+      "date": "2026-01-01",
+      "payerId": "xu",
+      "amountCents": 3150,
+      "description": "251231costcoAll",
+      "shares": {
+        "ge": 1050000000,
+        "xu": 1050000000,
+        "yuan": 1050000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 140,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r141",
+      "kind": "expense",
+      "date": "2026-01-01",
+      "payerId": "xu",
+      "amountCents": 10377,
+      "description": "20251231CostcoWe",
+      "shares": {
+        "ge": 5188500000,
+        "xu": 5188500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 141,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r142",
+      "kind": "expense",
+      "date": "2026-01-01",
+      "payerId": "xu",
+      "amountCents": 317,
+      "description": "251231costcoEat",
+      "shares": {
+        "ge": 158500000,
+        "xu": 158500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 142,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r143",
+      "kind": "expense",
+      "date": "2026-01-04",
+      "payerId": "yuan",
+      "amountCents": 300,
+      "description": "鲜虾片",
+      "shares": {
+        "ge": 100000000,
+        "xu": 100000000,
+        "yuan": 100000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 143,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r144",
+      "kind": "expense",
+      "date": "2026-01-04",
+      "payerId": "ge",
+      "amountCents": 3098,
+      "description": "260103krogerAll",
+      "shares": {
+        "ge": 1032666666,
+        "xu": 1032666667,
+        "yuan": 1032666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 144,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r145",
+      "kind": "expense",
+      "date": "2026-01-04",
+      "payerId": "ge",
+      "amountCents": 993,
+      "description": "260103krogerWe",
+      "shares": {
+        "ge": 496500000,
+        "xu": 496500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 145,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r146",
+      "kind": "expense",
+      "date": "2026-01-04",
+      "payerId": "ge",
+      "amountCents": 2331,
+      "description": "260103aldi",
+      "shares": {
+        "ge": 1165500000,
+        "xu": 1165500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 146,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r147",
+      "kind": "expense",
+      "date": "2026-01-04",
+      "payerId": "ge",
+      "amountCents": 5391,
+      "description": "260103costcoWe",
+      "shares": {
+        "ge": 2695500000,
+        "xu": 2695500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 147,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r148",
+      "kind": "expense",
+      "date": "2026-01-06",
+      "payerId": "ge",
+      "amountCents": 2045,
+      "description": "260105WeeeAll",
+      "shares": {
+        "ge": 681666666,
+        "xu": 681666667,
+        "yuan": 681666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 148,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r149",
+      "kind": "expense",
+      "date": "2026-01-06",
+      "payerId": "ge",
+      "amountCents": 3573,
+      "description": "260105WeeeWe",
+      "shares": {
+        "ge": 1786500000,
+        "xu": 1786500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 149,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r150",
+      "kind": "expense",
+      "date": "2026-01-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "2601XFinity",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 150,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r151",
+      "kind": "expense",
+      "date": "2026-01-09",
+      "payerId": "ge",
+      "amountCents": 22772,
+      "description": "2512dte",
+      "shares": {
+        "ge": 7590666666,
+        "xu": 7590666667,
+        "yuan": 7590666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 151,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r152",
+      "kind": "expense",
+      "date": "2026-01-09",
+      "payerId": "ge",
+      "amountCents": 660,
+      "description": "260109chinese",
+      "shares": {
+        "ge": 330000000,
+        "xu": 330000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 152,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r153",
+      "kind": "expense",
+      "date": "2026-01-09",
+      "payerId": "ge",
+      "amountCents": 5465,
+      "description": "costco0109All",
+      "shares": {
+        "ge": 1821666666,
+        "xu": 1821666667,
+        "yuan": 1821666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 153,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r154",
+      "kind": "expense",
+      "date": "2026-01-09",
+      "payerId": "ge",
+      "amountCents": 14835,
+      "description": "costco0109We",
+      "shares": {
+        "ge": 7417500000,
+        "xu": 7417500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 154,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r155",
+      "kind": "expense",
+      "date": "2026-01-09",
+      "payerId": "ge",
+      "amountCents": 1499,
+      "description": "260109costcoJustBare",
+      "shares": {
+        "ge": 749500000,
+        "xu": 749500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 155,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r156",
+      "kind": "expense",
+      "date": "2026-01-11",
+      "payerId": "ge",
+      "amountCents": 2189,
+      "description": "260110fuel",
+      "shares": {
+        "ge": 1094500000,
+        "xu": 1094500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 156,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r157",
+      "kind": "expense",
+      "date": "2026-01-17",
+      "payerId": "ge",
+      "amountCents": 3660,
+      "description": "260117weee",
+      "shares": {
+        "ge": 1830000000,
+        "xu": 1830000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 157,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r158",
+      "kind": "expense",
+      "date": "2026-01-17",
+      "payerId": "ge",
+      "amountCents": 3568,
+      "description": "260117kroger",
+      "shares": {
+        "ge": 1784000000,
+        "xu": 1784000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 158,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r159",
+      "kind": "expense",
+      "date": "2026-01-17",
+      "payerId": "ge",
+      "amountCents": 3539,
+      "description": "260117aldi",
+      "shares": {
+        "ge": 1769500000,
+        "xu": 1769500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 159,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r160",
+      "kind": "expense",
+      "date": "2026-01-17",
+      "payerId": "ge",
+      "amountCents": 200,
+      "description": "260117aldiEgg",
+      "shares": {
+        "ge": 66666666,
+        "xu": 66666667,
+        "yuan": 66666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 160,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r161",
+      "kind": "expense",
+      "date": "2026-01-18",
+      "payerId": "ge",
+      "amountCents": 1688,
+      "description": "260117costcoAll",
+      "shares": {
+        "ge": 562666666,
+        "xu": 562666667,
+        "yuan": 562666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 161,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r162",
+      "kind": "expense",
+      "date": "2026-01-18",
+      "payerId": "ge",
+      "amountCents": 10830,
+      "description": "260117costcoWe",
+      "shares": {
+        "ge": 5415000000,
+        "xu": 5415000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 162,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r163",
+      "kind": "expense",
+      "date": "2026-01-18",
+      "payerId": "ge",
+      "amountCents": 1257,
+      "description": "260118way1",
+      "shares": {
+        "ge": 628500000,
+        "xu": 628500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 163,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r164",
+      "kind": "expense",
+      "date": "2026-01-23",
+      "payerId": "ge",
+      "amountCents": 4886,
+      "description": "260122kroger",
+      "shares": {
+        "ge": 2443000000,
+        "xu": 2443000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 164,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r165",
+      "kind": "expense",
+      "date": "2026-01-23",
+      "payerId": "ge",
+      "amountCents": 389,
+      "description": "costco260123egg",
+      "shares": {
+        "ge": 129666666,
+        "xu": 129666667,
+        "yuan": 129666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 165,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r166",
+      "kind": "expense",
+      "date": "2026-01-23",
+      "payerId": "ge",
+      "amountCents": 4611,
+      "description": "costco260122",
+      "shares": {
+        "ge": 2305500000,
+        "xu": 2305500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 166,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r167",
+      "kind": "expense",
+      "date": "2026-01-23",
+      "payerId": "ge",
+      "amountCents": 2244,
+      "description": "260123fuel",
+      "shares": {
+        "ge": 1122000000,
+        "xu": 1122000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 167,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r168",
+      "kind": "expense",
+      "date": "2026-01-24",
+      "payerId": "ge",
+      "amountCents": 3139,
+      "description": "260124keoger",
+      "shares": {
+        "ge": 1569500000,
+        "xu": 1569500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 168,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r169",
+      "kind": "expense",
+      "date": "2026-01-24",
+      "payerId": "ge",
+      "amountCents": 1157,
+      "description": "260124way1",
+      "shares": {
+        "ge": 578500000,
+        "xu": 578500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 169,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r170",
+      "kind": "expense",
+      "date": "2026-01-27",
+      "payerId": "ge",
+      "amountCents": 5000,
+      "description": "costco260127",
+      "shares": {
+        "ge": 2500000000,
+        "xu": 2500000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 170,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r171",
+      "kind": "expense",
+      "date": "2026-01-30",
+      "payerId": "ge",
+      "amountCents": 1800,
+      "description": "260130samsAll",
+      "shares": {
+        "ge": 600000000,
+        "xu": 600000000,
+        "yuan": 600000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 171,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r172",
+      "kind": "expense",
+      "date": "2026-01-30",
+      "payerId": "ge",
+      "amountCents": 3200,
+      "description": "260130samsWe",
+      "shares": {
+        "ge": 1600000000,
+        "xu": 1600000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 172,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r173",
+      "kind": "expense",
+      "date": "2026-02-01",
+      "payerId": "ge",
+      "amountCents": 7104,
+      "description": "2601water",
+      "shares": {
+        "ge": 2368000000,
+        "xu": 2368000000,
+        "yuan": 2368000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 173,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r174",
+      "kind": "expense",
+      "date": "2026-02-01",
+      "payerId": "ge",
+      "amountCents": 3000,
+      "description": "2602rentalFeeAll",
+      "shares": {
+        "ge": 1000000000,
+        "xu": 1000000000,
+        "yuan": 1000000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 174,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r175",
+      "kind": "expense",
+      "date": "2026-02-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2026rentalFee",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 175,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r176",
+      "kind": "expense",
+      "date": "2026-02-01",
+      "payerId": "ge",
+      "amountCents": 807,
+      "description": "260201dominos",
+      "shares": {
+        "ge": 403500000,
+        "xu": 403500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 176,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r177",
+      "kind": "expense",
+      "date": "2026-02-03",
+      "payerId": "ge",
+      "amountCents": 1293,
+      "description": "260203fuel",
+      "shares": {
+        "ge": 646500000,
+        "xu": 646500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 177,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r178",
+      "kind": "expense",
+      "date": "2026-02-03",
+      "payerId": "ge",
+      "amountCents": 500,
+      "description": "260203krogerEgg",
+      "shares": {
+        "ge": 166666666,
+        "xu": 166666667,
+        "yuan": 166666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 178,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r179",
+      "kind": "expense",
+      "date": "2026-02-03",
+      "payerId": "ge",
+      "amountCents": 3480,
+      "description": "260203krogerWe",
+      "shares": {
+        "ge": 1740000000,
+        "xu": 1740000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 179,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r180",
+      "kind": "expense",
+      "date": "2026-02-03",
+      "payerId": "ge",
+      "amountCents": 3753,
+      "description": "260203aldi",
+      "shares": {
+        "ge": 1876500000,
+        "xu": 1876500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 180,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r181",
+      "kind": "expense",
+      "date": "2026-02-06",
+      "payerId": "ge",
+      "amountCents": 20734,
+      "description": "2601gas",
+      "shares": {
+        "ge": 6911333334,
+        "xu": 6911333333,
+        "yuan": 6911333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 181,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r182",
+      "kind": "expense",
+      "date": "2026-02-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xf2602",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 182,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r183",
+      "kind": "expense",
+      "date": "2026-02-09",
+      "payerId": "ge",
+      "amountCents": 3612,
+      "description": "260206krogerAndway1",
+      "shares": {
+        "ge": 1806000000,
+        "xu": 1806000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 183,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r184",
+      "kind": "expense",
+      "date": "2026-02-09",
+      "payerId": "ge",
+      "amountCents": 6351,
+      "description": "260206costcoAll",
+      "shares": {
+        "ge": 2117000000,
+        "xu": 2117000000,
+        "yuan": 2117000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 184,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r185",
+      "kind": "expense",
+      "date": "2026-02-09",
+      "payerId": "ge",
+      "amountCents": 1070,
+      "description": "260206CostcoWe",
+      "shares": {
+        "ge": 535000000,
+        "xu": 535000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 185,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r186",
+      "kind": "expense",
+      "date": "2026-02-10",
+      "payerId": "ge",
+      "amountCents": 1659,
+      "description": "0210fuel",
+      "shares": {
+        "ge": 829500000,
+        "xu": 829500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 186,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r187",
+      "kind": "expense",
+      "date": "2026-02-10",
+      "payerId": "ge",
+      "amountCents": 2350,
+      "description": "0210supermarkets",
+      "shares": {
+        "ge": 1175000000,
+        "xu": 1175000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 187,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r188",
+      "kind": "expense",
+      "date": "2026-02-11",
+      "payerId": "ge",
+      "amountCents": 1500,
+      "description": "dominos0210",
+      "shares": {
+        "ge": 750000000,
+        "xu": 750000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 188,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r189",
+      "kind": "expense",
+      "date": "2026-02-14",
+      "payerId": "ge",
+      "amountCents": 2000,
+      "description": "costco0214All",
+      "shares": {
+        "ge": 666666666,
+        "xu": 666666667,
+        "yuan": 666666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 189,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r190",
+      "kind": "expense",
+      "date": "2026-02-14",
+      "payerId": "ge",
+      "amountCents": 1909,
+      "description": "costco0214we",
+      "shares": {
+        "ge": 954500000,
+        "xu": 954500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 190,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r191",
+      "kind": "expense",
+      "date": "2026-02-19",
+      "payerId": "ge",
+      "amountCents": 3473,
+      "description": "kroger0215",
+      "shares": {
+        "ge": 1736500000,
+        "xu": 1736500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 191,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r192",
+      "kind": "expense",
+      "date": "2026-02-19",
+      "payerId": "ge",
+      "amountCents": 1795,
+      "description": "aaahouse2602",
+      "shares": {
+        "ge": 598333334,
+        "xu": 598333333,
+        "yuan": 598333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 192,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r193",
+      "kind": "expense",
+      "date": "2026-02-19",
+      "payerId": "ge",
+      "amountCents": 3746,
+      "description": "kroger0212",
+      "shares": {
+        "ge": 1873000000,
+        "xu": 1873000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 193,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r194",
+      "kind": "expense",
+      "date": "2026-02-21",
+      "payerId": "ge",
+      "amountCents": 3700,
+      "description": "0221supermarket",
+      "shares": {
+        "ge": 1850000000,
+        "xu": 1850000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 194,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r195",
+      "kind": "expense",
+      "date": "2026-02-22",
+      "payerId": "ge",
+      "amountCents": 4640,
+      "description": "260224weee",
+      "shares": {
+        "ge": 2320000000,
+        "xu": 2320000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 195,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r196",
+      "kind": "expense",
+      "date": "2026-02-23",
+      "payerId": "ge",
+      "amountCents": 900,
+      "description": "260223dominos",
+      "shares": {
+        "ge": 450000000,
+        "xu": 450000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 196,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r197",
+      "kind": "expense",
+      "date": "2026-02-25",
+      "payerId": "ge",
+      "amountCents": 1100,
+      "description": "0225m",
+      "shares": {
+        "ge": 550000000,
+        "xu": 550000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 197,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r198",
+      "kind": "expense",
+      "date": "2026-02-27",
+      "payerId": "ge",
+      "amountCents": 1300,
+      "description": "domino0227",
+      "shares": {
+        "ge": 650000000,
+        "xu": 650000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 198,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r199",
+      "kind": "expense",
+      "date": "2026-03-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2603rental",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 199,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r200",
+      "kind": "expense",
+      "date": "2026-03-01",
+      "payerId": "ge",
+      "amountCents": 10428,
+      "description": "2603otherFee",
+      "shares": {
+        "ge": 3476000000,
+        "xu": 3476000000,
+        "yuan": 3476000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 200,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r201",
+      "kind": "expense",
+      "date": "2026-03-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity03",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 201,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r202",
+      "kind": "expense",
+      "date": "2026-03-08",
+      "payerId": "ge",
+      "amountCents": 19389,
+      "description": "2602dte",
+      "shares": {
+        "ge": 6463000000,
+        "xu": 6463000000,
+        "yuan": 6463000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 202,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r203",
+      "kind": "expense",
+      "date": "2026-03-09",
+      "payerId": "ge",
+      "amountCents": 3989,
+      "description": "0309weee",
+      "shares": {
+        "ge": 1994500000,
+        "xu": 1994500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 203,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r204",
+      "kind": "expense",
+      "date": "2026-03-13",
+      "payerId": "ge",
+      "amountCents": 4515,
+      "description": "260313weee",
+      "shares": {
+        "ge": 2257500000,
+        "xu": 2257500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 204,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r205",
+      "kind": "expense",
+      "date": "2026-03-13",
+      "payerId": "ge",
+      "amountCents": 900,
+      "description": "260313weee",
+      "shares": {
+        "ge": 300000000,
+        "xu": 300000000,
+        "yuan": 300000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 205,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r206",
+      "kind": "expense",
+      "date": "2026-03-13",
+      "payerId": "ge",
+      "amountCents": 1800,
+      "description": "2602costco",
+      "shares": {
+        "ge": 600000000,
+        "xu": 600000000,
+        "yuan": 600000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 206,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r207",
+      "kind": "expense",
+      "date": "2026-03-15",
+      "payerId": "ge",
+      "amountCents": 4056,
+      "description": "260313costcoAll",
+      "shares": {
+        "ge": 1352000000,
+        "xu": 1352000000,
+        "yuan": 1352000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 207,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r208",
+      "kind": "expense",
+      "date": "2026-03-15",
+      "payerId": "ge",
+      "amountCents": 865,
+      "description": "260313costcoWe",
+      "shares": {
+        "ge": 432500000,
+        "xu": 432500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 208,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r209",
+      "kind": "expense",
+      "date": "2026-03-15",
+      "payerId": "ge",
+      "amountCents": 9700,
+      "description": "260304foods",
+      "shares": {
+        "ge": 4850000000,
+        "xu": 4850000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 209,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r210",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 1794,
+      "description": "houseInsurance",
+      "shares": {
+        "ge": 598000000,
+        "xu": 598000000,
+        "yuan": 598000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 210,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r211",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 1000,
+      "description": "0312dominos",
+      "shares": {
+        "ge": 500000000,
+        "xu": 500000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 211,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r212",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 3060,
+      "description": "260319wholefoods",
+      "shares": {
+        "ge": 1530000000,
+        "xu": 1530000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 212,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r213",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 3121,
+      "description": "260319aldi",
+      "shares": {
+        "ge": 1560500000,
+        "xu": 1560500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 213,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r214",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 868,
+      "description": "260318samsAll",
+      "shares": {
+        "ge": 289333334,
+        "xu": 289333333,
+        "yuan": 289333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 214,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r215",
+      "kind": "expense",
+      "date": "2026-03-21",
+      "payerId": "ge",
+      "amountCents": 1348,
+      "description": "260318samsWe",
+      "shares": {
+        "ge": 674000000,
+        "xu": 674000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 215,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r216",
+      "kind": "expense",
+      "date": "2026-03-28",
+      "payerId": "ge",
+      "amountCents": 1900,
+      "description": "260327costco",
+      "shares": {
+        "ge": 633333334,
+        "xu": 633333333,
+        "yuan": 633333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 216,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r217",
+      "kind": "expense",
+      "date": "2026-03-28",
+      "payerId": "ge",
+      "amountCents": 2657,
+      "description": "260327chinese",
+      "shares": {
+        "ge": 1328500000,
+        "xu": 1328500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 217,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r218",
+      "kind": "expense",
+      "date": "2026-03-28",
+      "payerId": "ge",
+      "amountCents": 2635,
+      "description": "kroger0328",
+      "shares": {
+        "ge": 1317500000,
+        "xu": 1317500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 218,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r219",
+      "kind": "expense",
+      "date": "2026-04-01",
+      "payerId": "ge",
+      "amountCents": 2223,
+      "description": "aldi+kfc0331",
+      "shares": {
+        "ge": 1111500000,
+        "xu": 1111500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 219,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r220",
+      "kind": "expense",
+      "date": "2026-04-01",
+      "payerId": "ge",
+      "amountCents": 10373,
+      "description": "2604waters",
+      "shares": {
+        "ge": 3457666666,
+        "xu": 3457666667,
+        "yuan": 3457666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 220,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r221",
+      "kind": "expense",
+      "date": "2026-04-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2604renting",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 221,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r222",
+      "kind": "expense",
+      "date": "2026-04-09",
+      "payerId": "ge",
+      "amountCents": 18555,
+      "description": "2603electronicalFee",
+      "shares": {
+        "ge": 6185000000,
+        "xu": 6185000000,
+        "yuan": 6185000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 222,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r223",
+      "kind": "expense",
+      "date": "2026-04-09",
+      "payerId": "ge",
+      "amountCents": 5502,
+      "description": "weee0408",
+      "shares": {
+        "ge": 2751000000,
+        "xu": 2751000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 223,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r224",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 3347,
+      "description": "fuel",
+      "shares": {
+        "ge": 1673500000,
+        "xu": 1673500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 224,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r225",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 1898,
+      "description": "supermarket0405",
+      "shares": {
+        "ge": 949000000,
+        "xu": 949000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 225,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r226",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity0406",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 226,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r227",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 3370,
+      "description": "way1+kroger0411",
+      "shares": {
+        "ge": 1685000000,
+        "xu": 1685000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 227,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r228",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 370,
+      "description": "mcdounald0409",
+      "shares": {
+        "ge": 185000000,
+        "xu": 185000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 228,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r229",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 719,
+      "description": "costcoAll0410",
+      "shares": {
+        "ge": 239666666,
+        "xu": 239666667,
+        "yuan": 239666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 229,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r230",
+      "kind": "expense",
+      "date": "2026-04-11",
+      "payerId": "ge",
+      "amountCents": 14956,
+      "description": "costcoWe0410",
+      "shares": {
+        "ge": 7478000000,
+        "xu": 7478000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 230,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r231",
+      "kind": "expense",
+      "date": "2026-04-18",
+      "payerId": "ge",
+      "amountCents": 782,
+      "description": "kroger+dollarTree0412",
+      "shares": {
+        "ge": 391000000,
+        "xu": 391000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 231,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r232",
+      "kind": "expense",
+      "date": "2026-04-18",
+      "payerId": "ge",
+      "amountCents": 3995,
+      "description": "kroger0416",
+      "shares": {
+        "ge": 1997500000,
+        "xu": 1997500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 232,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r233",
+      "kind": "expense",
+      "date": "2026-04-18",
+      "payerId": "ge",
+      "amountCents": 1794,
+      "description": "AAA home 2604",
+      "shares": {
+        "ge": 598000000,
+        "xu": 598000000,
+        "yuan": 598000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 233,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r234",
+      "kind": "expense",
+      "date": "2026-04-19",
+      "payerId": "ge",
+      "amountCents": 718,
+      "description": "costco0417",
+      "shares": {
+        "ge": 239333334,
+        "xu": 239333333,
+        "yuan": 239333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 234,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r235",
+      "kind": "expense",
+      "date": "2026-04-19",
+      "payerId": "ge",
+      "amountCents": 1347,
+      "description": "costco0417we",
+      "shares": {
+        "ge": 673500000,
+        "xu": 673500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 235,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r236",
+      "kind": "expense",
+      "date": "2026-04-21",
+      "payerId": "ge",
+      "amountCents": 1060,
+      "description": "260421kfc",
+      "shares": {
+        "ge": 530000000,
+        "xu": 530000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 236,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r237",
+      "kind": "expense",
+      "date": "2026-05-03",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2605fangzu",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 237,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r238",
+      "kind": "expense",
+      "date": "2026-05-03",
+      "payerId": "ge",
+      "amountCents": 10064,
+      "description": "otherfees2604",
+      "shares": {
+        "ge": 3354666666,
+        "xu": 3354666667,
+        "yuan": 3354666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 238,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r239",
+      "kind": "expense",
+      "date": "2026-05-05",
+      "payerId": "ge",
+      "amountCents": 1060,
+      "description": "260428kfc",
+      "shares": {
+        "ge": 530000000,
+        "xu": 530000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 239,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r240",
+      "kind": "expense",
+      "date": "2026-05-05",
+      "payerId": "ge",
+      "amountCents": 1475,
+      "description": "260501kroger",
+      "shares": {
+        "ge": 737500000,
+        "xu": 737500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 240,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r241",
+      "kind": "expense",
+      "date": "2026-05-05",
+      "payerId": "ge",
+      "amountCents": 3322,
+      "description": "kroger0424+0426",
+      "shares": {
+        "ge": 1661000000,
+        "xu": 1661000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 241,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r242",
+      "kind": "expense",
+      "date": "2026-05-05",
+      "payerId": "ge",
+      "amountCents": 7107,
+      "description": "260501costco",
+      "shares": {
+        "ge": 3553500000,
+        "xu": 3553500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 242,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r243",
+      "kind": "expense",
+      "date": "2026-05-05",
+      "payerId": "ge",
+      "amountCents": 8680,
+      "description": "weee0505+0502",
+      "shares": {
+        "ge": 4340000000,
+        "xu": 4340000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 243,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r244",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 2120,
+      "description": "kfc0505",
+      "shares": {
+        "ge": 706666666,
+        "xu": 706666667,
+        "yuan": 706666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 244,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r245",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 1463,
+      "description": "sams0505yuan",
+      "shares": {
+        "ge": 0,
+        "xu": 0,
+        "yuan": 1463000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 245,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r246",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 2641,
+      "description": "sams0505",
+      "shares": {
+        "ge": 1320500000,
+        "xu": 1320500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 246,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r247",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 957,
+      "description": "aldi0505",
+      "shares": {
+        "ge": 478500000,
+        "xu": 478500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 247,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r248",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity2605",
+      "shares": {
+        "ge": 1833333334,
+        "xu": 1833333333,
+        "yuan": 1833333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 248,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r249",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 527,
+      "description": "usps2505",
+      "shares": {
+        "ge": 175666666,
+        "xu": 175666667,
+        "yuan": 175666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 249,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r250",
+      "kind": "expense",
+      "date": "2026-05-06",
+      "payerId": "ge",
+      "amountCents": 2208,
+      "description": "kroger0506",
+      "shares": {
+        "ge": 1104000000,
+        "xu": 1104000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 250,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r251",
+      "kind": "expense",
+      "date": "2026-05-09",
+      "payerId": "ge",
+      "amountCents": 15193,
+      "description": "202604dte",
+      "shares": {
+        "ge": 5064333334,
+        "xu": 5064333333,
+        "yuan": 5064333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 251,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r252",
+      "kind": "expense",
+      "date": "2026-05-09",
+      "payerId": "yuan",
+      "amountCents": 8420,
+      "description": "costco0509",
+      "shares": {
+        "ge": 4210000000,
+        "xu": 4210000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 252,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r253",
+      "kind": "expense",
+      "date": "2026-05-14",
+      "payerId": "ge",
+      "amountCents": 3263,
+      "description": "aldi0511",
+      "shares": {
+        "ge": 1631500000,
+        "xu": 1631500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 253,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r254",
+      "kind": "expense",
+      "date": "2026-05-15",
+      "payerId": "ge",
+      "amountCents": 2595,
+      "description": "260515sams",
+      "shares": {
+        "ge": 1297500000,
+        "xu": 1297500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 254,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r255",
+      "kind": "expense",
+      "date": "2026-05-16",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "network2605",
+      "shares": {
+        "ge": 2750000000,
+        "xu": 2750000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 255,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r256",
+      "kind": "expense",
+      "date": "2026-05-22",
+      "payerId": "ge",
+      "amountCents": 1793,
+      "description": "insurance2605",
+      "shares": {
+        "ge": 597666666,
+        "xu": 597666667,
+        "yuan": 597666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 256,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r257",
+      "kind": "expense",
+      "date": "2026-05-22",
+      "payerId": "ge",
+      "amountCents": 815,
+      "description": "arbys0516",
+      "shares": {
+        "ge": 407500000,
+        "xu": 407500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 257,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r258",
+      "kind": "expense",
+      "date": "2026-05-22",
+      "payerId": "ge",
+      "amountCents": 4114,
+      "description": "supermarkets0517",
+      "shares": {
+        "ge": 2057000000,
+        "xu": 2057000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 258,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r259",
+      "kind": "expense",
+      "date": "2026-05-22",
+      "payerId": "ge",
+      "amountCents": 3635,
+      "description": "supermarkets0519",
+      "shares": {
+        "ge": 1817500000,
+        "xu": 1817500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 259,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r260",
+      "kind": "expense",
+      "date": "2026-05-22",
+      "payerId": "ge",
+      "amountCents": 2998,
+      "description": "kroger0521",
+      "shares": {
+        "ge": 1499000000,
+        "xu": 1499000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 260,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r261",
+      "kind": "expense",
+      "date": "2026-06-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "network2606",
+      "shares": {
+        "ge": 0,
+        "xu": 5500000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 261,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r262",
+      "kind": "expense",
+      "date": "2026-06-06",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2606rent",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 262,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r263",
+      "kind": "expense",
+      "date": "2026-06-06",
+      "payerId": "ge",
+      "amountCents": 10383,
+      "description": "2605fees",
+      "shares": {
+        "ge": 5191500000,
+        "xu": 5191500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 263,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r264",
+      "kind": "expense",
+      "date": "2026-06-13",
+      "payerId": "ge",
+      "amountCents": 1078,
+      "description": "way10522",
+      "shares": {
+        "ge": 539000000,
+        "xu": 539000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 264,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r265",
+      "kind": "expense",
+      "date": "2026-06-13",
+      "payerId": "ge",
+      "amountCents": 2120,
+      "description": "kfc*2 0602",
+      "shares": {
+        "ge": 1060000000,
+        "xu": 1060000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 265,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r266",
+      "kind": "expense",
+      "date": "2026-06-16",
+      "payerId": "ge",
+      "amountCents": 5975,
+      "description": "costco0525",
+      "shares": {
+        "ge": 2987500000,
+        "xu": 2987500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 266,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r267",
+      "kind": "expense",
+      "date": "2026-06-16",
+      "payerId": "ge",
+      "amountCents": 13542,
+      "description": "electronicFee2605",
+      "shares": {
+        "ge": 6771000000,
+        "xu": 6771000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 267,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r268",
+      "kind": "expense",
+      "date": "2026-06-23",
+      "payerId": "xu",
+      "amountCents": 5000,
+      "description": "claude",
+      "shares": {
+        "ge": 5000000000,
+        "xu": 0,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 268,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r269",
+      "kind": "expense",
+      "date": "2026-07-06",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity2606",
+      "shares": {
+        "ge": 0,
+        "xu": 5500000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 269,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r270",
+      "kind": "expense",
+      "date": "2026-07-06",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "rent2607",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 270,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r271",
+      "kind": "expense",
+      "date": "2026-07-06",
+      "payerId": "ge",
+      "amountCents": 10493,
+      "description": "otherFees2606",
+      "shares": {
+        "ge": 0,
+        "xu": 10493000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 271,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r272",
+      "kind": "expense",
+      "date": "2026-07-10",
+      "payerId": "ge",
+      "amountCents": 11701,
+      "description": "2606electronic",
+      "shares": {
+        "ge": 0,
+        "xu": 11701000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 272,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r273",
+      "kind": "expense",
+      "date": "2026-07-28",
+      "payerId": "ge",
+      "amountCents": 10000,
+      "description": "claude",
+      "shares": {
+        "ge": 0,
+        "xu": 10000000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 273,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r274",
+      "kind": "expense",
+      "date": "2026-08-04",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2608rent",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 274,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r275",
+      "kind": "expense",
+      "date": "2026-08-04",
+      "payerId": "ge",
+      "amountCents": 10916,
+      "description": "rentOtherFees2607",
+      "shares": {
+        "ge": 0,
+        "xu": 10916000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 275,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r276",
+      "kind": "expense",
+      "date": "2026-08-08",
+      "payerId": "ge",
+      "amountCents": 5500,
+      "description": "xfinity2608",
+      "shares": {
+        "ge": 687500000,
+        "xu": 4125000000,
+        "yuan": 687500000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 276,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r277",
+      "kind": "expense",
+      "date": "2026-08-08",
+      "payerId": "ge",
+      "amountCents": 9650,
+      "description": "electronicFee2607",
+      "shares": {
+        "ge": 0,
+        "xu": 9650000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 277,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r278",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 5379,
+      "description": "insurance06 07 08",
+      "shares": {
+        "ge": 1793000000,
+        "xu": 1793000000,
+        "yuan": 1793000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 278,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r279",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 494,
+      "description": "walmart shared 0814",
+      "shares": {
+        "ge": 164666666,
+        "xu": 164666667,
+        "yuan": 164666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 279,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r280",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 4177,
+      "description": "walmart we 0814",
+      "shares": {
+        "ge": 2088500000,
+        "xu": 2088500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 280,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r281",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 4242,
+      "description": "costco0817",
+      "shares": {
+        "ge": 2121000000,
+        "xu": 2121000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 281,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r282",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 1995,
+      "description": "kroger+way1 0820",
+      "shares": {
+        "ge": 997500000,
+        "xu": 997500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 282,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r283",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 3538,
+      "description": "walmart0821",
+      "shares": {
+        "ge": 1769000000,
+        "xu": 1769000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 283,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r284",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 3517,
+      "description": "weee0821",
+      "shares": {
+        "ge": 1758500000,
+        "xu": 1758500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 284,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r285",
+      "kind": "expense",
+      "date": "2026-08-21",
+      "payerId": "ge",
+      "amountCents": 4084,
+      "description": "weee0813",
+      "shares": {
+        "ge": 2042000000,
+        "xu": 2042000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 285,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r286",
+      "kind": "expense",
+      "date": "2026-08-23",
+      "payerId": "ge",
+      "amountCents": 1806,
+      "description": "walmart0823",
+      "shares": {
+        "ge": 903000000,
+        "xu": 903000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 286,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r287",
+      "kind": "expense",
+      "date": "2026-08-23",
+      "payerId": "ge",
+      "amountCents": 2501,
+      "description": "costcoAll0823",
+      "shares": {
+        "ge": 833666666,
+        "xu": 833666667,
+        "yuan": 833666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 287,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r288",
+      "kind": "expense",
+      "date": "2026-08-23",
+      "payerId": "ge",
+      "amountCents": 10294,
+      "description": "costco0823",
+      "shares": {
+        "ge": 5147000000,
+        "xu": 5147000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 288,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r289",
+      "kind": "expense",
+      "date": "2026-08-24",
+      "payerId": "ge",
+      "amountCents": 10000,
+      "description": "claude2608",
+      "shares": {
+        "ge": 0,
+        "xu": 10000000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 289,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r290",
+      "kind": "expense",
+      "date": "2026-08-27",
+      "payerId": "ge",
+      "amountCents": 729,
+      "description": "lightning",
+      "shares": {
+        "ge": 0,
+        "xu": 729000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 290,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r291",
+      "kind": "expense",
+      "date": "2026-08-27",
+      "payerId": "ge",
+      "amountCents": 3608,
+      "description": "weee0827",
+      "shares": {
+        "ge": 1804000000,
+        "xu": 1804000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 291,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r292",
+      "kind": "expense",
+      "date": "2026-08-28",
+      "payerId": "ge",
+      "amountCents": 6807,
+      "description": "costco0828",
+      "shares": {
+        "ge": 3403500000,
+        "xu": 3403500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 292,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r293",
+      "kind": "expense",
+      "date": "2026-08-31",
+      "payerId": "ge",
+      "amountCents": 4560,
+      "description": "cokes0831",
+      "shares": {
+        "ge": 0,
+        "xu": 4560000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 293,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r294",
+      "kind": "expense",
+      "date": "2026-09-01",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "2609rental",
+      "shares": {
+        "ge": 60562500000,
+        "xu": 60562500000,
+        "yuan": 91375000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 294,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r295",
+      "kind": "expense",
+      "date": "2026-09-01",
+      "payerId": "ge",
+      "amountCents": 10861,
+      "description": "otherFees2608",
+      "shares": {
+        "ge": 3620333334,
+        "xu": 3620333333,
+        "yuan": 3620333333,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 295,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r296",
+      "kind": "expense",
+      "date": "2026-09-02",
+      "payerId": "ge",
+      "amountCents": 1060,
+      "description": "kfc",
+      "shares": {
+        "ge": 530000000,
+        "xu": 530000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 296,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r297",
+      "kind": "expense",
+      "date": "2026-09-04",
+      "payerId": "ge",
+      "amountCents": 954,
+      "description": "mcdonald",
+      "shares": {
+        "ge": 0,
+        "xu": 954000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 297,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r298",
+      "kind": "expense",
+      "date": "2026-09-06",
+      "payerId": "ge",
+      "amountCents": 10349,
+      "description": "2508electronicPart1",
+      "shares": {
+        "ge": 3449666666,
+        "xu": 3449666667,
+        "yuan": 3449666667,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 298,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r299",
+      "kind": "expense",
+      "date": "2026-09-06",
+      "payerId": "ge",
+      "amountCents": 3034,
+      "description": "202608electroinpart2",
+      "shares": {
+        "ge": 1517000000,
+        "xu": 1517000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 299,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r300",
+      "kind": "expense",
+      "date": "2026-09-06",
+      "payerId": "ge",
+      "amountCents": 9500,
+      "description": "xfinity2609",
+      "shares": {
+        "ge": 4750000000,
+        "xu": 4750000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 300,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r301",
+      "kind": "expense",
+      "date": "2026-09-07",
+      "payerId": "ge",
+      "amountCents": 3034,
+      "description": "kroger0907",
+      "shares": {
+        "ge": 1517000000,
+        "xu": 1517000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 301,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r302",
+      "kind": "expense",
+      "date": "2026-09-12",
+      "payerId": "zhao",
+      "amountCents": 3490,
+      "description": "1",
+      "shares": {
+        "ge": 3490000000,
+        "xu": 0,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 302,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r303",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 8012,
+      "description": "weee0921+0913",
+      "shares": {
+        "ge": 4006000000,
+        "xu": 4006000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 303,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r304",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 1255,
+      "description": "kroger0911",
+      "shares": {
+        "ge": 627500000,
+        "xu": 627500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 304,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r305",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 1198,
+      "description": "way10908",
+      "shares": {
+        "ge": 599000000,
+        "xu": 599000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 305,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r306",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 9065,
+      "description": "costcoAll",
+      "shares": {
+        "ge": 4532500000,
+        "xu": 4532500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 306,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r307",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 3034,
+      "description": "kroger0911",
+      "shares": {
+        "ge": 1517000000,
+        "xu": 1517000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 307,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r308",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 4141,
+      "description": "walmart0914",
+      "shares": {
+        "ge": 2070500000,
+        "xu": 2070500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 308,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r309",
+      "kind": "expense",
+      "date": "2026-09-19",
+      "payerId": "ge",
+      "amountCents": 3425,
+      "description": "walmart0919",
+      "shares": {
+        "ge": 1712500000,
+        "xu": 1712500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 309,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r310",
+      "kind": "expense",
+      "date": "2026-09-26",
+      "payerId": "ge",
+      "amountCents": 10000,
+      "description": "a\\ pro 5x 2609",
+      "shares": {
+        "ge": 0,
+        "xu": 10000000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 310,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r311",
+      "kind": "expense",
+      "date": "2026-09-26",
+      "payerId": "xu",
+      "amountCents": 7646,
+      "description": "supermarkets0924",
+      "shares": {
+        "ge": 3823000000,
+        "xu": 3823000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 311,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r312",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "ge",
+      "amountCents": 212500,
+      "description": "rental",
+      "shares": {
+        "ge": 60562000000,
+        "xu": 60563000000,
+        "yuan": 35375000000,
+        "zhao": 56000000000
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 312,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r313",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "ge",
+      "amountCents": 7681,
+      "description": "2608waterFees",
+      "shares": {
+        "ge": 2675000000,
+        "xu": 2676000000,
+        "yuan": 2330000000,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 313,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r314",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "ge",
+      "amountCents": 3000,
+      "description": "2610adminFees",
+      "shares": {
+        "ge": 1000000000,
+        "xu": 1000000000,
+        "yuan": 0,
+        "zhao": 1000000000
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 314,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r315",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "ge",
+      "amountCents": 3541,
+      "description": "walmart1001",
+      "shares": {
+        "ge": 1770500000,
+        "xu": 1770500000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 315,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r316",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "xu",
+      "amountCents": 11335,
+      "description": "costcolxj",
+      "shares": {
+        "ge": 11335000000,
+        "xu": 0,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 316,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r317",
+      "kind": "expense",
+      "date": "2026-10-03",
+      "payerId": "xu",
+      "amountCents": 3676,
+      "description": "costcoRest",
+      "shares": {
+        "ge": 1838000000,
+        "xu": 1838000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 317,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r318",
+      "kind": "expense",
+      "date": "2026-10-08",
+      "payerId": "ge",
+      "amountCents": 3529,
+      "description": "xfinity2610",
+      "shares": {
+        "ge": 1176333334,
+        "xu": 1176333333,
+        "yuan": 0,
+        "zhao": 1176333333
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 318,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r319",
+      "kind": "expense",
+      "date": "2026-10-08",
+      "payerId": "ge",
+      "amountCents": 12596,
+      "description": "electronicFee2609",
+      "shares": {
+        "ge": 4198666666,
+        "xu": 4198666667,
+        "yuan": 0,
+        "zhao": 4198666667
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 319,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r320",
+      "kind": "expense",
+      "date": "2026-10-09",
+      "payerId": "ge",
+      "amountCents": 720,
+      "description": "walmart1006coke",
+      "shares": {
+        "ge": 0,
+        "xu": 720000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 320,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r321",
+      "kind": "expense",
+      "date": "2026-10-09",
+      "payerId": "ge",
+      "amountCents": 3478,
+      "description": "walmrt1006others",
+      "shares": {
+        "ge": 1739000000,
+        "xu": 1739000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 321,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r322",
+      "kind": "expense",
+      "date": "2026-10-09",
+      "payerId": "xu",
+      "amountCents": 720,
+      "description": "costco1009",
+      "shares": {
+        "ge": 360000000,
+        "xu": 360000000,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 322,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r323",
+      "kind": "expense",
+      "date": "2026-10-09",
+      "payerId": "xu",
+      "amountCents": 10420,
+      "description": "costco1009-2",
+      "shares": {
+        "ge": 10420000000,
+        "xu": 0,
+        "yuan": 0,
+        "zhao": 0
+      },
+      "splitMode": "imported",
+      "category": "other",
+      "notes": "",
+      "sourceRow": 323,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r329",
+      "kind": "transfer",
+      "date": "2025-08-27",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 14629,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 329,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r330",
+      "kind": "transfer",
+      "date": "2025-09-01",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 9300,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 330,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r331",
+      "kind": "transfer",
+      "date": "2025-09-14",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 15620,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 331,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r332",
+      "kind": "transfer",
+      "date": "2025-10-06",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 4665,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 332,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r333",
+      "kind": "transfer",
+      "date": "2025-10-07",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 41409,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 333,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r334",
+      "kind": "transfer",
+      "date": "2025-11-02",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 23304,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 334,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r335",
+      "kind": "transfer",
+      "date": "2025-11-05",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 16457,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 335,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r336",
+      "kind": "transfer",
+      "date": "2025-12-05",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 93207,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 336,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r337",
+      "kind": "transfer",
+      "date": "2025-12-06",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 103310,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 337,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r338",
+      "kind": "transfer",
+      "date": "2026-01-01",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 75509,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 338,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r339",
+      "kind": "transfer",
+      "date": "2026-01-03",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 104898,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 339,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r340",
+      "kind": "transfer",
+      "date": "2026-02-02",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 118034,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 340,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r341",
+      "kind": "transfer",
+      "date": "2026-02-03",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 108862,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 341,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r342",
+      "kind": "transfer",
+      "date": "2026-03-04",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 107144,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 342,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r343",
+      "kind": "transfer",
+      "date": "2026-03-21",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 121309,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 343,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r344",
+      "kind": "transfer",
+      "date": "2026-04-04",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 68411,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 344,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r345",
+      "kind": "transfer",
+      "date": "2026-04-05",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 106902,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 345,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r346",
+      "kind": "transfer",
+      "date": "2026-05-07",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 108003,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 346,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r347",
+      "kind": "transfer",
+      "date": "2026-05-15",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 116615,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 347,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r348",
+      "kind": "transfer",
+      "date": "2026-06-16",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 88617,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 348,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r349",
+      "kind": "transfer",
+      "date": "2026-06-16",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 95095,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 349,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r350",
+      "kind": "transfer",
+      "date": "2026-07-15",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 91375,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 350,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r351",
+      "kind": "transfer",
+      "date": "2026-07-28",
+      "payerId": "xu",
+      "payeeId": "ge",
+      "amountCents": 83256,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 351,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r352",
+      "kind": "transfer",
+      "date": "2026-08-21",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 92063,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 352,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r353",
+      "kind": "transfer",
+      "date": "2026-09-07",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 101236,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 353,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r354",
+      "kind": "transfer",
+      "date": "2026-10-03",
+      "payerId": "yuan",
+      "payeeId": "ge",
+      "amountCents": 37705,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 354,
+      "deletedAt": null
+    },
+    {
+      "id": "kitty-r355",
+      "kind": "transfer",
+      "date": "2026-10-04",
+      "payerId": "zhao",
+      "payeeId": "ge",
+      "amountCents": 53510,
+      "description": "Settlement",
+      "shares": {},
+      "splitMode": "transfer",
+      "category": "transfer",
+      "notes": "",
+      "sourceRow": 355,
+      "deletedAt": null
+    }
+  ],
+  "importInfo": {
+    "file": "kitty_d6.xlsx",
+    "counts": {
+      "expense": 317,
+      "transfer": 27
+    },
+    "expectedBalances": {
+      "ge": 288776,
+      "xu": -283401,
+      "yuan": 0,
+      "zhao": -5375
+    },
+    "totalExpenseCents": 3524121
+  },
+  "rentRule": {
+    "enabled": true,
+    "startMonth": "2026-11",
+    "payerId": "ge",
+    "memberIds": {
+      "yuan": "yuan",
+      "zhang": "zhao",
+      "xu": "xu",
+      "ge": "ge"
+    }
+  }
+}

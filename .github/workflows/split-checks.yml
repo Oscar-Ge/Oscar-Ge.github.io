@@ -1,0 +1,20 @@
+name: Split ledger checks
+on:
+  push:
+    paths: ['split/**', '.github/workflows/split-checks.yml']
+  pull_request:
+    paths: ['split/**', '.github/workflows/split-checks.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  accounting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check split/app.mjs
+      - run: node --test split/tests/core.test.mjs
+      - run: python3 -m json.tool split/docs/openapi.json > /dev/null
