@@ -1,0 +1,21 @@
+{% assign publication = include.publication %}
+{% assign visual = site.data.publication_visuals[publication.visual] %}
+<article class="publication-card">
+  {% if visual %}
+  <a class="publication-card__image" href="{{ publication.url | relative_url }}" aria-label="{{ publication.title | prepend: 'Read about ' | escape }}">
+    <img src="{{ visual.image | relative_url }}" alt="{{ visual.alt | escape }}" width="{{ visual.width }}" height="{{ visual.height }}" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+  <div class="publication-card__body">
+    <h3 class="publication-card__title"><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+    <div class="publication-card__authors">{{ publication.authors | markdownify }}</div>
+    <div class="publication-card__status">{{ publication.status | markdownify }}</div>
+    <p class="publication-card__summary">{{ publication.card_summary }}</p>
+    <div class="publication-card__links">
+      {% if publication.paperurl %}<a href="{{ publication.paperurl | relative_url }}">Paper (PDF)</a>{% endif %}
+      {% if publication.arxivurl %}<a href="{{ publication.arxivurl }}">arXiv</a>{% endif %}
+      {% if publication.projecturl %}<a href="{{ publication.projecturl | relative_url }}">Project</a>{% endif %}
+      <a href="{{ publication.url | relative_url }}">Details</a>
+    </div>
+  </div>
+</article>

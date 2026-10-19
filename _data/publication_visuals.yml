@@ -1,0 +1,13 @@
+relief:
+  image: /images/publications/relief-overview.png
+  width: 820
+  height: 780
+  alt: "RELIEF's four-step workflow: generate an interface, collect feedback, revise the interface, and fine-tune the generation model using revised traces."
+  caption: "RELIEF learns from feedback-guided interface revisions. Method overview from Figure 1 of the paper."
+
+a11yltlnav:
+  image: /demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png
+  width: 1440
+  height: 1000
+  alt: "An email dialog is open, while the yellow keyboard-focus annotation points to the Email article button behind the dialog."
+  caption: "The dialog opens, but keyboard focus stays behind. A navigation failure detected by A11yLTLNav."

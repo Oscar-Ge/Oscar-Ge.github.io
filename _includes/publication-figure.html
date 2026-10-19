@@ -1,0 +1,9 @@
+{% assign visual = site.data.publication_visuals[include.visual] %}
+{% if visual %}
+<figure class="publication-figure">
+  <a href="{{ visual.image | relative_url }}" aria-label="{{ visual.alt | prepend: 'Enlarge image: ' | escape }}">
+    <img src="{{ visual.image | relative_url }}" alt="{{ visual.alt | escape }}" width="{{ visual.width }}" height="{{ visual.height }}" decoding="async">
+  </a>
+  <figcaption>{{ visual.caption }}</figcaption>
+</figure>
+{% endif %}

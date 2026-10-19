@@ -2,9 +2,12 @@
 title: "RELIEF: Revision-Based Learning from Interactive Experience and Feedback"
 collection: portfolio
 project_type: research
+visual: relief
 permalink: /portfolio/generative-ui/
 excerpt: "Learning to generate more usable interfaces from interaction traces, feedback, and revised generation traces."
 ---
+{% include publication-figure.html visual=page.visual %}
+
 Generative UI · Human–AI Interaction
 
 **Purdue University** · May – Oct 2026<br>

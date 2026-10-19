@@ -19,23 +19,11 @@ Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, and Huma
 
 ## Selected Publications
 
-**Revision-Based Learning from Interactive Experience and Feedback (RELIEF)**
-
-Jiawen Li, **Chenming Ge**, Alice Gao, Rishab Vempati, Yi-Hao Peng, Jason Wu<br>
-Manuscript, 2026. **Submitted to NAACL 2027.**
-
-RELIEF turns feedback-guided revisions of generated interfaces into training supervision for code generation models. We collected 355 interaction recordings and accompanying feedback from 24 users across 200 generated websites; critiques inferred from human interaction recordings led to the largest observed usability improvements across the two models tested.
-
-[Paper (PDF)](/files/RELIEF.pdf) · [Research Project](/portfolio/generative-ui/)
-
-**A11yLTLNav: Automatic Detection of Accessibility Navigation Failures**
-
-**Chenming Ge**, Kewen Peng, Chengyang Shi, Ben Greenman, Yue Jiang<br>
-arXiv:2609.17959, 2026. **Submitted to CHI 2027.** First author.
-
-Detects accessibility problems during web interaction, such as lost keyboard focus and missing feedback after an action. Human reviewers confirmed **274 of 309 reports (88.7% precision)** on 31 generated websites.
-
-[arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/a11yltlnav/)
+{% for post in site.publications reversed %}
+  {% if post.category == 'preprints' %}
+    {% include publication-card.html publication=post %}
+  {% endif %}
+{% endfor %}
 
 ## Research Experience
 

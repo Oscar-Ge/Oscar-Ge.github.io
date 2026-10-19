@@ -2,9 +2,12 @@
 title: "A11yLTLNav: Automatic Detection of Accessibility Navigation Failures"
 collection: portfolio
 project_type: research
+visual: a11yltlnav
 permalink: /portfolio/a11yltlnav/
 excerpt: "Detecting accessibility navigation failures in generated interfaces using temporal logic and interaction traces."
 ---
+{% include publication-figure.html visual=page.visual %}
+
 Accessibility · Human–Computer Interaction
 
 **University of Utah** · May – Sep 2026<br>
