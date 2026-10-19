@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am an undergraduate student pursuing a B.S.E. in Computer Science at the **University of Michigan, Ann Arbor** (expected May 2027), and a B.Eng. in Electronic and Computer Engineering at **Shanghai Jiao Tong University** (expected August 2027).
+I am an undergraduate at the **University of Michigan** and **Shanghai Jiao Tong University**, studying Computer Science and Electronic and Computer Engineering.
 
 **I am seeking PhD opportunities starting in Fall 2027** in **Human–Computer Interaction (HCI), Human–AI Interaction, and Generative UI (GenUI)**. If you are recruiting PhD students or see a potential research fit, I would love to connect—please [get in touch](mailto:gecm@umich.edu).
 
 My research explored how interaction feedback could improve AI-generated interfaces and support people and web agents. At Purdue University, I worked with **Dr. Jason Wu** on using interaction traces and feedback to improve generative UIs, contributing to **RELIEF**. I also worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on detecting accessibility navigation failures, and with **Prof. Honglak Lee** at the University of Michigan on adapting web agents to evolving websites.
 
-[CV (PDF)](/files/Chenming_Ge_CV.pdf) · [RELIEF Paper (PDF)](/files/RELIEF.pdf) · [Email](mailto:gecm@umich.edu)
+[CV (PDF)](/files/Chenming_Ge_CV.pdf) · [Email](mailto:gecm@umich.edu)
 
 ## Research Interests
 

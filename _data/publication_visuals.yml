@@ -6,6 +6,7 @@ relief:
   caption: "RELIEF learns from feedback-guided interface revisions. Method overview from Figure 1 of the paper."
 
 a11yltlnav:
+  layout: wide
   image: /a11yltlnav/static/images/system-overview.png
   width: 2038
   height: 564

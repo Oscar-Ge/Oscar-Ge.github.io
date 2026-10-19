@@ -1,9 +1,9 @@
 {% assign publication = include.publication %}
 {% assign visual = site.data.publication_visuals[publication.visual] %}
 {% assign project_link = publication.projecturl | default: publication.url %}
-<article class="publication-card">
+<article class="publication-card{% if visual.layout == 'wide' %} publication-card--wide{% endif %}">
   {% if visual %}
-  <a class="publication-card__image" href="{{ project_link | relative_url }}" aria-label="{{ publication.title | prepend: 'Open project page: ' | escape }}">
+  <a class="publication-card__image" href="{{ visual.image | relative_url }}" aria-label="{{ publication.title | prepend: 'Enlarge method figure: ' | escape }}" title="View full-size figure">
     <img src="{{ visual.image | relative_url }}" alt="{{ visual.alt | escape }}" width="{{ visual.width }}" height="{{ visual.height }}" loading="lazy" decoding="async">
   </a>
   {% endif %}
