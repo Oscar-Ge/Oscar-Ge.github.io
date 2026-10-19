@@ -8,8 +8,10 @@ author_profile: true
 {% include base_path %}
 
 <h2>Preprints &amp; Submitted Manuscripts</h2>
+<div class="publication-list">
 {% for post in site.publications reversed %}
   {% if post.category == 'preprints' %}
     {% include publication-card.html publication=post %}
   {% endif %}
 {% endfor %}
+</div>
