@@ -9,7 +9,9 @@ redirect_from:
 
 I am an undergraduate at the **University of Michigan** and **Shanghai Jiao Tong University**, studying Computer Science and Electronic and Computer Engineering.
 
-**I am seeking PhD opportunities starting in Fall 2027** in **Human–Computer Interaction (HCI), Human–AI Interaction, and Generative UI (GenUI)**. If you are recruiting PhD students or see a potential research fit, I would love to connect—please [get in touch](mailto:gecm@umich.edu).
+<aside class="phd-notice" role="note" aria-label="Fall 2027 PhD opportunities">
+  <p><strong>I am seeking PhD opportunities starting in Fall 2027</strong> in <strong>Human–Computer Interaction (HCI), Human–AI Interaction, and Generative UI (GenUI)</strong>. If you are recruiting PhD students or see a potential research fit, I would love to connect—please <a href="mailto:gecm@umich.edu">get in touch</a>.</p>
+</aside>
 
 My research explored how interaction feedback could improve AI-generated interfaces and support people and web agents. At Purdue University, I worked with **Dr. Jason Wu** on using interaction traces and feedback to improve generative UIs, contributing to **RELIEF**. I also worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on detecting accessibility navigation failures, and with **Prof. Honglak Lee** at the University of Michigan on adapting web agents to evolving websites.
 
