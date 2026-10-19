@@ -40,7 +40,7 @@ Manuscript, 2026. **Submitted to NAACL 2027.**
 
 RELIEF turns feedback-guided revisions of generated interfaces into training supervision for code generation models. We collected 355 interaction recordings and accompanying feedback from 24 users across 200 generated websites; critiques inferred from human interaction recordings led to the largest observed usability improvements across the two models tested.
 
-[Paper (PDF)](/files/RELIEF.pdf) · [Research Project](/portfolio/generative-ui/)
+[Paper (PDF)](/files/RELIEF.pdf) · [Project Page](/relief/) · [Research Experience](/portfolio/generative-ui/)
 
 ## Research Experience
 
@@ -68,7 +68,7 @@ I investigated how user interaction traces provided implicit feedback for improv
 - Explored fine-tuning UI generation models using websites revised with usability critiques. RELIEF reconstructed the corresponding generation traces for supervised fine-tuning.
 - Explored computer-use agents and coding agents as baselines for simulating user behavior and providing usability feedback.
 
-[Paper (PDF)](/files/RELIEF.pdf) · [Publication Details](/publication/relief/)
+[Paper (PDF)](/files/RELIEF.pdf) · [Project Page](/relief/) · [Publication Details](/publication/relief/)
 
 ### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
 

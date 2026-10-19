@@ -45,7 +45,7 @@ Advisor: Dr. Jason Wu
 
 I investigated how user interaction traces provided implicit feedback for improving the usability of generated interfaces. This work contributed to RELIEF, which used feedback-guided interface revisions to construct supervision for fine-tuning code generation models.
 
-[Paper (PDF)](/files/RELIEF.pdf) · [Publication Details](/publication/relief/)
+[Paper (PDF)](/files/RELIEF.pdf) · [Project Page](/relief/) · [Publication Details](/publication/relief/)
 
 ### [WebCoEvo: Adversarial Co-Evolution for Web Agents](/portfolio/web-agent-benchmark/)
 
