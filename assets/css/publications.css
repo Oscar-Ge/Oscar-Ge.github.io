@@ -1,11 +1,11 @@
 .phd-notice {
   margin: 1.4rem 0 1.7rem;
   padding: 1rem 1.2rem;
-  border: 1px solid #edcbd0;
-  border-left: 4px solid #b63d50;
+  border: 1px solid #d5e5f0;
+  border-left: 4px solid #87abc6;
   border-radius: 5px;
-  background: #f8e9ec;
-  color: #8d2335;
+  background: #f0f6fa;
+  color: #34556b;
 }
 .page__content .phd-notice p {
   margin: 0;
@@ -13,13 +13,15 @@
   line-height: 1.75;
 }
 .phd-notice strong { color: inherit; }
-.phd-notice a { color: inherit; font-weight: 600; text-decoration: underline; }
+.page__content .phd-notice a,
+.page__content .phd-notice a:visited,
+.page__content .phd-notice a:hover { color: inherit; font-weight: 600; text-decoration: underline; }
 .phd-notice a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 html[data-theme="dark"] .phd-notice {
-  background: #3b292f;
-  border-color: #79515d;
-  border-left-color: #ed9cad;
-  color: #ffd2dc;
+  background: #26343d;
+  border-color: #4e687a;
+  border-left-color: #8fb5d0;
+  color: #d6e7f2;
 }
 @media (max-width: 640px) {
   .phd-notice { padding: 0.85rem 1rem; }

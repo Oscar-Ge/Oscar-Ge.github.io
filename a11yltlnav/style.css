@@ -92,3 +92,13 @@ figcaption { font-family: 'Noto Sans', sans-serif; font-size: .9rem; line-height
   .equation { font-size: 1.05rem; }
   .results-table th, .results-table td { padding: .7em .4em !important; }
 }
+
+.paper-teaser { padding: 0 1.5rem 2rem; }
+.paper-example-figure { max-width: 800px; margin: 0 auto; }
+.paper-example-figure > a { display: block; }
+.paper-example-figure img { display: block; width: 100%; height: auto; }
+.paper-example-figure figcaption { margin-top: 1rem; color: #4a4a4a; }
+.live-example { margin: 0 auto 2rem; }
+@media (max-width: 768px) {
+  .paper-teaser { padding: 0 1.2rem 2rem; }
+}

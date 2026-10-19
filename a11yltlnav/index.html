@@ -9,8 +9,8 @@
   <meta property="og:description" content="Finding accessibility failures that appear as people navigate a website.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://oscar-ge.github.io/a11yltlnav/">
-  <meta property="og:image" content="https://oscar-ge.github.io/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png">
-  <meta property="og:image:alt" content="An email dialog opens while keyboard focus remains on the page behind it.">
+  <meta property="og:image" content="https://oscar-ge.github.io/images/publications/a11yltlnav-focus-failure.png">
+  <meta property="og:image:alt" content="Figure 2: Add to List opens a dialog while keyboard focus stays on the trigger.">
   <meta name="citation_title" content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures">
   <meta name="citation_author" content="Ge, Chenming">
   <meta name="citation_author" content="Peng, Kewen">
@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <script src="media.js?v=4" defer></script>
 </head>
 <body>
@@ -57,28 +57,14 @@
     </div>
   </section>
 
-  <section class="hero teaser" aria-label="A navigation failure in two browser states">
+  <section class="hero paper-teaser" aria-label="Focus-management failure from the paper">
     <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div class="columns is-variable is-3 teaser-pair">
-          <div class="column">
-            <figure>
-              <p class="frame-heading">Before: Email button focused</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" aria-label="View the before screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" width="1440" height="1000" alt="The Email article button has keyboard focus before the email dialog opens."></a>
-              <figcaption>Ready for the next keypress.</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <p class="frame-heading">After pressing Enter</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" aria-label="View the after screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" width="1440" height="1000" alt="The email dialog is now open, but the yellow focus annotation still points to the Email article button behind the dialog."></a>
-              <figcaption>Dialog opens. Focus stays behind.</figcaption>
-            </figure>
-          </div>
-        </div>
-        <h2 class="subtitle has-text-centered teaser-caption"><strong>The dialog opens. Keyboard focus stays behind.</strong><br>A11yLTLNav catches accessibility failures across interactions.</h2>
-        <p class="has-text-centered focus-definition"><span class="focus-key" aria-hidden="true"></span> Yellow = keyboard focus, where the next keypress goes.</p>
-      </div>
+      <figure class="paper-example-figure">
+        <a href="/images/publications/a11yltlnav-focus-failure.png" aria-label="Enlarge Figure 2 from the A11yLTLNav paper">
+          <img src="/images/publications/a11yltlnav-focus-failure.png" width="998" height="580" alt="Pressing Enter on Add to List opens a dialog, but keyboard focus stays on the trigger instead of entering the dialog. The temporal property detects this focus-management failure.">
+        </a>
+        <figcaption><strong>The dialog opens. Keyboard focus stays behind.</strong><br>Figure 2 from the paper · <a href="https://arxiv.org/pdf/2609.17959#page=11">Read in the PDF</a> · <a href="/images/publications/a11yltlnav-focus-failure.png">Enlarge</a></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -122,6 +108,26 @@
   <section class="section hero is-light" id="examples">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">See it happen</h2>
+      <div class="teaser live-example">
+        <div class="columns is-variable is-3 teaser-pair">
+          <div class="column">
+            <figure>
+              <p class="frame-heading">Before: Email button focused</p>
+              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" aria-label="View the before screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" width="1440" height="1000" alt="The Email article button has keyboard focus before the email dialog opens."></a>
+              <figcaption>Ready for the next keypress.</figcaption>
+            </figure>
+          </div>
+          <div class="column">
+            <figure>
+              <p class="frame-heading">After pressing Enter</p>
+              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" aria-label="View the after screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" width="1440" height="1000" alt="The email dialog is now open, but the yellow focus annotation still points to the Email article button behind the dialog."></a>
+              <figcaption>Dialog opens. Focus stays behind.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <h2 class="subtitle has-text-centered teaser-caption"><strong>The dialog opens. Keyboard focus stays behind.</strong><br>A11yLTLNav catches accessibility failures across interactions.</h2>
+        <p class="has-text-centered focus-definition"><span class="focus-key" aria-hidden="true"></span> Yellow = keyboard focus, where the next keypress goes.</p>
+      </div>
       <div class="reading-width">
         <h3 class="title is-4 example-title">Watch the checker</h3>
         <div class="buttons excerpt-controls" id="excerpt-controls" hidden>
