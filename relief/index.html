@@ -1,188 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RELIEF: Revision-Based Learning from Interactive Experience and Feedback</title>
-  <meta name="description" content="RELIEF turns feedback-guided revisions of generated interfaces into training supervision for code generation models. Explore the method, feedback sources, and results.">
-  <link rel="canonical" href="https://oscar-ge.github.io/relief/">
-  <meta property="og:title" content="RELIEF: Learning from Interactive Experience and Feedback">
-  <meta property="og:description" content="Learning to generate more usable interfaces from feedback-guided revisions and reconstructed generation traces.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oscar-ge.github.io/relief/">
-  <meta property="og:image" content="https://oscar-ge.github.io/images/publications/relief-overview.png">
-  <meta property="og:image:alt" content="RELIEF's generate, collect feedback, revise, and train workflow.">
-  <meta name="citation_title" content="Revision-Based Learning from Interactive Experience and Feedback">
-  <meta name="citation_author" content="Li, Jiawen">
-  <meta name="citation_author" content="Ge, Chenming">
-  <meta name="citation_author" content="Gao, Alice">
-  <meta name="citation_author" content="Vempati, Rishab">
-  <meta name="citation_author" content="Peng, Yi-Hao">
-  <meta name="citation_author" content="Wu, Jason">
-  <meta name="citation_pdf_url" content="https://oscar-ge.github.io/files/RELIEF.pdf">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/a11yltlnav/static/css/bulma.min.css">
-  <link rel="stylesheet" href="/a11yltlnav/static/css/index.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="page.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RELIEF: Revision-Based Learning from Interactive Experience and Feedback</title>
+<meta content="RELIEF turns feedback-guided revisions of generated interfaces into training supervision for code generation models." name="description"/>
+<link href="https://oscar-ge.github.io/relief/" rel="canonical"/>
+<meta content="RELIEF: Learning from Interactive Experience and Feedback" property="og:title"/>
+<meta content="Learning to generate more usable interfaces from feedback-guided revisions and reconstructed generation traces." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://oscar-ge.github.io/relief/" property="og:url"/>
+<meta content="https://oscar-ge.github.io/images/publications/relief-overview.png" property="og:image"/>
+<meta content="RELIEF's generate, collect feedback, revise, and train workflow." property="og:image:alt"/>
+<meta content="Revision-Based Learning from Interactive Experience and Feedback" name="citation_title"/>
+<meta content="Li, Jiawen" name="citation_author"/>
+<meta content="Ge, Chenming" name="citation_author"/>
+<meta content="Gao, Alice" name="citation_author"/>
+<meta content="Vempati, Rishab" name="citation_author"/>
+<meta content="Peng, Yi-Hao" name="citation_author"/>
+<meta content="Wu, Jason" name="citation_author"/>
+<meta content="https://oscar-ge.github.io/files/RELIEF.pdf" name="citation_pdf_url"/>
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&amp;display=swap" rel="stylesheet"/>
+<link href="/a11yltlnav/static/css/bulma.min.css" rel="stylesheet"/>
+<link href="/a11yltlnav/static/css/index.css" rel="stylesheet"/>
+<link href="style.css?v=2" rel="stylesheet"/>
+<script defer="" src="page.js?v=2"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<nav class="project-nav" aria-label="Project navigation">
-  <a href="/">← Chenming Ge</a>
-  <div><a href="#method">Method</a><a href="#results">Results</a><a href="/files/RELIEF.pdf">Paper ↗</a></div>
-</nav>
 <main id="main">
-  <header class="hero publication-header">
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-        <p class="publication-status">Manuscript · Submitted to NAACL 2027</p>
-        <h1 class="publication-title"><span class="project-name">RELIEF</span><span class="paper-title">Revision-Based Learning from<br class="desktop-break"> Interactive Experience and Feedback</span></h1>
-        <div class="publication-authors is-size-5">
-          <span class="author-block">Jiawen Li<sup>1</sup>,</span>
-          <span class="author-block"><a href="/">Chenming Ge</a><sup>2</sup>,</span>
-          <span class="author-block">Alice Gao<sup>3</sup>,</span>
-          <span class="author-block">Rishab Vempati<sup>1</sup>,</span>
-          <span class="author-block">Yi-Hao Peng<sup>4</sup>,</span>
-          <span class="author-block">Jason Wu<sup>1</sup></span>
-        </div>
-        <div class="affiliations">
-          <span><sup>1</sup>Purdue University</span><span><sup>2</sup>University of Michigan</span>
-          <span><sup>3</sup>University of Washington</span><span><sup>4</sup>MIT</span>
-        </div>
-        <div class="publication-links">
-          <a href="/files/RELIEF.pdf" class="button is-dark is-rounded">Paper (PDF) ↗</a>
-          <a href="#method" class="button is-dark is-rounded">Explore the method</a>
-          <a href="#results" class="button is-dark is-rounded">Results</a>
-        </div>
-      </div>
-    </div>
+  <header class="publication-header">
+    <h1>RELIEF: Revision-Based Learning from Interactive Experience and Feedback</h1>
+    <div class="publication-authors is-size-5">
+<span class="author-block">Jiawen Li<sup>1</sup>,</span>
+<span class="author-block"><a href="/">Chenming Ge</a><sup>2</sup>,</span>
+<span class="author-block">Alice Gao<sup>3</sup>,</span>
+<span class="author-block">Rishab Vempati<sup>1</sup>,</span>
+<span class="author-block">Yi-Hao Peng<sup>4</sup>,</span>
+<span class="author-block">Jason Wu<sup>1</sup></span>
+</div>
+    <div class="affiliations">
+<span><sup>1</sup>Purdue University</span><span><sup>2</sup>University of Michigan</span>
+<span><sup>3</sup>University of Washington</span><span><sup>4</sup>MIT</span>
+</div>
+    <p class="publication-status">Manuscript · Submitted to NAACL 2027</p>
+    <p class="publication-links"><a class="button is-dark is-rounded" href="/files/RELIEF.pdf">Paper (PDF)</a></p>
   </header>
 
-  <section class="section overview-section" aria-labelledby="overview-title">
-    <div class="container is-max-desktop overview-grid">
-      <figure class="overview-figure">
-        <a href="/images/publications/relief-overview.png" aria-label="Enlarge the RELIEF method overview">
-          <img src="/images/publications/relief-overview.png" width="820" height="780" alt="Generate a flight-search interface, gather feedback on its date filter, revise the interface, and use reconstructed generation traces to fine-tune the model." fetchpriority="high">
-        </a>
-        <figcaption>Generate → collect feedback → revise → train.<br>Figure 1 from the paper.</figcaption>
-      </figure>
-      <div class="overview-copy">
-        <p class="eyebrow">Learning from interface use</p>
-        <h2 class="title is-3" id="overview-title">Learn from how people use generated interfaces.</h2>
-        <p>Watching people use a generated interface can reveal confusing controls, missing feedback, and broken task flows.</p>
-        <p><strong>RELIEF turns those observations into training data.</strong> A coding agent revises the interface using feedback. RELIEF then reconstructs a generation trace that would produce the revised interface and uses it to fine-tune the model.</p>
-      </div>
-    </div>
-    <dl class="container is-max-desktop dataset-strip" aria-label="Study dataset">
-      <div><dt>200</dt><dd>generated websites</dd></div>
-      <div><dt>355</dt><dd>interaction recordings</dd></div>
-      <div><dt>24</dt><dd>study participants</dd></div>
-      <div><dt>2</dt><dd>base models evaluated</dd></div>
-    </dl>
+  <figure class="teaser-figure">
+    <a href="/images/publications/relief-overview.png" aria-label="Enlarge the RELIEF overview figure"><img src="/images/publications/relief-overview.png" width="820" height="780" fetchpriority="high" alt="RELIEF generates an interface, collects feedback, revises the interface, and reconstructs generation traces for fine-tuning."></a>
+    <figcaption>RELIEF uses feedback-guided interface revisions to construct training supervision. Figure 1.</figcaption>
+  </figure>
+
+  <section class="paper-section" id="abstract" aria-labelledby="abstract-title">
+    <h2 id="abstract-title">Abstract</h2>
+    <p>Code generation models are increasingly used to produce interactive artifacts, such as websites and user interfaces. Many properties that determine whether these interfaces are useful only become apparent through realistic interaction, making them difficult to incorporate into model training. In this paper, we introduce RELIEF (REvision-based Learning from Interactive Experience and Feedback), a method for improving code generation models using feedback on their generated interfaces. RELIEF uses a coding agent to revise these interfaces, then incorporates the improvements into their original generation traces to produce supervision for fine-tuning. To evaluate RELIEF, we collected a dataset of 200 synthetically generated websites paired with 355 interaction recordings and accompanying feedback from 24 users. We used critiques derived from code inspection, automated interaction, explicit human feedback, and human interaction recordings to fine-tune variants of two code generation models. Our results show that feedback effectiveness varies with base model capabilities, with critiques inferred from human interaction recordings leading to the largest usability improvements overall under our tested models.</p>
   </section>
 
-  <section class="section section-tinted" id="method" aria-labelledby="feedback-heading">
-    <div class="container is-max-desktop">
-      <div class="section-heading has-text-centered">
-        <p class="eyebrow">Four sources, one revision pipeline</p>
-        <h2 class="title is-3" id="feedback-heading">Where does the feedback come from?</h2>
-        <p>We compared feedback inferred from real interactions with written user feedback and critiques from automated agents.</p>
-      </div>
-      <div class="feedback-tabs" role="tablist" aria-label="Feedback sources">
-        <button id="tab-interaction" type="button" role="tab" aria-selected="true" aria-controls="feedback-panel" data-source="interaction">Human interaction</button>
-        <button id="tab-written" type="button" role="tab" aria-selected="false" aria-controls="feedback-panel" tabindex="-1" data-source="written">Human-written feedback</button>
-        <button id="tab-cua" type="button" role="tab" aria-selected="false" aria-controls="feedback-panel" tabindex="-1" data-source="cua">Computer-use agents</button>
-        <button id="tab-code" type="button" role="tab" aria-selected="false" aria-controls="feedback-panel" tabindex="-1" data-source="code">Coding agents</button>
-      </div>
-      <div id="feedback-panel" class="feedback-panel" role="tabpanel" aria-labelledby="tab-interaction" tabindex="0">
-        <div><p class="eyebrow" id="feedback-label">Observe people performing tasks</p><h3 class="title is-4" id="feedback-title">Human interaction recordings</h3><p id="feedback-description">A video-capable model inferred usability critiques from recordings of people completing tasks on generated websites, including signs of confusion and bugs encountered during interaction.</p></div>
-        <div class="feedback-evidence"><strong id="feedback-stat">355 recordings</strong><span id="feedback-detail">585 inferred critiques across the generated websites.</span></div>
-      </div>
-      <p class="figure-note">All four feedback sources guided the same interface-revision pipeline. Feedback volume differed across sources.</p>
+  <section class="paper-section" id="method" aria-labelledby="method-title">
+    <h2 id="method-title">Method</h2>
+    <p>RELIEF uses a coding agent to revise generated interfaces from usability feedback. The revisions are then incorporated into the original generation traces to provide supervision for fine-tuning the generation model. We compared four feedback sources using the same revision and training procedure.</p>
+    <h3>Feedback sources</h3>
+    <div class="table-scroll" role="region" aria-label="Feedback sources" tabindex="0">
+      <table class="feedback-table">
+        <thead><tr><th scope="col">Source</th><th scope="col">Procedure</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Human interaction</th><td>A video-capable model inferred usability critiques from recordings of participants completing tasks.</td></tr>
+          <tr><th scope="row">Human-written feedback</th><td>Participants reviewed their task recordings and described the usability problems they encountered.</td></tr>
+          <tr><th scope="row">Computer-use agents</th><td>An agent attempted the tasks and produced critiques from its interaction history.</td></tr>
+          <tr><th scope="row">Coding agents</th><td>An agent inspected the website source code without interacting with the interface.</td></tr>
+        </tbody>
+      </table>
     </div>
+    <h3 id="reconstruction">Trace reconstruction</h3>
+    <p>RELIEF records the website source after each file-writing action in the original generation trace. It uses code differences and Git-blame-style attribution to identify the actions responsible for revised code, then patches those actions. Replaying the reconstructed trace verifies that it reproduces the revised website. The resulting traces are used for supervised fine-tuning with LoRA adapters.</p>
+    <figure class="trace-figure">
+      <a href="assets/trace-reconstruction.png" aria-label="Enlarge the trace reconstruction figure"><img src="assets/trace-reconstruction.png" width="896" height="832" loading="lazy" alt="A date-filter revision is attributed to the Add filters step in the original generation trace. The step is patched and the trace is replayed to reproduce the revised interface."></a>
+      <figcaption>Trace reconstruction for a revised flight-search interface. Figure 4.</figcaption>
+    </figure>
+    <p>Separate variants of each base model were fine-tuned for each feedback source. Reconstruction preserved the original reasoning while revising code-writing actions. Sections 4 and 6 of the paper describe the procedure and its limitations.</p>
   </section>
 
-  <section class="section" id="reconstruction" aria-labelledby="reconstruction-title">
-    <div class="container is-max-desktop reconstruction-grid">
-      <div class="content">
-        <p class="eyebrow">From revisions to supervision</p>
-        <h2 class="title is-3" id="reconstruction-title">Reconstruct how the improved interface could have been generated.</h2>
-        <p>The revised website provides a target. RELIEF connects its changes back to the original generation steps.</p>
-        <ol class="method-list">
-          <li><strong>Replay.</strong> Record the website source after each file-writing step in the original generation trace.</li>
-          <li><strong>Attribute and patch.</strong> Use code differences and Git-blame-style attribution to identify and revise the steps responsible for changed code.</li>
-          <li><strong>Verify and train.</strong> Replay the reconstructed trace to check that it reproduces the revised website, then use it for supervised fine-tuning.</li>
-        </ol>
-        <details class="technical-details"><summary>Training and reconstruction details</summary><p>We fine-tuned a separate variant of each base model for each feedback source using reconstructed generation traces. The experiments used supervised fine-tuning with LoRA adapters. Reconstruction retained the original reasoning while revising code-writing actions; see Sections 4 and 6 of the paper for the procedure and its limitations.</p></details>
-      </div>
-      <figure class="trace-figure">
-        <a href="assets/trace-reconstruction.png" aria-label="Enlarge the trace reconstruction figure"><img src="assets/trace-reconstruction.png" width="896" height="832" loading="lazy" alt="A date-filter revision is attributed to the original Add filters generation step. That step is patched, and the reconstructed trace is replayed to reproduce the revised flight-search interface."></a>
-        <figcaption>A revision to the final website becomes a revision to its generation trace. Figure 4 from the paper.</figcaption>
-      </figure>
-    </div>
+  <section class="paper-section" id="results" aria-labelledby="results-title">
+    <h2 id="results-title">Evaluation</h2>
+    <p>We evaluated variants of Inkling Small and Qwen 3.8 27B using human preference comparisons and task completion on held-out websites.</p>
+    <h3>Human preference</h3>
+    <figure class="results-figure">
+      <a href="assets/arena-results.png" aria-label="Enlarge the human preference results"><img src="assets/arena-results.png" width="985" height="210" loading="lazy" alt="Arena Elo ratings with 95 percent confidence intervals. Human-interaction variants scored 1014 for Qwen and 1023 for Inkling, compared with base-model ratings of 1007 and 997. Confidence intervals overlap."></a>
+      <figcaption>Arena Elo ratings from 400 pairwise comparisons by six annotators. Error bars show 95% confidence intervals. Figure 5.</figcaption>
+    </figure>
+    <p>The human-interaction variants received the highest observed Elo ratings for both base models. The confidence intervals overlap, so these results do not establish a definitive ranking of feedback sources.</p>
+    <h3>Task completion</h3>
+    <div class="table-scroll" role="region" aria-label="Task completion results" tabindex="0"><table class="table is-fullwidth results-table">
+<caption>Task completion after model fine-tuning · Table 2</caption>
+<thead><tr><th scope="col">Training condition</th><th scope="col">Inkling Small</th><th scope="col">Qwen 3.8 27B</th></tr></thead>
+<tbody>
+<tr><th scope="row">Base model</th><td>78.8%</td><td>83.7%</td></tr>
+<tr><th scope="row">Code critique</th><td>71.7%</td><td>83.2%</td></tr>
+<tr><th scope="row">Computer-use-agent critique</th><td>82.6%</td><td>89.7%</td></tr>
+<tr><th scope="row">Human-written feedback</th><td>75.5%</td><td>86.4%</td></tr>
+<tr class="highlight-row"><th scope="row">Human interaction</th><td><strong>84.8%</strong></td><td><strong>90.8%</strong></td></tr>
+</tbody>
+</table></div>
+    <p class="figure-note">A computer-use agent evaluated 184 held-out tasks across 14 websites. Task completion was measured after up to three generation retries; first-attempt eligibility was reported separately.</p>
+    <p>Feedback inferred from human interaction recordings produced the highest observed task completion in both model families. The effects of the other feedback sources varied by base model.</p>
   </section>
 
-  <section class="section section-tinted" id="results" aria-labelledby="results-title">
-    <div class="container is-max-desktop">
-      <div class="section-heading has-text-centered">
-        <p class="eyebrow">What changed after fine-tuning?</p>
-        <h2 class="title is-3" id="results-title">Feedback from human interaction showed the strongest observed results.</h2>
-        <p>Across the two tested model families, human-interaction feedback achieved the highest observed task completion and arena Elo ratings.</p>
-      </div>
-      <figure class="results-figure">
-        <a href="assets/arena-results.png" aria-label="Enlarge the arena Elo results with confidence intervals"><img src="assets/arena-results.png" width="985" height="210" loading="lazy" alt="Arena Elo results with 95% confidence intervals: human interaction scored 1014 for Qwen and 1023 for Inkling, compared with base model ratings of 1007 and 997. Confidence intervals overlap."></a>
-        <figcaption>Human preference arena · 400 pairwise comparisons across six annotators.<br>Figure 5 from the paper. Error bars show 95% confidence intervals.</figcaption>
-      </figure>
-      <p class="reading-width result-context">The confidence intervals overlap. These are observed differences under the tested models and evaluation setup, rather than a definitive ranking of feedback sources.</p>
-      <div class="reading-width">
-        <h3 class="title is-4">Could the generated interfaces support their tasks?</h3>
-        <div class="results-scroll" role="region" aria-label="Task completion results" tabindex="0">
-          <table class="table is-fullwidth results-table">
-            <caption>Task completion after model fine-tuning · Table 2</caption>
-            <thead><tr><th scope="col">Training condition</th><th scope="col">Inkling Small</th><th scope="col">Qwen 3.8 27B</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Base model</th><td>78.8%</td><td>83.7%</td></tr>
-              <tr><th scope="row">Code critique</th><td>71.7%</td><td>83.2%</td></tr>
-              <tr><th scope="row">Computer-use-agent critique</th><td>82.6%</td><td>89.7%</td></tr>
-              <tr><th scope="row">Human-written feedback</th><td>75.5%</td><td>86.4%</td></tr>
-              <tr class="highlight-row"><th scope="row">Human interaction</th><td><strong>84.8%</strong></td><td><strong>90.8%</strong></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="figure-note">Evaluated with a computer-use agent on 184 held-out tasks across 14 websites. Task completion was measured after up to three generation retries; first-attempt eligibility was reported separately in the paper.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="abstract" aria-labelledby="abstract-title">
-    <div class="container is-max-desktop reading-width content">
-      <h2 class="title is-3" id="abstract-title">Abstract</h2>
-      <p>Code generation models are increasingly used to produce interactive artifacts, such as websites and user interfaces. Many properties that determine whether these interfaces are useful only become apparent through realistic interaction, making them difficult to incorporate into model training. In this paper, we introduce RELIEF (REvision-based Learning from Interactive Experience and Feedback), a method for improving code generation models using feedback on their generated interfaces. RELIEF uses a coding agent to revise these interfaces, then incorporates the improvements into their original generation traces to produce supervision for fine-tuning. To evaluate RELIEF, we collected a dataset of 200 synthetically generated websites paired with 355 interaction recordings and accompanying feedback from 24 users. We used critiques derived from code inspection, automated interaction, explicit human feedback, and human interaction recordings to fine-tune variants of two code generation models. Our results show that feedback effectiveness varies with base model capabilities, with critiques inferred from human interaction recordings leading to the largest usability improvements overall under our tested models.</p>
-    </div>
-  </section>
-
-  <section class="section citation-section" id="citation" aria-labelledby="citation-title">
-    <div class="container is-max-desktop reading-width">
-      <div class="citation-heading"><h2 class="title is-3" id="citation-title">Citation &amp; resources</h2><button class="button is-small is-rounded" type="button" id="copy-citation">Copy BibTeX</button></div>
-      <pre><code id="bibtex">@unpublished{li2026relief,
+  <section class="paper-section" id="citation" aria-labelledby="citation-title">
+    <div class="citation-heading"><h2 id="citation-title">BibTeX</h2><button class="button is-small" type="button" id="copy-citation">Copy</button></div>
+    <pre><code id="bibtex">@unpublished{li2026relief,
   title={Revision-Based Learning from Interactive Experience and Feedback},
   author={Li, Jiawen and Ge, Chenming and Gao, Alice and Vempati, Rishab and Peng, Yi-Hao and Wu, Jason},
   year={2026},
   note={Manuscript submitted to NAACL 2027},
   url={https://oscar-ge.github.io/files/RELIEF.pdf}
 }</code></pre>
-      <p id="citation-status" role="status" class="figure-note"></p>
-      <p class="resource-note"><a href="/files/RELIEF.pdf">Read the manuscript</a> · <a href="relief.bib" download>Download BibTeX</a> · <a href="mailto:gecm@umich.edu">Contact</a></p>
-      <p class="figure-note">The paper describes planned public releases of the dataset and fine-tuned model weights.</p>
-    </div>
+    <p id="citation-status" role="status" class="figure-note"></p>
+    <p><a href="relief.bib" download>Download BibTeX</a></p>
   </section>
 </main>
 <footer class="footer">
-  <div class="container is-max-desktop content has-text-centered">
-    <p><a href="/">Chenming Ge</a> · <a href="/publications/">Publications</a> · <a href="/a11yltlnav/">A11yLTLNav</a></p>
-    <p>Adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, originally based on <a href="https://nerfies.github.io/">Nerfies</a>, following the visual style of A11yLTLNav. Website source: <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-  </div>
+  <p><a href="/">Chenming Ge</a> · <a href="mailto:gecm@umich.edu">Contact</a></p>
+  <p>Website adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io/">Nerfies</a>. Website source licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </footer>
 </body>
 </html>
