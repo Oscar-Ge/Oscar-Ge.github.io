@@ -6,8 +6,9 @@ relief:
   caption: "RELIEF learns from feedback-guided interface revisions. Method overview from Figure 1 of the paper."
 
 a11yltlnav:
-  image: /a11yltlnav/static/images/system-overview.png
-  width: 2038
-  height: 564
-  alt: "A11yLTLNav selects keyboard actions, extracts accessibility states, and checks temporal rules to produce navigation failure logs."
-  caption: "Explore keyboard actions, observe accessibility states, and check temporal rules. Method overview from Figure 1 of the paper."
+  image: /images/publications/a11yltlnav-focus-failure.png
+  width: 998
+  height: 580
+  alt: 'Figure 2 from the A11yLTLNav paper: pressing Enter on Add to List opens a dialog, but keyboard focus stays on the trigger instead of entering the dialog.'
+  caption: 'A focus-management failure: opening a dialog leaves focus on the trigger. Detail from Figure 2 of the arXiv paper.'
+  source: https://arxiv.org/pdf/2609.17959#page=11
