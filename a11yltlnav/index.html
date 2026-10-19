@@ -1,225 +1,219 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A11yLTLNav: Automatic Detection of Accessibility Navigation Failures</title>
-  <meta name="description" content="A11yLTLNav finds web accessibility failures by trying keyboard interactions and checking what happens next. Explore examples, the method, and evaluation results.">
-  <meta property="og:title" content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures">
-  <meta property="og:description" content="Finding accessibility failures that appear as people navigate a website.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oscar-ge.github.io/a11yltlnav/">
-  <meta property="og:image" content="https://oscar-ge.github.io/images/publications/a11yltlnav-focus-failure.png">
-  <meta property="og:image:alt" content="Figure 2: Add to List opens a dialog while keyboard focus stays on the trigger.">
-  <meta name="citation_title" content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures">
-  <meta name="citation_author" content="Ge, Chenming">
-  <meta name="citation_author" content="Peng, Kewen">
-  <meta name="citation_author" content="Shi, Chengyang">
-  <meta name="citation_author" content="Greenman, Ben">
-  <meta name="citation_author" content="Jiang, Yue">
-  <meta name="citation_publication_date" content="2026/09/16">
-  <link rel="canonical" href="https://oscar-ge.github.io/a11yltlnav/">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="style.css?v=6">
-  <script src="media.js?v=4" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>A11yLTLNav: Automatic Detection of Accessibility Navigation Failures</title>
+<meta content="A11yLTLNav detects accessibility navigation failures through keyboard exploration and temporal-property monitoring." name="description"/>
+<meta content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures" property="og:title"/>
+<meta content="Finding accessibility failures that appear as people navigate a website." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://oscar-ge.github.io/a11yltlnav/" property="og:url"/>
+<meta content="https://oscar-ge.github.io/images/publications/a11yltlnav-focus-failure.png" property="og:image"/>
+<meta content="Figure 2: Add to List opens a dialog while keyboard focus stays on the trigger." property="og:image:alt"/>
+<meta content="A11yLTLNav: Automatic Detection of Accessibility Navigation Failures" name="citation_title"/>
+<meta content="Ge, Chenming" name="citation_author"/>
+<meta content="Peng, Kewen" name="citation_author"/>
+<meta content="Shi, Chengyang" name="citation_author"/>
+<meta content="Greenman, Ben" name="citation_author"/>
+<meta content="Jiang, Yue" name="citation_author"/>
+<meta content="2026/09/16" name="citation_publication_date"/>
+<link href="https://oscar-ge.github.io/a11yltlnav/" rel="canonical"/>
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"/>
+<link href="static/css/bulma.min.css" rel="stylesheet"/>
+<link href="static/css/index.css" rel="stylesheet"/>
+<link href="style.css?v=7" rel="stylesheet"/>
+<script defer="" src="media.js?v=4"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <main id="main">
-  <!-- Header and section structure adapted from Academic Project Page Template. -->
-  <section class="hero publication-header">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A11yLTLNav: Automatic Detection of Accessibility Navigation Failures</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://oscar-ge.github.io/">Chenming Ge</a><sup>1</sup>,</span>
-              <span class="author-block"><a href="https://astridreadygo.github.io/">Kewen Peng</a><sup>2</sup>,</span>
-              <span class="author-block"><a href="https://shokuhoumisak1.github.io/">Chengyang Shi</a><sup>1</sup>,</span>
-              <span class="author-block"><a href="https://users.cs.utah.edu/~blg/">Ben Greenman</a><sup>2</sup>,</span>
-              <span class="author-block"><a href="https://yuejiang-nj.github.io/">Yue Jiang</a><sup>2</sup></span>
-            </div>
-            <div class="is-size-5 publication-authors affiliations">
-              <span class="author-block"><sup>1</sup>University of Michigan</span>
-              <span class="author-block"><sup>2</sup>University of Utah</span>
-            </div>
-            <p class="publication-status">arXiv preprint, 2026 · Under review at CHI 2027</p>
-            <div class="publication-links">
-              <span class="link-block"><a href="https://arxiv.org/abs/2609.17959" class="external-link button is-normal is-rounded is-dark"><span>arXiv</span></a></span>
-              <span class="link-block"><a href="#examples" class="button is-normal is-rounded is-dark"><span>Examples</span></a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Header and section structure adapted from Academic Project Page Template. -->
+<section class="hero publication-header">
+<div class="hero-body">
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+<h1 class="title is-1 publication-title">A11yLTLNav: Automatic Detection of Accessibility Navigation Failures</h1>
+<div class="is-size-5 publication-authors">
+<span class="author-block"><a href="https://oscar-ge.github.io/">Chenming Ge</a><sup>1</sup>,</span>
+<span class="author-block"><a href="https://astridreadygo.github.io/">Kewen Peng</a><sup>2</sup>,</span>
+<span class="author-block"><a href="https://shokuhoumisak1.github.io/">Chengyang Shi</a><sup>1</sup>,</span>
+<span class="author-block"><a href="https://users.cs.utah.edu/~blg/">Ben Greenman</a><sup>2</sup>,</span>
+<span class="author-block"><a href="https://yuejiang-nj.github.io/">Yue Jiang</a><sup>2</sup></span>
+</div>
+<div class="is-size-5 publication-authors affiliations">
+<span class="author-block"><sup>1</sup>University of Michigan</span>
+<span class="author-block"><sup>2</sup>University of Utah</span>
+</div>
+<p class="publication-status">arXiv preprint, 2026 · Under review at CHI 2027</p>
+<div class="publication-links">
+<span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2609.17959"><span>arXiv</span></a></span>
+<span class="link-block"><a class="button is-normal is-rounded is-dark" href="#examples"><span>Demos</span></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="Focus-management failure from the paper" class="hero paper-teaser">
+<div class="container is-max-desktop">
+<figure class="paper-example-figure">
+<a aria-label="Enlarge Figure 2 from the A11yLTLNav paper" href="/images/publications/a11yltlnav-focus-failure.png">
+<img alt="Pressing Enter on Add to List opens a dialog, but keyboard focus stays on the trigger instead of entering the dialog. The temporal property detects this focus-management failure." height="580" src="/images/publications/a11yltlnav-focus-failure.png" width="998"/>
+</a>
+<figcaption>Opening the dialog leaves focus on its trigger. Figure 2. <a href="https://arxiv.org/pdf/2609.17959#page=11">Paper</a> · <a href="/images/publications/a11yltlnav-focus-failure.png">Enlarge</a></figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="abstract-title" class="section compact-section" id="abstract">
+<div class="container is-max-desktop reading-width">
 
-  <section class="hero paper-teaser" aria-label="Focus-management failure from the paper">
-    <div class="container is-max-desktop">
-      <figure class="paper-example-figure">
-        <a href="/images/publications/a11yltlnav-focus-failure.png" aria-label="Enlarge Figure 2 from the A11yLTLNav paper">
-          <img src="/images/publications/a11yltlnav-focus-failure.png" width="998" height="580" alt="Pressing Enter on Add to List opens a dialog, but keyboard focus stays on the trigger instead of entering the dialog. The temporal property detects this focus-management failure.">
-        </a>
-        <figcaption><strong>The dialog opens. Keyboard focus stays behind.</strong><br>Figure 2 from the paper · <a href="https://arxiv.org/pdf/2609.17959#page=11">Read in the PDF</a> · <a href="/images/publications/a11yltlnav-focus-failure.png">Enlarge</a></figcaption>
-      </figure>
-    </div>
-  </section>
+<h2 class="title is-3" id="abstract-title">Abstract</h2>
+<div class="content">
+<p>A11yLTLNav detects web accessibility navigation failures by checking explicit temporal rules while exploring keyboard interactions. The rules are grounded in studies with blind and low-vision users. Across 31 generated websites, 274 of 309 reported failures were confirmed correct (88.7% precision), without language-model inference during testing.</p>
+</div>
 
-  <section class="section compact-section" id="abstract">
-    <div class="container is-max-desktop reading-width">
-      <details class="technical-details abstract-details">
-        <summary>Abstract</summary>
-        <div class="content">
-          <p>A11yLTLNav detects web accessibility navigation failures by checking explicit temporal rules while exploring keyboard interactions. The rules are grounded in studies with blind and low-vision users. Across 31 generated websites, 274 of 309 reported failures were confirmed correct (88.7% precision), without language-model inference during testing.</p>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <section class="section" id="method">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Try an action. Check what happens next.</h2>
-      <figure class="method-figure">
-        <a href="static/images/system-overview.png" aria-label="Open the paper's system overview at full size"><img src="static/images/system-overview.png" width="2038" height="564" loading="lazy" alt="The checker selects a keyboard action, observes the resulting accessibility state, and checks temporal rules. A violation produces a failure log. The cycle repeats."></a>
-        <figcaption>Explore actions → observe states → check rules.<br><a href="static/images/system-overview.png">Figure 1 · Enlarge</a></figcaption>
-      </figure>
-      <div class="content reading-width">
-        <div class="rule-example has-text-centered">
-          <p><strong>One rule:</strong> open a dialog → move focus inside.</p>
-          <div class="equation">
-            <math display="block" aria-label="Always: if dialog d opens, focus must be inside dialog d in the next relevant post-action state.">
-              <mrow><mi mathvariant="bold">G</mi><mo>(</mo><mi mathvariant="normal">openModal</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>→</mo><mi mathvariant="bold">X</mi><mspace width="0.2em"/><mi mathvariant="normal">focusInside</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>)</mo></mrow>
-            </math>
-          </div>
-        </div>
-        <details class="technical-details">
-          <summary>How the rules and random testing work</summary>
-          <p><strong>G</strong> means “every time”; <strong>X</strong> means “in the next checked state”; <strong>d</strong> is the dialog. The checker observes the relevant state after the interaction settles.</p>
-          <p><strong>Linear Temporal Logic (LTL)</strong> expresses rules about action sequences. <strong>Random testing</strong> tries varied sequences of available keyboard actions against those fixed rules. Each failure report records the interaction and resulting state.</p>
-          <p>Exploration does not guarantee that every failure will be found. <a href="https://arxiv.org/html/2609.17959v1#S4">Read the method.</a></p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section hero is-light" id="examples">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">See it happen</h2>
-      <div class="teaser live-example">
-        <div class="columns is-variable is-3 teaser-pair">
-          <div class="column">
-            <figure>
-              <p class="frame-heading">Before: Email button focused</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" aria-label="View the before screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" width="1440" height="1000" alt="The Email article button has keyboard focus before the email dialog opens."></a>
-              <figcaption>Ready for the next keypress.</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <p class="frame-heading">After pressing Enter</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" aria-label="View the after screenshot at full size"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" width="1440" height="1000" alt="The email dialog is now open, but the yellow focus annotation still points to the Email article button behind the dialog."></a>
-              <figcaption>Dialog opens. Focus stays behind.</figcaption>
-            </figure>
-          </div>
-        </div>
-        <h2 class="subtitle has-text-centered teaser-caption"><strong>The dialog opens. Keyboard focus stays behind.</strong><br>A11yLTLNav catches accessibility failures across interactions.</h2>
-        <p class="has-text-centered focus-definition"><span class="focus-key" aria-hidden="true"></span> Yellow = keyboard focus, where the next keypress goes.</p>
-      </div>
-      <div class="reading-width">
-        <h3 class="title is-4 example-title">Watch the checker</h3>
-        <div class="buttons excerpt-controls" id="excerpt-controls" hidden>
-          <button type="button" class="button is-small is-rounded" data-start="0" data-end="12" data-label="Focus-entry failure" aria-controls="checker-replay">Play focus failure · 12 s</button>
-          <button type="button" class="button is-small is-rounded" data-start="100" data-end="112" data-label="Escape failure" aria-controls="checker-replay">Play Escape failure · 12 s</button>
-        </div>
-        <p id="excerpt-status" class="replay-status" role="status">00:03 · Focus stays outside. 01:47 · Escape does not close the player.</p>
-        <figure class="example-figure">
-          <video id="checker-replay" controls playsinline preload="metadata" poster="/demos/blv-ap-task-gallery/assets/ltl-ap-m1-05-witness.jpeg" aria-label="A11yLTLNav checker exploration replay" aria-describedby="checker-caption">
-            <source src="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4" type="video/mp4">
-            <track kind="captions" src="checker-events.vtt" srclang="en" label="Key events" default>
-            <a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Open the checker replay.</a>
-          </video>
-          <figcaption id="checker-caption">Checker replay reconstructed from timed screenshots.<br><a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Full replay</a> · <a href="/demos/blv-ap-task-gallery/#comparison-ap-m1-05">Evidence &amp; checker output</a></figcaption>
-        </figure>
-
-        <h3 class="title is-4 example-title" id="focus-return-example">The task succeeds. Focus is still lost.</h3>
-        <div class="columns is-variable is-3 screenshot-pair">
-          <div class="column">
-            <figure>
-              <p class="frame-heading">After preparing the email</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/03-submit-focus-body.png" aria-label="Enlarge the email-ready screenshot"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/03-submit-focus-body.png" width="1440" height="1000" loading="lazy" alt="The dialog says Email ready, but the yellow focus annotation identifies the page body instead of a dialog control."></a>
-              <figcaption>“Email ready.” Focus falls to the page body.</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <p class="frame-heading">After closing the dialog</p>
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/assets/04-done-focus-body.png" aria-label="Enlarge the dialog-closed screenshot"><img src="/demos/ltl-ui-nfl-email-focus-demo/assets/04-done-focus-body.png" width="1440" height="1000" loading="lazy" alt="The dialog is closed and keyboard focus remains on the page body rather than returning to the Email button."></a>
-              <figcaption>Dialog closed. Original focus is not restored.</figcaption>
-            </figure>
-          </div>
-        </div>
-        <details class="technical-details recording-details">
-          <summary>Watch the full agent recording</summary>
-          <figure class="example-figure">
-            <video controls playsinline preload="none" poster="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" aria-label="Recorded keyboard interaction on the generated news website" aria-describedby="recording-caption">
-              <source src="/demos/ltl-ui-nfl-email-focus-demo/assets/nfl-news-email-search-normal-agent-vscode-h264.mp4" type="video/mp4">
-              <a href="/demos/ltl-ui-nfl-email-focus-demo/">View the recording and text descriptions.</a>
-            </video>
-            <figcaption id="recording-caption">Task: prepare an email, close the dialog, search for Chiefs.<br><a href="/demos/ltl-ui-nfl-email-focus-demo/">All four annotated states</a></figcaption>
-          </figure>
-        </details>
-
-        <h3 class="title is-4 example-title" id="text-editor-example">Tab inserts text. How does the user leave?</h3>
-        <figure class="editor-preview">
-          <a class="editor-shot" href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/?v=3" aria-label="Open the annotated text-editor walkthrough">
-            <img src="/demos/ltl-ui-natural-keyboard-trap-state-stepper/assets/sonic-canvas-editor-trace.jpeg" width="1024" height="768" loading="lazy" alt="SynthVis Pro's Audio editor, Visual editor, and preview. Open the walkthrough to see the annotated keyboard-focus explanation.">
-            <span class="editor-focus" aria-hidden="true"><span>Tab → indentation</span></span>
-          </a>
-          <figcaption><a href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/?v=3">Explore the 3-step illustration →</a><br>An exit-path check needs more than one Tab press.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="results">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">How many errors did each checker find?</h2>
-      <div class="content reading-width">
-        <div class="results-scroll" role="region" aria-label="Human-reviewed evaluation results" tabindex="0">
-          <table class="table is-fullwidth results-table" aria-describedby="evaluation-note">
-            <caption>Human-reviewed, deduplicated reports · 31 generated websites</caption>
-            <thead><tr><th scope="col">Checker</th><th scope="col" class="has-text-right">Reported</th><th scope="col" class="has-text-right confirmed-column">Confirmed<br>errors</th><th scope="col" class="has-text-right">False<br>positives</th><th scope="col" class="has-text-right">Precision</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Axe<span class="checker-kind">Static</span></th><td class="has-text-right">18</td><td class="has-text-right confirmed-column">17</td><td class="has-text-right">1</td><td class="has-text-right"><strong>94.4%</strong></td></tr>
-              <tr><th scope="row">WAVE<span class="checker-kind">Static</span></th><td class="has-text-right">68</td><td class="has-text-right confirmed-column">34</td><td class="has-text-right">34</td><td class="has-text-right">50.0%</td></tr>
-              <tr><th scope="row">Adapted TaskAudit<span class="checker-kind">Agentic</span></th><td class="has-text-right">276</td><td class="has-text-right confirmed-column">158</td><td class="has-text-right">118</td><td class="has-text-right">57.2%</td></tr>
-              <tr class="our-results"><th scope="row">A11yLTLNav<span class="checker-kind">Run 1</span></th><td class="has-text-right">309</td><td class="has-text-right confirmed-column"><strong>274</strong></td><td class="has-text-right">35</td><td class="has-text-right">88.7%</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="demo-note" id="evaluation-note">Confirmed errors were verified by human reviewers. Static checkers scanned the first page only; counts include findings relevant to blind and low-vision users. <a href="https://arxiv.org/html/2609.17959v1#S6">Paper · Table 4</a></p>
-        <details class="technical-details">
-          <summary>Review protocol and evaluation details</summary>
-          <p>Reports were deduplicated by website, component, and checker. Two authors reviewed every report; disagreements were resolved through discussion. Precision is confirmed errors divided by reported findings, not recall.</p>
-          <p>Across three A11yLTLNav runs, precision ranged from 85.9% to 88.7%. No language-model inference was used during its testing. Detection depends on the paths explored and the state exposed by the browser.</p>
-          <p>These checks complement static tools and studies with screen-reader users. <a href="https://arxiv.org/html/2609.17959v1#S6">Read the full evaluation.</a></p>
-        </details>
-      </div>
-    </div>
-  </section>
+</div>
+</section>
+<section class="section" id="method">
+<div class="container is-max-desktop">
+<h2 class="title is-3">Method</h2><p class="method-intro">A11yLTLNav combines keyboard exploration, accessibility-state extraction, and runtime monitoring of temporal properties. Each reported violation records the triggering action and the observed state.</p>
+<figure class="method-figure">
+<a aria-label="Open the paper's system overview at full size" href="static/images/system-overview.png"><img alt="The checker selects a keyboard action, observes the resulting accessibility state, and checks temporal rules. A violation produces a failure log. The cycle repeats." height="564" loading="lazy" src="static/images/system-overview.png" width="2038"/></a>
+<figcaption>System overview. <a href="static/images/system-overview.png">Figure 1 · Enlarge</a></figcaption>
+</figure>
+<div class="content reading-width">
+<div class="rule-example has-text-centered">
+<p>Example property: opening a dialog should move keyboard focus inside.</p>
+<div class="equation">
+<math aria-label="Always: if dialog d opens, focus must be inside dialog d in the next relevant post-action state." display="block">
+<mrow><mi mathvariant="bold">G</mi><mo>(</mo><mi mathvariant="normal">openModal</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>→</mo><mi mathvariant="bold">X</mi><mspace width="0.2em"></mspace><mi mathvariant="normal">focusInside</mi><mo>(</mo><mi>d</mi><mo>)</mo><mo>)</mo></mrow>
+</math>
+</div>
+</div>
+<details class="technical-details">
+<summary>Temporal properties</summary>
+<p><strong>G</strong> means “every time”; <strong>X</strong> means “in the next checked state”; <strong>d</strong> is the dialog. The checker observes the relevant state after the interaction settles.</p>
+<p><strong>Linear Temporal Logic (LTL)</strong> expresses rules about action sequences. <strong>Random testing</strong> tries varied sequences of available keyboard actions against those fixed rules. Each failure report records the interaction and resulting state.</p>
+<p>Exploration does not guarantee that every failure will be found. <a href="https://arxiv.org/html/2609.17959v1#S4">Read the method.</a></p>
+</details>
+</div>
+</div>
+</section>
+<section class="section" id="examples">
+<div class="container is-max-desktop">
+<h2 class="title is-3">Demos</h2>
+<div class="teaser live-example"><h3 class="title is-4 example-title">Dialog focus</h3>
+<div class="columns is-variable is-3 teaser-pair">
+<div class="column">
+<figure>
+<p class="frame-heading">Before: Email button focused</p>
+<a aria-label="View the before screenshot at full size" href="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png"><img alt="The Email article button has keyboard focus before the email dialog opens." height="1000" src="/demos/ltl-ui-nfl-email-focus-demo/assets/01-email-focused.png" width="1440"/></a>
+<figcaption>Focus on the Email button.</figcaption>
+</figure>
+</div>
+<div class="column">
+<figure>
+<p class="frame-heading">After pressing Enter</p>
+<a aria-label="View the after screenshot at full size" href="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png"><img alt="The email dialog is now open, but the yellow focus annotation still points to the Email article button behind the dialog." height="1000" src="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" width="1440"/></a>
+<figcaption>Dialog opens. Focus stays behind.</figcaption>
+</figure>
+</div>
+</div>
+<p class="subtitle has-text-centered teaser-caption">Opening the email dialog leaves focus on the background page.</p>
+<p class="has-text-centered focus-definition"><span aria-hidden="true" class="focus-key"></span> Yellow outlines indicate keyboard focus.</p>
+</div>
+<div class="reading-width">
+<h3 class="title is-4 example-title">Checker replay</h3>
+<div class="buttons excerpt-controls" hidden="" id="excerpt-controls">
+<button aria-controls="checker-replay" class="button is-small is-rounded" data-end="12" data-label="Focus-entry failure" data-start="0" type="button">Play focus failure · 12 s</button>
+<button aria-controls="checker-replay" class="button is-small is-rounded" data-end="112" data-label="Escape failure" data-start="100" type="button">Play Escape failure · 12 s</button>
+</div>
+<p class="replay-status" id="excerpt-status" role="status">00:03 · Focus stays outside. 01:47 · Escape does not close the player.</p>
+<figure class="example-figure">
+<video aria-describedby="checker-caption" aria-label="A11yLTLNav checker exploration replay" controls="" id="checker-replay" playsinline="" poster="/demos/blv-ap-task-gallery/assets/ltl-ap-m1-05-witness.jpeg" preload="metadata">
+<source src="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4" type="video/mp4"/>
+<track default="" kind="captions" label="Key events" src="checker-events.vtt" srclang="en"/>
+<a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Open the checker replay.</a>
+</video>
+<figcaption id="checker-caption">Checker replay reconstructed from timed screenshots.<br/><a href="/demos/blv-ap-task-gallery/assets/ltl-nfl-full-replay.mp4">Full replay</a> · <a href="/demos/blv-ap-task-gallery/#comparison-ap-m1-05">Evidence &amp; checker output</a></figcaption>
+</figure>
+<h3 class="title is-4 example-title" id="focus-return-example">Focus restoration</h3>
+<div class="columns is-variable is-3 screenshot-pair">
+<div class="column">
+<figure>
+<p class="frame-heading">After preparing the email</p>
+<a aria-label="Enlarge the email-ready screenshot" href="/demos/ltl-ui-nfl-email-focus-demo/assets/03-submit-focus-body.png"><img alt="The dialog says Email ready, but the yellow focus annotation identifies the page body instead of a dialog control." height="1000" loading="lazy" src="/demos/ltl-ui-nfl-email-focus-demo/assets/03-submit-focus-body.png" width="1440"/></a>
+<figcaption>“Email ready.” Focus falls to the page body.</figcaption>
+</figure>
+</div>
+<div class="column">
+<figure>
+<p class="frame-heading">After closing the dialog</p>
+<a aria-label="Enlarge the dialog-closed screenshot" href="/demos/ltl-ui-nfl-email-focus-demo/assets/04-done-focus-body.png"><img alt="The dialog is closed and keyboard focus remains on the page body rather than returning to the Email button." height="1000" loading="lazy" src="/demos/ltl-ui-nfl-email-focus-demo/assets/04-done-focus-body.png" width="1440"/></a>
+<figcaption>Dialog closed. Original focus is not restored.</figcaption>
+</figure>
+</div>
+</div>
+<details class="technical-details recording-details">
+<summary>Full recording</summary>
+<figure class="example-figure">
+<video aria-describedby="recording-caption" aria-label="Recorded keyboard interaction on the generated news website" controls="" playsinline="" poster="/demos/ltl-ui-nfl-email-focus-demo/assets/02-dialog-open-focus-outside.png" preload="none">
+<source src="/demos/ltl-ui-nfl-email-focus-demo/assets/nfl-news-email-search-normal-agent-vscode-h264.mp4" type="video/mp4"/>
+<a href="/demos/ltl-ui-nfl-email-focus-demo/">View the recording and text descriptions.</a>
+</video>
+<figcaption id="recording-caption">Task: prepare an email, close the dialog, search for Chiefs.<br/><a href="/demos/ltl-ui-nfl-email-focus-demo/">All four annotated states</a></figcaption>
+</figure>
+</details>
+<h3 class="title is-4 example-title" id="text-editor-example">Text-editor navigation</h3>
+<figure class="editor-preview">
+<a aria-label="Open the annotated text-editor walkthrough" class="editor-shot" href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/?v=3">
+<img alt="SynthVis Pro's Audio editor, Visual editor, and preview. Open the walkthrough to see the annotated keyboard-focus explanation." height="768" loading="lazy" src="/demos/ltl-ui-natural-keyboard-trap-state-stepper/assets/sonic-canvas-editor-trace.jpeg" width="1024"/>
+<span aria-hidden="true" class="editor-focus"><span>Tab → indentation</span></span>
+</a>
+<figcaption><a href="/demos/ltl-ui-natural-keyboard-trap-state-stepper/?v=3">Interactive walkthrough</a><br/>An exit-path check needs more than one Tab press.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section" id="results">
+<div class="container is-max-desktop">
+<h2 class="title is-3">Evaluation</h2>
+<div class="content reading-width">
+<div aria-label="Human-reviewed evaluation results" class="results-scroll" role="region" tabindex="0">
+<table aria-describedby="evaluation-note" class="table is-fullwidth results-table">
+<caption>Human-reviewed, deduplicated reports · 31 generated websites</caption>
+<thead><tr><th scope="col">Checker</th><th class="has-text-right" scope="col">Reported</th><th class="has-text-right confirmed-column" scope="col">Confirmed<br/>errors</th><th class="has-text-right" scope="col">False<br/>positives</th><th class="has-text-right" scope="col">Precision</th></tr></thead>
+<tbody>
+<tr><th scope="row">Axe<span class="checker-kind">Static</span></th><td class="has-text-right">18</td><td class="has-text-right confirmed-column">17</td><td class="has-text-right">1</td><td class="has-text-right"><strong>94.4%</strong></td></tr>
+<tr><th scope="row">WAVE<span class="checker-kind">Static</span></th><td class="has-text-right">68</td><td class="has-text-right confirmed-column">34</td><td class="has-text-right">34</td><td class="has-text-right">50.0%</td></tr>
+<tr><th scope="row">Adapted TaskAudit<span class="checker-kind">Agentic</span></th><td class="has-text-right">276</td><td class="has-text-right confirmed-column">158</td><td class="has-text-right">118</td><td class="has-text-right">57.2%</td></tr>
+<tr class="our-results"><th scope="row">A11yLTLNav<span class="checker-kind">Run 1</span></th><td class="has-text-right">309</td><td class="has-text-right confirmed-column"><strong>274</strong></td><td class="has-text-right">35</td><td class="has-text-right">88.7%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="demo-note" id="evaluation-note">Confirmed errors were verified by human reviewers. Static checkers scanned the first page only; counts include findings relevant to blind and low-vision users. <a href="https://arxiv.org/html/2609.17959v1#S6">Paper · Table 4</a></p>
+<details class="technical-details">
+<summary>Evaluation protocol</summary>
+<p>Reports were deduplicated by website, component, and checker. Two authors reviewed every report; disagreements were resolved through discussion. Precision is confirmed errors divided by reported findings, not recall.</p>
+<p>Across three A11yLTLNav runs, precision ranged from 85.9% to 88.7%. No language-model inference was used during its testing. Detection depends on the paths explored and the state exposed by the browser.</p>
+<p>These checks complement static tools and studies with screen-reader users. <a href="https://arxiv.org/html/2609.17959v1#S6">Read the full evaluation.</a></p>
+</details>
+</div>
+</div>
+</section>
 </main>
 <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8 content">
-        <p>This page is adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, originally based on <a href="https://nerfies.github.io/">Nerfies</a>. The website source is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-        <p><a href="https://oscar-ge.github.io/">Chenming Ge</a> · <a href="mailto:gecm@umich.edu">Contact</a></p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="columns is-centered">
+<div class="column is-8 content">
+<p>This page is adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, originally based on <a href="https://nerfies.github.io/">Nerfies</a>. The website source is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>.</p>
+<p><a href="https://oscar-ge.github.io/">Chenming Ge</a> · <a href="mailto:gecm@umich.edu">Contact</a></p>
+</div>
+</div>
+</div>
 </footer>
 </body>
 </html>
