@@ -9,7 +9,9 @@ redirect_from:
 
 I am an undergraduate student pursuing a B.S.E. in Computer Science at the **University of Michigan, Ann Arbor** (expected May 2027), and a B.Eng. in Electronic and Computer Engineering at **Shanghai Jiao Tong University** (expected August 2027).
 
-My research focuses on improving how people and AI agents interact with interfaces. With **Dr. Jason Wu** at Purdue University, I study how interaction traces and feedback can improve generative UIs, contributing to **RELIEF**. I have also worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on detecting accessibility navigation failures, and with **Prof. Honglak Lee** at the University of Michigan on adapting web agents to evolving websites.
+**I am seeking PhD opportunities starting in Fall 2027** in **Human–Computer Interaction (HCI), Human–AI Interaction, and Generative UI (GenUI)**. If you are recruiting PhD students or see a potential research fit, I would love to connect—please [get in touch](mailto:gecm@umich.edu).
+
+My research explored how interaction feedback could improve AI-generated interfaces and support people and web agents. At Purdue University, I worked with **Dr. Jason Wu** on using interaction traces and feedback to improve generative UIs, contributing to **RELIEF**. I also worked with **Dr. Yue Jiang and Dr. Ben Greenman** at the University of Utah on detecting accessibility navigation failures, and with **Prof. Honglak Lee** at the University of Michigan on adapting web agents to evolving websites.
 
 [CV (PDF)](/files/Chenming_Ge_CV.pdf) · [RELIEF Paper (PDF)](/files/RELIEF.pdf) · [Email](mailto:gecm@umich.edu)
 
@@ -41,7 +43,7 @@ I developed A11yLTLNav, a property-based checker for accessibility navigation fa
 **Research Assistant, Purdue University** · May – Oct 2026<br>
 Advisor: Dr. Jason Wu
 
-I investigated how user interaction traces provide implicit feedback for improving the usability of generated interfaces. This work contributed to RELIEF, which uses feedback-guided interface revisions to construct supervision for fine-tuning code generation models.
+I investigated how user interaction traces provided implicit feedback for improving the usability of generated interfaces. This work contributed to RELIEF, which used feedback-guided interface revisions to construct supervision for fine-tuning code generation models.
 
 [Paper (PDF)](/files/RELIEF.pdf) · [Publication Details](/publication/relief/)
 
@@ -50,7 +52,7 @@ I investigated how user interaction traces provide implicit feedback for improvi
 **Research Assistant, University of Michigan** · Mar – Jun 2026<br>
 Advisor: Prof. Honglak Lee
 
-I developed WebCoEvo, an adversarial co-evolution framework that helps web agents adapt to changing websites by learning generalizable reflection rules from their failures.
+I developed WebCoEvo, an adversarial co-evolution framework that helped web agents adapt to changing websites by learning generalizable reflection rules from their failures.
 
 [More Projects →](/portfolio/)
 

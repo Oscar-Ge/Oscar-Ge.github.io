@@ -18,7 +18,7 @@ I developed A11yLTLNav, a property-based checker for accessibility navigation fa
 ## My contributions
 
 - Formalized common accessibility failures from prior user studies as Linear Temporal Logic (LTL) properties and tested them on randomly generated website interaction traces.
-- Built a comparison web agent that detects accessibility failures through screen-reader feedback and keyboard-only interaction.
+- Built a comparison web agent that detected accessibility failures through screen-reader feedback and keyboard-only interaction.
 - Evaluated the checker on 31 generated websites; human reviewers confirmed 274 of 309 reports (88.7% precision).
 
 [arXiv](https://arxiv.org/abs/2609.17959) · [Project Page](/a11yltlnav/)

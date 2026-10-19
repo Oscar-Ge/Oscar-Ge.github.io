@@ -10,7 +10,7 @@ Computer-use Agents · Adaptation
 **University of Michigan** · Mar – Jun 2026<br>
 Advisor: Prof. Honglak Lee
 
-I developed WebCoEvo, an adversarial co-evolution framework that helps web agents adapt to changing websites by learning generalizable reflection rules from their failures.
+I developed WebCoEvo, an adversarial co-evolution framework that helped web agents adapt to changing websites by learning generalizable reflection rules from their failures.
 
 ## My contributions
 
