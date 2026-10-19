@@ -56,13 +56,6 @@
 </div>
 </div>
 </div>
-</section><section aria-labelledby="abstract-title" class="section compact-section" id="abstract">
-<div class="container is-max-desktop reading-width">
-<h2 class="title is-3" id="abstract-title">Abstract</h2>
-<div class="content">
-<p>A11yLTLNav detects web accessibility navigation failures by checking explicit temporal rules while exploring keyboard interactions. The rules are grounded in studies with blind and low-vision users. Across 31 generated websites, 274 of 309 reported failures were confirmed correct (88.7% precision), without language-model inference during testing.</p>
-</div>
-</div>
 </section>
 <section aria-label="Focus-management failure from the paper" class="hero paper-teaser">
 <div class="container is-max-desktop">
@@ -72,6 +65,13 @@
 </a>
 <figcaption>Opening the dialog leaves focus on its trigger. Figure 2. <a href="https://arxiv.org/pdf/2609.17959#page=11">Paper</a> · <a href="/images/publications/a11yltlnav-focus-failure.png">Enlarge</a></figcaption>
 </figure>
+</div>
+</section><section aria-labelledby="abstract-title" class="section compact-section" id="abstract">
+<div class="container is-max-desktop reading-width">
+<h2 class="title is-3" id="abstract-title">Abstract</h2>
+<div class="content">
+<p>For blind and low-vision (BLV) screen-reader users, a website that appears accessible in a static snapshot can become difficult or impossible to navigate once interaction begins. Yet, most automated accessibility checkers miss failures involving focus, interface state, and accessible feedback across interactions. We present A11yLTLNav, a property-based approach for automatically detecting accessibility navigation failures. Through a structured review of prior research, we organize accessibility navigation failures into a failure taxonomy and formalize a browser-observable subset as executable Linear Temporal Logic properties over action-state traces. A11yLTLNav combines random keyboard exploration with runtime property monitoring to detect these failures during interactions. We evaluate A11yLTLNav on 31 generated websites based on real-world websites and tasks. It reported 309 accessibility failures, of which 274 were confirmed, achieving 88.7% precision and identifying more confirmed failures than the comparison checkers. Our results show that A11yLTLNav transforms accessibility knowledge into reusable checks of interface behavior over time.</p>
+</div>
 </div>
 </section><section aria-labelledby="video-title" class="section" id="video">
 <div class="container is-max-desktop">
@@ -203,7 +203,6 @@
 </table>
 </div>
 <p class="demo-note" id="evaluation-note">Confirmed errors were verified by human reviewers. Static checkers scanned the first page only; counts include findings relevant to blind and low-vision users. <a href="https://arxiv.org/html/2609.17959v1#S6">Paper · Table 4</a></p>
-
 </div>
 </div>
 </section>
