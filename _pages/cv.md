@@ -36,7 +36,7 @@ Detects accessibility problems during web interaction, such as lost keyboard foc
 **Revision-Based Learning from Interactive Experience and Feedback (RELIEF)**
 
 Jiawen Li, **Chenming Ge**, Alice Gao, Rishab Vempati, Yi-Hao Peng, Jason Wu<br>
-2026. **Submitted to NAACL 2027.**
+Manuscript, 2026. **Submitted to NAACL 2027.**
 
 RELIEF turns feedback-guided revisions of generated interfaces into training supervision for code generation models. We collected 355 interaction recordings and accompanying feedback from 24 users across 200 generated websites; critiques inferred from human interaction recordings led to the largest observed usability improvements across the two models tested.
 
