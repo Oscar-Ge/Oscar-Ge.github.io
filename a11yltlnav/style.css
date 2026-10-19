@@ -94,3 +94,6 @@ figcaption { font-family: 'Noto Sans', sans-serif; margin-top: .8rem; color: #66
   .results-table { font-size: .87rem; }
   .equation { font-size: 1.05rem; }
 }
+
+.presentation-figure { margin: 1.3rem 0; }
+.presentation-figure video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #f9f9f5; }
