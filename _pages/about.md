@@ -23,7 +23,8 @@ Human–Computer Interaction (HCI), Generative UI, Computer-use Agents, and Huma
 
 ## Selected Publications
 
-{% for post in site.publications reversed %}
+{% assign ordered_publications = site.publications | sort: 'publication_order' %}
+{% for post in ordered_publications %}
   {% if post.category == 'preprints' %}
     {% include publication-card.html publication=post %}
   {% endif %}
