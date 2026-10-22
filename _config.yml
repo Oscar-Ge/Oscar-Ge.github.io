@@ -316,6 +316,11 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # notes/: unlisted standalone pages, kept out of sitemap.xml
+  - scope:
+      path: "notes"
+    values:
+      sitemap: false
 
 
 # Sass/SCSS

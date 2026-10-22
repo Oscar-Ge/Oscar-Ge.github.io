@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Idea Discovery Report — GVHMR × GTA (2026-10-22)</title>
+
+<meta name="generator" content="ARIS render-html (academic, v1)">
+<meta name="aris:source-path" content="idea-stage/IDEA_REPORT.md">
+<meta name="aris:source-sha256" content="b60b75235cf50db4ebdc9d76391a66bcb151868b1e8ab5da51c4824e33b79bed">
+<meta name="aris:generated-at" content="2026-10-22 17:30 UTC">
+
+<!-- MathJax 3 -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-light.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => hljs.highlightAll());</script>
+
+
+<style>
+:root {
+  --bg: #fdfcf7;
+  --bg-soft: #f4f1ea;
+  --bg-code: #f8f5ec;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --ink-muted: #6b6b6b;
+  --primary: #1a4a8c;
+  --primary-soft: #2d6cb8;
+  --accent: #b8390e;
+  --warn: #b45309;
+  --warn-bg: #fef3c7;
+  --info-bg: #dbeafe;
+  --good-bg: #d1fae5;
+  --good: #065f46;
+  --bad-bg: #fee2e2;
+  --bad: #991b1b;
+  --border: #d6d0c0;
+  --border-soft: #e8e3d5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Source Serif Pro", "Source Serif 4", "Crimson Pro", "Georgia", "Songti SC", "STSong", serif;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  padding: 40px 32px;
+}
+
+nav.toc {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  font-size: 13px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border-soft);
+  padding-right: 16px;
+}
+nav.toc h3 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+nav.toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+nav.toc ol li { margin: 5px 0; counter-increment: toc; }
+nav.toc ol li::before { content: counter(toc) ". "; color: var(--ink-muted); margin-right: 4px; }
+nav.toc a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+}
+nav.toc a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+nav.toc ul { list-style: none; padding-left: 14px; margin: 3px 0; font-size: 12px; }
+nav.toc ul li::before { content: "→ "; color: var(--border); }
+
+main { min-width: 0; }
+
+header.hero {
+  border-bottom: 3px double var(--primary);
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+header.hero .eyebrow {
+  color: var(--accent);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+body.aris-blog header.hero .eyebrow {
+  font-family: inherit;
+  color: var(--ink-muted);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+header.hero h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+header.hero .subtitle {
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+  font-style: italic;
+}
+header.hero .byline {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+}
+header.hero .byline strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+header.hero .meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--ink-muted);
+  border-top: 1px solid var(--border-soft);
+  padding-top: 14px;
+}
+header.hero .meta span strong { color: var(--ink-soft); }
+header.hero .meta code {
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  background: var(--bg-soft);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border-soft);
+}
+
+h2 {
+  font-size: 24px;
+  margin: 44px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  font-weight: 700;
+}
+h2 .num { color: var(--primary); font-weight: 600; margin-right: 8px; }
+h3 { font-size: 19px; margin: 28px 0 10px; color: var(--primary); font-weight: 600; }
+h4 { font-size: 16px; margin: 20px 0 8px; color: var(--ink); font-weight: 600; }
+
+p { margin: 10px 0; }
+ul, ol { padding-left: 22px; margin: 10px 0; }
+ul li, ol li { margin: 4px 0; }
+ul li::marker { color: var(--primary); }
+
+strong { color: var(--accent); font-weight: 600; }
+em { color: var(--ink-soft); }
+
+a { color: var(--primary); }
+a:hover { color: var(--accent); }
+
+code:not(.hljs) {
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.86em;
+  background: var(--bg-code);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border-soft);
+  color: var(--accent);
+}
+
+pre {
+  background: #fafaf6;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  padding: 0;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin: 14px 0;
+}
+pre code, pre code.hljs {
+  background: transparent !important;
+  display: block;
+  padding: 14px 18px !important;
+  font-size: 13px;
+  line-height: 1.55;
+  font-family: "JetBrains Mono", "SF Mono", "Menlo", monospace;
+  color: var(--ink);
+}
+pre.diagram {
+  background: #f9f6ed;
+  border-left: 4px solid var(--accent);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.callout {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border-left: 4px solid;
+  font-size: 15px;
+}
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.callout-info { background: var(--info-bg); border-left-color: var(--primary); }
+.callout-info .callout-title { color: var(--primary); }
+.callout-warn { background: var(--warn-bg); border-left-color: var(--warn); }
+.callout-warn .callout-title { color: var(--warn); }
+.callout-good { background: var(--good-bg); border-left-color: var(--good); }
+.callout-good .callout-title { color: var(--good); }
+.callout-bad { background: var(--bad-bg); border-left-color: var(--bad); }
+.callout-bad .callout-title { color: var(--bad); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+thead { background: var(--primary); color: white; }
+th, td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+th { font-weight: 600; font-size: 13px; letter-spacing: 0.02em; }
+tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--bg-soft); }
+
+details.qa, details {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 0;
+}
+details summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary);
+  list-style: none;
+  user-select: none;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before {
+  content: "▸ ";
+  margin-right: 4px;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+details[open] summary::before { transform: rotate(90deg); }
+details[open] summary { border-bottom: 1px solid var(--border-soft); }
+details > :not(summary) { padding: 10px 14px; }
+details p:first-of-type { margin-top: 8px; }
+
+mjx-container[display="true"] { margin: 12px 0 !important; }
+
+footer.aris-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+footer.aris-footer a { color: var(--ink-muted); border-bottom: 1px dotted var(--border); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 20px; padding: 20px 16px; }
+  nav.toc {
+    position: static;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+  header.hero h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+}
+@media print {
+  nav.toc { display: none; }
+  .layout { grid-template-columns: 1fr; padding: 0; }
+  body { background: white; }
+  header.hero { border-bottom-color: var(--ink); }
+  #cite-pop, dialog.lightbox { display: none !important; }
+}
+
+/* --- P0 polish: TOC scrollspy active state ---------------------------- */
+nav.toc a.active {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom-color: var(--accent);
+}
+
+/* --- P0 polish: Long-code auto-collapse ------------------------------- */
+details.code-card {
+  margin: 14px 0;
+  background: #fafaf6;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 4px;
+}
+details.code-card > summary {
+  cursor: pointer;
+  padding: 8px 14px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-family: "JetBrains Mono", "SF Mono", monospace;
+  list-style: none;
+  user-select: none;
+}
+details.code-card > summary::-webkit-details-marker { display: none; }
+details.code-card > summary::before { content: none; }
+details.code-card > pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-left: none;
+  border-radius: 0;
+}
+@media print {
+  details.code-card { border: 1px solid #ccc; background: white; }
+  details.code-card > summary { display: none !important; }
+  details.code-card > pre { border: 1px solid #ddd; border-radius: 4px; background: white; }
+}
+
+/* --- P0 polish: Paper popover ([[ref]] popups) ------------------------ */
+[data-ref] {
+  color: var(--primary);
+  border-bottom: 1px dotted var(--primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+[data-ref]:hover { background: rgba(26, 74, 140, 0.08); }
+#cite-pop {
+  position: fixed;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  line-height: 1.5;
+  z-index: 1000;
+}
+#cite-pop[hidden] { display: none; }
+#cite-pop .cp-title {
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  padding-right: 24px;
+}
+#cite-pop .cp-meta {
+  color: var(--ink-muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+#cite-pop .cp-key {
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+#cite-pop .cp-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 500;
+}
+#cite-pop .cp-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--ink-muted);
+}
+
+/* --- P0 polish: Figure lightbox (native <dialog>) --------------------- */
+dialog.lightbox {
+  border: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.92);
+  width: 96vw;
+  height: 96vh;
+  max-width: 96vw;
+  max-height: 96vh;
+}
+dialog.lightbox::backdrop { background: rgba(0, 0, 0, 0.92); }
+dialog.lightbox .lb-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+  position: relative;
+}
+dialog.lightbox img {
+  max-width: 90vw;
+  max-height: 84vh;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+dialog.lightbox figcaption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  text-align: center;
+  max-width: 700px;
+}
+dialog.lightbox .lb-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* --- P0 polish: blog/talk mode active-H2 highlight (opt-in) ----------- */
+body.aris-blog h2 { scroll-margin-top: 24px; }
+body.aris-blog h2.aris-active-h2 {
+  background: linear-gradient(to right, rgba(26, 74, 140, 0.06), transparent);
+  border-radius: 4px;
+  padding-left: 12px;
+  margin-left: -12px;
+}
+</style>
+</head>
+<body class="">
+<div class="layout">
+
+<nav class="toc">
+  <h3>Contents</h3>
+  <ol>
+<li><a href="#executive-summary">Executive Summary</a>
+</li>
+<li><a href="#literature-landscape">Literature Landscape</a>
+<ul>
+<li><a href="#l1-视频-hmr-主干竞争激烈单卡课程项目不宜正面竞争">L1. 视频 HMR 主干：竞争激烈，单卡课程项目不宜正面竞争</a></li>
+<li><a href="#l2-遮挡与后处理方法多评测粗">L2. 遮挡与后处理：方法多，评测粗</a></li>
+<li><a href="#l3-合成和游戏数据常用来训练很少用来诊断">L3. 合成和游戏数据：常用来训练，很少用来诊断</a></li>
+<li><a href="#l4-无真值的质量估计和不确定性单图有视频少">L4. 无真值的质量估计和不确定性：单图有，视频少</a></li>
+<li><a href="#l5-agent-和工具编排2026-年-10-月正热但没有-3d-真值验证">L5. Agent 和工具编排：2026 年 10 月正热，但没有 3D 真值验证</a></li>
+<li><a href="#l6-测试时自适应tta">L6. 测试时自适应（TTA）</a></li>
+<li><a href="#l7-自动找失败">L7. 自动找失败</a></li>
+<li><a href="#l8-相机和焦距">L8. 相机和焦距</a></li>
+<li><a href="#结构性缺口供-phase-2-使用">结构性缺口（供 Phase 2 使用）</a></li>
+</ul>
+</li>
+<li><a href="#ranked-ideas">Ranked Ideas</a>
+<ul>
+<li><a href="#全部-20-个方向按分诊排序">全部 20 个方向（按分诊排序）</a></li>
+<li><a href="#前排方向详述">前排方向详述</a></li>
+<li><a href="#其余方向简述详见分诊-trace">其余方向（简述，详见分诊 trace）</a></li>
+<li><a href="#评审建议的-23-个组合">评审建议的 2–3 个组合</a></li>
+</ul>
+</li>
+<li><a href="#novelty-verification">Novelty Verification</a>
+</li>
+<li><a href="#external-critical-review">External Critical Review</a>
+<ul>
+<li><a href="#评审发现的硬伤都接受进入-refine">评审发现的硬伤（都接受，进入 refine）</a></li>
+<li><a href="#叙事建议">叙事建议</a></li>
+<li><a href="#贡献是否足够">贡献是否足够</a></li>
+<li><a href="#第一个该跑的判别实验-3-gpu-小时23-天">第一个该跑的判别实验（&lt; 3 GPU 小时，2–3 天）</a></li>
+<li><a href="#结果到结论矩阵评审给出供-proposal-写作参考">结果到结论矩阵（评审给出，供 proposal 写作参考）</a></li>
+<li><a href="#对其他方向的连带影响">对其他方向的连带影响</a></li>
+</ul>
+</li>
+<li><a href="#final-recommendation">Final Recommendation</a>
+<ul>
+<li><a href="#方向-1验证器会在哪里失明i5-细化版含-i6p1-作为-claim-2-recommended">🏆 方向 1：验证器会在哪里失明？（I5 细化版，含 I6/P1 作为 Claim 2）—— RECOMMENDED</a></li>
+<li><a href="#方向-2备选偏-video-hpe-题目因果诊断套件i3-遮挡桥接长度--i7-小人物-imgds--i1-换真值归因">方向 2（备选，偏 Video HPE 题目）：因果诊断套件（I3 遮挡桥接长度 + I7 小人物 `img_ds` + I1 换真值归因）</a></li>
+<li><a href="#方向-3备选工具路由的-oracle-余量i6--你们的-p1">方向 3（备选）：工具路由的 oracle 余量（I6 = 你们的 P1）</a></li>
+<li><a href="#扩展第-4-周之后有余力再做隐形失败搜索i16">扩展（第 4 周之后有余力再做）：隐形失败搜索（I16）</a></li>
+</ul>
+</li>
+<li><a href="#eliminated-ideas">Eliminated Ideas</a>
+</li>
+<li><a href="#refined-proposal">Refined Proposal</a>
+</li>
+<li><a href="#next-steps">Next Steps</a>
+</li>
+<li><a href="#evidence-notes">Evidence Notes</a>
+</li>
+<li><a href="#references-verified">References (verified)</a>
+</li>
+<li><a href="#evidence-gate">Evidence Gate</a>
+</li>
+</ol>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="eyebrow">Workflow 1 · idea-gvhmr-gta-20261022</div>
+  <h1>Idea Discovery Report — GVHMR × GTA (2026-10-22)</h1>
+  
+  
+  <div class="meta">
+    <span><strong>Source:</strong> <code>idea-stage/IDEA_REPORT.md</code></span>
+    <span><strong>SHA256:</strong> <code>b60b75235cf5</code></span>
+    <span><strong>Rendered:</strong> 2026-10-22 17:30 UTC</span>
+    
+  </div>
+</header>
+
+<h1 id="idea-discovery-report">Idea Discovery Report</h1>
+<p><strong>Direction</strong>：以 <code>/home/gecm/eecs442/LIT_REVIEW_20261019.md</code> 为起点（GVHMR + GTA 真值，单张 A40，约 5 周，EECS 442 FA26 课程项目），在 2026 年 10 月尽可能广地发现可做的方向。 <strong>Date</strong>：2026-10-22 <strong>Pipeline</strong>：research-lit → idea-creator → novelty-check → research-review → research-refine-pipeline <strong>Run id</strong>：<code>idea-gvhmr-gta-20261022</code>（<code>.aris/runs/idea-gvhmr-gta-20261022.json</code>） <strong>Executor</strong>：claude-opus-5-5；<strong>Reviewer</strong>：llm-chat HTTP（请求 <code>google/gemini-4-argon</code>，实际模型以每次返回为准）</p>
+<blockquote><p>本报告是选题与规划材料。课程规定 proposal 和报告正文必须由组员自己写；这里的内容属于需要申报的生成式 AI 使用记录。</p></blockquote>
+<h2 id="executive-summary">Executive Summary</h2>
+<p><strong>推荐方向</strong>：<strong>"验证器会在哪里失明？"</strong>。用 GTA 真值审计 agentic 3D 人体重建中的"验证—选择"步骤（由 I5 细化而来，并把你们的 P1 收进来作为辅助结论）。做法是：在同一段视频的候选重建之间，看 GT-free 验证器能不能选出更准的那个。验证器包括 2D 重投影、TTA 自洽、运动学、MotionCritic、Qwen3-VL 看叠加图。用游戏真值控制退化剂量，再在 EMDB/RICH 上做方向性复现，最后把盲区归为三类机制。它同时扩展课程的两个题目：Agentic Real2Sim 关心 agent 如何"验证"工具和可靠性；Video HPE 关心 GVHMR 在不同条件下的表现。</p>
+<ul><li><p><strong>证据链</strong>：</p>
+<ul><li>查新 9/10，PROCEED，最近的工作是 CalTennis 和 VLM 评审 HMR；</li><li>外部批判评审 PROCEED 7.5/10，指出的 5 处硬伤都已吸收；</li><li>方法细化三轮 7.0 → 7.9 → <strong>9.1 READY</strong>；</li><li>约 23 个 A40 GPU 小时。</li><li><strong>还没有任何 pilot</strong>：本项目没配 GPU，第 1 周的 pilot 需要你们在 Great Lakes 上跑。</li></ul></li><li><strong>这一轮一共发现了 20 个方向</strong>，见 Ranked Ideas。另外有一条免训练的发现可以马上验证：GVHMR 预处理默认 <code>img_ds=0.5</code>，会先把整帧缩小一半，可能是小人物误差（105.7 mm）的原因之一。用 <code>--img_ds 1.0</code> 对比 0.5，不到 1 个 GPU 小时就能判断。</li><li><strong>提醒</strong>：本报告是选题和规划材料；10/30 交的 proposal 正文必须由组员自己写。</li></ul>
+<h2 id="literature-landscape">Literature Landscape</h2>
+<p>本节在 10/19 综述的基础上补充了 2026 年 3–10 月的新工作。10/19 综述里引用的 arXiv 编号都已核实存在（<code>verify_papers.py</code>：36 篇经 arXiv 确认；ScoreHypo、AAAI'26 长时 TTA、CVPRW'24 Human3.6M-C 这 3 篇只有标题，状态为 <code>verify_pending</code>，S2 暂时不可用）。Gemini 来源跳过：本机没有安装 <code>gemini</code> CLI。</p>
+<h3 id="l1-视频-hmr-主干竞争激烈单卡课程项目不宜正面竞争">L1. 视频 HMR 主干：竞争激烈，单卡课程项目不宜正面竞争</h3>
+<table><thead><tr><th>论文</th><th>时间</th><th>要点</th><th>和我们的关系</th></tr></thead><tbody><tr><td>GVHMR（2409.06662）✅</td><td>SIGGRAPH Asia 2024</td><td>基线，本机已复现</td><td>冻结使用</td></tr><tr><td>DuoMo（2603.03265）✅</td><td>2026-03</td><td>相机系和世界系两个扩散模型；EMDB 世界系误差 −16%，RICH −30%</td><td>更强的世界系主干，可当"换模型"工具或上界</td></tr><tr><td>OnlineHMR（2603.17355）✅</td><td>CVPR 2026</td><td>因果、流式推理，以人为中心的增量 SLAM</td><td>与离线精度无关</td></tr><tr><td>FactorizedHMR（2605.14854）✅</td><td>2026-05</td><td>躯干-根节点用回归锚定，四肢用 flow matching 补全；自带合成数据管线，提供图像-相机-运动配对监督</td><td>遮挡下四肢不确定性的最新做法</td></tr><tr><td>RAM（2603.19929）✅</td><td>2026-03</td><td>语义跟踪 + 自适应 Kalman，处理遮挡下的身份关联，再接时序 HMR</td><td>和"选错人/身份切换"直接相关</td></tr><tr><td>Multi-HMR 2（2606.14841）✅</td><td>2026-06</td><td>相机系多人检测、网格和跟踪；预测 FOV，不需要真值内参</td><td>可以回应 B5 的焦距问题</td></tr><tr><td>SAM 3D Body（2602.15989）✅</td><td>2026-02</td><td>单图、可提示（关键点、mask），MHR 表示；新评测集按姿态和外观类别组织</td><td>强单帧工具；"按类别评测"的思路和我们的分层一致</td></tr><tr><td>WATCH（2509.04600）✅</td><td>2025-09</td><td>世界系相机与人体联合重建</td><td>相关基线</td></tr></tbody></table>
+<p><strong>结论</strong>：主干方法每 2–3 个月就有新的 SOTA，而且都只在 EMDB/RICH/3DPW 上报告整体数字，<strong>没有一篇按遮挡、人物大小、相机转速这些因子做可控评测</strong>。</p>
+<h3 id="l2-遮挡与后处理方法多评测粗">L2. 遮挡与后处理：方法多，评测粗</h3>
+<ul><li>生成式先验：MoRo（2601.16079 ✅，掩码建模）、MoPO（2605.09856 ✅，时空遮挡检测器预测关节可见性，再用运动预测补全）、RoHM（2401.08570 ✅）、FactorizedHMR。</li><li>后处理与优化：HTD-Refine（2605.26879 ✅，CVPR 2026 oral，用估计的速度和加速度做软约束）、PromptHMR 后优化、AHa-3D v2。</li><li><strong>局部证据精修</strong>（新）：FootMR（2603.09681 ✅，从 2D 脚部关键点提升，只预测残差）→ ExMR（2610.26213 ✅，<strong>2026-10-19 刚挂出</strong>，把同样思路推广到手和肘、腕）。结论是"整体表示没有用好局部证据"，这和 T-res（小人物重裁）的思路相通。</li><li>遮挡评测用的是 3DPW-OC、EgoBody、RICH 这类真实数据，<strong>没有逐关节遮挡真值，也没有"遮挡面积 × 持续时间"的剂量控制</strong>。本机官方分层得到的 2.3 倍是相关关系，不是因果。</li></ul>
+<h3 id="l3-合成和游戏数据常用来训练很少用来诊断">L3. 合成和游戏数据：常用来训练，很少用来诊断</h3>
+<ul><li>训练用途：GTA-Human（2110.07588 ✅，TPAMI 2024）、BEDLAM2.0（2511.14394 ✅，NeurIPS 2025 D&amp;B：相机运动、可变焦距和变焦，GVHMR 重训后 EMDB 只提升几个百分点）、PoseDreamer（2603.28763 ✅，扩散生成数据 + 难例挖掘）、蹦床体操（2604.01322 ✅，合成极端姿态）。</li><li>评测用途：MVMP-HMR（2607.24302 ✅，多视角多人合成基准）、Human3.6M-C（CVPRW 2024，<code>verify_pending</code>，2D→3D lifter 的腐蚀基准，不是视频网格恢复）。</li><li><strong>缺口</strong>：没找到研究"合成基准上的方法排名能否预测真实基准排名"（sim-to-real 评测效度）的 HMR 工作；也没有人做过视频世界系 HMR 的"遮挡 × 相机 × 人物大小"联合压力测试。</li></ul>
+<h3 id="l4-无真值的质量估计和不确定性单图有视频少">L4. 无真值的质量估计和不确定性：单图有，视频少</h3>
+<ul><li>CUPS（2412.10431 ✅）：视频 HMR + 共形预测，给出覆盖保证。</li><li>ScoreHypo（CVPR 2024，<code>verify_pending</code>）：给多个假设打分并选择。</li><li>MHE-Former（2609.10743 ✅，2026-09）：多假设 + <strong>用 VLM 做假设选择</strong>。</li><li>VLM 评审 HMR（2602.19180 ✅，CVPR 2026）：Qwen3-VL-32B 给渲染叠加图打分，用于偏好对齐；它的自我反思阶段要用真值。</li><li>MotionCritic（2407.02272 ✅，ICLR 2025）：学到的运动感知质量评分，面向生成，不是重建。</li><li><strong>缺口</strong>：(a) 视频级别"失败了，而且是哪一种失败"的诊断；(b) 在<strong>可控剂量</strong>下检验这些 GT-free 分数（VLM 评分、重投影误差、不确定性）与真实 3D 误差的相关性，也就是评审器是否在最需要它的条件下失灵。</li></ul>
+<h3 id="l5-agent-和工具编排2026-年-10-月正热但没有-3d-真值验证">L5. Agent 和工具编排：2026 年 10 月正热，但没有 3D 真值验证</h3>
+<ul><li>ChatHuman（2405.04533 ✅，CVPR 2025）：单图，学习选工具。</li><li>AHa-3D（课程参考）：编程 agent 操作仓库，没有定量基准。</li><li>Agentic Real2Sim（2607.19190 ✅，2026-07）：开源 VLM 驱动 real2sim，含人形运动场景。</li><li><strong>LiteReality-Agent</strong>（2610.01863 ✅，<strong>2026-10-01</strong>）：把重建写成编程问题，用 observe-edit-verify 框架；核心卖点是"验证机制"。</li><li>InteractAgent（2610.25649，2026-10）：MLLM 规划和评估，冻结的 MotionLLM 执行，用于运动生成。</li><li><strong>缺口</strong>：这些系统都声称"验证"提升了可靠性，但<strong>没有一篇用 3D 真值检验 agent 的验证判断本身是否正确</strong>。</li></ul>
+<h3 id="l6-测试时自适应tta">L6. 测试时自适应（TTA）</h3>
+<p>CycleAdapt（2308.06554 ✅）、DynaBOA（2111.04017 ✅）、语义感知 TTA（2502.10724 ✅，ICML 2025）、长时 TTA（AAAI 2026，<code>verify_pending</code>）。都针对相机系或 3D 姿态模型；<strong>没有针对 GVHMR 这类世界系视频模型的</strong>，也没有在有真值的游戏域移位上做的。</p>
+<h3 id="l7-自动找失败">L7. 自动找失败</h3>
+<p>PoseExaminer（2303.07337 ✅，CVPR 2023）在人体模拟器里用多智能体 RL 搜失败区域，是单图模型。视频世界系模型的失败搜索空间（遮挡时机、相机转速、人物大小、帧率）还没人做。</p>
+<h3 id="l8-相机和焦距">L8. 相机和焦距</h3>
+<p>CameraHMR/HumanFoV（2411.08128 ✅）、Multi-HMR 2 的 FOV 预测、Zolly、BLADE、W-HMR。本机结果 B5（焦距错 1.9 倍 → 深度错 1.85 倍，姿态几乎不变）与这些工作一致；在 GTA 上焦距已知，<strong>这一维对姿态不重要，对世界系轨迹和多人相对深度重要</strong>。</p>
+<h3 id="结构性缺口供-phase-2-使用">结构性缺口（供 Phase 2 使用）</h3>
+<table><thead><tr><th>编号</th><th>缺口</th><th>证据</th></tr></thead><tbody><tr><td>G1</td><td>视频世界系 HMR 缺少<strong>因果剂量-反应评测</strong>（遮挡面积×时长、相机转速、人物大小、帧率）</td><td>L1–L3；本机：真实数据中 ≥30°/s 的帧 &lt;4%</td></tr><tr><td>G2</td><td>GT-free 质量信号（重投影误差、VLM 评分、不确定性）<strong>在哪些条件下失灵</strong>没人测</td><td>L4、L5</td></tr><tr><td>G3</td><td><strong>工具路由的余量</strong>（oracle 相对最佳固定流程）从未被量化</td><td>ChatHuman、AHa-3D、LiteReality-Agent</td></tr><tr><td>G4</td><td>端到端误差没有<strong>按模块分解</strong>（检测/跟踪 → 2D 关键点 → 图像特征 → 时序网络 → 后处理）</td><td>本机：前端失败 6/36；WHAM、GVHMR 的消融都不替换输入</td></tr><tr><td>G5</td><td><strong>合成评测效度</strong>：GTA 上的结论（排名、因子效应）能否迁移到真实基准</td><td>L3</td></tr><tr><td>G6</td><td><strong>真值噪声</strong>：GTA 的 SMPL 是拟合出来的（中位偏差 14.5 px），会不会改变结论</td><td>本机 B 节</td></tr><tr><td>G7</td><td>世界系视频模型的<strong>测试时自适应</strong></td><td>L6</td></tr><tr><td>G8</td><td><strong>小人物</strong>：2025–26 年没有专门针对视频 HMR 的超分或重裁工作</td><td>检索为空；本机小人物 1.9–2.1 倍</td></tr><tr><td>G9</td><td><strong>低帧率和帧率不匹配</strong>（GTA 15 fps，模型按 30 fps 训练）</td><td>本机 B7</td></tr><tr><td>G10</td><td><strong>局部证据精修</strong>（ExMR 思路）用于遮挡或小人物的肢体</td><td>L2</td></tr></tbody></table>
+<h2 id="ranked-ideas">Ranked Ideas</h2>
+<p><strong>流程</strong>：6 个分析角度（executor 顺序执行，没有派子 agent，14 个候选）+ Gemini 独立构思（16 个候选）= 30 个，按假设机械去重成 <strong>20 个方向簇</strong>。预算门（GPU 超过 1 周，或数据确定拿不到）没有淘汰任何一个。排序来自同一评审线程的交叉分诊（trace：<code>.aris/traces/idea-creator/2026-10-22_run01/002-phase4-triage</code>）。<strong>Pilot 全部跳过</strong>：本 ARIS 项目的 CLAUDE.md 写明"未配置 GPU，跳过 pilot"，所以每个方向都标"需要 pilot 验证"。你们自己在 Great Lakes 上有 A40，下面每个方向都给了最便宜的验证实验。</p>
+<h3 id="全部-20-个方向按分诊排序">全部 20 个方向（按分诊排序）</h3>
+<table><thead><tr><th>排名</th><th>ID</th><th>方向</th><th>类型</th><th>风险</th><th>估计 A40 小时</th><th>课程题目</th><th>来源</th></tr></thead><tbody><tr><td>1</td><td>I5</td><td><strong>验证器什么时候会骗人</strong>：在可控剂量下，审计不看真值的质量信号和真实 3D 误差的相关性</td><td>诊断</td><td>低–中</td><td>~6</td><td>两个都扩展</td><td>双方</td></tr><tr><td>2</td><td>I1</td><td><strong>输入换真值的误差归因</strong>：把框、2D 关键点、置信度、焦距、相机角速度逐个换成 GTA 真值</td><td>诊断</td><td>低</td><td>~2–3</td><td>Video HPE（也决定 P1 的工具）</td><td>双方</td></tr><tr><td>3</td><td>I7</td><td><strong>小人物分辨率剂量 + 原因 + 免训练修复</strong></td><td>诊断 + 简单方法</td><td>低</td><td>~6–8</td><td>Video HPE</td><td>双方</td></tr><tr><td>4</td><td>I3</td><td><strong>遮挡剂量与时序桥接长度</strong></td><td>诊断</td><td>低</td><td>~6</td><td>Video HPE</td><td>双方</td></tr><tr><td>5</td><td>I6</td><td><strong>工具路由的 oracle 余量</strong>：三条规则 vs 本地 VLM vs 真值 oracle（即 P1）</td><td>方法/实证</td><td>中</td><td>~25–30</td><td>两个都扩展</td><td>双方 + P1</td></tr><tr><td>6</td><td>I16</td><td><strong>隐形失败搜索</strong>：找"3D 错得离谱、但验证器都说没问题"的扰动</td><td>诊断/方法</td><td><strong>高</strong></td><td>~4–30</td><td>两个都扩展</td><td>双方</td></tr><tr><td>7</td><td>I2</td><td><strong>相机转速去混杂</strong>：动作不变、只改虚拟转速，检验真实基准里的负相关是不是辛普森悖论</td><td>诊断</td><td>低</td><td>~3–12</td><td>Video HPE</td><td>双方</td></tr><tr><td>8</td><td>I9</td><td><strong>按可见性加权的后优化</strong>：含 GTA 真值可见性的上界</td><td>方法</td><td>低</td><td>~8</td><td>两个都扩展（≈P2）</td><td>双方</td></tr><tr><td>9</td><td>I10</td><td><strong>世界系视频模型的测试时自适应</strong>，在相同算力下和输出空间后优化比</td><td>方法</td><td>中</td><td>~5</td><td>Video HPE</td><td>双方</td></tr><tr><td>10</td><td>I20</td><td><strong>合成评测效度</strong>：GTA 上的排名和因子斜率能不能迁移到真实基准</td><td>基准/实证</td><td>中</td><td>~10</td><td>Video HPE</td><td>executor</td></tr><tr><td>11</td><td>I19</td><td><strong>后处理的帕累托前沿</strong>：jitter、脚滑、加速度误差、MPJPE 之间的权衡</td><td>实证</td><td>低</td><td>~4–8</td><td>Video HPE</td><td>executor</td></tr><tr><td>12</td><td>I18</td><td><strong>在游戏上校准、在真实上部署</strong>的共形风险控制</td><td>实证</td><td>中</td><td>~0（CPU）</td><td>两个都扩展</td><td>executor</td></tr><tr><td>13</td><td>I17</td><td><strong>区分自遮挡和外物遮挡的四肢精修器</strong>（ExMR 思路）</td><td>方法</td><td><strong>高</strong></td><td>~20</td><td>Video HPE</td><td>Gemini</td></tr><tr><td>14</td><td>I11</td><td><strong>帧率解耦</strong>：时序网络建模的是物理时间还是帧序号</td><td>诊断</td><td>低</td><td>~4–6</td><td>Video HPE</td><td>双方</td></tr><tr><td>15</td><td>I4</td><td><strong>拟合真值的噪声底</strong>：用 SMPL 拟合和游戏原生骨架各评一次</td><td>支撑分析</td><td>低</td><td>CPU</td><td>任一</td><td>双方</td></tr><tr><td>16</td><td>I13</td><td><strong>多人：身份劫持 vs 框内特征污染</strong>（GTA-Human II）</td><td>诊断 + 方法</td><td>中</td><td>~12 + 2–3 天 I/O</td><td>两个都扩展</td><td>Gemini</td></tr><tr><td>17</td><td>I15</td><td><strong>图像级遮挡微调 + 可见性头</strong>（即 P3）</td><td>方法</td><td>中</td><td>~28–35</td><td>Video HPE</td><td>Gemini + P3</td></tr><tr><td>18</td><td>I8</td><td><strong>多尺度虚拟变焦的测试时融合</strong></td><td>方法</td><td>中</td><td>~6</td><td>Video HPE</td><td>Gemini</td></tr><tr><td>19</td><td>I12</td><td><strong>用人体和触地自标定焦距</strong></td><td>方法</td><td>中</td><td>~2</td><td>Video HPE</td><td>Gemini</td></tr><tr><td>20</td><td>I14</td><td><strong>多人深度顺序 + 互穿后优化</strong></td><td>方法</td><td>中</td><td>~10 + I/O</td><td>两个都扩展</td><td>Gemini</td></tr></tbody></table>
+<p>评审认为以下几项最适合当 <strong>1–3 天的支撑分析</strong>，用来加固主项目，不适合单独做一个项目：I4、I1、I11、I18、I19、I20。</p>
+<h3 id="前排方向详述">前排方向详述</h3>
+<h4 id="i5-验证器什么时候会骗人分诊第-1">I5 验证器什么时候会骗人（分诊第 1）</h4>
+<ul><li><p><strong>做法</strong>：</p>
+<ol><li>在 GTA 片段上按剂量加扰动：遮挡面积 × 时长、人物缩小、虚拟转镜、故意用错焦距、过度平滑的后处理。</li><li>对每个输出计算一组不看真值的信号：2D 重投影误差、关键点置信度、jitter 和脚滑、测试时增强的分歧、AHa-3D 式的滑动/重投影检查、MotionCritic 分数、本地 Qwen3-VL-8B 看叠加图的打分。</li><li>在每个剂量档里算这些信号和真实 3D 误差（PA-MPJPE、W-MPJPE）的秩相关，画出"相关性随剂量变化"的曲线。</li></ol></li><li><strong>假设</strong>：基于 2D 的信号和 VLM 评分在"被挡的肢体被合理地编出来"和"深度错了"这两类失败上看不出问题。所以相关性恰好在最需要验证的条件下塌掉；依赖 verify 步骤的 agent 流程（AHa-3D、LiteReality-Agent）也继承这个盲区。</li><li><strong>最小实验</strong>：40 段 × 6 种条件，信号计算很便宜，VLM 约 2 个 GPU 小时。</li><li><strong>两个方向的结果都能报告</strong>：如果相关性一直很高，说明简单验证器够用；如果在某些条件下塌掉，就是 agent 验证步骤的已知盲区。</li><li><strong>评审最可能的反对</strong>：VLM 的结果可能只反映 8B 模型和提示词的局限，而不是"视觉验证"本身的局限。<strong>命名风险</strong>："平凡主导"，即简单的关键点置信度在几乎所有条件下都和 3D 误差高度相关。</li><li><strong>Pilot</strong>：跳过，需要 pilot 验证。</li></ul>
+<h4 id="i1-输入换真值的误差归因分诊第-2">I1 输入换真值的误差归因（分诊第 2）</h4>
+<ul><li><p><strong>做法</strong>：</p>
+<ol><li>对 GVHMR 的每个输入（跟踪框、2D 关键点、关键点置信度、内参、相机角速度）各准备一个 GTA 真值版本。2D 关键点由游戏骨架映射到 COCO-17；置信度用 <code>1−occ</code>。</li><li>逐项替换和两两替换各跑一次（缓存特征，只做推理）。</li><li>按"大/中/小人物 × 有无遮挡"分层，用 Shapley 值把误差分摊到各模块。</li></ol></li><li><strong>假设</strong>：小人物的误差主要来自 2D 关键点，而不是时序网络；跟踪失败主导了片段级的离群值。</li><li><strong>最小实验</strong>：现有 30–48 段，约 2–3 个 GPU 小时（<code>make_oracle_track.py</code> 已经能注入框）。</li><li><strong>评审反对 / 命名风险</strong>："真值图像特征"不存在，图像特征分支只能当残差；模块之间可能有超可加的交互，分摊结果会不干净。</li></ul>
+<h4 id="i7-小人物分辨率剂量原因和免训练修复分诊第-3">I7 小人物：分辨率剂量、原因和免训练修复（分诊第 3）</h4>
+<ul><li><p><strong>做法</strong>：</p>
+<ol><li>按比例缩小整帧（内参同步精确缩放），让同一段动作的人物高度分别为画面的 0.4、0.25、0.15、0.10、0.07。</li><li>结合 I1 的真值替换，判断小人物失败的原因：2D 关键点、图像特征，还是深度歧义。</li><li>试三种免训练修复：在原分辨率下重新紧裁；双三次插值放大；ViTPose 之前用超分（分别只用在 ViTPose 分支或只用在 ViT 特征分支）。</li></ol></li><li><strong>假设</strong>：人物高度低于约 0.15 时，2D 关键点成为瓶颈；原图里有像素时，紧裁能救回大部分误差，像素已经丢失时超分救不回来。</li><li><strong>最小实验</strong>：20 段 × 5 个尺度 × 3 种修复，约 6–8 个 GPU 小时。</li><li><strong>命名风险</strong>：真正的信息丢失。人物低于 100 px 时肢体只有 2–4 px 宽，哪种修复都没用。</li><li><strong>Phase 3 之后 executor 在代码里核实的事实（回应查新的 CAUTION）</strong>：GVHMR 预处理 <code>hmr4d/utils/preproc/vitfeat_extractor.py:get_batch</code> 和 <code>vitpose.py:extract</code> 默认 <code>img_ds=0.5</code>，即<strong>先把整段视频缩小一半，再裁剪放大到 256</strong> 给 ViTPose 和 HMR2 特征用（源码注释："img_ds makes the image smaller, which is useful for faster processing"）。1080p 里高度不到 0.15（&lt;162 px）的人，裁剪前就只剩不到 81 px。你们的 GTA 结果都是在默认 0.5 下跑的；<code>gvhmr_eval/run_clip.py</code> 已经支持 <code>--img_ds</code>，但 scratch 上没有任何 <code>_ds1</code> 输出，说明从没用 1.0 跑过。<strong>这正是查新评审要求的"GVHMR 处理小人物的具体缺陷"候选</strong>。最便宜的判别实验：10 个小人物片段，<code>--img_ds 1.0</code> 对比 0.5，不到 1 个 GPU 小时。如果小人物的 PA-MPJPE 明显下降（比如 ≥10%），I7 就有了一个免训练修复 + 原因定位；如果几乎不变，就排除了"预处理分辨率"这个解释，瓶颈在更后面。两种结果都有信息量。</li></ul>
+<h4 id="i3-遮挡剂量与时序桥接长度分诊第-4">I3 遮挡剂量与时序桥接长度（分诊第 4）</h4>
+<ul><li><strong>做法</strong>：在 GTA 片段上贴合成遮挡物，控制面积、持续时间、遮挡部位（四肢或躯干）和开始时刻；重新提取 ViTPose 和特征，测 GVHMR 的时序 Transformer 能"桥接"多长的完全遮挡（误差拐点 T\<em>），以及各种后处理能不能把 T\</em> 延长。</li><li><strong>假设</strong>：在 0.5–1 秒附近有明显拐点；遮四肢比遮躯干影响更大。这样可以把 2.3 倍的相关结论变成因果曲线。</li><li><strong>最小实验</strong>：20 段 × 4 种时长 × 3 种面积 × 2 个部位，约 6 个 GPU 小时。</li><li><strong>命名风险</strong>：立刻崩溃，即 T\*≈1–2 帧，时序模型几乎不桥接，结论退化成逐帧失败报告。合成遮挡物的边缘也不自然。</li></ul>
+<h4 id="i6-工具路由的-oracle-余量分诊第-5即-p1">I6 工具路由的 oracle 余量（分诊第 5，即 P1）</h4>
+<ul><li><strong>做法</strong>：同 P1。4 个修复工具各跑一次并缓存，比较默认、全开、三条规则、Qwen3-VL-8B、真值 oracle 五种路由。</li><li><strong>假设</strong>：余量集中在尾部（小人物、跟错人），规则路由拿到大部分。</li><li><strong>命名风险</strong>：oracle 相对最佳固定流程的增益不到 5%，说明选工具只省算力、不提精度。P1 的 go/no-go 就是为这个风险设的。</li></ul>
+<h4 id="i16-隐形失败搜索分诊第-6高风险高收益评审建议给-pilot-名额">I16 隐形失败搜索（分诊第 6，<strong>高风险、高收益</strong>，评审建议给 pilot 名额）</h4>
+<ul><li><p><strong>做法</strong>：</p>
+<ol><li>把 I3 的扰动生成器参数化为 5 维：遮挡开始帧、时长、位置、虚拟转速、缩放。</li><li>用 CMA-ES 或贝叶斯优化最大化"3D 误差 − λ × 验证器分数"，复用 I5 的验证器。</li><li>加约束"目标关节至少 70% 的帧可见"，排除"全挡住"这种平凡解。</li></ol></li><li><strong>评审认为有说服力的结果</strong>：找到可复现的 10–15 帧"局部遮挡 + 转镜"片段，让 3D 误差升到 2.5 倍以上，而 2D 重投影误差变化不到 10%、Qwen3-VL 仍判为"准确"，比如肢体深度翻转或根节点朝向反转。</li><li><strong>Pilot</strong>：评审建议第 3 周做，5 段 × 30 次迭代 ≈ 4 个 GPU 小时。</li><li><strong>命名风险</strong>：退化最优解，即优化器找到的是打分漏洞，不是真正的隐形失败。</li></ul>
+<h4 id="i2-相机转速去混杂第-7">I2 相机转速去混杂（第 7）</h4>
+<ul><li><strong>做法</strong>：动作保持不变，用视角更窄的虚拟相机做纯旋转单应变换，转速 0/15/30/60/90°/s。分别给 GVHMR 静止假设、VO 和真值角速度三种相机输入，和真实基准里"转速越快误差越低"（EMDB-1 ρ=−0.50）的观测结论对比。</li><li><strong>命名风险</strong>：曲线是平的，因为 GTA 背景纹理清晰，VO 很容易跟上。纯旋转单应也没有视差、运动模糊和卷帘快门。</li></ul>
+<h4 id="i9-按可见性加权的后优化第-8p2">I9 按可见性加权的后优化（第 8，≈P2）</h4>
+<ul><li><strong>做法</strong>：在 AHa-3D v2 后优化里，把 0.9 的硬阈值换成可见性权重，比较三种权重来源：ViTPose 置信度、GTA 真值 <code>occ</code>（上界）、小型学习头；证据越少，时序先验越强。</li><li><strong>命名风险</strong>：即使用真值可见性，MPJPE 也只改善不到 2 mm。评审建议把重点放在"知道哪里被挡的价值上界"和帕累托权衡（I19），而不是把加权本身当成算法创新。</li></ul>
+<h4 id="i10-世界系测试时自适应第-9">I10 世界系测试时自适应（第 9）</h4>
+<ul><li><strong>做法</strong>：每段视频只更新 GVHMR 时序 Transformer 的 LayerNorm 或 adapter（不到 0.5% 的参数），用 2D 重投影 + 触地自监督训练约 20 步；在相同 GPU 时间下，和输出空间后优化（AHa-3D v2）比较。</li><li><strong>命名风险</strong>：对噪声 2D 灾难性过拟合，在遮挡和小人物上反而更差。</li></ul>
+<h4 id="i20-合成评测效度第-10">I20 合成评测效度（第 10）</h4>
+<ul><li><strong>做法</strong>：取 6–8 个系统变体（GVHMR 和 GVHMR-BEDLAM2、几种后处理、几种内参设置），分别在 GTA 和真实基准的分层上排名，报告 Kendall τ，以及人物大小、遮挡这些因子斜率的一致性。</li><li><strong>命名风险</strong>：变体太少，τ 的置信区间很宽；快速转镜、长时遮挡这些真实数据里没有的条件无法验证。</li></ul>
+<h3 id="其余方向简述详见分诊-trace">其余方向（简述，详见分诊 trace）</h3>
+<ul><li><strong>I19 帕累托前沿</strong>：命名风险是 HTD-Refine 在所有权重下都占优，权衡故事不成立。</li><li><strong>I18 共形风险控制</strong>：命名风险是可以预见的协变量偏移失效，修好它只是标准的加权共形方法。</li><li><strong>I17 区分自遮挡和外物遮挡的精修器</strong>（高风险）：GTA 独有的 <code>occ</code>/<code>self_occ</code> 区分，和 ExMR（10/19）的思路直接相连；命名风险是远端关节的拟合真值噪声。</li><li><strong>I11 帧率解耦</strong>：命名风险是 B7 的现象只是重复帧造成的有限差分伪影。</li><li><strong>I4 噪声底</strong>：命名风险是排名完全不变，结论正确但不够有意思。</li><li><strong>I13 多人特征污染</strong>：命名风险是 I/O 开销大，涂黑别人本身对 ViT 来说就是分布外输入。</li><li><strong>I15 遮挡微调（P3）</strong>：命名风险是灾难性遗忘，原训练数据下不到。</li><li><strong>I8 多尺度融合</strong>：可能被 I7 里"选对单一裁剪比例"直接打败。</li><li><strong>I12 焦距自标定</strong>：小人物和不走动的片段存在 f/Z 退化；这个方向的文献已经很多。</li><li><strong>I14 多人深度顺序和互穿</strong>：机制自 CVPR 2020 起已经成熟。</li></ul>
+<h3 id="评审建议的-23-个组合">评审建议的 2–3 个组合</h3>
+<ol><li><strong>因果诊断 + 小人物/遮挡修复套件</strong>：I1 + I7 + I3/I2，配 I4，约 18 GPU 小时，对应 Video HPE。</li><li><strong>审计 agentic Real2Sim 的验证和路由</strong>：I5 + I6，配 I18/I19，约 22 GPU 小时，和组合 1 共用工具缓存，覆盖两个课程题目。</li><li><strong>高收益 pilot 名额</strong>：I16，约 4 GPU 小时，复用前两个组合的扰动生成器和验证器。</li></ol>
+<h2 id="novelty-verification">Novelty Verification</h2>
+<p>对分诊排名前 6 的方向做了深度查新：每条核心主张检索 2–3 种说法，来源是 arXiv API 和网页检索；之后开了<strong>新的评审线程</strong>做交叉判定，不与分诊共享上下文。trace：<code>.aris/traces/novelty-check/2026-10-22_run01/001-idea-discovery-phase3</code>；thread <code>18edb2359486</code>，返回模型 <code>google/gemini-4-argon</code>，<code>independence_verified=unverified</code>（见文末"证据说明"）。评审按 NOVELTY VERDICT LIMITS 判定：只有能点名一篇已发表论文包含同一结果时才能判 ABANDON。</p>
+<table><thead><tr><th>方向</th><th>最近的已有工作</th><th>差异（一句话，可核查）</th><th>分数</th><th>结论</th></tr></thead><tbody><tr><td><strong>I5</strong> 验证器什么时候会骗人</td><td>CalTennis（2606.20542，在真实网球视频上用多视角伪真值算无标签信号和失败的 Spearman/AUC）；VLM 评审 HMR（2602.19180）；MHE-Former；AHa-3D</td><td>用游戏引擎的精确 SMPL 真值加<strong>按剂量控制的退化</strong>，找出几何、运动学、学习型（MotionCritic）和 VLM 验证器分别在哪些条件下和真实 3D 误差脱钩；对象是世界系视频 HMR</td><td>9/10</td><td><strong>PROCEED</strong></td></tr><tr><td><strong>I16</strong> 隐形失败搜索</td><td>PoseExaminer（2303.07337，单帧，只最大化 3D 误差）；自动驾驶感知的对抗压力测试（2203.14155）</td><td>搜索的是<strong>时空视频扰动</strong>，目标是"3D 误差大、同时验证器仍显示健康"，并约束 70% 的帧可见</td><td>9/10</td><td><strong>PROCEED</strong></td></tr><tr><td><strong>I3</strong> 遮挡剂量与桥接长度</td><td>Lino et al. 2025（2504.10350，2D→3D lifter，把遮挡模拟成 2D 关键点噪声）；Sárándi et al. 2018（1808.09316，单帧贴遮挡物）；STRIDE（2312.16221）；MoRo；HTD-Refine</td><td>首次在<strong>视频像素层面</strong>贴入时长、面积、部位可控的遮挡物，测世界系时序模型的桥接长度 T\<em>，以及各种后处理把 T\</em> 推后多少</td><td>8/10</td><td><strong>PROCEED</strong></td></tr><tr><td><strong>I6</strong> 路由的 oracle 余量</td><td>ChatHuman（2405.04533，单图）；AHa-3D；Agentic Real2Sim；LiteReality-Agent（都没有测 oracle 上界）</td><td>首次测出视频 HMR 里逐段选工具相对最佳固定流程的<strong>真值 oracle 余量</strong>，并检验 VLM 路由能否比三条规则拿到更多</td><td>8/10</td><td><strong>PROCEED</strong></td></tr><tr><td><strong>I1</strong> 换真值归因</td><td>WHAM、TRAM（2403.17346）、Fast SAM 3D Body（2603.15603，GT 框的 Oracle 协议）、Martinez et al. 2017（1705.03098）、Lino et al. 2025</td><td>从"单项换真值"扩展到 GVHMR 全部 5 路输入的<strong>全因子替换 + Shapley 归因</strong>，按人物大小和遮挡分层</td><td>6/10</td><td><strong>PROCEED WITH CAUTION</strong></td></tr><tr><td><strong>I7</strong> 小人物分辨率</td><td>RSC-Net / Xu et al.（2103.06498，单图低分辨率 HPS，已测过"先超分再 HMR"，收益有限）；CLIFF（2208.00571）</td><td>在<strong>多分支视频世界系流程</strong>里，动作固定、内参精确缩放，分开看分辨率损失经过 ViTPose 和经过图像编码器的影响</td><td>6/10</td><td><strong>PROCEED WITH CAUTION</strong></td></tr></tbody></table>
+<p><strong>两个 CAUTION 方向要满足什么才算有贡献</strong>（评审原话的要点）：</p>
+<ul><li><strong>I1</strong>：单项换真值已经是 HMR 论文的标准消融。至少满足其一：(a) 在两个世界系架构上比较归因（如 GVHMR vs WHAM/TRAM），揭示它们依赖哪路输入的差别；(b) 和 I7 或 I6 绑在一起，让归因直接解释某个修复为什么有效或无效。</li><li><strong>I7</strong>：自上而下的流程本来就会把人框裁出来再放大，RSC-Net 也已经证明超分帮助有限。必须找到 GVHMR 处理小人物的一个<strong>具体缺陷</strong>，比如先缩整帧再裁、框的扩边比例不合适、低像素下关键点置信度失准、CLIFF 式的焦距/位置条件不匹配，并证明某个免训练的分支干预能胜过标准紧裁。</li></ul>
+<p><strong>结论</strong>：没有方向被判 ABANDON。评审认为最新颖的是 I16，最不新颖的是 I1。</p>
+<p><strong>查新中新发现的近邻</strong>（都已核实）：CalTennis（2606.20542）、3DHarnessBench（2609.06535，VLM 当 3D 重建评审）、STRIDE（2312.16221）、Fast SAM 3D Body（2603.15603）、GTASA（2604.10385，游戏引擎真值用于视频模型评测，不是 HMR）、PCHMR（2610.24841，10/17，联邦学习 HMR 基准，无关）、CHAMP（2407.06141）。</p>
+<blockquote><p>更正：triage 材料（已归档在 trace 里）把 1808.09316 写成了"Zhang 2018"，正确作者是 Sárándi, Linder, Arras, Leibe。本报告一律用正确的作者。</p></blockquote>
+<h2 id="external-critical-review">External Critical Review</h2>
+<p>审的是 <strong>I5（核心）+ I6（路由后果）+ I16（可选扩展）</strong>。新评审线程 <code>066036d72266</code>，返回模型 <code>google/gemini-4-argon</code>。评审先把 brief 里的数字逐一和两份结果文件、P1 草稿对过：EMDB/RICH/3DPW 数字、6/36、63.9/50.8/105.7、1.85/6.7 m/0.7 mm、18/30 和 29/30 都对得上。<strong>结论：<code>BOTTOM LINE: PROCEED</code>，7.5/10。</strong> 完整原文：<code>.aris/traces/research-review/2026-10-22_run01/001-idea-discovery-phase4</code>。</p>
+<h3 id="评审发现的硬伤都接受进入-refine">评审发现的硬伤（都接受，进入 refine）</h3>
+<ol><li><strong>你们自己的结果文件写过 GTA 的世界系指标和脚滑"不可靠，只作参考"</strong>（序列短、常常不动、15 fps、真值是拟合的），但 brief 却把 W-MPJPE、脚滑、jitter、MotionCritic 当作 GTA 上的核心指标。→ 时序和世界系验证器只在 EMDB/RICH（30 fps 动捕）上审计，GTA 只审相机系。</li><li><strong>"验证器失明"和"指标不相关"被混在一起</strong>：焦距错时 PA-MPJPE 只差 0.7 mm，按 PA-MPJPE 算 GVHMR 根本没失败，验证器说"姿态没问题"就不算撒谎。2D 重投影看不出 f 和 Z 一起缩放，这是透视几何的恒等式，不算新发现。过度平滑配 jitter 是同义反复。→ 每种失败要和对应的 3D 指标配对；这两种"构造出来的失败"不作为主要结果。</li><li><p><strong>统计缺陷</strong>：同一剂量档内，片段之间的差异来自自然差异和真值噪声，重剂量下所有片段都失败，会出现值域受限，相关性和 AUROC 自然塌向随机水平。跨剂量合并时，任何能"看见扰动本身"的输入信号（置信度下降、框变小）都会因为和剂量同变而显得很准。→ 改测：</p>
+<ul><li>(a) 区分<strong>输入代理</strong>（框大小、ViTPose 置信度）和<strong>输出验证器</strong>（重投影、TTA 分歧、VLM 打分等），报告控制输入代理后的偏相关；</li><li>(b) <strong>同一片段内的成对排序准确率</strong>：给同一段视频的两个重建，验证器能否挑出 3D 误差更低的那个。这正是 agent 判断"修复后是否更好"时做的决定，而且片段本身的难度和真值偏差都在比较中抵消；</li><li>(c) 同时用 ΔE(d) = MPJPE(pred(d), pred(0)) 做目标，避开真值噪声；</li><li>(d) 用簇 bootstrap 给置信区间，划分 20 dev / 40 test。</li></ul></li><li><strong>转镜剂量物理上做不到</strong>：50° 画面里裁一个更窄的虚拟相机，以 60–90°/s 转动，4–6 帧（15 fps）就扫完整个画面，人物出画。→ I5 不做高速转镜，改用"相机模式失配"（静止假设 vs VO），在 EMDB-2/GTA 上做。<strong>这一条同样削弱 I2</strong>：I2 只能做 ≤30°/s，或者做来回摆动的抖动，要在报告里如实说明。</li><li><strong>真值噪声循环</strong>：14.5 px 的拟合误差会被误判为"重投影验证器失明"。→ 用 ΔE 目标，并且只选人物在动、时长 ≥4 s 的片段。</li></ol>
+<h3 id="叙事建议">叙事建议</h3>
+<ul><li>只做审计，读起来像消融。应该把 <strong>Step 4（在缓存的修复结果上做验证和选择）提升为并列主线</strong>：先做受控剂量审计，找出每类验证器在哪里失明；再在 P1 的缓存工具输出上测"单一验证器会在盲区里选错修复"，以及组合验证器能拿回多少 oracle 增益。Step 1 的各个变体本身就是 P1 工具的修复前后状态（降分辨率 vs 高分辨率重裁 = T-res；错误相机模式 vs 修正 = T-cam；原始 vs 后处理 = T-refine），所以<strong>不增加 GPU 成本</strong>。</li><li><strong>proposal 里删掉 CMA-ES 隐形失败搜索</strong>（I16 不写进一页 proposal，作为可选扩展）。</li></ul>
+<h3 id="贡献是否足够">贡献是否足够</h3>
+<ul><li>课程项目：<strong>足够（强）</strong>，前提是保留修复选择的评测，并在 EMDB/RICH 已有的 dump 上做真实数据检查。两个课程题目都能覆盖，约 30–45 个 A40 GPU 小时。</li><li>workshop 论文：介于勉强和扎实之间。"重投影看不出焦距错"和"平滑降低 jitter"会被认为是平凡结论；能发表的是<strong>新近提出的验证器（VLM 叠加图评审、MotionCritic、TTA 自洽）存在系统性且互补的盲区</strong>，并且在 GTA 上做了因果剂量、在 EMDB/RICH 分层上做了观测验证。</li></ul>
+<h3 id="第一个该跑的判别实验-3-gpu-小时23-天">第一个该跑的判别实验（&lt; 3 GPU 小时，2–3 天）</h3>
+<ul><li><strong>复用缓存</strong>：30 段 GTA 的 <code>S0</code>/<code>S1gtK</code>/<code>S0raw</code> 和 EMDB-1 的 17 段，不用重跑 GVHMR。计算输入代理和输出验证器（Qwen3-VL 约 0.5 GPU 小时）。</li><li><strong>小型因果剂量</strong>：10 个大人物片段（真值噪声最小）× 遮挡 {0, 25%, 50% 四肢} × 缩放 {1.0, 0.5, 0.25}，加一次水平翻转 TTA，约 1.5 GPU 小时。</li><li><p><strong>决策规则</strong>：</p>
+<ul><li>规则 1：如果验证器对 ΔE 的相关比对拟合真值的相关高 ≥0.15，就把 ΔE 和 EMDB-1 定为并列主要目标。</li><li>规则 2：如果输出验证器之间有互补的盲区（例如重投影和 VLM 看不出被挡肢体被编出来，TTA 翻转分歧能看出来），就按完整计划做。如果 ViTPose 置信度单独就达到 |ρ|&gt;0.85，而所有输出验证器在同片段成对排序上都接近随机（AUROC&lt;0.58），就把论点改成："输入置信度能预测 GVHMR 何时失败，但现有的 GT-free 输出验证器判断不了修复是否成功"。这样 P1 的"输入驱动路由 vs 输出驱动验证"就成为主论点。</li></ul></li></ul>
+<h3 id="结果到结论矩阵评审给出供-proposal-写作参考">结果到结论矩阵（评审给出，供 proposal 写作参考）</h3>
+<table><thead><tr><th>结果</th><th>观察到的模式</th><th>允许的结论</th><th>不允许的结论</th></tr></thead><tbody><tr><td>O1 互补盲区（主假设成立）</td><td>各类验证器在本行条件下有效，在特定剂量下 AUROC→0.5；组合验证器拿回 &gt;60% 的 oracle 修复增益，单一验证器 &lt;30%</td><td>单一 GT-free 验证器有可预测的盲区；组合正交信号显著改善修复验证</td><td>"所有 GT-free 验证器都没用"；把焦距不可见说成 GVHMR 的新失败</td></tr><tr><td>O2 输入置信度主导，输出验证器在同片段内失效</td><td>置信度和框大小 \</td><td>ρ\</td><td>&gt;0.8；输出验证器的偏相关 &lt;0.05，同片段挑对率 &lt;55%</td><td>重建前的输入诊断能预测误差，重建后的输出验证器分不出好坏修复，所以前馈路由（先诊断再修复）在低算力下优于"编辑-验证"循环</td><td>用被输入难度抬高的原始相关说输出验证器有效</td></tr><tr><td>O3 TTA + 重投影就够了，VLM 没有增益</td><td>简单几何信号 AUROC&gt;0.8，拿回 &gt;75% 的路由余量；Qwen3-VL-8B 和 MotionCritic 不更好，算力却是 10 倍</td><td>轻量几何和自洽信号足以验证修复；8B VLM 叠加图评审没有增益</td><td>"任何规模的 VLM 都不能验证 3D 姿态"（只能限定为零样本 8B 叠加图评审）</td></tr><tr><td>O4 GTA 的真值和 15 fps 掩盖了时序信号</td><td>运动学验证器在 GTA 上随机，在 EMDB/RICH 和 ΔE 上单调（ρ&gt;0.65）</td><td>审计时序验证器需要 30 fps 动捕或 ΔE 目标</td><td>根据 15 fps 的伪影说运动学验证器天生看不见时序错误</td></tr></tbody></table>
+<h3 id="对其他方向的连带影响">对其他方向的连带影响</h3>
+<ul><li><strong>I2</strong>（转镜去混杂）：高速转镜不可行，只能做 ≤30°/s 或来回摆动，排名应下调。</li><li><strong>I16</strong>（隐形失败）：不写进 proposal，留作第 4 周之后的可选扩展。</li><li><strong>I7</strong>（小人物）：<code>img_ds=0.5</code> 这一发现（见 I7 详述）正好可以作为 T-res 工具的具体机制，并直接进入同片段的"修复前/修复后"对比。</li></ul>
+<h2 id="final-recommendation">Final Recommendation</h2>
+<h3 id="方向-1验证器会在哪里失明i5-细化版含-i6p1-作为-claim-2-recommended">🏆 方向 1：验证器会在哪里失明？（I5 细化版，含 I6/P1 作为 Claim 2）—— RECOMMENDED</h3>
+<ul><li><p><strong>做什么</strong>：</p>
+<ol><li>从 GTA-Human v1 选 60 段干净、在动的大人物片段（20 dev / 40 test）。按剂量缩小人物、加四肢遮挡，并做一个焦距校准对照。</li><li>对同一个退化输入生成几种候选：<code>img_ds</code> 0.5/1.0、T-infill 插补、GVHMR 官方/BEDLAM2 权重。</li><li>用 6 类不看真值的验证器给候选打分，看它们能否在同输入的两个候选里挑出 3D 误差更低的那个（零阈值方向性成对选择准确率，带 CI）。</li><li>在 EMDB/RICH 上用后处理、相机模式、分辨率候选做方向性复现。</li><li>最后看验证器驱动的选择器能拿回多少 oracle 余量，这就是 P1 的路由问题。</li></ol></li><li><strong>Pilot</strong>：未运行（SKIPPED，需要 GPU）。第 1 周 pilot 的设计和决策规则见 <code>refine-logs/EXPERIMENT_PLAN.md</code> 的 Block 0。</li><li><strong>新颖性</strong>：9/10，PROCEED（最近：CalTennis 2606.20542、VLM 评审 HMR 2602.19180）。</li><li><strong>评审</strong>：外部批判 7.5，PROCEED；方法细化 9.1，READY。</li><li><strong>最可能的反对</strong>："平凡主导"，即输入置信度一个信号就够了。按结果矩阵 O2，这本身也是可以报告的结论："输入诊断可行，输出验证不可行"，正好支持 P1 的前馈路由。</li><li><strong>下一步</strong>：第 1 周跑 R101–R105 → 11/8 go/no-go → <code>/experiment-bridge</code>。</li></ul>
+<h3 id="方向-2备选偏-video-hpe-题目因果诊断套件i3-遮挡桥接长度--i7-小人物-imgds--i1-换真值归因">方向 2（备选，偏 Video HPE 题目）：因果诊断套件（I3 遮挡桥接长度 + I7 小人物 <code>img_ds</code> + I1 换真值归因）</h3>
+<ul><li>适合想做"纯 Video HPE、不碰 agent"的情况，基本就是 P2 的诊断部分换了一种做法。</li><li>I3 查新 8/10；I7 和 I1 都是 6/10，CAUTION。I7 的 <code>img_ds</code> 发现正好回应了它的 CAUTION；I1 需要在两个架构上比较，或者和某个修复绑定。</li><li>I2 的高速转镜不可行，最多做 ≤30°/s。</li><li>约 15–18 GPU 小时。</li></ul>
+<h3 id="方向-3备选工具路由的-oracle-余量i6--你们的-p1">方向 3（备选）：工具路由的 oracle 余量（I6 = 你们的 P1）</h3>
+<ul><li>已经并入推荐方向的 Claim 2。如果你们坚持原来的 P1 叙事，推荐方向的 Block 0 结果也能直接回答 P1 的 go/no-go。</li></ul>
+<h3 id="扩展第-4-周之后有余力再做隐形失败搜索i16">扩展（第 4 周之后有余力再做）：隐形失败搜索（I16）</h3>
+<ul><li>查新 9/10，最新颖，但风险高。评审建议不写进一页 proposal。复用推荐方向的扰动生成器和验证器，约 4 GPU 小时可以做一个 pilot。</li></ul>
+<h2 id="eliminated-ideas">Eliminated Ideas</h2>
+<p>本轮<strong>没有方向被证据淘汰</strong>：没有 pilot，查新也没有判 ABANDON。以下是<strong>降级或未选</strong>的方向和理由，供以后参考：</p>
+<table><thead><tr><th>方向</th><th>处理</th><th>理由</th></tr></thead><tbody><tr><td>I2 相机转速去混杂</td><td>降级</td><td>Phase-4 评审指出：在 50° 画面里裁更窄的虚拟相机，以 60–90°/s 转动，4–6 帧就出画，物理上做不到；只能做 ≤30°/s，或改成相机模式失配</td></tr><tr><td>I12 焦距自标定</td><td>未选</td><td>小人物和不走动时存在 f/Z 退化；文献拥挤（BLADE、CameraHMR、Multi-HMR 2、HAC）</td></tr><tr><td>I14 多人深度顺序和互穿</td><td>未选</td><td>机制自 Jiang et al. CVPR 2020 起就很成熟，还要处理 GTA-Human II 的大量 I/O</td></tr><tr><td>I8 多尺度变焦融合</td><td>未选</td><td>很可能被 I7 里"选对单一裁剪/分辨率"打败，计算量却是它的 3 倍</td></tr><tr><td>I15 图像级遮挡微调（P3）</td><td>未选</td><td>约 30 GPU 小时；原训练数据可能下不到，有灾难性遗忘风险；BEDLAM2 重训的收益也只有几个百分点</td></tr><tr><td>I13 多人特征污染</td><td>未选</td><td>89 GB 的 GTA-Human II 下载和重打包开销大；涂黑别人对 ViT 来说本身就是分布外输入</td></tr><tr><td>I9、I10、I11、I17–I20、I4</td><td>保留为候选</td><td>其中 I4、I11、I18、I19、I20 可以当 1–3 天的支撑分析；I9（≈P2）和 I10 可以当 Video HPE 方向的方法项目</td></tr></tbody></table>
+<h2 id="refined-proposal">Refined Proposal</h2>
+<ul><li>方案：<code>refine-logs/FINAL_PROPOSAL.md</code>（READY 9.1；评审记录 <code>refine-logs/REVIEW_SUMMARY.md</code>、<code>REFINEMENT_REPORT.md</code>）</li><li>实验计划：<code>refine-logs/EXPERIMENT_PLAN.md</code>（7 个 Block，M0–M5，约 23 GPU 小时，11/8 go/no-go）</li><li>追踪表：<code>refine-logs/EXPERIMENT_TRACKER.md</code>（R101–R152；编号避开了 eecs442 里已有的 R001–R015）</li><li>总结：<code>refine-logs/PIPELINE_SUMMARY.md</code></li></ul>
+<h2 id="next-steps">Next Steps</h2>
+<ul><li>[ ] <strong>组员写 10/30 的一页 proposal</strong>（自拟题四要素：问题、为什么重要、方法、评测）。可以引用本报告和 <code>results/</code> 里的数字，但正文要自己写，并申报 AI 使用。</li><li>[ ] 第 1 周（10/31–11/7）跑 R101–R105：缓存验证器、<code>img_ds</code> pilot、小型剂量 pilot、BEDLAM2 权重、有效对数量。</li><li>[ ] 11/8 按 Block 0 的四条决策规则做 go/no-go。</li><li>[ ] 然后用 <code>/experiment-bridge</code> 按 <code>refine-logs/EXPERIMENT_PLAN.md</code> 生成实验代码，用 <code>/run-experiment</code> 提交 Slurm 任务。</li><li>[ ] 想要完整流程可以用 <code>/research-pipeline</code>；结果出来后用 <code>/result-to-claim</code> 对照结果矩阵 O1–O4。</li></ul>
+<h2 id="evidence-notes">Evidence Notes</h2>
+<ul><li><strong>评审路由</strong>：前 5 次 Gemini 调用（构思、分诊、查新、批判评审、方法细化 round 1）发生在 llm-chat 进程加载 <code>LLM_PROVIDER_ROUTING</code> 之前，走的是 OpenRouter 默认路由，服务端日志没有记录 provider。用户重连 MCP 之后，round 2–3 锁定 <code>{&quot;only&quot;: [&quot;google-ai-studio/flex&quot;], &quot;allow_fallbacks&quot;: false}</code>，日志为 <code>provider=Google AI Studio</code>。所有调用返回的模型都是 <code>google/gemini-4-argon</code>。</li><li><strong>独立性字段</strong>：服务端会先检查评审和执行者是否同一家族，同一家族时拒绝返回结果（fail closed）。返回里的 <code>independence_verified</code> 是代码里写死的 <code>unverified</code>，意思是 provider 上报的模型名无法被独立验证，并不表示检查失败。</li><li><strong>线程连续性</strong>：方法细化 round 1 的线程随 MCP 重启丢失（服务端只在内存里保存线程）；round 2 开新线程并附上 round 1 原文，round 3 接在 round 2 线程上。</li><li><strong>Pilot</strong>：全部跳过（本 ARIS 项目的 CLAUDE.md 写明没有配置 GPU），所有方向都标为"需要 pilot 验证"。</li><li><strong>文献核实</strong>：用 <code>verify_papers.py</code> 核实，第一批 36 篇经 arXiv 确认，3 篇只有标题、为 <code>verify_pending</code>（S2 暂时不可用）；第二批 15 篇全部确认（verdict PASS）。</li><li><strong>Trace</strong>：<code>.aris/traces/{idea-creator,novelty-check,research-review,research-refine}/2026-10-22_run01/</code>。</li></ul>
+<h2 id="references-verified">References (verified)</h2>
+<p>见 <code>.aris/verify-papers/verified_papers.json</code>。arXiv 链接格式为 <code>https://arxiv.org/abs/&lt;id&gt;</code>。</p>
+<p>&lt;!-- ARIS_IDEA_DISCOVERY_EVIDENCE_GATE:START --&gt;</p>
+<h2 id="evidence-gate">Evidence Gate</h2>
+<p><strong>Status:</strong> PASS</p>
+<p>All required stage records, review receipts, artifacts, and report sections are present. &lt;!-- ARIS_IDEA_DISCOVERY_EVIDENCE_GATE:END --&gt;</p>
+
+<footer class="aris-footer">
+  Generated by <a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/render-html/SKILL.md">ARIS <code>/render-html</code></a> ·
+  source path <code>idea-stage/IDEA_REPORT.md</code> ·
+  SHA256 <code>b60b75235cf5</code> ·
+  generated at 2026-10-22 17:30 UTC.
+  This is a generated view — edit the source Markdown, then re-render.
+</footer>
+</main>
+
+</div>
+
+<!-- P0 polish: paper popover host (populated by IIFE below) -->
+<div id="cite-pop" hidden role="dialog" aria-labelledby="cite-pop-title">
+  <button class="cp-close" type="button" aria-label="Close">×</button>
+  <div class="cp-content"></div>
+</div>
+
+<!-- P0 polish: figure lightbox (native <dialog>, graceful fallback) -->
+<dialog class="lightbox" id="figure-lightbox" aria-label="Figure detail">
+  <div class="lb-inner">
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <img alt="" />
+    <figcaption></figcaption>
+  </div>
+</dialog>
+
+<!-- P0 polish: paper registry sidecar, embedded by render_html.py (--papers) -->
+<script>window.PAPER_REGISTRY = {};</script>
+
+<!-- P0 polish: interactive enhancements (TOC scrollspy, code-card auto-collapse,
+     paper popovers, figure lightbox, print-restore for <details>, blog-mode H2). -->
+<script>
+(function () {
+  "use strict";
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[c];
+    });
+  }
+
+  // --- Feature 5: Print degradation fix ---------------------------------
+  // Force every <details> open during print, restore the pre-print state after.
+  var _stashOpen = [];
+  var _printing = false;
+  window.addEventListener("beforeprint", function () {
+    if (_printing) return;  // guard against multi-fire (Chrome print preview)
+    _printing = true;
+    _stashOpen = [];
+    document.querySelectorAll("details:not([open])").forEach(function (d) {
+      _stashOpen.push(d);
+      d.open = true;
+    });
+  });
+  window.addEventListener("afterprint", function () {
+    _stashOpen.forEach(function (d) { if (d.isConnected) d.open = false; });
+    _stashOpen = [];
+    _printing = false;
+  });
+
+  // --- Feature 3: TOC scrollspy -----------------------------------------
+  var tocLinks = [].slice.call(document.querySelectorAll("nav.toc a"));
+  var headings = tocLinks.map(function (a) {
+    var id = a.getAttribute("href").replace(/^#/, "");
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if (headings.length && typeof IntersectionObserver !== "undefined") {
+    var linkById = new Map();
+    headings.forEach(function (h, i) { linkById.set(h.id, tocLinks[i]); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        tocLinks.forEach(function (l) { l.classList.remove("active"); });
+        var lk = linkById.get(en.target.id);
+        if (lk) lk.classList.add("active");
+      });
+    }, { rootMargin: "-15% 0px -75% 0px" });
+    headings.forEach(function (h) { io.observe(h); });
+  }
+
+  // --- Feature 1: Long-code auto-collapse -------------------------------
+  var COLLAPSE_THRESHOLD = 30;
+
+  function wrapCodeCard(pre, openByDefault) {
+    if (!pre || pre.closest("details.code-card")) return;
+    var code = pre.querySelector("code");
+    if (!code) return;
+    var lines = code.textContent.replace(/\n+$/, "").split("\n").length;
+    var det = document.createElement("details");
+    det.className = "code-card";
+    det.open = openByDefault;
+    var sum = document.createElement("summary");
+    function updateSummary() {
+      sum.textContent = (det.open ? "▾ Collapse code · " : "▸ Expand code · ") + lines + " lines";
+    }
+    updateSummary();
+    det.addEventListener("toggle", updateSummary);
+    pre.parentNode.insertBefore(det, pre);
+    det.appendChild(sum);
+    det.appendChild(pre);
+  }
+
+  // Honor explicit per-block flags first.
+  document.querySelectorAll("pre[data-collapse]").forEach(function (pre) {
+    var flag = pre.getAttribute("data-collapse");
+    if (flag === "collapsed") wrapCodeCard(pre, false);
+    // "open" → leave fully expanded, do not wrap.
+  });
+  // Then auto-wrap long unflagged blocks.
+  document.querySelectorAll("pre > code").forEach(function (code) {
+    var pre = code.closest("pre");
+    if (!pre || pre.closest("details") || pre.hasAttribute("data-collapse")) return;
+    var lines = code.textContent.replace(/\n+$/, "").split("\n").length;
+    if (lines >= COLLAPSE_THRESHOLD) wrapCodeCard(pre, false);
+  });
+
+  // --- Feature 10: Figure lightbox --------------------------------------
+  var lightbox = document.getElementById("figure-lightbox");
+  if (lightbox) {
+    var lbImg = lightbox.querySelector("img");
+    var lbCap = lightbox.querySelector("figcaption");
+    var lbClose = lightbox.querySelector(".lb-close");
+    function openLightbox(srcImg) {
+      lbImg.src = srcImg.src;
+      lbImg.alt = srcImg.alt || "";
+      var cap = srcImg.closest("figure") ? srcImg.closest("figure").querySelector("figcaption") : null;
+      lbCap.textContent = cap ? cap.textContent : "";
+      lbCap.hidden = !cap;
+      if (typeof lightbox.showModal === "function") lightbox.showModal();
+      else lightbox.hidden = false;
+    }
+    function closeLightbox() {
+      if (typeof lightbox.close === "function") lightbox.close();
+      else lightbox.hidden = true;
+    }
+    document.querySelectorAll("main figure img, main > p > img").forEach(function (img) {
+      if (img.closest("dialog")) return;
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", function () { openLightbox(img); });
+    });
+    if (lbClose) lbClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      // Backdrop click closes; clicks inside .lb-inner do not bubble here.
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // --- Feature 2: Paper popover -----------------------------------------
+  var PAPERS = window.PAPER_REGISTRY || {};
+  var pop = document.getElementById("cite-pop");
+  var popContent = pop ? pop.querySelector(".cp-content") : null;
+  var popClose = pop ? pop.querySelector(".cp-close") : null;
+  var popTrigger = null;
+
+  function showPopover(el) {
+    var key = el.dataset.ref;
+    var info = PAPERS[key];
+    if (!info || !pop || !popContent) return;
+    popContent.innerHTML =
+      '<div class="cp-title" id="cite-pop-title">' + escapeHtml(info.title || key) + '</div>' +
+      (info.authors
+        ? '<div class="cp-meta">' + escapeHtml(info.authors) +
+            (info.date ? ' · ' + escapeHtml(info.date) : '') +
+            (info.inst ? ' · ' + escapeHtml(info.inst) : '') + '</div>'
+        : '') +
+      (info.key ? '<div class="cp-key">' + escapeHtml(info.key) + '</div>' : '') +
+      (info.arxiv
+        ? '<a class="cp-link" href="https://arxiv.org/abs/' + encodeURIComponent(info.arxiv) +
+          '" target="_blank" rel="noopener">arXiv ' + escapeHtml(info.arxiv) + ' ↗</a>'
+        : '');
+    var r = el.getBoundingClientRect();
+    pop.hidden = false;  // unhide first so offsetHeight is measurable
+    var margin = 16;
+    var popWidth = Math.min(360, Math.max(0, window.innerWidth - margin * 2));
+    var popHeight = Math.min(pop.offsetHeight || 200, Math.max(0, window.innerHeight - margin * 2));
+    pop.style.left = Math.max(margin, Math.min(r.left, window.innerWidth - popWidth - margin)) + "px";
+    pop.style.top = Math.max(margin, Math.min(r.bottom + 8, window.innerHeight - popHeight - margin)) + "px";
+    popTrigger = el;
+    if (popClose) popClose.focus();
+  }
+  function hidePopover() {
+    if (pop) pop.hidden = true;
+    if (popTrigger) popTrigger.focus();
+    popTrigger = null;
+  }
+  document.querySelectorAll("[data-ref]").forEach(function (el) {
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "button");
+    el.addEventListener("click", function (e) { e.stopPropagation(); showPopover(el); });
+    el.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPopover(el); }
+    });
+  });
+  if (popClose) popClose.addEventListener("click", hidePopover);
+  document.addEventListener("click", function (e) {
+    if (pop && !pop.hidden && !pop.contains(e.target) && !e.target.matches("[data-ref]")) hidePopover();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && pop && !pop.hidden) hidePopover();
+  });
+
+  // --- Feature 7: Blog-mode active-H2 highlight (opt-in) ----------------
+  if (document.body.classList.contains("aris-blog")) {
+    var h2s = [].slice.call(document.querySelectorAll("main h2"));
+    if (h2s.length && typeof IntersectionObserver !== "undefined") {
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            h2s.forEach(function (h) { h.classList.remove("aris-active-h2"); });
+            en.target.classList.add("aris-active-h2");
+          }
+        });
+      }, { rootMargin: "-15% 0px -75% 0px" });
+      h2s.forEach(function (h) { io2.observe(h); });
+    }
+  }
+})();
+</script>
+</body>
+</html>
